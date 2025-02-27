@@ -99,9 +99,9 @@ export function objectDiff<T>(older: Dictionary<T>, newer: Dictionary<T>): Objec
 
 export type AmbigType = 'item' | 'mission' | 'location' | 'faction' | 'readableseries' | 'tutorial'
 const ambigTitles = {
-	'The Sound and the Fury': {
-		item: 'The Sound and the Fury (Item)',
-		mission: 'The Sound and the Fury'
+    'Шум и ярость': {
+        item: 'Шум и ярость (предмет)',
+        mission: 'Шум и ярость'
 	},
 	'Alchemy Commission (Location': {
 		location: 'Alchemy Commission (Location',
@@ -115,9 +115,9 @@ const ambigTitles = {
 		location: 'Divination Commission (Location',
 		faction: 'Divination Commission'
 	},
-	'A Foxian Tale of the Haunted': {
-		mission: 'A Foxian Tale of the Haunted (Continuance)',
-		event: 'A Foxian Tale of the Haunted'
+    'Лисья история о привидениях': {
+        mission: 'Лисья история о привидениях (глава)',
+        event: 'Лисья история о привидениях'
 	}
 }
 
@@ -131,8 +131,8 @@ export function wikiTitle(name: string, type?: AmbigType, id?: number) {
 		name = mapData.pagename
 	}
 	
-	if (type == 'tutorial' && !name.startsWith('Tutorial/')) {
-		name = 'Tutorial/' + name
+	if (type == 'tutorial' && !name.startsWith('Обучение/')) {
+		name = 'Обучение/' + name
 	}
 	
 	return name
@@ -219,38 +219,38 @@ export function getAudioHash(str: string): number {
 export type OutputList = (string | OutputList)[]
 
 export const DICON_MAP = {
-	ChatMissionIcon: '!',
-	ChatLoopIcon: 'Talk',
-	ChatContinueIcon: 'Arrow',
-	ChatBackIcon: 'Return',
-	ChatOutIcon: 'Exit',
-	ShopIcon: 'Shop',
-	BoxIcon: 'Box',
-	CheckIcon: 'Loupe',
-	HealHPIcon: 'Heal',
-	LevelIcon: 'Star',
-	ChatIcon: 'Talk',
-	SpecialChatIcon: 'Special',
-	Synthesis: 'Synthesis',
-	TriggerProp: 'Gear',
-	CommonSign: 'Sign',
-	FightActivity: 'Fight Club',
-	RogueHeita: 'Herta',
-	SecretMissionIcon: '?',
-	MonsterReasearchIcon: 'Research',
-	GeneralActivityIcon: 'Travel Log',
-	StandupIcon: 'Stand',
-	HideIcon: 'Hide',
-	ChallengeStoryIcon: 'Pure Fiction',
-	AbyssIcon: 'Forgotten Hall',
-	DreamlandIcon: 'Clockwork',
-	OrigamiBirdIcon: 'Origami Bird',
-	PickUpIcon: 'Hand',
-	HeartDialRaid: 'Absorb Emotions',
-	TokenIcon: 'Token',
-	ClockBoyShopIcon: 'Clockie',
-	HeartDialTracer: 'Clockie Tie',
-	ChallengeBossIcon: 'Apocalyptic Shadow'
+    ChatMissionIcon: 'Уведомление',
+    ChatLoopIcon: 'Разговор',
+    ChatContinueIcon: 'Стрелка',
+    ChatBackIcon: 'Возврат',
+    ChatOutIcon: 'Выход',
+    ShopIcon: 'Магазин',
+    BoxIcon: 'Награда',
+    CheckIcon: 'Изучение',
+    HealHPIcon: 'Лечение',
+    LevelIcon: 'Звезда',
+    ChatIcon: 'Разговор',
+    SpecialChatIcon: 'Спец',
+    Synthesis: 'Синтез',
+    TriggerProp: 'Механизм',
+    CommonSign: 'Знак',
+    FightActivity: 'Бойцовский клуб',
+    RogueHeita: 'Герта',
+    SecretMissionIcon: '?',
+    MonsterReasearchIcon: 'Исследование',
+    GeneralActivityIcon: 'Журнал путешествий',
+    StandupIcon: 'Встать',
+    HideIcon: 'Спрятаться',
+    ChallengeStoryIcon: 'Чистый вымысел',
+    AbyssIcon: 'Зал забвения',
+    DreamlandIcon: 'Заводной механизм',
+    OrigamiBirdIcon: 'Птица-оригами',
+    PickUpIcon: 'Рука',
+    HeartDialRaid: 'Поглотить эмоции',
+    TokenIcon: 'Token',
+    ClockBoyShopIcon: 'Часик',
+    HeartDialTracer: 'Заводной механизм бабочка',
+    ChallengeBossIcon: 'Иллюзия конца'
 }
 
 export function allEqual<T extends (string | number | boolean | undefined | null)>(vals: T[]) {

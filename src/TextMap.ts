@@ -64,8 +64,8 @@ export const OTHER_LANGUAGES: Dictionary<SupportedLanguage> = {
 }
 
 export const COLOR_MAP = {
-	'f29e38': 'h',
-	'dd7a00': 'h',
+	'f29e38': 'Выделенный',
+	'dd7a00': 'Выделенный',
 	'dbc291': 'keyword',
 	'42a8b9': 'fthuser',
 	'87e0ff': 'blue',
@@ -172,11 +172,11 @@ export class TextMap {
 		let replaced = text
 		
 		replaced = replaced
-			.replaceAll(/{NICKNAME}/gi, '(Trailblazer)')
+			.replaceAll(/{NICKNAME}/gi, '(Первопроходец)')
 			.replaceAll('\\n', '\n')
 			.replaceAll(/{(F|M)#([^}]+?)}{(F|M)#([^}]+?)}/gi,
 				(_str: string, gender1: string, text1: string, gender2: string, text2: string) =>
-					`⟨⟨MC|${gender1.toLowerCase() == 'm' ? 'm' : 'f'}=${text1}|${gender2.toLowerCase() == 'm' ? 'm' : 'f'}=${text2}⟩⟩`
+					`⟨⟨MC|${gender1.toLowerCase() == 'm' ? 'м' : 'ж'}=${text1}|${gender2.toLowerCase() == 'm' ? 'м' : 'ж'}=${text2}⟩⟩`
 			)
 			.replaceAll(/(\s|^)(\S*\{[FM]#.+?\}[^\p{P}\s]*?)(\p{P}*)(\s|$)/giu, (_str: string, ws1: string, word: string, punct: string, ws2: string) => {
 				const feminineWord = word
@@ -187,19 +187,19 @@ export class TextMap {
 					.replaceAll(/{M#(.+?)}/gi, '$1')
 					.replaceAll(/{F#(.+?)}/gi, '')
 
-				return `${ws1}⟨⟨MC|f=${feminineWord}|m=${masculineWord}⟩⟩${punct}${ws2}`
+				return `${ws1}⟨⟨MC|ж=${feminineWord}|м=${masculineWord}⟩⟩${punct}${ws2}`
 			})
 			.replaceAll(/<color=#(\w{1,6})\w{2}?>(.*?)<\/color>/gis, (substr, color, text) => {
 				color = color.toLowerCase()
 				if (COLOR_MAP[color]) {
-					return `⟨⟨Color|${COLOR_MAP[color]}|${text}⟩⟩`
+					return `⟨⟨Цвет|${COLOR_MAP[color]}|${text}⟩⟩`
 				} else if (color == 'cdcdd8') {
 					return text
 				} else {
-					return `⟨⟨Color|#${color}|${text}⟩⟩`
+					return `⟨⟨Цвет|#${color}|${text}⟩⟩`
 				}
 			})
-			.replaceAll(/<size=([\-\+]?\d+)>(.*?)<\/size>/gis, '⟨⟨Size|$1|$2⟩⟩')
+			.replaceAll(/<size=([\-\+]?\d+)>(.*?)<\/size>/gis, '⟨⟨Размер|$1|$2⟩⟩')
 			.replaceAll(/<align="?(\w+)"?>(.*?)<\/align>/gis, '<div align="$1">$2</div>')
 			.replaceAll(/{RUBY_B#(.+?)}(.+?){RUBY_E#}/gis, (_substr, topText, normalText) => `⟨⟨Rubi|${normalText}|${topText}⟩⟩`)
 			.replaceAll(/{TEXTJOIN#(\d+)}/gi, (_substr, id) => `(${Object.values(TextJoinConfig).find(tj => tj.TextJoinID == id)?.TextJoinItemList.map(item => textMap.getText(Object.values(TextJoinItem).find(tj => tj.TextJoinItemID == item)?.TextJoinText)).join('/')})`)
@@ -227,7 +227,7 @@ export class TextMap {
 			.replaceAll(/<\s*\/?\s*i\s*>/gi, "''")
 			.replaceAll(/<\s*\/?\s*b\s*>/gi, "'''")
 			.replaceAll(/\u00a0/g, this.lang == 'KR' ? ' ' : '&nbsp;')
-			.replaceAll(/⟨⟨Color\|(\w+?)\|(\s*)(.+?)(\s*)⟩⟩/gis, '$2⟨⟨Color|$1|$3⟩⟩$4')
+			.replaceAll(/⟨⟨Color\|(\w+?)\|(\s*)(.+?)(\s*)⟩⟩/gis, '$2⟨⟨Цвет|$1|$3⟩⟩$4')
 			.replaceAll(/⟨⟨Color\|\w+?\|⟩⟩/gis, '')
 			.replaceAll(/<\/?unbreak>/gi, '')
 			.replaceAll('{SPACE}', ' ')
@@ -263,7 +263,7 @@ export class TextMap {
 		const name = this.getText(sentence.TextmapTalkSentenceName, undefined, false)
 		const text = this.getText(sentence.TalkSentenceText, undefined, allowNewline)
 			.replaceAll('\n', '<br />')
-			.replaceAll(/{{Color\|(\w+)\|/g, '{{Color|$1|nobold=1|')
+			.replaceAll(/{{Цвет\|(\w+)\|/g, '{{Цвет|$1|nobold=1|')
 		
 		let voiceIds: number[] | undefined = undefined
 		if (allowVO) {
@@ -273,18 +273,6 @@ export class TextMap {
 				voiceIds = [sentence.VoiceID]
 			}
 		}
-		
-		const vo = (allowVO && voiceIds) ? voiceIds.filter(id => VoiceConfig[id]).map(id => {
-			const voice = VoiceConfig[id]
-			const voicePath = voice.VoicePath.replaceAll('_', ' ')
-			if (voice.IsPlayerInvolved) {
-				return `{{A|VO ${voicePath} m.ogg}} {{A|VO ${voicePath} f.ogg}} `
-			} else {
-				return `{{A|VO ${voicePath}.ogg}} `
-			}
-		}).join('') : ''
-		
-		return vo + this.wikiFormatting(!textOnly && name ? `'''${name}:''' ${text.includes('<br />') ? '<br />' : ''}${text}` : text)
 	}
 	
 	getSentenceMeta(sentenceId: number | string) {
@@ -332,7 +320,7 @@ export class TextMap {
 	}
 	
 	static async generateOL(keys?: (string | number | bigint | HashReference) | (string | number | bigint | HashReference | undefined)[], params?: TextParams): Promise<string> {
-		const output = ['{{Other Languages']
+		const output = ['{{На других языках']
 		if (!Array.isArray(keys)) keys = [keys]
 		const targetWsp = keys.length > 1 ? 9 : 5
 		for (const [i, key] of keys.entries()) {

@@ -59,7 +59,7 @@ export class Readable {
 		
 		this.name = textMap.getText(config.BookInsideName)
 		this.content = textMap.getText(config.BookContent)
-			.replaceAll(/{{Color\|(\w+)\|/gi, '{{Color|$1|nobold=1|')
+			.replaceAll(/{{Цвет\|(\w+)\|/gi, '{{Цвет|$1|nobold=1|')
 			.replaceAll('\n', '<br />')
 			.replaceAll('<br /><br />', '\n\n')
 			// .replaceAll(/{Img#(\d+)}/gi, `[[File:]]`)

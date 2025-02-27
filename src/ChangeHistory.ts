@@ -138,9 +138,9 @@ export class ChangeHistory<FileContents extends object, SearchReturn, FindArg> {
 			const text = textMap.getText(textMapHash)
 			if (text && lastText != text) {
 				if (lastText) {
-					results.push(`Renamed to "${text}" in version ${version}`)
+					results.push(`Переименовано в "${text}" в версии ${version}`)
 				} else {
-					results.push(`Added in version ${version} as "${text}"`)
+					results.push(`Добавлено в версии ${version} как "${text}"`)
 				}
 				lastText = text
 			}
@@ -168,7 +168,7 @@ export class ChangeHistory<FileContents extends object, SearchReturn, FindArg> {
 
 			const found = Object.entries(textMap.json).filter(([, entry]) => entry.includes(text))
 			if (found.length) {
-				console.log(`Found ${found.length} occurrences in version ${version}:\n${found.map(f => f[0]).join(' ')}`)
+				console.log(`Найдено ${found.length} событий в версии ${version}:\n${found.map(f => f[0]).join(' ')}`)
 			}
 		}
 	}
