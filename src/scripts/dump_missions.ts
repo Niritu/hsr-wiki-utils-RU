@@ -162,7 +162,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 			
 			if ('source' in npcDialogue && !process.argv.includes('--no-dialogue')) {
 				if (npcDialogue.source.type == 'npc') {
-					dialogueEntry.push(`\n;(Поговорите с  ${npcDialogue.source.name || npcDialogue.prompt})`)
+					dialogueEntry.push(`\n;(Поговорите с ${npcDialogue.source.name || npcDialogue.prompt})`)
 				} else {
 					dialogueEntry.push(`\n:{{Диалог|${DICON_MAP[npcDialogue.dicon]}}} ${npcDialogue.prompt}`)
 				}
