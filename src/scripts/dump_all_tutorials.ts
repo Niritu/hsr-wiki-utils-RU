@@ -10,7 +10,7 @@ if (existsSync('./output/tutorials/')) {
 }
 
 for (const tutorial of Tutorial.loadAll()) {
-	const template = new Template<'Tutorial', TemplateMap['Tutorial']>('Tutorial', {
+	const template = new Template<'Обучение', TemplateMap['Обучение']>('Обучение', {
 		sort: tutorial.page_ids[0], // idk why its like this on the wiki... theres a dedicated Order param in the excels?
 		title: tutorial.name,
 		subtitle: '', // unused by the game but still added to every tutorial page for some reason
@@ -18,12 +18,12 @@ for (const tutorial of Tutorial.loadAll()) {
 		about: '',
 	})
 	
-	const fileTitle = sanitizeString(tutorial.pagetitle.replace('Tutorial/', '').replaceAll(':', ''))
+	const fileTitle = sanitizeString(tutorial.pagetitle.replace('Обучение/', '').replaceAll(':', ''))
 	
 	for (const [i, page] of tutorial.getPages().entries()) {
-		const fileName = `Tutorial ${fileTitle} ${i + 1}.png`
-		template.addParam(`image${i + 1}`, `${fileName}${uploadPrompt(page.image, fileName, 'Tutorial Files')}`)
-		template.addParam(`text${i+1}`, page.text)
+		const fileName = `Обучение ${fileTitle} ${i + 1}.png`
+		template.addParam(`изображение${i + 1}`, `${fileName}${uploadPrompt(page.image, fileName, 'Изображения обучений')}`)
+		template.addParam(`текст${i+1}`, page.text)
 	}
 	
 	const output = pageInfoHeader(tutorial.pagetitle) + '\n' + template.block(9)
