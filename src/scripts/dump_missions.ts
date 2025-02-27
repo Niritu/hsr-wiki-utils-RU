@@ -138,7 +138,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		}
 		
 		if (step.description && step.description != lastDesc) {
-			dialogueEntry.push(`{{Описание миссии|локация=${(await step.getFloor() ?? await step.getArea())?.name || '<!--необходимо добавить-->'}${i > 0 ? '|обновление' : ''}|${step.description.replaceAll('\n', '<br />')}}}`)
+			dialogueEntry.push(`{{Описание миссии|локация=${(await step.getFloor() ?? await step.getArea())?.name || '<!--необходимо добавить-->'}${i > 0 ? '' : ''}|${step.description.replaceAll('\n', '<br />')}}}`)
 		}
 		
 		if (step.name && step.name != lastName) {
