@@ -23,7 +23,7 @@ const PAGE_FORMAT =
 |Локации         = <<START_AREA>>
 |Предыдущая      = <<PREV>>
 |Следующая       = <<NEXT>>
-|Награды         = <<REWARDS>>
+|Награды         = {{Card|<<REWARDS>>}}
 }}
 '''<<NAME>>''' — <<TAN>> [[<<TYPEDISPLAY>>]]<<DETAILS>>.
 
