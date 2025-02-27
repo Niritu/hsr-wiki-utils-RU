@@ -83,7 +83,7 @@ export class Mission {
 		if (!this.name) {
 			return `{{cx}}<!--Hidden Mission ID ${this.id}-->`
 		}
-		return noChapter ? `{{Миссия|${this.pagetitle}}}` : `{{Миссия|${this.pagetitle}}}`
+		return noChapter ? `Миссия [[${this.pagetitle}]]` : `Миссия [[${this.pagetitle}]]`
 	}
 	
 	plainLink(): string {
