@@ -25,10 +25,10 @@ export const MainMissionSchedule = await getExcelFile<MainMissionScheduleData>('
 
 export type MissionType = 'Trailblaze' | 'Adventure' | 'Companion' | 'Continuance' | 'Daily'
 const missionTypeMap: Record<InternalMissionType, MissionType> = {
-	Main: 'Миссии Освоения',
-	Branch: 'Миссии приключения',
-	Companion: 'Миссии компаньона',
-	Daily: 'Ежедневные миссии',
+	Main: 'Миссия Освоения',
+	Branch: 'Миссия приключения',
+	Companion: 'Миссия компаньона',
+	Daily: 'Ежедневные миссия',
 	Gap: 'Продолжение Освоения'
 }
 
@@ -75,7 +75,7 @@ export class Mission {
 				return 'Продолжение Освоения'
 			
 			default:
-				return `${this.type} Миссия`
+				return `${this.type}`
 		}
 	}
 	
@@ -90,7 +90,7 @@ export class Mission {
 		if (!this.name) {
 			return `{{cx}}<!--Hidden Mission ID ${this.id}-->`
 		}
-		return `[[${this.displayType}]] ''${wikiTitleLink(this.name, 'Миссия')}''`
+		return `[[${this.displayType}]] ''${wikiTitleLink(this.name, '')}''`
 	}
 	
 	static fromId(missionId: string | number): Mission {
