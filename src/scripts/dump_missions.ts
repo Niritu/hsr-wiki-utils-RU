@@ -18,14 +18,14 @@ const PAGE_FORMAT =
 |Глава           = <<CHAPTERTITLE>>
 |Условия         = <<REQUIREMENTS>>
 |Персонажи       = <<CHARACTERS>>
-|СтартЛокация    = [[<<START_WORLD>>]] — [[<<START_AREA>>]]
+|СтартЛокация    = <<START_AREA>>
 |Мир             = <<START_WORLD>>
 |Локации         = <<START_AREA>>
 |Предыдущая      = <<PREV>>
 |Следующая       = <<NEXT>>
 |Награды         = {{Card|<<REWARDS>>}}
 }}
-'''<<NAME>>''' — <<TAN>> [[<<TYPEDISPLAY>>]]<<DETAILS>>.
+'''<<NAME>>''' —<<TAN>> [[<<TYPEDISPLAY>>]]<<DETAILS>>.
 
 ==Описание==
 {{Описание|<<SUMMARY>>}}
@@ -33,13 +33,6 @@ const PAGE_FORMAT =
 ==Этапы==
 <<STEPS>>
 
-<!--
-==Дополнительная информация==
-
---><!--
-==Пробный персонаж==
-
--->
 ==Прохождение==
 {{Дополнить}}
 <<DIALOGUE>>
@@ -80,7 +73,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		.replaceAll('<<NAME>>', mission.name)
 		.replaceAll('<<NAME_PARAM>>', mission.name != title ? mission.name : '')
 		.replaceAll('<<ID>>', mission.id.toString())
-		.replaceAll('<<TAN>>', ((mission.type == 'Миссия приключения' || mission.event) ? '' : '') + (mission.event ? ' Событие' : ''))
+		.replaceAll('<<TAN>>', ((mission.type == 'Миссия приключения' || mission.event) ? '' : '') + (mission.event ? 'Событие' : ''))
 		.replaceAll('<<TYPE>>', mission.type == 'Продолжение' ? 'Продолжение Освоения' : mission.type)
 		.replaceAll('<<TYPEDISPLAY>>', mission.displayType)
 		.replaceAll('<<CHAPTERTITLE>>', mission.getChapterName() || '')
@@ -138,7 +131,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		}
 		
 		if (step.description && step.description != lastDesc) {
-			dialogueEntry.push(`{{Описание миссии|локация=${(await step.getFloor() ?? await step.getArea())?.name || '<!--необходимо добавить-->'}${i > 0 ? '' : ''}|${step.description.replaceAll('\n', '<br />')}}}`)
+			dialogueEntry.push(`{{Описание миссии|${step.description.replaceAll('\n', '<br />')}}}`)
 		}
 		
 		if (step.name && step.name != lastName) {
