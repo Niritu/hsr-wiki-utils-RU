@@ -1,0 +1,461 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2030501
+|Название        = 
+|Изображение     = Миссия Освоения Сердца в облаках.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Чужак в чужой стране]]''
+|Персонажи       = Педро; Первопроходец; Роза; Секретарь Семьи; Хладожил
+|СтартЛокация    = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Мир             = Пенакония
+|Локации         = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*30; Путеводитель путешественника*3; Часокредиты*360; Кредиты*30 000
+}}
+'''Сердца в облаках''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с секретарём Семьи
+# Выберите кандидата на должность старшего помощника
+# Вернитесь с Розой в капитанскую рубку
+# Вернитесь с Хладожилом в капитанскую рубку
+# Вернитесь с Педро в капитанскую рубку
+# Поговорите с Розой
+# Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку
+# Осмотрите с Розой галерею
+# Поговорите с Хладожилом
+# Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку
+# Осмотрите с Хладожилом галерею
+# Поговорите с Педро
+# Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку
+# Осмотрите с Педро галерею
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите с секретарём Семьи===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Секретарь Семьи хочет с вами что-то обсудить. Похоже, это связано с передачей прав собственности на «Лучезарный шпат».}}
+{{Диалог Начало}}
+
+;(Поговорите с Секретарь Семьи)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1.5
+}</pre>
+<!--Unknown TalkSentence: 203050001-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 203050003-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":12}},"ID":{"FixedValue":{"Value":300003}}}},"State":"Open"}-->}})
+:<!--Unknown TalkSentence: 203050008-->
+:<!--Unknown TalkSentence: 203050009-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":12}},"ID":{"FixedValue":{"Value":300003}}}},"State":"Open"}-->}})
+::<!--1-second delay-->
+{{Диалог Конец}}
+
+===Выберите кандидата на должность старшего помощника===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Секретарь Семьи передаёт вам во владение «Лучезарный шпат». Пора назначить старшего помощника.}}
+{{Диалог Начало}}
+
+;(Поговорите с Секретарь Семьи)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050024-->
+:<!--Unknown TalkSentence: 203050025-->
+:<!--Unknown TalkSentence: 203050026-->
+:<!--Unknown TalkSentence: 203050027-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050033-->
+:<!--Unknown TalkSentence: 203050034-->
+:<!--Unknown TalkSentence: 203050035-->
+:<!--Unknown TalkSentence: 203050036-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050042-->
+:<!--Unknown TalkSentence: 203050043-->
+:<!--Unknown TalkSentence: 203050044-->
+:<!--Unknown TalkSentence: 203050045-->
+<!--Unknown TalkSentence: 203050024-->
+<!--Unknown TalkSentence: 203050025-->
+<!--Unknown TalkSentence: 203050026-->
+<!--Unknown TalkSentence: 203050027-->
+
+{{Диалог Конец}}
+
+===Вернитесь с Розой в капитанскую рубку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Роза хочет вернуться с вами в капитанскую рубку. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Роза)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203050501-->
+<!--Unknown TalkSentence: 203050502-->
+<!--Unknown TalkSentence: 203050503-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050505-->
+::{{tx}}
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050507-->
+::{{tx}}
+::{{tx}}
+<!--Unknown TalkSentence: 203050505-->
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Вернитесь с Хладожилом в капитанскую рубку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Хладожил хочет вернуться с вами в капитанскую рубку. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хладожил)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203051001-->
+<!--Unknown TalkSentence: 203051002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203051004-->
+:<!--Unknown TalkSentence: 203051005-->
+:<!--Unknown TalkSentence: 203051006-->
+:<!--Unknown TalkSentence: 203051007-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203051006-->
+:<!--Unknown TalkSentence: 203051007-->
+::{{tx}}
+<!--Unknown TalkSentence: 203051006-->
+<!--Unknown TalkSentence: 203051007-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Вернитесь с Педро в капитанскую рубку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Педро хочет вернуться с вами в капитанскую рубку. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Педро)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203051501-->
+<!--Unknown TalkSentence: 203051502-->
+<!--Unknown TalkSentence: 203051503-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203051505-->
+:<!--Unknown TalkSentence: 203051506-->
+:<!--Unknown TalkSentence: 203051507-->
+:<!--Unknown TalkSentence: 203051508-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203051507-->
+:<!--Unknown TalkSentence: 203051508-->
+::{{tx}}
+<!--Unknown TalkSentence: 203051507-->
+<!--Unknown TalkSentence: 203051508-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Розой===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы назначили новым старшим помощником галовианку Розу - теперь она будет следить за порядком на корабле. В первый день работы галовианки вы хотите узнать, что она думает о «Лучезарном шпате».}}
+{{Диалог Начало}}
+
+;(Поговорите с Роза)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203050101-->
+<!--Unknown TalkSentence: 203050102-->
+<!--Unknown TalkSentence: 203050103-->
+<!--Unknown TalkSentence: 203050104-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 203050106-->
+<!--Unknown TalkSentence: 203050109-->
+{{Диалог Конец}}
+
+===Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы с Розой осматриваете хвостовое оперение, после чего решаете перекрасить его и подобрать для корабля другое название. У вас в голове уже крутится несколько идей...}}
+{{Диалог Начало}}
+
+;(Поговорите с Роза)
+:{{tx}}
+<!--Unknown TalkSentence: 203050201-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050203-->
+:<!--Unknown TalkSentence: 203050204-->
+:<!--Unknown TalkSentence: 203050205-->
+:<!--Unknown TalkSentence: 203050206-->
+:<!--Unknown TalkSentence: 203050207-->
+:<!--Unknown TalkSentence: 203050208-->
+:<!--Unknown TalkSentence: 203050209-->
+:<!--Unknown TalkSentence: 203050210-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050205-->
+:<!--Unknown TalkSentence: 203050206-->
+:<!--Unknown TalkSentence: 203050207-->
+:<!--Unknown TalkSentence: 203050208-->
+:<!--Unknown TalkSentence: 203050209-->
+:<!--Unknown TalkSentence: 203050210-->
+<!--Unknown TalkSentence: 203050205-->
+<!--Unknown TalkSentence: 203050206-->
+<!--Unknown TalkSentence: 203050207-->
+<!--Unknown TalkSentence: 203050208-->
+<!--Unknown TalkSentence: 203050209-->
+<!--Unknown TalkSentence: 203050210-->
+
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G166"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите с Розой галерею===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Роза хочет осмотреть с вами галерею. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Роза)
+<!--Unknown TalkSentence: 203050401-->
+<!--Unknown TalkSentence: 203050402-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050404-->
+:<!--Unknown TalkSentence: 203050405-->
+:<!--Unknown TalkSentence: 203050406-->
+:<!--Unknown TalkSentence: 203050407-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050406-->
+:<!--Unknown TalkSentence: 203050407-->
+::{{tx}}
+<!--Unknown TalkSentence: 203050406-->
+<!--Unknown TalkSentence: 203050407-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Хладожилом===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы назначили новым старшим помощником эрудроида Хладожила - теперь он будет следить за порядком на корабле. В первый день работы эрудроида вы хотите узнать, что он думает о «Лучезарном шпате».}}
+{{Диалог Начало}}
+
+;(Поговорите с Хладожил)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203050601-->
+<!--Unknown TalkSentence: 203050602-->
+<!--Unknown TalkSentence: 203050603-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050605-->
+:<!--Unknown TalkSentence: 203050608-->
+:<!--Unknown TalkSentence: 203050609-->
+:<!--Unknown TalkSentence: 203050610-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050607-->
+:<!--Unknown TalkSentence: 203050608-->
+:<!--Unknown TalkSentence: 203050609-->
+:<!--Unknown TalkSentence: 203050610-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы с Хладожилом осматриваете хвостовое оперение, после чего решаете перекрасить его и подобрать для корабля другое название. У вас в голове уже крутится несколько идей...}}
+{{Диалог Начало}}
+
+;(Поговорите с Хладожил)
+:{{tx}}
+<!--Unknown TalkSentence: 203050701-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050703-->
+:<!--Unknown TalkSentence: 203050704-->
+:<!--Unknown TalkSentence: 203050705-->
+:<!--Unknown TalkSentence: 203050706-->
+:<!--Unknown TalkSentence: 203050707-->
+:<!--Unknown TalkSentence: 203050708-->
+:<!--Unknown TalkSentence: 203050709-->
+:<!--Unknown TalkSentence: 203050710-->
+:<!--Unknown TalkSentence: 203050711-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050705-->
+:<!--Unknown TalkSentence: 203050706-->
+:<!--Unknown TalkSentence: 203050707-->
+:<!--Unknown TalkSentence: 203050708-->
+:<!--Unknown TalkSentence: 203050709-->
+:<!--Unknown TalkSentence: 203050710-->
+:<!--Unknown TalkSentence: 203050711-->
+<!--Unknown TalkSentence: 203050705-->
+<!--Unknown TalkSentence: 203050706-->
+<!--Unknown TalkSentence: 203050707-->
+<!--Unknown TalkSentence: 203050708-->
+<!--Unknown TalkSentence: 203050709-->
+<!--Unknown TalkSentence: 203050710-->
+<!--Unknown TalkSentence: 203050711-->
+
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G171"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите с Хладожилом галерею===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Хладожил хочет осмотреть с вами галерею. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хладожил)
+<!--Unknown TalkSentence: 203050901-->
+<!--Unknown TalkSentence: 203050902-->
+<!--Unknown TalkSentence: 203050903-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050905-->
+:<!--Unknown TalkSentence: 203050906-->
+:<!--Unknown TalkSentence: 203050907-->
+:<!--Unknown TalkSentence: 203050908-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 203050907-->
+:<!--Unknown TalkSentence: 203050908-->
+::{{tx}}
+<!--Unknown TalkSentence: 203050907-->
+<!--Unknown TalkSentence: 203050908-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Педро===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы назначили новым старшим помощником пепеши Педро - теперь он будет следить за порядком на корабле. В первый день работы пепеши вы хотите узнать, что он думает о «Лучезарном шпате».}}
+{{Диалог Начало}}
+
+;(Поговорите с Педро)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 203051101-->
+<!--Unknown TalkSentence: 203051102-->
+<!--Unknown TalkSentence: 203051103-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 203051105-->
+<!--Unknown TalkSentence: 203051108-->
+{{Диалог Конец}}
+
+===Осмотрите хвостовое оперение, выберите цвет покрытия, новое название для корабля и завершите проверку===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы с Педро осматриваете хвостовое оперение, после чего решаете перекрасить его и подобрать для корабля другое название. У вас в голове уже крутится несколько идей...}}
+{{Диалог Начало}}
+
+;(Поговорите с Педро)
+<!--Unknown TalkSentence: 203051201-->
+<!--Unknown TalkSentence: 203051202-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G176"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите с Педро галерею===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Педро хочет осмотреть с вами галерею. Похоже, есть вопросы, требующие вашего внимания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Педро)
+<!--Unknown TalkSentence: 203051401-->
+<!--Unknown TalkSentence: 203051402-->
+<!--Unknown TalkSentence: 203051403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Cloud-Bound Hearts
+|zhs  = 云帆归心
+|zht  = 雲帆歸心
+|ja   = 帰りの帆を張る心
+|ko   = 구름에 엮은 마음
+|es   = Nostalgia del cielo
+|fr   = Retour à bon port
+|ru   = Сердца в облаках
+|th   = ผูกใจกับการล่องเมฆา
+|vi   = Cánh Buồm Trở Về Trái Tim
+|de   = Herzen durch die Wolken
+|id   = Awan Berlayar ke Hati
+|pt   = Nostalgia de Vento em Popa
+}}
+
+==История изменений==
+{{История изменений|2.7}}

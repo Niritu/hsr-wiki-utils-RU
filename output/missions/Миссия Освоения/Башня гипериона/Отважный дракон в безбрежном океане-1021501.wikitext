@@ -1,0 +1,743 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1021501
+|Название        = 
+|Изображение     = Миссия Освоения Отважный дракон в безбрежном океане.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Башня гипериона
+|Условия         = Завершена [[Миссия Освоения]] ''[[Горнил обречение и Древа свирепость]]''
+|Персонажи       = Вельт; Голос Верховного старейшины; Дань Хэн; Март 7; Первопроходец; Старческий голос; Цзин Юань
+|СтартЛокация    = Чешуйчатое ущелье
+|Мир             = Лофу Сяньчжоу
+|Локации         = Чешуйчатое ущелье
+|Предыдущая      = Горнил обречение и Древа свирепость
+|Следующая       = Конец погребения, начало пути
+|Награды         = Опыт Освоения*600; Звёздный нефрит*60; Shadow of Preservation*1; Путеводитель путешественника*14; "Pedujara: Even Immortality Ends"*1 { text = Pedujara: Even Immortality Ends }; "Pedujara: Demiseless Existence"*1 { text = Pedujara: Demiseless Existence }; Кредиты*150 000
+}}
+'''Отважный дракон в безбрежном океане''' — [[Миссия Освоения]] в главе [[Башня гипериона]].
+
+==Описание==
+{{Описание|На глазах у всех Дань Хэн продемонстрировал облик, который не желал показывать другим, - облик Верховного старейшины видьядхара. Используя эту силу, чтобы раздвинуть воды древнего моря, он открыл путь, ведущий к корням Древа.<br />Пока вы шли, Лорд Опустошитель Фантилия ушла далеко вглубь корней, замышляя заговор против долгоживущих видов Лофу.}}
+
+==Этапы==
+# Войдите в древние руины видьядхара
+# Снимите три печати видьядхара
+# Войдите в глубины корней Древа амброзии
+# Одолейте Мерзостей, захвативших это место
+# Осмотрите плитку откровения под ногой Мерзости
+# Снимите печать, следуя указаниям на плитке
+# Войдите в глубины корней Древа амброзии
+
+==Прохождение==
+{{Дополнить}}
+
+:{{tx}}
+
+;(Поговорите с Фу Сюань)
+<!--Unknown TalkSentence: 102142302-->
+
+:{{Диалог|undefined}} Эхомираж видьядхара
+<!--Unknown TalkSentence: 102150301-->
+<!--Unknown TalkSentence: 102150302-->
+<!--Unknown TalkSentence: 102150303-->
+<!--Unknown TalkSentence: 102150304-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 20
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 20
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+:{{Диалог|undefined}} Осмотреть
+<!--Unknown TalkSentence: 102151501-->
+<!--Unknown TalkSentence: 102151502-->
+<!--Unknown TalkSentence: 102151503-->
+<!--Unknown TalkSentence: 102151504-->
+<!--Unknown TalkSentence: 102151505-->
+
+:{{Диалог|Изучение}} Осмотреть
+;(If {{F|MissionCV-1021501-2}} is equal to 0)
+::----
+::----
+:<!--Unknown TalkSentence: 102152218-->
+:<!--Unknown TalkSentence: 102152219-->
+:<!--Unknown TalkSentence: 102152213-->
+:<!--Unknown TalkSentence: 102152214-->
+:<!--Unknown TalkSentence: 102152215-->
+:<!--Unknown TalkSentence: 102152216-->
+:<!--Unknown TalkSentence: 102152217-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150161,
+	"TargetMissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"Index": 2,
+			"ValidValueParamList": [
+				0,
+				1
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+;(If {{F|MissionCV-1021501-2}} is not equal to 0)
+::----
+:<!--Unknown TalkSentence: 102152218-->
+:<!--Unknown TalkSentence: 102152219-->
+::----
+{{Диалог Конец}}
+
+===Войдите в древние руины видьядхара===
+{{Описание миссии|локация=Чешуйчатое ущелье|На глазах у всех Дань Хэн продемонстрировал облик, который не желал показывать другим, - облик Верховного старейшины видьядхара. Используя эту силу, чтобы раздвинуть воды древнего моря, он открыл путь, ведущий к корням Древа.<br />Пока вы шли, Лорд Опустошитель Фантилия ушла далеко вглубь корней, замышляя заговор против долгоживущих видов Лофу.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 102150119-->
+<!--Unknown TalkSentence: 102150120-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102150118-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 31
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
+:<!--Unknown TalkSentence: 102151202-->
+:<!--Unknown TalkSentence: 102152204-->
+:<!--Unknown TalkSentence: 102152205-->
+:<!--Unknown TalkSentence: 102152206-->
+:<!--Unknown TalkSentence: 102152207-->
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150104,
+	"TargetMissionCustomValue": {
+		"ValidValueParamList": []
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"ValidValueParamList": []
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Поговорите с Герта)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 32
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
+:<!--Unknown TalkSentence: 102151202-->
+:<!--Unknown TalkSentence: 102152204-->
+:<!--Unknown TalkSentence: 102152205-->
+:<!--Unknown TalkSentence: 102152211-->
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150105,
+	"TargetMissionCustomValue": {
+		"ValidValueParamList": []
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"ValidValueParamList": []
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Поговорите с Герта)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 33
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
+:<!--Unknown TalkSentence: 102151202-->
+:<!--Unknown TalkSentence: 102152204-->
+:<!--Unknown TalkSentence: 102152205-->
+:<!--Unknown TalkSentence: 102152206-->
+:<!--Unknown TalkSentence: 102152207-->
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150106,
+	"TargetMissionCustomValue": {
+		"ValidValueParamList": []
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"ValidValueParamList": []
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Поговорите с Герта)
+{{Диалог Конец}}
+
+===Снимите три печати видьядхара===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Войдите в глубины корней Древа амброзии===
+{{Диалог Начало}}
+
+
+;(Unused &mdash; 215_Puzzle01Finished)
+:----
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+::<!--2.5-second delay-->
+::----
+:;(If {{F|MissionCV-1021501-1}} is greater than 0)
+:;(If {{F|MissionCV-1021501-1}} is not greater than 0)
+::<!--Unknown TalkSentence: 102151201-->
+::<!--Unknown TalkSentence: 102152201-->
+::<!--Unknown TalkSentence: 102152202-->
+::<!--Unknown TalkSentence: 102152203-->
+::<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150112,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"Index": 1,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Unused &mdash; SequencePillar01_Failed)
+<!--Unknown TalkSentence: 102152210-->
+
+;(Unused &mdash; 215_Puzzle02Finished)
+:----
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+::<!--2.5-second delay-->
+::----
+:;(If {{F|MissionCV-1021501-1}} is greater than 0)
+:;(If {{F|MissionCV-1021501-1}} is not greater than 0)
+::<!--Unknown TalkSentence: 102151201-->
+::<!--Unknown TalkSentence: 102152201-->
+::<!--Unknown TalkSentence: 102152202-->
+::<!--Unknown TalkSentence: 102152203-->
+::<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150113,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"Index": 1,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Unused &mdash; SequencePillar02_Failed)
+<!--Unknown TalkSentence: 102152212-->
+
+;(Unused &mdash; 215_Puzzle03Finished)
+:----
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+::<!--2.5-second delay-->
+::----
+:;(If {{F|MissionCV-1021501-1}} is greater than 0)
+:;(If {{F|MissionCV-1021501-1}} is not greater than 0)
+::<!--Unknown TalkSentence: 102151201-->
+::<!--Unknown TalkSentence: 102152201-->
+::<!--Unknown TalkSentence: 102152202-->
+::<!--Unknown TalkSentence: 102152203-->
+::<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102150114,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021501,
+		"MissionCustomValue": {
+			"Index": 1,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1,
+		"MissionCustomValue": {}
+	}
+}</pre>
+
+;(Unused &mdash; SequencePillar03_Failed)
+<!--Unknown TalkSentence: 102152208-->
+:<!--Unknown TalkSentence: 102152209-->
+{{Диалог Конец}}
+
+===Одолейте Мерзостей, захвативших это место===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 102152212-->
+;(Получено {{Item|Плитка откровения|20|x=1|text=Плитка откровения}})
+{{Диалог Конец}}
+
+===Осмотрите плитку откровения под ногой Мерзости===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Снимите печать, следуя указаниям на плитке===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 30
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300027
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"ItemID": 140271,
+	"CDDuration": 2,
+	"ShowBtnEffect": true,
+	"OverrideBtnHint": {
+		"Hash": 1470774469757654104
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Войдите в глубины корней Древа амброзии===
+{{Диалог Начало}}
+----
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+:<!--2.5-second delay-->
+----
+----
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target2"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropKey": []
+	},
+	"ParameterName": "Active",
+	"ParameterType": "Trigger"
+}</pre>
+:<!--2.5-second delay-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = A Dragon Gallant, Its Ocean Distant
+|zhs  = 有龙矫矫，其渊渺渺
+|zht  = 有龍矯矯，其淵渺渺
+|ja   = 矯矯と龍有り、その淵、渺渺と悠く
+|ko   = 고고한 용, 아득한 못
+|es   = Un dragón valiente y su océano distante
+|fr   = Un dragon vaillant loin de son océan
+|ru   = Отважный дракон в безбрежном океане
+|th   = มังกรที่อาจหาญ แลก้นบึ้งที่เลือนราง
+|vi   = Rồng Lượn Uốn Khúc, Biển Sâu Hun Hút
+|de   = Der Drache ist furchtlos, sein Ozean fern
+|id   = Naga yang Gagah, Lautnya Menjauh
+|pt   = Um Dragão Galante, Seu Oceano Distante
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,82 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4010125
+|Название        = 
+|Изображение     = Миссия Освоения Пещера коррозии.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Отставить разговоры в строю]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Коридор исчезающего эха
+|Мир             = Ярило-VI
+|Локации         = Коридор исчезающего эха
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = 
+}}
+'''Пещера коррозии''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 901012501-->
+<!--Unknown TalkSentence: 901012502-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1151200,
+	"ShowNotice": false
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Cavern of Corrosion
+|zhs  = 「侵蚀隧洞」
+|zht  = 「侵蝕隧洞」
+|ja   = 「侵蝕トンネル」
+|ko   = 「침식된 터널」
+|es   = Caverna de la corrosión
+|fr   = Caverne de la corrosion
+|ru   = Пещера коррозии
+|th   = "Cavern of Corrosion"
+|vi   = "Hang Động Xâm Thực"
+|de   = Höhle der Korrosion
+|id   = "Cavern of Corrosion"
+|pt   = Caverna da Corrosão
+}}
+
+==История изменений==
+{{История изменений|2.7}}

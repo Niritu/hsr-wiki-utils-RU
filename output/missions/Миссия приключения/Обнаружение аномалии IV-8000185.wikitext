@@ -1,0 +1,144 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000185
+|Название        = 
+|Изображение     = Миссия Освоения Обнаружение аномалии IV.png
+|Тип             = Миссия приключения
+|События         = Где же таинственная свинка-копилка?
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+* Завершена [[Миссия приключения]] ''[[Обнаружение аномалии III]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+|Персонажи       = Воодушевлённый ребёнок; Любезная старушка; Первопроходец; Регин; Росси; Старый Гёте
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = Обнаружение аномалии III
+|Следующая       = Обнаружение аномалии V
+|Награды         = 
+}}
+'''Обнаружение аномалии IV''' — Событие [[Миссия приключения]] из события [[Где же таинственная свинка-копилка?]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином
+# Исследуйте аномалию, связанную с «изображениями»
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином===
+{{Описание миссии|локация=Вестибюль отеля|Датчик Регина зафиксировал новую аномальную активность! Отправляйтесь в отель «Гёте», чтобы всё разузнать!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024149-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024166-->
+:<!--Unknown TalkSentence: 501024167-->
+:<!--Unknown TalkSentence: 501024168-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024170-->
+:<!--Unknown TalkSentence: 501024171-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024173-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте аномалию, связанную с «изображениями»===
+{{Описание миссии|локация=Камнеград|«Оборудование», связанное с «изображениями»... Можно ли положиться на интуицию Регина?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 146
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300008
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801879909-->
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801879909-->
+----
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1114100
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Anomaly Detection 4
+|zhs  = 异常勘测•其四
+|zht  = 異常勘測·其四
+|ja   = 異常観測・4
+|ko   = 이상 조사•4
+|es   = Detección de anomalías&nbsp;IV
+|fr   = Détection d'anomalie 4
+|ru   = Обнаружение аномалии IV
+|th   = ตรวจสอบความผิดปกติ 4
+|vi   = Thăm Dò Bất Thường 4
+|de   = Anomalieforschung (Teil 4)
+|id   = Keanehan Terdeteksi 4
+|pt   = Detecção de Anomalia 4
+}}
+
+==История изменений==
+{{История изменений|2.7}}

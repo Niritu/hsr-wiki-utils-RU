@@ -1,0 +1,417 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8023103
+|Название        = 
+|Изображение     = Миссия Освоения Бумажная дуэль.png
+|Тип             = Миссия приключения
+|События         = Бумажная дуэль
+|Глава           = Бумажная дуэль
+|Условия         = Завершена [[Миссия приключения]] ''[[Бумажная дуэль]]''
+|Персонажи       = Вермильоновая пташка; Золотой Господин; Март 7; Первопроходец; Серебряный Волк
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = 
+|Следующая       = Бумажная дуэль: Коллекционная версия
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Бумажная дуэль''' — Событие [[Миссия приключения]] из события [[Бумажная дуэль]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в указанное место и найдите игровой автомат в Тематическом парке Студии «Часы»
+# Разгадайте головоломку вермильоновой пташки
+# Получите одобрение вермильоновой пташки
+# Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Март 7 на новом игровом автомате
+# Проведите обзор битвы с Март 7
+# Откройте карту и узнайте о третьем игровом автомате
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в указанное место и найдите игровой автомат в Тематическом парке Студии «Часы»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823103301-->
+<!--Unknown TalkSentence: 823103302-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823103303-->
+{{Диалог Конец}}
+
+===Разгадайте головоломку вермильоновой пташки===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Получите одобрение вермильоновой пташки===
+{{Диалог Начало}}
+
+;(Поговорите с Золотой Господин)
+;(If [[Fate's Ensemble]] is active)
+:;(If {{cx}}<!--during performance 414034101-->)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::<!--Unknown TalkSentence: 414034101-->
+::<!--Unknown TalkSentence: 414034102-->
+::<!--Unknown TalkSentence: 414034103-->
+:::{{Диалог|Стрелка}} undefined
+::;(If {{cx}}<!--during performance 414030303-->)
+:::<!--Unknown TalkSentence: 414034108-->
+:::<!--Unknown TalkSentence: 414034109-->
+:::<!--Unknown TalkSentence: 414034111-->
+:::;(Return to previous option selection)
+::;(If {{cx}}<!--not during performance 414030303-->)
+:::<!--Unknown TalkSentence: 414034105-->
+:::<!--Unknown TalkSentence: 414034106-->
+:::<!--Unknown TalkSentence: 414034107-->
+:::<!--Unknown TalkSentence: 414034109-->
+:::<!--Unknown TalkSentence: 414034111-->
+:::;(Return to previous option selection)
+:;(If {{cx}}<!--not during performance 414034101-->)
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200112}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::<!--Unknown TalkSentence: 414034146-->
+:::<!--Unknown TalkSentence: 414034147-->
+:::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"FixedValue": {
+				"Value": 2200111
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 2200112
+			}
+		}
+	]
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200112}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+:::;(Return to previous option selection)
+;(If [[Fate's Ensemble]] is active)
+:<!--Unknown TalkSentence: 414034090-->
+:<!--Unknown TalkSentence: 414034091-->
+:<!--Unknown TalkSentence: 414034092-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntitiesExist","TargetType":{"Targets":[400017,400018]}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetBillboardInfo",
+	"TargetEntityType": "NPC",
+	"ID": 400017,
+	"GroupID": 130,
+	"BoardShowList": [
+		8
+	],
+	"ShowDistance": [
+		30
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetBillboardInfo",
+	"TargetEntityType": "NPC",
+	"ID": 400018,
+	"GroupID": 130,
+	"BoardShowList": [
+		8
+	],
+	"ShowDistance": [
+		30
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 823103001-->
+<!--Unknown TalkSentence: 823103002-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823103004-->
+<!--Unknown TalkSentence: 823103005-->
+<!--Unknown TalkSentence: 823103006-->
+<!--Unknown TalkSentence: 823103007-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310310
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310313
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkOption_823100022)
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 823103001-->
+<!--Unknown TalkSentence: 823103002-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823103004-->
+<!--Unknown TalkSentence: 823103005-->
+<!--Unknown TalkSentence: 823103006-->
+<!--Unknown TalkSentence: 823103007-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310311
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310313
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkOption_823100022)
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Март 7 на новом игровом автомате===
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 823103306-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823103306-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+;(Unused &mdash; G128_TurnMarch7th)
+<pre>{
+	"$type": "RPG.GameCore.AdvNpcFaceTo",
+	"GroupID": 128,
+	"GroupNpcID": 400001,
+	"AreaName": "LevelArea_P10341_F10341001_G128",
+	"AnchorName": "Anchor2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Проведите обзор битвы с Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MatchThreeMainEntrancePage"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MatchThree.Entrance.MatchThreeNewBirdDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "302"
+	}
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 823103201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; Activity230_PveResultClose)
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"MatchThreeMainEntrancePage"
+	],
+	"PageRootNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Откройте карту и узнайте о третьем игровом автомате===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 823103209-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Origami Bird Clash
+|zhs  = 「折纸小鸟对对碰」
+|zht  = 「摺紙小鳥對對碰」
+|ja   = 「折り紙の小鳥マッチ」
+|ko   = 「종이새 팡팡」
+|es   = Choque de pajaritos de papel
+|fr   = Rififruit chez les oiseaux en origami
+|ru   = Бумажная дуэль
+|th   = นกกระดาษตะลุมบอน
+|vi   = Chim Giấy Đại Chiến
+|de   = Origamivogel-Matching
+|id   = Adu Jotos Burung Origami
+|pt   = Choque de Pássaro de Origami
+}}
+
+==История изменений==
+{{История изменений|2.7}}

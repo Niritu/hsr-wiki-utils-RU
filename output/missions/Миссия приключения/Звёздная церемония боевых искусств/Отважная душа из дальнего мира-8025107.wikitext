@@ -1,0 +1,127 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025107
+|Название        = 
+|Изображение     = Миссия Освоения Отважная душа из дальнего мира.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Внутренний монстр Луки; Первопроходец
+|СтартЛокация    = Внутренний мир Луки
+|Мир             = Ярило-VI
+|Локации         = Внутренний мир Луки
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Утраченный кристалл*2; Кредиты*20 000
+}}
+'''Отважная душа из дальнего мира''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Помогите Луке выбраться из тени поражения и взять себя в руки
+
+==Прохождение==
+{{Дополнить}}
+
+===Помогите Луке выбраться из тени поражения и взять себя в руки===
+{{Описание миссии|локация=Внутренний мир Луки|- Стоит ли мне участвовать, если я знаю, что мне суждено потерпеть поражение?<br />- Тогда ответь на вопрос: ты отречёшься от жизни, если узнаешь, что она обречена?<br />- Но зачем мне видеть финал этой истории, если я знаю, что это трагедия?<br />- Потому что ты боец, дубина.}}
+{{Диалог Начало}}
+----
+:{{tx}}
+
+;(Unused &mdash; EnterDistrict_G5)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P40103_F40103001_G15"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40103_F40103001_G18"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+
+
+;(Unused &mdash; EnterDistrict_G8)
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40103_F40103001_G18"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G10)
+:{{tx}}
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+
+;(Unused &mdash; EnterDistrict_G13)
+<!--Unknown TalkSentence: 802512461-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Barren Land Birthed a Brave Soul
+|zhs  = 古来僻壤生豪勇
+|zht  = 古來僻壤生豪勇
+|ja   = 古来、辺境には豪勇の士が生まれ落ちる
+|ko   = 예로부터 용자는 벽촌에서 나니
+|es   = Almas guerreras de tierras áridas de otro mundo
+|fr   = La bravoure naît des terres arides
+|ru   = Отважная душа из дальнего мира
+|th   = แดนร้างถิ่นกำเนิดผู้กล้า
+|vi   = Xưa Nay Đất Hoang Sinh Dũng Khí
+|de   = Mutige Seele der kargen Außenwelt
+|id   = Pemberani dari Tempat Terpencil
+|pt   = Da Terra Estéril Nasceu uma Alma Corajosa
+}}
+
+==История изменений==
+{{История изменений|2.7}}

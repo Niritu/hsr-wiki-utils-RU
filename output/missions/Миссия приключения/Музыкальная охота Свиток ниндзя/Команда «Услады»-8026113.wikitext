@@ -1,0 +1,163 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026113
+|Название        = 
+|Изображение     = Миссия Освоения Команда «Услады».png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Габбана; Грош; Менеджер команды «Услады»; Первопроходец; Чипо
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Команда «Услады»''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Соберите вдохновение, прогулявшись по кампусу
+# Осмотрите музыкальный фонтан «Услады»
+# Примите вызов команды «Услады»
+
+==Прохождение==
+{{Дополнить}}
+
+===Соберите вдохновение, прогулявшись по кампусу===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по кампусу, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G198)
+<!--Unknown TalkSentence: 802618401-->
+:<!--Unknown TalkSentence: 802618402-->
+:<!--Unknown TalkSentence: 802618403-->
+:<!--Unknown TalkSentence: 802618404-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Осмотрите музыкальный фонтан «Услады»===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Внимательно осмотрите музыкальный фонтан «Услады».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G199)
+<!--Unknown TalkSentence: 802618501-->
+:<!--Unknown TalkSentence: 802618502-->
+:<!--Unknown TalkSentence: 802618503-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+
+;(Поговорите с Грош)
+<!--Unknown TalkSentence: 802618402-->
+<!--Unknown TalkSentence: 802618403-->
+
+;(Поговорите с Чипо)
+<!--Unknown TalkSentence: 802618416-->
+
+;(Поговорите с Габбана)
+<!--Unknown TalkSentence: 802618402-->
+<!--Unknown TalkSentence: 802618403-->
+
+;(Поговорите с Менеджер команды «Услады»)
+<!--Unknown TalkSentence: 802611424-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Примите вызов команды «Услады»===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита команды «Услады». Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802618701-->
+<!--Unknown TalkSentence: 802618702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802618704-->
+:<!--Unknown TalkSentence: 802618705-->
+:<!--Unknown TalkSentence: 802618706-->
+:<!--Unknown TalkSentence: 802618707-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802618706-->
+:<!--Unknown TalkSentence: 802618707-->
+::{{tx}}
+<!--Unknown TalkSentence: 802618706-->
+<!--Unknown TalkSentence: 802618707-->
+:{{tx}}
+
+;(Поговорите с Менеджер команды «Услады»)
+<!--Unknown TalkSentence: 802611424-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = SoulGlad Idol Group
+|zhs  = 苏乐达天团
+|zht  = 蘇樂達天團
+|ja   = レジェンダリー・スラーダバンド
+|ko   = 솔글래드 아이돌 그룹
+|es   = Grupo de Ídolos FelizAlma
+|fr   = Groupe Félicitâme
+|ru   = Команда «Услады»
+|th   = วงไอดอล SoulGlad
+|vi   = Thiên Đoàn SoulGlad
+|de   = SeelFroh-Idolgruppe
+|id   = Grup Idola SoulGlad
+|pt   = Grupo de P-pop da FelizAlma
+}}
+
+==История изменений==
+{{История изменений|2.7}}

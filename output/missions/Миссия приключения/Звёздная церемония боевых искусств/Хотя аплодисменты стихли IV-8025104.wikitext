@@ -1,0 +1,463 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025104
+|Название        = 
+|Изображение     = Миссия Освоения Хотя аплодисменты стихли IV.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = Завершена [[Миссия приключения]] ''[[Лучший юноша в мире]]''
+|Персонажи       = Гуйнайфэнь; Кармелла; Клыкопир; Лука; Первопроходец; Пресс-агент; Хук
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Лучший юноша в мире
+|Следующая       = Хотя аплодисменты стихли V
+|Награды         = Звёздный нефрит*20; Путеводитель путешественника*2; Кредиты*20 000
+}}
+'''Хотя аплодисменты стихли IV''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|Однажды Лука бросил вызов Сварогу и проиграл. Теперь он получил шанс вновь бросить ему вызов.<br />В этот раз Лука побеждает.}}
+
+==Этапы==
+# Осмотрите тактическую доску и подготовьтесь к матчу
+# Участвуйте в отборочном матче и наберите очки
+# Проверьте доступ к матчу в приёмном зале
+# Вернитесь в кают-компанию и подготовьтесь к следующему бою
+# Начните матч и сразитесь с независимым участником Железная Рука
+# Проведите пресс-конференцию
+# Вернитесь в кают-компанию и подготовьтесь к следующему бою
+
+==Прохождение==
+{{Дополнить}}
+
+===Осмотрите тактическую доску и подготовьтесь к матчу===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 46
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TickInterval": 0.3,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EnterDistrict_G46"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G46)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "OpenUI",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_442"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutBriefDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.FightFestMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap1)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap2)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap4)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802514630-->
+<!--Unknown TalkSentence: 802514631-->
+<!--Unknown TalkSentence: 802514632-->
+<!--Unknown TalkSentence: 802514633-->
+<!--Unknown TalkSentence: 802514634-->
+<!--Unknown TalkSentence: 802514635-->
+<!--Unknown TalkSentence: 802514636-->
+<!--Unknown TalkSentence: 802514637-->
+<!--Unknown TalkSentence: 802514638-->
+<!--Unknown TalkSentence: 802514639-->
+<!--Unknown TalkSentence: 802514640-->
+<!--Unknown TalkSentence: 802514641-->
+<!--Unknown TalkSentence: 802514642-->
+<!--Unknown TalkSentence: 802514643-->
+<!--Unknown TalkSentence: 802514644-->
+<!--Unknown TalkSentence: 802514645-->
+<!--Unknown TalkSentence: 802514646-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+
+<!--Unknown TalkSentence: 802512951-->
+{{Диалог Конец}}
+
+===Участвуйте в отборочном матче и наберите очки===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Проверьте доступ к матчу в приёмном зале===
+{{Описание миссии|локация=«Рассекатель небес»|После нескольких отборочных матчей Лука наконец побеждает, набрав необходимое количество очков.<br />Теперь настало время сразиться с настоящим врагом.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestScoreMatchResultDialog"
+}</pre>
+<!--Unknown TalkSentence: 802510231-->
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и подготовьтесь к следующему бою===
+{{Описание миссии|локация=«Рассекатель небес»|Вы уже наверняка догадались, кто такой этот независимый участник Железная Рука, так что нет смысла делать из этого тайну.<br /><br />Поговорим лучше о слухе за кулисами Звёздной церемонии боевых искусств.<br />Вы могли заметить, что Хук и Сварог редко появляются в истории. Всё это потому, что они заняты своими делами.<br />Помимо участия в соревнованиях, Сварог вместе с Хук ходит по магазинам Сяньчжоу. Он хочет привезти Кларе сувениры, но не знает, что купить. Проведя вычисления, он решил, что Хук, как девочка, должна знать, что подарить Кларе! Нужно прислушаться к ней!<br /><br />Спустя несколько дней в Поселении роботов...<br />Клара погружается в раздумья, рассматривая шесть ящиков содовой сои.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TriggerPerformance)
+<!--Unknown TalkSentence: 802513301-->
+:<!--Unknown TalkSentence: 802513302-->
+:<!--Unknown TalkSentence: 802513303-->
+:<!--Unknown TalkSentence: 802513304-->
+:<!--Unknown TalkSentence: 802513305-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513307-->
+::<!--Unknown TalkSentence: 802513308-->
+::<!--Unknown TalkSentence: 802513309-->
+::<!--Unknown TalkSentence: 802513310-->
+::<!--Unknown TalkSentence: 802513311-->
+::<!--Unknown TalkSentence: 802513312-->
+::<!--Unknown TalkSentence: 802513313-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513309-->
+::<!--Unknown TalkSentence: 802513310-->
+::<!--Unknown TalkSentence: 802513311-->
+::<!--Unknown TalkSentence: 802513312-->
+::<!--Unknown TalkSentence: 802513313-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513311-->
+::<!--Unknown TalkSentence: 802513312-->
+::<!--Unknown TalkSentence: 802513313-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 802513311-->
+:<!--Unknown TalkSentence: 802513312-->
+:<!--Unknown TalkSentence: 802513313-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Начните матч и сразитесь с независимым участником Железная Рука===
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802513313-->
+<!--Unknown TalkSentence: 802513314-->
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802513313-->
+<!--Unknown TalkSentence: 802513314-->
+
+;(Unused &mdash; FightFest_MainRace_802510406)
+----
+:<!--Unknown TalkSentence: 802513331-->
+:<!--Unknown TalkSentence: 802513332-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513334-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802513337-->
+:::{{tx}}
+
+;(Unused &mdash; G63_TriggerBattle)
+----
+:<!--Unknown TalkSentence: 802513331-->
+:<!--Unknown TalkSentence: 802513332-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513334-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802513337-->
+:::{{tx}}
+
+;(Unused &mdash; FightFestBattleStart)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_FightFestBattlePerformance",
+		"AreaName": "LevelArea_P20242_F20242001_G19",
+		"AnchorName": "Anchor7"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 2
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20242_F20242001_G19"
+				},
+				"AnchorName": {
+					"Value": "Anchor7"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowFightFestMainRaceUpgradeResultDialog",
+	"MainRaceID": 1004,
+	"IsSuccess": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestUpgradeSuccessDialog"
+}</pre>
+{{Диалог Конец}}
+
+===Проведите пресс-конференцию===
+{{Описание миссии|локация=«Рассекатель небес»|Пресс-конференции - особенность спортивных событий. Вам придётся её провести.<br />Вы готовы встретиться с хитрыми, лживыми и стремящимися к хаосу журналистами?<br />Пора начать сражение с ними.}}
+{{Диалог Начало}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802510408,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 115,
+	"Value": "1"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G83"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802514639-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Paper.FightFestNewsDetailPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TriggerPerformance_AfterShowUI"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; TriggerPerformance_AfterShowUI)
+----
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Happy01"
+}</pre>
+:<!--Unknown TalkSentence: 802514644-->
+:<!--Unknown TalkSentence: 802514672-->
+:<!--Unknown TalkSentence: 802514673-->
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802514674-->
+:<!--Unknown TalkSentence: 802514675-->
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и подготовьтесь к следующему бою===
+{{Описание миссии|локация=«Рассекатель небес»|Вы уже наверняка догадались, кто такой этот независимый участник Железная Рука, так что нет смысла делать из этого тайну.<br /><br />Поговорим лучше о слухе за кулисами Звёздной церемонии боевых искусств.<br />Вы могли заметить, что Хук и Сварог редко появляются в истории. Всё это потому, что они заняты своими делами.<br />Помимо участия в соревнованиях, Сварог вместе с Хук ходит по магазинам Сяньчжоу. Он хочет привезти Кларе сувениры, но не знает, что купить. Проведя вычисления, он решил, что Хук, как девочка, должна знать, что подарить Кларе! Нужно прислушаться к ней!<br /><br />Спустя несколько дней в Поселении роботов...<br />Клара погружается в раздумья, рассматривая шесть ящиков содовой сои.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802513301-->
+<!--Unknown TalkSentence: 802513302-->
+<!--Unknown TalkSentence: 802513303-->
+<!--Unknown TalkSentence: 802513304-->
+<!--Unknown TalkSentence: 802513305-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802513307-->
+:<!--Unknown TalkSentence: 802513308-->
+:<!--Unknown TalkSentence: 802513309-->
+:<!--Unknown TalkSentence: 802513310-->
+:<!--Unknown TalkSentence: 802513311-->
+:<!--Unknown TalkSentence: 802513312-->
+:<!--Unknown TalkSentence: 802513313-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802513309-->
+:<!--Unknown TalkSentence: 802513310-->
+:<!--Unknown TalkSentence: 802513311-->
+:<!--Unknown TalkSentence: 802513312-->
+:<!--Unknown TalkSentence: 802513313-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802513311-->
+:<!--Unknown TalkSentence: 802513312-->
+:<!--Unknown TalkSentence: 802513313-->
+::{{tx}}
+<!--Unknown TalkSentence: 802513311-->
+<!--Unknown TalkSentence: 802513312-->
+<!--Unknown TalkSentence: 802513313-->
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Even When Cheers Fade: Chapter 4
+|zhs  = 即使喝彩停息•第四章
+|zht  = 即使喝彩停息•第四章
+|ja   = 喝采が鳴り止んだとしても・第4章
+|ko   = 갈채가 멈추더라도•제4장
+|es   = Aunque los aplausos cesen: capítulo 4
+|fr   = Au-delà des applaudissements&nbsp;: Chapitre 4
+|ru   = Хотя аплодисменты стихли IV
+|th   = แม้เสียงเชียร์จะหยุดลง บทที่ 4
+|vi   = Dù Tiếng Vỗ Tay Dừng Lại - Chương 4
+|de   = Auch wenn der Applaus verstummt: Kapitel 4
+|id   = Meskipun Sorak-Sorai Berhenti: Bab 4
+|pt   = Quando os Aplausos Cessam: Capítulo 4
+}}
+
+==История изменений==
+{{История изменений|2.7}}

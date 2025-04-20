@@ -1,0 +1,151 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026117
+|Название        = 
+|Изображение     = Миссия Освоения Ракетница и музыка.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Первопроходец; Торговец-пепеши
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Ракетница и музыка''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Соберите вдохновение, прогулявшись по Золотому мигу
+# Сыграйте в аркадную игру торговца-пепеши
+
+==Прохождение==
+{{Дополнить}}
+
+===Соберите вдохновение, прогулявшись по Золотому мигу===
+{{Описание миссии|локация=Золотой миг|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по Золотому мигу, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G555)
+<!--Unknown TalkSentence: 802619701-->
+:<!--Unknown TalkSentence: 802619702-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619704-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "8"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+
+;(Поговорите с Торговец-пепеши)
+<!--Unknown TalkSentence: 802611436-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "8"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Сыграйте в аркадную игру торговца-пепеши===
+{{Описание миссии|локация=Золотой миг|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита братца Хану. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802619736-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619738-->
+:<!--Unknown TalkSentence: 802619739-->
+:<!--Unknown TalkSentence: 802619740-->
+:<!--Unknown TalkSentence: 802619741-->
+:<!--Unknown TalkSentence: 802619742-->
+:<!--Unknown TalkSentence: 802619743-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619740-->
+:<!--Unknown TalkSentence: 802619741-->
+:<!--Unknown TalkSentence: 802619742-->
+:<!--Unknown TalkSentence: 802619743-->
+:;(Return to previous option selection)
+
+;(Поговорите с Торговец-пепеши)
+<!--Unknown TalkSentence: 802611436-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "8"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "8"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Rocket Launcher and Music
+|zhs  = 火箭筒与音乐
+|zht  = 火箭筒與音樂
+|ja   = ロケランとミュージック
+|ko   = 로켓 발사기와 음악
+|es   = Música y lanzacohetes
+|fr   = Missilia Sound System
+|ru   = Ракетница и музыка
+|th   = ปืนบาซูก้าและดนตรี
+|vi   = Ống Phóng Hỏa Tiễn Và Âm Nhạc
+|de   = Musik und Raketenwerfer
+|id   = Bazoka dan Musik
+|pt   = Lançador de Foguetes e Música
+}}
+
+==История изменений==
+{{История изменений|2.7}}

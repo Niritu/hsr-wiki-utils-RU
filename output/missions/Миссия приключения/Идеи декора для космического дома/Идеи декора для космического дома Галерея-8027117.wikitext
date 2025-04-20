@@ -1,0 +1,113 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027117
+|Название        = 
+|Изображение     = Миссия Освоения Идеи декора для космического дома Галерея.png
+|Тип             = Миссия приключения
+|События         = Идеи декора для космического дома
+|Глава           = Идеи декора для космического дома
+|Условия         = Завершена [[Миссия приключения]] ''[[Идеи декора для космического дома: Спальня]]''
+|Персонажи       = Дань Хэн; Первопроходец
+|СтартЛокация    = Вагон для вечеринок
+|Мир             = Звёздный экспресс
+|Локации         = Вагон для вечеринок
+|Предыдущая      = Идеи декора для космического дома: Спальня
+|Следующая       = 
+|Награды         = 
+}}
+'''Идеи декора для космического дома: Галерея''' — Событие [[Миссия приключения]] из события [[Идеи декора для космического дома]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Закончите обустройство галереи
+
+==Прохождение==
+{{Дополнить}}
+
+===Закончите обустройство галереи===
+{{Описание миссии|локация=Вагон для вечеринок|Здесь будут храниться воспоминания о вашем путешествии, каждое из них свидетельствует о вашем мужестве и мудрости.}}
+{{Диалог Начало}}
+
+:{{Диалог|Журнал путешествий}} Проверить график дежурств
+----
+<!--Unknown TalkSentence: 827131033-->
+<pre>{
+	"$type": "RPG.GameCore.OpenTrainPartyEntrancePage"
+}</pre>
+
+;(Unused &mdash; OpenUI)
+<pre>{
+	"$type": "RPG.GameCore.OpenTrainPartyEntrancePage"
+}</pre>
+
+;(Unused &mdash; OpenUIAndFinishMission)
+<pre>{
+	"$type": "RPG.GameCore.OpenTrainPartyEntrancePage"
+}</pre>
+----
+:{{tx}}
+<!--Unknown TalkSentence: 827130901-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 827130903-->
+:{{tx}}
+<!--Unknown TalkSentence: 827130901-->
+<!--Unknown TalkSentence: 827130902-->
+<!--Unknown TalkSentence: 827130903-->
+<!--Unknown TalkSentence: 827130904-->
+<!--Unknown TalkSentence: 827130905-->
+<!--Unknown TalkSentence: 827130906-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10000_F10000003_G70"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 827131032-->
+
+:{{Диалог|Журнал путешествий}} Проверить график дежурств
+----
+<!--Unknown TalkSentence: 827131033-->
+<pre>{
+	"$type": "RPG.GameCore.OpenTrainPartyEntrancePage"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Cosmic Home Décor Guide: Gallery
+|zhs  = 宇宙家装指南：陈列室篇
+|zht  = 宇宙家裝指南：陳列室篇
+|ja   = コズミック・ハウジングガイド：ディスプレイエリア
+|ko   = 우주 인테리어 가이드: 전시실편
+|es   = Guía de decoración galáctica: sala de exhibición
+|fr   = Guide de décoration cosmique&nbsp;: Galerie
+|ru   = Идеи декора для космического дома: Галерея
+|th   = คู่มือแต่งบ้านแห่งจักรวาล: ห้องของสะสม
+|vi   = Hướng Dẫn Trang Trí Nhà Vũ Trụ: Phòng Trưng Bày
+|de   = Leitfaden für galaktisches Heimdekor: Ausstellungsraum
+|id   = Panduan Dekorasi Rumah Alam Semesta: Galeri
+|pt   = Guia de Decoração Cósmica: Galeria
+}}
+
+==История изменений==
+{{История изменений|2.7}}

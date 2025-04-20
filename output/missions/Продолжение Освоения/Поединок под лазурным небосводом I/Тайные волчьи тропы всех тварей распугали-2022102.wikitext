@@ -1,0 +1,1051 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022102
+|Название        = 
+|Изображение     = Миссия Освоения Тайные волчьи тропы всех тварей распугали.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом I
+|Условия         = 
+|Персонажи       = Март 7; Первопроходец; Ремесленник; Служащий Комиссии по полётам; Солдат Облачных Рыцарей; Юньли; Яньцин
+|СтартЛокация    = Порт Звездочёт Навалия
+|Мир             = Лофу Сяньчжоу
+|Локации         = Порт Звездочёт Навалия
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Тайные волчьи тропы всех тварей распугали''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом I]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Покиньте порт Звездочёт Навалия и вернитесь на тренировочную площадку
+# Проследите за подозрительными сотрудниками
+# Сделайте снимки передвижений подозрительных сотрудников
+# Проследите за подозрительными сотрудниками
+# Сделайте снимки передвижений подозрительных сотрудников
+# Проследите за подозрительными сотрудниками
+# Сделайте снимки передвижений подозрительных сотрудников
+# Найдите подходящий ящик и спрячьтесь в нём
+# Проследите за подозрительными сотрудниками
+
+==Прохождение==
+{{Дополнить}}
+
+===Покиньте порт Звездочёт Навалия и вернитесь на тренировочную площадку===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Время идёт, близится открытие Церемонии боевых искусств. В ожидании выхода на арену юные мастера получили шанс понаблюдать за парящими в небе боевыми кораблями и пообщаться с гостями из других миров. Однако не только они с нетерпением ждут начала церемонии. В порту Звездочёт Навалия притаились незваные гости, вынашивающие коварные планы...}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222120602-->
+<!--Unknown TalkSentence: 222120603-->
+<!--Unknown TalkSentence: 222120604-->
+<!--Unknown TalkSentence: 222120605-->
+<!--Unknown TalkSentence: 222120606-->
+<!--Unknown TalkSentence: 222120607-->
+<!--Unknown TalkSentence: 222120608-->
+<!--Unknown TalkSentence: 222120609-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222120611-->
+:<!--Unknown TalkSentence: 222120612-->
+:<!--Unknown TalkSentence: 222120613-->
+:<!--Unknown TalkSentence: 222120614-->
+:<!--Unknown TalkSentence: 222120615-->
+:<!--Unknown TalkSentence: 222120616-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222120613-->
+:<!--Unknown TalkSentence: 222120614-->
+:<!--Unknown TalkSentence: 222120615-->
+:<!--Unknown TalkSentence: 222120616-->
+::{{tx}}
+<!--Unknown TalkSentence: 222120613-->
+<!--Unknown TalkSentence: 222120614-->
+<!--Unknown TalkSentence: 222120615-->
+<!--Unknown TalkSentence: 222120616-->
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222120902-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+{{Диалог Конец}}
+
+===Проследите за подозрительными сотрудниками===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222122002-->
+;(Unused &mdash; DES_15_02)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+
+;(Unused &mdash; CR_15_02)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+{{Диалог Конец}}
+
+===Сделайте снимки передвижений подозрительных сотрудников===
+{{Диалог Начало}}
+
+;(Поговорите с Яньцин)
+<!--Unknown TalkSentence: 222122502-->
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoGraph",
+	"RangeTriggerProp": {
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 16
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"PhotoGraphMode": "PhotoUpdateTwoPointFour",
+	"AimTargetContainerConfig": [
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Head_M"
+				},
+				"ShowTipAngle": 210
+			},
+			"TipConfigs": [],
+			"ContainerFlagName": "202210208_npc",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"GameObjectNode": {
+					"Value": "Head_M"
+				}
+			},
+			"ContainerFlagName": "202210208_npc3",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Wrist_R"
+				}
+			},
+			"ContainerFlagName": "202210208_npc2",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnIdentifyFinish": [],
+	"OnIdentifyTarget": [],
+	"TriggerExitDelay": 0,
+	"OverrideConfig": {
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+			"FetchType": "SingleNpcByOwnerGroupAndID",
+			"SingleNpcID": {},
+			"NpcIDInOwnerGroup": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"InitFov": 1,
+		"ToastTemplate": "多条件拍摄",
+		"SuccessToastText": {
+			"Hash": 3718320075519758869
+		},
+		"FailToastText": {
+			"Hash": 9422333217741255409
+		},
+		"ShowFinishToastManually": true,
+		"OverrideMaxFov": 40,
+		"OverrideMinFov": 1
+	},
+	"ExtraSettings": {
+		"HideEntityConfig": {
+			"HideEntity": {
+				"$type": "RPG.GameCore.TargetConcat",
+				"Targets": [
+					{
+						"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+						"FetchType": "SingleNpcByNpcID",
+						"SingleNpcID": {
+							"GroupID": {
+								"FixedValue": {
+									"Value": 16
+								}
+							},
+							"GroupNpcID": {
+								"FixedValue": {
+									"Value": 400002
+								}
+							}
+						}
+					},
+					{
+						"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+						"FetchType": "SingleNpcByNpcID",
+						"SingleNpcID": {
+							"GroupID": {
+								"FixedValue": {
+									"Value": 16
+								}
+							},
+							"GroupNpcID": {
+								"FixedValue": {
+									"Value": 400003
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"FreeStyleConfig": [],
+		"PlayerControlSetting": {
+			"ResetPlayerPosition": true,
+			"AnchorConfig": {
+				"AreaName": {
+					"Value": "LevelArea_P41212_F41212001_G16"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				}
+			},
+			"OverrideCameraHeight": 2,
+			"LockPlayerMove": true
+		},
+		"ShowBubbleTalk": true,
+		"ShotHidePostProcessEffect": true
+	},
+	"BindName": {
+		"Value": "202210208_photo"
+	},
+	"NotStartPhotoInTriggerRangeMode": true,
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 14619612433831534495
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 14236694574831323767
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByPhotoGraphFovLevel",
+					"Level": "Two"
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 6996309930293245091
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "202210208_photo",
+					"ContainerFlagName": "202210208_npc3",
+					"Size": {}
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 15058284998993633081
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "202210208_photo",
+					"ContainerFlagName": "202210208_npc",
+					"Size": {}
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 17630093231924555115
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByAnd",
+					"PredicateList": [
+						{
+							"$type": "RPG.GameCore.ByPhotoGraphConditionSuccess",
+							"PhotoGraphName": "202210208_photo",
+							"CustomEvent": "G16_PhotoAvaliable"
+						},
+						{
+							"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+							"BindPhotographName": "202210208_photo",
+							"ContainerFlagName": "202210208_npc2",
+							"Size": {}
+						}
+					]
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": [
+					"202210208_npc3"
+				]
+			}
+		],
+		"TargetFovLevel": "Two",
+		"AutoSnapFovLevel": true
+	},
+	"HideTwoPointFourParam": false,
+	"ConditionPhotoParam": {
+		"AimContainerName": {
+			"Value": "202210208_npc3"
+		},
+		"RectRangeY": {
+			"FixedValue": {
+				"Value": 0.3
+			}
+		}
+	}
+}</pre>
+:<!--0.4-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+}</pre>
+<!--Unknown TalkSentence: 222121102-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P41212_F41212001_G16"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(Unused &mdash; G16_PlayBubbleTalk)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 16,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 222121190
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 16,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 222121191
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Start_LowSpeed)
+:<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerCustomPhotoGraphCondition",
+	"PhotoGraphName": "202210208_photo",
+	"CustomEvent": "G16_PhotoAvaliable",
+	"Enable": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Event_PhotoAvaliable",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; End_LowSpeed)
+:<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerCustomPhotoGraphCondition",
+	"PhotoGraphName": "202210208_photo",
+	"CustomEvent": "G16_PhotoAvaliable"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Event_PhotoAvaliable",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Проследите за подозрительными сотрудниками===
+{{Диалог Начало}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoGraph",
+	"RangeTriggerProp": {
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 16
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"PhotoGraphMode": "PhotoUpdateTwoPointFour",
+	"AimTargetContainerConfig": [
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Head_M"
+				},
+				"ShowTipAngle": 210
+			},
+			"TipConfigs": [],
+			"ContainerFlagName": "202210208_npc",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"GameObjectNode": {
+					"Value": "Head_M"
+				}
+			},
+			"ContainerFlagName": "202210208_npc3",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400001
+					]
+				},
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Wrist_R"
+				}
+			},
+			"ContainerFlagName": "202210208_npc2",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnIdentifyFinish": [],
+	"OnIdentifyTarget": [],
+	"TriggerExitDelay": 0,
+	"OverrideConfig": {
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+			"FetchType": "SingleNpcByOwnerGroupAndID",
+			"SingleNpcID": {},
+			"NpcIDInOwnerGroup": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"InitFov": 1,
+		"ToastTemplate": "多条件拍摄",
+		"SuccessToastText": {
+			"Hash": 3718320075519758869
+		},
+		"FailToastText": {
+			"Hash": 9422333217741255409
+		},
+		"ShowFinishToastManually": true,
+		"OverrideMaxFov": 40,
+		"OverrideMinFov": 1
+	},
+	"ExtraSettings": {
+		"HideEntityConfig": {
+			"HideEntity": {
+				"$type": "RPG.GameCore.TargetConcat",
+				"Targets": [
+					{
+						"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+						"FetchType": "SingleNpcByNpcID",
+						"SingleNpcID": {
+							"GroupID": {
+								"FixedValue": {
+									"Value": 16
+								}
+							},
+							"GroupNpcID": {
+								"FixedValue": {
+									"Value": 400002
+								}
+							}
+						}
+					},
+					{
+						"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+						"FetchType": "SingleNpcByNpcID",
+						"SingleNpcID": {
+							"GroupID": {
+								"FixedValue": {
+									"Value": 16
+								}
+							},
+							"GroupNpcID": {
+								"FixedValue": {
+									"Value": 400003
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"FreeStyleConfig": [],
+		"PlayerControlSetting": {
+			"ResetPlayerPosition": true,
+			"AnchorConfig": {
+				"AreaName": {
+					"Value": "LevelArea_P41212_F41212001_G16"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				}
+			},
+			"OverrideCameraHeight": 2,
+			"LockPlayerMove": true
+		},
+		"ShowBubbleTalk": true,
+		"ShotHidePostProcessEffect": true
+	},
+	"BindName": {
+		"Value": "202210208_photo"
+	},
+	"NotStartPhotoInTriggerRangeMode": true,
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 14619612433831534495
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 14236694574831323767
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByPhotoGraphFovLevel",
+					"Level": "Two"
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 6996309930293245091
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "202210208_photo",
+					"ContainerFlagName": "202210208_npc3",
+					"Size": {}
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 15058284998993633081
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "202210208_photo",
+					"ContainerFlagName": "202210208_npc",
+					"Size": {}
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": []
+			},
+			{
+				"PredicateName": {
+					"Hash": 17630093231924555115
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByAnd",
+					"PredicateList": [
+						{
+							"$type": "RPG.GameCore.ByPhotoGraphConditionSuccess",
+							"PhotoGraphName": "202210208_photo",
+							"CustomEvent": "G16_PhotoAvaliable"
+						},
+						{
+							"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+							"BindPhotographName": "202210208_photo",
+							"ContainerFlagName": "202210208_npc2",
+							"Size": {}
+						}
+					]
+				},
+				"OnPredicateSuccess": [],
+				"BindContainerFlagNames": [
+					"202210208_npc3"
+				]
+			}
+		],
+		"TargetFovLevel": "Two",
+		"AutoSnapFovLevel": true
+	},
+	"HideTwoPointFourParam": false,
+	"ConditionPhotoParam": {
+		"AimContainerName": {
+			"Value": "202210208_npc3"
+		},
+		"RectRangeY": {
+			"FixedValue": {
+				"Value": 0.3
+			}
+		}
+	}
+}</pre>
+:<!--0.4-second delay-->
+{{Диалог Конец}}
+
+===Сделайте снимки передвижений подозрительных сотрудников===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Волк-поглотитель луны*1; Дозорный Облачных Рыцарей*2; Волк-чернокоготь*1}}
+<!--Unknown TalkSentence: 222122902-->
+<!--Unknown TalkSentence: 222122903-->
+<!--Unknown TalkSentence: 222122904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222122906-->
+:<!--Unknown TalkSentence: 222122907-->
+:<!--Unknown TalkSentence: 222122908-->
+:<!--Unknown TalkSentence: 222122909-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222122908-->
+:<!--Unknown TalkSentence: 222122909-->
+::{{tx}}
+<!--Unknown TalkSentence: 222122908-->
+<!--Unknown TalkSentence: 222122909-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Проследите за подозрительными сотрудниками===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222122502-->
+;(Unused &mdash; Photo_Finish)
+
+
+;(Unused &mdash; Photo_Start)
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"MissionID": {
+		"FixedValue": {
+			"Value": 2022102
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 41
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "PhotoUpdateTwoPointFour",
+	"AimTargetContainerConfig": [
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+					"FetchType": "SingleNpcByNpcID",
+					"SingleNpcID": {
+						"GroupID": {
+							"FixedValue": {
+								"Value": 41
+							}
+						},
+						"GroupNpcID": {
+							"FixedValue": {
+								"Value": 400003
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root_M"
+				},
+				"IgnoreColliderTest": true
+			},
+			"ContainerFlagName": "Photo_G41_400003",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+					"FetchType": "SingleNpcByNpcID",
+					"SingleNpcID": {
+						"GroupID": {
+							"FixedValue": {
+								"Value": 41
+							}
+						},
+						"GroupNpcID": {
+							"FixedValue": {
+								"Value": 400004
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root_M"
+				},
+				"IgnoreColliderTest": true
+			},
+			"ContainerFlagName": "Photo_G41_400004",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+					"FetchType": "SingleNpcByNpcID",
+					"SingleNpcID": {
+						"GroupID": {
+							"FixedValue": {
+								"Value": 41
+							}
+						},
+						"GroupNpcID": {
+							"FixedValue": {
+								"Value": 400005
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root_M"
+				},
+				"IgnoreColliderTest": true
+			},
+			"ContainerFlagName": "Photo_G41_400005",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnIdentifyFinish": [],
+	"OnIdentifyTarget": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Photo_Finish"
+			}
+		}
+	],
+	"TriggerExitDelay": 0.5,
+	"OverrideConfig": {
+		"SuccessToastText": {
+			"Hash": 3718320075519758869
+		},
+		"FailToastText": {
+			"Hash": 9422333217741255409
+		},
+		"ShowFinishToastManually": true
+	},
+	"BindName": {
+		"Value": "photo_G41"
+	},
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 14366630255044597866
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 5848365796976457029
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByPhotoGraphFovLevel",
+					"Level": "Three"
+				}
+			},
+			{
+				"PredicateName": {
+					"Hash": 7876058296403651328
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "photo_G41",
+					"ContainerFlagName": "Photo_G41_400003",
+					"Size": {}
+				},
+				"BindContainerFlagNames": [
+					"Photo_G41_400003"
+				]
+			},
+			{
+				"PredicateName": {
+					"Hash": 13584879111411561256
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "photo_G41",
+					"ContainerFlagName": "Photo_G41_400004",
+					"Size": {}
+				},
+				"BindContainerFlagNames": [
+					"Photo_G41_400004"
+				]
+			},
+			{
+				"PredicateName": {
+					"Hash": 218458300646926010
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "photo_G41",
+					"ContainerFlagName": "Photo_G41_400005",
+					"Size": {}
+				},
+				"BindContainerFlagNames": [
+					"Photo_G41_400005"
+				]
+			}
+		],
+		"TargetFovLevel": "Three",
+		"AutoSnapFovLevel": true
+	},
+	"HideTwoPointFourParam": false
+}</pre>
+{{Диалог Конец}}
+
+===Сделайте снимки передвижений подозрительных сотрудников===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+{{Диалог Конец}}
+
+===Найдите подходящий ящик и спрячьтесь в нём===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Ящик
+<!--Unknown TalkSentence: 222121302-->
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 222121303-->
+<!--Unknown TalkSentence: 222121304-->
+<!--Unknown TalkSentence: 222121305-->
+<!--Unknown TalkSentence: 222121306-->
+<!--Unknown TalkSentence: 222121307-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P41212_F41212001_G13"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Проследите за подозрительными сотрудниками===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121002-->
+<!--Unknown TalkSentence: 222121003-->
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222121102-->
+;(Unused &mdash; Track_OnFail_Reset)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnableTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	},
+	"IsEnable": true,
+	"TriggerName": "MissionTrigger"
+}</pre>
+
+;(Unused &mdash; Track_OnFail_Found)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		0,
+		1,
+		2
+	]
+}</pre>
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = A Startlement of Fur and Feathers
+|zhs  = 潜迹狼烽，兽骇鸟惊
+|zht  = 潛跡狼烽，獸駭鳥驚
+|ja   = 狼の烽火
+|ko   = 숨겨진 낭봉, 놀라 달아난 새
+|es   = Almenaras ocultas y bestias sobresaltadas
+|fr   = Terreur de poil parmi les plumes
+|ru   = Тайные волчьи тропы всех тварей распугали
+|th   = ตามรอยหมาป่าสกัดแผนร้าย
+|vi   = Chim Thú Kinh Hoàng
+|de   = Schreck aus Fell und Federn
+|id   = Ancaman Bagi Fauna
+|pt   = Um Sobressalto de Pelo e Penas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

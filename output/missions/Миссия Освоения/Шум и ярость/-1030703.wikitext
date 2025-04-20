@@ -1,0 +1,76 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030703
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[Если в полночь пробудиться]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Отель «Грёзы» (Мир грёз)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (Мир грёз)
+|Предыдущая      = Если в полночь пробудиться
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(If Миссия [[Прогулка среди могил]] has not been completed)
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
+}</pre>
+<!--Unknown TalkSentence: 103061091-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
+}</pre>
+<!--Unknown TalkSentence: 103061093-->
+;(If {{F|FSV_Mission_1030402}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

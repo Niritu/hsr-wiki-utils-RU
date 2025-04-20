@@ -1,0 +1,257 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025135
+|Название        = 
+|Изображение     = Миссия Освоения Отборочный матч - Фантастические Растения И Где Они Обитают.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Кармелла; Лука; Первопроходец
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Хотя аплодисменты стихли I
+|Награды         = Wardance Sword Badge*5
+}}
+'''Отборочный матч - Фантастические Растения И Где Они Обитают''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выйдите на арену и получите очки!
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 802515481-->
+<!--Unknown TalkSentence: 802515482-->
+<!--Unknown TalkSentence: 802515483-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; BringUpPage_8025135)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2005,
+	"ScoreRaceSpecialInviteEventID": 419105,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513224
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Выйдите на арену и получите очки!===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802515511-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; G153_StartBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2005,
+	"ScoreRaceSpecialInviteEventID": 419105,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513224
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchResultDialog",
+	"Param": {
+		"Value": "2005"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Knockout Match: Fantastic Botany and Where to Find Them
+|zhs  = 叩关赛•神奇植物在哪里
+|zht  = 叩關賽•植物與它們的產地
+|ja   = 予選・ファンタスティック・プラント
+|ko   = 예선전•신비한 식물사전
+|es   = Combate de cualificación: Plantas Fantásticas y Dónde Encontrarlas
+|fr   = Match de qualification&nbsp;: Les Végétaux fantastiques
+|ru   = Отборочный матч - Фантастические Растения И Где Они Обитают
+|th   = รอบคัดเลือก: พืชมหัศจรรย์และถิ่นที่อยู่
+|vi   = Giải Đấu Loại: Thực Vật Huyền Bí Và Nơi Tìm Ra Chúng
+|de   = Qualifikationskampf: Fantastische Pflanzenwesen und wo sie zu finden sind
+|id   = Pertandingan Knockout: Tanaman Ajaib Ada di Mana
+|pt   = Partida Eliminatória: Vegetais Fantásticos e Onde Habitam
+}}
+
+==История изменений==
+{{История изменений|2.7}}

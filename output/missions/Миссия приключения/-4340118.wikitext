@@ -1,0 +1,118 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340118
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[И на восьмой день...]]''
+|Персонажи       = Зарянка; Первопроходец; Элегантная эрудроид?
+|СтартЛокация    = Большой театр Пенаконии
+|Мир             = Пенакония
+|Локации         = Большой театр Пенаконии
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Утраченный кристалл*2; "Hope Is the Thing With Feathers (Overture)"*1 { text = Hope Is the Thing With Feathers }; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Unused &mdash; TriggerPerformance_434011803)
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 434011801,
+	"MessageSectionID": 1308600
+}</pre>
+
+:{{Диалог|?}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190625
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 434026001-->
+<!--Unknown TalkSentence: 434026059-->
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 434026060-->
+<!--Unknown TalkSentence: 434026061-->
+<!--Unknown TalkSentence: 434026062-->
+<!--Unknown TalkSentence: 434026063-->
+<!--Unknown TalkSentence: 434026064-->
+<!--Unknown TalkSentence: 434026065-->
+<!--Unknown TalkSentence: 434026002-->
+<!--Unknown TalkSentence: 434026003-->
+
+;(Поговорите с Элегантная эрудроид?)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 434026001-->
+<!--Unknown TalkSentence: 434026002-->
+<!--Unknown TalkSentence: 434026003-->
+<!--Unknown TalkSentence: 434026004-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; TalkSentence_434026014)
+<!--Unknown TalkSentence: 434026014-->
+:<!--Unknown TalkSentence: 434026015-->
+:<!--Unknown TalkSentence: 434026016-->
+:<!--Unknown TalkSentence: 434026017-->
+:<!--Unknown TalkSentence: 434026018-->
+:<!--Unknown TalkSentence: 434026019-->
+
+;(Unused &mdash; TalkSentence_434026016)
+<!--Unknown TalkSentence: 434026016-->
+:<!--Unknown TalkSentence: 434026017-->
+:<!--Unknown TalkSentence: 434026018-->
+:<!--Unknown TalkSentence: 434026019-->
+
+;(Unused &mdash; TalkSentence_434026054_1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434011803,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

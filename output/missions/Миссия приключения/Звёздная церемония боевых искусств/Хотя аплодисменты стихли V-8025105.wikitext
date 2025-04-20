@@ -1,0 +1,393 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025105
+|Название        = 
+|Изображение     = Миссия Освоения Хотя аплодисменты стихли V.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = Завершена [[Миссия приключения]] ''[[Хотя аплодисменты стихли IV]]''
+|Персонажи       = Бутхилл; Кармелла; Лука; Первопроходец; Совастьян (Кукла с удалённым доступом)
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Хотя аплодисменты стихли IV
+|Следующая       = 
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*3; Очищенный эфир*3; Кредиты*30 000
+}}
+'''Хотя аплодисменты стихли V''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|Звёздная церемония боевых искусств подошла к концу для Луки. К сожалению, он не победил, но в итоге все добились желаемого.<br />Лука стал космической спортивной звездой и способствовал подписанию соглашения о взаимной торговле между Лофу Сяньчжоу и Белобогом.<br />Кармелла написала отличные статьи, освещающие событие, а потому может перейти в штат (если у Совастьяна есть хоть капля совести).<br />Яньцин сохранил свой титул, а потому остаётся самым молодым сильнейшим фехтовальщиком Лофу.<br />Цзин Юань в некотором смысле встречает старого друга и избавляется от прошлых сожалений.<br />Игорю наконец удаётся спасти свой дом, хотя аплодисменты уже давно стихли.}}
+
+==Этапы==
+# Вернитесь в кают-компанию
+# Отправляйтесь на «Рассекатель небес» и посмотрите финальное состязание Бутхилла
+# Бутхилл и Лука вместе выпивают в Переулке ауруматонов
+# Вернитесь в кают-компанию и подготовьтесь к вызову Мастеру арены
+# Поднимитесь на арену, чтобы сразиться в финальном матче
+# Вернитесь на «Рассекатель небес» и попрощайтесь с Кармеллой
+# Прогуляйтесь (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+===Вернитесь в кают-компанию===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G55)
+<!--Unknown TalkSentence: 802513701-->
+:<!--Unknown TalkSentence: 802513702-->
+:<!--Unknown TalkSentence: 802513703-->
+:<!--Unknown TalkSentence: 802513704-->
+:<!--Unknown TalkSentence: 802513705-->
+:<!--Unknown TalkSentence: 802513706-->
+:<!--Unknown TalkSentence: 802513707-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513709-->
+::<!--Unknown TalkSentence: 802513710-->
+::<!--Unknown TalkSentence: 802513711-->
+::<!--Unknown TalkSentence: 802513712-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513711-->
+::<!--Unknown TalkSentence: 802513712-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 802513711-->
+:<!--Unknown TalkSentence: 802513712-->
+::{{tx}}
+<!--Unknown TalkSentence: 802513701-->
+{{Диалог Конец}}
+
+===Отправляйтесь на «Рассекатель небес» и посмотрите финальное состязание Бутхилла===
+{{Описание миссии|локация=«Рассекатель небес»|Следующий вызов Мастеру - финальное состязание Бутхилла.<br />Лука хочет посмотреть на бой игрока, который выбил его из колеи. Отправляйтесь вместе с ним.<br />Кстати, вы всё ещё расстроены поступком Бутхилла?<br />Не волнуйтесь. После завершения боя Аргенти нашёл Бутхилла и устроил ему трёхчасовую лекцию, и лишь хвалёная смекалка спасла Бутхилла.<br />Ковбой уже тщательно обдумал свой поступок.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TriggerPerformance)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 802513731-->
+:<!--Unknown TalkSentence: 802513732-->
+:<!--Unknown TalkSentence: 802513733-->
+:<!--Unknown TalkSentence: 802513734-->
+:<!--Unknown TalkSentence: 802513735-->
+:<!--Unknown TalkSentence: 802513736-->
+:<!--Unknown TalkSentence: 802513737-->
+:<!--Unknown TalkSentence: 802513738-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513740-->
+::<!--Unknown TalkSentence: 802513741-->
+::<!--Unknown TalkSentence: 802513742-->
+::<!--Unknown TalkSentence: 802513743-->
+::<!--Unknown TalkSentence: 802513744-->
+::<!--Unknown TalkSentence: 802513745-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513742-->
+::<!--Unknown TalkSentence: 802513743-->
+::<!--Unknown TalkSentence: 802513744-->
+::<!--Unknown TalkSentence: 802513745-->
+:<!--Unknown TalkSentence: 802513742-->
+:<!--Unknown TalkSentence: 802513743-->
+:<!--Unknown TalkSentence: 802513744-->
+:<!--Unknown TalkSentence: 802513745-->
+<!--Unknown TalkSentence: 802513716-->
+{{Диалог Конец}}
+
+===Бутхилл и Лука вместе выпивают в Переулке ауруматонов===
+{{Диалог Начало}}
+----
+:{{tx}}
+<!--Unknown TalkSentence: 802513801-->
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и подготовьтесь к вызову Мастеру арены===
+{{Описание миссии|локация=«Рассекатель небес»|Холодные печали Снежной страны, храбрость одиночества на Сяньчжоу.<br />Отважная душа из дальнего мира, лучший юноша в мире.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TriggerPerformance)
+<!--Unknown TalkSentence: 802513801-->
+:<!--Unknown TalkSentence: 802513802-->
+:<!--Unknown TalkSentence: 802513803-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513805-->
+::<!--Unknown TalkSentence: 802513806-->
+::<!--Unknown TalkSentence: 802513807-->
+::<!--Unknown TalkSentence: 802513808-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513807-->
+::<!--Unknown TalkSentence: 802513808-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 802513807-->
+:<!--Unknown TalkSentence: 802513808-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Поднимитесь на арену, чтобы сразиться в финальном матче===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 46
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TickInterval": 0.3,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EnterDistrict_G46"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G46)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "OpenUI",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_442"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutBriefDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.FightFestMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap1)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap2)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap4)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802513812-->
+<!--Unknown TalkSentence: 802513813-->
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802513812-->
+<!--Unknown TalkSentence: 802513813-->
+
+;(Unused &mdash; FightFest_MainRace_802510508)
+----
+:<!--Unknown TalkSentence: 802513821-->
+:<!--Unknown TalkSentence: 802513822-->
+:<!--Unknown TalkSentence: 802513823-->
+:<!--Unknown TalkSentence: 802513824-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513826-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802513829-->
+:::{{tx}}
+
+;(Unused &mdash; G64_TriggerBattle)
+----
+:<!--Unknown TalkSentence: 802513821-->
+:<!--Unknown TalkSentence: 802513822-->
+:<!--Unknown TalkSentence: 802513823-->
+:<!--Unknown TalkSentence: 802513824-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802513826-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802513829-->
+:::{{tx}}
+
+;(Unused &mdash; FightFestBattleStart)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_FightFestBattlePerformance",
+		"AreaName": "LevelArea_P20242_F20242001_G19",
+		"AnchorName": "Anchor7"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+;([[#Gallery|Cutscene]] plays)
+:{{tx}}
+----
+:{{tx}}
+<!--Unknown TalkSentence: 802513881-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+===Вернитесь на «Рассекатель небес» и попрощайтесь с Кармеллой===
+{{Описание миссии|локация=«Рассекатель небес»|Лука вернулся на Белобог. Его первое приключение за пределами родины подходит к концу. Вы с Кармеллой также возвращаетесь к своим делам.<br />Попрощайтесь. Вскоре вы отправитесь в следующее приключение, {{MC|ж=Безымянная|м=Безымянный}}.}}
+{{Диалог Начало}}
+
+;(Поговорите с Кармелла)
+:{{tx}}
+<!--Unknown TalkSentence: 802513971-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802513973-->
+:<!--Unknown TalkSentence: 802513974-->
+:<!--Unknown TalkSentence: 802513975-->
+:<!--Unknown TalkSentence: 802513976-->
+:<!--Unknown TalkSentence: 802513977-->
+:<!--Unknown TalkSentence: 802513978-->
+:<!--Unknown TalkSentence: 802513979-->
+:<!--Unknown TalkSentence: 802513980-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802513975-->
+:<!--Unknown TalkSentence: 802513976-->
+:<!--Unknown TalkSentence: 802513977-->
+:<!--Unknown TalkSentence: 802513978-->
+:<!--Unknown TalkSentence: 802513979-->
+:<!--Unknown TalkSentence: 802513980-->
+<!--Unknown TalkSentence: 802513975-->
+<!--Unknown TalkSentence: 802513976-->
+<!--Unknown TalkSentence: 802513977-->
+<!--Unknown TalkSentence: 802513978-->
+<!--Unknown TalkSentence: 802513979-->
+<!--Unknown TalkSentence: 802513980-->
+
+{{Диалог Конец}}
+
+===Прогуляйтесь (необязательно)===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Even When Cheers Fade: Chapter 5
+|zhs  = 即使喝彩停息•第五章
+|zht  = 即使喝彩停息•第五章
+|ja   = 喝采が鳴り止んだとしても・第5章
+|ko   = 갈채가 멈추더라도•제5장
+|es   = Aunque los aplausos cesen: capítulo 5
+|fr   = Au-delà des applaudissements&nbsp;: Chapitre 5
+|ru   = Хотя аплодисменты стихли V
+|th   = แม้เสียงเชียร์จะหยุดลง บทที่ 5
+|vi   = Dù Tiếng Vỗ Tay Dừng Lại - Chương 5
+|de   = Auch wenn der Applaus verstummt: Kapitel 5
+|id   = Meskipun Sorak-Sorai Berhenti: Bab 5
+|pt   = Quando os Aplausos Cessam: Capítulo 5
+}}
+
+==История изменений==
+{{История изменений|2.7}}

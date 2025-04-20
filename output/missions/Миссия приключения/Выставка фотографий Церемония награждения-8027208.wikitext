@@ -1,0 +1,164 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027208
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Церемония награждения.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = Вельт; Господин Река; Дань Хэн; Март 7; Первопроходец; Химеко
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = 
+|Следующая       = Выставка фотографий: Фото на память
+|Награды         = Отпечатки судьбы*1; Звёздный нефрит*80; Очищенный эфир*2; Кредиты*30 000
+}}
+'''Выставка фотографий: Церемония награждения''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Примите участие в церемонии награждения Март 7
+# Поговорите с Март 7
+# Сделайте фотографию Март 7 на память
+
+==Прохождение==
+{{Дополнить}}
+
+===Примите участие в церемонии награждения Март 7===
+{{Описание миссии|локация=Академия оригами|Скоро начнётся церемония награждения выставки фотографий. Сумеет ли Март 7 получить награду? Скорее узнайте!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G380)
+:{{tx}}
+:<!--Unknown TalkSentence: 802723751-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723753-->
+::<!--Unknown TalkSentence: 802723754-->
+::<!--Unknown TalkSentence: 802723755-->
+::<!--Unknown TalkSentence: 802723756-->
+::<!--Unknown TalkSentence: 802723757-->
+::<!--Unknown TalkSentence: 802723758-->
+::<!--Unknown TalkSentence: 802723759-->
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723755-->
+::<!--Unknown TalkSentence: 802723756-->
+::<!--Unknown TalkSentence: 802723757-->
+::<!--Unknown TalkSentence: 802723758-->
+::<!--Unknown TalkSentence: 802723759-->
+::;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Поговорите с Март 7===
+{{Описание миссии|локация=Академия оригами|Церемония награждения подходит к концу, Март 7 наконец освободилась. Поговорите с ней.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G381)
+<!--Unknown TalkSentence: 802729001-->
+:<!--Unknown TalkSentence: 802729002-->
+:<!--Unknown TalkSentence: 802729003-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802729004-->
+::<!--Unknown TalkSentence: 802729005-->
+::<!--Unknown TalkSentence: 802729008-->
+::<!--Unknown TalkSentence: 802729009-->
+::<!--Unknown TalkSentence: 802729102-->
+:::{{tx}}
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802729008-->
+::<!--Unknown TalkSentence: 802729009-->
+::<!--Unknown TalkSentence: 802729102-->
+:::{{tx}}
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:<!--Unknown TalkSentence: 802729008-->
+:<!--Unknown TalkSentence: 802729009-->
+:<!--Unknown TalkSentence: 802729102-->
+::{{tx}}
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; G381_TriggerPerformance_1)
+----
+::{{tx}}
+:<!--Unknown TalkSentence: 802729153-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<!--Unknown TalkSentence: 802729153-->
+:<!--Unknown TalkSentence: 802729154-->
+:<!--Unknown TalkSentence: 802729155-->
+:<!--Unknown TalkSentence: 802729156-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; G381_TriggerPerformance_2)
+----
+:<!--Unknown TalkSentence: 802729251-->
+:<!--Unknown TalkSentence: 802729252-->
+:<!--Unknown TalkSentence: 802729253-->
+:<!--Unknown TalkSentence: 802729254-->
+:<!--Unknown TalkSentence: 802729255-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+:<!--Unknown TalkSentence: 802729251-->
+:<!--Unknown TalkSentence: 802729252-->
+:<!--Unknown TalkSentence: 802729253-->
+:<!--Unknown TalkSentence: 802729254-->
+:<!--Unknown TalkSentence: 802729255-->
+:<!--Unknown TalkSentence: 802729256-->
+:<!--Unknown TalkSentence: 802729257-->
+:<!--Unknown TalkSentence: 802729258-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Сделайте фотографию Март 7 на память===
+{{Описание миссии|локация=Академия оригами|Март 7 хочет разделить радость победы со своими друзьями. Сделайте общую фотографию на память.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "15"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Award Ceremony
+|zhs  = 摄影展览•颁奖典礼
+|zht  = 攝影展覽•頒獎典禮
+|ja   = フォトコンテスト・授賞式
+|ko   = 사진 콘테스트•시상식
+|es   = Exposición de fotografía: ceremonia de entrega de premios
+|fr   = Exposition photo&nbsp;: Cérémonie de remise des prix
+|ru   = Выставка фотографий: Церемония награждения
+|th   = นิทรรศการภาพถ่าย: พิธีประกาศรางวัล
+|vi   = Triển Lãm Nhiếp Ảnh-Lễ Trao Giải
+|de   = Fotoausstellung: Preisverleihung
+|id   = Pameran Fotografi: Upacara Penghargaan
+|pt   = Exibição de Fotografia: Cerimônia de Premiação
+}}
+
+==История изменений==
+{{История изменений|2.7}}

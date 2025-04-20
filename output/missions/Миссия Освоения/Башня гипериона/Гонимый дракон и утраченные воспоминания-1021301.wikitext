@@ -1,0 +1,334 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1021301
+|Название        = 
+|Изображение     = Миссия Освоения Гонимый дракон и утраченные воспоминания.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Башня гипериона
+|Условия         = 
+|Персонажи       = Дань Хэн; Первопроходец; Сушан; Эхо прошлого
+|СтартЛокация    = Комиссия по алхимии
+|Мир             = Лофу Сяньчжоу
+|Локации         = Комиссия по алхимии
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Гонимый дракон и утраченные воспоминания''' — [[Миссия Освоения]] в главе [[Башня гипериона]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# В одиночку покиньте Аптекарский рынок
+# Поговорите с людьми на рынке, чтобы понять, что происходит (необязательно)
+# В одиночку покиньте Аптекарский рынок
+# Выясните, где находятся Первопроходец и остальные
+# Отправляйтесь в Чешуйчатое ущелье на звёздном ялике
+
+==Прохождение==
+{{Дополнить}}
+
+
+===В одиночку покиньте Аптекарский рынок===
+{{Описание миссии|локация=Комиссия по алхимии|На другой стороне Лофу Сушан паркует ялик на Аптекарском рынке Комиссии по алхимии после того, как ей удалось связаться с Облачными Рыцарями. Все трое наконец приземляются после тернистого путешествия. Когда-то это было частью вашего знакомого дома. Воспоминания о прошлом всплывают в сознании, и бесчисленные ушедшие тени кружатся перед глазами. Однако ваши друзья в настоящее время пропали без вести. И вы не собираетесь оставаться здесь.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 102122001-->
+<!--Unknown TalkSentence: 102122002-->
+<!--Unknown TalkSentence: 102122003-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1201200
+}</pre>
+<!--Unknown TalkSentence: 102122570-->
+<!--Unknown TalkSentence: 102122571-->
+<!--Unknown TalkSentence: 102122572-->
+{{Диалог Конец}}
+
+===Поговорите с людьми на рынке, чтобы понять, что происходит (необязательно)===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission not Finish: 102130105-->)
+;(Unused &mdash; Talk_102130104)
+<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102130104,
+	"TargetMissionCustomValue": {
+		"isLocal": true,
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			2
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021301,
+		"MissionCustomValue": {
+			"isLocal": true,
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				2
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:;(If {{F|MissionCV-1021301-undefined}} is greater than or equal to 2)
+
+;(Unused &mdash; Talk_102130104_2)
+<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 102130104,
+	"TargetMissionCustomValue": {
+		"isLocal": true,
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			2
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1021301,
+		"MissionCustomValue": {
+			"isLocal": true,
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				2
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:;(If {{F|MissionCV-1021301-undefined}} is greater than or equal to 2)
+{{Диалог Конец}}
+
+===В одиночку покиньте Аптекарский рынок===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102122573-->
+{{Диалог Конец}}
+
+===Выясните, где находятся Первопроходец и остальные===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 27
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_chapter2_6_echo_memory_noscirpt"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter02/EnviroProfile/Chap02_CloseView_MAZ_X301_MainLine_01_Day_Varient1.enviroProfile.asset"
+	},
+	"Duration": 2.5
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_chapter2_6_echo_memory_noscirpt_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+<!--Unknown TalkSentence: 102122574-->
+<!--Unknown TalkSentence: 102122575-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40231_F40231001_G8",
+	"AnchorName": "Anchor2",
+	"IsEntryPointCamera": true,
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
+<!--Unknown TalkSentence: 102122576-->
+:<!--1.3-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 102122101-->
+<!--Unknown TalkSentence: 102122102-->
+<!--Unknown TalkSentence: 102122103-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40231_F40231001_G9",
+	"AnchorName": "Anchor2",
+	"IsEntryPointCamera": true,
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
+<!--Unknown TalkSentence: 102122104-->
+
+;(Поговорите с Эхомираж видьядхара)
+<!--Unknown TalkSentence: 102122521-->
+<!--Unknown TalkSentence: 102122522-->
+<!--Unknown TalkSentence: 102122523-->
+
+;(Поговорите с Эхомираж видьядхара)
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 102122542-->
+<!--Unknown TalkSentence: 102122543-->
+<!--Unknown TalkSentence: 102122544-->
+<!--Unknown TalkSentence: 102122546-->
+<!--Unknown TalkSentence: 102122545-->
+----
+
+;(Поговорите с Эхомираж видьядхара)
+<!--Unknown TalkSentence: 102122101-->
+<!--Unknown TalkSentence: 102122102-->
+<!--Unknown TalkSentence: 102122103-->
+<!--Unknown TalkSentence: 102122577-->
+<!--Unknown TalkSentence: 102122578-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Чешуйчатое ущелье на звёздном ялике===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102122541-->
+:{{tx}}
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Хватит прятаться.
+::Покажи свой
+::истинный облик!
+::Стоять!
+::Ты!..
+::Юноша, расскажу подробнее.
+::За твоей спиной стоит грешник, совершивший непростительную мерзость...
+::Он предал Сяньчжоу и поверг это место в хаос,
+::за что стал вечным изгнанником.
+::Верховный старейшина видьядхара,
+::Пожиратель Луны.
+::Ты что же, считаешь, что лишь Охотники за Стелларонами смогли проникнуть на Сяньчжоу?
+::В таком случае я заберу вас обоих и передам на суд генералу!
+;(Cutscene ends)
+----
+;(Enter battle)
+::Wave 1: {{Enemy List|Антибарион*3/-20% Сила атаки; Рейнджер пустоты: Исказитель*1/-20% Сила атаки}}
+::Wave 2: {{Enemy List|Рейнджер пустоты: Захватчик*2/-20% Сила атаки; Рейнджер пустоты: Исказитель*2/-20% Сила атаки}}
+::Wave 3: {{Enemy List|Рейнджер пустоты: Захватчик*2/-20% Сила атаки; Рейнджер пустоты: Подавитель*1/-20% Сила атаки; Барион*1/-20% Сила атаки}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102122501-->
+<!--Unknown TalkSentence: 102122502-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Dragon Mislay, Dreams Astray
+|zhs  = 螣蛇无穴，旧梦亡阙
+|zht  = 螣蛇無穴，舊夢亡闕
+|ja   = 騰蛇に穴無し、旧夢は潰える
+|ko   = 길 잃은 용, 흩어진 옛 꿈
+|es   = Dragón sin techo y sueños deshechos
+|fr   = Dragon égaré, rêves condamnés
+|ru   = Гонимый дракон и утраченные воспоминания
+|th   = มังกรไร้พำนัก ความฝันเก่าที่แตกสลาย
+|vi   = Long Tôn Lưu Lạc, Mộng Cũ Tiêu Tan
+|de   = Heimatloser Drache, zerbrochene Erinnerungen
+|id   = Naga Tak Bersarang, Kenangan Tak Berbingkai
+|pt   = Dragão Extraviado, Sonhos Desencontrados
+}}
+
+==История изменений==
+{{История изменений|2.7}}

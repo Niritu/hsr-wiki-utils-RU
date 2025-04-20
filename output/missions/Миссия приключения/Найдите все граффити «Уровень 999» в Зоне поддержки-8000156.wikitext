@@ -1,0 +1,139 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000156
+|Название        = 
+|Изображение     = Миссия Освоения Найдите все граффити «Уровень 999» в Зоне поддержки.png
+|Тип             = Миссия приключения
+|События         = Звёздная охота
+|Глава           = 
+|Условия         = Завершена [[Миссия компаньона]] ''[[Дух Панклорда]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Зона поддержки
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона поддержки
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Найдите все граффити «Уровень 999» в Зоне поддержки''' — Событие [[Миссия приключения]] из события [[Звёздная охота]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 110
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 110
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 110
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 845206858745524995
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Look for the "Level 999" graffiti in the supply zone
+|zhs  = 寻找支援舱段的「等级：999」涂鸦
+|zht  = 尋找支援艙段的「等級：999」塗鴉
+|ja   = サポート部分にある「Lv.999」のラクガキを見つける
+|ko   = 서포트 캐빈의 「레벨: 999」 그래피티 찾기
+|es   = Busca el grafiti del nivel 999 en la zona de suministros
+|fr   = Trouver le graffiti «&nbsp;Niveau 999&nbsp;» dans la Zone de ravitaillement
+|ru   = Найдите все граффити «Уровень 999» в Зоне поддержки
+|th   = ตามหากราฟฟิตี้ "Level 999" ใน Supply Zone
+|vi   = Tìm graffiti "Cấp: 999" trong Khoang Chi Viện
+|de   = Finde das Graffiti „Stufe 999“ in der Versorgungszone.
+|id   = Temukan grafiti "Level 999" di Supply Zone
+|pt   = Procure pelo grafite "Nível 999" na Zona de Abastecimento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,749 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030601
+|Название        = 
+|Изображение     = Миссия Освоения Если в полночь пробудиться.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[Сквозь тусклое стекло]]''
+|Персонажи       = Ахерон; Вельт; Март 7; Первопроходец; Светлячок; Химеко; Чёрный Лебедь
+|СтартЛокация    = Отель «Грёзы» (реальность)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (реальность)
+|Предыдущая      = Сквозь тусклое стекло
+|Следующая       = А убийца кто?..
+|Награды         = Опыт Освоения*700; Звёздный нефрит*90; Путеводитель путешественника*9; Утраченный кристалл*6; Часокредиты*350; "The Big Sleep"*1 { text = The Big Sleep }; Кредиты*100 000
+}}
+'''Если в полночь пробудиться''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|Светлячок пала под косой смерти и исчезла. Что же происходит в этом сладком сне?}}
+
+==Этапы==
+# Встретьтесь с экипажем
+# Поговорите с Ахерон
+# Поговорите с экипажем и обсудите идею Чёрного Лебедя
+# Поговорите с Чёрным Лебедем и дайте ей ответ
+# Погрузитесь в Чашу сновидений
+# Поговорите с Чёрным Лебедем
+# Попробуйте разбудить Март 7
+# Идите в вестибюль Мира грёз
+# Найдите путь в вестибюль
+# Войдите в подозрительный лифт
+# Покиньте помещение и продолжите путь к вестибюлю
+# Изучите таинственным образом возникшую Мозаику грёз
+# Найдите недостающие фрагменты
+# Воспользуйтесь особенностями Мира грёз, чтобы открыть ворота
+# Покиньте помещение и продолжите путь к вестибюлю
+# Идите в вестибюль
+# Осмотрите вестибюль
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Встретьтесь с экипажем===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|В решающий момент хранительница памяти по имени Чёрный Лебедь вытаскивает вас в реальный мир. Она знает, что вы спешите, но надеется, что сперва сможете успокоиться и сообщить спутникам, что с вами не случилось ничего страшного... Они всё это время ждали, когда вы выйдете из комы.<br />Но почему каждый гость Пенаконии выглядит так странно?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061035-->
+<!--Unknown TalkSentence: 103061036-->
+<!--Unknown TalkSentence: 103061037-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103060201-->
+<!--Unknown TalkSentence: 103060202-->
+<!--Unknown TalkSentence: 103060203-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060205-->
+:<!--Unknown TalkSentence: 103060206-->
+:<!--Unknown TalkSentence: 103060207-->
+:<!--Unknown TalkSentence: 103060208-->
+:<!--Unknown TalkSentence: 103060209-->
+:<!--Unknown TalkSentence: 103060210-->
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060208-->
+:<!--Unknown TalkSentence: 103060209-->
+:<!--Unknown TalkSentence: 103060210-->
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103060208-->
+<!--Unknown TalkSentence: 103060209-->
+<!--Unknown TalkSentence: 103060210-->
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Ахерон===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Светлячка забрала «смерть». Она была такой смелой и доброй девочкой... Стоит вместе с рейнджером почтить её память.}}
+{{Диалог Начало}}
+
+;(Поговорите с Ахерон)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<!--Unknown TalkSentence: 103061059-->
+<!--Unknown TalkSentence: 103061065-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20311_F20311001_G222"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 103061059-->
+<!--Unknown TalkSentence: 103061065-->
+{{Диалог Конец}}
+
+===Поговорите с экипажем и обсудите идею Чёрного Лебедя===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Встреча с экипажем проходит не так гармонично, как вы представляли. А хранительница памяти предлагает вам сделку: она спасёт вас в обмен на сотрудничество с экипажем экспресса.<br />Вас постоянно пугают хранителями памяти из Сада воспоминаний... Надо тщательно всё обдумать, прежде чем давать ей ответ.}}
+{{Диалог Начало}}
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 103060221-->
+<!--Unknown TalkSentence: 103060222-->
+<!--Unknown TalkSentence: 103060223-->
+<!--Unknown TalkSentence: 103060224-->
+<!--Unknown TalkSentence: 103060225-->
+<!--Unknown TalkSentence: 103060226-->
+<!--Unknown TalkSentence: 103060227-->
+<!--Unknown TalkSentence: 103060228-->
+<!--Unknown TalkSentence: 103060229-->
+<!--Unknown TalkSentence: 103060230-->
+<!--Unknown TalkSentence: 103060231-->
+<!--Unknown TalkSentence: 103060232-->
+<!--Unknown TalkSentence: 103060233-->
+<!--Unknown TalkSentence: 103060234-->
+:{{tx}}
+<!--Unknown TalkSentence: 103060251-->
+<!--Unknown TalkSentence: 103060252-->
+<!--Unknown TalkSentence: 103060253-->
+<!--Unknown TalkSentence: 103060254-->
+<!--Unknown TalkSentence: 103060255-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060257-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060260-->
+<!--Unknown TalkSentence: 103060261-->
+<!--Unknown TalkSentence: 103060262-->
+----
+{{Диалог Конец}}
+
+===Поговорите с Чёрным Лебедем и дайте ей ответ===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Рассмотрев ситуацию под разными углами, вы всё-таки решили согласиться на предложение хранительницы памяти.<br />Теперь нужно сообщить ей о вашем решении.}}
+{{Диалог Начало}}
+
+;(Поговорите с Чёрный Лебедь)
+<!--Unknown TalkSentence: 103060271-->
+<!--Unknown TalkSentence: 103060272-->
+<!--Unknown TalkSentence: 103060273-->
+<!--Unknown TalkSentence: 103060274-->
+<!--Unknown TalkSentence: 103060275-->
+<!--Unknown TalkSentence: 103060276-->
+{{Диалог Конец}}
+
+===Погрузитесь в Чашу сновидений===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Хотя временами казалось, что переговоры могут зайти в тупик, но в итоге все остались довольны результатами - и это главное. Раз с вами Чёрный Лебедь, вам не должно ничего угрожать в «настоящей зоне воспоминаний».<br />Введите код Серебряного Волка в Чашу сновидений и приготовьтесь увидеть истинную природу Мира грёз.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103061038-->
+<!--Unknown TalkSentence: 103061039-->
+
+;(Поговорите с Чёрный Лебедь)
+<!--Unknown TalkSentence: 103060311-->
+<!--Unknown TalkSentence: 103060312-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+:{{Диалог|Разговор}} Ввести код Серебряного Волка
+<!--Unknown TalkSentence: 103020930-->
+:{{Диалог|Стрелка}} undefined
+::----
+:{{Диалог|Выход}} undefined
+<!--Unknown TalkSentence: 103060331-->
+<!--Unknown TalkSentence: 103060332-->
+{{Диалог Конец}}
+
+===Поговорите с Чёрным Лебедем===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|С помощью Серебряного Волка вы смогли попасть в настоящий Мир грёз, но он почти ничем не отличается от того, что вы уже видели во снах. Может, вы даже успели от него устать... Но не волнуйтесь: Чёрный Лебедь всё вам покажет и устроит расслабляющий и приятный тур по зоне воспоминаний.<br />Ну да, как же! Но встретиться с ней в любом случае нужно.}}
+{{Диалог Начало}}
+
+;(Поговорите с Чёрный Лебедь)
+<!--Unknown TalkSentence: 103060341-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060343-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103060345-->
+<!--Unknown TalkSentence: 103060346-->
+<!--Unknown TalkSentence: 103060347-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103060341-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060343-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103060345-->
+<!--Unknown TalkSentence: 103060346-->
+<!--Unknown TalkSentence: 103060347-->
+----
+{{Диалог Конец}}
+
+===Попробуйте разбудить Март 7===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Чёрный Лебедь ведёт вас в зону воспоминаний. Пожалуй, стоит разбудить Март 7 и взять её с собой из соображений безопасности.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103061042-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061043-->
+<!--Unknown TalkSentence: 103061044-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 103060281-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_main_knock_01"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 103060283-->
+{{Диалог Конец}}
+
+===Идите в вестибюль Мира грёз===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Узнав, как ваших спутников разбросало по разным местам, Чёрный Лебедь продолжает вести вас дальше по зоне воспоминаний. Если все смогут себя защитить, тогда вы встретитесь в вестибюле отеля.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061045-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"GroupId": 113,
+	"PointID": 2,
+	"MotionFlag": "Walk"
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103060361-->
+<!--Unknown TalkSentence: 103060362-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060364-->
+:<!--Unknown TalkSentence: 103060365-->
+:<!--Unknown TalkSentence: 103060366-->
+:<!--Unknown TalkSentence: 103060367-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103060366-->
+:<!--Unknown TalkSentence: 103060367-->
+::{{tx}}
+<!--Unknown TalkSentence: 103060366-->
+<!--Unknown TalkSentence: 103060367-->
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "random_103060107_1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "random_103060107_2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "random_103060107_3"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; random_103060107_1)
+:{{tx}}
+:<!--Unknown TalkSentence: 103060381-->
+:<!--Unknown TalkSentence: 103060382-->
+:<!--Unknown TalkSentence: 103060383-->
+:<!--Unknown TalkSentence: 103060384-->
+:<!--Unknown TalkSentence: 103060385-->
+:<!--Unknown TalkSentence: 103060386-->
+:<!--Unknown TalkSentence: 103060387-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060390-->
+::<!--Unknown TalkSentence: 103060391-->
+::<!--Unknown TalkSentence: 103060392-->
+::<!--Unknown TalkSentence: 103060393-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060393-->
+:<!--Unknown TalkSentence: 103060394-->
+:<!--Unknown TalkSentence: 103060395-->
+:<!--Unknown TalkSentence: 103060396-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; random_103060107_2)
+:{{tx}}
+:<!--Unknown TalkSentence: 103060381-->
+:<!--Unknown TalkSentence: 103060382-->
+:<!--Unknown TalkSentence: 103060383-->
+:<!--Unknown TalkSentence: 103060384-->
+:<!--Unknown TalkSentence: 103060385-->
+:<!--Unknown TalkSentence: 103060386-->
+:<!--Unknown TalkSentence: 103060387-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060390-->
+::<!--Unknown TalkSentence: 103060391-->
+::<!--Unknown TalkSentence: 103060392-->
+::<!--Unknown TalkSentence: 103060393-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060393-->
+:<!--Unknown TalkSentence: 103060394-->
+:<!--Unknown TalkSentence: 103060395-->
+:<!--Unknown TalkSentence: 103060396-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; random_103060107_3)
+:{{tx}}
+:<!--Unknown TalkSentence: 103060381-->
+:<!--Unknown TalkSentence: 103060382-->
+:<!--Unknown TalkSentence: 103060383-->
+:<!--Unknown TalkSentence: 103060384-->
+:<!--Unknown TalkSentence: 103060385-->
+:<!--Unknown TalkSentence: 103060386-->
+:<!--Unknown TalkSentence: 103060387-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060390-->
+::<!--Unknown TalkSentence: 103060391-->
+::<!--Unknown TalkSentence: 103060392-->
+::<!--Unknown TalkSentence: 103060393-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103060393-->
+:<!--Unknown TalkSentence: 103060394-->
+:<!--Unknown TalkSentence: 103060395-->
+:<!--Unknown TalkSentence: 103060396-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Найдите путь в вестибюль===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Узнав, как ваших спутников разбросало по разным местам, Чёрный Лебедь продолжает вести вас дальше по зоне воспоминаний. По пути вы внезапно сталкиваетесь с Галактическим рейнджером, которая ищет здесь секреты (хотя вы подозреваете, что она просто снова потерялась).<br />С помощью рейнджера вы все уж точно доберётесь до вестибюля отеля. Но вот Чёрный Лебедь, кажется, немного остерегается её... С чего бы?}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 103060431-->
+<!--Unknown TalkSentence: 103060432-->
+<!--Unknown TalkSentence: 103060433-->
+<!--Unknown TalkSentence: 103061046-->
+<!--Unknown TalkSentence: 103061047-->
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061050-->
+<!--Unknown TalkSentence: 103061051-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061052-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061053-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+<!--Unknown TalkSentence: 103061048-->
+<!--Unknown TalkSentence: 103061049-->
+{{Диалог Конец}}
+
+===Войдите в подозрительный лифт===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Вы всего в шаге от места встречи, но дальше дорогу преграждает подозрительный лифт.<br />Чёрный Лебедь говорит, что дальнейший путь «кажется, серьёзно исказили». Что здесь произошло? Похоже, придётся зайти в лифт - ничего другого вам не остаётся, если хотите знать ответ.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061055-->
+<!--Unknown TalkSentence: 103061056-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+{{Диалог Конец}}
+
+===Покиньте помещение и продолжите путь к вестибюлю===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Кажется, предчувствие не подвело Чёрного Лебедя. Вы оказались в искажённом пространстве, но к счастью, здесь есть дверь. Если всё пройдёт ожидаемо, то за ней должен быть выход (хотя в этом приключении практически ничего не шло, как ожидалось).<br />Может, открыть дверь и сразу уйти отсюда, а не нарезать круги по коридору?}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 103060451-->
+<!--Unknown TalkSentence: 103060452-->
+<!--Unknown TalkSentence: 103060453-->
+<!--Unknown TalkSentence: 103060454-->
+<!--Unknown TalkSentence: 103060455-->
+<!--Unknown TalkSentence: 103060456-->
+<!--Unknown TalkSentence: 103060457-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103061057-->
+{{Диалог Конец}}
+
+===Изучите таинственным образом возникшую Мозаику грёз===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Того грёзотворца можно встретить по всей Пенаконии, но именно в этот момент он вновь появился перед вами с совершенно ненужной головоломкой.<br />Решите её и выйдите из искажённой зоны воспоминаний.}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 103060471-->
+<!--Unknown TalkSentence: 103060472-->
+<!--Unknown TalkSentence: 103060473-->
+<!--Unknown TalkSentence: 103060474-->
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите недостающие фрагменты===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 103060118-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300008
+	]
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 103060118-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300008
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	},
+	"IsFaceToCamera": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SDFTextID": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "EQ==",
+			"FixedValues": [],
+			"DynamicHashes": []
+		}
+	}
+}</pre>
+;(Unused &mdash; Talk_1030601181)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	},
+	"IsFaceToCamera": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SDFTextID": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "EQ==",
+			"FixedValues": [],
+			"DynamicHashes": []
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Talk_1030601191)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300009
+		]
+	},
+	"IsFaceToCamera": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SDFTextID": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "EQ==",
+			"FixedValues": [],
+			"DynamicHashes": []
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Talk_1030601201)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300010
+		]
+	},
+	"IsFaceToCamera": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SDFTextID": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "EQ==",
+			"FixedValues": [],
+			"DynamicHashes": []
+		}
+	}
+}</pre>
+
+;(Unused &mdash; PT_1030601_203_PPF_ON)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"PriorityGroup": "PerformanceGroup",
+	"Rate": 0.3,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+
+;(Unused &mdash; PT_1030601_203_PPF_OFF)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"PriorityGroup": "PerformanceGroup",
+	"Rate": 0.3,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Воспользуйтесь особенностями Мира грёз, чтобы открыть ворота===
+{{Диалог Начало}}
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"PriorityGroup": "PerformanceGroup",
+	"Rate": 0.3,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Покиньте помещение и продолжите путь к вестибюлю===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Вам удалось найти выход, и теперь надо идти в вестибюль отеля.<br />Будем надеяться, что Химеко и Март 7 уже там, и с ними всё хорошо.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103061058-->
+
+:{{Диалог|Изучение}} Отправиться
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_main_elevator"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 103060481-->
+<!--Unknown TalkSentence: 103060482-->
+<!--Unknown TalkSentence: 103060483-->
+<!--Unknown TalkSentence: 103060484-->
+<!--Unknown TalkSentence: 103060485-->
+<!--Unknown TalkSentence: 103060486-->
+<!--Unknown TalkSentence: 103060487-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20311_F20311001_G332"
+		},
+		"AnchorName": {
+			"Value": "Anchor9"
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_main_elevator_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+{{Диалог Конец}}
+
+===Идите в вестибюль===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Вестибюль прямо перед вами... Что же там ждёт?}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103060491-->
+<!--Unknown TalkSentence: 103060492-->
+<!--Unknown TalkSentence: 103060491-->
+<!--Unknown TalkSentence: 103060492-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":51}},"ID":{"FixedValue":{"Value":300002}}}},"State":"CheckPointDisable"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20311_F20311001_G332"
+		},
+		"AnchorName": {
+			"Value": "Anchor9"
+		}
+	}
+}</pre>
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Осмотрите вестибюль===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|В центре вестибюля вы видите размытую, но знакомую фигуру. Кто она? Зачем она здесь?<br />И к добру ли всё это?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::П-прошу прощения...
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 103060061-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Should One Awaken at Midnight
+|zhs  = 倘若在午夜醒来
+|zht  = 倘若在午夜醒來
+|ja   = 真夜中に目が覚めたら
+|ko   = 자정에 잠에서 깨면
+|es   = Si despiertas a media noche
+|fr   = Les démons de minuit
+|ru   = Если в полночь пробудиться
+|th   = หากฟื้นตื่นกลางราตรี
+|vi   = Nếu Thức Dậy Lúc Nửa Đêm
+|de   = Erwacht um Mitternacht
+|id   = Jika Terbangun di Tengah Malam
+|pt   = Caso se Acorde à Meia-Noite
+}}
+
+==История изменений==
+{{История изменений|2.7}}

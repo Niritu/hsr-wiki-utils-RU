@@ -1,0 +1,160 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4015102
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершите миссию {{cx}}<!--Hidden Mission ID 4015103--> и дождитесь ежедневного [[Обновление сервера|обновления сервера]]
+|Персонажи       = Первопроходец; Спешащий мужчина; Тот самый учитель
+|СтартЛокация    = Облачная переправа
+|Мир             = Лофу Сяньчжоу
+|Локации         = Облачная переправа
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 172
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 401510145-->
+<!--Unknown TalkSentence: 401510146-->
+<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 172
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 401510145-->
+<!--Unknown TalkSentence: 401510146-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 412270191-->
+
+;(Получено {{Item|Одежда того самого учителя|20|x=1|text=Одежда того самого учителя}})
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 412270291-->
+:<!--5-second delay-->
+
+;(Потеряно {{Item|Одежда того самого учителя|20|x=1|text=Одежда того самого учителя}})
+;(Unused &mdash; TalkSentence_412270302)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 401510211,
+	"MissionCustomValue": {
+		"ValidValueParamList": []
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Unused &mdash; ButtonClick_300009_401510211)
+<!--Unknown TalkSentence: 412270301-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140189
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140189,
+			"TriggerCustomString": "TalkSentence_412270302"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:;(If {{F|MissionCV-4015102-undefined}} is equal to 1)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 412270302-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,90 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040014
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+|Персонажи       = Мэйр; Первопроходец
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Конденсированный эфир*1; Hertareum*20
+}}
+'''''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_404001402_Prop_58_300002_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 58
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+;(Получено {{Item|Записка между страницами книги|20|x=1|text=Записка между страницами книги}})
+<!--Unknown TalkSentence: 404001413-->
+<!--Unknown TalkSentence: 404001414-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

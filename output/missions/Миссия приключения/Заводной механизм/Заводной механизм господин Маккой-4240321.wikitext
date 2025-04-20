@@ -1,0 +1,241 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240321
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм господин Маккой.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Прогулка среди могил]]''
+|Персонажи       = «Младший брат»; «Старшая сестра»; Господин Маккой; Первопроходец
+|СтартЛокация    = Резиденция утренней росы
+|Мир             = Пенакония
+|Локации         = Резиденция утренней росы
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Путеводитель путешественника*3; Часокредиты*180; Golden Limited - Aideen Token*1; Кредиты*20 000
+}}
+'''Заводной механизм: господин Маккой''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите «брата» господина Маккоя
+# Найдите «сестру» господина Маккоя
+# Поговорите с господином Маккоем ещё раз
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Найдите «брата» господина Маккоя===
+{{Описание миссии|локация=Резиденция утренней росы|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Поговорите с «Младший брат»)
+<!--Unknown TalkSentence: 413210502-->
+<!--Unknown TalkSentence: 413210503-->
+<!--Unknown TalkSentence: 413210504-->
+<!--Unknown TalkSentence: 413210505-->
+<!--Unknown TalkSentence: 413210506-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 413210602-->
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 413210604-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_13145_3.png",
+	"TriggerSound": false
+}</pre>
+<!--Unknown TalkSentence: 413210605-->
+<!--Unknown TalkSentence: 413210606-->
+<!--Unknown TalkSentence: 413210607-->
+{{Диалог Конец}}
+
+===Найдите «сестру» господина Маккоя===
+{{Диалог Начало}}
+
+
+;(Поговорите с «Старшая сестра»)
+<!--Unknown TalkSentence: 413210702-->
+<!--Unknown TalkSentence: 413210703-->
+<!--Unknown TalkSentence: 413210704-->
+<!--Unknown TalkSentence: 413210705-->
+<!--Unknown TalkSentence: 413210706-->
+<!--Unknown TalkSentence: 413210707-->
+<!--Unknown TalkSentence: 413210708-->
+<!--Unknown TalkSentence: 413210709-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424032104,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"BlackMask": true,
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 413210710
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210711,
+					"ProtectTime": 0
+				},
+				{
+					"TalkSentenceID": 413210712
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210713,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210714,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210715,
+					"ProtectTime": 0
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"TextEnabled": true,
+			"TalkSentenceID": 413210716,
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [],
+			"CreateProp": {
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {
+				"InstanceIDList": []
+			},
+			"AdvDestroyGroupEntity": {
+				"InstanceIDList": [
+					400001
+				]
+			},
+			"DisactiveVCamOnGraphEnd": false,
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer"
+			},
+			"AdvNpcFaceToPlayer": {
+				"SteerImmediately": true,
+				"FinishImmadiate": true
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TalkFigure",
+			"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_13145_1.png",
+			"TriggerSound": false
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210717,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210718,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 413210719,
+					"ProtectTime": 0
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ConsumeItem_424032104"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с господином Маккоем ещё раз===
+{{Диалог Начало}}
+
+;(Поговорите с Господин Маккой)
+<!--Unknown TalkSentence: 413210802-->
+<!--Unknown TalkSentence: 413210803-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413210805-->
+<!--Unknown TalkSentence: 413210806-->
+<!--Unknown TalkSentence: 413210807-->
+<!--Unknown TalkSentence: 413210808-->
+<!--Unknown TalkSentence: 413210809-->
+;(Return to previous option selection)
+;(Unused &mdash; Talk_424032006)
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Mr. McCoy
+|zhs  = 钟表把戏：麦考先生
+|zht  = 鐘錶把戲：麥考先生
+|ja   = クロックトリック：ミスター・マコー
+|ko   = 시계 트릭: 맥카우 씨
+|es   = Trucorreloj: señor McCoy
+|fr   = Pouvoir de la Pendule&nbsp;: Monsieur McCoy
+|ru   = Заводной механизм: господин Маккой
+|th   = กลนาฬิกา: คุณ McCoy
+|vi   = Thủ Thuật Đồng Hồ: Ngài McCoy
+|de   = Uhrwerk: Herr McCoy
+|id   = Clockwork: Tuan McCoy
+|pt   = Truquelógio: Sr. McCoy
+}}
+
+==История изменений==
+{{История изменений|2.7}}

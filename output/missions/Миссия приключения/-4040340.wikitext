@@ -1,0 +1,103 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040340
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Прогулка среди могил]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Риф потока сновидений
+|Мир             = Пенакония
+|Локации         = Риф потока сновидений
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+:{{Диалог|Изучение}} Дорожный знак
+<!--Unknown TalkSentence: 404033901-->
+<!--Unknown TalkSentence: 404033902-->
+<!--Unknown TalkSentence: 404033903-->
+<!--Unknown TalkSentence: 404033904-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 404034001,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ConsumeItem_4040340"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 404033905,
+					"ProtectTime": 0.3
+				},
+				{
+					"TalkSentenceID": 404033906,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 404033907,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+;(По прибытии на место)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

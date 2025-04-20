@@ -1,0 +1,474 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025101
+|Название        = 
+|Изображение     = Миссия Освоения Хотя аплодисменты стихли I.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+* Завершена [[Продолжение Освоения]] ''[[Перезвон жёлтого колокола, возвращение в гнездо]]''
+* Завершена [[Продолжение Освоения]] ''[[Рынок будущего II]]''
+|Персонажи       = Журналистка с камерой; Кармелла; Лука; Облачный Рыцарь № 1; Облачный Рыцарь № 2; Первопроходец; Совастьян (Кукла с удалённым доступом); Сушан
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Храбрость одиночества на Сяньчжоу
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*3; Утраченный кристалл*3; Кредиты*30 000
+}}
+'''Хотя аплодисменты стихли I''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|Чтобы помочь Белобогу вернуться в космическое сообщество, Лука прибывает на Лофу Сяньчжоу со старым приглашением на Звёздную церемонию боевых искусств. Вы становитесь его тренером и помогаете ему одерживать победу за победой...<br />Но впереди вас ждёт ещё много трудностей, путешествие только начинается.}}
+
+==Этапы==
+# Отправляйтесь на «Рассекатель небес»
+# Осмотритесь за кулисами Церемонии боевых искусств
+# Узнайте, почему Лука прибыл на Лофу
+# Найдите соперника для первого матча
+# Помогите Луке подготовиться к первому матчу
+# Сразитесь с «Группой поддержки Малышки Гуй»
+# Цель... вызов Мастеру арены!
+# Узнайте о правилах состязания
+
+==Прохождение==
+{{Дополнить}}
+
+===Отправляйтесь на «Рассекатель небес»===
+{{Описание миссии|локация=«Рассекатель небес»|Март 7 раздобыла пропуск на Церемонию боевых искусств? Будет обидно, если вы им не воспользуетесь.<br />Кажется, она быстро стала весьма влиятельной фигурой на Лофу всего за пару недель... А если сказать владельцу ресторана, что вы с ней знакомы, он сделает скидку?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802510101,
+	"MessageSectionID": 1222900
+}</pre>
+<!--Unknown TalkSentence: 802510001-->
+{{Диалог Конец}}
+
+===Осмотритесь за кулисами Церемонии боевых искусств===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G66_2)
+<!--Unknown TalkSentence: 802510001-->
+:<!--Unknown TalkSentence: 802510002-->
+:<!--Unknown TalkSentence: 802510003-->
+:<!--Unknown TalkSentence: 802510004-->
+:<!--Unknown TalkSentence: 802510005-->
+:<!--Unknown TalkSentence: 802510006-->
+:<!--Unknown TalkSentence: 802510007-->
+:<!--Unknown TalkSentence: 802510008-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510011-->
+::<!--Unknown TalkSentence: 802510012-->
+::<!--Unknown TalkSentence: 802510013-->
+::<!--Unknown TalkSentence: 802510014-->
+::<!--Unknown TalkSentence: 802510015-->
+::<!--Unknown TalkSentence: 802510016-->
+::<!--Unknown TalkSentence: 802510017-->
+::<!--Unknown TalkSentence: 802510018-->
+::<!--Unknown TalkSentence: 802510019-->
+:::{{Диалог|Стрелка}} undefined
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510013-->
+::<!--Unknown TalkSentence: 802510014-->
+::<!--Unknown TalkSentence: 802510015-->
+::<!--Unknown TalkSentence: 802510016-->
+::<!--Unknown TalkSentence: 802510017-->
+::<!--Unknown TalkSentence: 802510018-->
+::<!--Unknown TalkSentence: 802510019-->
+:::{{Диалог|Стрелка}} undefined
+:::{{tx}}
+:<!--Unknown TalkSentence: 802510013-->
+:<!--Unknown TalkSentence: 802510014-->
+:<!--Unknown TalkSentence: 802510015-->
+:<!--Unknown TalkSentence: 802510016-->
+:<!--Unknown TalkSentence: 802510017-->
+:<!--Unknown TalkSentence: 802510018-->
+:<!--Unknown TalkSentence: 802510019-->
+::{{Диалог|Стрелка}} undefined
+::{{tx}}
+
+;(Unused &mdash; EnterArea_G66_3)
+<!--Unknown TalkSentence: 802510004-->
+:<!--Unknown TalkSentence: 802510005-->
+:<!--Unknown TalkSentence: 802510006-->
+
+;(Unused &mdash; EnterArea_G66_1)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 66,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802510002
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 66,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802510003
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 802510102_OpenRaid)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40102,
+	"OnCancel": []
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте, почему Лука прибыл на Лофу===
+{{Описание миссии|локация=«Рассекатель небес»|Этот рыжеволосый парень... Лука из Белобога?<br />То, что белобожец появился на Лофу... невероятно. Расспросите его обо всём.}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802510031-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; OpenRaid_40102)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40102,
+	"OnCancel": []
+}</pre>
+----
+<!--Unknown TalkSentence: 802510041-->
+<!--Unknown TalkSentence: 802510042-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510044-->
+:<!--Unknown TalkSentence: 802510045-->
+:<!--Unknown TalkSentence: 802510046-->
+:<!--Unknown TalkSentence: 802510047-->
+:<!--Unknown TalkSentence: 802510048-->
+:<!--Unknown TalkSentence: 802510049-->
+:<!--Unknown TalkSentence: 802510050-->
+:<!--Unknown TalkSentence: 802510051-->
+:<!--Unknown TalkSentence: 802510052-->
+:<!--Unknown TalkSentence: 802510053-->
+:<!--Unknown TalkSentence: 802510054-->
+:<!--Unknown TalkSentence: 802510055-->
+:<!--Unknown TalkSentence: 802510056-->
+:<!--Unknown TalkSentence: 802510057-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510046-->
+:<!--Unknown TalkSentence: 802510047-->
+:<!--Unknown TalkSentence: 802510048-->
+:<!--Unknown TalkSentence: 802510049-->
+:<!--Unknown TalkSentence: 802510050-->
+:<!--Unknown TalkSentence: 802510051-->
+:<!--Unknown TalkSentence: 802510052-->
+:<!--Unknown TalkSentence: 802510053-->
+:<!--Unknown TalkSentence: 802510054-->
+:<!--Unknown TalkSentence: 802510055-->
+:<!--Unknown TalkSentence: 802510056-->
+:<!--Unknown TalkSentence: 802510057-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Найдите соперника для первого матча===
+{{Описание миссии|локация=«Рассекатель небес»|Соперник Луки в первом матче - Облачный Рыцарь.<br />Вы известны среди Облачных Рыцарей, возможно, они сделают вам одолжение. Поговорите с ними до начала матча.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G69_2)
+<!--Unknown TalkSentence: 802510071-->
+:<!--Unknown TalkSentence: 802510072-->
+:<!--Unknown TalkSentence: 802510073-->
+:<!--Unknown TalkSentence: 802510074-->
+:<!--Unknown TalkSentence: 802510075-->
+:<!--Unknown TalkSentence: 802510076-->
+:<!--Unknown TalkSentence: 802510077-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510079-->
+::<!--Unknown TalkSentence: 802510080-->
+::<!--Unknown TalkSentence: 802510081-->
+::<!--Unknown TalkSentence: 802510082-->
+::<!--Unknown TalkSentence: 802510083-->
+::<!--Unknown TalkSentence: 802510084-->
+::<!--Unknown TalkSentence: 802510085-->
+::<!--Unknown TalkSentence: 802510086-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510081-->
+::<!--Unknown TalkSentence: 802510082-->
+::<!--Unknown TalkSentence: 802510083-->
+::<!--Unknown TalkSentence: 802510084-->
+::<!--Unknown TalkSentence: 802510085-->
+::<!--Unknown TalkSentence: 802510086-->
+:<!--Unknown TalkSentence: 802510081-->
+:<!--Unknown TalkSentence: 802510082-->
+:<!--Unknown TalkSentence: 802510083-->
+:<!--Unknown TalkSentence: 802510084-->
+:<!--Unknown TalkSentence: 802510085-->
+:<!--Unknown TalkSentence: 802510086-->
+{{Диалог Конец}}
+
+===Помогите Луке подготовиться к первому матчу===
+{{Описание миссии|локация=«Рассекатель небес»|Теперь вы тренер участника Луки!<br />Приведите Луку к победе в первом матче! Пусть Сушан испытает страсть Снежной страны!}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802510106-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510108-->
+:<!--Unknown TalkSentence: 802510109-->
+:<!--Unknown TalkSentence: 802510110-->
+:<!--Unknown TalkSentence: 802510111-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510110-->
+:<!--Unknown TalkSentence: 802510111-->
+::{{tx}}
+<!--Unknown TalkSentence: 802510110-->
+<!--Unknown TalkSentence: 802510111-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Сразитесь с «Группой поддержки Малышки Гуй»===
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802510121-->
+<!--Unknown TalkSentence: 802510122-->
+<!--Unknown TalkSentence: 802510123-->
+<!--Unknown TalkSentence: 802510124-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510126-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 802510129-->
+::{{tx}}
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802510111-->
+
+;(Unused &mdash; FightFestBattleStart)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_FightFestBattlePerformance",
+		"AreaName": "LevelArea_P20242_F20242001_G19",
+		"AnchorName": "Anchor7"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 802510161-->
+<!--Unknown TalkSentence: 802510162-->
+<!--Unknown TalkSentence: 802510163-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802510165-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_408410.png"
+}</pre>
+{{Диалог Конец}}
+
+===Цель... вызов Мастеру арены!===
+{{Описание миссии|локация=«Рассекатель небес»|Теперь вы тренер участника Луки!<br />Как тренер, вы должны ознакомиться с правилами состязания.<br />К счастью, Кармелла разбирается в этом. Спросите её.}}
+{{Диалог Начало}}
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802514630-->
+<!--Unknown TalkSentence: 802514631-->
+<!--Unknown TalkSentence: 802514632-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 802510201-->
+<!--Unknown TalkSentence: 802510202-->
+<!--Unknown TalkSentence: 802510203-->
+<!--Unknown TalkSentence: 802510204-->
+<!--Unknown TalkSentence: 802510205-->
+<!--Unknown TalkSentence: 802510206-->
+<!--Unknown TalkSentence: 802510207-->
+<!--Unknown TalkSentence: 802510208-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Узнайте о правилах состязания===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 46
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TickInterval": 0.3,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EnterDistrict_G46"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G46)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "OpenUI",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_442"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutBriefDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.FightFestMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap1)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap2)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap4)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802514630-->
+<!--Unknown TalkSentence: 802514631-->
+<!--Unknown TalkSentence: 802514632-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+<!--Unknown TalkSentence: 802510001-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Even When Cheers Fade: Chapter 1
+|zhs  = 即使喝彩停息•第一章
+|zht  = 即使喝彩停息•第一章
+|ja   = 喝采が鳴り止んだとしても・第1章
+|ko   = 갈채가 멈추더라도•제1장
+|es   = Aunque los aplausos cesen: capítulo 1
+|fr   = Au-delà des applaudissements&nbsp;: Chapitre 1
+|ru   = Хотя аплодисменты стихли I
+|th   = แม้เสียงเชียร์จะหยุดลง บทที่ 1
+|vi   = Dù Tiếng Vỗ Tay Dừng Lại - Chương 1
+|de   = Auch wenn der Applaus verstummt: Kapitel 1
+|id   = Meskipun Sorak-Sorai Berhenti: Bab 1
+|pt   = Quando os Aplausos Cessam: Capítulo 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,193 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8022121
+|Название        = 
+|Изображение     = Миссия Освоения «Большое ограбление Хану».png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец; Представитель торговой улицы; Рассказчик в короткометражном фильме; Реклама «Услады»; Реклама модной игрушки; Реклама сфероидов
+|СтартЛокация    = «Большое ограбление Хану»
+|Мир             = Пенакония
+|Локации         = «Большое ограбление Хану»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''«Большое ограбление Хану»''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Активируйте уменьшающее устройство
+# Найдите рекламные щиты
+# Отправляйтесь на второй этаж
+# Найдите рекламные щиты
+# Отправляйтесь на третий этаж
+# Пройдите через мост из рекламных щитов
+# Получите ракетницу Хану
+# Одолейте всех противников
+
+==Прохождение==
+{{Дополнить}}
+
+===Активируйте уменьшающее устройство===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TV_Open)
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+<!--Unknown TalkSentence: 802213141-->
+
+<!--Unknown TalkSentence: 802213140-->
+<!--Unknown TalkSentence: 802213141-->
+<!--Unknown TalkSentence: 802213142-->
+<!--Unknown TalkSentence: 802213143-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802213145-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Найдите рекламные щиты===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!<br />Найдите двоих сотрудников!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь на второй этаж===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!<br />Съёмки завершены. Переходите к следующей локации!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802213181-->
+
+:{{tx}}
+{{Диалог Конец}}
+
+===Найдите рекламные щиты===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!<br />Найдите троих сотрудников!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь на третий этаж===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!<br />Съёмки завершены. Переходите к следующей локации!}}
+{{Диалог Начало}}
+
+<!--Unknown TalkSentence: 802213224-->
+
+:{{tx}}
+
+;(Unused &mdash; PlayMissionTalk)
+:{{tx}}
+;(Unused &mdash; PlayMissionTalk)
+<!--Unknown TalkSentence: 802213237-->
+:<!--Unknown TalkSentence: 802213238-->
+{{Диалог Конец}}
+
+===Пройдите через мост из рекламных щитов===
+{{Описание миссии|локация=«Большое ограбление Хану»|Съёмки «Большого ограбления братца Хану» начались. Достигните целей и завершите съёмку!<br />Помогите сотрудникам сбежать, одолейте противников!}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Получите ракетницу Хану===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Одолейте всех противников===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802213255-->
+<!--Unknown TalkSentence: 802213256-->
+;(If {{F|Ending}} is equal to 0 and {{F|Ending}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.SetAdvAchievement",
+	"QuestID": 4053208
+}</pre>
+;(If {{F|Ending}} is equal to 1)
+;(If {{F|Ending}} is not equal to 1)
+:;(If {{F|Ending}} is equal to 1)
+:;(If {{F|Ending}} is not equal to 1)
+:{{tx}}
+;(If {{F|BoardHit_01}} is equal to 1 and {{F|BoardHitCheck_1}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050038,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+;(If {{F|BoardHit_02}} is equal to 1 and {{F|BoardHitCheck_2}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050038,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+;(If {{F|BoardHit_03}} is equal to 1 and {{F|BoardHitCheck_3}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050038,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+;(If {{F|BoardHit_04}} is equal to 1 and {{F|BoardHitCheck_4}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050038,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+;(If {{F|BoardHit_05}} is equal to 1 and {{F|BoardHitCheck_5}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050038,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 443050042,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hanu's Great Heist
+|zhs  = 《哈努大劫案》
+|zht  = 《哈努大劫案》
+|ja   = 『ブラザーハヌ強盗事件』
+|ko   = ≪하누 강도 사건≫
+|es   = El gran atraco de Hanu
+|fr   = Le gros coup de Hanu
+|ru   = «Большое ограбление Хану»
+|th   = คดีโจรกรรมของ Hanu
+|vi   = Vụ Cướp Của Hanu
+|de   = „Hanus großer Raub“
+|id   = Perampokan Besar Hanu
+|pt   = O Grande Assalto do Irmão Hanu
+}}
+
+==История изменений==
+{{История изменений|2.7}}

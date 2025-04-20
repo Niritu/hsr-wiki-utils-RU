@@ -1,0 +1,166 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1033102
+|Название        = 
+|Изображение     = Миссия Освоения И на восьмой день....png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В наше время
+|Условия         = 
+|Персонажи       = Авантюрин; Ахерон; Галлахер; Доверчивый юноша; Зарянка; Искорка; Первопроходец; Простодушная девочка; Светлячок; Чёрный Лебедь
+|СтартЛокация    = Горизонт бытия
+|Мир             = Пенакония
+|Локации         = Горизонт бытия
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*1 100; Звёздный нефрит*140; Shadow of Harmony*1; Путеводитель путешественника*10; Часокредиты*550; "Morns Like These"*1 { text = Morns Like These }; Кредиты*120 000
+}}
+'''И на восьмой день...''' — [[Миссия Освоения]] в главе [[В наше время]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Попрощайтесь с Ахерон
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Попрощайтесь с Ахерон===
+{{Описание миссии|локация=Горизонт бытия|Золотые грёзы становятся тревожней.<br />Боюсь, в последующие долгие ночи тебе предстоит пережить множество испытаний и увидеть много трагедий. И в конце... ты будешь видеть всё только в чёрно-белом цвете.<br />Но поверь мне, в этом чёрно-белом мире тебе встретятся мимолётные проблески багрового. И когда придёт время сделать выбор...<br />Этот цвет снова явится перед тобой.<br />Сейчас тебе следует тщательно обдумать его значение... и вернуться в реальность.<br />Там мы найдём все ответы.}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103310902-->
+<!--Unknown TalkSentence: 103310903-->
+<!--Unknown TalkSentence: 103310904-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayerSelectMotionMode",
+	"MotionMode": "ForbidFastRun"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"LookAtTarget": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 4,
+		"GroupInstanceID": 1
+	},
+	"TemplateName": "BackUpType"
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"Reset": true,
+	"TemplateName": "BackUpType"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableFreelookCameraDragMode",
+	"Enable": true,
+	"Mode": "Orbit"
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329903-->
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329904-->
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329905-->
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329906-->
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329907-->
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103329908-->
+:<!--2.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.EnableFreelookCameraDragMode",
+	"Mode": "Orbit"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckLineupHeroAvatarID"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangeHeroType"
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::Так что...
+::Почему живые спят?
+::Потому что... однажды...
+::Мы все проснёмся!
+::Ночь... слишком коротка...
+::Брат...
+::Пора... проснуться.
+;(Cutscene ends)
+----
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 103311406-->
+<!--Unknown TalkSentence: 103311407-->
+<!--Unknown TalkSentence: 103311408-->
+<!--Unknown TalkSentence: 103311409-->
+<!--Unknown TalkSentence: 103311410-->
+<!--Unknown TalkSentence: 103311411-->
+<!--Unknown TalkSentence: 103311412-->
+<!--Unknown TalkSentence: 103311413-->
+<!--Unknown TalkSentence: 103311414-->
+<!--Unknown TalkSentence: 103311415-->
+<!--Unknown TalkSentence: 103311416-->
+<!--Unknown TalkSentence: 103311417-->
+<!--Unknown TalkSentence: 103311418-->
+<!--Unknown TalkSentence: 103311419-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_amb_mute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowPerformanceRollingSubtitles",
+	"PrevDuration": 0.5,
+	"JsonConfig": "Config/Performance/PerformanceRollingSubtitles2_2_2.json"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_amb_unmute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = And on the Eighth Day
+|zhs  = 然后，在第八天…
+|zht  = 然後，在第八天……
+|ja   = そして、8日目…
+|ko   = 그리고, 여덟째 날에…
+|es   = Y en el octavo día...
+|fr   = Et durant le huitième jour...
+|ru   = И на восьмой день...
+|th   = จากนั้น ในวันที่ 8...
+|vi   = Sau Đó, Vào Ngày Thứ Tám...
+|de   = Und am achten Tag ...
+|id   = Lalu, di Hari ke-8 ....
+|pt   = E no Oitavo Dia
+}}
+
+==История изменений==
+{{История изменений|2.7}}

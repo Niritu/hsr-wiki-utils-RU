@@ -1,0 +1,208 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3040080
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Персонажи       = Ответственный учёный; Первопроходец; Строгий учёный
+|СтартЛокация    = Бормочущие заросли Рощи муз
+|Мир             = Амфореус
+|Локации         = Бормочущие заросли Рощи муз
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(If Миссия [[О дорога, яви прошлое ещё раз]] has been completed)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "Photo_Titan",
+			"IconType": "ChatIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_360"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; Photo_Titan)
+----
+:<!--Unknown TalkSentence: 304004141-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 280
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "LongRange",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContainerGiantTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"TargetType": "Prop",
+					"Targets": [
+						300002
+					]
+				},
+				"Radius": 2,
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				},
+				"IgnoreColliderTest": true
+			},
+			"ContainerFlagName": "GiantTarget_1",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnExitPhotoGraph": [],
+	"OverrideConfig": {
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300002
+			]
+		},
+		"ShowFinishToastManually": true,
+		"OverrideMaxFov": 60,
+		"OverrideMinFov": 10
+	},
+	"BindName": {
+		"Value": "304008001_Titan"
+	},
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 4239232322731573076
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 6178273401421152293
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "304008001_Titan",
+					"ContainerFlagName": "GiantTarget_1",
+					"Size": {},
+					"Ratio": 0.65
+				},
+				"BindContainerFlagNames": [
+					"GiantTarget_1"
+				]
+			}
+		]
+	},
+	"HideTwoPointFourParam": false
+}</pre>
+
+;(If Миссия [[О дорога, яви прошлое ещё раз]] has been completed)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+:{{Диалог|Разговор}} Поговорить
+;(If {{cx}}<!--SubMission Finish: 304008016-->)
+:<!--Unknown TalkSentence: 304004341-->
+:<!--Unknown TalkSentence: 304004342-->
+:<!--Unknown TalkSentence: 304004343-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--SubMission not Finish: 304008016-->)
+:;(If {{cx}}<!--SubMission Finish: 304008015-->)
+::<!--Unknown TalkSentence: 304004322-->
+:;(If {{cx}}<!--SubMission not Finish: 304008015-->)
+::<!--Unknown TalkSentence: 304004311-->
+::<!--Unknown TalkSentence: 304004312-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+
+:<!--4-second delay-->
+:<!--4-second delay-->
+
+;(Unused &mdash; Mission_454050302)
+:;(If {{cx}}<!--SubMission not Finish: 104030904-->)
+::<pre>{
+	"$type": "RPG.GameCore.ShowWorldShop4ThUpgradeHint",
+	"OfferingTypeID": 6,
+	"PhaseID": 3
+}</pre>
+
+;(Unused &mdash; TalkSentence_504033124)
+:;(If {{cx}}<!--SubMission not Finish: 104030904-->)
+::<pre>{
+	"$type": "RPG.GameCore.ShowWorldShop4ThUpgradeHint",
+	"OfferingTypeID": 6,
+	"PhaseID": 3
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.1}}

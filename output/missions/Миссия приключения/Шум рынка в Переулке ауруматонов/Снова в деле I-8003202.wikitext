@@ -1,0 +1,436 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003202
+|Название        = 
+|Изображение     = Миссия Освоения Снова в деле I.png
+|Тип             = Миссия приключения
+|События         = Шум рынка в Переулке ауруматонов
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = Завершена [[Миссия приключения]] ''[[Снова в деле I]]''
+|Персонажи       = Байлу; Вторящий голос; Дружелюбный рабочий; Женщина, похожая на секретаря торговой гильдии; Минси; Насмешливый голос; Обиженный рабочий; Первопроходец; Представитель торгового отдела КММ; Придирчивый голос; Сушан; Тётя Каланча; Энергичный женский голос; Юаньфэн
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = Управление причалом I
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Утраченный кристалл*5; Кредиты*45 000
+}}
+'''Снова в деле I''' — Событие [[Миссия приключения]] из события [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Следуйте за Байлу в Переулок ауруматонов
+# Купите закуски у тёти Каланчи
+# Узнайте рекомендации посетителей (необязательно)
+# Отдайте Байлу купленную закуску
+# Отправляйтесь в «Пагоду изысков»
+# Отправляйтесь на причал и узнайте, что происходит
+# Поговорите с Сушан и узнайте о сложившейся ситуации
+# Узнайте о последних достижениях в области логистики в «Журавль-экспресс»
+# Обсудите следующие шаги с вашими спутниками
+# Поговорите с госпожой секретарём и сообщите ей о вашем решении
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Следуйте за Байлу в Переулок ауруматонов===
+{{Описание миссии|локация=Переулок ауруматонов|Байлу планирует показать вам закусочные Переулка ауруматонов в Возвышающем святилище. Бесплатный гид - редкость и радость!<br />Поскольку Байлу уже приняла решение, вам стоит последовать за ней...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800320201,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 800320201-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:{{tx}}
+----
+----
+<!--Unknown TalkSentence: 800320211-->
+<!--Unknown TalkSentence: 800320212-->
+<!--Unknown TalkSentence: 800320213-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800320215-->
+<!--Unknown TalkSentence: 800320218-->
+----
+{{Диалог Конец}}
+
+===Купите закуски у тёти Каланчи===
+{{Описание миссии|локация=Переулок ауруматонов|Теоретически, ночной рынок Лофу не должен быть таким пустынным. Только у киосков с закусками есть какое-то подобие жизни.<br />Байлу хочет, чтобы вы купили что-нибудь перекусить. Вы можете воспользоваться этой возможностью, чтобы поспрашивать вокруг и узнать, что вкусненького можно купить, или вы можете напрямую заказать какие-нибудь закуски у тёти Каланчи.}}
+{{Диалог Начало}}
+
+;(Поговорите с Тётя Каланча)
+<!--Unknown TalkSentence: 800320301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 800320303-->
+<!--Unknown TalkSentence: 800320308-->
+
+;(Поговорите с Байлу)
+:;(If {{F|MissionCV-8003202-undefined}} is not equal to 5)
+:::----
+::<!--Unknown TalkSentence: 800320331-->
+:::{{Диалог|Стрелка}} undefined
+::;(If {{F|MissionCV-8003202-undefined}} is equal to 1)
+:::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800320231,
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800320207_GiveFood"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::;(If {{F|MissionCV-8003202-undefined}} is not equal to 1)
+:::;(Return to previous option selection)
+:;(If {{F|MissionCV-8003202-undefined}} is equal to 5)
+:::----
+::<!--Unknown TalkSentence: 800320351-->
+:::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800320235,
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 35
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Avatar_Kid_Bailu_00",
+			"StoryMotionID": 312110201
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 800320353,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 800320354,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_800320356"
+				},
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 800320355,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_800320356"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+<!--Unknown TalkSentence: 800320285-->
+;(Unused &mdash; 800320207_GiveFood)
+<!--Unknown TalkSentence: 800320333-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; TalkSentence_800320356)
+:<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320356-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320358-->
+::----
+::----
+:<!--Unknown TalkSentence: 800320361-->
+:<!--Unknown TalkSentence: 800320362-->
+::{{Чёрный экран|undefined}}
+::{{Чёрный экран|undefined}}
+:;(If {{F|MissionCV-8003202-undefined}} is equal to 1)
+::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320231,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+:;(If {{F|MissionCV-8003202-undefined}} is not equal to 1)
+::;(Return to previous option selection)
+<!--Unknown TalkSentence: 800320219-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте рекомендации посетителей (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отдайте Байлу купленную закуску===
+{{Описание миссии|локация=Переулок ауруматонов|Теоретически, ночной рынок Лофу не должен быть таким пустынным. Только у киосков с закусками есть какое-то подобие жизни.<br />Вы купили закуски. Отнесите их Байлу.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 800320371-->
+<!--Unknown TalkSentence: 800320372-->
+----
+{{Диалог Конец}}
+
+===Отправляйтесь в «Пагоду изысков»===
+{{Описание миссии|локация=Переулок ауруматонов|Как оказалось, вы сюда пришли не набивать животы. Байлу намеревается отправиться в «Пагоду изысков», чтобы купить несколько баночек с лекарствами.<br />Вам следует и дальше сопровождать вашего маленького проводника.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 800320402-->
+<!--Unknown TalkSentence: 800320403-->
+----
+----
+<!--Unknown TalkSentence: 800320401-->
+<!--Unknown TalkSentence: 800320404-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320407-->
+----
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amb_jinrenxiang_oneshot_03"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь на причал и узнайте, что происходит===
+{{Описание миссии|локация=Переулок ауруматонов|Как и ожидалось, вы сталкиваетесь с чем-то неожиданным. Похоже, на причале происходит какой-то спор. Узнайте, что происходит.<br />Судя по всему, девушка занимает принципиальную позицию в отношении чего-то.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 37
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 800320416-->
+<!--Unknown TalkSentence: 800320417-->
+<!--Unknown TalkSentence: 800320418-->
+<!--Unknown TalkSentence: 800320419-->
+<!--Unknown TalkSentence: 800320420-->
+<!--Unknown TalkSentence: 800320421-->
+<!--Unknown TalkSentence: 800320422-->
+<!--Unknown TalkSentence: 800320423-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320425-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320428-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 800320411-->
+<!--Unknown TalkSentence: 800320412-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<!--Unknown TalkSentence: 800320431-->
+<!--Unknown TalkSentence: 800320432-->
+<!--Unknown TalkSentence: 800320433-->
+<!--Unknown TalkSentence: 800320434-->
+<!--Unknown TalkSentence: 800320435-->
+<!--Unknown TalkSentence: 800320436-->
+<!--Unknown TalkSentence: 800320437-->
+<!--Unknown TalkSentence: 800320438-->
+<!--Unknown TalkSentence: 800320439-->
+<!--Unknown TalkSentence: 800320440-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320442-->
+:<!--Unknown TalkSentence: 800320443-->
+:<!--Unknown TalkSentence: 800320444-->
+:<!--Unknown TalkSentence: 800320445-->
+:<!--Unknown TalkSentence: 800320446-->
+:<!--Unknown TalkSentence: 800320447-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320444-->
+:<!--Unknown TalkSentence: 800320445-->
+:<!--Unknown TalkSentence: 800320446-->
+:<!--Unknown TalkSentence: 800320447-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320446-->
+:<!--Unknown TalkSentence: 800320447-->
+::{{tx}}
+<!--Unknown TalkSentence: 800320446-->
+<!--Unknown TalkSentence: 800320447-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Сушан и узнайте о сложившейся ситуации===
+{{Описание миссии|локация=Переулок ауруматонов|Сушан пытается отстоять справедливость для людей, работающих на причале, но вместо этого оказывается втянутой в спор с представителем КММ. Интересно, она уже успокоилась?<br />Поспрашивайте окружающих о том, что произошло на причале. Нужно выяснить всё от начала и до конца.}}
+{{Диалог Начало}}
+
+----
+<!--Unknown TalkSentence: 800320501-->
+<!--Unknown TalkSentence: 800320502-->
+<!--Unknown TalkSentence: 800320503-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320505-->
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 800320508-->
+:<!--Unknown TalkSentence: 800320509-->
+:<!--Unknown TalkSentence: 800320510-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320507-->
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 800320508-->
+:<!--Unknown TalkSentence: 800320509-->
+:<!--Unknown TalkSentence: 800320510-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Узнайте о последних достижениях в области логистики в «Журавль-экспресс»===
+{{Описание миссии|локация=Переулок ауруматонов|Поскольку проблемы причала временно решены, рабочие упомянули, что их логистические расходы так же могут быть снижены.<br />Вы узнали всё от начала и до конца, поэтому вам следует продолжить следить за госпожой секретарём и отправиться в «Журавль-экспресс».}}
+{{Диалог Начало}}
+
+----
+----
+<!--Unknown TalkSentence: 800320601-->
+<!--Unknown TalkSentence: 800320602-->
+<!--Unknown TalkSentence: 800320603-->
+<!--Unknown TalkSentence: 800320604-->
+<!--Unknown TalkSentence: 800320605-->
+<!--Unknown TalkSentence: 800320606-->
+<!--Unknown TalkSentence: 800320607-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Обсудите следующие шаги с вашими спутниками===
+{{Описание миссии|локация=Переулок ауруматонов|Госпожа секретарь явно не хочет, чтобы вы чувствовали давление, но в то же время она очень нуждается в вашей помощи. Поэтому она выдвинула одно предложение и надеется, что вы сможете обсудить его со спутниками.<br />Поговорите об этом с «жертвой спора» Сушан и «сплетницей» Байлу и узнайте их мнение.}}
+{{Диалог Начало}}
+
+;(Поговорите с Сушан)
+<!--Unknown TalkSentence: 800320641-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320643-->
+:<!--Unknown TalkSentence: 800320646-->
+:<!--Unknown TalkSentence: 800320647-->
+:<!--Unknown TalkSentence: 800320648-->
+:<!--Unknown TalkSentence: 800320649-->
+:<!--Unknown TalkSentence: 800320650-->
+:<!--Unknown TalkSentence: 800320651-->
+:<!--Unknown TalkSentence: 800320652-->
+:<!--Unknown TalkSentence: 800320653-->
+<!--Unknown TalkSentence: 800320653-->
+
+;(Поговорите с Байлу)
+<!--Unknown TalkSentence: 800320661-->
+:<!--Unknown TalkSentence: 800320662-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800320664-->
+<!--Unknown TalkSentence: 800320661-->
+:<!--Unknown TalkSentence: 800320662-->
+
+;(Поговорите с Юаньфэн)
+<!--Unknown TalkSentence: 800320691-->
+{{Диалог Конец}}
+
+===Поговорите с госпожой секретарём и сообщите ей о вашем решении===
+{{Описание миссии|локация=Переулок ауруматонов|Госпожа секретарь явно не хочет, чтобы вы чувствовали давление, но в то же время она очень нуждается в вашей помощи. Поэтому она выдвинула одно предложение и надеется, что вы сможете обсудить его со спутниками.<br />И Сушан, и Байлу надеются, что вы сможете предложить помощь Переулку ауруматонов. Вам следует сообщить госпоже секретарю о вашем решении.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Back in Business (I)
+|zhs  = 金戺重喧•其一
+|zht  = 金戺重喧•其一
+|ja   = 金庭、喧騒を重ねて・その1
+|ko   = 다시 부흥하는 금빛•1
+|es   = De nuevo en activo&nbsp;I
+|fr   = Les affaires reprennent (I)
+|ru   = Снова в деле I
+|th   = คืนสู่ความรุ่งเรือง 1
+|vi   = Huyên Náo Trở Lại 1
+|de   = Wieder im Geschäft 1
+|id   = Hiruk Pikuk yang Kembali Bergaung 1
+|pt   = De Volta aos Negócios (I)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

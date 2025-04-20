@@ -1,0 +1,427 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1010701
+|Название        = 
+|Изображение     = Миссия Освоения Прошлое накроет снежной лавиной.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В иссушающую зимнюю ночь
+|Условия         = Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+|Персонажи       = Броня; Зеле; Клара; Охранный робот; Первопроходец; Перкинс; Эрик
+|СтартЛокация    = Заклёпкоград
+|Мир             = Ярило-VI
+|Локации         = Заклёпкоград
+|Предыдущая      = 
+|Следующая       = Лежащие среди ржавчин
+|Награды         = Опыт Освоения*700; Звёздный нефрит*80; Журнал приключений*6; Конденсированный эфир*3; "Ghost From the Past"*1 { text = Ghost From the Past }
+}}
+'''Прошлое накроет снежной лавиной''' — [[Миссия Освоения]] в главе [[В иссушающую зимнюю ночь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите место для наблюдения
+# Идите на рыночную площадь на поиск вещей
+# Поищите на рыночной площади пропавшие вещи
+# Найдите дорогу в приют
+# Поищите припасы в сиротском приюте
+# Поищите припасы в окрестностях сиротского приюта
+# Спросите Клару, как она здесь оказалась
+# Встретьтесь с Зеле и Броней
+# Поищите припасы в сиротском приюте
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 201220101-->
+<!--Unknown TalkSentence: 201220102-->
+<!--Unknown TalkSentence: 201220103-->
+{{Диалог Конец}}
+
+===Найдите место для наблюдения===
+{{Описание миссии|локация=Заклёпкоград|По словам Наташи, в заброшенном Заклёпкограде могли остаться нетронутые медикаменты. Ваша с Зеле задача - забрать их и использовать их по максимуму... Нет, они должны помочь в работе клиники.<br />Вы добираетесь до входа в шахтёрский городок. На первый взгляд, вокруг царит мёртвая тишина, но на самом деле монстры из Фрагментума уже давно бродят по этим местам. Это опасное место.<br />Прежде чем входить в город, нужно осмотреться и составить план.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 49
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1010701_temp",
+	"AnchorName": "Camera_101070102",
+	"FollowTargetUniqueName": "LocalPlayer",
+	"LookAtTargetAnchorName": "LookAt_101070102",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true,
+		"BlendTime": 1
+	},
+	"VCameraDitherMaxDistance": 3
+}</pre>
+<!--Unknown TalkSentence: 201220201-->
+<!--Unknown TalkSentence: 201220202-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Идите на рыночную площадь на поиск вещей===
+{{Описание миссии|локация=Заклёпкоград|По словам Наташи, в заброшенном Заклёпкограде могли остаться нетронутые медикаменты. Ваша с Зеле задача - забрать их и использовать их по максимуму... Нет, они должны помочь в работе клиники.<br />Зеле считает, что необходимые Наташе припасы находятся на рыночной площади. Почему бы вам сначала не проверить там?}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201220601-->
+<!--Unknown TalkSentence: 201220602-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201220301-->
+<!--Unknown TalkSentence: 201220302-->
+<!--Unknown TalkSentence: 201220303-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201220401-->
+<!--Unknown TalkSentence: 201220402-->
+<!--Unknown TalkSentence: 201220403-->
+<!--Unknown TalkSentence: 201220404-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201220501-->
+<!--Unknown TalkSentence: 201220502-->
+{{Диалог Конец}}
+
+===Поищите на рыночной площади пропавшие вещи===
+{{Описание миссии|локация=Заклёпкоград|Вы пришли на рыночную площадь и обнаружили, что ящики с медикаментами разграблены.<br />Хотя это грабёж чистой воды, методы преступников слишком цивилизованны для существ из Фрагментума...<br />После того, как Броня и Зеле осмотрели место преступления, они пришли к выводу, что преступление совершил не монстр.<br />Этот человек, скорее всего, не мог далеко уйти. Вместе с Зеле тщательно осмотрите площадь!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 101070118
+}</pre>
+<!--Unknown TalkSentence: 201220801-->
+<!--Unknown TalkSentence: 201220802-->
+<!--Unknown TalkSentence: 201220803-->
+<!--Unknown TalkSentence: 201220804-->
+<!--Unknown TalkSentence: 201220805-->
+<!--Unknown TalkSentence: 201220806-->
+<!--Unknown TalkSentence: 201220807-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201220808-->
+:<!--Unknown TalkSentence: 201220809-->
+:<!--Unknown TalkSentence: 201220810-->
+:<!--Unknown TalkSentence: 201220811-->
+:<!--Unknown TalkSentence: 201220812-->
+:<!--Unknown TalkSentence: 201220813-->
+:<!--Unknown TalkSentence: 201220814-->
+:<!--Unknown TalkSentence: 201220815-->
+:<!--Unknown TalkSentence: 201220816-->
+:<!--Unknown TalkSentence: 201220817-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201220810-->
+:<!--Unknown TalkSentence: 201220811-->
+:<!--Unknown TalkSentence: 201220812-->
+:<!--Unknown TalkSentence: 201220813-->
+:<!--Unknown TalkSentence: 201220814-->
+:<!--Unknown TalkSentence: 201220815-->
+:<!--Unknown TalkSentence: 201220816-->
+:<!--Unknown TalkSentence: 201220817-->
+<!--Unknown TalkSentence: 201220810-->
+<!--Unknown TalkSentence: 201220811-->
+<!--Unknown TalkSentence: 201220812-->
+<!--Unknown TalkSentence: 201220813-->
+<!--Unknown TalkSentence: 201220814-->
+<!--Unknown TalkSentence: 201220815-->
+<!--Unknown TalkSentence: 201220816-->
+<!--Unknown TalkSentence: 201220817-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201222301-->
+<!--Unknown TalkSentence: 201222302-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221001-->
+<!--Unknown TalkSentence: 201221002-->
+<!--Unknown TalkSentence: 201221003-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221101-->
+<!--Unknown TalkSentence: 201221102-->
+<!--Unknown TalkSentence: 201221103-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221201-->
+<!--Unknown TalkSentence: 201221202-->
+<!--Unknown TalkSentence: 201221203-->
+----
+<!--Unknown TalkSentence: 201220901-->
+<!--Unknown TalkSentence: 201220902-->
+<!--Unknown TalkSentence: 201220903-->
+<!--Unknown TalkSentence: 201220904-->
+<!--Unknown TalkSentence: 201220905-->
+<!--Unknown TalkSentence: 201220906-->
+<!--Unknown TalkSentence: 201220907-->
+<!--Unknown TalkSentence: 201220908-->
+<!--Unknown TalkSentence: 201220909-->
+----
+;(Получено {{Item|Коробка металлических пластин и бинтов|20|x=1|text=Коробка металлических пластин и бинтов}})
+{{Диалог Конец}}
+
+===Найдите дорогу в приют===
+{{Описание миссии|локация=Заклёпкоград|Вы обнаружили, что преступником, укравшим припасы, оказался мелкий карманник Эрик. Хотя Зеле считала, что ему нельзя доверять, но добродушная Броня всё-таки решила выменять у него ваши вещи.<br />Чтобы отплатить Броне за её доброту, Эрик рассказал всё, что знал о сиротском приюте. Это означает, что он раскаивается? Сейчас ответа нет, но, возможно, вы узнаете об этом в будущем.<br />Сейчас ваша главная цель - попасть в сиротский приют и продолжить поиски припасов.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Поищите припасы в сиротском приюте===
+{{Описание миссии|локация=Заклёпкоград|Вы наконец находите дорогу в сиротский приют в этом запутанном Заклёпкограде. Поднимаясь вверх, вы замечаете находящиеся на возвышенности роскошные особняки, которые днём и ночью наблюдают за каждым движением в городе.<br />Вы видите, что выражение на лице Зеле становится напряжённым. Ещё более непонятно наблюдать такое же выражение на лице Брони...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221301-->
+<!--Unknown TalkSentence: 201221302-->
+<!--Unknown TalkSentence: 201221303-->
+<!--Unknown TalkSentence: 201221304-->
+<!--Unknown TalkSentence: 201221305-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201222501-->
+----
+{{Описание миссии|локация=Заклёпкоград|Вы подходите ко входу в сиротский приют и начинаете понимать причину замешательства Брони - это только догадка, но, возможно, она жила здесь раньше...<br />Итак, для начала вам нужно найти припасы, о которых вас просила Наташа.}}
+
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 201222601-->
+<!--Unknown TalkSentence: 201222602-->
+<!--Unknown TalkSentence: 201222603-->
+<!--Unknown TalkSentence: 201222604-->
+<!--Unknown TalkSentence: 201222605-->
+<!--Unknown TalkSentence: 201222606-->
+<!--Unknown TalkSentence: 201222607-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 201222701-->
+<!--Unknown TalkSentence: 201222702-->
+<!--Unknown TalkSentence: 201222703-->
+<!--Unknown TalkSentence: 201222704-->
+<!--Unknown TalkSentence: 201222705-->
+<!--Unknown TalkSentence: 201222706-->
+<!--Unknown TalkSentence: 201222707-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 201222801-->
+<!--Unknown TalkSentence: 201222802-->
+<!--Unknown TalkSentence: 201222803-->
+<!--Unknown TalkSentence: 201222804-->
+<!--Unknown TalkSentence: 201222805-->
+<!--Unknown TalkSentence: 201222806-->
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Sorrow",
+	"SubMissionID": 101070107
+}</pre>
+<!--Unknown TalkSentence: 201221601-->
+<!--Unknown TalkSentence: 201221602-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201221603-->
+:<!--Unknown TalkSentence: 201221604-->
+:<!--Unknown TalkSentence: 201221605-->
+:<!--Unknown TalkSentence: 201221606-->
+:<!--Unknown TalkSentence: 201221607-->
+:<!--Unknown TalkSentence: 201221608-->
+:<!--Unknown TalkSentence: 201221609-->
+:<!--Unknown TalkSentence: 201221610-->
+:<!--Unknown TalkSentence: 201221611-->
+:<!--Unknown TalkSentence: 201221612-->
+:<!--Unknown TalkSentence: 201221613-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201221605-->
+:<!--Unknown TalkSentence: 201221606-->
+:<!--Unknown TalkSentence: 201221607-->
+:<!--Unknown TalkSentence: 201221608-->
+:<!--Unknown TalkSentence: 201221609-->
+:<!--Unknown TalkSentence: 201221610-->
+:<!--Unknown TalkSentence: 201221611-->
+:<!--Unknown TalkSentence: 201221612-->
+:<!--Unknown TalkSentence: 201221613-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201221607-->
+:<!--Unknown TalkSentence: 201221608-->
+:<!--Unknown TalkSentence: 201221609-->
+:<!--Unknown TalkSentence: 201221610-->
+:<!--Unknown TalkSentence: 201221611-->
+:<!--Unknown TalkSentence: 201221612-->
+:<!--Unknown TalkSentence: 201221613-->
+<!--Unknown TalkSentence: 201221607-->
+<!--Unknown TalkSentence: 201221608-->
+<!--Unknown TalkSentence: 201221609-->
+<!--Unknown TalkSentence: 201221610-->
+<!--Unknown TalkSentence: 201221611-->
+<!--Unknown TalkSentence: 201221612-->
+<!--Unknown TalkSentence: 201221613-->
+;(Получено {{Item|Коробка медицинского спирта|20|x=1|text=Коробка медицинского спирта}})
+{{Диалог Конец}}
+
+===Поищите припасы в окрестностях сиротского приюта===
+{{Описание миссии|локация=Заклёпкоград|Естественно, вы находите необходимые припасы, Броня - вещи связанные с её прошлым, а Зеле выражает удивление по этому поводу.<br />Естественно, эти двое, кого можно назвать почти друзьями детства, пустились по дороге воспоминаний...<br />Вам хочется спросить, когда они успели стать лучшими подружками, но сможете ли вы нарушить этот хрупкий мир, установленный с таким трудом?<br />Вы машете на них рукой и отправляетесь вглубь сиротского приюта на поиски припасов...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221701-->
+<!--Unknown TalkSentence: 201221702-->
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 201222001-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221801-->
+<!--Unknown TalkSentence: 201221802-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201221901-->
+<!--Unknown TalkSentence: 201221902-->
+<!--Unknown TalkSentence: 201221701-->
+<!--Unknown TalkSentence: 201221702-->
+{{Диалог Конец}}
+
+===Спросите Клару, как она здесь оказалась===
+{{Описание миссии|локация=Заклёпкоград|Вы догадывались, что кто-то уже добрался до припасов, но вы никак не ожидали, что это окажется кто-то знакомый вам.<br />Ладно, не настолько уж и знакомый... Но раз вы уже встречались, то считай, вы с Кларой уже одна семья.<br />Почему такая милашка как Клара делает одна (вместе с роботом) в таком опасном месте? Нужно обязательно это выяснить.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 201222101-->
+<!--Unknown TalkSentence: 201222102-->
+<!--Unknown TalkSentence: 201222103-->
+<!--Unknown TalkSentence: 201222104-->
+<!--Unknown TalkSentence: 201222105-->
+<!--Unknown TalkSentence: 201222106-->
+<!--Unknown TalkSentence: 201222107-->
+<!--Unknown TalkSentence: 201222108-->
+<!--Unknown TalkSentence: 201222109-->
+<!--Unknown TalkSentence: 201222110-->
+<!--Unknown TalkSentence: 201222111-->
+<!--Unknown TalkSentence: 201222112-->
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Level/Mission/1010701/1010701_temp.prefab"
+	}
+}</pre>
+;(Получено {{Item|Коробка особых обезболивающих|20|x=1|text=Коробка особых обезболивающих}})
+
+;(Поговорите с Клара)
+----
+<!--Unknown TalkSentence: 201222101-->
+<!--Unknown TalkSentence: 201222102-->
+<!--Unknown TalkSentence: 201222103-->
+<!--Unknown TalkSentence: 201222104-->
+<!--Unknown TalkSentence: 201222105-->
+<!--Unknown TalkSentence: 201222106-->
+<!--Unknown TalkSentence: 201222107-->
+<!--Unknown TalkSentence: 201222108-->
+<!--Unknown TalkSentence: 201222109-->
+<!--Unknown TalkSentence: 201222110-->
+<!--Unknown TalkSentence: 201222111-->
+<!--Unknown TalkSentence: 201222112-->
+----
+{{Диалог Конец}}
+
+===Встретьтесь с Зеле и Броней===
+{{Описание миссии|локация=Заклёпкоград|Вы догадывались, что вещи заберёт кто-то ещё. Но вы никак не ожидали, что это окажется кто-то знакомый вам.<br />Ладно, не настолько уж и знакомый... Но раз вы уже встречались, то считай, вы с Кларой уже одна семья.<br />Когда вы спросили Клару, почему она здесь, Зеле и Броня сразу перестали болтать и подошли к вам.<br />Как раз вовремя, теперь нужно решить, что делать дальше.}}
+{{Диалог Начало}}
+
+;(Поговорите с Зеле)
+<!--Unknown TalkSentence: 201222201-->
+<!--Unknown TalkSentence: 201222202-->
+{{Диалог Конец}}
+
+===Поищите припасы в сиротском приюте===
+{{Описание миссии|локация=Заклёпкоград|Вы наконец находите дорогу в сиротский приют в этом запутанном Заклёпкограде. Поднимаясь вверх, вы замечаете находящиеся на возвышенности роскошные особняки, которые днём и ночью наблюдают за каждым движением в городе.<br />Вы видите, что выражение на лице Зеле становится напряжённым. Ещё более непонятно наблюдать такое же выражение на лице Брони...}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 201221401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201221403-->
+<!--Unknown TalkSentence: 201221406-->
+<!--Unknown TalkSentence: 201221407-->
+<!--Unknown TalkSentence: 201221408-->
+<!--Unknown TalkSentence: 201221409-->
+<!--Unknown TalkSentence: 201221410-->
+<!--Unknown TalkSentence: 201221411-->
+<!--Unknown TalkSentence: 201221412-->
+<!--Unknown TalkSentence: 201221413-->
+<!--Unknown TalkSentence: 201221414-->
+<!--Unknown TalkSentence: 201221415-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Past Will Return as an Avalanche
+|zhs  = 已故去的必如雪崩再来
+|zht  = 已故去的必如雪崩再來
+|ja   = 過ぎ去ったことは雪崩のように再来する
+|ko   = 눈사태처럼 돌아오는 떠난 이
+|es   = El pasado regresará con fuerza
+|fr   = Le passé déferlera comme une avalanche
+|ru   = Прошлое накроет снежной лавиной
+|th   = เรื่องที่ผ่านไปแล้วจะกลับมาเหมือนหิมะถล่ม
+|vi   = Quá Khứ Sẽ Trở Lại Như Tuyết Lở
+|de   = Die Vergangenheit kommt als Lawine zurück
+|id   = Yang Pergi Pasti Kembali Bak Longsor Salju
+|pt   = O Passado Retornará Como Uma Avalanche
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,239 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000184
+|Название        = 
+|Изображение     = Миссия Освоения Обнаружение аномалии V.png
+|Тип             = Миссия приключения
+|События         = Где же таинственная свинка-копилка?
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+* Завершена [[Миссия приключения]] ''[[Обнаружение аномалии IV]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+|Персонажи       = Первопроходец; Регин; Росси; Старый Гёте
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = Обнаружение аномалии IV
+|Следующая       = Обнаружение аномалии VI
+|Награды         = 
+}}
+'''Обнаружение аномалии V''' — Событие [[Миссия приключения]] из события [[Где же таинственная свинка-копилка?]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином
+# Исследуйте аномалию, связанную с «ключом»
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином===
+{{Описание миссии|локация=Вестибюль отеля|Датчик Регина зафиксировал новую аномальную активность! Отправляйтесь в отель «Гёте», чтобы всё разузнать!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024149-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024166-->
+:<!--Unknown TalkSentence: 501024167-->
+:<!--Unknown TalkSentence: 501024168-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024170-->
+:<!--Unknown TalkSentence: 501024171-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024173-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте аномалию, связанную с «ключом»===
+{{Описание миссии|локация=Заклёпкоград|Нечто связанное с «ключом»... Сложно сказать, хорошо ли сработала интуиция Регина...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 106
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 187
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801879909-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801849903-->
+;(Unused &mdash; PropExitTriggered_106_300007)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 106,
+	"ID": 300001
+}</pre>
+
+;(Unused &mdash; PropUITriggered_106_300002)
+<!--Unknown TalkSentence: 801840402-->
+
+;(Unused &mdash; FailConsumeMissionItem_800018405)
+<!--Unknown TalkSentence: 801840212-->
+:<!--Unknown TalkSentence: 801840213-->
+::----
+
+;(Unused &mdash; ConsumeMissionItem_800018405)
+<!--Unknown TalkSentence: 801840219-->
+:<!--Unknown TalkSentence: 801840220-->
+:<!--Unknown TalkSentence: 801840221-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 106,
+	"ID": 300001
+}</pre>
+::<!--0.1-second delay-->
+:<!--Unknown TalkSentence: 801840222-->
+:<pre>{
+	"$type": "RPG.GameCore.OverridePerformanceEndCrack",
+	"EndWithCrack": true
+}</pre>
+:;(Enter battle)
+::{{Enemy List|Отродье льда*2; Свинка-копилка пространства*1/-14 Скорость}}
+
+;(Unused &mdash; PropUITriggered_106_300001)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 106,
+	"ID": 300001
+}</pre>
+::----
+:<!--Unknown TalkSentence: 801840202-->
+:<!--Unknown TalkSentence: 801840203-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800018407,
+	"Desc": {
+		"Hash": 9304317352771455551
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ConsumeMissionItem_800018405"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "FailConsumeMissionItem_800018405"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800018407,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Anomaly Detection 5
+|zhs  = 异常勘测•其五
+|zht  = 異常勘測·其五
+|ja   = 異常観測・5
+|ko   = 이상 조사•5
+|es   = Detección de anomalías&nbsp;V
+|fr   = Détection d'anomalie 5
+|ru   = Обнаружение аномалии V
+|th   = ตรวจสอบความผิดปกติ 5
+|vi   = Thăm Dò Bất Thường 5
+|de   = Anomalieforschung (Teil 5)
+|id   = Keanehan Terdeteksi 5
+|pt   = Detecção de Anomalia 5
+}}
+
+==История изменений==
+{{История изменений|2.7}}

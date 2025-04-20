@@ -1,0 +1,152 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4140103
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Рынок будущего II]]''
+|Персонажи       = Бенджамин; Пела; Первопроходец
+|СтартЛокация    = Столп творения
+|Мир             = Ярило-VI
+|Локации         = Столп творения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*2; Shield (Item)*20; Кредиты*3 000
+}}
+'''''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|?}} Осмотреть
+----
+<!--Unknown TalkSentence: 414030001-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414030004-->
+:<!--Unknown TalkSentence: 414030005-->
+:<!--Unknown TalkSentence: 414030007-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 414030009-->
+:<!--Unknown TalkSentence: 414030010-->
+:<!--Unknown TalkSentence: 414030056-->
+:<!--Unknown TalkSentence: 414030011-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414030014-->
+:<!--Unknown TalkSentence: 414030015-->
+:<!--Unknown TalkSentence: 414030016-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010301,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010301,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::----
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010301,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+
+
+;(Поговорите с Бенджамин)
+<!--Unknown TalkSentence: 414030032-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414030034-->
+:;(Return to previous option selection)
+:;(If {{F|MissionCV-4140103-5}} is equal to 1)
+<!--Unknown TalkSentence: 414030039-->
+::{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 414030041-->
+
+;(Поговорите с Пела)
+<!--Unknown TalkSentence: 414030042-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414030044-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 414030055-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010306,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+;(If {{F|MissionCV-4140103-undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1219900
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1219900
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

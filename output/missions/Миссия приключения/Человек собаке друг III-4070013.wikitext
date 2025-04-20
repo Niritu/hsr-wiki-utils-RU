@@ -1,0 +1,256 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4070013
+|Название        = 
+|Изображение     = Миссия Освоения Человек собаке друг III.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Пеппи; Первопроходец
+|СтартЛокация    = Изолированная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Изолированная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Человек собаке друг III''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Встретьтесь с Пеппи и войдите в подозрительное помещение
+# Найдите способ открыть дверь
+# Двигайтесь дальше и поговорите с дворецким
+# Поговорите с созданиями и соберите зацепки
+# Осмотрите терминал поблизости
+# Верните утерянную диковину
+# Поговорите с созданиями и соберите зацепки
+# Поговорите с дворецким и разоблачите его ложь, чтобы найти потерянную диковину
+# Верните утерянную диковину
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<!--Unknown TalkSentence: 401300201-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401300203-->
+<!--Unknown TalkSentence: 401300204-->
+<!--Unknown TalkSentence: 401300205-->
+{{Диалог Конец}}
+
+===Встретьтесь с Пеппи и войдите в подозрительное помещение===
+{{Описание миссии|локация=Изолированная зона|Пеппи нашёл дворецкого. Вы вновь объединяетесь и начинаете осмотр подозрительного помещения...}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Найдите способ открыть дверь===
+{{Описание миссии|локация=Изолированная зона|Сенсорная дверь вновь вышла из строя, заперев вас внутри помещения. Уже поздно жаловаться Асте. Попробуйте найти способ открыть дверь вместе с Пеппи.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Аномальные изображения с камер наблюдения|20|x=1|text=Аномальные изображения с камер наблюдения}})
+{{Диалог Конец}}
+
+===Двигайтесь дальше и поговорите с дворецким===
+{{Описание миссии|локация=Изолированная зона|Дворецкий впереди. Кажется, нескольких угроз должно хватить, чтобы вернуть диковину, но, похоже, всё не так просто...}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Поговорите с созданиями и соберите зацепки===
+{{Описание миссии|локация=Изолированная зона|Несмотря на то, что остальные создания подчиняются дворецкому, среди них должны найтись те, кто им недоволен. Возможно, вы сможете узнать что-нибудь у них...}}
+{{Диалог Начало}}
+
+;(Потеряно {{Item|Ароматный десерт|20|x=1|text=Ароматный десерт}})
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByLocalPlayerIsFakeAvatar"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"TargetEntity": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"SpecialNPCID": 16001,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "Anchor"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1014,
+	"EnableTemplate": true
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите терминал поблизости===
+{{Описание миссии|локация=Изолированная зона|Создания заняли помещение после ухода исследователей. Терминал всё ещё работает, возможно, вы сможете найти в нём какие-нибудь полезные подсказки...}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Записи внешних коммуникаций|20|x=1|text=Записи внешних коммуникаций}})
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByLocalPlayerIsFakeAvatar"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"TargetEntity": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"SpecialNPCID": 16001,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "Anchor"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1014,
+	"EnableTemplate": true
+}</pre>
+{{Диалог Конец}}
+
+===Верните утерянную диковину===
+{{Описание миссии|локация=Изолированная зона|Дворецкий рассказал о местонахождении утерянной диковины. Настало время вернуть её...}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Ароматный десерт|20|x=1|text=Ароматный десерт}})
+{{Диалог Конец}}
+
+===Поговорите с созданиями и соберите зацепки===
+{{Описание миссии|локация=Изолированная зона|Несмотря на то, что остальные создания подчиняются дворецкому, среди них должны найтись те, кто им недоволен. Возможно, вы сможете узнать что-нибудь у них...}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Космический жареный рис (вчерашний)|20|x=1|text=Космический жареный рис (вчерашний)}})
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByLocalPlayerIsFakeAvatar"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"TargetEntity": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"SpecialNPCID": 16001,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "Anchor"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1014,
+	"EnableTemplate": true
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с дворецким и разоблачите его ложь, чтобы найти потерянную диковину===
+{{Описание миссии|локация=Изолированная зона|Как и ожидалось, дворецкий солгал вам и остальным созданиям. Теперь, когда доказательства собраны, настало время разоблачить его. Неопровержимые доказательства должны заставить его сказать правду, верно?}}
+{{Диалог Начало}}
+
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 401302901-->
+<!--Unknown TalkSentence: 401302902-->
+{{Диалог Конец}}
+
+===Верните утерянную диковину===
+{{Описание миссии|локация=Изолированная зона|Дворецкий рассказал о местонахождении утерянной диковины. Настало время вернуть её...}}
+{{Диалог Начало}}
+
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 401303101-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = It All Started With a Man and a Dog (III)
+|zhs  = 开局一人一狗•其三
+|zht  = 開局一人一狗•其三
+|ja   = スタートは一人と犬一匹・その3
+|ko   = 시작은 한 사람과 개 한 마리•3
+|es   = Al inicio solo había una persona y un perro&nbsp;III
+|fr   = Tout commence avec un homme et un chien&nbsp;(III)
+|ru   = Человек собаке друг III
+|th   = เริ่มด้วยคนหนึ่งคนและสุนัขหนึ่งตัว 3
+|vi   = Hành Trình Một Người Một Chó 3
+|de   = Es war einmal ein Mensch und ein Hund (Teil 3)
+|id   = Meitantei Peppy III
+|pt   = A História Começa Com um Homem e um Cachorro (III)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,592 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340149
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Персонажи       = Огонёк Геориоса; Первопроходец
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049001-->)
+:<!--Unknown TalkSentence: 434049001-->
+:<!--Unknown TalkSentence: 434049002-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049001-->)
+:<!--Unknown TalkSentence: 434049051-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014901,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180009,
+		181015
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180009,
+			"TriggerCustomString": "MissionOn_434014901"
+		},
+		{
+			"Item1": 181015,
+			"TriggerCustomString": "MissionNo_434014901"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049051
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014901)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_01_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049008-->
+
+;(Unused &mdash; MissionNo_434014901)
+<!--Unknown TalkSentence: 434049009-->
+;(If {{F|FSV_TheafFlameInteractState_01}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049004-->)
+:<!--Unknown TalkSentence: 434049101-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049004-->)
+:<!--Unknown TalkSentence: 434049151-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014902,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		408001,
+		140000
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 408001,
+			"TriggerCustomString": "MissionNo_434014902"
+		},
+		{
+			"Item1": 140000,
+			"TriggerCustomString": "MissionOn_434014902"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049106
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014902)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_02_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049107-->
+
+;(Unused &mdash; MissionNo_434014902)
+<!--Unknown TalkSentence: 434049108-->
+;(If {{F|FSV_TheafFlameInteractState_02}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049007-->)
+:<!--Unknown TalkSentence: 434049201-->
+:<!--Unknown TalkSentence: 434049202-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049007-->)
+:<!--Unknown TalkSentence: 434049207-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014903,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180004,
+		180001
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180004,
+			"TriggerCustomString": "MissionOn_434014903"
+		},
+		{
+			"Item1": 180001,
+			"TriggerCustomString": "MissionNo_434014903"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049207
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014903)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_03_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049208-->
+
+;(Unused &mdash; MissionNo_434014903)
+<!--Unknown TalkSentence: 434049209-->
+;(If {{F|FSV_TheafFlameInteractState_03}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049010-->)
+:<!--Unknown TalkSentence: 434049301-->
+:<!--Unknown TalkSentence: 434049302-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049010-->)
+:<!--Unknown TalkSentence: 434049307-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014904,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		181003,
+		180007
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180007,
+			"TriggerCustomString": "MissionOn_434014904"
+		},
+		{
+			"Item1": 181003,
+			"TriggerCustomString": "MissionNo_434014904"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049307
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014904)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_04_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049308-->
+
+;(Unused &mdash; MissionNo_434014904)
+<!--Unknown TalkSentence: 434049309-->
+;(If {{F|FSV_TheafFlameInteractState_04}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049013-->)
+:<!--Unknown TalkSentence: 434049401-->
+:<!--Unknown TalkSentence: 434049402-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049013-->)
+:<!--Unknown TalkSentence: 434049407-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014905,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		2,
+		140004
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 2,
+			"TriggerCustomString": "MissionOn_434014905"
+		},
+		{
+			"Item1": 140004,
+			"TriggerCustomString": "MissionNo_434014905"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049407
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014905)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_05_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049408-->
+
+;(Unused &mdash; MissionNo_434014905)
+<!--Unknown TalkSentence: 434049409-->
+;(If {{F|FSV_TheafFlameInteractState_05}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049016-->)
+:<!--Unknown TalkSentence: 434049501-->
+:<!--Unknown TalkSentence: 434049502-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049016-->)
+:<!--Unknown TalkSentence: 434049507-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014906,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180011,
+		180010
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180010,
+			"TriggerCustomString": "MissionOn_434014906"
+		},
+		{
+			"Item1": 180011,
+			"TriggerCustomString": "MissionNo_434014906"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049507
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014906)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_06_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049508-->
+
+;(Unused &mdash; MissionNo_434014906)
+<!--Unknown TalkSentence: 434049509-->
+;(If {{F|FSV_TheafFlameInteractState_06}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049019-->)
+:<!--Unknown TalkSentence: 434049601-->
+:<!--Unknown TalkSentence: 434049602-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049019-->)
+:<!--Unknown TalkSentence: 434049607-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014907,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180005,
+		181012
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 181012,
+			"TriggerCustomString": "MissionOn_434014907"
+		},
+		{
+			"Item1": 180005,
+			"TriggerCustomString": "MissionNo_434014907"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049607
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014907)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_07_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049608-->
+
+;(Unused &mdash; MissionNo_434014907)
+<!--Unknown TalkSentence: 434049609-->
+;(If {{F|FSV_TheafFlameInteractState_07}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+
+;(Поговорите с Огонёк Геориоса)
+;(If {{cx}}<!--during performance 434049022-->)
+:<!--Unknown TalkSentence: 434049701-->
+:<!--Unknown TalkSentence: 434049702-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 434049022-->)
+:<!--Unknown TalkSentence: 434049707-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014908,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		181005,
+		181004
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 181004,
+			"TriggerCustomString": "MissionOn_434014908"
+		},
+		{
+			"Item1": 181005,
+			"TriggerCustomString": "MissionNo_434014908"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049707
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; MissionOn_434014908)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_TheafFlame_08_FlameState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 434049708-->
+
+;(Unused &mdash; MissionNo_434014908)
+<!--Unknown TalkSentence: 434049709-->
+;(If {{F|FSV_TheafFlameInteractState_08}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.0}}

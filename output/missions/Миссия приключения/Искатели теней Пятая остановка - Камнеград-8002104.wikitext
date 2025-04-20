@@ -1,0 +1,292 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002104
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Пятая остановка - Камнеград.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Четвёртая остановка - Административный район]]''
+|Персонажи       = Первопроходец; Сампо; Хук
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = Искатели теней: Четвёртая остановка - Административный район
+|Следующая       = Искатели теней: Шестая остановка - Заклёпкоград
+|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Key of Knowledge*3; Кредиты*40 000
+}}
+'''Искатели теней: Пятая остановка - Камнеград''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите объекты и сфотографируйте их
+# Поговорите с Сампо
+# Прочтите сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите объекты и сфотографируйте их===
+{{Описание миссии|локация=Камнеград|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Камнеграда...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+;(Unused &mdash; Trigger_Performance_800210406)
+:{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 800210207-->
+:<!--Unknown TalkSentence: 800210208-->
+::{{Диалог|Стрелка}} undefined
+:::{{Чёрный экран|undefined}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800210407,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+::<!--Unknown TalkSentence: 800210210-->
+::<!--Unknown TalkSentence: 800210211-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 800210213-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800210407,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+::{{Чёрный экран|undefined}}
+
+;(Unused &mdash; Create_173_300003)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 173
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+
+
+;(Unused &mdash; 800210402_Sampo)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Сампо===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Прочтите сообщение Март 7===
+{{Диалог Начало}}
+;(If {{F|MissionCV-8002104-undefined}} is equal to 1)
+;(If {{F|MissionCV-8002104-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 5th Stop, Boulder Town
+|zhs  = 星旅寻影•第五站•磐岩镇
+|zht  = 星旅尋影•第五站•磐岩鎮
+|ja   = 星々の影を探して・5駅目・ボルダータウン
+|ko   = 그림자를 찾는 별의 여정•다섯 번째 역•볼더 타운
+|es   = Fotografías estelares, 5.ª parada: Villarroca
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 5e arrêt, Ville de Boulder
+|ru   = Искатели теней: Пятая остановка - Камнеград
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 5 - Boulder Town
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 5, Thị Trấn Boulder
+|de   = Stellarer Schattensucher: Fünfter Halt – Felsenstadt
+|id   = Penjelajah Bayangan Bintang: Perhentian 5 - Boulder Town
+|pt   = Sombrio Estelar: 5ª Parada, Vila do Rochedo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

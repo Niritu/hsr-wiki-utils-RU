@@ -1,0 +1,245 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8032100
+|Название        = 
+|Изображение     = Миссия Освоения Тюленье побоище Пролог.png
+|Тип             = Миссия приключения
+|События         = Тюленье побоище
+|Глава           = Тюленье побоище
+|Условия         = Завершена [[Миссия Освоения]] ''[[Зеркальное отражение ведьмы]]''
+|Персонажи       = Аглая; Ангельский тюлень; Апофис; Гиацина; Могучий тюлень; Первопроходец; Пузырик; Резиновый тюлень; Трибби; Тюлени-изменники; Фагуса; Фаебедон; Фаенон; Человек, похожий на Фаенона
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = Тюленье побоище: Соревнование в подгруппах
+|Награды         = Звёздный нефрит*10; Путеводитель путешественника*2; Утраченный кристалл*2; Кредиты*20 000
+}}
+'''Тюленье побоище: Пролог''' — Событие [[Миссия приключения]] из события [[Тюленье побоище]].
+
+==Описание==
+{{Описание|Кубок Изобилия Фагуса ниспослала на вас пророческий сон о превращении в тюленей.<br />Дитя пророчества, прими участие в Тюленьем побоище и спаси ничего не подозревающих жителей Амфореуса!}}
+
+==Этапы==
+# Поговорите с Аглаей и Трибби
+# Вздремните
+# Продолжите сон
+# Одолейте Фаебедона
+# Примите участие в состязании
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите с Аглаей и Трибби===
+{{Описание миссии|локация=Вечный священный город Охема|С приходом полубогинь всё пространство в вашей купальне буквально озаряется.<br />Но они точно пришли не просто так... Узнайте причину их визита.}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Аглая
+:{{tx}}
+<!--Unknown TalkSentence: 803216102-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 803216104-->
+:<!--Unknown TalkSentence: 803216105-->
+:<!--Unknown TalkSentence: 803216106-->
+:<!--Unknown TalkSentence: 803216107-->
+::{{Диалог|Стрелка}} undefined
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 803216106-->
+:<!--Unknown TalkSentence: 803216107-->
+::{{Диалог|Стрелка}} undefined
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G738"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G738)
+
+{{Диалог Конец}}
+
+===Вздремните===
+{{Описание миссии|локация=Вечный священный город Охема|Вы видели и хорошие сны, и плохие, но вот пророческие не видели никогда.<br />Может, если десять раз сказать перед сном «пророческий сон», то это сработает?}}
+{{Диалог Начало}}
+
+:{{Диалог|undefined}} Поспать
+----
+<!--Unknown TalkSentence: 803216201-->
+<!--Unknown TalkSentence: 803216202-->
+
+:<!--3-second delay-->
+<!--Unknown TalkSentence: 803210328-->
+;(Unused &mdash; TalkSentence_803216617)
+
+
+;(Unused &mdash; EnterDistrict_G793)
+----
+:<!--Unknown TalkSentence: 803216601-->
+:<!--Unknown TalkSentence: 803216602-->
+:<!--Unknown TalkSentence: 803216603-->
+:<!--Unknown TalkSentence: 803216604-->
+:<!--Unknown TalkSentence: 803216605-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216607-->
+::<!--Unknown TalkSentence: 803216608-->
+::<!--Unknown TalkSentence: 803216609-->
+::<!--Unknown TalkSentence: 803216610-->
+::<!--Unknown TalkSentence: 803216611-->
+:::{{tx}}
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216610-->
+::<!--Unknown TalkSentence: 803216611-->
+:::{{tx}}
+:::{{tx}}
+:<!--Unknown TalkSentence: 803216610-->
+:<!--Unknown TalkSentence: 803216611-->
+::{{tx}}
+::{{tx}}
+
+;(Unused &mdash; EnterDistrict_G739)
+----
+::{{tx}}
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 803216314-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 803216316-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216318-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 803216325-->
+::<!--Unknown TalkSentence: 803216326-->
+:<pre>{
+	"$type": "RPG.GameCore.EnterMarblePVEMatch",
+	"MatchID": 1,
+	"HeroTeamMarbleSealIDList": [
+		202,
+		201,
+		202
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Продолжите сон===
+{{Описание миссии|локация=Вечный священный город Охема|Ваш сон прерывает таинственная сила. Пора вернуться к пророчеству.}}
+{{Диалог Начало}}
+
+:{{Диалог|undefined}} Продолжить сон
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 803216314-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 803216316-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 803216318-->
+::{{tx}}
+:<!--Unknown TalkSentence: 803216325-->
+:<!--Unknown TalkSentence: 803216326-->
+<pre>{
+	"$type": "RPG.GameCore.EnterMarblePVEMatch",
+	"MatchID": 1,
+	"HeroTeamMarbleSealIDList": [
+		202,
+		201,
+		202
+	]
+}</pre>
+
+{{Диалог Конец}}
+
+===Одолейте Фаебедона===
+{{Описание миссии|локация=Вечный священный город Охема|Даже во сне приходится идти путём Освоения.<br />Одолейте Фаебедона во имя маленьких тюленей!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G652)
+<!--Unknown TalkSentence: 803216408-->
+:<!--Unknown TalkSentence: 803216409-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216411-->
+::<!--Unknown TalkSentence: 803216412-->
+::<!--Unknown TalkSentence: 803216413-->
+::<!--Unknown TalkSentence: 803216414-->
+::<!--Unknown TalkSentence: 803216415-->
+::<!--Unknown TalkSentence: 803216416-->
+::<!--Unknown TalkSentence: 803216417-->
+::<!--Unknown TalkSentence: 803216418-->
+::<!--Unknown TalkSentence: 803216419-->
+::<!--Unknown TalkSentence: 803216420-->
+::<!--Unknown TalkSentence: 803216421-->
+::<!--Unknown TalkSentence: 803216422-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216413-->
+::<!--Unknown TalkSentence: 803216414-->
+::<!--Unknown TalkSentence: 803216415-->
+::<!--Unknown TalkSentence: 803216416-->
+::<!--Unknown TalkSentence: 803216417-->
+::<!--Unknown TalkSentence: 803216418-->
+::<!--Unknown TalkSentence: 803216419-->
+::<!--Unknown TalkSentence: 803216420-->
+::<!--Unknown TalkSentence: 803216421-->
+::<!--Unknown TalkSentence: 803216422-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803216415-->
+::<!--Unknown TalkSentence: 803216416-->
+::<!--Unknown TalkSentence: 803216417-->
+::<!--Unknown TalkSentence: 803216418-->
+::<!--Unknown TalkSentence: 803216419-->
+::<!--Unknown TalkSentence: 803216420-->
+::<!--Unknown TalkSentence: 803216421-->
+::<!--Unknown TalkSentence: 803216422-->
+:<!--Unknown TalkSentence: 803216415-->
+:<!--Unknown TalkSentence: 803216416-->
+:<!--Unknown TalkSentence: 803216417-->
+:<!--Unknown TalkSentence: 803216418-->
+:<!--Unknown TalkSentence: 803216419-->
+:<!--Unknown TalkSentence: 803216420-->
+:<!--Unknown TalkSentence: 803216421-->
+:<!--Unknown TalkSentence: 803216422-->
+{{Диалог Конец}}
+
+===Примите участие в состязании===
+{{Описание миссии|локация=Вечный священный город Охема|Проснувшись, вы не избавляетесь от замешательства.<br />«Если не выиграешь кубок, навсегда останешься тюленем!» - пророчество Фагусы до сих пор звучит у вас в голове.<br />Это просто чушь или всё же правда?}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Seal Slammers: Prologue
+|zhs  = 豹豹碰碰大作战•序幕
+|zht  = 豹豹碰碰大作戰•序幕
+|ja   = ぽよよん！アザラシ大作戦・プロローグ
+|ko   = 팅팅탱탱 물범 대격돌•프롤로그
+|es   = Gran choque de focas: prólogo
+|fr   = Prologue du Choc des phoques
+|ru   = Тюленье побоище: Пролог
+|th   = ศึกปะทะอุ๋งอุ๋ง: บทนำ
+|vi   = Hải Cẩu Cưng Đụng Độ - Mở Đầu
+|de   = Operation Kampf der Seehunde: Prolog
+|id   = Bom-Bom Anjing Laut: Prolog
+|pt   = Bate-Bate das Focas: Prólogo
+}}
+
+==История изменений==
+{{История изменений|3.2}}

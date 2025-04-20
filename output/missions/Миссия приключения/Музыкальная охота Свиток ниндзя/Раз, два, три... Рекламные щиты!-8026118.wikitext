@@ -1,0 +1,141 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026118
+|Название        = 
+|Изображение     = Миссия Освоения Раз, два, три... Рекламные щиты!.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Первопроходец; Торговец-эрудроид
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Раз, два, три... Рекламные щиты!''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Соберите вдохновение, прогулявшись по Золотому мигу
+# Сыграйте в аркадную игру торговца-эрудроида
+
+==Прохождение==
+{{Дополнить}}
+
+===Соберите вдохновение, прогулявшись по Золотому мигу===
+{{Описание миссии|локация=Золотой миг|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по Золотому мигу, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G558)
+<!--Unknown TalkSentence: 802619801-->
+:<!--Unknown TalkSentence: 802619802-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619804-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "9"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+
+;(Поговорите с Торговец-эрудроид)
+<!--Unknown TalkSentence: 802611439-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "9"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Сыграйте в аркадную игру торговца-эрудроида===
+{{Описание миссии|локация=Золотой миг|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита рекламных щитов. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802619836-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Торговец-эрудроид)
+<!--Unknown TalkSentence: 802611439-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "9"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "9"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = One, Two, Three... Billboards!
+|zhs  = 一、二、三…广告牌！
+|zht  = 一、二、三……看板！
+|ja   = 看板さんが転んだ
+|ko   = 1, 2, 3… 광고판!
+|es   = Un, dos, tres... ¡Anuncio!
+|fr   = Un, deux, trois... Panneau&nbsp;!
+|ru   = Раз, два, три... Рекламные щиты!
+|th   = หนึ่ง สอง สาม...ป้ายโฆษณา!
+|vi   = 1, 2, 3... Bảng Quảng Cáo!
+|de   = Eins, zwei, drei ... Werbetafel!
+|id   = Satu, Dua, Tiga ... Papan Iklan!
+|pt   = Um, Dois, Três... Painéis Publicitários!
+}}
+
+==История изменений==
+{{История изменений|2.7}}

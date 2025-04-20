@@ -1,0 +1,367 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8014101
+|Название        = 
+|Изображение     = Миссия Освоения Начало! «Эфирные войны»!.png
+|Тип             = Миссия приключения
+|События         = «Эфирные войны»
+|Глава           = Межзвёздный фестиваль-турнир
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Рынок будущего II]]''
+|Персонажи       = (Господин Свинка-копилка/Господин Свинка/Пузырик/Пушистик/Белоснежное зло/Пухляш/Турбосвин/Эон среди свинок); Грубый сотрудник КММ; Джованни; Март 7; Озлобленный сотрудник КММ; Первопроходец; Уайлдер; Эрик
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = 
+|Следующая       = Выдвигаемся! Коридор исчезающего эха!
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*6; Утраченный кристалл*4; Кредиты*40 000
+}}
+'''Начало! «Эфирные войны»!''' — Событие [[Миссия приключения]] из события [[«Эфирные войны»]].
+
+==Описание==
+{{Описание|С долговыми обязательствами Ярило покончено, и местный рынок покоряет игра «Эфирные войны».<br />По рекомендации Уайлдера вы с Март 7 участвуете в своей первой дуэли эфирных духов. Вы намерены стать чемпионами.}}
+
+==Этапы==
+# Посоветуйтесь с Март 7
+# Встретьтесь с Уайлдером в Заклёпкограде
+# Отправляйтесь на арену
+# Следуйте за Уайлдером
+# Одолейте отряд поддержки Топаз
+# Отправляйтесь к терминалу игрока «Эфирных войн»
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Посоветуйтесь с Март 7===
+{{Описание миссии|локация=Административный район|Сотрудник КММ по имени Уайлдер настоятельно рекомендует вам игру под названием «Эфирные войны» и приглашает вас принять участие в Межзвёздном фестивале-турнире.<br />Хотите сыграть в эту игру? Сначала поговорите с Март 7.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"GroupID": 217,
+	"GroupNpcID": 400001
+}</pre>
+<!--Unknown TalkSentence: 814100202-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814100204-->
+<!--Unknown TalkSentence: 814100207-->
+<!--Unknown TalkSentence: 814100208-->
+<!--Unknown TalkSentence: 814100209-->
+{{Диалог Конец}}
+
+===Встретьтесь с Уайлдером в Заклёпкограде===
+{{Описание миссии|локация=Заклёпкоград|Сотрудник КММ по имени Уайлдер настоятельно рекомендует вам игру под названием «Эфирные войны» и приглашает вас принять участие в Межзвёздном фестивале-турнире.<br />Вы решили испытать эту игру. Сначала нужно найти Уайлдера.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 113
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814101101-->
+
+;(Поговорите с Уайлдер)
+----
+<!--Unknown TalkSentence: 814100301-->
+<!--Unknown TalkSentence: 814100302-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Отправляйтесь на арену===
+{{Описание миссии|локация=Заклёпкоград|Сотрудник КММ по имени Уайлдер настоятельно рекомендует вам игру под названием «Эфирные войны» и приглашает вас принять участие в Межзвёздном фестивале-турнире.<br />Уайлдер утверждает, что вы можете играть, только зайдя в определённое лобби для регистрации учётной записи. Посмотрите, что ещё он может придумать.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Следуйте за Уайлдером===
+{{Описание миссии|локация=Старый испытательный полигон|Сотрудник КММ по имени Уайлдер настоятельно рекомендует вам игру под названием «Эфирные войны» и приглашает вас принять участие в Межзвёздном фестивале-турнире.<br />Следуя за Уайлдером, вы проходите на арену...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 12
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814101105-->
+<!--Unknown TalkSentence: 814101106-->
+<!--Unknown TalkSentence: 814101107-->
+
+;(Поговорите с Джованни)
+----
+<!--Unknown TalkSentence: 814100501-->
+<!--Unknown TalkSentence: 814100502-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100504-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100506-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100508-->
+<!--Unknown TalkSentence: 814100509-->
+<!--Unknown TalkSentence: 814100510-->
+<!--Unknown TalkSentence: 814100511-->
+<!--Unknown TalkSentence: 814100512-->
+<!--Unknown TalkSentence: 814100513-->
+<!--Unknown TalkSentence: 814100514-->
+<!--Unknown TalkSentence: 814100401-->
+<!--Unknown TalkSentence: 814100402-->
+<!--Unknown TalkSentence: 814100403-->
+<!--Unknown TalkSentence: 814100404-->
+<!--Unknown TalkSentence: 814100405-->
+<!--Unknown TalkSentence: 814100406-->
+<!--Unknown TalkSentence: 814100407-->
+<!--Unknown TalkSentence: 814100408-->
+<!--Unknown TalkSentence: 814100409-->
+<!--Unknown TalkSentence: 814100410-->
+<!--Unknown TalkSentence: 814100411-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100413-->
+:<!--Unknown TalkSentence: 814100414-->
+:<!--Unknown TalkSentence: 814100415-->
+:<!--Unknown TalkSentence: 814100416-->
+:<!--Unknown TalkSentence: 814100417-->
+:<!--Unknown TalkSentence: 814100418-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100415-->
+:<!--Unknown TalkSentence: 814100416-->
+:<!--Unknown TalkSentence: 814100417-->
+:<!--Unknown TalkSentence: 814100418-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100417-->
+:<!--Unknown TalkSentence: 814100418-->
+::{{tx}}
+<!--Unknown TalkSentence: 814100417-->
+<!--Unknown TalkSentence: 814100418-->
+:{{tx}}
+----
+<!--Unknown TalkSentence: 814100501-->
+<!--Unknown TalkSentence: 814100502-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100504-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100506-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100508-->
+<!--Unknown TalkSentence: 814100509-->
+<!--Unknown TalkSentence: 814100510-->
+<!--Unknown TalkSentence: 814100511-->
+<!--Unknown TalkSentence: 814100512-->
+<!--Unknown TalkSentence: 814100513-->
+<!--Unknown TalkSentence: 814100514-->
+{{Диалог Конец}}
+
+===Одолейте отряд поддержки Топаз===
+{{Описание миссии|локация=Старый испытательный полигон|Вы натыкаетесь на сотрудников КММ, угрожающих Эрику. Столько взрослых напали на одного ребёнка, как бесстыдно!<br />При посредничестве Джованни вы решили урегулировать спор с помощью матча «Эфирных войн». Бурлящий восторг первой битвы!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 814100601-->
+<!--Unknown TalkSentence: 814100602-->
+<!--Unknown TalkSentence: 814100603-->
+<!--Unknown TalkSentence: 814100604-->
+<!--Unknown TalkSentence: 814100605-->
+<!--Unknown TalkSentence: 814100606-->
+<!--Unknown TalkSentence: 814100607-->
+<!--Unknown TalkSentence: 814100608-->
+<!--Unknown TalkSentence: 814100609-->
+<!--Unknown TalkSentence: 814100610-->
+<!--Unknown TalkSentence: 814100611-->
+<!--Unknown TalkSentence: 814100612-->
+<!--Unknown TalkSentence: 814100613-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100615-->
+:<!--Unknown TalkSentence: 814100616-->
+:<!--Unknown TalkSentence: 814100617-->
+:<!--Unknown TalkSentence: 814100618-->
+:<!--Unknown TalkSentence: 814100619-->
+:<!--Unknown TalkSentence: 814100620-->
+:<!--Unknown TalkSentence: 814100621-->
+:<!--Unknown TalkSentence: 814100622-->
+:<!--Unknown TalkSentence: 814100623-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100617-->
+:<!--Unknown TalkSentence: 814100618-->
+:<!--Unknown TalkSentence: 814100619-->
+:<!--Unknown TalkSentence: 814100620-->
+:<!--Unknown TalkSentence: 814100621-->
+:<!--Unknown TalkSentence: 814100622-->
+:<!--Unknown TalkSentence: 814100623-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100620-->
+:<!--Unknown TalkSentence: 814100621-->
+:<!--Unknown TalkSentence: 814100622-->
+:<!--Unknown TalkSentence: 814100623-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 814100620-->
+<!--Unknown TalkSentence: 814100621-->
+<!--Unknown TalkSentence: 814100622-->
+<!--Unknown TalkSentence: 814100623-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+----
+<!--Unknown TalkSentence: 814100701-->
+<!--Unknown TalkSentence: 814100702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100704-->
+:<!--Unknown TalkSentence: 814100710-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140286.png"
+}</pre>
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 814100711-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140286.png"
+}</pre>
+:<!--Unknown TalkSentence: 814100712-->
+:<!--Unknown TalkSentence: 814100713-->
+:<!--Unknown TalkSentence: 814100714-->
+:<!--Unknown TalkSentence: 814100715-->
+:<!--Unknown TalkSentence: 814100716-->
+:<!--Unknown TalkSentence: 814100717-->
+:<!--Unknown TalkSentence: 814100718-->
+:<!--Unknown TalkSentence: 814100719-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100706-->
+:<!--Unknown TalkSentence: 814100710-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140286.png"
+}</pre>
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 814100711-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140286.png"
+}</pre>
+:<!--Unknown TalkSentence: 814100712-->
+:<!--Unknown TalkSentence: 814100713-->
+:<!--Unknown TalkSentence: 814100714-->
+:<!--Unknown TalkSentence: 814100715-->
+:<!--Unknown TalkSentence: 814100716-->
+:<!--Unknown TalkSentence: 814100717-->
+:<!--Unknown TalkSentence: 814100718-->
+:<!--Unknown TalkSentence: 814100719-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814100708-->
+:;(Return to previous option selection)
+;(Получено {{Item|Эфирная монета|20|x=1|text=Эфирная монета}})
+{{Диалог Конец}}
+
+===Отправляйтесь к терминалу игрока «Эфирных войн»===
+{{Описание миссии|локация=Старый испытательный полигон|Вы получили неожиданную награду после победы над сотрудниками КММ... Но если вы хотите победить в чемпионате, нужно научиться пользоваться терминалом игрока «Эфирных войн».}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 12
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814100901-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherDivideEntryPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": []
+}</pre>
+----
+<!--Unknown TalkSentence: 814101001-->
+<!--Unknown TalkSentence: 814101002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814101004-->
+:<!--Unknown TalkSentence: 814101008-->
+:<!--Unknown TalkSentence: 814101009-->
+:<!--Unknown TalkSentence: 814101010-->
+::<!--1-second delay-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814101006-->
+:<!--Unknown TalkSentence: 814101007-->
+:<!--Unknown TalkSentence: 814101008-->
+:<!--Unknown TalkSentence: 814101009-->
+:<!--Unknown TalkSentence: 814101010-->
+::<!--1-second delay-->
+::----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Let's Go! Aetherium Wars!
+|zhs  = 启程！以太战线
+|zht  = 啟程！《乙太戰線》
+|ja   = 開幕！エーテル戦線
+|ko   = 출발! 에테르 배틀
+|es   = ¡Vamos, Guerras Etéreas!
+|fr   = À nous les Guerres de l'étherium&nbsp;!
+|ru   = Начало! «Эфирные войны»!
+|th   = ตะลุยแนวรบ Aetherium
+|vi   = Khởi Hành! Cuộc Chiến Aetherium
+|de   = Auf in den Ätheriumkrieg!
+|id   = Ayo, Perang Aetherium!
+|pt   = Vamos lá! Guerras de Aetherium!
+}}
+
+==История изменений==
+{{История изменений|2.7}}

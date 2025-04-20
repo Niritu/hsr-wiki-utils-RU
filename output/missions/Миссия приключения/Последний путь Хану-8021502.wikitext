@@ -1,0 +1,294 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8021502
+|Название        = 
+|Изображение     = Миссия Освоения Последний путь Хану.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Завершена {{cx}}<!--Hidden Mission ID 8021506-->
+* Завершена {{cx}}<!--Hidden Mission ID 8021404-->
+* Завершена {{cx}}<!--Hidden Mission ID 8020232-->
+|Персонажи       = Босс Камень; Первопроходец
+|СтартЛокация    = Большой театр Пенаконии
+|Мир             = Пенакония
+|Локации         = Большой театр Пенаконии
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*30; Утраченный кристалл*3; Golden Limited - Aideen Token*1; Planet of Festivities Collectible Card*1 { text = Коллекционная карточка серии «Планета празднеств»: Хануну }; Кредиты*10 000
+}}
+'''Последний путь Хану''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Пройдите скрытое испытание «Приключений Хану»
+# Одолейте Стального Крокодила босса Камня
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Пройдите скрытое испытание «Приключений Хану»===
+{{Описание миссии|локация=Большой театр Пенаконии|Таинственный человек, утверждающий, что работает в Студии «Часы», приглашает вас познакомиться с окончанием «Приключений Хану»...<br />Что за тайна скрывается за этой историей?}}
+{{Диалог Начало}}
+
+;(If {{F|WolfBossPhase}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+;(Unused &mdash; TV_Open)
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+{{Диалог Конец}}
+
+===Одолейте Стального Крокодила босса Камня===
+{{Описание миссии|локация=Большой театр Пенаконии|Презренный босс Камень создал неуязвимого Стального Крокодила. Найдите способ одолеть его!<br />Ракетница Хану не может навредить Стальному Крокодилу, но мощный фейерверк может помочь...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20332_F20332001_G82",
+	"AnchorName": "ActCamera01",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+<!--Unknown TalkSentence: 802152002-->
+<!--Unknown TalkSentence: 802152003-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20332_F20332001_G82",
+	"AnchorName": "ActCamera01",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20332_F20332001_G82",
+	"AnchorName": "ActCamera02",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "SingleByMonsterID",
+		"SingleMonsterID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 80
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 200002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "SingleByMonsterID",
+		"SingleMonsterID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 82
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 200001
+				}
+			}
+		}
+	},
+	"Visible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "Boss"
+	},
+	"AnimStateName": "BornShow"
+}</pre>
+<!--Unknown TalkSentence: 802152102-->
+<!--Unknown TalkSentence: 802152103-->
+;(Unused &mdash; WolfBro_Boss_HintBossDie)
+<!--Unknown TalkSentence: 802152502-->
+:<!--Unknown TalkSentence: 802152503-->
+:<!--Unknown TalkSentence: 802152504-->
+:<!--Unknown TalkSentence: 802152505-->
+
+;(Unused &mdash; WolfBro_GetGun)
+<!--Unknown TalkSentence: 802152302-->
+:<!--Unknown TalkSentence: 802152303-->
+
+;(Unused &mdash; WolfBoss_SecondLossHP)
+<!--Unknown TalkSentence: 802152507-->
+:<!--Unknown TalkSentence: 802152508-->
+
+;(Unused &mdash; WolfBoss_BeHit)
+<!--Unknown TalkSentence: 802152202-->
+
+;(Unused &mdash; WolfBro_Boss_HintFireworks)
+<!--Unknown TalkSentence: 802152302-->
+:<!--Unknown TalkSentence: 802152303-->
+
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "WolfBro_Boss",
+		"AreaName": {
+			"Value": "LevelArea_P20332_F20332001_G82"
+		},
+		"AnchorName": {
+			"Value": "NoBossPoint"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCharacterDisableHitBox",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"Enable": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "SingleByMonsterID",
+		"SingleMonsterID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 82
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 200001
+				}
+			}
+		}
+	},
+	"Visible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "WolfBoss_Fake",
+		"AreaName": {
+			"Value": "LevelArea_P20332_F20332001_G82"
+		},
+		"AnchorName": {
+			"Value": "BossPoint"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "WolfBoss_Fake"
+	},
+	"AnimStateName": "Die"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20332_F20332001_G82",
+	"AnchorName": "ActCamera03",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 802152502-->
+<!--Unknown TalkSentence: 802152503-->
+<!--Unknown TalkSentence: 802152504-->
+<!--Unknown TalkSentence: 802152505-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20332_F20332001_G82",
+	"AnchorName": "ActCamera03",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802150204,
+	"MessageSectionID": 1308500
+}</pre>
+;(Unused &mdash; EnterWolfBro)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hanu's End
+|zhs  = 哈努的末路
+|zht  = 哈努的末路
+|ja   = ハヌの末路
+|ko   = 하누의 말로
+|es   = El fin de Hanu
+|fr   = La Chute de Hanu
+|ru   = Последний путь Хану
+|th   = จุดจบของ Hanu
+|vi   = Kết Cục Của Hanu
+|de   = Hanus Untergang
+|id   = Akhir Hanu
+|pt   = O Fim de Hanu
+}}
+
+==История изменений==
+{{История изменений|2.7}}

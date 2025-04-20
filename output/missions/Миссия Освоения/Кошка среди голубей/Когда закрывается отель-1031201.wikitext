@@ -1,0 +1,371 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1031201
+|Название        = 
+|Изображение     = Миссия Освоения Когда закрывается отель.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Кошка среди голубей
+|Условия         = Завершена [[Миссия Освоения]] ''[[Двойное возмещение]]''
+|Персонажи       = Галлахер; Март 7; Опрометчивый мужчина из Гончих; Первопроходец; Принципиальный мужчина из Гончих; Спокойная женщина из Гончих; Топаз; Химеко; Элли
+|СтартЛокация    = Отель «Грёзы» (реальность)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (реальность)
+|Предыдущая      = Двойное возмещение
+|Следующая       = По эту сторону рая
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*5; Очищенный эфир*5; Часокредиты*300; "Hi, Dolly!"*1 { text = Hi, Dolly! }; Кредиты*80 000
+}}
+'''Когда закрывается отель''' — [[Миссия Освоения]] в главе [[Кошка среди голубей]].
+
+==Описание==
+{{Описание|Когда расследование зашло в тупик, вы неожиданно столкнулись с Топаз в вестибюле отеля. Вы нашли очередную зацепку - Галлахера, детектива из клана Гончих. Кажется, он владеет важной информацией. Он пригласил вас поговорить в другом месте.}}
+
+==Этапы==
+# Опросите работника стойки регистрации
+# Поговорите с Топаз (необязательно)
+# Опросите Гончих
+# Отправляйтесь на Границу грёз и найдите Галлахера
+# Найдите Галлахера на Границе грёз
+# Примените Заводной механизм на принципиальном члене клана Гончих
+# Поговорите с Галлахером
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Опросите работника стойки регистрации===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Вы добираетесь до отеля реальности, чтобы собрать больше информации о жертвах двух убийств. Будем надеяться, что администратор не будет придерживаться своей профессиональной этики и предоставит все нужные сведения.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103120001-->
+<!--Unknown TalkSentence: 103120002-->
+<!--Unknown TalkSentence: 103120003-->
+<!--Unknown TalkSentence: 103120004-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103120009-->
+:<!--Unknown TalkSentence: 103120010-->
+:<!--Unknown TalkSentence: 103120011-->
+:<!--Unknown TalkSentence: 103120012-->
+:<!--Unknown TalkSentence: 103120013-->
+:<!--Unknown TalkSentence: 103120014-->
+:<!--Unknown TalkSentence: 103120015-->
+:<!--Unknown TalkSentence: 103120016-->
+:<!--Unknown TalkSentence: 103120017-->
+:<!--Unknown TalkSentence: 103120018-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103120007-->
+:<!--Unknown TalkSentence: 103120008-->
+:<!--Unknown TalkSentence: 103120009-->
+:<!--Unknown TalkSentence: 103120010-->
+:<!--Unknown TalkSentence: 103120011-->
+:<!--Unknown TalkSentence: 103120012-->
+:<!--Unknown TalkSentence: 103120013-->
+:<!--Unknown TalkSentence: 103120014-->
+:<!--Unknown TalkSentence: 103120015-->
+:<!--Unknown TalkSentence: 103120016-->
+:<!--Unknown TalkSentence: 103120017-->
+:<!--Unknown TalkSentence: 103120018-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10305_F10305001_G57"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Топаз)
+<!--Unknown TalkSentence: 103120301-->
+:<!--Unknown TalkSentence: 103120302-->
+:<!--Unknown TalkSentence: 103120303-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103120306-->
+:<!--Unknown TalkSentence: 103120307-->
+::{{tx}}
+<!--Unknown TalkSentence: 103120401-->
+{{Диалог Конец}}
+
+===Поговорите с Топаз (необязательно)===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Хоть ваше расследование ни к чему не приводит, вы случайно сталкиваетесь с Топаз и верными приспешниками Гончих, которые ходят за ней по пятам, не спуская глаз с людей из КММ. Благодаря чтению детективных романов вам давно известно, что обычно охранники не приносят никакой пользы, кроме помощи детективу и поиска улик. Вот и пришёл их черёд сыграть свою роль в этом деле!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Опросите Гончих===
+{{Диалог Начало}}
+
+;(Поговорите с Опрометчивый мужчина из Гончих)
+<!--Unknown TalkSentence: 103120501-->
+:<!--Unknown TalkSentence: 103120502-->
+:<!--Unknown TalkSentence: 103120503-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103120601-->
+{{Диалог Конец}}
+
+===Отправляйтесь на Границу грёз и найдите Галлахера===
+{{Описание миссии|локация=Граница грёз|Благодаря паре болтливых членов клана Гончих вы узнаёте, что Галлахер в настоящее время находится на Границе грёз. По воле случая вы уже встречались с Галлахером раньше. Возможно, вы сможете получить доступ к месту расследования, организованного Гончими, встретившись с Галлахером и получив от него дополнительную информацию о деле.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103120116-->
+<!--Unknown TalkSentence: 103120117-->
+
+;(Поговорите с Галлахер)
+<!--Unknown TalkSentence: 103121401-->
+<!--Unknown TalkSentence: 103121402-->
+<!--Unknown TalkSentence: 103121403-->
+<!--Unknown TalkSentence: 103121404-->
+<!--Unknown TalkSentence: 103121405-->
+<!--Unknown TalkSentence: 103121406-->
+<!--Unknown TalkSentence: 103121407-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; FinishMission)
+<!--Unknown TalkSentence: 103120901-->
+:<!--Unknown TalkSentence: 103120902-->
+:<!--Unknown TalkSentence: 103091170-->
+
+;(Unused &mdash; reopenui_anger_159)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G159"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"EmoTypeBlackList": [
+		"Anger"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+
+;(Unused &mdash; reopenui_sad_159)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G159"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"EmoTypeBlackList": [
+		"Sad"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+;(Unused &mdash; FinishMission)
+<!--Unknown TalkSentence: 103120801-->
+:<!--Unknown TalkSentence: 103120802-->
+:<!--Unknown TalkSentence: 103120803-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103120805-->
+::<!--Unknown TalkSentence: 103120806-->
+::<!--Unknown TalkSentence: 103120807-->
+::<!--Unknown TalkSentence: 103120808-->
+::<!--Unknown TalkSentence: 103120809-->
+::<!--Unknown TalkSentence: 103120810-->
+::<!--Unknown TalkSentence: 103120811-->
+::<!--Unknown TalkSentence: 103120812-->
+::<!--Unknown TalkSentence: 103120813-->
+::<!--Unknown TalkSentence: 103120814-->
+::<!--Unknown TalkSentence: 103120815-->
+::<!--Unknown TalkSentence: 103120816-->
+::<!--Unknown TalkSentence: 103120817-->
+::<!--Unknown TalkSentence: 103120818-->
+::<!--Unknown TalkSentence: 103120819-->
+::<!--Unknown TalkSentence: 103120820-->
+::<!--Unknown TalkSentence: 103120821-->
+::<!--Unknown TalkSentence: 103120822-->
+::<!--Unknown TalkSentence: 103120823-->
+::<!--Unknown TalkSentence: 103120824-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103120807-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103120809-->
+::<!--Unknown TalkSentence: 103120810-->
+::<!--Unknown TalkSentence: 103120811-->
+::<!--Unknown TalkSentence: 103120812-->
+::<!--Unknown TalkSentence: 103120813-->
+::<!--Unknown TalkSentence: 103120814-->
+::<!--Unknown TalkSentence: 103120815-->
+::<!--Unknown TalkSentence: 103120816-->
+::<!--Unknown TalkSentence: 103120817-->
+::<!--Unknown TalkSentence: 103120818-->
+::<!--Unknown TalkSentence: 103120819-->
+::<!--Unknown TalkSentence: 103120820-->
+::<!--Unknown TalkSentence: 103120821-->
+::<!--Unknown TalkSentence: 103120822-->
+::<!--Unknown TalkSentence: 103120823-->
+::<!--Unknown TalkSentence: 103120824-->
+:<!--Unknown TalkSentence: 103120809-->
+:<!--Unknown TalkSentence: 103120810-->
+:<!--Unknown TalkSentence: 103120811-->
+:<!--Unknown TalkSentence: 103120812-->
+:<!--Unknown TalkSentence: 103120813-->
+:<!--Unknown TalkSentence: 103120814-->
+:<!--Unknown TalkSentence: 103120815-->
+:<!--Unknown TalkSentence: 103120816-->
+:<!--Unknown TalkSentence: 103120817-->
+:<!--Unknown TalkSentence: 103120818-->
+:<!--Unknown TalkSentence: 103120819-->
+:<!--Unknown TalkSentence: 103120820-->
+:<!--Unknown TalkSentence: 103120821-->
+:<!--Unknown TalkSentence: 103120822-->
+:<!--Unknown TalkSentence: 103120823-->
+:<!--Unknown TalkSentence: 103120824-->
+{{Диалог Конец}}
+
+===Найдите Галлахера на Границе грёз===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 103091165
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 103091166
+		}
+	],
+	"LoopInterval": 10,
+	"UniqueID": 24901
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 103091167
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 103091168
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 103091169
+		}
+	],
+	"LoopInterval": 10,
+	"UniqueID": 24902
+}</pre>
+{{Диалог Конец}}
+
+===Примените Заводной механизм на принципиальном члене клана Гончих===
+{{Описание миссии|локация=Граница грёз|Вы снова пересекаетесь с принципиальным членом клана Гончих. Похоже, он до сих пор не отступил от своих принципов, поэтому вам, возможно, придётся прибегнуть к своим старым уловкам, чтобы заставить его сотрудничать.}}
+{{Диалог Начало}}
+
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Галлахером===
+{{Описание миссии|локация=Граница грёз|Похоже, на вашем пути больше нет Гончих, или, быть может, они просто слишком сосредоточены на расследовании и не замечают вас.<br />В любом случае это ваш шанс поговорить с детективом.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103121401-->
+<!--Unknown TalkSentence: 103121402-->
+<!--Unknown TalkSentence: 103121403-->
+<!--Unknown TalkSentence: 103121404-->
+<!--Unknown TalkSentence: 103121405-->
+<!--Unknown TalkSentence: 103121406-->
+<!--Unknown TalkSentence: 103121407-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = When the Sacred Ginmill Closes
+|zhs  = 酒店关门之后
+|zht  = 飯店關門之後
+|ja   = 聖なる酒場の哀歌
+|ko   = 성스러운 바가 문을 닫을 때
+|es   = Cuando el hotel cierra sus puertas
+|fr   = Après la fermeture des portes de l'hôtel
+|ru   = Когда закрывается отель
+|th   = ยามเมื่อโรงแรมปิด
+|vi   = Sau Khi Khách Sạn Đóng Cửa
+|de   = Wenn das Hotel schließt
+|id   = Setelah Hotel Tutup
+|pt   = Quando o Hotel Fecha as Portas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

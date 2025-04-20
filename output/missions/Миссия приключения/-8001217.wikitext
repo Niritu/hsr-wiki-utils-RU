@@ -1,0 +1,92 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001217
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Борис; Первопроходец; Хультен
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Поговорите с Хультен)
+;(If {{cx}}<!--during performance 501190101-->)
+:<!--Unknown TalkSentence: 501190101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501190103-->
+:<!--Unknown TalkSentence: 501190106-->
+:<!--Unknown TalkSentence: 501190107-->
+;(If {{cx}}<!--not during performance 501190101-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+::::{{Диалог|?}} undefined
+::::<!--Unknown TalkSentence: 800122732-->
+::::<!--Unknown TalkSentence: 800122733-->
+::::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+
+;(Поговорите с Борис)
+;(If {{cx}}<!--during performance 501190201-->)
+;(If {{cx}}<!--not during performance 501190201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190211
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 800130211-->
+<!--Unknown TalkSentence: 800130212-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

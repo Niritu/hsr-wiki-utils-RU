@@ -1,0 +1,103 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8020220
+|Название        = 
+|Изображение     = Миссия Освоения Побег братца Хану.png
+|Тип             = Миссия приключения
+|События         = Побег братца Хану
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Побег братца Хану]]''
+|Персонажи       = Доктор Эдвард; Первопроходец
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Hanu's Dream Bubble*1
+}}
+'''Побег братца Хану''' — Событие [[Миссия приключения]] из события [[Побег братца Хану]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поделитесь впечатлениями с Доктором Эдвардом
+
+==Прохождение==
+{{Дополнить}}
+
+===Поделитесь впечатлениями с Доктором Эдвардом===
+{{Описание миссии|локация=Золотой миг|После изучения содержимого этого пузыря грёз вы крепко задумались.<br />Доктор Эдвард точно захочет услышать ваше мнение. Поговорите с ним.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802020501-->
+<!--Unknown TalkSentence: 802020502-->
+:{{Диалог|Стрелка}} undefined
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802020504-->
+:<!--Unknown TalkSentence: 802020509-->
+:<!--Unknown TalkSentence: 802020510-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802020506-->
+:<!--Unknown TalkSentence: 802020509-->
+:<!--Unknown TalkSentence: 802020510-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802020508-->
+:<!--Unknown TalkSentence: 802020509-->
+:<!--Unknown TalkSentence: 802020510-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.RaidCollection.RaidCollectionMainPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "54,1"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_802022002"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_802022002"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hanu's Prison Break
+|zhs  = 哈努兄弟越狱记
+|zht  = 哈努兄弟越獄記
+|ja   = ブラザーハヌ脱獄記
+|ko   = 하누 형제 탈옥기
+|es   = La fuga de Hanu
+|fr   = Évasion de Hanu
+|ru   = Побег братца Хану
+|th   = บันทึกหนีแดนขังของลูกพี่ Hanu
+|vi   = Nhật Ký Vượt Ngục Của Người Anh Em Hanu
+|de   = Hanus Gefängnisausbruch
+|id   = Catatan Pelarian Penjara Hanu
+|pt   = Fuga da Prisão de Hanu
+}}
+
+==История изменений==
+{{История изменений|2.7}}

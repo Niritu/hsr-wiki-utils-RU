@@ -1,0 +1,156 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000104
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Космическая война
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Космическая война]]''
+|Персонажи       = Первопроходец; Странный монитор
+|СтартЛокация    = Офис Герты
+|Мир             = Космическая станция «Герта»
+|Локации         = Офис Герты
+|Предыдущая      = Космическая война
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Космическая война]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|Изучение}} Осмотреть
+;(If {{cx}}<!--during performance 800010406-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 86
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_n1_error"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerQuickOpen",
+	"ParameterType": "Trigger"
+}</pre>
+:<!--Unknown TalkSentence: 800091802-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800091804-->
+:<!--Unknown TalkSentence: 800091807-->
+;(If {{cx}}<!--not during performance 800010406-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 86
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_n1_error"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerQuickOpen",
+	"ParameterType": "Trigger"
+}</pre>
+:<!--Unknown TalkSentence: 800091902-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,365 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4010105
+|Название        = 
+|Изображение     = Миссия Освоения Мимолётные огни.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Достигните [[Уровень Освоения|Уровня Освоения]] 20
+|Персонажи       = Вельт; Первопроходец; Пом-Пом; Посланник; Химеко
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Разрежённый эфир*3; Кредиты*2 000
+}}
+'''Мимолётные огни''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|Эта странная история начинается с посланника из Сада воспоминаний. Она тихонько садится на экспресс и предлагает обменять драгоценные припасы на ваши воспоминания. Похоже, вам предстоит снова её встретить.}}
+
+==Этапы==
+# Вернитесь на экспресс
+# Поговорите с Пом-Пом
+# Найдите странный феномен на Звёздном экспрессе
+# Изучите странное зеркало
+# Пройдите любую фазу Воспоминаний Зала забвения
+# Расскажите правду экипажу Звёздного экспресса
+# Расскажите другим о странном зеркале (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Вернитесь на экспресс===
+{{Описание миссии|локация=Общий вагон|Вам пришло сообщение от Пом-Пом: на экспрессе появилось что-то странное и, возможно, вы сумеете это поймать.<br />Но как? Вы же не участник команды охотников за странностями. Но проигнорировать просьбу вы тоже не можете.}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 401010502-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401010505-->
+<!--Unknown TalkSentence: 401010506-->
+<!--Unknown TalkSentence: 401010507-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+<!--Unknown TalkSentence: 401010553-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401010555-->
+<!--Unknown TalkSentence: 401010558-->
+{{Диалог Конец}}
+
+===Поговорите с Пом-Пом===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "PhoneNoticePage"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MobilePhonePage"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(По прибытии на место)
+:{{tx}}
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Найдите странный феномен на Звёздном экспрессе===
+{{Диалог Начало}}
+:<!--0.25-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatMissionIcon.png",
+	"IconType": "ChatMissionIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 401010530,
+					"ProtectTime": 3
+				}
+			]
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 48
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 401010508-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 401010518-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 401010507-->
+{{Диалог Конец}}
+
+===Изучите странное зеркало===
+{{Описание миссии|локация=Общий вагон|Вы и правда нашли странность на Звёздном экспрессе.<br />Это зеркало, но почему никто, кроме вас, его не видит?}}
+{{Диалог Начало}}
+:<!--0.25-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "401010506_performance"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 48
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите любую фазу Воспоминаний Зала забвения===
+{{Описание миссии|локация=Общий вагон|Зеркало оказывается меметическим вирусом - посланница из Сада воспоминаний тайно проникла на Звёздный экспресс, чтобы договориться с вами. По её словам, ваши воспоминания обладают большой ценностью, и Сад предлагает вам выгодные условия, чтобы их сохранить. Но в процессе потребуется пробуждать воспоминания в Зале забвения для их извлечения.<br />Вы ещё ни разу не видели такого сложного комплектования системы.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 48,
+	"GroupNpcID": 400005
+}</pre>
+:<!--0.25-second delay-->
+
+;(Поговорите с Посланник)
+<!--Unknown TalkSentence: 401010646-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowGroupChallengeSelectPage"
+}</pre>
+:{{Диалог|Выход}} undefined
+<!--Unknown TalkSentence: 401010501-->
+<!--Unknown TalkSentence: 401010502-->
+<!--Unknown TalkSentence: 401010503-->
+<!--Unknown TalkSentence: 401010504-->
+<!--Unknown TalkSentence: 401010505-->
+<!--Unknown TalkSentence: 401010506-->
+<!--Unknown TalkSentence: 401010507-->
+<!--Unknown TalkSentence: 401010508-->
+<!--Unknown TalkSentence: 401010509-->
+<!--Unknown TalkSentence: 401010510-->
+<!--Unknown TalkSentence: 401010511-->
+<!--Unknown TalkSentence: 401010512-->
+<!--Unknown TalkSentence: 401010513-->
+<!--Unknown TalkSentence: 401010514-->
+<!--Unknown TalkSentence: 401010515-->
+<!--Unknown TalkSentence: 401010516-->
+<!--Unknown TalkSentence: 401010517-->
+<!--Unknown TalkSentence: 401010518-->
+<!--Unknown TalkSentence: 401010519-->
+<!--Unknown TalkSentence: 401010520-->
+<!--Unknown TalkSentence: 401010521-->
+<!--Unknown TalkSentence: 401010522-->
+<!--Unknown TalkSentence: 401010523-->
+<!--Unknown TalkSentence: 401010524-->
+<!--Unknown TalkSentence: 401010525-->
+<!--Unknown TalkSentence: 401010526-->
+<!--Unknown TalkSentence: 401010527-->
+<!--Unknown TalkSentence: 401010528-->
+<!--Unknown TalkSentence: 401010529-->
+<!--Unknown TalkSentence: 401010530-->
+<!--Unknown TalkSentence: 401010531-->
+<!--Unknown TalkSentence: 401010532-->
+<!--Unknown TalkSentence: 401010533-->
+<!--Unknown TalkSentence: 401010534-->
+<!--Unknown TalkSentence: 401010535-->
+<!--Unknown TalkSentence: 401010536-->
+<!--Unknown TalkSentence: 401010537-->
+<!--Unknown TalkSentence: 401010538-->
+<!--Unknown TalkSentence: 401010539-->
+<!--Unknown TalkSentence: 401010540-->
+<!--Unknown TalkSentence: 401010541-->
+<!--Unknown TalkSentence: 401010542-->
+<!--Unknown TalkSentence: 401010543-->
+<!--Unknown TalkSentence: 401010544-->
+<!--Unknown TalkSentence: 401010545-->
+<!--Unknown TalkSentence: 401010546-->
+<!--Unknown TalkSentence: 401010547-->
+<!--Unknown TalkSentence: 401010548-->
+<!--Unknown TalkSentence: 401010549-->
+<!--Unknown TalkSentence: 401010550-->
+<!--Unknown TalkSentence: 401010551-->
+<!--Unknown TalkSentence: 401010552-->
+<!--Unknown TalkSentence: 401010553-->
+<!--Unknown TalkSentence: 401010554-->
+<!--Unknown TalkSentence: 401010555-->
+<!--Unknown TalkSentence: 401010556-->
+<!--Unknown TalkSentence: 401010557-->
+<!--Unknown TalkSentence: 401010558-->
+<!--Unknown TalkSentence: 401010559-->
+<!--Unknown TalkSentence: 401010560-->
+<!--Unknown TalkSentence: 401010561-->
+<!--Unknown TalkSentence: 401010562-->
+<!--Unknown TalkSentence: 401010563-->
+<!--Unknown TalkSentence: 401010564-->
+<!--Unknown TalkSentence: 401010565-->
+<!--Unknown TalkSentence: 401010566-->
+<!--Unknown TalkSentence: 401010567-->
+<!--Unknown TalkSentence: 401010568-->
+<!--Unknown TalkSentence: 401010569-->
+<!--Unknown TalkSentence: 401010570-->
+<!--Unknown TalkSentence: 401010571-->
+<!--Unknown TalkSentence: 401010572-->
+<!--Unknown TalkSentence: 401010573-->
+<!--Unknown TalkSentence: 401010574-->
+<!--Unknown TalkSentence: 401010575-->
+<!--Unknown TalkSentence: 401010576-->
+<!--Unknown TalkSentence: 401010577-->
+<!--Unknown TalkSentence: 401010578-->
+<!--Unknown TalkSentence: 401010579-->
+<!--Unknown TalkSentence: 401010580-->
+<!--Unknown TalkSentence: 401010581-->
+<!--Unknown TalkSentence: 401010582-->
+<!--Unknown TalkSentence: 401010583-->
+<!--Unknown TalkSentence: 401010584-->
+<!--Unknown TalkSentence: 401010585-->
+<!--Unknown TalkSentence: 401010586-->
+<!--Unknown TalkSentence: 401010587-->
+<!--Unknown TalkSentence: 401010588-->
+<!--Unknown TalkSentence: 401010589-->
+<!--Unknown TalkSentence: 401010590-->
+<!--Unknown TalkSentence: 401010591-->
+<!--Unknown TalkSentence: 401010592-->
+<!--Unknown TalkSentence: 401010593-->
+<!--Unknown TalkSentence: 401010594-->
+<!--Unknown TalkSentence: 401010595-->
+<!--Unknown TalkSentence: 401010596-->
+<!--Unknown TalkSentence: 401010597-->
+<!--Unknown TalkSentence: 401010598-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401010600-->
+:<!--Unknown TalkSentence: 401010601-->
+:<!--Unknown TalkSentence: 401010602-->
+:<!--Unknown TalkSentence: 401010603-->
+:<!--Unknown TalkSentence: 401010604-->
+:<!--Unknown TalkSentence: 401010605-->
+:<!--Unknown TalkSentence: 401010606-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401010602-->
+:<!--Unknown TalkSentence: 401010603-->
+:<!--Unknown TalkSentence: 401010604-->
+:<!--Unknown TalkSentence: 401010605-->
+:<!--Unknown TalkSentence: 401010606-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401010604-->
+:<!--Unknown TalkSentence: 401010605-->
+:<!--Unknown TalkSentence: 401010606-->
+<!--Unknown TalkSentence: 401010604-->
+<!--Unknown TalkSentence: 401010605-->
+<!--Unknown TalkSentence: 401010606-->
+{{Диалог Конец}}
+
+===Расскажите правду экипажу Звёздного экспресса===
+{{Диалог Начало}}
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 401010614-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401010616-->
+:<!--Unknown TalkSentence: 401010617-->
+:<!--Unknown TalkSentence: 401010618-->
+:<!--Unknown TalkSentence: 401010619-->
+:<!--Unknown TalkSentence: 401010620-->
+:<!--Unknown TalkSentence: 401010621-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401010623-->
+:<!--Unknown TalkSentence: 401010624-->
+<pre>{
+	"$type": "RPG.GameCore.ResetBillboardInfo",
+	"TargetEntityType": "Prop",
+	"ID": 300001,
+	"GroupID": 47
+}</pre>
+{{Диалог Конец}}
+
+===Расскажите другим о странном зеркале (необязательно)===
+{{Описание миссии|локация=Общий вагон|Вы и правда нашли странность на Звёздном экспрессе.<br />Это зеркало, но почему никто, кроме вас, его не видит?}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Fleeting Lights
+|zhs  = 流光忆彩
+|zht  = 流光憶彩
+|ja   = 儚い光陰
+|ko   = 세월의 빛
+|es   = Luces pasajeras
+|fr   = Lumières furtives
+|ru   = Мимолётные огни
+|th   = แสงไฟทอประกาย
+|vi   = Ký Ức Muôn Màu
+|de   = Vergängliche Lichter
+|id   = Cahaya yang Sekejap Mata
+|pt   = Luzes Fugazes
+}}
+
+==История изменений==
+{{История изменений|2.7}}

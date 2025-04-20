@@ -1,0 +1,331 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1010201
+|Название        = 
+|Изображение     = Миссия Освоения Ночь в городе вечнозимья.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В иссушающую зимнюю ночь
+|Условия         = Завершена [[Миссия Освоения]] ''[[Путешественники ночью зимней]]''
+|Персонажи       = Броня; Гепард; Дань Хэн; Коколия; Март 7; Первопроходец
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = Путешественники ночью зимней
+|Следующая       = Можешь бежать, но тебе не спрятаться
+|Награды         = Опыт Освоения*600; Журнал приключений*3; Конденсированный эфир*1; Кредиты*6 000
+}}
+'''Ночь в городе вечнозимья''' — [[Миссия Освоения]] в главе [[В иссушающую зимнюю ночь]].
+
+==Описание==
+{{Описание|Среброгривые Стражи рассказали вам, что единственным поселением на Ярило-VI является город Белобог - последний оплот человечества.<br />Первопроходцы знакомятся с Верховной хранительницей Белобога, но встреча принимает неожиданный оборот и заканчивается предательством...}}
+
+==Этапы==
+# Следуйте за Гепардом Ландау к резиденции Верховной хранительницы
+# Сообщите Гепарду о результатах переговоров
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Следуйте за Гепардом Ландау к резиденции Верховной хранительницы===
+{{Описание миссии|локация=Административный район|Плохая новость заключается в том, что ваш новый друг Сампо оставил вас в одиночку разбираться с Гепардом Ландау, командующим Среброгривых Стражей. Хорошая же новость в том, что стоящий перед вами грозный страж на самом деле довольно уступчив.<br />Вам удаётся убедить Гепарда в том, что вы явились из мира за небесами. Он обещает сопроводить вас к Верховной хранительнице Белобога.<br />Кажется, что всё идёт как надо... Не о чем переживать, просто следуйте за Среброгривыми Стражами.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.NpcToPlayerDistanceTrigger",
+	"GroupID": 45,
+	"GroupNpcID": 400001,
+	"FarDistance": 50,
+	"FarTask": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "OutofRange_101020102"
+			}
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101011043-->
+:<!--1-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101011043-->
+:<!--1-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101011025-->
+<!--Unknown TalkSentence: 101011026-->
+<!--Unknown TalkSentence: 101011028-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 45,
+			"GroupNpcID": 400013,
+			"TalkSentenceID": 101011053
+		},
+		{
+			"AutoSkipTime": 10,
+			"GroupID": 45,
+			"GroupNpcID": 400013,
+			"TalkSentenceID": 101011054
+		}
+	],
+	"InstantFinish": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 45,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 101011047
+		},
+		{
+			"AutoSkipTime": 10,
+			"GroupID": 45,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 101011048
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+
+;(Поговорите с Гепард)
+<!--Unknown TalkSentence: 101010201-->
+<!--Unknown TalkSentence: 101010202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101010203-->
+::{{tx}}
+:<!--Unknown TalkSentence: 101010201-->
+:<!--Unknown TalkSentence: 101010202-->
+:<!--Unknown TalkSentence: 101010203-->
+:<!--Unknown TalkSentence: 101010204-->
+:<!--Unknown TalkSentence: 101010205-->
+:<!--Unknown TalkSentence: 101010206-->
+:<!--Unknown TalkSentence: 101010207-->
+:<!--Unknown TalkSentence: 101010208-->
+:<!--Unknown TalkSentence: 101010209-->
+:<!--Unknown TalkSentence: 101010210-->
+:<!--Unknown TalkSentence: 101010211-->
+:<!--Unknown TalkSentence: 101010212-->
+:<!--Unknown TalkSentence: 101010213-->
+:<!--Unknown TalkSentence: 101010214-->
+:<!--Unknown TalkSentence: 101010215-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101010206-->
+::{{tx}}
+:<!--Unknown TalkSentence: 101010201-->
+:<!--Unknown TalkSentence: 101010202-->
+:<!--Unknown TalkSentence: 101010203-->
+:<!--Unknown TalkSentence: 101010204-->
+:<!--Unknown TalkSentence: 101010205-->
+:<!--Unknown TalkSentence: 101010206-->
+:<!--Unknown TalkSentence: 101010207-->
+:<!--Unknown TalkSentence: 101010208-->
+:<!--Unknown TalkSentence: 101010209-->
+:<!--Unknown TalkSentence: 101010210-->
+:<!--Unknown TalkSentence: 101010211-->
+:<!--Unknown TalkSentence: 101010212-->
+:<!--Unknown TalkSentence: 101010213-->
+:<!--Unknown TalkSentence: 101010214-->
+:<!--Unknown TalkSentence: 101010215-->
+<!--Unknown TalkSentence: 101010203-->
+:{{tx}}
+<!--Unknown TalkSentence: 101010201-->
+<!--Unknown TalkSentence: 101010202-->
+<!--Unknown TalkSentence: 101010203-->
+<!--Unknown TalkSentence: 101010204-->
+<!--Unknown TalkSentence: 101010205-->
+<!--Unknown TalkSentence: 101010206-->
+<!--Unknown TalkSentence: 101010207-->
+<!--Unknown TalkSentence: 101010208-->
+<!--Unknown TalkSentence: 101010209-->
+<!--Unknown TalkSentence: 101010210-->
+<!--Unknown TalkSentence: 101010211-->
+<!--Unknown TalkSentence: 101010212-->
+<!--Unknown TalkSentence: 101010213-->
+<!--Unknown TalkSentence: 101010214-->
+<!--Unknown TalkSentence: 101010215-->
+;(Unused &mdash; GepardArrived_101020102)
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 111
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 10073479020260718432
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_101020102_Prop_45_300008_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 45
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Mission_101020102_Prop_45_300008_BtnClick)
+<!--Unknown TalkSentence: 101010201-->
+:<!--Unknown TalkSentence: 101010202-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 101010203-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 101010201-->
+::<!--Unknown TalkSentence: 101010202-->
+::<!--Unknown TalkSentence: 101010203-->
+::<!--Unknown TalkSentence: 101010204-->
+::<!--Unknown TalkSentence: 101010205-->
+::<!--Unknown TalkSentence: 101010206-->
+::<!--Unknown TalkSentence: 101010207-->
+::<!--Unknown TalkSentence: 101010208-->
+::<!--Unknown TalkSentence: 101010209-->
+::<!--Unknown TalkSentence: 101010210-->
+::<!--Unknown TalkSentence: 101010211-->
+::<!--Unknown TalkSentence: 101010212-->
+::<!--Unknown TalkSentence: 101010213-->
+::<!--Unknown TalkSentence: 101010214-->
+::<!--Unknown TalkSentence: 101010215-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 101010206-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 101010201-->
+::<!--Unknown TalkSentence: 101010202-->
+::<!--Unknown TalkSentence: 101010203-->
+::<!--Unknown TalkSentence: 101010204-->
+::<!--Unknown TalkSentence: 101010205-->
+::<!--Unknown TalkSentence: 101010206-->
+::<!--Unknown TalkSentence: 101010207-->
+::<!--Unknown TalkSentence: 101010208-->
+::<!--Unknown TalkSentence: 101010209-->
+::<!--Unknown TalkSentence: 101010210-->
+::<!--Unknown TalkSentence: 101010211-->
+::<!--Unknown TalkSentence: 101010212-->
+::<!--Unknown TalkSentence: 101010213-->
+::<!--Unknown TalkSentence: 101010214-->
+::<!--Unknown TalkSentence: 101010215-->
+:<!--Unknown TalkSentence: 101010203-->
+::{{tx}}
+:<!--Unknown TalkSentence: 101010201-->
+:<!--Unknown TalkSentence: 101010202-->
+:<!--Unknown TalkSentence: 101010203-->
+:<!--Unknown TalkSentence: 101010204-->
+:<!--Unknown TalkSentence: 101010205-->
+:<!--Unknown TalkSentence: 101010206-->
+:<!--Unknown TalkSentence: 101010207-->
+:<!--Unknown TalkSentence: 101010208-->
+:<!--Unknown TalkSentence: 101010209-->
+:<!--Unknown TalkSentence: 101010210-->
+:<!--Unknown TalkSentence: 101010211-->
+:<!--Unknown TalkSentence: 101010212-->
+:<!--Unknown TalkSentence: 101010213-->
+:<!--Unknown TalkSentence: 101010214-->
+:<!--Unknown TalkSentence: 101010215-->
+<!--Unknown TalkSentence: 101010301-->
+<!--Unknown TalkSentence: 101010302-->
+<!--Unknown TalkSentence: 101010303-->
+<!--Unknown TalkSentence: 101010304-->
+<!--Unknown TalkSentence: 101010305-->
+<!--Unknown TalkSentence: 101010306-->
+<!--Unknown TalkSentence: 101010307-->
+<!--Unknown TalkSentence: 101010308-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--SubMission Finish: 101020105-->)
+;(If {{cx}}<!--SubMission not Finish: 101020105-->)
+:<pre>{
+	"$type": "RPG.GameCore.EnterMapByCondition",
+	"EntranceID": {
+		"FixedValue": {
+			"Value": 1010102
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Сообщите Гепарду о результатах переговоров===
+{{Описание миссии|локация=Административный район|Верховная хранительница Белобога сдержанна и величественна. Говорит она очень осторожно и раскрывает только необходимую информацию. Вы не очень хорошо умеете общаться с такими людьми.<br />К счастью, хранительница принимает вас как почётных гостей и даже организовывает для вас проживание в элитной гостинице... После этого вы решаете, что можете полностью довериться ей.<br />Одним словом, вы добились оптимистичных результатов. Но достаточно ли этого, чтобы вызвать улыбку на лице сурового командующего?}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 101010401-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101010402-->
+::{{tx}}
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101010404-->
+::{{tx}}
+::{{tx}}
+<!--Unknown TalkSentence: 101010402-->
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Everwinter Night
+|zhs  = 永冬城之夜
+|zht  = 永冬城之夜
+|ja   = 常冬の城の夜
+|ko   = 영원한 겨울 성의 밤
+|es   = Eterna noche invernal
+|fr   = Nuit de l'Hiver éternel
+|ru   = Ночь в городе вечнозимья
+|th   = ค่ำคืนของเมืองแห่งความหนาวนิรันดร์
+|vi   = Đêm Ở Thành Everwinter
+|de   = Immerwinternacht
+|id   = Malam Kota Salju Abadi
+|pt   = Noite do Inverno Eterno
+}}
+
+==История изменений==
+{{История изменений|2.7}}

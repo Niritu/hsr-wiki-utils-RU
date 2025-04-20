@@ -1,0 +1,127 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001242
+|Название        = 
+|Изображение     = Миссия Освоения Путь реконструкции Главный зал II.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Книга раритетов Краеведческого музея
+|Условия         = 
+|Персонажи       = Довольная посетительница; Ошеломлённый посетитель; Первопроходец; Хультен
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Утраченные золотые частицы*5; Кредиты*10 000
+}}
+'''Путь реконструкции: Главный зал II''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Книга раритетов Краеведческого музея]].
+
+==Описание==
+{{Описание|Вы собрали все экспонаты для главного зала. Куратор Хультен благодарен вам за помощь и предлагает щедрую оплату.}}
+
+==Этапы==
+# Поговорите с Хультеном
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Хультеном===
+{{Описание миссии|локация=Краеведческий музей|Похоже, получилось собрать все экспонаты в главном зале. Куратор Хультен хочет с вами поговорить.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хультен)
+<!--Unknown TalkSentence: 800124111-->
+:<pre>{
+	"$type": "RPG.GameCore.CreateLevelAreas",
+	"AssetPath": {
+		"Value": "Level/Common_Adventure/MuseumShow.prefab"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreateLevelAreas",
+	"AssetPath": {
+		"Value": "Level/Common_Adventure/ShowAreaAnchors.prefab"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MuseumShow",
+	"AnchorName": "ShowCamera",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DisableProtectWhenBlending": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ChangeTrackVirtualCameraFollowAndAim",
+	"AreaName": "MuseumShow",
+	"TrackName": "MuseumShowTrack",
+	"CameraName": "ShowCamera",
+	"TargetAreaName": "ShowAreaAnchors",
+	"FollowTargetAnchorName": "ShowCase2",
+	"LookAtTargetAnchorName": "ShowCase2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.MoveVirtualCameraOnDollyPath",
+	"AreaName": "MuseumShow",
+	"AnchorName": "ShowCamera",
+	"StartPoint": 0.47,
+	"EndPoint": 0.46,
+	"CurveName": "C_Story_DollyCamCurve_Line",
+	"Duration": 3
+}</pre>
+:<!--Unknown TalkSentence: 800124112-->
+:<!--Unknown TalkSentence: 800124113-->
+:<!--Unknown TalkSentence: 800124114-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "ShowAreaAnchors"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "MuseumShow"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+:::{{Диалог|?}} undefined
+:::<!--Unknown TalkSentence: 800122732-->
+:::<!--Unknown TalkSentence: 800122733-->
+:::{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Road to Renewal: General Hall Part 2
+|zhs  = 复兴历程•综合展馆•其二
+|zht  = 復興歷程•綜合展館•其二
+|ja   = 復興歴程・総合館・その2
+|ko   = 부흥의 길•종합 전시관•2
+|es   = Proceso de renovación: Sala General&nbsp;II
+|fr   = Sur la route du renouveau&nbsp;: Galerie principale (partie&nbsp;2)
+|ru   = Путь реконструкции: Главный зал II
+|th   = เส้นทางสู่การฟื้นฟู: หอจัดแสดงทั่วไป 2
+|vi   = Thời Kỳ Phục Hưng - Khu Trưng Bày Tổng Hợp 2
+|de   = Pfad zur Erneuerung: Hauptausstellung (Teil 2)
+|id   = Perjalanan Kebangkitan: Ruang Pameran Umum (Bagian 2)
+|pt   = Estrada para a Renovação: Salão Geral Parte 2
+}}
+
+==История изменений==
+{{История изменений|2.7}}

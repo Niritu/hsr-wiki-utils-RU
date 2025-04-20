@@ -1,0 +1,656 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000405
+|Название        = 
+|Изображение     = Миссия Освоения Расколотые воспоминания.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О занавес ночи, скрой безмолвное прошлое]]''
+|Персонажи       = Геката; Деметрия; Первопроходец
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''Расколотые воспоминания''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выслушайте опасения Деметрии
+# Исследуйте лагерь за городом
+# Вернитесь в прошлое и поищите зацепки
+# Поделитесь с Гекатой найденными зацепками
+# Обдумайте зацепки вместе с Гекатой
+# Сообщите о результатах Деметрии
+
+==Прохождение==
+{{Дополнить}}
+
+===Выслушайте опасения Деметрии===
+{{Описание миссии|локация=Вечный священный город Охема|Дочь Деметрии, владелицы фруктовой лавки, давно пропала. Но вчера ей приснился сон о любимой дочери. Возможно, ваша способность погружаться в воспоминания сможет ей помочь?}}
+{{Диалог Начало}}
+
+:{{Диалог|?}} Слушать
+<!--Unknown TalkSentence: 500045001-->
+<!--Unknown TalkSentence: 500045002-->
+<!--Unknown TalkSentence: 500045003-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 500045005-->
+<!--Unknown TalkSentence: 500045006-->
+<!--Unknown TalkSentence: 500045007-->
+<!--Unknown TalkSentence: 500045008-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Исследуйте лагерь за городом===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Вернитесь в прошлое и поищите зацепки===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Слушать
+:{{tx}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		},
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		},
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+;(Поговорите с Посефона)
+:{{tx}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+;(Поговорите с Гадес)
+:{{tx}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поделитесь с Гекатой найденными зацепками===
+{{Диалог Начало}}
+
+;(Поговорите с Геката)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040507,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	}
+}</pre>
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500040507,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000405,
+		"MissionCustomValue": {
+			"Index": 1,
+			"isLocal": true,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Разговор}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500040507,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000405,
+		"MissionCustomValue": {
+			"Index": 1,
+			"isLocal": true,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Разговор}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500040507,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000405,
+		"MissionCustomValue": {
+			"Index": 1,
+			"isLocal": true,
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{tx}}
+;(If {{F|MissionCV-5000405-1}} is equal to 3)
+:<!--Unknown TalkSentence: 500045523-->
+::{{tx}}
+;(If {{F|MissionCV-5000405-1}} is not equal to 3)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Обдумайте зацепки вместе с Гекатой===
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 500045601-->
+<!--Unknown TalkSentence: 500045602-->
+<!--Unknown TalkSentence: 500045603-->
+<!--Unknown TalkSentence: 500045604-->
+<!--Unknown TalkSentence: 500045605-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Сообщите о результатах Деметрии===
+{{Диалог Начало}}
+
+;(Поговорите с Деметрия)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 500040509,
+	"ItemIDList": [
+		140552,
+		140553,
+		140554
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140552,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice01"
+		},
+		{
+			"Item1": 140553,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice02"
+		},
+		{
+			"Item1": 140554,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice03"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; SelectConsumeItem_5000405_Choice01)
+<!--Unknown TalkSentence: 500045701-->
+:<!--Unknown TalkSentence: 500045702-->
+:<!--Unknown TalkSentence: 500045703-->
+:<!--Unknown TalkSentence: 500045704-->
+:<!--Unknown TalkSentence: 500045705-->
+:<!--Unknown TalkSentence: 500045706-->
+:<!--Unknown TalkSentence: 500045707-->
+:<!--Unknown TalkSentence: 500045708-->
+:<!--Unknown TalkSentence: 500045709-->
+:<!--Unknown TalkSentence: 500045710-->
+:<!--Unknown TalkSentence: 500045711-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040509,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{tx}}
+::{{Диалог|Возврат}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 500040509,
+	"ItemIDList": [
+		140552,
+		140553,
+		140554
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140552,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice01"
+		},
+		{
+			"Item1": 140553,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice02"
+		},
+		{
+			"Item1": 140554,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice03"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; SelectConsumeItem_5000405_Choice02)
+<!--Unknown TalkSentence: 500045701-->
+:<!--Unknown TalkSentence: 500045702-->
+:<!--Unknown TalkSentence: 500045703-->
+:<!--Unknown TalkSentence: 500045704-->
+:<!--Unknown TalkSentence: 500045705-->
+:<!--Unknown TalkSentence: 500045706-->
+:<!--Unknown TalkSentence: 500045707-->
+:<!--Unknown TalkSentence: 500045708-->
+:<!--Unknown TalkSentence: 500045709-->
+:<!--Unknown TalkSentence: 500045710-->
+:<!--Unknown TalkSentence: 500045711-->
+:<!--Unknown TalkSentence: 500045712-->
+:<!--Unknown TalkSentence: 500045713-->
+:<!--Unknown TalkSentence: 500045714-->
+:<!--Unknown TalkSentence: 500045715-->
+:<!--Unknown TalkSentence: 500045716-->
+:<!--Unknown TalkSentence: 500045717-->
+:<!--Unknown TalkSentence: 500045718-->
+:<!--Unknown TalkSentence: 500045719-->
+:<!--Unknown TalkSentence: 500045720-->
+:<!--Unknown TalkSentence: 500045721-->
+:<!--Unknown TalkSentence: 500045722-->
+:<!--Unknown TalkSentence: 500045723-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040509,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:::{{tx}}
+::{{Диалог|Возврат}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 500040509,
+	"ItemIDList": [
+		140552,
+		140553,
+		140554
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140552,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice01"
+		},
+		{
+			"Item1": 140553,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice02"
+		},
+		{
+			"Item1": 140554,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice03"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; SelectConsumeItem_5000405_Choice03)
+<!--Unknown TalkSentence: 500045701-->
+:<!--Unknown TalkSentence: 500045702-->
+:<!--Unknown TalkSentence: 500045703-->
+:<!--Unknown TalkSentence: 500045704-->
+:<!--Unknown TalkSentence: 500045705-->
+:<!--Unknown TalkSentence: 500045706-->
+:<!--Unknown TalkSentence: 500045707-->
+:<!--Unknown TalkSentence: 500045708-->
+:<!--Unknown TalkSentence: 500045709-->
+:<!--Unknown TalkSentence: 500045710-->
+:<!--Unknown TalkSentence: 500045711-->
+:<!--Unknown TalkSentence: 500045712-->
+:<!--Unknown TalkSentence: 500045713-->
+:<!--Unknown TalkSentence: 500045714-->
+:<!--Unknown TalkSentence: 500045715-->
+:<!--Unknown TalkSentence: 500045716-->
+:<!--Unknown TalkSentence: 500045717-->
+:<!--Unknown TalkSentence: 500045718-->
+:<!--Unknown TalkSentence: 500045719-->
+:<!--Unknown TalkSentence: 500045720-->
+:<!--Unknown TalkSentence: 500045721-->
+:<!--Unknown TalkSentence: 500045722-->
+:<!--Unknown TalkSentence: 500045723-->
+:<!--Unknown TalkSentence: 500045724-->
+:<!--Unknown TalkSentence: 500045725-->
+:<!--Unknown TalkSentence: 500045726-->
+:<!--Unknown TalkSentence: 500045727-->
+:<!--Unknown TalkSentence: 500045728-->
+:<!--Unknown TalkSentence: 500045729-->
+:<!--Unknown TalkSentence: 500045730-->
+:<!--Unknown TalkSentence: 500045731-->
+:<!--Unknown TalkSentence: 500045732-->
+:<!--Unknown TalkSentence: 500045733-->
+:<!--Unknown TalkSentence: 500045734-->
+:<!--Unknown TalkSentence: 500045735-->
+:<!--Unknown TalkSentence: 500045736-->
+:<!--Unknown TalkSentence: 500045737-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040509,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:::{{tx}}
+::{{Диалог|Возврат}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 500040509,
+	"ItemIDList": [
+		140552,
+		140553,
+		140554
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140552,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice01"
+		},
+		{
+			"Item1": 140553,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice02"
+		},
+		{
+			"Item1": 140554,
+			"TriggerCustomString": "SelectConsumeItem_5000405_Choice03"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Disjointed Memories
+|zhs  = 破碎的记忆
+|zht  = 破碎的記憶
+|ja   = 砕かれた記憶
+|ko   = 부서진 기억
+|es   = Recuerdos rotos
+|fr   = Souvenirs disloqués
+|ru   = Расколотые воспоминания
+|th   = ความทรงจำที่กระจัดกระจาย
+|vi   = Ký Ức Vỡ Nát
+|de   = Zerbrochene Erinnerungen
+|id   = Memori yang Hancur
+|pt   = Memórias Desarticuladas
+}}
+
+==История изменений==
+{{История изменений|3.0}}

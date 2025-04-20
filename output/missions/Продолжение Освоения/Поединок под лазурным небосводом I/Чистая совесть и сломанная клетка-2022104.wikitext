@@ -1,0 +1,723 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022104
+|Название        = 
+|Изображение     = Миссия Освоения Чистая совесть и сломанная клетка.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом I
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Чистая совесть и сломанная клетка]]''
+|Персонажи       = Дань Хэн; Первопроходец; Посланник; Сюэи; Ханья; Цзяоцю
+|СтартЛокация    = Чешуйчатое ущелье
+|Мир             = Лофу Сяньчжоу
+|Локации         = Чешуйчатое ущелье
+|Предыдущая      = 
+|Следующая       = Волчий побег, неизвестный исход
+|Награды         = Опыт Освоения*800; Звёздный нефрит*100; Путеводитель путешественника*8; Очищенный эфир*6; "To Naraka We Sink"*1 { text = To Naraka We Sink }; Eight Great Cold Hells*1 { text = Eight Great Cold Hells }; Кредиты*120 000
+}}
+'''Чистая совесть и сломанная клетка''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом I]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь ко входу в Дом кандалов
+# Выясните причину странного шума
+# Подтвердите личность и получите доступ в Дом кандалов
+# Следуйте за Сюэи на нижние ярусы Дома кандалов
+# Поговорите с посланником, чтобы войти в Дом кандалов
+# Поднимитесь на смотровую башню Дома кандалов
+# Прогуляйтесь и дождитесь прихода судьи
+# Дождитесь прихода судьи
+# Пройдите сквозь ширму телепортации, чтобы отправиться вглубь Дома кандалов
+# Войдите в лифт
+# Следуйте указаниям Ханья
+# Выясните причину странного шума
+
+==Прохождение==
+{{Дополнить}}
+
+===Отправляйтесь ко входу в Дом кандалов===
+{{Описание миссии|локация=Чешуйчатое ущелье|Фэйсяо просит вас дать показания в Доме кандалов. В это время посланник Яоцина должен будет забрать с Лофу Сяньчжоу предводителя борисинцев Хулэя, находившегося долгое время в заточении.}}
+{{Диалог Начало}}
+;(If {{F|Fsv_Niraya}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(If {{F|Fsv_Niraya}} is not equal to 1)
+:;(Return to previous option selection)
+
+;(Поговорите с Посланник)
+<!--Unknown TalkSentence: 222140201-->
+
+;(Поговорите с Стражница)
+<!--Unknown TalkSentence: 222140200-->
+
+:{{Диалог|Разговор}} Дом кандалов
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222140103-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 222110122-->
+{{Диалог Конец}}
+
+===Выясните причину странного шума===
+{{Описание миссии|локация=Дом кандалов|Фэйсяо просит вас дать показания в Доме кандалов. В это время посланник Яоцина должен будет забрать с Лофу Сяньчжоу предводителя борисинцев Хулэя, находившегося долгое время в заточении.<br />В Доме кандалов вы замечаете в происходящем всё больше странностей.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 222141802-->
+<!--Unknown TalkSentence: 222141803-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222141805-->
+:<!--Unknown TalkSentence: 222141806-->
+:<!--Unknown TalkSentence: 222141807-->
+:<!--Unknown TalkSentence: 222141808-->
+:<!--Unknown TalkSentence: 222141809-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222141807-->
+:<!--Unknown TalkSentence: 222141808-->
+:<!--Unknown TalkSentence: 222141809-->
+::{{tx}}
+<!--Unknown TalkSentence: 222141807-->
+<!--Unknown TalkSentence: 222141808-->
+<!--Unknown TalkSentence: 222141809-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Подтвердите личность и получите доступ в Дом кандалов===
+{{Диалог Начало}}
+
+;(Поговорите с Моцзэ)
+<!--Unknown TalkSentence: 222110129-->
+<!--Unknown TalkSentence: 222110130-->
+
+:{{Диалог|undefined}} 
+<!--Unknown TalkSentence: 902210416-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222142002-->
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"ItemID": 150054,
+	"ShowBtnEffect": true,
+	"OverrideBtnHint": {
+		"Hash": 10502323441392336775
+	},
+	"MissionID": {
+		"FixedValue": {
+			"Value": 2022104
+		}
+	}
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+;(Unused &mdash; Game_Start)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_Bird"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{F|FSV_KeyLevel}} is equal to 0)
+::<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Show1"
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 202210415,
+	"OverideMissionWayPointType": true,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007,
+	"OverideMapWaypointRange": true,
+	"MapWaypointRange": 30
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.DronesSwitchDynamicCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	},
+	"UniqueKey": {
+		"Value": "01_01"
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OverrideCustomDroneFuncBtn",
+	"OverrideIconPath": "SpriteOutput/MazePuzzleIcon/TreasureMap.png",
+	"OverrideBtnName": {
+		"Hash": 10049917263166130509
+	},
+	"OverrideActionCustomString": "ChangeButton"
+}</pre>
+:;(If {{F|FSV_KeyLevel}} is not equal to 0)
+::<pre>{
+	"$type": "RPG.GameCore.DronesSwitchDynamicCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	},
+	"UniqueKey": {
+		"Value": "01_02"
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; Game_Close)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_Bird"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Hide1"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 202210415,
+	"MapWaypointRange": 30
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.OverrideCustomDroneFuncBtn",
+	"ResetOverrride": true
+}</pre>
+
+;(Unused &mdash; ChangeButton)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Book.TreasureMapDialog",
+	"Param": {
+		"Value": "150054"
+	}
+}</pre>
+
+;(Поговорите с Робоптаха)
+<!--Unknown TalkSentence: 222110127-->
+<!--Unknown TalkSentence: 222110128-->
+{{Диалог Конец}}
+
+===Следуйте за Сюэи на нижние ярусы Дома кандалов===
+{{Диалог Начало}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Защищайте врата, их нельзя впускать!
+::Быстрее!
+::Я ждал... слишком долго...
+::Жаль, что первой пищей после обретения свободы... стал мой товарищ.
+::Давно не виделись, Вожак. С возвращением.
+;(Cutscene ends)
+----
+:{{tx}}
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G43",
+	"AnchorName": "Anchor1",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222110123-->
+<!--Unknown TalkSentence: 222110124-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G43",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+;(По прибытии на место)
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G42",
+	"AnchorName": "Anchor2",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222110125-->
+<!--Unknown TalkSentence: 222110126-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G42",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222142102-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+:{{tx}}
+;(Enter battle)
+::Wave 1: {{Enemy List|Поражённый Марой солдат*2; Ученик Санктус Медикус: Баллистарий*1; Волк-чернокоготь*1}}
+::Wave 2: {{Enemy List|Волк-поглотитель луны*2; Ученик Санктус Медикус: Баллистарий*2}}
+::Wave 3: {{Enemy List|Волк-чернокоготь*1; Ученик Санктус Медикус: Оборотень*1; Волк-поглотитель луны*1}}
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		222142217
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"IntervalTime": 6
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с посланником, чтобы войти в Дом кандалов===
+{{Описание миссии|локация=Дом кандалов|Фэйсяо просит вас дать показания в Доме кандалов. В это время посланник Яоцина должен будет забрать с Лофу Сяньчжоу предводителя борисинцев Хулэя, находившегося долгое время в заточении.}}
+{{Диалог Начало}}
+
+;(Поговорите с Посланник)
+<!--Unknown TalkSentence: 222140202-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+----
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140109-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140111-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140113-->
+::{{tx}}
+<!--Unknown TalkSentence: 222140109-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поднимитесь на смотровую башню Дома кандалов===
+{{Диалог Начало}}
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190678
+		}
+	}
+}</pre>
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G11"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 222140603-->
+{{Диалог Конец}}
+
+===Прогуляйтесь и дождитесь прихода судьи===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 222110118-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 222140702-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Посланник)
+;(If {{cx}}<!--SubMission Finish: 202210407-->)
+;(If {{cx}}<!--SubMission not Finish: 202210407-->)
+<!--Unknown TalkSentence: 222140603-->
+
+:{{Диалог|Изучение}} Осмотреть
+
+
+:{{Диалог|Изучение}} Осмотреть
+
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 222110119-->
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G156",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222110120-->
+<!--Unknown TalkSentence: 222110121-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G156",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+
+
+:{{Диалог|Изучение}} Осмотреть
+
+{{Диалог Конец}}
+
+===Дождитесь прихода судьи===
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 222140802-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140804-->
+:<!--Unknown TalkSentence: 222140805-->
+:<!--Unknown TalkSentence: 222140806-->
+:<!--Unknown TalkSentence: 222140807-->
+:<!--Unknown TalkSentence: 222140808-->
+:<!--Unknown TalkSentence: 222140809-->
+:<!--Unknown TalkSentence: 222140810-->
+:<!--Unknown TalkSentence: 222140811-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140806-->
+:<!--Unknown TalkSentence: 222140807-->
+:<!--Unknown TalkSentence: 222140808-->
+:<!--Unknown TalkSentence: 222140809-->
+:<!--Unknown TalkSentence: 222140810-->
+:<!--Unknown TalkSentence: 222140811-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222140808-->
+:<!--Unknown TalkSentence: 222140809-->
+:<!--Unknown TalkSentence: 222140810-->
+:<!--Unknown TalkSentence: 222140811-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 222140808-->
+<!--Unknown TalkSentence: 222140809-->
+<!--Unknown TalkSentence: 222140810-->
+<!--Unknown TalkSentence: 222140811-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Пройдите сквозь ширму телепортации, чтобы отправиться вглубь Дома кандалов===
+{{Диалог Начало}}
+;(If {{F|Fly}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(If {{F|Fly}} is not equal to 2)
+:;(Return to previous option selection)
+
+;(Поговорите с Ханья)
+<!--Unknown TalkSentence: 222141002-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G60",
+	"AnchorName": "Anchor2",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222141003-->
+<!--Unknown TalkSentence: 222141004-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20241_F20241001_G60",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 222141005-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222141007-->
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222141014-->
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 222141009-->
+<!--Unknown TalkSentence: 222141010-->
+<!--Unknown TalkSentence: 222141011-->
+<!--Unknown TalkSentence: 222141012-->
+<!--Unknown TalkSentence: 222141020-->
+
+:{{Диалог|undefined}} 
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G60"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Войдите в лифт===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(Поговорите с Ханья)
+<!--Unknown TalkSentence: 222141202-->
+<!--Unknown TalkSentence: 222141203-->
+<!--Unknown TalkSentence: 222141204-->
+<!--Unknown TalkSentence: 222141205-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 222141207-->
+<!--Unknown TalkSentence: 222141210-->
+
+:{{Диалог|undefined}} Перейти в Ледяную тюрьму
+<!--Unknown TalkSentence: 222141102-->
+<!--Unknown TalkSentence: 222141103-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G8"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(По прибытии на место)
+;(If {{F|Elevator}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "InteractTrigger",
+	"ButtonsByName": [
+		"2ndFloor"
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "InteractTrigger",
+	"ButtonsByName": [
+		"2ndFloor"
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Следуйте указаниям Ханья===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_mecha_distant"
+	},
+	"EmitterType": "Prop",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 222141403-->
+<!--Unknown TalkSentence: 222141404-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222141302-->
+<!--Unknown TalkSentence: 222141303-->
+<!--Unknown TalkSentence: 222141304-->
+{{Диалог Конец}}
+
+===Выясните причину странного шума===
+{{Описание миссии|локация=Дом кандалов|Фэйсяо просит вас дать показания в Доме кандалов. В это время посланник Яоцина должен будет забрать с Лофу Сяньчжоу предводителя борисинцев Хулэя, находившегося долгое время в заточении.<br />В Доме кандалов вы замечаете в происходящем всё больше странностей.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222141502-->
+<!--Unknown TalkSentence: 222141503-->
+<!--Unknown TalkSentence: 222141504-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222141402-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Inquisition to Rectitude
+|zhs  = 诘辩无愧，折狱论非
+|zht  = 詰辯無愧，折獄論非
+|ja   = 折獄を論じる是非
+|ko   = 떳떳한 변론, 옥 중의 조사
+|es   = Conciencias limpias y jaulas rotas
+|fr   = Inquisition et droiture
+|ru   = Чистая совесть и сломанная клетка
+|th   = ถ้อยคำให้การ สู่ถิ่นแดนขัง
+|vi   = Tự Tin Đối Chất, Vào Ngục Cho Lời Khai
+|de   = Inquisition der Rechtschaffenheit
+|id   = Argumen yang Jujur, Penjara yang Bobrok
+|pt   = Inquisição da Retidão
+}}
+
+==История изменений==
+{{История изменений|2.7}}

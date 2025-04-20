@@ -1,0 +1,749 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1032703
+|Название        = 
+|Изображение     = Миссия Освоения Фаворит.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В наше время
+|Условия         = Завершена [[Миссия Освоения]] ''[[Фаворит]]''
+|Персонажи       = Братец Хану; Гид; Джентльмен с мозаикой; Огромные ходики; Первопроходец; Светлячок; Часик
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = Красавица и Разрушение
+|Награды         = Опыт Освоения*800; Звёздный нефрит*100; Утраченный кристалл*12; Часокредиты*400; "A Star Is Born"*1 { text = A Star Is Born }; "An Actor Prepares"*1 { text = An Actor Prepares }; Кредиты*160 000
+}}
+'''Фаворит''' — [[Миссия Освоения]] в главе [[В наше время]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Узнайте об испытании у гида
+# Осмотрите Говорящие часы
+# Найдите недостающую деталь для огромных ходиков
+# Почините разбитое сердце огромных ходиков
+# Отправляйтесь ко входу в третий этап
+# Выберите своё испытание
+# Узнайте об испытании у гида
+# Войдите в мир «Приключений Хану»
+# Войдите в трубу
+# Попросите помощи у джентльмена с мозаикой
+# Соберите фрагменты мозаики
+# Соберите Мозаику грёз
+# Отправляйтесь на второй этаж
+# Поговорите с братцем Хану
+# Вернитесь в мир «Приключений Хану»
+# Верните любимую ракетницу братца Хану
+# Одолейте армию злодеев
+# Покиньте мир «Приключений Хану»
+# Отправляйтесь ко входу в третий этап
+# Выберите своё испытание
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте об испытании у гида===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270338,
+	"MissionCustomValue": {
+		"Index": 3,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Второй выбор! Вы со Светлячком прибыли на сцену «Битвы в грёзах - Час огня: Час». По словам гида, вам нужно сыграть роль популярного главного героя мультсериала о Часике - Часика. Вместе преодолейте последние трудности...<br />...Помогите ненастоящему Часику преодолеть экзистенциальный кризис. В играх тоже поднимаются важные темы, правда ведь?}}
+;(Unused &mdash; EnterArea_LocalGroup)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103272424-->
+<!--Unknown TalkSentence: 103272425-->
+{{Диалог Конец}}
+
+===Осмотрите Говорящие часы===
+{{Диалог Начало}}
+;(Unused &mdash; MainClockToy_Open)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+
+;(Unused &mdash; EnterArea_G153)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+:<!--Unknown TalkSentence: 103272302-->
+:<!--Unknown TalkSentence: 103272303-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272305-->
+::<!--Unknown TalkSentence: 103272311-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272307-->
+::<!--Unknown TalkSentence: 103272311-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272309-->
+::<!--Unknown TalkSentence: 103272310-->
+::<!--Unknown TalkSentence: 103272311-->
+:<!--Unknown TalkSentence: 103272305-->
+:<!--Unknown TalkSentence: 103272311-->
+
+
+;(Unused &mdash; EnterArea_G202)
+<!--Unknown TalkSentence: 103272433-->
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G243"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Найдите недостающую деталь для огромных ходиков===
+{{Диалог Начало}}
+
+;(Unused &mdash; B2_ClockFE)
+<!--Unknown TalkSentence: 103272312-->
+:<!--Unknown TalkSentence: 103272313-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Получено {{Item|Разбитое сердце огромных ходиков I|20|x=1}})
+
+
+;(Получено {{Item|Разбитое сердце огромных ходиков III|20|x=1|text=Разбитое сердце огромных ходиков III}})
+
+;(If {{F|Dino_Bird_Performance}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "200001"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPCMonster",
+	"GroupID": 187,
+	"GroupMonsterIDs": [
+		200001
+	],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "300003"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "300004"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 103272427-->
+<!--Unknown TalkSentence: 103272428-->
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G155",
+	"AnchorName": "Anchor1",
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G155"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 103275602-->
+:<!--Unknown TalkSentence: 103275603-->
+:<!--Unknown TalkSentence: 103275604-->
+:<!--Unknown TalkSentence: 103275605-->
+:<!--Unknown TalkSentence: 103275606-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G155",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:;(Enter battle)
+::{{Enemy List|Торговец удачей из труппы «Кошмарики»*2; Пережаренный из труппы «Кошмарики»*1}}
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 103272426-->
+{{Диалог Конец}}
+
+===Почините разбитое сердце огромных ходиков===
+{{Диалог Начало}}
+
+;(Потеряно {{Item|Разбитое сердце огромных ходиков I|20|x=1}})
+;(Потеряно {{Item|Разбитое сердце огромных ходиков II|20|x=1}})
+;(Потеряно {{Item|Разбитое сердце огромных ходиков III|20|x=1|text=Разбитое сердце огромных ходиков III}})
+
+;(Unused &mdash; MainClockToy_Open)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+
+;(Unused &mdash; ItemSelect_1032703)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270334,
+	"MissionCustomValue": {
+		"Index": 4,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<!--Unknown TalkSentence: 103276601-->
+:<!--Unknown TalkSentence: 103276602-->
+
+;(Unused &mdash; EnterArea_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+:<!--Unknown TalkSentence: 103276302-->
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 103270334,
+	"OnlyPerformance": true,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ItemSelect_1032703"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "All_Talk_Cancel"
+			}
+		}
+	]
+}</pre>
+:;(If {{F|MissionCV-1032703-4}} is equal to 1)
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "FullScreenLock"
+}</pre>
+:;(If {{F|MissionCV-1032703-4}} is not equal to 1)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270334,
+	"MissionCustomValue": {
+		"Index": 4,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 103272431-->
+<!--Unknown TalkSentence: 103272432-->
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу в третий этап===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Выберите своё испытание===
+{{Диалог Начало}}
+;(If {{F|BlockShowIndex}} is equal to 5)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270339,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте об испытании у гида===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Второй выбор! Вы со Светлячком прибыли на сцену «Битвы в грёзах - Час огня: Огонь». По словам гида, вам нужно сыграть роль очаровательного мстителя из мультсериала о Часике - братца Хану.<br />- Что это за испытание такое? - думаете вы. - Мы выясняем, кто издаст лучшее «хм».}}
+{{Диалог Начало}}
+;(Unused &mdash; EnterArea_G{GroupID})
+:{{tx}}
+{{Диалог Конец}}
+
+===Войдите в мир «Приключений Хану»===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityArtLoad",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+;(If {{F|Jigsaw_TV_Finished}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"TriggerName": "InteractTrigger",
+	"ButtonsByName": [
+		"Interact"
+	]
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|EasterB1Phase}} is equal to 0)
+<!--Unknown TalkSentence: 802157017-->
+<!--Unknown TalkSentence: 802157018-->
+<!--Unknown TalkSentence: 802157019-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Srv_TriggerReshaAnim"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300011
+				}
+			}
+		}
+	}
+}</pre>
+;(Unused &mdash; TV_Open)
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+;(Unused &mdash; EnterArea_G{GroupID})
+<!--Unknown TalkSentence: 103271902-->
+:<!--Unknown TalkSentence: 103271903-->
+:<!--Unknown TalkSentence: 103271904-->
+:<!--Unknown TalkSentence: 103271905-->
+{{Диалог Конец}}
+
+===Войдите в трубу===
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Попросите помощи у джентльмена с мозаикой===
+{{Диалог Начало}}
+;(Unused &mdash; EnterArea_LocalGroup)
+<!--Unknown TalkSentence: 103271702-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Соберите фрагменты мозаики===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Соберите Мозаику грёз===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103272410-->
+{{Диалог Конец}}
+
+===Отправляйтесь на второй этаж===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103275102-->
+<!--Unknown TalkSentence: 103275103-->
+<!--Unknown TalkSentence: 103275104-->
+{{Диалог Конец}}
+
+===Поговорите с братцем Хану===
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+<!--Unknown TalkSentence: 103272002-->
+:<!--Unknown TalkSentence: 103272003-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272005-->
+::<!--Unknown TalkSentence: 103272006-->
+::<!--Unknown TalkSentence: 103272007-->
+::<!--Unknown TalkSentence: 103272008-->
+::<!--Unknown TalkSentence: 103272009-->
+::<!--Unknown TalkSentence: 103272010-->
+::<!--Unknown TalkSentence: 103272011-->
+::<!--Unknown TalkSentence: 103272012-->
+::<!--Unknown TalkSentence: 103272013-->
+::<!--Unknown TalkSentence: 103272014-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272007-->
+::<!--Unknown TalkSentence: 103272008-->
+::<!--Unknown TalkSentence: 103272009-->
+::<!--Unknown TalkSentence: 103272010-->
+::<!--Unknown TalkSentence: 103272011-->
+::<!--Unknown TalkSentence: 103272012-->
+::<!--Unknown TalkSentence: 103272013-->
+::<!--Unknown TalkSentence: 103272014-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272009-->
+::<!--Unknown TalkSentence: 103272010-->
+::<!--Unknown TalkSentence: 103272011-->
+::<!--Unknown TalkSentence: 103272012-->
+::<!--Unknown TalkSentence: 103272013-->
+::<!--Unknown TalkSentence: 103272014-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272011-->
+::<!--Unknown TalkSentence: 103272012-->
+::<!--Unknown TalkSentence: 103272013-->
+::<!--Unknown TalkSentence: 103272014-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103272011-->
+:<!--Unknown TalkSentence: 103272012-->
+:<!--Unknown TalkSentence: 103272013-->
+:<!--Unknown TalkSentence: 103272014-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Вернитесь в мир «Приключений Хану»===
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+<!--Unknown TalkSentence: 103275202-->
+:<!--Unknown TalkSentence: 103275203-->
+:<!--Unknown TalkSentence: 103275204-->
+:<!--Unknown TalkSentence: 103275205-->
+:<!--Unknown TalkSentence: 103275206-->
+:<!--Unknown TalkSentence: 103275207-->
+:<!--Unknown TalkSentence: 103275208-->
+{{Диалог Конец}}
+
+===Верните любимую ракетницу братца Хану===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Одолейте армию злодеев===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103272416-->
+{{Диалог Конец}}
+
+===Покиньте мир «Приключений Хану»===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 103272420-->
+<!--Unknown TalkSentence: 103272421-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+;(Unused &mdash; Perf)
+
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу в третий этап===
+{{Диалог Начало}}
+
+;(Unused &mdash; Perf)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G363"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 103275302-->
+<!--Unknown TalkSentence: 103275303-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+{{Диалог Конец}}
+
+===Выберите своё испытание===
+{{Диалог Начало}}
+
+;(If {{F|BlockShowIndex}} is equal to 5)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270339,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(Unused &mdash; 1032703_ChoseC2)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270340,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+;(Unused &mdash; 1032703_ChoseC1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270340,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Seabiscuit
+|zhs  = 奔腾年代
+|zht  = 奔騰年代
+|ja   = 奔走する時代
+|ko   = 씨비스킷
+|es   = La era del tumulto
+|fr   = L'ère du tumulte
+|ru   = Фаворит
+|th   = ยุคพุ่งทะยาน
+|vi   = Thời Đại Đầy Hứa Hẹn
+|de   = Mit dem Willen zum Erfolg
+|id   = Era Melaju Cepat
+|pt   = A Era do Tumulto
+}}
+
+==История изменений==
+{{История изменений|2.7}}

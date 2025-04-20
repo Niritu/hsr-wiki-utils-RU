@@ -1,0 +1,283 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003240
+|Название        = 
+|Изображение     = Миссия Освоения Событие магазина Господин Хо.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = 
+|Персонажи       = Властный голос; Первопроходец; Солдат Облачных Рыцарей
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = Путеводитель путешественника*2; Кредиты*20 000
+}}
+'''Событие магазина: Господин Хо''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|Чтобы оживить Переулок ауруматонов, торговая гильдия стремится в полной мере использовать логистику причала и наладить тесное сотрудничество с торговцами в Переулке.<br />Торговая гильдия послала вас убедить господина Хо установить сотрудничество с гильдией. Однако сейчас у господина Хо хлопот полон рот...}}
+
+==Этапы==
+# Узнайте подробности у господина Хо
+# Доставьте товар в указанное место
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте подробности у господина Хо===
+{{Описание миссии|локация=Переулок ауруматонов|Чтобы оживить Переулок ауруматонов, торговая гильдия стремится в полной мере использовать логистику причала и наладить тесное сотрудничество с торговцами в Переулке.<br />Торговая гильдия послала вас убедить господина Хо установить сотрудничество с гильдией. Однако сейчас у господина Хо хлопот полон рот...}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Совершенно секретный товар господина Хо|20|x=1|text=Совершенно секретный товар господина Хо}})
+{{Диалог Конец}}
+
+===Доставьте товар в указанное место===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"IconType": "TriggerProp",
+	"ButtonText": {
+		"Hash": 2448199762483198541
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "8003240_OnInit"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 192
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+;(Unused &mdash; 8003240_OnStart)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324003,
+	"OverideMissionWayPointType": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 800324051-->
+<!--Unknown TalkSentence: 800324052-->
+----
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 199
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"Visible": true
+}</pre>
+----
+<!--Unknown TalkSentence: 800324053-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 800324055-->
+<!--Unknown TalkSentence: 800324060-->
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 800324119-->
+<!--Unknown TalkSentence: 800324120-->
+
+
+;(Unused &mdash; 8003240_OnStart)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324005,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 206,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"IconType": "ChatMissionIcon",
+	"ButtonText": {
+		"Hash": 11250903070858268547
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800324005_MissionEnd"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TriggerByFakeAvatar": true,
+	"SkipFakeAvatar": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 206
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 8003240_OnFinish)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324005,
+	"OverideMissionWayPointType": true
+}</pre>
+
+
+;(Unused &mdash; 8003240_OnStart)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324006,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 207,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"IconType": "ChatMissionIcon",
+	"ButtonText": {
+		"Hash": 11250903070858268547
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800324006_MissionEnd"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TriggerByFakeAvatar": true,
+	"SkipFakeAvatar": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 207
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 8003240_OnFinish)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324006,
+	"OverideMissionWayPointType": true
+}</pre>
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 800324122-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 800324003,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 192,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300002
+}</pre>
+:{{Чёрный экран|undefined}}
+
+;(Потеряно {{Item|Совершенно секретный товар господина Хо|20|x=1|text=Совершенно секретный товар господина Хо}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Merchant Event: Mr. Huo
+|zhs  = 商铺事件•霍三哥
+|zht  = 商鋪事件•霍三哥
+|ja   = 店舗イベント・霍三兄
+|ko   = 상점 사건•곽세찌
+|es   = Evento de tienda: Sr. Huo
+|fr   = Événement de magasin&nbsp;: Monsieur Huo
+|ru   = Событие магазина: Господин Хо
+|th   = อิเวนต์ร้านค้า: คุณ Huo
+|vi   = Sự Kiện Cửa Tiệm - Anh Huo
+|de   = Händlerereignis: Herr Huo
+|id   = Event Toko: Tuan Huo
+|pt   = Evento de Comerciante: Sr. Huo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

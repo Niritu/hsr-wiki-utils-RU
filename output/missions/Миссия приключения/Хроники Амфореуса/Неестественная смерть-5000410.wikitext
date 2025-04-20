@@ -1,0 +1,332 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000410
+|Название        = 
+|Изображение     = Миссия Освоения Неестественная смерть.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Персонажи       = Геката; Отчаявшаяся учёная; Паникующий учёный; Первопроходец; Перифас
+|СтартЛокация    = Бормочущие заросли Рощи муз
+|Мир             = Амфореус
+|Локации         = Бормочущие заросли Рощи муз
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''Неестественная смерть''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Перифасом
+# Отыщите важные для Перифаса улики в Роще
+# Понаблюдайте за последним действием мечника в чёрном
+# Сообщите Перифасу результаты расследования
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите с Перифасом===
+{{Описание миссии|локация=Бормочущие заросли Рощи муз|«Резня это не просто убийство несметного количества людей за раз. Это результат такого тяжкого преступления, как убийство, одновременно совершённого несметное количество раз».<br />Выжившие после бедствий должны что-то сделать, чтобы увековечить своих друзей.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отыщите важные для Перифаса улики в Роще===
+{{Описание миссии|локация=Бормочущие заросли Рощи муз|«Людям не под силу умереть вместе. Даже если смерть наступает одновременно, каждый всё равно умирает в одиночку».<br />Станьте свидетелем последних мгновений смерти друзей Перифаса от чёрного течения.}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Перифас
+<!--Unknown TalkSentence: 500050334-->
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Понаблюдайте за последним действием мечника в чёрном===
+{{Описание миссии|локация=Бормочущие заросли Рощи муз|Чёрное течение безжалостно прошло по простым людям, не оставив и следа милосердия. И всё же невозможно объяснить, почему оно настолько... «эффективно».}}
+{{Диалог Начало}}
+
+;(Поговорите с Похититель пламени)
+:{{tx}}
+
+;(Поговорите с Паникующий учёный)
+<!--Unknown TalkSentence: 500050301-->
+
+;(Поговорите с Отчаявшаяся учёная)
+<!--Unknown TalkSentence: 500050302-->
+<!--Unknown TalkSentence: 500050303-->
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 208
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 500002
+		}
+	},
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 5000410,
+				"MissionCustomValue": {
+					"Index": 3,
+					"isLocal": true,
+					"ValidValueParamList": [
+						0,
+						1
+					]
+				},
+				"EquationType": "Equal",
+				"TargetValue": 1
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+					"BubbleTalkInfoList": [
+						{
+							"AutoSkipTime": 3,
+							"GroupID": 208,
+							"GroupNpcID": 400002,
+							"TalkSentenceID": 500050332
+						},
+						{
+							"AutoSkipTime": 3,
+							"GroupID": 208,
+							"GroupNpcID": 400003,
+							"TalkSentenceID": 500050333
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Сообщите Перифасу результаты расследования===
+{{Описание миссии|локация=Бормочущие заросли Рощи муз|Сообщите Перифасу о подозрительных результатах расследования.}}
+{{Диалог Начало}}
+
+;(Поговорите с Геката)
+;(If Миссия [[Неестественная смерть]] has not been completed)
+:<!--Unknown TalkSentence: 500050301-->
+::<!--Unknown TalkSentence: 500050302-->
+::<!--Unknown TalkSentence: 500050303-->
+::<!--Unknown TalkSentence: 500050304-->
+::<!--Unknown TalkSentence: 500050305-->
+::<!--Unknown TalkSentence: 500050306-->
+::<!--Unknown TalkSentence: 500050307-->
+::<!--Unknown TalkSentence: 500050308-->
+::<!--Unknown TalkSentence: 500050309-->
+::<!--Unknown TalkSentence: 500050310-->
+::<!--Unknown TalkSentence: 500050311-->
+::<!--Unknown TalkSentence: 500050312-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::<!--Unknown TalkSentence: 500050316-->
+::<!--Unknown TalkSentence: 500050317-->
+::<!--Unknown TalkSentence: 500050318-->
+::<!--Unknown TalkSentence: 500050319-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500050323-->
+;(If Миссия [[Неестественная смерть]] has been completed)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareType":"Equal","CompareValue":{"FixedValue":{"Value":1}}}-->}})
+::<!--Unknown TalkSentence: 500050323-->
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareType":"Equal","CompareValue":{"FixedValue":{"Value":1}}}-->}})
+::<!--Unknown TalkSentence: 500050301-->
+::<!--Unknown TalkSentence: 500050302-->
+::<!--Unknown TalkSentence: 500050303-->
+::<!--Unknown TalkSentence: 500050304-->
+::<!--Unknown TalkSentence: 500050305-->
+::<!--Unknown TalkSentence: 500050306-->
+::<!--Unknown TalkSentence: 500050307-->
+::<!--Unknown TalkSentence: 500050308-->
+::<!--Unknown TalkSentence: 500050309-->
+::<!--Unknown TalkSentence: 500050310-->
+::<!--Unknown TalkSentence: 500050311-->
+::<!--Unknown TalkSentence: 500050312-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::<!--Unknown TalkSentence: 500050316-->
+::<!--Unknown TalkSentence: 500050317-->
+::<!--Unknown TalkSentence: 500050318-->
+::<!--Unknown TalkSentence: 500050319-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Unnatural Death
+|zhs  = 非自然死亡
+|zht  = 非自然死亡
+|ja   = 不自然な死
+|ko   = 비자연적 죽음
+|es   = Una muerte no natural
+|fr   = Mort non naturelle
+|ru   = Неестественная смерть
+|th   = ความตายผิดธรรมชาติ
+|vi   = Cái Chết Bất Thường
+|de   = Unnatürlicher Tod
+|id   = Kematian yang Tidak Wajar
+|pt   = Morte Não Natural
+}}
+
+==История изменений==
+{{История изменений|3.1}}

@@ -1,0 +1,108 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8020236
+|Название        = 
+|Изображение     = Миссия Освоения Грёзы и искусство починки часов I.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[А убийца кто?..]]''
+|Персонажи       = Первопроходец; Смотритель ходиков
+|СтартЛокация    = Отель «Грёзы» (Мир грёз)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (Мир грёз)
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Грёзы и искусство починки часов I''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите со смотрителем ходиков
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Поговорите со смотрителем ходиков===
+{{Описание миссии|локация=Отель «Грёзы» (Мир грёз)|Когда причудливые часы наконец отремонтированы, вы получаете несколько спам-сообщений, в которых упоминается некая «бильярдная» в отеле «Грёзы». Найдите комнату, которая подходит под это описание, и хорошенько осмотрите её.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Смотритель ходиков)
+;(If {{cx}}<!--SubMission not Finish: 802023602-->)
+:<!--Unknown TalkSentence: 802020801-->
+:<!--Unknown TalkSentence: 802020802-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802020804-->
+:<!--Unknown TalkSentence: 802020805-->
+:<!--Unknown TalkSentence: 802020806-->
+;(If {{cx}}<!--SubMission Finish: 802023602-->)
+:;(If {{cx}}<!--during performance 802023102-->)
+::<!--Unknown TalkSentence: 802020851-->
+::<!--Unknown TalkSentence: 802020852-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802020854-->
+::<!--Unknown TalkSentence: 802020857-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802020859-->
+:;(If {{cx}}<!--not during performance 802023102-->)
+::<!--Unknown TalkSentence: 802020951-->
+::<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 420
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropID": [
+			{}
+		]
+	},
+	"IsAttachToTargetEntity": true,
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<!--2-second delay-->
+<!--Unknown TalkSentence: 802020965-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Dreams and the Art of Clock Maintenance (I)
+|zhs  = 梦与钟表维修艺术•一
+|zht  = 夢與鐘錶維修藝術•一
+|ja   = 夢と時計修理芸術・1
+|ko   = 꿈, 그리고 시계 수리의 예술•1
+|es   = Los sueños y el arte de reparar relojes&nbsp;I
+|fr   = Les rêves et l'art de l'horlogerie (I)
+|ru   = Грёзы и искусство починки часов I
+|th   = ความฝันและศิลปะแห่งการซ่อมแซมนาฬิกา 1
+|vi   = Giấc Mơ Và Nghệ Thuật Sửa Đồng Hồ 1
+|de   = Träume und die Kunst der Uhrenwartung (I)
+|id   = Seni Memperbaiki Mimpi dan Jam (I)
+|pt   = Sonhos e a Arte da Manutenção de Relógios (I)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

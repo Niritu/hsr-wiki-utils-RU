@@ -1,0 +1,146 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340173
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Персонажи       = Первопроходец; Янусов конь
+|СтартЛокация    = Бормочущие заросли Рощи муз
+|Мир             = Амфореус
+|Локации         = Бормочущие заросли Рощи муз
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Утраченные золотые частицы*2; Кредиты*3 000
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Янусов конь)
+----
+<!--Unknown TalkSentence: 434148001-->
+<!--Unknown TalkSentence: 434148002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434148006-->
+:<!--Unknown TalkSentence: 434148007-->
+:<!--Unknown TalkSentence: 434148008-->
+:<!--Unknown TalkSentence: 434148009-->
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 434148005-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434017301
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+						"MainMissionID": 4340173,
+						"MissionCustomValue": {
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4
+							]
+						},
+						"EquationType": "GreaterEqual",
+						"TargetValue": 2
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.ClientFinishMission",
+							"SubmissionID": 434017303
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PredicateTaskList",
+							"Predicate": {
+								"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+								"MainMissionID": 4340173,
+								"MissionCustomValue": {
+									"Index": 1,
+									"isLocal": true,
+									"ValidValueParamList": [
+										0,
+										1,
+										2,
+										3,
+										4
+									]
+								},
+								"EquationType": "GreaterEqual",
+								"TargetValue": 2
+							},
+							"SuccessTaskList": [
+								{
+									"$type": "RPG.GameCore.ClientFinishMission",
+									"SubmissionID": 434017304
+								}
+							],
+							"FailedTaskList": [
+								{
+									"$type": "RPG.GameCore.ClientFinishMission",
+									"SubmissionID": 434017305
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+----
+<!--Unknown TalkSentence: 434148101-->
+<!--Unknown TalkSentence: 434148102-->
+<!--Unknown TalkSentence: 434148103-->
+----
+<!--Unknown TalkSentence: 434148201-->
+<!--Unknown TalkSentence: 434148202-->
+<!--Unknown TalkSentence: 434148203-->
+----
+<!--Unknown TalkSentence: 434148301-->
+<!--Unknown TalkSentence: 434148302-->
+<!--Unknown TalkSentence: 434148303-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.1}}

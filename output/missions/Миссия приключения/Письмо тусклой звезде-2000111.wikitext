@@ -1,0 +1,283 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000111
+|Название        = 
+|Изображение     = Миссия Освоения Письмо тусклой звезде.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Письмо тусклой звезде]]''
+|Персонажи       = Бернард; Контрольная панель наблюдения; Лесли; Первопроходец; Ретранслятор радиоволн галактики; Рокки
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*250; Звёздный нефрит*40; Hertareum*50; Разрежённый эфир*12; Кредиты*12 000
+}}
+'''Письмо тусклой звезде''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите ретранслятор в Зоне хранения
+# Соберите старые детали возле отталкивающих мостов
+# Отремонтируйте ретранслятор с помощью запасных деталей
+# Изучите записи ретранслятора
+# Идите в Комнату наблюдения, чтобы всё выяснить
+# Опознайте преступника с помощью камер наблюдения
+# Скажите молодому человеку правду или соврите
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите ретранслятор в Зоне хранения===
+{{Описание миссии|локация=Зона хранения|Станция всегда отправляла и принимала галактические сигналы через ретранслятор. Он находится в захваченной зоне, где обитают монстры, рядом с Участком устранения. Теперь, когда связь потеряна, нужно в первую очередь удостовериться, что ретранслятор в порядке.}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200011002_Prop_23_300001_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Соберите старые детали возле отталкивающих мостов===
+{{Диалог Начало}}
+
+;(Получено {{Item|Ультраникелевая деталь|20|x=1|text=Ультраникелевая деталь}})
+
+;(Получено {{Item|Ультраникелевая деталь|20|x=1|text=Ультраникелевая деталь}})
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190172
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190173
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190174
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200021006-->
+<!--Unknown TalkSentence: 200021007-->
+<!--Unknown TalkSentence: 200021008-->
+<!--Unknown TalkSentence: 200021009-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200021011-->
+:<!--Unknown TalkSentence: 200021025-->
+:<!--Unknown TalkSentence: 200021026-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200021013-->
+:<!--Unknown TalkSentence: 200021025-->
+:<!--Unknown TalkSentence: 200021026-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200021015-->
+{{Диалог Конец}}
+
+===Отремонтируйте ретранслятор с помощью запасных деталей===
+{{Описание миссии|локация=Зона хранения|Детали собраны, отремонтировать ретранслятор не составит труда. Просматривая записи, вы не ожидали, что обнаружите кое-что интересное...}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 12844513610891405722
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.ConsumeMissionItem",
+			"SubMissionID": 200011005,
+			"Desc": {
+				"Hash": 12046088725424227177
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Изучите записи ретранслятора===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200011006_Prop_23_300005_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Идите в Комнату наблюдения, чтобы всё выяснить===
+{{Описание миссии|локация=Базовая зона|Идите в Комнату наблюдения, чтобы узнать, кто преступник. Если вам удастся его поймать, то первым делом узнайте его мотив.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Кадры видеонаблюдения|20|x=1}})
+{{Диалог Конец}}
+
+===Опознайте преступника с помощью камер наблюдения===
+{{Диалог Начало}}
+
+<!--Unknown TalkSentence: 200021710-->
+<!--Unknown TalkSentence: 200021711-->
+<!--Unknown TalkSentence: 200021712-->
+<!--Unknown TalkSentence: 200021713-->
+<!--Unknown TalkSentence: 200021714-->
+;(Получено {{Item|Красный журнал|20|x=1|text=Красный журнал}})
+{{Диалог Конец}}
+
+===Скажите молодому человеку правду или соврите===
+{{Описание миссии|локация=Главная контрольная зона|Оказалось, что Бернард сделал это для того, чтобы скрыть страшную правду: гравитационное воздействие изменило кривизну пространства и времени вблизи планеты, на которой находится научная экспедиция. Двое влюблённых оказались в разных системах координат времени и пространства.<br />Относительно его, она призрак из будущего. Относительно её, он уже состарился и умер. На один диалог им потребуется целая жизнь.<br />В конце концов вы должны сказать ему правду.}}
+{{Диалог Начало}}
+
+;(Поговорите с Бернард)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 500011820-->
+:<!--Unknown TalkSentence: 500011821-->
+:<!--Unknown TalkSentence: 500011822-->
+:<!--Unknown TalkSentence: 500011823-->
+:<!--Unknown TalkSentence: 500011824-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 500011826-->
+:<!--Unknown TalkSentence: 500011827-->
+:<!--Unknown TalkSentence: 500011828-->
+:<!--Unknown TalkSentence: 500011829-->
+:<!--Unknown TalkSentence: 500011830-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 500011832-->
+:<!--Unknown TalkSentence: 500011833-->
+:<!--Unknown TalkSentence: 500011834-->
+:<!--Unknown TalkSentence: 500011835-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 500011837-->
+:<!--Unknown TalkSentence: 500011838-->
+
+;(Поговорите с Рокки)
+<!--Unknown TalkSentence: 200021801-->
+<!--Unknown TalkSentence: 200021802-->
+<!--Unknown TalkSentence: 200021901-->
+<!--Unknown TalkSentence: 200021902-->
+<!--Unknown TalkSentence: 200021903-->
+<!--Unknown TalkSentence: 200021904-->
+<!--Unknown TalkSentence: 200021905-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200022001-->
+<!--Unknown TalkSentence: 200022002-->
+<!--Unknown TalkSentence: 200022003-->
+<!--Unknown TalkSentence: 200022004-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = To: The Faint Star
+|zhs  = 致：黯淡星
+|zht  = 致：黯淡星
+|ja   = ダークスターへ
+|ko   = 희미한 별에게
+|es   = Para la estrella sombría
+|fr   = Destination&nbsp;: l'étoile blafarde
+|ru   = Письмо тусклой звезде
+|th   = ถึง: ดวงดาวที่มืดสลัว
+|vi   = Đến: Ngôi Sao Ảm Đạm
+|de   = An: Den vagen Stern
+|id   = Kepada: Bintang Redup
+|pt   = Destino: a Estrela Vacilante
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,547 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2030201
+|Название        = 
+|Изображение     = Миссия Освоения Хорошего человека непросто сыскать.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[А убийца кто?..]]''
+|Персонажи       = Вежливый прохожий; Взволнованный убийца; Воодушевлённая прохожая; Дорроманча; Иллифан; Невежливый прохожий; Первопроходец; Радостный прохожий; Сванга; Терпеливый мужчина из Гончих; Тисок II; Хладнокровный убийца; Часик; Шенапон
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*350; Звёздный нефрит*50; Путеводитель путешественника*5; Очищенный эфир*5; Утраченный кристалл*5; Часокредиты*360; Кредиты*80 000
+}}
+'''Хорошего человека непросто сыскать''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|Тисок II пришлось очнуться ото сна и столкнуться с собственными грехами и наказанием.<br />Даже в Мире грёз наступает день, когда пробуждение неизбежно.}}
+
+==Этапы==
+# Поговорите с Тисок II
+# Вместе с Тисок II найдите Ефрема
+# Помешайте наёмным убийцам навредить Тисок II
+# Поспрашивайте у прохожих о Ефреме
+# Спросите клан Гончих о ситуации Ефрема
+# Узнайте, как дела у Ефрема и остальных
+# Поговорите с Тисок II
+# Поговорите с Часиком
+# Восполните потерянные эмоции Тисок II
+# Узнайте, почему Тисок II злится
+# Найдите наёмных убийц и защитите Тисок II
+# Найдите Тисок II и проследите, что она в безопасности
+# Помешайте наёмным убийцам навредить Тисок II
+# Помогите Тисок II найти воспоминания
+# Поговорите с Тисок II и двумя наёмными убийцами
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Тисок II===
+{{Описание миссии|локация=Золотой миг|Вы встречаетесь со странной, но доброй женщиной. Она мягкая, отзывчивая и всегда готова прийти на помощь. Вы не знаете, почему она зовёт себя императрицей Пенаконии. Ещё страннее то, что жители Пенаконии признают её своей императрицей.<br />Проследуйте за своей императрицей и вместе с ней помогите другим искателям грёз.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 8,
+			"GroupID": 122,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 230201029
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 8
+}</pre>
+:<!--8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 8,
+			"GroupID": 122,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 230201030
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 8,
+	"UniqueID": 1
+}</pre>
+{{Диалог Конец}}
+
+===Вместе с Тисок II найдите Ефрема===
+{{Описание миссии|локация=Золотой миг|Музыкальный продюсер Ефрем переборщил с развлечениями в грёзах и забыл, что прибыл сюда с рабочим визитом. Скорее найдите его, пока работа Ефрема и его партнёра не пошла насмарку.}}
+{{Диалог Начало}}
+
+;(Поговорите с Шенапон)
+<!--Unknown TalkSentence: 230201031-->
+
+;(Поговорите с Тисок II)
+:{{tx}}
+<!--Unknown TalkSentence: 230201101-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Помешайте наёмным убийцам навредить Тисок II===
+{{Описание миссии|локация=Золотой миг|За императрицей охотятся наёмные убийцы! Просто не верится, кому понадобится вредить такой доброй душе?<br />Вам придётся как следует допросить этих наёмников и узнать, почему они хотят убить императрицу!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 230201032-->
+{{Диалог Конец}}
+
+===Поспрашивайте у прохожих о Ефреме===
+{{Описание миссии|локация=Золотой миг|Музыкальный продюсер Ефрем переборщил с развлечениями в грёзах и забыл, что прибыл сюда с рабочим визитом. Скорее найдите его, пока работа Ефрема и его партнёра не пошла насмарку.}}
+{{Диалог Начало}}
+
+;(Поговорите с Радостный прохожий)
+;(If {{F|MissionCV-2030201-1}} is equal to 0)
+:<!--Unknown TalkSentence: 230201401-->
+:<!--Unknown TalkSentence: 230201402-->
+:<!--Unknown TalkSentence: 230201403-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230201405-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 203020119,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-2030201-1}} is not equal to 0)
+:<!--Unknown TalkSentence: 230201501-->
+:<!--Unknown TalkSentence: 230201502-->
+
+;(Поговорите с Воодушевлённая прохожая)
+;(If {{F|MissionCV-2030201-undefined}} is equal to 0)
+::{{tx}}
+:<!--Unknown TalkSentence: 230201201-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230201203-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 203020118,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-2030201-undefined}} is not equal to 0)
+:<!--Unknown TalkSentence: 230201301-->
+:<!--Unknown TalkSentence: 230201302-->
+
+;(Поговорите с Вежливый прохожий)
+;(If {{F|MissionCV-2030201-2}} is equal to 0)
+::{{tx}}
+:<!--Unknown TalkSentence: 230201601-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230201603-->
+::<!--Unknown TalkSentence: 230201604-->
+::<!--Unknown TalkSentence: 230201605-->
+::<!--Unknown TalkSentence: 230201606-->
+::<!--Unknown TalkSentence: 230201607-->
+::<!--Unknown TalkSentence: 230201608-->
+::<!--Unknown TalkSentence: 230201609-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230201605-->
+::<!--Unknown TalkSentence: 230201606-->
+::<!--Unknown TalkSentence: 230201607-->
+::<!--Unknown TalkSentence: 230201608-->
+::<!--Unknown TalkSentence: 230201609-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230201607-->
+::<!--Unknown TalkSentence: 230201608-->
+::<!--Unknown TalkSentence: 230201609-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 230201607-->
+:<!--Unknown TalkSentence: 230201608-->
+:<!--Unknown TalkSentence: 230201609-->
+::{{tx}}
+;(If {{F|MissionCV-2030201-2}} is not equal to 0)
+:<!--Unknown TalkSentence: 230201701-->
+:<!--Unknown TalkSentence: 230201702-->
+
+;(Поговорите с Невежливый прохожий)
+;(If {{F|MissionCV-2030201-3}} is equal to 0)
+::{{tx}}
+:<!--Unknown TalkSentence: 230201801-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230201803-->
+::<!--Unknown TalkSentence: 230201804-->
+::<!--Unknown TalkSentence: 230201805-->
+::<!--Unknown TalkSentence: 230201806-->
+::<!--Unknown TalkSentence: 230201807-->
+::<!--Unknown TalkSentence: 230201808-->
+::<!--Unknown TalkSentence: 230201809-->
+::<!--Unknown TalkSentence: 230201810-->
+::<!--Unknown TalkSentence: 230201811-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230201806-->
+::<!--Unknown TalkSentence: 230201807-->
+::<!--Unknown TalkSentence: 230201808-->
+::<!--Unknown TalkSentence: 230201809-->
+::<!--Unknown TalkSentence: 230201810-->
+::<!--Unknown TalkSentence: 230201811-->
+:<!--Unknown TalkSentence: 230201806-->
+:<!--Unknown TalkSentence: 230201807-->
+:<!--Unknown TalkSentence: 230201808-->
+:<!--Unknown TalkSentence: 230201809-->
+:<!--Unknown TalkSentence: 230201810-->
+:<!--Unknown TalkSentence: 230201811-->
+;(If {{F|MissionCV-2030201-3}} is not equal to 0)
+:<!--Unknown TalkSentence: 230201901-->
+:<!--Unknown TalkSentence: 230201902-->
+{{Диалог Конец}}
+
+===Спросите клан Гончих о ситуации Ефрема===
+{{Диалог Начало}}
+;(Unused &mdash; P_203020111)
+:{{tx}}
+:<!--Unknown TalkSentence: 230202001-->
+:<!--Unknown TalkSentence: 230202002-->
+:<!--Unknown TalkSentence: 230202003-->
+:<!--Unknown TalkSentence: 230202004-->
+:<!--Unknown TalkSentence: 230202005-->
+:<!--Unknown TalkSentence: 230202006-->
+:<!--Unknown TalkSentence: 230202007-->
+:<!--Unknown TalkSentence: 230202008-->
+:<!--Unknown TalkSentence: 230202009-->
+:<!--Unknown TalkSentence: 230202010-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230202012-->
+::<!--Unknown TalkSentence: 230202013-->
+::<!--Unknown TalkSentence: 230202014-->
+::<!--Unknown TalkSentence: 230202015-->
+::<!--Unknown TalkSentence: 230202016-->
+::<!--Unknown TalkSentence: 230202017-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230202014-->
+::<!--Unknown TalkSentence: 230202015-->
+::<!--Unknown TalkSentence: 230202016-->
+::<!--Unknown TalkSentence: 230202017-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230202016-->
+::<!--Unknown TalkSentence: 230202017-->
+:<!--Unknown TalkSentence: 230202016-->
+:<!--Unknown TalkSentence: 230202017-->
+{{Диалог Конец}}
+
+===Узнайте, как дела у Ефрема и остальных===
+{{Описание миссии|локация=Золотой миг|Вы с императрицей наконец-то спасли Ефрема. Узнайте, как у них дела.}}
+{{Диалог Начало}}
+;(Unused &mdash; P_203020112)
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Тисок II===
+{{Описание миссии|локация=Золотой миг|Вы закончили помогать жителям Пенаконии. Поговорите с императрицей, чтобы узнать её ближе.}}
+{{Диалог Начало}}
+
+;(Поговорите с Тисок II)
+:{{tx}}
+<!--Unknown TalkSentence: 230202201-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230202203-->
+:<!--Unknown TalkSentence: 230202204-->
+:<!--Unknown TalkSentence: 230202205-->
+:<!--Unknown TalkSentence: 230202206-->
+:<!--Unknown TalkSentence: 230202207-->
+:<!--Unknown TalkSentence: 230202208-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230202205-->
+:<!--Unknown TalkSentence: 230202206-->
+:<!--Unknown TalkSentence: 230202207-->
+:<!--Unknown TalkSentence: 230202208-->
+<!--Unknown TalkSentence: 230202205-->
+<!--Unknown TalkSentence: 230202206-->
+<!--Unknown TalkSentence: 230202207-->
+<!--Unknown TalkSentence: 230202208-->
+{{Диалог Конец}}
+
+===Поговорите с Часиком===
+{{Описание миссии|локация=Золотой миг|Что происходит? Что Часик опять здесь делает? Неужели эта история сложнее, чем кажется?}}
+{{Диалог Начало}}
+
+;(Поговорите с Часик)
+:{{tx}}
+<!--Unknown TalkSentence: 230202301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Восполните потерянные эмоции Тисок II===
+{{Описание миссии|локация=Золотой миг|Что происходит? Что Часик опять здесь делает? Неужели эта история сложнее, чем кажется?<br />Восполните потерянные эмоции Её Величества и узнайте, что происходит.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Узнайте, почему Тисок II злится===
+{{Описание миссии|локация=Золотой миг|Что происходит? Что Часик опять здесь делает? Неужели эта история сложнее, чем кажется?<br />Какие именно беды случились с её величеством?}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Найдите наёмных убийц и защитите Тисок II===
+{{Описание миссии|локация=Золотой миг|За императрицей охотятся наёмные убийцы! Просто не верится, кому понадобится вредить такой доброй душе?<br />Скорее найдите убийц и защитите её величество.}}
+{{Диалог Начало}}
+;(Unused &mdash; G332_Talk)
+<!--Unknown TalkSentence: 230202523-->
+----
+<!--Unknown TalkSentence: 230202601-->
+<!--Unknown TalkSentence: 230202602-->
+<!--Unknown TalkSentence: 230202603-->
+<!--Unknown TalkSentence: 230202604-->
+<!--Unknown TalkSentence: 230202605-->
+<!--Unknown TalkSentence: 230202606-->
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 335
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+<!--Unknown TalkSentence: 230202608-->
+
+{{Диалог Конец}}
+
+===Найдите Тисок II и проследите, что она в безопасности===
+{{Диалог Начало}}
+;(Unused &mdash; TriggerBattle_G338)
+<!--Unknown TalkSentence: 230202701-->
+:<!--Unknown TalkSentence: 230202702-->
+:<!--Unknown TalkSentence: 230202703-->
+:<!--Unknown TalkSentence: 230202704-->
+:<!--Unknown TalkSentence: 230202705-->
+:<!--Unknown TalkSentence: 230202706-->
+:<!--Unknown TalkSentence: 230202707-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Помешайте наёмным убийцам навредить Тисок II===
+{{Описание миссии|локация=Золотой миг|За императрицей охотятся наёмные убийцы! Просто не верится, кому понадобится вредить такой доброй душе?<br />Вам придётся как следует допросить этих наёмников и узнать, почему они хотят убить императрицу!}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Деталь из неких руин|20|x=1|text=Деталь из неких руин}})
+;(Unused &mdash; TalkSentence_230202846)
+<!--Unknown TalkSentence: 230202846-->
+::{{tx}}
+
+;(Unused &mdash; G339_P203020119)
+<!--Unknown TalkSentence: 230202801-->
+:<!--Unknown TalkSentence: 230202802-->
+:<!--Unknown TalkSentence: 230202803-->
+:<!--Unknown TalkSentence: 230202804-->
+:<!--Unknown TalkSentence: 230202805-->
+:<!--Unknown TalkSentence: 230202806-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Помогите Тисок II найти воспоминания===
+{{Описание миссии|локация=Золотой миг|Почему Тисок II запечатала воспоминания о своём правлении? Неужели они настолько ужасны, что она хотела навсегда их забыть?}}
+{{Диалог Начало}}
+
+;(Поговорите с Тисок II)
+<!--Unknown TalkSentence: 230202901-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+{{Диалог Конец}}
+
+===Поговорите с Тисок II и двумя наёмными убийцами===
+{{Описание миссии|локация=Золотой миг|Тисок II в прошлом была тираном, а сейчас добродетельница. Как бы история ни оценила её жизнь, сейчас вам нужно прощаться.}}
+{{Диалог Начало}}
+;(Unused &mdash; P_203020121)
+<!--Unknown TalkSentence: 230205601-->
+:<!--Unknown TalkSentence: 230205602-->
+:<!--Unknown TalkSentence: 230205603-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230205605-->
+::<!--Unknown TalkSentence: 230205606-->
+::<!--Unknown TalkSentence: 230205607-->
+::<!--Unknown TalkSentence: 230205608-->
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+:::{{tx}}
+:::{{Чёрный экран|undefined}}
+::<!--Unknown TalkSentence: 230205601-->
+::<!--Unknown TalkSentence: 230205602-->
+::<!--Unknown TalkSentence: 230205603-->
+::<!--Unknown TalkSentence: 230205604-->
+::<!--Unknown TalkSentence: 230205605-->
+::<!--Unknown TalkSentence: 230205606-->
+::<!--Unknown TalkSentence: 230205607-->
+::<!--Unknown TalkSentence: 230205608-->
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+::<!--Unknown TalkSentence: 230205611-->
+::<!--Unknown TalkSentence: 230205612-->
+::<!--Unknown TalkSentence: 230205613-->
+::<!--Unknown TalkSentence: 230205614-->
+::<!--Unknown TalkSentence: 230205615-->
+::<!--Unknown TalkSentence: 230205616-->
+::<!--Unknown TalkSentence: 230205617-->
+::<!--Unknown TalkSentence: 230205618-->
+::<!--Unknown TalkSentence: 230205619-->
+::<!--Unknown TalkSentence: 230205620-->
+::<!--Unknown TalkSentence: 230205621-->
+::<!--Unknown TalkSentence: 230205622-->
+::<!--Unknown TalkSentence: 230205623-->
+::<!--Unknown TalkSentence: 230205624-->
+::<!--Unknown TalkSentence: 230205625-->
+::<!--Unknown TalkSentence: 230205626-->
+::<!--Unknown TalkSentence: 230205627-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230205607-->
+::<!--Unknown TalkSentence: 230205608-->
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+:::{{tx}}
+:::{{Чёрный экран|undefined}}
+::<!--Unknown TalkSentence: 230205601-->
+::<!--Unknown TalkSentence: 230205602-->
+::<!--Unknown TalkSentence: 230205603-->
+::<!--Unknown TalkSentence: 230205604-->
+::<!--Unknown TalkSentence: 230205605-->
+::<!--Unknown TalkSentence: 230205606-->
+::<!--Unknown TalkSentence: 230205607-->
+::<!--Unknown TalkSentence: 230205608-->
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+::<!--Unknown TalkSentence: 230205611-->
+::<!--Unknown TalkSentence: 230205612-->
+::<!--Unknown TalkSentence: 230205613-->
+::<!--Unknown TalkSentence: 230205614-->
+::<!--Unknown TalkSentence: 230205615-->
+::<!--Unknown TalkSentence: 230205616-->
+::<!--Unknown TalkSentence: 230205617-->
+::<!--Unknown TalkSentence: 230205618-->
+::<!--Unknown TalkSentence: 230205619-->
+::<!--Unknown TalkSentence: 230205620-->
+::<!--Unknown TalkSentence: 230205621-->
+::<!--Unknown TalkSentence: 230205622-->
+::<!--Unknown TalkSentence: 230205623-->
+::<!--Unknown TalkSentence: 230205624-->
+::<!--Unknown TalkSentence: 230205625-->
+::<!--Unknown TalkSentence: 230205626-->
+::<!--Unknown TalkSentence: 230205627-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+:::{{tx}}
+:::{{Чёрный экран|undefined}}
+::<!--Unknown TalkSentence: 230205601-->
+::<!--Unknown TalkSentence: 230205602-->
+::<!--Unknown TalkSentence: 230205603-->
+::<!--Unknown TalkSentence: 230205604-->
+::<!--Unknown TalkSentence: 230205605-->
+::<!--Unknown TalkSentence: 230205606-->
+::<!--Unknown TalkSentence: 230205607-->
+::<!--Unknown TalkSentence: 230205608-->
+::<!--Unknown TalkSentence: 230205609-->
+::<!--Unknown TalkSentence: 230205610-->
+::<!--Unknown TalkSentence: 230205611-->
+::<!--Unknown TalkSentence: 230205612-->
+::<!--Unknown TalkSentence: 230205613-->
+::<!--Unknown TalkSentence: 230205614-->
+::<!--Unknown TalkSentence: 230205615-->
+::<!--Unknown TalkSentence: 230205616-->
+::<!--Unknown TalkSentence: 230205617-->
+::<!--Unknown TalkSentence: 230205618-->
+::<!--Unknown TalkSentence: 230205619-->
+::<!--Unknown TalkSentence: 230205620-->
+::<!--Unknown TalkSentence: 230205621-->
+::<!--Unknown TalkSentence: 230205622-->
+::<!--Unknown TalkSentence: 230205623-->
+::<!--Unknown TalkSentence: 230205624-->
+::<!--Unknown TalkSentence: 230205625-->
+::<!--Unknown TalkSentence: 230205626-->
+::<!--Unknown TalkSentence: 230205627-->
+:<!--Unknown TalkSentence: 230205609-->
+:<!--Unknown TalkSentence: 230205610-->
+::{{tx}}
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 230205601-->
+:<!--Unknown TalkSentence: 230205602-->
+:<!--Unknown TalkSentence: 230205603-->
+:<!--Unknown TalkSentence: 230205604-->
+:<!--Unknown TalkSentence: 230205605-->
+:<!--Unknown TalkSentence: 230205606-->
+:<!--Unknown TalkSentence: 230205607-->
+:<!--Unknown TalkSentence: 230205608-->
+:<!--Unknown TalkSentence: 230205609-->
+:<!--Unknown TalkSentence: 230205610-->
+:<!--Unknown TalkSentence: 230205611-->
+:<!--Unknown TalkSentence: 230205612-->
+:<!--Unknown TalkSentence: 230205613-->
+:<!--Unknown TalkSentence: 230205614-->
+:<!--Unknown TalkSentence: 230205615-->
+:<!--Unknown TalkSentence: 230205616-->
+:<!--Unknown TalkSentence: 230205617-->
+:<!--Unknown TalkSentence: 230205618-->
+:<!--Unknown TalkSentence: 230205619-->
+:<!--Unknown TalkSentence: 230205620-->
+:<!--Unknown TalkSentence: 230205621-->
+:<!--Unknown TalkSentence: 230205622-->
+:<!--Unknown TalkSentence: 230205623-->
+:<!--Unknown TalkSentence: 230205624-->
+:<!--Unknown TalkSentence: 230205625-->
+:<!--Unknown TalkSentence: 230205626-->
+:<!--Unknown TalkSentence: 230205627-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Goodness Is Rare
+|zhs  = 好人难寻
+|zht  = 好人難尋
+|ja   = 善人はなかなかいない
+|ko   = 좋은 사람은 찾기 힘들다
+|es   = La bondad es difícil de encontrar
+|fr   = Rare est la bonté
+|ru   = Хорошего человека непросто сыскать
+|th   = คนดีหายาก
+|vi   = Người Tốt Khó Tìm
+|de   = Gute Menschen findet man selten
+|id   = Orang Baik Itu Langka
+|pt   = A Bondade É Rara
+}}
+
+==История изменений==
+{{История изменений|2.7}}

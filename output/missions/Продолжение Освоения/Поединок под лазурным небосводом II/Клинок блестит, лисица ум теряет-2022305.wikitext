@@ -1,0 +1,184 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022305
+|Название        = 
+|Изображение     = Миссия Освоения Клинок блестит, лисица ум теряет.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом II
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Плечо товарища, оружие в руке]]''
+|Персонажи       = Март 7; Первопроходец; Фэйсяо; Хулэй; Юньли; Яньцин
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Плечо товарища, оружие в руке
+|Следующая       = Брызги волн, старая вражда избыта
+|Награды         = Опыт Освоения*500; Звёздный нефрит*60; Путеводитель путешественника*6; Утраченный кристалл*6; With My Heartstring as Bow*1 { text = With My Heartstring as Bow }; Inner Beast Vanquished*1 { text = Inner Beast Vanquished }; Кредиты*60 000
+}}
+'''Клинок блестит, лисица ум теряет''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом II]].
+
+==Описание==
+{{Описание|Охотнику всегда нужно быть начеку, чтобы не стать добычей. Соколиная Мощь, стоящая на краю погибели, и вожак борисинцев, чей гнев копился семь веков, сойдутся в смертельной схватке!}}
+
+==Этапы==
+# Договоритесь с Хулэем
+# Обсудите ситуацию со спутниками (необязательно)
+# Договоритесь с Хулэем
+
+==Прохождение==
+{{Дополнить}}
+
+===Договоритесь с Хулэем===
+{{Описание миссии|локация=«Рассекатель небес»|Когда сталь встречает плоть, молодая фехтовальщица одерживает победу благодаря навыкам, полученным в результате упорных тренировок и множества поражений. Пора вернуть волков за решётку.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хулэй)
+<!--Unknown TalkSentence: 222350401-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Фэйсяо)
+----
+<!--Unknown TalkSentence: 222350101-->
+<!--Unknown TalkSentence: 222350102-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350104-->
+:<!--Unknown TalkSentence: 222350105-->
+:<!--Unknown TalkSentence: 222350116-->
+:<!--Unknown TalkSentence: 222350117-->
+:<!--Unknown TalkSentence: 222350118-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350107-->
+:<!--Unknown TalkSentence: 222350108-->
+:<!--Unknown TalkSentence: 222350116-->
+:<!--Unknown TalkSentence: 222350117-->
+:<!--Unknown TalkSentence: 222350118-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350110-->
+:<!--Unknown TalkSentence: 222350111-->
+:<!--Unknown TalkSentence: 222350116-->
+:<!--Unknown TalkSentence: 222350117-->
+:<!--Unknown TalkSentence: 222350118-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350113-->
+:<!--Unknown TalkSentence: 222350114-->
+:<!--Unknown TalkSentence: 222350115-->
+:<!--Unknown TalkSentence: 222350116-->
+:<!--Unknown TalkSentence: 222350117-->
+:<!--Unknown TalkSentence: 222350118-->
+<!--Unknown TalkSentence: 222350104-->
+<!--Unknown TalkSentence: 222350105-->
+<!--Unknown TalkSentence: 222350116-->
+<!--Unknown TalkSentence: 222350117-->
+<!--Unknown TalkSentence: 222350118-->
+
+;(Поговорите с Юньли)
+<!--Unknown TalkSentence: 222350201-->
+<!--Unknown TalkSentence: 222350202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350204-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350207-->
+::{{tx}}
+<!--Unknown TalkSentence: 222350204-->
+:{{tx}}
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 222350201-->
+<!--Unknown TalkSentence: 222350202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350204-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222350207-->
+::{{tx}}
+<!--Unknown TalkSentence: 222350204-->
+:{{tx}}
+
+;(Unused &mdash; EnterRaid_40242)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40242,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.EndDialogueEntityInteract"
+}</pre>
+
+;(Поговорите с Хулэй)
+<!--Unknown TalkSentence: 222350301-->
+<!--Unknown TalkSentence: 222350302-->
+<!--Unknown TalkSentence: 222350303-->
+<!--Unknown TalkSentence: 222350304-->
+<!--Unknown TalkSentence: 222350305-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Обсудите ситуацию со спутниками (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Хулэй)
+<!--Unknown TalkSentence: 222350401-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Хулэй)
+<!--Unknown TalkSentence: 222350401-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Хулэй)
+<!--Unknown TalkSentence: 222350401-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Договоритесь с Хулэем===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Under the Spell
+|zhs  = 霜刃飞光，天狐迷狂
+|zht  = 霜刃飛光，天狐迷狂
+|ja   = 霜刃飛光、天狐の迷狂
+|ko   = 번쩍이는 칼날, 혼돈에 빠진 여우
+|es   = Bajo el encantamiento
+|fr   = Sous le charme
+|ru   = Клинок блестит, лисица ум теряет
+|th   = ดาบยะเยือกปะทะจิ้งจอกคลั่ง
+|vi   = Sương Nhẫn Phi Quang, Thiên Hồ Mê Cuồng
+|de   = Im Bann
+|id   = Cahaya Pedang Salju Menahan Kegilaan Rubah Langit
+|pt   = Sob o Feitiço
+}}
+
+==История изменений==
+{{История изменений|2.7}}

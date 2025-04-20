@@ -1,0 +1,247 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022202
+|Название        = 
+|Изображение     = Миссия Освоения Ниточка вьётся, в минувших делах отзовётся.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом II
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Всполох сигнальных огней, грядущая битва]]''
+|Персонажи       = Дань Хэн; Линша; Первопроходец; Цзин Юань
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = Всполох сигнальных огней, грядущая битва
+|Следующая       = Молот и наковальня, душа в чужих лапах
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*5; Утраченный кристалл*5; Кредиты*120 000
+}}
+'''Ниточка вьётся, в минувших делах отзовётся''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом II]].
+
+==Описание==
+{{Описание|В Доме кандалов Божественное Предвидение вместе с Дань Хэном расследуют побег. Улики, оставленные волками, вновь бросают свет на старую вражду между Лофу Сяньчжоу и Хулэем.}}
+
+==Этапы==
+# Осмотрите Дом кандалов вместе с генералом Цзин Юанем
+# Осмотрите труп борисинца в зале
+# Продолжите движение, следуя за дымом благовоний Линша
+# Осмотрите подозрительные зацепки на пути побега (необязательно)
+# Продолжите движение, следуя за дымом благовоний Линша
+
+==Прохождение==
+{{Дополнить}}
+
+===Осмотрите Дом кандалов вместе с генералом Цзин Юанем===
+{{Описание миссии|локация=Дом кандалов|С другой стороны Цзин Юань, Дань Хэн и Линша добрались до Дома кандалов, где все заняты тем, что разгребают обломки после случившегося побега. Троица изучает последствия неожиданной атаки борисинцев, надеясь отыскать следы, которые помогут поймать кукловода, управляющего событиями из-за кулис. По ходу они пересматривают события прошлого...}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Осмотрите труп борисинца в зале===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222220201-->
+<!--Unknown TalkSentence: 222220202-->
+<!--Unknown TalkSentence: 222220203-->
+<!--Unknown TalkSentence: 222220204-->
+<!--Unknown TalkSentence: 222220205-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222220207-->
+:<!--Unknown TalkSentence: 222220208-->
+:<!--Unknown TalkSentence: 222220209-->
+:<!--Unknown TalkSentence: 222220210-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222220209-->
+:<!--Unknown TalkSentence: 222220210-->
+::{{tx}}
+<!--Unknown TalkSentence: 222220209-->
+<!--Unknown TalkSentence: 222220210-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.WaitStreamingJobFinished"
+}</pre>
+<!--Unknown TalkSentence: 222220901-->
+<!--Unknown TalkSentence: 222220902-->
+<!--Unknown TalkSentence: 222220903-->
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G144"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+<!--Unknown TalkSentence: 222220401-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 222220403-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G145"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G146"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Продолжите движение, следуя за дымом благовоний Линша===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222220601-->
+<!--Unknown TalkSentence: 222220602-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+:{{Диалог|undefined}} 
+
+
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Осмотрите подозрительные зацепки на пути побега (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Продолжите движение, следуя за дымом благовоний Линша===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(По прибытии на место)
+;(If {{F|Fly}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(If {{F|Fly}} is not equal to 2)
+:;(Return to previous option selection)
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 222220801-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 222220803-->
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = A Web of Pasts Rewoven
+|zhs  = 缕析条分，故事重问
+|zht  = 縷析條分，故事重問
+|ja   = 勘案分析、再び問われる過去
+|ko   = 세밀한 분석, 다시 드러난 과거
+|es   = Red de pasados entretejidos
+|fr   = Sur les traces du passé
+|ru   = Ниточка вьётся, в минувших делах отзовётся
+|th   = วิเคราะห์คดี สะสางอดีต
+|vi   = Phân Tích Chi Tiết, Đào Lại Quá Khứ
+|de   = Gewoben aus Vergangenem
+|id   = Menyulam Kembali Jejak-Jejak Masa Lampau
+|pt   = Uma Teia de Passados Retecida
+}}
+
+==История изменений==
+{{История изменений|2.7}}

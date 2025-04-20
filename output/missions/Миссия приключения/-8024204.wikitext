@@ -1,0 +1,96 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8024204
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Освоение: Дружба - это чудо
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Старые друзья, новые друзья?]]''
+|Персонажи       = Первопроходец; Сампо; Сумеречная Мусорка
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = Старые друзья, новые друзья?
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба - это чудо]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Unused &mdash; EnterDistrict_G179)
+<!--Unknown TalkSentence: 802440402-->
+:<!--Unknown TalkSentence: 802440403-->
+:<!--Unknown TalkSentence: 802440404-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+:{{Диалог|Журнал путешествий}} Воссоздать «чудо дружбы»
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "3"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.SetMunicipalEnable",
+			"Visible": true
+		}
+	]
+}</pre>
+
+;(Поговорите с Сампо)
+<!--Unknown TalkSentence: 802441218-->
+
+;(Поговорите с Сумеречная Мусорка)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Main.ActivitySummonMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Поговорите с Сампо)
+<!--Unknown TalkSentence: 802440502-->
+<!--Unknown TalkSentence: 802440503-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

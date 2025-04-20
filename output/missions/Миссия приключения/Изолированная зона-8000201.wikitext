@@ -1,0 +1,172 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000201
+|Название        = 
+|Изображение     = Миссия Освоения Изолированная зона.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Леонард; Первопроходец
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Изолированная зона''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите способ покинуть помещение
+# Откройте другую дверь в зоне
+# Пройдите эту зону
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите способ покинуть помещение===
+{{Описание миссии|локация=Зона хранения|Неразбериха, вызванная Серебряным Волком, наконец закончилась, но Леонард всё ещё обеспокоен.<br />Он просит вас провести одно испытание, чтобы обеспечить информационную безопасность на станции и сохранить свою работу.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G2",
+	"AnchorName": "Anchor1"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200073401-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G2",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G2",
+	"AnchorName": "Anchor1"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200073402-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G2",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<!--Unknown TalkSentence: 200073403-->
+<!--Unknown TalkSentence: 200073404-->
+<!--Unknown TalkSentence: 200073405-->
+<pre>{
+	"$type": "RPG.GameCore.ShowTutorialGuide",
+	"GuideID": 8008
+}</pre>
+{{Диалог Конец}}
+
+===Откройте другую дверь в зоне===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G12",
+	"AnchorName": "Anchor1"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+:<!--1-second delay-->
+:<!--2-second delay-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002101_G12",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите эту зону===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200073406-->
+<!--Unknown TalkSentence: 200073407-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200073409-->
+<!--Unknown TalkSentence: 200073412-->
+<!--Unknown TalkSentence: 200073413-->
+<!--Unknown TalkSentence: 200073414-->
+
+:{{Диалог|Изучение}} Осмотреть
+;(If {{cx}}<!--SubMission Finish: 800020111-->)
+;(Otherwise)
+<!--Unknown TalkSentence: 200073429-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 102000000,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sealed Sector
+|zhs  = 封锁扇区
+|zht  = 封鎖磁區
+|ja   = 封鎖セクタ
+|ko   = 봉쇄 섹터
+|es   = Sector cerrado
+|fr   = Secteur bouclé
+|ru   = Изолированная зона
+|th   = กวาดล้างโซนปิดผนึก
+|vi   = Khu Vực Phong Tỏa
+|de   = Versiegelter Sektor
+|id   = Sektor Tersegel
+|pt   = Setor Trancado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

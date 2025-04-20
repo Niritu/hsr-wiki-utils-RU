@@ -1,0 +1,199 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8021505
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[И на восьмой день...]]''
+|Персонажи       = Господин Газировка №&nbsp;0; Господин Газировка №&nbsp;1; Господин Газировка №&nbsp;2; Господин Газировка №&nbsp;3; Господин Газировка №&nbsp;4; Господин Газировка №&nbsp;5; Господин Газировка №&nbsp;6; Первопроходец
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Господин Газировка №&nbsp;1)
+;(If {{F|EasterA2}} is equal to 0)
+;(If {{F|EasterA2}} is not equal to 0)
+<!--Unknown TalkSentence: 802155033-->
+<!--Unknown TalkSentence: 802155203-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190649
+		}
+	}
+}</pre>
+
+;(Поговорите с Господин Газировка №&nbsp;0)
+;(If {{cx}}<!--during performance 802150501-->)
+:<!--Unknown TalkSentence: 802155002-->
+:<!--Unknown TalkSentence: 802155003-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802155006-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802155008-->
+:<!--Unknown TalkSentence: 802155009-->
+:<!--Unknown TalkSentence: 802155010-->
+:<!--Unknown TalkSentence: 802155011-->
+;(If {{cx}}<!--not during performance 802150501-->)
+:<!--Unknown TalkSentence: 802155102-->
+:<!--Unknown TalkSentence: 802155103-->
+:<!--Unknown TalkSentence: 802155104-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; TalkSentence_802155024)
+<!--Unknown TalkSentence: 802155024-->
+
+;(Unused &mdash; TalkSentence_802155026)
+<!--Unknown TalkSentence: 802155026-->
+
+;(Unused &mdash; TalkSentence_802155028)
+<!--Unknown TalkSentence: 802155028-->
+
+;(Unused &mdash; TalkSentence_802155106)
+<!--Unknown TalkSentence: 802155106-->
+
+;(Unused &mdash; TalkSentence_802155108)
+<!--Unknown TalkSentence: 802155108-->
+
+;(Unused &mdash; TalkSentence_802155110)
+<!--Unknown TalkSentence: 802155110-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 373,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802157016
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 5,
+	"UniqueID": 373
+}</pre>
+<!--Unknown TalkSentence: 802156602-->
+<!--Unknown TalkSentence: 802156603-->
+
+;(Поговорите с Господин Газировка №&nbsp;2)
+;(If {{F|EasterA1}} is equal to 0)
+;(If {{F|EasterA1}} is not equal to 0)
+<!--Unknown TalkSentence: 802155035-->
+<!--Unknown TalkSentence: 802155403-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190648
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802156502-->
+<!--Unknown TalkSentence: 802156503-->
+
+;(Поговорите с Господин Газировка №&nbsp;3)
+;(If {{F|EasterB2}} is equal to 0)
+;(If {{F|EasterB2}} is not equal to 0)
+<!--Unknown TalkSentence: 802155037-->
+<!--Unknown TalkSentence: 802155603-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190651
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802156802-->
+<!--Unknown TalkSentence: 802156803-->
+
+;(Поговорите с Господин Газировка №&nbsp;4)
+;(If {{F|EasterB1}} is equal to 0)
+;(If {{F|EasterB1}} is not equal to 0)
+<!--Unknown TalkSentence: 802155039-->
+<!--Unknown TalkSentence: 802155803-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190650
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802156702-->
+<!--Unknown TalkSentence: 802156703-->
+
+;(Поговорите с Господин Газировка №&nbsp;5)
+;(If {{F|EasterC2}} is equal to 0)
+;(If {{F|EasterC2}} is not equal to 0)
+<!--Unknown TalkSentence: 802155041-->
+<!--Unknown TalkSentence: 802156003-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190653
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802157002-->
+<!--Unknown TalkSentence: 802157003-->
+
+;(Поговорите с Господин Газировка №&nbsp;6)
+;(If {{F|EasterC1}} is equal to 0)
+;(If {{F|EasterC1}} is not equal to 0)
+<!--Unknown TalkSentence: 802155043-->
+<!--Unknown TalkSentence: 802156203-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190652
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802156902-->
+<!--Unknown TalkSentence: 802156903-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

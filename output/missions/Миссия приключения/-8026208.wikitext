@@ -1,0 +1,123 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026208
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Лавка Дядюшки Мерзляка
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+|Персонажи       = Внештатный робот; Первопроходец; Сампо
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Лавка Дядюшки Мерзляка]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Сампо)
+;(If {{cx}}<!--SubMission Finish: 802620103--> and {{cx}}<!--SubMission not Finish: 802620201-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620203--> and {{cx}}<!--SubMission not Finish: 802620301-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620303--> and {{cx}}<!--SubMission not Finish: 802620401-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620403--> and {{cx}}<!--SubMission not Finish: 802620501-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620503--> and {{cx}}<!--SubMission not Finish: 802620601-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620603--> and {{cx}}<!--SubMission not Finish: 802620701-->)
+;(Otherwise)
+<!--Unknown TalkSentence: 802620502-->
+
+;(Unused &mdash; 8026201_Day1)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Легендарная жидкость|Легендарная жидкость]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day2)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Жидкое пламя бездны|Жидкое пламя бездны]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day3)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Высокое напряжение, украденное с небес|Высокое напряжение, украденное с небес]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day4)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Лёд, который никогда не смеётся|Лёд, который никогда не смеётся]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day5)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Автоматическая эфирная турбозакладка|Автоматическая эфирная турбозакладка]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day6)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Синестезийный омни-помощник|Синестезийный омни-помощник]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Unused &mdash; 8026201_Day7)
+;(Open item submission menu&colon; [[Mr. Cold Feet's Pop-Up Shop/Product Plan#Жизнь вечного возвращения|Жизнь вечного возвращения]])
+:;(If the menu is closed without submitting the items)
+:<!--Unknown TalkSentence: 802620101-->
+
+;(Поговорите с Сампо)
+;(If {{cx}}<!--SubMission Finish: 802620103--> and {{cx}}<!--SubMission not Finish: 802620201-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620203--> and {{cx}}<!--SubMission not Finish: 802620301-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620303--> and {{cx}}<!--SubMission not Finish: 802620401-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620403--> and {{cx}}<!--SubMission not Finish: 802620501-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620503--> and {{cx}}<!--SubMission not Finish: 802620601-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802620603--> and {{cx}}<!--SubMission not Finish: 802620701-->)
+;(Otherwise)
+<!--Unknown TalkSentence: 802620502-->
+
+;(Поговорите с Внештатный робот)
+<!--Unknown TalkSentence: 802622901-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.MaterialSubmission.BelobogShop.Main.BelobogShopMainPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "BanGoto"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

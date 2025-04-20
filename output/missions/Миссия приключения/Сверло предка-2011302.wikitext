@@ -1,0 +1,155 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2011302
+|Название        = 
+|Изображение     = Миссия Освоения Сверло предка.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Сверло предка]]''
+|Персонажи       = Молли; Пела; Первопроходец; Сервал
+|СтартЛокация    = Мастерская «Незимье»
+|Мир             = Ярило-VI
+|Локации         = Мастерская «Незимье»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*350; Звёздный нефрит*60; Конденсированный эфир*5; Shield (Item)*200; Кредиты*25 000
+}}
+'''Сверло предка''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отдайте ключ Молли
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отдайте ключ Молли===
+{{Описание миссии|локация=Мастерская «Незимье»|Вы с Пелой помучились в Коридоре исчезающего эха, но всё-таки нашли ключ, который нужен Молли.<br />Вернитесь в мастерскую «Незимье» и расскажите остальным о путешествии по Фрагментуму.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 16,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 101013256
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 6,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 101013257
+		}
+	]
+}</pre>
+
+;(Поговорите с Сервал)
+----
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 101013201-->
+<!--Unknown TalkSentence: 101013202-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 201130201,
+	"Desc": {
+		"Hash": 16746500264881377770
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Mission_2011101_temp",
+	"AnchorName": "Camera_201130201",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 101013214-->
+<!--Unknown TalkSentence: 101013215-->
+<!--Unknown TalkSentence: 101013216-->
+<!--Unknown TalkSentence: 101013217-->
+<!--Unknown TalkSentence: 101013218-->
+<!--Unknown TalkSentence: 101013219-->
+<!--Unknown TalkSentence: 101013220-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Mission_2011101_temp",
+	"AnchorName": "Camera_201130201",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 201130202,
+	"Desc": {
+		"Hash": 3346979079400582808
+	}
+}</pre>
+
+;(Поговорите с Сервал)
+<!--Unknown TalkSentence: 501029405-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Mission_2011101_temp",
+	"AnchorName": "Camera_201130201",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 101013222-->
+<!--Unknown TalkSentence: 101013223-->
+<!--Unknown TalkSentence: 101013224-->
+<!--Unknown TalkSentence: 101013225-->
+<!--Unknown TalkSentence: 101013226-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190196
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 101013227-->
+<!--Unknown TalkSentence: 101013228-->
+<!--Unknown TalkSentence: 101013229-->
+<!--Unknown TalkSentence: 101013230-->
+<!--Unknown TalkSentence: 101013231-->
+<!--Unknown TalkSentence: 101013232-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ancestor's Drill Bit
+|zhs  = 祖辈的钻头
+|zht  = 祖輩的鑽頭
+|ja   = 祖先のドリル
+|ko   = 조상님의 드릴
+|es   = El taladro de los ancestros
+|fr   = Le foret de l'ancêtre
+|ru   = Сверло предка
+|th   = สว่านของบรรพบุรุษ
+|vi   = Mũi Khoan Của Tổ Tiên
+|de   = Bohrer der Ahnen
+|id   = Bor Leluhur
+|pt   = Broca do Ancestral
+}}
+
+==История изменений==
+{{История изменений|2.7}}

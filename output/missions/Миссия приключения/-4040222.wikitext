@@ -1,0 +1,544 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040222
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Гончая гонится за лисой]]''
+|Персонажи       = Иньшу; Первопроходец; Печальная женщина; Управляющий Ханьдянь
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Strale*10; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 107
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 107,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 412220291
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 107,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 412220292
+		}
+	]
+}</pre>
+;(Потеряно {{Item|Грязная деталь|20|x=1|text=Грязная деталь}})
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 62
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 62,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 412220601
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 78,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 412220602
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 412220701-->
+<!--Unknown TalkSentence: 412220702-->
+<!--Unknown TalkSentence: 412220703-->
+<!--Unknown TalkSentence: 412220704-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 412220706-->
+:<!--Unknown TalkSentence: 412220707-->
+:<!--Unknown TalkSentence: 412220708-->
+:<!--Unknown TalkSentence: 412220709-->
+:<!--Unknown TalkSentence: 412220710-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140183
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140183,
+			"TriggerCustomString": "Selected_1_404022207"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 412220712-->
+:<!--Unknown TalkSentence: 412220713-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140183
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140183,
+			"TriggerCustomString": "Selected_1_404022207"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 412220709-->
+<!--Unknown TalkSentence: 412220710-->
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140183
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140183,
+			"TriggerCustomString": "Selected_1_404022207"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 62,
+					"GroupNpcID": 400002,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {},
+			"AdvNpcFaceToPlayer": {
+				"FromDialog": false
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Потеряно {{Item|Старая шкатулка|20|x=1|text=Старая шкатулка}})
+<!--Unknown TalkSentence: 412220801-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 107
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 20,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 412221101
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 20,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 412221102
+		}
+	]
+}</pre>
+;(Потеряно {{Item|Кувшин со слезами чешуйчатых|20|x=1|text=Кувшин со слезами чешуйчатых}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

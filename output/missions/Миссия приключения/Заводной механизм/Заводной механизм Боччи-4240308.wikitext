@@ -1,0 +1,205 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240308
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Боччи.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Первопроходец; Фейнман
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Путеводитель путешественника*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Боччи''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с сотрудниками КММ, работающими вместе с Фейнманом, и найдите подходящие темы для беседы
+# Узнайте новости из телевизора в баре
+# Вступите в спор с Фейнманом и раскройте правду
+# Вернитесь и расскажите Боччи о результатах
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Получено {{Item|Проект «Скарабей»|20|x=1}})
+{{Диалог Конец}}
+
+===Поговорите с сотрудниками КММ, работающими вместе с Фейнманом, и найдите подходящие темы для беседы===
+{{Описание миссии|локация=Золотой миг|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Болтовня сотрудников|20|x=1|text=Болтовня сотрудников}})
+
+;(Unused &mdash; showtoast265)
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 266
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+
+
+;(Поговорите с Фейнман)
+<!--Unknown TalkSentence: 413080801-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+::----
+:<!--Unknown TalkSentence: 413080901-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 269
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:<!--Unknown TalkSentence: 413080903-->
+:<!--Unknown TalkSentence: 413080906-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 269
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Close02"
+}</pre>
+:<!--Unknown TalkSentence: 413080908-->
+:<!--Unknown TalkSentence: 413080909-->
+::----
+<!--Unknown TalkSentence: 413082108-->
+;(Unused &mdash; TalkSentence_413081007)
+<!--Unknown TalkSentence: 413081007-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081011)
+<!--Unknown TalkSentence: 413081011-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081015)
+<!--Unknown TalkSentence: 413081015-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081018)
+<!--Unknown TalkSentence: 413081018-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081021)
+<!--Unknown TalkSentence: 413081021-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081027)
+<!--Unknown TalkSentence: 413081027-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Success"
+}</pre>
+
+;(Unused &mdash; TalkSentence_413081032)
+<!--Unknown TalkSentence: 413081032-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте новости из телевизора в баре===
+{{Диалог Начало}}
+
+;(Получено {{Item|Телевизионные новости|20|x=1|text=Телевизионные новости}})
+
+{{Диалог Конец}}
+
+===Вступите в спор с Фейнманом и раскройте правду===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Вернитесь и расскажите Боччи о результатах===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Bocchi
+|zhs  = 钟表把戏：波奇
+|zht  = 鐘錶把戲：波奇
+|ja   = クロックトリック：ボッチ
+|ko   = 시계 트릭: 보키
+|es   = Trucorreloj: Bocchi
+|fr   = Pouvoir de la Pendule&nbsp;: Bocchi
+|ru   = Заводной механизм: Боччи
+|th   = กลนาฬิกา: Bocchi
+|vi   = Thủ Thuật Đồng Hồ: Bocchi
+|de   = Uhrwerk: Bocchi
+|id   = Clockwork: Bocchi
+|pt   = Truquelógio: Bocchi
+}}
+
+==История изменений==
+{{История изменений|2.7}}

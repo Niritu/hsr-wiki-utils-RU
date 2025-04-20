@@ -1,0 +1,228 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8030125
+|Название        = 
+|Изображение     = Миссия Освоения Плита пророчества VI.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец
+|СтартЛокация    = Плита пророчества VI
+|Мир             = Амфореус
+|Локации         = Плита пророчества VI
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Плита пророчества VI''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Разгадайте «Плиту пророчества VI»
+
+==Прохождение==
+{{Дополнить}}
+
+===Разгадайте «Плиту пророчества VI»===
+{{Описание миссии|локация=Плита пророчества VI|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой плиты пророчества. Продолжить путь можно, лишь решив головоломку.}}
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_PuzzleState"},"CompareType":"Equal"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001,
+		300002,
+		300004
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BindPropsCablelines",
+	"StartPropInstanceID": 300001,
+	"EndPropInstanceID": 300002,
+	"LinePropInstanceID": 300004,
+	"LineEffectPath": {
+		"Custom": true,
+		"Key": "LineEffect"
+	},
+	"MoveEffectPath": {
+		"Value": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Ball_Lod0.prefab"
+	},
+	"MoveEffectSpeedOverride": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				584429333
+			]
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
+	"AttachPoint": "Root",
+	"Scale": {
+		"X": 1,
+		"Y": 1,
+		"Z": 1
+	},
+	"SubObjectModifyDataList": []
+}</pre>
+:;(По прибытии на место)
+:;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004,
+	"IsVisible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004,
+	"IsVisible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; OraclePuzzleEndLinePerform)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne_DS": {
+		"Custom": true,
+		"Key": "Toast1"
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--0.4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Custom": true,
+		"Key": "FCV"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.UnBindPropsCablelines",
+	"LinePropInstanceID": 300004
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle_stop"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
+	"Flags": []
+}</pre>
+
+;(Unused &mdash; OraclePuzzleStartLinePerform)
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupProperty",
+	"DynamicName": {
+		"Value": "SGP_PuzzleState"
+	},
+	"Value": 1
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Prophecy Tablet: Room VI
+|zhs  = 预言算碑-房间Ⅵ
+|zht  = 預言算碑-房間Ⅵ
+|ja   = 預言の盤：部屋VI
+|ko   = 예언 비석-방Ⅵ
+|es   = Tabla de la profecía: sala&nbsp;VI
+|fr   = Salle VI de la Stèle prophétique
+|ru   = Плита пророчества VI
+|th   = จารึกคำทำนาย: ห้อง VI
+|vi   = Tấm Bia Tiên Tri: Phòng VI
+|de   = Monument der Prophezeiung: Raum VI
+|id   = Prasasti Ramalan: Ruangan VI
+|pt   = Monumento Profético: Sala VI
+}}
+
+==История изменений==
+{{История изменений|3.0}}

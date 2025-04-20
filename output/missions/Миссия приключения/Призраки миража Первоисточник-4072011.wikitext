@@ -1,0 +1,131 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4072011
+|Название        = 
+|Изображение     = Миссия Освоения Призраки миража Первоисточник.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Голос Гуанцзиня; Гуанцзинь; Первопроходец
+|СтартЛокация    = Чешуйчатое ущелье
+|Мир             = Лофу Сяньчжоу
+|Локации         = Чешуйчатое ущелье
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Призраки миража: Первоисточник''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Гуанцзинем
+# Поищите улики на берегу
+# Исследуйте приманку, оставленную Гуанцзинем
+# Продолжайте искать улики
+# Поговорите с Гуанцзинем
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Гуанцзинем===
+{{Описание миссии|локация=Чешуйчатое ущелье|Комиссия по балансу узнала, что жители обнаружили в гротах Комиссии по алхимии странные явления, похожие на облачные гимны, и даже столкнулись с монстрами.<br />Гуанцзинь приготовил приманку, чтобы обнаружить источник этих явлений...}}
+{{Диалог Начало}}
+
+;(Поговорите с Гуанцзинь)
+<!--Unknown TalkSentence: 407201102-->
+<!--Unknown TalkSentence: 407201103-->
+<!--Unknown TalkSentence: 407201104-->
+<!--Unknown TalkSentence: 407201105-->
+<!--Unknown TalkSentence: 407201106-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowEnvBuffDialog",
+	"IsAutoGetParam": true,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_407201101"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поищите улики на берегу===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Исследуйте приманку, оставленную Гуанцзинем===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Продолжайте искать улики===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvSpecialVisionProtect"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvSpecialVisionProtect"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "PlayerSearchSneakMonster",
+	"VisionEffectType": "SearchMonster",
+	"IsInfiniteTime": true
+}</pre>
+<!--Unknown TalkSentence: 407201122-->
+----
+<!--Unknown TalkSentence: 407201123-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+===Поговорите с Гуанцзинем===
+{{Диалог Начало}}
+
+;(Поговорите с Гуанцзинь)
+<!--Unknown TalkSentence: 407201132-->
+<!--Unknown TalkSentence: 407201133-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 407201135-->
+:<!--Unknown TalkSentence: 407201139-->
+:<!--Unknown TalkSentence: 407201140-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 407201137-->
+:<!--Unknown TalkSentence: 407201138-->
+:<!--Unknown TalkSentence: 407201139-->
+:<!--Unknown TalkSentence: 407201140-->
+<!--Unknown TalkSentence: 407201135-->
+<!--Unknown TalkSentence: 407201139-->
+<!--Unknown TalkSentence: 407201140-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Wraiths of Mirage: Retracing Operation
+|zhs  = 蜃楼遁影•溯源行动
+|zht  = 蜃樓遁影•溯源行動
+|ja   = 蜃気楼の隠影・遡源行動
+|ko   = 사라진 신기루•근원 추적 작전
+|es   = Espectros del espejismo: misión de trazabilidad
+|fr   = Spectres de mirage&nbsp;: Opération Reconstitution
+|ru   = Призраки миража: Первоисточник
+|th   = ภูตแห่งมายา: ปฏิบัติการแกะรอย
+|vi   = Ảo Ảnh Hiện Hữu - Tìm Tận Gốc Rễ
+|de   = Geister des Phantoms: Ursprung
+|id   = Roh Fatamorgana: Operasi Pelacakan
+|pt   = Espectros da Miragem: Operação de Remontagem
+}}
+
+==История изменений==
+{{История изменений|2.7}}

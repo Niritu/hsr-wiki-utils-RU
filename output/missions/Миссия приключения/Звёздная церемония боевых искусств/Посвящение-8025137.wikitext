@@ -1,0 +1,201 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025137
+|Название        = 
+|Изображение     = Миссия Освоения Посвящение.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+* Завершена [[Миссия приключения]] ''[[Отборочный матч - Охотник до Стелларонов: Сэм]]''
+* Завершена [[Миссия приключения]] ''[[Отборочный матч - Блуждающий Огонь]]''
+|Персонажи       = Командир Облачных Рыцарей; Лука; Первопроходец; Проводница душ; Сугата; Шаматха; Юйкун
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Отборочный матч - Блуждающий Огонь
+|Следующая       = 
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*2; Утраченный кристалл*2; Кредиты*30 000
+}}
+'''Посвящение''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Подготовьтесь к следующему матчу
+# Отправляйтесь в Дом кандалов и помогите с расследованием
+# Синхронизируйте данные с Сугатой
+# Подготовьтесь к последней битве
+
+==Прохождение==
+{{Дополнить}}
+
+===Подготовьтесь к следующему матчу===
+{{Описание миссии|локация=«Рассекатель небес»|Что ожидать от соперника по имени Шаматха? Скорее начинайте следующий матч.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G175)
+----
+:<!--Unknown TalkSentence: 802514101-->
+:<!--Unknown TalkSentence: 802514102-->
+:<!--Unknown TalkSentence: 802514103-->
+:<!--Unknown TalkSentence: 802514104-->
+:<!--Unknown TalkSentence: 802514105-->
+:<!--Unknown TalkSentence: 802514106-->
+:<!--Unknown TalkSentence: 802514107-->
+:<!--Unknown TalkSentence: 802514108-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802514161-->
+<!--Unknown TalkSentence: 802514162-->
+<!--Unknown TalkSentence: 802514163-->
+<!--Unknown TalkSentence: 802514164-->
+<!--Unknown TalkSentence: 802514165-->
+<!--Unknown TalkSentence: 802514166-->
+<!--Unknown TalkSentence: 802514167-->
+<!--Unknown TalkSentence: 802514168-->
+<!--Unknown TalkSentence: 802514169-->
+<!--Unknown TalkSentence: 802514170-->
+<!--Unknown TalkSentence: 802514171-->
+<!--Unknown TalkSentence: 802514172-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514174-->
+:{{Диалог|Стрелка}} undefined
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Дом кандалов и помогите с расследованием===
+{{Описание миссии|локация=Дом кандалов|На соревнованиях произошло неожиданное событие. Борисинец, замаскировавшийся под представителя лисьего народа, - друг или враг? Чтобы выяснить правду, вам придётся отправиться в Дом кандалов.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G216)
+<!--Unknown TalkSentence: 802514201-->
+:<!--Unknown TalkSentence: 802514202-->
+:<!--Unknown TalkSentence: 802514203-->
+:<!--Unknown TalkSentence: 802514204-->
+:<!--Unknown TalkSentence: 802514205-->
+:<!--Unknown TalkSentence: 802514206-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Синхронизируйте данные с Сугатой===
+{{Описание миссии|локация=Дом кандалов|Сугата синхронизировал с вами данные. Какова же правда?}}
+{{Диалог Начало}}
+
+;(Поговорите с Сугата)
+<!--Unknown TalkSentence: 802514601-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514603-->
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; OpenRaid_G217)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40105
+}</pre>
+{{Диалог Конец}}
+
+===Подготовьтесь к последней битве===
+{{Описание миссии|локация=Дом кандалов|Поговорите с Юйкун и начните последнюю битву. Пусть диск луны висит высоко, освещая сердца смертных.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802514551-->
+<!--Unknown TalkSentence: 802514552-->
+<!--Unknown TalkSentence: 802514553-->
+<!--Unknown TalkSentence: 802514554-->
+<!--Unknown TalkSentence: 802514555-->
+<!--Unknown TalkSentence: 802514556-->
+<!--Unknown TalkSentence: 802514557-->
+<!--Unknown TalkSentence: 802514558-->
+<!--Unknown TalkSentence: 802514559-->
+<!--Unknown TalkSentence: 802514560-->
+<!--Unknown TalkSentence: 802514561-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+
+;(Поговорите с Юйкун)
+<!--Unknown TalkSentence: 802514561-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; EnterDistrict_G220)
+:{{tx}}
+:;(Enter battle)
+:::Wave 1: {{Enemy List|Волк-поглотитель луны*1/-30% Сила атаки, -30% НР; Волк-чернокоготь*1/-30% Сила атаки, -30% НР}}
+:::Wave 2: {{Enemy List|Ауруматон-привратник*1/-30% Сила атаки, -30% НР; Волк-поглотитель луны*1/-30% Сила атаки, -30% НР}}
+----
+<!--Unknown TalkSentence: 802514581-->
+<!--Unknown TalkSentence: 802514582-->
+<!--Unknown TalkSentence: 802514583-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802514585-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchSpecialInviteResultDialog",
+	"Param": {
+		"Value": "2007"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ordination
+|zhs  = 受戒
+|zht  = 受戒
+|ja   = 受戒
+|ko   = 수계
+|es   = Ordenación
+|fr   = Ordination
+|ru   = Посвящение
+|th   = ออกบวช
+|vi   = Thọ Giới
+|de   = Weihe
+|id   = Penahbisan
+|pt   = Ordenação
+}}
+
+==История изменений==
+{{История изменений|2.7}}

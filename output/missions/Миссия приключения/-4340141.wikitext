@@ -1,0 +1,149 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340141
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Идеи декора для космического дома: Гостиная]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Вагон для вечеринок
+|Мир             = Звёздный экспресс
+|Локации         = Вагон для вечеринок
+|Предыдущая      = Идеи декора для космического дома: Гостиная
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Звёздный экспресс]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|?}} Холодильник
+;(If {{F|MissionCV-4340141-2}} is equal to 1)
+:----
+;(If {{F|MissionCV-4340141-2}} is not equal to 1)
+:----
+<!--Unknown TalkSentence: 434048101-->
+:{{Диалог|Стрелка}} undefined
+:;(If {{F|MissionCV-4340141-1}} is equal to 3)
+::<!--Unknown TalkSentence: 434048037-->
+:;(If {{F|MissionCV-4340141-1}} is not equal to 3)
+::<!--Unknown TalkSentence: 434048011-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 434048039-->
+
+:{{Диалог|?}} Холодильник
+----
+<!--Unknown TalkSentence: 434048202-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 434048204-->
+<!--Unknown TalkSentence: 434048209-->
+<!--Unknown TalkSentence: 434048210-->
+<!--Unknown TalkSentence: 434048211-->
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434014103,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+:{{Диалог|?}} Холодильник
+----
+;(If {{cx}}<!--SubMission Finish: 434014104-->)
+:<!--Unknown TalkSentence: 434048301-->
+::{{Диалог|Стрелка}} undefined
+::;(If {{F|MissionCV-4340141-undefined}} is equal to 1)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190729
+		}
+	}
+}</pre>
+:::<!--Unknown TalkSentence: 434048303-->
+::;(If {{F|MissionCV-4340141-undefined}} is not equal to 1)
+:::;(Return to previous option selection)
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 434048307-->
+;(If {{cx}}<!--SubMission not Finish: 434014104-->)
+:<!--Unknown TalkSentence: 434048211-->
+
+:{{Диалог|?}} 
+----
+<!--Unknown TalkSentence: 434048101-->
+:{{Диалог|Стрелка}} undefined
+:;(If {{F|MissionCV-4340141-1}} is equal to 3)
+::<!--Unknown TalkSentence: 434048037-->
+:;(If {{F|MissionCV-4340141-1}} is not equal to 3)
+::<!--Unknown TalkSentence: 434048011-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 434048039-->
+;(Unused &mdash; TalkSentence_434048006)
+<!--Unknown TalkSentence: 434048006-->
+:<!--Unknown TalkSentence: 434048007-->
+:<!--Unknown TalkSentence: 434048008-->
+:<!--Unknown TalkSentence: 434048009-->
+::{{Диалог|Стрелка}} undefined
+::;(If {{F|MissionCV-4340141-1}} is equal to 3)
+:::<!--Unknown TalkSentence: 434048037-->
+::;(If {{F|MissionCV-4340141-1}} is not equal to 3)
+:::<!--Unknown TalkSentence: 434048011-->
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 434048039-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434014101,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,590 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000206
+|Название        = 
+|Изображение     = Миссия Освоения Признаки Фрагментума.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Аста; Первопроходец; Ремонтник
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Признаки Фрагментума''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Войдите в Зону хранения и изучите обстановку
+# Соберите данные с маячка
+# Продолжите подробное расследование
+# Передайте данные с маячков
+# Получите ключ шифрования для текущей комнаты у монстра
+# Одолейте монстра с ключом шифрования на балконе
+# Заберите ключ шифрования с тела монстра
+# Направляйтесь в центральную комнату
+# Одолейте монстров, излучающих колебания энергии
+# Доложите Асте
+# Войдите в Зону хранения и изучите обстановку
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Войдите в Зону хранения и изучите обстановку===
+{{Описание миссии|локация=Зона хранения|Получите удалённую помощь от Асты и исследуйте состояние Зоны хранения.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 200031235-->
+<!--Unknown TalkSentence: 200031236-->
+<pre>{
+	"$type": "RPG.GameCore.ShowEnvBuffDialog",
+	"RaidID": 4000202,
+	"IsAutoGetParam": true,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_200020600"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Соберите данные с маячка===
+{{Описание миссии|локация=Зона хранения|В отсеке обнаружены признаки Фрагментума, всё оборудование мониторинга разгромлено. Аста просит вас собрать те данные с маячков, которые не пострадали.<br />Соберите данные с маячков, сохранённые Вуббабу.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"SkipPhotoPreviewDialog": true,
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 200020541_Break)
+
+
+;(Unused &mdash; 200020541_Success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 6247561509245999753
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Unused &mdash; 200020541_Fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 13547527406387288485
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 26,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 26,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+;(Unused &mdash; 200020646_Break)
+
+
+;(Unused &mdash; 200020546_Success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 6247561509245999753
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Unused &mdash; 200020546_Fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 13547527406387288485
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+
+;(Получено {{Item|Данные с маячка|20|x=1}})
+{{Описание миссии|локация=Зона хранения|Одолейте монстра с идентификационным клеймом и соберите данные с маячка.}}
+
+<!--Unknown TalkSentence: 200031231-->
+{{Диалог Конец}}
+
+===Продолжите подробное расследование===
+{{Описание миссии|локация=Зона хранения|Пройдите в другие комнаты, чтобы исследовать их более подробно}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200031209-->
+<!--Unknown TalkSentence: 200031210-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200031211-->
+<!--Unknown TalkSentence: 200031212-->
+{{Диалог Конец}}
+
+===Передайте данные с маячков===
+{{Описание миссии|локация=Зона хранения|Вы собрали достаточно данных с маячков, передайте их следователям.}}
+{{Диалог Начало}}
+
+;(Поговорите с Ремонтник)
+<!--Unknown TalkSentence: 200031232-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 200020676,
+	"Desc": {
+		"Hash": 11529178870856797684
+	},
+	"SimpleTalk": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 13,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+		},
+		{
+			"$type": "RPG.GameCore.ToastPile",
+			"ImgPath": "SpriteOutput/UI/MobilePhone/TextPanel.png",
+			"DescTextID": {
+				"Hash": 2383539025790612579
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "200020503_Success"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 13,
+				"GroupNpcID": 200001
+			},
+			{
+				"GroupID": 6,
+				"GroupNpcID": 200002
+			},
+			{
+				"GroupID": 6,
+				"GroupNpcID": 200003
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"SkipPhotoPreviewDialog": true
+}</pre>
+
+;(Unused &mdash; 200020503_Break)
+
+
+;(Unused &mdash; 200020503_Fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 1160619948626037702
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Unused &mdash; 200020503_Success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 2383539025790612579
+	},
+	"IsShowAim": true
+}</pre>
+{{Диалог Конец}}
+
+===Получите ключ шифрования для текущей комнаты у монстра===
+{{Описание миссии|локация=Зона хранения|Используйте камеру для поиска монстров и одолейте монстра, скрывающего ключ шифрования к комнате слева}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 14,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+		},
+		{
+			"$type": "RPG.GameCore.ToastPile",
+			"ImgPath": "SpriteOutput/UI/MobilePhone/TextPanel.png",
+			"DescTextID": {
+				"Hash": 2383539025790612579
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "200020503_Success"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 14,
+				"GroupNpcID": 200001
+			},
+			{
+				"GroupID": 7,
+				"GroupNpcID": 200001
+			},
+			{
+				"GroupID": 7,
+				"GroupNpcID": 200002
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"SkipPhotoPreviewDialog": true
+}</pre>
+
+;(Unused &mdash; 200020505_Break)
+
+
+;(Unused &mdash; 200020503_Success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 2383539025790612579
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Unused &mdash; 200020503_Fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 1160619948626037702
+	},
+	"IsShowAim": true
+}</pre>
+{{Диалог Конец}}
+
+===Одолейте монстра с ключом шифрования на балконе===
+{{Описание миссии|локация=Зона хранения|Используйте камеру для поиска монстров и одолейте монстра, скрывающего ключ шифрования}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 12,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+		},
+		{
+			"$type": "RPG.GameCore.ToastPile",
+			"ImgPath": "SpriteOutput/UI/MobilePhone/TextPanel.png",
+			"DescTextID": {
+				"Hash": 2383539025790612579
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "200020503_Success"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 12,
+				"GroupNpcID": 200001
+			},
+			{
+				"GroupID": 5,
+				"GroupNpcID": 200002
+			},
+			{
+				"GroupID": 5,
+				"GroupNpcID": 200003
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"SkipPhotoPreviewDialog": true
+}</pre>
+
+;(Unused &mdash; 200020507_Break)
+
+
+;(Unused &mdash; 200020503_Success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 2383539025790612579
+	},
+	"IsShowAim": true
+}</pre>
+
+;(Unused &mdash; 200020503_Fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 1160619948626037702
+	},
+	"IsShowAim": true
+}</pre>
+{{Диалог Конец}}
+
+===Заберите ключ шифрования с тела монстра===
+{{Описание миссии|локация=Зона хранения|Используйте камеру для поиска монстров и одолейте монстра, скрывающего ключ шифрования к комнате справа}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200031216-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Диалог Конец}}
+
+===Направляйтесь в центральную комнату===
+{{Описание миссии|локация=Зона хранения|Направляйтесь в центральную комнату}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200031217-->
+<!--Unknown TalkSentence: 200031218-->
+{{Диалог Конец}}
+
+===Одолейте монстров, излучающих колебания энергии===
+{{Описание миссии|локация=Зона хранения|Свяжитесь с Астой и одолейте монстров, излучающих энергетические колебания}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Доложите Асте===
+{{Описание миссии|локация=Зона хранения|Монстры побеждены, доложите об этом Асте}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200031219-->
+<!--Unknown TalkSentence: 200031220-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<!--Unknown TalkSentence: 200031215-->
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200031213-->
+<!--Unknown TalkSentence: 200031214-->
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200031234-->
+:<!--5-second delay-->
+:<!--1-second delay-->
+{{Диалог Конец}}
+
+===Войдите в Зону хранения и изучите обстановку===
+{{Описание миссии|локация=Зона хранения|Получите удалённую помощь от Асты и исследуйте состояние Зоны хранения.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 9,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "200020501_talk"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+:<!--2-second delay-->
+<!--Unknown TalkSentence: 200031222-->
+<!--Unknown TalkSentence: 200031207-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNPC",
+		"MultiGroupFetch": [
+			{
+				"GroupID": 9,
+				"GroupNpcID": 200001
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"SkipPhotoPreviewDialog": true,
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 200020501_talk)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 1160619948626037702
+	},
+	"IsShowAim": true
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 200020501_break)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Signs of Fragmentum
+|zhs  = 裂界征兆
+|zht  = 裂界徵兆
+|ja   = 裂界の兆し
+|ko   = 열계의 징조
+|es   = Señales del Fragmentum
+|fr   = Signes du Fragmentum
+|ru   = Признаки Фрагментума
+|th   = สัญญาณแห่ง Fragmentum
+|vi   = Dấu Hiệu Rãnh Nứt
+|de   = Anzeichen für Fragmentum
+|id   = Tanda-tanda Fragmentum
+|pt   = Sinais do Fragmentum
+}}
+
+==История изменений==
+{{История изменений|2.7}}

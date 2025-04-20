@@ -1,0 +1,204 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000182
+|Название        = 
+|Изображение     = Миссия Освоения Обнаружение аномалии III.png
+|Тип             = Миссия приключения
+|События         = Где же таинственная свинка-копилка?
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+* Завершена [[Миссия приключения]] ''[[Обнаружение аномалии II]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+|Персонажи       = Замёрзший страж; Первопроходец; Регин; Росси; Старый Гёте
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = Обнаружение аномалии II
+|Следующая       = Обнаружение аномалии IV
+|Награды         = 
+}}
+'''Обнаружение аномалии III''' — Событие [[Миссия приключения]] из события [[Где же таинственная свинка-копилка?]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином
+# Исследуйте аномалию, связанную со «льдом и снегом»
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином===
+{{Описание миссии|локация=Вестибюль отеля|Датчик Регина зафиксировал новую аномальную активность! Отправляйтесь в отель «Гёте», чтобы всё разузнать!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024149-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024166-->
+:<!--Unknown TalkSentence: 501024167-->
+:<!--Unknown TalkSentence: 501024168-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024170-->
+:<!--Unknown TalkSentence: 501024171-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024173-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте аномалию, связанную со «льдом и снегом»===
+{{Описание миссии|локация=Пригородные снежные поля|Нечто связанное со «льдом и снегом»... Сложно сказать, хорошо ли сработала интуиция Регина...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 67
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300010
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 187
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801879909-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801829902-->
+;(Unused &mdash; PropExitTriggered_67_300010)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 190,
+	"ID": 300001
+}</pre>
+
+;(Unused &mdash; PropUITriggered_67_300003)
+<!--Unknown TalkSentence: 801820602-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::----
+:<!--Unknown TalkSentence: 801820604-->
+:<!--Unknown TalkSentence: 801820607-->
+:<!--Unknown TalkSentence: 801820608-->
+:<!--Unknown TalkSentence: 801820609-->
+:<!--Unknown TalkSentence: 801820610-->
+
+;(Unused &mdash; PropUITriggered_67_300002)
+<!--Unknown TalkSentence: 801820502-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::----
+:<!--Unknown TalkSentence: 801820504-->
+:<!--Unknown TalkSentence: 801820507-->
+:<!--Unknown TalkSentence: 801820508-->
+
+;(Unused &mdash; PropUITriggered_67_300001)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 67,
+	"ID": 300001
+}</pre>
+::----
+:<!--Unknown TalkSentence: 801820202-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1113700
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Anomaly Detection 3
+|zhs  = 异常勘测•其三
+|zht  = 異常勘測·其三
+|ja   = 異常観測・3
+|ko   = 이상 조사•3
+|es   = Detección de anomalías&nbsp;III
+|fr   = Détection d'anomalie 3
+|ru   = Обнаружение аномалии III
+|th   = ตรวจสอบความผิดปกติ 3
+|vi   = Thăm Dò Bất Thường 3
+|de   = Anomalieforschung (Teil 3)
+|id   = Keanehan Terdeteksi 3
+|pt   = Detecção de Anomalia 3
+}}
+
+==История изменений==
+{{История изменений|2.7}}

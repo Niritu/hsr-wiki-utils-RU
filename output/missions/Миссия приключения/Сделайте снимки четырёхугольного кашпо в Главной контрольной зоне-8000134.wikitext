@@ -1,0 +1,583 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000134
+|Название        = 
+|Изображение     = Миссия Освоения Сделайте снимки четырёхугольного кашпо в Главной контрольной зоне.png
+|Тип             = Миссия приключения
+|События         = Звёздная охота
+|Глава           = 
+|Условия         = Завершена [[Миссия компаньона]] ''[[Дух Панклорда]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Сделайте снимки четырёхугольного кашпо в Главной контрольной зоне''' — Событие [[Миссия приключения]] из события [[Звёздная охота]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013401_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013402_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300003
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300003
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013403_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300003
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013404_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300005
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300005
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013405_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300005
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013406_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 72
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Take a picture of a square flower pot in the master control zone
+|zhs  = 在主控舱段拍摄「四角花盆」的照片
+|zht  = 在主控艙段拍攝「四角花盆」的照片
+|ja   = 主制御部分で「四角の鉢植え」の写真を撮る
+|ko   = 메인 컨트롤 캐빈에서 「사각 화분」 사진 촬영
+|es   = Haz una foto de una maceta cuadrada en la zona de mando principal
+|fr   = Prendre un pot de fleur carré en photo dans la Zone de contrôle principale
+|ru   = Сделайте снимки четырёхугольного кашпо в Главной контрольной зоне
+|th   = ถ่ายภาพ "กระถางดอกไม้ทรงสี่เหลี่ยม" ที่ Master Control Zone
+|vi   = Chụp ảnh "bồn hoa tứ giác" tại Khoang Điều Khiển Chính
+|de   = Nimm in der Hauptkontrollzone ein Bild von einem quadratischen Blumentopf auf.
+|id   = Ambil foto "pot bunga persegi" di Master Control Zone
+|pt   = Tire uma foto de um vaso de flores quadrado na Zona de Controle Principal
+}}
+
+==История изменений==
+{{История изменений|2.7}}

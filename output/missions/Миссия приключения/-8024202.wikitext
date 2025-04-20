@@ -1,0 +1,130 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8024202
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Освоение: Дружба - это чудо
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Старые друзья, новые друзья?]]''
+|Персонажи       = Первопроходец; Сумеречная Мусорка
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = Старые друзья, новые друзья?
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба - это чудо]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Unused &mdash; EnterDistrict_G245)
+<!--Unknown TalkSentence: 802440102-->
+:<!--Unknown TalkSentence: 802440103-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802440105-->
+:<!--Unknown TalkSentence: 802440106-->
+:<!--Unknown TalkSentence: 802440107-->
+:<!--Unknown TalkSentence: 802440108-->
+:<!--Unknown TalkSentence: 802440109-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10101_F10101001_G239"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_W3_Junk_00/Eff_Monster_W3_Junk_00_Paster01.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.SetMunicipalEnable",
+			"Visible": true
+		}
+	]
+}</pre>
+
+
+:{{Диалог|Журнал путешествий}} Воссоздать «чудо дружбы»
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.SetMunicipalEnable",
+			"Visible": true
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

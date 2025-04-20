@@ -1,0 +1,140 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015192
+|Название        = 
+|Изображение     = Миссия Освоения Встреча в Саду безмятежности II.png
+|Тип             = Продолжение Освоения
+|События         = Лисья история о привидениях
+|Глава           = Лисья история о привидениях
+|Условия         = Достигните фазы 2 в событии [[Лисья история о привидениях]]
+|Персонажи       = Гуйнайфэнь; Первопроходец; Сушан; Хохо
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = 
+|Следующая       = Проницательность
+|Награды         = 
+}}
+'''Встреча в Саду безмятежности II''' — Событие [[Продолжение Освоения]] из события [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|Вас вызвала Комиссия десяти владык, чтобы собрать Особый отряд Комиссии десяти владык по расследованию побега хелиоби.<br />Вам предстоит собрать улики, связанные с побегом хелиоби на «Страшилках Лофу».}}
+
+==Этапы==
+# Встретьтесь с товарищами в Саду безмятежности
+# Поговорите с Гуйнайфэнь и прочитайте сообщение с просьбой о помощи
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Встретьтесь с товарищами в Саду безмятежности===
+{{Описание миссии|локация=Сад безмятежности|Вы снова встречаетесь с Охотниками за привидениями в Саду безмятежности. Читать публикации на «Страшилках Лофу» и проводить расследования стало для вас обычным делом.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 51
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Joyful",
+	"SubMissionID": 801519201
+}</pre>
+<!--Unknown TalkSentence: 815103801-->
+<!--Unknown TalkSentence: 815103802-->
+<!--Unknown TalkSentence: 815103803-->
+<!--Unknown TalkSentence: 815103804-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103806-->
+:<!--Unknown TalkSentence: 815103807-->
+:<!--Unknown TalkSentence: 815103808-->
+:<!--Unknown TalkSentence: 815103809-->
+:<!--Unknown TalkSentence: 815103810-->
+:<!--Unknown TalkSentence: 815103811-->
+:<!--Unknown TalkSentence: 815103812-->
+:<!--Unknown TalkSentence: 815103813-->
+:<!--Unknown TalkSentence: 815103814-->
+:<!--Unknown TalkSentence: 815103815-->
+:<!--Unknown TalkSentence: 815103816-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103808-->
+:<!--Unknown TalkSentence: 815103809-->
+:<!--Unknown TalkSentence: 815103810-->
+:<!--Unknown TalkSentence: 815103811-->
+:<!--Unknown TalkSentence: 815103812-->
+:<!--Unknown TalkSentence: 815103813-->
+:<!--Unknown TalkSentence: 815103814-->
+:<!--Unknown TalkSentence: 815103815-->
+:<!--Unknown TalkSentence: 815103816-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103810-->
+:<!--Unknown TalkSentence: 815103811-->
+:<!--Unknown TalkSentence: 815103812-->
+:<!--Unknown TalkSentence: 815103813-->
+:<!--Unknown TalkSentence: 815103814-->
+:<!--Unknown TalkSentence: 815103815-->
+:<!--Unknown TalkSentence: 815103816-->
+<!--Unknown TalkSentence: 815103810-->
+<!--Unknown TalkSentence: 815103811-->
+<!--Unknown TalkSentence: 815103812-->
+<!--Unknown TalkSentence: 815103813-->
+<!--Unknown TalkSentence: 815103814-->
+<!--Unknown TalkSentence: 815103815-->
+<!--Unknown TalkSentence: 815103816-->
+
+;(Поговорите с Гуйнайфэнь)
+<!--Unknown TalkSentence: 815103824-->
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.SNSDetail.HeliobusSNSDetailDialog",
+	"Param": {
+		"Value": "102"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Гуйнайфэнь и прочитайте сообщение с просьбой о помощи===
+{{Описание миссии|локация=Сад безмятежности|По завершении приключения вы встречаетесь с Охотниками за привидениями в Саду безмятежности. Читать публикации на «Страшилках Лофу» и проводить расследования стало для вас обычным делом.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Fyxestroll Gathering (II)
+|zhs  = 绥园聚首•其二
+|zht  = 綏園聚首•其二
+|ja   = 綏園の集い・其の二
+|ko   = 유원에서의 회합•2
+|es   = Reunión en el Jardín del Sosiego&nbsp;II
+|fr   = Réunion au Jardin de vulpeflâne II
+|ru   = Встреча в Саду безмятежности II
+|th   = สวนเฮี้ยนแดนสงัด 2
+|vi   = Tập Hợp Tại Khu Vườn Tĩnh Mịch 2
+|de   = Versammlung im Fuchsfeengarten II
+|id   = Pertemuan Fyxestroll Garden 2
+|pt   = Encontro Flamavulpe (II)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

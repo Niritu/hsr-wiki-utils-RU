@@ -1,0 +1,611 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2040203
+|Название        = 
+|Изображение     = Миссия Освоения Однажды в Аркадии.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Аглая; Возмущённые граждане; Дружелюбные граждане; Дружелюбные люди; Испуганные граждане; Кальп из книжной лавки; Мемо; Митанира из фруктовой лавки; Недовольные граждане; Обеспокоенные граждане; Охотница ярости; Парис; Первопроходец; Филока; Хартонус; Энона
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*50; Путеводитель путешественника*6; Очищенный эфир*6; Утраченный кристалл*6; Небесная амброзия*200; Кредиты*90 000
+}}
+'''Однажды в Аркадии''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите Париса и Охотницу ярости
+# Сбегите из Охемы вместе с Парисом
+# Восстановите Охотницу ярости с помощью плиты пророчества
+# Прогуляйтесь до фруктовой лавки с Парисом и Охотницей ярости
+# Прогуляйтесь до книжной лавки с Парисом и Охотницей ярости
+# Прогуляйтесь до ателье с Парисом и Охотницей ярости
+# Поговорите с Парисом и Охотницей ярости
+# Отправляйтесь на банкет в Мраморном дворце
+# Воспользуйтесь молитвой, чтобы восстановить предметы, сломанные Охотницей ярости
+# Поговорите с Парисом
+# Поговорите с Филокой (необязательно)
+# Найдите одинокую Охотницу ярости
+# Поговорите с Парисом
+# Узнайте план Париса
+# Поговорите с Парисом
+# Сбегите из Охемы вместе с Парисом
+# Узнайте, что происходит у ворот
+# Найдите Париса и Охотницу ярости
+
+==Прохождение==
+{{Дополнить}}
+
+===Найдите Париса и Охотницу ярости===
+{{Описание миссии|локация=Вечный священный город Охема|Сцена воспоминания сменилась: теперь вместо раздора вы видите трон миров. В прошлом больше нет опасности и бедствий. Возможно, теперь вам удастся насладиться не столь мрачной историей. Только не забывайте, что пьеса, начавшаяся с убийств и страданий, чаще всего заканчивается тем же. В любом случае сначала вы должны найти главного героя.<br />«Человек, чего ты хочешь добиться?»}}
+{{Диалог Начало}}
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Сбегите из Охемы вместе с Парисом===
+{{Описание миссии|локация=Вечный священный город Охема|Романтика кажется бессильной перед раздором, её тонкие нити не могут ничего защитить. Однако эта нить всё ещё слабо сияет в темноте. Даже если она в конце концов порвётся, её красотой можно восхититься. Будет ли рвущаяся нить размышлять, красиво ли она рвётся?<br />«Люди считают победу в стремлении к любви честью, а проигрыш - позором. Стремясь к победе, люди готовы пойти на что угодно».}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Восстановите Охотницу ярости с помощью плиты пророчества===
+{{Описание миссии|локация=Вечный священный город Охема|Сцена воспоминания сменилась: теперь вместо раздора вы видите трон миров. В прошлом больше нет опасности и бедствий. Возможно, теперь вам удастся насладиться не столь мрачной историей. Только не забывайте, что пьеса, начавшаяся с убийств и страданий, чаще всего заканчивается тем же. Актёры уже пали. Скорее используйте могущественную силу времени! Кстати говоря, в прошлом уже был герой, подобный вам, который пытался протянуть руку помощи, и в этом воспоминании вы просто заменили его... Кто он? Это неважно, будем считать, что такова судьба.<br />«Если вы того пожелаете, я сделаю вас единым целым».}}
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_PuzzleState"},"CompareType":"Equal"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001,
+		300002,
+		300004
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BindPropsCablelines",
+	"StartPropInstanceID": 300001,
+	"EndPropInstanceID": 300002,
+	"LinePropInstanceID": 300004,
+	"LineEffectPath": {
+		"Custom": true,
+		"Key": "LineEffect"
+	},
+	"MoveEffectPath": {
+		"Value": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Ball_Lod0.prefab"
+	},
+	"MoveEffectSpeedOverride": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				584429333
+			]
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
+	"AttachPoint": "Root",
+	"Scale": {
+		"X": 1,
+		"Y": 1,
+		"Z": 1
+	},
+	"SubObjectModifyDataList": []
+}</pre>
+:;(По прибытии на место)
+:;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004,
+	"IsVisible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.SetPropCablelineVisible",
+	"LinePropInstanceID": 300004,
+	"IsVisible": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; OraclePuzzleEndLinePerform)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne_DS": {
+		"Custom": true,
+		"Key": "Toast1"
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--0.4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Custom": true,
+		"Key": "FCV"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.UnBindPropsCablelines",
+	"LinePropInstanceID": 300004
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle_stop"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
+	"Flags": []
+}</pre>
+
+;(Unused &mdash; OraclePuzzleStartLinePerform)
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupProperty",
+	"DynamicName": {
+		"Value": "SGP_PuzzleState"
+	},
+	"Value": 1
+}</pre>
+
+;(Поговорите с Парис)
+<!--Unknown TalkSentence: 240204002-->
+
+;(Unused &mdash; TalkSentence_240201711)
+<!--Unknown TalkSentence: 240201711-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240201713-->
+::<!--Unknown TalkSentence: 240201714-->
+::<!--Unknown TalkSentence: 240201715-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240201715-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<!--Unknown TalkSentence: 240201716-->
+::{{tx}}
+
+;(Unused &mdash; TalkSentence_240201726)
+<!--Unknown TalkSentence: 240201726-->
+::{{tx}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<!--Unknown TalkSentence: 240201702-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Прогуляйтесь до фруктовой лавки с Парисом и Охотницей ярости===
+{{Описание миссии|локация=Вечный священный город Охема|Сцена воспоминания сменилась: теперь вместо раздора вы видите трон миров. В прошлом больше нет опасности и бедствий. Возможно, теперь вам удастся насладиться не столь мрачной историей. Только не забывайте, что пьеса, начавшаяся с убийств и страданий, чаще всего заканчивается тем же. Прогулка по магазинам - отличный способ сблизиться в любом месте и времени.<br />«Позорно так быстро влюбляться. Должно пройти время, ведь оно - лучшее испытание».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TalkSentence_240201833)
+<!--Unknown TalkSentence: 240201833-->
+::{{tx}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240201802-->
+:<!--Unknown TalkSentence: 240201803-->
+:<!--Unknown TalkSentence: 240201804-->
+:<!--Unknown TalkSentence: 240201805-->
+:<!--Unknown TalkSentence: 240201806-->
+:<!--Unknown TalkSentence: 240201807-->
+:<!--Unknown TalkSentence: 240201808-->
+:<!--Unknown TalkSentence: 240201809-->
+:<!--Unknown TalkSentence: 240201810-->
+:<!--Unknown TalkSentence: 240201811-->
+:<!--Unknown TalkSentence: 240201812-->
+:<!--Unknown TalkSentence: 240201813-->
+:<!--Unknown TalkSentence: 240201814-->
+:<!--Unknown TalkSentence: 240201815-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240201817-->
+::<!--Unknown TalkSentence: 240201818-->
+::<!--Unknown TalkSentence: 240201819-->
+::<!--Unknown TalkSentence: 240201820-->
+::<!--Unknown TalkSentence: 240201821-->
+::<!--Unknown TalkSentence: 240201822-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240201819-->
+::<!--Unknown TalkSentence: 240201820-->
+::<!--Unknown TalkSentence: 240201821-->
+::<!--Unknown TalkSentence: 240201822-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240201821-->
+::<!--Unknown TalkSentence: 240201822-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 240201821-->
+:<!--Unknown TalkSentence: 240201822-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Прогуляйтесь до книжной лавки с Парисом и Охотницей ярости===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240201902-->
+:<!--Unknown TalkSentence: 240201903-->
+:<!--Unknown TalkSentence: 240201904-->
+:<!--Unknown TalkSentence: 240201905-->
+:<!--Unknown TalkSentence: 240201906-->
+:<!--Unknown TalkSentence: 240201907-->
+:<!--Unknown TalkSentence: 240201908-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Прогуляйтесь до ателье с Парисом и Охотницей ярости===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<!--Unknown TalkSentence: 240202002-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Парисом и Охотницей ярости===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240202102-->
+:<!--Unknown TalkSentence: 240202103-->
+:<!--Unknown TalkSentence: 240202104-->
+:<!--Unknown TalkSentence: 240202105-->
+:<!--Unknown TalkSentence: 240202106-->
+:<!--Unknown TalkSentence: 240202107-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отправляйтесь на банкет в Мраморном дворце===
+{{Описание миссии|локация=Вечный священный город Охема|Хозяйка этих воспоминаний жила в незнакомом полисе, ощущая перемены в самой себе. Здесь было многое, что она никогда не встречала раньше, например, банкет в Мраморном дворце. Жители Кремноса не воспевают Фагусу. Они могут лишь упомянуть её парой слов во время бурной попойки.<br />Интермедии часто используются для того, чтобы показать течение времени. Некоторые драматурги выступают против этого, говоря, что время, место и персонажи должны гармонировать, чтобы зритель поверил в живую атмосферу. Правда, это очень сложно.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+<!--Unknown TalkSentence: 140110201-->
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240202302-->
+:<!--Unknown TalkSentence: 240202303-->
+:<!--Unknown TalkSentence: 240202304-->
+:<!--Unknown TalkSentence: 240202305-->
+:<!--Unknown TalkSentence: 240202306-->
+:<!--Unknown TalkSentence: 240202307-->
+:<!--Unknown TalkSentence: 240202308-->
+:<!--Unknown TalkSentence: 240202309-->
+:<!--Unknown TalkSentence: 240202310-->
+:<!--Unknown TalkSentence: 240202311-->
+:<!--Unknown TalkSentence: 240202312-->
+:<!--Unknown TalkSentence: 240202313-->
+:<!--Unknown TalkSentence: 240202314-->
+:<!--Unknown TalkSentence: 240202315-->
+:<!--Unknown TalkSentence: 240202316-->
+:<!--Unknown TalkSentence: 240202317-->
+:<!--Unknown TalkSentence: 240202318-->
+:<!--Unknown TalkSentence: 240202319-->
+:<!--Unknown TalkSentence: 240202320-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Воспользуйтесь молитвой, чтобы восстановить предметы, сломанные Охотницей ярости===
+{{Описание миссии|локация=Вечный священный город Охема|Хозяйка этих воспоминаний жила в незнакомом полисе, ощущая перемены в самой себе. Здесь было многое, что она никогда не встречала раньше, например, банкет в Мраморном дворце. Жители Кремноса не воспевают Фагусу. Они могут лишь упомянуть её парой слов во время бурной попойки.<br />Кажется, танец раздора не может продемонстрировать своё изящество на пиру океана. Когда предубеждения и страх превращаются в бушующие волны, их не остановит ни меч, ни щит, ни секира. Вы с Парисом можете лишь спасти её лодку от затопления.}}
+{{Диалог Начало}}
+
+;(Поговорите с Парис)
+<!--Unknown TalkSentence: 240204002-->
+<pre>{
+	"$type": "RPG.GameCore.SetTimelineEntityState",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"StateName": {
+		"Value": "L1_Broken01"
+	}
+}</pre>
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Парисом===
+{{Диалог Начало}}
+
+;(Поговорите с Парис)
+:{{tx}}
+<!--Unknown TalkSentence: 240202602-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 240202606-->
+<!--Unknown TalkSentence: 240202607-->
+:{{tx}}
+
+;(Поговорите с Филока)
+<!--Unknown TalkSentence: 240202502-->
+<!--Unknown TalkSentence: 240202503-->
+{{Диалог Конец}}
+
+===Поговорите с Филокой (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Парис)
+
+{{Диалог Конец}}
+
+===Найдите одинокую Охотницу ярости===
+{{Описание миссии|локация=Вечный священный город Охема|Хозяйка этих воспоминаний жила в незнакомом полисе, ощущая перемены в самой себе. Здесь было многое, что она никогда не встречала раньше, например, банкет в Мраморном дворце. Жители Кремноса не воспевают Фагусу. Они могут лишь упомянуть её парой слов во время бурной попойки.<br />Кажется, танец раздора не может продемонстрировать своё изящество на пиру океана. Когда предубеждения и страх превращаются в бушующие волны, их не остановит ни меч, ни щит, ни секира. Вы с Парисом можете лишь спасти её лодку от затопления.<br />«Позорно так быстро влюбляться. Должно пройти время, ведь оно - лучшее испытание».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240202702-->
+:<!--Unknown TalkSentence: 240202703-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240202706-->
+::<!--Unknown TalkSentence: 240202707-->
+::<!--Unknown TalkSentence: 240202708-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 240202708-->
+:<!--Unknown TalkSentence: 240202709-->
+:<!--Unknown TalkSentence: 240202710-->
+:<!--Unknown TalkSentence: 240202711-->
+:<!--Unknown TalkSentence: 240202712-->
+:<!--Unknown TalkSentence: 240202713-->
+:<!--Unknown TalkSentence: 240202714-->
+:<!--Unknown TalkSentence: 240202715-->
+:<!--Unknown TalkSentence: 240202716-->
+:<!--Unknown TalkSentence: 240202717-->
+:<!--Unknown TalkSentence: 240202718-->
+:<!--Unknown TalkSentence: 240202719-->
+{{Диалог Конец}}
+
+===Поговорите с Парисом===
+{{Описание миссии|локация=Вечный священный город Охема|Свободные от ограничений зрители могут переноситься сквозь время, пропуская то, как она подавляла тревогу в своём сердце, как она смирялась с безразличными взглядами, как её приняли бывшие противники. Она сделала многое, чтобы стать жителем Охемы, а не гостем или врагом... Но этого ли она хотела?<br />Неужели её, как и вас, судьба ведёт к цели?<br />Интермедии часто используются для того, чтобы показать течение времени. Некоторые драматурги выступают против этого, говоря, что время, место и персонажи должны гармонировать, чтобы зритель поверил в живую атмосферу. Правда, это очень сложно.}}
+{{Диалог Начало}}
+----
+:{{tx}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<!--Unknown TalkSentence: 240202902-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Узнайте план Париса===
+{{Описание миссии|локация=Вечный священный город Охема|Свободные от ограничений зрители могут переноситься сквозь время, пропуская то, как она подавляла тревогу в своём сердце, как она смирялась с безразличными взглядами, как её приняли бывшие противники. Она сделала многое, чтобы стать жителем Охемы, а не гостем или врагом... Тот, кто дал ей задание, любил её? Или же их обоих связали оковы?<br />«Мы ищем не только хорошие чувства, но и постоянство. Любовь стремится к тому, чтобы хорошие чувства были вечны».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Парисом===
+{{Описание миссии|локация=Вечный священный город Охема|Романтика кажется бессильной перед раздором, её тонкие нити не могут ничего защитить. Однако эта нить всё ещё слабо сияет в темноте. Даже если она в конце концов порвётся, её красотой можно восхититься. Конечно, для ценителя этой красоты помыслы нити значения не имеют.<br />«Люди всегда знают, чего им хочется, но никогда не могут сказать об этом вслух. Они всего лишь догадываются о чужих мечтах и говорят загадками».}}
+{{Диалог Начало}}
+
+;(Поговорите с Парис)
+:{{tx}}
+<!--Unknown TalkSentence: 240203102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 240203106-->
+<!--Unknown TalkSentence: 240203107-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Сбегите из Охемы вместе с Парисом===
+{{Описание миссии|локация=Вечный священный город Охема|Романтика кажется бессильной перед раздором, её тонкие нити не могут ничего защитить. Однако эта нить всё ещё слабо сияет в темноте. Даже если она в конце концов порвётся, её красотой можно восхититься. Будет ли рвущаяся нить размышлять, красиво ли она рвётся?<br />«Люди считают победу в стремлении к любви честью, а проигрыш - позором. Стремясь к победе, люди готовы пойти на что угодно».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_1)
+
+{{Диалог Конец}}
+
+===Узнайте, что происходит у ворот===
+{{Описание миссии|локация=Вечный священный город Охема|Романтика кажется бессильной перед раздором, её тонкие нити не могут ничего защитить. Однако эта нить всё ещё слабо сияет в темноте, даже если она в конце концов порвётся, её красотой можно восхититься. Возможно, того, кто сможет восхититься красотой, не найдётся вовсе. Это лишь иллюзия рвущейся нити. Возможно, это лишь попытка скрыть утрату, в которой никогда не было романтики.<br />«Красота и уродство определяются воплощением деяний. Сами по себе деяния ни красивы, ни уродливы, но прекрасны красиво воплощённые деяния, и отвратительны претворённые с уродством».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_2)
+<!--Unknown TalkSentence: 240203202-->
+:<!--Unknown TalkSentence: 240203203-->
+:<!--Unknown TalkSentence: 240203204-->
+:<!--Unknown TalkSentence: 240203205-->
+:<!--Unknown TalkSentence: 240203206-->
+:<!--Unknown TalkSentence: 240203207-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 240203302-->
+<!--Unknown TalkSentence: 240203303-->
+<!--Unknown TalkSentence: 240203304-->
+<!--Unknown TalkSentence: 240203305-->
+<!--Unknown TalkSentence: 240203306-->
+<!--Unknown TalkSentence: 240203307-->
+<!--Unknown TalkSentence: 240203308-->
+<!--Unknown TalkSentence: 240203309-->
+<!--Unknown TalkSentence: 240203310-->
+<!--Unknown TalkSentence: 240203311-->
+<!--Unknown TalkSentence: 240203312-->
+<!--Unknown TalkSentence: 240203313-->
+<!--Unknown TalkSentence: 240203314-->
+<!--Unknown TalkSentence: 240203315-->
+<!--Unknown TalkSentence: 240203316-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 240203320-->
+<!--Unknown TalkSentence: 240203321-->
+<!--Unknown TalkSentence: 240203322-->
+<!--Unknown TalkSentence: 240203323-->
+<!--Unknown TalkSentence: 240203324-->
+<!--Unknown TalkSentence: 240203325-->
+<!--Unknown TalkSentence: 240203326-->
+<!--Unknown TalkSentence: 240203327-->
+<!--Unknown TalkSentence: 240203328-->
+<!--Unknown TalkSentence: 240203329-->
+<!--Unknown TalkSentence: 240203330-->
+<!--Unknown TalkSentence: 240203331-->
+<!--Unknown TalkSentence: 240203332-->
+<!--Unknown TalkSentence: 240203333-->
+<!--Unknown TalkSentence: 240203334-->
+<!--Unknown TalkSentence: 240203335-->
+<!--Unknown TalkSentence: 240203336-->
+<!--Unknown TalkSentence: 240203337-->
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+{{Диалог Конец}}
+
+===Найдите Париса и Охотницу ярости===
+{{Описание миссии|локация=Вечный священный город Охема|Сцена воспоминания сменилась: теперь вместо раздора вы видите трон миров. В прошлом больше нет опасности и бедствий. Возможно, теперь вам удастся насладиться не столь мрачной историей. Только не забывайте, что пьеса, начавшаяся с убийств и страданий, чаще всего заканчивается тем же. В любом случае сначала вы должны найти главного героя.<br />«Человек, чего ты хочешь добиться?»}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 240201602-->
+:<!--Unknown TalkSentence: 240201603-->
+:<!--Unknown TalkSentence: 240201604-->
+:<!--Unknown TalkSentence: 240201605-->
+:<!--Unknown TalkSentence: 240201606-->
+:<!--Unknown TalkSentence: 240201607-->
+:<!--Unknown TalkSentence: 240201608-->
+:<!--Unknown TalkSentence: 240201609-->
+:<!--Unknown TalkSentence: 240201610-->
+:<!--Unknown TalkSentence: 240201611-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = I Once Was In Arcadia
+|zhs  = 我曾在阿卡迪亚
+|zht  = 我曾在阿卡迪亞
+|ja   = かつて、アーカディアの地に
+|ko   = 아르카디아에 나는 있었다
+|es   = Una vez, en Arcadia...
+|fr   = Un jour, en Arcadie...
+|ru   = Однажды в Аркадии
+|th   = ฉันเคยอยู่ที่ Arcadia
+|vi   = Tôi Từng Ở Arcadia
+|de   = Ich war einmal in Arcadia
+|id   = Aku Pernah Berada di Arcadia
+|pt   = Eu Já Estive em Arcadia
+}}
+
+==История изменений==
+{{История изменений|3.0}}

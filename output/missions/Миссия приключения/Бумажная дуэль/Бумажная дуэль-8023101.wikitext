@@ -1,0 +1,214 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8023101
+|Название        = 
+|Изображение     = Миссия Освоения Бумажная дуэль.png
+|Тип             = Миссия приключения
+|События         = Бумажная дуэль
+|Глава           = Бумажная дуэль
+|Условия         = Завершена [[Миссия Освоения]] ''[[Чужак в чужой стране]]''
+|Персонажи       = Первопроходец; Серебряный Волк; Тина
+|СтартЛокация    = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Мир             = Пенакония
+|Локации         = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Предыдущая      = 
+|Следующая       = Бумажная дуэль: Коллекционная версия
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Бумажная дуэль''' — Событие [[Миссия приключения]] из события [[Бумажная дуэль]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь на палубу корабля «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и поговорите с Тиной
+# Используйте прототип, чтобы протестировать игру под руководством Тины
+# Поговорите с Тиной и узнайте о тесте
+# Откройте карту и узнайте о первом игровом автомате
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь на палубу корабля «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и поговорите с Тиной===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10341_F10341001_G114"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+
+;(Получено {{Item|ID-карта Первопролётца|20|x=1|text=ID-карта Первопролётца}})
+
+;(Поговорите с Серебряный Волк)
+<!--Unknown TalkSentence: 802310011-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Используйте прототип, чтобы протестировать игру под руководством Тины===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003,
+		400004,
+		400005,
+		400006
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":300,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":301,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":302,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":303,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":304,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400005
+	]
+}</pre>
+;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":305,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400006
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":300,"LocationID":{"FixedValue":{"Value":1}}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(Unused &mdash; G186_Create400001)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Тиной и узнайте о тесте===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 823101101-->
+<!--Unknown TalkSentence: 823101102-->
+<!--Unknown TalkSentence: 823101103-->
+<!--Unknown TalkSentence: 823101104-->
+<!--Unknown TalkSentence: 823101105-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823101107-->
+:<!--Unknown TalkSentence: 823101108-->
+:<!--Unknown TalkSentence: 823101109-->
+:<!--Unknown TalkSentence: 823101110-->
+:<!--Unknown TalkSentence: 823101111-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823101109-->
+:<!--Unknown TalkSentence: 823101110-->
+:<!--Unknown TalkSentence: 823101111-->
+<!--Unknown TalkSentence: 823101109-->
+<!--Unknown TalkSentence: 823101110-->
+<!--Unknown TalkSentence: 823101111-->
+{{Диалог Конец}}
+
+===Откройте карту и узнайте о первом игровом автомате===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Серебряный Волк)
+<!--Unknown TalkSentence: 823101139-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Origami Bird Clash
+|zhs  = 「折纸小鸟对对碰」
+|zht  = 「摺紙小鳥對對碰」
+|ja   = 「折り紙の小鳥マッチ」
+|ko   = 「종이새 팡팡」
+|es   = Choque de pajaritos de papel
+|fr   = Rififruit chez les oiseaux en origami
+|ru   = Бумажная дуэль
+|th   = นกกระดาษตะลุมบอน
+|vi   = Chim Giấy Đại Chiến
+|de   = Origamivogel-Matching
+|id   = Adu Jotos Burung Origami
+|pt   = Choque de Pássaro de Origami
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,123 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040010
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Hertareum*20; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+:<!--0.25-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 404001001-->
+:<!--0.25-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_404001002_Prop_65_300002_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 65
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.25-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "404001003_performance"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 65
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

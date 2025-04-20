@@ -1,0 +1,319 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000401
+|Название        = 
+|Изображение     = Миссия Освоения Ожидание и реальность.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Персонажи       = Блондин; Келок; Килик; Любопытный мальчик; Мужчина в синем одеянии; Наблюдательница; Первопроходец; Хартонус
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Журнал приключений*3; Кредиты*20 000
+}}
+'''Ожидание и реальность''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Смешайтесь с рыночной толпой
+# Попробуйте сломать щит
+# Выслушайте объяснения торговца
+# Найдите арбитра
+# Ударьте сильнейшим копьём по несокрушимому щиту
+# Проверьте качество щита
+# Выслушайте объяснения торговца
+# Проверьте качество щита во второй раз
+# Выслушайте объяснения торговца
+# Проверьте качество щита в третий раз
+# Выслушайте объяснения торговца
+# Проверьте качество копья
+# Используйте полученные результаты, чтобы допросить торговцев
+
+==Прохождение==
+{{Дополнить}}
+
+===Смешайтесь с рыночной толпой===
+{{Описание миссии|локация=Вечный священный город Охема|Рынок - самое оживлённое место. Если есть свободное время, посмотрите, не происходит ли там что-нибудь интересное.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Попробуйте сломать щит===
+{{Описание миссии|локация=Вечный священный город Охема|Неужели самый прочный в мире щит, о котором говорил торговец, подделка? Узнайте сами!}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+;(Unused &mdash; MissionFinish_500040103)
+:<!--0.6-second delay-->
+{{Диалог Конец}}
+
+===Выслушайте объяснения торговца===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 500041101-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Найдите арбитра===
+{{Описание миссии|локация=Вечный священный город Охема|Ни один торговец не признаётся в том, что его товар - подделка. Нужно найти арбитра, который сможет убедить толпу.}}
+{{Диалог Начало}}
+
+;(Поговорите с Мужчина в синем одеянии)
+<!--Unknown TalkSentence: 500042201-->
+<!--Unknown TalkSentence: 500042202-->
+<!--Unknown TalkSentence: 500042203-->
+
+;(Поговорите с Наблюдательница)
+<!--Unknown TalkSentence: 500042101-->
+<!--Unknown TalkSentence: 500042102-->
+
+;(Поговорите с Келок)
+<!--Unknown TalkSentence: 500042001-->
+<!--Unknown TalkSentence: 500042002-->
+
+;(Поговорите с Хартонус)
+:{{tx}}
+<!--Unknown TalkSentence: 500041201-->
+<!--Unknown TalkSentence: 500041202-->
+<!--Unknown TalkSentence: 500041203-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040105,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<!--Unknown TalkSentence: 500041201-->
+:<!--Unknown TalkSentence: 500041202-->
+:<!--Unknown TalkSentence: 500041203-->
+:<!--Unknown TalkSentence: 500041204-->
+:<!--Unknown TalkSentence: 500041205-->
+:<!--Unknown TalkSentence: 500041206-->
+:<!--Unknown TalkSentence: 500041207-->
+:<!--Unknown TalkSentence: 500041208-->
+:<!--Unknown TalkSentence: 500041209-->
+:<!--Unknown TalkSentence: 500041210-->
+:<!--Unknown TalkSentence: 500041211-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040105,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<!--Unknown TalkSentence: 500041201-->
+:<!--Unknown TalkSentence: 500041202-->
+:<!--Unknown TalkSentence: 500041203-->
+:<!--Unknown TalkSentence: 500041204-->
+:<!--Unknown TalkSentence: 500041205-->
+:<!--Unknown TalkSentence: 500041206-->
+:<!--Unknown TalkSentence: 500041207-->
+:<!--Unknown TalkSentence: 500041208-->
+:<!--Unknown TalkSentence: 500041209-->
+:<!--Unknown TalkSentence: 500041210-->
+:<!--Unknown TalkSentence: 500041211-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040105,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:<!--Unknown TalkSentence: 500041201-->
+:<!--Unknown TalkSentence: 500041202-->
+:<!--Unknown TalkSentence: 500041203-->
+:<!--Unknown TalkSentence: 500041204-->
+:<!--Unknown TalkSentence: 500041205-->
+:<!--Unknown TalkSentence: 500041206-->
+:<!--Unknown TalkSentence: 500041207-->
+:<!--Unknown TalkSentence: 500041208-->
+:<!--Unknown TalkSentence: 500041209-->
+:<!--Unknown TalkSentence: 500041210-->
+:<!--Unknown TalkSentence: 500041211-->
+<!--Unknown TalkSentence: 500041201-->
+<!--Unknown TalkSentence: 500041202-->
+<!--Unknown TalkSentence: 500041203-->
+<!--Unknown TalkSentence: 500041204-->
+<!--Unknown TalkSentence: 500041205-->
+<!--Unknown TalkSentence: 500041206-->
+<!--Unknown TalkSentence: 500041207-->
+<!--Unknown TalkSentence: 500041208-->
+<!--Unknown TalkSentence: 500041209-->
+<!--Unknown TalkSentence: 500041210-->
+<!--Unknown TalkSentence: 500041211-->
+{{Диалог Конец}}
+
+===Ударьте сильнейшим копьём по несокрушимому щиту===
+{{Описание миссии|локация=Вечный священный город Охема|Хартонус согласен взять на себя роль свидетеля. Наконец-то настал самый волнующий миг: ударьте сильнейшим копьём по несокрушимому щиту!}}
+{{Диалог Начало}}
+
+;(Поговорите с Килик)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<!--Unknown TalkSentence: 500041301-->
+<!--Unknown TalkSentence: 500041302-->
+<!--Unknown TalkSentence: 500041303-->
+<!--Unknown TalkSentence: 500041304-->
+<!--Unknown TalkSentence: 500041305-->
+<!--Unknown TalkSentence: 500041306-->
+<!--Unknown TalkSentence: 500041307-->
+<!--Unknown TalkSentence: 500041308-->
+<!--Unknown TalkSentence: 500041309-->
+<!--Unknown TalkSentence: 500041310-->
+<!--Unknown TalkSentence: 500041311-->
+<!--Unknown TalkSentence: 500041312-->
+<!--Unknown TalkSentence: 500041313-->
+<!--Unknown TalkSentence: 500041314-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500041317-->
+:<!--Unknown TalkSentence: 500041318-->
+:<!--Unknown TalkSentence: 500041319-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500041319-->
+<!--Unknown TalkSentence: 500041320-->
+<!--Unknown TalkSentence: 500041321-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Описание миссии|локация=Вечный священный город Охема|Торговцы по-прежнему отказываются признать, что копьё с щитом поддельные. Что ж, для начала проверим качество щита при помощи обычного оружия.}}
+;(If {{cx}}<!--SubMission Finish: 500040107-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+;(Unused &mdash; MissionFinish_500040107)
+:<!--1-second delay-->
+
+;(Unused &mdash; FinishLookAt_500040116)
+
+{{Диалог Конец}}
+
+===Проверьте качество щита===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выслушайте объяснения торговца===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 500040109-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+;(Unused &mdash; FinishLookAt_500040115)
+
+{{Диалог Конец}}
+
+===Проверьте качество щита во второй раз===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выслушайте объяснения торговца===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 500040111-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 500041601-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; FinishLookAt_500040117)
+
+{{Диалог Конец}}
+
+===Проверьте качество щита в третий раз===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выслушайте объяснения торговца===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 500040113-->)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		300003,
+		300004
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300006,
+		300007,
+		300008,
+		300009
+	]
+}</pre>
+----
+<!--Unknown TalkSentence: 500041701-->
+<!--Unknown TalkSentence: 500041702-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; FinishLookAt_500040118)
+
+{{Диалог Конец}}
+
+===Проверьте качество копья===
+{{Описание миссии|локация=Вечный священный город Охема|Торговцы по-прежнему отказываются признать, что копьё с щитом поддельные. Теперь проверим качество копья.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Используйте полученные результаты, чтобы допросить торговцев===
+{{Описание миссии|локация=Вечный священный город Охема|Проверка показала, что и сильнейшее копьё, и несокрушимый щит - подделки. Пора вывести торговцев на чистую воду.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Contradiction
+|zhs  = 自相矛盾
+|zht  = 自相矛盾
+|ja   = 自己矛盾
+|ko   = 자기모순
+|es   = La contradicción
+|fr   = Contradiction
+|ru   = Ожидание и реальность
+|th   = หอกโล่ขัดแย้งกัน
+|vi   = Mâu Thuẫn
+|de   = Selbstwiderspruch
+|id   = Kontradiksi
+|pt   = Contradição
+}}
+
+==История изменений==
+{{История изменений|3.0}}

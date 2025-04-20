@@ -1,0 +1,262 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025139
+|Название        = 
+|Изображение     = Миссия Освоения Отборочный матч - Блуждающий Огонь.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Кармелла; Лука; Первопроходец
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Хотя аплодисменты стихли IV
+|Награды         = Wardance Sword Badge*5
+}}
+'''Отборочный матч - Блуждающий Огонь''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выйдите на арену и получите очки!
+
+==Прохождение==
+{{Дополнить}}
+
+===Выйдите на арену и получите очки!===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802515391-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; G157_StartBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2009,
+	"ScoreRaceSpecialInviteEventID": 419109,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513220
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 802515361-->
+<!--Unknown TalkSentence: 802515362-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515364-->
+:<!--Unknown TalkSentence: 802515365-->
+:<!--Unknown TalkSentence: 802515366-->
+:<!--Unknown TalkSentence: 802515367-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515366-->
+:<!--Unknown TalkSentence: 802515367-->
+<!--Unknown TalkSentence: 802515366-->
+<!--Unknown TalkSentence: 802515367-->
+;(Unused &mdash; BringUpPage_8025139)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2009,
+	"ScoreRaceSpecialInviteEventID": 419109,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513220,
+			"MaskConfig": {}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchResultDialog",
+	"Param": {
+		"Value": "2009"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Knockout Match: Karmic Hinkypunk
+|zhs  = 叩关赛•负业磷火
+|zht  = 叩關賽•負業磷火
+|ja   = 予選・業を背負いし鬼火
+|ko   = 예선전•업보의 도깨비불
+|es   = Combate de cualificación: Hinkypunk kármico
+|fr   = Match de qualification&nbsp;: Détrapunk karmique
+|ru   = Отборочный матч - Блуждающий Огонь
+|th   = รอบคัดเลือก: เพลิงบรรลัยกัลป์
+|vi   = Giải Đấu Loại: Ma Trơi Nghiệp Quả
+|de   = Qualifikationskampf: Karmisches Irrlicht
+|id   = Pertandingan Knockout: Kobaran Api Karma
+|pt   = Partida Eliminatória: Hinkypunk Cármico
+}}
+
+==История изменений==
+{{История изменений|2.7}}

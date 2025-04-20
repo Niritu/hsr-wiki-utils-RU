@@ -1,0 +1,212 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026115
+|Название        = 
+|Изображение     = Миссия Освоения Фото Снежных полей.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Арфи; Данн; Первопроходец; Рысь; Свинка-копилка пространства
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Фото Снежных полей''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Встретьтесь с Арфи в кампусе
+# Соберите вдохновение, прогулявшись по Снежным полям
+# Найдите свинку-копилку в снегу
+# Сделайте удачный кадр свинки-копилки
+# Расскажите Рыси и Данну о том, что вы видели
+
+==Прохождение==
+{{Дополнить}}
+
+===Встретьтесь с Арфи в кампусе===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Кажется, Арфи хочет о чём-то поговорить. Встретьтесь с ней в кампусе.}}
+{{Диалог Начало}}
+
+;(Поговорите с Арфи)
+----
+<!--Unknown TalkSentence: 802619446-->
+<!--Unknown TalkSentence: 802619447-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802619449-->
+<!--Unknown TalkSentence: 802619454-->
+<!--Unknown TalkSentence: 802619455-->
+{{Диалог Конец}}
+
+===Соберите вдохновение, прогулявшись по Снежным полям===
+{{Описание миссии|локация=Пригородные снежные поля|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по Снежным полям, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G97)
+:{{tx}}
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802619461-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802619466-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802619470-->
+::<!--Unknown TalkSentence: 802619471-->
+::<!--Unknown TalkSentence: 802619472-->
+::<!--Unknown TalkSentence: 802619473-->
+::<!--Unknown TalkSentence: 802619474-->
+::<!--Unknown TalkSentence: 802619475-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Найдите свинку-копилку в снегу===
+{{Описание миссии|локация=Пригородные снежные поля|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Аккуратно осмотрите свинку-копилку.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TalkSentence_802619499)
+<!--Unknown TalkSentence: 802619499-->
+::{{tx}}
+:;(Return to previous option selection)
+
+;(Unused &mdash; EnterDistrict_G98)
+:{{tx}}
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802619487-->
+:::{{tx}}
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802619501-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802619505-->
+::<!--Unknown TalkSentence: 802619506-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Поговорите с Рысь)
+<!--Unknown TalkSentence: 802619470-->
+
+;(Поговорите с Данн)
+<!--Unknown TalkSentence: 802619479-->
+
+
+;(Поговорите с Свинка-копилка пространства)
+----
+<!--Unknown TalkSentence: 802611430-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Сделайте удачный кадр свинки-копилки===
+{{Описание миссии|локация=Пригородные снежные поля|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита свинки-копилки. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Расскажите Рыси и Данну о том, что вы видели===
+{{Описание миссии|локация=Пригородные снежные поля|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вернитесь и расскажите Рыси и Данну о том, что вы видели.}}
+{{Диалог Начало}}
+:{{tx}}
+
+;(Поговорите с Свинка-копилка пространства)
+----
+<!--Unknown TalkSentence: 802611430-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G101)
+<!--Unknown TalkSentence: 802619521-->
+:<!--Unknown TalkSentence: 802619522-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Snow Plains Photography
+|zhs  = 雪原留影
+|zht  = 雪原留影
+|ja   = 雪原のシャッターチャンス
+|ko   = 설원에서 한 컷
+|es   = Fotografía en las llanuras nevadas
+|fr   = Photographie des Plaines des neiges
+|ru   = Фото Снежных полей
+|th   = ภาพที่ระลึกในทุ่งหิมะ
+|vi   = Lưu Ảnh Cánh Đồng Tuyết
+|de   = Erinnerungsfotos in der Schneewüste
+|id   = Fotografi Snow Plains
+|pt   = Fotografia das Planícies Nevadas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

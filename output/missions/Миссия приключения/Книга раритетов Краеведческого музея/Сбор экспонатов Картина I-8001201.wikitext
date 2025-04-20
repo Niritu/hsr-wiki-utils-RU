@@ -1,0 +1,158 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001201
+|Название        = 
+|Изображение     = Миссия Освоения Сбор экспонатов Картина I.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Книга раритетов Краеведческого музея
+|Условия         = 
+|Персонажи       = Первопроходец; Репини; Хультен
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Сбор экспонатов: Картина I''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Книга раритетов Краеведческого музея]].
+
+==Описание==
+{{Описание|Краеведческий музей Белобога вот-вот откроется. Чтобы выставка прошла успешно, Хультен собирает подходящие экспонаты.<br />Вам удаётся забрать картину у одного известного белобожского художника.}}
+
+==Этапы==
+# Узнайте подробности у Хультена
+# Разыщите Репини в Пригородных снежных полях
+# Сообщите результаты Хультену
+# Установите экспонат на место
+# Поговорите с Эрис и продолжите работу в музее
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте подробности у Хультена===
+{{Описание миссии|локация=Краеведческий музей|Краеведческий музей Белобога вот-вот откроется. Чтобы выставка прошла успешно, Хультен собирает подходящие экспонаты.<br />На этот раз он надеется, что вы сможете отыскать известного белобожского художника Репини и забрать картину, о которой они договорились.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хультен)
+<!--Unknown TalkSentence: 800120101-->
+:<!--Unknown TalkSentence: 800120102-->
+:<!--Unknown TalkSentence: 800120103-->
+:<!--Unknown TalkSentence: 800120104-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800120106-->
+:<!--Unknown TalkSentence: 800120109-->
+:<!--Unknown TalkSentence: 800120110-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+:::{{Диалог|?}} undefined
+:::<!--Unknown TalkSentence: 800122732-->
+:::<!--Unknown TalkSentence: 800122733-->
+:::{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+{{Диалог Конец}}
+
+===Разыщите Репини в Пригородных снежных полях===
+{{Диалог Начало}}
+
+;(Поговорите с Репини)
+<!--Unknown TalkSentence: 800120121-->
+<!--Unknown TalkSentence: 800120122-->
+<!--Unknown TalkSentence: 800120123-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800120125-->
+:<!--Unknown TalkSentence: 800120126-->
+:<!--Unknown TalkSentence: 800120127-->
+:<!--Unknown TalkSentence: 800120128-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800120138-->
+:<!--Unknown TalkSentence: 800120139-->
+:<!--Unknown TalkSentence: 800120140-->
+:<!--Unknown TalkSentence: 800120141-->
+;(Unused &mdash; ALL_TALK_END)
+
+{{Диалог Конец}}
+
+===Сообщите результаты Хультену===
+{{Диалог Начало}}
+
+
+;(Поговорите с Хультен)
+;(If {{cx}}<!--during performance 501190101-->)
+:<!--Unknown TalkSentence: 501190101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501190103-->
+:<!--Unknown TalkSentence: 501190106-->
+:<!--Unknown TalkSentence: 501190107-->
+;(If {{cx}}<!--not during performance 501190101-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+::::{{Диалог|?}} undefined
+::::<!--Unknown TalkSentence: 800122732-->
+::::<!--Unknown TalkSentence: 800122733-->
+::::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Установите экспонат на место===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 800130211-->
+<!--Unknown TalkSentence: 800130212-->
+{{Диалог Конец}}
+
+===Поговорите с Эрис и продолжите работу в музее===
+{{Диалог Начало}}
+
+;(Поговорите с Эрис)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190301
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Exhibit Collection: Oil Painting Part 1
+|zhs  = 藏品收集•油画•其一
+|zht  = 館藏蒐集•油畫•其一
+|ja   = 収蔵品収集・油絵・その1
+|ko   = 소장품 수집•유화•1
+|es   = Recolección de objeto: pintura al óleo&nbsp;I
+|fr   = Collections du musée&nbsp;: Peinture à l'huile (partie&nbsp;1)
+|ru   = Сбор экспонатов: Картина I
+|th   = คอลเลกชันวัตถุจัดแสดง: ภาพสีน้ำมัน 1
+|vi   = Thu Thập Vật Sưu Tập - Tranh Sơn Dầu 1
+|de   = Ausstellungssammlung: Ölgemälde (Teil 1)
+|id   = Koleksi Pameran: Lukisan Cat Minyak (Bagian 1)
+|pt   = Coleção de Obras: Pintura a Óleo Parte 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,208 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8022104
+|Название        = 
+|Изображение     = Миссия Освоения Концовка в стиле Часика.png
+|Тип             = Миссия приключения
+|События         = «Часик: Мемуары о сладких грёзах»
+|Глава           = Однажды в... Грёзавиле
+|Условия         = Завершена [[Миссия приключения]] ''[[Часик на 42-й улице]]''
+|Персонажи       = Бутхилл; Искорка; Первопроходец; Пис; Чёрный Лебедь
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = Часик на 42-й улице
+|Следующая       = 
+|Награды         = Звёздный нефрит*20; Конденсированный эфир*3; Кредиты*20 000
+}}
+'''Концовка в стиле Часика''' — Событие [[Миссия приключения]] из события [[«Часик: Мемуары о сладких грёзах»]].
+
+==Описание==
+{{Описание|Картина «Часик: Мемуары о сладких грёзах» наконец вышла на экраны, и Студии «Часы» удалось преодолеть кризис. Тайны фильма теперь раскрыты.<br />На искренние слова можно получить ложные ответы, так же и выдуманная история способна вызвать искренние чувства... И несмотря на это, люди всё равно стремятся к правдивости.}}
+
+==Этапы==
+# Смонтируйте «Тайну сладких грёз»
+# Присоединитесь к показу «Мемуаров о сладких грёзах»
+# Узнайте мнение остальных зрителей о фильме
+# Поговорите с Писом
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Смонтируйте «Тайну сладких грёз»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Мимоза вернула вам «Тайну сладких грёз». Вернитесь и завершите монтаж.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+;(Unused &mdash; ActivitMovie_OpenTempUI)
+<pre>{
+	"$type": "RPG.GameCore.ClockParkUnlockScript",
+	"ScriptID": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Присоединитесь к показу «Мемуаров о сладких грёзах»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Монтаж «Мемуаров о сладких грёзах» подошёл к концу. Идите в зал и насладитесь фильмом вместе с остальными зрителями}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Узнайте мнение остальных зрителей о фильме===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Фильм «Мемуары о сладких грёзах» успешно вышел в прокат. Помогите Пису узнать мнение остальных зрителей.}}
+{{Диалог Начало}}
+
+;(Поговорите с Искорка)
+<!--Unknown TalkSentence: 802212501-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802212503-->
+:<!--Unknown TalkSentence: 802212504-->
+:<!--Unknown TalkSentence: 802212505-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802212510-->
+:<!--Unknown TalkSentence: 802212511-->
+
+;(Поговорите с Чёрный Лебедь)
+<!--Unknown TalkSentence: 802212601-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802212603-->
+:<!--Unknown TalkSentence: 802212604-->
+:<!--Unknown TalkSentence: 802212605-->
+:<!--Unknown TalkSentence: 802212606-->
+<!--Unknown TalkSentence: 802212607-->
+:<!--Unknown TalkSentence: 802212608-->
+
+;(Поговорите с Бутхилл)
+<!--Unknown TalkSentence: 802212701-->
+:<!--Unknown TalkSentence: 802212702-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802212704-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802212710-->
+:<!--Unknown TalkSentence: 802212711-->
+
+{{Диалог Конец}}
+
+===Поговорите с Писом===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Похоже, что у всех жителей сложились различные впечатления о «Мемуарах о сладких грёзах». Таким образом, последняя воля Часовщика была исполнена. Передайте Пису хорошие новости.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+::{{tx}}
+:<!--Unknown TalkSentence: 802212901-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212903-->
+::<!--Unknown TalkSentence: 802212904-->
+::<!--Unknown TalkSentence: 802212905-->
+::<!--Unknown TalkSentence: 802212906-->
+::<!--Unknown TalkSentence: 802212907-->
+::<!--Unknown TalkSentence: 802212908-->
+::<!--Unknown TalkSentence: 802212909-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212905-->
+::<!--Unknown TalkSentence: 802212906-->
+::<!--Unknown TalkSentence: 802212907-->
+::<!--Unknown TalkSentence: 802212908-->
+::<!--Unknown TalkSentence: 802212909-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802212905-->
+:<!--Unknown TalkSentence: 802212906-->
+:<!--Unknown TalkSentence: 802212907-->
+:<!--Unknown TalkSentence: 802212908-->
+:<!--Unknown TalkSentence: 802212909-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clock-Styled Ending
+|zhs  = 克劳克式结局
+|zht  = 克勞克式結局
+|ja   = クラーク式エンディング
+|ko   = 클락식 엔딩
+|es   = Final al estilo Reloj
+|fr   = Une touche finale signée Chronou
+|ru   = Концовка в стиле Часика
+|th   = ตอนจบสไตล์ Clock
+|vi   = Kết Thúc Kiểu "Clock"
+|de   = Ende im Clock-Stil
+|id   = Akhir dari Gaya Clock
+|pt   = Final no Estilo Relógio
+}}
+
+==История изменений==
+{{История изменений|2.7}}

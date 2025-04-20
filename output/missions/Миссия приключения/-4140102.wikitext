@@ -1,0 +1,123 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4140102
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Рынок будущего II]]''
+|Персонажи       = Инвестор; Мечтатель; Первопроходец; Старый учёный; Толпа; Управляющий
+|СтартЛокация    = Столп творения
+|Мир             = Ярило-VI
+|Локации         = Столп творения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Shield (Item)*20; Кредиты*8 000
+}}
+'''''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|?}} Слушать
+;(If {{F|MissionCV-4140102-undefined}} is equal to 1)
+;(Otherwise)
+::----
+<!--Unknown TalkSentence: 414020015-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414020017-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010201,
+	"MissionCustomValue": {
+		"Index": 4,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::----
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 414020019-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010201,
+	"MissionCustomValue": {
+		"Index": 4,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+
+:{{Диалог|?}} Слушать
+;(If {{F|MissionCV-4140102-undefined}} is equal to 1)
+:<!--Unknown TalkSentence: 414020015-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 414020017-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010201,
+	"MissionCustomValue": {
+		"Index": 4,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::----
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 414020019-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 414010201,
+	"MissionCustomValue": {
+		"Index": 4,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+;(Otherwise)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

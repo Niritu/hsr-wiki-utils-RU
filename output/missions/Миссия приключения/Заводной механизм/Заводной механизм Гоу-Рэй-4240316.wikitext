@@ -1,0 +1,149 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240316
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Гоу-Рэй.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Взволнованный мужской голос; Гордый мужской голос; Гоу-Рэй; Первопроходец
+|СтартЛокация    = Граница грёз
+|Мир             = Пенакония
+|Локации         = Граница грёз
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Очищенный эфир*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Гоу-Рэй''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Сфотографируйте исполинский отель в Золотом миге
+# Передайте фото Гоу-Рэй
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Сфотографируйте исполинский отель в Золотом миге===
+{{Описание миссии|локация=Золотой миг|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; TalkSentence_413160323)
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"MissionID": {
+		"FixedValue": {
+			"Value": 4240316
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 363
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "SingleTakePhoto",
+	"AimTargetContainerConfig": [
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierProp",
+				"AimPropID": {
+					"FixedValue": {
+						"Value": 121
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"TipConfigs": [
+				{}
+			],
+			"ContainerFlagName": "4240316_photo1",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierProp",
+				"AimPropID": {
+					"FixedValue": {
+						"Value": 121
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"TipConfigs": [],
+			"ContainerFlagName": "4240316_photo2",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300003
+			]
+		}
+	},
+	"NotStartPhotoInTriggerRangeMode": true
+}</pre>
+
+;(Поговорите с Гоу-Рэй)
+<!--Unknown TalkSentence: 413160401-->
+{{Диалог Конец}}
+
+===Передайте фото Гоу-Рэй===
+{{Диалог Начало}}
+
+;(Поговорите с Гоу-Рэй)
+<!--Unknown TalkSentence: 413160501-->
+<!--Unknown TalkSentence: 413160502-->
+<!--Unknown TalkSentence: 413160503-->
+<!--Unknown TalkSentence: 413160504-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Go-Ray
+|zhs  = 钟表把戏：格-蕾
+|zht  = 鐘錶把戲：格-蕾
+|ja   = クロックトリック：ゴーライ
+|ko   = 시계 트릭: 고-레이
+|es   = Trucorreloj: Go-Ray
+|fr   = Pouvoir de la Pendule&nbsp;: Go-Ray
+|ru   = Заводной механизм: Гоу-Рэй
+|th   = กลนาฬิกา: Go-Ray
+|vi   = Thủ Thuật Đồng Hồ: Go-Ray
+|de   = Uhrwerk: Go-Ray
+|id   = Clockwork: Go-Ray
+|pt   = Truquelógio: Go-Ray
+}}
+
+==История изменений==
+{{История изменений|2.7}}

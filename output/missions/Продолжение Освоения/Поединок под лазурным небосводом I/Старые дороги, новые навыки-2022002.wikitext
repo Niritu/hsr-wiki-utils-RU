@@ -1,0 +1,285 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022002
+|Название        = 
+|Изображение     = Миссия Освоения Старые дороги, новые навыки.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом I
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Старые дороги, новые навыки]]''
+|Персонажи       = Дань Хэн; Луцзюнь; Март 7; Пепеши; Первопроходец; Солдат Облачных Рыцарей; Эрудроид; Яньцин
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = Приезд вельможей, намеренья ложные
+|Награды         = Опыт Освоения*400; Звёздный нефрит*50; Путеводитель путешественника*4; Очищенный эфир*5; Кредиты*30 000
+}}
+'''Старые дороги, новые навыки''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом I]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите Яньцина в толпе
+# Встретьтесь с Яньцином ещё раз
+# Одолейте убегающего борисинца
+# Обсудите ситуацию с Яньцином
+# Разведайте обстановку у Облачных Рыцарей вместе с Яньцином
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите Яньцина в толпе===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Прибыв на Лофу, вы видите переполненный приезжими причал звёздных яликов.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 222020102-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020104-->
+:<!--Unknown TalkSentence: 222020105-->
+:<!--Unknown TalkSentence: 222020106-->
+:<!--Unknown TalkSentence: 222020107-->
+:<!--Unknown TalkSentence: 222020108-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020106-->
+:<!--Unknown TalkSentence: 222020107-->
+:<!--Unknown TalkSentence: 222020108-->
+<!--Unknown TalkSentence: 222020106-->
+<!--Unknown TalkSentence: 222020107-->
+<!--Unknown TalkSentence: 222020108-->
+;(If {{cx}}<!--SubMission not Finish: 202200202-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 202200202-->)
+:;(If {{F|MissionCV-2022002-1}} is equal to 0)
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1222800,
+	"ShowNotice": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1222800
+}</pre>
+;(Unused &mdash; Finish202200219)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222020302-->
+<!--Unknown TalkSentence: 222020303-->
+<!--Unknown TalkSentence: 222020304-->
+<!--Unknown TalkSentence: 222020305-->
+<!--Unknown TalkSentence: 222020306-->
+<!--Unknown TalkSentence: 222020307-->
+<!--Unknown TalkSentence: 222020308-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020310-->
+:<!--Unknown TalkSentence: 222020311-->
+:<!--Unknown TalkSentence: 222020312-->
+:<!--Unknown TalkSentence: 222020313-->
+:<!--Unknown TalkSentence: 222020314-->
+:<!--Unknown TalkSentence: 222020315-->
+:<!--Unknown TalkSentence: 222020316-->
+:<!--Unknown TalkSentence: 222020317-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020312-->
+:<!--Unknown TalkSentence: 222020313-->
+:<!--Unknown TalkSentence: 222020314-->
+:<!--Unknown TalkSentence: 222020315-->
+:<!--Unknown TalkSentence: 222020316-->
+:<!--Unknown TalkSentence: 222020317-->
+<!--Unknown TalkSentence: 222020312-->
+<!--Unknown TalkSentence: 222020313-->
+<!--Unknown TalkSentence: 222020314-->
+<!--Unknown TalkSentence: 222020315-->
+<!--Unknown TalkSentence: 222020316-->
+<!--Unknown TalkSentence: 222020317-->
+{{Диалог Конец}}
+
+===Встретьтесь с Яньцином ещё раз===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Хотя вы и видели Яньцина совсем недавно, вам всё равно кажется, будто он немного подрос.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222020402-->
+<!--Unknown TalkSentence: 222020403-->
+<!--Unknown TalkSentence: 222020404-->
+<!--Unknown TalkSentence: 222020405-->
+<!--Unknown TalkSentence: 222020406-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020408-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020413-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222020416-->
+::{{tx}}
+<!--Unknown TalkSentence: 222020408-->
+:{{tx}}
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222022101-->
+{{Диалог Конец}}
+
+===Одолейте убегающего борисинца===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|В суматохе причала из-под конвоя сбегают преступники. Юный фехтовальщик обнажает свой ледяной клинок, но кое-кто опережает его.}}
+{{Диалог Начало}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Нет!
+::Спасибо за помощь.
+::Прости, нет времени на болтовню...
+::Можно мне вернуть мой меч?..
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G216"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите ситуацию с Яньцином===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G226"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222022102-->
+<!--Unknown TalkSentence: 222022103-->
+{{Диалог Конец}}
+
+===Разведайте обстановку у Облачных Рыцарей вместе с Яньцином===
+{{Диалог Начало}}
+
+;(Поговорите с Луцзюнь)
+<!--Unknown TalkSentence: 222020901-->
+<!--Unknown TalkSentence: 222020902-->
+<!--Unknown TalkSentence: 222020903-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}<!--SubMission not Finish: 202200209-->)
+:{{tx}}
+<!--Unknown TalkSentence: 222021102-->
+<!--Unknown TalkSentence: 222021103-->
+<!--Unknown TalkSentence: 222021104-->
+<!--Unknown TalkSentence: 222021105-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222021107-->
+:<!--Unknown TalkSentence: 222021108-->
+:<!--Unknown TalkSentence: 222021109-->
+:<!--Unknown TalkSentence: 222021110-->
+:<!--Unknown TalkSentence: 222021111-->
+:<!--Unknown TalkSentence: 222021112-->
+:<!--Unknown TalkSentence: 222021113-->
+:<!--Unknown TalkSentence: 222021114-->
+:<!--Unknown TalkSentence: 222021115-->
+:<!--Unknown TalkSentence: 222021116-->
+:<!--Unknown TalkSentence: 222021117-->
+:<!--Unknown TalkSentence: 222021118-->
+:<!--Unknown TalkSentence: 222021119-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 222021109-->
+:<!--Unknown TalkSentence: 222021110-->
+:<!--Unknown TalkSentence: 222021111-->
+:<!--Unknown TalkSentence: 222021112-->
+:<!--Unknown TalkSentence: 222021113-->
+:<!--Unknown TalkSentence: 222021114-->
+:<!--Unknown TalkSentence: 222021115-->
+:<!--Unknown TalkSentence: 222021116-->
+:<!--Unknown TalkSentence: 222021117-->
+:<!--Unknown TalkSentence: 222021118-->
+:<!--Unknown TalkSentence: 222021119-->
+<!--Unknown TalkSentence: 222021109-->
+<!--Unknown TalkSentence: 222021110-->
+<!--Unknown TalkSentence: 222021111-->
+<!--Unknown TalkSentence: 222021112-->
+<!--Unknown TalkSentence: 222021113-->
+<!--Unknown TalkSentence: 222021114-->
+<!--Unknown TalkSentence: 222021115-->
+<!--Unknown TalkSentence: 222021116-->
+<!--Unknown TalkSentence: 222021117-->
+<!--Unknown TalkSentence: 222021118-->
+<!--Unknown TalkSentence: 222021119-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Homecoming Wardance
+|zhs  = 故客重游，演武天舟
+|zht  = 故客重遊，演武天舟
+|ja   = 再訪、天舟演武
+|ko   = 다시 찾아온 옛 손님, 천주 위 연무
+|es   = Viejos invitados y naves marciales
+|fr   = Retour de la Danse martiale
+|ru   = Старые дороги, новые навыки
+|th   = เยือนการดวลยุทธ์เรือสวรรค์
+|vi   = Khách Cũ Ghé Thăm, Thiên Châu Diễn Võ
+|de   = Alte Gäste zur Flotte der Kampfkunst
+|id   = Tamu Lama Menghadiri Duel Bela Diri Luofu
+|pt   = Dança da Guerra de Retorno
+}}
+
+==История изменений==
+{{История изменений|2.7}}

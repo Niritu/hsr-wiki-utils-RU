@@ -1,0 +1,146 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8030132
+|Название        = 
+|Изображение     = Миссия Освоения Рука Загрея I.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Дамионис; Первопроходец
+|СтартЛокация    = Рука Загрея I
+|Мир             = Амфореус
+|Локации         = Рука Загрея I
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Рука Загрея I''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Доберитесь до новой комнаты
+# Соберите монеты причуд и пройдите испытание
+# Испытание пройдено, двигайтесь дальше
+# Разрушьте препятствие с помощью удара
+
+==Прохождение==
+{{Дополнить}}
+
+===Доберитесь до новой комнаты===
+{{Описание миссии|локация=Рука Загрея I|Вы идёте всё дальше и дальше и попадаете в пустую комнату.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 830110701-->
+<!--Unknown TalkSentence: 830110702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110704-->
+:<!--Unknown TalkSentence: 830110705-->
+:<!--Unknown TalkSentence: 830110706-->
+:<!--Unknown TalkSentence: 830110707-->
+:<!--Unknown TalkSentence: 830110708-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110707-->
+:<!--Unknown TalkSentence: 830110708-->
+::{{tx}}
+<!--Unknown TalkSentence: 830110707-->
+<!--Unknown TalkSentence: 830110708-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Соберите монеты причуд и пройдите испытание===
+{{Описание миссии|локация=Рука Загрея I|Вы идёте всё дальше и дальше и попадаете в пустую комнату...<br />Последователи Загрея считают воровство священным ритуалом. Если хотите снять печать, придётся освоить мастерство карманных краж.}}
+{{Диалог Начало}}
+;(If {{F|undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; SwitchHand_Group_ResetTransform)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Prop位置重置###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchHandResetTransform",
+	"ID": {
+		"FixedValue": {
+			"Value": 18
+		}
+	},
+	"AnchorID": {
+		"Custom": true,
+		"Key": "PullBackAnchor"
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_ResetPlayerPosition)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Player位置重置###"
+}</pre>
+::<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable"
+}</pre>
+{{Диалог Конец}}
+
+===Испытание пройдено, двигайтесь дальше===
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_isHand"},"CompareType":"Equal","CompareValue":{"FixedValue":{"Value":0}}}-->}})
+----
+<!--Unknown TalkSentence: 830110800-->
+<!--Unknown TalkSentence: 830110801-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110803-->
+:<!--Unknown TalkSentence: 830110804-->
+:<!--Unknown TalkSentence: 830110805-->
+:<!--Unknown TalkSentence: 830110806-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110805-->
+:<!--Unknown TalkSentence: 830110806-->
+::{{tx}}
+<!--Unknown TalkSentence: 830110805-->
+<!--Unknown TalkSentence: 830110806-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Разрушьте препятствие с помощью удара===
+{{Описание миссии|локация=Рука Загрея I|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой руки Загрея. Продолжить путь можно, лишь завершив испытание.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hand of Zagreus: Room I
+|zhs  = 扎格列斯之手-房间Ⅰ
+|zht  = 扎格列斯之手-房間Ⅰ
+|ja   = ザグレウスの手：部屋I
+|ko   = 자그레우스의 손-방Ⅰ
+|es   = Mano de Zagreus: sala I
+|fr   = Salle I de la Main de Zagreus
+|ru   = Рука Загрея I
+|th   = หัตถ์ Zagreus: ห้อง I
+|vi   = Tay Của Zagreus: Phòng I
+|de   = Hand des Zagreus: Raum I
+|id   = Tangan Zagreus: Ruangan I
+|pt   = A Mão de Zagreus: Sala I
+}}
+
+==История изменений==
+{{История изменений|3.0}}

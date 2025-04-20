@@ -1,0 +1,141 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002107
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Седьмая остановка - Звёздный экспресс.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Шестая остановка - Заклёпкоград]]''
+|Персонажи       = Март 7; Первопроходец
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = Искатели теней: Шестая остановка - Заклёпкоград
+|Следующая       = 
+|Награды         = Отпечатки судьбы*1; Звёздный нефрит*80; Obsidian of Desolation*3; Кредиты*40 000
+}}
+'''Искатели теней: Седьмая остановка - Звёздный экспресс''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Идите в общий вагон и сделайте фотографию нужного объекта
+# Узнайте у Март 7, как обстоят дела
+# Найдите объекты и сфотографируйте их
+# Сделайте селфи с Март 7
+# Поговорите с Март 7
+# Узнайте у Март 7, как обстоят дела
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Идите в общий вагон и сделайте фотографию нужного объекта===
+{{Описание миссии|локация=Общий вагон|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то с экспресса...}}
+{{Диалог Начало}}
+:<!--3-second delay-->
+<!--Unknown TalkSentence: 800210264-->
+{{Диалог Конец}}
+
+===Узнайте у Март 7, как обстоят дела===
+{{Диалог Начало}}
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 800210265-->
+
+;(Unused &mdash; Create_30_300001)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Найдите объекты и сфотографируйте их===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Сделайте селфи с Март 7===
+{{Диалог Начало}}
+
+
+;(Unused &mdash; Reset_31_300001)
+:;(If {{F|MissionCV-8002107-undefined}} is equal to 0)
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300005
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800210703,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(If {{F|MissionCV-8002107-undefined}} is not equal to 0)
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300005
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300005
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Март 7===
+{{Диалог Начало}}
+:<!--2.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте у Март 7, как обстоят дела===
+{{Диалог Начало}}
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 800210265-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 7th Stop, Astral Express
+|zhs  = 星旅寻影•第七站•星穹列车
+|zht  = 星旅尋影•第七站•星穹列車
+|ja   = 星々の影を探して・7駅目・星穹列車
+|ko   = 그림자를 찾는 별의 여정•일곱 번째 역•은하열차
+|es   = Fotografías estelares, 7.ª parada: Expreso Astral
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 7e arrêt, Astral Express
+|ru   = Искатели теней: Седьмая остановка - Звёздный экспресс
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 7 - Astral Express
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 7, Đội Tàu Astral
+|de   = Stellarer Schattensucher: Siebter Halt – Astralexpress
+|id   = Penjelajah Bayangan Bintang: Perhentian 7 - Astral Express
+|pt   = Sombrio Estelar: 7ª Parada, Expresso Astral
+}}
+
+==История изменений==
+{{История изменений|2.7}}

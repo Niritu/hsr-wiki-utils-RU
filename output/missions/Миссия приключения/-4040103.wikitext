@@ -1,0 +1,113 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040103
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+* Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+|Персонажи       = Первопроходец; Слабый женский голос
+|СтартЛокация    = Заклёпкоград
+|Мир             = Ярило-VI
+|Локации         = Заклёпкоград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Конденсированный эфир*1; Shield (Item)*20
+}}
+'''''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Поговорите с Слабый женский голос)
+<!--Unknown TalkSentence: 411030124-->
+<!--Unknown TalkSentence: 411030125-->
+
+;(Поговорите с Слабый женский голос)
+;(If {{cx}}<!--during performance 404010304-->)
+;(If {{cx}}<!--not during performance 404010304-->)
+<!--Unknown TalkSentence: 411030108-->
+<!--Unknown TalkSentence: 411030109-->
+<!--Unknown TalkSentence: 411030110-->
+
+;(Поговорите с Слабый женский голос)
+
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 92
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_404010302_Prop_92_300001_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 92
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+;(Получено {{Item|Сломанная музыкальная шкатулка|20|x=1|text=Сломанная музыкальная шкатулка}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

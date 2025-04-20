@@ -1,0 +1,360 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8023105
+|Название        = 
+|Изображение     = Миссия Освоения Бумажная дуэль.png
+|Тип             = Миссия приключения
+|События         = Бумажная дуэль
+|Глава           = Бумажная дуэль
+|Условия         = Завершена [[Миссия приключения]] ''[[Бумажная дуэль]]''
+|Персонажи       = Зарянка; Март 7; Первопроходец; Светлячок; Тина
+|СтартЛокация    = Большой театр Пенаконии
+|Мир             = Пенакония
+|Локации         = Большой театр Пенаконии
+|Предыдущая      = 
+|Следующая       = Бумажная дуэль: Коллекционная версия
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Бумажная дуэль''' — Событие [[Миссия приключения]] из события [[Бумажная дуэль]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в указанное место и найдите игровой автомат в Большом театре Пенаконии
+# Завершите игру в прятки с лазурной пташкой
+# Получите одобрение лазурной пташки
+# Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Зарянки на новом игровом автомате
+# Проведите обзор битвы с Тиной
+# Выиграйте дуэль против Тины на новом игровом автомате
+# Проведите обзор битвы с Тиной
+# Поместите птиц-оригами на игровые автоматы по своему усмотрению (необязательно)
+# Сфотографируйтесь с участниками тестирования
+# Поговорите с Тиной и проведите обзор тестирования
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в указанное место и найдите игровой автомат в Большом театре Пенаконии===
+{{Описание миссии|локация=Большой театр Пенаконии|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1309100
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 823105001-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823105003-->
+:<!--Unknown TalkSentence: 823105004-->
+:<!--Unknown TalkSentence: 823105005-->
+:<!--Unknown TalkSentence: 823105006-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823105005-->
+:<!--Unknown TalkSentence: 823105006-->
+::{{tx}}
+<!--Unknown TalkSentence: 823105005-->
+<!--Unknown TalkSentence: 823105006-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Завершите игру в прятки с лазурной пташкой===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823105602-->
+<!--Unknown TalkSentence: 823105603-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823105604-->
+<!--Unknown TalkSentence: 823105605-->
+;(Unused &mdash; Create_G474)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 474
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20332_F20332001_G474"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Получите одобрение лазурной пташки===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 823105101-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823105103-->
+<!--Unknown TalkSentence: 823105104-->
+<!--Unknown TalkSentence: 823105105-->
+<!--Unknown TalkSentence: 823105106-->
+<!--Unknown TalkSentence: 823105107-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Зарянки на новом игровом автомате===
+{{Диалог Начало}}
+
+;(Поговорите с Зарянка)
+<!--Unknown TalkSentence: 823105607-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823105612-->
+<!--Unknown TalkSentence: 823105606-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"IconType": "ChatLoopIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Проведите обзор битвы с Тиной===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MatchThreeMainEntrancePage"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MatchThree.Entrance.MatchThreeNewBirdDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "304"
+	}
+}</pre>
+<!--Unknown TalkSentence: 823105201-->
+<!--Unknown TalkSentence: 823105202-->
+<!--Unknown TalkSentence: 823105203-->
+<!--Unknown TalkSentence: 823105204-->
+<!--Unknown TalkSentence: 823105205-->
+<!--Unknown TalkSentence: 823105206-->
+<!--Unknown TalkSentence: 823105207-->
+<!--Unknown TalkSentence: 823105208-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823105210-->
+:<!--Unknown TalkSentence: 823105211-->
+:<!--Unknown TalkSentence: 823105212-->
+:<!--Unknown TalkSentence: 823105213-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823105212-->
+:<!--Unknown TalkSentence: 823105213-->
+::{{tx}}
+<!--Unknown TalkSentence: 823105212-->
+<!--Unknown TalkSentence: 823105213-->
+:{{tx}}
+;(Unused &mdash; Activity230_PveResultClose)
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"MatchThreeMainEntrancePage"
+	],
+	"PageRootNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Выиграйте дуэль против Тины на новом игровом автомате===
+{{Диалог Начало}}
+
+;(Поговорите с Тина)
+<!--Unknown TalkSentence: 823105608-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823105608-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"IconType": "ChatLoopIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Проведите обзор битвы с Тиной===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 802310007-->
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MatchThreeMainEntrancePage"
+}</pre>
+<!--Unknown TalkSentence: 823105301-->
+<!--Unknown TalkSentence: 823105302-->
+<!--Unknown TalkSentence: 823105303-->
+<!--Unknown TalkSentence: 823105304-->
+<!--Unknown TalkSentence: 823105305-->
+<!--Unknown TalkSentence: 823105306-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823105308-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.RequestChangeMatchThreeBirdLocation",
+	"BirdID": 305,
+	"LocationID": {
+		"FixedValue": {
+			"Value": 6
+		}
+	}
+}</pre>
+;(Unused &mdash; Activity230_PveResultClose)
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"MatchThreeMainEntrancePage"
+	],
+	"PageRootNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Поместите птиц-оригами на игровые автоматы по своему усмотрению (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Прислушаться)
+:{{tx}}
+{{Диалог Конец}}
+
+===Сфотографируйтесь с участниками тестирования===
+{{Диалог Начало}}
+
+;(Поговорите с Тина)
+
+
+{{Диалог Конец}}
+
+===Поговорите с Тиной и проведите обзор тестирования===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 802310009-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Origami Bird Clash
+|zhs  = 「折纸小鸟对对碰」
+|zht  = 「摺紙小鳥對對碰」
+|ja   = 「折り紙の小鳥マッチ」
+|ko   = 「종이새 팡팡」
+|es   = Choque de pajaritos de papel
+|fr   = Rififruit chez les oiseaux en origami
+|ru   = Бумажная дуэль
+|th   = นกกระดาษตะลุมบอน
+|vi   = Chim Giấy Đại Chiến
+|de   = Origamivogel-Matching
+|id   = Adu Jotos Burung Origami
+|pt   = Choque de Pássaro de Origami
+}}
+
+==История изменений==
+{{История изменений|2.7}}

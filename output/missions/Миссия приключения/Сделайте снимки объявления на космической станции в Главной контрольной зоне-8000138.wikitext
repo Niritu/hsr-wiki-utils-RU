@@ -1,0 +1,227 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000138
+|Название        = 
+|Изображение     = Миссия Освоения Сделайте снимки объявления на космической станции в Главной контрольной зоне.png
+|Тип             = Миссия приключения
+|События         = Звёздная охота
+|Глава           = 
+|Условия         = Завершена [[Миссия компаньона]] ''[[Дух Панклорда]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Сделайте снимки объявления на космической станции в Главной контрольной зоне''' — Событие [[Миссия приключения]] из события [[Звёздная охота]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013801_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013802_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 81
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Take a picture of a space station ad in the master control zone
+|zhs  = 在主控舱段拍摄「空间站广告」的照片
+|zht  = 在主控艙段拍攝「太空站廣告」的照片
+|ja   = 主制御部分で「ステーション広告」の写真を撮る
+|ko   = 메인 컨트롤 캐빈에서 「우주정거장 광고」 사진 촬영
+|es   = Haz una foto de un anuncio de la Estación Espacial en la zona de mando principal
+|fr   = Prendre une annonce publicitaire de la station spatiale en photo dans la Zone de contrôle principale
+|ru   = Сделайте снимки объявления на космической станции в Главной контрольной зоне
+|th   = ถ่ายภาพ "โฆษณาในสถานีอวกาศ" ที่ Master Control Zone
+|vi   = Chụp ảnh "quảng cáo Trạm Không Gian" tại Khoang Điều Khiển Chính
+|de   = Nimm in der Hauptkontrollzone ein Bild von einer Raumstation-Werbeanzeige auf.
+|id   = Ambil foto "iklan Stasiun Luar Angkasa" di Master Control Zone
+|pt   = Tire uma foto de um anúncio da Estação Espacial na Zona de Controle Principal
+}}
+
+==История изменений==
+{{История изменений|2.7}}

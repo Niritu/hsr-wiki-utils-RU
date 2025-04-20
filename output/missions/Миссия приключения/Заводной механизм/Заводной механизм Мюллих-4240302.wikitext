@@ -1,0 +1,177 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240302
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Мюллих.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[А убийца кто?..]]''
+|Персонажи       = Дабл Ю; Жань; Мюллих; Первопроходец
+|СтартЛокация    = Отель «Грёзы» (Мир грёз)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (Мир грёз)
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Очищенный эфир*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Мюллих''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Помогите Дабл Ю найти Жань на площади Часика
+# Отправляйтесь в Парк Айдена и передайте Дабл Ю ответ
+
+==Прохождение==
+{{Дополнить}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 413020101-->
+<!--Unknown TalkSentence: 413020102-->
+;(Enter battle)
+:{{Enemy List|Пружинный Крупье из труппы «Кошмарики»*2; Танцующий Клюв из труппы «Кошмарики»*1; Господин Телебрюх из труппы «Кошмарики»*1}}
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 10,
+			"GroupID": 262,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 413022205
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 5,
+	"UniqueID": 1
+}</pre>
+----
+<!--Unknown TalkSentence: 413020201-->
+<!--Unknown TalkSentence: 413020202-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413020204-->
+<!--Unknown TalkSentence: 413020205-->
+<!--Unknown TalkSentence: 413020206-->
+----
+{{Диалог Конец}}
+
+===Помогите Дабл Ю найти Жань на площади Часика===
+{{Описание миссии|локация=Золотой миг|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Поговорите с Жань)
+----
+<!--Unknown TalkSentence: 413022206-->
+<!--Unknown TalkSentence: 413022207-->
+<!--Unknown TalkSentence: 413022208-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 184
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+<!--Unknown TalkSentence: 413020802-->
+<!--Unknown TalkSentence: 413020803-->
+<!--Unknown TalkSentence: 413020804-->
+<!--Unknown TalkSentence: 413020805-->
+;(Return to previous option selection)
+
+;(Поговорите с Мюллих)
+----
+<!--Unknown TalkSentence: 413021101-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 191
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy02"
+}</pre>
+<!--Unknown TalkSentence: 413021103-->
+<!--Unknown TalkSentence: 413021104-->
+<!--Unknown TalkSentence: 413021108-->
+<!--Unknown TalkSentence: 413021109-->
+<!--Unknown TalkSentence: 413021110-->
+<!--Unknown TalkSentence: 413021111-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 191
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy02"
+}</pre>
+<!--Unknown TalkSentence: 413021112-->
+----
+{{Диалог Конец}}
+
+===Отправляйтесь в Парк Айдена и передайте Дабл Ю ответ===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Mullich
+|zhs  = 钟表把戏：姆利斯
+|zht  = 鐘錶把戲：姆利斯
+|ja   = クロックトリック：ムリス
+|ko   = 시계 트릭: 멀리치
+|es   = Trucorreloj: Mullich
+|fr   = Pouvoir de la Pendule&nbsp;: Mullich
+|ru   = Заводной механизм: Мюллих
+|th   = กลนาฬิกา: Mullich
+|vi   = Thủ Thuật Đồng Hồ: Mullich
+|de   = Uhrwerk: Mullich
+|id   = Clockwork: Mullich
+|pt   = Truquelógio: Mullich
+}}
+
+==История изменений==
+{{История изменений|2.7}}

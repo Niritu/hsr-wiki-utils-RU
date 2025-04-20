@@ -1,0 +1,139 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340121
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Сердца в облаках]]''
+|Персонажи       = Педро; Первопроходец; Роза; Хладожил
+|СтартЛокация    = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Мир             = Пенакония
+|Локации         = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Предыдущая      = Сердца в облаках
+|Следующая       = 
+|Награды         = Symbol of Fortune*1; Astral Express Miniature (Limited Edition)*1; Журнал приключений*2; Golden Limited - Aideen Token*1; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 434029124-->
+<!--Unknown TalkSentence: 434029125-->
+
+;(Поговорите с Роза)
+;(If {{F|MissionCV-2030501-undefined}} is equal to 1)
+:<!--Unknown TalkSentence: 434029001-->
+:<!--Unknown TalkSentence: 434029002-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434029008-->
+;(If {{F|MissionCV-2030501-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_434029008_2)
+<!--Unknown TalkSentence: 434029009-->
+
+;(Unused &mdash; TalkSentence_434029008_3)
+<!--Unknown TalkSentence: 434029010-->
+
+;(Поговорите с Хладожил)
+;(If {{F|MissionCV-2030501-undefined}} is equal to 1)
+:<!--Unknown TalkSentence: 434029001-->
+:<!--Unknown TalkSentence: 434029002-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434029008-->
+;(If {{F|MissionCV-2030501-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_434029008_2)
+<!--Unknown TalkSentence: 434029009-->
+
+;(Unused &mdash; TalkSentence_434029008_3)
+<!--Unknown TalkSentence: 434029010-->
+
+;(Поговорите с Педро)
+;(If {{F|MissionCV-2030501-undefined}} is equal to 1)
+:<!--Unknown TalkSentence: 434029001-->
+:<!--Unknown TalkSentence: 434029002-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434029008-->
+;(If {{F|MissionCV-2030501-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_434029008_2)
+<!--Unknown TalkSentence: 434029009-->
+
+;(Unused &mdash; TalkSentence_434029008_3)
+<!--Unknown TalkSentence: 434029010-->
+;(If {{F|MissionCV-2030501-undefined}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-2030501-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+<!--Unknown TalkSentence: 434029101-->
+<!--Unknown TalkSentence: 434029102-->
+<!--Unknown TalkSentence: 434029103-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 434029105-->
+<!--Unknown TalkSentence: 434029106-->
+<!--Unknown TalkSentence: 434029107-->
+<!--Unknown TalkSentence: 434029108-->
+<!--Unknown TalkSentence: 434029109-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G232"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 434012104,
+	"MessageSectionID": 1223500,
+	"ShowNotice": false
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,144 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002202
+|Название        = 
+|Изображение     = Миссия Освоения Чудесные сказания. Глава I.png
+|Тип             = Миссия приключения
+|События         = Чудесные сказания
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Чудесные сказания. Глава I]]''
+|Персонажи       = Говард; Господин Сиянь; Первопроходец; Сюйся; Тодд; Цзиньюй; Цзыцяо; Чуньфэнь; Эделия
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Чудесные сказания. Глава I''' — Событие [[Миссия приключения]] из события [[Чудесные сказания]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<!--Unknown TalkSentence: 812330101-->
+<!--Unknown TalkSentence: 812330102-->
+<!--Unknown TalkSentence: 812330103-->
+<!--Unknown TalkSentence: 812330104-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_storytelling_03"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_2.png"
+}</pre>
+<!--Unknown TalkSentence: 812330105-->
+<!--Unknown TalkSentence: 812330106-->
+<!--Unknown TalkSentence: 812330107-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_2.png"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10201_F10201001_G167",
+	"AnchorName": "Anchor2",
+	"IsActive": false
+}</pre>
+
+;(Поговорите с Господин Сиянь)
+<!--Unknown TalkSentence: 502104101-->
+<!--Unknown TalkSentence: 502104102-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Сюйся)
+<!--Unknown TalkSentence: 502106101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_502106110)
+<!--Unknown TalkSentence: 502106110-->
+:<!--Unknown TalkSentence: 502106113-->
+:;(Return to previous option selection)
+
+;(Поговорите с Цзиньюй)
+<!--Unknown TalkSentence: 502108101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Говард)
+<!--Unknown TalkSentence: 502112101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Тодд)
+<!--Unknown TalkSentence: 502114101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Цзыцяо)
+;(If {{cx}}<!--during performance 502011501-->)
+:<!--Unknown TalkSentence: 502115001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502115003-->
+:<!--Unknown TalkSentence: 502115006-->
+;(If {{cx}}<!--not during performance 502011501-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502115301
+}</pre>
+:<!--Unknown TalkSentence: 502115302-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Эделия)
+<!--Unknown TalkSentence: 502117101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Чуньфэнь)
+<!--Unknown TalkSentence: 502118101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Tales of the Fantastic: Chapter 1
+|zhs  = 评书奇谭•第一回
+|zht  = 評書奇譚•第一回
+|ja   = 講談奇譚・第一回
+|ko   = 진기한 이야기•제1장
+|es   = Narraciones extraordinarias: acto 1
+|fr   = Contes fantastiques &mdash; Chapitre&nbsp;1
+|ru   = Чудесные сказания. Глава I
+|th   = เรื่องเล่าขานตำนานการผจญภัย: บทที่ 1
+|vi   = Kỳ Truyện Bình Thư 1
+|de   = Geschichten des Fantastischen – Kapitel 1
+|id   = Dongeng Luar Biasa - Bag. 1
+|pt   = Contos do Fantástico - Capítulo 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

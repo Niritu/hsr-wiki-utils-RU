@@ -1,0 +1,365 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1011502
+|Название        = 
+|Изображение     = Миссия Освоения Время не ждёт, мой друг.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Под палящим рассветным солнцем
+|Условия         = Завершена [[Миссия Освоения]] ''[[Опасное болото]]''
+|Персонажи       = Алина; Броня; Гепард; Глашатай Среброгривых Стражей; Дань Хэн; Дань Хэн и Март 7; Джошуа; Дуня; Ждущий пожилой человек; Зеле; Клара; Март 7; Наблюдатель; Наташа; Невинный ребёнок; Нервный воин Среброгривых Стражей; Олег; Оператор канатной дороги; Первопроходец; Плачущая женщина; Фидора; Хук; Элейн
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = Опасное болото
+|Следующая       = Тишина галактики
+|Награды         = Опыт Освоения*400; Очищенный эфир*3; Космическая станция «Герта»*1 { rarity = 3 }; Орбита скитаний «Герты»*1 { rarity = 3 }; Кредиты*10 000
+}}
+'''Время не ждёт, мой друг''' — [[Миссия Освоения]] в главе [[Под палящим рассветным солнцем]].
+
+==Описание==
+{{Описание|История подошла к концу, Броня стала Верховной хранительницей, а Подземье и Надмирье вновь соединились, образуя единый Белобог.<br />Вы провели последние свободные деньки в Белобоге.}}
+
+==Этапы==
+# Идите к Наташе и приготовьтесь приветствовать открытие Подземья
+# Поговорите с оператором канатной дороги и вернитесь в Надмирье
+# Поговорите с Гепардом
+# Посетите церемонию инаугурации Брони
+# Найдите место, чтобы передохнуть до начала церемонии
+# Поговорите с Броней
+# Поговорите с жителями Подземья поблизости (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Идите к Наташе и приготовьтесь приветствовать открытие Подземья===
+{{Описание миссии|локация=Камнеград|Броня отправила сообщение о том, что более чем десятилетняя изоляция Надмирья и Подземья закончилась.<br />Идите к Наташе - пусть эту радостную новость узнает каждый в Подземье.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 111
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(Поговорите с Наташа)
+<!--Unknown TalkSentence: 101028001-->
+<!--Unknown TalkSentence: 101028002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101028004-->
+<!--Unknown TalkSentence: 101028007-->
+<!--Unknown TalkSentence: 101028008-->
+<!--Unknown TalkSentence: 101028009-->
+<!--Unknown TalkSentence: 101028010-->
+<!--Unknown TalkSentence: 101028011-->
+
+;(Поговорите с Шахтёр)
+<!--Unknown TalkSentence: 101028033-->
+<!--Unknown TalkSentence: 101028034-->
+<!--Unknown TalkSentence: 101028035-->
+
+;(Поговорите с Шахтёр)
+<!--Unknown TalkSentence: 101028036-->
+<!--Unknown TalkSentence: 101028037-->
+<!--Unknown TalkSentence: 101028038-->
+<!--Unknown TalkSentence: 101028039-->
+<!--Unknown TalkSentence: 101028040-->
+
+;(Поговорите с Оператор канатной дороги)
+;(If {{cx}}<!--during performance 101150121-->)
+:<!--Unknown TalkSentence: 101028012-->
+:<!--Unknown TalkSentence: 101028013-->
+;(If {{cx}}<!--not during performance 101150121-->)
+:<!--Unknown TalkSentence: 101028023-->
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101028015-->
+<!--Unknown TalkSentence: 101028018-->
+
+:{{Диалог|Разговор}} Слушать
+<!--Unknown TalkSentence: 101028041-->
+<!--Unknown TalkSentence: 101028042-->
+<!--Unknown TalkSentence: 101028043-->
+<!--Unknown TalkSentence: 101028044-->
+<!--Unknown TalkSentence: 101028045-->
+<!--Unknown TalkSentence: 101028046-->
+{{Диалог Конец}}
+
+===Поговорите с оператором канатной дороги и вернитесь в Надмирье===
+{{Описание миссии|локация=Камнеград|Броня отправила сообщение о том, что более чем десятилетняя изоляция Надмирья и Подземья закончилась.<br />Вскоре будет открыта канатная дорога, и жители Подземья наконец-то снова увидят свет и смогут свободно дышать под одним небом.<br />Хотя есть небольшие опасения по поводу безопасности ветхой канатной дороги... вы решаете испытать её и вернуться в Надмирье этим традиционным способом.}}
+{{Диалог Начало}}
+
+;(Поговорите с Оператор канатной дороги)
+<!--Unknown TalkSentence: 101028023-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101028020-->
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E2",
+	"SubMissionID": 101150121
+}</pre>
+::{{tx}}
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 101028022-->
+{{Диалог Конец}}
+
+===Поговорите с Гепардом===
+{{Описание миссии|локация=Административный район|Броня отправила сообщение о том, что более чем десятилетняя изоляция Надмирья и Подземья закончилась.<br />Вы с группой жителей Подземья возвращаетесь по канатной дороге в Административный район, и перед вами появляется Гепард, с которым вы сражались совсем недавно.<br />Только вот командующий Среброгривых Стражей на этот раз улыбается.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101013301-->
+<!--Unknown TalkSentence: 101013302-->
+<!--Unknown TalkSentence: 101013303-->
+
+;(Поговорите с Гепард)
+<!--Unknown TalkSentence: 101013304-->
+<!--Unknown TalkSentence: 101013305-->
+<!--Unknown TalkSentence: 101013306-->
+<!--Unknown TalkSentence: 101013307-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013309-->
+<!--Unknown TalkSentence: 101013314-->
+<!--Unknown TalkSentence: 101013315-->
+<!--Unknown TalkSentence: 101013316-->
+<!--Unknown TalkSentence: 101013317-->
+----
+
+;(Поговорите с Шахтёр)
+<!--Unknown TalkSentence: 101013522-->
+<!--Unknown TalkSentence: 101013523-->
+<!--Unknown TalkSentence: 101013524-->
+<!--Unknown TalkSentence: 101013525-->
+<!--Unknown TalkSentence: 101013526-->
+<!--Unknown TalkSentence: 101013527-->
+<!--Unknown TalkSentence: 101013528-->
+<!--Unknown TalkSentence: 101013529-->
+
+;(Поговорите с Солдат Среброгривых Стражей)
+<!--Unknown TalkSentence: 101013511-->
+<!--Unknown TalkSentence: 101013512-->
+<!--Unknown TalkSentence: 101013513-->
+<!--Unknown TalkSentence: 101013514-->
+<!--Unknown TalkSentence: 101013515-->
+<!--Unknown TalkSentence: 101013516-->
+
+;(Поговорите с Наташа)
+<!--Unknown TalkSentence: 101013530-->
+<!--Unknown TalkSentence: 101013531-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013533-->
+<!--Unknown TalkSentence: 101013536-->
+<!--Unknown TalkSentence: 101013537-->
+<!--Unknown TalkSentence: 101013538-->
+
+;(Поговорите с Хук)
+<!--Unknown TalkSentence: 101013517-->
+<!--Unknown TalkSentence: 101013518-->
+<!--Unknown TalkSentence: 101013519-->
+<!--Unknown TalkSentence: 101013520-->
+<!--Unknown TalkSentence: 101013521-->
+{{Диалог Конец}}
+
+===Посетите церемонию инаугурации Брони===
+{{Описание миссии|локация=Административный район|Броня отправила сообщение о том, что более чем десятилетняя изоляция Надмирья и Подземья закончилась.<br />От Гепарда вы узнаёте, что церемония инаугурации состоится совсем скоро.<br />И вы, как товарищи по оружию, которые прошли с ней весь путь до конца, конечно же, приглашены. Дождитесь начала церемонии возле Монумента вечнозимья.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101013318-->
+<!--Unknown TalkSentence: 101013319-->
+{{Диалог Конец}}
+
+===Найдите место, чтобы передохнуть до начала церемонии===
+{{Описание миссии|локация=Административный район|Броня отправила сообщение о том, что более чем десятилетняя изоляция Надмирья и Подземья закончилась.<br />Церемония инаугурации вот-вот начнётся, и вы прибыли раньше, чтобы дождаться провозглашения возле Монумента вечнозимья.<br />У вас ещё есть время, так что найдите местечко, чтобы передохнуть и насладиться редким для Белобога неторопливым моментом.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 101013393
+		}
+	],
+	"ID": 3
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 101013394
+		},
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 101013395
+		}
+	],
+	"ID": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 101013389
+		}
+	],
+	"ID": 5
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Броней===
+{{Описание миссии|локация=Форт Клипота|Пыль осела, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Всё хорошее когда-нибудь заканчивается, а прощаться всегда немножко грустно.<br />Поговорите с Броней в последний раз и расскажите, что вы узнали от Вельта.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101013301-->
+<!--Unknown TalkSentence: 101013302-->
+<!--Unknown TalkSentence: 101013303-->
+<!--Unknown TalkSentence: 101013304-->
+<!--Unknown TalkSentence: 101013305-->
+<!--Unknown TalkSentence: 101013306-->
+<!--Unknown TalkSentence: 101013307-->
+<!--Unknown TalkSentence: 101013308-->
+<!--Unknown TalkSentence: 101013309-->
+<!--Unknown TalkSentence: 101013310-->
+<!--Unknown TalkSentence: 101013311-->
+<!--Unknown TalkSentence: 101013312-->
+<!--Unknown TalkSentence: 101013313-->
+<!--Unknown TalkSentence: 101013314-->
+<!--Unknown TalkSentence: 101013315-->
+<!--Unknown TalkSentence: 101013316-->
+<!--Unknown TalkSentence: 101013317-->
+<!--Unknown TalkSentence: 101013318-->
+<!--Unknown TalkSentence: 101013319-->
+<!--Unknown TalkSentence: 101013320-->
+<!--Unknown TalkSentence: 101013321-->
+<!--Unknown TalkSentence: 101013322-->
+<!--Unknown TalkSentence: 101013323-->
+<!--Unknown TalkSentence: 101013324-->
+<!--Unknown TalkSentence: 101013325-->
+<!--Unknown TalkSentence: 101013326-->
+<!--Unknown TalkSentence: 101013327-->
+<!--Unknown TalkSentence: 101013328-->
+<!--Unknown TalkSentence: 101013329-->
+<!--Unknown TalkSentence: 101013330-->
+<!--Unknown TalkSentence: 101013331-->
+<!--Unknown TalkSentence: 101013332-->
+<!--Unknown TalkSentence: 101013333-->
+<!--Unknown TalkSentence: 101013334-->
+<!--Unknown TalkSentence: 101013335-->
+<!--Unknown TalkSentence: 101013336-->
+<!--Unknown TalkSentence: 101013337-->
+<!--Unknown TalkSentence: 101013338-->
+<!--Unknown TalkSentence: 101013339-->
+<!--Unknown TalkSentence: 101013340-->
+<!--Unknown TalkSentence: 101013341-->
+<!--Unknown TalkSentence: 101013342-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101013344-->
+:<!--Unknown TalkSentence: 101013345-->
+:<!--Unknown TalkSentence: 101013346-->
+:<!--Unknown TalkSentence: 101013347-->
+:<!--Unknown TalkSentence: 101013348-->
+:<!--Unknown TalkSentence: 101013349-->
+:<!--Unknown TalkSentence: 101013350-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101013347-->
+:<!--Unknown TalkSentence: 101013348-->
+:<!--Unknown TalkSentence: 101013349-->
+:<!--Unknown TalkSentence: 101013350-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013347-->
+<!--Unknown TalkSentence: 101013348-->
+<!--Unknown TalkSentence: 101013349-->
+<!--Unknown TalkSentence: 101013350-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 101013373-->
+<!--Unknown TalkSentence: 101013374-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013376-->
+<!--Unknown TalkSentence: 101013377-->
+<!--Unknown TalkSentence: 101013378-->
+<!--Unknown TalkSentence: 101013379-->
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 12,
+	"GroupNpcID": 400001
+}</pre>
+
+;(Поговорите с Зеле)
+<!--Unknown TalkSentence: 101013542-->
+<!--Unknown TalkSentence: 101013543-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Броня)
+<!--Unknown TalkSentence: 101013539-->
+<!--Unknown TalkSentence: 101013540-->
+<!--Unknown TalkSentence: 101013541-->
+{{Диалог Конец}}
+
+===Поговорите с жителями Подземья поблизости (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = No Time for Me, My Friend
+|zhs  = 时不我待，我的朋友
+|zht  = 時不我待，我的朋友
+|ja   = 時は待ってくれないぞ、友よ
+|ko   = 시간은 기다려주지 않아, 친구
+|es   = El tiempo no espera, amig{{MC|ж=a|м=o}} mí{{MC|ж=a|м=o}}
+|fr   = Pas de temps pour moi, mon ami
+|ru   = Время не ждёт, мой друг
+|th   = เวลาไม่คอยใครหรอกนะเพื่อน
+|vi   = Này Người Bạn, Thời Gian Không Chờ Đợi Chúng Ta
+|de   = Keine Zeit für mich, mein Freund
+|id   = Tidak Ada Waktu untukku, Temanku
+|pt   = Sem Tempo, Colega
+}}
+
+==История изменений==
+{{История изменений|2.7}}

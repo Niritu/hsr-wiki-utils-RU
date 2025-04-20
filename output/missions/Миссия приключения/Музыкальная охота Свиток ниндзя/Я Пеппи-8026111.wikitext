@@ -1,0 +1,172 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026111
+|Название        = 
+|Изображение     = Миссия Освоения Я Пеппи.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Аста; Лукач; Пеппи; Первопроходец; Робот-рисожар остатков
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Я Пеппи''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Соберите вдохновение, прогулявшись по космической станции
+# Используйте робота-рисожара остатков, чтобы перевести лай Пеппи
+
+==Прохождение==
+{{Дополнить}}
+
+===Соберите вдохновение, прогулявшись по космической станции===
+{{Описание миссии|локация=Главная контрольная зона|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по Главной контрольной зоне, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G155)
+<!--Unknown TalkSentence: 802611101-->
+:<!--Unknown TalkSentence: 802611102-->
+:<!--Unknown TalkSentence: 802611103-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 802611156-->
+
+{{Диалог Конец}}
+
+===Используйте робота-рисожара остатков, чтобы перевести лай Пеппи===
+{{Описание миссии|локация=Главная контрольная зона|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита Пеппи. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802611151-->
+<!--Unknown TalkSentence: 802611152-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Робот-рисожар остатков)
+<!--Unknown TalkSentence: 802611418-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; EnterDistrict_G157)
+:{{tx}}
+:<!--Unknown TalkSentence: 802611177-->
+:<!--Unknown TalkSentence: 802611178-->
+:<!--Unknown TalkSentence: 802611179-->
+:<!--Unknown TalkSentence: 802611180-->
+:<!--Unknown TalkSentence: 802611181-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802611183-->
+::<!--Unknown TalkSentence: 802611184-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802611185-->
+:<!--Unknown TalkSentence: 802611186-->
+:<!--Unknown TalkSentence: 802611187-->
+:<!--Unknown TalkSentence: 802611188-->
+:<!--Unknown TalkSentence: 802611189-->
+:<!--Unknown TalkSentence: 802611190-->
+:<!--Unknown TalkSentence: 802611191-->
+:<!--Unknown TalkSentence: 802611192-->
+:<!--Unknown TalkSentence: 802611193-->
+:<!--Unknown TalkSentence: 802611194-->
+:<!--Unknown TalkSentence: 802611195-->
+:<!--Unknown TalkSentence: 802611196-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802611198-->
+::{{tx}}
+
+;(Поговорите с Робот-рисожар остатков)
+<!--Unknown TalkSentence: 802611418-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 802611201-->
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802611108,
+	"MessageSectionID": 1310000,
+	"ShowNotice": false
+}</pre>
+<!--Unknown TalkSentence: 802611206-->
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802611109,
+	"MessageSectionID": 1310100
+}</pre>
+<!--Unknown TalkSentence: 802611211-->
+<!--Unknown TalkSentence: 802611212-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = I Am Peppy
+|zhs  = 我是佩佩
+|zht  = 我是佩佩
+|ja   = ペペだワン
+|ko   = 나는야 페피
+|es   = Yo soy Peppy
+|fr   = Moi c'est Peppy
+|ru   = Я Пеппи
+|th   = ฉันชื่อ Peppy
+|vi   = Tôi Là Peppy
+|de   = Ich bin Peppy
+|id   = Aku Peppy
+|pt   = Eu Sou o Peppy
+}}
+
+==История изменений==
+{{История изменений|2.7}}

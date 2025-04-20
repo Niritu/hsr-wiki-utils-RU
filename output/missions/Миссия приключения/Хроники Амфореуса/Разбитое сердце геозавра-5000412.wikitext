@@ -1,0 +1,286 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000412
+|Название        = 
+|Изображение     = Миссия Освоения Разбитое сердце геозавра.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[Зеркальное отражение ведьмы]]''
+|Персонажи       = Бродячий рапсод; Господин смотритель; Дружелюбный кремносец; Кокобо III; Красивая самка геозавра; Первопроходец; Покинутый самец геозавра; Радикальный кремносец; Разумная кремноска
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''Разбитое сердце геозавра''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Испытайте удачу на пути геозавров
+# Встретьтесь со смотрителем и поищите решение
+# Попробуйте утешить геозавра
+# Ещё раз встретьтесь со смотрителем и обсудите планы
+# Остановите мчащегося геозавра
+# Посмотрите продолжение событий у ворот Охемы
+
+==Прохождение==
+{{Дополнить}}
+
+===Испытайте удачу на пути геозавров===
+{{Описание миссии|локация=Вечный священный город Охема|Поговаривают, что в Охеме невезучих людей сносят с ног геозавры. А вы из этих счастливчиков?}}
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":797,"DynamicName":{"Value":"PlayerBeingHit_5000412"},"CompareType":"Equal","CompareValue":1}-->}})
+----
+<!--Unknown TalkSentence: 500077001-->
+<!--Unknown TalkSentence: 500077002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; MovePause)
+<pre>{
+	"$type": "RPG.GameCore.FormationMovePause",
+	"StreamId": 825
+}</pre>
+
+;(Unused &mdash; MoveResume)
+<pre>{
+	"$type": "RPG.GameCore.FormationMoveResume",
+	"StreamId": 825
+}</pre>
+
+;(Unused &mdash; Maze_Riding_SwitchRun_Off)
+<pre>{
+	"$type": "RPG.GameCore.FormationMoveSetStreamSpeed",
+	"StreamId": 825,
+	"Speed": 0.6
+}</pre>
+
+;(Unused &mdash; Maze_Riding_SwitchRun_On)
+<pre>{
+	"$type": "RPG.GameCore.FormationMoveSetStreamSpeed",
+	"StreamId": 825,
+	"Speed": 1.6
+}</pre>
+
+;(Unused &mdash; TriggerPerformance_500041201)
+<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 797,
+	"DynamicName": {
+		"Value": "PlayerBeingHit_5000412"
+	},
+	"Value": 1
+}</pre>
+{{Диалог Конец}}
+
+===Встретьтесь со смотрителем и поищите решение===
+{{Описание миссии|локация=Вечный священный город Охема|Пусть вас и компенсация привлекла, но прошлое геозавра выяснить всё же стоит. Только сначала вам нужно его успокоить.}}
+{{Диалог Начало}}
+
+;(Поговорите с Бродячий рапсод)
+<!--Unknown TalkSentence: 500078107-->
+<!--Unknown TalkSentence: 500078108-->
+----
+<!--Unknown TalkSentence: 500077101-->
+<!--Unknown TalkSentence: 500077102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Попробуйте утешить геозавра===
+{{Описание миссии|локация=Вечный священный город Охема|А теперь попробуйте успокоить опечаленного геозавра.}}
+{{Диалог Начало}}
+
+;(Поговорите с Господин смотритель)
+<!--Unknown TalkSentence: 500077201-->
+<!--Unknown TalkSentence: 500077202-->
+<!--Unknown TalkSentence: 500077203-->
+<!--Unknown TalkSentence: 500077204-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500077206-->
+:<!--Unknown TalkSentence: 500077207-->
+:<!--Unknown TalkSentence: 500077208-->
+:<!--Unknown TalkSentence: 500077209-->
+:<!--Unknown TalkSentence: 500077210-->
+:<!--Unknown TalkSentence: 500077211-->
+:<!--Unknown TalkSentence: 500077212-->
+:<!--Unknown TalkSentence: 500077213-->
+:<!--Unknown TalkSentence: 500077214-->
+:<!--Unknown TalkSentence: 500077215-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500077210-->
+:<!--Unknown TalkSentence: 500077211-->
+:<!--Unknown TalkSentence: 500077212-->
+:<!--Unknown TalkSentence: 500077213-->
+:<!--Unknown TalkSentence: 500077214-->
+:<!--Unknown TalkSentence: 500077215-->
+:;(Return to previous option selection)
+
+
+;(Поговорите с Господин смотритель)
+<!--Unknown TalkSentence: 500077301-->
+<!--Unknown TalkSentence: 500077302-->
+<!--Unknown TalkSentence: 500077303-->
+<!--Unknown TalkSentence: 500077304-->
+<!--Unknown TalkSentence: 500077305-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+
+;(Поговорите с Господин смотритель)
+<!--Unknown TalkSentence: 500077401-->
+<!--Unknown TalkSentence: 500077402-->
+<!--Unknown TalkSentence: 500077403-->
+<!--Unknown TalkSentence: 500077404-->
+<!--Unknown TalkSentence: 500077405-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+{{Диалог Конец}}
+
+===Ещё раз встретьтесь со смотрителем и обсудите планы===
+{{Описание миссии|локация=Вечный священный город Охема|Вы опробовали всё, что можно, но ничего не помогло... Поговорите со смотрителем ещё раз.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 500077501-->
+<!--Unknown TalkSentence: 500077502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; NPCMove_G802_400001)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"GroupId": 802,
+	"PointID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 5
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerAnimState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"AnimStateName": "Run"
+}</pre>
+
+;(Unused &mdash; NPCMove_G802_400002)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400002
+		}
+	},
+	"GroupId": 802,
+	"PointID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 0.8
+}</pre>
+
+;(Unused &mdash; NPCMove_G802_400003)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400003
+		}
+	},
+	"GroupId": 802,
+	"PointID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 0.8
+}</pre>
+
+;(Unused &mdash; NPCMove_G802_400004)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400004
+		}
+	},
+	"GroupId": 802,
+	"PointID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 0.8
+}</pre>
+{{Диалог Конец}}
+
+===Остановите мчащегося геозавра===
+{{Описание миссии|локация=Вечный священный город Охема|А теперь вам придётся вмешаться и остановить этого геозавра!}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 500077601-->
+<!--Unknown TalkSentence: 500077602-->
+<!--Unknown TalkSentence: 500077603-->
+<!--Unknown TalkSentence: 500077604-->
+<!--Unknown TalkSentence: 500077605-->
+<!--Unknown TalkSentence: 500077606-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Посмотрите продолжение событий у ворот Охемы===
+{{Описание миссии|локация=Вечный священный город Охема|Некоторые из жителей Кремноса собираются вернуться домой и хотят забрать с собой этого геозавра. Посмотрите, как будут развиваться события.}}
+{{Диалог Начало}}
+
+;(Поговорите с Кокобо III)
+<!--Unknown TalkSentence: 500077701-->
+<!--Unknown TalkSentence: 500077702-->
+<!--Unknown TalkSentence: 500077703-->
+<!--Unknown TalkSentence: 500077704-->
+<!--Unknown TalkSentence: 500077705-->
+<!--Unknown TalkSentence: 500077706-->
+<!--Unknown TalkSentence: 500077707-->
+<!--Unknown TalkSentence: 500077708-->
+<!--Unknown TalkSentence: 500077709-->
+<!--Unknown TalkSentence: 500077710-->
+<!--Unknown TalkSentence: 500077711-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+<!--Unknown TalkSentence: 500078101-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Heartbroken Dromas
+|zhs  = 失恋的大地兽
+|zht  = 失戀的大地獸
+|ja   = 恋に破れた大地獣
+|ko   = 실연당한 드로마스
+|es   = Droma con el corazón partío
+|fr   = Draka au cœur brisé
+|ru   = Разбитое сердце геозавра
+|th   = อสูรธรณีอกหัก
+|vi   = Thú Đại Địa Thất Tình
+|de   = Droma mit Liebeskummer
+|id   = Dromas yang Patah Hati
+|pt   = Dromas de Coração Partido
+}}
+
+==История изменений==
+{{История изменений|3.2}}

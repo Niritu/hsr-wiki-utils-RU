@@ -1,0 +1,92 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340172
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Персонажи       = Первопроходец; Янусов конь
+|СтартЛокация    = Святилище предсказаний Янусополиса
+|Мир             = Амфореус
+|Локации         = Святилище предсказаний Янусополиса
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Конденсированный эфир*2; Кредиты*3 000
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Янусов конь)
+<!--Unknown TalkSentence: 434147001-->
+:<!--Unknown TalkSentence: 434147002-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_TrojanCtrl"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+::<!--Unknown TalkSentence: 434147101-->
+::<!--Unknown TalkSentence: 434147102-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 434147005-->
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434017202
+				}
+			]
+		}
+	]
+}</pre>
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.1}}

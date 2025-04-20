@@ -1,0 +1,360 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015102
+|Название        = 
+|Изображение     = Миссия Освоения Проницательность.png
+|Тип             = Продолжение Освоения
+|События         = Лисья история о привидениях
+|Глава           = Лисья история о привидениях
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Встреча в Саду безмятежности II]]''
+|Персонажи       = Всполох; Гуйнайфэнь; Первопроходец; Сушан; Фу Сюань; Ханья; Хохо; Цзин Юань; Цинцюэ; Циррус
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = Встреча в Саду безмятежности II
+|Следующая       = 
+|Награды         = Опыт Освоения*500; Звёздный нефрит*50; Путеводитель путешественника*5; Утраченный кристалл*3; Кредиты*50 000
+}}
+'''Проницательность''' — Событие [[Продолжение Освоения]] из события [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|Благодаря Цинцюэ Фу Сюань удалось справиться с фатализмом Всполоха. Теперь она ещё больше предана искусству предсказания.<br />Вы запечатали Всполоха в башне подавления и исполнили свой долг Охотника за привидениями.}}
+
+==Этапы==
+# Выудите из Циррус информацию
+# Встретьтесь с Цинцюэ у входа в Комиссию по предсказаниям
+# Войдите в Комиссию по предсказаниям и исследуйте аномалию
+# Поговорите с Фу Сюань и попытайтесь её разбудить
+# Поговорите с Гуйнайфэнь и сделайте пост на «Страшилках Лофу», чтобы сообщить, что аномалия устранена
+# Запечатайте хелиоби в башне подавления
+# Поговорите с Ханья о том, как обстоят дела в последнее время
+# Позвоните в гармонический колокольчик и поговорите с Фу Сюань
+# Разбудите Фу Сюань силой
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "HeliobusSNSDetailDialog"
+}</pre>
+<!--Unknown TalkSentence: 815103901-->
+<!--Unknown TalkSentence: 815103902-->
+<!--Unknown TalkSentence: 815103903-->
+<!--Unknown TalkSentence: 815103904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103906-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+----
+{{Диалог Конец}}
+
+===Выудите из Циррус информацию===
+{{Описание миссии|локация=Сад безмятежности|Безусловно, лучше всего знакомы с характером и привычками хелиоби - другие хелиоби, заключённые в Печи. Поскольку договор о проведении поединка с генералом всё ещё в силе, сейчас Циррус является идеальным источником информации. Спросите у неё про хелиоби из Комиссии по предсказаниям.}}
+{{Диалог Начало}}
+
+;(Поговорите с Циррус)
+<!--Unknown TalkSentence: 815104001-->
+<!--Unknown TalkSentence: 815104002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815104005-->
+:<!--Unknown TalkSentence: 815104006-->
+:<!--Unknown TalkSentence: 815104007-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815104007-->
+<!--Unknown TalkSentence: 815104008-->
+:{{tx}}
+:{{tx}}
+<!--Unknown TalkSentence: 815104101-->
+<!--Unknown TalkSentence: 815104102-->
+<!--Unknown TalkSentence: 815104103-->
+<!--Unknown TalkSentence: 815104104-->
+<!--Unknown TalkSentence: 815104105-->
+<!--Unknown TalkSentence: 815104106-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Встретьтесь с Цинцюэ у входа в Комиссию по предсказаниям===
+{{Описание миссии|локация=Комиссия по предсказаниям|Встретьтесь с Цинцюэ в назначенном месте и расспросите её о ситуации в Комиссии по предсказаниям... а также о том, чем вы можете помочь.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цинцюэ)
+:{{tx}}
+<!--Unknown TalkSentence: 815104201-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 815104203-->
+<!--Unknown TalkSentence: 815104204-->
+----
+{{Диалог Конец}}
+
+===Войдите в Комиссию по предсказаниям и исследуйте аномалию===
+{{Описание миссии|локация=Комиссия по предсказаниям|Сердце жуткой аномалии находится в центре Высшей матрицы предвидения. Пойдите с Цинцюэ и посмотрите, что произошло.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 187
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 815105513-->
+<!--Unknown TalkSentence: 815105514-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"EnableFactor": true,
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+<!--Unknown TalkSentence: 815104401-->
+<!--Unknown TalkSentence: 815104402-->
+<!--Unknown TalkSentence: 815104403-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 125
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 815105900-->
+<!--Unknown TalkSentence: 815105901-->
+<!--Unknown TalkSentence: 815105902-->
+<!--Unknown TalkSentence: 815105903-->
+<!--Unknown TalkSentence: 815105904-->
+<!--Unknown TalkSentence: 815105905-->
+<!--Unknown TalkSentence: 815105906-->
+<!--Unknown TalkSentence: 815105907-->
+<!--Unknown TalkSentence: 815105908-->
+<!--Unknown TalkSentence: 815105909-->
+<!--Unknown TalkSentence: 815105910-->
+<!--Unknown TalkSentence: 815105911-->
+<!--Unknown TalkSentence: 815105912-->
+<!--Unknown TalkSentence: 815105913-->
+<!--Unknown TalkSentence: 815105914-->
+<!--Unknown TalkSentence: 815105915-->
+<!--Unknown TalkSentence: 815105916-->
+<!--Unknown TalkSentence: 815105917-->
+<!--Unknown TalkSentence: 815105918-->
+<!--Unknown TalkSentence: 815105919-->
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 125
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"Visible": true
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Фу Сюань и попытайтесь её разбудить===
+{{Описание миссии|локация=Комиссия по предсказаниям|Кажется, Фу Сюань зашла в тупик в тщетных попытках доказать, что если всё предопределено, усилия бесполезны. Вы и Охотники за привидениями решаете воспользоваться этим приглашением как ключом к загадке.<br />Продолжайте беседовать с Фу Сюань - может, получится пробудить её?}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Гуйнайфэнь и сделайте пост на «Страшилках Лофу», чтобы сообщить, что аномалия устранена===
+{{Описание миссии|локация=Комиссия по предсказаниям|После успешного изгнания хелиоби из Фу Сюань ваша следующая задача - рассказать об этой победе на «Страшилках Лофу». Однако во избежание паники вы должны не только приуменьшить степень опасности этого инцидента, но и сделать акцент на победе Охотников за привидениями. Задание по написанию такой публикации ничуть не легче, чем изгнание хелиоби!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; PropTrigger_801510201)
+
+
+;(Unused &mdash; Talk_801510256)
+
+:{{tx}}
+----
+{{Диалог Конец}}
+
+===Запечатайте хелиоби в башне подавления===
+{{Описание миссии|локация=Сад безмятежности|Хороший хелиоби - пойманный хелиоби. И место ему в башне подавления Сада безмятежности.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите с Ханья о том, как обстоят дела в последнее время===
+{{Описание миссии|локация=Сад безмятежности|Госпожа Ханья в одиночку организовала отряд Охотников за привидениями. Доложите ей о ситуации в Комиссии по предсказаниям.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цзин Юань)
+<!--Unknown TalkSentence: 815105301-->
+
+;(Поговорите с Ханья)
+<!--Unknown TalkSentence: 815105101-->
+<!--Unknown TalkSentence: 815105102-->
+<!--Unknown TalkSentence: 815105103-->
+<!--Unknown TalkSentence: 815105104-->
+<!--Unknown TalkSentence: 815105105-->
+<!--Unknown TalkSentence: 815105106-->
+<!--Unknown TalkSentence: 815105107-->
+<!--Unknown TalkSentence: 815105108-->
+<!--Unknown TalkSentence: 815105109-->
+<!--Unknown TalkSentence: 815105110-->
+<!--Unknown TalkSentence: 815105111-->
+<!--Unknown TalkSentence: 815105112-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1220600
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1220600
+}</pre>
+{{Диалог Конец}}
+
+===Позвоните в гармонический колокольчик и поговорите с Фу Сюань===
+{{Описание миссии|локация=Комиссия по предсказаниям|Используйте священное изделие Комиссии десяти владык, гармонический колокольчик, чтобы попасть в иллюзию, которую видят Фу Сюань и хелиоби, и попытайтесь поговорить с Фу Сюань. И Верховная провидица, и Матрица предвидения остаются неподвижными; кажется, что все вокруг неё одержимы. Может ли это быть вызвано хелиоби?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Joyful",
+	"SubMissionID": 801510208
+}</pre>
+<!--Unknown TalkSentence: 815104501-->
+<!--Unknown TalkSentence: 815104502-->
+<!--Unknown TalkSentence: 815104503-->
+<!--Unknown TalkSentence: 815104504-->
+<!--Unknown TalkSentence: 815104505-->
+<!--Unknown TalkSentence: 815104506-->
+<!--Unknown TalkSentence: 815104507-->
+<!--Unknown TalkSentence: 815104508-->
+<!--Unknown TalkSentence: 815104509-->
+<!--Unknown TalkSentence: 815104510-->
+<!--Unknown TalkSentence: 815104511-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815104513-->
+:<!--Unknown TalkSentence: 815104514-->
+:<!--Unknown TalkSentence: 815104515-->
+:<!--Unknown TalkSentence: 815104516-->
+:<!--Unknown TalkSentence: 815104517-->
+:<!--Unknown TalkSentence: 815104518-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815104515-->
+:<!--Unknown TalkSentence: 815104516-->
+:<!--Unknown TalkSentence: 815104517-->
+:<!--Unknown TalkSentence: 815104518-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815104517-->
+:<!--Unknown TalkSentence: 815104518-->
+::{{tx}}
+<!--Unknown TalkSentence: 815104517-->
+<!--Unknown TalkSentence: 815104518-->
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"EnableFactor": true,
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+<!--Unknown TalkSentence: 815104601-->
+<!--Unknown TalkSentence: 815104602-->
+<!--Unknown TalkSentence: 815104603-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20221_F20221001_G187",
+	"AnchorName": "Anchor6",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 815104604-->
+<!--Unknown TalkSentence: 815104605-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 815104401-->
+<!--Unknown TalkSentence: 815104402-->
+<!--Unknown TalkSentence: 815104403-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 815104405-->
+<!--Unknown TalkSentence: 815104406-->
+<!--Unknown TalkSentence: 815104407-->
+<!--Unknown TalkSentence: 815104408-->
+<!--Unknown TalkSentence: 815104409-->
+{{Диалог Конец}}
+
+===Разбудите Фу Сюань силой===
+{{Описание миссии|локация=Комиссия по предсказаниям|Поскольку Верховная провидица сейчас сама не своя, вы можете легонько разбудить её с помощью бейсбольной биты, которую держите в руке. Это тоже своего рода экзорцизм.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"EnableFactor": true,
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+----
+<!--Unknown TalkSentence: 815104616-->
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+;(Enter battle)
+:{{Enemy List|Зачарованное изобретение: покорный лев-дракон*1/+100% НР; Зачарованное изобретение: светящаяся рыба-дракон*2/+100% НР; Зачарованное изобретение: облачная золотая жаба*1/+100% НР}}
+:<!--0.1-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Percipient
+|zhs  = 犀照
+|zht  = 犀照
+|ja   = 犀照
+|ko   = 서조(犀照)
+|es   = Percepción
+|fr   = Perspicace
+|ru   = Проницательность
+|th   = จุดสังเกต
+|vi   = Trực Giác
+|de   = Einsicht
+|id   = Mempersepsi
+|pt   = Perceptiva
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,564 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027204
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Великолепные портреты Искорки.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = «Кукла Искорки»; Март 7; Первопроходец
+|СтартЛокация    = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Мир             = Пенакония
+|Локации         = «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*60; Очищенный эфир*4; Nourishing Honey*3; Кредиты*30 000
+}}
+'''Выставка фотографий: Великолепные портреты Искорки''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Обсудите тему дня с Март 7
+# Сфотографируйте куклу Искорки анфас
+# Обсудите фотографию с Март 7
+# Пригласите Март 7 в комнату отдыха
+# Сделайте фотографию Март 7
+# Обсудите фотографию с Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+===Обсудите тему дня с Март 7===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Сегодняшняя тема довольно странная... Обсудите её с Март 7, прежде чем делать снимки.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G333)
+:{{tx}}
+:<!--Unknown TalkSentence: 802722701-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802722703-->
+::<!--Unknown TalkSentence: 802722704-->
+::<!--Unknown TalkSentence: 802722705-->
+::<!--Unknown TalkSentence: 802722708-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802722705-->
+::<!--Unknown TalkSentence: 802722708-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 802722705-->
+:<!--Unknown TalkSentence: 802722708-->
+::{{tx}}
+:<!--2.5-second delay-->
+<!--Unknown TalkSentence: 802722423-->
+<!--Unknown TalkSentence: 802722424-->
+{{Диалог Конец}}
+
+===Сфотографируйте куклу Искорки анфас===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "802720401_1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "802720401_2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "802720401_3"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true,
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 334
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+
+;(Unused &mdash; 802720401_1)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300004
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; 802720401_2)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300005
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; 802720401_3)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300007
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300004
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 334
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300007
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 334
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Съёмка завершена, но кукла Искорки издаёт странный звук...}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802722751-->
+<!--Unknown TalkSentence: 802722752-->
+<!--Unknown TalkSentence: 802722753-->
+<!--Unknown TalkSentence: 802722754-->
+<!--Unknown TalkSentence: 802722755-->
+<!--Unknown TalkSentence: 802722756-->
+<!--Unknown TalkSentence: 802722757-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Пригласите Март 7 в комнату отдыха===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Искорка подарила вам странный объектив. Для чего он?<br />Вы с Март 7 решаете поэкспериментировать в комнате отдыха.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G336)
+:{{tx}}
+:<!--Unknown TalkSentence: 802722801-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802722426-->
+{{Диалог Конец}}
+
+===Сделайте фотографию Март 7===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Искорка подарила вам странный объектив. Для чего он?<br />Опробуйте эффект объектива-калейдоскопа на Март 7.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString_G337)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "802720407_1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "802720407_2"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true,
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 337
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+
+;(Unused &mdash; 802720407_1)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 337
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; 802720407_2)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 337
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinishCustomString_G337)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 337
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 337
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 337
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "High",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 802722851-->
+:{{Диалог|Стрелка}} undefined
+:;(If {{F|MissionCV-8027204-1}} is equal to 2)
+:;(If {{F|MissionCV-8027204-1}} is not equal to 2)
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802722855-->
+:<!--Unknown TalkSentence: 802722856-->
+:<!--Unknown TalkSentence: 802722857-->
+<!--Unknown TalkSentence: 802722858-->
+<!--Unknown TalkSentence: 802722859-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Sparkle's Splendiferous Memoir
+|zhs  = 摄影展览•花火的绚丽写真
+|zht  = 攝影展覽•花火的絢麗寫真
+|ja   = フォトコンテスト・花火の華麗な写真
+|ko   = 사진 콘테스트•스파클의 아름다운 사진
+|es   = Exposición de fotografía: el magnífico retrato de Sparkle
+|fr   = Exposition photo&nbsp;: Portrait de la grande Sparkle
+|ru   = Выставка фотографий: Великолепные портреты Искорки
+|th   = นิทรรศการภาพถ่าย: ภาพอันงดงามของ Sparkle
+|vi   = Triển Lãm Nhiếp Ảnh-Chân Dung Rực Rỡ Sparkle
+|de   = Fotoausstellung: Prachtvolles Porträt von Sparkle
+|id   = Pameran Fotografi: Potret Kecantikan Sparkle
+|pt   = Exibição de Fotografia: Memorial Magnífico da Sparkle
+}}
+
+==История изменений==
+{{История изменений|2.7}}

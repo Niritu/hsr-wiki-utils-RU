@@ -1,0 +1,575 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1011503
+|Название        = 
+|Изображение     = Миссия Освоения Тишина галактики.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Под палящим рассветным солнцем
+|Условия         = Завершена [[Миссия Освоения]] ''[[Время не ждёт, мой друг]]''
+|Персонажи       = Вельт; Дань Хэн; Клара; Март 7; Пела; Первопроходец; Пом-Пом; Сервал; Химеко; Хук
+|СтартЛокация    = Форт Клипота
+|Мир             = Ярило-VI
+|Локации         = Форт Клипота
+|Предыдущая      = Время не ждёт, мой друг
+|Следующая       = Неожиданное приглашение
+|Награды         = Опыт Освоения*150; Журнал приключений*4; "A Trap With No Return"*1 { text = A Trap With No Return }; "Wildfire"*1 { text = Wildfire }; Кредиты*8 000
+}}
+'''Тишина галактики''' — [[Миссия Освоения]] в главе [[Под палящим рассветным солнцем]].
+
+==Описание==
+{{Описание|Экспедиция Первопроходцев на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Что-то кончается - что-то начинается. Просим всех занять свои места, Звёздный экспресс скоро отправляется!}}
+
+==Этапы==
+# Сфотографируйте на память Монумент вечнозимья
+# Покажите фотографии Пеле и Хук
+# Сфотографируйте на память мастерскую «Незимье»
+# Покажите фотографии Сервал и Кларе
+# Поговорите с жителями Белобога (необязательно)
+# Вернитесь в гостиницу и отдохните... И на этот раз без происшествий!
+# Встретьтесь с напарниками и подготовьтесь к отбытию
+# Попрощайтесь с Белобогом
+# Поговорите с Химеко и Вельтом
+# Поговорите с Химеко о том, что вы видели
+# Поговорите с Вельтом о том, что вы видели
+# Поговорите с Пом-Пом и готовьтесь к следующей части путешествия
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Сфотографируйте на память Монумент вечнозимья===
+{{Описание миссии|локация=Форт Клипота|Пыль осела, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Вы попрощались с Броней, но перед отбытием с Ярило-VI выяснилось, что у Март 7 остались незавершённые дела...<br />Побродите по городу ещё раз и запечатлейте на память людей и предметы.}}
+{{Диалог Начало}}
+
+<!--Unknown TalkSentence: 101013401-->
+<!--Unknown TalkSentence: 101013402-->
+<!--Unknown TalkSentence: 101013403-->
+<!--Unknown TalkSentence: 101013404-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 96
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 101013446-->
+<!--Unknown TalkSentence: 101013447-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 96
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 96
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"WaitAll": true,
+	"OnIdentifyFinish": [],
+	"OnIdentifyFailed": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 96
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150206,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400001
+					},
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400002
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 96
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400001
+					},
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400002
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 96
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"WaitAll": true,
+	"OnIdentifyFinish": [],
+	"OnIdentifyFailed": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_101150206_CameraSuccess02"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400001
+					},
+					{
+						"GroupID": 96,
+						"GroupNpcID": 400002
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 96
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"AimIdentifyType": "Manual"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150206,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+;(If {{F|MissionCV-1011503-undefined}} is equal to 1)
+;(If {{F|MissionCV-1011503-undefined}} is equal to 2)
+{{Диалог Конец}}
+
+===Покажите фотографии Пеле и Хук===
+{{Описание миссии|локация=Административный район|Вы сфотографировали Монумент вечнозимья, а заодно Пелу и Хук.<br />Кажется, Март 7 довольна вашими фотографиями... Узнайте, что думают девушки со снимка.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пела)
+----
+<!--Unknown TalkSentence: 101013501-->
+<!--Unknown TalkSentence: 101013502-->
+<!--Unknown TalkSentence: 101013503-->
+<!--Unknown TalkSentence: 101013504-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013506-->
+<!--Unknown TalkSentence: 101013507-->
+<!--Unknown TalkSentence: 101013508-->
+<!--Unknown TalkSentence: 101013509-->
+<!--Unknown TalkSentence: 101013510-->
+----
+{{Диалог Конец}}
+
+===Сфотографируйте на память мастерскую «Незимье»===
+{{Описание миссии|локация=Мастерская «Незимье»|Пыль осела, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Вы попрощались с Броней, но перед отбытием с Ярило-VI выяснилось, что у Март 7 остались незавершённые дела...<br />Побродите по городу ещё раз и запечатлейте на память людей и предметы.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101013452-->
+<!--Unknown TalkSentence: 101013453-->
+<!--Unknown TalkSentence: 101013454-->
+<!--Unknown TalkSentence: 101013455-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101013458-->
+<!--Unknown TalkSentence: 101013459-->
+<!--Unknown TalkSentence: 101013460-->
+<!--Unknown TalkSentence: 101013461-->
+<!--Unknown TalkSentence: 101013450-->
+<!--Unknown TalkSentence: 101013451-->
+{{Диалог Конец}}
+
+===Покажите фотографии Сервал и Кларе===
+{{Описание миссии|локация=Мастерская «Незимье»|Вы сделали групповой снимок Сервал и Клары в мастерской.<br />Групповой снимок означает, что на фото должны быть как минимум обе... Вы же это понимаете, верно?}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Клара)
+----
+<!--Unknown TalkSentence: 101013463-->
+<!--Unknown TalkSentence: 101013464-->
+<!--Unknown TalkSentence: 101013465-->
+<!--Unknown TalkSentence: 101013466-->
+<!--Unknown TalkSentence: 101013467-->
+<!--Unknown TalkSentence: 101013472-->
+<!--Unknown TalkSentence: 101013473-->
+<!--Unknown TalkSentence: 101013474-->
+<!--Unknown TalkSentence: 101013475-->
+----
+{{Диалог Конец}}
+
+===Поговорите с жителями Белобога (необязательно)===
+{{Диалог Начало}}
+
+----
+<!--Unknown TalkSentence: 101013476-->
+<!--Unknown TalkSentence: 101013477-->
+<!--Unknown TalkSentence: 101013478-->
+<!--Unknown TalkSentence: 101013479-->
+<!--Unknown TalkSentence: 101013480-->
+<!--Unknown TalkSentence: 101013481-->
+----
+{{Диалог Конец}}
+
+===Вернитесь в гостиницу и отдохните... И на этот раз без происшествий!===
+{{Описание миссии|локация=Комната отеля|История подошла к концу, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Вы провели последние свободные деньки в Белобоге, и настало время...<br />...вернуться в отель и хорошенько выспаться. Эй, это была идея Март 7!}}
+{{Диалог Начало}}
+
+:{{tx}}
+<!--Unknown TalkSentence: 101013423-->
+{{Диалог Конец}}
+
+===Встретьтесь с напарниками и подготовьтесь к отбытию===
+{{Описание миссии|локация=Коридор отеля|Пыль осела, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Вы провели спокойную ночь в отеле «Гёте». Хоть вам и снились смутные сны, но вы неплохо выспались.<br />Встретьтесь с Март 7 и Дань Хэном. На этот раз действительно пора возвращаться на экспресс.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 101013424-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 101013426-->
+<!--Unknown TalkSentence: 101013431-->
+<!--Unknown TalkSentence: 101013432-->
+----
+{{Диалог Конец}}
+
+===Попрощайтесь с Белобогом===
+{{Описание миссии|локация=Административный район|Пыль осела, Броня стала хранительницей, а Подземье и Надмирье вновь соединились, образуя целостный Белобог.<br />Взгляните в последний раз на этот мир, на этот город - может быть, он не так одинок и холоден.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 101013482-->
+<!--Unknown TalkSentence: 101013483-->
+<!--Unknown TalkSentence: 101013484-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 101150221
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Химеко и Вельтом===
+{{Описание миссии|локация=Общий вагон|Первопроходческая экспедиция на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Вы попрощались с новыми друзьями и вернулись на экспресс.<br />Пора узнать у Химеко и Вельта, как там обстановка на поезде.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 100003101-->
+<!--Unknown TalkSentence: 100003102-->
+<!--Unknown TalkSentence: 100003103-->
+<!--Unknown TalkSentence: 100003104-->
+<!--Unknown TalkSentence: 100003105-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100003107-->
+:<!--Unknown TalkSentence: 100003108-->
+:<!--Unknown TalkSentence: 100003109-->
+:<!--Unknown TalkSentence: 100003110-->
+:<!--Unknown TalkSentence: 100003111-->
+:<!--Unknown TalkSentence: 100003112-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100003109-->
+:<!--Unknown TalkSentence: 100003110-->
+:<!--Unknown TalkSentence: 100003111-->
+:<!--Unknown TalkSentence: 100003112-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100003111-->
+:<!--Unknown TalkSentence: 100003112-->
+::{{tx}}
+<!--Unknown TalkSentence: 100003111-->
+<!--Unknown TalkSentence: 100003112-->
+:{{tx}}
+
+;(Поговорите с Пом-Пом)
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Поговорите с Химеко)
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 100003103-->
+<!--Unknown TalkSentence: 100003104-->
+<!--Unknown TalkSentence: 100003105-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 100003107-->
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 100003112-->
+<!--Unknown TalkSentence: 100003113-->
+<!--Unknown TalkSentence: 100003114-->
+<!--Unknown TalkSentence: 100003115-->
+<!--Unknown TalkSentence: 100003116-->
+<!--Unknown TalkSentence: 100003117-->
+<!--Unknown TalkSentence: 100003118-->
+<!--Unknown TalkSentence: 100003119-->
+<!--Unknown TalkSentence: 100003120-->
+<!--Unknown TalkSentence: 100003121-->
+<!--Unknown TalkSentence: 100003122-->
+<!--Unknown TalkSentence: 100003123-->
+<!--Unknown TalkSentence: 100003124-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 100003176-->
+:<!--Unknown TalkSentence: 100003177-->
+:<!--Unknown TalkSentence: 100003178-->
+:<!--Unknown TalkSentence: 100003179-->
+:<!--Unknown TalkSentence: 100003180-->
+:<!--Unknown TalkSentence: 100003181-->
+:<!--Unknown TalkSentence: 100003182-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.LockCurrentTeleportAction"
+}</pre>
+<!--Unknown TalkSentence: 100003177-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+<!--Unknown TalkSentence: 100003101-->
+<!--Unknown TalkSentence: 100003102-->
+{{Диалог Конец}}
+
+===Поговорите с Химеко о том, что вы видели===
+{{Описание миссии|локация=Общий вагон|Первопроходческая экспедиция на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Химеко с Вельтом очень хвалили ваши результаты.<br />Можете продолжить разговор с Химеко и узнать, нет ли у неё ответов на вопросы, которые всё не дают вам покоя.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 100003125-->
+<!--Unknown TalkSentence: 100003126-->
+<!--Unknown TalkSentence: 100003127-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Поговорите с Вельтом о том, что вы видели===
+{{Описание миссии|локация=Общий вагон|Первопроходческая экспедиция на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Химеко с Вельтом очень хвалили ваши результаты.<br />Можете продолжить разговор с Вельтом и узнать, нет ли у него ответов на вопросы, которые всё не дают вам покоя.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 100003157-->
+<!--Unknown TalkSentence: 100003158-->
+<!--Unknown TalkSentence: 100003159-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Поговорите с Пом-Пом и готовьтесь к следующей части путешествия===
+{{Описание миссии|локация=Общий вагон|Первопроходческая экспедиция на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Что-то кончается - что-то начинается.<br />Поговорите с проводником и узнайте, когда получится начать следующую главу ваших приключений.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 100003176-->
+<!--Unknown TalkSentence: 100003177-->
+<!--Unknown TalkSentence: 100003178-->
+<!--Unknown TalkSentence: 100003179-->
+<!--Unknown TalkSentence: 100003180-->
+<!--Unknown TalkSentence: 100003181-->
+<!--Unknown TalkSentence: 100003182-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.LockCurrentTeleportAction"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Silent Galaxy
+|zhs  = 静静的星河
+|zht  = 靜靜的星河
+|ja   = 静かな星河
+|ko   = 고요한 은하
+|es   = Galaxia silenciosa
+|fr   = Galaxie silencieuse
+|ru   = Тишина галактики
+|th   = กาแล็กซีที่เงียบสงัด
+|vi   = Ngân Hà Tĩnh Mịch
+|de   = Stille Galaxie
+|id   = Galaksi yang Tenang
+|pt   = Galáxia Silenciosa
+}}
+
+==История изменений==
+{{История изменений|2.7}}

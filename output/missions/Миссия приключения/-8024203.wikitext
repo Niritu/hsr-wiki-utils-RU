@@ -1,0 +1,137 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8024203
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Освоение: Дружба - это чудо
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Старые друзья, новые друзья?]]''
+|Персонажи       = Март 7; Первопроходец; Сумеречная Мусорка
+|СтартЛокация    = Пригородные снежные поля
+|Мир             = Ярило-VI
+|Локации         = Пригородные снежные поля
+|Предыдущая      = Старые друзья, новые друзья?
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба - это чудо]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Unused &mdash; EnterDistrict_G88)
+<!--Unknown TalkSentence: 802440202-->
+:<!--Unknown TalkSentence: 802440203-->
+:<!--Unknown TalkSentence: 802440204-->
+:<!--Unknown TalkSentence: 802440205-->
+:<!--Unknown TalkSentence: 802440206-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802440208-->
+::<!--Unknown TalkSentence: 802440209-->
+::<!--Unknown TalkSentence: 802440210-->
+::<!--Unknown TalkSentence: 802440211-->
+::<!--Unknown TalkSentence: 802440212-->
+::<!--Unknown TalkSentence: 802440213-->
+::<!--Unknown TalkSentence: 802440214-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802440210-->
+::<!--Unknown TalkSentence: 802440211-->
+::<!--Unknown TalkSentence: 802440212-->
+::<!--Unknown TalkSentence: 802440213-->
+::<!--Unknown TalkSentence: 802440214-->
+:<!--Unknown TalkSentence: 802440210-->
+:<!--Unknown TalkSentence: 802440211-->
+:<!--Unknown TalkSentence: 802440212-->
+:<!--Unknown TalkSentence: 802440213-->
+:<!--Unknown TalkSentence: 802440214-->
+
+
+;(Unused &mdash; EnterDistrict_G88)
+<!--Unknown TalkSentence: 802440202-->
+:<!--Unknown TalkSentence: 802440203-->
+:<!--Unknown TalkSentence: 802440204-->
+:<!--Unknown TalkSentence: 802440205-->
+:<!--Unknown TalkSentence: 802440206-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802440208-->
+::<!--Unknown TalkSentence: 802440209-->
+::<!--Unknown TalkSentence: 802440210-->
+::<!--Unknown TalkSentence: 802440211-->
+::<!--Unknown TalkSentence: 802440212-->
+::<!--Unknown TalkSentence: 802440213-->
+::<!--Unknown TalkSentence: 802440214-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802440210-->
+::<!--Unknown TalkSentence: 802440211-->
+::<!--Unknown TalkSentence: 802440212-->
+::<!--Unknown TalkSentence: 802440213-->
+::<!--Unknown TalkSentence: 802440214-->
+:<!--Unknown TalkSentence: 802440210-->
+:<!--Unknown TalkSentence: 802440211-->
+:<!--Unknown TalkSentence: 802440212-->
+:<!--Unknown TalkSentence: 802440213-->
+:<!--Unknown TalkSentence: 802440214-->
+
+:{{Диалог|Журнал путешествий}} Воссоздать «чудо дружбы»
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 802441118-->
+
+;(Поговорите с Сумеречная Мусорка)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Main.ActivitySummonMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 802440302-->
+<!--Unknown TalkSentence: 802440303-->
+<!--Unknown TalkSentence: 802440304-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

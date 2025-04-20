@@ -1,0 +1,272 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030401
+|Название        = 
+|Изображение     = Миссия Освоения Ночь по имени Нежность.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[Благое знамение, мой друг]]''
+|Персонажи       = Ахерон; Главарь банды; Миша; Первопроходец; Светлячок; Часик; Члены банды
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = Благое знамение, мой друг
+|Следующая       = Сквозь тусклое стекло
+|Награды         = Опыт Освоения*900; Звёздный нефрит*110; Путеводитель путешественника*12; Утраченный кристалл*10; Часокредиты*450; "If I Can Stop One Heart From Breaking"*1 { text = If I Could Stop One Heart From Breaking }; Кредиты*100 000
+}}
+'''Ночь по имени Нежность''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|Вы со Светлячком вернулись вместе и помогли Ахерон решить некоторые проблемы. Светлячок честно призналась, что на границе Мира грёз у неё имеется «тайное убежище». Пришла пора прощаться.}}
+
+==Этапы==
+# Следуйте за Светлячком к тайному убежищу
+# Следуйте за Часиком
+# Используйте Заводной механизм против главаря банды
+# Продолжайте следовать за Светлячком к тайному убежищу
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Следуйте за Светлячком к тайному убежищу===
+{{Описание миссии|локация=Золотой миг|Светлячок стоит с очень виноватым видом и хочет отвести вас в другое место. Не к туристической достопримечательности, а в своё «тайное убежище». Там она вам всё объяснит.<br />Идите за ней - кажется, она не замышляет ничего плохого.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040581-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 45,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 103035001
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 45,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 103035002
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 2
+}</pre>
+<!--Unknown TalkSentence: 103040582-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103035001-->
+<!--Unknown TalkSentence: 103035002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035004-->
+:<!--Unknown TalkSentence: 103035005-->
+:<!--Unknown TalkSentence: 103035006-->
+:<!--Unknown TalkSentence: 103035007-->
+:<!--Unknown TalkSentence: 103035008-->
+:<!--Unknown TalkSentence: 103035009-->
+:<!--Unknown TalkSentence: 103035010-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035006-->
+:<!--Unknown TalkSentence: 103035007-->
+:<!--Unknown TalkSentence: 103035008-->
+:<!--Unknown TalkSentence: 103035009-->
+:<!--Unknown TalkSentence: 103035010-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035008-->
+:<!--Unknown TalkSentence: 103035009-->
+:<!--Unknown TalkSentence: 103035010-->
+:;(Return to previous option selection)
+<!--Unknown TalkSentence: 103035151-->
+<!--Unknown TalkSentence: 103035152-->
+<!--Unknown TalkSentence: 103035153-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035157-->
+<!--Unknown TalkSentence: 103035158-->
+<!--Unknown TalkSentence: 103035159-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040580-->
+<!--Unknown TalkSentence: 103040583-->
+{{Диалог Конец}}
+
+===Следуйте за Часиком===
+{{Описание миссии|локация=Золотой миг|Светлячок стоит с очень виноватым видом и хочет отвести вас в другое место. Не к туристической достопримечательности, а в своё «тайное убежище». Там она вам всё объяснит.<br />Вы идёте за ней, но вдруг вас останавливают говорящие часы. Они просят помощи в спасении Миши - коридорного из отеля. Наверное, стоит пойти и посмотреть, что там.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMunicipalChat",
+	"NewMunicipalChatConfigPath": "Config/Level/MunicipalChatConfig/F10301001/MunicipalChatConfig_F10301001_0005.json",
+	"NewMunicipalChatEntityInfos": {
+		"Value": [
+			{
+				"$type": "RPG.GameCore.MunicipalChatEntityInfo",
+				"UniqueName": "1",
+				"GroupInstanceID": 400007
+			},
+			{
+				"$type": "RPG.GameCore.MunicipalChatEntityInfo",
+				"UniqueName": "2",
+				"GroupInstanceID": 400001
+			},
+			{
+				"$type": "RPG.GameCore.MunicipalChatEntityInfo",
+				"UniqueName": "3",
+				"GroupInstanceID": 400002
+			}
+		]
+	},
+	"MunicipalChatName": "MunicipalChatConfig_F10301001_0005"
+}</pre>
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 103040584-->
+<!--Unknown TalkSentence: 103040585-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.StopMunicipalChat",
+	"MunicipalChatName": "MunicipalChatConfig_F10301001_0005"
+}</pre>
+<!--Unknown TalkSentence: 103035031-->
+<!--Unknown TalkSentence: 103035032-->
+<!--Unknown TalkSentence: 103035033-->
+<!--Unknown TalkSentence: 103035034-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035036-->
+:<!--Unknown TalkSentence: 103035037-->
+:<!--Unknown TalkSentence: 103035038-->
+:<!--Unknown TalkSentence: 103035039-->
+:<!--Unknown TalkSentence: 103035040-->
+:<!--Unknown TalkSentence: 103035041-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035038-->
+:<!--Unknown TalkSentence: 103035039-->
+:<!--Unknown TalkSentence: 103035040-->
+:<!--Unknown TalkSentence: 103035041-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103035040-->
+:<!--Unknown TalkSentence: 103035041-->
+::{{tx}}
+<!--Unknown TalkSentence: 103035040-->
+<!--Unknown TalkSentence: 103035041-->
+:{{tx}}
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400008
+		}
+	},
+	"GroupId": 46,
+	"PointID": 4,
+	"MotionFlag": "Run",
+	"AlignRotation": true
+}</pre>
+{{Диалог Конец}}
+
+===Используйте Заводной механизм против главаря банды===
+{{Описание миссии|локация=Золотой миг|Когда Часик приводит вас на место происшествия, вы понимаете, что пострадал не только Миша, но и та Галактический рейнджер с топографическим кретинизмом. Ситуация кажется патовой, поэтому Часик обучают вас особой технике - Заводной механизм. По словам Часика, с её помощью можно «наполнить тело положительными эмоциями». А это точно сработает? Не попробуешь - не узнаешь.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Главарь банды)
+<!--Unknown TalkSentence: 103035251-->
+
+:{{Диалог|Разговор}} Ахерон и Миша
+<!--Unknown TalkSentence: 103040594-->
+<!--Unknown TalkSentence: 103035401-->
+<!--Unknown TalkSentence: 103035402-->
+<!--Unknown TalkSentence: 103035403-->
+<!--Unknown TalkSentence: 103035404-->
+<!--Unknown TalkSentence: 103035405-->
+<!--Unknown TalkSentence: 103035406-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; random_103040105_1)
+:{{tx}}
+::{{tx}}
+
+;(Unused &mdash; random_103040105_2)
+:{{tx}}
+::{{tx}}
+
+;(Unused &mdash; random_103040105_3)
+:{{tx}}
+::{{tx}}
+<!--Unknown TalkSentence: 103040587-->
+{{Диалог Конец}}
+
+===Продолжайте следовать за Светлячком к тайному убежищу===
+{{Описание миссии|локация=Золотой миг|Разобравшись с проблемой Часика, вы прощаетесь со всеми. Вас ждёт тайное убежище Светлячка... Помните?}}
+{{Диалог Начало}}
+
+;(If {{F|FSV_PinBall}} is equal to 0)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(If {{F|FSV_PinBall}} is not equal to 0)
+:;(Return to previous option selection)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040588-->
+
+:{{Диалог|undefined}} 
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040586-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<!--Unknown TalkSentence: 103040101-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 103035451-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Gentleness, the Name of Nocturne
+|zhs  = 夜色名为温柔
+|zht  = 夜色名為溫柔
+|ja   = 優しさという名の夜
+|ko   = 부드러움이라는 이름의 밤
+|es   = Ternura, el nombre de la noche
+|fr   = Nocturne ou la Gentillesse
+|ru   = Ночь по имени Нежность
+|th   = รัตติกาลนามว่าอ่อนโยน
+|vi   = Dịu Dàng Là Tên Của Màn Đêm
+|de   = Sanftheit, genannt Nacht
+|id   = Kelembutan dalam Kegelapan
+|pt   = Gentileza, o Nome do Noturno
+}}
+
+==История изменений==
+{{История изменений|2.7}}

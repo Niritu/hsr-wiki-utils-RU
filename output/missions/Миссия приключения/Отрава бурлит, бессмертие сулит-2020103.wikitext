@@ -1,0 +1,648 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020103
+|Название        = 
+|Изображение     = Миссия Освоения Отрава бурлит, бессмертие сулит.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Звёзд водоворот, прозрение грядёт]]''
+|Персонажи       = Баттута; Воодушевлённый алхимик; Дань Шу; Дахао; Зелёный Гибискус; Неразговорчивый алхимик; Первопроходец; Пурпурная Роза; Робкий алхимик; Странный рыцарь; Сунъянь; Цзинъянь; Цзыцяо; Цинцзу
+|СтартЛокация    = Канцелярия Комиссии по балансу
+|Мир             = Лофу Сяньчжоу
+|Локации         = Канцелярия Комиссии по балансу
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*400; Путеводитель путешественника*2; Кредиты*20 000
+}}
+'''Отрава бурлит, бессмертие сулит''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|В результате напряжённой операции под прикрытием вы мешаете Ученикам Санктус Медикус осуществить свой замысел в Возвышающем святилище. А ещё вы знакомитесь с главным алхимиком Дань Шу, важной фигурой в Комиссии по алхимии. Кажется, она настроена вполне дружелюбно.}}
+
+==Этапы==
+# Отправляйтесь в канцелярию Комиссии по балансу
+# Выслушайте поручение Цинцзу
+# Проверьте, есть ли в Возвышающем святилище кто-нибудь подозрительный
+# Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 0/500
+# Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 1/500
+# Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 2/500
+# Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 3/500
+# Отдайте копию священного писания Зелёному Гибискусу
+# Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 4/500
+# Сразитесь в поединке с чудаком из Облачных Рыцарей
+# Дождитесь сеанса связи с Цинцзу
+# Свяжитесь с Зелёным Гибискусом в Возвышающем святилище
+# Перехватите посылку в Возвышающем святилище, как указано в тайном послании
+# Встретьтесь с лидером Учеников Санктус Медикус в Возвышающем святилище
+# Отправляйтесь в Обитель божественного предвидения и отчитайтесь перед Цинцзу
+# Отправляйтесь в Возвышающее святилище и найдите алхимика, чтобы узнать о фармакологии настойки драконьего перехода
+# Поговорите с Дань Шу
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в канцелярию Комиссии по балансу===
+{{Описание миссии|локация=Канцелярия Комиссии по балансу|Кажется, Дахао искал вас. Возможно, увидев на что вы способны, он попросит вас помочь решить некоторые проблемы.}}
+{{Диалог Начало}}
+
+;(Потеряно {{Item|Недоставленное письмо|20|x=1|text=Недоставленное письмо}})
+
+;(Поговорите с Дахао)
+;(If {{cx}}<!--during performance 502020101-->)
+:<!--Unknown TalkSentence: 502020137-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 502020101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502020136
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Цзинъянь)
+;(If {{cx}}<!--during performance 502032101-->)
+:<!--Unknown TalkSentence: 502032101-->
+:<!--Unknown TalkSentence: 502032102-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032104-->
+::<!--Unknown TalkSentence: 502032105-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032112-->
+::<!--Unknown TalkSentence: 502032113-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032121-->
+;(If {{cx}}<!--not during performance 502032101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502032164
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Сунъянь)
+;(If {{cx}}<!--during performance 502033101-->)
+:<!--Unknown TalkSentence: 502033101-->
+:<!--Unknown TalkSentence: 502033102-->
+:<!--Unknown TalkSentence: 502033103-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502033105-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502033111-->
+::<!--Unknown TalkSentence: 502033112-->
+:<!--Unknown TalkSentence: 502033105-->
+;(If {{cx}}<!--not during performance 502033101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502033151
+}</pre>
+:<!--Unknown TalkSentence: 502033152-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Баттута)
+;(If {{cx}}<!--during performance 502034101-->)
+:<!--Unknown TalkSentence: 502034101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502034103-->
+;(If {{cx}}<!--not during performance 502034101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502034149
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Цинцзу)
+<!--Unknown TalkSentence: 202160026-->
+:<!--Unknown TalkSentence: 202160027-->
+:<!--Unknown TalkSentence: 202160028-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160030-->
+:<!--Unknown TalkSentence: 202160031-->
+:<!--Unknown TalkSentence: 202160035-->
+:<!--Unknown TalkSentence: 202160036-->
+:<!--Unknown TalkSentence: 202160037-->
+:<!--Unknown TalkSentence: 202160038-->
+:<!--Unknown TalkSentence: 202160040-->
+<!--Unknown TalkSentence: 202160420-->
+{{Диалог Конец}}
+
+===Выслушайте поручение Цинцзу===
+{{Описание миссии|локация=Канцелярия Комиссии по балансу|Главный стратег Обители божественного предвидения лично прибыла в мелкую канцелярию - должно быть, дело серьёзное. Поговорите с ней, ведь чем важнее поручение, тем выше за него награда.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Проверьте, есть ли в Возвышающем святилище кто-нибудь подозрительный===
+{{Описание миссии|локация=Возвышающее святилище|Согласно разведданным Обители божественного предвидения, на территории Возвышающего святилища некие подозрительные лица распространяют ересь о Творительнице Чумы. Может быть, это легендарные Ученики Санктус Медикус?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 47,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202160413
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 47,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202160414
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 47,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202160415
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 47,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202160416
+		}
+	]
+}</pre>
+
+:{{Диалог|Разговор}} Переписывать
+
+
+;(Поговорите с Зелёный Гибискус)
+----
+<!--Unknown TalkSentence: 202160157-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160160-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160162-->
+:<!--Unknown TalkSentence: 202160163-->
+:<!--Unknown TalkSentence: 202160164-->
+:<!--Unknown TalkSentence: 202160165-->
+:<!--Unknown TalkSentence: 202160166-->
+:{{Диалог|Выход}} undefined
+::----
+----
+<!--Unknown TalkSentence: 202160079-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160081-->
+<!--Unknown TalkSentence: 202160084-->
+<!--Unknown TalkSentence: 202160085-->
+<!--Unknown TalkSentence: 202160086-->
+<!--Unknown TalkSentence: 202160087-->
+{{Диалог Конец}}
+
+===Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 0/500===
+{{Описание миссии|локация=Возвышающее святилище|Зелёный Гибискус просит вас переписать «Трактат о спасении Тысячерукой Милостивой Медикус». Но пятьсот раз - это чересчур! Может, есть другой способ?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160106-->
+<!--Unknown TalkSentence: 202160106-->
+::----
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202160107-->
+----
+
+:{{Диалог|Разговор}} Переписывать
+----
+<!--Unknown TalkSentence: 202160126-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_copy_writing"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202160127-->
+<!--Unknown TalkSentence: 202160128-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_copy_writing"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202160129-->
+<!--Unknown TalkSentence: 202160130-->
+<!--Unknown TalkSentence: 202160131-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160106-->
+<!--Unknown TalkSentence: 202160106-->
+::----
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202160107-->
+----
+{{Диалог Конец}}
+
+===Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 1/500===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Переписывать
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_copy_writing"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202160132-->
+<!--Unknown TalkSentence: 202160133-->
+----
+{{Диалог Конец}}
+
+===Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 2/500===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Переписывать
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_copy_writing"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202160134-->
+<!--Unknown TalkSentence: 202160135-->
+----
+
+;(Получено {{Item|Переписанный манускрипт|20|x=1|text=Переписанный манускрипт}})
+{{Диалог Конец}}
+
+===Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 3/500===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Переписывать
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_copy_writing"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202160136-->
+<!--Unknown TalkSentence: 202160137-->
+----
+{{Диалог Конец}}
+
+===Отдайте копию священного писания Зелёному Гибискусу===
+{{Описание миссии|локация=Возвышающее святилище|При поддержке одного из Облачных Рыцарей вы смогли переписать «Трактат о спасении Тысячерукой Милостивой Медикус». Теперь передайте копию Зелёному Гибискусу, это позволит вам внедриться в ряды Учеников Санктус Медикус... Будем надеяться.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160106-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202160107-->
+;(Потеряно {{Item|Переписанный манускрипт|20|x=1|text=Переписанный манускрипт}})
+
+;(Поговорите с Странный рыцарь)
+<!--Unknown TalkSentence: 202160187-->
+<!--Unknown TalkSentence: 202160188-->
+<!--Unknown TalkSentence: 202160189-->
+<!--Unknown TalkSentence: 202160190-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160192-->
+----
+<!--Unknown TalkSentence: 202160195-->
+{{Диалог Конец}}
+
+===Перепишите «Трактат о спасении Тысячерукой Милостивой Медикус» 4/500===
+{{Описание миссии|локация=Возвышающее святилище|Зелёный Гибискус просит вас переписать «Трактат о спасении Тысячерукой Милостивой Медикус». Но пятьсот раз - это чересчур! Может, есть другой способ?}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Переписывать
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+::----
+:<!--Unknown TalkSentence: 202160138-->
+:<!--Unknown TalkSentence: 202160139-->
+:<!--Unknown TalkSentence: 202160140-->
+:<!--Unknown TalkSentence: 202160141-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+::----
+:<!--Unknown TalkSentence: 202160138-->
+:<!--Unknown TalkSentence: 202160139-->
+:<!--Unknown TalkSentence: 202160140-->
+:<!--Unknown TalkSentence: 202160141-->
+:<!--Unknown TalkSentence: 202160143-->
+:<!--Unknown TalkSentence: 202160148-->
+:<!--Unknown TalkSentence: 202160149-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160143-->
+<!--Unknown TalkSentence: 202160148-->
+<!--Unknown TalkSentence: 202160149-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Сразитесь в поединке с чудаком из Облачных Рыцарей===
+{{Описание миссии|локация=Возвышающее святилище|По принуждению Зелёного Гибискуса вы должны сразиться в поединке с незадачливым солдатом Облачных Рыцарей. Но вы достаточно умны, чтобы извлечь из этого выгоду.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160106-->
+<!--Unknown TalkSentence: 202160106-->
+::----
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202160107-->
+----
+----
+<!--Unknown TalkSentence: 202160202-->
+<!--Unknown TalkSentence: 202160203-->
+<!--Unknown TalkSentence: 202160204-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160206-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Цзыцяо)
+----
+<!--Unknown TalkSentence: 202160241-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160243-->
+<!--Unknown TalkSentence: 202160244-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Дождитесь сеанса связи с Цинцзу===
+{{Описание миссии|локация=Возвышающее святилище|Вы успешно внедрились в ряды Учеников Санктус Медикус. Теперь ждите, когда с вами свяжется Цинцзу.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1212601
+}</pre>
+{{Диалог Конец}}
+
+===Свяжитесь с Зелёным Гибискусом в Возвышающем святилище===
+{{Описание миссии|локация=Возвышающее святилище|Чтобы завоевать доверие Учеников Санктус Медикус, вам нужно помочь Зелёному Гибискусу выполнить кое-какие задания. Будем надеяться, что эти задания окажутся не слишком сложными.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160230-->
+{{Описание миссии|локация=Возвышающее святилище|Чтобы завоевать доверие Учеников Санктус Медикус, помогите им перехватить важную информацию, отправленную в Обитель божественного предвидения. Будем надеяться, что отступник учеников, что сбежал с информацией, не сильно пострадает.}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160236-->
+<!--Unknown TalkSentence: 202160237-->
+{{Диалог Конец}}
+
+===Перехватите посылку в Возвышающем святилище, как указано в тайном послании===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1212701
+}</pre>
+
+;(Поговорите с Зелёный Гибискус)
+----
+<!--Unknown TalkSentence: 202160295-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Встретьтесь с лидером Учеников Санктус Медикус в Возвышающем святилище===
+{{Описание миссии|локация=Возвышающее святилище|Вы заслужили доверие Учеников Санктус Медикус и теперь сможете встретиться с их лидером в Возвышающем святилище. Помните, это может быть опасно. Но поскольку теперь вы работаете под прикрытием - у вас нет выбора.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202160187-->
+<!--Unknown TalkSentence: 202160188-->
+<!--Unknown TalkSentence: 202160189-->
+<!--Unknown TalkSentence: 202160190-->
+<!--Unknown TalkSentence: 202160191-->
+<!--Unknown TalkSentence: 202160192-->
+<!--Unknown TalkSentence: 202160193-->
+<!--Unknown TalkSentence: 202160194-->
+<!--Unknown TalkSentence: 202160195-->
+<!--Unknown TalkSentence: 202160196-->
+<!--Unknown TalkSentence: 202160197-->
+<!--Unknown TalkSentence: 202160198-->
+<!--Unknown TalkSentence: 202160199-->
+<!--Unknown TalkSentence: 202160200-->
+<!--Unknown TalkSentence: 202160201-->
+<!--Unknown TalkSentence: 202160202-->
+<!--Unknown TalkSentence: 202160203-->
+<!--Unknown TalkSentence: 202160204-->
+<!--Unknown TalkSentence: 202160205-->
+<!--Unknown TalkSentence: 202160206-->
+<!--Unknown TalkSentence: 202160207-->
+<!--Unknown TalkSentence: 202160208-->
+<!--Unknown TalkSentence: 202160209-->
+<!--Unknown TalkSentence: 202160210-->
+<!--Unknown TalkSentence: 202160211-->
+<!--Unknown TalkSentence: 202160212-->
+<!--Unknown TalkSentence: 202160213-->
+<!--Unknown TalkSentence: 202160214-->
+<!--Unknown TalkSentence: 202160215-->
+<!--Unknown TalkSentence: 202160216-->
+<!--Unknown TalkSentence: 202160217-->
+<!--Unknown TalkSentence: 202160218-->
+<!--Unknown TalkSentence: 202160219-->
+<!--Unknown TalkSentence: 202160220-->
+<!--Unknown TalkSentence: 202160221-->
+<!--Unknown TalkSentence: 202160222-->
+<!--Unknown TalkSentence: 202160223-->
+<!--Unknown TalkSentence: 202160224-->
+<!--Unknown TalkSentence: 202160225-->
+<!--Unknown TalkSentence: 202160226-->
+<!--Unknown TalkSentence: 202160227-->
+<!--Unknown TalkSentence: 202160228-->
+<!--Unknown TalkSentence: 202160229-->
+<!--Unknown TalkSentence: 202160230-->
+<!--Unknown TalkSentence: 202160231-->
+<!--Unknown TalkSentence: 202160232-->
+<!--Unknown TalkSentence: 202160233-->
+<!--Unknown TalkSentence: 202160234-->
+<!--Unknown TalkSentence: 202160235-->
+<!--Unknown TalkSentence: 202160236-->
+<!--Unknown TalkSentence: 202160237-->
+<!--Unknown TalkSentence: 202160238-->
+<!--Unknown TalkSentence: 202160239-->
+<!--Unknown TalkSentence: 202160240-->
+<!--Unknown TalkSentence: 202160241-->
+<!--Unknown TalkSentence: 202160242-->
+<!--Unknown TalkSentence: 202160243-->
+<!--Unknown TalkSentence: 202160244-->
+<!--Unknown TalkSentence: 202160245-->
+<!--Unknown TalkSentence: 202160246-->
+<!--Unknown TalkSentence: 202160247-->
+<!--Unknown TalkSentence: 202160248-->
+<!--Unknown TalkSentence: 202160249-->
+<!--Unknown TalkSentence: 202160250-->
+<!--Unknown TalkSentence: 202160251-->
+<!--Unknown TalkSentence: 202160252-->
+<!--Unknown TalkSentence: 202160253-->
+<!--Unknown TalkSentence: 202160254-->
+<!--Unknown TalkSentence: 202160255-->
+<!--Unknown TalkSentence: 202160256-->
+<!--Unknown TalkSentence: 202160257-->
+<!--Unknown TalkSentence: 202160258-->
+<!--Unknown TalkSentence: 202160259-->
+<!--Unknown TalkSentence: 202160260-->
+<!--Unknown TalkSentence: 202160261-->
+<!--Unknown TalkSentence: 202160262-->
+<!--Unknown TalkSentence: 202160263-->
+<!--Unknown TalkSentence: 202160264-->
+<!--Unknown TalkSentence: 202160265-->
+<!--Unknown TalkSentence: 202160266-->
+<!--Unknown TalkSentence: 202160267-->
+<!--Unknown TalkSentence: 202160268-->
+<!--Unknown TalkSentence: 202160269-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160271-->
+:<!--Unknown TalkSentence: 202160272-->
+:<!--Unknown TalkSentence: 202160273-->
+:<!--Unknown TalkSentence: 202160274-->
+:<!--Unknown TalkSentence: 202160275-->
+:<!--Unknown TalkSentence: 202160276-->
+:<!--Unknown TalkSentence: 202160277-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160273-->
+:<!--Unknown TalkSentence: 202160274-->
+:<!--Unknown TalkSentence: 202160275-->
+:<!--Unknown TalkSentence: 202160276-->
+:<!--Unknown TalkSentence: 202160277-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202160275-->
+:<!--Unknown TalkSentence: 202160276-->
+:<!--Unknown TalkSentence: 202160277-->
+<!--Unknown TalkSentence: 202160275-->
+<!--Unknown TalkSentence: 202160276-->
+<!--Unknown TalkSentence: 202160277-->
+<!--Unknown TalkSentence: 202160411-->
+<!--Unknown TalkSentence: 202160412-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Обитель божественного предвидения и отчитайтесь перед Цинцзу===
+{{Описание миссии|локация=Обитель божественного предвидения|Вы победили Чжисиня... Или теперь его следует называть «Пурпурная Роза». Ученики Санктус Медикус в Возвышающем святилище уничтожены, и ваша миссия на данный момент завершена. Теперь пришло время сообщить о ситуации Цинцзу.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цинцзу)
+<!--Unknown TalkSentence: 202160327-->
+:<!--Unknown TalkSentence: 202160328-->
+:<!--Unknown TalkSentence: 202160330-->
+:<!--Unknown TalkSentence: 202160331-->
+:<!--Unknown TalkSentence: 202160333-->
+:<!--Unknown TalkSentence: 202160334-->
+:<!--Unknown TalkSentence: 202160335-->
+:<!--Unknown TalkSentence: 202160336-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+<!--Unknown TalkSentence: 202160356-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202160358-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 202160360-->
+
+;(Поговорите с Робкий алхимик)
+;(If {{cx}}<!--during performance 202010322-->)
+;(If {{cx}}<!--not during performance 202010322-->)
+<!--Unknown TalkSentence: 202160369-->
+<!--Unknown TalkSentence: 202160370-->
+<!--Unknown TalkSentence: 202160371-->
+
+;(Поговорите с Воодушевлённый алхимик)
+;(If {{cx}}<!--during performance 202010323-->)
+;(If {{cx}}<!--not during performance 202010323-->)
+<!--Unknown TalkSentence: 202160383-->
+
+;(Поговорите с Неразговорчивый алхимик)
+;(If {{cx}}<!--during performance 202010324-->)
+;(If {{cx}}<!--not during performance 202010324-->)
+<!--Unknown TalkSentence: 202160394-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Возвышающее святилище и найдите алхимика, чтобы узнать о фармакологии настойки драконьего перехода===
+{{Описание миссии|локация=Возвышающее святилище|Настойка драконьего перехода - рецепт очень странного лекарства, которое всех приводит в ужас. Но вы и Цинцзу ничего не смыслите в фармакологии и не можете расшифровать его. Поэтому вам нужно расспросить обо всём специалистов Комиссии по алхимии.}}
+{{Диалог Начало}}
+
+;(Поговорите с Дань Шу)
+;(If {{cx}}<!--SubMission Finish: 202010402-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 202010325-->)
+;(Otherwise)
+<!--Unknown TalkSentence: 202240025-->
+{{Диалог Конец}}
+
+===Поговорите с Дань Шу===
+{{Описание миссии|локация=Возвышающее святилище|Дань Шу - выдающаяся сотрудница Комиссии по алхимии. Она поможет вам с фармакологией настойки драконьего перехода.}}
+{{Диалог Начало}}
+
+;(Поговорите с Дань Шу)
+;(If {{cx}}<!--SubMission Finish: 202010312-->)
+;(If {{cx}}<!--SubMission not Finish: 202010312-->)
+<!--Unknown TalkSentence: 202160410-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202160397-->
+<!--Unknown TalkSentence: 202160400-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Venom Brews, Immortality Looms
+|zhs  = 蝮蛇鸩鸟，万寿迢迢
+|zht  = 蝮蛇鴆鳥，萬壽迢迢
+|ja   = 蝮に鴆鳥、万寿迢迢
+|ko   = 독을 품은 영생
+|es   = Un veneno que otorga la inmortalidad
+|fr   = Préparation du venin, immortalité en chemin
+|ru   = Отрава бурлит, бессмертие сулит
+|th   = สารพัดพิษ อมตะไร้ขอบเขต
+|vi   = Đầu Độc, Sự Bất Tử Xa Xăm
+|de   = Gift der Unsterblichkeit
+|id   = Ramuan Racun Keabadian
+|pt   = Veneno Fervente, Imortalidade Emergente
+}}
+
+==История изменений==
+{{История изменений|2.7}}

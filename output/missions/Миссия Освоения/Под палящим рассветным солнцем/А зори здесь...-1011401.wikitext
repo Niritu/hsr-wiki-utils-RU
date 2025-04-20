@@ -1,0 +1,126 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1011401
+|Название        = 
+|Изображение     = Миссия Освоения А зори здесь....png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Под палящим рассветным солнцем
+|Условия         = 
+|Персонажи       = Броня; Дань Хэн; Зеле; Коколия; Март 7; Первопроходец
+|СтартЛокация    = Холм вечнозимья
+|Мир             = Ярило-VI
+|Локации         = Холм вечнозимья
+|Предыдущая      = 
+|Следующая       = Возвращение
+|Награды         = 
+}}
+'''А зори здесь...''' — [[Миссия Освоения]] в главе [[Под палящим рассветным солнцем]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите следы Брони и Коколии
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите следы Брони и Коколии===
+{{Описание миссии|локация=Холм вечнозимья|Преодолев все трудности и опасности, вы наконец добрались до крайнего севера, где свирепствует Вечная мерзлота. Вот уже сотни лет никто, кроме Верховной хранительницы, не смеет ступить на это древнее поле битвы.<br />Коколия и Броня где-то здесь... Вы должны углубиться в Запретную зону, чтобы найти их.<br />Причина катастрофы - Стелларон - также впереди, приготовьтесь к смертельной битве.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201331001-->
+<!--Unknown TalkSentence: 201331002-->
+<!--Unknown TalkSentence: 201331003-->
+<!--Unknown TalkSentence: 201331004-->
+<!--Unknown TalkSentence: 201331005-->
+<!--Unknown TalkSentence: 201331006-->
+<!--Unknown TalkSentence: 201331007-->
+<!--Unknown TalkSentence: 201331008-->
+<!--Unknown TalkSentence: 201331009-->
+<!--Unknown TalkSentence: 201331010-->
+<!--Unknown TalkSentence: 201331011-->
+<!--Unknown TalkSentence: 201331012-->
+<!--Unknown TalkSentence: 201331013-->
+<!--Unknown TalkSentence: 201331014-->
+<!--Unknown TalkSentence: 201331015-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201332501-->
+<!--Unknown TalkSentence: 201332502-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "1011401_temp"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 5,
+	"MaxAngle": 60
+}</pre>
+<!--Unknown TalkSentence: 201330201-->
+<!--Unknown TalkSentence: 201330202-->
+<!--Unknown TalkSentence: 201330203-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<!--5-second delay-->
+<!--Unknown TalkSentence: 201330101-->
+<!--Unknown TalkSentence: 201330102-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;([[#Gallery|Cutscene]] plays)
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Я прикрою тебя!
+::Держись за меня!
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Enemy List|Коколия, Мать обмана*1}}
+;(Полностью восстановлено НР всех союзников)
+:{{tx}}
+;(Полностью восстановлено НР всех союзников)
+<pre>{
+	"$type": "RPG.GameCore.RaidSceneTransfer"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Dawn Here...
+|zhs  = 这里的黎明……
+|zht  = 這裡的黎明……
+|ja   = ここの夜明け……
+|ko   = 이곳의 여명……
+|es   = La aurora de aquí...
+|fr   = L'aube ici...
+|ru   = А зори здесь...
+|th   = รุ่งอรุณของที่แห่งนี้...
+|vi   = Bình Minh Nơi Này
+|de   = Die Morgendämmerung hier&nbsp;...
+|id   = Fajar di Sini ....
+|pt   = O Amanhecer Daqui...
+}}
+
+==История изменений==
+{{История изменений|2.7}}

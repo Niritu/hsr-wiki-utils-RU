@@ -1,0 +1,326 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030301
+|Название        = 
+|Изображение     = Миссия Освоения Бессонная ночь.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[В погоне за мечтой]]''
+|Персонажи       = Акивили?; Галлахер; Доктор Эдвард; Первопроходец; Пом-Пом; Реклама «Услады»; Реклама Господина Селёдки; Реклама магазина моды; Светлячок
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = В погоне за мечтой
+|Следующая       = Сказания Золотого века
+|Награды         = Опыт Освоения*300; Звёздный нефрит*40; Путеводитель путешественника*3; Очищенный эфир*2; Утраченный кристалл*2; "This Side of Paradise"*1 { text = This Side of Paradise }; Кредиты*30 000
+}}
+'''Бессонная ночь''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|Уже в Мире грёз вы посетили магазин Торговый дом Мира грёз и спасли девушку по имени Светлячок. В благодарность за помощь Светлячок пообещала, что станет вашим проводником на этот день.}}
+
+==Этапы==
+# Отправляйтесь в Торговый дом Мира грёз
+# Осмотритесь
+# Выясните причину шума
+# Одолейте противника
+
+==Прохождение==
+{{Дополнить}}
+
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 103030101-->
+<!--Unknown TalkSentence: 103030102-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Торговый дом Мира грёз===
+{{Описание миссии|локация=Золотой миг|Ваше приземление в грёзы оказалось весьма неприятным, но Воскресенье и Зарянка поспешили проявить должную заботу... Что ж, по-другому и быть не могло.<br />Полные воодушевления, вы получаете сообщение от Март 7 - она советует вам отправиться в Торговый дом Мира грёз... Видимо, это и станет вашей первой остановкой в этом удивительном путешествии.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(Поговорите с Реклама «Услады»)
+;(If {{cx}}<!--during performance 503034001-->)
+:<!--Unknown TalkSentence: 503034001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 503034001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034011,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034012,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034013,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034014,
+					"ProtectTime": 0.3
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Реклама Господина Селёдки)
+;(If {{cx}}<!--during performance 503034013-->)
+:<!--Unknown TalkSentence: 503034121-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 503034013-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034131,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034132,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034133,
+					"ProtectTime": 0.3
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Реклама магазина моды)
+;(If {{cx}}<!--during performance 503034007-->)
+:<!--Unknown TalkSentence: 503034061-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 503034007-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034071,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034072,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503034073,
+					"ProtectTime": 0.3
+				}
+			]
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030103-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103030203-->
+<!--Unknown TalkSentence: 103030206-->
+<!--Unknown TalkSentence: 103030207-->
+;(Unused &mdash; TalkSentence_103030612)
+<!--Unknown TalkSentence: 103030612-->
+:<!--Unknown TalkSentence: 103030613-->
+{{Диалог Конец}}
+
+===Осмотритесь===
+{{Описание миссии|локация=Золотой миг|Под надзором Доктора Эдварда вы опробовали величайший праздник для глаз и ушей на всей Пенаконии: пузырь грёз. Это устройство виртуальной реальности, созданное специально для грёзовидения, вызывает ещё более реалистичные ощущения, чем его реальный аналог. Вы вошли в роль некоего существа, быть может, Эона по имени Акивили, и вступили в спор с Пом-Пом, за что получили звание Самого Отвратительного Безымянного&nbsp;II.<br />Видимо, на Пенаконии будет ещё предостаточно подобных развлечений. Стоит осмотреться.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103030619-->
+<!--Unknown TalkSentence: 103030620-->
+<!--Unknown TalkSentence: 103030621-->
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030701-->
+<!--Unknown TalkSentence: 103030702-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103030706-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Выясните причину шума===
+{{Описание миссии|локация=Золотой миг|Бродя по торговому центру «Оти», вы слышите шум, доносящийся со станции.<br />Проверьте, в чём дело. Безымянным очень нравится вмешиваться в чужие дела... а вам особенно нравится приходить на помощь.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Одолейте противника===
+{{Описание миссии|локация=Золотой миг|Направляясь к источнику шума, вы встречаете девушку с серебристыми волосами, за которой гонится злобная толпа.<br />Бросите ли вы её в беде? Подумав, вы решаете взяться за биту и броситься в бой. Преподайте урок этим негодяям.}}
+{{Диалог Начало}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+<!--Unknown TalkSentence: 103030801-->
+<!--Unknown TalkSentence: 103030802-->
+<!--Unknown TalkSentence: 103030803-->
+<!--Unknown TalkSentence: 103030804-->
+<!--Unknown TalkSentence: 103030805-->
+<!--Unknown TalkSentence: 103030806-->
+<!--Unknown TalkSentence: 103030807-->
+<!--Unknown TalkSentence: 103030808-->
+<!--Unknown TalkSentence: 103030809-->
+<!--Unknown TalkSentence: 103030810-->
+<!--Unknown TalkSentence: 103030811-->
+<!--Unknown TalkSentence: 103030812-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030104-->
+:<!--2.1-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030104-->
+:<!--2.1-second delay-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103030104-->
+:<!--2.1-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sleepless Night
+|zhs  = 无眠之夜
+|zht  = 無眠之夜
+|ja   = 眠りなき夜
+|ko   = 잠 못 이루는 밤
+|es   = Noche en vela
+|fr   = Nuit sans sommeil
+|ru   = Бессонная ночь
+|th   = ค่ำคืนที่ไม่เคยหลับใหล
+|vi   = Đêm Không Ngủ
+|de   = Schlaflose Nacht
+|id   = Malam yang Panjang
+|pt   = Noite Insone
+}}
+
+==История изменений==
+{{История изменений|2.7}}

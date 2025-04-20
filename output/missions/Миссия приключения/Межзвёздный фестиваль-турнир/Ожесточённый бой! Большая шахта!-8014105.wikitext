@@ -1,0 +1,2189 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8014105
+|Название        = 
+|Изображение     = Миссия Освоения Ожесточённый бой! Большая шахта!.png
+|Тип             = Миссия приключения
+|События         = «Эфирные войны»
+|Глава           = Межзвёздный фестиваль-турнир
+|Условия         = Завершена [[Миссия приключения]] ''[[Битва стратегий! Космическая станция «Герта»!]]''
+|Персонажи       = (Господин Свинка-копилка/Господин Свинка/Пузырик/Пушистик/Белоснежное зло/Пухляш/Турбосвин/Эон среди свинок); Гид; Грубый сотрудник КММ; Джованни; Март 7; Озлобленный сотрудник КММ; Отряд поддержки Топаз; Первопроходец; Топаз; Член отряда поддержки Топаз
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = Битва стратегий! Космическая станция «Герта»!
+|Следующая       = Победа! Межзвёздный праздник!
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*6; Утраченный кристалл*4; Кредиты*40 000
+}}
+'''Ожесточённый бой! Большая шахта!''' — Событие [[Миссия приключения]] из события [[«Эфирные войны»]].
+
+==Описание==
+{{Описание|Чтобы пройти квалификацию к чемпионату, вам нужно завершить все испытания победных зон.<br />Вы успешно завершили испытание победной зоны в Большой шахте и получили значок мастерства от Джованни.}}
+
+==Этапы==
+# Встретьтесь с Март 7
+# Отправляйтесь ко входу в Большую шахту
+# Опросите отряд поддержки Топаз
+# Спросите робота-гида
+# Перейдите в указанную область и пройдите испытание
+# Разгоните беспредельщиков
+# Используйте бомбу-невидимку для разгона проблемных сотрудников
+# Перейдите в указанную область и пройдите испытание
+# Бросьте вызов претенденту на чемпионство
+# Разгоните беспредельщиков
+# Перейдите в указанную область и пройдите испытание
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Встретьтесь с Март 7===
+{{Описание миссии|локация=Административный район|Сейчас у вас три значка мастерства, и вы в шаге от того, чтобы заслужить право подать заявку на турнир.<br />Дорога к чемпионству подобна красной ковровой дорожке под ногами. Сделайте последний шаг, прежде чем начать великое восхождение.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 814105501-->
+<!--Unknown TalkSentence: 814105502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814105504-->
+<!--Unknown TalkSentence: 814105507-->
+----
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу в Большую шахту===
+{{Описание миссии|локация=Камнеград|Дорога к чемпионству подобна красной ковровой дорожке под ногами.<br />Последний значок мастерства находится в руках определённого человека в Большой шахте. Найдите его, победите и сметите все препятствия, мешающие вам начать матч!}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 166
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 2
+}</pre>
+<!--Unknown TalkSentence: 814105601-->
+<!--Unknown TalkSentence: 814105602-->
+<!--Unknown TalkSentence: 814105603-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814105605-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherDivideEntryPage"
+}</pre>
+
+;(Поговорите с Март 7)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 2
+}</pre>
+<!--Unknown TalkSentence: 814105601-->
+<!--Unknown TalkSentence: 814105602-->
+<!--Unknown TalkSentence: 814105603-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814105605-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherDivideEntryPage"
+}</pre>
+{{Диалог Конец}}
+
+===Опросите отряд поддержки Топаз===
+{{Описание миссии|локация=Большая шахта: Победная зона|Отряд поддержки Топаз не умеет сдаваться. Даже камни менее упрямы.<br />Прежде чем опять победить их, стоит задать пару вопросов.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 814106801-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814105701-->
+<!--Unknown TalkSentence: 814105702-->
+<!--Unknown TalkSentence: 814105703-->
+<!--Unknown TalkSentence: 814105704-->
+<!--Unknown TalkSentence: 814105705-->
+<!--Unknown TalkSentence: 814105706-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105708-->
+:<!--Unknown TalkSentence: 814105714-->
+:<!--Unknown TalkSentence: 814105715-->
+:<!--Unknown TalkSentence: 814105716-->
+:<!--Unknown TalkSentence: 814105717-->
+:<!--Unknown TalkSentence: 814105718-->
+:<!--Unknown TalkSentence: 814105719-->
+::----
+:<!--Unknown TalkSentence: 814105720-->
+:<!--Unknown TalkSentence: 814105721-->
+:<!--Unknown TalkSentence: 814105722-->
+:<!--Unknown TalkSentence: 814105723-->
+:<!--Unknown TalkSentence: 814105724-->
+:<!--Unknown TalkSentence: 814105725-->
+::----
+:<!--Unknown TalkSentence: 814105726-->
+:<!--Unknown TalkSentence: 814105727-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105710-->
+:<!--Unknown TalkSentence: 814105714-->
+:<!--Unknown TalkSentence: 814105715-->
+:<!--Unknown TalkSentence: 814105716-->
+:<!--Unknown TalkSentence: 814105717-->
+:<!--Unknown TalkSentence: 814105718-->
+:<!--Unknown TalkSentence: 814105719-->
+::----
+:<!--Unknown TalkSentence: 814105720-->
+:<!--Unknown TalkSentence: 814105721-->
+:<!--Unknown TalkSentence: 814105722-->
+:<!--Unknown TalkSentence: 814105723-->
+:<!--Unknown TalkSentence: 814105724-->
+:<!--Unknown TalkSentence: 814105725-->
+::----
+:<!--Unknown TalkSentence: 814105726-->
+:<!--Unknown TalkSentence: 814105727-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105712-->
+:<!--Unknown TalkSentence: 814105713-->
+:<!--Unknown TalkSentence: 814105714-->
+:<!--Unknown TalkSentence: 814105715-->
+:<!--Unknown TalkSentence: 814105716-->
+:<!--Unknown TalkSentence: 814105717-->
+:<!--Unknown TalkSentence: 814105718-->
+:<!--Unknown TalkSentence: 814105719-->
+::----
+:<!--Unknown TalkSentence: 814105720-->
+:<!--Unknown TalkSentence: 814105721-->
+:<!--Unknown TalkSentence: 814105722-->
+:<!--Unknown TalkSentence: 814105723-->
+:<!--Unknown TalkSentence: 814105724-->
+:<!--Unknown TalkSentence: 814105725-->
+::----
+:<!--Unknown TalkSentence: 814105726-->
+:<!--Unknown TalkSentence: 814105727-->
+<!--Unknown TalkSentence: 814105708-->
+<!--Unknown TalkSentence: 814105714-->
+<!--Unknown TalkSentence: 814105715-->
+<!--Unknown TalkSentence: 814105716-->
+<!--Unknown TalkSentence: 814105717-->
+<!--Unknown TalkSentence: 814105718-->
+<!--Unknown TalkSentence: 814105719-->
+----
+<!--Unknown TalkSentence: 814105720-->
+<!--Unknown TalkSentence: 814105721-->
+<!--Unknown TalkSentence: 814105722-->
+<!--Unknown TalkSentence: 814105723-->
+<!--Unknown TalkSentence: 814105724-->
+<!--Unknown TalkSentence: 814105725-->
+----
+<!--Unknown TalkSentence: 814105726-->
+<!--Unknown TalkSentence: 814105727-->
+
+;(Поговорите с Гид)
+----
+<!--Unknown TalkSentence: 814105901-->
+<!--Unknown TalkSentence: 814105902-->
+<!--Unknown TalkSentence: 814105903-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105905-->
+:<!--Unknown TalkSentence: 814105908-->
+:<!--Unknown TalkSentence: 814105909-->
+:<!--Unknown TalkSentence: 814105910-->
+:<!--Unknown TalkSentence: 814105911-->
+:<!--Unknown TalkSentence: 814105912-->
+:<!--Unknown TalkSentence: 814105913-->
+:<!--Unknown TalkSentence: 814105914-->
+:<!--Unknown TalkSentence: 814105915-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105907-->
+:<!--Unknown TalkSentence: 814105908-->
+:<!--Unknown TalkSentence: 814105909-->
+:<!--Unknown TalkSentence: 814105910-->
+:<!--Unknown TalkSentence: 814105911-->
+:<!--Unknown TalkSentence: 814105912-->
+:<!--Unknown TalkSentence: 814105913-->
+:<!--Unknown TalkSentence: 814105914-->
+:<!--Unknown TalkSentence: 814105915-->
+:;(Return to previous option selection)
+;(Unused &mdash; SLPM)
+
+
+;(Unused &mdash; TLP)
+
+----
+<!--Unknown TalkSentence: 814106701-->
+<!--Unknown TalkSentence: 814106702-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814106704-->
+<!--Unknown TalkSentence: 814106705-->
+<!--Unknown TalkSentence: 814106712-->
+<!--Unknown TalkSentence: 814106713-->
+<!--Unknown TalkSentence: 814106714-->
+<!--Unknown TalkSentence: 814106715-->
+<!--Unknown TalkSentence: 814106716-->
+<!--Unknown TalkSentence: 814106717-->
+{{Диалог Конец}}
+
+===Спросите робота-гида===
+{{Описание миссии|локация=Большая шахта: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Каковы будут правила Большой шахты? На этот раз никто не спешит к вам с разъяснениями.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300012
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814105901-->
+<!--Unknown TalkSentence: 814105902-->
+<!--Unknown TalkSentence: 814105903-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105905-->
+:<!--Unknown TalkSentence: 814105908-->
+:<!--Unknown TalkSentence: 814105909-->
+:<!--Unknown TalkSentence: 814105910-->
+:<!--Unknown TalkSentence: 814105911-->
+:<!--Unknown TalkSentence: 814105912-->
+:<!--Unknown TalkSentence: 814105913-->
+:<!--Unknown TalkSentence: 814105914-->
+:<!--Unknown TalkSentence: 814105915-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814105907-->
+:<!--Unknown TalkSentence: 814105908-->
+:<!--Unknown TalkSentence: 814105909-->
+:<!--Unknown TalkSentence: 814105910-->
+:<!--Unknown TalkSentence: 814105911-->
+:<!--Unknown TalkSentence: 814105912-->
+:<!--Unknown TalkSentence: 814105913-->
+:<!--Unknown TalkSentence: 814105914-->
+:<!--Unknown TalkSentence: 814105915-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Перейдите в указанную область и пройдите испытание===
+{{Описание миссии|локация=Большая шахта: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />В испытании Большой шахты зачем-то нужно подорвать отряд поддержки Топаз роботами. Естественно, не по-настоящему, никто не пострадает. Взрывы - это тоже искусство, так ведь?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106802-->
+<!--Unknown TalkSentence: 814106803-->
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ByCompareGroupState",
+	"EquationType": "Equal",
+	"Value": 1
+}</pre>
+:<!--1-second delay-->
+;(Unused &mdash; BoomRobot_StartPerformance)
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "StartPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1010
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCPlatformMove",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
+		"IncludeStoryPlayer": false
+	},
+	"EnableMove": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.NpcSetupTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatar"
+	},
+	"TriggerID": "Trigger_102050117_06",
+	"Range": 4,
+	"OnTriggerEnter": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"IsLock": true,
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.DebugLog",
+			"Message": "进入了"
+		}
+	],
+	"OnTriggerExit": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		}
+	],
+	"TargetTypes": [
+		"NPCMonster"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005,
+	"EnableTemplate": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "8062"
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_BoomPerformance)
+:<!--1.5-second delay-->
+
+;(Unused &mdash; BoomRobot_OnFoundFailPerformance)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_OnPartialFailPerformance)
+:<!--2.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_EnterBoomCam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_OnSuccessPerformance)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 10370186140942766706
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400006,
+	"DestroyList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+{{Диалог Конец}}
+
+===Разгоните беспредельщиков===
+{{Описание миссии|локация=Большая шахта: Победная зона|В испытании Большой шахты зачем-то нужно подорвать отряд поддержки Топаз роботами. Естественно, не по-настоящему, никто не пострадает. Взрывы - это тоже искусство, так ведь?<br />Пусть эти несчастные станут частью искусства.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300018
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106001-->
+<!--Unknown TalkSentence: 814106002-->
+<!--Unknown TalkSentence: 814106003-->
+----
+{{Диалог Конец}}
+
+===Используйте бомбу-невидимку для разгона проблемных сотрудников===
+{{Описание миссии|локация=Большая шахта: Победная зона|В испытании Большой шахты зачем-то нужно подорвать отряд поддержки Топаз роботами. Естественно, не по-настоящему, никто не пострадает. Взрывы - это тоже искусство, так ведь?<br />Иногда искусство требует большей креативности, а взрывы тоже нужно немного видоизменять.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300021
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+;(Unused &mdash; BoomerGame06)
+<!--Unknown TalkSentence: 814106814-->
+:<!--Unknown TalkSentence: 814106815-->
+
+;(Unused &mdash; BoomRobot_OnSuccessPerformanceFinish)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400010,
+	"DestroyList": []
+}</pre>
+{{Диалог Конец}}
+
+===Перейдите в указанную область и пройдите испытание===
+{{Описание миссии|локация=Большая шахта: Победная зона|В испытании Большой шахты зачем-то нужно подорвать отряд поддержки Топаз роботами. Естественно, не по-настоящему, никто не пострадает. Взрывы - это тоже искусство, так ведь?<br />Пусть эти несчастные станут частью искусства.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300008
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106501-->
+<!--Unknown TalkSentence: 814106502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Бросьте вызов претенденту на чемпионство===
+{{Описание миссии|локация=Большая шахта: Победная зона|Вы прошли все испытания, но претендент на чемпионство так и не появился. И кто же этот таинственный противник?<br />В любом случае у вас есть право бросить ему вызов. В бою ведь не получится носить маску...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106601-->
+<!--Unknown TalkSentence: 814106602-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814106604-->
+<!--Unknown TalkSentence: 814106605-->
+<!--Unknown TalkSentence: 814106612-->
+<!--Unknown TalkSentence: 814106613-->
+<!--Unknown TalkSentence: 814106614-->
+<!--Unknown TalkSentence: 814106615-->
+<!--Unknown TalkSentence: 814106616-->
+<!--Unknown TalkSentence: 814106617-->
+<!--Unknown TalkSentence: 814106618-->
+<!--Unknown TalkSentence: 814106619-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherChallenge.AetherChallengePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "104"
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Разгоните беспредельщиков===
+{{Описание миссии|локация=Большая шахта: Победная зона|В испытании Большой шахты зачем-то нужно подорвать отряд поддержки Топаз роботами. Естественно, не по-настоящему, никто не пострадает. Взрывы - это тоже искусство, так ведь?<br />Пусть эти несчастные станут частью искусства.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300017
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106101-->
+<!--Unknown TalkSentence: 814106102-->
+<!--Unknown TalkSentence: 814106103-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ByCompareGroupState",
+	"EquationType": "Equal",
+	"Value": 1
+}</pre>
+:<!--1-second delay-->
+;(Unused &mdash; BoomRobot_StartPerformance)
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "StartPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1010
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCPlatformMove",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
+		"IncludeStoryPlayer": false
+	},
+	"EnableMove": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.NpcSetupTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatar"
+	},
+	"TriggerID": "Trigger_102050117_06",
+	"Range": 4,
+	"OnTriggerEnter": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"IsLock": true,
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.DebugLog",
+			"Message": "进入了"
+		}
+	],
+	"OnTriggerExit": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		}
+	],
+	"TargetTypes": [
+		"NPCMonster"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005,
+	"EnableTemplate": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "8062"
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_BoomPerformance)
+:<!--1.5-second delay-->
+
+;(Unused &mdash; BoomRobot_OnFoundFailPerformance)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_OnPartialFailPerformance)
+:<!--2.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_EnterBoomCam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_OnSuccessPerformance)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 10370186140942766706
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400006,
+	"DestroyList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300019
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814106101-->
+<!--Unknown TalkSentence: 814106102-->
+<!--Unknown TalkSentence: 814106103-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ByCompareGroupState",
+	"EquationType": "Equal",
+	"Value": 1
+}</pre>
+:<!--1-second delay-->
+;(Unused &mdash; BoomRobot_StartPerformance)
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "StartPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1010
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCPlatformMove",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
+		"IncludeStoryPlayer": false
+	},
+	"EnableMove": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.NpcSetupTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatar"
+	},
+	"TriggerID": "Trigger_102050117_06",
+	"Range": 4,
+	"OnTriggerEnter": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"IsLock": true,
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.DebugLog",
+			"Message": "进入了"
+		}
+	],
+	"OnTriggerExit": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		}
+	],
+	"TargetTypes": [
+		"NPCMonster"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005,
+	"EnableTemplate": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "8062"
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_BoomPerformance)
+:<!--1.5-second delay-->
+
+;(Unused &mdash; BoomRobot_OnFoundFailPerformance)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_OnPartialFailPerformance)
+:<!--2.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_EnterBoomCam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_OnSuccessPerformance)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 10370186140942766706
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400006,
+	"DestroyList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43103_F43103004_G11",
+	"AnchorName": "GameCamera4",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true
+	}
+}</pre>
+<!--Unknown TalkSentence: 814106301-->
+<!--Unknown TalkSentence: 814106302-->
+<!--Unknown TalkSentence: 814106303-->
+<!--Unknown TalkSentence: 814106304-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43103_F43103004_G11",
+	"AnchorName": "GameCamera4",
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ByCompareGroupState",
+	"EquationType": "Equal",
+	"Value": 1
+}</pre>
+:<!--1-second delay-->
+;(Unused &mdash; BoomRobot_StartPerformance)
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"PlayerStubAnimation": {
+		"Value": "LookatPhoneBS"
+	},
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "StartPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1010
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCPlatformMove",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
+		"IncludeStoryPlayer": false
+	},
+	"EnableMove": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.NpcSetupTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatar"
+	},
+	"TriggerID": "Trigger_102050117_06",
+	"Range": 4,
+	"OnTriggerEnter": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"IsLock": true,
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.DebugLog",
+			"Message": "进入了"
+		}
+	],
+	"OnTriggerExit": [
+		{
+			"$type": "RPG.GameCore.AdvLockSpecialTarget",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetAlias",
+				"Alias": "TaskActionTarget"
+			}
+		}
+	],
+	"TargetTypes": [
+		"NPCMonster"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvFakeAvatarPlayerStub"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005,
+	"EnableTemplate": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "8062"
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_BoomPerformance)
+:<!--1.5-second delay-->
+
+;(Unused &mdash; BoomRobot_OnFoundFailPerformance)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_OnPartialFailPerformance)
+:<!--2.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+::<!--2-second delay-->
+
+;(Unused &mdash; BoomRobot_EnterBoomCam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; BoomRobot_OnSuccessPerformance)
+<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 10370186140942766706
+	},
+	"MessageTwo": {
+		"Hash": 2012001348524219443
+	}
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 12113,
+	"IsCancel": true,
+	"RecoverControlEntityPosition": true,
+	"LeavePlayerStubInplace": true,
+	"ForcePositionAndRotation": true,
+	"LevelAreaKey": {
+		"Custom": true,
+		"Key": "EndPoint"
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BoomCamAnchor"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "WayPointProp"
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PropReqInteract",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropKey",
+				"SinglePropKey": {
+					"Custom": true,
+					"Key": "WayPointProp"
+				}
+			},
+			"InteractID": {
+				"FixedValue": {
+					"Value": 1100
+				}
+			},
+			"OnUICancel": []
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1005
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400006,
+	"DestroyList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+{{Диалог Конец}}
+
+===Перейдите в указанную область и пройдите испытание===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814106806-->
+<!--Unknown TalkSentence: 814106807-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814106810-->
+<!--Unknown TalkSentence: 814106811-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300011
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814106808-->
+<!--Unknown TalkSentence: 814106809-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300006
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814106804-->
+<!--Unknown TalkSentence: 814106805-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clash! Great Mine!
+|zhs  = 激战！大矿区
+|zht  = 激戰！大礦區
+|ja   = 激戦！大鉱区
+|ko   = 격전! 큰 광산구역
+|es   = ¡Combate encarnizado en la mina principal!
+|fr   = Grabuge à la Grande mine&nbsp;!
+|ru   = Ожесточённый бой! Большая шахта!
+|th   = การต่อสู้อันดุเดือดในเหมืองใหญ่
+|vi   = Kịch Chiến! Khu Mỏ Khổng Lồ
+|de   = Intensiver Kampf, Große Mine!
+|id   = Pertarungan Sengit, Great Mine!
+|pt   = Confronto! Grande Mina!
+}}
+
+==История изменений==
+{{История изменений|2.7}}

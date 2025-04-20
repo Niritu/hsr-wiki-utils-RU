@@ -1,0 +1,162 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026120
+|Название        = 
+|Изображение     = Миссия Освоения Сложное испытание.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = Завершена [[Миссия приключения]] ''[[Музыкальная охота: Эпилог]]''
+|Персонажи       = Монтана; Первопроходец
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = Музыкальная охота: Эпилог
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Сложное испытание''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Идите к сцене и послушайте, что обнаружила Монтана
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802612002,
+	"MessageSectionID": 1312000
+}</pre>
+{{Диалог Конец}}
+
+===Идите к сцене и послушайте, что обнаружила Монтана===
+{{Описание миссии|локация=Академия оригами|Заключительное шоу прошло отлично, и ваше приключение с группой подходит к концу.<br />Монтана что-то обнаружила. Идите к сцене и выслушайте её.}}
+{{Диалог Начало}}
+
+;(Поговорите с Монтана)
+<!--Unknown TalkSentence: 802611451-->
+:{{Диалог|Журнал путешествий}} undefined
+<!--Unknown TalkSentence: 802611453-->
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	]
+}</pre>
+;(Unused &mdash; 802611006FinishedOpenMainEntranceUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"Enable": true,
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "802611006Cam"
+			}
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.ActiveVirtualCamera",
+			"AreaName": "LevelArea_P10306_F10306001_G87",
+			"AnchorName": "cam01",
+			"IsActive": false,
+			"DynamicParams": {},
+			"ImmediatelyRefresh": true
+		},
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 802611006Cam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10306_F10306001_G87",
+	"AnchorName": "cam01",
+	"DynamicParams": {},
+	"EnableCameraProtectAfterBlendOut": true
+}</pre>
+
+;(Unused &mdash; FinishMission8026121)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Advanced Trial
+|zhs  = 进阶试炼
+|zht  = 進階試煉
+|ja   = エキスパートモード
+|ko   = 고급 시련
+|es   = Prueba avanzada
+|fr   = Épreuve avancée
+|ru   = Сложное испытание
+|th   = บททดสอบขั้นสูง
+|vi   = Thí Luyện Tiến Cấp
+|de   = Fortgeschrittene Prüfung
+|id   = Ujian Lanjutan
+|pt   = Teste Avançado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

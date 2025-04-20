@@ -1,0 +1,139 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000152
+|Название        = 
+|Изображение     = Миссия Освоения Найдите все граффити «Взрыв битового изображения» в Базовой зоне.png
+|Тип             = Миссия приключения
+|События         = Звёздная охота
+|Глава           = 
+|Условия         = Завершена [[Миссия компаньона]] ''[[Дух Панклорда]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Базовая зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Базовая зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Найдите все граффити «Взрыв битового изображения» в Базовой зоне''' — Событие [[Миссия приключения]] из события [[Звёздная охота]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 102
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 102
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 102
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 845206858745524995
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Look for the "bitmap explosion" graffiti in the base zone
+|zhs  = 寻找基座舱段的「爆破位图」涂鸦
+|zht  = 尋找基座艙段的「爆破點陣圖」塗鴉
+|ja   = ベース部分にある「爆破ビットマップ」のラクガキを見つける
+|ko   = 베이스 캐빈의 「폭파 비트맵」 그래피티 찾기
+|es   = Busca el grafiti de la explosión de mapas de bits en la zona de la base
+|fr   = Trouver le graffiti «&nbsp;Explosion bitmap&nbsp;» dans la Zone de base
+|ru   = Найдите все граффити «Взрыв битового изображения» в Базовой зоне
+|th   = ตามหากราฟฟิตี้ "Bitmap Explosion" ใน Base Zone
+|vi   = Tìm graffiti "Bitmap Bùng Nổ" trong Khoang Cơ Sở
+|de   = Finde das Graffiti „Bitmap-Explosion“ in der Basiszone.
+|id   = Temukan grafiti "Bitmap Explosion" di Base Zone
+|pt   = Procure pelo grafite "Explosão de Bitmap" na Zona Base
+}}
+
+==История изменений==
+{{История изменений|2.7}}

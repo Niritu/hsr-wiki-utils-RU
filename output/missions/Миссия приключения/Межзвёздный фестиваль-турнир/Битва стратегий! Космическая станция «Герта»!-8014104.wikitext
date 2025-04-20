@@ -1,0 +1,506 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8014104
+|Название        = 
+|Изображение     = Миссия Освоения Битва стратегий! Космическая станция «Герта»!.png
+|Тип             = Миссия приключения
+|События         = «Эфирные войны»
+|Глава           = Межзвёздный фестиваль-турнир
+|Условия         = Завершена [[Миссия приключения]] ''[[Вперёд! Облачная переправа!]]''
+|Персонажи       = (Господин Свинка-копилка/Господин Свинка/Пузырик/Пушистик/Белоснежное зло/Пухляш/Турбосвин/Эон среди свинок); Вуббабу; Герта; Джованни; Март 7; Первопроходец; Серебряный Волк; Уайлдер
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = Вперёд! Облачная переправа!
+|Следующая       = Ожесточённый бой! Большая шахта!
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*6; Утраченный кристалл*4; Кредиты*40 000
+}}
+'''Битва стратегий! Космическая станция «Герта»!''' — Событие [[Миссия приключения]] из события [[«Эфирные войны»]].
+
+==Описание==
+{{Описание|Чтобы пройти квалификацию к чемпионату, вам нужно завершить все испытания победных зон.<br />Вы успешно завершили испытание победной зоны на космической станции «Герта» и получили значок мастерства от Герты.}}
+
+==Этапы==
+# Встретьтесь с Март 7
+# Отправляйтесь на перрон космической станции
+# Узнайте истинные намерения Джованни
+# Отправляйтесь в отель «Гёте» и встретьтесь с Уайлдером
+# Найдите сервисного робота и получите карту сокровищ
+# Найдите ключ шифрования от лифта по карте сокровищ
+# Активируйте ключ шифрования от лифта
+# Найдите следующий пропуск по карте сокровищ
+# Найдите сервисного робота и получите карту сокровищ
+# Направляйтесь в помещение, где находится Герта
+# Устройте матч с Гертой
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Встретьтесь с Март 7===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Вы прошли все испытания Облачной переправы и получили второй значок мастерства.<br />Дорога к чемпионству подобна красной ковровой дорожке под ногами - пора сделать третий шаг.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 814104001-->
+<!--Unknown TalkSentence: 814104002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814104004-->
+<!--Unknown TalkSentence: 814104007-->
+----
+{{Диалог Конец}}
+
+===Отправляйтесь на перрон космической станции===
+{{Описание миссии|локация=Зона поддержки|Дорога к чемпионству подобна красной ковровой дорожке под ногами.<br />Третий значок мастерства скрывается на космической станции «Герта». Какие испытания ожидают вас?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 122
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 2
+}</pre>
+<!--Unknown TalkSentence: 814104101-->
+<!--Unknown TalkSentence: 814104102-->
+<!--Unknown TalkSentence: 814104104-->
+<!--Unknown TalkSentence: 814104105-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814104107-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherDivideEntryPage"
+}</pre>
+
+;(Поговорите с Март 7)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 2
+}</pre>
+<!--Unknown TalkSentence: 814104101-->
+<!--Unknown TalkSentence: 814104102-->
+<!--Unknown TalkSentence: 814104104-->
+<!--Unknown TalkSentence: 814104105-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814104107-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherDivideEntryPage"
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте истинные намерения Джованни===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Как оказалось, Джованни с самого начала намеревался использовать вас как средство достижения своих целей, манипулируя вами, как марионетками. Вам нужно немедленно найти его, чтобы получить ответы.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 814105301-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814104201-->
+<!--Unknown TalkSentence: 814104202-->
+<!--Unknown TalkSentence: 814104203-->
+<!--Unknown TalkSentence: 814104204-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104207-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104209-->
+<!--Unknown TalkSentence: 814104210-->
+<!--Unknown TalkSentence: 814104211-->
+<!--Unknown TalkSentence: 814104212-->
+<!--Unknown TalkSentence: 814104213-->
+<!--Unknown TalkSentence: 814104214-->
+<!--Unknown TalkSentence: 814104215-->
+<!--Unknown TalkSentence: 814104216-->
+<!--Unknown TalkSentence: 814104217-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1115600
+}</pre>
+----
+<!--Unknown TalkSentence: 814104801-->
+<!--Unknown TalkSentence: 814104802-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отправляйтесь в отель «Гёте» и встретьтесь с Уайлдером===
+{{Описание миссии|локация=Вестибюль отеля|(Господин Свинка-копилка/Господин Свинка/Пузырик/Пушистик/Белоснежное зло/Пухляш/Турбосвин/Эон среди свинок) - не секрет для Уайлдера! Более того, он хочет обсудить какие-то важные вопросы. Может быть, в этой игре действительно есть какие-то тайны?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105303-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814104901-->
+<!--Unknown TalkSentence: 814104902-->
+<!--Unknown TalkSentence: 814104903-->
+<!--Unknown TalkSentence: 814104904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104906-->
+:<!--Unknown TalkSentence: 814104907-->
+::----
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 814104912-->
+:<!--Unknown TalkSentence: 814104913-->
+:<!--Unknown TalkSentence: 814104914-->
+:<!--Unknown TalkSentence: 814104915-->
+:<!--Unknown TalkSentence: 814104916-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104909-->
+::----
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 814104912-->
+:<!--Unknown TalkSentence: 814104913-->
+:<!--Unknown TalkSentence: 814104914-->
+:<!--Unknown TalkSentence: 814104915-->
+:<!--Unknown TalkSentence: 814104916-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104911-->
+::----
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 814104912-->
+:<!--Unknown TalkSentence: 814104913-->
+:<!--Unknown TalkSentence: 814104914-->
+:<!--Unknown TalkSentence: 814104915-->
+:<!--Unknown TalkSentence: 814104916-->
+:;(Return to previous option selection)
+:{{tx}}
+----
+<!--Unknown TalkSentence: 814105201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 814105203-->
+<!--Unknown TalkSentence: 814105204-->
+<!--Unknown TalkSentence: 814105211-->
+<!--Unknown TalkSentence: 814105212-->
+<!--Unknown TalkSentence: 814105213-->
+<!--Unknown TalkSentence: 814105214-->
+----
+{{Диалог Конец}}
+
+===Найдите сервисного робота и получите карту сокровищ===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Правила космической станции подобны поиску сокровищ. Прежде чем приключение начнётся, вам нужно получить карту сокровищ.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Карта для поиска ключа шифрования|20|x=1|text=Карта для поиска ключа шифрования}})
+;(Unused &mdash; Mission_801410405_PropTrigger)
+<!--Unknown TalkSentence: 814104278-->
+
+;(Unused &mdash; Mission_801410407_PropUITrigger_2)
+<!--Unknown TalkSentence: 814107901-->
+:<!--Unknown TalkSentence: 814107902-->
+{{Диалог Конец}}
+
+===Найдите ключ шифрования от лифта по карте сокровищ===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Правила космической станции подобны поиску сокровищ. Найдите первое сокровище и проявите себя.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 11
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300013
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105304-->
+<!--Unknown TalkSentence: 814105305-->
+;(Получено {{Item|Ключ шифрования для лифта|20|x=1|text=Ключ шифрования для лифта}})
+;(Потеряно {{Item|Карта для поиска ключа шифрования|20|x=1|text=Карта для поиска ключа шифрования}})
+;(Unused &mdash; PropTrigger_801410406)
+<!--Unknown TalkSentence: 814108101-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 814108103-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"Show": false,
+	"ItemID": 140282,
+	"CDDuration": 2
+}</pre>
+
+;(Unused &mdash; Mission_801410407_PropUITrigger_3)
+<!--Unknown TalkSentence: 814107901-->
+:<!--Unknown TalkSentence: 814107902-->
+{{Диалог Конец}}
+
+===Активируйте ключ шифрования от лифта===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Правила космической станции подобны поиску сокровищ. Похоже, что «дракон», которому поручено охранять сокровище, не такой уж профессионал... Как бы то ни было, вы ещё на шаг приблизились к встрече со своим последним врагом, Повелителем демонов.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Найдите следующий пропуск по карте сокровищ===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Вуббабу, похоже, не в восторге от того, что они охраняют сокровище. И что это за «дракон» такой? Это же просто Цинцюэ.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 11
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300014
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105307-->
+;(Потеряно {{Item|Карта сокровищ 1|20|x=1|text=Карта сокровищ 1}})
+;(Получено {{Item|Пропуск претендента на чемпионство 1|20|x=1|text=Пропуск претендента на чемпионство 1}})
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"ItemID": 140284,
+	"CDDuration": 2
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105308-->
+;(Потеряно {{Item|Карта сокровищ 2|20|x=1|text=Карта сокровищ 2}})
+;(Получено {{Item|Пропуск претендента на чемпионство 2|20|x=1|text=Пропуск претендента на чемпионство 2}})
+;(Unused &mdash; PropTrigger_801410406)
+:----
+:<!--Unknown TalkSentence: 814108301-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 814108303-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_phone_buzz"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 11,
+	"ID": 400011
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreatePhoneOnCharacter",
+	"GroupID": 11,
+	"GroupNpcID": 400011,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400011
+				}
+			}
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 814108304-->
+::----
+
+;(Unused &mdash; 801410412_WWB_appear)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 11
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300015
+		}
+	},
+	"CreateList": []
+}</pre>
+:;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"ItemID": 140285,
+	"CDDuration": 2
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105309-->
+;(Потеряно {{Item|Карта сокровищ 3|20|x=1|text=Карта сокровищ 3}})
+;(Получено {{Item|Пропуск претендента на чемпионство 3|20|x=1|text=Пропуск претендента на чемпионство 3}})
+;(Unused &mdash; PropTrigger_801410406)
+:----
+:<!--Unknown TalkSentence: 814108401-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 814108403-->
+:<!--Unknown TalkSentence: 814108404-->
+:<!--Unknown TalkSentence: 814108405-->
+:<!--Unknown TalkSentence: 814108406-->
+:<!--Unknown TalkSentence: 814108407-->
+:<!--Unknown TalkSentence: 814108408-->
+::----
+
+;(Unused &mdash; 801410414_WWB_appear)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 11
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300016
+		}
+	},
+	"CreateList": []
+}</pre>
+:;(По прибытии на место)
+{{Диалог Конец}}
+
+===Найдите сервисного робота и получите карту сокровищ===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Чтобы сразиться с претендентом на чемпионство в каждой победной зоне, вы должны пройти соответствующее испытание.<br />Правила космической станции подобны поиску сокровищ. Теперь нужно получить ещё одну карту сокровищ.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 11
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300017
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 814105306-->
+;(Получено {{Item|Карта сокровищ 1|20|x=1|text=Карта сокровищ 1}})
+{{Диалог Конец}}
+
+===Направляйтесь в помещение, где находится Герта===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Пережив это небогатое событиями приключение, вы наконец заслужили право бросить вызов Повелителю демонов. Но Герту, похоже, не очень волнуют матчи. Может быть, вы единственные, кто играет в игру серьёзно?}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Устройте матч с Гертой===
+{{Описание миссии|локация=Космическая станция «Герта»: Победная зона|Пережив это небогатое событиями приключение, вы наконец заслужили право бросить вызов Повелителю демонов. Но Герту, похоже, не очень волнуют матчи. Может быть, вы единственные, кто играет в игру серьёзно?<br />Как бы то ни было, вы уже прошли все испытания. Теперь пришло время «гению» увидеть силу «обычного человека».}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 814104501-->
+<!--Unknown TalkSentence: 814104502-->
+<!--Unknown TalkSentence: 814104503-->
+<!--Unknown TalkSentence: 814104504-->
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 814104505-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104508-->
+:<!--Unknown TalkSentence: 814104509-->
+:<!--Unknown TalkSentence: 814104510-->
+:<!--Unknown TalkSentence: 814104511-->
+:<!--Unknown TalkSentence: 814104512-->
+<!--Unknown TalkSentence: 814104513-->
+<!--Unknown TalkSentence: 814104514-->
+<!--Unknown TalkSentence: 814104515-->
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherChallenge.AetherChallengePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "103"
+	}
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_250403.png"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 814104601-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_250403.png"
+}</pre>
+<!--Unknown TalkSentence: 814104602-->
+<!--Unknown TalkSentence: 814104603-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104605-->
+:<!--Unknown TalkSentence: 814104610-->
+:<!--Unknown TalkSentence: 814104611-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 814104607-->
+:<!--Unknown TalkSentence: 814104608-->
+:<!--Unknown TalkSentence: 814104609-->
+:<!--Unknown TalkSentence: 814104610-->
+:<!--Unknown TalkSentence: 814104611-->
+<!--Unknown TalkSentence: 814104605-->
+<!--Unknown TalkSentence: 814104610-->
+<!--Unknown TalkSentence: 814104611-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Battle of Wits! Herta Space Station!
+|zhs  = 智斗！空间站「黑塔」
+|zht  = 智鬥！太空站「黑塔」
+|ja   = 闘智！宇宙ステーション「ヘルタ」
+|ko   = 두뇌 풀가동! 우주정거장 「헤르타」
+|es   = ¡Demostración de estrategia en la Estación Espacial Herta!
+|fr   = Échauffourée à la Station spatiale Herta&nbsp;!
+|ru   = Битва стратегий! Космическая станция «Герта»!
+|th   = ศึกกลยุทธ์สถานีอวกาศ "Herta"
+|vi   = Đấu Trí! Trạm Không Gian Herta
+|de   = Strategisches Duell, Herta-Raumstation!
+|id   = Pertarungan Kecerdikan, Stasiun Luar Angkasa "Herta"!
+|pt   = Batalha de Inteligência! Estação Espacial Herta!
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,152 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4070012
+|Название        = 
+|Изображение     = Миссия Освоения Человек собаке друг II.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Пеппи; Первопроходец; Создание Жуань Мэй
+|СтартЛокация    = Зона поддержки
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона поддержки
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Человек собаке друг II''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Пеппи и идите за ним
+# Ищите утерянную диковину и соберите информацию о дворецком
+# Найдите создание Жуань Мэй, которому нужна помощь (необязательно)
+# Ищите утерянную диковину и соберите информацию о дворецком
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Пеппи и идите за ним===
+{{Описание миссии|локация=Зона поддержки|Пеппи нашёл улики, связанные с диковиной. Следуйте за ним и продолжайте поиск.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.ByCompareFloorCustomFloat",
+	"Name": {
+		"Value": "IsBattleBegin"
+	},
+	"CompareType": "Equal",
+	"CompareValue": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+----
+<!--Unknown TalkSentence: 401200101-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401200103-->
+<!--Unknown TalkSentence: 401200104-->
+<!--Unknown TalkSentence: 401200105-->
+<!--Unknown TalkSentence: 401200106-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 20,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 500002331
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvTriggerAIPlaySmartObject",
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"SmartObjectID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"OnFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+----
+<!--Unknown TalkSentence: 401200301-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401200303-->
+:<!--Unknown TalkSentence: 401200306-->
+:<!--Unknown TalkSentence: 401200307-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 401200305-->
+:<!--Unknown TalkSentence: 401200306-->
+:<!--Unknown TalkSentence: 401200307-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Ищите утерянную диковину и соберите информацию о дворецком===
+{{Описание миссии|локация=Зона поддержки|Утерянная диковина находится у создания, известного как «дворецкий». Кто это? И где его найти? Попробуйте поискать зацепки, продолжив поиски утерянной диковины...}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Найдите создание Жуань Мэй, которому нужна помощь (необязательно)===
+{{Описание миссии|локация=Зона поддержки|Вы слышите сигнал тревоги: видимо, в этом отсеке бродит не одно создание Жуань Мэй. Желательно прийти им на помощь.}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Ищите утерянную диковину и соберите информацию о дворецком===
+{{Описание миссии|локация=Зона поддержки|Утерянная диковина находится у создания, известного как «дворецкий». Кто это? И где его найти? Попробуйте поискать зацепки, продолжив поиски утерянной диковины...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+----
+<!--Unknown TalkSentence: 401302201-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401302203-->
+<!--Unknown TalkSentence: 401302204-->
+<!--Unknown TalkSentence: 401302205-->
+<pre>{
+	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
+	"SpecialNPCID": 16001,
+	"IsCancel": true
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = It All Started With a Man and a Dog (II)
+|zhs  = 开局一人一狗•其二
+|zht  = 開局一人一狗•其二
+|ja   = スタートは一人と犬一匹・その2
+|ko   = 시작은 한 사람과 개 한 마리•2
+|es   = Al inicio solo había una persona y un perro&nbsp;II
+|fr   = Tout commence avec un homme et un chien&nbsp;(II)
+|ru   = Человек собаке друг II
+|th   = เริ่มด้วยคนหนึ่งคนและสุนัขหนึ่งตัว 2
+|vi   = Hành Trình Một Người Một Chó 2
+|de   = Es war einmal ein Mensch und ein Hund (Teil 2)
+|id   = Meitantei Peppy II
+|pt   = A História Começa Com um Homem e um Cachorro (II)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

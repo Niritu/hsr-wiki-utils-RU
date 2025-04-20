@@ -1,0 +1,157 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003246
+|Название        = 
+|Изображение     = Миссия Освоения Событие магазина Киоск с закусками.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = 
+|Персонажи       = Говард; Господин Сиянь; Первопроходец; Сюйся; Тодд; Толкай; Тяни; Тётя Каланча; Цзиньюй; Цзыцяо; Чуньфэнь; Эделия
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = Утраченный кристалл*2; Кредиты*20 000
+}}
+'''Событие магазина: Киоск с закусками''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|Чтобы оживить Переулок ауруматонов, торговая гильдия стремится в полной мере использовать логистику причала и наладить тесное сотрудничество с торговцами в Переулке.<br />Торговая гильдия послала вас убедить тётю Каланчу, которая продаёт закуски, установить сотрудничество с гильдией. Однако сейчас у тёти Каланчи хлопот полон рот...}}
+
+==Этапы==
+# Разузнайте у тёти Каланчи из киоска с закусками о её проблемах
+# Узнайте мнение Тяни и Толкая в Приюте звёздных яликов
+# Узнайте мнение господина Сияня
+# Поговорите с Тяни и Толкаем
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Разузнайте у тёти Каланчи из киоска с закусками о её проблемах===
+{{Описание миссии|локация=Переулок ауруматонов|Чтобы оживить Переулок ауруматонов, торговая гильдия стремится в полной мере использовать логистику причала и наладить тесное сотрудничество с торговцами в Переулке.<br />Торговая гильдия послала вас убедить тётю Каланчу, которая продаёт закуски, установить сотрудничество с гильдией. Однако сейчас у тёти Каланчи хлопот полон рот...}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Тётя Каланча)
+<!--Unknown TalkSentence: 813246021-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502064102
+}</pre>
+:<!--Unknown TalkSentence: 502064103-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте мнение Тяни и Толкая в Приюте звёздных яликов===
+{{Диалог Начало}}
+
+
+;(Поговорите с Толкай)
+<!--Unknown TalkSentence: 502110101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Узнайте мнение господина Сияня===
+{{Диалог Начало}}
+
+;(Получено {{Item|Запись господина Сияня|20|x=1|text=Запись господина Сияня}})
+
+;(Поговорите с Господин Сиянь)
+<!--Unknown TalkSentence: 502104101-->
+<!--Unknown TalkSentence: 502104102-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Сюйся)
+<!--Unknown TalkSentence: 502106101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_502106110)
+<!--Unknown TalkSentence: 502106110-->
+:<!--Unknown TalkSentence: 502106113-->
+:;(Return to previous option selection)
+
+;(Поговорите с Цзиньюй)
+<!--Unknown TalkSentence: 502108101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Говард)
+<!--Unknown TalkSentence: 502112101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Тодд)
+<!--Unknown TalkSentence: 502114101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Цзыцяо)
+;(If {{cx}}<!--during performance 502011501-->)
+:<!--Unknown TalkSentence: 502115001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502115003-->
+:<!--Unknown TalkSentence: 502115006-->
+;(If {{cx}}<!--not during performance 502011501-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502115301
+}</pre>
+:<!--Unknown TalkSentence: 502115302-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Эделия)
+<!--Unknown TalkSentence: 502117101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Чуньфэнь)
+<!--Unknown TalkSentence: 502118101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+{{Диалог Конец}}
+
+===Поговорите с Тяни и Толкаем===
+{{Диалог Начало}}
+
+;(Получено {{Item|Запись Тяни и Толкая|20|x=1|text=Запись Тяни и Толкая}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Merchant Event: Food Stand
+|zhs  = 商铺事件•小吃铺
+|zht  = 商鋪事件•小吃鋪
+|ja   = 店舗イベント・小吃屋台
+|ko   = 상점 사건•포장마차
+|es   = Evento de tienda: Puesto de comida
+|fr   = Événement de magasin&nbsp;: Stand de nourriture
+|ru   = Событие магазина: Киоск с закусками
+|th   = อิเวนต์ร้านค้า: แผงขายอาหาร
+|vi   = Sự Kiện Cửa Tiệm - Quầy Ăn Vặt
+|de   = Händlerereignis: Imbissstand
+|id   = Event Toko: Food Stall
+|pt   = Evento de Comerciante: Barraca de Comida
+}}
+
+==История изменений==
+{{История изменений|2.7}}

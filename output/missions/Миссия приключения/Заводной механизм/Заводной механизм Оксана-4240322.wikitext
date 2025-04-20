@@ -1,0 +1,378 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240322
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Оксана.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Прогулка среди могил]]''
+|Персонажи       = Оксана; Первопроходец; Таинственная незнакомка; Торговец; Уолси
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Очищенный эфир*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Оксана''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в закуток в тематическом парке и заберите игрушки
+# Передайте игрушки покупателю в Золотом миге и завершите сделку
+# Доложите Оксане о результатах сделки
+# Догоните загадочную девушку и расспросите её
+# Вернитесь и поговорите с Оксаной
+# Покиньте тематический парк и оставьте всё позади (необязательно)
+# Следуйте за Гончими и поймайте Оксану
+# Отчитайтесь Уолси из Гончих (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь в закуток в тематическом парке и заберите игрушки===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Игрушки Оксаны|20|x=1|text=Игрушки Оксаны}})
+
+:{{Диалог|undefined}} Спрятанная коробка
+<!--Unknown TalkSentence: 413221703-->
+{{Диалог Конец}}
+
+===Передайте игрушки покупателю в Золотом миге и завершите сделку===
+{{Диалог Начало}}
+
+;(Поговорите с Торговец)
+<!--Unknown TalkSentence: 413220601-->
+<!--Unknown TalkSentence: 413220602-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413220604-->
+:<!--Unknown TalkSentence: 413220605-->
+:<!--Unknown TalkSentence: 413220606-->
+:<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424032204,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/4240322/DS42403220604.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 413220610,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_413220611"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413220606-->
+:<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424032204,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/4240322/DS42403220604.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 413220610,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_413220611"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+<!--Unknown TalkSentence: 413220606-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424032204,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/4240322/DS42403220604.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 413220610,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_413220611"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+;(Unused &mdash; TalkSentence_413220611)
+<!--Unknown TalkSentence: 413220611-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 424032204,
+	"IsAutoConsume": true,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {}
+}</pre>
+{{Диалог Конец}}
+
+===Доложите Оксане о результатах сделки===
+{{Диалог Начало}}
+
+;(Поговорите с Оксана)
+<!--Unknown TalkSentence: 413220801-->
+<!--Unknown TalkSentence: 413220802-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+			"InstanceIDList": [
+				400002
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Догоните загадочную девушку и расспросите её===
+{{Диалог Начало}}
+
+;(Поговорите с Таинственная незнакомка)
+<!--Unknown TalkSentence: 413221001-->
+<!--Unknown TalkSentence: 413221002-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413221004-->
+<!--Unknown TalkSentence: 413221005-->
+<!--Unknown TalkSentence: 413221006-->
+;(Return to previous option selection)
+
+;(Поговорите с Оксана)
+<!--Unknown TalkSentence: 413220815-->
+<!--Unknown TalkSentence: 413220816-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 413220901-->
+<!--Unknown TalkSentence: 413220902-->
+{{Диалог Конец}}
+
+===Вернитесь и поговорите с Оксаной===
+{{Диалог Начало}}
+
+;(Поговорите с Оксана)
+:{{tx}}
+<!--Unknown TalkSentence: 413221101-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221103-->
+:<!--Unknown TalkSentence: 413221104-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221106-->
+:<!--Unknown TalkSentence: 413221107-->
+:<!--Unknown TalkSentence: 413221108-->
+:<!--Unknown TalkSentence: 413221109-->
+:<!--Unknown TalkSentence: 413221110-->
+:<!--Unknown TalkSentence: 413221111-->
+:<!--Unknown TalkSentence: 413221112-->
+:<!--Unknown TalkSentence: 413221113-->
+:<!--Unknown TalkSentence: 413221114-->
+:<!--Unknown TalkSentence: 413221115-->
+:<!--Unknown TalkSentence: 413221116-->
+:<!--Unknown TalkSentence: 413221117-->
+:<!--Unknown TalkSentence: 413221118-->
+:<!--Unknown TalkSentence: 413221119-->
+:<!--Unknown TalkSentence: 413221120-->
+:<!--Unknown TalkSentence: 413221121-->
+:<!--Unknown TalkSentence: 413221122-->
+:<!--Unknown TalkSentence: 413221123-->
+:<!--Unknown TalkSentence: 413221124-->
+:<!--Unknown TalkSentence: 413221125-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221108-->
+:<!--Unknown TalkSentence: 413221109-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221111-->
+:<!--Unknown TalkSentence: 413221112-->
+:<!--Unknown TalkSentence: 413221113-->
+:<!--Unknown TalkSentence: 413221114-->
+:<!--Unknown TalkSentence: 413221115-->
+:<!--Unknown TalkSentence: 413221116-->
+:<!--Unknown TalkSentence: 413221117-->
+:<!--Unknown TalkSentence: 413221118-->
+:<!--Unknown TalkSentence: 413221119-->
+:<!--Unknown TalkSentence: 413221120-->
+:<!--Unknown TalkSentence: 413221121-->
+:<!--Unknown TalkSentence: 413221122-->
+:<!--Unknown TalkSentence: 413221123-->
+:<!--Unknown TalkSentence: 413221124-->
+:<!--Unknown TalkSentence: 413221125-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221114-->
+:<!--Unknown TalkSentence: 413221115-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 413221117-->
+:<!--Unknown TalkSentence: 413221118-->
+:<!--Unknown TalkSentence: 413221119-->
+:<!--Unknown TalkSentence: 413221120-->
+:<!--Unknown TalkSentence: 413221121-->
+:<!--Unknown TalkSentence: 413221122-->
+:<!--Unknown TalkSentence: 413221123-->
+:<!--Unknown TalkSentence: 413221124-->
+:<!--Unknown TalkSentence: 413221125-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 207
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Покиньте тематический парк и оставьте всё позади (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Следуйте за Гончими и поймайте Оксану===
+{{Диалог Начало}}
+
+;(Поговорите с Уолси)
+;(If Миссия [[Заводной механизм: Оксана]] has been completed)
+:<!--Unknown TalkSentence: 413221501-->
+:<!--Unknown TalkSentence: 413221502-->
+;(If Миссия [[Заводной механизм: Оксана]] has not been completed)
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 208
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 413221301-->
+<!--Unknown TalkSentence: 413221302-->
+<!--Unknown TalkSentence: 413221303-->
+<!--Unknown TalkSentence: 413221304-->
+----
+{{Диалог Конец}}
+
+===Отчитайтесь Уолси из Гончих (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Уолси)
+<!--Unknown TalkSentence: 413221401-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413221403-->
+<!--Unknown TalkSentence: 413221404-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Oksana
+|zhs  = 钟表把戏：奥科萨娜
+|zht  = 鐘錶把戲：奧科薩娜
+|ja   = クロックトリック：オクサーナ
+|ko   = 시계 트릭: 옥사나
+|es   = Trucorreloj: Oksana
+|fr   = Pouvoir de la Pendule : Oksana
+|ru   = Заводной механизм: Оксана
+|th   = กลนาฬิกา: Oksana
+|vi   = Thủ Thuật Đồng Hồ: Oksana
+|de   = Uhrwerk: Oksana
+|id   = Clockwork: Oksana
+|pt   = Truquelógio: Oksana
+}}
+
+==История изменений==
+{{История изменений|2.7}}

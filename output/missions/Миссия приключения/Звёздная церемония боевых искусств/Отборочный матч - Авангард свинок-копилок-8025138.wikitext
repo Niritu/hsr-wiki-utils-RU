@@ -1,0 +1,180 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025138
+|Название        = 
+|Изображение     = Миссия Освоения Отборочный матч - Авангард свинок-копилок.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Кармелла; Лука; Первопроходец
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Хотя аплодисменты стихли II
+|Награды         = Wardance Sword Badge*5
+}}
+'''Отборочный матч - Авангард свинок-копилок''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выйдите на арену и получите очки!
+
+==Прохождение==
+{{Дополнить}}
+
+===Выйдите на арену и получите очки!===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802515151-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+<!--Unknown TalkSentence: 802515121-->
+<!--Unknown TalkSentence: 802515122-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515124-->
+:<!--Unknown TalkSentence: 802515125-->
+:<!--Unknown TalkSentence: 802515126-->
+:<!--Unknown TalkSentence: 802515127-->
+:<!--Unknown TalkSentence: 802515128-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515126-->
+:<!--Unknown TalkSentence: 802515127-->
+:<!--Unknown TalkSentence: 802515128-->
+<!--Unknown TalkSentence: 802515126-->
+<!--Unknown TalkSentence: 802515127-->
+<!--Unknown TalkSentence: 802515128-->
+;(Unused &mdash; G156_TriggerBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2008,
+	"ScoreRaceSpecialInviteEventID": 419108,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513212,
+			"MaskConfig": {}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchResultDialog",
+	"Param": {
+		"Value": "2008"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Knockout Match: Trotter Battlefront
+|zhs  = 叩关赛•扑满战线
+|zht  = 叩關賽•撲滿戰線
+|ja   = 予選・プーマン戦線
+|ko   = 예선전•저금통 전선
+|es   = Combate de cualificación: Frente de Batalla Chanchito
+|fr   = Match de qualification&nbsp;: Front Magoret
+|ru   = Отборочный матч - Авангард свинок-копилок
+|th   = รอบคัดเลือก: แนวรบ Trotter
+|vi   = Giải Đấu Loại: Chiến Tuyến Heo Đất
+|de   = Qualifikationskampf: Sparschweinfront
+|id   = Pertandingan Knockout: Garis Perang Trotter
+|pt   = Partida Eliminatória: Vanguarda de Cofrinhos
+}}
+
+==История изменений==
+{{История изменений|2.7}}

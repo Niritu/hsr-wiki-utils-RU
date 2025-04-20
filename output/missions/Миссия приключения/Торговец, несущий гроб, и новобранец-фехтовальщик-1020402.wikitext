@@ -1,0 +1,228 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1020402
+|Название        = 
+|Изображение     = Миссия Освоения Торговец, несущий гроб, и новобранец-фехтовальщик.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Дань Хэн; Лоча; Первопроходец; Сушан
+|СтартЛокация    = Облачная переправа
+|Мир             = Лофу Сяньчжоу
+|Локации         = Облачная переправа
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Торговец, несущий гроб, и новобранец-фехтовальщик''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Сушан
+# Пройдите Облачную переправу и присоединитесь к экипажу Звёздного экспресса
+# Обойдите Облачную переправу и присоединитесь к экипажу Звёздного экспресса
+# Садитесь на звёздный ялик, чтобы покинуть Облачную переправу
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<!--Unknown TalkSentence: 102040301-->
+<!--Unknown TalkSentence: 102040302-->
+<!--Unknown TalkSentence: 102040303-->
+<!--Unknown TalkSentence: 102040304-->
+----
+:<!--0.25-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202111617-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202111617-->
+{{Диалог Конец}}
+
+===Поговорите с Сушан===
+{{Описание миссии|локация=Облачная переправа|Внезапно между вами и Дань Хэном снова возникла особая связь. Вам не терпится расспросить его о произошедших с ним приключениях.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Сушан)
+;(If {{cx}}<!--during performance 102040304-->)
+:<!--Unknown TalkSentence: 102040363-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 102040365-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 102040367-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 102040369-->
+::<!--Unknown TalkSentence: 102040370-->
+:<!--Unknown TalkSentence: 102040365-->
+;(If {{cx}}<!--not during performance 102040304-->)
+:<!--Unknown TalkSentence: 102040395-->
+
+;(Поговорите с Лоча)
+;(If {{cx}}<!--during performance 102040305-->)
+:<!--Unknown TalkSentence: 102040308-->
+;(If {{cx}}<!--not during performance 102040305-->)
+:<!--Unknown TalkSentence: 102040339-->
+:<!--0.25-second delay-->
+<!--Unknown TalkSentence: 102040420-->
+<!--Unknown TalkSentence: 102040421-->
+<!--Unknown TalkSentence: 102040422-->
+<!--Unknown TalkSentence: 102040423-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102040424-->
+{{Диалог Конец}}
+
+===Пройдите Облачную переправу и присоединитесь к экипажу Звёздного экспресса===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 9
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+<!--Unknown TalkSentence: 102040434-->
+<!--Unknown TalkSentence: 102040435-->
+<!--Unknown TalkSentence: 102040436-->
+<!--Unknown TalkSentence: 102040437-->
+<!--Unknown TalkSentence: 102040438-->
+----
+:<!--0.25-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 102040439-->
+----
+<!--Unknown TalkSentence: 102040440-->
+<!--Unknown TalkSentence: 102040441-->
+----
+{{Диалог Конец}}
+
+===Обойдите Облачную переправу и присоединитесь к экипажу Звёздного экспресса===
+{{Диалог Начало}}
+
+
+;(Поговорите с Сушан)
+<!--Unknown TalkSentence: 102040470-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Лоча)
+<!--Unknown TalkSentence: 102040450-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Садитесь на звёздный ялик, чтобы покинуть Облачную переправу===
+{{Диалог Начало}}
+:<!--0.25-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 12293667756574277930
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "102040309_trigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202111601-->
+<!--Unknown TalkSentence: 202111602-->
+<!--Unknown TalkSentence: 202111603-->
+<!--Unknown TalkSentence: 202111604-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 202111605-->
+<!--Unknown TalkSentence: 202111606-->
+<!--Unknown TalkSentence: 202111607-->
+<!--Unknown TalkSentence: 202111608-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Pallbearing Merchant, Swordwielding Recruit
+|zhs  = 扶灵游贾，仗剑新卒
+|zht  = 扶靈游賈，仗劍新卒
+|ja   = 遺霊を扶ける遊商、剣を帯びる新兵
+|ko   = 유령을 돕는 상인, 검을 지닌 신병
+|es   = Mercader avispado y recluta espadachín
+|fr   = Marchand porteur funéraire et recrue épéiste
+|ru   = Торговец, несущий гроб, и новобранец-фехтовальщик
+|th   = พ่อค้าแบกโลง อัศวินถือดาบ
+|vi   = Thương Gia Khiêng Quan Tài, Kiếm Sĩ Tập Sự
+|de   = Sargtragender Händler, Schwertführender Rekrut
+|id   = Pedagang Pemandu Roh, Rekrut Pembawa Pedang
+|pt   = Comerciante Leva-caixão, Recruta Brande-espada
+}}
+
+==История изменений==
+{{История изменений|2.7}}

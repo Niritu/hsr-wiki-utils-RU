@@ -1,0 +1,179 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000404
+|Название        = 
+|Изображение     = Миссия Освоения Где-то ещё.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Персонажи       = Зено; Парменидис; Первопроходец
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Утраченные золотые частицы*2; Кредиты*5 000
+}}
+'''Где-то ещё''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с двумя риторами, приняв участие в дискуссии
+# Зено: Икатус не существует (выбор)
+# Парменидис: Икатус существует (выбор)
+# Выступите защитником одной из точек зрения
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите с двумя риторами, приняв участие в дискуссии===
+{{Описание миссии|локация=Вечный священный город Охема|Мода на дебаты давно уже распространена в Охеме, а вам как раз случайно встретились двое риторов, изрядно преуспевших в своём искусстве. Выслушайте их занимательные точки зрения.}}
+{{Диалог Начало}}
+
+;(Поговорите с Зено)
+----
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504000265,
+				504000266
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504000267,
+				504000268
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+<!--Unknown TalkSentence: 500044102-->
+<!--Unknown TalkSentence: 500044103-->
+<!--Unknown TalkSentence: 500044104-->
+<!--Unknown TalkSentence: 500044105-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500044109-->
+:<!--Unknown TalkSentence: 500044110-->
+:<!--Unknown TalkSentence: 500044111-->
+:<!--Unknown TalkSentence: 500044112-->
+:<!--Unknown TalkSentence: 500044113-->
+:<!--Unknown TalkSentence: 500044114-->
+:<!--Unknown TalkSentence: 500044115-->
+:<!--Unknown TalkSentence: 500044116-->
+:<!--Unknown TalkSentence: 500044117-->
+:<!--Unknown TalkSentence: 500044118-->
+:<!--Unknown TalkSentence: 500044119-->
+:<!--Unknown TalkSentence: 500044120-->
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 500044108-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040401,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Поговорите с Зено)
+----
+<!--Unknown TalkSentence: 500044202-->
+<!--Unknown TalkSentence: 500044203-->
+<!--Unknown TalkSentence: 500044204-->
+<!--Unknown TalkSentence: 500044205-->
+<!--Unknown TalkSentence: 500044206-->
+<!--Unknown TalkSentence: 500044207-->
+<!--Unknown TalkSentence: 500044208-->
+<!--Unknown TalkSentence: 500044209-->
+<!--Unknown TalkSentence: 500044210-->
+<!--Unknown TalkSentence: 500044211-->
+<!--Unknown TalkSentence: 500044212-->
+<!--Unknown TalkSentence: 500044213-->
+<!--Unknown TalkSentence: 500044214-->
+<!--Unknown TalkSentence: 500044215-->
+;(Return to previous option selection)
+
+;(Поговорите с Зено)
+----
+<!--Unknown TalkSentence: 500044302-->
+;(Return to previous option selection)
+
+;(Поговорите с Зено)
+<!--Unknown TalkSentence: 500044402-->
+<!--Unknown TalkSentence: 500044403-->
+<!--Unknown TalkSentence: 500044404-->
+<!--Unknown TalkSentence: 500044405-->
+<!--Unknown TalkSentence: 500044406-->
+<!--Unknown TalkSentence: 500044407-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Парменидис)
+<!--Unknown TalkSentence: 500044502-->
+<!--Unknown TalkSentence: 500044503-->
+<!--Unknown TalkSentence: 500044504-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Зено: Икатус не существует (выбор)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Парменидис: Икатус существует (выбор)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выступите защитником одной из точек зрения===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Elsewhere
+|zhs  = 在别处
+|zht  = 在別處
+|ja   = どこかで
+|ko   = 다른 곳에서
+|es   = En otro lugar
+|fr   = Ailleurs
+|ru   = Где-то ещё
+|th   = อยู่แห่งหนอื่น
+|vi   = Ở Nơi Khác
+|de   = An einem anderen Ort
+|id   = Di Suatu Tempat
+|pt   = Outro Lugar
+}}
+
+==История изменений==
+{{История изменений|3.0}}

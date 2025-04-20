@@ -1,0 +1,252 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000411
+|Название        = 
+|Изображение     = Миссия Освоения Частые разлуки.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Персонажи       = Анакса; Гиацина; Молодая учёная; Первопроходец; Старик Фабио; Титус
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''Частые разлуки''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отыщите старика Фабио и поговорите с ним
+# Сообщите Титусу результаты расследования
+# Верните старику Фабио меч Артакамы
+# Исследуйте следы, оставленные сёстрами, возле Купола верности
+# Продолжайте исследовать следы сестёр
+# Отыщите Титуса, и узнайте, требуется ли ему помощь
+# Исследуйте следы, оставленные Титусом, возле Библиотеки дружбы
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Гиацина)
+:{{tx}}
+<!--Unknown TalkSentence: 500052301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отыщите старика Фабио и поговорите с ним===
+{{Описание миссии|локация=Вечный священный город Охема|Вы пообещали Гиацине, что навестите семьи пострадавших в Роще и узнаете, как они поживают.<br />Но, возможно, вы ещё много чего можете сделать помимо этого.}}
+{{Диалог Начало}}
+
+;(Поговорите с Старик Фабио)
+<!--Unknown TalkSentence: 500051123-->
+{{Диалог Конец}}
+
+===Сообщите Титусу результаты расследования===
+{{Диалог Начало}}
+
+;(Поговорите с Титус)
+----
+:<!--Unknown TalkSentence: 500051901-->
+:<!--Unknown TalkSentence: 500051902-->
+:<!--Unknown TalkSentence: 500051903-->
+:<!--Unknown TalkSentence: 500051904-->
+:<!--Unknown TalkSentence: 500051905-->
+:<!--Unknown TalkSentence: 500051906-->
+:<!--Unknown TalkSentence: 500051907-->
+:<!--Unknown TalkSentence: 500051908-->
+:<!--Unknown TalkSentence: 500051909-->
+:<!--Unknown TalkSentence: 500051910-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500051912-->
+::{{tx}}
+----
+:<!--Unknown TalkSentence: 500052401-->
+:<!--Unknown TalkSentence: 500052402-->
+{{Диалог Конец}}
+
+===Верните старику Фабио меч Артакамы===
+{{Диалог Начало}}
+
+;(Поговорите с Старик Фабио)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<!--Unknown TalkSentence: 500052101-->
+<!--Unknown TalkSentence: 500052102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+{{Диалог Конец}}
+
+===Исследуйте следы, оставленные сёстрами, возле Купола верности===
+{{Диалог Начало}}
+
+;(Поговорите с Молодая учёная)
+----
+;(If {{cx}}<!--not during performance 304003018-->)
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 500051305-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--during performance 304003018-->)
+:<!--Unknown TalkSentence: 500051305-->
+::{{tx}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте исследовать следы сестёр===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отыщите Титуса, и узнайте, требуется ли ему помощь===
+{{Диалог Начало}}
+
+;(Поговорите с Титус)
+:{{tx}}
+:<!--Unknown TalkSentence: 500051601-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 500051603-->
+::<!--Unknown TalkSentence: 500051604-->
+::<!--Unknown TalkSentence: 500051605-->
+::<!--Unknown TalkSentence: 500051606-->
+::<!--Unknown TalkSentence: 500051607-->
+::<!--Unknown TalkSentence: 500051608-->
+::<!--Unknown TalkSentence: 500051609-->
+::<!--Unknown TalkSentence: 500051610-->
+::<!--Unknown TalkSentence: 500051611-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 500051605-->
+::<!--Unknown TalkSentence: 500051606-->
+::<!--Unknown TalkSentence: 500051607-->
+::<!--Unknown TalkSentence: 500051608-->
+::<!--Unknown TalkSentence: 500051609-->
+::<!--Unknown TalkSentence: 500051610-->
+::<!--Unknown TalkSentence: 500051611-->
+:<!--Unknown TalkSentence: 500051605-->
+:<!--Unknown TalkSentence: 500051606-->
+:<!--Unknown TalkSentence: 500051607-->
+:<!--Unknown TalkSentence: 500051608-->
+:<!--Unknown TalkSentence: 500051609-->
+:<!--Unknown TalkSentence: 500051610-->
+:<!--Unknown TalkSentence: 500051611-->
+----
+:<!--Unknown TalkSentence: 500051701-->
+
+{{Диалог Конец}}
+
+===Исследуйте следы, оставленные Титусом, возле Библиотеки дружбы===
+{{Диалог Начало}}
+
+;(Поговорите с Старик Титус)
+----
+;(If {{cx}}<!--not during performance 304003016-->)
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 500051805-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--during performance 304003016-->)
+:<!--Unknown TalkSentence: 500051805-->
+::{{tx}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Frequent Partings
+|zhs  = 常有别离时
+|zht  = 常有別離時
+|ja   = ありふれた離別の時
+|ko   = 늘 찾아오는 이별의 순간
+|es   = Siempre hay despedidas
+|fr   = Adieux fréquents
+|ru   = Частые разлуки
+|th   = การจากลาเป็นเรื่องปกติ
+|vi   = Thường Có Lúc Biệt Ly
+|de   = Häufige Abschiede
+|id   = Perpisahan yang Sering Terjadi
+|pt   = Despedidas Frequentes
+}}
+
+==История изменений==
+{{История изменений|3.1}}

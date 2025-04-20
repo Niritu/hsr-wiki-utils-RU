@@ -1,0 +1,193 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026114
+|Название        = 
+|Изображение     = Миссия Освоения Хор гимнов.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = 
+|Персонажи       = Высокомерное создание Жуань Мэй; Дафинчи; Первопроходец; Разозлённое создание Жуань Мэй; Страж Зоны; Тоскующее создание Жуань Мэй
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Хор гимнов''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Встретьтесь с Дафинчи в кампусе
+# Соберите вдохновение, прогулявшись по космической станции
+# Помогите тоскующему созданию Жуань Мэй спеть в хоре
+# Осмотрите создание Жуань Мэй
+
+==Прохождение==
+{{Дополнить}}
+
+===Встретьтесь с Дафинчи в кампусе===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Кажется, Дафинчи хочет о чём-то поговорить. Встретьтесь с ней в кампусе.}}
+{{Диалог Начало}}
+
+;(Поговорите с Дафинчи)
+----
+<!--Unknown TalkSentence: 802619000-->
+<!--Unknown TalkSentence: 802619001-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Соберите вдохновение, прогулявшись по космической станции===
+{{Описание миссии|локация=Изолированная зона|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Прогуляйтесь по Изолированной зоне, чтобы помочь Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; EnterDistrict_G194)
+<!--Unknown TalkSentence: 802619101-->
+:<!--Unknown TalkSentence: 802619102-->
+:<!--Unknown TalkSentence: 802619103-->
+:<!--Unknown TalkSentence: 802619104-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; EnterDistrict_G194_1)
+<!--Unknown TalkSentence: 802619005-->
+:<!--Unknown TalkSentence: 802619006-->
+
+;(Поговорите с Тоскующее создание Жуань Мэй)
+<!--Unknown TalkSentence: 802611427-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Помогите тоскующему созданию Жуань Мэй спеть в хоре===
+{{Описание миссии|локация=Изолированная зона|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы раздобыли запись бита созданий Жуань Мэй. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+
+;(Поговорите с Тоскующее создание Жуань Мэй)
+<!--Unknown TalkSentence: 802611427-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; MusicRhythm_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 802619301-->
+<!--Unknown TalkSentence: 802619302-->
+<!--Unknown TalkSentence: 802619303-->
+<!--Unknown TalkSentence: 802619304-->
+<!--Unknown TalkSentence: 802619305-->
+<!--Unknown TalkSentence: 802619306-->
+<!--Unknown TalkSentence: 802619307-->
+<!--Unknown TalkSentence: 802619308-->
+<!--Unknown TalkSentence: 802619309-->
+<!--Unknown TalkSentence: 802619310-->
+<!--Unknown TalkSentence: 802619311-->
+<!--Unknown TalkSentence: 802619312-->
+<!--Unknown TalkSentence: 802619313-->
+<!--Unknown TalkSentence: 802619314-->
+<!--Unknown TalkSentence: 802619315-->
+<!--Unknown TalkSentence: 802619316-->
+<!--Unknown TalkSentence: 802619317-->
+<!--Unknown TalkSentence: 802619318-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619320-->
+:<!--Unknown TalkSentence: 802619321-->
+:<!--Unknown TalkSentence: 802619322-->
+:<!--Unknown TalkSentence: 802619323-->
+:<!--Unknown TalkSentence: 802619324-->
+:<!--Unknown TalkSentence: 802619325-->
+:<!--Unknown TalkSentence: 802619326-->
+:<!--Unknown TalkSentence: 802619327-->
+:<!--Unknown TalkSentence: 802619328-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619323-->
+:<!--Unknown TalkSentence: 802619324-->
+:<!--Unknown TalkSentence: 802619325-->
+:<!--Unknown TalkSentence: 802619326-->
+:<!--Unknown TalkSentence: 802619327-->
+:<!--Unknown TalkSentence: 802619328-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802619326-->
+:<!--Unknown TalkSentence: 802619327-->
+:<!--Unknown TalkSentence: 802619328-->
+::{{tx}}
+<!--Unknown TalkSentence: 802619326-->
+<!--Unknown TalkSentence: 802619327-->
+<!--Unknown TalkSentence: 802619328-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Осмотрите создание Жуань Мэй===
+{{Описание миссии|локация=Изолированная зона|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Аккуратно осмотрите создание Жуань Мэй.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hymn Chorus
+|zhs  = 赞歌大合唱
+|zht  = 讚歌大合唱
+|ja   = 讃歌大合唱
+|ko   = 찬가 대합창
+|es   = Coro de himnos
+|fr   = Chœur de l'hymne
+|ru   = Хор гимнов
+|th   = ร่วมประสานเพลงสรรเสริญ
+|vi   = Đồng Ca Khen Ngợi
+|de   = Hymnischer Chor
+|id   = Paduan Suara Himne
+|pt   = Refrão do Hino
+}}
+
+==История изменений==
+{{История изменений|2.7}}

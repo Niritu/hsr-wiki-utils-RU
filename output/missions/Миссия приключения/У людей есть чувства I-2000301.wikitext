@@ -1,0 +1,256 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000301
+|Название        = 
+|Изображение     = Миссия Освоения У людей есть чувства I.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия приключения]] ''[[Дорога возрождения]]''
+* Завершена [[Миссия Освоения]] ''[[Долгое ожидание лезвия клинка]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 11
+|Персонажи       = Аста; Джоанна; Инженер по техническому обслуживанию; Исследователь Отдела откровений; Крис; Мэйр; Первопроходец; Спокойный исследователь из Отдела медицины; Удивлённый исследователь Отдела прикладных искусств
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = Дорога возрождения
+|Следующая       = У людей есть чувства II
+|Награды         = Опыт Освоения*100; Звёздный нефрит*30; Журнал приключений*2; Hertareum*50; Кредиты*5 000
+}}
+'''У людей есть чувства I''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|Диковина под названием Ракушка-смешнявка поражена мем-вирусом и теперь распространяет по космической станции демотивирующие высказывания. Аста просит вас найти источник вируса.<br />Вы проверяете историю поиска Мэйр и понимаете, что она просто невинная любительница кошек.}}
+
+==Этапы==
+# Спросите Асту, зачем она искала вас
+# Проверьте, нормально ли ведёт себя Мэйр
+# Проверьте, нормально ли ведёт себя Крис
+# Проверить, нормально ли ведёт себя Джоанна
+# Вернитесь к Асте и доложите о результатах расследования
+# Воспользуйтесь терминалом в аппаратной
+# Попросите инженера помочь
+
+==Прохождение==
+{{Дополнить}}
+
+===Спросите Асту, зачем она искала вас===
+{{Описание миссии|локация=Главная контрольная зона|Диковина под названием Ракушка-смешнявка поражена мем-вирусом и теперь распространяет по космической станции демотивирующие высказывания. Аста просит вас найти источник вируса.<br />Кто из троих подозреваемых стоит за этим фарсом?}}
+{{Диалог Начало}}
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200030103-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Проверьте, нормально ли ведёт себя Мэйр===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 9043410032120036605
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030102_Prop_27_300003_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 27
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Проверьте, нормально ли ведёт себя Крис===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 9043410032120036605
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030104_Prop_27_300004_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 27
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Проверить, нормально ли ведёт себя Джоанна===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 9043410032120036605
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030106_Prop_48_300002_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 48
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200030213-->
+<!--Unknown TalkSentence: 200030214-->
+<!--Unknown TalkSentence: 200030215-->
+<!--Unknown TalkSentence: 200030316-->
+<!--Unknown TalkSentence: 200030317-->
+<!--Unknown TalkSentence: 200030414-->
+<!--Unknown TalkSentence: 200030415-->
+{{Диалог Конец}}
+
+===Вернитесь к Асте и доложите о результатах расследования===
+{{Описание миссии|локация=Главная контрольная зона|Опросив троих подозреваемых, вы отмечаете про себя что-то неправильное в их поведении, а потом возвращаетесь к Асте. Но обдумывав всё, вы задаётесь вопросом: действительно ли это поможет определить того, кто заражён?}}
+{{Диалог Начало}}
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200030503-->
+<!--Unknown TalkSentence: 200030508-->
+<!--Unknown TalkSentence: 200030509-->
+;(Unused &mdash; Wait_Option_2000305_125)
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200030505-->
+:<!--Unknown TalkSentence: 200030508-->
+:<!--Unknown TalkSentence: 200030509-->
+{{Диалог Конец}}
+
+===Воспользуйтесь терминалом в аппаратной===
+{{Описание миссии|локация=Зона поддержки|Основываясь на результатах расследования, вы с Астой не можете сказать, кто заражён. Находясь в безвыходном положении, Аста временно открывает для вас терминал, в котором можно проверить данные обо всех, кто находится на космической станции...}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030111_Prop_11_300001_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Попросите инженера помочь===
+{{Описание миссии|локация=Зона поддержки|Сообщение об ошибке, прыгающее на экране терминала, как будто насмехается над вами. К счастью, Аста уже пригласила инженера, который следит за работой аппаратной. Пришло время попросить его проверить терминал.}}
+{{Диалог Начало}}
+
+;(Поговорите с Инженер по техническому обслуживанию)
+<!--Unknown TalkSentence: 200030605-->
+<!--Unknown TalkSentence: 200030606-->
+<!--Unknown TalkSentence: 200030607-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sensitive Beings (I)
+|zhs  = 人非草木•其一
+|zht  = 人非草木•其一
+|ja   = 人非木石・その1
+|ko   = 인간은 감정의 동물•1
+|es   = Seres sensibles: parte I
+|fr   = Êtres sensibles (I)
+|ru   = У людей есть чувства I
+|th   = มนุษย์ก็มีหัวจิตหัวใจ 1
+|vi   = Người Không Phải Cây Cỏ-1
+|de   = Empfindsame Wesen (Teil 1)
+|id   = Makhluk Berperasaan (I)
+|pt   = Seres Sensitivos (I)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

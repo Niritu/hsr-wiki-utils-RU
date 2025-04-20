@@ -1,0 +1,361 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8023104
+|Название        = 
+|Изображение     = Миссия Освоения Бумажная дуэль.png
+|Тип             = Миссия приключения
+|События         = Бумажная дуэль
+|Глава           = Бумажная дуэль
+|Условия         = Завершена [[Миссия приключения]] ''[[Бумажная дуэль]]''
+|Персонажи       = Взрывная «Услада»; Злая гончая; Первопроходец; Светлячок; Серебряный Волк
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = Бумажная дуэль: Коллекционная версия
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Бумажная дуэль''' — Событие [[Миссия приключения]] из события [[Бумажная дуэль]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в указанное место и найдите игровой автомат на отборочной площадке выжженных песков
+# Получите одобрение багровой пташки
+# Поговорите со Светлячком
+# Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Светлячка на новом игровом автомате
+# Проведите обзор битвы с Светлячком
+# Посадите Светлопташку на выбранный игровой автомат
+# Поговорите со Светлячком
+# Откройте карту и узнайте о четвёртом игровом автомате
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в указанное место и найдите игровой автомат на отборочной площадке выжженных песков===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 823104001-->
+<!--Unknown TalkSentence: 823104002-->
+<!--Unknown TalkSentence: 823104003-->
+<!--Unknown TalkSentence: 823104004-->
+<!--Unknown TalkSentence: 823104005-->
+<!--Unknown TalkSentence: 823104006-->
+<!--Unknown TalkSentence: 823104007-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104009-->
+:<!--Unknown TalkSentence: 823104010-->
+:<!--Unknown TalkSentence: 823104011-->
+:<!--Unknown TalkSentence: 823104012-->
+:<!--Unknown TalkSentence: 823104013-->
+:<!--Unknown TalkSentence: 823104014-->
+:<!--Unknown TalkSentence: 823104015-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104011-->
+:<!--Unknown TalkSentence: 823104012-->
+:<!--Unknown TalkSentence: 823104013-->
+:<!--Unknown TalkSentence: 823104014-->
+:<!--Unknown TalkSentence: 823104015-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104013-->
+:<!--Unknown TalkSentence: 823104014-->
+:<!--Unknown TalkSentence: 823104015-->
+<!--Unknown TalkSentence: 823104013-->
+<!--Unknown TalkSentence: 823104014-->
+<!--Unknown TalkSentence: 823104015-->
+{{Диалог Конец}}
+
+===Получите одобрение багровой пташки===
+{{Диалог Начало}}
+;(Unused &mdash; G393_CreateProp)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G393"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 393
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		"MultiPropID": [],
+		"PropIDInOwnerGroup": {
+			"FixedValue": {
+				"Value": 300002
+			}
+		}
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите со Светлячком===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823104048-->
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Светлячка на новом игровом автомате===
+{{Диалог Начало}}
+
+;(Поговорите с Светлячок)
+<!--Unknown TalkSentence: 823104037-->
+<!--Unknown TalkSentence: 823104038-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823104037-->
+<!--Unknown TalkSentence: 823104038-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 4)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"IconType": "ChatLoopIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 4)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [
+		"PlayButton"
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Проведите обзор битвы с Светлячком===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MatchThreeMainEntrancePage"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MatchThree.Entrance.MatchThreeNewBirdDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "303"
+	}
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 823104101-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104103-->
+:<!--Unknown TalkSentence: 823104104-->
+:<!--Unknown TalkSentence: 823104105-->
+:<!--Unknown TalkSentence: 823104106-->
+:<!--Unknown TalkSentence: 823104107-->
+:<!--Unknown TalkSentence: 823104108-->
+:<!--Unknown TalkSentence: 823104109-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104105-->
+:<!--Unknown TalkSentence: 823104106-->
+:<!--Unknown TalkSentence: 823104107-->
+:<!--Unknown TalkSentence: 823104108-->
+:<!--Unknown TalkSentence: 823104109-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104107-->
+:<!--Unknown TalkSentence: 823104108-->
+:<!--Unknown TalkSentence: 823104109-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823104107-->
+<!--Unknown TalkSentence: 823104108-->
+<!--Unknown TalkSentence: 823104109-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; Activity230_PveResultClose)
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"MatchThreeMainEntrancePage"
+	],
+	"PageRootNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Посадите Светлопташку на выбранный игровой автомат===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите со Светлячком===
+{{Диалог Начало}}
+
+;(Поговорите с Светлячок)
+<!--Unknown TalkSentence: 823100001-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823104201-->
+<!--Unknown TalkSentence: 823104202-->
+<!--Unknown TalkSentence: 823104203-->
+<!--Unknown TalkSentence: 823104204-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104206-->
+:<!--Unknown TalkSentence: 823104207-->
+:<!--Unknown TalkSentence: 823104208-->
+:<!--Unknown TalkSentence: 823104209-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823104208-->
+:<!--Unknown TalkSentence: 823104209-->
+::{{tx}}
+<!--Unknown TalkSentence: 823104208-->
+<!--Unknown TalkSentence: 823104209-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Откройте карту и узнайте о четвёртом игровом автомате===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Origami Bird Clash
+|zhs  = 「折纸小鸟对对碰」
+|zht  = 「摺紙小鳥對對碰」
+|ja   = 「折り紙の小鳥マッチ」
+|ko   = 「종이새 팡팡」
+|es   = Choque de pajaritos de papel
+|fr   = Rififruit chez les oiseaux en origami
+|ru   = Бумажная дуэль
+|th   = นกกระดาษตะลุมบอน
+|vi   = Chim Giấy Đại Chiến
+|de   = Origamivogel-Matching
+|id   = Adu Jotos Burung Origami
+|pt   = Choque de Pássaro de Origami
+}}
+
+==История изменений==
+{{История изменений|2.7}}

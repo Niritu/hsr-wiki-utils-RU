@@ -1,0 +1,163 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8024205
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Освоение: Дружба - это чудо
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Старые друзья, новые друзья?]]''
+|Персонажи       = Пела; Первопроходец; Сумеречная Мусорка
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = Старые друзья, новые друзья?
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба - это чудо]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Unused &mdash; EnterDistrict_G240)
+:{{tx}}
+:<!--Unknown TalkSentence: 802440602-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802440604-->
+:<!--Unknown TalkSentence: 802440605-->
+:<!--Unknown TalkSentence: 802440606-->
+:<!--Unknown TalkSentence: 802440607-->
+:<!--Unknown TalkSentence: 802440608-->
+:<!--Unknown TalkSentence: 802440609-->
+:<!--Unknown TalkSentence: 802440610-->
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10101_F10101001_G240"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "8024205_Junk",
+		"AreaName": {
+			"Value": "LevelArea_P10101_F10101001_G242"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false,
+		"ResetTurnInPlace": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_W3_Junk_00/Eff_Monster_W3_Junk_00_Paster05.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.SetMunicipalEnable",
+			"Visible": true
+		}
+	]
+}</pre>
+
+:{{Диалог|Журнал путешествий}} Воссоздать «чудо дружбы»
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.SetMunicipalEnable",
+			"Visible": true
+		}
+	]
+}</pre>
+
+;(Поговорите с Пела)
+<!--Unknown TalkSentence: 802441318-->
+
+;(Поговорите с Сумеречная Мусорка)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Main.ActivitySummonMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Поговорите с Пела)
+<!--Unknown TalkSentence: 802440702-->
+<!--Unknown TalkSentence: 802440703-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

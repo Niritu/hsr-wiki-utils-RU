@@ -1,0 +1,189 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4050037
+|Название        = 
+|Изображение     = Миссия Освоения Правила экспресса Управленческий опыт.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Броня; Гепард; Клара; Наташа; Пела; Первопроходец; Пом-Пом; Сварог; Хук
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Разрежённый эфир*2; Meteoric Alloy*1; Кредиты*8 000
+}}
+'''Правила экспресса: Управленческий опыт''' — [[Миссия приключения]] в [[Звёздный экспресс]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Спросите Хук
+# Спросите Пелу
+# Спросите Броню
+# Спросите Наташу
+# Спросите Сварога и Клару
+# Спросите Гепарда
+# Вернитесь и сообщите Пом-Пом
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 405000000-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Спросите Хук===
+{{Описание миссии|локация=Камнеград|Спросите Хук о её управленческом опыте... Она правда в этом разбирается?}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Хук)
+;(If {{cx}}<!--during performance 501030401-->)
+;(If {{cx}}<!--not during performance 501030401-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030466
+}</pre>
+<!--Unknown TalkSentence: 501030416-->
+{{Диалог Конец}}
+
+===Спросите Пелу===
+{{Описание миссии|локация=Форт Клипота|Спросите Пелу о её управленческом опыте.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Пела)
+;(If {{cx}}<!--during performance 501029901-->)
+:<!--Unknown TalkSentence: 501029901-->
+:<!--Unknown TalkSentence: 501029902-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501029904-->
+:<!--Unknown TalkSentence: 501029909-->
+;(If {{cx}}<!--not during performance 501029901-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501029942
+}</pre>
+:<!--Unknown TalkSentence: 501029943-->
+:<!--Unknown TalkSentence: 501029944-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Спросите Броню===
+{{Описание миссии|локация=Форт Клипота|Спросите Броню о её управленческом опыте.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Броня)
+<!--Unknown TalkSentence: 501029105-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Спросите Наташу===
+{{Описание миссии|локация=Клиника Наташи|Спросите Наташу о её управленческом опыте.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Наташа)
+<!--Unknown TalkSentence: 100005701-->
+<!--Unknown TalkSentence: 100005702-->
+{{Диалог Конец}}
+
+===Спросите Сварога и Клару===
+{{Описание миссии|локация=Поселение роботов|Спросите Сварога и Клару об их управленческом опыте.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Сварог)
+;(If {{cx}}<!--during performance 501030301-->)
+:<!--Unknown TalkSentence: 501030301-->
+:<!--Unknown TalkSentence: 501030302-->
+:<!--Unknown TalkSentence: 501030303-->
+;(If {{cx}}<!--not during performance 501030301-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030333
+}</pre>
+
+;(Поговорите с Клара)
+;(If {{cx}}<!--during performance 501030201-->)
+:<!--Unknown TalkSentence: 501030201-->
+:<!--Unknown TalkSentence: 501030202-->
+:<!--Unknown TalkSentence: 501030203-->
+:<!--Unknown TalkSentence: 501030204-->
+;(If {{cx}}<!--not during performance 501030201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030236
+}</pre>
+{{Диалог Конец}}
+
+===Спросите Гепарда===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Спросите Гепарда о его управленческом опыте.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Гепард)
+;(If {{cx}}<!--during performance 501030001-->)
+:<!--Unknown TalkSentence: 501030001-->
+:<!--Unknown TalkSentence: 501030002-->
+:<!--Unknown TalkSentence: 501030003-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501030005-->
+:<!--Unknown TalkSentence: 501030006-->
+:<!--Unknown TalkSentence: 501030010-->
+;(If {{cx}}<!--not during performance 501030001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030034
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь и сообщите Пом-Пом===
+{{Описание миссии|локация=Общий вагон|Возвращайтесь и сообщите Пом-Пом о новообретённых знаниях, полученных от ваших друзей!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 405000000-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Express Regulations: Management Experience
+|zhs  = 列车行为准则：管理经验
+|zht  = 列車行為準則：管理經驗
+|ja   = 車内行動規範・マネージメント
+|ko   = 열차 행동 준칙: 관리 경험
+|es   = Normas del Expreso: experiencia en gestión
+|fr   = Règlement de l'Express&nbsp;: expérience en gestion
+|ru   = Правила экспресса: Управленческий опыт
+|th   = แนวปฏิบัติของรถไฟ: ประสบการณ์ด้านการบริหารจัดการ
+|vi   = Quy Tắc Ứng Xử Đội Tàu: Kinh Nghiệm Quản Lý
+|de   = Expressregeln: Managementerfahrung
+|id   = Pedoman Express: Pengalaman Manajemen
+|pt   = Regulamentos do Expresso: Experiência de Gerenciamento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

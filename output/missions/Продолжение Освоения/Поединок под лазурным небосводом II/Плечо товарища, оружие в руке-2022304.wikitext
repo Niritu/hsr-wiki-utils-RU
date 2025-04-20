@@ -1,0 +1,231 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2022304
+|Название        = 
+|Изображение     = Миссия Освоения Плечо товарища, оружие в руке.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Поединок под лазурным небосводом II
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Кто, если не я, волны развернёт?]]''
+|Персонажи       = Март 7; Первопроходец; Юньли; Яньцин
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Кто, если не я, волны развернёт?
+|Следующая       = Клинок блестит, лисица ум теряет
+|Награды         = Опыт Освоения*400; Звёздный нефрит*50; Путеводитель путешественника*6; Утраченный кристалл*6; Fatal Clash of Swordgraves*1 { text = Fatal Clash of Swordgraves }; Кредиты*70 000
+}}
+'''Плечо товарища, оружие в руке''' — [[Продолжение Освоения]] в главе [[Поединок под лазурным небосводом II]].
+
+==Описание==
+{{Описание|На арене под рёв волков Хулэй размахивает клинком, грозясь превратить это место в кровавую церемонию. Среди обломков мечей три юных мастера фехтования полны решимости противостоять свирепым зверям и не позволить им добиться победы.}}
+
+==Этапы==
+# Встретьтесь с Юньли и отправляйтесь на арену Церемонии боевых искусств
+# Победите Хулэя
+# Станьте свидетелем поражения Хулэя
+
+==Прохождение==
+{{Дополнить}}
+
+===Встретьтесь с Юньли и отправляйтесь на арену Церемонии боевых искусств===
+{{Описание миссии|локация=«Рассекатель небес»|Тем временем Март 7 тоже заметила, что на борту «Рассекателя небес» происходит что-то необычное. Пришло время наконец испытать её умения обращаться с мечом.}}
+{{Диалог Начало}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Волк-поглотитель луны*2; Волк-чернокоготь*2}}
+<!--Unknown TalkSentence: 222331711-->
+<!--Unknown TalkSentence: 222331712-->
+<!--Unknown TalkSentence: 222331713-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 222331714-->
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 222331801-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; EnterArea_G29)
+----
+:<!--Unknown TalkSentence: 222331201-->
+:<!--Unknown TalkSentence: 222331202-->
+:<!--Unknown TalkSentence: 222331203-->
+:<!--Unknown TalkSentence: 222331204-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 222331206-->
+::<!--Unknown TalkSentence: 222331207-->
+::<!--Unknown TalkSentence: 222331208-->
+::<!--Unknown TalkSentence: 222331209-->
+::<!--Unknown TalkSentence: 222331210-->
+::<!--Unknown TalkSentence: 222331211-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 222331208-->
+::<!--Unknown TalkSentence: 222331209-->
+::<!--Unknown TalkSentence: 222331210-->
+::<!--Unknown TalkSentence: 222331211-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 222331210-->
+::<!--Unknown TalkSentence: 222331211-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 222331210-->
+:<!--Unknown TalkSentence: 222331211-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Победите Хулэя===
+{{Описание миссии|локация=«Рассекатель небес»|Волки затаились, охотники натянули тетиву. Высоко в небе, на борту «Рассекателя небес», скоро начнётся жестокая схватка Церемонии боевых искусств...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Это слабо! Так слабо, что просто жалко!
+;(Cutscene ends)
+----
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::С меня довольно... Хватит играть!
+::...Что происходит?
+;(Cutscene ends)
+----
+----
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20242_F20242001_G31"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Значит... Не останавливаешься ни перед чем?
+::Воздух... стал холоднее?
+::Мой меч... ещё холоднее.
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Enemy List|Вожак борисинцев: Хулэй*1}}
+{{Диалог Конец}}
+
+===Станьте свидетелем поражения Хулэя===
+{{Диалог Начало}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Невозможно! Какой-то детёныш... сумел победить меня?!
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20242_F20242001_G33"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetAudienceGroupVisible",
+			"GroupMemberList": {
+				"Value": [
+					{
+						"$type": "RPG.GameCore.AudienceGroupMemberInfo",
+						"GroupID": 203
+					}
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetAudienceGroupVisible",
+			"GroupMemberList": {
+				"Value": [
+					{
+						"$type": "RPG.GameCore.AudienceGroupMemberInfo",
+						"GroupID": 202
+					}
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetAudienceGroupVisible",
+			"GroupMemberList": {
+				"Value": [
+					{
+						"$type": "RPG.GameCore.AudienceGroupMemberInfo",
+						"GroupID": 318
+					}
+				]
+			},
+			"Visible": true
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Comrade in Arms
+|zhs  = 岂曰无持，同气连枝
+|zht  = 豈曰無持，同氣連枝
+|ja   = 同気連枝、豈に持たざらんや
+|ko   = 단합된 투지, 하나 된 전우
+|es   = Camarada de armas
+|fr   = Compagnons d'armes
+|ru   = Плечо товарища, оружие в руке
+|th   = เหล่าสหายร่วมรบ
+|vi   = Đồng Lòng Chiến Đấu
+|de   = Waffengefährte
+|id   = Kawan di Medan Perang
+|pt   = Camarada de Armas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

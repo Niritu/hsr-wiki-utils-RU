@@ -1,0 +1,144 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015171
+|Название        = 
+|Изображение     = Миссия Освоения Охотники за привидениями Серебряная медаль.png
+|Тип             = Миссия приключения
+|События         = Лисья история о привидениях
+|Глава           = Городские легенды Лофу
+|Условия         = 
+|Персонажи       = Гуйнайфэнь; Первопроходец; Сушан; Хохо
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*3; Конденсированный эфир*3; Silver Subscription Commemorative Medallion*1; Кредиты*5 000
+}}
+'''Охотники за привидениями: Серебряная медаль''' — Событие [[Миссия приключения]] из события [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|Гуйнайфэнь завершает запись ответов на вопросы подписчиков в живописном месте.<br />Она правда так добра к своим поклонникам?}}
+
+==Этапы==
+# Поговорите с Охотниками за привидениями
+# Отправляйтесь в Приют звёздных яликов и поговорите с Гуйнайфэнь
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Охотниками за привидениями===
+{{Описание миссии|локация=Сад безмятежности|Кажется, Гуйнайфэнь хочет обсудить что-то с Охотниками за привидениями...<br />Выслушайте её и узнайте, что произошло.}}
+{{Диалог Начало}}
+;(Unused &mdash; 801517101p)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Joyful"
+}</pre>
+::----
+:<!--Unknown TalkSentence: 815171101-->
+:<!--Unknown TalkSentence: 815171102-->
+:<!--Unknown TalkSentence: 815171103-->
+:<!--Unknown TalkSentence: 815171104-->
+:<!--Unknown TalkSentence: 815171105-->
+:<!--Unknown TalkSentence: 815171106-->
+:<!--Unknown TalkSentence: 815171107-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815171109-->
+::<!--Unknown TalkSentence: 815171110-->
+::<!--Unknown TalkSentence: 815171111-->
+::<!--Unknown TalkSentence: 815171112-->
+::<!--Unknown TalkSentence: 815171113-->
+::<!--Unknown TalkSentence: 815171114-->
+::<!--Unknown TalkSentence: 815171115-->
+::<!--Unknown TalkSentence: 815171116-->
+::<!--Unknown TalkSentence: 815171117-->
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815171112-->
+::<!--Unknown TalkSentence: 815171113-->
+::<!--Unknown TalkSentence: 815171114-->
+::<!--Unknown TalkSentence: 815171115-->
+::<!--Unknown TalkSentence: 815171116-->
+::<!--Unknown TalkSentence: 815171117-->
+::;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 801517101
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.SNSDetail.HeliobusSNSDetailDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "701"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+;(Unused &mdash; 801517102p)
+<!--Unknown TalkSentence: 815171201-->
+:<!--Unknown TalkSentence: 815171202-->
+:<!--Unknown TalkSentence: 815171203-->
+:<!--Unknown TalkSentence: 815171204-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815171206-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815171208-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 815171206-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Приют звёздных яликов и поговорите с Гуйнайфэнь===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Гуйнайфэнь хочет записать видео с ответами на вопросы подписчиков где-нибудь в красивом месте.<br />Прочитайте вопросы и принесите ей список в Приют звёздных яликов.}}
+{{Диалог Начало}}
+;(Unused &mdash; 801517103p)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801517103,
+	"MissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			5
+		]
+	}
+}</pre>
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815171309-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ghost-Hunting Squad: Silver Medallion
+|zhs  = 捉鬼小队•银色奖牌
+|zht  = 捉鬼小隊•銀色獎牌
+|ja   = 怪異退治隊・銀メダル
+|ko   = 요괴 퇴치팀•실버 메달
+|es   = Brigada cazafantasmas: placa de plata
+|fr   = Brigade de chasse aux fantômes&nbsp;: Trophée argent
+|ru   = Охотники за привидениями: Серебряная медаль
+|th   = หน่วยล่าท้าผี: โล่เงิน
+|vi   = Biệt Đội Bắt Ma - Huy Hiệu Bạc
+|de   = Geisterjägertrupp: Silberne Plakette
+|id   = Tim Pemburu Hantu: Plakat Perak
+|pt   = Esquadrão Caça-Fantasmas: Medalhão Prateado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

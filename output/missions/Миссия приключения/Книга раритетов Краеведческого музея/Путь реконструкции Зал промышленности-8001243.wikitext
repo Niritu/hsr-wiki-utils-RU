@@ -1,0 +1,127 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001243
+|Название        = 
+|Изображение     = Миссия Освоения Путь реконструкции Зал промышленности.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Книга раритетов Краеведческого музея
+|Условия         = 
+|Персонажи       = Взволнованный посетитель; Задумчивая посетительница; Первопроходец; Хультен
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Утраченные золотые частицы*5; Кредиты*10 000
+}}
+'''Путь реконструкции: Зал промышленности''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Книга раритетов Краеведческого музея]].
+
+==Описание==
+{{Описание|Вы собрали все экспонаты для зала промышленности. Куратор Хультен благодарен вам за помощь и предлагает щедрую оплату.}}
+
+==Этапы==
+# Поговорите с Хультеном
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Хультеном===
+{{Описание миссии|локация=Краеведческий музей|Похоже, получилось собрать все экспонаты в зале промышленности. Куратор Хультен хочет с вами поговорить.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хультен)
+<!--Unknown TalkSentence: 800124121-->
+:<pre>{
+	"$type": "RPG.GameCore.CreateLevelAreas",
+	"AssetPath": {
+		"Value": "Level/Common_Adventure/MuseumShow.prefab"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreateLevelAreas",
+	"AssetPath": {
+		"Value": "Level/Common_Adventure/ShowAreaAnchors.prefab"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MuseumShow",
+	"AnchorName": "ShowCamera",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DisableProtectWhenBlending": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ChangeTrackVirtualCameraFollowAndAim",
+	"AreaName": "MuseumShow",
+	"TrackName": "MuseumShowTrack",
+	"CameraName": "ShowCamera",
+	"TargetAreaName": "ShowAreaAnchors",
+	"FollowTargetAnchorName": "ShowCase3",
+	"LookAtTargetAnchorName": "ShowCase3"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.MoveVirtualCameraOnDollyPath",
+	"AreaName": "MuseumShow",
+	"AnchorName": "ShowCamera",
+	"StartPoint": 0.48,
+	"EndPoint": 0.47,
+	"CurveName": "C_Story_DollyCamCurve_Line",
+	"Duration": 3
+}</pre>
+:<!--Unknown TalkSentence: 800124122-->
+:<!--Unknown TalkSentence: 800124123-->
+:<!--Unknown TalkSentence: 800124124-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "ShowAreaAnchors"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "MuseumShow"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+:::{{Диалог|?}} undefined
+:::<!--Unknown TalkSentence: 800122732-->
+:::<!--Unknown TalkSentence: 800122733-->
+:::{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190111
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Road to Renewal: Industrial Hall
+|zhs  = 复兴历程•工业展馆
+|zht  = 復興歷程•工業展館
+|ja   = 復興歴程・工業館
+|ko   = 부흥의 길•공업 전시관•1
+|es   = Proceso de renovación: Sala Industrial
+|fr   = Sur la route du renouveau&nbsp;: Galerie industrielle
+|ru   = Путь реконструкции: Зал промышленности
+|th   = เส้นทางสู่การฟื้นฟู: หอจัดแสดงด้านอุตสาหกรรม
+|vi   = Thời Kỳ Phục Hưng - Khu Trưng Bày Công Nghiệp
+|de   = Pfad zur Erneuerung: Industrieausstellung
+|id   = Perjalanan Kebangkitan: Ruang Pameran Industri
+|pt   = Estrada para a Renovação: Salão Industrial
+}}
+
+==История изменений==
+{{История изменений|2.7}}

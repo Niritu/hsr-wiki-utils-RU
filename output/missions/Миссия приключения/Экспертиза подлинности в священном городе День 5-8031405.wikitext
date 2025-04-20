@@ -1,0 +1,151 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8031405
+|Название        = 
+|Изображение     = Миссия Освоения Экспертиза подлинности в священном городе День 5.png
+|Тип             = Миссия приключения
+|События         = Экспертиза подлинности в священном городе
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Экспертиза подлинности в священном городе: День 4]]''
+|Персонажи       = Первопроходец; Теодорос
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = Экспертиза подлинности в священном городе: День 4
+|Следующая       = Экспертиза подлинности в священном городе: День 6
+|Награды         = Кредиты*1 000
+}}
+'''Экспертиза подлинности в священном городе: День 5''' — Событие [[Миссия приключения]] из события [[Экспертиза подлинности в священном городе]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в антикварную лавку «Сокровище времени»
+
+==Прохождение==
+{{Дополнить}}
+
+===Отправляйтесь в антикварную лавку «Сокровище времени»===
+{{Описание миссии|локация=Вечный священный город Охема|Сегодняшние артефакты уже ожидают экспертизы. Навестите Теодороса.}}
+{{Диалог Начало}}
+
+;(Поговорите с Теодорос)
+;(If {{cx}}<!--during performance 504002001-->)
+:<!--Unknown TalkSentence: 504002001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 504002003-->
+:<!--Unknown TalkSentence: 504002008-->
+:<!--Unknown TalkSentence: 504002009-->
+:<!--Unknown TalkSentence: 504002010-->
+:<!--Unknown TalkSentence: 504002011-->
+:<!--Unknown TalkSentence: 504002012-->
+:<!--Unknown TalkSentence: 504002013-->
+;(If {{cx}}<!--not during performance 504002001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 504002091
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Unused &mdash; OpenUI_Day1)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831410101-->
+
+;(Unused &mdash; OpenUI_Day2)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831410701-->
+
+;(Unused &mdash; OpenUI_Day3)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831411101-->
+
+;(Unused &mdash; OpenUI_Day4)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831411501-->
+
+;(Unused &mdash; OpenUI_Day5)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831411901-->
+
+;(Unused &mdash; OpenUI_Day6)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831412301-->
+
+;(Unused &mdash; OpenUI_Day7)
+;(Open item submission menu)
+:;(If the menu is closed without submitting the items)
+:----
+:<!--Unknown TalkSentence: 831412701-->
+
+;(Unused &mdash; Day7After)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.MaterialSubmission.AmphoreusCurio.Main.AmphoreusCurioMainPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "BanGoto"
+	}
+}</pre>
+
+;(Поговорите с Теодорос)
+;(If {{cx}}<!--during performance 504002001-->)
+:<!--Unknown TalkSentence: 504002001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 504002003-->
+:<!--Unknown TalkSentence: 504002008-->
+:<!--Unknown TalkSentence: 504002009-->
+:<!--Unknown TalkSentence: 504002010-->
+:<!--Unknown TalkSentence: 504002011-->
+:<!--Unknown TalkSentence: 504002012-->
+:<!--Unknown TalkSentence: 504002013-->
+;(If {{cx}}<!--not during performance 504002001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 504002091
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+----
+<!--Unknown TalkSentence: 831412001-->
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Holy City Appraisals - Day 5
+|zhs  = 圣城鉴宝•第五日
+|zht  = 聖城鑑寶•第五日
+|ja   = 聖都の宝物鑑定・5日目
+|ko   = 거룩한 도시 보물 감정•5일차
+|es   = Tasaciones en la ciudad sagrada: día 5
+|fr   = Expertise de la ville sainte - Jour&nbsp;5
+|ru   = Экспертиза подлинности в священном городе: День 5
+|th   = ประเมินสมบัติเมืองศักดิ์สิทธิ์ วันที่ 5
+|vi   = Giám Bảo Thánh Thành - Ngày 5
+|de   = Schatzbegutachtung der Heiligen Stadt: Tag 5
+|id   = Penaksiran Harta Kota Suci: Hari 5
+|pt   = Avaliações da Pólis Sagrada - Dia 5
+}}
+
+==История изменений==
+{{История изменений|3.1}}

@@ -1,0 +1,778 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4016001
+|Название        = 
+|Изображение     = Миссия Освоения Лабиринт Янус.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Святилище предсказаний Янусополиса
+|Мир             = Амфореус
+|Локации         = Святилище предсказаний Янусополиса
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Лабиринт Янус''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Вернитесь к лабиринту Янус и осмотритесь
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Доставьте результаты предсказания просителю
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Доставьте результаты предсказания просителю
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Пройдите испытание лабиринта Янус и завершите предсказание
+# Поговорите со жрецом Монтой
+# Доставьте результаты предсказания просителю
+# Вернитесь к жрецу Монте и расскажите о случившемся
+
+==Прохождение==
+{{Дополнить}}
+
+===Вернитесь к лабиринту Янус и осмотритесь===
+{{Описание миссии|локация=Святилище предсказаний Янусополиса|В воспоминаниях вы имели дело с лабиринтом Янус, но этот механизм не просто замок, как может показаться. Для других у него есть иное предназначение. Осмотритесь вокруг - возможно, вы узнаете что-то новое...}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Описание миссии|локация=Святилище предсказаний Янусополиса|Волею случая вы стали помощником в составлении предсказания с помощью лабиринта Янус. Раз уж взялись за дело, доведите его до конца - помогите жрецам Храма трёх титанов судьбы разобрать накопившиеся поручения о поиске утраченного.}}
+{{Диалог Начало}}
+;(If {{F|undefined}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorSavedValue",
+		"Name": {
+			"Value": "FSV_SwitchGravityBallCase"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 12
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 20
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 25
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 21
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 27
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 26
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 19
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+					"PuzzleID": {
+						"FixedValue": {
+							"Value": 22
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; PuzzleSwitchPerformance)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_SwitchGravityBallCase"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleStartPerformance)
+:<!--0.3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_gravityball_platform"
+	},
+	"EmitterType": "Prop",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab"
+		}
+	]
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.RemoveEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	},
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
+	"Flags": []
+}</pre>
+
+;(Unused &mdash; PuzzleResetPerformance)
+
+
+;(Unused &mdash; PuzzleFinishPerformance)
+<pre>{
+	"$type": "RPG.GameCore.GravityBallPuzzleLastFinishCondition",
+	"DefaultGroupEvent": {
+		"Value": "default_finish"
+	},
+	"ConditionLogic": []
+}</pre>
+
+;(Unused &mdash; default_finish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "enter_pad"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 229
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+::<!--1.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerStopUsing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 229
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 2012001348524219443
+	},
+	"MessageTwo": {
+		"Hash": 3531031601469204543
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleExitPerformance)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerStopUsing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 229
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleFinished)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorSavedValue",
+		"Name": {
+			"Value": "FSV_SwitchGravityBallCase"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 1
+					},
+					"SuccessTaskList": [],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 2
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 3
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 3
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 4
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 5
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 5
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 6
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 6
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 7
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 7
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 8
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareType": "Equal",
+						"CompareValue": 9
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 9
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; PuzzleBallFall)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BlendCamera"
+	},
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"UseDefaultBlendCurve": true,
+		"BlendTime": 3
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Доставьте результаты предсказания просителю===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Доставьте результаты предсказания просителю===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Пройдите испытание лабиринта Янус и завершите предсказание===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите со жрецом Монтой===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Доставьте результаты предсказания просителю===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Вернитесь к жрецу Монте и расскажите о случившемся===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Janus' Maze
+|zhs  = 雅努斯迷津
+|zht  = 雅努斯迷津
+|ja   = ヤーヌスのパズル
+|ko   = 야누스 미로
+|es   = Laberinto de Jano
+|fr   = Labyrinthe de Janus
+|ru   = Лабиринт Янус
+|th   = วงกตแห่ง Janus
+|vi   = Mê Cung Janus
+|de   = Janus’ Labyrinth
+|id   = Labirin Janus
+|pt   = Labirinto de Janus
+}}
+
+==История изменений==
+{{История изменений|3.1}}

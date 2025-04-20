@@ -1,0 +1,410 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025102
+|Название        = 
+|Изображение     = Миссия Освоения Хотя аплодисменты стихли II.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = Завершена [[Миссия приключения]] ''[[Храбрость одиночества на Сяньчжоу]]''
+|Персонажи       = Болтливый журналист-профи; Кармелла; Клыкопир; Лука; Первопроходец; Пресс-агент; Хук
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Храбрость одиночества на Сяньчжоу
+|Следующая       = Отважная душа из дальнего мира
+|Награды         = Звёздный нефрит*20; Путеводитель путешественника*2; Кредиты*20 000
+}}
+'''Хотя аплодисменты стихли II''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|Лука храбро сражается с Бутхиллом и заслуживает «почётное поражение».<br />Однако разница в силе очень повлияла на уверенность Луки. Он не хочет идти дальше.<br />К счастью, господин Хвост успевает вовремя вмешаться и вытащить Луку из пучины уныния. Господин Хвост - настоящий герой!}}
+
+==Этапы==
+# Осмотрите тактическую доску и подготовьтесь к матчу
+# Проверьте доступ к матчу в приёмном зале
+# Начните матч и сразитесь с Бутхиллом
+# Проведите пресс-конференцию
+# Вернитесь в кают-компанию и подготовьтесь к следующему бою
+# Участвуйте в отборочном матче и наберите очки
+
+==Прохождение==
+{{Дополнить}}
+
+===Осмотрите тактическую доску и подготовьтесь к матчу===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 46
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TickInterval": 0.3,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EnterDistrict_G46"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G46)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "OpenUI",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_442"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutBriefDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.FightFestMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap1)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap2)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap4)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802514630-->
+<!--Unknown TalkSentence: 802514631-->
+<!--Unknown TalkSentence: 802514632-->
+<!--Unknown TalkSentence: 802514633-->
+<!--Unknown TalkSentence: 802514634-->
+<!--Unknown TalkSentence: 802514635-->
+<!--Unknown TalkSentence: 802514636-->
+<!--Unknown TalkSentence: 802514637-->
+<!--Unknown TalkSentence: 802514638-->
+<!--Unknown TalkSentence: 802514639-->
+<!--Unknown TalkSentence: 802514640-->
+<!--Unknown TalkSentence: 802514641-->
+<!--Unknown TalkSentence: 802514642-->
+<!--Unknown TalkSentence: 802514643-->
+<!--Unknown TalkSentence: 802514644-->
+<!--Unknown TalkSentence: 802514645-->
+<!--Unknown TalkSentence: 802514646-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+{{Диалог Конец}}
+
+===Проверьте доступ к матчу в приёмном зале===
+{{Описание миссии|локация=«Рассекатель небес»|После нескольких отборочных матчей Лука наконец побеждает, набрав необходимое количество очков.<br />Теперь настало время сразиться с настоящим врагом.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestScoreMatchResultDialog"
+}</pre>
+<!--Unknown TalkSentence: 802510231-->
+{{Диалог Конец}}
+
+===Начните матч и сразитесь с Бутхиллом===
+{{Описание миссии|локация=«Рассекатель небес»|Кармелла очень боится Бутхилла, потому что он преступник, разыскиваемый КММ.<br />Вы вовсе не боитесь Бутхилла, вы уже многое пережили вместе.<br />Лука не знает, чьё описание Бутхилла более достоверно. Он понимает лишь одно: тот, кто противостоит КММ, не может быть плохим человеком.}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802511514-->
+<!--Unknown TalkSentence: 802511515-->
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802511514-->
+<!--Unknown TalkSentence: 802511515-->
+
+;(Unused &mdash; FightFest_MainRace_802510204)
+----
+:<!--Unknown TalkSentence: 802511531-->
+:<!--Unknown TalkSentence: 802511532-->
+:<!--Unknown TalkSentence: 802511533-->
+:<!--Unknown TalkSentence: 802511534-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802511536-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802511539-->
+:::{{tx}}
+
+;(Unused &mdash; G81_TriggerBattle)
+----
+:<!--Unknown TalkSentence: 802511531-->
+:<!--Unknown TalkSentence: 802511532-->
+:<!--Unknown TalkSentence: 802511533-->
+:<!--Unknown TalkSentence: 802511534-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802511536-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802511539-->
+:::{{tx}}
+
+;(Unused &mdash; FightFestBattleStart)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_FightFestBattlePerformance",
+		"AreaName": "LevelArea_P20242_F20242001_G19",
+		"AnchorName": "Anchor7"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G19"
+		},
+		"AnchorName": {
+			"Value": "Anchor7"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowFightFestMainRaceUpgradeResultDialog",
+	"MainRaceID": 1002
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestUpgradeFailDialog"
+}</pre>
+{{Диалог Конец}}
+
+===Проведите пресс-конференцию===
+{{Описание миссии|локация=«Рассекатель небес»|Пресс-конференции - особенность спортивных событий. Вам придётся её провести.<br />Вы готовы встретиться с хитрыми, лживыми и стремящимися к хаосу журналистами?<br />Пора начать сражение с ними.}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802511514-->
+<!--Unknown TalkSentence: 802511515-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802510206,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 111,
+	"Value": "1"
+}</pre>
+;(Unused &mdash; TriggerPerformance_AfterShowUI)
+----
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:<!--Unknown TalkSentence: 802514642-->
+:<!--Unknown TalkSentence: 802514665-->
+:<!--Unknown TalkSentence: 802514666-->
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802514667-->
+:<!--Unknown TalkSentence: 802514668-->
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestChallengeEntrancePage"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 802514731-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514733-->
+:<!--Unknown TalkSentence: 802514734-->
+:<!--Unknown TalkSentence: 802514735-->
+:<!--Unknown TalkSentence: 802514736-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514735-->
+:<!--Unknown TalkSentence: 802514736-->
+::{{tx}}
+<!--Unknown TalkSentence: 802514735-->
+<!--Unknown TalkSentence: 802514736-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и подготовьтесь к следующему бою===
+{{Описание миссии|локация=«Рассекатель небес»|Кармелла очень боится Бутхилла, потому что он преступник, разыскиваемый КММ.<br />Вы вовсе не боитесь Бутхилла, вы уже многое пережили вместе.<br />Лука не знает, чьё описание Бутхилла более достоверно. Он понимает лишь одно: тот, кто противостоит КММ, не может быть плохим человеком.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G80)
+:{{tx}}
+:<!--Unknown TalkSentence: 802511501-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802511503-->
+::<!--Unknown TalkSentence: 802511504-->
+::<!--Unknown TalkSentence: 802511505-->
+::<!--Unknown TalkSentence: 802511506-->
+::<!--Unknown TalkSentence: 802511507-->
+::<!--Unknown TalkSentence: 802511508-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802511505-->
+::<!--Unknown TalkSentence: 802511506-->
+::<!--Unknown TalkSentence: 802511507-->
+::<!--Unknown TalkSentence: 802511508-->
+:<!--Unknown TalkSentence: 802511505-->
+:<!--Unknown TalkSentence: 802511506-->
+:<!--Unknown TalkSentence: 802511507-->
+:<!--Unknown TalkSentence: 802511508-->
+{{Диалог Конец}}
+
+===Участвуйте в отборочном матче и наберите очки===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Even When Cheers Fade: Chapter 2
+|zhs  = 即使喝彩停息•第二章
+|zht  = 即使喝彩停息•第二章
+|ja   = 喝采が鳴り止んだとしても・第2章
+|ko   = 갈채가 멈추더라도•제2장
+|es   = Aunque los aplausos cesen: capítulo 2
+|fr   = Au-delà des applaudissements&nbsp;: Chapitre 2
+|ru   = Хотя аплодисменты стихли II
+|th   = แม้เสียงเชียร์จะหยุดลง บทที่ 2
+|vi   = Dù Tiếng Vỗ Tay Dừng Lại - Chương 2
+|de   = Auch wenn der Applaus verstummt: Kapitel 2
+|id   = Meskipun Sorak-Sorai Berhenti: Bab 2
+|pt   = Quando os Aplausos Cessam: Capítulo 2
+}}
+
+==История изменений==
+{{История изменений|2.7}}

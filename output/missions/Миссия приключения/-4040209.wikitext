@@ -1,0 +1,126 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040209
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Гончая гонится за лисой]]''
+|Персонажи       = Нарывающийся мужчина; Незнакомец; Первопроходец
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 93
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 412090201-->
+<!--Unknown TalkSentence: 412090202-->
+<!--Unknown TalkSentence: 412090203-->
+<!--Unknown TalkSentence: 412090204-->
+<!--Unknown TalkSentence: 412090205-->
+<!--Unknown TalkSentence: 412090206-->
+<!--Unknown TalkSentence: 412090207-->
+<!--Unknown TalkSentence: 412090208-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":2,"ItemNum":500}]}-->}})
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 404020902,
+	"MissionCustomValue": {
+		"ValidValueParamList": []
+	},
+	"CustomValue": 1
+}</pre>
+::<!--Unknown TalkSentence: 412090210-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 404020902,
+	"MissionCustomValue": {},
+	"CustomValue": 1
+}</pre>
+::<!--Unknown TalkSentence: 412090219-->
+::<!--Unknown TalkSentence: 412090220-->
+::<!--Unknown TalkSentence: 412090221-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 412090230-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 412090210-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":2,"ItemNum":500}]}-->}})
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 412090301-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 412090303-->
+:<!--Unknown TalkSentence: 412090304-->
+:<!--Unknown TalkSentence: 412090305-->
+:;(If {{F|MissionCV-4040209-undefined}} is greater than or equal to 2)
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 412090308-->
+::<!--Unknown TalkSentence: 412090309-->
+::<!--Unknown TalkSentence: 412090310-->
+::<!--Unknown TalkSentence: 412090311-->
+::<!--Unknown TalkSentence: 412090312-->
+::<!--Unknown TalkSentence: 412090313-->
+::<!--Unknown TalkSentence: 412090314-->
+:;(If {{F|MissionCV-4040209-undefined}} is not greater than or equal to 2)
+:::{{Диалог|Выход}} undefined
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

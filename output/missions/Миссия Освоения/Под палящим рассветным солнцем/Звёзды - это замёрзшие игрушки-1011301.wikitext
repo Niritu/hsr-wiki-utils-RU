@@ -1,0 +1,705 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1011301
+|Название        = 
+|Изображение     = Миссия Освоения Звёзды - это замёрзшие игрушки.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Под палящим рассветным солнцем
+|Условия         = Завершена [[Миссия Освоения]] ''[[Отставить разговоры в строю]]''
+|Персонажи       = Броня; Голос Стелларона; Дань Хэн; Зеле; Коколия; Март 7; Первопроходец; Эхо Коколии
+|СтартЛокация    = Коридор исчезающего эха
+|Мир             = Ярило-VI
+|Локации         = Коридор исчезающего эха
+|Предыдущая      = Отставить разговоры в строю
+|Следующая       = Пути в прошлое давно закрыты
+|Награды         = Опыт Освоения*1 000; Звёздный нефрит*80; Путеводитель путешественника*3; Очищенный эфир*3
+}}
+'''Звёзды - это замёрзшие игрушки''' — [[Миссия Освоения]] в главе [[Под палящим рассветным солнцем]].
+
+==Описание==
+{{Описание|Вы идёте по следам Брони и Коколии и добираетесь до конца Коридора. Стелларон в двух шагах от вас.}}
+
+==Этапы==
+# Углубитесь в Коридор исчезающего эха
+# Осмотрите предметы, оставленные около дороги
+# Идите по следам Брони и Коколии
+# Попробуйте найти переключатель, чтобы открыть дверь
+# Дойдите до конца этого пути
+# Попробуйте найти переключатель, чтобы открыть дверь
+# Запустите все механизмы
+# Продолжайте углубляться в Коридор исчезающего эха
+# Одолейте существ Фрагментума и пройдите через руины старой крепости
+# Откройте дверь и пройдите через руины старой крепости
+# Пройдите в самую глубь Коридора исчезающего эха
+# Приблизьтесь к эху Коколии
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 29
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 201320101-->
+<!--Unknown TalkSentence: 201320102-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201320104-->
+:<!--Unknown TalkSentence: 201320105-->
+:<!--Unknown TalkSentence: 201320109-->
+:<!--Unknown TalkSentence: 201320110-->
+:<!--Unknown TalkSentence: 201320111-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201320107-->
+:<!--Unknown TalkSentence: 201320108-->
+:<!--Unknown TalkSentence: 201320109-->
+:<!--Unknown TalkSentence: 201320110-->
+:<!--Unknown TalkSentence: 201320111-->
+::----
+<!--Unknown TalkSentence: 201320105-->
+<!--Unknown TalkSentence: 201320109-->
+<!--Unknown TalkSentence: 201320110-->
+<!--Unknown TalkSentence: 201320111-->
+----
+{{Диалог Конец}}
+
+===Углубитесь в Коридор исчезающего эха===
+{{Описание миссии|локация=Коридор исчезающего эха|Увидев брата и сестру из семьи Ландау, сражающихся бок о бок на поле боя, вы понимаете что такое упорство и храбрость.<br />Вы пересекаете поле боя, где повсюду слышатся крики, и попадаете в лабиринт Фрагментума: вокруг всё погружается в тишину. У вас волосы встают дыбом от этого мёртвого безмолвия.<br />Что-то зловещее чувствуется в этом удушающем воздухе... Теперь нужно осмотреться и попытаться проникнуть во Фрагментум.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201320112-->
+<!--Unknown TalkSentence: 201320113-->
+{{Диалог Конец}}
+
+===Осмотрите предметы, оставленные около дороги===
+{{Описание миссии|локация=Коридор исчезающего эха|Увидев брата и сестру из семьи Ландау, сражающихся бок о бок на поле боя, вы понимаете, что такое упорство и храбрость.<br />Вы пересекаете поле боя, где повсюду слышатся крики, и попадаете в лабиринт Фрагментума, вокруг всё погружается в тишину. У вас волосы встают дыбом от этой мёртвой тишины.<br />Март 7 проявляет тут небывалую проницательность: она заметила, что брошенные около дороги странные предметы не принадлежат другому миру.<br />Дань Хэн напоминает вам, что во Фрагментуме полно ловушек, но ваша страсть к приключениям говорит вам, что тут всё нужно осмотреть.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201321101-->
+<!--Unknown TalkSentence: 201321102-->
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "LocalPlayer"
+	},
+	"AnimStateName": "RunStop_R",
+	"NormalizedTimeStart": 0.25,
+	"NormalizedTransitionDuration": 0.1,
+	"NormalizedTimeWait": 0.1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "101130104_Temp",
+	"AnchorName": "101130104_Cam_2",
+	"FollowTargetUniqueName": "LocalPlayer",
+	"LookAtTargetAnchorName": "LookAt_101130104",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 201320207-->
+<!--Unknown TalkSentence: 201320208-->
+<!--Unknown TalkSentence: 201320209-->
+<!--Unknown TalkSentence: 201320210-->
+<!--Unknown TalkSentence: 201320211-->
+<!--Unknown TalkSentence: 201320212-->
+;(Получено {{Item|Изысканный снежный шар|20|x=1|text=Изысканный снежный шар}})
+
+;(Поговорите с Эхо Коколии)
+<!--Unknown TalkSentence: 201320301-->
+<!--Unknown TalkSentence: 201320302-->
+<!--Unknown TalkSentence: 201320303-->
+<!--Unknown TalkSentence: 201320304-->
+<!--Unknown TalkSentence: 201320305-->
+<!--Unknown TalkSentence: 201320306-->
+<!--Unknown TalkSentence: 201320307-->
+<!--Unknown TalkSentence: 201320308-->
+<!--Unknown TalkSentence: 201320309-->
+<!--Unknown TalkSentence: 201320310-->
+<!--Unknown TalkSentence: 201320311-->
+{{Диалог Конец}}
+
+===Идите по следам Брони и Коколии===
+{{Описание миссии|локация=Коридор исчезающего эха|Увидев брата и сестру из семьи Ландау, сражающихся бок о бок на поле боя, вы понимаете, что такое упорство и храбрость.<br />Вы пересекаете поле боя, где повсюду слышатся крики, и попадаете в лабиринт Фрагментума, вокруг всё погружается в тишину. У вас волосы встают дыбом от этой мёртвой тишины.<br />Обнаружив оставленные Броней вещи, Март 7 внесла ещё один вклад: она увидела, что недалеко возникли тени матери и дочери.<br />Вне всякого сомнения, это способность Фрагментума имитировать реальность. Вероятно, они были здесь недавно. Скорее проверьте!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201320401-->
+<!--Unknown TalkSentence: 201320402-->
+<!--Unknown TalkSentence: 201320403-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201321101-->
+<!--Unknown TalkSentence: 201321102-->
+{{Диалог Конец}}
+
+===Попробуйте найти переключатель, чтобы открыть дверь===
+{{Описание миссии|локация=Коридор исчезающего эха|Огромная дверь снова преградила вам путь.<br />Так как у вас уже был опыт использования вращающегося моста в Запретной зоне Среброгривых Стражей, вы быстро понимаете, чтобы открыть механизм перед вами, нужно найти и подключить к нему специальное устройство.<br />Такие устройства обычно находятся где-то рядом... Нужно всё осмотреть поблизости!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 201320404-->
+<!--Unknown TalkSentence: 201320405-->
+<!--Unknown TalkSentence: 201320406-->
+<!--Unknown TalkSentence: 201320407-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201321101-->
+<!--Unknown TalkSentence: 201321102-->
+
+;(Поговорите с Эхо Коколии)
+<!--Unknown TalkSentence: 201320601-->
+<!--Unknown TalkSentence: 201320602-->
+<!--Unknown TalkSentence: 201320603-->
+<!--Unknown TalkSentence: 201320604-->
+<!--Unknown TalkSentence: 201320605-->
+<!--Unknown TalkSentence: 201320606-->
+<!--Unknown TalkSentence: 201320607-->
+<!--Unknown TalkSentence: 201320608-->
+<!--Unknown TalkSentence: 201320609-->
+<!--Unknown TalkSentence: 201320610-->
+{{Диалог Конец}}
+
+===Дойдите до конца этого пути===
+{{Описание миссии|локация=Коридор исчезающего эха|Ваша первая первопроходческая экспедиция подходит к концу. Отсюда лестница ведёт к тому месту, где всё началось, там находится Стелларон.<br />Уничтожьте Стелларон, чтобы Белобог освободился от фальшивого спокойствия, и планета возродилась.<br />Однако конец - это всего лишь ещё одно начало. Ваш экспресс снова встанет на рельсы и направится к следующему пункту назначения.<br />Если вы готовы, то поднимайтесь по лестнице, чтобы увидеть судьбу этой планеты и вашего пути.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 201321001-->
+<!--Unknown TalkSentence: 201321002-->
+<!--Unknown TalkSentence: 201321003-->
+<!--Unknown TalkSentence: 201321004-->
+<!--Unknown TalkSentence: 201321005-->
+<!--Unknown TalkSentence: 201321006-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321007-->
+:<!--Unknown TalkSentence: 201321008-->
+:<!--Unknown TalkSentence: 201321009-->
+:<!--Unknown TalkSentence: 201321010-->
+:<!--Unknown TalkSentence: 201321011-->
+:<!--Unknown TalkSentence: 201321012-->
+:<!--Unknown TalkSentence: 201321013-->
+:<!--Unknown TalkSentence: 201321014-->
+:<!--Unknown TalkSentence: 201321015-->
+:<!--Unknown TalkSentence: 201321016-->
+:<!--Unknown TalkSentence: 201321017-->
+:<!--Unknown TalkSentence: 201321018-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321019-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321009-->
+:<!--Unknown TalkSentence: 201321010-->
+:<!--Unknown TalkSentence: 201321011-->
+:<!--Unknown TalkSentence: 201321012-->
+:<!--Unknown TalkSentence: 201321013-->
+:<!--Unknown TalkSentence: 201321014-->
+:<!--Unknown TalkSentence: 201321015-->
+:<!--Unknown TalkSentence: 201321016-->
+:<!--Unknown TalkSentence: 201321017-->
+:<!--Unknown TalkSentence: 201321018-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321019-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321011-->
+:<!--Unknown TalkSentence: 201321012-->
+:<!--Unknown TalkSentence: 201321013-->
+:<!--Unknown TalkSentence: 201321014-->
+:<!--Unknown TalkSentence: 201321015-->
+:<!--Unknown TalkSentence: 201321016-->
+:<!--Unknown TalkSentence: 201321017-->
+:<!--Unknown TalkSentence: 201321018-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201321019-->
+::{{tx}}
+<!--Unknown TalkSentence: 201321011-->
+<!--Unknown TalkSentence: 201321012-->
+<!--Unknown TalkSentence: 201321013-->
+<!--Unknown TalkSentence: 201321014-->
+<!--Unknown TalkSentence: 201321015-->
+<!--Unknown TalkSentence: 201321016-->
+<!--Unknown TalkSentence: 201321017-->
+<!--Unknown TalkSentence: 201321018-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201321019-->
+:{{tx}}
+----
+<!--Unknown TalkSentence: 201320531-->
+<!--Unknown TalkSentence: 201320532-->
+----
+{{Диалог Конец}}
+
+===Попробуйте найти переключатель, чтобы открыть дверь===
+{{Описание миссии|локация=Коридор исчезающего эха|Огромная дверь снова преградила вам путь.<br />Так как у вас уже был опыт использования вращающегося моста в Запретной зоне Среброгривых Стражей, вы быстро понимаете, чтобы открыть механизм перед вами, нужно найти и подключить к нему специальное устройство.<br />Такие устройства обычно находятся где-то рядом... Нужно всё осмотреть поблизости!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 201320408-->
+<!--Unknown TalkSentence: 201320409-->
+<!--Unknown TalkSentence: 201320410-->
+<!--Unknown TalkSentence: 201320411-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "LocalPlayer"
+	},
+	"AnimStateName": "RunStop_R",
+	"NormalizedTimeStart": 0.25,
+	"NormalizedTransitionDuration": 0.1,
+	"NormalizedTimeWait": 0.1
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1011301_Temp",
+	"AnchorName": "101130108_Cam",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 2
+	}
+}</pre>
+<!--Unknown TalkSentence: 201320412-->
+<!--Unknown TalkSentence: 201320413-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1011301_Temp",
+	"AnchorName": "101130108_Cam",
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Запустите все механизмы===
+{{Описание миссии|локация=Коридор исчезающего эха|Огромная дверь снова преградила вам путь.<br />Так как у вас уже был опыт использования вращающегося моста в Запретной зоне Среброгривых Стражей, вы быстро понимаете, чтобы открыть механизм перед вами, нужно найти и подключить к нему специальное устройство.<br />Очевидно, что существует далеко не одно устройство управления воротами. Вы подумали, что эти железные ворота поставили исключительно для того, чтобы они доставляли проблемы окружающим...<br />Но жаловаться бесполезно, продолжайте искать остальные части устройства!}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; Mission_101130114)
+:;(If {{cx}}<!--SubMission Finish: 101130110--> and {{cx}}<!--SubMission Finish: 101130111-->)
+::<!--Unknown TalkSentence: 201320529-->
+::<!--Unknown TalkSentence: 201320530-->
+:;(If {{cx}}<!--SubMission not Finish: 101130110--> and {{cx}}<!--SubMission not Finish: 101130111-->)
+::<!--Unknown TalkSentence: 201320416-->
+::<!--Unknown TalkSentence: 201320417-->
+::<pre>{
+	"$type": "RPG.GameCore.SelectorConfig",
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PropStateExecute",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 3
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300011
+						}
+					}
+				}
+			},
+			"Execute": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 101130112
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "101130114_MissionTalk"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishPerformanceMission",
+					"Key": "Mission_101130114"
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PropStateExecute",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 3
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300011
+						}
+					}
+				}
+			},
+			"State": "Open",
+			"Execute": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "101130114_MissionTalk"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishPerformanceMission",
+					"Key": "Mission_101130114"
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 302Block_Act_Over)
+:;(If {{cx}}<!--SubMission Finish: 101130110--> and {{cx}}<!--SubMission Finish: 101130111-->)
+::<!--Unknown TalkSentence: 201320529-->
+::<!--Unknown TalkSentence: 201320530-->
+:;(If {{cx}}<!--SubMission not Finish: 101130110--> and {{cx}}<!--SubMission not Finish: 101130111-->)
+::<!--Unknown TalkSentence: 201320416-->
+::<!--Unknown TalkSentence: 201320417-->
+::<pre>{
+	"$type": "RPG.GameCore.SelectorConfig",
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PropStateExecute",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 3
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300011
+						}
+					}
+				}
+			},
+			"Execute": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 101130112
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "101130114_MissionTalk"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishPerformanceMission",
+					"Key": "Mission_101130114"
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PropStateExecute",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 3
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300011
+						}
+					}
+				}
+			},
+			"State": "Open",
+			"Execute": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "101130114_MissionTalk"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishPerformanceMission",
+					"Key": "Mission_101130114"
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 101130114_MissionTalk)
+<!--Unknown TalkSentence: 201320418-->
+:<!--Unknown TalkSentence: 201320419-->
+
+;(Unused &mdash; Mission_101130115)
+:----
+:<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+:<!--Unknown TalkSentence: 201320420-->
+:<!--Unknown TalkSentence: 201320501-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 201320504-->
+:<!--Unknown TalkSentence: 201320505-->
+:<!--Unknown TalkSentence: 201320506-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; 302Block_Act_Over)
+:----
+:<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+:<!--Unknown TalkSentence: 201320420-->
+:<!--Unknown TalkSentence: 201320501-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 201320504-->
+:<!--Unknown TalkSentence: 201320505-->
+:<!--Unknown TalkSentence: 201320506-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201321104-->
+<!--Unknown TalkSentence: 201321105-->
+;(If {{cx}}<!--SubMission Finish: 101130114-->)
+;(If {{cx}}<!--SubMission not Finish: 101130114-->)
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте углубляться в Коридор исчезающего эха===
+{{Описание миссии|локация=Коридор исчезающего эха|Долго бегая по лабиринту Фрагментума, вы наконец полностью собрали устройство и открыли дверь.<br />Путь в глубину лабиринта снова свободен. Ну, вроде как. По крайней мере, вы на это надеетесь.<br />В любом случае, чтобы узнать, какие препятствия вас ждут впереди, вы должны продолжить путь вглубь Фрагментума.}}
+{{Диалог Начало}}
+:<!--13-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "Opened",
+	"WatiAnimFinish": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201320701-->
+<!--Unknown TalkSentence: 201320702-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "LocalPlayer"
+	},
+	"AnimStateName": "RunStop_R",
+	"NormalizedTimeStart": 0.25,
+	"NormalizedTransitionDuration": 0.1,
+	"NormalizedTimeWait": 0.1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "101130119_Temp",
+	"AnchorName": "Camera_101130119",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 2
+	}
+}</pre>
+<!--Unknown TalkSentence: 201320703-->
+<!--Unknown TalkSentence: 201320704-->
+<!--Unknown TalkSentence: 201320706-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 201320707-->
+<!--Unknown TalkSentence: 201320708-->
+<!--Unknown TalkSentence: 201320709-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201320711-->
+<!--Unknown TalkSentence: 201320714-->
+----
+{{Диалог Конец}}
+
+===Одолейте существ Фрагментума и пройдите через руины старой крепости===
+{{Описание миссии|локация=Коридор исчезающего эха|Судя по окружающей обстановке, вы находитесь в центре старой пограничной крепости.<br />Вы можете задержаться здесь и обследовать ценную, на ваш взгляд, свалку мусора, пока вам это не наскучит.<br />Ваши враги будут стоять на вашем пути, молча соглашаясь с учинённым вами погромом, а потом вы их победите, положив конец их бессмысленной жизни.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201321106-->
+<!--Unknown TalkSentence: 201321107-->
+----
+<!--Unknown TalkSentence: 201320707-->
+<!--Unknown TalkSentence: 201320708-->
+<!--Unknown TalkSentence: 201320709-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201320711-->
+<!--Unknown TalkSentence: 201320714-->
+----
+
+;(Поговорите с Эхо Коколии)
+<!--Unknown TalkSentence: 201320801-->
+<!--Unknown TalkSentence: 201320802-->
+<!--Unknown TalkSentence: 201320803-->
+<!--Unknown TalkSentence: 201320804-->
+<!--Unknown TalkSentence: 201320805-->
+<!--Unknown TalkSentence: 201320806-->
+<!--Unknown TalkSentence: 201320807-->
+<!--Unknown TalkSentence: 201320808-->
+<!--Unknown TalkSentence: 201320809-->
+<!--Unknown TalkSentence: 201320810-->
+{{Диалог Конец}}
+
+===Откройте дверь и пройдите через руины старой крепости===
+{{Описание миссии|локация=Коридор исчезающего эха|Судя по окружающей обстановке, вы находитесь в центре старой пограничной крепости.<br />Вы можете задержаться здесь и обследовать ценную, на ваш взгляд, свалку мусора, пока вам это не наскучит.<br />Опасность рядом с выходом из старой крепости устранена. Вы можете выйти отсюда в любой момент.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201320811-->
+<!--Unknown TalkSentence: 201320812-->
+{{Диалог Конец}}
+
+===Пройдите в самую глубь Коридора исчезающего эха===
+{{Описание миссии|локация=Коридор исчезающего эха|По мере того как вы продвигаетесь вглубь, воздух становится холоднее, а тишина будто усиливается, нос вам забивает запах металла.<br />Тихий шум в вашей голове становится более отчётливым, а перед глазами начинают появляться круги.<br />Возможно, выход из Фрагментума уже рядом, но какой мир находится по ту сторону?<br />Вы не знаете, но понимаете, что если не продолжите движение, то никогда не узнаете ответ.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Приблизьтесь к эху Коколии===
+{{Описание миссии|локация=Коридор исчезающего эха|Перед вами снова появляется тень Верховной хранительницы, но сейчас рядом с ней нет тени её дочери.<br />Хотя это место поглощено Фрагментумом и здесь всегда происходят странные вещи, то, что происходит сейчас, особенно удивительно...<br />Это какое-то зловещее предзнаменование? Или ошибка Фрагментума? Ответ на этот вопрос кроется в эхе этого призрака.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 201320813-->
+<!--Unknown TalkSentence: 201320814-->
+<!--Unknown TalkSentence: 201320815-->
+<!--Unknown TalkSentence: 201320816-->
+<!--Unknown TalkSentence: 201320817-->
+<!--Unknown TalkSentence: 201320818-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Stars Are Cold Toys
+|zhs  = 星星是冰冷的玩具
+|zht  = 星星是冰冷的玩具
+|ja   = 星は冷たいおもちゃ
+|ko   = 별은 차가운 장난감
+|es   = Estrellas, esos fríos juguetes
+|fr   = Les étoiles sont des jouets froids
+|ru   = Звёзды - это замёрзшие игрушки
+|th   = ดวงดาวคือของเล่นที่แสนเยือกเย็น
+|vi   = Ngôi Sao Là Món Đồ Chơi Lạnh Lẽo
+|de   = Die Sterne sind kalte Spielzeuge
+|id   = Bintang adalah Mainan Dingin
+|pt   = As Estrelas São Bonecas Frias
+}}
+
+==История изменений==
+{{История изменений|2.7}}

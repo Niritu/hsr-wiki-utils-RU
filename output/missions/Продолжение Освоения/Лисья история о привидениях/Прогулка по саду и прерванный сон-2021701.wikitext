@@ -1,0 +1,568 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2021701
+|Название        = 
+|Изображение     = Миссия Освоения Прогулка по саду и прерванный сон.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Лисья история о привидениях
+|Условия         = Завершена [[Миссия Освоения]] ''[[Конец погребения, начало пути]]''
+|Персонажи       = Гуйнайфэнь; Первопроходец; Призрачная стражница; Сюэи; Ханья; Хвост; Хохо
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*1 500; Звёздный нефрит*150; Путеводитель путешественника*15; Очищенный эфир*12; Утраченный кристалл*12; "Dancing Fantasms"*1 { text = Dancing Fantasms }; Кредиты*150 000
+}}
+'''Прогулка по саду и прерванный сон''' — [[Продолжение Освоения]] в главе [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|Хелиоби сбегают из расколотой Печи сотворения в Сад безмятежности. Они хотят бросить вызов генералу Лофу.<br />Циррус намеревается увеличить свою мощь с помощью себе подобных, но вы срываете её план.}}
+
+==Этапы==
+# Встретьтесь с Гуйнайфэнь, которая утверждает, что столкнулась с паранормальным явлением
+# Поговорите с Гуйнайфэнь в Переулке ауруматонов
+# Отправляйтесь в Сад Безмятежности с Гуйнайфэнь
+# Встретьтесь с Гуйнайфэнь, которая утверждает, что столкнулась с паранормальным явлением
+# Исследуйте Сад безмятежности! Ну держитесь, демоны!
+# Поговорите с Хохо и позвольте ей вывести вас наружу
+# Найдите Гуйнайфэнь в Лисьеречном лесу
+
+==Прохождение==
+{{Дополнить}}
+
+===Встретьтесь с Гуйнайфэнь, которая утверждает, что столкнулась с паранормальным явлением===
+{{Описание миссии|локация=Переулок ауруматонов|На чём бы вы ни выросли - наука, магия, вера и так далее - когда малоизвестная блогерша вдруг пишет вам, что столкнулась со сверхъестественным явлением в заброшенном саду, какой будет ваша первая реакция? 1. Круто, чё, можно устроить там свиданку. 2. Очередная мошенническая схема? Сразу в бан. 3. Ну давай посмотрим, что там.<br />Естественно, что бы вы ни решили и как бы она всё ни расписывала, вы даёте себе слово, что даже полтинника на эту дурь не потратите. Да и лишних денег у вас не водится.}}
+{{Диалог Начало}}
+
+;(Поговорите с Гуйнайфэнь)
+:----
+:<!--Unknown TalkSentence: 202260102-->
+:<!--Unknown TalkSentence: 202260103-->
+:<!--Unknown TalkSentence: 202260104-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 193
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud01"
+}</pre>
+::<!--Unknown TalkSentence: 202260106-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 193
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud01"
+}</pre>
+::<!--Unknown TalkSentence: 202260108-->
+::<!--Unknown TalkSentence: 202260109-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 193
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+::<!--Unknown TalkSentence: 202260111-->
+::<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 193
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 202260112-->
+<!--Unknown TalkSentence: 202260144-->
+:<!--Unknown TalkSentence: 202260145-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202260147-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202170101,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 202260149-->
+::----
+{{Диалог Конец}}
+
+===Поговорите с Гуйнайфэнь в Переулке ауруматонов===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Сад Безмятежности с Гуйнайфэнь===
+{{Описание миссии|локация=Сад безмятежности|Вы видите Гуйнайфэнь, и вживую она такая же красивая, как и в сети... Кхм, не отвлекаемся. Она изо всех сил старается убедить вас, что тут только что случилось какое-то потустороннее явление. Даже видеозаписью вам в лицо тычет.<br />Сейчас подделать можно даже видео, но её сбивчивая речь и тревожное выражение лица сигналят о том, что в этом её Саду безмятежности как-то не очень безмятежно... Хе, Безымянные докопаются до истины! Устроим охоту на привидений в Саду безмятежности!<br />Сейчас-то вам невдомёк, что все хорошие ужастики начинаются с кого-то очень любопытного...}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202260102-->
+<!--Unknown TalkSentence: 202260103-->
+<!--Unknown TalkSentence: 202260104-->
+<!--Unknown TalkSentence: 202260105-->
+<!--Unknown TalkSentence: 202260106-->
+<!--Unknown TalkSentence: 202260107-->
+<!--Unknown TalkSentence: 202260108-->
+<!--Unknown TalkSentence: 202260109-->
+<!--Unknown TalkSentence: 202260110-->
+<!--Unknown TalkSentence: 202260111-->
+<!--Unknown TalkSentence: 202260112-->
+<!--Unknown TalkSentence: 202260113-->
+<!--Unknown TalkSentence: 202260114-->
+<!--Unknown TalkSentence: 202260115-->
+<!--Unknown TalkSentence: 202260116-->
+<!--Unknown TalkSentence: 202260117-->
+<!--Unknown TalkSentence: 202260118-->
+<!--Unknown TalkSentence: 202260119-->
+<!--Unknown TalkSentence: 202260120-->
+<!--Unknown TalkSentence: 202260121-->
+<!--Unknown TalkSentence: 202260122-->
+<!--Unknown TalkSentence: 202260123-->
+<!--Unknown TalkSentence: 202260124-->
+<!--Unknown TalkSentence: 202260125-->
+<!--Unknown TalkSentence: 202260126-->
+<!--Unknown TalkSentence: 202260127-->
+<!--Unknown TalkSentence: 202260128-->
+<!--Unknown TalkSentence: 202260129-->
+<!--Unknown TalkSentence: 202260130-->
+<!--Unknown TalkSentence: 202260131-->
+<!--Unknown TalkSentence: 202260132-->
+<!--Unknown TalkSentence: 202260133-->
+<!--Unknown TalkSentence: 202260134-->
+<!--Unknown TalkSentence: 202260135-->
+<!--Unknown TalkSentence: 202260136-->
+<!--Unknown TalkSentence: 202260137-->
+<!--Unknown TalkSentence: 202260138-->
+<!--Unknown TalkSentence: 202260139-->
+<!--Unknown TalkSentence: 202260140-->
+<!--Unknown TalkSentence: 202260141-->
+<!--Unknown TalkSentence: 202260142-->
+<!--Unknown TalkSentence: 202260143-->
+<!--Unknown TalkSentence: 202260144-->
+<!--Unknown TalkSentence: 202260145-->
+<!--Unknown TalkSentence: 202260146-->
+<!--Unknown TalkSentence: 202260147-->
+<!--Unknown TalkSentence: 202260148-->
+<!--Unknown TalkSentence: 202260149-->
+<!--Unknown TalkSentence: 202260150-->
+<!--Unknown TalkSentence: 202260151-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260153-->
+:<!--Unknown TalkSentence: 202260154-->
+:<!--Unknown TalkSentence: 202260155-->
+:<!--Unknown TalkSentence: 202260156-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260162-->
+:<!--Unknown TalkSentence: 202260163-->
+:<!--Unknown TalkSentence: 202260164-->
+::{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Monster","Targets":[200001]}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.AdvTriggerAIPlaySmartObject",
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 200001
+		}
+	},
+	"SmartObjectID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Monster","Targets":[200003]}}-->}})
+<pre>{
+	"$type": "RPG.GameCore.AdvTriggerAIPlaySmartObject",
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 200003
+		}
+	},
+	"SmartObjectID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Встретьтесь с Гуйнайфэнь, которая утверждает, что столкнулась с паранормальным явлением===
+{{Описание миссии|локация=Сад безмятежности|На чём бы вы ни выросли - наука, магия, вера и так далее - когда малоизвестная блогерша вдруг пишет вам, что столкнулась со сверхъестественным явлением в заброшенном саду, какой будет ваша первая реакция? 1. Круто, чё, можно устроить там свиданку. 2. Очередная мошенническая схема? Сразу в бан. 3. Ну давай посмотрим, что там.<br />Естественно, что бы вы ни решили и как бы она всё ни расписывала, вы даёте себе слово, что даже полтинника на эту дурь не потратите. Да и лишних денег у вас не водится.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Исследуйте Сад безмятежности! Ну держитесь, демоны!===
+{{Описание миссии|локация=Сад безмятежности|Вы с ней - да, вдвоём - приходите в этот давным-давно заброшенный Сад безмятежности. В большинстве ужастиков герои без всякой задней мысли вваливаются в какое-то нехорошее место города, наплевав на все соображения безопасности. А вот если бы они остановились и подумали, никаких дальнейших ужасов бы не случилось.<br />По дороге Гуйнайфэнь обстоятельно рассказывает, как Сад безмятежности докатился до такого состояния... и не забывает снимать всякие зловещие кадры. Вам начинает казаться, что у блогеров не такая уж и плёвая работа, если им приходится шарахаться по заброшкам, как какой-то журналист, пишущий статьи про убийства, даже когда душа так и просит скорее уйти отсюда. Здесь как будто и правда творится что-то потустороннее... Но где же тогда все призраки?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260167-->
+<!--Unknown TalkSentence: 202260168-->
+----
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260167-->
+<!--Unknown TalkSentence: 202260168-->
+----
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"SubMissionID": 202170103
+}</pre>
+<!--Unknown TalkSentence: 202260177-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20223_F20223001_G14",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 202260179-->
+<!--Unknown TalkSentence: 202260178-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260003-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260002-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260001-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260004-->
+<!--Unknown TalkSentence: 202260169-->
+<!--Unknown TalkSentence: 202260102-->
+<!--Unknown TalkSentence: 202260103-->
+<!--Unknown TalkSentence: 202260104-->
+<!--Unknown TalkSentence: 202260105-->
+<!--Unknown TalkSentence: 202260106-->
+<!--Unknown TalkSentence: 202260107-->
+<!--Unknown TalkSentence: 202260108-->
+<!--Unknown TalkSentence: 202260109-->
+<!--Unknown TalkSentence: 202260110-->
+<!--Unknown TalkSentence: 202260111-->
+<!--Unknown TalkSentence: 202260112-->
+<!--Unknown TalkSentence: 202260113-->
+<!--Unknown TalkSentence: 202260114-->
+<!--Unknown TalkSentence: 202260115-->
+<!--Unknown TalkSentence: 202260116-->
+<!--Unknown TalkSentence: 202260117-->
+<!--Unknown TalkSentence: 202260118-->
+<!--Unknown TalkSentence: 202260119-->
+<!--Unknown TalkSentence: 202260120-->
+<!--Unknown TalkSentence: 202260121-->
+<!--Unknown TalkSentence: 202260122-->
+<!--Unknown TalkSentence: 202260123-->
+<!--Unknown TalkSentence: 202260124-->
+<!--Unknown TalkSentence: 202260125-->
+<!--Unknown TalkSentence: 202260126-->
+<!--Unknown TalkSentence: 202260127-->
+<!--Unknown TalkSentence: 202260128-->
+<!--Unknown TalkSentence: 202260129-->
+<!--Unknown TalkSentence: 202260130-->
+<!--Unknown TalkSentence: 202260131-->
+<!--Unknown TalkSentence: 202260132-->
+<!--Unknown TalkSentence: 202260133-->
+<!--Unknown TalkSentence: 202260134-->
+<!--Unknown TalkSentence: 202260135-->
+<!--Unknown TalkSentence: 202260136-->
+<!--Unknown TalkSentence: 202260137-->
+<!--Unknown TalkSentence: 202260138-->
+<!--Unknown TalkSentence: 202260139-->
+<!--Unknown TalkSentence: 202260140-->
+<!--Unknown TalkSentence: 202260141-->
+<!--Unknown TalkSentence: 202260142-->
+<!--Unknown TalkSentence: 202260143-->
+<!--Unknown TalkSentence: 202260144-->
+<!--Unknown TalkSentence: 202260145-->
+<!--Unknown TalkSentence: 202260146-->
+<!--Unknown TalkSentence: 202260147-->
+<!--Unknown TalkSentence: 202260148-->
+<!--Unknown TalkSentence: 202260149-->
+<!--Unknown TalkSentence: 202260150-->
+<!--Unknown TalkSentence: 202260151-->
+<!--Unknown TalkSentence: 202260152-->
+<!--Unknown TalkSentence: 202260153-->
+<!--Unknown TalkSentence: 202260154-->
+<!--Unknown TalkSentence: 202260155-->
+<!--Unknown TalkSentence: 202260156-->
+<!--Unknown TalkSentence: 202260157-->
+<!--Unknown TalkSentence: 202260158-->
+<!--Unknown TalkSentence: 202260159-->
+<!--Unknown TalkSentence: 202260160-->
+<!--Unknown TalkSentence: 202260161-->
+<!--Unknown TalkSentence: 202260162-->
+<!--Unknown TalkSentence: 202260163-->
+<!--Unknown TalkSentence: 202260164-->
+<!--Unknown TalkSentence: 202260165-->
+<!--Unknown TalkSentence: 202260166-->
+<!--Unknown TalkSentence: 202260167-->
+<!--Unknown TalkSentence: 202260168-->
+<!--Unknown TalkSentence: 202260169-->
+<!--Unknown TalkSentence: 202260170-->
+<!--Unknown TalkSentence: 202260171-->
+<!--Unknown TalkSentence: 202260172-->
+<!--Unknown TalkSentence: 202260173-->
+<!--Unknown TalkSentence: 202260174-->
+<!--Unknown TalkSentence: 202260175-->
+<!--Unknown TalkSentence: 202260176-->
+<!--Unknown TalkSentence: 202260177-->
+<!--Unknown TalkSentence: 202260178-->
+<!--Unknown TalkSentence: 202260179-->
+<!--Unknown TalkSentence: 202260180-->
+<!--Unknown TalkSentence: 202260181-->
+<!--Unknown TalkSentence: 202260182-->
+<!--Unknown TalkSentence: 202260183-->
+<!--Unknown TalkSentence: 202260184-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260186-->
+:<!--Unknown TalkSentence: 202260187-->
+:<!--Unknown TalkSentence: 202260188-->
+:<!--Unknown TalkSentence: 202260189-->
+:<!--Unknown TalkSentence: 202260190-->
+:<!--Unknown TalkSentence: 202260191-->
+:<!--Unknown TalkSentence: 202260192-->
+:<!--Unknown TalkSentence: 202260193-->
+:<!--Unknown TalkSentence: 202260194-->
+:<!--Unknown TalkSentence: 202260195-->
+:<!--Unknown TalkSentence: 202260196-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260191-->
+:<!--Unknown TalkSentence: 202260192-->
+:<!--Unknown TalkSentence: 202260193-->
+:<!--Unknown TalkSentence: 202260194-->
+:<!--Unknown TalkSentence: 202260195-->
+:<!--Unknown TalkSentence: 202260196-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260194-->
+:<!--Unknown TalkSentence: 202260195-->
+:<!--Unknown TalkSentence: 202260196-->
+::{{tx}}
+<!--Unknown TalkSentence: 202260194-->
+<!--Unknown TalkSentence: 202260195-->
+<!--Unknown TalkSentence: 202260196-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Хохо и позвольте ей вывести вас наружу===
+{{Описание миссии|локация=Сад безмятежности|Вы видите не призрака, но кое-кого похуже - судей Комиссии десяти владык! И хотя здравый смысл говорит, что эти трое судей такие же люди, каждая из них одна другой жутче: мелкая девчонка, в теле которой сидит дух, высокая воительница, глаза которой закрыты белой чёлкой, а голос можно расслышать только с усилием, и та, которую вы уже встречали, - Сюэи, механическая кукла. По сравнению с ними призраки - это так, цветочки.<br />Судьи терпеливо объясняют вам с Гуйнайфэнь, что на Сяньчжоу нет призраков - это просто внеземные паразиты, которые сбежали из тюрьмы, где их держали тысячелетиями. «Не слоняйтесь тут - вы мешаете нам работать».<br />Хорошие новости - в Саду безмятежности нет никаких призраков! Плохие новости - вместо них в Саду безмятежности буйствуют инопланетные паразиты... Это ещё страшнее!}}
+{{Диалог Начало}}
+
+;(Поговорите с Сюэи)
+<!--Unknown TalkSentence: 202260243-->
+
+;(Поговорите с Ханья)
+<!--Unknown TalkSentence: 202260244-->
+
+;(Поговорите с Гуйнайфэнь)
+:----
+:<!--Unknown TalkSentence: 202260245-->
+:<!--Unknown TalkSentence: 202260246-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202260248-->
+::<!--Unknown TalkSentence: 202260252-->
+::<!--Unknown TalkSentence: 202260253-->
+::<!--Unknown TalkSentence: 202260254-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202260250-->
+::<!--Unknown TalkSentence: 202260251-->
+::<!--Unknown TalkSentence: 202260252-->
+::<!--Unknown TalkSentence: 202260253-->
+::<!--Unknown TalkSentence: 202260254-->
+:<!--Unknown TalkSentence: 202260248-->
+:<!--Unknown TalkSentence: 202260252-->
+:<!--Unknown TalkSentence: 202260253-->
+:<!--Unknown TalkSentence: 202260254-->
+<!--Unknown TalkSentence: 202260262-->
+
+;(Поговорите с Хохо)
+:----
+:<!--Unknown TalkSentence: 202260263-->
+:----
+:<!--Unknown TalkSentence: 202260276-->
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202260265-->
+<!--Unknown TalkSentence: 202260266-->
+<!--Unknown TalkSentence: 202260267-->
+<!--Unknown TalkSentence: 202260272-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260009-->
+<!--Unknown TalkSentence: 202260010-->
+<!--Unknown TalkSentence: 202260011-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260012-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<!--Unknown TalkSentence: 202260013-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_ghostlaugh"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}<!--during performance 202170130-->)
+<!--Unknown TalkSentence: 202260808-->
+<!--Unknown TalkSentence: 202260809-->
+<!--Unknown TalkSentence: 202260810-->
+
+;(По прибытии на место)
+;(If {{cx}}<!--during performance 202170130-->)
+<!--Unknown TalkSentence: 202260808-->
+<!--Unknown TalkSentence: 202260809-->
+<!--Unknown TalkSentence: 202260810-->
+{{Диалог Конец}}
+
+===Найдите Гуйнайфэнь в Лисьеречном лесу===
+{{Описание миссии|локация=Сад безмятежности|Хохо выводит вас двоих из Сада безмятежности, как вдруг внезапно начинает дуть пугающий ветер, и вас накрывает густой пеленой. Гуйнайфэнь куда-то исчезает, а Хохо дрожащим голосом умоляет её найти. Да кто здесь вообще официальное лицо, она или Гуйнайфэнь? Ну и хлопот от этой Хохо!}}
+{{Диалог Начало}}
+
+;(Поговорите с Хохо)
+<!--Unknown TalkSentence: 202260016-->
+<!--Unknown TalkSentence: 202260017-->
+<!--Unknown TalkSentence: 202260293-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001,
+		300001,
+		300002,
+		300003,
+		300004
+	]
+}</pre>
+
+;(По прибытии на место)
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Приветик.
+;(Cutscene ends)
+----
+----
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43210
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260294-->
+----
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260294-->
+----
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260295-->
+----
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260295-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sojourners' Ghastly Reverie
+|zhs  = 游园惊梦
+|zht  = 遊園驚夢
+|ja   = 游園驚夢
+|ko   = 유원경몽
+|es   = Sustos en el parque
+|fr   = Promenade fantasmagorique
+|ru   = Прогулка по саду и прерванный сон
+|th   = ฝันผวาในสวนเฮี้ยน
+|vi   = Ác Mộng Vườn Hoang
+|de   = Garten der Albträume
+|id   = Mimpi Buruk di Taman
+|pt   = Devaneio Lúgubre do Visitante
+}}
+
+==История изменений==
+{{История изменений|2.7}}

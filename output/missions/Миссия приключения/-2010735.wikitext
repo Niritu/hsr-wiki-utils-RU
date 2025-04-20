@@ -1,0 +1,75 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2010735
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Высшая лига Камнеграда
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Гладиатор]]''
+|Персонажи       = Доктор Диг; Первопроходец
+|СтартЛокация    = Бойцовский клуб
+|Мир             = Ярило-VI
+|Локации         = Бойцовский клуб
+|Предыдущая      = Гладиатор
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Высшая лига Камнеграда]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "BoxingClubWinDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"BoxingClubEntranceMainPage"
+	],
+	"PageRootNames": []
+}</pre>
+:<!--0.2-second delay-->
+----
+<!--Unknown TalkSentence: 201073023-->
+<!--Unknown TalkSentence: 201073024-->
+<!--Unknown TalkSentence: 201073025-->
+<!--Unknown TalkSentence: 201073026-->
+<!--Unknown TalkSentence: 201073027-->
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.BoxingClub.BoxingClubEntranceMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": []
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

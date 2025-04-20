@@ -1,0 +1,98 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002103
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Четвёртая остановка - Административный район.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Третья остановка - Зона поддержки]]''
+|Персонажи       = Первопроходец; Трамвай
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = Искатели теней: Третья остановка - Зона поддержки
+|Следующая       = Искатели теней: Пятая остановка - Камнеград
+|Награды         = Звёздный нефрит*70; Очищенный эфир*4; Sprout of Life*3; Кредиты*40 000
+}}
+'''Искатели теней: Четвёртая остановка - Административный район''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите объекты и сфотографируйте их
+# Идите на проспект Алисы и сделайте фотографию нужного объекта
+# Прочтите сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите объекты и сфотографируйте их===
+{{Описание миссии|локация=Административный район|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Надмирья Белобога...}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Идите на проспект Алисы и сделайте фотографию нужного объекта===
+{{Диалог Начало}}
+:<!--6-second delay-->
+<!--Unknown TalkSentence: 800211002-->
+:<!--6-second delay-->
+<!--Unknown TalkSentence: 800211003-->
+{{Диалог Конец}}
+
+===Прочтите сообщение Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002,
+		400003
+	]
+}</pre>
+<!--Unknown TalkSentence: 800210203-->
+<!--Unknown TalkSentence: 800210204-->
+<!--Unknown TalkSentence: 800210205-->
+<!--Unknown TalkSentence: 800210206-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1214401
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1214401
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 4th Stop, Administrative District
+|zhs  = 星旅寻影•第四站•行政区
+|zht  = 星旅尋影•第四站•行政區
+|ja   = 星々の影を探して・4駅目・行政区
+|ko   = 그림자를 찾는 별의 여정•네 번째 역•행정구역
+|es   = Fotografías estelares, 4.ª parada: distrito administrativo
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 4e arrêt, District administratif
+|ru   = Искатели теней: Четвёртая остановка - Административный район
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 4 - Administrative District
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 4, Khu Hành Chính
+|de   = Stellarer Schattensucher: Vierter Halt – Verwaltungsbezirk
+|id   = Penjelajah Bayangan Bintang: Perhentian 4 - Administrative District
+|pt   = Sombrio Estelar: 4ª Parada, Distrito Administrativo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

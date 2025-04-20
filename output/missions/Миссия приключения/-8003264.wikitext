@@ -1,0 +1,156 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003264
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Управление причалом II]]''
+|Персонажи       = Любезная посетительница; Новая робоптаха; Новая тестировщица; Первопроходец
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = Управление причалом II
+|Следующая       = 
+|Награды         = Prosperity Certificate*2
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 173,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 801326401
+		}
+	]
+}</pre>
+;(Unused &mdash; Move_800326402)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400002
+		}
+	},
+	"GroupId": 173,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_800326402"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Destory_173_400002)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+
+;(Unused &mdash; Destory_173_400001)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Поговорите с Новая робоптаха)
+----
+----
+<!--Unknown TalkSentence: 801326418-->
+<!--Unknown TalkSentence: 801326419-->
+<!--Unknown TalkSentence: 801326420-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 801326422-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 801326424-->
+<!--Unknown TalkSentence: 801326425-->
+<!--Unknown TalkSentence: 801326426-->
+<!--Unknown TalkSentence: 801326427-->
+<!--Unknown TalkSentence: 801326428-->
+<!--Unknown TalkSentence: 801326429-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:{{Чёрный экран|undefined}}
+;(Unused &mdash; Act_800326404)
+:----
+:<!--Unknown TalkSentence: 801326430-->
+:<!--Unknown TalkSentence: 801326431-->
+:<!--Unknown TalkSentence: 801326432-->
+:<!--Unknown TalkSentence: 801326433-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 801326435-->
+:<!--Unknown TalkSentence: 801326438-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 801326440-->
+:<!--Unknown TalkSentence: 801326441-->
+::----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,599 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8026103
+|Название        = 
+|Изображение     = Миссия Освоения Музыкальная охота Продолжение.png
+|Тип             = Миссия приключения
+|События         = Музыкальная охота: Свиток ниндзя
+|Глава           = Музыкальная охота: Свиток ниндзя
+|Условия         = Завершена [[Миссия приключения]] ''[[Музыкальная охота: Начало]]''
+|Персонажи       = Арфи; Дафинчи; Монтана; Насмехающийся зритель; Первопроходец; Представитель Школы грёзотворчества; Разъярённый зритель; Раппа; Серьёзный зритель; Странная зрительница; Толпа; Участница группы; Чипо
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = Музыкальная охота: Начало
+|Следующая       = Музыкальная охота: Конец
+|Награды         = Звёздный нефрит*20; Очищенный эфир*2; Утраченный кристалл*2; Floating Tempo*1 { text = Floating Tempo }; Кредиты*20 000
+}}
+'''Музыкальная охота: Продолжение''' — Событие [[Миссия приключения]] из события [[Музыкальная охота: Свиток ниндзя]].
+
+==Описание==
+{{Описание|Члены группы один за другим заявляют о намерении покинуть коллектив, и вам с Раппой приходится их переубеждать. Близится время второго выступления. Скоро вам нужно выйти на сцену, но гитарист группы куда-то пропал...}}
+
+==Этапы==
+# Встретьтесь с группой в репетиционном зале
+# Выйдите и осмотритесь
+# Уговорите членов группы вернуться
+# Помогите Раппе собрать вдохновение для сочинения песни
+# Вернитесь в репетиционный зал
+# Поговорите с группой и дождитесь, пока Раппа допишет песни
+# Подготовьтесь к выходу на сцену
+# Спросите, как зрители оценивают выступление группы
+# Дождитесь окончания выступления
+# Подготовьтесь к выходу на сцену
+
+==Прохождение==
+{{Дополнить}}
+
+===Встретьтесь с группой в репетиционном зале===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Первое выступление стало успешным! Вернитесь в репетиционный зал и поговорите с группой.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G133)
+<!--Unknown TalkSentence: 802611403-->
+:<!--Unknown TalkSentence: 802611404-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802611408-->
+:<!--Unknown TalkSentence: 802611409-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Выйдите и осмотритесь===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Кажется, группа хочет что-то вам сказать. Выйдите из репетиционного зала и узнайте, что происходит.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802614701-->
+<!--Unknown TalkSentence: 802614702-->
+;(Unused &mdash; EnterDistrict_G134)
+<!--Unknown TalkSentence: 802611503-->
+:<!--Unknown TalkSentence: 802611504-->
+:<!--Unknown TalkSentence: 802611505-->
+:<!--Unknown TalkSentence: 802611506-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+----
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 802610324,
+	"MessageSectionID": 1311000
+}</pre>
+----
+<!--Unknown TalkSentence: 802614003-->
+<!--Unknown TalkSentence: 802614004-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Уговорите членов группы вернуться===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Вы и представить не могли, что все члены группы захотят уйти из неё... Будучи менеджером, вы должны найти способ убедить их вернуться.}}
+{{Диалог Начало}}
+
+;(Поговорите с Чипо)
+;(If {{cx}}<!--SubMission Finish: 802610305-->)
+<!--Unknown TalkSentence: 802614103-->
+<!--Unknown TalkSentence: 802614104-->
+
+;(Поговорите с Дафинчи)
+;(If {{cx}}<!--SubMission Finish: 802610306-->)
+:----
+:<!--Unknown TalkSentence: 802614203-->
+:<!--Unknown TalkSentence: 802614204-->
+:<!--Unknown TalkSentence: 802614205-->
+;(If {{cx}}<!--SubMission not Finish: 802610306-->)
+:<!--Unknown TalkSentence: 802611903-->
+:<!--Unknown TalkSentence: 802611904-->
+:<!--Unknown TalkSentence: 802611905-->
+:<!--Unknown TalkSentence: 802611906-->
+:<!--Unknown TalkSentence: 802611907-->
+:<!--Unknown TalkSentence: 802611908-->
+:<!--Unknown TalkSentence: 802611909-->
+:<!--Unknown TalkSentence: 802611910-->
+:<!--Unknown TalkSentence: 802611911-->
+:<!--Unknown TalkSentence: 802611912-->
+:<!--Unknown TalkSentence: 802611913-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Арфи)
+;(If {{cx}}<!--SubMission Finish: 802610304-->)
+:<!--Unknown TalkSentence: 802611703-->
+;(If {{cx}}<!--SubMission not Finish: 802610304-->)
+:<!--Unknown TalkSentence: 802611603-->
+:<!--Unknown TalkSentence: 802611604-->
+:<!--Unknown TalkSentence: 802611605-->
+:<!--Unknown TalkSentence: 802611606-->
+:<!--Unknown TalkSentence: 802611607-->
+:<!--Unknown TalkSentence: 802611608-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Чипо)
+;(If {{cx}}<!--SubMission Finish: 802610305-->)
+<!--Unknown TalkSentence: 802614103-->
+<!--Unknown TalkSentence: 802614104-->
+
+;(Поговорите с Чипо)
+<!--Unknown TalkSentence: 802611803-->
+<!--Unknown TalkSentence: 802611804-->
+<!--Unknown TalkSentence: 802611805-->
+<!--Unknown TalkSentence: 802611806-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802611808-->
+:<!--Unknown TalkSentence: 802611809-->
+:<!--Unknown TalkSentence: 802611810-->
+:<!--Unknown TalkSentence: 802611811-->
+:<!--Unknown TalkSentence: 802611812-->
+:<!--Unknown TalkSentence: 802611813-->
+:<!--Unknown TalkSentence: 802611814-->
+:<!--Unknown TalkSentence: 802611815-->
+:<!--Unknown TalkSentence: 802611816-->
+:<!--Unknown TalkSentence: 802611817-->
+:<!--Unknown TalkSentence: 802611818-->
+:<!--Unknown TalkSentence: 802611819-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802611811-->
+:<!--Unknown TalkSentence: 802611812-->
+:<!--Unknown TalkSentence: 802611813-->
+:<!--Unknown TalkSentence: 802611814-->
+:<!--Unknown TalkSentence: 802611815-->
+:<!--Unknown TalkSentence: 802611816-->
+:<!--Unknown TalkSentence: 802611817-->
+:<!--Unknown TalkSentence: 802611818-->
+:<!--Unknown TalkSentence: 802611819-->
+<!--Unknown TalkSentence: 802611811-->
+<!--Unknown TalkSentence: 802611812-->
+<!--Unknown TalkSentence: 802611813-->
+<!--Unknown TalkSentence: 802611814-->
+<!--Unknown TalkSentence: 802611815-->
+<!--Unknown TalkSentence: 802611816-->
+<!--Unknown TalkSentence: 802611817-->
+<!--Unknown TalkSentence: 802611818-->
+<!--Unknown TalkSentence: 802611819-->
+
+;(Поговорите с Чипо)
+;(If {{cx}}<!--SubMission Finish: 802610305-->)
+<!--Unknown TalkSentence: 802614103-->
+<!--Unknown TalkSentence: 802614104-->
+{{Диалог Конец}}
+
+===Помогите Раппе собрать вдохновение для сочинения песни===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Некоторых участников не удалось уговорить, но шоу должно продолжаться. Важнее всего сейчас дописать песню, с которой вам предстоит выступать. Помогите Раппе собрать вдохновение.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 802612003-->
+<!--Unknown TalkSentence: 802612004-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Монтана)
+;(If {{cx}}<!--SubMission Finish: 802610503-->)
+:<!--Unknown TalkSentence: 802611454-->
+::<!--Unknown TalkSentence: 802611455-->
+::<!--Unknown TalkSentence: 802611456-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 802610901
+}</pre>
+::{{Диалог|Журнал путешествий}} undefined
+::<!--Unknown TalkSentence: 802610903-->
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	]
+}</pre>
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802610905-->
+::{{Диалог|?}} undefined
+::<!--Unknown TalkSentence: 802610936-->
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802610947-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802610801-->
+:;(Return to previous option selection)
+;(Unused &mdash; 802611006FinishedOpenMainEntranceUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"Enable": true,
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "802611006Cam"
+			}
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.ActiveVirtualCamera",
+			"AreaName": "LevelArea_P10306_F10306001_G87",
+			"AnchorName": "cam01",
+			"IsActive": false,
+			"DynamicParams": {},
+			"ImmediatelyRefresh": true
+		},
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 802611006Cam)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10306_F10306001_G87",
+	"AnchorName": "cam01",
+	"DynamicParams": {},
+	"EnableCameraProtectAfterBlendOut": true
+}</pre>
+
+;(Unused &mdash; OpenUI_MusicRhythm)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь в репетиционный зал===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Необходимое вдохновение собрано. Вернитесь в репетиционный зал.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802614801-->
+;(Unused &mdash; EnterDistrict_G161)
+<!--Unknown TalkSentence: 802612103-->
+:<!--Unknown TalkSentence: 802612104-->
+:<!--Unknown TalkSentence: 802612105-->
+:<!--Unknown TalkSentence: 802612106-->
+:<!--Unknown TalkSentence: 802612107-->
+:<!--Unknown TalkSentence: 802612108-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с группой и дождитесь, пока Раппа допишет песни===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Кажется, отношения между членами группы наладились. Раппа занята написанием песен. Воспользуйтесь этой возможностью, чтобы поговорить с другими членами группы.}}
+{{Диалог Начало}}
+
+;(Поговорите с Раппа)
+<!--Unknown TalkSentence: 802612203-->
+<!--Unknown TalkSentence: 802612204-->
+
+;(Поговорите с Чипо)
+;(If {{cx}}<!--SubMission Finish: 802610311-->)
+:<!--Unknown TalkSentence: 802614403-->
+:<!--Unknown TalkSentence: 802614404-->
+;(If {{cx}}<!--SubMission not Finish: 802610311-->)
+::{{tx}}
+:<!--Unknown TalkSentence: 802612403-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Дафинчи)
+;(If {{cx}}<!--SubMission Finish: 802610312-->)
+:<!--Unknown TalkSentence: 802614503-->
+:<!--Unknown TalkSentence: 802614504-->
+;(If {{cx}}<!--SubMission not Finish: 802610312-->)
+::{{tx}}
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 802612506-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802612509-->
+:::{{tx}}
+
+;(Поговорите с Арфи)
+;(If {{cx}}<!--SubMission Finish: 802610310-->)
+:<!--Unknown TalkSentence: 802614303-->
+:<!--Unknown TalkSentence: 802614304-->
+:<!--Unknown TalkSentence: 802614305-->
+;(If {{cx}}<!--SubMission not Finish: 802610310-->)
+::{{tx}}
+:<!--Unknown TalkSentence: 802612303-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802612305-->
+::<!--Unknown TalkSentence: 802612306-->
+::<!--Unknown TalkSentence: 802612307-->
+::<!--Unknown TalkSentence: 802612308-->
+::<!--Unknown TalkSentence: 802612309-->
+::<!--Unknown TalkSentence: 802612310-->
+::<!--Unknown TalkSentence: 802612311-->
+::<!--Unknown TalkSentence: 802612312-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802612307-->
+::<!--Unknown TalkSentence: 802612308-->
+::<!--Unknown TalkSentence: 802612309-->
+::<!--Unknown TalkSentence: 802612310-->
+::<!--Unknown TalkSentence: 802612311-->
+::<!--Unknown TalkSentence: 802612312-->
+:<!--Unknown TalkSentence: 802612307-->
+:<!--Unknown TalkSentence: 802612308-->
+:<!--Unknown TalkSentence: 802612309-->
+:<!--Unknown TalkSentence: 802612310-->
+:<!--Unknown TalkSentence: 802612311-->
+:<!--Unknown TalkSentence: 802612312-->
+{{Диалог Конец}}
+
+===Подготовьтесь к выходу на сцену===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Всё готово. Пора выходить на поле боя!}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 802612603-->
+<!--Unknown TalkSentence: 802612604-->
+<!--Unknown TalkSentence: 802612605-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802612608-->
+::{{tx}}
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+
+;(Поговорите с Раппа)
+----
+<!--Unknown TalkSentence: 802612703-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802612706-->
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G168)
+----
+:<!--Unknown TalkSentence: 802612803-->
+:<!--Unknown TalkSentence: 802612804-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 802613003-->
+<!--Unknown TalkSentence: 802613004-->
+<!--Unknown TalkSentence: 802613005-->
+<!--Unknown TalkSentence: 802613006-->
+<!--Unknown TalkSentence: 802613007-->
+<!--Unknown TalkSentence: 802613008-->
+<!--Unknown TalkSentence: 802613009-->
+<!--Unknown TalkSentence: 802613010-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.Composition.MusicRhythmCompositionPresetPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Спросите, как зрители оценивают выступление группы===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Арфи куда-то исчезла. К счастью, второе выступление идёт хорошо. Спросите зрителей, что они думают о группе.}}
+{{Диалог Начало}}
+
+;(Поговорите с Серьёзный зритель)
+<!--Unknown TalkSentence: 802613303-->
+
+;(Поговорите с Насмехающийся зритель)
+<!--Unknown TalkSentence: 802613403-->
+<!--Unknown TalkSentence: 802613404-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802613406-->
+<!--Unknown TalkSentence: 802613407-->
+
+;(Поговорите с Странная зрительница)
+<!--Unknown TalkSentence: 802613503-->
+<!--Unknown TalkSentence: 802613504-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{F|FSV_EnterStage}} is equal to 0)
+:----
+:<!--Unknown TalkSentence: 802617901-->
+:<!--Unknown TalkSentence: 802617902-->
+:<!--Unknown TalkSentence: 802617903-->
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+;(Otherwise, if {{F|FSV_EnterStage}} is equal to 1)
+:----
+:<!--Unknown TalkSentence: 802617904-->
+:<!--Unknown TalkSentence: 802617905-->
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
+}</pre>
+;(Otherwise, if {{F|FSV_EnterStage}} is equal to 2)
+:----
+:<!--Unknown TalkSentence: 802617906-->
+:<!--Unknown TalkSentence: 802617907-->
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3
+}</pre>
+;(Otherwise)
+:----
+:<!--Unknown TalkSentence: 802617908-->
+:<!--Unknown TalkSentence: 802617909-->
+:<!--Unknown TalkSentence: 802617910-->
+
+;(Поговорите с Монтана)
+<!--Unknown TalkSentence: 802610851-->
+
+{{Диалог Конец}}
+
+===Дождитесь окончания выступления===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Зрители громко обсуждают отсутствие некоторых членов группы. Ничего не поделать, нужно дождаться окончания выступления...}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Отдохнуть
+----
+<!--Unknown TalkSentence: 802613603-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10306_F10306001_G174"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Подготовьтесь к выходу на сцену===
+{{Описание миссии|локация=Академия оригами|Вы стали менеджером группы, выступающей на Вечере музыки. Ваша группа должна устроить три выступления на сцене в центре кампуса.<br />Всё готово. Пора выходить на поле боя!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802612903-->
+<!--Unknown TalkSentence: 802612904-->
+<!--Unknown TalkSentence: 802612905-->
+<!--Unknown TalkSentence: 802612906-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802612908-->
+:<!--Unknown TalkSentence: 802612909-->
+:<!--Unknown TalkSentence: 802612910-->
+:<!--Unknown TalkSentence: 802612911-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802612910-->
+:<!--Unknown TalkSentence: 802612911-->
+::{{tx}}
+<!--Unknown TalkSentence: 802612910-->
+<!--Unknown TalkSentence: 802612911-->
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sound Hunt: Continuation
+|zhs  = 音律狩猎•承续篇
+|zht  = 音律狩獵•承續篇
+|ja   = 音律狩猟・続章
+|ko   = 음률 사냥•계승편
+|es   = Cacería del Sonido: Continuación
+|fr   = Chasse au son&nbsp;: Continuation
+|ru   = Музыкальная охота: Продолжение
+|th   = ทำนองไล่ล่า: บทต่อเนื่อง
+|vi   = Săn Bắn Âm Luật: Chương Tiếp Nối
+|de   = Klangjagd: Die Fortsetzung
+|id   = Perburuan Nada: Lanjutan
+|pt   = Caça ao Som: Continuação
+}}
+
+==История изменений==
+{{История изменений|2.7}}

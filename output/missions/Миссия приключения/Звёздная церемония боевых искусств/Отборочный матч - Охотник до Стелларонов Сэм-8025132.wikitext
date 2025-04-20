@@ -1,0 +1,246 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025132
+|Название        = 
+|Изображение     = Миссия Освоения Отборочный матч - Охотник до Стелларонов Сэм.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Кармелла; Лука; Первопроходец
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Хотя аплодисменты стихли IV
+|Награды         = Wardance Sword Badge*5
+}}
+'''Отборочный матч - Охотник до Стелларонов: Сэм''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выйдите на арену и получите очки!
+
+==Прохождение==
+{{Дополнить}}
+
+===Выйдите на арену и получите очки!===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Unused &mdash; G150_TriggerBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2002,
+	"ScoreRaceSpecialInviteEventID": 419101,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513204,
+			"MaskConfig": {}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 802514851-->
+<!--Unknown TalkSentence: 802514852-->
+<!--Unknown TalkSentence: 802514853-->
+<!--Unknown TalkSentence: 802514854-->
+<!--Unknown TalkSentence: 802514855-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514857-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514863-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514859-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514863-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514861-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514863-->
+::{{tx}}
+<!--Unknown TalkSentence: 802514857-->
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802514863-->
+:{{tx}}
+;(Unused &mdash; G333_TriggerBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2002,
+	"ScoreRaceSpecialInviteEventID": 419101,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513204,
+			"MaskConfig": {}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchResultDialog",
+	"Param": {
+		"Value": "2002"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Knockout Match: Stellaron Hunter SAM
+|zhs  = 叩关赛•「星河猎手•萨姆」
+|zht  = 叩關賽•「星核獵手•薩姆」
+|ja   = 予選・「星核ハンター・サム」
+|ko   = 예선전•「스뗄라론 헌터•샘」
+|es   = Combate de cualificación: Cazadores de Estelaron &vert; Sam
+|fr   = Match de qualification&nbsp;: SAM, le Chasseur de Stellaron
+|ru   = Отборочный матч - Охотник до Стелларонов: Сэм
+|th   = รอบคัดเลือก: นักล่า Stellaron - SAM
+|vi   = Giải Đấu Loại: Thợ Săn Stellaron SAM
+|de   = Qualifikationskampf: Stellaron-Jäger Sam
+|id   = Pertandingan Knockout: "Stellaron Hunter: SAM"
+|pt   = Partida Eliminatória: Caçador de Stellaron SAM
+}}
+
+==История изменений==
+{{История изменений|2.7}}

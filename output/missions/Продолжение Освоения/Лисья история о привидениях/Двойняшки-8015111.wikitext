@@ -1,0 +1,307 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015111
+|Название        = 
+|Изображение     = Миссия Освоения Двойняшки.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Лисья история о привидениях
+|Условия         = 
+|Персонажи       = Байлу; Гуйнайфэнь; Огонёк; Первопроходец; Сушан; Хохо
+|СтартЛокация    = Иллюзорный лабиринт: Огонёк
+|Мир             = Лофу Сяньчжоу
+|Локации         = Иллюзорный лабиринт: Огонёк
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*800; Звёздный нефрит*80; Путеводитель путешественника*8; Очищенный эфир*5; Кредиты*80 000
+}}
+'''Двойняшки''' — [[Продолжение Освоения]] в главе [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Догоните Байлу любой ценой!
+# Загоните госпожу Байлу в матрицу!
+# Поговорите с Байлу
+
+==Прохождение==
+{{Дополнить}}
+
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+{{Диалог Конец}}
+
+===Догоните Байлу любой ценой!===
+{{Описание миссии|локация=Иллюзорный лабиринт: Огонёк|Вы осознали, что оказались под влиянием иллюзии хелиоби, только когда преследовали его на пути к особняку. Теперь это место превратилось в бесконечный лабиринт, в котором теряется ощущение трёхмерного пространства - точно так же, как когда-то Сад безмятежности заволок мутный туман. У вас нет другого выбора, кроме как двигаться вперёд.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 815103201-->
+<!--Unknown TalkSentence: 815103202-->
+<!--Unknown TalkSentence: 815103203-->
+<!--Unknown TalkSentence: 815103204-->
+<!--Unknown TalkSentence: 815103205-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103207-->
+:<!--Unknown TalkSentence: 815103208-->
+:<!--Unknown TalkSentence: 815103209-->
+:<!--Unknown TalkSentence: 815103210-->
+:<!--Unknown TalkSentence: 815103211-->
+:<!--Unknown TalkSentence: 815103212-->
+:<!--Unknown TalkSentence: 815103213-->
+:<!--Unknown TalkSentence: 815103214-->
+:<!--Unknown TalkSentence: 815103215-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103209-->
+:<!--Unknown TalkSentence: 815103210-->
+:<!--Unknown TalkSentence: 815103211-->
+:<!--Unknown TalkSentence: 815103212-->
+:<!--Unknown TalkSentence: 815103213-->
+:<!--Unknown TalkSentence: 815103214-->
+:<!--Unknown TalkSentence: 815103215-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103211-->
+:<!--Unknown TalkSentence: 815103212-->
+:<!--Unknown TalkSentence: 815103213-->
+:<!--Unknown TalkSentence: 815103214-->
+:<!--Unknown TalkSentence: 815103215-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 815103211-->
+<!--Unknown TalkSentence: 815103212-->
+<!--Unknown TalkSentence: 815103213-->
+<!--Unknown TalkSentence: 815103214-->
+<!--Unknown TalkSentence: 815103215-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 815103701-->
+<!--Unknown TalkSentence: 815103702-->
+<!--Unknown TalkSentence: 815103703-->
+<!--Unknown TalkSentence: 815103704-->
+<!--Unknown TalkSentence: 815103705-->
+<!--Unknown TalkSentence: 815103706-->
+
+;(Unused &mdash; ShowHint)
+:;(If {{F|IsDoorOpen}} is equal to 1 and {{F|TriggerID}} is equal to 0)
+::<!--Unknown TalkSentence: 815103713-->
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801511106,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "TriggerID",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; ShowHint2)
+:;(If {{F|IsDoorOpen}} is equal to 0 and {{F|BailuReturn}} is equal to 0)
+::<!--Unknown TalkSentence: 815103788-->
+::<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "BailuReturn",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Загоните госпожу Байлу в матрицу!===
+{{Описание миссии|локация=Иллюзорный лабиринт: Огонёк|Вы осознали, что оказались под влиянием иллюзии хелиоби, только когда преследовали его на пути к особняку. Теперь это место превратилось в бесконечный лабиринт, в котором теряется ощущение трёхмерного пространства - точно так же, как когда-то Сад безмятежности заволок мутный туман. У вас нет другого выбора, кроме как двигаться вперёд.<br />После пары безуспешных попыток вырваться из иллюзии вы наконец пришли к выводу, что лучше всего дождаться, пока враг сам не наткнётся на вас.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+<!--Unknown TalkSentence: 815103707-->
+<!--Unknown TalkSentence: 815103708-->
+<!--Unknown TalkSentence: 815103709-->
+<!--Unknown TalkSentence: 815103710-->
+<!--Unknown TalkSentence: 815103711-->
+<!--Unknown TalkSentence: 815103712-->
+
+;(Unused &mdash; BailuChase_CheckGameClear)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "BailuChase_GameClear"
+	},
+	"Value": {
+		"Value": true
+	}
+}</pre>
+
+;(Unused &mdash; BailuChase_ShowHint)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "BailuChase_ContactCD"
+	},
+	"Value": {}
+}</pre>
+::<!--15-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "BailuChase_ContactCD"
+	},
+	"Value": {
+		"Value": true
+	}
+}</pre>
+;(Unused &mdash; MissionFinish_801511103)
+
+
+;(Unused &mdash; X203_TeleportFinish)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	},
+	"CreateList": []
+}</pre>
+:;(По прибытии на место)
+{{Диалог Конец}}
+
+===Поговорите с Байлу===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 815103401-->
+<!--Unknown TalkSentence: 815103402-->
+<!--Unknown TalkSentence: 815103403-->
+<!--Unknown TalkSentence: 815103404-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103405-->
+:<!--Unknown TalkSentence: 815103406-->
+:<!--Unknown TalkSentence: 815103407-->
+:<!--Unknown TalkSentence: 815103408-->
+:<!--Unknown TalkSentence: 815103409-->
+:<!--Unknown TalkSentence: 815103410-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103407-->
+:<!--Unknown TalkSentence: 815103408-->
+:<!--Unknown TalkSentence: 815103409-->
+:<!--Unknown TalkSentence: 815103410-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815103409-->
+:<!--Unknown TalkSentence: 815103410-->
+::{{tx}}
+<!--Unknown TalkSentence: 815103409-->
+<!--Unknown TalkSentence: 815103410-->
+:{{tx}}
+
+;(Поговорите с Хохо)
+<!--Unknown TalkSentence: 815103601-->
+<!--Unknown TalkSentence: 815103602-->
+
+;(Поговорите с Гуйнайфэнь)
+<!--Unknown TalkSentence: 815103601-->
+<!--Unknown TalkSentence: 815103602-->
+
+;(Поговорите с Сушан)
+<!--Unknown TalkSentence: 815103601-->
+<!--Unknown TalkSentence: 815103602-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PlayTimelinePrefab",
+	"PrefabPath": "CutSceneSpecial/CS_ActivityHeliobus_Gourd/CS_ActivityHeliobus_Gourd.prefab",
+	"AreaName": {
+		"Custom": true,
+		"Key": "AreaName"
+	},
+	"AnchorName": {
+		"Custom": true,
+		"Key": "AnchorName"
+	}
+}</pre>
+:{{tx}}
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Twin Bond
+|zhs  = 双生
+|zht  = 雙生
+|ja   = 双生
+|ko   = 쌍생(雙生)
+|es   = Gemelas
+|fr   = Jumelles
+|ru   = Двойняшки
+|th   = แฝดคนละฝา
+|vi   = Song Sinh
+|de   = Zwillinge
+|id   = Kembar
+|pt   = Gêmeas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,126 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1031301
+|Название        = 
+|Изображение     = Миссия Освоения Когда закрывается отель.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Кошка среди голубей
+|Условия         = Завершена [[Миссия Освоения]] ''[[Когда закрывается отель]]''
+|Персонажи       = Ахерон; Вельт; Первопроходец; Светлячок
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = По эту сторону рая
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*5; Очищенный эфир*5; Часокредиты*300; "Hi, Dolly!"*1 { text = Hi, Dolly! }; Кредиты*80 000
+}}
+'''Когда закрывается отель''' — [[Миссия Освоения]] в главе [[Кошка среди голубей]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Ахерон
+# Просмотрите воспоминания об Ахерон
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Ахерон===
+{{Описание миссии|локация=Золотой миг|Ракурс снова смещается. Иногда у вас возникает ощущение, будто вы попали в кинофильм - ничто другое не может объяснить постоянную смену планов.}}
+{{Диалог Начало}}
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+::{{tx}}
+:{{tx}}
+
+:{{Диалог|undefined}} 
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040586-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<!--Unknown TalkSentence: 103040101-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Диалог Конец}}
+
+===Просмотрите воспоминания об Ахерон===
+{{Диалог Начало}}
+:{{tx}}
+
+;(Поговорите с Джино)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 503030801
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 103130107-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 103130113-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 103130119-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 103130126-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103130132-->
+::{{tx}}
+:{{tx}}
+;(If {{F|FSV_DoorC}} is equal to 0)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(If {{F|FSV_DoorC}} is not equal to 0)
+:;(Return to previous option selection)
+;(Unused &mdash; G53_Trigger)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = When the Sacred Ginmill Closes
+|zhs  = 酒店关门之后
+|zht  = 飯店關門之後
+|ja   = 聖なる酒場の哀歌
+|ko   = 성스러운 바가 문을 닫을 때
+|es   = Cuando el hotel cierra sus puertas
+|fr   = Après la fermeture des portes de l'hôtel
+|ru   = Когда закрывается отель
+|th   = ยามเมื่อโรงแรมปิด
+|vi   = Sau Khi Khách Sạn Đóng Cửa
+|de   = Wenn das Hotel schließt
+|id   = Setelah Hotel Tutup
+|pt   = Quando o Hotel Fecha as Portas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

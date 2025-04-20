@@ -1,0 +1,215 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1032704
+|Название        = 
+|Изображение     = Миссия Освоения Фаворит.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В наше время
+|Условия         = Завершена [[Миссия Освоения]] ''[[Фаворит]]''
+|Персонажи       = Аргенти; Первопроходец; Светлячок
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = Красавица и Разрушение
+|Награды         = Опыт Освоения*800; Звёздный нефрит*100; Утраченный кристалл*12; Часокредиты*400; "A Star Is Born"*1 { text = A Star Is Born }; "An Actor Prepares"*1 { text = An Actor Prepares }; Кредиты*160 000
+}}
+'''Фаворит''' — [[Миссия Освоения]] в главе [[В наше время]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Победите в «Противостоянии суперзвёзд»
+# Доберитесь до финиша
+# Победите в «Противостоянии суперзвёзд»
+# Доберитесь до финиша
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Победите в «Противостоянии суперзвёзд»===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270414,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Вас ждёт самый сложный уровень «Отбора на праздник Услады™» - «Противостояние суперзвёзд»! Только тот, кто будет смеяться последним, станет следующей Суперзвездой праздника Пенаконии...<br />Будете ли это вы? Или тот высокий, сильный и обаятельный мужчина, с лёгкостью получивший высший балл за актёрское мастерство? Не переключайтесь!}}
+;(Unused &mdash; EnterArea_LocalGroup)
+
+
+
+;(Unused &mdash; EnterArea_G64)
+<!--Unknown TalkSentence: 103272902-->
+:<!--Unknown TalkSentence: 103272903-->
+:<!--Unknown TalkSentence: 103272904-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272906-->
+::<!--Unknown TalkSentence: 103272907-->
+::<!--Unknown TalkSentence: 103272908-->
+::<!--Unknown TalkSentence: 103272909-->
+::<!--Unknown TalkSentence: 103272910-->
+::<!--Unknown TalkSentence: 103272911-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272908-->
+::<!--Unknown TalkSentence: 103272909-->
+::<!--Unknown TalkSentence: 103272910-->
+::<!--Unknown TalkSentence: 103272911-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103272909-->
+::<!--Unknown TalkSentence: 103272910-->
+::<!--Unknown TalkSentence: 103272911-->
+:<!--Unknown TalkSentence: 103272909-->
+:<!--Unknown TalkSentence: 103272910-->
+:<!--Unknown TalkSentence: 103272911-->
+;(Unused &mdash; MissionTalk)
+<!--Unknown TalkSentence: 103272434-->
+:{{tx}}
+;(По прибытии на место)
+
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 103276002-->
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_C2BrokenBridge"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAtPerformance_103270402)
+
+{{Диалог Конец}}
+
+===Доберитесь до финиша===
+{{Диалог Начало}}
+;(If {{F|BlockShowIndex}} is equal to 7)
+{{Диалог Конец}}
+
+===Победите в «Противостоянии суперзвёзд»===
+{{Диалог Начало}}
+;(Unused &mdash; EnterArea_LocalGroup)
+
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 103276002-->
+
+;(Unused &mdash; EnterArea_G{GroupID})
+<!--Unknown TalkSentence: 103276402-->
+:<!--Unknown TalkSentence: 103276403-->
+:<!--Unknown TalkSentence: 103276404-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103276406-->
+::<!--Unknown TalkSentence: 103276407-->
+::<!--Unknown TalkSentence: 103276408-->
+::<!--Unknown TalkSentence: 103276409-->
+::<!--Unknown TalkSentence: 103276410-->
+::<!--Unknown TalkSentence: 103276411-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103276408-->
+::<!--Unknown TalkSentence: 103276409-->
+::<!--Unknown TalkSentence: 103276410-->
+::<!--Unknown TalkSentence: 103276411-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103276409-->
+::<!--Unknown TalkSentence: 103276410-->
+::<!--Unknown TalkSentence: 103276411-->
+:<!--Unknown TalkSentence: 103276409-->
+:<!--Unknown TalkSentence: 103276410-->
+:<!--Unknown TalkSentence: 103276411-->
+:{{tx}}
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 103276002-->
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"FixedValue": {
+			"Value": 2.5
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "CamAnchor1"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"SecondTalkListEnd": {
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"FaceToCameraTarget": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "FinishLookAtPerformance_103270401"
+	}
+}</pre>
+;(Unused &mdash; FinishLookAtPerformance_103270401)
+
+{{Диалог Конец}}
+
+===Доберитесь до финиша===
+{{Диалог Начало}}
+;(If {{F|BlockShowIndex}} is equal to 7)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Seabiscuit
+|zhs  = 奔腾年代
+|zht  = 奔騰年代
+|ja   = 奔走する時代
+|ko   = 씨비스킷
+|es   = La era del tumulto
+|fr   = L'ère du tumulte
+|ru   = Фаворит
+|th   = ยุคพุ่งทะยาน
+|vi   = Thời Đại Đầy Hứa Hẹn
+|de   = Mit dem Willen zum Erfolg
+|id   = Era Melaju Cepat
+|pt   = A Era do Tumulto
+}}
+
+==История изменений==
+{{История изменений|2.7}}

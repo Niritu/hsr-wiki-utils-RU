@@ -1,0 +1,181 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002102
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Вторая остановка - Зона хранения.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Первая остановка - Главная контрольная зона]]''
+|Персонажи       = Герта; Первопроходец
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = Искатели теней: Первая остановка - Главная контрольная зона
+|Следующая       = Искатели теней: Третья остановка - Зона поддержки
+|Награды         = Звёздный нефрит*70; Очищенный эфир*4; Arrow of the Demon Slayer*3; Кредиты*40 000
+}}
+'''Искатели теней: Вторая остановка - Зона хранения''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите объекты и сфотографируйте их
+# Найдите подсказки об объекте на фотографии
+# Найдите объекты и сфотографируйте их
+# Прочтите сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите объекты и сфотографируйте их===
+{{Описание миссии|локация=Зона хранения|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны хранения...}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Найдите подсказки об объекте на фотографии===
+{{Диалог Начало}}
+
+
+;(Поговорите с Герта)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.25
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "500002106_1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "500002106_2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "500002106_3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "500002106_4"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; 500002106_1)
+<!--Unknown TalkSentence: 500012161-->
+
+;(Unused &mdash; 500002106_2)
+<!--Unknown TalkSentence: 500012162-->
+
+;(Unused &mdash; 500002106_3)
+<!--Unknown TalkSentence: 500012165-->
+
+;(Unused &mdash; 500002106_4)
+<!--Unknown TalkSentence: 500012166-->
+
+;(Unused &mdash; 500002106_5)
+<!--Unknown TalkSentence: 500012163-->
+:<!--Unknown TalkSentence: 500012164-->
+
+;(Unused &mdash; Create_119_300001)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		400001,
+		400002
+	]
+}</pre>
+
+;(Unused &mdash; Destroy_119_300001)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Найдите объекты и сфотографируйте их===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		400001,
+		400002
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Прочтите сообщение Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 2nd Stop, Storage Zone
+|zhs  = 星旅寻影•第二站•收容舱段
+|zht  = 星旅尋影•第二站•收容艙段
+|ja   = 星々の影を探して・2駅目・収容部分
+|ko   = 그림자를 찾는 별의 여정•두 번째 역•보관 캐빈
+|es   = Fotografías estelares, 2.ª parada: zona de almacenamiento
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 2e arrêt, Zone de stockage
+|ru   = Искатели теней: Вторая остановка - Зона хранения
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 2 - Storage Zone
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 2, Khoang Thu Dung
+|de   = Stellarer Schattensucher: Zweiter Halt – Lagerzone
+|id   = Penjelajah Bayangan Bintang: Perhentian 2 - Storage Zone
+|pt   = Sombrio Estelar: 2ª Parada, Zona de Armazenamento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

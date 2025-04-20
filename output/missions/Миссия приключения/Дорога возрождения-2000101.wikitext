@@ -1,0 +1,127 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000101
+|Название        = 
+|Изображение     = Миссия Освоения Дорога возрождения.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Дорога возрождения]]''
+|Персонажи       = Авраам; Арлан; Первопроходец
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = Опыт Освоения*100; Звёздный нефрит*30; Журнал приключений*2; Hertareum*50; Кредиты*4 000
+}}
+'''Дорога возрождения''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Идите в Базовую зону и помогите исследователям убрать беспорядок
+# Пройдите через закрытый отсек, охраняемый чудовищами Легиона
+# Активируйте потухшее энергетическое поле якоря в целевом отсеке
+# Сообщите Аврааму, что «якорь» снова работает
+
+==Прохождение==
+{{Дополнить}}
+
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1010300
+}</pre>
+
+;(Поговорите с Арлан)
+;(If {{cx}}<!--SubMission Finish: 200010001-->)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 500012021
+}</pre>
+<!--Unknown TalkSentence: 200022201-->
+{{Диалог Конец}}
+
+===Идите в Базовую зону и помогите исследователям убрать беспорядок===
+{{Описание миссии|локация=Базовая зона|В Базовой зоне, находящейся на передовой, опасно. Оставшийся в одиночестве исследователь ждёт помощи. В этот момент ваш старый знакомый Авраам вот-вот столкнётся лицом к лицу со своим страхом...}}
+{{Диалог Начало}}
+
+;(Поговорите с Авраам)
+<!--Unknown TalkSentence: 200022232-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200022234-->
+:<!--Unknown TalkSentence: 200022235-->
+:<!--Unknown TalkSentence: 200022236-->
+:<!--Unknown TalkSentence: 200022242-->
+:<!--Unknown TalkSentence: 200022243-->
+:<!--Unknown TalkSentence: 200022244-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200022238-->
+:<!--Unknown TalkSentence: 200022239-->
+:<!--Unknown TalkSentence: 200022240-->
+:<!--Unknown TalkSentence: 200022241-->
+:<!--Unknown TalkSentence: 200022242-->
+:<!--Unknown TalkSentence: 200022243-->
+:<!--Unknown TalkSentence: 200022244-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Пройдите через закрытый отсек, охраняемый чудовищами Легиона===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Активируйте потухшее энергетическое поле якоря в целевом отсеке===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Сообщите Аврааму, что «якорь» снова работает===
+{{Диалог Начало}}
+
+;(Поговорите с Авраам)
+<!--Unknown TalkSentence: 200022265-->
+<!--Unknown TalkSentence: 200022266-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200022268-->
+:<!--Unknown TalkSentence: 200022269-->
+:<!--Unknown TalkSentence: 200022270-->
+:<!--Unknown TalkSentence: 200022271-->
+:<!--Unknown TalkSentence: 200022286-->
+:<!--Unknown TalkSentence: 200022287-->
+:<!--Unknown TalkSentence: 200022288-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200022273-->
+:<!--Unknown TalkSentence: 200022274-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200022283-->
+:<!--Unknown TalkSentence: 200022284-->
+:<!--Unknown TalkSentence: 200022285-->
+:<!--Unknown TalkSentence: 200022286-->
+:<!--Unknown TalkSentence: 200022287-->
+:<!--Unknown TalkSentence: 200022288-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Road to Revival
+|zhs  = 复兴之路
+|zht  = 復興之路
+|ja   = 復興の路
+|ko   = 부흥의 길
+|es   = El camino del renacimiento
+|fr   = La route vers la renaissance
+|ru   = Дорога возрождения
+|th   = เส้นทางแห่งความรุ่งเรือง
+|vi   = Con Đường Phục Hưng
+|de   = Weg zur Wiederbelebung
+|id   = Jalan Kebangkitan
+|pt   = Estrada para o Renascimento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

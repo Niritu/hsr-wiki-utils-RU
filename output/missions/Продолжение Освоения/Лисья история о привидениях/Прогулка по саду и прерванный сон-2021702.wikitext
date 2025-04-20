@@ -1,0 +1,1495 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2021702
+|Название        = 
+|Изображение     = Миссия Освоения Прогулка по саду и прерванный сон.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Лисья история о привидениях
+|Условия         = 
+|Персонажи       = Голос за дверью; Голос из зеркала; Голос издалека; Неизвестная хелиоби; Первопроходец; Сюэи; Таинственный голос; Хвост; Хохо; Циррус
+|СтартЛокация    = Иллюзорный лабиринт: Пожар
+|Мир             = Лофу Сяньчжоу
+|Локации         = Иллюзорный лабиринт: Пожар
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*1 500; Звёздный нефрит*150; Путеводитель путешественника*15; Очищенный эфир*12; Утраченный кристалл*12; "Dancing Fantasms"*1 { text = Dancing Fantasms }; Кредиты*150 000
+}}
+'''Прогулка по саду и прерванный сон''' — [[Продолжение Освоения]] в главе [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите выход из иллюзорного лабиринта
+# Поищите подсказки в историях о привидениях
+# Найдите выход из иллюзорного лабиринта
+# Встретьтесь с Хохо
+# Поговорите с Циррус (необязательно)
+# Поговорите с Хвостом (необязательно)
+# Поговорите с Хохо и успокойте её
+# Найдите выход из иллюзорного лабиринта
+# Поищите подсказки в другом сборнике историй о привидениях (необязательно)
+# Изучите странное бронзовое зеркало
+# Выслушайте голос из зеркала и узнайте, настоящий ли он
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите выход из иллюзорного лабиринта===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Вы часто видите в новостях, как в поисках пропавшего теряются и те, кто пустился на поиски. К сожалению, сегодня вам предстоит сыграть главную роль в такой истории. Вы постепенно теряете из виду даже Хохо, а когда замечаете странное бронзовое зеркало, вас утягивает в иллюзию. Там полно дверей и стен, и вы только ходите кругами, окончательно потеряв ориентиры.<br />Если верить народным сказкам с Сяньчжоу, которые вам рассказывали, к тому моменту, как вы выберетесь, снаружи могут пройти сотни лет. Вам совсем не хочется остаток жизни блуждать по лабиринту, так что скорее ищите выход!}}
+{{Диалог Начало}}
+:{{tx}}
+;(If {{F|group state}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is equal to 5)
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is equal to 5)
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is equal to 2)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is equal to 3)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 4,
+	"NeedBlock": false
+}</pre>
+;(If {{F|group state}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300024
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300024
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300025
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room3}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room3}} is equal to 1)
+<!--Unknown TalkSentence: 202260021-->
+<!--Unknown TalkSentence: 202260022-->
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260084-->
+<!--Unknown TalkSentence: 202260085-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260086-->
+<!--Unknown TalkSentence: 202260087-->
+----
+;(Unused &mdash; 202170206_PickUpReading)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300011
+	]
+}</pre>
+;(If {{F|group state}} is equal to 2)
+----
+<!--Unknown TalkSentence: 202260465-->
+<!--Unknown TalkSentence: 202260466-->
+<!--Unknown TalkSentence: 202260795-->
+<!--Unknown TalkSentence: 202260467-->
+----
+<!--Unknown TalkSentence: 202260032-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300023
+	]
+}</pre>
+;(Unused &mdash; HHTX_GDQ_FinalCheck)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300006}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300007}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300008}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300009}}}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--Unknown TalkSentence: 202260639-->
+::<!--Unknown TalkSentence: 202260640-->
+::<!--Unknown TalkSentence: 202260641-->
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"ToState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300026
+				}
+			}
+		}
+	},
+	"FromState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300025
+				}
+			}
+		}
+	},
+	"FromState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
+}</pre>
+:::----
+::<!--Unknown TalkSentence: 202260465-->
+::<!--Unknown TalkSentence: 202260466-->
+::<!--Unknown TalkSentence: 202260795-->
+::<!--Unknown TalkSentence: 202260467-->
+:::----
+::<!--Unknown TalkSentence: 202260032-->
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300023
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300006}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300007}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300008}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300009}}}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--Unknown TalkSentence: 202260636-->
+::<!--Unknown TalkSentence: 202260637-->
+::<!--Unknown TalkSentence: 202260638-->
+
+;(Unused &mdash; 202170214_Mirror)
+:----
+:<!--Unknown TalkSentence: 202260468-->
+:<!--Unknown TalkSentence: 202260469-->
+:<!--Unknown TalkSentence: 202260470-->
+:<!--Unknown TalkSentence: 202260471-->
+:<!--Unknown TalkSentence: 202260472-->
+;(If {{F|group state}} is equal to 3)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300012
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Group10}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300012
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+;(Unused &mdash; GDQ_Room4_Check)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300001}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300002}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--Unknown TalkSentence: 202260639-->
+::<!--Unknown TalkSentence: 202260640-->
+::<!--Unknown TalkSentence: 202260641-->
+::<!--Unknown TalkSentence: 202260028-->
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300001}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300002}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::<!--Unknown TalkSentence: 202260636-->
+::<!--Unknown TalkSentence: 202260637-->
+::<!--Unknown TalkSentence: 202260638-->
+::<pre>{
+	"$type": "RPG.GameCore.ResetAllPuzzleStatesClientOnly",
+	"PuzzleStates": [
+		{
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		},
+		{
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		},
+		{
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		},
+		{
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	]
+}</pre>
+;(If {{F|group state}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Group11}} is equal to 0 and {{F|group state}} is equal to undefined)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group11",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+;(If {{F|group state}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room2}} is equal to 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room2}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 4,
+	"NeedBlock": false
+}</pre>
+{{Диалог Конец}}
+
+===Поищите подсказки в историях о привидениях===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|С помощью Циррус вы обнаруживаете вырванную страницу, на которой рассказывается безумная история про хелиоби и генерала Лофу, произошедшая несколько веков назад. Сам стиль письма даёт какой-то намёк о том, как видеть сквозь иллюзии.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Найдите выход из иллюзорного лабиринта===
+{{Диалог Начало}}
+
+;(Поговорите с Хохо)
+----
+<!--Unknown TalkSentence: 202260391-->
+<!--Unknown TalkSentence: 202260392-->
+<!--Unknown TalkSentence: 202260350-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202260029-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202260337-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202260340-->
+<!--Unknown TalkSentence: 202260347-->
+----
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202260348-->
+<!--Unknown TalkSentence: 202260349-->
+----
+<!--Unknown TalkSentence: 202260350-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Встретьтесь с Хохо===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Циррус не внушает доверия, но её указания всё-таки приводят вас к Хохо.<br />Ну, раз даже судьи могут застревать в иллюзиях, тогда в Саду точно есть... Нет, вам совсем не хочется думать о том, что может быть в Саду безмятежности. Потому что это явно что-то очень жуткое.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Циррус (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Хохо)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing",
+	"SubMissionID": 202170212
+}</pre>
+----
+<!--Unknown TalkSentence: 202260412-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:<!--Unknown TalkSentence: 202260414-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260416-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+<!--Unknown TalkSentence: 202260417-->
+<!--Unknown TalkSentence: 202260418-->
+<!--Unknown TalkSentence: 202260419-->
+<!--Unknown TalkSentence: 202260420-->
+<!--Unknown TalkSentence: 202260421-->
+<!--Unknown TalkSentence: 202260422-->
+<!--Unknown TalkSentence: 202260423-->
+
+;(Поговорите с Хвост)
+;(If {{cx}}<!--during performance 202170211-->)
+:<!--Unknown TalkSentence: 202260403-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202260405-->
+;(If {{cx}}<!--not during performance 202170211-->)
+:<!--Unknown TalkSentence: 202260643-->
+
+;(Поговорите с Циррус)
+;(If {{cx}}<!--during performance 202170210-->)
+:<!--Unknown TalkSentence: 202260393-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202260395-->
+::<!--Unknown TalkSentence: 202260399-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 202260397-->
+::<!--Unknown TalkSentence: 202260398-->
+::<!--Unknown TalkSentence: 202260399-->
+:<!--Unknown TalkSentence: 202260395-->
+:<!--Unknown TalkSentence: 202260399-->
+;(If {{cx}}<!--not during performance 202170210-->)
+:<!--Unknown TalkSentence: 202260642-->
+{{Диалог Конец}}
+
+===Поговорите с Хвостом (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Хохо и успокойте её===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Циррус от вас не отходит и не перестаёт рассказывать про давнюю вражду Сяньчжоу с хелиоби. Она также умудряется перехватить контроль над вашим ртом, чтобы посеять семена раздора в вашей группке потерявшихся. Только совместными усилиями получится выбраться из иллюзии. Утешьте Хохо, а потом вместе придумайте, как выйти отсюда.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Найдите выход из иллюзорного лабиринта===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поищите подсказки в другом сборнике историй о привидениях (необязательно)===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Изучите странное бронзовое зеркало===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Как и при попадании сюда, вы видите бронзовое зеркало, которое издаёт странный звук. Может, это судья Комиссии десяти владык, а может - хелиоби, который играется с вами, как кошка с мышкой.<br />Зато даже монстры не причинят вам никакого вреда через зеркало, так ведь? Надо проверить, что там.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выслушайте голос из зеркала и узнайте, настоящий ли он===
+{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Из зеркала доносится голос Сюэи, но сложно сказать, настоящий он или нет. Возможно, это поймёт только тот, кто хорошо её знает. Например, Хохо.}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":4}},"ID":{"FixedValue":{"Value":300009}}}}}-->}})
+:<!--Unknown TalkSentence: 202260665-->
+:<!--Unknown TalkSentence: 202260666-->
+:<!--Unknown TalkSentence: 202260667-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":4}},"ID":{"FixedValue":{"Value":300009}}}}}-->}})
+:<!--Unknown TalkSentence: 202260761-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sojourners' Ghastly Reverie
+|zhs  = 游园惊梦
+|zht  = 遊園驚夢
+|ja   = 游園驚夢
+|ko   = 유원경몽
+|es   = Sustos en el parque
+|fr   = Promenade fantasmagorique
+|ru   = Прогулка по саду и прерванный сон
+|th   = ฝันผวาในสวนเฮี้ยน
+|vi   = Ác Mộng Vườn Hoang
+|de   = Garten der Albträume
+|id   = Mimpi Buruk di Taman
+|pt   = Devaneio Lúgubre do Visitante
+}}
+
+==История изменений==
+{{История изменений|2.7}}

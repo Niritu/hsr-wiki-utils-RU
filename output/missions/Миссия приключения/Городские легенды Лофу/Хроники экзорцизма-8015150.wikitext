@@ -1,0 +1,149 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015150
+|Название        = 
+|Изображение     = Миссия Освоения Хроники экзорцизма.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Городские легенды Лофу
+|Условия         = Завершена [[Миссия приключения]] ''[[Городские легенды Лофу: Шахматное Привидение]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = Городские легенды Лофу: Шахматное Привидение
+|Следующая       = 
+|Награды         = 
+}}
+'''Хроники экзорцизма''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Городские легенды Лофу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с проводником душ
+# Примите вызов хелиоби
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с проводником душ===
+{{Описание миссии|локация=Сад безмятежности|Поимка хелиоби требует практики, как и любой другой навык. Проводник душ приглашает вас принять участие в хорошо подготовленной тренировке по запечатыванию хелиоби в башне подавления.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "HeliobusActionDayResultPerformanceDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "HeliobusActionDayResultPage"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Примите вызов хелиоби===
+{{Диалог Начало}}
+
+
+:{{Диалог|Разговор}} Павильон отдохновения: Башня подавления
+;(If {{cx}}<!--SubMission Finish: 801510117-->)
+:<!--Unknown TalkSentence: 815114011-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu",
+	"DisplaySingleMenuItem": true
+}</pre>
+;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 502620251,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 502620252,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 502620253,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 502620254,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 502620255,
+					"ProtectTime": 2
+				}
+			]
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Exorcismal Chronicle
+|zhs  = 降妖辑录
+|zht  = 降妖輯錄
+|ja   = 伏魔記録
+|ko   = 요괴 진압록
+|es   = Archivos sobrenaturales
+|fr   = Chroniques d'exorcisme
+|ru   = Хроники экзорцизма
+|th   = บันทึกมิติลี้ลับ
+|vi   = Hàng Yêu Tập Lục
+|de   = Aufzeichnungen der Übernatürlichen
+|id   = Catatan Supranatural
+|pt   = Crônicas de Exorcismo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

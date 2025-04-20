@@ -1,0 +1,904 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027205
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Изящество древности.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = Март 7; Март 7 и (Первопроходец); Первопроходец; Хвост; Хохо
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*60; Путеводитель путешественника*4; Dynamic Outlining*3; Кредиты*30 000
+}}
+'''Выставка фотографий: Изящество древности''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Обсудите тему дня с Март 7
+# Сфотографируйте хелиоби
+# Обсудите фотографию с Март 7
+# Сфотографируйте Хохо
+# Обсудите фотографию с Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+===Обсудите тему дня с Март 7===
+{{Описание миссии|локация=Дом кандалов|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G236)
+:{{tx}}
+:<!--Unknown TalkSentence: 802723201-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723203-->
+::<!--Unknown TalkSentence: 802723204-->
+::<!--Unknown TalkSentence: 802723205-->
+::<!--Unknown TalkSentence: 802723206-->
+::<!--Unknown TalkSentence: 802723207-->
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723205-->
+::<!--Unknown TalkSentence: 802723206-->
+::<!--Unknown TalkSentence: 802723207-->
+::;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Сфотографируйте хелиоби===
+{{Описание миссии|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphFinishCustomString_G237)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400004
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400009
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400010
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400007
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400008
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphStartCustomString_G237)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400007
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400008
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400004
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400009
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 237
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400010
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "High",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 802723251-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Сфотографируйте Хохо===
+{{Описание миссии|локация=Дом кандалов|Как Хохо будет выглядеть в объективе-калейдоскопе? Опробуйте эффект объектива-калейдоскопа на Хохо.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802723301-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802723303-->
+<!--Unknown TalkSentence: 802723304-->
+<!--Unknown TalkSentence: 802723305-->
+<!--Unknown TalkSentence: 802723306-->
+<!--Unknown TalkSentence: 802723307-->
+<!--Unknown TalkSentence: 802723308-->
+<!--Unknown TalkSentence: 802723309-->
+<!--Unknown TalkSentence: 802723310-->
+<!--Unknown TalkSentence: 802723311-->
+<!--Unknown TalkSentence: 802723312-->
+<!--Unknown TalkSentence: 802723313-->
+<!--Unknown TalkSentence: 802723314-->
+<!--Unknown TalkSentence: 802723315-->
+<!--Unknown TalkSentence: 802723316-->
+<!--Unknown TalkSentence: 802723317-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802723409-->
+<!--Unknown TalkSentence: 802723410-->
+{{Описание миссии|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+;(Unused &mdash; PhotoGraphFinishCustomString_G240)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400004
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400009
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400010
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400007
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400008
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphStartCustomString_G240)
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400003
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400007
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400008
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400004
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400006
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400009
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 240
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400010
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G240)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 15,
+			"GroupID": 240,
+			"GroupNpcID": 400011,
+			"TalkSentenceID": 802723413
+		}
+	],
+	"LoopInterval": 2,
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+
+;(Поговорите с Хохо)
+----
+<!--Unknown TalkSentence: 802723401-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "High",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
+}</pre>
+<!--Unknown TalkSentence: 802723351-->
+<!--Unknown TalkSentence: 802723352-->
+<!--Unknown TalkSentence: 802723353-->
+<!--Unknown TalkSentence: 802723354-->
+<!--Unknown TalkSentence: 802723355-->
+<!--Unknown TalkSentence: 802723356-->
+<!--Unknown TalkSentence: 802723357-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723359-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<!--Unknown TalkSentence: 802723364-->
+:<!--Unknown TalkSentence: 802723365-->
+:<!--Unknown TalkSentence: 802723366-->
+:<!--Unknown TalkSentence: 802723367-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723361-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<!--Unknown TalkSentence: 802723364-->
+:<!--Unknown TalkSentence: 802723365-->
+:<!--Unknown TalkSentence: 802723366-->
+:<!--Unknown TalkSentence: 802723367-->
+<!--Unknown TalkSentence: 802723359-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<!--Unknown TalkSentence: 802723364-->
+<!--Unknown TalkSentence: 802723365-->
+<!--Unknown TalkSentence: 802723366-->
+<!--Unknown TalkSentence: 802723367-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Stately Antiquity
+|zhs  = 摄影展览•古都雅韵
+|zht  = 攝影展覽•古都雅韻
+|ja   = フォトコンテスト・雅な古都
+|ko   = 사진 콘테스트•옛 도읍의 운치
+|es   = Exposición de fotografía: la elegancia de la antigua ciudad
+|fr   = Exposition photo&nbsp;: Raffinement du passé
+|ru   = Выставка фотографий: Изящество древности
+|th   = นิทรรศการภาพถ่าย: ความสง่าแห่งเมืองโบราณ
+|vi   = Triển Lãm Nhiếp Ảnh-Thành Cổ Thanh Lịch
+|de   = Fotoausstellung: Eleganz der alten Stadt
+|id   = Pameran Fotografi: Pesona Kota Tua
+|pt   = Exibição de Fotografia: Antiguidade Imponente
+}}
+
+==История изменений==
+{{История изменений|2.7}}

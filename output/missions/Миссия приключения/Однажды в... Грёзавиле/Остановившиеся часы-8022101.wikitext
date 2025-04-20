@@ -1,0 +1,255 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8022101
+|Название        = 
+|Изображение     = Миссия Освоения Остановившиеся часы.png
+|Тип             = Миссия приключения
+|События         = «Часик: Мемуары о сладких грёзах»
+|Глава           = Однажды в... Грёзавиле
+|Условия         = Завершена [[Миссия Освоения]] ''[[И на восьмой день...]]''
+|Персонажи       = Первопроходец; Пис; Представительница клана Ирисов; Часик?
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Остановившиеся часы''' — Событие [[Миссия приключения]] из события [[«Часик: Мемуары о сладких грёзах»]].
+
+==Описание==
+{{Описание|По поручению Студии «Часы» вы взялись за незавершённое Часовщиком дело и стали режиссёром картины «Часик: Грёзавиль».<br />В этой совершенно нелепой истории вы увидели кусочек первопроходческой экспедиции и былую мечту Пенаконии.}}
+
+==Этапы==
+# Расследуйте конфликт в тематическом парке
+# Поговорите с работником парка в маске Часика
+# Попробуйте смонтировать «Путешествие Часика» для «Мемуаров о сладких грёзах»
+# Начните монтаж «Мемуаров о сладких грёзах»
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Расследуйте конфликт в тематическом парке===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Похоже, что в Тематическом парке Студии «Часы» столкнулись две группы людей! Узнайте, что происходит!}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; Performance_802210101)
+<!--Unknown TalkSentence: 802210100-->
+:<!--Unknown TalkSentence: 802210101-->
+:<!--Unknown TalkSentence: 802210102-->
+:<!--Unknown TalkSentence: 802210103-->
+:<!--Unknown TalkSentence: 802210104-->
+:<!--Unknown TalkSentence: 802210105-->
+:<!--Unknown TalkSentence: 802210106-->
+:<!--Unknown TalkSentence: 802210107-->
+:<!--Unknown TalkSentence: 802210108-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; Bubble_802210101)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 197,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 802210100
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с работником парка в маске Часика===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Похоже, что между Студией «Часы» и Семьёй возникли разногласия. Поговорите со странным человеком в маске Часика и выясните подробности.}}
+{{Диалог Начало}}
+
+;(Поговорите с Часик?)
+<!--Unknown TalkSentence: 802210201-->
+<!--Unknown TalkSentence: 802210202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210204-->
+:<!--Unknown TalkSentence: 802210205-->
+:<!--Unknown TalkSentence: 802210206-->
+:<!--Unknown TalkSentence: 802210207-->
+:<!--Unknown TalkSentence: 802210208-->
+:<!--Unknown TalkSentence: 802210209-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210206-->
+:<!--Unknown TalkSentence: 802210207-->
+:<!--Unknown TalkSentence: 802210208-->
+:<!--Unknown TalkSentence: 802210209-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210208-->
+:<!--Unknown TalkSentence: 802210209-->
+::{{tx}}
+<!--Unknown TalkSentence: 802210208-->
+<!--Unknown TalkSentence: 802210209-->
+:{{tx}}
+;(Unused &mdash; ActivitMovie_OpenTempUI)
+<pre>{
+	"$type": "RPG.GameCore.ClockParkUnlockScript",
+	"ScriptID": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 802210106,
+			"MissionCustomValue": {
+				"Index": 1,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			},
+			"CustomValue": 1
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ActivitMovie_OpenUI"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 802210106
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 802210106,
+			"MissionCustomValue": {
+				"Index": 1,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			},
+			"CustomValue": 1
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ActivitMovie_OpenUI"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 802210106
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Попробуйте смонтировать «Путешествие Часика» для «Мемуаров о сладких грёзах»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Благодаря вашей связи с Часовщиком вас позвали на Студию «Часы» участвовать в монтаже фильма «Мемуары о сладких грёзах» в качестве приглашённого режиссёра.<br />Начните с пилотного эпизода «Путешествие Часика», чтобы попрактиковаться!}}
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+
+;(Unused &mdash; ActivitMovie_OpenUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+{{Диалог Конец}}
+
+===Начните монтаж «Мемуаров о сладких грёзах»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Благодаря вашей связи с Часовщиком вас позвали на Студию «Часы» участвовать в монтаже фильма «Мемуары о сладких грёзах» в качестве приглашённого режиссёра.<br />Съёмки начались. Помогите студии «Часы» отснять больше эпизодов!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+<!--Unknown TalkSentence: 802210401-->
+<!--Unknown TalkSentence: 802210402-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210404-->
+:<!--Unknown TalkSentence: 802210405-->
+:<!--Unknown TalkSentence: 802210406-->
+:<!--Unknown TalkSentence: 802210407-->
+:<!--Unknown TalkSentence: 802210408-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210406-->
+:<!--Unknown TalkSentence: 802210407-->
+:<!--Unknown TalkSentence: 802210408-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210408-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802210408-->
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stopped Clock
+|zhs  = 停转的时钟
+|zht  = 停轉的時鐘
+|ja   = 停まった時計
+|ko   = 회전을 멈춘 시계
+|es   = Reloj parado
+|fr   = Horloge arrêtée
+|ru   = Остановившиеся часы
+|th   = นาฬิกาที่หยุดเดิน
+|vi   = Đồng Hồ Ngừng Quay
+|de   = Stillstehende Uhr
+|id   = Jam yang Berhenti
+|pt   = Relógio Parado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

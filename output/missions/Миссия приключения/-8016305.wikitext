@@ -1,0 +1,87 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8016305
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Пахучее приключение
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+|Персонажи       = Облакобот; Первопроходец
+|СтартЛокация    = Базовая зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Базовая зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Пахучее приключение]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Поговорите с Облакобот)
+<!--Unknown TalkSentence: 816170101-->
+<!--Unknown TalkSentence: 816170102-->
+<!--Unknown TalkSentence: 816170103-->
+<!--Unknown TalkSentence: 816170104-->
+<!--Unknown TalkSentence: 816170105-->
+
+
+;(Unused &mdash; OpenPanel)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityStrongChallenge.StrongChallengeMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "FinishMissions"
+			}
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "FinishToast"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; FinishMissions)
+
+
+;(Unused &mdash; FinishToast)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

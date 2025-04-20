@@ -1,0 +1,266 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1010101
+|Название        = 
+|Изображение     = Миссия Освоения Путешественники ночью зимней.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В иссушающую зимнюю ночь
+|Условия         = Завершена [[Миссия Освоения]] ''[[Оледенительное приключение]]''
+|Персонажи       = Гепард; Дань Хэн; Март 7; Молодой человек, прячущийся в снегу; Первопроходец; Сампо; Солдат
+|СтартЛокация    = Пригородные снежные поля
+|Мир             = Ярило-VI
+|Локации         = Пригородные снежные поля
+|Предыдущая      = Оледенительное приключение
+|Следующая       = Ночь в городе вечнозимья
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Журнал приключений*3; Конденсированный эфир*1
+}}
+'''Путешественники ночью зимней''' — [[Миссия Освоения]] в главе [[В иссушающую зимнюю ночь]].
+
+==Описание==
+{{Описание|Втроём вы приземляетесь на поверхность Ярило-VI.<br />Вас приветствуют бескрайние снега и ветер. Перед собой вы видите синеволосого проводника. Неужели в этих пустошах действительно существует цивилизация?}}
+
+==Этапы==
+# Поищите следы цивилизации в Снежных полях
+# Исследуйте необычный сугроб
+# Следуйте за Сампо в Белобог
+# Следуйте за Гепардом Ландау к резиденции Верховной хранительницы
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поищите следы цивилизации в Снежных полях===
+{{Описание миссии|локация=Пригородные снежные поля|Вы благополучно приземляетесь на Ярило-VI и обнаруживаете, что вокруг вас только ледяной ветер и бескрайние снежные просторы.<br />Тут вам вспоминаются слова Химеко о том, что успешные Первопроходцы должны научиться исследовать, понимать, созидать и соединять... Наверное, так выглядит стадия исследования...<br />В любом случае сейчас есть только два варианта: либо двигаться вперёд сквозь ветер и снег, либо ждать, когда Стелларон появится перед вами сам.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 56
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 201011103-->
+<!--Unknown TalkSentence: 201011104-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 5000600,
+	"ShowNotice": false
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201010601-->
+<!--Unknown TalkSentence: 201010602-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201010609-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_snowland_tips"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 201010610-->
+<!--Unknown TalkSentence: 201010611-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "MainMission_LookatArea"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint"
+	},
+	"AxisOffset": {
+		"X": 0.6,
+		"Y": 0.6
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 4,
+	"MaxAngle": 60,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 0.2,
+			"CenterPos": {
+				"X": 0.45,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 3,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте необычный сугроб===
+{{Описание миссии|локация=Пригородные снежные поля|Вы благополучно приземляетесь на Ярило-VI и обнаруживаете, что вокруг вас только ледяной ветер и бескрайние снежные просторы.<br />Тут вам вспоминаются слова Химеко о том, что успешные Первопроходцы должны научиться исследовать, понимать, созидать и соединять... Наверное, так выглядит стадия исследования...<br />В этом белоснежном мире ваше внимание привлекает шевелящийся сугроб.<br />Что может быть интереснее, чем живой сугроб? Вы решаете изучить его поближе.}}
+{{Диалог Начало}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 25
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 201010301-->
+<!--Unknown TalkSentence: 201010302-->
+<!--Unknown TalkSentence: 201010303-->
+<!--Unknown TalkSentence: 201010304-->
+<!--Unknown TalkSentence: 201010305-->
+<!--Unknown TalkSentence: 201010306-->
+<!--Unknown TalkSentence: 201010307-->
+<!--Unknown TalkSentence: 201010308-->
+<!--Unknown TalkSentence: 201010309-->
+<!--Unknown TalkSentence: 201010310-->
+<!--Unknown TalkSentence: 201010311-->
+<!--Unknown TalkSentence: 201010312-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201010313-->
+<!--Unknown TalkSentence: 201010314-->
+<!--Unknown TalkSentence: 201010315-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Следуйте за Сампо в Белобог===
+{{Описание миссии|локация=Пригородные снежные поля|Вы находите дрожащего молодого человека, закопавшегося в сугроб. Наверное, он всё же не собирался спать на пробирающем до костей морозе, а, судя по всему, хотел спрятаться от чего-то... Чего-то более угрожающего, чем ваша команда.<br />Узнав вас получше, он соглашается отвести вас в Белобог - последний оплот человечества на этой планете. Наверняка именно там вы сможете найти информацию о Стеллароне.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 201010612-->
+<!--Unknown TalkSentence: 201010613-->
+<!--Unknown TalkSentence: 201010614-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20101011}-->}})
+::{{tx}}
+:;(Enter battle)
+::{{Enemy List|Солдат Среброгривых Стражей*1; Гепард*1}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20101011}-->}})
+:;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Солдат Среброгривых Стражей*1; Гепард*1}}
+<!--Unknown TalkSentence: 201010401-->
+<!--Unknown TalkSentence: 201010402-->
+<!--Unknown TalkSentence: 201010403-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201010404-->
+::{{tx}}
+:<!--Unknown TalkSentence: 201010401-->
+:<!--Unknown TalkSentence: 201010402-->
+:<!--Unknown TalkSentence: 201010403-->
+:<!--Unknown TalkSentence: 201010404-->
+:<!--Unknown TalkSentence: 201010405-->
+:<!--Unknown TalkSentence: 201010406-->
+:<!--Unknown TalkSentence: 201010407-->
+:<!--Unknown TalkSentence: 201010408-->
+:<!--Unknown TalkSentence: 201010409-->
+:<!--Unknown TalkSentence: 201010410-->
+:<!--Unknown TalkSentence: 201010411-->
+:<!--Unknown TalkSentence: 201010412-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201010406-->
+::{{tx}}
+:<!--Unknown TalkSentence: 201010401-->
+:<!--Unknown TalkSentence: 201010402-->
+:<!--Unknown TalkSentence: 201010403-->
+:<!--Unknown TalkSentence: 201010404-->
+:<!--Unknown TalkSentence: 201010405-->
+:<!--Unknown TalkSentence: 201010406-->
+:<!--Unknown TalkSentence: 201010407-->
+:<!--Unknown TalkSentence: 201010408-->
+:<!--Unknown TalkSentence: 201010409-->
+:<!--Unknown TalkSentence: 201010410-->
+:<!--Unknown TalkSentence: 201010411-->
+:<!--Unknown TalkSentence: 201010412-->
+<!--Unknown TalkSentence: 201010404-->
+:{{tx}}
+<!--Unknown TalkSentence: 201010401-->
+<!--Unknown TalkSentence: 201010402-->
+<!--Unknown TalkSentence: 201010403-->
+<!--Unknown TalkSentence: 201010404-->
+<!--Unknown TalkSentence: 201010405-->
+<!--Unknown TalkSentence: 201010406-->
+<!--Unknown TalkSentence: 201010407-->
+<!--Unknown TalkSentence: 201010408-->
+<!--Unknown TalkSentence: 201010409-->
+<!--Unknown TalkSentence: 201010410-->
+<!--Unknown TalkSentence: 201010411-->
+<!--Unknown TalkSentence: 201010412-->
+
+;(Полностью восстановлено НР всех союзников)
+{{Диалог Конец}}
+
+===Следуйте за Гепардом Ландау к резиденции Верховной хранительницы===
+{{Описание миссии|локация=Административный район|Плохая новость заключается в том, что ваш новый друг Сампо оставил вас в одиночку разбираться с Гепардом Ландау, командующим Среброгривых Стражей. Хорошая же новость в том, что стоящий перед вами грозный страж на самом деле довольно уступчив.<br />Вам удаётся убедить Гепарда в том, что вы явились из мира за небесами. Он обещает сопроводить вас к Верховной хранительнице Белобога.<br />Кажется, что всё идёт как надо... Не о чем переживать, просто следуйте за Среброгривыми Стражами.}}
+{{Диалог Начало}}
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Travelers on a Winter Night
+|zhs  = 如果在冬夜，一群旅人
+|zht  = 如果在冬夜，一群旅人
+|ja   = もし冬の夜に、旅する人達がいたら
+|ko   = 겨울밤의 여행자 무리
+|es   = Viajeros en una noche de invierno
+|fr   = Voyageurs par une nuit d'hiver
+|ru   = Путешественники ночью зимней
+|th   = นักเดินทางในค่ำคืนฤดูหนาว
+|vi   = Những Nhà Lữ Hành Trong Đêm Đông
+|de   = Reisende an einem Winterabend
+|id   = Pengelana di Malam Musim Dingin
+|pt   = Viajantes em Uma Noite de Inverno
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,154 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003208
+|Название        = 
+|Изображение     = Миссия Освоения Снова в деле III.png
+|Тип             = Миссия приключения
+|События         = Шум рынка в Переулке ауруматонов
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = Завершена [[Миссия приключения]] ''[[Снова в деле III]]''
+|Персонажи       = Первопроходец; Председатель-ауруматон; Сушан; Сяохань; Юйкун
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = Управление причалом III
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Утраченный кристалл*5; Кредиты*45 000
+}}
+'''Снова в деле III''' — Событие [[Миссия приключения]] из события [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Узнайте о последних событиях торговой гильдии
+# Поговорите с Минси и подтвердите материалы переговоров
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте о последних событиях торговой гильдии===
+{{Описание миссии|локация=Переулок ауруматонов|В Переулке ауруматонов должно было появиться что-то новенькое. Не хотите проверить?<br />Регулярно посещайте Переулок ауруматонов.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1215901
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1215901
+}</pre>
+
+;(Поговорите с Юйкун)
+<!--Unknown TalkSentence: 800322118-->
+
+;(Поговорите с Ляньянь)
+<!--Unknown TalkSentence: 800322119-->
+{{Диалог Конец}}
+
+===Поговорите с Минси и подтвердите материалы переговоров===
+{{Описание миссии|локация=Переулок ауруматонов|Приближается время переговоров. Сначала вам следует ознакомиться со всеми материалами.<br />Обсудите их с госпожой секретарём и постарайтесь получить преимущество в предстоящей словесной перепалке.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Ask0)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask1)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask2)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Correct)
+:{{tx}}
+
+;(Unused &mdash; Fail)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Talk_800320801)
+<!--Unknown TalkSentence: 800322131-->
+:<!--Unknown TalkSentence: 800322132-->
+:<!--Unknown TalkSentence: 800322133-->
+:<!--Unknown TalkSentence: 800322134-->
+:<!--Unknown TalkSentence: 800322135-->
+:<!--Unknown TalkSentence: 800322136-->
+:<!--Unknown TalkSentence: 800322137-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 800322139-->
+::<!--Unknown TalkSentence: 800322140-->
+::<!--Unknown TalkSentence: 800322141-->
+::<!--Unknown TalkSentence: 800322142-->
+::<!--Unknown TalkSentence: 800322143-->
+::<!--Unknown TalkSentence: 800322144-->
+::<!--Unknown TalkSentence: 800322145-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 800322141-->
+::<!--Unknown TalkSentence: 800322142-->
+::<!--Unknown TalkSentence: 800322143-->
+::<!--Unknown TalkSentence: 800322144-->
+::<!--Unknown TalkSentence: 800322145-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 800322144-->
+::<!--Unknown TalkSentence: 800322145-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 800322144-->
+:<!--Unknown TalkSentence: 800322145-->
+::{{tx}}
+
+;(Получено {{Item|Оборот торговой гильдии Переулка ауруматонов|20|x=1|text=Оборот торговой гильдии Переулка ауруматонов}})
+----
+<!--Unknown TalkSentence: 800322301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800322303-->
+<!--Unknown TalkSentence: 800322306-->
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800322308-->
+<!--Unknown TalkSentence: 800322309-->
+;(Потеряно {{Item|Оборот торговой гильдии Переулка ауруматонов|20|x=1|text=Оборот торговой гильдии Переулка ауруматонов}})
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1216001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1216001
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Back in Business (III)
+|zhs  = 金戺重喧•其三
+|zht  = 金戺重喧•其三
+|ja   = 金庭、喧騒を重ねて・その3
+|ko   = 다시 부흥하는 금빛•3
+|es   = De nuevo en activo&nbsp;III
+|fr   = Les affaires reprennent (III)
+|ru   = Снова в деле III
+|th   = คืนสู่ความรุ่งเรือง 3
+|vi   = Huyên Náo Trở Lại 3
+|de   = Wieder im Geschäft 3
+|id   = Hiruk Pikuk yang Kembali Bergaung 3
+|pt   = De Volta aos Negócios (III)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

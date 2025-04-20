@@ -1,0 +1,87 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8012106
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = Охота за сокровищами под землёй
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+|Персонажи       = Аксай; Первопроходец
+|СтартЛокация    = Большая шахта
+|Мир             = Ярило-VI
+|Локации         = Большая шахта
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Охота за сокровищами под землёй]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+;(Поговорите с Аксай)
+<!--Unknown TalkSentence: 812100202-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Mission_End_8012106)
+
+
+;(Unused &mdash; OpenUI_TreasureDungeon)
+:<!--0.6-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.TreasureDungeon.TreasureDungeonEntrancePage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": []
+}</pre>
+
+;(Unused &mdash; OpenUI_TreasureDungeon_Mission)
+:<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.TreasureDungeon.TreasureDungeonEntrancePage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": []
+}</pre>
+
+;(Unused &mdash; OpenUI_TreasureDungeon_Tutorial)
+:<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.TreasureDungeon.TreasureDungeonEntrancePage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": []
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

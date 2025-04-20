@@ -1,0 +1,110 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4015504
+|Название        = 
+|Изображение     = Миссия Освоения Гексанексус Эксклюзивное интервью с разработчиками.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Волчий побег, неизвестный исход]]''
+|Персонажи       = Первопроходец; Сеймур
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Гексанексус: Эксклюзивное интервью с разработчиками''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в тюремную камеру Клуба Гекс
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 401550402-->
+<!--Unknown TalkSentence: 401550403-->
+{{Диалог Конец}}
+
+===Отправляйтесь в тюремную камеру Клуба Гекс===
+{{Описание миссии|локация=Дом кандалов|Вы разгадали головоломку «Гексанексус: Remake», расположенного в Доме кандалов. Члены Клуба Гекс, находящиеся под арестом за разработку игры, хотят встретиться с вами в тюрьме. Как бы нелепо ни выглядело всё происходящее, вам стоит сходить в тюремную камеру Клуба Гекс.}}
+{{Диалог Начало}}
+
+;(Поговорите с Сеймур)
+<!--Unknown TalkSentence: 401550236-->
+<!--Unknown TalkSentence: 401550237-->
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 401550405,
+	"IsShowConsumeFinishTips": true,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 401550238,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 401550239,
+					"ProtectTime": 0
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Wait_Option_401550401_11"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 401550404-->
+<!--Unknown TalkSentence: 401550405-->
+
+
+;(Поговорите с Сеймур)
+;(If {{cx}}<!--Hidden Mission ID 4015505--> has been completed)
+<!--Unknown TalkSentence: 401550321-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hexanexus: Development Team Interview
+|zhs  = 「枘凿六合•制作组专访」
+|zht  = 「枘鑿六合•製作團隊專訪」
+|ja   = 「枘構立方・制作組特別取材」
+|ko   = 「모순된 결합체•제작팀 특집」
+|es   = Hexanexus: Entrevista al equipo de desarrollo
+|fr   = Interview de l'équipe de développement de l'Hexanexus
+|ru   = Гексанексус: Эксклюзивное интервью с разработчиками
+|th   = Hexanexus: สัมภาษณ์ทีมพัฒนา
+|vi   = Khối Lục Giác - Phỏng Vấn Tổ Sản Xuất
+|de   = Hexanexus: Interview mit dem Entwicklerteam
+|id   = "Hexanexus: Wawancara Tim Developer"
+|pt   = Hexanexus: Entrevista da Equipe de Desenvolvimento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

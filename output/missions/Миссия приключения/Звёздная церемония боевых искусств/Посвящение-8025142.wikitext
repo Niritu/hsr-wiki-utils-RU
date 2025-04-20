@@ -1,0 +1,161 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025142
+|Название        = 
+|Изображение     = Миссия Освоения Посвящение.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = 0089; Взбешённый участник Банды уничтожения; Грубый участник Банды уничтожения; Дхьяна; Монах дхармы Вирья; Охотник за головами; Первопроходец; Сугата; Шаматха
+|СтартЛокация    = Первородная память
+|Мир             = Ярило-VI
+|Локации         = Первородная память
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*2; Утраченный кристалл*2; Wardance Sword Badge*5; Кредиты*30 000
+}}
+'''Посвящение''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Посмотрите исторические записи Сугаты
+# Посмотрите воспоминания
+# Вернитесь и соберите полные данные
+# Посмотрите полные воспоминания
+# Станьте свидетелем конца путешествия
+
+==Прохождение==
+{{Дополнить}}
+
+===Посмотрите исторические записи Сугаты===
+{{Описание миссии|локация=Первородная память|Посмотрите исторические записи Сугаты. Сможет ли эрудроид, заражённый антиорганическим уравнением, испытывать эмоции?}}
+{{Диалог Начало}}
+
+;(Unused &mdash; TriggerPerformance)
+:{{tx}}
+:;(Enter battle)
+:::Wave 1: {{Enemy List|Автоматон-паук*2; Автоматон-жук*1}}
+:::Wave 2: {{Enemy List|Автоматон-жук*1; Автоматон-паук*2; Автоматон-гончая*1}}
+<!--Unknown TalkSentence: 802514301-->
+<!--Unknown TalkSentence: 802514302-->
+<!--Unknown TalkSentence: 802514303-->
+<!--Unknown TalkSentence: 802514304-->
+<!--Unknown TalkSentence: 802514305-->
+<!--Unknown TalkSentence: 802514306-->
+<!--Unknown TalkSentence: 802514307-->
+<!--Unknown TalkSentence: 802514308-->
+<!--Unknown TalkSentence: 802514309-->
+<!--Unknown TalkSentence: 802514310-->
+<!--Unknown TalkSentence: 802514311-->
+<!--Unknown TalkSentence: 802514312-->
+<!--Unknown TalkSentence: 802514313-->
+<!--Unknown TalkSentence: 802514314-->
+<!--Unknown TalkSentence: 802514315-->
+<!--Unknown TalkSentence: 802514316-->
+<!--Unknown TalkSentence: 802514317-->
+<!--Unknown TalkSentence: 802514318-->
+<!--Unknown TalkSentence: 802514319-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Посмотрите воспоминания===
+{{Описание миссии|локация=Журнал итераций|Посмотрите воспоминания об истории, которую знают только двое. Узнайте, какой путь прошли эти монахи.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G22)
+<!--Unknown TalkSentence: 802514371-->
+:<!--Unknown TalkSentence: 802514372-->
+:<!--Unknown TalkSentence: 802514373-->
+:<!--Unknown TalkSentence: 802514374-->
+:<!--Unknown TalkSentence: 802514375-->
+:<!--Unknown TalkSentence: 802514376-->
+:<!--Unknown TalkSentence: 802514377-->
+:<!--Unknown TalkSentence: 802514378-->
+:<!--Unknown TalkSentence: 802514379-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802514382-->
+:<!--Unknown TalkSentence: 802514383-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+
+;(Unused &mdash; EnterDistrict_G20)
+:{{tx}}
+:;(Enter battle)
+:::Wave 1: {{Enemy List|Автоматон-паук*2; Автоматон-жук*1}}
+:::Wave 2: {{Enemy List|Автоматон-жук*1; Автоматон-паук*2; Автоматон-гончая*1}}
+{{Диалог Конец}}
+
+===Вернитесь и соберите полные данные===
+{{Описание миссии|локация=Журнал итераций|Вернитесь на прежнее место и завершите итерацию воспоминаний.}}
+{{Диалог Начало}}
+:<!--3-second delay-->
+<!--Unknown TalkSentence: 802514401-->
+<!--Unknown TalkSentence: 802514402-->
+{{Диалог Конец}}
+
+===Посмотрите полные воспоминания===
+{{Описание миссии|локация=Журнал итераций|Посмотрите последнее воспоминание, когда убийца стал «человеком».}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G23)
+:{{tx}}
+{{Диалог Конец}}
+
+===Станьте свидетелем конца путешествия===
+{{Описание миссии|локация=Протокол уничтожения|Этот мир непостоянен. Как сторонний наблюдатель, вы можете лишь идти вперёд и быть свидетелем конца путешествия.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G9)
+<!--Unknown TalkSentence: 802514441-->
+:<!--Unknown TalkSentence: 802514442-->
+:<!--Unknown TalkSentence: 802514443-->
+:<!--Unknown TalkSentence: 802514444-->
+:<!--Unknown TalkSentence: 802514445-->
+:<!--Unknown TalkSentence: 802514446-->
+:<!--Unknown TalkSentence: 802514447-->
+:<!--Unknown TalkSentence: 802514448-->
+:<!--Unknown TalkSentence: 802514449-->
+:<!--Unknown TalkSentence: 802514450-->
+:<!--Unknown TalkSentence: 802514451-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ordination
+|zhs  = 受戒
+|zht  = 受戒
+|ja   = 受戒
+|ko   = 수계
+|es   = Ordenación
+|fr   = Ordination
+|ru   = Посвящение
+|th   = ออกบวช
+|vi   = Thọ Giới
+|de   = Weihe
+|id   = Penahbisan
+|pt   = Ordenação
+}}
+
+==История изменений==
+{{История изменений|2.7}}

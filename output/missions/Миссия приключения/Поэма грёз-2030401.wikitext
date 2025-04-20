@@ -1,0 +1,403 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2030401
+|Название        = 
+|Изображение     = Миссия Освоения Поэма грёз.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[И на восьмой день...]]''
+|Персонажи       = ??; Багровый Босс; Господин Уиттакер; Госпожа Вермильон; Доктор Лазурь; Золотой Господин; Первопроходец; Салатовый Менеджер; Синяя пташка; Часик
+|СтартЛокация    = Риф потока сновидений
+|Мир             = Пенакония
+|Локации         = Риф потока сновидений
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Часокредиты*360; Planet of Festivities Collectible Card*1 { text = Коллекционная карточка серии «Планета празднеств»: Грёзотворцы-оригами }; The Dreamweaver Archives*1 { text = Архивы грёзотворцев }; Кредиты*80 000
+}}
+'''Поэма грёз''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|Труды грёзотворцев не пропадут даром. Настоящая история не должна быть забыта. Яркие мечты объединятся в луч звёздного света, который озарит каждого.<br />Да найдёшь ты своё гнездо и напишешь свои стихи.}}
+
+==Этапы==
+# Поговорите с Доктором Лазурью
+# Узнайте о находке Часика
+# Расспросите господина Уиттакера
+# Узнайте правду у Доктора Лазури
+# Верните записи
+# Войдите в эмосреду Доктора Лазури
+# Поговорите с Доктором Лазурью
+# Отправляйтесь в место сбора грёзотворцев
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите с Доктором Лазурью===
+{{Описание миссии|локация=Риф потока сновидений|Доктор Лазурь, птица-оригами, живущая в Рифе потока сновидений, кажется, отличается от остальных птиц. Узнайте, что происходит.}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+<!--Unknown TalkSentence: 230410120-->
+<!--Unknown TalkSentence: 230410121-->
+<!--Unknown TalkSentence: 230410123-->
+<!--Unknown TalkSentence: 230410124-->
+<!--Unknown TalkSentence: 230410125-->
+<!--Unknown TalkSentence: 230410126-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230410128-->
+<!--Unknown TalkSentence: 230410129-->
+<!--Unknown TalkSentence: 230410130-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; OpenRaid_43322)
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте о находке Часика===
+{{Описание миссии|локация=Риф потока сновидений|Часик заметил что-то странное. Узнайте, что он хочет сказать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Часик)
+<!--Unknown TalkSentence: 230410202-->
+<!--Unknown TalkSentence: 230410203-->
+<!--Unknown TalkSentence: 230410204-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Расспросите господина Уиттакера===
+{{Описание миссии|локация=Граница грёз|Господин Уиттакер может узнать эту фотографию. Спросите его.}}
+{{Диалог Начало}}
+
+;(Поговорите с Господин Уиттакер)
+<!--Unknown TalkSentence: 230410602-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Узнайте правду у Доктора Лазури===
+{{Описание миссии|локация=Риф потока сновидений|Кажется, эта фотография связана с Доктором Лазурью. Вернитесь к нему.}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+<!--Unknown TalkSentence: 230413336-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+
+;(Поговорите с Господин Уиттакер)
+<!--Unknown TalkSentence: 230410702-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Верните записи===
+{{Описание миссии|локация=Граница грёз|Узнав о прошлом Доктора Лазури, вы исправили записи о грёзотворцах. Расскажите обо всём господину Уиттакеру.}}
+{{Диалог Начало}}
+
+;(Поговорите с Господин Уиттакер)
+:{{tx}}
+<!--Unknown TalkSentence: 230414102-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 203040106,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetPerformanceResult",
+			"Value": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/2030401/DS20304014102.playable",
+			"Type": "Discussion"
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230414105,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230414106"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "EndPerformance"
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203040106
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_230414106)
+<!--Unknown TalkSentence: 230414102-->
+:<!--Unknown TalkSentence: 230414103-->
+:<!--Unknown TalkSentence: 230414104-->
+:<!--Unknown TalkSentence: 230414105-->
+:<!--Unknown TalkSentence: 230414106-->
+:<!--Unknown TalkSentence: 230414107-->
+:<!--Unknown TalkSentence: 230414108-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230414110-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; EndPerformance)
+
+
+;(Поговорите с Господин Уиттакер)
+:{{tx}}
+<!--Unknown TalkSentence: 230413202-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 203040115,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetPerformanceResult",
+			"Value": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/2030401/DS20304013202.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230413205,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230413207"
+				},
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230413206,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230413207"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "EndPerformance"
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203040115
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_230413207)
+<!--Unknown TalkSentence: 230413207-->
+::{{tx}}
+
+;(Unused &mdash; EndPerformance)
+
+
+;(Поговорите с Доктор Лазурь)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:<!--Unknown TalkSentence: 503070105-->
+:<!--Unknown TalkSentence: 503070106-->
+:<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"FixedValue": {
+				"Value": 2200210
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 2200211
+			}
+		}
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Войдите в эмосреду Доктора Лазури===
+{{Описание миссии|локация=Риф потока сновидений|Войдите в эмосреду Доктора Лазури и верните потерянные воспоминания.}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+<!--Unknown TalkSentence: 230413337-->
+<!--Unknown TalkSentence: 230413338-->
+<!--Unknown TalkSentence: 230410902-->
+<!--Unknown TalkSentence: 230410903-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<!--Unknown TalkSentence: 230410905-->
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Доктором Лазурью===
+{{Описание миссии|локация=Риф потока сновидений|Доктор Лазурь восстановил воспоминания. Возможно, это натолкнёт его на интересные мысли.}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+:{{tx}}
+<!--Unknown TalkSentence: 230413002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230413004-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230413012-->
+:<!--Unknown TalkSentence: 230413013-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+{{Описание миссии|локация=Риф потока сновидений|Доктор Лазурь восстановил воспоминания. Помнит ли он... Орлу?}}
+
+;(Поговорите с Доктор Лазурь)
+:{{tx}}
+<!--Unknown TalkSentence: 230413102-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230413104-->
+<!--Unknown TalkSentence: 230413105-->
+<!--Unknown TalkSentence: 230413106-->
+<!--Unknown TalkSentence: 230413107-->
+<!--Unknown TalkSentence: 230413108-->
+<!--Unknown TalkSentence: 230413109-->
+<!--Unknown TalkSentence: 230413110-->
+<!--Unknown TalkSentence: 230413111-->
+<!--Unknown TalkSentence: 230413112-->
+<!--Unknown TalkSentence: 230413113-->
+<!--Unknown TalkSentence: 230413114-->
+<!--Unknown TalkSentence: 230413115-->
+<!--Unknown TalkSentence: 230413116-->
+<!--Unknown TalkSentence: 230413117-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отправляйтесь в место сбора грёзотворцев===
+{{Описание миссии|локация=Граница грёз|Кажется, Доктор Лазурь как-то связан с грёзотворцами. Спросите у кого-нибудь на Границе грёз.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 230410412-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 230410415-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230410418-->
+:<!--Unknown TalkSentence: 230410419-->
+:<!--Unknown TalkSentence: 230410420-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230410422-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190623
+		}
+	}
+}</pre>
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20313_F20313001_G254"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Dream Song
+|zhs  = 筑梦诗
+|zht  = 築夢詩
+|ja   = ドリームポエム
+|ko   = 꿈 건축의 시
+|es   = Canción de los Soñadores
+|fr   = Chant des rêves
+|ru   = Поэма грёз
+|th   = บทกวีสร้างฝัน
+|vi   = Bài Thơ Xây Mộng
+|de   = Traumgesang
+|id   = Syair Mimpi
+|pt   = Canção Onírica
+}}
+
+==История изменений==
+{{История изменений|2.7}}

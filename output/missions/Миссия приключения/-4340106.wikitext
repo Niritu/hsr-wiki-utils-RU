@@ -1,0 +1,84 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340106
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(If {{F|MissionCV-4340106-undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 434010610,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G222"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(Unused &mdash; TriggerBattle_4340106)
+;(Enter battle)
+::{{Enemy List|Танцующий Клюв из труппы «Кошмарики»*1; Гончая с газировкой из труппы «Кошмарики»*2; Пружинный Крупье из труппы «Кошмарики»*1}}
+;(If {{F|MissionCV-4340106-1}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 434010611,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

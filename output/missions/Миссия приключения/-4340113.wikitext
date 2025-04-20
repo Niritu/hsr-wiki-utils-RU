@@ -1,0 +1,146 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340113
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Зачем возмутились народы?]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-undefined}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-4}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-4}} is not equal to 1)
+:;(Return to previous option selection)
+
+;(If {{cx}}<!--SubMission Finish: 434011307-->)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-5}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-5}} is not equal to 1)
+:;(Return to previous option selection)
+
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-1}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-1}} is not equal to 1)
+:;(Return to previous option selection)
+
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-2}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-2}} is not equal to 1)
+:;(Return to previous option selection)
+
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-3}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{F|MissionCV-4340113-3}} is not equal to 1)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

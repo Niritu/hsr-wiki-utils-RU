@@ -1,0 +1,148 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2010708
+|Название        = 
+|Изображение     = Миссия Освоения Ринг и сцена II.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Ринг и сцена I]]''
+|Персонажи       = Первопроходец; Скотт
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = Ринг и сцена I
+|Следующая       = Гладиатор
+|Награды         = Опыт Освоения*250; Звёздный нефрит*40; Журнал приключений*4; Shield (Item)*100
+}}
+'''Ринг и сцена II''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|Вам удалось стянуть доспехи с монстра из Фрагментума и получаете от Скотта последнюю часть оплаты.<br />Однако вас не покидает странное чувство. Что-то с этой бронёй не так...}}
+
+==Этапы==
+# Получите доспехи монстра
+# Отдайте доспехи Скотту
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 201223301-->
+{{Диалог Конец}}
+
+===Получите доспехи монстра===
+{{Описание миссии|локация=Заклёпкоград|Скотт отказывается отдавать вам ранее обещанную награду. Вы стали настаивать, и он всё-таки согласился. Но часть платежа можно будет получить только после того, как вы сделаете кое-что для него. Вам это совсем не нравится, но ничего не поделаешь, вам остаётся только согласиться. Вы знаете, что должник - это хозяин.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201223302-->
+<!--Unknown TalkSentence: 201223303-->
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201223302-->
+<!--Unknown TalkSentence: 201223303-->
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+;(Получено {{Item|Броня монстра Фрагментума|20|x=1|text=Броня монстра Фрагментума}})
+<!--Unknown TalkSentence: 201223304-->
+{{Диалог Конец}}
+
+===Отдайте доспехи Скотту===
+{{Описание миссии|локация=Камнеград|Вам удалось стянуть доспехи с монстра из Фрагментума. Хоть они и ужасно воняют, сейчас вам нужно поспешить в Бойцовский клуб и попросить у Скотта награду. Но, получив награду, вы начинаете понимать, что с доспехами что-то не так...}}
+{{Диалог Начало}}
+
+;(Поговорите с Скотт)
+<!--Unknown TalkSentence: 101026602-->
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 201070804,
+	"Desc": {
+		"Hash": 12145956190777274051
+	}
+}</pre>
+<!--Unknown TalkSentence: 101026603-->
+<!--Unknown TalkSentence: 101026604-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101026606-->
+:<!--Unknown TalkSentence: 101026609-->
+:<!--Unknown TalkSentence: 101026610-->
+:<!--Unknown TalkSentence: 101026611-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101026608-->
+:<!--Unknown TalkSentence: 101026615-->
+:<!--Unknown TalkSentence: 101026609-->
+:<!--Unknown TalkSentence: 101026610-->
+:<!--Unknown TalkSentence: 101026611-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 101026617-->
+:<!--Unknown TalkSentence: 101026618-->
+:<!--Unknown TalkSentence: 101026609-->
+:<!--Unknown TalkSentence: 101026610-->
+:<!--Unknown TalkSentence: 101026611-->
+<!--Unknown TalkSentence: 101026606-->
+<!--Unknown TalkSentence: 101026609-->
+<!--Unknown TalkSentence: 101026610-->
+<!--Unknown TalkSentence: 101026611-->
+
+;(Поговорите с Скотт)
+<!--Unknown TalkSentence: 501027818-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ring and Stage II
+|zhs  = 拳台即戏台•下
+|zht  = 拳台即戲台•下
+|ja   = リング即ち舞台である・下
+|ko   = 링이 곧 무대•하
+|es   = El ring es el escenario II
+|fr   = Le ring et la scène II
+|ru   = Ринг и сцена II
+|th   = เวทีท้าประลอง 2
+|vi   = Võ Đài Là Sân Khấu-Hạ
+|de   = Ring und Bühne II
+|id   = Panggung Tinju Adalah Panggung Pertunjukan 2
+|pt   = Arena e Palco II
+}}
+
+==История изменений==
+{{История изменений|2.7}}

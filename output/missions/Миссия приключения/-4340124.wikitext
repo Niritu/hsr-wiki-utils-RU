@@ -1,0 +1,153 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340124
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Волчий побег, неизвестный исход]]''
+|Персонажи       = {{MC|ж=Подозреваемая|м=Подозреваемый}} №&nbsp;1; Патрульная тюремщица; Первопроходец; Ханья; Хуньтин
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*3; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+:{{Диалог|?}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190680
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 434031001-->
+<!--Unknown TalkSentence: 434031002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434031004-->
+:<!--Unknown TalkSentence: 434031005-->
+:<!--Unknown TalkSentence: 434031006-->
+:<!--Unknown TalkSentence: 434031007-->
+:<!--Unknown TalkSentence: 434031008-->
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012401,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G170"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						300003
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Хуньтин)
+<!--Unknown TalkSentence: 434031301-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434031509-->
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012404,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+<!--Unknown TalkSentence: 434031401-->
+<!--Unknown TalkSentence: 434031402-->
+<!--Unknown TalkSentence: 434031403-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434031405-->
+:<!--Unknown TalkSentence: 434031406-->
+:<!--Unknown TalkSentence: 434031407-->
+:<!--Unknown TalkSentence: 434031408-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434031407-->
+:<!--Unknown TalkSentence: 434031408-->
+<!--Unknown TalkSentence: 434031407-->
+<!--Unknown TalkSentence: 434031408-->
+
+;(Поговорите с Патрульная тюремщица)
+<!--Unknown TalkSentence: 434031501-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 434031503-->
+<!--Unknown TalkSentence: 434031506-->
+<!--Unknown TalkSentence: 434031507-->
+<!--Unknown TalkSentence: 434031508-->
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

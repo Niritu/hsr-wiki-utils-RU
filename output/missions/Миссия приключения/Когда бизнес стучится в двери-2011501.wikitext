@@ -1,0 +1,415 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2011501
+|Название        = 
+|Изображение     = Миссия Освоения Когда бизнес стучится в двери.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+* Завершена [[Миссия компаньона]] ''[[Подарок Хук]]''
+* Завершена [[Миссия приключения]] ''[[Сверло предка]]''
+|Персонажи       = Аста; Броня; Вельт; Находюша; Первопроходец; Химеко; Химеко и Вельт
+|СтартЛокация    = Холм вечнозимья
+|Мир             = Ярило-VI
+|Локации         = Холм вечнозимья
+|Предыдущая      = Сверло предка
+|Следующая       = 
+|Награды         = Опыт Освоения*250; Звёздный нефрит*40; Журнал приключений*6; Shield (Item)*100
+}}
+'''Когда бизнес стучится в двери''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|Вы разобрались с неуёмным продавцом по-своему и вернули Находюшу на его законное место.<br />Какое влияние этот незначительный случай окажет на Белобог? Этого никому не дано знать.}}
+
+==Этапы==
+# Идите в указанное место на Холме вечнозимья и выясните, что это за неизвестный сигнал
+# Сообщите остальным о результатах своего расследования
+# Узнайте от Брони про историю Белобога
+# Найдите в шкафу «Хроники Белобога»
+# Ещё раз сообщите остальным о результатах своего расследования
+# Спросите Асту о Находюше
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 201340301-->
+{{Диалог Конец}}
+
+===Идите в указанное место на Холме вечнозимья и выясните, что это за неизвестный сигнал===
+{{Описание миссии|локация=Холм вечнозимья|По словам Вельта, они с Химеко обнаружили неизвестный сигнал здесь после того, как метель на Ярило-VI утихла.<br />Чтобы эти сигналы не привлекли людей со злыми помыслами и не поставили под угрозу возрождающуюся планету, было бы неплохо согласиться на просьбу Вельта и отправиться в указанное место для расследования.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 20
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_201150104_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 20
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 20
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_201150105_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 20
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 20
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_201150103_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 20
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 201340310-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1112600
+}</pre>
+<!--Unknown TalkSentence: 201340311-->
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1112600
+}</pre>
+{{Диалог Конец}}
+
+===Сообщите остальным о результатах своего расследования===
+{{Описание миссии|локация=Общий вагон|Слава звёздам, сигнал оказался всего лишь рекламой «Техники межзвёздного мира».<br />Вам сложно отделаться от ощущения, что вся поездка была зазря... Но вы хотя бы убедились, что в Белобоге всё спокойно.<br />Сообщите хорошие новости экипажу Звёздного экспресса.}}
+{{Диалог Начало}}
+
+;(Поговорите с Химеко)
+;(If {{cx}}<!--SubMission not Finish: 101150222--> and {{cx}}<!--SubMission Finish: 101100201-->)
+:;(If {{cx}}<!--during performance 599000103-->)
+::<!--Unknown TalkSentence: 599000501-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 599000103-->)
+::<!--Unknown TalkSentence: 599000599-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 101000205-->, {{cx}}<!--SubMission not Finish: 101100201-->, and {{cx}}<!--during performance 599000102-->)
+:<!--Unknown TalkSentence: 599000301-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 100050304--> and {{cx}}<!--SubMission Finish: 100050201-->)
+:<!--Unknown TalkSentence: 100050701-->
+:<!--Unknown TalkSentence: 100050702-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 599000101
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; TalkSentence_599000514)
+<!--Unknown TalkSentence: 599000514-->
+
+;(Unused &mdash; TalkSentence_599000516)
+<!--Unknown TalkSentence: 599000516-->
+:<!--Unknown TalkSentence: 599000519-->
+:<!--Unknown TalkSentence: 599000520-->
+:<!--Unknown TalkSentence: 599000521-->
+:<!--Unknown TalkSentence: 599000522-->
+
+;(Unused &mdash; TalkSentence_599000518)
+<!--Unknown TalkSentence: 599000518-->
+:<!--Unknown TalkSentence: 599000519-->
+:<!--Unknown TalkSentence: 599000520-->
+:<!--Unknown TalkSentence: 599000521-->
+:<!--Unknown TalkSentence: 599000522-->
+
+;(Поговорите с Вельт Янг)
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 201340314-->
+<!--Unknown TalkSentence: 201340315-->
+<!--Unknown TalkSentence: 201340316-->
+<!--Unknown TalkSentence: 201340317-->
+<!--Unknown TalkSentence: 201340318-->
+<!--Unknown TalkSentence: 201340319-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1112700
+}</pre>
+<!--Unknown TalkSentence: 201340320-->
+<!--Unknown TalkSentence: 201340321-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201340323-->
+:<!--Unknown TalkSentence: 201340328-->
+:<!--Unknown TalkSentence: 201340329-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201340325-->
+:<!--Unknown TalkSentence: 201340326-->
+:<!--Unknown TalkSentence: 201340327-->
+:<!--Unknown TalkSentence: 201340328-->
+:<!--Unknown TalkSentence: 201340329-->
+<!--Unknown TalkSentence: 201340323-->
+<!--Unknown TalkSentence: 201340328-->
+<!--Unknown TalkSentence: 201340329-->
+{{Диалог Конец}}
+
+===Узнайте от Брони про историю Белобога===
+{{Описание миссии|локация=Форт Клипота|Вашу беседу внезапно прерывает сообщение от менеджера по продажам из «Техники межзвёздного мира». Теперь вам ничего другого не остаётся, кроме как ответить на его просьбу.<br />Вы колеблетесь, но стоит всё же прислушаться к Химеко и отправиться в Форт Клипота, чтобы спросить мнения Верховной хранительницы Брони.}}
+{{Диалог Начало}}
+
+;(Поговорите с Броня)
+<!--Unknown TalkSentence: 201340336-->
+<!--Unknown TalkSentence: 201340337-->
+<!--Unknown TalkSentence: 201340338-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Найдите в шкафу «Хроники Белобога»===
+{{Описание миссии|локация=Форт Клипота|Вы уже потеряли счёт сообщениям назойливого продажника, но в итоге вам всё же удалось узнать у Брони, где можно найти нужную информацию.<br />Осмотрите огромный книжный шкаф в Форте Клипота.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Ещё раз сообщите остальным о результатах своего расследования===
+{{Описание миссии|локация=Общий вагон|Сообщения... Бесконечный поток сообщений. Этот продажник больше смахивает на упомянутого начальника, а не того, кому нужна помощь.<br />В любом случае ценные сведения о годах, которые Белобог провёл в снегах, вы получили... Остаётся надеяться, что это угомонит назойливого продавца.<br />И не забудьте сообщить всё важное остальным.}}
+{{Диалог Начало}}
+
+;(Поговорите с Химеко)
+;(If {{cx}}<!--SubMission not Finish: 101150222--> and {{cx}}<!--SubMission Finish: 101100201-->)
+:;(If {{cx}}<!--during performance 599000103-->)
+::<!--Unknown TalkSentence: 599000501-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 599000103-->)
+::<!--Unknown TalkSentence: 599000599-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 101000205-->, {{cx}}<!--SubMission not Finish: 101100201-->, and {{cx}}<!--during performance 599000102-->)
+:<!--Unknown TalkSentence: 599000301-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 100050304--> and {{cx}}<!--SubMission Finish: 100050201-->)
+:<!--Unknown TalkSentence: 100050701-->
+:<!--Unknown TalkSentence: 100050702-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 599000101
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; TalkSentence_599000514)
+<!--Unknown TalkSentence: 599000514-->
+
+;(Unused &mdash; TalkSentence_599000516)
+<!--Unknown TalkSentence: 599000516-->
+:<!--Unknown TalkSentence: 599000519-->
+:<!--Unknown TalkSentence: 599000520-->
+:<!--Unknown TalkSentence: 599000521-->
+:<!--Unknown TalkSentence: 599000522-->
+
+;(Unused &mdash; TalkSentence_599000518)
+<!--Unknown TalkSentence: 599000518-->
+:<!--Unknown TalkSentence: 599000519-->
+:<!--Unknown TalkSentence: 599000520-->
+:<!--Unknown TalkSentence: 599000521-->
+:<!--Unknown TalkSentence: 599000522-->
+
+;(Поговорите с Вельт Янг)
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 201340361-->
+<!--Unknown TalkSentence: 201340362-->
+<!--Unknown TalkSentence: 201340363-->
+<!--Unknown TalkSentence: 201340364-->
+<!--Unknown TalkSentence: 201340365-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1113000
+}</pre>
+<!--Unknown TalkSentence: 201340366-->
+<!--Unknown TalkSentence: 201340367-->
+<!--Unknown TalkSentence: 201340368-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1113000
+}</pre>
+<!--Unknown TalkSentence: 201340369-->
+<!--Unknown TalkSentence: 201340370-->
+{{Диалог Конец}}
+
+===Спросите Асту о Находюше===
+{{Описание миссии|локация=Главная контрольная зона|Вы своеобразным способом разбираетесь с неуёмным продавцом, параллельно случайно обнаруживая, откуда взялся Находюша.<br />Пора отправиться на космическую станцию и попросить ведущего исследователя Асту подтвердить ваши догадки. Если сегодня вас всё достало, возможно, она сможет выслушать и посочувствовать.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Аста)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 500012201
+}</pre>
+<!--Unknown TalkSentence: 500012202-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+:{{Диалог|Разговор}} Находюша
+<!--Unknown TalkSentence: 201340389-->
+<!--Unknown TalkSentence: 201340390-->
+<!--Unknown TalkSentence: 201340391-->
+<!--Unknown TalkSentence: 201340392-->
+<!--Unknown TalkSentence: 201340393-->
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1113000
+}</pre>
+<!--Unknown TalkSentence: 201340369-->
+<!--Unknown TalkSentence: 201340370-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = When Business Comes Knocking
+|zhs  = 当生意来敲门
+|zht  = 當生意來敲門
+|ja   = 商売がやってくる時
+|ko   = 넝쿨째 굴러온 호박
+|es   = Cuando un negocio llama a tu puerta
+|fr   = L'heure des affaires
+|ru   = Когда бизнес стучится в двери
+|th   = เมื่อธุรกิจมาเยือนที่หน้าประตู
+|vi   = Mối Làm Ăn Tìm Đến
+|de   = Ein Geschäft steht vor der Tür
+|id   = Saat Uang datang Mengetuk
+|pt   = Quando Negócios Batem à Porta
+}}
+
+==История изменений==
+{{История изменений|2.7}}

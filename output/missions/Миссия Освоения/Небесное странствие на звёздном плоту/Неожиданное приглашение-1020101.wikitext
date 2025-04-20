@@ -1,0 +1,371 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1020101
+|Название        = 
+|Изображение     = Миссия Освоения Неожиданное приглашение.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Небесное странствие на звёздном плоту
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 13
+|Персонажи       = Вельт; Дань Хэн; Кафка; Март 7; Первопроходец; Пом-Пом; Прерывистый сигнал; Сигнал; Химеко
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = Тишина галактики
+|Следующая       = Среди поражённых Марой
+|Награды         = Опыт Освоения*100; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''Неожиданное приглашение''' — [[Миссия Освоения]] в главе [[Небесное странствие на звёздном плоту]].
+
+==Описание==
+{{Описание|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Сердце девушки так же ветрено, как весенний ветерок, легко меняющий своё направление. После того как вы отдали свой важный голос, экспресс направится к следующему пункту назначения: Лофу Сяньчжоу.<br />По какой-то причине Дань Хэн решил остаться на поезде, а это означает, что в этот раз вы отправляетесь втроём вместе с Март 7 и Вельтом.}}
+
+==Этапы==
+# Просим всех занять свои места, Звёздный экспресс скоро отправляется
+# Поговорите с Химеко
+# Примите участие в собрании
+# Убедите Дань Хэна проголосовать за ваш пункт назначения
+# Вернитесь в общий вагон и проголосуйте за пункт назначения
+# Отправляйтесь вместе с Вельтом и Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Просим всех занять свои места, Звёздный экспресс скоро отправляется===
+{{Описание миссии|локация=Общий вагон|Первопроходческая экспедиция на Ярило-VI наконец-то завершилась, и весьма успешно.<br />Что-то кончается - что-то начинается.<br />Просим всех занять свои места, Звёздный экспресс скоро отправляется!}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите с Химеко===
+{{Описание миссии|локация=Спальный вагон|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Пассажиры получили редкий момент передышки перед тем, как отправиться на следующий этап путешествия. Кто-то варит кофе, кто-то смотрит на звёзды, а кто-то размышляет о старых мечтах...<br />Используйте своё свободное время, чтобы спросить Химеко о вашем следующем пункте назначения.}}
+{{Диалог Начало}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Лофу Сяньчжоу - Дом кандалов
+::Яньцин.
+::Да, генерал?
+::Присмотрись-ка к этому человеку.
+::Ты меня помнишь?
+::Помню.
+::Из пяти людей
+::трое должны заплатить.
+::Цзин Юань, ты не один из них.
+;(Cutscene ends)
+----
+:{{tx}}
+:{{tx}}
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 100001701-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 100002941-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 100002921-->
+
+;(Поговорите с Пом-Пом)
+;(If {{cx}}<!--during performance 102010195-->)
+:<!--Unknown TalkSentence: 100002961-->
+;(If {{cx}}<!--not during performance 102010195-->)
+:<!--Unknown TalkSentence: 100002981-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Пом-Пом)
+;(If {{cx}}<!--during performance 102010195-->)
+:<!--Unknown TalkSentence: 100002961-->
+;(If {{cx}}<!--not during performance 102010195-->)
+:<!--Unknown TalkSentence: 100002981-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Примите участие в собрании===
+{{Описание миссии|локация=Общий вагон|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Правила, установленные Акивили, диктуют, что «путь Безымянных должен быть выбран самими Безымянными».<br />Пассажиры экспресса собираются вместе, чтобы решить, какой мир они посетят следующим.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 28
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_Story",
+	"StateName": {
+		"Value": "State_Belobog_Maze_M3_3_PathSpace"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_GameState",
+	"StateName": {
+		"Value": "State_Story"
+	}
+}</pre>
+:{{tx}}
+:{{tx}}
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 100002901-->
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_Story",
+	"StateName": {
+		"Value": "State_Belobog_Maze_M3_3_PathSpace"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_GameState",
+	"StateName": {
+		"Value": "State_Story"
+	}
+}</pre>
+<!--Unknown TalkSentence: 100002101-->
+<!--Unknown TalkSentence: 100002102-->
+<!--Unknown TalkSentence: 100002103-->
+<!--Unknown TalkSentence: 100002104-->
+<!--Unknown TalkSentence: 100002105-->
+<!--Unknown TalkSentence: 100002106-->
+<!--Unknown TalkSentence: 100002107-->
+<!--Unknown TalkSentence: 100002108-->
+<!--Unknown TalkSentence: 100002109-->
+<!--Unknown TalkSentence: 100002110-->
+<!--Unknown TalkSentence: 100002111-->
+<!--Unknown TalkSentence: 100002112-->
+<!--Unknown TalkSentence: 100002113-->
+<!--Unknown TalkSentence: 100002114-->
+<!--Unknown TalkSentence: 100002115-->
+<!--Unknown TalkSentence: 100002116-->
+<!--Unknown TalkSentence: 100002117-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002118-->
+:<!--Unknown TalkSentence: 100002119-->
+:<!--Unknown TalkSentence: 100002120-->
+:<!--Unknown TalkSentence: 100002121-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002118-->
+:<!--Unknown TalkSentence: 100002119-->
+:<!--Unknown TalkSentence: 100002120-->
+:<!--Unknown TalkSentence: 100002121-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002120-->
+:<!--Unknown TalkSentence: 100002121-->
+::{{tx}}
+<!--Unknown TalkSentence: 100002120-->
+<!--Unknown TalkSentence: 100002121-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Убедите Дань Хэна проголосовать за ваш пункт назначения===
+{{Описание миссии|локация=Спальный вагон|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Встречи Первопроходцев никогда не проходят гладко - неожиданно прибывает Охотник за Стелларонами Кафка и приглашает группу посетить Лофу Сяньчжоу.<br />Это приглашение кажется зловещим и не предполагает отказа, но Март 7 настаивает на том, чтобы громко сказать «Нет!». Если Дань Хэн проголосует вместе с вами, у вас будет ещё больше уверенности в принятом решении.}}
+{{Диалог Начало}}
+:{{tx}}
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 100002471-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 100002441-->
+;(If {{cx}}<!--SubMission Finish: 102010107-->)
+;(If {{cx}}<!--SubMission not Finish: 102010107-->)
+:;(По прибытии на место)
+{{Диалог Конец}}
+
+===Вернитесь в общий вагон и проголосуйте за пункт назначения===
+{{Описание миссии|локация=Общий вагон|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Неожиданно Кафка приглашает группу посетить Лофу Сяньчжоу, но приглашение звучит зловеще и может оказаться ловушкой. Март 7, Дань Хэн и вы уже приняли одинаковое решение - направление экспресса не будет меняться под внешним влиянием.<br />Теперь вы можете вернуться в общий вагон и проголосовать за следующий пункт назначения.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 100002501-->
+<!--Unknown TalkSentence: 100002502-->
+<!--Unknown TalkSentence: 100002503-->
+<!--Unknown TalkSentence: 100002504-->
+<!--Unknown TalkSentence: 100002505-->
+<!--Unknown TalkSentence: 100002506-->
+<!--Unknown TalkSentence: 100002507-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100002506-->
+<!--Unknown TalkSentence: 100002507-->
+<!--Unknown TalkSentence: 100002508-->
+<!--Unknown TalkSentence: 100002509-->
+<!--Unknown TalkSentence: 100002510-->
+<!--Unknown TalkSentence: 100002511-->
+<!--Unknown TalkSentence: 100002512-->
+<!--Unknown TalkSentence: 100002513-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100002515-->
+
+;(Поговорите с Химеко)
+;(If {{cx}}<!--during performance 102010192-->)
+:<!--Unknown TalkSentence: 100002301-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 102010192-->)
+:<!--Unknown TalkSentence: 100002321-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 100002351-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 100002371-->
+<!--Unknown TalkSentence: 100002372-->
+----
+;([[#Gallery|Cutscene]] plays)
+::Поезд вот-вот совершит гиперпрыжок.
+::Пять!
+::Четыре!
+::Три!
+::Два!
+::Один!
+;(Cutscene ends)
+----
+<!--Unknown TalkSentence: 100002601-->
+<!--Unknown TalkSentence: 100002602-->
+<!--Unknown TalkSentence: 100002603-->
+<!--Unknown TalkSentence: 100002604-->
+<!--Unknown TalkSentence: 100002605-->
+<!--Unknown TalkSentence: 100002606-->
+<!--Unknown TalkSentence: 100002607-->
+<!--Unknown TalkSentence: 100002608-->
+<!--Unknown TalkSentence: 100002609-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002611-->
+:<!--Unknown TalkSentence: 100002612-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100002613-->
+<!--Unknown TalkSentence: 100002614-->
+<!--Unknown TalkSentence: 100002615-->
+<!--Unknown TalkSentence: 100002616-->
+<!--Unknown TalkSentence: 100002617-->
+<!--Unknown TalkSentence: 100002618-->
+<!--Unknown TalkSentence: 100002619-->
+<!--Unknown TalkSentence: 100002620-->
+<!--Unknown TalkSentence: 100002621-->
+<!--Unknown TalkSentence: 100002622-->
+<!--Unknown TalkSentence: 100002623-->
+<!--Unknown TalkSentence: 100002624-->
+<!--Unknown TalkSentence: 100002625-->
+{{Диалог Конец}}
+
+===Отправляйтесь вместе с Вельтом и Март 7===
+{{Описание миссии|локация=Общий вагон|Экспресс мчится в глубины межзвёздного моря после прощания с Белобогом, где снег уступил место солнечному свету.<br />Сердце девушки так же ветрено, как весенний ветерок, легко меняющий своё направление. После того как вы отдали свой важный голос, экспресс направится к следующему пункту назначения: Лофу Сяньчжоу.<br />По какой-то причине Дань Хэн решил остаться на поезде, а это означает, что в этот раз вы отправляетесь втроём вместе с Март 7 и Вельтом.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 26
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 100002801-->
+<!--Unknown TalkSentence: 100002802-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002804-->
+:<!--Unknown TalkSentence: 100002805-->
+:<!--Unknown TalkSentence: 100002806-->
+:<!--Unknown TalkSentence: 100002807-->
+:<!--Unknown TalkSentence: 100002808-->
+:<!--Unknown TalkSentence: 100002809-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002806-->
+:<!--Unknown TalkSentence: 100002807-->
+:<!--Unknown TalkSentence: 100002808-->
+:<!--Unknown TalkSentence: 100002809-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100002808-->
+:<!--Unknown TalkSentence: 100002809-->
+::{{tx}}
+<!--Unknown TalkSentence: 100002808-->
+<!--Unknown TalkSentence: 100002809-->
+:{{tx}}
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 100002721-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 100002741-->
+<!--Unknown TalkSentence: 100002742-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 100002701-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 100002761-->
+<!--Unknown TalkSentence: 202110102-->
+<!--Unknown TalkSentence: 202110103-->
+<!--Unknown TalkSentence: 202110104-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = An Invitation Without Proffer
+|zhs  = 旅进青霄，不速之邀
+|zht  = 旅進青霄，不速之邀
+|ja   = 青霄の旅、望まぬ招き
+|ko   = 하늘 여정, 원치 않은 초청
+|es   = Una invitación inesperada
+|fr   = Une invitation inattendue
+|ru   = Неожиданное приглашение
+|th   = เดินทางสู่ฟ้าคราม แม้มิได้รับคำเชื้อเชิญ
+|vi   = Tiến Vào Không Trung, Lời Mời Chưa Gửi
+|de   = Eine Einladung ohne Angebot
+|id   = Undangan Tak Terduga
+|pt   = Um Convite Inesperado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

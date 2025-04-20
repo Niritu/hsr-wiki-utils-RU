@@ -1,0 +1,153 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240304
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Чабро.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Анна; Карл; Первопроходец; Чабро
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Утраченный кристалл*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Чабро''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите дежурного вдохновителя грёз в Парке Айдена.
+# Поговорите с Чабро
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Найдите дежурного вдохновителя грёз в Парке Айдена.===
+{{Описание миссии|локация=Золотой миг|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Поговорите с Анна)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 236
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+<!--Unknown TalkSentence: 413040701-->
+<!--Unknown TalkSentence: 413040702-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413040705-->
+<!--Unknown TalkSentence: 413040706-->
+<!--Unknown TalkSentence: 413040707-->
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 236
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+<!--Unknown TalkSentence: 413040708-->
+<!--Unknown TalkSentence: 413040709-->
+<!--Unknown TalkSentence: 413040710-->
+{{Диалог Конец}}
+
+===Поговорите с Чабро===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 413040801-->
+<!--Unknown TalkSentence: 413040802-->
+<!--Unknown TalkSentence: 413040803-->
+<!--Unknown TalkSentence: 413040804-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_fireelite_appear"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 413040806-->
+<!--Unknown TalkSentence: 413040807-->
+;(Enter battle)
+:{{Enemy List|Гончая с газировкой из труппы «Кошмарики»*2; Огонь из космоса*1}}
+----
+<!--Unknown TalkSentence: 413040903-->
+<!--Unknown TalkSentence: 413040904-->
+<!--Unknown TalkSentence: 413040905-->
+<!--Unknown TalkSentence: 413040906-->
+<!--Unknown TalkSentence: 413040907-->
+<!--Unknown TalkSentence: 413040908-->
+----
+<!--Unknown TalkSentence: 413040901-->
+<!--Unknown TalkSentence: 413040902-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Chabro
+|zhs  = 钟表把戏：夏布罗
+|zht  = 鐘錶把戲：夏布羅
+|ja   = クロックトリック：シャブロー
+|ko   = 시계 트릭: 차브로
+|es   = Trucorreloj: Chabro
+|fr   = Pouvoir de la Pendule&nbsp;: Chabro
+|ru   = Заводной механизм: Чабро
+|th   = กลนาฬิกา: Chabro
+|vi   = Thủ Thuật Đồng Hồ: Chabro
+|de   = Uhrwerk: Chabro
+|id   = Clockwork: Chabro
+|pt   = Truquelógio: Chabro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

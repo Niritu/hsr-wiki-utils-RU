@@ -1,0 +1,141 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8032202
+|Название        = 
+|Изображение     = Миссия Освоения Вселенная, полная историй.png
+|Тип             = Миссия приключения
+|События         = Star Rail ☆ WORLD
+|Глава           = 
+|Условия         = 
+|Персонажи       = Вельт; Данкси; Дань Хэн; Первопроходец; Пом-Пом; Химеко
+|СтартЛокация    = Вагон для вечеринок
+|Мир             = Звёздный экспресс
+|Локации         = Вагон для вечеринок
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Вселенная, полная историй''' — Событие [[Миссия приключения]] из события [[Star Rail ☆ WORLD]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Сообщите Данкси о том, что вы прошли испытание
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AnniversaryCase"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+;(Unused &mdash; ShowUI_G177)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.PlanetFes.GamePlay.Entrance.PlanetFesEntrancePage"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G180)
+----
+::{{tx}}
+::{{Диалог|Разговор}} undefined
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} undefined
+::<!--Unknown TalkSentence: 803220235-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 803220210-->
+:::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10000_F10000003_G177"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 803220049-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 803220050-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 803220051-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 803220052-->
+{{Диалог Конец}}
+
+===Сообщите Данкси о том, что вы прошли испытание===
+{{Описание миссии|локация=Вагон для вечеринок|''«В имении истины, красоты и искусства! В атаку!»'' - C. C., независимый разработчик игр, на Межзвёздной игровой конференции.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G181)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10000_F10000003_G177"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:----
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 803220202,
+	"MessageSectionID": 1312500
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = A Universe Full of Stories
+|zhs  = 寰宇充满故事
+|zht  = 寰宇充滿故事
+|ja   = 物語に満ちた宇宙
+|ko   = 이야기로 가득한 우주
+|es   = Universo lleno de historias
+|fr   = Un univers fait d'histoires
+|ru   = Вселенная, полная историй
+|th   = จักรวาลร้อยเรื่องราว
+|vi   = Vũ Trụ Đầy Câu Chuyện
+|de   = Ein Universum voller Geschichten
+|id   = Alam Semesta Penuh Kisah
+|pt   = Um Universo Cheio de Histórias
+}}
+
+==История изменений==
+{{История изменений|3.2}}

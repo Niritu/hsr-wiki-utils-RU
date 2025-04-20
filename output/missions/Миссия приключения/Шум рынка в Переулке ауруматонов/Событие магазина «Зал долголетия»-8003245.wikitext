@@ -1,0 +1,112 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003245
+|Название        = 
+|Изображение     = Миссия Освоения Событие магазина «Зал долголетия».png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = Завершена [[Миссия приключения]] ''[[Событие магазина: «Зал долголетия»]]''
+|Персонажи       = Крошка Тянь; Минси; Первопроходец; Цинцюэ
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Путеводитель путешественника*2; Кредиты*20 000
+}}
+'''Событие магазина: «Зал долголетия»''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Крошкой Тянь
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Крошкой Тянь===
+{{Описание миссии|локация=Переулок ауруматонов|Чтобы оживить Переулок ауруматонов, торговая гильдия стремится в полной мере использовать логистику причала и наладить тесное сотрудничество с торговцами в Переулке.<br />Торговая гильдия послала вас убедить хозяйку «Зала долголетия» установить сотрудничество с гильдией. Однако сейчас у Крошки Тянь хлопот полон рот...}}
+{{Диалог Начало}}
+
+;(Поговорите с Крошка Тянь)
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:{{Чёрный экран|undefined}}
+----
+<!--Unknown TalkSentence: 800324551-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; 8003245_HideNpc1)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Unused &mdash; 8003245_HideNpc3)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+----
+----
+----
+<!--Unknown TalkSentence: 800324561-->
+<!--Unknown TalkSentence: 800324562-->
+<!--Unknown TalkSentence: 800324563-->
+<!--Unknown TalkSentence: 800324564-->
+<!--Unknown TalkSentence: 800324565-->
+
+;(Поговорите с Крошка Тянь)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502065102
+}</pre>
+<!--Unknown TalkSentence: 502065103-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "Bird"
+	},
+	"AnimStateName": "FlyBack",
+	"NormalizedTransitionDuration": 0.25
+}</pre>
+:<!--6-second delay-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Merchant Event: Longevity Hall
+|zhs  = 商铺事件•寿考堂
+|zht  = 商鋪事件•壽考堂
+|ja   = 店舗イベント・寿考堂
+|ko   = 상점 사건•장수당
+|es   = Evento de tienda: Salón de la Longevidad
+|fr   = Événement de magasin&nbsp;: Hall de la longévité
+|ru   = Событие магазина: «Зал долголетия»
+|th   = อิเวนต์ร้านค้า: Longevity Hall
+|vi   = Sự Kiện Cửa Tiệm - Trường Sinh Đường
+|de   = Händlerereignis: Halle der Langlebigkeit
+|id   = Event Toko: Longevity Hall
+|pt   = Evento de Comerciante: Salão da Longevidade
+}}
+
+==История изменений==
+{{История изменений|2.7}}

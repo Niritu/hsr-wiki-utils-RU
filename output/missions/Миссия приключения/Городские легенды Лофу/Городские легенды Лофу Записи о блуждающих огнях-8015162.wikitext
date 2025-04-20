@@ -1,0 +1,893 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015162
+|Название        = 
+|Изображение     = Миссия Освоения Городские легенды Лофу Записи о блуждающих огнях.png
+|Тип             = Миссия приключения
+|События         = Лисья история о привидениях
+|Глава           = Городские легенды Лофу
+|Условия         = 
+|Персонажи       = Гуйнайфэнь; Заносчивый хелиоби; Март 7; Первопроходец; Солнцелуч; Сушан; Хохо; Шоулин
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*20; Путеводитель путешественника*3; Конденсированный эфир*2; Утраченные золотые частицы*2; Кредиты*5 000
+}}
+'''Городские легенды Лофу: Записи о блуждающих огнях''' — Событие [[Миссия приключения]] из события [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|В «Страшилках Лофу» публикуется множество жутких историй, включая слухи о таинственной летающей и визжащей сущности.<br />Хороший хелиоби - пойманный хелиоби. И место ему в башне подавления Сада безмятежности.}}
+
+==Этапы==
+# Расспросите Шоулин в Саду безмятежности
+# Попробуйте поймать хелиоби с помощью робоптахи
+# Отправляйтесь в Комиссию по предсказаниям
+# Поймайте хелиоби ({MCV#8015162_1}/3)
+# Поймайте заносчивого хелиоби
+# Поймайте последнего хелиоби
+# Запечатайте хелиоби в башне подавления
+
+==Прохождение==
+{{Дополнить}}
+
+;(Unused &mdash; trigger)
+<!--Unknown TalkSentence: 815162001-->
+:<!--Unknown TalkSentence: 815162002-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Расспросите Шоулин в Саду безмятежности===
+{{Описание миссии|локация=Сад безмятежности|Видимо, у Комиссии десятки владык есть инструменты для подчинения хелиоби.<br />Расспросите проводника душ Комиссии десяти владык в Саду безмятежности.}}
+{{Диалог Начало}}
+
+;(Поговорите с Шоулин)
+:{{tx}}
+:<!--Unknown TalkSentence: 815162051-->
+:<!--Unknown TalkSentence: 815162052-->
+:<!--Unknown TalkSentence: 815162053-->
+:<!--Unknown TalkSentence: 815162054-->
+<!--Unknown TalkSentence: 815162381-->
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815162056-->
+:<!--Unknown TalkSentence: 815162057-->
+:<!--Unknown TalkSentence: 815162058-->
+:<!--Unknown TalkSentence: 815162059-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815162058-->
+:<!--Unknown TalkSentence: 815162059-->
+<!--Unknown TalkSentence: 815162058-->
+<!--Unknown TalkSentence: 815162059-->
+{{Диалог Конец}}
+
+===Попробуйте поймать хелиоби с помощью робоптахи===
+{{Описание миссии|локация=Сад безмятежности|Робоптаха, тыква лунного ларца и... посылка. Простая и грубая комбинация...<br />Впрочем, годится всё, что поможет изловить хелиоби. Попробуем?}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; OnStart_SuiSubmission)
+<!--Unknown TalkSentence: 815162500-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516203,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 217,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516203,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(Unused &mdash; Talk_801516203)
+
+
+;(Unused &mdash; OnStart_SuiSubmission)
+<pre>{
+	"$type": "RPG.GameCore.NpcPossession",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"GroupNpcID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PossessionInfo": {
+		"Name": "Possession_RobCraneBox_A_01"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516203,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 217,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300002
+}</pre>
+
+;(Unused &mdash; OnClose_SuiSubmission)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516203,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 216,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001
+}</pre>
+:{{tx}}
+
+;(Поговорите с Гуйнайфэнь)
+<!--Unknown TalkSentence: 801516101-->
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; ALL_TALK_END)
+
+{{Диалог Конец}}
+
+===Отправляйтесь в Комиссию по предсказаниям===
+{{Описание миссии|локация=Комиссия по предсказаниям|Функции робоптахи-экзорциста проверены - самое время отправиться в места, кишащие хелиоби.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 815162151-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 815162154-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Поймайте хелиоби ({MCV#8015162_1}/3)===
+{{Описание миссии|локация=Комиссия по предсказаниям|Один хелиоби, два хелиоби... ловить хелиоби так утомительно.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516211,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001,
+	"OverideWayPointShowRangeMin": true,
+	"OverideMapWaypointRange": true
+}</pre>
+;(If {{F|MissionCV-8015162-undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+;(Поговорите с Хохо)
+<!--Unknown TalkSentence: 815162351-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 815162354-->
+
+;(Unused &mdash; OnStart_QiongGuan_Submission)
+<pre>{
+	"$type": "RPG.GameCore.NpcPossession",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"GroupNpcID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PossessionInfo": {
+		"Name": "Possession_RobCraneBox_A_01"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516211,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			0
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516211,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300001,
+	"OverideWayPointShowRangeMin": true,
+	"WayPointShowRangeMin": 99,
+	"OverideMapWaypointRange": true,
+	"MapWaypointRange": 25
+}</pre>
+
+;(Unused &mdash; OnClose_QiongGuan_Submission)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516211,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			0
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516211,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 213,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001,
+	"OverideWayPointShowRangeMin": true,
+	"OverideMapWaypointRange": true
+}</pre>
+
+;(Unused &mdash; AddMCV_801516211)
+<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 801516211,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 8015162,
+		"MissionCustomValue": {
+			"Index": 1,
+			"isLocal": true,
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+
+;(Unused &mdash; Talk_801516211)
+
+{{Диалог Конец}}
+
+===Поймайте заносчивого хелиоби===
+{{Описание миссии|локация=Комиссия по предсказаниям|Да как эти хелиоби смеют над вами насмехаться, когда у вас в руках тыква лунного ларца? Нужно показать им, чего вы стоите.}}
+{{Диалог Начало}}
+;(If {{F|MissionCV-8015162-undefined}} is equal to 2)
+:<!--Unknown TalkSentence: 815162506-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		400002
+	],
+	"AdvancedSpawnList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 210
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "create1"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			0
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400002
+}</pre>
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 815162507-->
+;(If {{F|MissionCV-8015162-undefined}} is not equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"MissionWayPointType": "Prop",
+	"WayPointGroupID": 210,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001
+}</pre>
+
+;(Поговорите с Хохо)
+<!--Unknown TalkSentence: 815162351-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 815162354-->
+
+;(Unused &mdash; create1)
+<!--Unknown TalkSentence: 815162508-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		400003
+	],
+	"AdvancedSpawnList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 210
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"DisableAfterTrigger": true,
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "create2"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	"CustomValue": 4
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400003
+}</pre>
+::<!--3-second delay-->
+:<!--Unknown TalkSentence: 815162509-->
+
+;(Unused &mdash; create2)
+<!--Unknown TalkSentence: 815162510-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		400004
+	],
+	"AdvancedSpawnList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 210
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 3
+		}
+	},
+	"DisableAfterTrigger": true,
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "create3"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	"CustomValue": 5
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400004
+}</pre>
+::<!--3-second delay-->
+:<!--Unknown TalkSentence: 815162511-->
+
+;(Unused &mdash; create3)
+<!--Unknown TalkSentence: 815162512-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		400005
+	],
+	"AdvancedSpawnList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 210
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"DisableAfterTrigger": true,
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "create4"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	"CustomValue": 6
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400005
+}</pre>
+::<!--1.5-second delay-->
+
+;(Unused &mdash; create4)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			0
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.NpcPossession",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 210
+		}
+	},
+	"GroupNpcID": {
+		"FixedValue": {
+			"Value": 400006
+		}
+	},
+	"PossessionInfo": {
+		"Name": "Possession_RobCraneBox_A_01"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 815162514-->
+:;(Enter battle)
+::{{Enemy List|Поражённый Марой солдат*2/+20% Сила атаки, +40% НР; Поражённая Марой стражница*2/+20% Сила атаки, +40% НР}}
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 815162201-->
+<!--Unknown TalkSentence: 815162202-->
+<!--Unknown TalkSentence: 815162203-->
+<!--Unknown TalkSentence: 815162204-->
+<!--Unknown TalkSentence: 815162205-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayTimelinePrefab",
+	"PrefabPath": "CutSceneSpecial/CS_ActivityHeliobus_Gourd/CS_ActivityHeliobus_Gourd.prefab",
+	"AreaName": {
+		"Custom": true,
+		"Key": "AreaName"
+	},
+	"AnchorName": {
+		"Custom": true,
+		"Key": "AnchorName"
+	}
+}</pre>
+----
+{{Диалог Конец}}
+
+===Поймайте последнего хелиоби===
+{{Описание миссии|локация=Комиссия по предсказаниям|В небе почти не осталось хелиоби. Пора отправить их туда, где им место.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Хохо)
+<!--Unknown TalkSentence: 815162361-->
+<!--Unknown TalkSentence: 815162516-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 815162371-->
+
+;(Unused &mdash; OnStart_QiongGuan_Submission)
+<!--Unknown TalkSentence: 815162520-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516209,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 212,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400002
+}</pre>
+
+;(Unused &mdash; trigger1)
+:----
+::<!--1.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 212
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+:<!--Unknown TalkSentence: 815162517-->
+:<!--Unknown TalkSentence: 815162518-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 801516206,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			0
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002,
+		400003,
+		400004,
+		400005
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"EnableFactor": true,
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+::{{Чёрный экран|undefined}}
+::{{tx}}
+:<!--Unknown TalkSentence: 815162251-->
+:<!--Unknown TalkSentence: 815162252-->
+:<!--Unknown TalkSentence: 815162253-->
+:<!--Unknown TalkSentence: 815162254-->
+:<!--Unknown TalkSentence: 815162255-->
+:<!--Unknown TalkSentence: 815162256-->
+:<!--Unknown TalkSentence: 815162257-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815162259-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(Unused &mdash; OnStart_QiongGuan_Submission)
+<pre>{
+	"$type": "RPG.GameCore.NpcPossession",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"GroupNpcID": {
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PossessionInfo": {
+		"Name": "Possession_RobCraneBox_A_01"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516209,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 212,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400002
+}</pre>
+
+;(Unused &mdash; OnClose_QiongGuan_Submission)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516209,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "NPC",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 212,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 400001
+}</pre>
+{{Диалог Конец}}
+
+===Запечатайте хелиоби в башне подавления===
+{{Описание миссии|локация=Сад безмятежности|Хороший хелиоби - пойманный хелиоби. И место ему в башне подавления Сада безмятежности.}}
+{{Диалог Начало}}
+
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Luofu Myths: Specterlight Records
+|zhs  = 罗浮异闻•磷火录
+|zht  = 羅浮異聞•磷火錄
+|ja   = 羅浮異聞・燐火録
+|ko   = 나부 기문•인화록
+|es   = Leyendas urbanas del Luofu: Luces espectrales
+|fr   = Mythes du Luofu&nbsp;: Récits des feux follets
+|ru   = Городские легенды Лофу: Записи о блуждающих огнях
+|th   = ตำนานพิศวงเมือง Luofu: เปลวแสงสีเขียว
+|vi   = Kỳ Bí Luofu - Ký Sự Ma Trơi
+|de   = Legenden der Luofu: Akte Irrlicht
+|id   = Legenda Urban Luofu: Kisah Api Hantu
+|pt   = Lendas do Luofu: Registros de Luz Espectral
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,280 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015173
+|Название        = 
+|Изображение     = Миссия Освоения Охотники за привидениями Всё хорошо в меру.png
+|Тип             = Миссия приключения
+|События         = Лисья история о привидениях
+|Глава           = Городские легенды Лофу
+|Условия         = 
+|Персонажи       = Гуйнайфэнь; Любопытная прохожая; Маньмань; Первопроходец; Робоптаха-доставщик; Сушан; Хохо
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*3; Конденсированный эфир*3; Gift From a Fan*1; Songlotus Cake*1; Tuskpir Wrap*2; Кредиты*5 000
+}}
+'''Охотники за привидениями: Всё хорошо в меру''' — Событие [[Миссия приключения]] из события [[Лисья история о привидениях]].
+
+==Описание==
+{{Описание|Преданные поклонники Гуйнайфэнь снабжают её недостоверной информацией в надежде встретить своего кумира во время работы...<br />Понаблюдайте, как Гуйнайфэнь справляется с этой ситуацией. Это может многому вас научить.}}
+
+==Этапы==
+# Поговорите с Охотниками за привидениями
+# Отправляйтесь в Облачную переправу и проведите расследование
+# Поговорите с подозрительным человеком
+# Отправляйтесь в Переулок ауруматонов и проведите расследование
+# Поговорите с подозрительным человеком
+# Поговорите с Гуйнайфэнь
+# Отправляйтесь в Сад Безмятежности
+# Поговорите с робоптахой и получите посылку
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Охотниками за привидениями===
+{{Описание миссии|локация=Сад безмятежности|Кажется, Гуйнайфэнь хочет обсудить что-то с Охотниками за привидениями...<br />Выслушайте её и узнайте, что произошло.}}
+{{Диалог Начало}}
+;(Unused &mdash; test123)
+:{{tx}}
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.SNSDetail.HeliobusSNSDetailDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "703"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+:<!--Unknown TalkSentence: 815173101-->
+:<!--Unknown TalkSentence: 815173102-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173104-->
+::{{tx}}
+::----
+:<!--Unknown TalkSentence: 815173101-->
+:<!--Unknown TalkSentence: 815173102-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173104-->
+::{{tx}}
+::----
+{{Диалог Конец}}
+
+===Отправляйтесь в Облачную переправу и проведите расследование===
+{{Описание миссии|локация=Облачная переправа|Поскольку пост указывает на контейнер под номером 13 в Облачной переправе, отправляйтесь к нему.<br />Вам кажется, что всё не так просто, как кажется на первый взгляд.}}
+{{Диалог Начало}}
+;(Unused &mdash; P_801517303)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+:<!--Unknown TalkSentence: 815173201-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815173203-->
+::<!--Unknown TalkSentence: 815173204-->
+::<!--Unknown TalkSentence: 815173205-->
+:::----
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815173205-->
+:::----
+:::{{tx}}
+:<!--Unknown TalkSentence: 815173205-->
+::----
+::{{tx}}
+
+;(Unused &mdash; CreateEntity_801517303)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с подозрительным человеком===
+{{Описание миссии|локация=Облачная переправа|Кто-то тайно следит за вами после прибытия в Облачную переправу.<br />Контейнер под номером 13 подозрителен, но этот человек ещё подозрительнее. Поговорите с ним.}}
+{{Диалог Начало}}
+;(Unused &mdash; P_801517304)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173303-->
+::{{tx}}
+::{{Чёрный экран|undefined}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.SNSDetail.HeliobusSNSDetailDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "504"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	],
+	"OnUICustomEvent": []
+}</pre>
+<!--Unknown TalkSentence: 815173501-->
+<!--Unknown TalkSentence: 815173502-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 815173504-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Переулок ауруматонов и проведите расследование===
+{{Описание миссии|локация=Переулок ауруматонов|Поскольку пост указывает на ломбард тайн в Переулке ауруматонов, отправляйтесь к нему.<br />Вам кажется, что всё не так просто, как кажется на первый взгляд.<br />Прямо как в прошлый раз?}}
+{{Диалог Начало}}
+
+;(Поговорите с Гуйнайфэнь)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173603-->
+:<!--Unknown TalkSentence: 815173604-->
+:<!--Unknown TalkSentence: 815173605-->
+:<!--Unknown TalkSentence: 815173606-->
+:<!--Unknown TalkSentence: 815173607-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173605-->
+:<!--Unknown TalkSentence: 815173606-->
+:<!--Unknown TalkSentence: 815173607-->
+<!--Unknown TalkSentence: 815173605-->
+<!--Unknown TalkSentence: 815173606-->
+<!--Unknown TalkSentence: 815173607-->
+{{Диалог Конец}}
+
+===Поговорите с подозрительным человеком===
+{{Описание миссии|локация=Переулок ауруматонов|Кто-то тайно следит за вами после прибытия в Переулок ауруматонов.<br />Ломбард тайн подозрителен, но этот человек ещё подозрительнее. Поговорите с ним.<br />Вы достаточно опытны, чтобы знать, что подобные вещи не должны повторяться.}}
+{{Диалог Начало}}
+;(Unused &mdash; P_801517308)
+:{{tx}}
+:<!--Unknown TalkSentence: 815173701-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815173703-->
+:<!--Unknown TalkSentence: 815173704-->
+:<!--Unknown TalkSentence: 815173705-->
+:<!--Unknown TalkSentence: 815173706-->
+:<!--Unknown TalkSentence: 815173707-->
+:<!--Unknown TalkSentence: 815173708-->
+:<!--Unknown TalkSentence: 815173709-->
+:<!--Unknown TalkSentence: 815173710-->
+{{Диалог Конец}}
+
+===Поговорите с Гуйнайфэнь===
+{{Описание миссии|локация=Переулок ауруматонов|Одержимая фанатка обманом заставила Гуйнайфэнь проводить расследование, чтобы встретиться с ней...<br />Если хотите встретиться с Гуйнайфэнь, просто скажите. Не нужно придумывать лишние трудности.<br />Послушайте, что хочет сказать Гуйнайфэнь.}}
+{{Диалог Начало}}
+
+;(Поговорите с Гуйнайфэнь)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отправляйтесь в Сад Безмятежности===
+{{Описание миссии|локация=Сад безмятежности|Отчитав фанатов, даже популярная стримерша Гуйнайфэнь поняла, что правильно, а что нет.<br />Вернитесь в Сад безмятежности и продолжите свою работу.}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; P_801517310)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815173905-->
+::<!--Unknown TalkSentence: 815173906-->
+::<!--Unknown TalkSentence: 815173907-->
+::<!--Unknown TalkSentence: 815173908-->
+::<!--Unknown TalkSentence: 815173909-->
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 815173907-->
+::<!--Unknown TalkSentence: 815173908-->
+::<!--Unknown TalkSentence: 815173909-->
+::;(Return to previous option selection)
+;(Unused &mdash; EmotionState_801517307)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 801517307
+}</pre>
+
+;(Unused &mdash; Talk_801517307)
+
+{{Диалог Конец}}
+
+===Поговорите с робоптахой и получите посылку===
+{{Описание миссии|локация=Сад безмятежности|Подписчик прислал подарок? Вот так сюрприз.<br />Похоже, Гуйнайфэнь не сделала ничего плохого. Примите подарок. Вы его заслуживаете.}}
+{{Диалог Начало}}
+
+;(Поговорите с Робоптаха-доставщик)
+:{{tx}}
+<!--Unknown TalkSentence: 815174001-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 815174004-->
+<!--Unknown TalkSentence: 815174005-->
+:{{tx}}
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ghost-Hunting Squad: Excess Is as Bad as Deficiency
+|zhs  = 捉鬼小队•过犹不及
+|zht  = 捉鬼小隊•過猶不及
+|ja   = 怪異退治隊・薬も過ぎれば毒になる
+|ko   = 요괴 퇴치팀•과유불급
+|es   = Brigada cazafantasmas: los excesos son malos
+|fr   = Brigade de chasse aux fantômes&nbsp;: Point trop n'en faut
+|ru   = Охотники за привидениями: Всё хорошо в меру
+|th   = หน่วยล่าท้าผี: เกินเรื่อง
+|vi   = Biệt Đội Bắt Ma - Hăng Hái Quá Mức
+|de   = Geisterjägertrupp: Zu weit ist genauso schlimm wie zu wenig
+|id   = Tim Pemburu Hantu: Berlebihan Itu Tidak Baik
+|pt   = Esquadrão Caça-Fantasmas: O Excesso é Tão Ruim Quanto a Falta
+}}
+
+==История изменений==
+{{История изменений|2.7}}

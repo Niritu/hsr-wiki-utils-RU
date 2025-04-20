@@ -1,0 +1,124 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8015154
+|Название        = 
+|Изображение     = Миссия Освоения Городские легенды Лофу Внетелесный опыт (продолжение).png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Городские легенды Лофу
+|Условия         = 
+* Завершена [[Миссия приключения]] ''[[Городские легенды Лофу: Внетелесный опыт]]''
+* Завершена [[Продолжение Освоения]] ''[[Сон лисы]]''
+|Персонажи       = Жоси; Первопроходец
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = Городские легенды Лофу: Внетелесный опыт
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Городские легенды Лофу: Внетелесный опыт (продолжение)''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Городские легенды Лофу]].
+
+==Описание==
+{{Описание|Вы отпустили «жену» и пожелали ей хоть и короткой, но счастливой жизни.<br />Что касается её просьбы... Вы вернули хелиоби в башню подавления Сада безмятежности.}}
+
+==Этапы==
+# Запечатайте хелиоби в башне подавления
+# Встретьтесь с Жоси в Лисьей усыпальнице
+
+==Прохождение==
+{{Дополнить}}
+
+;(If {{F|MissionCV-8015153-undefined}} is equal to 2)
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "ToastMissionGapDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "HeliobusActionDayResultPerformanceDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "HeliobusActionDayResultPage"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MissionTrainVisitorDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1219600
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1219600
+}</pre>
+;(If {{F|MissionCV-8015153-undefined}} is equal to 1)
+{{Диалог Конец}}
+
+===Запечатайте хелиоби в башне подавления===
+{{Описание миссии|локация=Сад безмятежности|По просьбе «жены» вы сопровождайте её к башне подавления в Саду безмятежности.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Встретьтесь с Жоси в Лисьей усыпальнице===
+{{Описание миссии|локация=Сад безмятежности|Поскольку вы не являетесь членом Комиссии десяти владык, вы можете урегулировать ситуацию так, как велит ваше сердце. Вы отпускаете «жену», надеясь, что супруги счастливо проживут вместе остаток своей короткой жизни.<br />Наверное, из благодарности за ваше милосердие «жена» вскоре находит вас снова.}}
+{{Диалог Начало}}
+;(Unused &mdash; TalkSentence_815153245)
+<!--Unknown TalkSentence: 815153245-->
+::{{tx}}
+
+;(Unused &mdash; TalkSentence_815153247)
+<!--Unknown TalkSentence: 815153247-->
+:<!--Unknown TalkSentence: 815153248-->
+:<!--Unknown TalkSentence: 815153249-->
+:<!--Unknown TalkSentence: 815153250-->
+:<!--Unknown TalkSentence: 815153251-->
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; PropTrigger_801515402)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 801515402
+}</pre>
+:<!--Unknown TalkSentence: 815153248-->
+:<!--Unknown TalkSentence: 815153249-->
+:<!--Unknown TalkSentence: 815153250-->
+:<!--Unknown TalkSentence: 815153251-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.PlayTimelinePrefab",
+	"PrefabPath": "CutSceneSpecial/CS_ActivityHeliobus_Gourd/CS_ActivityHeliobus_Gourd.prefab",
+	"AreaName": {
+		"Custom": true,
+		"Key": "AreaName"
+	},
+	"AnchorName": {
+		"Custom": true,
+		"Key": "AnchorName"
+	}
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Luofu Myths: Soul Departure (Continued)
+|zhs  = 罗浮异闻•离魂记（续）
+|zht  = 羅浮異聞•離魂記（續）
+|ja   = 羅浮異聞・離魂記・続
+|ko   = 나부 기문•육체를 떠난 혼의 이야기(속편)
+|es   = Leyendas urbanas del Luofu: Experiencia extracorporal (continuación)
+|fr   = Mythes du Luofu&nbsp;: Départ de l'âme (suite)
+|ru   = Городские легенды Лофу: Внетелесный опыт (продолжение)
+|th   = ตำนานพิศวงเมือง Luofu: วิญญาณที่หลุดลอย (ต่อ)
+|vi   = Kỳ Bí Luofu - Ly Hồn Ký (Tiếp)
+|de   = Legenden der Luofu: Außerkörperliche Erfahrung (Fortsetzung)
+|id   = Legenda Urban Luofu: Pengalaman Keluar Tubuh (Lanjutan)
+|pt   = Lendas do Luofu: Partida da Alma (Continuado)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

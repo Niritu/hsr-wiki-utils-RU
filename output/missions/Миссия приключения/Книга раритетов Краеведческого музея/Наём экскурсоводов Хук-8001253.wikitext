@@ -1,0 +1,123 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001253
+|Название        = 
+|Изображение     = Миссия Освоения Наём экскурсоводов Хук.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Книга раритетов Краеведческого музея
+|Условия         = 
+|Персонажи       = Клара; Первопроходец; Хук; Эрис
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Наём экскурсоводов: Хук''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Книга раритетов Краеведческого музея]].
+
+==Описание==
+{{Описание|Краеведческий музей Белобога готовится к открытию, но в штате не хватает экскурсоводов. Хук Великий Мрак решает оказать срочную поддержку музею, чтобы пополнить список заслуг Кротов в Надмирье.}}
+
+==Этапы==
+# Найдите Хук в Камнеграде
+# Найдите Эрис в Краеведческом музее Белобога
+# Начните собеседование в зоне отдыха музея
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите Хук в Камнеграде===
+{{Описание миссии|локация=Камнеград|Краеведческий музей Белобога вот-вот откроется, но экскурсоводов очень не хватает. Чтобы быстро закрыть вакансии и улучшить качество обслуживания посетителей, Пела и Эрис приглашают всех граждан Белобога подать заявки.<br />На этот раз они положили глаз на Хук Великий Мрак, лидера Кротов. Отправляйтесь вместо них в Камнеград и узнайте, заинтересована ли Хук в этой должности.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Хук)
+;(If {{cx}}<!--during performance 501030401-->)
+;(If {{cx}}<!--not during performance 501030401-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030466
+}</pre>
+<!--Unknown TalkSentence: 501030416-->
+{{Диалог Конец}}
+
+===Найдите Эрис в Краеведческом музее Белобога===
+{{Диалог Начало}}
+
+;(Поговорите с Эрис)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIfGroupIsOccupied","GroupID":35,"Inverse":true}-->}})
+::----
+:<!--Unknown TalkSentence: 201196002-->
+:<!--Unknown TalkSentence: 201196003-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201196005-->
+:<!--Unknown TalkSentence: 201196006-->
+:<!--Unknown TalkSentence: 201196007-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_clara_walk_near"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::----
+:<!--Unknown TalkSentence: 201196008-->
+:<!--Unknown TalkSentence: 201196009-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190301
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Начните собеседование в зоне отдыха музея===
+{{Диалог Начало}}
+
+;(Поговорите с Клара)
+----
+<!--Unknown TalkSentence: 201196102-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201196104-->
+::<!--0.5-second delay-->
+:<!--Unknown TalkSentence: 201196107-->
+:<!--Unknown TalkSentence: 201196108-->
+:<!--Unknown TalkSentence: 201196109-->
+:<!--Unknown TalkSentence: 201196110-->
+:<!--Unknown TalkSentence: 201196111-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 201196106-->
+::----
+----
+<!--Unknown TalkSentence: 201195622-->
+<!--Unknown TalkSentence: 201195625-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hiring Guides: Hook
+|zhs  = 导览员募集•虎克
+|zht  = 導覽員募集•虎克
+|ja   = ガイド募集・フック
+|ko   = 안내원 모집•후크
+|es   = Reclutamiento de guías: Hook
+|fr   = Recrutement de guides&nbsp;: Hook
+|ru   = Наём экскурсоводов: Хук
+|th   = รับสมัครไกด์: Hook
+|vi   = Tuyển Hướng Dẫn Viên: Hook
+|de   = Museumsführer gesucht: Hook
+|id   = Perekrutan Pemandu: Hook
+|pt   = Recrutamento de Guias Turísticos: Hook
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,367 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025111
+|Название        = 
+|Изображение     = Миссия Освоения Хотя аплодисменты стихли I.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = Завершена [[Миссия приключения]] ''[[Хотя аплодисменты стихли I]]''
+|Персонажи       = Гуйнайфэнь; Журналист еженедельника; Кармелла; Лука; Первопроходец; Пресс-агент
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Храбрость одиночества на Сяньчжоу
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*3; Утраченный кристалл*3; Кредиты*30 000
+}}
+'''Хотя аплодисменты стихли I''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Участвуйте в отборочном матче и наберите очки
+# Проверьте доступ к матчу в приёмном зале
+# Начните матч и сразитесь с Топаз
+# Вернитесь в кают-компанию и подготовьтесь к первому бою
+# Проведите пресс-конференцию
+
+==Прохождение==
+{{Дополнить}}
+
+===Участвуйте в отборочном матче и наберите очки===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 46
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TickInterval": 0.3,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EnterDistrict_G46"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G46)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "OpenUI",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_442"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutBriefDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.FightFestMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap1)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap2)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+
+;(Unused &mdash; G46_ShowUI_Chap4)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestScoreMatchResultDialog"
+}</pre>
+<!--Unknown TalkSentence: 802514651-->
+<!--Unknown TalkSentence: 802514652-->
+<!--Unknown TalkSentence: 802514653-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514655-->
+:<!--Unknown TalkSentence: 802514656-->
+:<!--Unknown TalkSentence: 802514657-->
+:<!--Unknown TalkSentence: 802514658-->
+:<!--Unknown TalkSentence: 802514659-->
+:<!--Unknown TalkSentence: 802514660-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514657-->
+:<!--Unknown TalkSentence: 802514658-->
+:<!--Unknown TalkSentence: 802514659-->
+:<!--Unknown TalkSentence: 802514660-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802514659-->
+:<!--Unknown TalkSentence: 802514660-->
+::{{tx}}
+<!--Unknown TalkSentence: 802514659-->
+<!--Unknown TalkSentence: 802514660-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Проверьте доступ к матчу в приёмном зале===
+{{Описание миссии|локация=«Рассекатель небес»|После нескольких отборочных матчей Лука наконец побеждает, набрав необходимое количество очков.<br />Теперь настало время сразиться с настоящим врагом.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestScoreMatchResultDialog"
+}</pre>
+<!--Unknown TalkSentence: 802510231-->
+{{Диалог Конец}}
+
+===Начните матч и сразитесь с Топаз===
+{{Описание миссии|локация=«Рассекатель небес»|Топаз довольно известна на Белобоге.<br />Лука очень хочет сразиться с ней.<br />Лука не может избавиться от мысли: «Возможно, к сражению с ней привела моя судьба белобожца».}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802510267-->
+<!--Unknown TalkSentence: 802510268-->
+<!--Unknown TalkSentence: 802510269-->
+
+;(Поговорите с Кармелла)
+<!--Unknown TalkSentence: 802510267-->
+<!--Unknown TalkSentence: 802510268-->
+<!--Unknown TalkSentence: 802510269-->
+
+;(Unused &mdash; FightFest_MainRace_802511103)
+----
+:<!--Unknown TalkSentence: 802510281-->
+:<!--Unknown TalkSentence: 802510282-->
+:<!--Unknown TalkSentence: 802510283-->
+:<!--Unknown TalkSentence: 802510284-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510286-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802510289-->
+:::{{tx}}
+
+;(Unused &mdash; G75_TriggerBattle)
+----
+:<!--Unknown TalkSentence: 802510281-->
+:<!--Unknown TalkSentence: 802510282-->
+:<!--Unknown TalkSentence: 802510283-->
+:<!--Unknown TalkSentence: 802510284-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510286-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802510289-->
+:::{{tx}}
+
+;(Unused &mdash; FightFestBattleStart)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_FightFestBattlePerformance",
+		"AreaName": "LevelArea_P20242_F20242001_G19",
+		"AnchorName": "Anchor7"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G19"
+		},
+		"AnchorName": {
+			"Value": "Anchor7"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowFightFestMainRaceUpgradeResultDialog",
+	"MainRaceID": 1001,
+	"IsSuccess": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "FightFestUpgradeSuccessDialog"
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и подготовьтесь к первому бою===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G74)
+<!--Unknown TalkSentence: 802510251-->
+:<!--Unknown TalkSentence: 802510252-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510254-->
+::<!--Unknown TalkSentence: 802510255-->
+::<!--Unknown TalkSentence: 802510256-->
+::<!--Unknown TalkSentence: 802510257-->
+::<!--Unknown TalkSentence: 802510258-->
+::<!--Unknown TalkSentence: 802510259-->
+::<!--Unknown TalkSentence: 802510260-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510257-->
+::<!--Unknown TalkSentence: 802510258-->
+::<!--Unknown TalkSentence: 802510259-->
+::<!--Unknown TalkSentence: 802510260-->
+:<!--Unknown TalkSentence: 802510257-->
+:<!--Unknown TalkSentence: 802510258-->
+:<!--Unknown TalkSentence: 802510259-->
+:<!--Unknown TalkSentence: 802510260-->
+{{Диалог Конец}}
+
+===Проведите пресс-конференцию===
+{{Описание миссии|локация=«Рассекатель небес»|Пресс-конференции - особенность спортивных событий. Вам придётся её провести.<br />Вы готовы встретиться с хитрыми, лживыми и стремящимися к хаосу журналистами?<br />Пора начать сражение с ними.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802511105,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 108,
+	"Value": "1"
+}</pre>
+;(Unused &mdash; TriggerPerformance_AfterShowUI)
+----
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:<!--Unknown TalkSentence: 802514641-->
+:<!--Unknown TalkSentence: 802514662-->
+:<!--Unknown TalkSentence: 802514663-->
+::<!--1-second delay-->
+:<!--Unknown TalkSentence: 802514664-->
+:<!--Unknown TalkSentence: 802514645-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Even When Cheers Fade: Chapter 1
+|zhs  = 即使喝彩停息•第一章
+|zht  = 即使喝彩停息•第一章
+|ja   = 喝采が鳴り止んだとしても・第1章
+|ko   = 갈채가 멈추더라도•제1장
+|es   = Aunque los aplausos cesen: capítulo 1
+|fr   = Au-delà des applaudissements&nbsp;: Chapitre 1
+|ru   = Хотя аплодисменты стихли I
+|th   = แม้เสียงเชียร์จะหยุดลง บทที่ 1
+|vi   = Dù Tiếng Vỗ Tay Dừng Lại - Chương 1
+|de   = Auch wenn der Applaus verstummt: Kapitel 1
+|id   = Meskipun Sorak-Sorai Berhenti: Bab 1
+|pt   = Quando os Aplausos Cessam: Capítulo 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

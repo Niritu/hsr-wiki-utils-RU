@@ -1,0 +1,668 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030302
+|Название        = 
+|Изображение     = Миссия Освоения Сказания Золотого века.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[Бессонная ночь]]''
+|Персонажи       = Администратор; Первопроходец; Сампо; Светлячок
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = Бессонная ночь
+|Следующая       = Благое знамение, мой друг
+|Награды         = Опыт Освоения*400; Звёздный нефрит*50; Путеводитель путешественника*3; Очищенный эфир*3; Утраченный кристалл*3; Кредиты*40 000
+}}
+'''Сказания Золотого века''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|Вместе со Светлячком вы повидали кое-что интересное в Золотом миге. Теперь Светлячок хочет что-то рассказать вам...}}
+
+==Этапы==
+# Идите за Светлячком и исследуйте Пенаконию
+# Выберите любимое лакомство
+# Поговорите со Светлячком
+# Продолжите знакомство с Пенаконией вместе со Светлячком
+# Попросите Светлячка сфотографироваться на память (необязательно)
+# Осмотрите странные ресницы статуи
+# Поговорите со Светлячком и рассмотрите фотографию (необязательно)
+# Продолжите знакомство с Пенаконией вместе со Светлячком
+# Поговорите с администратором и получите жетоны Айдена
+# Потратьте все жетоны
+# Поговорите со Светлячком и завершите обход достопримечательностей
+# Найдите Светлячка и завершите обход достопримечательностей (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Идите за Светлячком и исследуйте Пенаконию===
+{{Описание миссии|локация=Золотой миг|Стражник клана Гончих объясняет вам, что здесь происходит. Вы также выясняете, что девушку, которую вы спасли, зовут Светлячок, и она - артистка из клана Ирисов.<br />В качестве благодарности за спасение Светлячок вызывается стать вашим гидом. Быть может, стоит проследовать за ней и хорошенько изучить этот прекрасный сон?}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103031101-->
+<!--Unknown TalkSentence: 103031102-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 72,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103030201_steer"
+			}
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; Event_103030201_steer)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103031101-->
+<!--Unknown TalkSentence: 103031102-->
+<!--Unknown TalkSentence: 103031103-->
+<!--Unknown TalkSentence: 103031104-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031106-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031108-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031110-->
+::{{tx}}
+<!--Unknown TalkSentence: 103031106-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Выберите любимое лакомство===
+{{Описание миссии|локация=Золотой миг|Стражник клана Гончих объясняет вам, что здесь происходит. Вы также выясняете, что девушку, которую вы спасли, зовут Светлячок, и она - артистка из клана Ирисов.<br />В качестве благодарности за спасение Светлячок вызывается стать вашим гидом и хочет угостить вас вкусной едой. Хорошенько обдумайте ваш выбор - нечасто выпадает шанс полакомиться на дармовщинку.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите со Светлячком===
+{{Описание миссии|локация=Золотой миг|Стражник клана Гончих объясняет вам, что здесь происходит. Вы также выясняете, что девушку, которую вы спасли, зовут Светлячок, и она - артистка из клана Ирисов.<br />В качестве благодарности за спасение Светлячок вызывается стать вашим гидом. Вы уже заказали себе поесть, и теперь ей придётся оплатить счёт и расплатиться за собственное безрассудство.}}
+{{Диалог Начало}}
+
+;(Потеряно {{Item|Бюджет Светлячка|20|x=20000|text=Бюджет Светлячка}})
+{{Диалог Конец}}
+
+===Продолжите знакомство с Пенаконией вместе со Светлячком===
+{{Описание миссии|локация=Золотой миг|Как и было уговорено, Светлячок оплачивает счёт. Первым делом она хочет показать вам места, наиболее популярные среди обычных туристов. Звучит банально, однако именно ради них и совершаются путешествия.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103031201-->
+<!--Unknown TalkSentence: 103031202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031204-->
+:<!--Unknown TalkSentence: 103031205-->
+:<!--Unknown TalkSentence: 103031206-->
+:<!--Unknown TalkSentence: 103031207-->
+:<!--Unknown TalkSentence: 103031208-->
+:<!--Unknown TalkSentence: 103031209-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031206-->
+:<!--Unknown TalkSentence: 103031207-->
+:<!--Unknown TalkSentence: 103031208-->
+:<!--Unknown TalkSentence: 103031209-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031208-->
+:<!--Unknown TalkSentence: 103031209-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103031208-->
+<!--Unknown TalkSentence: 103031209-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; Event_103030204_run_2)
+<!--Unknown TalkSentence: 103031164-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 75,
+	"PathwayID": 4,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103030204_run_3"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Event_103030204_run_3)
+<!--Unknown TalkSentence: 103031165-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 75,
+	"PathwayID": 5,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"ForcePlayerWalk": true,
+	"OnReach": []
+}</pre>
+
+;(Unused &mdash; Event_103030204_steer)
+<!--Unknown TalkSentence: 103031162-->
+:<!--Unknown TalkSentence: 103031163-->
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 75,
+	"PathwayID": 3,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103030204_run_2"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Попросите Светлячка сфотографироваться на память (необязательно)===
+{{Описание миссии|локация=Золотой миг|Светлячок показывает вам самые известные достопримечательности. Прибыв на авеню Глаукса, вы оказываетесь перед статуей маскота по имени Часик. Ресницы героя кажутся вам слишком уж правдоподобными.<br />Если честно, любой бы при виде этих подрагивающих ресниц ощутил непреодолимое желание схватиться за них, но сперва было бы здорово попросить Светлячка сделать классический снимок на память.}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; 103030205_StartPhoto)
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 76
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "SingleTakePhoto",
+	"AimTargetContainerConfig": [
+		{
+			"InnerContainers": [],
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"Targets": [
+						400002
+					]
+				},
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"TipConfigs": [],
+			"ContainerFlagName": "103030205_Two",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"ToastTemplate": "拍照",
+		"SuccessToastText": {
+			"Hash": 3718320075519758869
+		},
+		"FailToastText": {
+			"Hash": 17892350840487220106
+		}
+	},
+	"ExtraSettings": {
+		"ShowNpc": {
+			"NpcInfos": [
+				{
+					"$type": "RPG.GameCore.PhotoGraphFindNpc",
+					"GroupID": {
+						"FixedValue": {
+							"Value": 76
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			]
+		},
+		"SetEntityUniqueName": {
+			"NpcUniqueNameInfo": [
+				{
+					"UniqueName": {
+						"Value": "103030205_Local"
+					},
+					"GroupID": {
+						"FixedValue": {
+							"Value": 76
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400002
+						}
+					}
+				}
+			]
+		},
+		"HideEntityConfig": {
+			"HideEntity": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByNpcID",
+				"SingleNpcID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 76
+						}
+					},
+					"GroupNpcID": {
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				}
+			}
+		},
+		"FreeStyleConfig": [
+			{
+				"CharacterUniqueName": "103030205_Local",
+				"LocalPlayer": true,
+				"StoryAvatarID": "NPC_Avatar_Maid_Mar_7th_00"
+			}
+		],
+		"LookAtCameraTarget": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"Targets": [
+				400002
+			]
+		},
+		"PlayerControlSetting": {
+			"ResetPlayerPosition": true,
+			"AnchorConfig": {
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G76"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			},
+			"OverrideCameraHeightByBodySize": "Maid"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите странные ресницы статуи===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите со Светлячком и рассмотрите фотографию (необязательно)===
+{{Описание миссии|локация=Золотой миг|Светлячок показывает вам самые известные достопримечательности. Прибыв на авеню Глаукса, вы оказываетесь перед статуей маскота по имени Часик. Ресницы героя кажутся вам слишком уж правдоподобными.<br />Если честно, любой бы при виде этих подрагивающих ресниц ощутил непреодолимое желание схватиться за них. Кстати, вы ведь хотели попросить Светлячка сделать классическую туристическую фотографию.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 103031401-->
+<!--Unknown TalkSentence: 103031402-->
+<!--Unknown TalkSentence: 103031403-->
+<!--Unknown TalkSentence: 103031404-->
+<!--Unknown TalkSentence: 103031405-->
+<!--Unknown TalkSentence: 103031406-->
+<!--Unknown TalkSentence: 103031407-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031409-->
+:<!--Unknown TalkSentence: 103031410-->
+:<!--Unknown TalkSentence: 103031411-->
+:<!--Unknown TalkSentence: 103031412-->
+:<!--Unknown TalkSentence: 103031413-->
+:<!--Unknown TalkSentence: 103031414-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031411-->
+:<!--Unknown TalkSentence: 103031412-->
+:<!--Unknown TalkSentence: 103031413-->
+:<!--Unknown TalkSentence: 103031414-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031413-->
+:<!--Unknown TalkSentence: 103031414-->
+::{{tx}}
+<!--Unknown TalkSentence: 103031413-->
+<!--Unknown TalkSentence: 103031414-->
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Продолжите знакомство с Пенаконией вместе со Светлячком===
+{{Описание миссии|локация=Золотой миг|Светлячок продолжает водить вас по достопримечательностям. Следующая остановка - Большой театр Пенаконии. Поспешите!}}
+{{Диалог Начало}}
+;(Unused &mdash; Performance_103030207)
+:{{tx}}
+{{Описание миссии|локация=Золотой миг|Светлячок продолжает водить вас по достопримечательностям. Прямо по курсу тематический Парк Айдена, посвящённый «Усладе». Поспешите!}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103031602-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103031601-->
+<!--Unknown TalkSentence: 103031602-->
+<!--Unknown TalkSentence: 103031603-->
+<!--Unknown TalkSentence: 103031604-->
+<!--Unknown TalkSentence: 103031605-->
+<!--Unknown TalkSentence: 103031606-->
+<!--Unknown TalkSentence: 103031607-->
+<!--Unknown TalkSentence: 103031608-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; Event_103030208_run)
+<!--Unknown TalkSentence: 103031601-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 79,
+	"PathwayID": 2,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"OnReach": []
+}</pre>
+{{Описание миссии|локация=Золотой миг|Светлячок продолжает водить вас по достопримечательностям. Вы прибыли в Парк Айдена. Прогуляйтесь.}}
+;(По прибытии на место)
+;(Unused &mdash; Event_103030209_run)
+<!--Unknown TalkSentence: 103031614-->
+:<!--Unknown TalkSentence: 103031615-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 80,
+	"PathwayID": 3,
+	"MotionFlag": "Run",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103030209_run_2"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Event_103030209_run_2)
+<!--Unknown TalkSentence: 103031616-->
+:<!--Unknown TalkSentence: 103031617-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 80,
+	"PathwayID": 4,
+	"MotionFlag": "Run",
+	"OnReach": []
+}</pre>
+
+;(Unused &mdash; Event_103030209_run_0)
+<!--Unknown TalkSentence: 103031613-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 80,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"WaitForPlayer": true,
+	"ForcePlayerWalk": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103030209_run"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с администратором и получите жетоны Айдена===
+{{Описание миссии|локация=Золотой миг|Светлячок продолжает водить вас по достопримечательностям и предлагает опробовать развлечения Парка Айдена. Для этого вам нужно получить жетоны у администратора.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 103031701-->
+<!--Unknown TalkSentence: 103031702-->
+<!--Unknown TalkSentence: 103031703-->
+<!--Unknown TalkSentence: 103031704-->
+<!--Unknown TalkSentence: 103031705-->
+<!--Unknown TalkSentence: 103031706-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031708-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031710-->
+::{{tx}}
+<!--Unknown TalkSentence: 103031708-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Потратьте все жетоны===
+{{Описание миссии|локация=Золотой миг|Светлячок продолжает водить вас по достопримечательностям и предлагает опробовать развлечения Парка Айдена. Вы получили пригоршню жетонов - пора вовсю разыграться!<br />Конечно же, утомившись от игр, вы можете вернуться к Светлячку и немного отдохнуть.}}
+{{Диалог Начало}}
+
+<!--Unknown TalkSentence: 103031801-->
+<!--Unknown TalkSentence: 103031802-->
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103031803
+	],
+	"IntervalTime": 0
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"GroupId": 100,
+	"PointID": 1,
+	"MotionFlag": "Run",
+	"AlignRotation": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_103030212"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите со Светлячком и завершите обход достопримечательностей===
+{{Диалог Начало}}
+
+;(Поговорите с Светлячок)
+<!--Unknown TalkSentence: 103031901-->
+<!--Unknown TalkSentence: 103031902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031904-->
+:<!--Unknown TalkSentence: 103031905-->
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+<!--Unknown TalkSentence: 103031908-->
+<!--Unknown TalkSentence: 103031909-->
+<!--Unknown TalkSentence: 103031910-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103031805
+	]
+}</pre>
+
+
+;(Поговорите с Светлячок)
+<!--Unknown TalkSentence: 103031806-->
+<!--Unknown TalkSentence: 103031807-->
+<!--Unknown TalkSentence: 103031901-->
+<!--Unknown TalkSentence: 103031902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031904-->
+:<!--Unknown TalkSentence: 103031905-->
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+<!--Unknown TalkSentence: 103031908-->
+<!--Unknown TalkSentence: 103031909-->
+<!--Unknown TalkSentence: 103031910-->
+{{Диалог Конец}}
+
+===Найдите Светлячка и завершите обход достопримечательностей (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Светлячок)
+<!--Unknown TalkSentence: 103031806-->
+<!--Unknown TalkSentence: 103031807-->
+<!--Unknown TalkSentence: 103031901-->
+<!--Unknown TalkSentence: 103031902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031904-->
+:<!--Unknown TalkSentence: 103031905-->
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031906-->
+:<!--Unknown TalkSentence: 103031907-->
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103031908-->
+:<!--Unknown TalkSentence: 103031909-->
+:<!--Unknown TalkSentence: 103031910-->
+<!--Unknown TalkSentence: 103031908-->
+<!--Unknown TalkSentence: 103031909-->
+<!--Unknown TalkSentence: 103031910-->
+
+;(Получено {{Item||20|x=2}})
+<!--Unknown TalkSentence: 103032028-->
+;(Получено {{Item||20|x=2}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Tales from the Golden Age
+|zhs  = 黄金年代的故事
+|zht  = 黃金年代的故事
+|ja   = 黄金時代の物語
+|ko   = 황금시대의 이야기
+|es   = Historias de la edad dorada
+|fr   = Contes de l'âge d'or
+|ru   = Сказания Золотого века
+|th   = เรื่องราวของยุคทอง
+|vi   = Câu Chuyện Năm Tháng Huy Hoàng
+|de   = Geschichten des Goldenen Zeitalters
+|id   = Kisah Masa Keemasan
+|pt   = Contos da Era de Ouro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

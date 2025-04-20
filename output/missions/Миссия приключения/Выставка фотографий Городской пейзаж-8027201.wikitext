@@ -1,0 +1,459 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027201
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Городской пейзаж.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = «Звезданутый экспресс»; Март 7; Первопроходец; Реклама Господина Селёдки; Реклама модной игрушки; Слеповатый искатель грёз
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*60; Путеводитель путешественника*4; Lupitoxin Sawteeth*3; Кредиты*30 000
+}}
+'''Выставка фотографий: Городской пейзаж''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Обсудите тему дня с Март 7
+# Сделайте фотографию рекламных щитов
+# Обсудите фотографию с Март 7
+# Отправляйтесь в автосалон
+# Сделайте фотографию роскошных автомобилей
+# Обсудите фотографию с Март 7
+# Сделайте фотографию роскошных автомобилей
+
+==Прохождение==
+{{Дополнить}}
+
+===Обсудите тему дня с Март 7===
+{{Описание миссии|локация=Золотой миг|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; PhotoGraphStartCustomString)
+:<!--0.5-second delay-->
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		2
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802722203
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 802722204
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 802722205
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400009,
+			"TalkSentenceID": 802722206
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 802722207
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 3
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G603)
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G603"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Сделайте фотографию рекламных щитов===
+{{Описание миссии|локация=Золотой миг|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Золотой миг|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802722251-->
+<!--Unknown TalkSentence: 802722252-->
+<!--Unknown TalkSentence: 802722253-->
+<!--Unknown TalkSentence: 802722254-->
+<!--Unknown TalkSentence: 802722255-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 192,
+	"Value": "1"
+}</pre>
+<!--Unknown TalkSentence: 802722259-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в автосалон===
+{{Описание миссии|локация=Золотой миг|На рекламном щите рассказывается о выставке автомобилей, так что вы с Март 7 решаете взглянуть на неё.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G596)
+<!--Unknown TalkSentence: 802722301-->
+:<!--Unknown TalkSentence: 802722302-->
+:<!--Unknown TalkSentence: 802722303-->
+:<!--Unknown TalkSentence: 802722304-->
+:<!--Unknown TalkSentence: 802722305-->
+:<!--Unknown TalkSentence: 802722306-->
+:<!--Unknown TalkSentence: 802722307-->
+:<!--Unknown TalkSentence: 802722308-->
+:<!--Unknown TalkSentence: 802722309-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802720103,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<!--Unknown TalkSentence: 802722312-->
+<!--Unknown TalkSentence: 802720702-->
+{{Диалог Конец}}
+
+===Сделайте фотографию роскошных автомобилей===
+{{Описание миссии|локация=Золотой миг|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 597,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802720904
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 597,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802720905
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Золотой миг|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+;(If {{F|MissionCV-8027201-1}} is equal to 1)
+:<!--Unknown TalkSentence: 802722351-->
+:<!--Unknown TalkSentence: 802722352-->
+:<!--Unknown TalkSentence: 802722353-->
+;(If {{F|MissionCV-8027201-1}} is not equal to 1)
+:<!--Unknown TalkSentence: 802722401-->
+:<!--Unknown TalkSentence: 802722402-->
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "4"
+}</pre>
+:<!--Unknown TalkSentence: 802722406-->
+::{{tx}}
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802722355-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "1"
+}</pre>
+:<!--Unknown TalkSentence: 802722360-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802722357-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "2"
+}</pre>
+:<!--Unknown TalkSentence: 802722360-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802722359-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "3"
+}</pre>
+:<!--Unknown TalkSentence: 802722360-->
+::{{tx}}
+<!--Unknown TalkSentence: 802722355-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "1"
+}</pre>
+<!--Unknown TalkSentence: 802722360-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Сделайте фотографию роскошных автомобилей===
+{{Описание миссии|локация=Золотой миг|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; G599_PropTrigger)
+<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"MissionID": {
+		"FixedValue": {
+			"Value": 8027201
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "MultiTakePhoto",
+	"IdentifyDisplayType": "PhotoExhibition",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"FixedValue": {
+								"Value": 599
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 12,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720105",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		},
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+					"FetchType": "SingleNpcByNpcID",
+					"SingleNpcID": {
+						"GroupID": {
+							"FixedValue": {
+								"Value": 599
+							}
+						},
+						"GroupNpcID": {
+							"FixedValue": {
+								"Value": 400006
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 12,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720105",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyRadiusOverride": {
+			"FixedValue": {
+				"Value": 12
+			}
+		},
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+			"FetchType": "SinglePropByPropID",
+			"SinglePropID": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 599
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		},
+		"InitFov": 1
+	},
+	"ExtraSettings": {
+		"HideEntityConfig": {
+			"HideEntity": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 599
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300003
+						}
+					}
+				}
+			},
+			"HideProp": true
+		},
+		"ShowBubbleTalk": true
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphStartCustomString)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 599,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 802720904
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 599,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 802720905
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Urbane Streetscape
+|zhs  = 摄影展览•都市街景
+|zht  = 攝影展覽•都市街景
+|ja   = フォトコンテスト・都会の風景
+|ko   = 사진 콘테스트•도시 거리 풍경
+|es   = Exposición de fotografía: paisaje urbano
+|fr   = Exposition photo&nbsp;: Échappée urbaine
+|ru   = Выставка фотографий: Городской пейзаж
+|th   = นิทรรศการภาพถ่าย: วิวถนนในเมือง
+|vi   = Triển Lãm Nhiếp Ảnh-Cảnh Đường Phố
+|de   = Fotoausstellung: Stadtlandschaft
+|id   = Pameran Fotografi: Pemandangan Urban
+|pt   = Exibição de Fotografia: Paisagem Urbana
+}}
+
+==История изменений==
+{{История изменений|2.7}}

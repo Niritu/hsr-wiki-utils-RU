@@ -1,0 +1,177 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340127
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Волчий побег, неизвестный исход]]''
+|Персонажи       = Первопроходец; Сиратори; Хитрая робоптаха
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*3; Конденсированный эфир*3; Кредиты*10 000
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Хитрая робоптаха)
+<!--Unknown TalkSentence: 434035001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434035004-->
+:<!--Unknown TalkSentence: 434035010-->
+<!--Unknown TalkSentence: 434035101-->
+
+
+:{{Диалог|?}} Осмотреть
+<!--Unknown TalkSentence: 434035201-->
+<!--Unknown TalkSentence: 434035202-->
+<!--Unknown TalkSentence: 434035203-->
+<!--Unknown TalkSentence: 434035204-->
+
+
+;(Поговорите с Сиратори)
+<!--Unknown TalkSentence: 434035301-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 434012703,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 434035303,
+					"ProtectTime": 0
+				},
+				{
+					"TextSpeed": 0,
+					"TalkSentenceID": 434035304,
+					"ProtectTime": 0
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"CharacterUniqueName": "LocalPlayer",
+			"StoryAvatarID": "NPC_Player",
+			"StoryMotionID": 230
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 434035305,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_434035307"
+				},
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 434035306,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_434035307"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END_NOTFINISH"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_434035307)
+<!--Unknown TalkSentence: 434035307-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; ALL_TALK_END_NOTFINISH)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+;(Поговорите с Сиратори)
+<!--Unknown TalkSentence: 434035401-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434035403-->
+:{{Диалог|Выход}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"Index": 3,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+<!--Unknown TalkSentence: 434035601-->
+<!--Unknown TalkSentence: 434035602-->
+<!--Unknown TalkSentence: 434035603-->
+<!--Unknown TalkSentence: 434035604-->
+<!--Unknown TalkSentence: 434035605-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434035607-->
+:<!--Unknown TalkSentence: 434035608-->
+:<!--Unknown TalkSentence: 434035609-->
+:<!--Unknown TalkSentence: 434035610-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434035609-->
+:<!--Unknown TalkSentence: 434035610-->
+<!--Unknown TalkSentence: 434035609-->
+<!--Unknown TalkSentence: 434035610-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

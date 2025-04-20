@@ -1,0 +1,107 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001222
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"Show": false,
+	"PuzzleFunc": "Identify",
+	"CDDuration": 1,
+	"CustomString": {
+		"Value": "PhotoGraphGOGOGO"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

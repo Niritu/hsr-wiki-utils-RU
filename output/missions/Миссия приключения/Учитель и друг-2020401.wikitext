@@ -1,0 +1,1045 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020401
+|Название        = 
+|Изображение     = Миссия Освоения Учитель и друг.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ветвистые рога и спутанные корни]]''
+|Персонажи       = Владелец киоска; Мэнмин; Первопроходец; Толкай; Тяни; Цинцюэ; Чэнцзе
+|СтартЛокация    = Комиссия по ремёслам
+|Мир             = Лофу Сяньчжоу
+|Локации         = Комиссия по ремёслам
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*250; Звёздный нефрит*40; Путеводитель путешественника*1; Strale*25; Кредиты*15 000
+}}
+'''Учитель и друг''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|Чэнцзе берёт себя в руки. Он намерен завершить работу своего учителя.<br />Как настоящий персонаж вдохновляющей истории, Чэнцзе находит новые силы и преисполняется решимостью.}}
+
+==Этапы==
+# Отправляйтесь в Комиссию по ремёслам и найдите Цинцюэ
+# Отправляйтесь в Академию мастерства и разыщите рукопись учителя Райана
+# Из кипы рукописей найдите нужную
+# Доставьте повреждённую рукопись Чэнцзе
+# Отведите расстроенного Чэнцзе в Приют звёздных яликов, чтобы он немного развеялся
+# Отправляйтесь на мост Приюта звёздных яликов и понаблюдайте за движением яликов
+# Передайте пригласительное письмо Чэнцзе
+# Отправляйтесь в порт Звездочёт Навалия
+# Найдите звёздный ялик в стадии прорастания
+# Сфотографируйте звёздный ялик в стадии прорастания
+# Найдите звёздный ялик в стадии зародыша
+# Сфотографируйте звёздный ялик в стадии зародыша
+# Найдите звёздный ялик в стадии роста
+# Сфотографируйте звёздный ялик в стадии роста
+# Найдите звёздный ялик в стадии формирования
+# Сфотографируйте мастера Чэнцзе рядом с яликом
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь в Комиссию по ремёслам и найдите Цинцюэ===
+{{Описание миссии|локация=Комиссия по ремёслам|Верховная провидица прислала Цинцюэ из Комиссии по предсказаниям, чтобы она оценила последствия катастрофы. Но девушка столкнулась с некоторыми проблемами, «выходящими за рамки её работы», и нуждается в вашей помощи.<br />Хм, разве надзор за архивом не входит в прямые обязанности Цинцюэ?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 54
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204010201-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 204010203-->
+<!--Unknown TalkSentence: 204010204-->
+<!--Unknown TalkSentence: 204010205-->
+<!--Unknown TalkSentence: 204010206-->
+<!--Unknown TalkSentence: 204010207-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 204019101-->
+<!--Unknown TalkSentence: 204019102-->
+
+;(Поговорите с Чэнцзе)
+<!--Unknown TalkSentence: 204010300-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Академию мастерства и разыщите рукопись учителя Райана===
+{{Описание миссии|локация=Комиссия по ремёслам|Узнав о проблемах мастера Чэнцзе, вы и Цинцюэ полны решимости помочь этому несчастному ученику отыскать рукописи его учителя.<br />Мастер Чэнцзе не осмеливается вернуться в Академию мастерства, потому что не хочет беспокоить Облачных Рыцарей по пустякам... А вас, значит, беспокоить можно?!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Mission_202040103_PropUITrigger)
+:----
+:<!--Unknown TalkSentence: 204010301-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 204010303-->
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_friend_searching"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 54,
+	"ID": 400005
+}</pre>
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 204010305-->
+::<!--Unknown TalkSentence: 204010306-->
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_friend_searching"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 54,
+	"ID": 400005
+}</pre>
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 204010308-->
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_friend_searching"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 54,
+	"ID": 400005
+}</pre>
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+:::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 204010303-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_friend_searching"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 54,
+	"ID": 400005
+}</pre>
+::{{Чёрный экран|undefined}}
+::{{Чёрный экран|undefined}}
+::{{Чёрный экран|undefined}}
+
+;(Unused &mdash; Chengjie_RepeatTalk_PropUITrigger)
+<!--Unknown TalkSentence: 204010300-->
+----
+<!--Unknown TalkSentence: 204010401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 204010403-->
+<!--Unknown TalkSentence: 204010404-->
+<!--Unknown TalkSentence: 204010408-->
+----
+{{Диалог Конец}}
+
+===Из кипы рукописей найдите нужную===
+{{Описание миссии|локация=Комиссия по ремёслам|Ни вы, ни Цинцюэ не знакомы с рукописями Комиссии по ремёслам. Найдите все возможные рукописи, а потом отыщите среди них нужную.<br />Листать рукописи - всё равно что найти ошибку в рецепте, не будучи врачом: чувство собственной важности зашкаливает.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 204010701-->
+<!--Unknown TalkSentence: 204010702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010704-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010706-->
+:<!--Unknown TalkSentence: 204010707-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010709-->
+:<!--Unknown TalkSentence: 204010710-->
+::----
+<!--Unknown TalkSentence: 204010704-->
+----
+{{Диалог Конец}}
+
+===Доставьте повреждённую рукопись Чэнцзе===
+{{Описание миссии|локация=Комиссия по ремёслам|Хотя вы нашли рукопись учителя Райана, из-за внезапного нападения она была порвана.<br />Что поделать, по крайней мере, осталось несколько целых страниц, которые можно передать мастеру Чэнцзе. Это лучше, чем ничего.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 54
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300009
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204010801-->
+<!--Unknown TalkSentence: 204010802-->
+<!--Unknown TalkSentence: 204010803-->
+<!--Unknown TalkSentence: 204010804-->
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 204010806-->
+<!--Unknown TalkSentence: 204010807-->
+<!--Unknown TalkSentence: 204010808-->
+<!--Unknown TalkSentence: 204010809-->
+<!--Unknown TalkSentence: 204010810-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 204010812-->
+<!--Unknown TalkSentence: 204010817-->
+{{Диалог Конец}}
+
+===Отведите расстроенного Чэнцзе в Приют звёздных яликов, чтобы он немного развеялся===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Мастер Чэнцзе не вынес такого удара и совсем отчаялся. Добрая Цинцюэ и вы решили, что мастеру Чэнцзе нужно немного расслабиться.<br />В Приюте звёздных яликов полно туристов, это замечательное место для отдыха... Но для социофобов, конечно, это станет пыткой.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 76
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204010901-->
+<!--Unknown TalkSentence: 204010902-->
+<!--Unknown TalkSentence: 204010903-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010905-->
+:<!--Unknown TalkSentence: 204010912-->
+:<!--Unknown TalkSentence: 204010913-->
+::----
+:<!--Unknown TalkSentence: 204010914-->
+:<!--Unknown TalkSentence: 204010915-->
+:<!--Unknown TalkSentence: 204010916-->
+:<!--Unknown TalkSentence: 204010917-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010907-->
+:<!--Unknown TalkSentence: 204010912-->
+:<!--Unknown TalkSentence: 204010913-->
+::----
+:<!--Unknown TalkSentence: 204010927-->
+:<!--Unknown TalkSentence: 204010928-->
+:<!--Unknown TalkSentence: 204010929-->
+:<!--Unknown TalkSentence: 204010930-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010909-->
+:<!--Unknown TalkSentence: 204010912-->
+:<!--Unknown TalkSentence: 204010913-->
+::----
+:<!--Unknown TalkSentence: 204010941-->
+:<!--Unknown TalkSentence: 204010942-->
+:<!--Unknown TalkSentence: 204010943-->
+:<!--Unknown TalkSentence: 204010944-->
+:<!--Unknown TalkSentence: 204010945-->
+:<!--Unknown TalkSentence: 204010946-->
+:<!--Unknown TalkSentence: 204010947-->
+:<!--Unknown TalkSentence: 204010948-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204010911-->
+:<!--Unknown TalkSentence: 204010912-->
+:<!--Unknown TalkSentence: 204010913-->
+::----
+:<!--Unknown TalkSentence: 204010914-->
+:<!--Unknown TalkSentence: 204010915-->
+:<!--Unknown TalkSentence: 204010916-->
+:<!--Unknown TalkSentence: 204010917-->
+
+;(Поговорите с Чэнцзе)
+<!--Unknown TalkSentence: 204011200-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 202040111,
+	"Desc": {
+		"Hash": 4088082366888078931
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+			"CustomString": {
+				"Value": "Mission_202040111_PropUITrigger"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь на мост Приюта звёздных яликов и понаблюдайте за движением яликов===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Мастер Чэнцзе не может думать ни о чём другом, только бы увидеть звёздные ялики. Давайте пойдём на мост, чтобы посмотреть на них на Сяньчжоу Лофу.<br />Ежедневно в Приюте целые стаи яликов снуют туда-сюда. Что ещё мастер Чэнцзе надеется здесь увидеть?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 76
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204011000-->
+<!--Unknown TalkSentence: 204011001-->
+<!--Unknown TalkSentence: 204011002-->
+<!--Unknown TalkSentence: 204011003-->
+<!--Unknown TalkSentence: 204011004-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204011006-->
+:<!--Unknown TalkSentence: 204011007-->
+:<!--Unknown TalkSentence: 204011008-->
+:<!--Unknown TalkSentence: 204011012-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204011010-->
+:<!--Unknown TalkSentence: 204011011-->
+:<!--Unknown TalkSentence: 204011012-->
+<!--Unknown TalkSentence: 204011007-->
+<!--Unknown TalkSentence: 204011008-->
+<!--Unknown TalkSentence: 204011012-->
+{{Диалог Конец}}
+
+===Передайте пригласительное письмо Чэнцзе===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Очевидно, мастер Чэнцзе не знал, что учитель Райан получил приглашение от КММ, ведь учитель никогда не говорил ему об этом.<br />Неизвестно, станет ли Чэнцзе чувствовать себя ещё виноватее из-за этого. Ясно одно, если письмо ему не отдать, чувство вины появится и у вас.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь в порт Звездочёт Навалия===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Мастер Чэнцзе надеется попасть в порт Звездочёт Навалия, чтобы собственными глазами увидеть появление звёздных яликов, но сейчас там всё кишит монстрами. На счастье, вы владеете боевыми искусствами, и поэтому мастер Чэнцзе зовёт вас с собой.<br />Когда вас, наконец, начнут ценить за ваши таланты и положительные качества, а не за способность надирать всем задницы...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204011301-->
+<!--Unknown TalkSentence: 204011302-->
+<!--Unknown TalkSentence: 204011303-->
+<!--Unknown TalkSentence: 204011304-->
+<!--Unknown TalkSentence: 204011305-->
+<!--Unknown TalkSentence: 204011306-->
+<!--Unknown TalkSentence: 204011307-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 204011309-->
+<!--Unknown TalkSentence: 204011312-->
+----
+{{Диалог Конец}}
+
+===Найдите звёздный ялик в стадии прорастания===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Создание звёздных яликов включает несколько этапов, и мастер Чэнцзе хочет увидеть процесс превращения ялика из семечка в большой корабль.<br />Вы уже несколько раз были в порту Звездочёт Навалия, но ни разу не видели, как прорастают ялики.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204011401-->
+<!--Unknown TalkSentence: 204011402-->
+<!--Unknown TalkSentence: 204011403-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Сфотографируйте звёздный ялик в стадии прорастания===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Мастеру Чэнцзе нужны рисунки звёздного ялика. Просто помогите ему сфотографировать всходы ялика.<br />Цинцюэ называет такие снимки «визиографиями»: на Сяньчжоу много всяких терминов, вам надо к этому привыкнуть.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300014
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 204019105-->
+{{Диалог Конец}}
+
+===Найдите звёздный ялик в стадии зародыша===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Создание звёздных яликов включает несколько этапов, и мастер Чэнцзе хочет увидеть процесс превращения ялика из семечка в большой корабль.<br />Вы уже несколько раз были в порту Звездочёт Навалия, но ни разу не видели, как прорастают ялики.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204011601-->
+<!--Unknown TalkSentence: 204011602-->
+<!--Unknown TalkSentence: 204011603-->
+<!--Unknown TalkSentence: 204011604-->
+<!--Unknown TalkSentence: 204011605-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Сфотографируйте звёздный ялик в стадии зародыша===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Мастеру Чэнцзе нужны рисунки звёздного ялика. Просто помогите ему сфотографировать всходы ялика.<br />Цинцюэ называет такие снимки «визиографиями»: на Сяньчжоу много всяких терминов, вам надо к этому привыкнуть.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300015
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300007
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300007
+					}
+				}
+			}
+		]
+	},
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300007
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 204019108-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300016
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300013
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300013
+					}
+				}
+			}
+		]
+	},
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300013
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 204019109-->
+{{Диалог Конец}}
+
+===Найдите звёздный ялик в стадии роста===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Создание звёздных яликов включает несколько этапов, и мастер Чэнцзе хочет увидеть процесс превращения ялика из семечка в большой корабль.<br />Вы уже несколько раз были в порту Звездочёт Навалия, но ни разу не видели, как прорастают ялики.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 204019109-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.RemoveEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/Interactive Object/Eff_Common_MAZ_CheckPoint_Idle_Enable.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+----
+<!--Unknown TalkSentence: 204011801-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 204011805-->
+<!--Unknown TalkSentence: 204011812-->
+<!--Unknown TalkSentence: 204011806-->
+<!--Unknown TalkSentence: 204011807-->
+<!--Unknown TalkSentence: 204011808-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20212_F20212001_G94",
+	"AnchorName": "Anchor12"
+}</pre>
+<!--Unknown TalkSentence: 204011809-->
+<!--Unknown TalkSentence: 204011810-->
+<!--Unknown TalkSentence: 204011811-->
+;(Enter battle)
+:{{Enemy List|Поражённый Марой солдат*3}}
+----
+<!--Unknown TalkSentence: 204011901-->
+<!--Unknown TalkSentence: 204011902-->
+<!--Unknown TalkSentence: 204011903-->
+<!--Unknown TalkSentence: 204011904-->
+<!--Unknown TalkSentence: 204011905-->
+<!--Unknown TalkSentence: 204011906-->
+<!--Unknown TalkSentence: 204011907-->
+<!--Unknown TalkSentence: 204011908-->
+<!--Unknown TalkSentence: 204011909-->
+<!--Unknown TalkSentence: 204011910-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Сфотографируйте звёздный ялик в стадии роста===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Мастеру Чэнцзе нужны рисунки звёздного ялика. Просто помогите ему сфотографировать всходы ялика.<br />Цинцюэ называет такие снимки «визиографиями»: на Сяньчжоу много всяких терминов, вам надо к этому привыкнуть.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300017
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300008
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300008
+					}
+				}
+			}
+		]
+	},
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 94
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300008
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 204019107-->
+{{Диалог Конец}}
+
+===Найдите звёздный ялик в стадии формирования===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Создание звёздных яликов включает несколько этапов, и мастер Чэнцзе хочет увидеть процесс превращения ялика из семечка в большой корабль.<br />Вы уже несколько раз были в порту Звездочёт Навалия, но ни разу не видели, как прорастают ялики.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 204012101-->
+<!--Unknown TalkSentence: 204012102-->
+<!--Unknown TalkSentence: 204012103-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012105-->
+:<!--Unknown TalkSentence: 204012110-->
+:<!--Unknown TalkSentence: 204012111-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012107-->
+:<!--Unknown TalkSentence: 204012110-->
+:<!--Unknown TalkSentence: 204012111-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012109-->
+:<!--Unknown TalkSentence: 204012112-->
+:<!--Unknown TalkSentence: 204012110-->
+:<!--Unknown TalkSentence: 204012111-->
+::----
+<!--Unknown TalkSentence: 204012105-->
+<!--Unknown TalkSentence: 204012110-->
+<!--Unknown TalkSentence: 204012111-->
+----
+{{Диалог Конец}}
+
+===Сфотографируйте мастера Чэнцзе рядом с яликом===
+{{Описание миссии|локация=Порт Звездочёт Навалия|Путешествие по стадиям созревания звёздного ялика весьма воодушевило мастера Чэнцзе. Он хочет сфотографироваться рядом с яликом и надеется, что вы поможете ему в этом.<br />Мастер Чэнцзе не умеет фотографироваться, это видно по его неуклюжим движениям.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 94
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300018
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 94,
+						"GroupNpcID": 400001
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 94
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300009
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 94,
+						"GroupNpcID": 400001
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 94
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300009
+						}
+					}
+				}
+			}
+		]
+	},
+	"WaitAll": true,
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvNPC",
+				"MultiGroupFetch": [
+					{
+						"GroupID": 94,
+						"GroupNpcID": 400001
+					}
+				]
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 94
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300009
+						}
+					}
+				}
+			}
+		]
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 204012301-->
+<!--Unknown TalkSentence: 204012302-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012304-->
+:<!--Unknown TalkSentence: 204012305-->
+:<!--Unknown TalkSentence: 204012315-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012307-->
+:<!--Unknown TalkSentence: 204012308-->
+:<!--Unknown TalkSentence: 204012315-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 204012310-->
+:<!--Unknown TalkSentence: 204012311-->
+:<!--Unknown TalkSentence: 204012312-->
+:<!--Unknown TalkSentence: 204012315-->
+<!--Unknown TalkSentence: 204012305-->
+<!--Unknown TalkSentence: 204012315-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = A Teacher and a Friend
+|zhs  = 亦师亦友
+|zht  = 亦師亦友
+|ja   = 師であり、友であり
+|ko   = 스승이자 벗
+|es   = Un maestro y un amigo
+|fr   = Professeur et ami
+|ru   = Учитель и друг
+|th   = เป็นทั้งครูและเพื่อน
+|vi   = Vừa Thầy Vừa Bạn
+|de   = Ein Lehrer und ein Freund
+|id   = Guru dan Teman
+|pt   = Um Professor e um Amigo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

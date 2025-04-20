@@ -1,0 +1,214 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4030003
+|Название        = 
+|Изображение     = Миссия Освоения Виртуальная вселенная I.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+* Завершена {{cx}}<!--Hidden Mission ID 4010116-->
+* Завершена [[Миссия приключения]] ''[[Виртуальная вселенная: Второй бета-тест]]''
+|Персонажи       = Виртуальная вселенная; Герта; Первопроходец
+|СтартЛокация    = Офис Герты
+|Мир             = Космическая станция «Герта»
+|Локации         = Офис Герты
+|Предыдущая      = Виртуальная вселенная: Второй бета-тест
+|Следующая       = 
+|Награды         = Опыт Освоения*300; Звёздный нефрит*50; Журнал приключений*4; Конденсированный эфир*4; Кредиты*20 000
+}}
+'''Виртуальная вселенная I''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Гертой
+# Войдите в Мир 1 Виртуальной вселенной
+# Исследуйте Мир 1 Виртуальной вселенной
+# Используйте космические фрагменты для усиления
+# Отправляйтесь в следующую зону
+# Исследуйте Мир 1 Виртуальной вселенной
+# Одолейте босса
+# Покиньте Виртуальную вселенную
+# Поговорите с Гертой
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Гертой===
+{{Описание миссии|локация=Офис Герты|Герта просит вас погрузиться в Виртуальную вселенную, созданную Обществом гениев, и притвориться Эоном Освоения. Ваша задача - попытаться узнать секрет Эонов и Путей у виртуальных Эонов.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 1190877493979542598
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TriggerPerformance_403000300"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 15
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Поговорите с Герта)
+----
+<!--Unknown TalkSentence: 403012207-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 403030003-->
+:<!--Unknown TalkSentence: 403030004-->
+:<!--Unknown TalkSentence: 403030005-->
+:<!--Unknown TalkSentence: 403030006-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 403030008-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 403030010-->
+<!--Unknown TalkSentence: 403030006-->
+{{Диалог Конец}}
+
+===Войдите в Мир 1 Виртуальной вселенной===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}<!--SubMission not Finish: 403000310-->)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerRogueDialogue",
+	"DialoguePath": "Config/Level/Mission/4030003/Act/Act403000302.json"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте Мир 1 Виртуальной вселенной===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 403030113-->
+{{Диалог Конец}}
+
+===Используйте космические фрагменты для усиления===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 403030200-->
+
+;(Поговорите с Герта)
+<pre>{
+	"$type": "RPG.GameCore.TriggerRogueDialogue",
+	"DialoguePath": "Config/Level/Mission/4030003/Act/Act403000304.json"
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь в следующую зону===
+{{Диалог Начало}}
+
+;(Поговорите с Герта)
+{{Диалог Конец}}
+
+===Исследуйте Мир 1 Виртуальной вселенной===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 403012305-->
+:<!--1-second delay-->
+
+;(Поговорите с Событие)
+<!--Unknown TalkSentence: 403012312-->
+:{{DIcon|Стрелка}} undefined
+:{{DIcon|Стрелка}} undefined
+<!--Unknown TalkSentence: 403012313-->
+<!--Unknown TalkSentence: 403012314-->
+:{{DIcon|Star}} undefined &mdash; undefined
+:;(Obtain {{Item|Космические фрагменты|20|x=150|text=Космические фрагменты}})
+:{{DIcon|Star}} undefined &mdash; undefined
+:;(Obtain a Blessing [100410])
+:{{DIcon|Star}} undefined &mdash; undefined
+<!--Unknown TalkSentence: 403012315-->
+:{{DIcon|Стрелка}} undefined
+:{{DIcon|Стрелка}} undefined
+:{{DIcon|Стрелка}} undefined
+<!--Unknown TalkSentence: 403012316-->
+:{{DIcon|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SwitchUIMenuBGM",
+	"StateName": "State_Menu_Rougelite",
+	"ShouldStop": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetAllRogueDoorState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetRogueRoomFinish"
+}</pre>
+{{Диалог Конец}}
+
+===Одолейте босса===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Покиньте Виртуальную вселенную===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Гертой===
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 403012208-->
+<!--Unknown TalkSentence: 403030402-->
+<!--Unknown TalkSentence: 403030403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Герта)
+----
+<!--Unknown TalkSentence: 403012208-->
+<!--Unknown TalkSentence: 403030402-->
+<!--Unknown TalkSentence: 403030403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Simulated Universe (I)
+|zhs  = 模拟宇宙•其一
+|zht  = 模擬宇宙•其一
+|ja   = 模擬宇宙・1
+|ko   = 시뮬레이션 우주•1
+|es   = Universo Simulado I
+|fr   = Univers simulé (I)
+|ru   = Виртуальная вселенная I
+|th   = Simulated Universe 1
+|vi   = Vũ Trụ Mô Phỏng-1
+|de   = Universum-Simulation (Teil 1)
+|id   = Simulated Universe: Bagian I
+|pt   = Universo Simulado (I)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

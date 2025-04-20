@@ -1,0 +1,247 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027200
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Участие.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+* Завершена [[Продолжение Освоения]] ''[[Битвы без ниндзя и жалости]]''
+* Завершена [[Продолжение Освоения]] ''[[Перезвон жёлтого колокола, возвращение в гнездо]]''
+* Завершена [[Миссия приключения]] ''[[Отдых в выжженных песках]]''
+|Персонажи       = «Ассистент режиссёра»; Господин Река; Дальновидная студентка; Март 7; Обеспокоенный студент; Первопроходец; Рьяный студент
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = Отдых в выжженных песках
+|Следующая       = Выставка фотографий: Фокус на брендах
+|Награды         = Кредиты*5 000
+}}
+'''Выставка фотографий: Участие''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите Март 7
+# Сделайте фото на документы для Март 7
+# Узнайте о правилах выставки от ассистента режиссёра
+
+==Прохождение==
+{{Дополнить}}
+
+===Найдите Март 7===
+{{Описание миссии|локация=Академия оригами|Март 7 хочет попросить вас о помощи, а потому приглашает на встречу в Академии оригами. Отправляйтесь на встречу и не заставляйте её долго ждать.}}
+{{Диалог Начало}}
+
+:{{Диалог|undefined}} Слушать
+<!--Unknown TalkSentence: 802721801-->
+<!--Unknown TalkSentence: 802721802-->
+<!--Unknown TalkSentence: 802721803-->
+<!--Unknown TalkSentence: 802721804-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802721806-->
+:<!--Unknown TalkSentence: 802721807-->
+:<!--Unknown TalkSentence: 802721808-->
+:<!--Unknown TalkSentence: 802721809-->
+:<!--Unknown TalkSentence: 802721810-->
+:<!--Unknown TalkSentence: 802721811-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802721808-->
+:<!--Unknown TalkSentence: 802721809-->
+:<!--Unknown TalkSentence: 802721810-->
+:<!--Unknown TalkSentence: 802721811-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802721808-->
+<!--Unknown TalkSentence: 802721809-->
+<!--Unknown TalkSentence: 802721810-->
+<!--Unknown TalkSentence: 802721811-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+{{Диалог Конец}}
+
+===Сделайте фото на документы для Март 7===
+{{Описание миссии|локация=Академия оригами|Чтобы принять участие в выставке фотографий, необходимо предоставить фотографию на документы. Март 7 надеется, что вы сможете помочь ей в этом важном деле.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G355)
+----
+::{{tx}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 802721851-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802721853-->
+:<!--Unknown TalkSentence: 802721854-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802721856-->
+<!--Unknown TalkSentence: 802721854-->
+;(Unused &mdash; PhotoGraphStartCustomString)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "Tutorial_5716"
+	}
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 356
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy01"
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 356
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTutorialUI",
+	"ForceShowDialog": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowGuideHintWithText",
+	"Block": true,
+	"TargetEvent": [
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"FixedValue": {
+					"Value": 2.5
+				}
+			}
+		}
+	],
+	"NodeIDList": [],
+	"GuideTextType": "TopCenterTip",
+	"GuideText": "TutorialTextmap_571601",
+	"GuideHintShowConfig": {},
+	"GuideTextShowConfig": {},
+	"GuideUIContextConfig": {
+		"Type": "MainPage"
+	},
+	"EnableActionList": [],
+	"EnableBattleOperationList": [],
+	"DisableBlackMask": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTutorialUI",
+	"IsHide": true,
+	"ForceShowDialog": true
+}</pre>
+<!--Unknown TalkSentence: 802720105-->
+{{Диалог Конец}}
+
+===Узнайте о правилах выставки от ассистента режиссёра===
+{{Описание миссии|локация=Академия оригами|Фотография на документы готовы, бумаги собраны. Пора зарегистрироваться у ассистента режиссёра.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 802720402-->
+<!--Unknown TalkSentence: 802720403-->
+<!--Unknown TalkSentence: 802721901-->
+<!--Unknown TalkSentence: 802721902-->
+<!--Unknown TalkSentence: 802721903-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 191,
+	"Value": "1"
+}</pre>
+:<!--Unknown TalkSentence: 802721901-->
+:<!--Unknown TalkSentence: 802721902-->
+:<!--Unknown TalkSentence: 802721903-->
+:<!--Unknown TalkSentence: 802721904-->
+:<!--Unknown TalkSentence: 802721905-->
+:<!--Unknown TalkSentence: 802721906-->
+:<!--Unknown TalkSentence: 802721907-->
+:<!--Unknown TalkSentence: 802721908-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 191,
+	"Value": "2"
+}</pre>
+:<!--Unknown TalkSentence: 802721901-->
+:<!--Unknown TalkSentence: 802721902-->
+:<!--Unknown TalkSentence: 802721903-->
+:<!--Unknown TalkSentence: 802721904-->
+:<!--Unknown TalkSentence: 802721905-->
+:<!--Unknown TalkSentence: 802721906-->
+:<!--Unknown TalkSentence: 802721907-->
+:<!--Unknown TalkSentence: 802721908-->
+::{{tx}}
+<!--Unknown TalkSentence: 802721901-->
+<!--Unknown TalkSentence: 802721902-->
+<!--Unknown TalkSentence: 802721903-->
+<!--Unknown TalkSentence: 802721904-->
+<!--Unknown TalkSentence: 802721905-->
+<!--Unknown TalkSentence: 802721906-->
+<!--Unknown TalkSentence: 802721907-->
+<!--Unknown TalkSentence: 802721908-->
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Exhibition
+|zhs  = 摄影展览•参展
+|zht  = 攝影展覽•參展
+|ja   = フォトコンテスト・エントリー
+|ko   = 사진 콘테스트•참가
+|es   = Exposición de fotografía: exhibición
+|fr   = Exposition photo&nbsp;: Participation
+|ru   = Выставка фотографий: Участие
+|th   = นิทรรศการภาพถ่าย: เข้าร่วมงาน
+|vi   = Triển Lãm Nhiếp Ảnh-Tham Gia
+|de   = Fotoausstellung: Teilnahme
+|id   = Pameran Fotografi: Pameran
+|pt   = Exibição de Fotografia: Exibição
+}}
+
+==История изменений==
+{{История изменений|2.7}}

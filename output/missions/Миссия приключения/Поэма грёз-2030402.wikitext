@@ -1,0 +1,547 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2030402
+|Название        = 
+|Изображение     = Миссия Освоения Поэма грёз.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Багровый Босс; Барлоу; Вон; Госпожа Вермильон; Джоуи; Доктор Лазурь; Орла; Первопроходец; Фишер; Член клана Гончих
+|СтартЛокация    = Эмосреда Доктора Лазури
+|Мир             = Пенакония
+|Локации         = Эмосреда Доктора Лазури
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Часокредиты*360; Planet of Festivities Collectible Card*1 { text = Коллекционная карточка серии «Планета празднеств»: Грёзотворцы-оригами }; The Dreamweaver Archives*1 { text = Архивы грёзотворцев }; Кредиты*80 000
+}}
+'''Поэма грёз''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с птицами-оригами
+# Найдите Доктора Лазурь
+# Осмотритесь вокруг
+# Выйдите и осмотритесь
+# Найдите место, где прячется ребёнок
+# Соберите фрагменты Мозаики грёз
+# Соберите Мозаику грёз
+# Узнайте о прошлом Орлы
+# Дотроньтесь до рамки
+# Упорядочьте свои мысли
+# Поговорите с Доктором Лазурью
+# Дотроньтесь до рамки
+# Осмотрите газеты на столе
+# Узнайте, что происходит
+# Поговорите с Барлоу
+# Помогите Барлоу скрыться
+# Упорядочьте свои мысли
+# Дотроньтесь до рамки
+# Прогуляйтесь по Рифу потока сновидений
+# Осмотрите газеты на скамейке (необязательно)
+# Поговорите с Фишером
+# Отведите Фишера к Орле
+# Поговорите с Фишером
+# Поговорите с Орлой
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с птицами-оригами===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Это эмосреда Доктора Лазури, но... в ней другие птицы-оригами? Поговорите с ними.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 230411002-->
+<!--Unknown TalkSentence: 230411003-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230411005-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322001_G18"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 18,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 230413330
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 18,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 230413331
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 3
+}</pre>
+;(Unused &mdash; ExitArea_G18_Bubble)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		0
+	]
+}</pre>
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(Otherwise, if {{F|MissionCV-2030402-2}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите Доктора Лазурь===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы взялись за поручение от птицы-оригами. Пора найти Доктора Лазурь.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Госпожа Вермильон)
+;(If {{cx}}<!--SubMission Finish: 203040204-->)
+<!--Unknown TalkSentence: 230404201-->
+<!--Unknown TalkSentence: 230404202-->
+
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 230411302-->
+<!--Unknown TalkSentence: 230411303-->
+<!--Unknown TalkSentence: 230411304-->
+<!--Unknown TalkSentence: 230411305-->
+
+{{Диалог Конец}}
+
+===Осмотритесь вокруг===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Кажется, это воспоминания Доктора Лазури. Осмотритесь в поисках подсказок.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выйдите и осмотритесь===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Снаружи доносятся звуки шагов. Узнайте, кто это.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 230411402-->
+<!--Unknown TalkSentence: 230411403-->
+<!--Unknown TalkSentence: 230411404-->
+<!--Unknown TalkSentence: 230411405-->
+<!--Unknown TalkSentence: 230411406-->
+<!--Unknown TalkSentence: 230411407-->
+<!--Unknown TalkSentence: 230411408-->
+<!--Unknown TalkSentence: 230411409-->
+<!--Unknown TalkSentence: 230411410-->
+<!--Unknown TalkSentence: 230411411-->
+<!--Unknown TalkSentence: 230411412-->
+<!--Unknown TalkSentence: 230411413-->
+<!--Unknown TalkSentence: 230411414-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230411416-->
+:<!--Unknown TalkSentence: 230411417-->
+:<!--Unknown TalkSentence: 230411418-->
+:<!--Unknown TalkSentence: 230411419-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230411418-->
+:<!--Unknown TalkSentence: 230411419-->
+::{{tx}}
+<!--Unknown TalkSentence: 230411418-->
+<!--Unknown TalkSentence: 230411419-->
+:{{tx}}
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 230413326-->
+<!--Unknown TalkSentence: 230413327-->
+{{Диалог Конец}}
+
+===Найдите место, где прячется ребёнок===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Следуйте за Джоуи и Воном, чтобы узнать, где прячется ребёнок. Возможно, он связан с Доктором Лазурью.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322001_G25"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<!--Unknown TalkSentence: 230413328-->
+<!--Unknown TalkSentence: 230413329-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 230411102-->
+<!--Unknown TalkSentence: 230411103-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 230411202-->
+<!--Unknown TalkSentence: 230411203-->
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+;(If {{F|Jigsaw_Piece1Get}} is equal to 1)
+:{{tx}}
+{{Диалог Конец}}
+
+===Соберите фрагменты Мозаики грёз===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Соберите фрагменты Мозаики грёз и найдите место, где прячется ребёнок.}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+;(If {{F|Jigsaw_Piece2Get}} is equal to 1)
+:{{tx}}
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+;(If {{F|Jigsaw_Piece3Get}} is equal to 1)
+:{{tx}}
+{{Диалог Конец}}
+
+===Соберите Мозаику грёз===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы собрали все фрагменты. Соберите Мозаику грёз.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Узнайте о прошлом Орлы===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы нашли прячущегося Орлу. Подслушайте разговор.}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 98,
+	"Value": "2"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 99,
+	"Value": "2"
+}</pre>
+{{Диалог Конец}}
+
+===Дотроньтесь до рамки===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Идите по воспоминаниям и продолжайте исследовать прошлое Орлы.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Упорядочьте свои мысли===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы узнали настоящее прошлое Джоуи и Вона. Возможно, стоит всё записать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+<!--Unknown TalkSentence: 230411902-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230411904-->
+<!--Unknown TalkSentence: 230411905-->
+<!--Unknown TalkSentence: 230411906-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(Otherwise, if {{F|MissionCV-2030402-2}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Доктором Лазурью===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Впереди появился Доктор Лазурь. Возможно, он что-то вспомнил.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Дотроньтесь до рамки===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Настоящее имя Доктора Лазури - Орла. Узнайте, что случилось в прошлом.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Осмотрите газеты на столе===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Осмотрите газеты на столе. Возможно, вы узнаете что-нибудь новое.}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 230413602-->
+<!--Unknown TalkSentence: 230413603-->
+<!--Unknown TalkSentence: 230413604-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 230413306-->
+<!--Unknown TalkSentence: 230413307-->
+<!--Unknown TalkSentence: 230413308-->
+{{Диалог Конец}}
+
+===Узнайте, что происходит===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Кажется, вы слышите чьи-то голоса. Осмотритесь.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+===Поговорите с Барлоу===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы помогли Барлоу одолеть членов клана Гончих. Пора узнать, что случилось.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 230412102-->
+<!--Unknown TalkSentence: 230412103-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 230412107-->
+<!--Unknown TalkSentence: 230412108-->
+<!--Unknown TalkSentence: 230412109-->
+<!--Unknown TalkSentence: 230412110-->
+<!--Unknown TalkSentence: 230412111-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Помогите Барлоу скрыться===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|По словам Барлоу, клан Гончих арестовывает грёзотворцев. Помогите Барлоу отвлечь их.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 230412202-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230412204-->
+<!--Unknown TalkSentence: 230412205-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+<!--Unknown TalkSentence: 230412402-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230412404-->
+<!--Unknown TalkSentence: 230412405-->
+<!--Unknown TalkSentence: 230412406-->
+<!--Unknown TalkSentence: 230412407-->
+<!--Unknown TalkSentence: 230412408-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322003_G13"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetTextJoinValue",
+			"TextJoinID": 100,
+			"Value": "2"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Упорядочьте свои мысли===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы узнали настоящее прошлое Барлоу. Возможно, стоит всё записать.}}
+{{Диалог Начало}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190623
+		}
+	}
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+===Дотроньтесь до рамки===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Идите по воспоминаниям и продолжайте исследовать прошлое Орлы.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Прогуляйтесь по Рифу потока сновидений===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Вы прибыли в Риф потока сновидений. Осмотритесь вокруг.}}
+{{Диалог Начало}}
+
+;(Поговорите с Фишер)
+:{{tx}}
+<!--Unknown TalkSentence: 230412502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Осмотрите газеты на скамейке (необязательно)===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Осмотрите газеты на скамейке. Возможно, вы узнаете что-нибудь новое.}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 230413902-->
+<!--Unknown TalkSentence: 230413903-->
+<!--Unknown TalkSentence: 230413904-->
+<!--Unknown TalkSentence: 230413905-->
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(Otherwise, if {{F|MissionCV-2030402-2}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+;(If {{F|MissionCV-2030402-2}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Фишером===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Поговорите с Фишером и узнайте, можете ли чем-нибудь помочь.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отведите Фишера к Орле===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Сейчас Фишер - глава Ночных Дроздов. Он прибыл в Риф потока сновидений, чтобы найти Орлу.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Фишером===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Орла не хочет говорить с Фишером. Узнайте у Фишера, есть ли у него другие идеи.}}
+{{Диалог Начало}}
+
+;(Поговорите с Фишер)
+<!--Unknown TalkSentence: 230412702-->
+<!--Unknown TalkSentence: 230412703-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_2030401_2.png"
+}</pre>
+<!--Unknown TalkSentence: 230412802-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_2030401_2.png"
+}</pre>
+
+;(Поговорите с Доктор Лазурь)
+<!--Unknown TalkSentence: 230414002-->
+{{Диалог Конец}}
+
+===Поговорите с Орлой===
+{{Описание миссии|локация=Эмосреда Доктора Лазури|Возьмите фотографию у Фишера и поговорите с Орлой}}
+{{Диалог Начало}}
+
+;(Поговорите с Доктор Лазурь)
+:{{tx}}
+<!--Unknown TalkSentence: 230412902-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 230412904-->
+<!--Unknown TalkSentence: 230412905-->
+<!--Unknown TalkSentence: 230412906-->
+<!--Unknown TalkSentence: 230412907-->
+<!--Unknown TalkSentence: 230412908-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Dream Song
+|zhs  = 筑梦诗
+|zht  = 築夢詩
+|ja   = ドリームポエム
+|ko   = 꿈 건축의 시
+|es   = Canción de los Soñadores
+|fr   = Chant des rêves
+|ru   = Поэма грёз
+|th   = บทกวีสร้างฝัน
+|vi   = Bài Thơ Xây Mộng
+|de   = Traumgesang
+|id   = Syair Mimpi
+|pt   = Canção Onírica
+}}
+
+==История изменений==
+{{История изменений|2.7}}

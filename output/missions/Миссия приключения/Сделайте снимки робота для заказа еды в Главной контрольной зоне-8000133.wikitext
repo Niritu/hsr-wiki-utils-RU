@@ -1,0 +1,138 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000133
+|Название        = 
+|Изображение     = Миссия Освоения Сделайте снимки робота для заказа еды в Главной контрольной зоне.png
+|Тип             = Миссия приключения
+|События         = Звёздная охота
+|Глава           = 
+|Условия         = Завершена [[Миссия компаньона]] ''[[Дух Панклорда]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Сделайте снимки робота для заказа еды в Главной контрольной зоне''' — Событие [[Миссия приключения]] из события [[Звёздная охота]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 71
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"IsAim": true,
+	"AimIdentifyType": "Manual"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 71
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	},
+	"OnIdentifyFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_800013301_String"
+			}
+		}
+	],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 71
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		],
+		"MultiGroupFetchByUniqueName": [],
+		"MultiGroupFetchByPropKey": []
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<!--0.6-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Take a picture of a Food Order Robot in the master control zone
+|zhs  = 在主控舱段拍摄「订餐机器人」的照片
+|zht  = 在主控艙段拍攝「訂餐機器人」的照片
+|ja   = 主制御部分で「注文ロボット」の写真を撮る
+|ko   = 메인 컨트롤 캐빈에서 「웨이터 로봇」 사진 촬영
+|es   = Haz una foto de un robot repartidor de comida en la zona de mando principal
+|fr   = Prendre un robot-serveur en photo dans la Zone de contrôle principale
+|ru   = Сделайте снимки робота для заказа еды в Главной контрольной зоне
+|th   = ถ่ายภาพ "หุ่นยนต์สั่งอาหาร" ที่ Master Control Zone
+|vi   = Chụp ảnh "Robot Đặt Món" tại Khoang Điều Khiển Chính
+|de   = Nimm in der Hauptkontrollzone ein Bild von einem Roboter für Essensbestellung auf.
+|id   = Ambil foto "Robot Pemesanan Makanan" di Master Control Zone
+|pt   = Tire uma foto de um Robô de Pedidos de Comida na Zona de Controle Principal
+}}
+
+==История изменений==
+{{История изменений|2.7}}

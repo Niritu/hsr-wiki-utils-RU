@@ -1,0 +1,277 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000202
+|Название        = 
+|Изображение     = Миссия Освоения Изолированная зона.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Леонард; Первопроходец
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Изолированная зона''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите способ покинуть помещение
+# Сразите ослабленных противников
+# Двигайтесь дальше
+# Пройдите эту зону
+# Используйте уровневые граффити, чтобы ослабить противников
+# Сразите ослабленных противников
+# Пройдите эту зону
+# Используйте уровневые граффити, чтобы ослабить противников
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите способ покинуть помещение===
+{{Описание миссии|локация=Зона хранения|Неразбериха, вызванная Серебряным Волком, наконец закончилась, но Леонард всё ещё обеспокоен.<br />Он просит вас провести одно испытание, чтобы обеспечить информационную безопасность на станции и сохранить свою работу.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200073428-->
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+
+;(Получено {{Item|Виртуальный подсчёт|20|x=1}})
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G2",
+	"AnchorName": "Anchor1"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+:<!--1-second delay-->
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G2",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor4"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200073329-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor3"
+}</pre>
+:<!--1-second delay-->
+:<!--1-second delay-->
+:<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+			"AttachPoint": "Root"
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 16
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300012
+		}
+	},
+	"CreateList": []
+}</pre>
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor3",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+{{Диалог Конец}}
+
+===Сразите ослабленных противников===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Двигайтесь дальше===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupID": 25,
+	"GroupMonsterIDs": [
+		200001
+	],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor2"
+}</pre>
+:<!--2.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor8"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200073416-->
+<!--Unknown TalkSentence: 200073417-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40002_F40002102_G1",
+	"AnchorName": "Anchor8",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"Enable": true,
+	"GroupID": 25,
+	"GroupMonsterIDs": [
+		200001
+	],
+	"UniqueNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите эту зону===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<!--Unknown TalkSentence: 200073419-->
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+;(If {{cx}}<!--SubMission Finish: 800020214-->)
+;(Otherwise)
+<!--Unknown TalkSentence: 200073429-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 102000000,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
+{{Диалог Конец}}
+
+===Используйте уровневые граффити, чтобы ослабить противников===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Сразите ослабленных противников===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Пройдите эту зону===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Используйте уровневые граффити, чтобы ослабить противников===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sealed Sector
+|zhs  = 封锁扇区
+|zht  = 封鎖磁區
+|ja   = 封鎖セクタ
+|ko   = 봉쇄 섹터
+|es   = Sector cerrado
+|fr   = Secteur bouclé
+|ru   = Изолированная зона
+|th   = กวาดล้างโซนปิดผนึก
+|vi   = Khu Vực Phong Tỏa
+|de   = Versiegelter Sektor
+|id   = Sektor Tersegel
+|pt   = Setor Trancado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

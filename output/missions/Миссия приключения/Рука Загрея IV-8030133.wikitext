@@ -1,0 +1,159 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8030133
+|Название        = 
+|Изображение     = Миссия Освоения Рука Загрея IV.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец
+|СтартЛокация    = Рука Загрея IV
+|Мир             = Амфореус
+|Локации         = Рука Загрея IV
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Рука Загрея IV''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Разрушьте препятствие с помощью удара
+# Соберите монеты причуд
+# Продолжайте управлять и продвигаться вперёд
+
+==Прохождение==
+{{Дополнить}}
+
+===Разрушьте препятствие с помощью удара===
+{{Описание миссии|локация=Рука Загрея IV|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой руки Загрея. Продолжить путь можно, лишь завершив испытание.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Соберите монеты причуд===
+{{Диалог Начало}}
+;(If {{F|undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; AddCrashNum)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "_CrashNum",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAAAAIR",
+			"FixedValues": [
+				{
+					"Value": 1
+				}
+			],
+			"DynamicHashes": [
+				-1830384358
+			]
+		}
+	}
+}</pre>
+
+;(Unused &mdash; SwitchHand_TriggerPullBack)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Custom": true,
+			"Key": "PullBackArea"
+		},
+		"LevelAreaKey": {
+			"Custom": true,
+			"Key": "PullBackAnchor"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "SwitchHand_ClosePuzzle"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "SwitchHandConsole"
+		}
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_Group_ResetTransform)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Prop位置重置###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchHandResetTransform",
+	"ID": {
+		"FixedValue": {
+			"Value": 19
+		}
+	},
+	"AnchorID": {
+		"Custom": true,
+		"Key": "PullBackAnchor"
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_ResetPlayerPosition)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Player位置重置###"
+}</pre>
+::<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable"
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте управлять и продвигаться вперёд===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hand of Zagreus: Room IV
+|zhs  = 扎格列斯之手-房间Ⅳ
+|zht  = 扎格列斯之手-房間Ⅳ
+|ja   = ザグレウスの手：部屋IV
+|ko   = 자그레우스의 손-방Ⅳ
+|es   = Mano de Zagreus: sala IV
+|fr   = Salle IV de la Main de Zagreus
+|ru   = Рука Загрея IV
+|th   = หัตถ์ Zagreus: ห้อง IV
+|vi   = Tay Của Zagreus: Phòng IV
+|de   = Hand des Zagreus: Raum IV
+|id   = Tangan Zagreus: Ruangan IV
+|pt   = Mão de Zagreus: Sala IV
+}}
+
+==История изменений==
+{{История изменений|3.0}}

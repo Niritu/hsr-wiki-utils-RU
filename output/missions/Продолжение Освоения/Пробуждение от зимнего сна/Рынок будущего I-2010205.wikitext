@@ -1,0 +1,162 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2010205
+|Название        = 
+|Изображение     = Миссия Освоения Рынок будущего I.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Пробуждение от зимнего сна
+|Условия         = 
+|Персонажи       = Март 7; Первопроходец; Топаз
+|СтартЛокация    = Краеведческий музей
+|Мир             = Ярило-VI
+|Локации         = Краеведческий музей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*700; Звёздный нефрит*110; Путеводитель путешественника*5; Утраченный кристалл*4; Кредиты*40 000
+}}
+'''Рынок будущего I''' — [[Продолжение Освоения]] в главе [[Пробуждение от зимнего сна]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поищите Топаз
+# Попробуйте поговорить с Топаз
+# Переговоры сорвались. Доложите обстановку Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поищите Топаз===
+{{Описание миссии|локация=Краеведческий музей|Ежедневный отчёт об Освоении (автор: (Первопроходец)):<br />У нас неприятности. Белобог задолжал КММ целую кучу денег. Нужно поговорить с Топаз в музее.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020353
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020354
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020355
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020356
+		}
+	]
+}</pre>
+
+;(Поговорите с Топаз)
+----
+<!--Unknown TalkSentence: 201020361-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201020363-->
+<!--Unknown TalkSentence: 201020366-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43104_F43104001_G30",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 201020367-->
+<!--Unknown TalkSentence: 201020368-->
+{{Диалог Конец}}
+
+===Попробуйте поговорить с Топаз===
+{{Описание миссии|локация=Краеведческий музей|Ежедневный отчёт об Освоении (автор: (Первопроходец)):<br />Вот и Топаз. Начинаем переговоры. Надеюсь, мы не ляпнем ничего лишнего.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201020379-->
+<!--Unknown TalkSentence: 201020380-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201020422-->
+<!--Unknown TalkSentence: 201020423-->
+<!--Unknown TalkSentence: 201020424-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201020651-->
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtSimple",
+	"LookAtGroupID": {
+		"FixedValue": {
+			"Value": 28
+		}
+	},
+	"LookAtID": {
+		"FixedValue": {
+			"Value": 300045
+		}
+	},
+	"LookAtTransitionDuration": 2,
+	"LockCameraInput": true,
+	"UnlockCameraAfterRecover": true,
+	"LookAtDuration": 3,
+	"LookAtRecoverDuration": 0.5,
+	"EnableOverrideLookAtOffset": true
+}</pre>
+{{Диалог Конец}}
+
+===Переговоры сорвались. Доложите обстановку Март 7===
+{{Описание миссии|локация=Краеведческий музей|Ежедневный отчёт об Освоении (автор: (Первопроходец)):<br />Переговоры сорвались. Блин. Следующий шаг: а есть ли следующий шаг?}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 201020451-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201020453-->
+<!--Unknown TalkSentence: 201020458-->
+<!--Unknown TalkSentence: 201020459-->
+<!--Unknown TalkSentence: 201020460-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1115200
+}</pre>
+<!--Unknown TalkSentence: 201020461-->
+<!--Unknown TalkSentence: 201020462-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Future Market (I)
+|zhs  = 未来市场•其一
+|zht  = 未來市場•其一
+|ja   = フューチャーズマーケット・一
+|ko   = 미래 시장•1
+|es   = El mercado del mañana&nbsp;I
+|fr   = Marché à terme (I)
+|ru   = Рынок будущего I
+|th   = ตลาดแห่งอนาคต 1
+|vi   = Thị Trường Tương Lai 1
+|de   = Markt der Zukunft (Teil 1)
+|id   = Pasar Masa Depan 1
+|pt   = Mercado Futuro (I)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

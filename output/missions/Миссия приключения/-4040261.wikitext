@@ -1,0 +1,186 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4040261
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Прогулка по саду и прерванный сон]]''
+|Персонажи       = Первопроходец; Призрачная актриса
+|СтартЛокация    = Сад безмятежности
+|Мир             = Лофу Сяньчжоу
+|Локации         = Сад безмятежности
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Утраченные золотые частицы*2; Strale*10; Кредиты*6 000
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+
+:{{Диалог|?}} Осмотреть
+;(If {{F|MissionCV-4040261-1}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
+:<!--Unknown TalkSentence: 414261033-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 404026101,
+	"MissionCustomValue": {
+		"Index": 3,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<!--Unknown TalkSentence: 414261035-->
+::<!--Unknown TalkSentence: 414261036-->
+:::----
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 404026101,
+	"MissionCustomValue": {
+		"Index": 3,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+::<!--Unknown TalkSentence: 414261038-->
+:::----
+:<!--Unknown TalkSentence: 414261036-->
+::----
+;(If {{F|MissionCV-4040261-1}} is not equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
+::----
+:<!--Unknown TalkSentence: 414261001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 414261003-->
+:<!--Unknown TalkSentence: 414261010-->
+:<!--Unknown TalkSentence: 414261011-->
+
+
+:{{Диалог|?}} Разучить оперу
+----
+<!--Unknown TalkSentence: 414261131-->
+<!--Unknown TalkSentence: 414261132-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 414261134-->
+<!--Unknown TalkSentence: 414261135-->
+<!--Unknown TalkSentence: 414261139-->
+<!--Unknown TalkSentence: 414261140-->
+<!--Unknown TalkSentence: 414261141-->
+<!--Unknown TalkSentence: 414261142-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/MovieMask.asset"
+}</pre>
+<!--Unknown TalkSentence: 414261143-->
+<!--Unknown TalkSentence: 414261144-->
+<!--Unknown TalkSentence: 414261145-->
+<!--Unknown TalkSentence: 414261146-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/MovieMask.asset"
+}</pre>
+
+:{{Диалог|?}} Призрачная актриса
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera_pause"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
+<!--Unknown TalkSentence: 414261039-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera_resume"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+;(If {{F|MissionCV-4040261-2}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 404026110,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

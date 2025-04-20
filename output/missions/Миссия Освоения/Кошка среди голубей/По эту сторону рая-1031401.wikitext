@@ -1,0 +1,282 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1031401
+|Название        = 
+|Изображение     = Миссия Освоения По эту сторону рая.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Кошка среди голубей
+|Условия         = Завершена [[Миссия Освоения]] ''[[Когда закрывается отель]]''
+|Персонажи       = Барли; Боччи; Лароуз; Первопроходец; Ума; Уолси; Чабро
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = Когда закрывается отель
+|Следующая       = Зачем возмутились народы?
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*6; Утраченный кристалл*6; Часокредиты*300; "The Midnight Special"*1 { text = The Midnight Special }; Кредиты*90 000
+}}
+'''По эту сторону рая''' — [[Миссия Освоения]] в главе [[Кошка среди голубей]].
+
+==Описание==
+{{Описание|Авантюрин разбросал драгоценные камни и наконец добился того, чего хотел, - Искорка из Недотёп в масках проглотила наживку. Подтвердив у неё свои догадки, Авантюрин отправился в Тематический парк Студии «Часы»...}}
+
+==Этапы==
+# Поговорите с доктором Рацио
+# Раздайте прохожим самоцветы и расспросите их о зацепках, связанных с нелегалами
+# Раздайте последние самоцветы
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с доктором Рацио===
+{{Описание миссии|локация=Золотой миг|Провернув один хитрый трюк, вам удаётся убить двух зайцев - и получить деньги, и свой опорный камень - Авантюрин. Ситуация накаляется, но всё пока идёт по плану, и сейчас вас не остановит даже смерть.<br />Раздайте прохожим деньги в обмен на нужную вам информацию.}}
+{{Диалог Начало}}
+:{{tx}}
+;(Получено {{Item|Откровение заурядности|20|x=1|text=Откровение заурядности}})
+{{Диалог Конец}}
+
+===Раздайте прохожим самоцветы и расспросите их о зацепках, связанных с нелегалами===
+{{Диалог Начало}}
+
+
+;(Поговорите с Чабро)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140201-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140203-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140103,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140201-->
+
+;(Поговорите с Лароуз)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140301-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140303-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140104,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140301-->
+
+;(Поговорите с Уолси)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140401-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140403-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140105,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140401-->
+
+;(Поговорите с Боччи)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140501-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140503-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140106,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140501-->
+
+;(Поговорите с Барли)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140601-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140603-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140107,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140601-->
+
+;(Поговорите с Ума)
+:{{tx}}
+:<!--Unknown TalkSentence: 103140701-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103140703-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140108,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 103140701-->
+;(If {{F|MissionCV-1031401-undefined}} is equal to 0, {{F|MissionCV-1031401-undefined}} is equal to 1, or {{F|MissionCV-1031401-undefined}} is equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BrainWashingBlur2.asset"
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103091174-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103091174-->
+{{Диалог Конец}}
+
+===Раздайте последние самоцветы===
+{{Описание миссии|локация=Золотой миг|У вас вот-вот закончатся деньги, а звон в ушах становится всё громче. Ничего хорошего это не сулит, вам нужно поторопиться.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Heaven is a Place on Earth
+|zhs  = 人间天堂
+|zht  = 人間天堂
+|ja   = この世の楽園
+|ko   = 지상 낙원
+|es   = Paraíso terrenal
+|fr   = Paradis terrestre
+|ru   = По эту сторону рая
+|th   = สรวงสวรรค์ในแดนดิน
+|vi   = Thiên Đường Nhân Gian
+|de   = Paradies auf Erden
+|id   = Surga Dunia
+|pt   = O Paraíso é Um Lugar na Terra
+}}
+
+==История изменений==
+{{История изменений|2.7}}

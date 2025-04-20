@@ -1,0 +1,927 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8022103
+|Название        = 
+|Изображение     = Миссия Освоения Часик на 42-й улице.png
+|Тип             = Миссия приключения
+|События         = «Часик: Мемуары о сладких грёзах»
+|Глава           = Однажды в... Грёзавиле
+|Условия         = Завершена [[Миссия приключения]] ''[[Пенаконианская ночь]]''
+|Персонажи       = Актёр-антигерой; Гончая с газировкой; Господин Телебрюх; Изумлённая сотрудница парка; Любопытный посетитель; Мимоза; Михей; Мусорский; Недовольный житель; Осторожный сотрудник парка; Первопроходец; Пис; Предвкушающий посетитель; Представительница клана Ирисов; Проходящая мимо посетительница; Пылкая посетительница; Радостная посетительница; Разгневанный житель; Часик
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = Пенаконианская ночь
+|Следующая       = Концовка в стиле Часика
+|Награды         = Звёздный нефрит*20; Утраченные золотые частицы*3; Кредиты*20 000
+}}
+'''Часик на 42-й улице''' — Событие [[Миссия приключения]] из события [[«Часик: Мемуары о сладких грёзах»]].
+
+==Описание==
+{{Описание|Вы получили плёнку последней части истории «Часик: Мемуары о сладких грёзах», и к тому же помогли одному из клана Ирисов восстановить потерянные родственные связи.<br />Направление, которое указывает компас, принадлежит не кому-то одному, а всему миру.}}
+
+==Этапы==
+# Узнайте у Писа о «Тайне сладких грёз»
+# Переубедите Мимозу
+# Вернитесь и отчитайтесь Пису
+# Найдите фильм в Большом театре Пенаконии
+# Переубедите Мимозу
+# Отправляйтесь в Риф потока сновидений
+# Помогите Мимозе найти выход из сложной ситуации
+# Следуйте за Мимозой и Михеем на кладбище Безымянных
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте у Писа о «Тайне сладких грёз»===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Благодаря вашей связи с Часовщиком вас позвали на Студию «Часы» участвовать в монтаже фильма «Мемуары о сладких грёзах» в качестве приглашённого режиссёра.<br />Похоже, что монтаж финального эпизода «Мемуаров о сладких грёзах» не может быть завершён! Найдите Писа и спросите, что происходит.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802210901-->
+<!--Unknown TalkSentence: 802210902-->
+<!--Unknown TalkSentence: 802210903-->
+<!--Unknown TalkSentence: 802210904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210906-->
+:<!--Unknown TalkSentence: 802210907-->
+:<!--Unknown TalkSentence: 802210908-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210910-->
+:<!--Unknown TalkSentence: 802210911-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210908-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210910-->
+:<!--Unknown TalkSentence: 802210911-->
+<!--Unknown TalkSentence: 802210908-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802210910-->
+<!--Unknown TalkSentence: 802210911-->
+{{Диалог Конец}}
+
+===Переубедите Мимозу===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Мимоза из клана Ирисов хочет помешать вашим поискам. Раскройте секрет, который она прячет в своём сердце.<br />Любой противник Часика испытает силу Заводного механизма на себе!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Вернитесь и отчитайтесь Пису===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Узнав о желаниях Часовщика, Мимоза решает помочь приёмному отцу завершить посмертную работу. Вернитесь к Пису и порадуйте его хорошими новостями: монтаж «Тайны сладких грёз» можно немедленно продолжать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802212001-->
+:<!--Unknown TalkSentence: 802212002-->
+:<!--Unknown TalkSentence: 802212003-->
+:<!--Unknown TalkSentence: 802212004-->
+:<!--Unknown TalkSentence: 802212005-->
+:<!--Unknown TalkSentence: 802212006-->
+:<!--Unknown TalkSentence: 802212007-->
+:<!--Unknown TalkSentence: 802212008-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212010-->
+::<!--Unknown TalkSentence: 802212011-->
+::<!--Unknown TalkSentence: 802212012-->
+::<!--Unknown TalkSentence: 802212013-->
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212012-->
+::<!--Unknown TalkSentence: 802212013-->
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+:<!--Unknown TalkSentence: 802212014-->
+:<!--Unknown TalkSentence: 802212015-->
+::{{tx}}
+:<!--Unknown TalkSentence: 802214100-->
+:<!--Unknown TalkSentence: 802214101-->
+:<!--Unknown TalkSentence: 802214102-->
+:<!--Unknown TalkSentence: 802214103-->
+:<!--Unknown TalkSentence: 802214104-->
+:<!--Unknown TalkSentence: 802214105-->
+:<!--Unknown TalkSentence: 802214106-->
+:<!--Unknown TalkSentence: 802214107-->
+:<!--Unknown TalkSentence: 802214108-->
+:<!--Unknown TalkSentence: 802214109-->
+:<!--Unknown TalkSentence: 802214110-->
+:<!--Unknown TalkSentence: 802214111-->
+:<!--Unknown TalkSentence: 802214112-->
+:<!--Unknown TalkSentence: 802214113-->
+:<!--Unknown TalkSentence: 802214114-->
+:<!--Unknown TalkSentence: 802214115-->
+:<!--Unknown TalkSentence: 802214116-->
+:<!--Unknown TalkSentence: 802214117-->
+:<!--Unknown TalkSentence: 802214118-->
+:<!--Unknown TalkSentence: 802214119-->
+:<!--Unknown TalkSentence: 802214120-->
+:<!--Unknown TalkSentence: 802214121-->
+:<!--Unknown TalkSentence: 802214122-->
+:<!--Unknown TalkSentence: 802214123-->
+:<!--Unknown TalkSentence: 802214124-->
+:<!--Unknown TalkSentence: 802214125-->
+:<!--Unknown TalkSentence: 802214126-->
+:<!--Unknown TalkSentence: 802214127-->
+:<!--Unknown TalkSentence: 802214128-->
+:<!--Unknown TalkSentence: 802214129-->
+:<!--Unknown TalkSentence: 802214130-->
+:<!--Unknown TalkSentence: 802214131-->
+:<!--Unknown TalkSentence: 802214132-->
+:<!--Unknown TalkSentence: 802214133-->
+:<!--Unknown TalkSentence: 802214134-->
+:<!--Unknown TalkSentence: 802214135-->
+:<!--Unknown TalkSentence: 802214136-->
+:<!--Unknown TalkSentence: 802214137-->
+:<!--Unknown TalkSentence: 802214138-->
+:<!--Unknown TalkSentence: 802214139-->
+:<!--Unknown TalkSentence: 802214140-->
+:<!--Unknown TalkSentence: 802214141-->
+:<!--Unknown TalkSentence: 802214142-->
+:<!--Unknown TalkSentence: 802214143-->
+:<!--Unknown TalkSentence: 802214144-->
+:<!--Unknown TalkSentence: 802214145-->
+:<!--Unknown TalkSentence: 802214146-->
+:<!--Unknown TalkSentence: 802214147-->
+:<!--Unknown TalkSentence: 802214148-->
+:<!--Unknown TalkSentence: 802214149-->
+:<!--Unknown TalkSentence: 802214150-->
+:<!--Unknown TalkSentence: 802214151-->
+:<!--Unknown TalkSentence: 802214152-->
+:<!--Unknown TalkSentence: 802214153-->
+:<!--Unknown TalkSentence: 802214154-->
+:<!--Unknown TalkSentence: 802214155-->
+:<!--Unknown TalkSentence: 802214156-->
+:<!--Unknown TalkSentence: 802214157-->
+:<!--Unknown TalkSentence: 802214158-->
+:<!--Unknown TalkSentence: 802214159-->
+:<!--Unknown TalkSentence: 802214160-->
+:<!--Unknown TalkSentence: 802214161-->
+:<!--Unknown TalkSentence: 802214162-->
+:<!--Unknown TalkSentence: 802214163-->
+:<!--Unknown TalkSentence: 802214164-->
+;(Unused &mdash; ActivitMovie_OpenTempUI)
+<pre>{
+	"$type": "RPG.GameCore.ClockParkUnlockScript",
+	"ScriptID": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+;(Unused &mdash; TriggerPerformance)
+<!--Unknown TalkSentence: 802212001-->
+:<!--Unknown TalkSentence: 802212002-->
+:<!--Unknown TalkSentence: 802212003-->
+:<!--Unknown TalkSentence: 802212004-->
+:<!--Unknown TalkSentence: 802212005-->
+:<!--Unknown TalkSentence: 802212006-->
+:<!--Unknown TalkSentence: 802212007-->
+:<!--Unknown TalkSentence: 802212008-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212010-->
+::<!--Unknown TalkSentence: 802212011-->
+::<!--Unknown TalkSentence: 802212012-->
+::<!--Unknown TalkSentence: 802212013-->
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212012-->
+::<!--Unknown TalkSentence: 802212013-->
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802212014-->
+::<!--Unknown TalkSentence: 802212015-->
+:::{{tx}}
+::<!--Unknown TalkSentence: 802214100-->
+::<!--Unknown TalkSentence: 802214101-->
+::<!--Unknown TalkSentence: 802214102-->
+::<!--Unknown TalkSentence: 802214103-->
+::<!--Unknown TalkSentence: 802214104-->
+::<!--Unknown TalkSentence: 802214105-->
+::<!--Unknown TalkSentence: 802214106-->
+::<!--Unknown TalkSentence: 802214107-->
+::<!--Unknown TalkSentence: 802214108-->
+::<!--Unknown TalkSentence: 802214109-->
+::<!--Unknown TalkSentence: 802214110-->
+::<!--Unknown TalkSentence: 802214111-->
+::<!--Unknown TalkSentence: 802214112-->
+::<!--Unknown TalkSentence: 802214113-->
+::<!--Unknown TalkSentence: 802214114-->
+::<!--Unknown TalkSentence: 802214115-->
+::<!--Unknown TalkSentence: 802214116-->
+::<!--Unknown TalkSentence: 802214117-->
+::<!--Unknown TalkSentence: 802214118-->
+::<!--Unknown TalkSentence: 802214119-->
+::<!--Unknown TalkSentence: 802214120-->
+::<!--Unknown TalkSentence: 802214121-->
+::<!--Unknown TalkSentence: 802214122-->
+::<!--Unknown TalkSentence: 802214123-->
+::<!--Unknown TalkSentence: 802214124-->
+::<!--Unknown TalkSentence: 802214125-->
+::<!--Unknown TalkSentence: 802214126-->
+::<!--Unknown TalkSentence: 802214127-->
+::<!--Unknown TalkSentence: 802214128-->
+::<!--Unknown TalkSentence: 802214129-->
+::<!--Unknown TalkSentence: 802214130-->
+::<!--Unknown TalkSentence: 802214131-->
+::<!--Unknown TalkSentence: 802214132-->
+::<!--Unknown TalkSentence: 802214133-->
+::<!--Unknown TalkSentence: 802214134-->
+::<!--Unknown TalkSentence: 802214135-->
+::<!--Unknown TalkSentence: 802214136-->
+::<!--Unknown TalkSentence: 802214137-->
+::<!--Unknown TalkSentence: 802214138-->
+::<!--Unknown TalkSentence: 802214139-->
+::<!--Unknown TalkSentence: 802214140-->
+::<!--Unknown TalkSentence: 802214141-->
+::<!--Unknown TalkSentence: 802214142-->
+::<!--Unknown TalkSentence: 802214143-->
+::<!--Unknown TalkSentence: 802214144-->
+::<!--Unknown TalkSentence: 802214145-->
+::<!--Unknown TalkSentence: 802214146-->
+::<!--Unknown TalkSentence: 802214147-->
+::<!--Unknown TalkSentence: 802214148-->
+::<!--Unknown TalkSentence: 802214149-->
+::<!--Unknown TalkSentence: 802214150-->
+::<!--Unknown TalkSentence: 802214151-->
+::<!--Unknown TalkSentence: 802214152-->
+::<!--Unknown TalkSentence: 802214153-->
+::<!--Unknown TalkSentence: 802214154-->
+::<!--Unknown TalkSentence: 802214155-->
+::<!--Unknown TalkSentence: 802214156-->
+::<!--Unknown TalkSentence: 802214157-->
+::<!--Unknown TalkSentence: 802214158-->
+::<!--Unknown TalkSentence: 802214159-->
+::<!--Unknown TalkSentence: 802214160-->
+::<!--Unknown TalkSentence: 802214161-->
+::<!--Unknown TalkSentence: 802214162-->
+::<!--Unknown TalkSentence: 802214163-->
+::<!--Unknown TalkSentence: 802214164-->
+:<!--Unknown TalkSentence: 802212014-->
+:<!--Unknown TalkSentence: 802212015-->
+::{{tx}}
+:<!--Unknown TalkSentence: 802214100-->
+:<!--Unknown TalkSentence: 802214101-->
+:<!--Unknown TalkSentence: 802214102-->
+:<!--Unknown TalkSentence: 802214103-->
+:<!--Unknown TalkSentence: 802214104-->
+:<!--Unknown TalkSentence: 802214105-->
+:<!--Unknown TalkSentence: 802214106-->
+:<!--Unknown TalkSentence: 802214107-->
+:<!--Unknown TalkSentence: 802214108-->
+:<!--Unknown TalkSentence: 802214109-->
+:<!--Unknown TalkSentence: 802214110-->
+:<!--Unknown TalkSentence: 802214111-->
+:<!--Unknown TalkSentence: 802214112-->
+:<!--Unknown TalkSentence: 802214113-->
+:<!--Unknown TalkSentence: 802214114-->
+:<!--Unknown TalkSentence: 802214115-->
+:<!--Unknown TalkSentence: 802214116-->
+:<!--Unknown TalkSentence: 802214117-->
+:<!--Unknown TalkSentence: 802214118-->
+:<!--Unknown TalkSentence: 802214119-->
+:<!--Unknown TalkSentence: 802214120-->
+:<!--Unknown TalkSentence: 802214121-->
+:<!--Unknown TalkSentence: 802214122-->
+:<!--Unknown TalkSentence: 802214123-->
+:<!--Unknown TalkSentence: 802214124-->
+:<!--Unknown TalkSentence: 802214125-->
+:<!--Unknown TalkSentence: 802214126-->
+:<!--Unknown TalkSentence: 802214127-->
+:<!--Unknown TalkSentence: 802214128-->
+:<!--Unknown TalkSentence: 802214129-->
+:<!--Unknown TalkSentence: 802214130-->
+:<!--Unknown TalkSentence: 802214131-->
+:<!--Unknown TalkSentence: 802214132-->
+:<!--Unknown TalkSentence: 802214133-->
+:<!--Unknown TalkSentence: 802214134-->
+:<!--Unknown TalkSentence: 802214135-->
+:<!--Unknown TalkSentence: 802214136-->
+:<!--Unknown TalkSentence: 802214137-->
+:<!--Unknown TalkSentence: 802214138-->
+:<!--Unknown TalkSentence: 802214139-->
+:<!--Unknown TalkSentence: 802214140-->
+:<!--Unknown TalkSentence: 802214141-->
+:<!--Unknown TalkSentence: 802214142-->
+:<!--Unknown TalkSentence: 802214143-->
+:<!--Unknown TalkSentence: 802214144-->
+:<!--Unknown TalkSentence: 802214145-->
+:<!--Unknown TalkSentence: 802214146-->
+:<!--Unknown TalkSentence: 802214147-->
+:<!--Unknown TalkSentence: 802214148-->
+:<!--Unknown TalkSentence: 802214149-->
+:<!--Unknown TalkSentence: 802214150-->
+:<!--Unknown TalkSentence: 802214151-->
+:<!--Unknown TalkSentence: 802214152-->
+:<!--Unknown TalkSentence: 802214153-->
+:<!--Unknown TalkSentence: 802214154-->
+:<!--Unknown TalkSentence: 802214155-->
+:<!--Unknown TalkSentence: 802214156-->
+:<!--Unknown TalkSentence: 802214157-->
+:<!--Unknown TalkSentence: 802214158-->
+:<!--Unknown TalkSentence: 802214159-->
+:<!--Unknown TalkSentence: 802214160-->
+:<!--Unknown TalkSentence: 802214161-->
+:<!--Unknown TalkSentence: 802214162-->
+:<!--Unknown TalkSentence: 802214163-->
+:<!--Unknown TalkSentence: 802214164-->
+{{Диалог Конец}}
+
+===Найдите фильм в Большом театре Пенаконии===
+{{Описание миссии|локация=Большой театр Пенаконии|Вы прибыли в Большой театр Пенаконии на поиски фильма «Тайна сладких грёз».<br />Концовка «Мемуаров о сладких грёзах» должна быть где-то здесь. Начните поиски!}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 802211201-->
+<!--Unknown TalkSentence: 802211202-->
+<!--Unknown TalkSentence: 802211203-->
+<!--Unknown TalkSentence: 802211204-->
+<!--Unknown TalkSentence: 802211205-->
+<!--Unknown TalkSentence: 802211206-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 802211101-->
+<!--Unknown TalkSentence: 802211102-->
+<!--Unknown TalkSentence: 802211103-->
+<!--Unknown TalkSentence: 802211104-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 802211106-->
+<!--Unknown TalkSentence: 802211107-->
+<!--Unknown TalkSentence: 802211108-->
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 802211111-->
+<!--Unknown TalkSentence: 802211112-->
+<!--Unknown TalkSentence: 802211113-->
+<!--Unknown TalkSentence: 802211301-->
+<!--Unknown TalkSentence: 802211302-->
+
+;(Поговорите с Мимоза)
+<!--Unknown TalkSentence: 802211111-->
+<!--Unknown TalkSentence: 802211112-->
+<!--Unknown TalkSentence: 802211113-->
+;(Unused &mdash; 8022103_Angry)
+<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Anger"
+	]
+}</pre>
+
+;(Unused &mdash; 8022103_Happy)
+<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Happy"
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Переубедите Мимозу===
+{{Описание миссии|локация=Большой театр Пенаконии|Мимоза из клана Ирисов хочет помешать вашим поискам. Раскройте секрет, который она прячет в своём сердце.<br />Любой противник Часика испытает силу Заводного механизма на себе!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Риф потока сновидений===
+{{Описание миссии|локация=Риф потока сновидений|Под воздействием Заводного механизма Мимоза изменяет своё решение. Она отправляется в Риф потока сновидений на поиски секрета о Часике...<br />Похоже, что они с Часовщиком что-то скрывают. Следуйте за ней и узнайте ответы на свои вопросы.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; 802210307_Open)
+<!--Unknown TalkSentence: 802211701-->
+:<!--Unknown TalkSentence: 802211702-->
+:<!--Unknown TalkSentence: 802211703-->
+:<!--Unknown TalkSentence: 802211704-->
+:<!--Unknown TalkSentence: 802211705-->
+:<!--Unknown TalkSentence: 802211706-->
+:<!--Unknown TalkSentence: 802211707-->
+:<!--Unknown TalkSentence: 802211708-->
+:<!--Unknown TalkSentence: 802211709-->
+:<!--Unknown TalkSentence: 802211710-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; 802210307_Bubble)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 41,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 802211701
+		},
+		{
+			"GroupID": 41,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802211702
+		},
+		{
+			"GroupID": 41,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802211703
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Помогите Мимозе найти выход из сложной ситуации===
+{{Описание миссии|локация=Риф потока сновидений|Под воздействием Заводного механизма Мимоза изменяет своё решение. Она отправляется в Риф потока сновидений на поиски секрета о Часике...<br />Похоже, что у Мимозы возникли какие-то проблемы. Помогите ей.}}
+{{Диалог Начало}}
+;(Unused &mdash; 802210309_Open)
+:{{tx}}
+:<!--Unknown TalkSentence: 802211901-->
+:<!--Unknown TalkSentence: 802211902-->
+:<!--Unknown TalkSentence: 802211903-->
+:<!--Unknown TalkSentence: 802211904-->
+:<!--Unknown TalkSentence: 802211905-->
+:<!--Unknown TalkSentence: 802211906-->
+:<!--Unknown TalkSentence: 802211907-->
+:<!--Unknown TalkSentence: 802211908-->
+:<!--Unknown TalkSentence: 802211909-->
+:<!--Unknown TalkSentence: 802211910-->
+:<!--Unknown TalkSentence: 802211911-->
+:<!--Unknown TalkSentence: 802211912-->
+:<!--Unknown TalkSentence: 802211913-->
+:<!--Unknown TalkSentence: 802211914-->
+:<!--Unknown TalkSentence: 802211915-->
+:<!--Unknown TalkSentence: 802211916-->
+:<!--Unknown TalkSentence: 802211917-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211919-->
+::<!--Unknown TalkSentence: 802211920-->
+::<!--Unknown TalkSentence: 802211921-->
+::<!--Unknown TalkSentence: 802211922-->
+::<!--Unknown TalkSentence: 802211923-->
+::<!--Unknown TalkSentence: 802211924-->
+::<!--Unknown TalkSentence: 802211925-->
+::<!--Unknown TalkSentence: 802211926-->
+::<!--Unknown TalkSentence: 802211927-->
+::<!--Unknown TalkSentence: 802211928-->
+::<!--Unknown TalkSentence: 802211929-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211931-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211921-->
+::<!--Unknown TalkSentence: 802211922-->
+::<!--Unknown TalkSentence: 802211923-->
+::<!--Unknown TalkSentence: 802211924-->
+::<!--Unknown TalkSentence: 802211925-->
+::<!--Unknown TalkSentence: 802211926-->
+::<!--Unknown TalkSentence: 802211927-->
+::<!--Unknown TalkSentence: 802211928-->
+::<!--Unknown TalkSentence: 802211929-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211931-->
+:::{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211923-->
+::<!--Unknown TalkSentence: 802211924-->
+::<!--Unknown TalkSentence: 802211925-->
+::<!--Unknown TalkSentence: 802211926-->
+::<!--Unknown TalkSentence: 802211927-->
+::<!--Unknown TalkSentence: 802211928-->
+::<!--Unknown TalkSentence: 802211929-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802211931-->
+:::{{tx}}
+:<!--Unknown TalkSentence: 802211923-->
+:<!--Unknown TalkSentence: 802211924-->
+:<!--Unknown TalkSentence: 802211925-->
+:<!--Unknown TalkSentence: 802211926-->
+:<!--Unknown TalkSentence: 802211927-->
+:<!--Unknown TalkSentence: 802211928-->
+:<!--Unknown TalkSentence: 802211929-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802211931-->
+::{{tx}}
+<!--Unknown TalkSentence: 802211801-->
+<!--Unknown TalkSentence: 802211802-->
+<!--Unknown TalkSentence: 802211803-->
+<!--Unknown TalkSentence: 802211804-->
+<!--Unknown TalkSentence: 802211805-->
+<!--Unknown TalkSentence: 802211806-->
+<!--Unknown TalkSentence: 802211807-->
+<!--Unknown TalkSentence: 802211808-->
+<!--Unknown TalkSentence: 802211809-->
+<!--Unknown TalkSentence: 802211810-->
+<!--Unknown TalkSentence: 802211811-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Следуйте за Мимозой и Михеем на кладбище Безымянных===
+{{Описание миссии|локация=Риф потока сновидений|Выяснилось, что Мимоза работала над анимацией Часика. Кроме того, Мимоза - приёмная дочь Часовщика. По всей видимости, он оставил для неё некую реликвию. Узнайте, что происходит.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockie on 42nd Street
+|zhs  = 钟表小子在42街口
+|zht  = 鐘錶小子在42街口
+|ja   = 42丁目のクロックボーイ
+|ko   = 42번가의 시계 소년
+|es   = Relojito en la avenida 42
+|fr   = Chronou à 42nd Street
+|ru   = Часик на 42-й улице
+|th   = เจ้าหนูนาฬิกาบนถนนสายที่ 42
+|vi   = Cậu Bé Đồng Hồ Ở Đường 42
+|de   = Clockie auf der 42. Straße
+|id   = Clockie di 42nd Street
+|pt   = Relogin na Rua 42
+}}
+
+==История изменений==
+{{История изменений|2.7}}

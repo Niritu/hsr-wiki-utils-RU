@@ -1,0 +1,179 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025133
+|Название        = 
+|Изображение     = Миссия Освоения Отборочный матч - Железный щит Заслонус Колоссус.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Кармелла; Лука; Первопроходец
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = Хотя аплодисменты стихли I
+|Награды         = Wardance Sword Badge*5
+}}
+'''Отборочный матч - Железный щит Заслонус Колоссус''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Выйдите на арену и получите очки!
+
+==Прохождение==
+{{Дополнить}}
+
+===Выйдите на арену и получите очки!===
+{{Описание миссии|локация=«Рассекатель небес»|Правила отборочного матча просты: победите противника и заработайте очки.<br />Участнику Луке нужно сделать всего три вещи: победить, победить и победить!}}
+{{Диалог Начало}}
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802515031-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+:{{tx}}
+<!--Unknown TalkSentence: 802515001-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515003-->
+:<!--Unknown TalkSentence: 802515004-->
+:<!--Unknown TalkSentence: 802515005-->
+:<!--Unknown TalkSentence: 802515006-->
+:<!--Unknown TalkSentence: 802515007-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802515005-->
+:<!--Unknown TalkSentence: 802515006-->
+:<!--Unknown TalkSentence: 802515007-->
+<!--Unknown TalkSentence: 802515005-->
+<!--Unknown TalkSentence: 802515006-->
+<!--Unknown TalkSentence: 802515007-->
+;(Unused &mdash; G151_TriggerBattle)
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2003,
+	"ScoreRaceSpecialInviteEventID": 419103,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.AddStreamingSource",
+			"StreamingSource": {
+				"CenterName": "Mission_FightFestBattlePerformance",
+				"AreaName": "LevelArea_P20242_F20242001_G19",
+				"AnchorName": "Anchor7"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513208
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		},
+		{
+			"$type": "RPG.GameCore.RemoveStreamingSource",
+			"StreamingSource": "Mission_FightFestBattlePerformance"
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802514911-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchResultDialog",
+	"Param": {
+		"Value": "2003"
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Knockout Match: "Ironshield" Gigantus Shieldus
+|zhs  = 叩关赛•「铁盾」顿派菲昌英
+|zht  = 叩關賽•「鐵盾」頓派菲昌英
+|ja   = 予選・「鉄盾」タテメ・チャカタ
+|ko   = 예선전•「무쇠 방패」 댄댄헨뱅풰
+|es   = Combate de cualificación: Escudus Gigantus, el "escudo de hierro"
+|fr   = Match de qualification&nbsp;: Bouclius Gigantus, «&nbsp;Bouclier de fer&nbsp;»
+|ru   = Отборочный матч - Железный щит Заслонус Колоссус
+|th   = รอบคัดเลือก: "โล่เหล็ก" โหลณั่นแฆ็งฝุดๆ
+|vi   = Giải Đấu Loại: "Khiên Sắt" Cô Sắt Khiên Kiến
+|de   = Qualifikationskampf: „Eisenschild“ Gigantus Schildus
+|id   = Pertandingan Knockout: "Perisai Baja" Raksasa Perisai
+|pt   = Partida Eliminatória: Escudus Gigantus "Guardaferro"
+}}
+
+==История изменений==
+{{История изменений|2.7}}

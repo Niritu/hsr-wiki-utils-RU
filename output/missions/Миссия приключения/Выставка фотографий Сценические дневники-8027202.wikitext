@@ -1,0 +1,233 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027202
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Сценические дневники.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = «Часик»; Братец Хану; Девица; Зарянка; Звёздочка; Командир; Март 7; Первопроходец; Старик Оти
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*60; Очищенный эфир*4; Destined Expiration*3; Кредиты*30 000
+}}
+'''Выставка фотографий: Сценические дневники''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Обсудите тему дня с Март 7
+# Сделайте фотографию первой части шоу
+# Обсудите фотографию с Март 7
+# Приготовьтесь сделать фотографию второй части шоу
+# Сделайте фотографию второй части шоу
+# Обсудите фотографию с Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+===Обсудите тему дня с Март 7===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G422)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G422"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+
+;(Поговорите с Старик Оти)
+<!--Unknown TalkSentence: 802722958-->
+
+;(Поговорите с Братец Хану)
+<!--Unknown TalkSentence: 802722961-->
+
+;(Поговорите с Зарянка)
+<!--Unknown TalkSentence: 802722955-->
+
+{{Диалог Конец}}
+
+===Сделайте фотографию первой части шоу===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString)
+:<!--0.5-second delay-->
+::<!--2-second delay-->
+::<!--2-second delay-->
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 424
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 424
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 802723001-->
+<!--Unknown TalkSentence: 802723002-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723004-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<!--Unknown TalkSentence: 802723008-->
+:<!--Unknown TalkSentence: 802723009-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723007-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<!--Unknown TalkSentence: 802723008-->
+:<!--Unknown TalkSentence: 802723009-->
+<!--Unknown TalkSentence: 802723004-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<!--Unknown TalkSentence: 802723008-->
+<!--Unknown TalkSentence: 802723009-->
+{{Диалог Конец}}
+
+===Приготовьтесь сделать фотографию второй части шоу===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Сделайте фотографию второй части шоу===
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString)
+:<!--1-second delay-->
+
+;(Unused &mdash; EnterDistrict_G427)
+
+
+;(Поговорите с Старик Оти)
+<!--Unknown TalkSentence: 802722959-->
+<!--Unknown TalkSentence: 802722960-->
+
+;(Поговорите с Братец Хану)
+<!--Unknown TalkSentence: 802722961-->
+
+;(Поговорите с Зарянка)
+<!--Unknown TalkSentence: 802722956-->
+<!--Unknown TalkSentence: 802722957-->
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802723151-->
+<!--Unknown TalkSentence: 802723152-->
+<!--Unknown TalkSentence: 802723153-->
+<!--Unknown TalkSentence: 802723154-->
+<!--Unknown TalkSentence: 802723155-->
+<!--Unknown TalkSentence: 802723156-->
+<!--Unknown TalkSentence: 802723157-->
+<!--Unknown TalkSentence: 802723158-->
+<!--Unknown TalkSentence: 802723159-->
+<!--Unknown TalkSentence: 802723160-->
+<!--Unknown TalkSentence: 802723161-->
+<!--Unknown TalkSentence: 802723162-->
+<!--Unknown TalkSentence: 802723163-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 195,
+	"Value": "1"
+}</pre>
+<!--Unknown TalkSentence: 802723167-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G429"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 301020434-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Stage Diaries
+|zhs  = 摄影展览•舞台纪实
+|zht  = 攝影展覽•舞台紀實
+|ja   = フォトコンテスト・ステージの記録
+|ko   = 사진 콘테스트•스테이지 기록
+|es   = Exposición de fotografía: diarios del escenario
+|fr   = Exposition photo&nbsp;: Chroniques de la scène
+|ru   = Выставка фотографий: Сценические дневники
+|th   = นิทรรศการภาพถ่าย: บันทึกภาพเวที
+|vi   = Triển Lãm Nhiếp Ảnh-Nhật Ký Sân Khấu
+|de   = Fotoausstellung: Bühnendokumentation
+|id   = Pameran Fotografi: Dokumenter Panggung
+|pt   = Exibição de Fotografia: Diários de Palco
+}}
+
+==История изменений==
+{{История изменений|2.7}}

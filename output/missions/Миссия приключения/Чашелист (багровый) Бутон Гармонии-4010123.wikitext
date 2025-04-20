@@ -1,0 +1,119 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4010123
+|Название        = 
+|Изображение     = Миссия Освоения Чашелист (багровый) Бутон Гармонии.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Испытание Равновесия I]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Поселение роботов
+|Мир             = Ярило-VI
+|Локации         = Поселение роботов
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = 
+}}
+'''Чашелист (багровый): Бутон Гармонии''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "Hidden",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "Appear",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 901012301-->
+<!--Unknown TalkSentence: 901012302-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1151000,
+	"ShowNotice": false
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Calyx (Crimson): Bud of Harmony
+|zhs  = 「拟造花萼（赤）&nbsp;•&nbsp;同谐之蕾」
+|zht  = 「擬造花萼（赤）•同諧之蕾」
+|ja   = 「疑似花萼（赤）・調和の蕾」
+|ko   = 「모조 꽃받침(적) • 화합의 봉오리」
+|es   = Cáliz (carmesí): Flor de la Armonía
+|fr   = Calice pourpre : Bourgeon de l'Harmonie
+|ru   = Чашелист (багровый): Бутон Гармонии
+|th   = Calyx (Crimson): ช่อแห่งการประสาน
+|vi   = "Đài Hoa Nhân Tạo (Đỏ) - Nụ Hoa Hòa Hợp"
+|de   = Blütenkelch (Karminrot): Knospe der Harmonie
+|id   = "Calyx (Crimson): Bud of Harmony"
+|pt   = Cálice (Rubro): Botão da Harmonia
+}}
+
+==История изменений==
+{{История изменений|2.7}}

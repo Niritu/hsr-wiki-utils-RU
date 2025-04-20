@@ -1,0 +1,377 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1032702
+|Название        = 
+|Изображение     = Миссия Освоения Фаворит.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В наше время
+|Условия         = Завершена [[Миссия Освоения]] ''[[Фаворит]]''
+|Персонажи       = Гид; Первопроходец; Светлячок; Строгая судья; Судья пластики; Судья реплик; Трансляция
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = 
+|Следующая       = Красавица и Разрушение
+|Награды         = Опыт Освоения*800; Звёздный нефрит*100; Утраченный кристалл*12; Часокредиты*400; "A Star Is Born"*1 { text = A Star Is Born }; "An Actor Prepares"*1 { text = An Actor Prepares }; Кредиты*160 000
+}}
+'''Фаворит''' — [[Миссия Освоения]] в главе [[В наше время]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Узнайте об испытании у гида
+# Пройдите первое испытание «Актёрское мастерство»
+# Пройдите второе испытание «Актёрское мастерство»
+# Пройдите третье испытание «Актёрское мастерство»
+# Примените на строгой судье Заводной механизм
+# Отправляйтесь ко входу во второй этап
+# Выберите своё испытание
+# Узнайте об испытании у гида
+# Пройдите первое испытание «Экшн»
+# Пройдите второе испытание «Экшн»
+# Пройдите третье испытание «Экшн»
+# Отправляйтесь ко входу во второй этап
+# Выберите своё испытание
+# Узнайте об испытании у гида
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте об испытании у гида===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270227,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Первый выбор! Вы со Светлячком прибыли на сцену «Битвы в грёзах: Актёрское мастерство». По словам гида, здесь будут проверять ваши актёрские навыки...<br />Что ещё за актёрские навыки? Вы совершенно не представляете. Вы ведь всегда пользовались искренностью.}}
+;(Unused &mdash; Perf)
+<!--Unknown TalkSentence: 103270502-->
+:<!--Unknown TalkSentence: 103270503-->
+
+;(Поговорите с Гид)
+<!--Unknown TalkSentence: 103273202-->
+;(Unused &mdash; EnterArea_G111)
+:{{tx}}
+{{Диалог Конец}}
+
+===Пройдите первое испытание «Актёрское мастерство»===
+{{Диалог Начало}}
+
+;(Поговорите с Судья реплик)
+<!--Unknown TalkSentence: 103270702-->
+<!--Unknown TalkSentence: 103270703-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 103270705-->
+:{{tx}}
+;(Unused &mdash; EnterArea_G48)
+<!--Unknown TalkSentence: 103270702-->
+:<!--Unknown TalkSentence: 103270703-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103270705-->
+::{{tx}}
+
+;(Поговорите с Судья реплик)
+<!--Unknown TalkSentence: 103273302-->
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_A1_Stair_0"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAt_103270201)
+
+{{Диалог Конец}}
+
+===Пройдите второе испытание «Актёрское мастерство»===
+{{Диалог Начало}}
+
+;(Поговорите с Судья пластики)
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103270806-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103270808-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103270810-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103270812-->
+::{{tx}}
+::{{tx}}
+;(Unused &mdash; EnterArea_G117)
+:{{tx}}
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103270806-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103270808-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103270810-->
+:::{{tx}}
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 103270812-->
+:::{{tx}}
+:::{{tx}}
+
+;(Поговорите с Судья пластики)
+<!--Unknown TalkSentence: 103273402-->
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_A1_Stair_0"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAt_103270202)
+
+{{Диалог Конец}}
+
+===Пройдите третье испытание «Актёрское мастерство»===
+{{Диалог Начало}}
+
+;(Поговорите с Строгая судья)
+<!--Unknown TalkSentence: 103270902-->
+<!--Unknown TalkSentence: 103270903-->
+<!--Unknown TalkSentence: 103270904-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Unused &mdash; EnterArea_G113)
+<!--Unknown TalkSentence: 103270902-->
+:<!--Unknown TalkSentence: 103270903-->
+:<!--Unknown TalkSentence: 103270904-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Примените на строгой судье Заводной механизм===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу во второй этап===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+
+;(Поговорите с Строгая судья)
+;(If {{cx}}<!--SubMission Finish: 103270216-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 103270217-->)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 103270218-->)
+<!--Unknown TalkSentence: 103273902-->
+<!--Unknown TalkSentence: 103273903-->
+<!--Unknown TalkSentence: 103272404-->
+{{Диалог Конец}}
+
+===Выберите своё испытание===
+{{Диалог Начало}}
+;(If {{F|BlockShowIndex}} is equal to 3)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270229,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте об испытании у гида===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Первый выбор! Вы со Светлячком прибываете на сцену «Битвы в грёзах: Экшн». По словам гида, здесь будут проверять то, как вы сражаетесь...<br />Вы отлично владеете боевыми приёмами, но как в мире, где нельзя прыгать, можно показать себя во всей красе?}}
+{{Диалог Начало}}
+
+;(Поговорите с Гид)
+<!--Unknown TalkSentence: 103273202-->
+;(Unused &mdash; Perf)
+:{{tx}}
+{{Диалог Конец}}
+
+===Пройдите первое испытание «Экшн»===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Торговец удачей из труппы «Кошмарики»*2; Гончая с газировкой из труппы «Кошмарики»*2}}
+:{{tx}}
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_A2_Stair_0"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAt_103270203)
+
+{{Диалог Конец}}
+
+===Пройдите второе испытание «Экшн»===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Пережаренный из труппы «Кошмарики»*2/-33.3% Сила атаки, -44.4% НР, -180 }}
+:{{tx}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_A2_Stair_0"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAt_103270204)
+
+{{Диалог Конец}}
+
+===Пройдите третье испытание «Экшн»===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Пережаренный из труппы «Кошмарики»*2/-33.3% Сила атаки, -44.4% НР, -180 }}
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу во второй этап===
+{{Диалог Начало}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<!--Unknown TalkSentence: 103272405-->
+{{Диалог Конец}}
+
+===Выберите своё испытание===
+{{Диалог Начало}}
+
+;(If {{F|BlockShowIndex}} is equal to 3)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270229,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(Unused &mdash; 1032702_ChoseB1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270230,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Unused &mdash; 1032702_ChoseB2)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270230,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте об испытании у гида===
+{{Диалог Начало}}
+;(Unused &mdash; EnterArea_LocalGroup)
+<!--Unknown TalkSentence: 103271002-->
+:<!--Unknown TalkSentence: 103271003-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Seabiscuit
+|zhs  = 奔腾年代
+|zht  = 奔騰年代
+|ja   = 奔走する時代
+|ko   = 씨비스킷
+|es   = La era del tumulto
+|fr   = L'ère du tumulte
+|ru   = Фаворит
+|th   = ยุคพุ่งทะยาน
+|vi   = Thời Đại Đầy Hứa Hẹn
+|de   = Mit dem Willen zum Erfolg
+|id   = Era Melaju Cepat
+|pt   = A Era do Tumulto
+}}
+
+==История изменений==
+{{История изменений|2.7}}

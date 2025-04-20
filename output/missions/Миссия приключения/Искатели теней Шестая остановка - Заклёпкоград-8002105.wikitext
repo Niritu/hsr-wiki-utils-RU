@@ -1,0 +1,176 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002105
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Шестая остановка - Заклёпкоград.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Пятая остановка - Камнеград]]''
+|Персонажи       = Первопроходец; Сломанный робот
+|СтартЛокация    = Заклёпкоград
+|Мир             = Ярило-VI
+|Локации         = Заклёпкоград
+|Предыдущая      = Искатели теней: Пятая остановка - Камнеград
+|Следующая       = Искатели теней: Седьмая остановка - Звёздный экспресс
+|Награды         = Звёздный нефрит*70; Очищенный эфир*4; Ancestral Hymn*3; Кредиты*40 000
+}}
+'''Искатели теней: Шестая остановка - Заклёпкоград''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите объекты и сфотографируйте их
+# Узнайте про свинку-копилку
+# Прочтите сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите объекты и сфотографируйте их===
+{{Описание миссии|локация=Заклёпкоград|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Заклёпкограда...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode"
+}</pre>
+
+;(Unused &mdash; Create_115_400003)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002,
+		300001,
+		400005
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002,
+		300001,
+		400005
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 800210253-->
+{{Диалог Конец}}
+
+===Узнайте про свинку-копилку===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300003
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003,
+		400002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(Unused &mdash; TriggerPerformance_800210504)
+<!--Unknown TalkSentence: 800210256-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 800210262-->
+::{{Чёрный экран|undefined}}
+:<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 116
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+
+;(Unused &mdash; Puman_Battle_Start_8002105)
+:{{Чёрный экран|undefined}}
+:;(Enter battle)
+::{{Enemy List|Отродье льда*2; Свинка-копилка пространства*1/-14 Скорость}}
+{{Диалог Конец}}
+
+===Прочтите сообщение Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.GuessTheSilhouetteResult",
+	"SilhouetteID": 12,
+	"IsExecuting": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1214601
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1214601
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 800210255-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 6th Stop, Rivet Town
+|zhs  = 星旅寻影•第六站•铆钉镇
+|zht  = 星旅尋影•第六站•鉚釘鎮
+|ja   = 星々の影を探して・6駅目・リベットタウン
+|ko   = 그림자를 찾는 별의 여정•여섯 번째 역•리벳 타운
+|es   = Fotografías estelares, 6.ª parada: Villarremache
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 6e arrêt, Ville de Rivet
+|ru   = Искатели теней: Шестая остановка - Заклёпкоград
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 6 - Rivet Town
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 6, Thị Trấn Rivet
+|de   = Stellarer Schattensucher: Sechster Halt – Nietstadt
+|id   = Penjelajah Bayangan Bintang: Perhentian 6 - Rivet Town
+|pt   = Sombrio Estelar: 6ª Parada, Vila dos Rebites
+}}
+
+==История изменений==
+{{История изменений|2.7}}

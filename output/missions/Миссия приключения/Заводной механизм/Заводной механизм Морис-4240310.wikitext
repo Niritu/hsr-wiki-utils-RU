@@ -1,0 +1,147 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240310
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Морис.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Коти; Морис; Первопроходец
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Утраченный кристалл*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Морис''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Сфотографируйте Коти в отеле реальности
+# Отдайте фотографию Морису
+# Соберите мозаику и исполните желание Мориса
+# Поговорите с Морисом ещё раз
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Сфотографируйте Коти в отеле реальности===
+{{Описание миссии|локация=Отель «Грёзы» (реальность)|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+;(Поговорите с Коти)
+;(If {{cx}}<!--SubMission Finish: 424031008-->)
+:<!--Unknown TalkSentence: 413100801-->
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"UseType": "StartPhotoInTriggerRange",
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 104
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"PhotoGraphMode": "SingleTakePhoto",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300002
+				]
+			},
+			"ContainerFlagName": "PhotoG104",
+			"IsTopContainer": true,
+			"IsSimpleConfig": true,
+			"IsAimTargetType": true
+		}
+	]
+}</pre>
+;(Otherwise)
+:<!--Unknown TalkSentence: 413100801-->
+{{Диалог Конец}}
+
+===Отдайте фотографию Морису===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Соберите мозаику и исполните желание Мориса===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Морисом ещё раз===
+{{Диалог Начало}}
+
+;(Поговорите с Морис)
+<!--Unknown TalkSentence: 413101001-->
+<!--Unknown TalkSentence: 413101002-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413101004-->
+<!--Unknown TalkSentence: 413101005-->
+<!--Unknown TalkSentence: 413101006-->
+<!--Unknown TalkSentence: 413101007-->
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 425
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Morris
+|zhs  = 钟表把戏：莫里斯
+|zht  = 鐘錶把戲：莫里斯
+|ja   = クロックトリック：モリス
+|ko   = 시계 트릭: 모리스
+|es   = Trucorreloj: Morris
+|fr   = Pouvoir de la Pendule&nbsp;: Maurice
+|ru   = Заводной механизм: Морис
+|th   = กลนาฬิกา: Morris
+|vi   = Thủ Thuật Đồng Hồ: Morris
+|de   = Uhrwerk: Morris
+|id   = Clockwork: Morris
+|pt   = Truquelógio: Morris
+}}
+
+==История изменений==
+{{История изменений|2.7}}

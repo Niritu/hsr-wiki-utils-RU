@@ -1,0 +1,427 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8023102
+|Название        = 
+|Изображение     = Миссия Освоения Бумажная дуэль.png
+|Тип             = Миссия приключения
+|События         = Бумажная дуэль
+|Глава           = Бумажная дуэль
+|Условия         = Завершена [[Миссия приключения]] ''[[Бумажная дуэль]]''
+|Персонажи       = Первопроходец; Серебряный Волк; Тина
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = 
+|Следующая       = Бумажная дуэль: Коллекционная версия
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Бумажная дуэль''' — Событие [[Миссия приключения]] из события [[Бумажная дуэль]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в указанное место и найдите игровой автомат в Золотом миге
+# Разгоните рекламные щиты
+# Исследуйте странность в траве
+# Получите одобрение золотой пташки
+# Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Серебряного Волка на новом игровом автомате
+# Проведите обзор битвы с Серебряным Волком
+# Посадите Первопролётца на выбранный игровой автомат
+# Поговорите с Тиной и узнайте о тесте
+# Откройте карту и узнайте о втором игровом автомате
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в указанное место и найдите игровой автомат в Золотом миге===
+{{Описание миссии|локация=Золотой миг|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823102149-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823102150-->
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 520,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 823102151
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 3,
+	"UniqueID": 2
+}</pre>
+{{Диалог Конец}}
+
+===Разгоните рекламные щиты===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 823102150-->
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 520,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 823102151
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 3,
+	"UniqueID": 2
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMazeButtonEffect",
+	"Enable": true
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте странность в траве===
+{{Диалог Начало}}
+;(Unused &mdash; G518_TriggerEffect)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 518
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+;(Unused &mdash; G518_SwitchCharacterV2)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G518"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(Unused &mdash; G526_StopBubbleTalk)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		526400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Получите одобрение золотой пташки===
+{{Диалог Начало}}
+
+
+;(Поговорите с Золотой Господин)
+<!--Unknown TalkSentence: 823102304-->
+<!--Unknown TalkSentence: 823102305-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310202
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310211
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; 8023102_Exit)
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823102304-->
+<!--Unknown TalkSentence: 823102305-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+;(Unused &mdash; 8023102_Exit)
+<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Серебряного Волка на новом игровом автомате===
+{{Диалог Начало}}
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [
+		"PlayButton"
+	]
+}</pre>
+
+;(Поговорите с Серебряный Волк)
+<pre>{
+	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"GroupId": 220,
+	"PointID": 1
+}</pre>
+<!--Unknown TalkSentence: 823102154-->
+<!--Unknown TalkSentence: 823102155-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"Param": {
+						"Value": "1100"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"GroupId": 220,
+	"PointID": 1
+}</pre>
+<!--Unknown TalkSentence: 823102154-->
+<!--Unknown TalkSentence: 823102155-->
+:{{Диалог|Журнал путешествий}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+===Проведите обзор битвы с Серебряным Волком===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MatchThreeMainEntrancePage"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MatchThree.Entrance.MatchThreeNewBirdDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "301"
+	}
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 823102401-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 823102403-->
+:{{tx}}
+;(Unused &mdash; Activity230_PveResultClose)
+<pre>{
+	"$type": "RPG.GameCore.ClosePage",
+	"PageNames": [
+		"MatchThreeMainEntrancePage"
+	],
+	"PageRootNames": []
+}</pre>
+{{Диалог Конец}}
+
+===Посадите Первопролётца на выбранный игровой автомат===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите с Тиной и узнайте о тесте===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 823102501-->
+<!--Unknown TalkSentence: 823102502-->
+<!--Unknown TalkSentence: 823102503-->
+<!--Unknown TalkSentence: 823102504-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823102506-->
+:<!--Unknown TalkSentence: 823102507-->
+:<!--Unknown TalkSentence: 823102508-->
+:<!--Unknown TalkSentence: 823102509-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 823102508-->
+:<!--Unknown TalkSentence: 823102509-->
+::{{tx}}
+<!--Unknown TalkSentence: 823102508-->
+<!--Unknown TalkSentence: 823102509-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Откройте карту и узнайте о втором игровом автомате===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
+			}
+		},
+		{
+			"ID": "DIYButton",
+			"ButtonText": {
+				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Origami Bird Clash
+|zhs  = 「折纸小鸟对对碰」
+|zht  = 「摺紙小鳥對對碰」
+|ja   = 「折り紙の小鳥マッチ」
+|ko   = 「종이새 팡팡」
+|es   = Choque de pajaritos de papel
+|fr   = Rififruit chez les oiseaux en origami
+|ru   = Бумажная дуэль
+|th   = นกกระดาษตะลุมบอน
+|vi   = Chim Giấy Đại Chiến
+|de   = Origamivogel-Matching
+|id   = Adu Jotos Burung Origami
+|pt   = Choque de Pássaro de Origami
+}}
+
+==История изменений==
+{{История изменений|2.7}}

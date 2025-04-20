@@ -1,0 +1,77 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240407
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Вагон для вечеринок
+|Мир             = Звёздный экспресс
+|Локации         = Вагон для вечеринок
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Звёздный экспресс]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "press01",
+			"IconType": "SecretMissionIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_494"
+			},
+			"ShowPriority": "High"
+		}
+	]
+}</pre>
+;(Unused &mdash; SWITCH_424040709)
+:;(If {{F|MissionCV-4240407-undefined}} is equal to 1)
+::<!--Unknown TalkSentence: 503611116-->
+::<!--Unknown TalkSentence: 503611117-->
+:;(If {{F|MissionCV-4240407-undefined}} is not equal to 1)
+::;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

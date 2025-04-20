@@ -1,0 +1,913 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2001001
+|Название        = 
+|Изображение     = Миссия Освоения Гори, гори, моя звезда гениальности.png
+|Тип             = Продолжение Освоения
+|События         = 
+|Глава           = Венец смертного и божественного
+|Условия         = Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+|Персонажи       = «Переводчик создания»; Аста; Герта; Жуань Мэй; Исследователь Отдела прикладных искусств; Исследователь Отдела экологии; Копия кунжутной пасты с кинзой; Копия свинки-копилки; Копия фазового пламени; Миндальное молоко; Первопроходец; Робот-рисожар остатков; Создание Жуань Мэй
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = Глупцам нет покоя
+|Награды         = Опыт Освоения*1 100; Звёздный нефрит*110; Путеводитель путешественника*12; Очищенный эфир*8; Утраченный кристалл*8; Snack Life (Profile Picture)*1 { text = «Жизнь вкусняшек» }; Кредиты*140 000
+}}
+'''Гори, гори, моя звезда гениальности''' — [[Продолжение Освоения]] в главе [[Венец смертного и божественного]].
+
+==Описание==
+{{Описание|Герта, Жуань Мэй и Скрюллум и правда встретились на космической станции. Вы тайно помогаете Жуань Мэй отыскать разбежавшихся по космической станции маленьких созданий и узнаёте один из её величайших секретов...<br />Вы чувствуете, как воспоминания о Жуань Мэй путаются. Вы оглядываетесь... но не можете вспомнить ничего, кроме запаха её волос.}}
+
+==Этапы==
+# Поговорите с Гертой
+# Найдите Жуань Мэй
+# Следуйте за Жуань Мэй
+# Поговорите с Жуань Мэй наедине
+# Получите информацию у исследователей
+# Отправляйтесь в Зону хранения
+# Проверьте шум
+# Попытайтесь создать жизнь (необязательно)
+# Поспрашивайте о Жуань Мэй (необязательно)
+# Исполните таинственный ритуал призыва
+# Поговорите с созданием Жуань Мэй
+# Разместите создание Жуань Мэй
+# Поговорите с Жуань Мэй
+# Спуститесь вниз
+# Отправляйтесь на лифте в секретную зону
+# Найдите загадочного маленького робота
+# Спуститесь вниз
+# Продолжите поиск улик
+# Найдите источник шума
+# Разместите создание Жуань Мэй
+# Продолжите поиск улик
+# Разместите создание Жуань Мэй
+# Исследуйте тайный отсек
+# Вернитесь наверх и продолжите расследование
+# Узрите «головную боль»
+# Найдите Жуань Мэй
+
+==Прохождение==
+{{Дополнить}}
+
+<!--Unknown TalkSentence: 200103601-->
+{{Диалог Конец}}
+
+===Поговорите с Гертой===
+{{Описание миссии|локация=Главная контрольная зона|Виртуальная вселенная выпускает очередное обновление, а на космической станции кипит жизнь. Несколько выдающихся членов Общества гениев прибыли на станцию одновременно! Вы получили сообщение от Герты, в котором говорится, что Жуань Мэй также прибыла на станцию. Пришло время встретиться с ней...}}
+{{Диалог Начало}}
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200100214-->
+
+;(Поговорите с Герта)
+<!--Unknown TalkSentence: 200100216-->
+;(Unused &mdash; Meeting)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:<!--Unknown TalkSentence: 200100201-->
+:<!--Unknown TalkSentence: 200100202-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200100204-->
+:<!--Unknown TalkSentence: 200100205-->
+:<!--Unknown TalkSentence: 200100206-->
+:<!--Unknown TalkSentence: 200100207-->
+:<!--Unknown TalkSentence: 200100208-->
+:<!--Unknown TalkSentence: 200100209-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218900
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218900
+}</pre>
+{{Диалог Конец}}
+
+===Найдите Жуань Мэй===
+{{Описание миссии|локация=Зона поддержки|В последнее время на космической станции много дел. У Виртуальной вселенной вышло обновление, а на станции собрались члены Общества гениев, каждый со своими идеями. Кажется, скоро произойдёт что-то неожиданное.<br />Вы не знаете, где находится Жуань Мэй, поэтому придётся поискать её...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 138
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 200103602
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.WaitMissionTalkFinish"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_200100140"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 200100106
+}</pre>
+:;([[#Gallery|Cutscene]] plays)
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 200100106
+}</pre>
+:<!--Unknown TalkSentence: 200100301-->
+:<!--Unknown TalkSentence: 200100302-->
+:<!--Unknown TalkSentence: 200100303-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200100305-->
+::<!--Unknown TalkSentence: 200100306-->
+::<!--Unknown TalkSentence: 200100307-->
+::<!--Unknown TalkSentence: 200100308-->
+::<!--Unknown TalkSentence: 200100309-->
+::<!--Unknown TalkSentence: 200100310-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200100307-->
+::<!--Unknown TalkSentence: 200100308-->
+::<!--Unknown TalkSentence: 200100309-->
+::<!--Unknown TalkSentence: 200100310-->
+:<!--Unknown TalkSentence: 200100307-->
+:<!--Unknown TalkSentence: 200100308-->
+:<!--Unknown TalkSentence: 200100309-->
+:<!--Unknown TalkSentence: 200100310-->
+{{Диалог Конец}}
+
+===Следуйте за Жуань Мэй===
+{{Описание миссии|локация=Зона поддержки|В последнее время на космической станции много дел. У Виртуальной вселенной вышло обновление, а на станции собрались члены Общества гениев, каждый со своими идеями. Кажется, скоро произойдёт что-то неожиданное.<br />Поведение Жуань Мэй кажется странным. Похоже, она хочет вам что-то сказать...}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Поговорите с Жуань Мэй наедине===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200100601-->
+<!--Unknown TalkSentence: 200100602-->
+<!--Unknown TalkSentence: 200100603-->
+<!--Unknown TalkSentence: 200100604-->
+<!--Unknown TalkSentence: 200100605-->
+<!--Unknown TalkSentence: 200100606-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200100608-->
+:<!--Unknown TalkSentence: 200100609-->
+:<!--Unknown TalkSentence: 200100610-->
+:<!--Unknown TalkSentence: 200100611-->
+:<!--Unknown TalkSentence: 200100612-->
+:<!--Unknown TalkSentence: 200100613-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200100610-->
+:<!--Unknown TalkSentence: 200100611-->
+:<!--Unknown TalkSentence: 200100612-->
+:<!--Unknown TalkSentence: 200100613-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200100612-->
+:<!--Unknown TalkSentence: 200100613-->
+::{{tx}}
+<!--Unknown TalkSentence: 200100612-->
+<!--Unknown TalkSentence: 200100613-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Получите информацию у исследователей===
+{{Описание миссии|локация=Главная контрольная зона|Жуань Мэй, мастер взращивания жизни, просит вас вернуть «маленьких созданий», бегающих по космической станции... Она даже даёт вам сыворотку скрытия правды, чтобы убедиться, что вы никому не расскажете.<br />Что же у неё на уме?}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Жуань Мэй)
+<!--Unknown TalkSentence: 200100101-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200100103-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Зону хранения===
+{{Диалог Начало}}
+;(Unused &mdash; Here)
+<!--Unknown TalkSentence: 200103610-->
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:<!--Unknown TalkSentence: 200101201-->
+:<!--Unknown TalkSentence: 200101202-->
+:<!--Unknown TalkSentence: 200101203-->
+:<!--Unknown TalkSentence: 200101204-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200101206-->
+
+;(Unused &mdash; FinishShit)
+
+
+
+;(Поговорите с Копия свинки-копилки)
+<!--Unknown TalkSentence: 200101122-->
+
+;(Поговорите с Миндальное молоко)
+<!--Unknown TalkSentence: 200101123-->
+
+;(Поговорите с Копия кунжутной пасты с кинзой)
+<!--Unknown TalkSentence: 200101124-->
+
+;(Поговорите с Копия фазового пламени)
+<!--Unknown TalkSentence: 200101125-->
+;(If {{cx}}<!--SubMission Finish: 200100112-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnableTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger"
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 200100112-->)
+:<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [],
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.AdvEnableTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300001
+				]
+			},
+			"TriggerName": "MissionTrigger"
+		}
+	],
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareSubMissionState",
+		"SubMissionID": 200100112,
+		"SubMissionState": "Finish"
+	}
+}</pre>
+;(Unused &mdash; G127_Perf)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+::----
+:<!--Unknown TalkSentence: 200101101-->
+:<!--Unknown TalkSentence: 200101102-->
+:<!--Unknown TalkSentence: 200101103-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с )
+----
+<!--Unknown TalkSentence: 200103612-->
+<!--Unknown TalkSentence: 200103613-->
+<!--Unknown TalkSentence: 200101301-->
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 200101302-->
+<!--Unknown TalkSentence: 200101303-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200101305-->
+<!--Unknown TalkSentence: 200106202-->
+<!--Unknown TalkSentence: 200100701-->
+<!--Unknown TalkSentence: 200100702-->
+<!--Unknown TalkSentence: 200100703-->
+<!--Unknown TalkSentence: 200100704-->
+<!--Unknown TalkSentence: 200100705-->
+<!--Unknown TalkSentence: 200100706-->
+<!--Unknown TalkSentence: 200100707-->
+<!--Unknown TalkSentence: 200100708-->
+<!--Unknown TalkSentence: 200100709-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<!--Unknown TalkSentence: 200101501-->
+<!--Unknown TalkSentence: 200101502-->
+
+
+;(Unused &mdash; Perf)
+:{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 200101601-->
+:<!--Unknown TalkSentence: 200101602-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200101604-->
+::<!--Unknown TalkSentence: 200101605-->
+::<!--Unknown TalkSentence: 200101609-->
+::<!--Unknown TalkSentence: 200101610-->
+::<!--Unknown TalkSentence: 200101611-->
+::<!--Unknown TalkSentence: 200101612-->
+::<!--Unknown TalkSentence: 200101613-->
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200101607-->
+::<!--Unknown TalkSentence: 200101608-->
+::<!--Unknown TalkSentence: 200101609-->
+::<!--Unknown TalkSentence: 200101610-->
+::<!--Unknown TalkSentence: 200101611-->
+::<!--Unknown TalkSentence: 200101612-->
+::<!--Unknown TalkSentence: 200101613-->
+::;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_toiletflushing"
+	}
+}</pre>
+:;(Экран становится чёрным)
+:<!--Unknown TalkSentence: 200101701-->
+{{Диалог Конец}}
+
+===Проверьте шум===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Попытайтесь создать жизнь (необязательно)===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200105101-->
+{{Диалог Конец}}
+
+===Поспрашивайте о Жуань Мэй (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Исполните таинственный ритуал призыва===
+{{Диалог Начало}}
+
+
+;(Unused &mdash; opendecal)
+<pre>{
+	"$type": "RPG.GameCore.DecalPuzzleStart",
+	"DecalConfigIDs": [
+		13,
+		14
+	],
+	"Title": {
+		"Hash": 10169203271536383694
+	},
+	"IdentifyLookAt": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 200100115,
+	"MissionWayPointType": "Anchor",
+	"WayPointGroupID": 126,
+	"WayPointEntityID": 3,
+	"OverideWayPointShowRangeMin": true,
+	"OverideMapWaypointRange": true
+}</pre>
+
+;(Unused &mdash; DecalPuzzle_Terminate)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 200100115,
+	"MissionWayPointType": "Anchor",
+	"WayPointGroupID": 98,
+	"WayPointEntityID": 400012
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с созданием Жуань Мэй===
+{{Описание миссии|локация=Зона хранения|«Создания» Жуань Мэй - это ожившие пирожные! У них появились собственные «эмоции», «мышление» и «воля»...<br />Вам предстоит найти способ вернуть их.}}
+{{Диалог Начало}}
+
+;(Поговорите с Создание Жуань Мэй)
+----
+<!--Unknown TalkSentence: 200103612-->
+<!--Unknown TalkSentence: 200103613-->
+<!--Unknown TalkSentence: 200101301-->
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 200101302-->
+<!--Unknown TalkSentence: 200101303-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200101305-->
+<!--Unknown TalkSentence: 200106202-->
+<!--Unknown TalkSentence: 200100701-->
+<!--Unknown TalkSentence: 200100702-->
+<!--Unknown TalkSentence: 200100703-->
+<!--Unknown TalkSentence: 200100704-->
+<!--Unknown TalkSentence: 200100705-->
+<!--Unknown TalkSentence: 200100706-->
+<!--Unknown TalkSentence: 200100707-->
+<!--Unknown TalkSentence: 200100708-->
+<!--Unknown TalkSentence: 200100709-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<!--Unknown TalkSentence: 200101501-->
+<!--Unknown TalkSentence: 200101502-->
+{{Диалог Конец}}
+
+===Разместите создание Жуань Мэй===
+{{Описание миссии|локация=Зона хранения|На космической станции есть секретная зона?! Вероятно, об этом не знает большинство исследователей. Вы отправляетесь на расследование в одиночку и обнаруживаете, что пространство заполнено множеством невероятных вещей...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218700
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218700
+}</pre>
+{{Описание миссии|локация=Зона хранения|«Создания» Жуань Мэй - это ожившие пирожные! У них появились собственные «эмоции», «мышление» и «воля»...<br />Вам предстоит найти способ вернуть их.}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218800
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218800
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Жуань Мэй===
+{{Описание миссии|локация=Офис Герты|«Создания» Жуань Мэй - это ожившие пирожные! У них появились собственные «эмоции», «мышление» и «воля»...<br />Вы хорошо поработали, но у Жуань Мэй, похоже, новая просьба...}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Жуань Мэй)
+;(If {{cx}}<!--SubMission not Finish: 200100141-->)
+:<!--Unknown TalkSentence: 200101801-->
+:<!--Unknown TalkSentence: 200101802-->
+:<!--Unknown TalkSentence: 200101803-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200101805-->
+:<!--Unknown TalkSentence: 200101806-->
+:<!--Unknown TalkSentence: 200101807-->
+:;(If {{F|MissionCV-2001001-1}} is equal to 1)
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43004
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200100141-->)
+:<!--Unknown TalkSentence: 200105701-->
+:<!--Unknown TalkSentence: 200105702-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:<!--Unknown TalkSentence: 200105704-->
+
+{{Диалог Конец}}
+
+===Спуститесь вниз===
+{{Описание миссии|локация=Офис Герты|На космической станции есть секретная зона?! Вероятно, об этом не знает большинство исследователей. Вы отправляетесь на расследование в одиночку и обнаруживаете, что пространство заполнено множеством невероятных вещей...}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь на лифте в секретную зону===
+{{Описание миссии|локация=Зона хранения|На космической станции есть секретная зона?! Вероятно, об этом не знает большинство исследователей. Вам предстоит отправиться на расследование в одиночку...}}
+{{Диалог Начало}}
+
+;([[#Gallery|Cutscene]] plays)
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите загадочного маленького робота===
+{{Описание миссии|локация=Изолированная зона|На космической станции есть секретная зона?! Вероятно, об этом не знает большинство исследователей. Вы отправляетесь на расследование в одиночку и обнаруживаете, что пространство заполнено множеством невероятных вещей...}}
+{{Диалог Начало}}
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 200105201-->
+:<!--Unknown TalkSentence: 200105202-->
+:<!--Unknown TalkSentence: 200105203-->
+:<!--Unknown TalkSentence: 200105204-->
+:<!--Unknown TalkSentence: 200105205-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200105207-->
+::<!--Unknown TalkSentence: 200105208-->
+::<!--Unknown TalkSentence: 200105214-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200105210-->
+::<!--Unknown TalkSentence: 200105211-->
+::<!--Unknown TalkSentence: 200105212-->
+::<!--Unknown TalkSentence: 200105213-->
+::<!--Unknown TalkSentence: 200105214-->
+:<!--Unknown TalkSentence: 200105207-->
+:<!--Unknown TalkSentence: 200105208-->
+:<!--Unknown TalkSentence: 200105214-->
+<!--Unknown TalkSentence: 200105216-->
+:<!--Unknown TalkSentence: 200105217-->
+{{Диалог Конец}}
+
+===Спуститесь вниз===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Продолжите поиск улик===
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_dousha_scared_distant"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите источник шума===
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:<!--Unknown TalkSentence: 200102401-->
+:<!--Unknown TalkSentence: 200102402-->
+:<!--Unknown TalkSentence: 200102403-->
+:<!--Unknown TalkSentence: 200102404-->
+:<!--Unknown TalkSentence: 200102405-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200102407-->
+::<!--Unknown TalkSentence: 200102408-->
+::<!--Unknown TalkSentence: 200102409-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200102410-->
+:<!--Unknown TalkSentence: 200102411-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200102413-->
+:<!--Unknown TalkSentence: 200102414-->
+:<!--Unknown TalkSentence: 200102415-->
+<!--Unknown TalkSentence: 200105501-->
+{{Диалог Конец}}
+
+===Разместите создание Жуань Мэй===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200103619-->
+<!--Unknown TalkSentence: 200103620-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200103621-->
+<!--Unknown TalkSentence: 200103622-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Продолжите поиск улик===
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+:{{tx}}
+;(Unused &mdash; Perf)
+:{{tx}}
+{{Диалог Конец}}
+
+===Разместите создание Жуань Мэй===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200103701-->
+;(Unused &mdash; Perf)
+<!--Unknown TalkSentence: 200103701-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200103703-->
+:<!--Unknown TalkSentence: 200103704-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20004_F20004001_G20",
+	"AnchorName": "Anchor1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseIn"
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+::<!--1.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"FixedValue": {
+						"Value": 20
+					}
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 300003
+					}
+				}
+			}
+		]
+	},
+	"ParameterName": "IsOpen",
+	"ParameterType": "Bool",
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyD_ruanmei_dooropen"
+	}
+}</pre>
+::<!--2-second delay-->
+:<!--Unknown TalkSentence: 200103631-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20004_F20004001_G20",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте тайный отсек===
+{{Диалог Начало}}
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 200102901-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200102903-->
+:<!--Unknown TalkSentence: 200102904-->
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E1",
+	"SubMissionID": 200100133
+}</pre>
+::{{tx}}
+:<!--Unknown TalkSentence: 200103101-->
+:<!--Unknown TalkSentence: 200103102-->
+:;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_authorization_pass"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 200103201-->
+<!--Unknown TalkSentence: 200103101-->
+:<!--Unknown TalkSentence: 200103109-->
+{{Диалог Конец}}
+
+===Вернитесь наверх и продолжите расследование===
+{{Диалог Начало}}
+
+
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::И вот
+::ход гения!
+::Как будешь отбиваться?
+::Лишь глупцу придёт на ум подобный вопрос.
+::Просто переставим сюда...
+::Выглядите {{MC|ж=обеспокоенной|м=обеспокоенным}}.
+::Какие-то сложности?
+::В таком случае...
+::постарайтесь додуматься самостоятельно.
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 200104901-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Узрите «головную боль»===
+{{Описание миссии|локация=Изолированная зона|Перед вами появляется человек со странной гипсовой головой. Он указывает на ложь Жуань Мэй. Её амбиции куда шире, чем казалось!<br />Что же она создаёт?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 25
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "PlayMissionTalk"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+;(Unused &mdash; Perf)
+;([[#Gallery|Cutscene]] plays)
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+
+;(Unused &mdash; PlayMissionTalk)
+<!--Unknown TalkSentence: 200103634-->
+----
+;([[#Gallery|Cutscene]] plays)
+::Через 56 секунд создание оказалось не в состоянии поддерживать собственное жизнеобеспечение и исчезло. Будто его и не было.
+::Угрозы больше нет. Пора идти.
+;(Cutscene ends)
+----
+<!--Unknown TalkSentence: 200103637-->
+{{Диалог Конец}}
+
+===Найдите Жуань Мэй===
+{{Описание миссии|локация=Зона поддержки|Кажется, вы всё меньше и меньше понимаете Жуань Мэй. Она относится к вам по-доброму, но при этом пичкает сывороткой скрытия правды и скрывает истинную цель своего эксперимента. Она кажется сдержанной, но её амбиции неизмеримы... Что она за человек на самом деле?}}
+{{Диалог Начало}}
+;(Unused &mdash; Perf)
+<!--Unknown TalkSentence: 200103402-->
+:<!--Unknown TalkSentence: 200103403-->
+:<!--Unknown TalkSentence: 200103404-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200103406-->
+::<!--Unknown TalkSentence: 200103407-->
+::<!--Unknown TalkSentence: 200103408-->
+::<!--Unknown TalkSentence: 200103409-->
+::<!--Unknown TalkSentence: 200103410-->
+::<!--Unknown TalkSentence: 200103411-->
+::<!--Unknown TalkSentence: 200103412-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 200103408-->
+::<!--Unknown TalkSentence: 200103409-->
+::<!--Unknown TalkSentence: 200103410-->
+::<!--Unknown TalkSentence: 200103411-->
+::<!--Unknown TalkSentence: 200103412-->
+:<!--Unknown TalkSentence: 200103408-->
+:<!--Unknown TalkSentence: 200103409-->
+:<!--Unknown TalkSentence: 200103410-->
+:<!--Unknown TalkSentence: 200103411-->
+:<!--Unknown TalkSentence: 200103412-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = When the Stars of Ingenuity Shine
+|zhs  = 天才群星闪耀时
+|zht  = 天才群星閃耀時
+|ja   = 天才の星の時間
+|ko   = 천재의 뭇별이 빛날 때
+|es   = Cuando brillan las estrellas del ingenio
+|fr   = Alors que brillent les étoiles de l'ingéniosité
+|ru   = Гори, гори, моя звезда гениальности
+|th   = เมื่อหมู่ดาวแห่งอัจฉริยะเปล่งประกาย
+|vi   = Khi Thiên Tài Tề Tựu Giữa Ngân Hà
+|de   = Wenn die Sterne des Einfallsreichtums leuchten
+|id   = Saat Bintang-Bintang Jenius Bersinar
+|pt   = Quando as Estrelas da Engenhosidade Brilham
+}}
+
+==История изменений==
+{{История изменений|2.7}}

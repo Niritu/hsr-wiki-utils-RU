@@ -1,0 +1,201 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4015101
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Звёзд водоворот, прозрение грядёт]]''
+|Персонажи       = Джу; Кай; Обеспокоенный рабочий; Первопроходец
+|СтартЛокация    = Облачная переправа
+|Мир             = Лофу Сяньчжоу
+|Локации         = Облачная переправа
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 401510113-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401510115-->
+<!--Unknown TalkSentence: 401510116-->
+<!--Unknown TalkSentence: 401510117-->
+----
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 162
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 162,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 401510102
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 162,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 401510103
+		}
+	],
+	"InstantFinish": false
+}</pre>
+:<!--5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"Enabled": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 162
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 401510127-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 401510129-->
+<!--Unknown TalkSentence: 401510132-->
+<!--Unknown TalkSentence: 401510133-->
+<!--Unknown TalkSentence: 401510134-->
+<!--Unknown TalkSentence: 401510135-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 169
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"State": "Open",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 404022501
+		},
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_401510108"
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 169
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"State": "ChestUsed",
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 404022502
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 412250113-->
+:<!--0.5-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

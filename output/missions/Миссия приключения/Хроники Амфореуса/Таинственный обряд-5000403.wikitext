@@ -1,0 +1,272 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000403
+|Название        = 
+|Изображение     = Миссия Освоения Таинственный обряд.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Утраченные золотые частицы*2; Golden Honeycake*1; Dried Sagelore Fruit*1; Кредиты*5 000
+}}
+'''Таинственный обряд''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Разузнайте об утраченной церемонии
+# Проведите таинственный ритуал под древним деревом
+# Посмотрите призванные ритуалом воспоминания
+# Посмотрите воспоминания прошлого и узнайте, почему ритуал не удался
+# Найдите материалы, необходимые для проведения таинственного ритуала
+
+==Прохождение==
+{{Дополнить}}
+
+===Разузнайте об утраченной церемонии===
+{{Описание миссии|локация=Вечный священный город Охема|Дары титанов повсюду, и Охема не исключение. Исследуйте тайны прошлого и восстановите таинственный ритуал.}}
+{{Диалог Начало}}
+
+:{{Диалог|?}} Осмотреть
+<!--Unknown TalkSentence: 500043001-->
+<!--Unknown TalkSentence: 500043002-->
+<!--Unknown TalkSentence: 500043003-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500043006-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190751
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 500043001-->
+:<!--Unknown TalkSentence: 500043002-->
+:<!--Unknown TalkSentence: 500043003-->
+:<!--Unknown TalkSentence: 500043004-->
+:<!--Unknown TalkSentence: 500043005-->
+:<!--Unknown TalkSentence: 500043006-->
+:<!--Unknown TalkSentence: 500043007-->
+:<!--Unknown TalkSentence: 500043008-->
+:<!--Unknown TalkSentence: 500043009-->
+:<!--Unknown TalkSentence: 500043010-->
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040301,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			0
+		]
+	}
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 500043201-->
+<!--Unknown TalkSentence: 500043202-->
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 500043301-->
+<!--Unknown TalkSentence: 500043302-->
+{{Диалог Конец}}
+
+===Проведите таинственный ритуал под древним деревом===
+{{Описание миссии|локация=Вечный священный город Охема|В Охеме вам случайно достался древний свиток, в котором описан таинственный ритуал. Интересно, что получится, если собрать все материалы и совершить призыв в указанном месте, следуя записанным в свитке инструкциям?}}
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 500043601-->
+<!--Unknown TalkSentence: 500043602-->
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 500040303,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 500040303,
+			"MissionCustomValue": {
+				"Index": 2,
+				"isLocal": true,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			},
+			"CustomValue": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/5000403/DS50004030702.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 500040303,
+			"MissionCustomValue": {
+				"Index": 2,
+				"isLocal": true,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Посмотрите призванные ритуалом воспоминания===
+{{Диалог Начало}}
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Посмотрите воспоминания прошлого и узнайте, почему ритуал не удался===
+{{Диалог Начало}}
+
+:{{Диалог|?}} Осмотреть
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190751
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 500043101-->
+<!--Unknown TalkSentence: 500043102-->
+<!--Unknown TalkSentence: 500043103-->
+<!--Unknown TalkSentence: 500043104-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 500043106-->
+::{{tx}}
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 500043111-->
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500040305,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			0
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 500043201-->
+<!--Unknown TalkSentence: 500043202-->
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 500043301-->
+<!--Unknown TalkSentence: 500043302-->
+{{Диалог Конец}}
+
+===Найдите материалы, необходимые для проведения таинственного ритуала===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Secret Ceremony
+|zhs  = 神秘仪式
+|zht  = 神秘儀式
+|ja   = 神秘的な儀式
+|ko   = 신비로운 의식
+|es   = Ritual misterioso
+|fr   = Cérémonie secrète
+|ru   = Таинственный обряд
+|th   = พิธีกรรมลึกลับ
+|vi   = Nghi Thức Thần Bí
+|de   = Geheime Zeremonie
+|id   = Ritual Misterius
+|pt   = Cerimônia Secreta
+}}
+
+==История изменений==
+{{История изменений|3.0}}

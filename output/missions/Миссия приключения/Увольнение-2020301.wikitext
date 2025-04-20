@@ -1,0 +1,125 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020301
+|Название        = 
+|Изображение     = Миссия Освоения Увольнение.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ветвистые рога и спутанные корни]]''
+|Персонажи       = Первопроходец; Таньтань
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = ???
+|Награды         = Кредиты*10 000
+}}
+'''Увольнение''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|Получив мудрые наставления Мэй, нерешительная Лухуэй находит ответы на свои вопросы.<br />Ваша встреча с ними - всего лишь миг их долгих жизней, однако же принёсший значительные перемены.}}
+
+==Этапы==
+# Отправляйтесь на улицы Приюта звёздных яликов и поговорите с Таньтанем
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь на улицы Приюта звёздных яликов и поговорите с Таньтанем===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Секретарь Сикуй оставила вам сообщение в Звёздном дворце. Она слышала, что инспектор скорости Таньтань хочет сделать пробную программу «Замеры скорости на Сяньчжоу».<br />Считать транспортные средства должно быть несложно. Если у вас есть время, поговорите с Таньтанем.}}
+{{Диалог Начало}}
+
+;(Поговорите с Таньтань)
+<!--Unknown TalkSentence: 202010101-->
+<!--Unknown TalkSentence: 202010102-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202010104-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+:<!--0.5-second delay-->
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_14.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_15.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+:<!--11-second delay-->
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+<!--Unknown TalkSentence: 202010301-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Fired
+|zhs  = 解雇
+|zht  = 解雇
+|ja   = 解雇
+|ko   = 해고
+|es   = Estás despedida
+|fr   = Licenciement
+|ru   = Увольнение
+|th   = ไล่ออก
+|vi   = Sa Thải
+|de   = Gefeuert
+|id   = Pemecatan
+|pt   = Demissão
+}}
+
+==История изменений==
+{{История изменений|2.7}}

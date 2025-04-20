@@ -1,0 +1,322 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8003203
+|Название        = 
+|Изображение     = Миссия Освоения Снова в деле II.png
+|Тип             = Миссия приключения
+|События         = Шум рынка в Переулке ауруматонов
+|Глава           = Шум рынка в Переулке ауруматонов
+|Условия         = Завершена [[Миссия приключения]] ''[[Снова в деле II]]''
+|Персонажи       = Афэн; Гул толпы; Ляньянь; Минси; Первопроходец; Представитель торгового отдела КММ; Работник причала; Сикуй; Скотт; Сушан; Трусливый работник причала
+|СтартЛокация    = Переулок ауруматонов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Переулок ауруматонов
+|Предыдущая      = 
+|Следующая       = Управление причалом II
+|Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Утраченный кристалл*5; Кредиты*45 000
+}}
+'''Снова в деле II''' — Событие [[Миссия приключения]] из события [[Шум рынка в Переулке ауруматонов]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Узнайте о последних событиях торговой гильдии
+# Поговорите с Сушан на причале
+# Исследуйте товары Скотта
+# Узнайте в лавке старьёвщика, как вести переговоры
+# Поговорите с Минси и подтвердите материалы переговоров
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Узнайте о последних событиях торговой гильдии===
+{{Описание миссии|локация=Переулок ауруматонов|В Переулке ауруматонов должно было появиться что-то новенькое. Не хотите проверить?<br />Регулярно посещайте Переулок ауруматонов.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1215501
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1215501
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Сушан на причале===
+{{Описание миссии|локация=Переулок ауруматонов|Вы слышали, что Сушан нашла доказательства того, что представитель КММ повредил логистические маршруты причала. Подтвердите это.<br />Настоящая торговая война состоит не только из высококлассных силовых приёмов и хитроумных стратегий, но и из простых маленьких пакостей.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 800320901-->
+<!--Unknown TalkSentence: 800320902-->
+<!--Unknown TalkSentence: 800320903-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320905-->
+:<!--Unknown TalkSentence: 800320908-->
+:<!--Unknown TalkSentence: 800320909-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:<!--Unknown TalkSentence: 800320907-->
+:<!--Unknown TalkSentence: 800320908-->
+:<!--Unknown TalkSentence: 800320909-->
+:;(Return to previous option selection)
+<!--Unknown TalkSentence: 800320941-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте товары Скотта===
+{{Описание миссии|локация=Переулок ауруматонов|Порядочный человек не боится клеветы. Если вы не сделали ничего плохого, то нечего бояться проверки.<br />Внимательно изучите товары Скотта на предмет грязных уловок с его стороны.}}
+{{Диалог Начало}}
+
+;(Поговорите с Сушан)
+<!--Unknown TalkSentence: 800320913-->
+
+;(Поговорите с Минси)
+<!--Unknown TalkSentence: 800320921-->
+
+;(Поговорите с Скотт)
+<!--Unknown TalkSentence: 800320914-->
+----
+<!--Unknown TalkSentence: 800321261-->
+<!--Unknown TalkSentence: 800321262-->
+<!--Unknown TalkSentence: 800321263-->
+<!--Unknown TalkSentence: 800321264-->
+<!--Unknown TalkSentence: 800321265-->
+<!--Unknown TalkSentence: 800321266-->
+<!--Unknown TalkSentence: 800321267-->
+<!--Unknown TalkSentence: 800321268-->
+<!--Unknown TalkSentence: 800321269-->
+<!--Unknown TalkSentence: 800321270-->
+----
+----
+<!--Unknown TalkSentence: 800321001-->
+<!--Unknown TalkSentence: 800321002-->
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800321004-->
+<!--Unknown TalkSentence: 800321005-->
+<!--Unknown TalkSentence: 800321006-->
+<!--Unknown TalkSentence: 800321007-->
+<!--Unknown TalkSentence: 800321008-->
+<!--Unknown TalkSentence: 800321009-->
+<!--Unknown TalkSentence: 800321010-->
+<!--Unknown TalkSentence: 800321011-->
+<!--Unknown TalkSentence: 800321012-->
+----
+<!--Unknown TalkSentence: 800321031-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.8-second delay-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 800321033-->
+<!--Unknown TalkSentence: 800321038-->
+<!--Unknown TalkSentence: 800321039-->
+<!--Unknown TalkSentence: 800321040-->
+----
+{{Диалог Конец}}
+
+===Узнайте в лавке старьёвщика, как вести переговоры===
+{{Описание миссии|локация=Переулок ауруматонов|Похоже, Скотт подготовился заранее, поэтому-то он так ехидничал. Учитывая, что в дальнейшем вам придётся вести с ним переговоры, с ним явно будут проблемы. К счастью, госпожа секретарь вспомнила, что таинственный председатель торговой гильдии где-то поблизости. Он должен научить всем видам техники ведения переговоров!<br />Правда, вместо него опять может быть Ляньянь. Вы уже привыкли к секретности, которую председатель, похоже, поддерживает.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Ask0)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask1)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Show1)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Success"
+}</pre>
+
+;(Unused &mdash; Ask2)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Show2)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Success"
+}</pre>
+
+;(Unused &mdash; ShowFail)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Fail)
+<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Failure"
+}</pre>
+
+;(Unused &mdash; Talk_800320314)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6042"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowTutorialGuide",
+	"GuideID": 6042,
+	"WaitForExit": true
+}</pre>
+
+;(Получено {{Item|Посылка|20|x=1|text=Посылка}})
+----
+<!--Unknown TalkSentence: 800321201-->
+<!--Unknown TalkSentence: 800321202-->
+<!--Unknown TalkSentence: 800321203-->
+<!--Unknown TalkSentence: 800321204-->
+<!--Unknown TalkSentence: 800321205-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800321207-->
+<!--Unknown TalkSentence: 800321212-->
+<!--Unknown TalkSentence: 800321213-->
+<!--Unknown TalkSentence: 800321214-->
+----
+;(Получено {{Item|Показания работника причала|20|x=1|text=Показания работника причала}})
+;(Потеряно {{Item|Посылка|20|x=1|text=Посылка}})
+{{Диалог Конец}}
+
+===Поговорите с Минси и подтвердите материалы переговоров===
+{{Описание миссии|локация=Переулок ауруматонов|Приближается время переговоров. Сначала вам следует ознакомиться со всеми материалами.<br />Обсудите их с госпожой секретарём и постарайтесь получить преимущество в предстоящей словесной перепалке.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Минси)
+<!--Unknown TalkSentence: 800321231-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800321233-->
+:<!--Unknown TalkSentence: 800321235-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Скотт)
+<!--Unknown TalkSentence: 800323001-->
+
+;(Поговорите с Сикуй)
+<!--Unknown TalkSentence: 800323002-->
+;(Unused &mdash; Ask0)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask1)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask2)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Ask3)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Unused &mdash; Correct)
+:{{tx}}
+
+;(Unused &mdash; Fail)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.DebateReturnTestimony"
+}</pre>
+
+;(Получено {{Item|Плата за аренду причала|20|x=1|text=Плата за аренду причала}})
+<!--Unknown TalkSentence: 800321501-->
+<!--Unknown TalkSentence: 800321502-->
+<!--Unknown TalkSentence: 800321503-->
+<!--Unknown TalkSentence: 800321504-->
+<!--Unknown TalkSentence: 800321505-->
+<!--Unknown TalkSentence: 800321506-->
+<!--Unknown TalkSentence: 800321507-->
+<!--Unknown TalkSentence: 800321508-->
+<!--Unknown TalkSentence: 800321509-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800321511-->
+:<!--Unknown TalkSentence: 800321512-->
+:<!--Unknown TalkSentence: 800321513-->
+:<!--Unknown TalkSentence: 800321514-->
+:<!--Unknown TalkSentence: 800321515-->
+:<!--Unknown TalkSentence: 800321516-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800321511-->
+:<!--Unknown TalkSentence: 800321512-->
+:<!--Unknown TalkSentence: 800321513-->
+:<!--Unknown TalkSentence: 800321514-->
+:<!--Unknown TalkSentence: 800321515-->
+:<!--Unknown TalkSentence: 800321516-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 800321513-->
+:<!--Unknown TalkSentence: 800321514-->
+:<!--Unknown TalkSentence: 800321515-->
+:<!--Unknown TalkSentence: 800321516-->
+<!--Unknown TalkSentence: 800321513-->
+<!--Unknown TalkSentence: 800321514-->
+<!--Unknown TalkSentence: 800321515-->
+<!--Unknown TalkSentence: 800321516-->
+;(Потеряно {{Item|Показания работника причала|20|x=1|text=Показания работника причала}})
+----
+<!--Unknown TalkSentence: 800321551-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--0.8-second delay-->
+<!--Unknown TalkSentence: 800321553-->
+<!--Unknown TalkSentence: 800321556-->
+<!--Unknown TalkSentence: 800321557-->
+<!--Unknown TalkSentence: 800321558-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Back in Business (II)
+|zhs  = 金戺重喧•其二
+|zht  = 金戺重喧•其二
+|ja   = 金庭、喧騒を重ねて・その2
+|ko   = 다시 부흥하는 금빛•2
+|es   = De nuevo en activo&nbsp;II
+|fr   = Les affaires reprennent (II)
+|ru   = Снова в деле II
+|th   = คืนสู่ความรุ่งเรือง 2
+|vi   = Huyên Náo Trở Lại 2
+|de   = Wieder im Geschäft 2
+|id   = Hiruk Pikuk yang Kembali Bergaung 2
+|pt   = De Volta aos Negócios (II)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

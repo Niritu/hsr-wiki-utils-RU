@@ -1,0 +1,532 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8022102
+|Название        = 
+|Изображение     = Миссия Освоения Пенаконианская ночь.png
+|Тип             = Миссия приключения
+|События         = «Часик: Мемуары о сладких грёзах»
+|Глава           = Однажды в... Грёзавиле
+|Условия         = Завершена [[Миссия приключения]] ''[[Остановившиеся часы]]''
+|Персонажи       = Агент труппы; Первопроходец; Пис; Представитель торговой улицы; Художник-аниматор братца Хану
+|СтартЛокация    = Тематический парк Студии «Часы»
+|Мир             = Пенакония
+|Локации         = Тематический парк Студии «Часы»
+|Предыдущая      = Остановившиеся часы
+|Следующая       = Часик на 42-й улице
+|Награды         = Звёздный нефрит*20; Журнал приключений*5; Кредиты*20 000
+}}
+'''Пенаконианская ночь''' — Событие [[Миссия приключения]] из события [[«Часик: Мемуары о сладких грёзах»]].
+
+==Описание==
+{{Описание|Вашими стараниями история «Часик: Мемуары о сладких грёзах» подходит к концу, осталось совсем чуть-чуть - один фильм и Студия «Часы» спасена...}}
+
+==Этапы==
+# Завершите спин-офф
+# Продолжите монтаж «Мемуаров о сладких грёзах»
+# Завершите трейлер «Большое ограбление братца Хану»
+# Продолжите монтаж «Мемуаров о сладких грёзах»
+# Завершите трейлер «Возвышение сладких грёз»
+# Продолжите монтаж «Мемуаров о сладких грёзах»
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802211101-->)
+:<!--Unknown TalkSentence: 802214121-->
+:<!--Unknown TalkSentence: 802214122-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214124-->
+:<!--Unknown TalkSentence: 802214129-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 802211101-->)
+:<!--Unknown TalkSentence: 802214115-->
+:<!--Unknown TalkSentence: 802214119-->
+:<!--Unknown TalkSentence: 802214120-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+
+;(Unused &mdash; ActivitMovie_OpenUI)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+
+;(Unused &mdash; ActivitMovie_OpenTempUI)
+<pre>{
+	"$type": "RPG.GameCore.ClockParkUnlockScript",
+	"ScriptID": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Завершите спин-офф===
+{{Описание миссии|локация=Тематический парк Студии «Часы»|Благодаря вашей связи с Часовщиком вас позвали на Студию «Часы» участвовать в монтаже фильма «Мемуары о сладких грёзах» в качестве приглашённого режиссёра.<br />Съёмки продолжаются. Помогите студии «Часы» отснять больше эпизодов!}}
+{{Диалог Начало}}
+
+;(Поговорите с Художник-аниматор братца Хану)
+;(If {{cx}}<!--Hidden Mission ID 8022111--> has been started)
+:<!--Unknown TalkSentence: 802215701-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802215703-->
+:<!--Unknown TalkSentence: 802215704-->
+:<!--Unknown TalkSentence: 802215705-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--Hidden Mission ID 8022111--> has not been started)
+:<!--Unknown TalkSentence: 802215601-->
+:<!--Unknown TalkSentence: 802215602-->
+{{Диалог Конец}}
+
+===Продолжите монтаж «Мемуаров о сладких грёзах»===
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802210601-->
+<!--Unknown TalkSentence: 802210602-->
+<!--Unknown TalkSentence: 802210603-->
+<!--Unknown TalkSentence: 802210604-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210606-->
+:<!--Unknown TalkSentence: 802210607-->
+:<!--Unknown TalkSentence: 802210608-->
+:<!--Unknown TalkSentence: 802210609-->
+:<!--Unknown TalkSentence: 802210610-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214133-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210608-->
+:<!--Unknown TalkSentence: 802210609-->
+:<!--Unknown TalkSentence: 802210610-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214133-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210610-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214133-->
+::{{tx}}
+<!--Unknown TalkSentence: 802210610-->
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802214133-->
+:{{tx}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802212004-->)
+:<!--Unknown TalkSentence: 802214140-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214142-->
+:<!--Unknown TalkSentence: 802214147-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802214150-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Завершите трейлер «Большое ограбление братца Хану»===
+{{Диалог Начало}}
+
+;(Поговорите с Представитель торговой улицы)
+<!--Unknown TalkSentence: 802213101-->
+:<!--Unknown TalkSentence: 802213102-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802213104-->
+:<!--Unknown TalkSentence: 802213105-->
+:<!--Unknown TalkSentence: 802213106-->
+:<!--Unknown TalkSentence: 802213107-->
+:<!--Unknown TalkSentence: 802213108-->
+<!--Unknown TalkSentence: 802213121-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 44305001,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.EndDialogueEntityInteract"
+}</pre>
+::{{Диалог|Выход}} undefined
+
+{{Диалог Конец}}
+
+===Продолжите монтаж «Мемуаров о сладких грёзах»===
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission not Finish: 802212004-->)
+:<!--Unknown TalkSentence: 802210613-->
+:<!--Unknown TalkSentence: 802214135-->
+:<!--Unknown TalkSentence: 802214139-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802210525-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Clt_ScreenState"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802210801-->
+<!--Unknown TalkSentence: 802210802-->
+<!--Unknown TalkSentence: 802210803-->
+<!--Unknown TalkSentence: 802210804-->
+<!--Unknown TalkSentence: 802210805-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210807-->
+:<!--Unknown TalkSentence: 802210808-->
+:<!--Unknown TalkSentence: 802210809-->
+:<!--Unknown TalkSentence: 802210810-->
+:<!--Unknown TalkSentence: 802210811-->
+:<!--Unknown TalkSentence: 802210812-->
+:<!--Unknown TalkSentence: 802210813-->
+:<!--Unknown TalkSentence: 802210814-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210810-->
+:<!--Unknown TalkSentence: 802210811-->
+:<!--Unknown TalkSentence: 802210812-->
+:<!--Unknown TalkSentence: 802210813-->
+:<!--Unknown TalkSentence: 802210814-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802210813-->
+:<!--Unknown TalkSentence: 802210814-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802210813-->
+<!--Unknown TalkSentence: 802210814-->
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission Finish: 802212404-->)
+:<!--Unknown TalkSentence: 802214159-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802214161-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802214163-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
+:<!--Unknown TalkSentence: 802211001-->
+:<!--Unknown TalkSentence: 802211002-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802214150-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Завершите трейлер «Возвышение сладких грёз»===
+{{Диалог Начало}}
+
+;(Поговорите с Агент труппы)
+:{{tx}}
+:<!--Unknown TalkSentence: 802213451-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802213453-->
+:<!--Unknown TalkSentence: 802213454-->
+:<!--Unknown TalkSentence: 802213455-->
+:<!--Unknown TalkSentence: 802213456-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(Return to previous option selection)
+
+{{Диалог Конец}}
+
+===Продолжите монтаж «Мемуаров о сладких грёзах»===
+{{Диалог Начало}}
+
+;(Поговорите с Пис)
+;(If {{cx}}<!--SubMission not Finish: 802212404-->)
+:<!--Unknown TalkSentence: 802214168-->
+:<!--Unknown TalkSentence: 802210817-->
+:<!--Unknown TalkSentence: 802214169-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802214158-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102-->)
+:<!--Unknown TalkSentence: 802210501-->
+:;(Return to previous option selection)
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
+:<!--Unknown TalkSentence: 802212101-->
+::{{Диалог|Журнал путешествий}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 802212104-->
+;(Otherwise, if {{cx}}<!--SubMission Finish: 802210401--> and {{cx}}<!--SubMission not Finish: 802210403-->)
+:<!--Unknown TalkSentence: 802212403-->
+;(Otherwise)
+:<!--Unknown TalkSentence: 802213001-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Day for Night
+|zhs  = 日以作夜
+|zht  = 日以作夜
+|ja   = 愛を込めて&nbsp;ピノコニーの夜
+|ko   = 페나코니의 밤
+|es   = El día por la noche
+|fr   = La Nuit penaconienne
+|ru   = Пенаконианская ночь
+|th   = กลางวันกลายเป็นกลางคืน
+|vi   = Ngày Rồi Tới Đêm
+|de   = Tag für Nacht
+|id   = Siang Menjadi Malam
+|pt   = O Dia Pela Noite
+}}
+
+==История изменений==
+{{История изменений|2.7}}

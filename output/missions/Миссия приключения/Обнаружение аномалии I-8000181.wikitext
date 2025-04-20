@@ -1,0 +1,210 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8000181
+|Название        = 
+|Изображение     = Миссия Освоения Обнаружение аномалии I.png
+|Тип             = Миссия приключения
+|События         = Где же таинственная свинка-копилка?
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия Освоения]] ''[[Прошлое накроет снежной лавиной]]''
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+|Персонажи       = Первопроходец; Регин; Росси; Старый Гёте
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = 
+|Следующая       = Обнаружение аномалии II
+|Награды         = Кредиты*5 000
+}}
+'''Обнаружение аномалии I''' — Событие [[Миссия приключения]] из события [[Где же таинственная свинка-копилка?]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином
+# Исследуйте аномалию, связанную с «транзакциями»
+# Сообщите Регину результат
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином===
+{{Описание миссии|локация=Вестибюль отеля|Регину нужна помощь, отправляйтесь в отель «Гёте», чтобы поговорить с ним.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024149-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024166-->
+:<!--Unknown TalkSentence: 501024167-->
+:<!--Unknown TalkSentence: 501024168-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024170-->
+:<!--Unknown TalkSentence: 501024171-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024173-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте аномалию, связанную с «транзакциями»===
+{{Описание миссии|локация=Административный район|«Объекты», связанные с «транзакциями»... Можно ли положиться на интуицию Регина?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 187
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 187
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 801879909-->
+
+:{{Диалог|Магазин}} Торговый автомат
+<pre>{
+	"$type": "RPG.GameCore.VerifyInteractingEntity",
+	"GroupID": 209,
+	"ConfigID": 300001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowShop",
+	"ShopType": 25,
+	"TaskID": [],
+	"DisableBoughtHint": true
+}</pre>
+<!--Unknown TalkSentence: 801879910-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "ShopPage"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 187,
+	"ID": 300001
+}</pre>
+<!--Unknown TalkSentence: 801810213-->
+<!--Unknown TalkSentence: 801810214-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 801810216-->
+<!--Unknown TalkSentence: 801810219-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_common_puman_loop_stop"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 187,
+	"ID": 300001
+}</pre>
+:<!--0.1-second delay-->
+<!--Unknown TalkSentence: 801810211-->
+<!--Unknown TalkSentence: 801810212-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1113600
+}</pre>
+{{Диалог Конец}}
+
+===Сообщите Регину результат===
+{{Описание миссии|локация=Вестибюль отеля|Как аномальная свинка-копилка смогла схватить рукопись Регина? Вернитесь в отель «Гёте» и обсудите это с Регином, возможно, появятся новые зацепки.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Anomaly Detection 1
+|zhs  = 异常勘测•其一
+|zht  = 異常勘測·其一
+|ja   = 異常観測・1
+|ko   = 이상 조사•1
+|es   = Detección de anomalías&nbsp;I
+|fr   = Détection d'anomalie 1
+|ru   = Обнаружение аномалии I
+|th   = ตรวจสอบความผิดปกติ 1
+|vi   = Thăm Dò Bất Thường 1
+|de   = Anomalieforschung (Teil 1)
+|id   = Keanehan Terdeteksi 1
+|pt   = Detecção de Anomalia 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

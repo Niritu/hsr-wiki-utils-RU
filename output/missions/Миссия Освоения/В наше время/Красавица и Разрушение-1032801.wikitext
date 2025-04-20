@@ -1,0 +1,339 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1032801
+|Название        = 
+|Изображение     = Миссия Освоения Красавица и Разрушение.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = В наше время
+|Условия         = Завершена [[Миссия Освоения]] ''[[Фаворит]]''
+|Персонажи       = Воскресенье; Март 7; Первопроходец; Химеко
+|СтартЛокация    = Отборочная площадка выжженных песков от Услады™
+|Мир             = Пенакония
+|Локации         = Отборочная площадка выжженных песков от Услады™
+|Предыдущая      = Фаворит
+|Следующая       = На вершине все тропы сходятся
+|Награды         = Опыт Освоения*1 300; Звёздный нефрит*160; Путеводитель путешественника*10; Часокредиты*650; Кредиты*120 000
+}}
+'''Красавица и Разрушение''' — [[Миссия Освоения]] в главе [[В наше время]].
+
+==Описание==
+{{Описание|В ходе предыдущих переговоров Воскресенье встал на сторону Повелителя Грёз и взял под контроль Зарянку и Вельта. А ещё он ясно дал понять, что не собирается сражаться с вами. Напротив, он задаёт вам вопросы, которые помогут найти взаимопонимание.}}
+
+==Этапы==
+# Пройдите по «Пути суперзвезды» и доберитесь до Большого театра Пенаконии
+# Поговорите с остальными и узнайте, что они думают (необязательно)
+# Решите судьбу голубя гармонии
+# Решите судьбу искателя грёз
+# Решите судьбу Зарянки
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Пройдите по «Пути суперзвезды» и доберитесь до Большого театра Пенаконии===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 103277001-->
+<!--Unknown TalkSentence: 103277002-->
+<!--Unknown TalkSentence: 103277003-->
+<!--Unknown TalkSentence: 103277004-->
+<!--Unknown TalkSentence: 103277005-->
+<!--Unknown TalkSentence: 103277006-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103277008-->
+:<!--Unknown TalkSentence: 103277009-->
+:<!--Unknown TalkSentence: 103277010-->
+:<!--Unknown TalkSentence: 103277011-->
+:<!--Unknown TalkSentence: 103277012-->
+:<!--Unknown TalkSentence: 103277013-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103277010-->
+:<!--Unknown TalkSentence: 103277011-->
+:<!--Unknown TalkSentence: 103277012-->
+:<!--Unknown TalkSentence: 103277013-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103277012-->
+:<!--Unknown TalkSentence: 103277013-->
+::{{tx}}
+<!--Unknown TalkSentence: 103277012-->
+<!--Unknown TalkSentence: 103277013-->
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_penacony_3D_character_appear"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002
+	]
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с остальными и узнайте, что они думают (необязательно)===
+{{Описание миссии|локация=Отборочная площадка выжженных песков от Услады™|Ко всеобщему удивлению, короновать вас пришла не Зарянка, а её старший брат Воскресенье. Здесь он раскрывает свой план, но не хочет с вами сражаться и надеется, что вы сможете прийти к взаимопониманию.<br />Он задал вам несколько вопросов, вызвавших замешательство, но вы не бойтесь - если вопросы Воскресенья вас запутали, пусть ваш собственный опыт подскажет вам ответ.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Март 7)
+<pre>{
+	"$type": "RPG.GameCore.PredicateTaskListWithFail",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareSubMissionState",
+		"SubMissionID": 103280101,
+		"SubMissionState": "Started"
+	},
+	"SuccessTaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 103270219
+		},
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Поговорите с Химеко)
+
+
+;(Поговорите с Светлячок)
+
+{{Диалог Конец}}
+
+===Решите судьбу голубя гармонии===
+{{Диалог Начало}}
+
+
+;(Unused &mdash; Perf)
+:{{tx}}
+:<!--Unknown TalkSentence: 103277801-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280109,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 103277801-->
+::<!--Unknown TalkSentence: 103277802-->
+::<!--Unknown TalkSentence: 103277803-->
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+
+;(Unused &mdash; Perf)
+:{{tx}}
+:<!--Unknown TalkSentence: 103277901-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280109,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 103277901-->
+::<!--Unknown TalkSentence: 103277902-->
+::<!--Unknown TalkSentence: 103277903-->
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:{{tx}}
+:{{tx}}
+:{{tx}}
+;(Unused &mdash; Perf)
+:{{tx}}
+:<!--Unknown TalkSentence: 103278501-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280112,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 103278501-->
+::<!--Unknown TalkSentence: 103278502-->
+::<!--Unknown TalkSentence: 103278503-->
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+;(Unused &mdash; Perf)
+:{{tx}}
+:<!--Unknown TalkSentence: 103278601-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280112,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 103278601-->
+::<!--Unknown TalkSentence: 103278602-->
+::<!--Unknown TalkSentence: 103278603-->
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+{{Диалог Конец}}
+
+===Решите судьбу искателя грёз===
+{{Диалог Начало}}
+
+:{{tx}}
+:{{tx}}
+:{{tx}}
+;(Unused &mdash; OptionChosen_1032801)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; WayChosen)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43321
+}</pre>
+
+;(Unused &mdash; Perf)
+:{{tx}}
+:<!--Unknown TalkSentence: 103279201-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{tx}}
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+;(Unused &mdash; OptionChosen_1032801)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; WayChosen)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43321
+}</pre>
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280104,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	}
+}</pre>
+::{{tx}}
+:<!--Unknown TalkSentence: 103279201-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{tx}}
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+{{Диалог Конец}}
+
+===Решите судьбу Зарянки===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Beauty and Destruction
+|zhs  = 美丽与毁灭
+|zht  = 美麗與毀滅
+|ja   = 美と壊滅
+|ko   = 아름답고 저주받은 사람들
+|es   = Belleza y destrucción
+|fr   = Beauté et destruction
+|ru   = Красавица и Разрушение
+|th   = ความงามและการทำลายล้าง
+|vi   = Vẻ Đẹp Và Hủy Diệt
+|de   = Schönheit und Zerstörung
+|id   = Beauty dan Destruction
+|pt   = Beleza e Destruição
+}}
+
+==История изменений==
+{{История изменений|2.7}}

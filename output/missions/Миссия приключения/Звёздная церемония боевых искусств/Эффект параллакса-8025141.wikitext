@@ -1,0 +1,154 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025141
+|Название        = 
+|Изображение     = Миссия Освоения Эффект параллакса.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = 
+|Персонажи       = Взволнованный зритель; Другая зрительница; Зритель-прохожий; Зрительница-прохожая; Лука; Незнакомый зритель; Первопроходец; Спокойный зритель
+|СтартЛокация    = Чужие взгляды
+|Мир             = Лофу Сяньчжоу
+|Локации         = Чужие взгляды
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*2; Очищенный эфир*2; Wardance Sword Badge*5; Кредиты*30 000
+}}
+'''Эффект параллакса''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]] в главе [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Прогуляйтесь по «Рассекателю небес»
+# Избавьтесь от галлюцинаций и одолейте внутренних монстров
+
+==Прохождение==
+{{Дополнить}}
+
+===Прогуляйтесь по «Рассекателю небес»===
+{{Описание миссии|локация=Чужие взгляды|Лука хочет прогуляться и подышать свежим воздухом, но его преследуют косые взгляды и злобный шёпот...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+----
+<!--Unknown TalkSentence: 825135102-->
+<!--Unknown TalkSentence: 825135103-->
+<!--Unknown TalkSentence: 825135104-->
+<!--Unknown TalkSentence: 825135105-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400007
+	]
+}</pre>
+<!--Unknown TalkSentence: 825135107-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400008
+	]
+}</pre>
+<!--Unknown TalkSentence: 825135108-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400009,
+		300010
+	]
+}</pre>
+<!--Unknown TalkSentence: 825135109-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400010,
+		300011
+	]
+}</pre>
+<!--Unknown TalkSentence: 825135110-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300012
+	]
+}</pre>
+<!--Unknown TalkSentence: 825135111-->
+<!--Unknown TalkSentence: 825135112-->
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Legacy",
+	"LoadingType": "RefreshLoading"
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 825134902-->
+<!--Unknown TalkSentence: 825134903-->
+<!--Unknown TalkSentence: 825134904-->
+<!--Unknown TalkSentence: 825134905-->
+<!--Unknown TalkSentence: 825134906-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 825135002-->
+<!--Unknown TalkSentence: 825135003-->
+<!--Unknown TalkSentence: 825135004-->
+<!--Unknown TalkSentence: 825135005-->
+<!--Unknown TalkSentence: 825135006-->
+<!--Unknown TalkSentence: 825135007-->
+<!--Unknown TalkSentence: 825135008-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "TrialAvatarDialog"
+}</pre>
+<!--Unknown TalkSentence: 825134802-->
+{{Диалог Конец}}
+
+===Избавьтесь от галлюцинаций и одолейте внутренних монстров===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Parallax's Vision
+|zhs  = 视差之见
+|zht  = 視差之見
+|ja   = 眺望の視差
+|ko   = 시차적 관점
+|es   = Visión de paralaje
+|fr   = Vision de parallaxe
+|ru   = Эффект параллакса
+|th   = มุมมองที่แตกต่าง
+|vi   = Cái Nhìn Sai Lệch
+|de   = Vision der Parallaxe
+|id   = Pandangan Paralaks
+|pt   = Visões da Paralaxe
+}}
+
+==История изменений==
+{{История изменений|2.7}}

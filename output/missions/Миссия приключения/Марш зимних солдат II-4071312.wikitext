@@ -1,0 +1,213 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4071312
+|Название        = 
+|Изображение     = Миссия Освоения Марш зимних солдат II.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Адъютант; Командир стражи; Командор; Первопроходец
+|СтартЛокация    = Запретная зона Среброгривых Стражей
+|Мир             = Ярило-VI
+|Локации         = Запретная зона Среброгривых Стражей
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Марш зимних солдат II''' — [[Миссия приключения]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Адъютантом, чтобы узнать о целях учений
+# Найдите путь через редукторный мост
+# Пройдите испытание Командора
+# Поговорите с Адъютантом, чтобы завершить учения в локации Запретная зона
+# Запустите первый терминал редукторного моста
+# Запустите второй терминал редукторного моста
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Адъютантом, чтобы узнать о целях учений===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Вы снова принимаете участие в совместных учениях в Запретной зоне Среброгривых Стражей.<br />Поговорите с Адъютантом, чтобы понять боевые задачи этих учений.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40131_F40131002_G6",
+	"AnchorName": "Anchor9"
+}</pre>
+<!--Unknown TalkSentence: 407131201-->
+<!--Unknown TalkSentence: 407131202-->
+<!--Unknown TalkSentence: 407131203-->
+<!--Unknown TalkSentence: 407131204-->
+:{{Диалог}} undefined
+:{{Диалог}} undefined
+:{{Диалог}} undefined
+
+;(Получено {{Item|Ключ шифрования терминала|20|x=1|text=Ключ шифрования терминала}})
+{{Диалог Конец}}
+
+===Найдите путь через редукторный мост===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Вы снова принимаете участие в совместных учениях в Запретной зоне Среброгривых Стражей.<br />Цель учений - одолеть робота по имени «Командор». Найдите способ пройти через редукторный мост в Запретной зоне и найдите Командора.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 407131214-->
+<!--Unknown TalkSentence: 407131215-->
+<!--Unknown TalkSentence: 407131216-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40131_F40131002_G6",
+	"AnchorName": "Anchor5"
+}</pre>
+<!--Unknown TalkSentence: 407131217-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40131_F40131002_G6",
+	"AnchorName": "Anchor5",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40131_F40131002_G12",
+	"AnchorName": "Camera_3"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<!--Unknown TalkSentence: 407131246-->
+<!--Unknown TalkSentence: 407131247-->
+<!--Unknown TalkSentence: 407131248-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "NPC1",
+	"AreaName": "LevelArea_P40131_F40131002_G14",
+	"AnchorName": "Anchor1",
+	"MotionFlag": "Run",
+	"WaitUntilFinish": false
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "NPC2",
+	"AreaName": "LevelArea_P40131_F40131002_G14",
+	"AnchorName": "Anchor2",
+	"MotionFlag": "Run",
+	"WaitUntilFinish": false
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "NPC3",
+	"AreaName": "LevelArea_P40131_F40131002_G14",
+	"AnchorName": "Anchor4",
+	"MotionFlag": "Run",
+	"WaitUntilFinish": false
+}</pre>
+:<!--0.7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "NPC4",
+	"AreaName": "LevelArea_P40131_F40131002_G14",
+	"AnchorName": "Anchor3",
+	"MotionFlag": "Run",
+	"WaitUntilFinish": false
+}</pre>
+:<!--0.7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "NPC5",
+	"AreaName": "LevelArea_P40131_F40131002_G14",
+	"AnchorName": "Anchor4",
+	"MotionFlag": "Run",
+	"WaitUntilFinish": false
+}</pre>
+:<!--4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40131_F40131002_G12",
+	"AnchorName": "Camera_2",
+	"IsActive": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdventureForbidAttackTriggerBattle"
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите испытание Командора===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Вы снова принимаете участие в совместных учениях в Запретной зоне Среброгривых Стражей.<br />Путь к Командору найден. Если вы его одолеете, эти учения будут окончены.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 407131222-->
+<!--Unknown TalkSentence: 407131223-->
+:{{Диалог}} undefined
+:<!--Unknown TalkSentence: 407131225-->
+:<!--Unknown TalkSentence: 407131228-->
+:<!--Unknown TalkSentence: 407131229-->
+:;(Return to previous option selection)
+:{{Диалог}} undefined
+:<!--Unknown TalkSentence: 407131227-->
+:<!--Unknown TalkSentence: 407131228-->
+:<!--Unknown TalkSentence: 407131229-->
+:;(Return to previous option selection)
+;(Enter battle)
+:{{Enemy List|Канонир Среброгривых Стражей*2/+5% Сила атаки, +25% НР; Солдат Среброгривых Стражей*2/+5% Сила атаки, +25% НР}}
+;(Получено [Unknown Item undefined ×undefined])
+{{Диалог Конец}}
+
+===Поговорите с Адъютантом, чтобы завершить учения в локации Запретная зона===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Вы прошли ещё одно испытание в локации Запретная зона.<br />Поговорите с Адъютантом и получите награду.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 407131234-->
+<!--Unknown TalkSentence: 407131235-->
+:{{Диалог}} undefined
+:{{Диалог}} undefined
+<!--Unknown TalkSentence: 407131237-->
+<!--Unknown TalkSentence: 407131240-->
+<!--Unknown TalkSentence: 407131241-->
+<!--Unknown TalkSentence: 407131242-->
+;(Получено [Unknown Item undefined ×undefined])
+{{Диалог Конец}}
+
+===Запустите первый терминал редукторного моста===
+{{Описание миссии|локация=Запретная зона Среброгривых Стражей|Вы снова принимаете участие в совместных учениях в Запретной зоне Среброгривых Стражей.<br />Вы нашли ключ шифрования, используйте его, чтобы включить терминал управления и запустить редукторный мост.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Запустите второй терминал редукторного моста===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Winter Soldiers' March (II)
+|zhs  = 冬兵进行曲•其二
+|zht  = 冬兵進行曲•其二
+|ja   = 冬兵進行曲・その2
+|ko   = 겨울 병사 행진곡•2
+|es   = Marcha de los soldados invernales II
+|fr   = Marche des soldats de l'hiver (II)
+|ru   = Марш зимних солдат II
+|th   = ลำนำทหารเหมันต์ 2
+|vi   = Khúc Quân Hành Băng Giá-2
+|de   = Marsch der Wintersoldaten (Teil 2)
+|id   = Mars Tentara Musim Dingin (2)
+|pt   = Marcha dos Soldados Invernais (II)
+}}
+
+==История изменений==
+{{История изменений|2.7}}

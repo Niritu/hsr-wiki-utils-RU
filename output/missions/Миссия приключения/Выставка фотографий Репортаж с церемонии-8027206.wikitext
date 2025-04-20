@@ -1,0 +1,365 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8027206
+|Название        = 
+|Изображение     = Миссия Освоения Выставка фотографий Репортаж с церемонии.png
+|Тип             = Миссия приключения
+|События         = Между кадрами...
+|Глава           = 
+|Условия         = 
+|Персонажи       = Март 7; Окрылённая робоптаха; Первопроходец; Юньли; Яньцин
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*60; Очищенный эфир*4; Celestial Section*3; Кредиты*30 000
+}}
+'''Выставка фотографий: Репортаж с церемонии''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Обсудите тему дня с Март 7
+# Сфотографируйте построение робоптах
+# Обсудите фотографию с Март 7
+# Найдите меч Март 7
+# Сфотографируйте Юньли
+# Обсудите фотографию с Март 7
+# Сфотографируйте построение робоптах
+
+==Прохождение==
+{{Дополнить}}
+
+===Обсудите тему дня с Март 7===
+{{Описание миссии|локация=«Рассекатель небес»|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G349)
+:{{tx}}
+::{{Диалог}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+::<!--Unknown TalkSentence: 802723460-->
+:::{{tx}}
+::{{Диалог}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 802723460-->
+:::{{tx}}
+::{{Диалог}} undefined
+::<!--Unknown TalkSentence: 802723459-->
+:::{{tx}}
+::;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720601,
+					"MissionCustomValue": {
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720601,
+					"MissionCustomValue": {
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Сфотографируйте построение робоптах===
+{{Описание миссии|локация=«Рассекатель небес»|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; G350_SetUpBird)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400010,
+		400011,
+		400012,
+		400013,
+		400014,
+		400015,
+		400016
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002,
+		400003,
+		400004,
+		400005,
+		400006,
+		400007,
+		400008
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G350"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetCamera": false
+	}
+}</pre>
+:<!--Unknown TalkSentence: 802723500-->
+:<!--Unknown TalkSentence: 802723501-->
+:<!--Unknown TalkSentence: 802723502-->
+:<!--Unknown TalkSentence: 802723503-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723506-->
+:::{{tx}}
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=«Рассекатель небес»|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 802723555-->
+<!--Unknown TalkSentence: 802723556-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723559-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 202,
+	"Value": "2"
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723561-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 202,
+	"Value": "3"
+}</pre>
+<!--Unknown TalkSentence: 802723562-->
+<!--Unknown TalkSentence: 802723563-->
+<!--Unknown TalkSentence: 802723564-->
+<!--Unknown TalkSentence: 802723706-->
+{{Диалог Конец}}
+
+===Найдите меч Март 7===
+{{Описание миссии|локация=«Рассекатель небес»|Благодаря интуиции Март 7 определила местонахождение меча. Следуйте за ней и найдите его.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G353)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G354"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Сфотографируйте Юньли===
+{{Описание миссии|локация=«Рассекатель небес»|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; PhotoGraphStartCustomString)
+:<!--1.5-second delay-->
+
+;(Unused &mdash; PhotoGraphFinishCustomString)
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 354
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud02"
+}</pre>
+{{Диалог Конец}}
+
+===Обсудите фотографию с Март 7===
+{{Описание миссии|локация=«Рассекатель небес»|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+:{{tx}}
+<!--Unknown TalkSentence: 802723651-->
+<!--Unknown TalkSentence: 802723652-->
+<!--Unknown TalkSentence: 802723653-->
+<!--Unknown TalkSentence: 802723654-->
+<!--Unknown TalkSentence: 802723655-->
+<!--Unknown TalkSentence: 802723656-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723658-->
+:<!--Unknown TalkSentence: 802723659-->
+:<!--Unknown TalkSentence: 802723660-->
+:<!--Unknown TalkSentence: 802723661-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G355"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802723660-->
+:<!--Unknown TalkSentence: 802723661-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G355"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802723660-->
+<!--Unknown TalkSentence: 802723661-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G355"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Сфотографируйте построение робоптах===
+{{Описание миссии|локация=«Рассекатель небес»|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Диалог Начало}}
+;(Unused &mdash; G351_SetUpBird)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400010,
+		400011,
+		400012,
+		400013,
+		400014,
+		400015,
+		400016
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002,
+		400003,
+		400004,
+		400005,
+		400006,
+		400007,
+		400008
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G350"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetCamera": false
+	}
+}</pre>
+:<!--Unknown TalkSentence: 802723500-->
+:<!--Unknown TalkSentence: 802723501-->
+:<!--Unknown TalkSentence: 802723502-->
+:<!--Unknown TalkSentence: 802723503-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802723506-->
+:::{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Photography Exhibition: Wardance Live
+|zhs  = 摄影展览•演武直击
+|zht  = 攝影展覽•演武直擊
+|ja   = フォトコンテスト・直撃演武レポート
+|ko   = 사진 콘테스트•연무 라이브
+|es   = Exposición de fotografía: en directo desde la ceremonia
+|fr   = Exposition photo&nbsp;: En direct de la Danse martiale
+|ru   = Выставка фотографий: Репортаж с церемонии
+|th   = นิทรรศการภาพถ่าย: ดวลยุทธ์ประจัญบาน
+|vi   = Triển Lãm Nhiếp Ảnh-Diễn Võ: Live
+|de   = Fotoausstellung: Direkter Schlag der Kampfkunst
+|id   = Pameran Fotografi: Siaran Langsung Bela Diri
+|pt   = Exibição de Fotografia: Dança da Guerra Ao Vivo
+}}
+
+==История изменений==
+{{История изменений|2.7}}

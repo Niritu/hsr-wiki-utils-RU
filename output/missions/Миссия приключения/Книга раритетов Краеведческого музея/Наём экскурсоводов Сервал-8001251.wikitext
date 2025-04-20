@@ -1,0 +1,135 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8001251
+|Название        = 
+|Изображение     = Миссия Освоения Наём экскурсоводов Сервал.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Книга раритетов Краеведческого музея
+|Условия         = 
+|Персонажи       = Пела; Первопроходец; Сервал; Эрис
+|СтартЛокация    = Мастерская «Незимье»
+|Мир             = Ярило-VI
+|Локации         = Мастерская «Незимье»
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Наём экскурсоводов: Сервал''' — [[Миссия приключения]] в [[Ярило-VI]] в главе [[Книга раритетов Краеведческого музея]].
+
+==Описание==
+{{Описание|Краеведческий музей Белобога готовится к открытию, но в штате не хватает экскурсоводов. Чтобы открытие прошло гладко, Сервал, хозяйка мастерской «Незимье», соглашается на просьбу Пелы поработать экскурсоводом.}}
+
+==Этапы==
+# Найдите Сервал в мастерской «Незимье»
+# Найдите Эрис в Краеведческом музее Белобога
+# Начните собеседование в зоне отдыха музея
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите Сервал в мастерской «Незимье»===
+{{Описание миссии|локация=Мастерская «Незимье»|Краеведческий музей Белобога вот-вот откроется, но экскурсоводов очень не хватает. Чтобы быстро закрыть вакансии и улучшить качество обслуживания посетителей, Пела и Эрис приглашают всех граждан Белобога подать заявки.<br />На этот раз они положили глаз на талантливую Сервал. Отправляйтесь вместо них в мастерскую «Незимье» и узнайте, заинтересована ли Сервал в этой должности.}}
+{{Диалог Начало}}
+
+;(Поговорите с Сервал)
+----
+<!--Unknown TalkSentence: 201196400-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201196402-->
+<!--Unknown TalkSentence: 201196403-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Найдите Эрис в Краеведческом музее Белобога===
+{{Диалог Начало}}
+
+;(Поговорите с Эрис)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIfGroupIsOccupied","GroupID":38,"Inverse":true}-->}})
+::----
+:<!--Unknown TalkSentence: 201196602-->
+:<!--Unknown TalkSentence: 201196603-->
+:<!--Unknown TalkSentence: 201196604-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_pela_walk_near"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::----
+:<!--Unknown TalkSentence: 201196605-->
+:<!--Unknown TalkSentence: 201196606-->
+:<!--Unknown TalkSentence: 201196607-->
+:<!--Unknown TalkSentence: 201196608-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201196610-->
+:<!--Unknown TalkSentence: 201196613-->
+:<!--Unknown TalkSentence: 201196614-->
+:<!--Unknown TalkSentence: 201196615-->
+::----
+;(Otherwise)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501190301
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Пела)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800125104,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 201196702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201196704-->
+:<!--Unknown TalkSentence: 201196705-->
+:<!--Unknown TalkSentence: 201196709-->
+:<!--Unknown TalkSentence: 201196710-->
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 201196707-->
+:<!--Unknown TalkSentence: 201196708-->
+::----
+;(Unused &mdash; 800125104_Success)
+:----
+{{Диалог Конец}}
+
+===Начните собеседование в зоне отдыха музея===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hiring Guides: Serval
+|zhs  = 导览员募集•希露瓦
+|zht  = 導覽員募集•希露瓦
+|ja   = ガイド募集・セーバル
+|ko   = 안내원 모집•서벌
+|es   = Reclutamiento de guías: Serval
+|fr   = Recrutement de guides&nbsp;: Serval
+|ru   = Наём экскурсоводов: Сервал
+|th   = รับสมัครไกด์: Serval
+|vi   = Tuyển Hướng Dẫn Viên: Serval
+|de   = Museumsführer gesucht: Serval
+|id   = Perekrutan Pemandu: Serval
+|pt   = Recrutamento de Guias Turísticos: Serval
+}}
+
+==История изменений==
+{{История изменений|2.7}}

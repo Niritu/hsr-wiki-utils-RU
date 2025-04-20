@@ -1,0 +1,115 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340137
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Музыкальная охота: Эпилог]]''
+|Персонажи       = «Услада»-звезда; Зелёная бутылка; Золотая бутылка; Красная бутылка; Первопроходец; Член съёмочной группы
+|СтартЛокация    = Академия оригами
+|Мир             = Пенакония
+|Локации         = Академия оригами
+|Предыдущая      = Музыкальная охота: Эпилог
+|Следующая       = 
+|Награды         = Журнал приключений*3; Конденсированный эфир*2; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+
+;(Поговорите с Член съёмочной группы)
+<!--Unknown TalkSentence: 434040001-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 434040003-->
+<!--Unknown TalkSentence: 434040004-->
+
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicString",
+	"Name": "PuzzleBoardPath",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300001
+	],
+	"Value": {
+		"Value": "Gameplays/JigsawPuzzle/JigsawPuzzle_P06_Normal_01_Comedy_02.prefab"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "InitPuzzle"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Поговорите с Член съёмочной группы)
+<!--Unknown TalkSentence: 434040101-->
+----
+<!--Unknown TalkSentence: 434040201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 434040301-->
+<!--Unknown TalkSentence: 434040302-->
+<!--Unknown TalkSentence: 434040303-->
+<!--Unknown TalkSentence: 434040304-->
+<!--Unknown TalkSentence: 434040305-->
+<!--Unknown TalkSentence: 434040306-->
+<!--Unknown TalkSentence: 434040307-->
+<!--Unknown TalkSentence: 434040308-->
+<!--Unknown TalkSentence: 434040309-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 434040401-->
+<!--Unknown TalkSentence: 434040402-->
+<!--Unknown TalkSentence: 434040403-->
+<!--Unknown TalkSentence: 434040404-->
+<!--Unknown TalkSentence: 434040405-->
+<!--Unknown TalkSentence: 434040406-->
+<!--Unknown TalkSentence: 434040407-->
+----
+<!--Unknown TalkSentence: 434040501-->
+<!--Unknown TalkSentence: 434040502-->
+<!--Unknown TalkSentence: 434040503-->
+<!--Unknown TalkSentence: 434040504-->
+<!--Unknown TalkSentence: 434040505-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

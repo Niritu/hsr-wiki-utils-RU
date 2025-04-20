@@ -1,0 +1,404 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002211
+|Название        = 
+|Изображение     = Миссия Освоения Чудесные сказания. Глава I.png
+|Тип             = Миссия приключения
+|События         = Чудесные сказания
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[Отважный дракон в безбрежном океане]]''
+|Персонажи       = Говард; Господин Сиянь; Первопроходец; Сюйся; Тодд; Цзиньюй; Цзыцяо; Чуньфэнь; Эделия
+|СтартЛокация    = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Центральная гавань Приюта звёздных яликов
+|Предыдущая      = 
+|Следующая       = Чудесные сказания. Глава II
+|Награды         = Звёздный нефрит*30; Путеводитель путешественника*3; Очищенный эфир*2; Кредиты*25 000
+}}
+'''Чудесные сказания. Глава I''' — Событие [[Миссия приключения]] из события [[Чудесные сказания]].
+
+==Описание==
+{{Описание|Господин Сиянь придумывает странные истории о ваших приключениях на Лофу Сяньчжоу и утверждает, что они имеют высокую материальную стоимость. Можно ли ему верить?}}
+
+==Этапы==
+# Поговорите с господином Сиянем в Центральной гавани Приюта звёздных яликов
+# Придумайте историю вместе с господином Сиянем в Комиссии по алхимии
+# Проиграйте сценарий господина Сияня, чтобы завершить испытания
+# Приготовьте снадобье в горниле эликсиров
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Поговорите с господином Сиянем в Центральной гавани Приюта звёздных яликов===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Господин Сиянь ищет вас по какому-то делу. Поговорите с ним в Центральной гавани Приюта звёздных яликов.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Господин Сиянь)
+<!--Unknown TalkSentence: 502104101-->
+<!--Unknown TalkSentence: 502104102-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Сюйся)
+<!--Unknown TalkSentence: 502106101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_502106110)
+<!--Unknown TalkSentence: 502106110-->
+:<!--Unknown TalkSentence: 502106113-->
+:;(Return to previous option selection)
+
+;(Поговорите с Цзиньюй)
+<!--Unknown TalkSentence: 502108101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Говард)
+<!--Unknown TalkSentence: 502112101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Тодд)
+<!--Unknown TalkSentence: 502114101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Цзыцяо)
+;(If {{cx}}<!--during performance 502011501-->)
+:<!--Unknown TalkSentence: 502115001-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502115003-->
+:<!--Unknown TalkSentence: 502115006-->
+;(If {{cx}}<!--not during performance 502011501-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502115301
+}</pre>
+:<!--Unknown TalkSentence: 502115302-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Эделия)
+<!--Unknown TalkSentence: 502117101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Чуньфэнь)
+<!--Unknown TalkSentence: 502118101-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 812300202-->
+<!--Unknown TalkSentence: 812300203-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300205-->
+:<!--Unknown TalkSentence: 812300209-->
+:<!--Unknown TalkSentence: 812300210-->
+:<!--Unknown TalkSentence: 812300211-->
+:<!--Unknown TalkSentence: 812300212-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_storytelling_01"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+:<!--Unknown TalkSentence: 812300213-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+:<!--Unknown TalkSentence: 812300214-->
+:<!--Unknown TalkSentence: 812300215-->
+:<!--Unknown TalkSentence: 812300216-->
+:<!--Unknown TalkSentence: 812300217-->
+:<!--Unknown TalkSentence: 812300218-->
+:<!--Unknown TalkSentence: 812300219-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300207-->
+:<!--Unknown TalkSentence: 812300208-->
+:<!--Unknown TalkSentence: 812300209-->
+:<!--Unknown TalkSentence: 812300210-->
+:<!--Unknown TalkSentence: 812300211-->
+:<!--Unknown TalkSentence: 812300212-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_storytelling_01"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+:<!--Unknown TalkSentence: 812300213-->
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+:<!--Unknown TalkSentence: 812300214-->
+:<!--Unknown TalkSentence: 812300215-->
+:<!--Unknown TalkSentence: 812300216-->
+:<!--Unknown TalkSentence: 812300217-->
+:<!--Unknown TalkSentence: 812300218-->
+:<!--Unknown TalkSentence: 812300219-->
+<!--Unknown TalkSentence: 812300205-->
+<!--Unknown TalkSentence: 812300209-->
+<!--Unknown TalkSentence: 812300210-->
+<!--Unknown TalkSentence: 812300211-->
+<!--Unknown TalkSentence: 812300212-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_storytelling_01"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+<!--Unknown TalkSentence: 812300213-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMIssion_8002211_1.png"
+}</pre>
+<!--Unknown TalkSentence: 812300214-->
+<!--Unknown TalkSentence: 812300215-->
+<!--Unknown TalkSentence: 812300216-->
+<!--Unknown TalkSentence: 812300217-->
+<!--Unknown TalkSentence: 812300218-->
+<!--Unknown TalkSentence: 812300219-->
+{{Диалог Конец}}
+
+===Придумайте историю вместе с господином Сиянем в Комиссии по алхимии===
+{{Описание миссии|локация=Комиссия по алхимии|Господин Сиянь хочет написать пьесу о вашем приключении. Но чтобы этот проект стал коммерчески успешным, ему придётся внести в вашу историю ряд изменений...}}
+{{Диалог Начало}}
+
+;(Поговорите с Господин Сиянь)
+----
+<!--Unknown TalkSentence: 812300301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300304-->
+:<!--Unknown TalkSentence: 812300305-->
+<!--Unknown TalkSentence: 812300306-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 812300601-->
+<!--Unknown TalkSentence: 812300602-->
+<!--Unknown TalkSentence: 812300603-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300605-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 812300607-->
+----
+{{Диалог Конец}}
+
+===Проиграйте сценарий господина Сияня, чтобы завершить испытания===
+{{Описание миссии|локация=Комиссия по алхимии|По сценарию первый глава Комиссии по алхимии придумал для своих преемников серию испытаний, пройдя которые, можно получить чудо-снадобье трансформации.}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800221117,
+	"MissionCustomValue": {
+		"Index": 3,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 812300401-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300403-->
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 812300412-->
+::----
+;(If {{F|MissionCV-8002211-3}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.OpenRaid",
+	"RaidID": 43203,
+	"IsSkipUI": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+----
+<!--Unknown TalkSentence: 812301001-->
+<!--Unknown TalkSentence: 812301002-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 812301004-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800221118,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 812300701-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 812300704-->
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 812300708-->
+::----
+;(If {{F|MissionCV-8002211-undefined}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.OpenRaid",
+	"RaidID": 43204,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		}
+	],
+	"IsSkipUI": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+----
+<!--Unknown TalkSentence: 812301401-->
+<!--Unknown TalkSentence: 812301402-->
+<!--Unknown TalkSentence: 812301403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 812301405-->
+
+;(Поговорите с Господин Сиянь)
+<!--Unknown TalkSentence: 812301501-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800221119,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			1
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 812301101-->
+<!--Unknown TalkSentence: 812301102-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800221119,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 812301105-->
+----
+{{Диалог Конец}}
+
+===Приготовьте снадобье в горниле эликсиров===
+{{Описание миссии|локация=Комиссия по алхимии|В истории господине Сияня вы прошли испытание первого главы и собрали травы, необходимые для приготовления снадобья. Теперь пришло время его приготовить, а оно поможет вам в перевоплощении!}}
+{{Диалог Начало}}
+
+----
+<!--Unknown TalkSentence: 812301601-->
+<!--Unknown TalkSentence: 812301602-->
+<!--Unknown TalkSentence: 812301603-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_storytelling_02"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140294.png"
+}</pre>
+<!--Unknown TalkSentence: 812301605-->
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false
+}</pre>
+<!--Unknown TalkSentence: 812301606-->
+<!--Unknown TalkSentence: 812301607-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(Получено {{Item|Эликсир драконьего масла|20|x=1|text=Эликсир драконьего масла}})
+
+;(Потеряно {{Item|Лотос льда и пламени|20|x=1|text=Лотос льда и пламени}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Tales of the Fantastic: Chapter 1
+|zhs  = 评书奇谭•第一回
+|zht  = 評書奇譚•第一回
+|ja   = 講談奇譚・第一回
+|ko   = 진기한 이야기•제1장
+|es   = Narraciones extraordinarias: acto 1
+|fr   = Contes fantastiques &mdash; Chapitre&nbsp;1
+|ru   = Чудесные сказания. Глава I
+|th   = เรื่องเล่าขานตำนานการผจญภัย: บทที่ 1
+|vi   = Kỳ Truyện Bình Thư 1
+|de   = Geschichten des Fantastischen – Kapitel 1
+|id   = Dongeng Luar Biasa - Bag. 1
+|pt   = Contos do Fantástico - Capítulo 1
+}}
+
+==История изменений==
+{{История изменений|2.7}}

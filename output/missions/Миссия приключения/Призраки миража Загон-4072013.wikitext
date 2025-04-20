@@ -1,0 +1,135 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4072013
+|Название        = 
+|Изображение     = Миссия Освоения Призраки миража Загон.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Голос Гуанцзиня; Гуанцзинь; Первопроходец
+|СтартЛокация    = Облачная переправа
+|Мир             = Лофу Сяньчжоу
+|Локации         = Облачная переправа
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Призраки миража: Загон''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поищите свинок-копилок в Кладезе зелени
+# Используйте Резонанс, чтобы найти прячущихся свинок-копилок
+# Выследите свинок-копилок, используя подсказки
+# Поговорите с Гуанцзинем
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поищите свинок-копилок в Кладезе зелени===
+{{Описание миссии|локация=Облачная переправа|Комиссия по балансу установила, что облачные гимны - дело рук не только свинки-копилки пространства. Вы решили отправиться на операцию «Загон».<br />Теперь вам предстоит поймать свинок-копилок. Много-много свинок-копилок. Ловите их, пока операция не завершится...}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 407201302-->
+<!--Unknown TalkSentence: 407201303-->
+<!--Unknown TalkSentence: 407201304-->
+<!--Unknown TalkSentence: 407201305-->
+
+
+;(Unused &mdash; _CS_PumanHunt_OnPumanEscape)
+<!--Unknown TalkSentence: 407201360-->
+
+;(Unused &mdash; _CS_PumanHunt_OnResetPerformanceStart)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "PlayerSearchSneakMonster",
+	"VisionEffectType": "SearchMonster"
+}</pre>
+:<!--Unknown TalkSentence: 407201361-->
+:<!--Unknown TalkSentence: 407201362-->
+:<!--Unknown TalkSentence: 407201363-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 407201365-->
+{{Диалог Конец}}
+
+===Используйте Резонанс, чтобы найти прячущихся свинок-копилок===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Выследите свинок-копилок, используя подсказки===
+{{Диалог Начало}}
+
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 407201015-->
+<!--Unknown TalkSentence: 407201016-->
+<!--Unknown TalkSentence: 407201322-->
+<!--Unknown TalkSentence: 407201323-->
+<!--Unknown TalkSentence: 407201324-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvSpecialVisionProtect"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvSpecialVisionProtect"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "PlayerSearchSneakMonster",
+	"VisionEffectType": "SearchMonster",
+	"IsInfiniteTime": true
+}</pre>
+<!--Unknown TalkSentence: 407201332-->
+<!--Unknown TalkSentence: 407201333-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 407201335-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 407201337-->
+:<!--Unknown TalkSentence: 407201338-->
+<!--Unknown TalkSentence: 407201335-->
+{{Диалог Конец}}
+
+===Поговорите с Гуанцзинем===
+{{Диалог Начало}}
+
+;(Поговорите с Гуанцзинь)
+<!--Unknown TalkSentence: 407201342-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 407201344-->
+<!--Unknown TalkSentence: 407201347-->
+<!--Unknown TalkSentence: 407201348-->
+<!--Unknown TalkSentence: 407201019-->
+<!--Unknown TalkSentence: 940720072-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(Enter battle)
+:{{Enemy List|Зверь Изобилия: Золотая гончая*1/+70% Сила атаки, +20% НР; Поражённый Марой солдат*1/+70% Сила атаки, +20% НР; Зверь Изобилия: Древесный волк*1/+70% Сила атаки, +20% НР}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Wraiths of Mirage: Herding Operation
+|zhs  = 蜃楼遁影•牧场行动
+|zht  = 蜃樓遁影•牧場行動
+|ja   = 蜃気楼の隠影・牧場行動
+|ko   = 사라진 신기루•목장 작전
+|es   = Espectros del espejismo: misión de pastoreo
+|fr   = Spectres de mirage&nbsp;: Opération Rassemblement de troupeau
+|ru   = Призраки миража: Загон
+|th   = ภูตแห่งมายา: ปฏิบัติการไล่ต้อน
+|vi   = Ảo Ảnh Hiện Hữu - Hành Động Nông Trường
+|de   = Geister des Phantoms: Weideoperation
+|id   = Roh Fatamorgana: Operasi Peternakan
+|pt   = Espectros da Miragem: Operação de Pastoreio
+}}
+
+==История изменений==
+{{История изменений|2.7}}

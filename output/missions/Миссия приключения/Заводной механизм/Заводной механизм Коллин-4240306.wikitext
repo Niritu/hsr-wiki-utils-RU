@@ -1,0 +1,178 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4240306
+|Название        = 
+|Изображение     = Миссия Освоения Заводной механизм Коллин.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = Заводной механизм
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Взволнованный сотрудник охраны КММ; Коллин; Первопроходец; Проницательный полевой сотрудник КММ
+|СтартЛокация    = Граница грёз
+|Мир             = Пенакония
+|Локации         = Граница грёз
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*100; Звёздный нефрит*10; Очищенный эфир*3; Часокредиты*180; Кредиты*20 000
+}}
+'''Заводной механизм: Коллин''' — [[Миссия приключения]] в [[Пенакония]] в главе [[Заводной механизм]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите в Парке Айдена мусорный бак, о котором упоминала Коллин
+# Вернитесь на Границу грёз и поговорите с Коллин
+# Осмотрите комнату Коллин в отеле реальности
+# Встретьтесь с Коллин за дверью
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Найдите в Парке Айдена мусорный бак, о котором упоминала Коллин===
+{{Описание миссии|локация=Золотой миг|Тик-так! Покрутите стрелки... Тик-так!<br />Исследуйте сознание людей, они ждут этого. Помогите им раскрыть свою истинную сущность.}}
+{{Диалог Начало}}
+
+:{{Диалог|undefined}} Осмотреть
+<!--Unknown TalkSentence: 413040003-->
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190564
+		}
+	}
+}</pre>
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 413060701-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413060703-->
+<!--Unknown TalkSentence: 413060706-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 241
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_npc_special_messenger_disappear"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 241
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_NPC_Full_W0_Lady_Messenger_Rim.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<!--Unknown TalkSentence: 413060707-->
+<!--Unknown TalkSentence: 413060708-->
+<!--Unknown TalkSentence: 413060709-->
+----
+
+;(Поговорите с Коллин)
+<!--Unknown TalkSentence: 413060638-->
+{{Диалог Конец}}
+
+===Вернитесь на Границу грёз и поговорите с Коллин===
+{{Диалог Начало}}
+
+;(Поговорите с Коллин)
+<!--Unknown TalkSentence: 413061001-->
+<!--Unknown TalkSentence: 413061002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413061004-->
+<!--Unknown TalkSentence: 413061007-->
+<!--Unknown TalkSentence: 413061008-->
+{{Диалог Конец}}
+
+===Осмотрите комнату Коллин в отеле реальности===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 424030604,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 413060801-->
+<!--Unknown TalkSentence: 413060802-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Встретьтесь с Коллин за дверью===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Постучаться в дверь
+<!--Unknown TalkSentence: 413060901-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 413060903-->
+<!--Unknown TalkSentence: 413060908-->
+<!--Unknown TalkSentence: 413060909-->
+<!--Unknown TalkSentence: 413060910-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clockwork: Colleen
+|zhs  = 钟表把戏：科琳
+|zht  = 鐘錶把戲：科琳
+|ja   = クロックトリック：コリン
+|ko   = 시계 트릭: 콜린
+|es   = Trucorreloj: Colleen
+|fr   = Pouvoir de la Pendule&nbsp;: Colleen
+|ru   = Заводной механизм: Коллин
+|th   = กลนาฬิกา: Colleen
+|vi   = Thủ Thuật Đồng Hồ: Colleen
+|de   = Uhrwerk: Colleen
+|id   = Clockwork: Colleen
+|pt   = Truquelógio: Colleen
+}}
+
+==История изменений==
+{{История изменений|2.7}}

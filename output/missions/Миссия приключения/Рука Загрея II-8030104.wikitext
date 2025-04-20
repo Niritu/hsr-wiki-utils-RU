@@ -1,0 +1,121 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8030104
+|Название        = 
+|Изображение     = Миссия Освоения Рука Загрея II.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Дамионис; Первопроходец
+|СтартЛокация    = Рука Загрея II
+|Мир             = Амфореус
+|Локации         = Рука Загрея II
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Рука Загрея II''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Соберите монеты причуд
+# Продолжайте управлять и продвигаться вперёд
+# Доберитесь до новой комнаты
+
+==Прохождение==
+{{Дополнить}}
+
+===Соберите монеты причуд===
+{{Описание миссии|локация=Рука Загрея II|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой руки Загрея. Продолжить путь можно, лишь завершив испытание.}}
+{{Диалог Начало}}
+;(If {{F|undefined}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; SwitchHand_Group_ResetTransform)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Prop位置重置###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchHandResetTransform",
+	"ID": {
+		"FixedValue": {
+			"Value": 16
+		}
+	},
+	"AnchorID": {
+		"Custom": true,
+		"Key": "PullBackAnchor"
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_ResetPlayerPosition)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Player位置重置###"
+}</pre>
+::<!--0.2-second delay-->
+
+{{Диалог Конец}}
+
+===Продолжайте управлять и продвигаться вперёд===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Доберитесь до новой комнаты===
+{{Описание миссии|локация=Рука Загрея II|Вы идёте всё дальше и дальше и попадаете в пустую комнату.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 830110701-->
+<!--Unknown TalkSentence: 830110702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110704-->
+:<!--Unknown TalkSentence: 830110705-->
+:<!--Unknown TalkSentence: 830110706-->
+:<!--Unknown TalkSentence: 830110707-->
+:<!--Unknown TalkSentence: 830110708-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 830110707-->
+:<!--Unknown TalkSentence: 830110708-->
+::{{tx}}
+<!--Unknown TalkSentence: 830110707-->
+<!--Unknown TalkSentence: 830110708-->
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hand of Zagreus: Room II
+|zhs  = 扎格列斯之手-房间Ⅱ
+|zht  = 扎格列斯之手-房間Ⅱ
+|ja   = ザグレウスの手：部屋II
+|ko   = 자그레우스의 손-방Ⅱ
+|es   = Mano de Zagreus: sala II
+|fr   = Salle II de la Main de Zagreus
+|ru   = Рука Загрея II
+|th   = หัตถ์ Zagreus: ห้อง II
+|vi   = Tay Của Zagreus: Phòng II
+|de   = Hand des Zagreus: Raum II
+|id   = Tangan Zagreus: Ruangan II
+|pt   = A Mão de Zagreus: Sala II
+}}
+
+==История изменений==
+{{История изменений|3.0}}

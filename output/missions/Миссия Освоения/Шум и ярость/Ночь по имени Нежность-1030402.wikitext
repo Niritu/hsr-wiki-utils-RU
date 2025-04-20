@@ -1,0 +1,607 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1030402
+|Название        = 
+|Изображение     = Миссия Освоения Ночь по имени Нежность.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Шум и ярость
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ночь по имени Нежность]]''
+|Персонажи       = Первопроходец; Светлячок; Член клана Гончих
+|СтартЛокация    = Граница грёз
+|Мир             = Пенакония
+|Локации         = Граница грёз
+|Предыдущая      = 
+|Следующая       = Сквозь тусклое стекло
+|Награды         = Опыт Освоения*900; Звёздный нефрит*110; Путеводитель путешественника*12; Утраченный кристалл*10; Часокредиты*450; "If I Can Stop One Heart From Breaking"*1 { text = If I Could Stop One Heart From Breaking }; Кредиты*100 000
+}}
+'''Ночь по имени Нежность''' — [[Миссия Освоения]] в главе [[Шум и ярость]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Присоединитесь к Светлячку
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Присоединитесь к Светлячку
+# Идите за Светлячком вглубь Границы грёз
+# Примените Заводной механизм на человеке из клана Гончих
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Используйте особенности Мира грёз, чтобы пройти дальше
+# Воспользуйтесь особенностями Мира грёз, чтобы проложить путь
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Прокатитесь в сферомёте
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Сделайте перерыв и оцените Большой театр Пенаконии (необязательно)
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Найдите второй фрагмент мозаики
+# Найдите первый фрагмент мозаики
+# Найдите недостающие фрагменты
+# Воспользуйтесь особенностями Мира грёз, чтобы проложить путь
+# Получите потерянную шестерёнку эмоций от прохожего
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Восполните эмоциферблат души грёзотворца
+# Продолжайте идти за Светлячком дальше вглубь Границы грёз
+# Поговорите с грёзотворцем, чей эмоциферблат завершили
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Присоединитесь к Светлячку===
+{{Описание миссии|локация=Граница грёз|Вам пришлось основательно поползать в сиропной канализации, но в итоге вы всё-таки добрались до входа в тайное убежище Светлячка.<br />Сама она ждёт рядом. Стоит поговорить с ней.}}
+{{Диалог Начало}}
+
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 103040101-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040102-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040592-->
+----
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Вы смогли преодолеть все препятствия, поздравляем! Место, куда вы шли, совсем близко.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_103040228"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_SetState_EmotionBGM_RoofTop_Low"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 103040001-->
+<!--Unknown TalkSentence: 103040002-->
+<!--Unknown TalkSentence: 103040003-->
+<!--Unknown TalkSentence: 103040004-->
+<!--Unknown TalkSentence: 103040005-->
+<!--Unknown TalkSentence: 103040006-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103040008-->
+:<!--Unknown TalkSentence: 103040009-->
+:<!--Unknown TalkSentence: 103040010-->
+:<!--Unknown TalkSentence: 103040011-->
+:<!--Unknown TalkSentence: 103040012-->
+:<!--Unknown TalkSentence: 103040013-->
+:<!--Unknown TalkSentence: 103040014-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103040010-->
+:<!--Unknown TalkSentence: 103040011-->
+:<!--Unknown TalkSentence: 103040012-->
+:<!--Unknown TalkSentence: 103040013-->
+:<!--Unknown TalkSentence: 103040014-->
+<!--Unknown TalkSentence: 103040010-->
+<!--Unknown TalkSentence: 103040011-->
+<!--Unknown TalkSentence: 103040012-->
+<!--Unknown TalkSentence: 103040013-->
+<!--Unknown TalkSentence: 103040014-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040578-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040579-->
+{{Диалог Конец}}
+
+===Присоединитесь к Светлячку===
+{{Описание миссии|локация=Граница грёз|Вам пришлось основательно поползать в сиропной канализации, но в итоге вы всё-таки добрались до входа в тайное убежище Светлячка.<br />Сама она ждёт рядом. Стоит поговорить с ней.}}
+{{Диалог Начало}}
+
+;(Поговорите с Светлячок)
+:{{tx}}
+:{{tx}}
+<!--Unknown TalkSentence: 103040553-->
+{{Диалог Конец}}
+
+===Идите за Светлячком вглубь Границы грёз===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Идите вглубь Границы грёз... Одному из Безымянных же не составит труда проникнуть на стройплощадку, так?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040151-->
+<!--Unknown TalkSentence: 103040152-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 103040155-->
+<!--Unknown TalkSentence: 103040156-->
+<!--Unknown TalkSentence: 103040157-->
+<!--Unknown TalkSentence: 103040158-->
+{{Диалог Конец}}
+
+===Примените Заводной механизм на человеке из клана Гончих===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Ваше путешествие заканчивается, не успев начаться: вход охраняет очень принципиальный член клана Гончих. Если хотите его обойти, придётся использовать Заводной механизм ради собственных меркантильных целей... Будем надеяться, что Часик вас простит.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Член клана Гончих)
+<!--Unknown TalkSentence: 103040201-->
+<!--Unknown TalkSentence: 103040168-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040593-->
+----
+;(Unused &mdash; reopenui_Happy)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G79"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Happy"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; reopenui_Sad)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G79"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Sad"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:{{tx}}
+<!--Unknown TalkSentence: 103040556-->
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Оставив позади поверженного члена клана Гончих, вы решаете продолжить путь. Не зря же вы затеяли это путешествие, верно?}}
+{{Диалог Начало}}
+
+;(If {{F|IsInIsometric}} is equal to 1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]},"State":"Open"}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "C1SS1",
+		"AreaName": "LevelArea_P20313_F20313001_G3",
+		"AnchorName": "Case1_StreamingSource"
+	}
+}</pre>
+;(If {{F|IsInIsometric}} is not equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.RemoveStreamingSource",
+	"StreamingSource": "C1SS1"
+}</pre>
+;(Unused &mdash; OnIsometricTransitComplete)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerEmit"
+	},
+	"InstanceID": {
+		"FixedValue": {
+			"Value": 300006
+		}
+	}
+}</pre>
+
+;(Поговорите с Член клана Гончих)
+<!--Unknown TalkSentence: 103040344-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040557-->
+<!--Unknown TalkSentence: 103040558-->
+{{Диалог Конец}}
+
+===Используйте особенности Мира грёз, чтобы пройти дальше===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Дорога в глубины очень непростая. Возможно, вам придётся задействовать всю свою смекалку и использовать особенности Мира грёз нестандартными методами.}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040559-->
+<!--Unknown TalkSentence: 103040560-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040561-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040562-->
+<!--Unknown TalkSentence: 103040563-->
+{{Диалог Конец}}
+
+===Воспользуйтесь особенностями Мира грёз, чтобы проложить путь===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040566-->
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Оставив позади поверженного члена клана Гончих, вы решаете продолжить путь. Не зря же вы затеяли это путешествие, верно?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040567-->
+<!--Unknown TalkSentence: 103040568-->
+{{Диалог Конец}}
+
+===Прокатитесь в сферомёте===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Дорога в глубины очень непростая. Возможно, вам придётся задействовать всю свою смекалку и использовать особенности Мира грёз нестандартными методами.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040569-->
+{{Диалог Конец}}
+
+===Сделайте перерыв и оцените Большой театр Пенаконии (необязательно)===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040570-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040571-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040564-->
+<!--Unknown TalkSentence: 103040565-->
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040572-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040573-->
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		103040231
+	],
+	"State": "Started",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300002
+				]
+			},
+			"TriggerName": "MissionTrigger",
+			"ButtonsByName": [],
+			"ButtonConfigs": [
+				{
+					"ID": "Trigger1",
+					"IconType": "HeartDialRaid",
+					"ButtonText": {
+						"Value": "PropInteractTitle_275"
+					}
+				}
+			],
+			"DisableAfterTriggered": true
+		}
+	],
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareSubMissionState",
+		"SubMissionID": 103040231,
+		"SubMissionState": "Started"
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 250,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 103040459
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 250,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 103040460
+		}
+	],
+	"BubbleTalkType": "HeartDial",
+	"LoopInterval": 5,
+	"UniqueID": 250
+}</pre>
+{{Диалог Конец}}
+
+===Найдите второй фрагмент мозаики===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}<!--SubMission Finish: 103040221-->)
+<!--Unknown TalkSentence: 103040574-->
+
+{{Диалог Конец}}
+
+===Найдите первый фрагмент мозаики===
+{{Диалог Начало}}
+
+;(Поговорите с Грёзотворец)
+;(Unused &mdash; HeartDial_D_103040235)
+<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Peace"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; HeartDial_D_103040234)
+<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EmoTypeBlackList": [
+		"Sad"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Найдите недостающие фрагменты===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Воспользуйтесь особенностями Мира грёз, чтобы проложить путь===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Получите потерянную шестерёнку эмоций от прохожего===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Диалог Начало}}
+:<!--4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitTutorial",
+	"Event": "ShowUIMainPage",
+	"OnSuccessImmediate": [
+		{
+			"$type": "RPG.GameCore.TutorialTaskUnlock",
+			"TriggerParam": {
+				"Value": "6089"
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040577-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040575-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 103040576-->
+{{Диалог Конец}}
+
+===Восполните эмоциферблат души грёзотворца===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Продолжайте идти за Светлячком дальше вглубь Границы грёз===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Преодолев разнообразные препятствия, вы наконец подходите к нужному месту, но на проходе полно монстров. Будьте осторожны.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 103040481-->
+<!--Unknown TalkSentence: 103040482-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с грёзотворцем, чей эмоциферблат завершили===
+{{Описание миссии|локация=Граница грёз|Светлячок объясняет вам, что здесь к чему: это граница Золотого мига, глубины Мира грёз и зона строительства и реконструкции для Семьи (другими словами, стройплощадка во сне). А тайное убежище Светлячка находится ещё дальше. Проблема в том, что у Семьи везде глаза и уши, поэтому просто так туда не попадёшь.<br />Дорога в глубины очень непростая. Возможно, вам придётся задействовать всю свою смекалку и использовать особенности Мира грёз нестандартными методами.}}
+{{Диалог Начало}}
+:{{tx}}
+<!--Unknown TalkSentence: 103040501-->
+<!--Unknown TalkSentence: 103040502-->
+<!--Unknown TalkSentence: 103040503-->
+<!--Unknown TalkSentence: 103040504-->
+<!--Unknown TalkSentence: 103040505-->
+<!--Unknown TalkSentence: 103040506-->
+<!--Unknown TalkSentence: 103040507-->
+<!--Unknown TalkSentence: 103040508-->
+<!--Unknown TalkSentence: 103040509-->
+<!--Unknown TalkSentence: 103040510-->
+<!--Unknown TalkSentence: 103040511-->
+<!--Unknown TalkSentence: 103040512-->
+<!--Unknown TalkSentence: 103040513-->
+<!--Unknown TalkSentence: 103040514-->
+<!--Unknown TalkSentence: 103040515-->
+<!--Unknown TalkSentence: 103040516-->
+<!--Unknown TalkSentence: 103040517-->
+<!--Unknown TalkSentence: 103040518-->
+<!--Unknown TalkSentence: 103040519-->
+<!--Unknown TalkSentence: 103040520-->
+<!--Unknown TalkSentence: 103040521-->
+<!--Unknown TalkSentence: 103040522-->
+<!--Unknown TalkSentence: 103040523-->
+<!--Unknown TalkSentence: 103040524-->
+<!--Unknown TalkSentence: 103040525-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Gentleness, the Name of Nocturne
+|zhs  = 夜色名为温柔
+|zht  = 夜色名為溫柔
+|ja   = 優しさという名の夜
+|ko   = 부드러움이라는 이름의 밤
+|es   = Ternura, el nombre de la noche
+|fr   = Nocturne ou la Gentillesse
+|ru   = Ночь по имени Нежность
+|th   = รัตติกาลนามว่าอ่อนโยน
+|vi   = Dịu Dàng Là Tên Của Màn Đêm
+|de   = Sanftheit, genannt Nacht
+|id   = Kelembutan dalam Kegelapan
+|pt   = Gentileza, o Nome do Noturno
+}}
+
+==История изменений==
+{{История изменений|2.7}}

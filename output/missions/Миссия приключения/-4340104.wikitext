@@ -1,0 +1,144 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340104
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] ''[[А убийца кто?..]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Отель «Грёзы» (Мир грёз)
+|Мир             = Пенакония
+|Локации         = Отель «Грёзы» (Мир грёз)
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Пенакония]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":392}},"ID":{"FixedValue":{"Value":300001}}}},"State":"CustomState01"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190543
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 434014101-->
+<!--Unknown TalkSentence: 434014102-->
+<!--Unknown TalkSentence: 434014103-->
+<!--Unknown TalkSentence: 434014104-->
+<!--Unknown TalkSentence: 434014105-->
+<!--Unknown TalkSentence: 434014106-->
+<!--Unknown TalkSentence: 434014107-->
+<!--Unknown TalkSentence: 434014108-->
+<!--Unknown TalkSentence: 434014109-->
+<!--Unknown TalkSentence: 434014110-->
+<!--Unknown TalkSentence: 434014111-->
+<!--Unknown TalkSentence: 434014112-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434010402,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434010402,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434010402,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:{{tx}}
+
+;(If Миссия [[И на восьмой день...]] has not been started)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1303300
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1303300
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1303200
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1303200
+}</pre>
+
+;(Получено {{Item|Странная плёнка|20|x=1|text=Странная плёнка}})
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}

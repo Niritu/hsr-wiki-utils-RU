@@ -1,0 +1,374 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8002106
+|Название        = 
+|Изображение     = Миссия Освоения Искатели теней Третья остановка - Зона поддержки.png
+|Тип             = Миссия приключения
+|События         = Искатели теней
+|Глава           = 
+|Условия         = 
+* Достигните [[Уровень Освоения|Уровня Освоения]] 21
+* Завершена [[Миссия приключения]] ''[[Искатели теней: Вторая остановка - Зона хранения]]''
+|Персонажи       = Первопроходец
+|СтартЛокация    = Зона поддержки
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона поддержки
+|Предыдущая      = Искатели теней: Вторая остановка - Зона хранения
+|Следующая       = Искатели теней: Четвёртая остановка - Административный район
+|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Oath of Steel*3; Кредиты*40 000
+}}
+'''Искатели теней: Третья остановка - Зона поддержки''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите объекты и сфотографируйте их
+# Идите на перрон и сделайте фотографию нужного объекта
+# Прочтите сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите объекты и сфотографируйте их===
+{{Описание миссии|локация=Зона поддержки|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны поддержки...}}
+{{Диалог Начало}}
+
+
+;(Unused &mdash; Talk_800210601_GOON_2)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003,
+		300005
+	]
+}</pre>
+
+;(Unused &mdash; Talk_800210601_GOON_3)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300006
+	]
+}</pre>
+;(Unused &mdash; Talk_800210601)
+:{{Чёрный экран|undefined}}
+:<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300006
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "TalkDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GuessTheSilhouetteResult",
+	"SilhouetteID": 5,
+	"IsExecuting": true
+}</pre>
+
+;(Unused &mdash; Talk_800210601_End)
+:{{Чёрный экран|undefined}}
+:<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetConcat",
+		"Targets": [
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300002
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300005
+						}
+					}
+				}
+			},
+			{
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 129
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300006
+						}
+					}
+				}
+			}
+		]
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "TalkDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GuessTheSilhouetteResult",
+	"SilhouetteID": 5,
+	"IsExecuting": true
+}</pre>
+
+;(Unused &mdash; Talk_800210601_GOON_2)
+<pre>{
+	"$type": "RPG.GameCore.WaitPhotoGraphResult",
+	"WaitPhotoResult": [
+		"Target_800210601"
+	],
+	"OnSuccess": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 8002106,
+				"MissionCustomValue": {
+					"isLocal": true,
+					"isRange": true,
+					"ValidValueParamList": [
+						0,
+						3
+					]
+				},
+				"EquationType": "GreaterEqual",
+				"TargetValue": 2
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "E",
+					"PerformanceID": 800210603
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_800210601_End"
+					}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "E",
+					"PerformanceID": 800210601
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_800210601_GOON_3"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_800210601_End"
+					}
+				}
+			]
+		}
+	],
+	"IsLoop": false
+}</pre>
+
+;(Unused &mdash; Talk_800210601_GOON_3)
+<pre>{
+	"$type": "RPG.GameCore.WaitPhotoGraphResult",
+	"WaitPhotoResult": [
+		"Target_800210601"
+	],
+	"OnSuccess": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 8002106,
+				"MissionCustomValue": {
+					"isLocal": true,
+					"isRange": true,
+					"ValidValueParamList": [
+						0,
+						3
+					]
+				},
+				"EquationType": "GreaterEqual",
+				"TargetValue": 2
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "E",
+					"PerformanceID": 800210603
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_800210601_End"
+					}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "E",
+					"PerformanceID": 800210601
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_800210601_End"
+					}
+				}
+			]
+		}
+	],
+	"IsLoop": false
+}</pre>
+{{Диалог Конец}}
+
+===Идите на перрон и сделайте фотографию нужного объекта===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 800210188-->
+{{Диалог Конец}}
+
+===Прочтите сообщение Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
+}</pre>
+
+;(Unused &mdash; Talk_800210603)
+
+
+;(Unused &mdash; PhotoGraphEnble)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 15
+		}
+	},
+	"IdentifyDisplayType": "March7thGuessTheSilhouette"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Stellar Shadowseeker: 3rd Stop, Supply Zone
+|zhs  = 星旅寻影•第三站•支援舱段
+|zht  = 星旅尋影•第三站•支援艙段
+|ja   = 星々の影を探して・3駅目・サポート部分
+|ko   = 그림자를 찾는 별의 여정•세 번째 역•서포트 캐빈
+|es   = Fotografías estelares, 3.ª parada: zona de suministros
+|fr   = Sur la piste des ombres des étoiles&nbsp;: 3e arrêt, Zone de ravitaillement
+|ru   = Искатели теней: Третья остановка - Зона поддержки
+|th   = ท่องดาราเฟ้นเงา: สถานีที่ 3 - Supply Zone
+|vi   = Tìm Ảnh Hành Trình Sao: Trạm Thứ 3, Khoang Chi Viện
+|de   = Stellarer Schattensucher: Dritter Halt – Versorgungszone
+|id   = Penjelajah Bayangan Bintang: Perhentian 3 - Supply Zone
+|pt   = Sombrio Estelar: ª Parada, Zona de Abastecimento
+}}
+
+==История изменений==
+{{История изменений|2.7}}

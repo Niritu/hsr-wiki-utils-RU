@@ -1,0 +1,405 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000109
+|Название        = 
+|Изображение     = Миссия Освоения Искатели духов.png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] ''[[Искатели духов]]''
+|Персонажи       = Аста; Вэнь Шилин; Друг{{MC|ж=ая|м=ой}} я; Капоте; Ламина; Первопроходец; Разозлённый фанат мастера Капоте; Убитый горем фанат мастера Капоте
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*250; Звёздный нефрит*40; Hertareum*50; Разрежённый эфир*12; Letter From Locus Silentii*1 { text = Послание из Локус Силенти }; Кредиты*12 000
+}}
+'''Искатели духов''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите следы Ксеногидро в Зоне хранения
+# Утешьте Ламину, которую оскорбили
+# Идите за Ламиной туда, где прячется Ксеногидро
+# Найдите место, с которого видно противоположную сторону
+# Проверить есть ли внутри следы Ксеногидро
+# Ещё раз обсудите с Ламиной возможные тайные места
+# Идите за Ламиной туда, где прячется Ксеногидро
+# Разбейте ловушку Ксеногидро для преследователей
+# В последний раз обсудите с Ламиной возможные тайные места
+# Идите за Ламиной туда, где прячется Ксеногидро
+# Изучите своего двойника
+# Уговорите Ламину раскаяться
+# Расскажите ведущему исследователю о замыслах Ксеногидро
+# Посмотрите на убитых горем поклонников мастера Капоте
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите следы Ксеногидро в Зоне хранения===
+{{Описание миссии|локация=Зона хранения|В секретном письме указано, что Ксеногидро часто появлялся в Зоне хранения. Проведите расследование, возможно, вы найдёте неожиданные улики.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201080201-->
+<!--Unknown TalkSentence: 201080202-->
+<!--Unknown TalkSentence: 201080203-->
+<!--Unknown TalkSentence: 201080204-->
+<!--Unknown TalkSentence: 201080205-->
+<!--Unknown TalkSentence: 201080206-->
+<!--Unknown TalkSentence: 201080207-->
+<!--Unknown TalkSentence: 201080208-->
+<!--Unknown TalkSentence: 201080209-->
+<!--Unknown TalkSentence: 201080210-->
+----
+
+;(Поговорите с Ламина)
+<!--Unknown TalkSentence: 201080301-->
+<!--Unknown TalkSentence: 201080302-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+----
+
+;(Поговорите с Ламина)
+<!--Unknown TalkSentence: 201080501-->
+----
+
+;(Поговорите с Ламина)
+<!--Unknown TalkSentence: 201080904-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+----
+{{Диалог Конец}}
+
+===Утешьте Ламину, которую оскорбили===
+{{Описание миссии|локация=Зона хранения|Хотя Ксеногидро не показывался, вы случайно столкнулись с известным на станции мастером Капоте, который оскорблял сотрудницу Отдела экологии Ламину. Она долгое время находилась в Зоне хранения, а ваша поддержка так растрогала её, что она предложила вам помощь в поисках следов Ксеногидро.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Идите за Ламиной туда, где прячется Ксеногидро===
+{{Описание миссии|локация=Зона хранения|Ламина сдержала своё обещание и отправилась с вами на поиск следов Ксеногидро. Прибыв в первое подозрительное место, вы решили положиться на судьбу. Хотя сразу было понятно, что успеха вы не добьётесь.}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201080401-->
+<!--Unknown TalkSentence: 201080402-->
+{{Диалог Конец}}
+
+===Найдите место, с которого видно противоположную сторону===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Проверить есть ли внутри следы Ксеногидро===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200010807_Prop_36_300005_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200010808_Prop_36_300006_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Ещё раз обсудите с Ламиной возможные тайные места===
+{{Описание миссии|локация=Зона хранения|Вы ничего не нашли в первом подозрительном месте. Ламина по-прежнему выполняет своё обещание и помогает вам в поиске следов Ксеногидро. Под её руководством вы прямиком угодили в ловушку, расставленную Ксеногидро. К счастью, у Ламины оказалось с собой лекарство, и монстры не смогли с вами справиться.<br />После нескольких неудач вы с Ламиной изменили стратегию. Изучив ещё раз послание из Локус Силенти, вы отправились в указанное в нём тайное место. В этот раз вы ничего не упустите.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 201080801-->
+<!--Unknown TalkSentence: 201080802-->
+{{Диалог Конец}}
+
+===Идите за Ламиной туда, где прячется Ксеногидро===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201080803-->
+<!--Unknown TalkSentence: 201080804-->
+{{Диалог Конец}}
+
+===Разбейте ловушку Ксеногидро для преследователей===
+{{Диалог Начало}}
+:<!--0.2-second delay-->
+;(Полностью восстановлено НР всех союзников)
+{{Диалог Конец}}
+
+===В последний раз обсудите с Ламиной возможные тайные места===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Идите за Ламиной туда, где прячется Ксеногидро===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 201081001-->
+<!--Unknown TalkSentence: 201081002-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 201081101-->
+<!--Unknown TalkSentence: 201081102-->
+<!--Unknown TalkSentence: 201081103-->
+{{Диалог Конец}}
+
+===Изучите своего двойника===
+{{Описание миссии|локация=Зона хранения|Ксеногидро наконец появился. Он выглядит так же, как вы.<br />Оказывается, Ламина была тем самым сообщником, о котором говорилось в письме.<br />Она с самого начала вашего расследования планировала заманить вас в ловушку, а затем подменить Ксеногидро.}}
+{{Диалог Начало}}
+
+;(Поговорите с Друг{{MC|ж=ая|м=ой}} я)
+<!--Unknown TalkSentence: 201081201-->
+;(Enter battle)
+:{{Enemy List|Лёд из космоса*1}}
+{{Диалог Конец}}
+
+===Уговорите Ламину раскаяться===
+{{Описание миссии|локация=Зона хранения|После того как вы разрушили план инопланетного Ксеногидро занять ваше место, Ламина рассказала, почему вступила с ним в заговор.<br />Сейчас вам нужно решить, что вы будете с ними делать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Ламина)
+<!--Unknown TalkSentence: 201081301-->
+<!--Unknown TalkSentence: 201081302-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201081304-->
+<!--Unknown TalkSentence: 201081305-->
+<!--Unknown TalkSentence: 201081306-->
+<!--Unknown TalkSentence: 201081307-->
+<!--Unknown TalkSentence: 201081308-->
+<!--Unknown TalkSentence: 201081309-->
+<!--Unknown TalkSentence: 201081310-->
+<!--Unknown TalkSentence: 201081311-->
+<!--Unknown TalkSentence: 201081312-->
+<!--Unknown TalkSentence: 201081313-->
+<!--Unknown TalkSentence: 201081314-->
+<!--Unknown TalkSentence: 201081315-->
+<!--Unknown TalkSentence: 201081316-->
+<!--Unknown TalkSentence: 201081317-->
+<!--Unknown TalkSentence: 201081318-->
+<!--Unknown TalkSentence: 201081319-->
+{{Диалог Конец}}
+
+===Расскажите ведущему исследователю о замыслах Ксеногидро===
+{{Описание миссии|локация=Главная контрольная зона|Вы приняли решение, как поступить с Ламиной и Ксеногидро. После того как вы сообщили о заговоре Асте, вы обнаружили, что ведущий исследователь знала обо всём с самого начала. Похоже, она сама это и придумала.<br />Сделав вас {{MC|ж=актрисой|м=актёром}} в своём маленьком представлении, она смогла убедить своего сотрудника вернуться на путь истинный.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+
+;(Поговорите с Аста)
+----
+<!--Unknown TalkSentence: 201081401-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201081404-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_02",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<!--Unknown TalkSentence: 201081405-->
+<!--Unknown TalkSentence: 201081406-->
+<!--Unknown TalkSentence: 201081407-->
+<!--Unknown TalkSentence: 201081408-->
+<!--Unknown TalkSentence: 201081409-->
+<!--Unknown TalkSentence: 201081410-->
+<!--Unknown TalkSentence: 201081411-->
+<!--Unknown TalkSentence: 201081412-->
+<!--Unknown TalkSentence: 201081413-->
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_02",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+;(Unused &mdash; Wait_Option_2010814_380)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201081404-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_02",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 201081405-->
+:<!--Unknown TalkSentence: 201081406-->
+:<!--Unknown TalkSentence: 201081407-->
+:<!--Unknown TalkSentence: 201081408-->
+:<!--Unknown TalkSentence: 201081409-->
+:<!--Unknown TalkSentence: 201081410-->
+:<!--Unknown TalkSentence: 201081411-->
+:<!--Unknown TalkSentence: 201081412-->
+:<!--Unknown TalkSentence: 201081413-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_02",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--1-second delay-->
+
+;(Поговорите с Аста)
+----
+<!--Unknown TalkSentence: 201081401-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 201081404-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_02",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<!--Unknown TalkSentence: 201081405-->
+<!--Unknown TalkSentence: 201081406-->
+<!--Unknown TalkSentence: 201081407-->
+<!--Unknown TalkSentence: 201081408-->
+<!--Unknown TalkSentence: 201081409-->
+<!--Unknown TalkSentence: 201081410-->
+<!--Unknown TalkSentence: 201081411-->
+<!--Unknown TalkSentence: 201081412-->
+<!--Unknown TalkSentence: 201081413-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_01",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+;(Unused &mdash; Wait_Option_2010814_377)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 201081405-->
+:<!--Unknown TalkSentence: 201081406-->
+:<!--Unknown TalkSentence: 201081407-->
+:<!--Unknown TalkSentence: 201081408-->
+:<!--Unknown TalkSentence: 201081409-->
+:<!--Unknown TalkSentence: 201081410-->
+:<!--Unknown TalkSentence: 201081411-->
+:<!--Unknown TalkSentence: 201081412-->
+:<!--Unknown TalkSentence: 201081413-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_1000101",
+	"AnchorName": "Camera_1000101_01",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Посмотрите на убитых горем поклонников мастера Капоте===
+{{Описание миссии|локация=Главная контрольная зона|Благодаря усилиям Асты и вашей помощи Ламина поняла, что значит независимость.<br />Проигравшим остался один лишь мастер Капоте.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Spirit Traces
+|zhs  = 魈魅寻踪
+|zht  = 魈魅尋蹤
+|ja   = 魑魅魍魎はいずこ
+|ko   = 도깨비 추적
+|es   = La búsqueda de la Xenocriatura
+|fr   = Sur les traces d'un esprit
+|ru   = Искатели духов
+|th   = เฟ้นหาวิญญาณ
+|vi   = Tìm Kiếm Linh Hồn
+|de   = Geistspuren
+|id   = Pengejaran Roh
+|pt   = Rastros de Espírito
+}}
+
+==История изменений==
+{{История изменений|2.7}}

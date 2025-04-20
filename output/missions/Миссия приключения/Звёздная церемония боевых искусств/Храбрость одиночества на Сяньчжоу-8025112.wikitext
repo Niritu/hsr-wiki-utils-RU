@@ -1,0 +1,524 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8025112
+|Название        = 
+|Изображение     = Миссия Освоения Храбрость одиночества на Сяньчжоу.png
+|Тип             = Миссия приключения
+|События         = Звёздная церемония боевых искусств
+|Глава           = Звёздная церемония боевых искусств
+|Условия         = Завершена [[Миссия приключения]] ''[[Хотя аплодисменты стихли I]]''
+|Персонажи       = Азартная прорицательница; Кармелла; Клыкопир; Линша; Лука; Первопроходец; Рысь; Сушан; Хук; Цинцюэ
+|СтартЛокация    = «Рассекатель небес»
+|Мир             = Лофу Сяньчжоу
+|Локации         = «Рассекатель небес»
+|Предыдущая      = Хотя аплодисменты стихли I
+|Следующая       = Хотя аплодисменты стихли II
+|Награды         = Звёздный нефрит*10; Утраченный кристалл*2; Кредиты*20 000
+}}
+'''Храбрость одиночества на Сяньчжоу''' — Событие [[Миссия приключения]] из события [[Звёздная церемония боевых искусств]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Вернитесь в кают-компанию
+# Узнайте у Цинцюэ анализ нефритовых счётов
+# Отправляйтесь в Комиссию по алхимии, чтобы исцелить галлюцинации Луки
+# Попросите Линша осмотреть Луку
+# Дождитесь результатов осмотра Линша
+# Дождитесь, пока Линша принесёт инструменты
+# Поговорите с клыкопиром
+# Встретьтесь с Рысью в Комиссии по предсказаниям
+# Найдите «добрую прорицательницу»
+# Сыграйте в «Первооткрыватель» с коллегой Цинцюэ
+# Отведите Луку на встречу с Яньцином в Приюте звёздных яликов
+# Вернитесь в кают-компанию и встретьтесь с Лукой
+# Прогуляйтесь (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+===Вернитесь в кают-компанию===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 802511202--> or {{cx}}<!--SubMission Finish: 802511203-->)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+;(Unused &mdash; EnterArea_G78)
+:<!--Unknown TalkSentence: 802510631-->
+::<!--Unknown TalkSentence: 802510632-->
+::<!--Unknown TalkSentence: 802510633-->
+::<!--Unknown TalkSentence: 802510634-->
+:<!--Unknown TalkSentence: 802510601-->
+::<!--Unknown TalkSentence: 802510602-->
+::<!--Unknown TalkSentence: 802510606-->
+::<!--Unknown TalkSentence: 802510607-->
+::<!--Unknown TalkSentence: 802510608-->
+::<!--Unknown TalkSentence: 802510609-->
+::<!--Unknown TalkSentence: 802510610-->
+::<!--Unknown TalkSentence: 802510611-->
+::<!--Unknown TalkSentence: 802510612-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510614-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G78"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+;(All choices lead to the following options)
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510636-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::<!--Unknown TalkSentence: 802510639-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802510638-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::<!--Unknown TalkSentence: 802510639-->
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+:<!--Unknown TalkSentence: 802510636-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:<!--Unknown TalkSentence: 802510639-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Узнайте у Цинцюэ анализ нефритовых счётов===
+{{Описание миссии|локация=Комиссия по предсказаниям|Цинцюэ исправила ошибку в нефритовых счётах. Осмотрите их.<br />Отлынивание от работы (или учёбы), но при этом высокая эффективность, когда речь заходит о делах, не связанных с работой. Признайтесь, вы же тоже так себя ведёте?}}
+{{Диалог Начало}}
+
+;(Поговорите с Рысь)
+<!--Unknown TalkSentence: 802510766-->
+<!--Unknown TalkSentence: 802510767-->
+<!--Unknown TalkSentence: 802510768-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Цинцюэ)
+<!--Unknown TalkSentence: 802510766-->
+<!--Unknown TalkSentence: 802510767-->
+<!--Unknown TalkSentence: 802510768-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Азартная прорицательница)
+<!--Unknown TalkSentence: 802510761-->
+
+{{Диалог Конец}}
+
+===Отправляйтесь в Комиссию по алхимии, чтобы исцелить галлюцинации Луки===
+{{Описание миссии|локация=Комиссия по алхимии|Галлюцинации Луки стали хуже. Вы решаете отправиться с ним в Комиссию по алхимии.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G183)
+:{{tx}}
+:<!--Unknown TalkSentence: 802510821-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20231_F20231001_G1"
+		},
+		"AnchorName": {
+			"Value": "CheckPoint02"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Попросите Линша осмотреть Луку===
+{{Описание миссии|локация=Комиссия по алхимии|Галлюцинации Луки стали хуже. Вы решаете отправиться с ним в Комиссию по алхимии.<br />Кто бы мог подумать, что вы встретитесь с Линша, Мастером котла Комиссии по алхимии? Вам повезло получить персональную консультацию!}}
+{{Диалог Начало}}
+
+;(Поговорите с Сушан)
+<!--Unknown TalkSentence: 802510831-->
+<!--Unknown TalkSentence: 802510832-->
+<!--Unknown TalkSentence: 802510833-->
+<!--Unknown TalkSentence: 802510834-->
+<!--Unknown TalkSentence: 802510835-->
+<!--Unknown TalkSentence: 802510836-->
+<!--Unknown TalkSentence: 802510837-->
+<!--Unknown TalkSentence: 802510838-->
+<!--Unknown TalkSentence: 802510839-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510843-->
+<!--Unknown TalkSentence: 802510844-->
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20231_F20231001_G176"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Create_G176_300001)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Дождитесь результатов осмотра Линша===
+{{Диалог Начало}}
+
+;(Поговорите с Линша)
+<!--Unknown TalkSentence: 802510861-->
+<!--Unknown TalkSentence: 802510862-->
+<!--Unknown TalkSentence: 802510863-->
+<!--Unknown TalkSentence: 802510864-->
+<!--Unknown TalkSentence: 802510865-->
+<!--Unknown TalkSentence: 802510866-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510868-->
+:<!--Unknown TalkSentence: 802510869-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 802510870-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20231_F20231001_G180"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+
+{{Диалог Конец}}
+
+===Дождитесь, пока Линша принесёт инструменты===
+{{Диалог Начало}}
+
+;(Поговорите с Сушан)
+:{{tx}}
+<!--Unknown TalkSentence: 802510901-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510903-->
+:<!--Unknown TalkSentence: 802510904-->
+:<!--Unknown TalkSentence: 802510905-->
+:<!--Unknown TalkSentence: 802510906-->
+:<!--Unknown TalkSentence: 802510907-->
+:<!--Unknown TalkSentence: 802510908-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510905-->
+:<!--Unknown TalkSentence: 802510906-->
+:<!--Unknown TalkSentence: 802510907-->
+:<!--Unknown TalkSentence: 802510908-->
+<!--Unknown TalkSentence: 802510905-->
+<!--Unknown TalkSentence: 802510906-->
+<!--Unknown TalkSentence: 802510907-->
+<!--Unknown TalkSentence: 802510908-->
+
+{{Диалог Конец}}
+
+===Поговорите с клыкопиром===
+{{Описание миссии|локация=Комиссия по алхимии|Клыкопир-философ однажды сказал: «Ме-ме-ме! Ме! Ме-ме!»<br />Если перевести на язык Безымянных, эта фраза будет звучать так:<br />«День подобен сну, а сон подобен реальности».}}
+{{Диалог Начало}}
+
+;(Поговорите с Клыкопир)
+
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20231_F20231001_G182"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 802510931-->
+<!--Unknown TalkSentence: 802510932-->
+<!--Unknown TalkSentence: 802510933-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510935-->
+:<!--Unknown TalkSentence: 802510936-->
+:<!--Unknown TalkSentence: 802510937-->
+:<!--Unknown TalkSentence: 802510938-->
+:<!--Unknown TalkSentence: 802510939-->
+:<!--Unknown TalkSentence: 802510940-->
+:<!--Unknown TalkSentence: 802510941-->
+:<!--Unknown TalkSentence: 802510942-->
+:<!--Unknown TalkSentence: 802510943-->
+:<!--Unknown TalkSentence: 802510944-->
+:<!--Unknown TalkSentence: 802510945-->
+:<!--Unknown TalkSentence: 802510946-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510937-->
+:<!--Unknown TalkSentence: 802510938-->
+:<!--Unknown TalkSentence: 802510939-->
+:<!--Unknown TalkSentence: 802510940-->
+:<!--Unknown TalkSentence: 802510941-->
+:<!--Unknown TalkSentence: 802510942-->
+:<!--Unknown TalkSentence: 802510943-->
+:<!--Unknown TalkSentence: 802510944-->
+:<!--Unknown TalkSentence: 802510945-->
+:<!--Unknown TalkSentence: 802510946-->
+<!--Unknown TalkSentence: 802510937-->
+<!--Unknown TalkSentence: 802510938-->
+<!--Unknown TalkSentence: 802510939-->
+<!--Unknown TalkSentence: 802510940-->
+<!--Unknown TalkSentence: 802510941-->
+<!--Unknown TalkSentence: 802510942-->
+<!--Unknown TalkSentence: 802510943-->
+<!--Unknown TalkSentence: 802510944-->
+<!--Unknown TalkSentence: 802510945-->
+<!--Unknown TalkSentence: 802510946-->
+{{Диалог Конец}}
+
+===Встретьтесь с Рысью в Комиссии по предсказаниям===
+{{Описание миссии|локация=Комиссия по предсказаниям|Рысь нашла добрую прорицательницу, которая поможет Луке починить нефритовые счёты Игоря.<br />Быстрее отправляйтесь в Комиссию по предсказаниям.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G218_2)
+<!--Unknown TalkSentence: 802510661-->
+:<!--Unknown TalkSentence: 802510662-->
+:<!--Unknown TalkSentence: 802510663-->
+:<!--Unknown TalkSentence: 802510664-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510667-->
+
+;(Unused &mdash; EnterArea_G218_1)
+<!--Unknown TalkSentence: 802510661-->
+{{Диалог Конец}}
+
+===Найдите «добрую прорицательницу»===
+{{Описание миссии|локация=Комиссия по предсказаниям|Рысь нашла добрую прорицательницу, которая поможет Луке починить нефритовые счёты Игоря.<br />Но этой прорицательницы нигде нет... Поищите её.}}
+{{Диалог Начало}}
+
+;(Поговорите с Рысь)
+<!--Unknown TalkSentence: 802510691-->
+
+;(Поговорите с Цинцюэ)
+<!--Unknown TalkSentence: 802510701-->
+<!--Unknown TalkSentence: 802510702-->
+<!--Unknown TalkSentence: 802510703-->
+<!--Unknown TalkSentence: 802510704-->
+<!--Unknown TalkSentence: 802510705-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510707-->
+:<!--Unknown TalkSentence: 802510708-->
+:<!--Unknown TalkSentence: 802510709-->
+:<!--Unknown TalkSentence: 802510710-->
+:<!--Unknown TalkSentence: 802510711-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510709-->
+:<!--Unknown TalkSentence: 802510710-->
+:<!--Unknown TalkSentence: 802510711-->
+<!--Unknown TalkSentence: 802510709-->
+<!--Unknown TalkSentence: 802510710-->
+<!--Unknown TalkSentence: 802510711-->
+
+;(Поговорите с Азартная прорицательница)
+<!--Unknown TalkSentence: 802510701-->
+<!--Unknown TalkSentence: 802510702-->
+<!--Unknown TalkSentence: 802510703-->
+<!--Unknown TalkSentence: 802510704-->
+<!--Unknown TalkSentence: 802510705-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510707-->
+:<!--Unknown TalkSentence: 802510708-->
+:<!--Unknown TalkSentence: 802510709-->
+:<!--Unknown TalkSentence: 802510710-->
+:<!--Unknown TalkSentence: 802510711-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510709-->
+:<!--Unknown TalkSentence: 802510710-->
+:<!--Unknown TalkSentence: 802510711-->
+<!--Unknown TalkSentence: 802510709-->
+<!--Unknown TalkSentence: 802510710-->
+<!--Unknown TalkSentence: 802510711-->
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 802510681-->
+
+{{Диалог Конец}}
+
+===Сыграйте в «Первооткрыватель» с коллегой Цинцюэ===
+{{Описание миссии|локация=Комиссия по предсказаниям|Цинцюэ, главная бездельница Сяньчжоу.<br />В любое время и в любом месте Цинцюэ будет профессионально бездельничать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цинцюэ)
+<!--Unknown TalkSentence: 802510731-->
+
+;(Поговорите с Азартная прорицательница)
+<!--Unknown TalkSentence: 802510736-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510738-->
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} undefined
+
+<!--Unknown TalkSentence: 802510741-->
+<!--Unknown TalkSentence: 802510742-->
+<!--Unknown TalkSentence: 802510743-->
+<!--Unknown TalkSentence: 802510744-->
+<!--Unknown TalkSentence: 802510745-->
+<!--Unknown TalkSentence: 802510746-->
+<!--Unknown TalkSentence: 802510747-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510749-->
+:<!--Unknown TalkSentence: 802510750-->
+:<!--Unknown TalkSentence: 802510751-->
+:<!--Unknown TalkSentence: 802510752-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 802510751-->
+:<!--Unknown TalkSentence: 802510752-->
+::{{tx}}
+<!--Unknown TalkSentence: 802510751-->
+<!--Unknown TalkSentence: 802510752-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Отведите Луку на встречу с Яньцином в Приюте звёздных яликов===
+{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Вы наверняка удивитесь: «Как это Лука мог не узнать Яньцина? Он что, телевизор не смотрит и в сети не сидит?»<br />И вы будете правы! Он не смотрит телевизор и не сидит в сети, в Белобоге нет доступа к подобным средствам массовой информации.}}
+{{Диалог Начало}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Вернитесь в кают-компанию и встретьтесь с Лукой===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterArea_G79)
+<!--Unknown TalkSentence: 802514681-->
+:<!--Unknown TalkSentence: 802514682-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802514684-->
+::<!--Unknown TalkSentence: 802514685-->
+::<!--Unknown TalkSentence: 802514686-->
+::<!--Unknown TalkSentence: 802514687-->
+::<!--Unknown TalkSentence: 802514688-->
+::<!--Unknown TalkSentence: 802514689-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802514691-->
+::<!--Unknown TalkSentence: 802514692-->
+::<!--Unknown TalkSentence: 802514693-->
+::<!--Unknown TalkSentence: 802514694-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802514686-->
+::<!--Unknown TalkSentence: 802514687-->
+::<!--Unknown TalkSentence: 802514688-->
+::<!--Unknown TalkSentence: 802514689-->
+:::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 802514691-->
+::<!--Unknown TalkSentence: 802514692-->
+::<!--Unknown TalkSentence: 802514693-->
+::<!--Unknown TalkSentence: 802514694-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Challenge.Entrance.FightFestChallengeEntrancePage"
+}</pre>
+<!--Unknown TalkSentence: 802510999-->
+{{Диалог Конец}}
+
+===Прогуляйтесь (необязательно)===
+{{Описание миссии|локация=«Рассекатель небес»|Напряжённый матч подошёл к концу. Пора отдохнуть.<br />Воспользуйтесь этим временем, чтобы подготовиться к следующей схватке.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = By His Lonefist to the Xianzhou
+|zhs  = 孤拳铁铸赴仙舟
+|zht  = 孤拳鐵鑄赴仙舟
+|ja   = 孤軍の鉄拳、仙舟へ往く
+|ko   = 고독한 강철주먹은 선주로 향하네
+|es   = Con valentía cara a cara en Xianzhou
+|fr   = Arpenter Xianzhou avec vaillance
+|ru   = Храбрость одиночества на Сяньчжоу
+|th   = กำปั้นเหล็กสู่ Xianzhou
+|vi   = Nắm Đấm Sắt Ghé Đến Xianzhou
+|de   = In einsamer Tapferkeit auf zur Xianzhou
+|id   = Menuju Xianzhou dengan Tekad Baja
+|pt   = De Seu Punho Solitário para o Xianzhou
+}}
+
+==История изменений==
+{{История изменений|2.7}}

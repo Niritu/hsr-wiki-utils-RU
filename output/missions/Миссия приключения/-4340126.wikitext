@@ -1,0 +1,135 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340126
+|Название        = 
+|Изображение     = Миссия Освоения .png
+|Тип             = Миссия приключения
+|События         = 
+|Глава           = 
+|Условия         = Завершена [[Продолжение Освоения]] ''[[Волчий побег, неизвестный исход]]''
+|Персонажи       = Пепеши; Первопроходец; Эрудроид
+|СтартЛокация    = Дом кандалов
+|Мир             = Лофу Сяньчжоу
+|Локации         = Дом кандалов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Журнал приключений*2; Кредиты*5 000
+}}
+'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(If {{F|MissionCV-2022002-2}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012601,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-2022002-2}} is not equal to 1)
+:;(Return to previous option selection)
+
+:{{Диалог|?}} Слушать
+<!--Unknown TalkSentence: 434034101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 434034103-->
+:<!--Unknown TalkSentence: 434034106-->
+:<!--Unknown TalkSentence: 434034107-->
+:<!--Unknown TalkSentence: 434034108-->
+<!--Unknown TalkSentence: 434034201-->
+:<!--Unknown TalkSentence: 434034202-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 200
+		}
+	},
+	"DistrictID": {
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "TriggerPerformance_434012601"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; TriggerPerformance_434012601)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+::{{tx}}
+:<!--Unknown TalkSentence: 434034001-->
+::{{Диалог|Стрелка}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012602,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012602,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|2.7}}
