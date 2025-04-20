@@ -16,7 +16,7 @@ export class PropTrigger extends BaseDialogueTask {
 	}
 	
 	wikitext(): string {
-		return `;(Upon reaching the destination)`
+		return `;(По прибытии на место)`
 	}
 }
 
@@ -37,7 +37,7 @@ export class CustomTaskTrigger extends BaseDialogueTask {
 	}
 	
 	wikitext(): string {
-		return `;(Upon reaching the destination)`
+		return `;(По прибытии на место)`
 			+ (process.argv.includes('--add-triggers') ? `<!--${this.trigger_name} @ ${JSON.stringify(this.target_data)}-->` : '')
 	}
 }
