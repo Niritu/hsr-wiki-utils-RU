@@ -358,6 +358,6 @@ export class MessageTree extends AbstractDialogueTree<MessageItem> {
 	}
 	
 	async wikitext(): Promise<string> {
-		return (await super.wikitext()) + (this.section.mission_link_id ? `\n;{Принятая миссия: ${Mission.fromId(this.section.mission_link_id).pagetitle}}` : '')
+		return (await super.wikitext()) + (this.section.mission_link_id ? `\n<!--;{Принятая миссия: ${Mission.fromId(this.section.mission_link_id).pagetitle}}-->` : '')
 	}
 }
