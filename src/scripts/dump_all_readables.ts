@@ -13,7 +13,7 @@ for (const series of ReadableSeries.loadAll()) {
 	const readables = series.getReadables()
 	
 	if (readables.length == 0) {
-		console.warn(`Readable series "${series.name}" appears to be empty, skipping...`)
+		console.warn(`Серия книг "${series.name}" оказалась пустой, пропускаю...`)
 		continue
 	}
 	
@@ -30,40 +30,39 @@ for (const series of ReadableSeries.loadAll()) {
 	}
 	
 	const output = [
-		`<%-- [PAGE_INFO]`,
-		`PageTitle=#${pageTitle}#`,
-		`[END_PAGE_INFO] --%>`,
 	]
 	
-	const infobox = new Template('Readable Infobox', {
+	const infobox = new Template('Книга Инфобокс', {
 		id: zeroPad(series.id, 3),
 		partIds: readables.map(readable => readable.id).join(';'),
 		title: pageTitle != series.name ? series.name : '',
 		image: firstReadableItem,
 		world: series.getWorld(),
 		parts: readables.length,
-		author: '<!--to be added-->',
+		author: '<!--нужно добавить-->',
 		description: series.description.replaceAll('\n', '<br />'),
 	})
 	
 	for (const [i, readable] of readables.entries()) {
-		infobox.addParam(`part${i+1}`, readable.name)
-		infobox.addParam(`source${i+1}`, '{{cx|Source missing}}')
+		infobox.addParam(`Том${i+1}`, '{{tx}}')
+		infobox.addParam(`Источник${i+1}`, '{{tx|Отсутствует источник}}')
 	}
 	
 	let checkStrings = readables.map(book => [book.name, book.content]).flat(1)
 	
-	infobox.addParam('characters', getCharacterMentions(...checkStrings).join('; '))
-	infobox.addParam('factions', getFactionMentions(...checkStrings).join('; '))
+	infobox.addParam('Персонажи', getCharacterMentions(...checkStrings).join('; '))
+	infobox.addParam('Фракции', getFactionMentions(...checkStrings).join('; '))
 	
 	output.push(
 		infobox.block(12),
-		`'''${series.name}''' is a ${readables.length > 1 ? `${readables.length}-part ` : ''}[[readable]] found on [[${series.getWorld()}]].`,
+		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]].`,
 		'<!--',
-		'==Location==',
-		'{{Map Embed|<map name>|<marker id>}}',
+		'==Получение==',
+		'<gallery>',
+		'Книга НАЗВАНИЕ.png|НАЗВАНИЕ',
+		'Локация НАЗВАНИЕ.png|Расположение на карте. Ближайший пространственный якорь «[[НАЗВАНИЕ]]»',
+		'</gallery>',
 		'-->',
-		'==Text=='
 	)
 	
 	for (const readable of readables) {
@@ -74,15 +73,11 @@ for (const series of ReadableSeries.loadAll()) {
 	}
 	
 	output.push(
-		'<!--',
-		'==Trivia==',
-		'* ',
-		'-->',
-		'==Other Languages==',
+		'==На других языках==',
 		await TextMap.generateOL(series.name_hash),
 		'',
-		'==Change History==',
-		`{{Change History|${(await ChangeHistory.readableSeries.findAdded(series.id))?.[0]}}}`
+		'==История изменений==',
+		`{{История изменений|${(await ChangeHistory.readableSeries.findAdded(series.id))?.[0]}}}`
 	)
 	
 	await mkdir(`./output/readables/${series.getWorld()}/`, { recursive: true })

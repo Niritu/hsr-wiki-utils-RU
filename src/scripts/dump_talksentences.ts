@@ -68,33 +68,18 @@ for (const file of files) {
 }
 
 for (const sentence of Object.values(TalkSentences)/*.sort((a, b) => (a.TalkSentenceID - b.TalkSentenceID))*/) {
-	const content = textMap.getText(sentence.TalkSentenceText).replaceAll('\n', '<br />').replaceAll(/{{Color\|(.+?)\|/gi, '{{Color|$1|nobold=1|')
+	const content = textMap.getText(sentence.TalkSentenceText).replaceAll('\n', '<br />').replaceAll(/{{Цвет\|(.+?)\|/gi, '{{Цвет|$1|')
 	if (!content) continue
-	
-	let voice = ''
-	const voiceDat = sentence.VoiceID && Object.values(VoiceData).find(voice => voice.VoiceID == sentence.VoiceID)
-	if (voiceDat) {
-		let vp = voiceDat.VoicePath.replaceAll('_', ' ')
-		if (!vp.startsWith('vo')) {
-			vp = `VO ` + vp
-		}
-		vp = vp.replace(/^vo/, 'VO')
-		if (voiceDat.IsPlayerInvolved) {
-			voice = `{{A|${vp} m.ogg}} {{A|${vp} f.ogg}} `
-		} else {
-			voice = `{{A|${vp}.ogg}} `
-		}
-	}
 	
 	if (diconMap[sentence.TalkSentenceID]) {
 		switch (diconMap[sentence.TalkSentenceID]) {
 			case 'BlackScreen':
-				output.push(`:{{Black Screen|${content}}}`)
-				outputVoices.push(`:${voice}{{Black Screen|${content}}}`)
+				output.push(`:{{Чёрный экран|${content}}}`)
+				outputVoices.push(`:${voice}{{Чёрный экран|${content}}}`)
 				break
 			default:
-				output.push(`:{{DIcon|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${content}`)
-				outputVoices.push(`:{{DIcon|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${voice}${content}`)
+				output.push(`:{{Диалог|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${content}`)
+				outputVoices.push(`:{{Диалог|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${voice}${content}`)
 				break
 		}
 	} else if (textMap.getText(sentence.TextmapTalkSentenceName)) {
