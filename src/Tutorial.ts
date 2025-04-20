@@ -46,7 +46,7 @@ export class Tutorial {
 				id: internal.ID,
 				image: internal.ImagePath,
 				text: textMap.getText(internal.DescText)
-					.replaceAll(/{{Color\|(\w+)\|/gi, '{{Color|$1|nobold=1|')
+					.replaceAll(/{{Цвет\|(\w+)\|/gi, '{{Цвет|$1|')
 					.replaceAll('\n', '<br />'),
 			}))
 	}

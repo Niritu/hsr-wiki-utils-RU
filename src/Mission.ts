@@ -25,11 +25,11 @@ export const MainMissionSchedule = await getExcelFile<MainMissionScheduleData>('
 
 export type MissionType = 'Trailblaze' | 'Adventure' | 'Companion' | 'Continuance' | 'Daily'
 const missionTypeMap: Record<InternalMissionType, MissionType> = {
-	Main: 'Trailblaze',
-	Branch: 'Adventure',
-	Companion: 'Companion',
-	Daily: 'Daily',
-	Gap: 'Continuance'
+	Main: 'Миссия Освоения',
+	Branch: 'Миссия приключения',
+	Companion: 'Миссия компаньона',
+	Daily: 'Ежедневная миссия',
+	Gap: 'Продолжение Освоения'
 }
 
 export class Mission {
@@ -56,7 +56,7 @@ export class Mission {
 		}
 	}
 	
-	charset: Set<string> = new Set<string>(['Trailblazer'])
+	charset: Set<string> = new Set<string>(['Первопроходец'])
 	
 	get characters(): string[] {
 		return [...this.charset.values()]
@@ -66,16 +66,16 @@ export class Mission {
 	
 	async getMissionInfo() {
 		return this.mission_info = await getFile<InternalMissionInfo>(`Config/Level/Mission/${this.id}/MissionInfo_${this.id}.json`)
-			.catch(err => { console.warn(`No MissionInfo found for ${this.id} "${this.name}" - ${err}`); return undefined })
+			.catch(err => { console.warn(`Не нашёл информации по миссии ${this.id} "${this.name}" - ${err}`); return undefined })
 	}
 	
 	get displayType(): string {
 		switch (this.type) {
 			case 'Continuance':
-				return 'Trailblaze Continuance'
+				return 'Продолжение Освоения'
 			
 			default:
-				return `${this.type} Mission`
+				return `${this.type}`
 		}
 	}
 	
@@ -83,7 +83,7 @@ export class Mission {
 		if (!this.name) {
 			return `{{cx}}<!--Hidden Mission ID ${this.id}-->`
 		}
-		return noChapter ? `{{Mission|${this.pagetitle}|showChapter=0}}` : `{{Mission|${this.pagetitle}}}`
+		return noChapter ? `Миссия [[${this.pagetitle}]]` : `Миссия [[${this.pagetitle}]]`
 	}
 	
 	plainLink(): string {
@@ -102,7 +102,7 @@ export class Mission {
 	}
 
 	get pagetitle(): string {
-		return wikiTitle(this.name, 'mission', this.id)
+		return wikiTitle(this.name, 'Миссия', this.id)
 	}
 	
 	prev?: Mission
@@ -187,7 +187,7 @@ export class Mission {
 				&& data.SubMissionID.toString().length - this.id.toString().length <= 2
 			)
 			if (!stepList.length) {
-				console.warn(`Could not find any SubMissions for Mission "${this.name}" (${this.id})`)
+				console.warn(`Не могу найти ни одной подмиссии для миссии "${this.name}" (${this.id})`)
 			}
 			let index = 1
 
@@ -213,12 +213,12 @@ export class Mission {
 		for (const paramData of this.data.TakeParam.concat(this.data.BeginParam)) {
 			switch (paramData.Type) {
 				case 'PlayerLevel':
-					requirements.push(`Reach [[Trailblaze Level]] ${paramData.Value}`)
+					requirements.push(`Достигните [[Уровень Освоения|Уровня Освоения]] ${paramData.Value}`)
 					break
 				
 				case 'MultiSequence':
 					const mission = Mission.fromId(paramData.Value)
-					requirements.push(`${mission.plainLink()} completed`)
+					requirements.push(`Завершена ${mission.plainLink()}`)
 					if (mission.type == this.type && mission.name != this.name) {
 						this.prev = mission
 					}
@@ -226,29 +226,29 @@ export class Mission {
 				
 				case 'SequenceNextDay':
 					const gateMission = Mission.fromId(paramData.Value)
-					requirements.push(`Complete ${gateMission.plainLink()} and wait for the next Daily [[Reset]]`)
+					requirements.push(`Завершите миссию ${gateMission.plainLink()} и дождитесь ежедневного [[Обновление сервера|обновления сервера]]`)
 					if (gateMission.type == this.type && gateMission.name != this.name) {
 						this.prev = gateMission
 					}
 					break
 				
 				case 'WorldLevel':
-					requirements.push(`Reach [[Equilibrium Level]] ${paramData.Value}`)
+					requirements.push(`Достигните [[Уровень Равновесия|Уровня Равновесия]] ${paramData.Value}`)
 					break
 					
 				case 'HeliobusPhaseReach':
-					requirements.push(`Reach phase ${paramData.Value} in [[A Foxian Tale of the Haunted]]`)
+					requirements.push(`Достигните фазы ${paramData.Value} в событии [[Лисья история о привидениях]]`)
 					break
 				
 				case 'MuseumPhaseRenewPointReach':
-					requirements.push(`Reach phase ${paramData.Value} in [[Everwinter City Museum Ledger of Curiosities]]`)
+					requirements.push(`Достигните фазы ${paramData.Value} в событии [[Книга раритетов Краеведческого музея]]`)
 					break
 				
 				case 'Auto':
 					break
 				
 				default:
-					requirements.push(`{{subst:void|<!--Unknown: ${JSON.stringify(paramData)}-->}}`)
+					requirements.push(``)
 			}
 		}
 		
@@ -295,10 +295,10 @@ export class Mission {
 		const name = wikiTitle(textMap.getText(Object.values(MissionChapterConfig).find(chap => chap.ID == this.data.ChapterID)?.ChapterName))
 		
 		if (this.type == 'Companion' && name != 'Slices of Life Before the Furnace' && name != 'Age of Awakening' && name != 'Cosmic Splendor and Merited Praises') {
-			return `[[${wikiTitle(name, 'mission')} (Companion Mission Chapter)|${name}]]`
+			return `[[${wikiTitle(name, 'Миссия')} (Companion Mission Chapter)|${name}]]`
 		}
 		else {
-			return wikiTitleLink(name, 'mission')
+			return wikiTitleLink(name, 'Миссия')
 		}
 	}
 	
@@ -392,7 +392,7 @@ export class MissionStep {
 		if (!this.json_path || this.id == 202040105 || this.id == 404011001) return
 		const tree = this.dialogue ??= await MissionDialogueTree.fromStep(this)
 		if (tree && this.main_mission) {
-			tree.environment.characters.forEach(chr => this.main_mission?.charset.add(chr == '(Trailblazer)' ? 'Trailblazer' : chr))
+			tree.environment.characters.forEach(chr => this.main_mission?.charset.add(chr == '(Первопроходец)' ? 'Первопроходец' : chr))
 		}
 		return tree
 	}
@@ -436,7 +436,7 @@ export class MissionStep {
 }
 
 export class MissionDialogueTree extends ActDialogueTree {
-	type: 'mission' = 'mission'
+	type: 'mission' = 'Миссия'
 	
 	finish_keys: string[] = []
 	
@@ -477,11 +477,11 @@ export class MissionDialogueTree extends ActDialogueTree {
 		if (this.step.finish_actions) {
 			for (const action of this.step.finish_actions) {
 				if (action.FinishActionType == 'addMissionItem' || action.FinishActionType == 'addRecoverMissionItem') {
-					output.push(`;(Obtain ${Item.fromId(action.FinishActionPara[0])?.asItemTemplate(20, { x: action.FinishActionPara[1] }) || `[Unknown Item ${action.FinishActionPara[0]} ×${action.FinishActionPara[1]}]`})`)
+					output.push(`;(Получено ${Item.fromId(action.FinishActionPara[0])?.asItemTemplate(20, { x: action.FinishActionPara[1] }) || `[Unknown Item ${action.FinishActionPara[0]} ×${action.FinishActionPara[1]}]`})`)
 				} else if (action.FinishActionType == 'delMissionItem') {
-					output.push(`;(Lose ${Item.fromId(action.FinishActionPara[0])?.asItemTemplate(20, { x: action.FinishActionPara[1] }) || `[Unknown Item ${action.FinishActionPara[0]} ×${action.FinishActionPara[1]}]`})`)
+					output.push(`;(Потеряно ${Item.fromId(action.FinishActionPara[0])?.asItemTemplate(20, { x: action.FinishActionPara[1] }) || `[Unknown Item ${action.FinishActionPara[0]} ×${action.FinishActionPara[1]}]`})`)
 				} else if (action.FinishActionType == 'Recover') {
-					output.push(`;(Fully recovers all allies' HP)`)
+					output.push(`;(Полностью восстановлено НР всех союзников)`)
 				}
 			}
 		}
