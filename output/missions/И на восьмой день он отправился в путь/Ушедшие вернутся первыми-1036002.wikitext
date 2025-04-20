@@ -1,0 +1,879 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1036002
+|Название        = 
+|Изображение     = Миссия Освоения Ушедшие вернутся первыми.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = И на восьмой день он отправился в путь
+|Условия         = Завершена [[Миссия Освоения]] ''[[Все, кто проснулся]]''
+|Персонажи       = Ванвик; Воскресенье; Первопроходец
+|СтартЛокация    = Золотой миг
+|Мир             = Пенакония
+|Локации         = Золотой миг
+|Предыдущая      = Все, кто проснулся
+|Следующая       = Несчастные выжившие
+|Награды         = Опыт Освоения*400; Звёздный нефрит*50; Очищенный эфир*4; Утраченный кристалл*4; Кредиты*60 000
+}}
+'''Ушедшие вернутся первыми''' — [[Миссия Освоения]] в главе [[И на восьмой день он отправился в путь]].
+
+==Описание==
+{{Описание|В грёзах встречаются те, кто ушёл и вернулся. Смогут ли бывшие враги работать вместе, зависит от их спутников, а также от искренности.}}
+
+==Этапы==
+# Выясните, что происходит
+# Поговорите с Ванвиком
+# Отправляйтесь в Парк Айдена
+# Исследуйте странное явление согласно правилам
+# Найдите искажённый отголосок
+# Осмотрите гачапон
+# Настройте Мир грёз
+# Осмотрите гачапон
+# Настройте Мир грёз
+# Продолжайте вспоминать
+# Отправляйтесь к экипажу вместе с Вельтом
+
+==Прохождение==
+{{Дополнить}}
+
+===Выясните, что происходит===
+{{Описание миссии|локация=Золотой миг|В этот прекрасный сон возвращаются не только гости... Люди спокойно обсуждают его, ведь родина превратилась для него в смертельную ловушку.<br />Мир остался прежним, но люди изменились. Проявляйте осторожность, выясняя, в чём дело.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G529"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Ванвиком===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Парк Айдена===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G531"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+
+<!--Unknown TalkSentence: 136002602-->
+{{Описание миссии|локация=Золотой миг|Крылья Воскресенья сломались, и он рухнул вниз. Он понял, что чудеса происходят не в небесах, а на земле. Обретя свободу, он надеется быстро попрощаться с прошлым.<br />Попрощайтесь с прекрасным сном с помощью Ванвика. Просите его о чём угодно, вы оплатите свой долг позже.}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--1-second delay-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G532"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190726
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 136004701-->
+<!--Unknown TalkSentence: 136004702-->
+<!--Unknown TalkSentence: 136004703-->
+{{Описание миссии|локация=Золотой миг|Прощание не проходит гладко. Клан Гончих уверен, что происходит что-то необычное. Кажется, это связанно с искажёнными отголосками...<br />С помощью Ванвика отправляйтесь в Парк Айдена и осмотритесь.}}
+<!--Unknown TalkSentence: 136004705-->
+{{Диалог Конец}}
+
+===Исследуйте странное явление согласно правилам===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+
+
+;(Unused &mdash; DestroyIceCream1036002)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; ShowReading_190726)
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190726
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 136004001-->
+<!--Unknown TalkSentence: 136004002-->
+<!--Unknown TalkSentence: 136004003-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G552"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 136004001-->
+<!--Unknown TalkSentence: 136004002-->
+<!--Unknown TalkSentence: 136004003-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G552"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+:<!--0.4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_270dev_dizzycheer"
+	},
+	"EmitterType": "LocalPlayer",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G536"
+		},
+		"AnchorName": {
+			"Value": "Anchor3"
+		},
+		"ResetTurnInPlace": true
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+----
+:<!--0.6-second delay-->
+<!--Unknown TalkSentence: 136004707-->
+<!--Unknown TalkSentence: 136004708-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 136004001-->
+<!--Unknown TalkSentence: 136004002-->
+<!--Unknown TalkSentence: 136004003-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+:<!--0.4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_270dev_dizzycheer"
+	},
+	"EmitterType": "LocalPlayer",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G537"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+----
+:<!--0.6-second delay-->
+<!--Unknown TalkSentence: 136003101-->
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G537"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; GroupEvent_G539)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+:{{tx}}
+
+
+;(Поговорите с Мусорный бак)
+
+
+;(Unused &mdash; EnterArea_G613A)
+
+
+
+;(Поговорите с Мусорный бак)
+
+
+;(Unused &mdash; EnterArea_G614A)
+
+{{Описание миссии|локация=Золотой миг|Всё это слишком похоже на реальный мир. Мир грёз начал предъявлять гостям необоснованные требования.<br />Попробуйте нарушить правила, чтобы найти источник отголоска.}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 136004101-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G617"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Dizziness.asset"
+}</pre>
+<!--Unknown TalkSentence: 136003102-->
+
+;(Поговорите с Мусорный бак)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103600216,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+<!--Unknown TalkSentence: 136003401-->
+<!--Unknown TalkSentence: 136003402-->
+<!--Unknown TalkSentence: 136003403-->
+<!--Unknown TalkSentence: 136003404-->
+<!--Unknown TalkSentence: 136003405-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 103600216,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		2,
+		401025,
+		408610,
+		408001
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 401025,
+			"TriggerCustomString": "EnterArea_G5423"
+		},
+		{
+			"Item1": 408610,
+			"TriggerCustomString": "EnterArea_G5423"
+		},
+		{
+			"Item1": 408001,
+			"TriggerCustomString": "EnterArea_G5423"
+		},
+		{
+			"Item1": 2,
+			"TriggerCustomString": "EnterArea_G5423"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 136003401
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+;(Unused &mdash; EnterArea_G5423)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103600216,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+<!--Unknown TalkSentence: 136004709-->
+
+;(Поговорите с Гончая с газировкой)
+:{{tx}}
+:<!--1-second delay-->
+
+{{Диалог Конец}}
+
+===Найдите искажённый отголосок===
+{{Описание миссии|локация=Золотой миг|Всё это слишком похоже на реальный мир. Мир грёз начал предъявлять гостям необоснованные требования.<br />Настройте Мир грёз и избавьтесь от искажённого отголоска в Парке Айдена.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 136004711-->
+<!--Unknown TalkSentence: 136004710-->
+
+;(Unused &mdash; SetSpecialVisionOn_G600)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 600
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+::<!--8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 600
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите гачапон===
+{{Описание миссии|локация=Золотой миг|Всё это слишком похоже на реальный мир. Мир грёз начал предъявлять гостям необоснованные требования.<br />Попробуйте нарушить правила, чтобы найти источник отголоска.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 136003701-->
+;(Unused &mdash; GroupEvent_G541B)
+<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [
+		"InteractButton"
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 136003801-->
+{{Диалог Конец}}
+
+===Настройте Мир грёз===
+{{Описание миссии|локация=Золотой миг|Вы вспомнили прошлое и избавились от угрозы, пора покинуть Парк Айдена. Оглянитесь назад, а затем идите вперёд. Возможно, это единственное, что можно сделать в этой жизни.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ClearAllEffect"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+:{{tx}}
+
+
+;(Unused &mdash; SetSpecialVisionOn_G608)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+::<!--8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Осмотрите гачапон===
+{{Описание миссии|локация=Золотой миг|Всё это слишком похоже на реальный мир. Мир грёз начал предъявлять гостям необоснованные требования.<br />Попробуйте нарушить правила, чтобы найти источник отголоска.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190725
+		}
+	}
+}</pre>
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+===Настройте Мир грёз===
+{{Описание миссии|локация=Золотой миг|Вы вспомнили прошлое и избавились от угрозы, пора покинуть Парк Айдена. Оглянитесь назад, а затем идите вперёд. Возможно, это единственное, что можно сделать в этой жизни.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ClearAllEffect"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10301_F10301001_G547"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; SetSpecialVisionOn_G609)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+::<!--8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте вспоминать===
+{{Описание миссии|локация=Золотой миг|Возможно, Вельт так давно путешествует с кем-то, что все уже и позабыли, что если он становится вашим врагом, это поистине ужасающе.<br />Найдите способ уйти от Вельта и продолжите вспоминать.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+
+;(Unused &mdash; SetSpecialVisionOn_G610)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+::<!--8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 136004712-->
+{{Диалог Конец}}
+
+===Отправляйтесь к экипажу вместе с Вельтом===
+{{Описание миссии|локация=Золотой миг|К сожалению, сбежать от Вельта было невозможно. Отправляйтесь к экипажу вместе с ним и постарайтесь выиграть для себя время.}}
+{{Диалог Начало}}
+
+;(Поговорите с )
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ClearAllEffect"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+:{{tx}}
+
+;(Unused &mdash; SetSpecialVisionOn_G611)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+::<!--8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "SmellPath",
+	"VisionEffectType": "OrdeEcho",
+	"CameraEffectType": "OrdeEcho",
+	"SmellProp": {
+		"GroupID": {
+			"FixedValue": {
+				"Value": 607
+			}
+		},
+		"GroupPropID": {
+			"FixedValue": {
+				"Value": 300001
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Departed Will Return First
+|zhs  = 离去者必先归来
+|zht  = 離去者必先歸來
+|ja   = 去る者は必ず帰る
+|ko   = 떠난 자는 반드시 돌아온다
+|es   = Los que se marchan son los primeros en volver
+|fr   = Partir pour mieux revenir
+|ru   = Ушедшие вернутся первыми
+|th   = ผู้ลาจากย่อมหวนกลับ
+|vi   = Người Rời Đi Ắt Trở Về Đầu Tiên
+|de   = Nur wer geht, kann zurückkommen
+|id   = Mereka yang Pergi Akan Kembali Dulu
+|pt   = Os Que Partiram Retornam Primeiro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

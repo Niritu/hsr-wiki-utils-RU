@@ -1,0 +1,485 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040309
+|Название        = 
+|Изображение     = Миссия Освоения О учёный, жди у ворот истины.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Цветы средь упокойных юдолей
+|Условия         = Завершена [[Миссия Освоения]] ''[[О гражданин, услышь шум волн]]''
+|Персонажи       = Аглая; Анакса; Первопроходец; Триннона; Фаенон
+|СтартЛокация    = Город дракона Стиксия
+|Мир             = Амфореус
+|Локации         = Город дракона Стиксия
+|Предыдущая      = О гражданин, услышь шум волн
+|Следующая       = Зеркальное отражение ведьмы
+|Награды         = Опыт Освоения*300; Звёздный нефрит*40; Очищенный эфир*4; Небесная амброзия*80; Кредиты*30 000
+}}
+'''О учёный, жди у ворот истины''' — [[Миссия Освоения]] в главе [[Цветы средь упокойных юдолей]].
+
+==Описание==
+{{Описание|Обретя силу {{Rubi|Танатос|титан смерти}}, с помощью прижизненных воспоминаний Кастория вывела вас из загробного мира, сопротивляясь соблазнам царства мёртвых. Кастория обнимает вас и передаёт ядро пламени смерти, после чего возвращается в загробный мир, чтобы поддерживать круговорот перерождений на Амфореусе. В Вихре сотворения вы на глазах у златиусов возвращаете ядро пламени смерти. Вместе вы также стали свидетелями последних мгновений Анаксы: завершив испытание разума, он извлёк ядро пламени из груди, и тело его погибло.}}
+
+==Этапы==
+# Покиньте царство мёртвых и вернитесь в мир смертных
+# Отправляйтесь к лунному свету, Кастория направляет вас
+# Послушайте разговор Аглаи и Анаксы
+# Отдайте ядро пламени
+# Послушайте разговор Чёрного Лебедя и Химеко
+
+==Прохождение==
+{{Дополнить}}
+
+===Покиньте царство мёртвых и вернитесь в мир смертных===
+{{Описание миссии|локация=Город дракона Стиксия|(Первопроходец) возвращается из царства мёртвых с помощью Кастории, ставшей полубогиней и встретившей свою судьбу.<br />(Первопроходец) помнит обещание встретиться с Касторией вновь.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь к лунному свету, Кастория направляет вас===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::В потустороннем мире... очень холодно.
+::Могу ли я одолжить тепло вашего тела... в последний раз?
+::Благодарю вас за то, что помогли исполнить моё заветное желание.
+::Я отправляюсь в место, которое в народе называют Землями скорби.
+::Но я сохраню в памяти биение наших сердец и теплоту объятий...
+::И превращу царство мёртвых в убежище, что дарит утешение.
+::Этот миг объятий - доказательство того, что я жила.
+;(Cutscene ends)
+----
+{{Диалог Конец}}
+
+===Послушайте разговор Аглаи и Анаксы===
+{{Описание миссии|локация=Вихрь сотворения|Народное собрание закончено, а путь Преследующих пламя продолжится. Сенат потерпел разгромное поражение, и Анаксагор, стоящий за этим, вот-вот предстанет перед окончательным судом.<br />Лишь в последний момент Аглая и Анакса достигают взаимопонимания.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10402_F10402001_G46"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Отдайте ядро пламени===
+{{Диалог Начало}}
+
+;(Поговорите с Чаша приливов)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "TitanAtlas"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 140140601-->
+:<!--Unknown TalkSentence: 140140602-->
+:<!--Unknown TalkSentence: 140140603-->
+:<!--Unknown TalkSentence: 140140604-->
+:<!--Unknown TalkSentence: 140140605-->
+::{{Диалог|Магазин}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::{{Диалог|Изучение}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+;(Return to previous option selection)
+
+;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage)
+<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "WorldShopMission"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; WorldShopMission)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "KraterOfferingWorldShop"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 504000101-->
+:<!--Unknown TalkSentence: 504000102-->
+:<!--Unknown TalkSentence: 504000103-->
+::{{Диалог|Магазин}} undefined
+::{{Диалог|Изучение}} undefined
+::{{Диалог|Выход}} undefined
+::{{Диалог|Магазин}} undefined
+
+;(Unused &mdash; TriggerKrater_Levelup)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045004
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045005
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045006
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Put)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045007
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045008
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045009
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Out)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045010
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045011
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140313701-->
+<!--Unknown TalkSentence: 140313702-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140313705-->
+:<!--Unknown TalkSentence: 140313706-->
+:<!--Unknown TalkSentence: 140313707-->
+:<!--Unknown TalkSentence: 140313708-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140313710-->
+:<!--Unknown TalkSentence: 140313711-->
+:<!--Unknown TalkSentence: 140313712-->
+:<!--Unknown TalkSentence: 140313713-->
+:<!--Unknown TalkSentence: 140313714-->
+:<!--Unknown TalkSentence: 140313715-->
+:<!--Unknown TalkSentence: 140313716-->
+:<!--Unknown TalkSentence: 140313717-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140313705-->
+:<!--Unknown TalkSentence: 140313706-->
+:<!--Unknown TalkSentence: 140313707-->
+:<!--Unknown TalkSentence: 140313708-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140313710-->
+:<!--Unknown TalkSentence: 140313711-->
+:<!--Unknown TalkSentence: 140313712-->
+:<!--Unknown TalkSentence: 140313713-->
+:<!--Unknown TalkSentence: 140313714-->
+:<!--Unknown TalkSentence: 140313715-->
+:<!--Unknown TalkSentence: 140313716-->
+:<!--Unknown TalkSentence: 140313717-->
+:;(Return to previous option selection)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140314017-->
+;(Unused &mdash; TriggerStellaPerformance)
+----
+::{{tx}}
+:----
+:<!--Unknown TalkSentence: 140313901-->
+:<!--Unknown TalkSentence: 140313902-->
+:<!--Unknown TalkSentence: 140313903-->
+:<!--Unknown TalkSentence: 140313904-->
+:<!--Unknown TalkSentence: 140313905-->
+:<!--Unknown TalkSentence: 140313906-->
+:<!--Unknown TalkSentence: 140313907-->
+:<!--Unknown TalkSentence: 140313908-->
+:<!--Unknown TalkSentence: 140313909-->
+:<!--Unknown TalkSentence: 140313910-->
+:<!--Unknown TalkSentence: 140313911-->
+:<!--Unknown TalkSentence: 140313912-->
+:<!--Unknown TalkSentence: 140313913-->
+:<!--Unknown TalkSentence: 140313914-->
+:<!--Unknown TalkSentence: 140313915-->
+:<!--Unknown TalkSentence: 140313916-->
+:<!--Unknown TalkSentence: 140313917-->
+:<!--Unknown TalkSentence: 140313918-->
+:<!--Unknown TalkSentence: 140313919-->
+:<!--Unknown TalkSentence: 140313920-->
+:<!--Unknown TalkSentence: 140313921-->
+:<!--Unknown TalkSentence: 140313922-->
+:<!--Unknown TalkSentence: 140313923-->
+:<!--Unknown TalkSentence: 140313924-->
+:<!--Unknown TalkSentence: 140313925-->
+:<!--Unknown TalkSentence: 140313926-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140313928-->
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Радуйся, Керкес...
+:::Я использую твою душу, чтобы посеять семена сомнения в новом мире...
+:::«...Задача выполнена. Я всё сказал».
+:;(Cutscene ends)
+:----
+:<pre>{
+	"$type": "RPG.GameCore.EnablePlayerPlayIdleShow"
+}</pre>
+{{Диалог Конец}}
+
+===Послушайте разговор Чёрного Лебедя и Химеко===
+{{Описание миссии|локация=Спальный вагон|Состояние Март 7 ухудшается.<br />Чёрный Лебедь что-то скрывает. Что значит Амфореус для Сада воспоминаний? Почему он так важен?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+:{{Диалог|Изучение}} Осмотреть
+
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Scholar, Let Us Meet Again Before the Gates of Truth
+|zhs  = 学者啊，于真理门前再会
+|zht  = 學者啊，於真理門前再會
+|ja   = 学者よ、真理の門前で再会せよ
+|ko   = 학자여, 진리의 문 앞에서 다시 만날지니
+|es   = Erudito, volveremos a encontrarnos a las puertas de la verdad
+|fr   = Ô érudit, nous nous retrouverons aux portes de la vérité
+|ru   = О учёный, жди у ворот истины
+|th   = บัณฑิตเอ๋ย พบกันอีกครา ณ หน้าประตูแห่งความจริง
+|vi   = Học Giả Ơi, Hẹn Gặp Lại Trước Cánh Cửa Chân Lý
+|de   = O Gelehrter, treffen wir uns vor den Toren der Wahrheit wieder
+|id   = Wahai Sarjana, Mari Bertemu Lagi di Gerbang Kebenaran
+|pt   = Erudito, Que Nos Encontremos Novamente Diante dos Portões da Verdade
+}}
+
+==История изменений==
+{{История изменений|3.2}}

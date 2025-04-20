@@ -1,0 +1,465 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040118
+|Название        = 
+|Изображение     = Миссия Освоения О герой, прими ядро пламени.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Сказания о преследующих пламя героях
+|Условия         = Завершена [[Миссия Освоения]] ''[[Научный пир ведьмы]]''
+|Персонажи       = Аглая; Дань Хэн; Кастория; Мемо; Мидей; Первопроходец; Триннона
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = Научный пир ведьмы
+|Следующая       = ???
+|Награды         = Опыт Освоения*500; Звёздный нефрит*60; Shadow of Remembrance*1; Утраченный кристалл*8; Небесная амброзия*100; To All Things Strifeful*1 { text = To All Things Strifeful }; Кредиты*80 000
+}}
+'''О герой, прими ядро пламени''' — [[Миссия Освоения]] в главе [[Сказания о преследующих пламя героях]].
+
+==Описание==
+{{Описание|Бой с Никадором заканчивается победой златиусов. Вы отправляетесь назад в Охему. Вернувшись, вы становитесь свидетелями возвращения ядра пламени Никадора. Фаенон приступает к испытанию ядра пламени, стремясь доказать божественности Никадора, что может преодолеть свои самые глубинные страхи.}}
+
+==Этапы==
+# Отправляйтесь в Вихрь сотворения
+# Дождитесь, когда Фаенон начнёт испытание ядром пламени
+# Поговорите со златиусами
+# Поговорите с Аглаей
+# Поговорите с Тринноной (необязательно)
+# Поговорите с Касторией (необязательно)
+# Поговорите со златиусами
+
+==Прохождение==
+{{Дополнить}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 140190600-->
+<!--Unknown TalkSentence: 140190601-->
+<!--Unknown TalkSentence: 140190602-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140190604-->
+:<!--Unknown TalkSentence: 140190605-->
+:<!--Unknown TalkSentence: 140190606-->
+:<!--Unknown TalkSentence: 140190607-->
+:<!--Unknown TalkSentence: 140190608-->
+:<!--Unknown TalkSentence: 140190609-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140190607-->
+:<!--Unknown TalkSentence: 140190608-->
+:<!--Unknown TalkSentence: 140190609-->
+::{{tx}}
+<!--Unknown TalkSentence: 140190607-->
+<!--Unknown TalkSentence: 140190608-->
+<!--Unknown TalkSentence: 140190609-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Вихрь сотворения===
+{{Описание миссии|локация=Вечный священный город Охема|Бой с Никадором заканчивается победой златиусов. Мы отправляемся назад в Охему. Немного отдохнув, мы становимся свидетелями возвращения ядра пламени титана и начала испытания ядром пламени.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Дождитесь, когда Фаенон начнёт испытание ядром пламени===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; TriggerStellaPerformance)
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.EnablePlayerPlayIdleShow"
+}</pre>
+:<!--Unknown TalkSentence: 140190901-->
+:<!--Unknown TalkSentence: 140190902-->
+
+;(Поговорите с Чаша приливов)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "TitanAtlas"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 140140601-->
+:<!--Unknown TalkSentence: 140140602-->
+:<!--Unknown TalkSentence: 140140603-->
+:<!--Unknown TalkSentence: 140140604-->
+:<!--Unknown TalkSentence: 140140605-->
+::{{Диалог|Магазин}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::{{Диалог|Изучение}} undefined
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+;(Return to previous option selection)
+
+;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage)
+<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "WorldShopMission"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; WorldShopMission)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "KraterOfferingWorldShop"
+	}
+}</pre>
+:<!--Unknown TalkSentence: 504000101-->
+:<!--Unknown TalkSentence: 504000102-->
+:<!--Unknown TalkSentence: 504000103-->
+::{{Диалог|Магазин}} undefined
+::{{Диалог|Изучение}} undefined
+::{{Диалог|Выход}} undefined
+::{{Диалог|Магазин}} undefined
+
+;(Unused &mdash; TriggerKrater_Levelup)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045004
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045005
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045006
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Put)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045007
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045008
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045009
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Out)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045010
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045011
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите со златиусами===
+{{Диалог Начало}}
+
+;(Поговорите с Аглая)
+<!--Unknown TalkSentence: 140191101-->
+<!--Unknown TalkSentence: 140191102-->
+
+;(Поговорите с Триннона)
+<!--Unknown TalkSentence: 140191301-->
+<!--Unknown TalkSentence: 140191302-->
+
+;(Поговорите с Кастория)
+<!--Unknown TalkSentence: 140191501-->
+{{Диалог Конец}}
+
+===Поговорите с Аглаей===
+{{Диалог Начало}}
+
+;(Поговорите с Аглая)
+<!--Unknown TalkSentence: 140191001-->
+<!--Unknown TalkSentence: 140191002-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140191005-->
+<!--Unknown TalkSentence: 140191006-->
+<!--Unknown TalkSentence: 140191007-->
+<!--Unknown TalkSentence: 140191008-->
+
+;(Поговорите с Триннона)
+<!--Unknown TalkSentence: 140191301-->
+<!--Unknown TalkSentence: 140191302-->
+
+;(Поговорите с Кастория)
+<!--Unknown TalkSentence: 140191501-->
+{{Диалог Конец}}
+
+===Поговорите с Тринноной (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Аглая)
+<!--Unknown TalkSentence: 140191101-->
+<!--Unknown TalkSentence: 140191102-->
+
+;(Поговорите с Триннона)
+<!--Unknown TalkSentence: 140191201-->
+<!--Unknown TalkSentence: 140191202-->
+<!--Unknown TalkSentence: 140191203-->
+
+;(Поговорите с Кастория)
+<!--Unknown TalkSentence: 140191501-->
+{{Диалог Конец}}
+
+===Поговорите с Касторией (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Аглая)
+<!--Unknown TalkSentence: 140191101-->
+<!--Unknown TalkSentence: 140191102-->
+
+;(Поговорите с Триннона)
+<!--Unknown TalkSentence: 140191301-->
+<!--Unknown TalkSentence: 140191302-->
+
+;(Поговорите с Кастория)
+<!--Unknown TalkSentence: 140191401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140191403-->
+<!--Unknown TalkSentence: 140191406-->
+<!--Unknown TalkSentence: 140191407-->
+{{Диалог Конец}}
+
+===Поговорите со златиусами===
+{{Диалог Начало}}
+----
+:{{tx}}
+<!--Unknown TalkSentence: 140191601-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hero, Bear Thy Coreflame
+|zhs  = 英雄啊，且握住那枚火种
+|zht  = 英雄啊，且握住那枚火種
+|ja   = 英雄よ、その火種を握りしめろ
+|ko   = 영웅이여, 그 불씨를 손에 쥐어라
+|es   = Héroe, sostén esa Yesca
+|fr   = À toi, Héros, de porter cette flamme divine
+|ru   = О герой, прими ядро пламени
+|th   = วีรชนเอ๋ย จงไขว่คว้าเชื้อไฟ
+|vi   = Hỡi Anh Hùng, Hãy Nắm Lấy Ngọn Lửa Đó
+|de   = Held, trage die Kernflamme
+|id   = Wahai Pahlawan, Pertahankan Api Itu
+|pt   = Herói, Carrega Tua Chama Primordial
+}}
+
+==История изменений==
+{{История изменений|3.0}}

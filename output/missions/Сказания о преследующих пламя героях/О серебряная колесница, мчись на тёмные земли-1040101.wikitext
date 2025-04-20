@@ -1,0 +1,428 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040101
+|Название        = 
+|Изображение     = Миссия Освоения О серебряная колесница, мчись на тёмные земли.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Сказания о преследующих пламя героях
+|Условия         = Завершена [[Миссия Освоения]] ''[[И на восьмой день он отправился в путь]]''
+|Персонажи       = Вельт; Воскресенье; Дань Хэн; Март 7; Первопроходец; Пом-Пом; Химеко; Чёрный Лебедь
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = И на восьмой день он отправился в путь
+|Следующая       = О гость издалека, услышь молитвы этого мира
+|Награды         = Опыт Освоения*1 200; Звёздный нефрит*150; Путеводитель путешественника*12; Утраченный кристалл*12; Небесная амброзия*240; Living Flame*1 { text = Living Flame }; Кредиты*160 000
+}}
+'''О серебряная колесница, мчись на тёмные земли''' — [[Миссия Освоения]] в главе [[Сказания о преследующих пламя героях]].
+
+==Описание==
+{{Описание|У экспресса вот-вот закончится топливо, и вы решаете отправиться к Вечной земле Амфореусу. Перед самым отправлением Март 7 плохо себя чувствует, и вы вынуждены перейти к запасному плану: вы с Дань Хэном в отдельном вагоне отправитесь исследовать Амфореус. Однако же вагон был атакован, и вы вынуждены совершить посадку вблизи храма, где встречаетесь с загадочными златиусами Фаеноном и Трибби. Вы следуете за ними к единственной чистой земле в преддверии конца света - священному городу Охеме. Но там вас встречает титан раздора Никадор, напавший на город. Вы решаете помочь златиусам защитить Охему, и после тяжёлой битвы вам удаётся победить Никадора.}}
+
+==Этапы==
+# Примите участие в собрании по навигации и определите следующую остановку экспресса
+# Немного отдохните в вагоне для вечеринок и дождитесь гиперпрыжка
+# Март 7 ведёт себя необычно. Найдите её
+# Выслушайте мнения товарищей
+# Отправляйтесь в общий вагон и подготовьтесь задействовать запасной план
+# Продолжите первопроходческую экспедицию на Амфореусе
+# Упакуйте багаж и будьте наготове!
+# Поговорите с товарищами (необязательно)
+# Немного отдохните в вагоне для вечеринок и дождитесь гиперпрыжка
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Примите участие в собрании по навигации и определите следующую остановку экспресса===
+{{Описание миссии|локация=Общий вагон|Ваше время на Пенаконии снова на исходе. У экспресса почти закончилась энергия, и вам нужно выбрать оптимальный маршрут Освоения, чтобы как можно скорее восполнить её.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104010103,
+	"MissionCustomValue": {
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(Unused &mdash; EnterArea_G200)
+:{{tx}}
+:<!--Unknown TalkSentence: 140110201-->
+:<!--Unknown TalkSentence: 140110301-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Немного отдохните в вагоне для вечеринок и дождитесь гиперпрыжка===
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 140111901-->
+<!--Unknown TalkSentence: 140111902-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140111905-->
+:<!--Unknown TalkSentence: 140111906-->
+:<!--Unknown TalkSentence: 140111907-->
+:<!--Unknown TalkSentence: 140111908-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140111907-->
+:<!--Unknown TalkSentence: 140111908-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140111909-->
+<!--Unknown TalkSentence: 140111910-->
+<!--Unknown TalkSentence: 140111911-->
+<!--Unknown TalkSentence: 140111912-->
+<!--Unknown TalkSentence: 140111913-->
+<!--Unknown TalkSentence: 140111914-->
+<!--Unknown TalkSentence: 140111915-->
+<!--Unknown TalkSentence: 140111916-->
+<!--Unknown TalkSentence: 140111917-->
+<!--Unknown TalkSentence: 140111918-->
+<!--Unknown TalkSentence: 140111919-->
+<!--Unknown TalkSentence: 140111920-->
+<!--Unknown TalkSentence: 140111921-->
+<!--Unknown TalkSentence: 140111922-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 140112701-->
+{{Диалог Конец}}
+
+===Март 7 ведёт себя необычно. Найдите её===
+{{Описание миссии|локация=Спальный вагон|Перед самым отправлением Март 7 приболела...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_knockmar7thdoor"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 140112201-->
+<!--Unknown TalkSentence: 140112202-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_mar7thdooropen"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+----
+<!--Unknown TalkSentence: 140112201-->
+<!--Unknown TalkSentence: 140112202-->
+<!--Unknown TalkSentence: 140112203-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140112205-->
+:<!--Unknown TalkSentence: 140112206-->
+:<!--Unknown TalkSentence: 140112207-->
+:<!--Unknown TalkSentence: 140112208-->
+:<!--Unknown TalkSentence: 140112209-->
+:<!--Unknown TalkSentence: 140112210-->
+:<!--Unknown TalkSentence: 140112211-->
+:<!--Unknown TalkSentence: 140112212-->
+:<!--Unknown TalkSentence: 140112213-->
+:<!--Unknown TalkSentence: 140112214-->
+:<!--Unknown TalkSentence: 140112215-->
+:<!--Unknown TalkSentence: 140112216-->
+:<!--Unknown TalkSentence: 140112217-->
+:<!--Unknown TalkSentence: 140112218-->
+:<!--Unknown TalkSentence: 140112219-->
+:<!--Unknown TalkSentence: 140112220-->
+:<!--Unknown TalkSentence: 140112221-->
+:<!--Unknown TalkSentence: 140112222-->
+:<!--Unknown TalkSentence: 140112223-->
+:<!--Unknown TalkSentence: 140112224-->
+:<!--Unknown TalkSentence: 140112225-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140112207-->
+:<!--Unknown TalkSentence: 140112208-->
+:<!--Unknown TalkSentence: 140112209-->
+:<!--Unknown TalkSentence: 140112210-->
+:<!--Unknown TalkSentence: 140112211-->
+:<!--Unknown TalkSentence: 140112212-->
+:<!--Unknown TalkSentence: 140112213-->
+:<!--Unknown TalkSentence: 140112214-->
+:<!--Unknown TalkSentence: 140112215-->
+:<!--Unknown TalkSentence: 140112216-->
+:<!--Unknown TalkSentence: 140112217-->
+:<!--Unknown TalkSentence: 140112218-->
+:<!--Unknown TalkSentence: 140112219-->
+:<!--Unknown TalkSentence: 140112220-->
+:<!--Unknown TalkSentence: 140112221-->
+:<!--Unknown TalkSentence: 140112222-->
+:<!--Unknown TalkSentence: 140112223-->
+:<!--Unknown TalkSentence: 140112224-->
+:<!--Unknown TalkSentence: 140112225-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140112209-->
+:<!--Unknown TalkSentence: 140112210-->
+:<!--Unknown TalkSentence: 140112211-->
+:<!--Unknown TalkSentence: 140112212-->
+:<!--Unknown TalkSentence: 140112213-->
+:<!--Unknown TalkSentence: 140112214-->
+:<!--Unknown TalkSentence: 140112215-->
+:<!--Unknown TalkSentence: 140112216-->
+:<!--Unknown TalkSentence: 140112217-->
+:<!--Unknown TalkSentence: 140112218-->
+:<!--Unknown TalkSentence: 140112219-->
+:<!--Unknown TalkSentence: 140112220-->
+:<!--Unknown TalkSentence: 140112221-->
+:<!--Unknown TalkSentence: 140112222-->
+:<!--Unknown TalkSentence: 140112223-->
+:<!--Unknown TalkSentence: 140112224-->
+:<!--Unknown TalkSentence: 140112225-->
+<!--Unknown TalkSentence: 140112209-->
+<!--Unknown TalkSentence: 140112210-->
+<!--Unknown TalkSentence: 140112211-->
+<!--Unknown TalkSentence: 140112212-->
+<!--Unknown TalkSentence: 140112213-->
+<!--Unknown TalkSentence: 140112214-->
+<!--Unknown TalkSentence: 140112215-->
+<!--Unknown TalkSentence: 140112216-->
+<!--Unknown TalkSentence: 140112217-->
+<!--Unknown TalkSentence: 140112218-->
+<!--Unknown TalkSentence: 140112219-->
+<!--Unknown TalkSentence: 140112220-->
+<!--Unknown TalkSentence: 140112221-->
+<!--Unknown TalkSentence: 140112222-->
+<!--Unknown TalkSentence: 140112223-->
+<!--Unknown TalkSentence: 140112224-->
+<!--Unknown TalkSentence: 140112225-->
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 140112301-->
+<!--Unknown TalkSentence: 140112302-->
+<!--Unknown TalkSentence: 140112303-->
+
+
+;(Поговорите с Воскресенье)
+----
+<!--Unknown TalkSentence: 140112101-->
+
+;(Поговорите с Чёрный Лебедь)
+----
+<!--Unknown TalkSentence: 140112001-->
+{{Диалог Конец}}
+
+===Выслушайте мнения товарищей===
+{{Диалог Начало}}
+
+;(Unused &mdash; G64_Performance)
+<!--Unknown TalkSentence: 140112401-->
+:<!--Unknown TalkSentence: 140112402-->
+:<!--Unknown TalkSentence: 140112403-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 140112405-->
+::<!--Unknown TalkSentence: 140112406-->
+::<!--Unknown TalkSentence: 140112407-->
+::<!--Unknown TalkSentence: 140112408-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 140112407-->
+::<!--Unknown TalkSentence: 140112408-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140112409-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в общий вагон и подготовьтесь задействовать запасной план===
+{{Описание миссии|локация=Общий вагон|Отсутствие Март 7 добавило долю неопределённости первопроходческой экспедиции. Чтобы путешествие прошло гладко, госпожа Химеко решила задействовать запасной план.}}
+{{Диалог Начало}}
+
+;(Поговорите с Химеко)
+;(If {{cx}}<!--SubMission Finish: 104010112-->)
+:----
+:<!--Unknown TalkSentence: 140112601-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 140112603-->
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} undefined
+::<!--Unknown TalkSentence: 140112605-->
+;(If {{cx}}<!--SubMission not Finish: 104010112-->)
+:<!--Unknown TalkSentence: 140112501-->
+:<!--Unknown TalkSentence: 140112502-->
+:<!--Unknown TalkSentence: 140112503-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; 1040101_EnterRaid)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40401001
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 140113005-->
+<!--Unknown TalkSentence: 140110905-->
+{{Диалог Конец}}
+
+===Продолжите первопроходческую экспедицию на Амфореусе===
+{{Описание миссии|локация=Общий вагон|Вагон экспресса подвергся атаке и был вынужден совершить экстренную посадку. Хорошо, что никто не пострадал. На первый взгляд, в этом мире есть цивилизация. Соблюдая меры предосторожности, мы решаем осмотреть эти неизведанные земли.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 140110401-->
+{{Диалог Конец}}
+
+===Упакуйте багаж и будьте наготове!===
+{{Описание миссии|локация=Вагон для вечеринок|Ваше время на Пенаконии снова на исходе. У экспресса почти закончилась энергия, и вам нужно выбрать оптимальный маршрут Освоения, чтобы как можно скорее восполнить её.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; G47_Interact)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010118
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 140110501-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140110503-->
+<!--Unknown TalkSentence: 140110506-->
+
+;(Поговорите с Химеко)
+----
+<!--Unknown TalkSentence: 140110801-->
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 140110601-->
+
+;(Поговорите с Химеко)
+----
+<!--Unknown TalkSentence: 140110701-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140110703-->
+<!--Unknown TalkSentence: 140110708-->
+
+;(Поговорите с Дань Хэн)
+----
+<!--Unknown TalkSentence: 140110901-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140110903-->
+<!--Unknown TalkSentence: 140110906-->
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 140111101-->
+<!--Unknown TalkSentence: 140111102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140111104-->
+<!--Unknown TalkSentence: 140111109-->
+
+;(Поговорите с Воскресенье)
+----
+<!--Unknown TalkSentence: 140111301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Чёрный Лебедь)
+:{{tx}}
+<!--Unknown TalkSentence: 140111501-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140111503-->
+:<!--Unknown TalkSentence: 140111504-->
+:<!--Unknown TalkSentence: 140111505-->
+:<!--Unknown TalkSentence: 140111506-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140111506-->
+<!--Unknown TalkSentence: 140111507-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с товарищами (необязательно)===
+{{Диалог Начало}}
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 140110601-->
+
+;(Поговорите с Химеко)
+----
+<!--Unknown TalkSentence: 140110801-->
+
+;(Поговорите с Воскресенье)
+----
+<!--Unknown TalkSentence: 140111401-->
+{{Диалог Конец}}
+
+===Немного отдохните в вагоне для вечеринок и дождитесь гиперпрыжка===
+{{Диалог Начало}}
+
+
+;(Поговорите с Чёрный Лебедь)
+----
+<!--Unknown TalkSentence: 140111601-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 140111001-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 140111201-->
+<!--Unknown TalkSentence: 140111706-->
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 140110601-->
+
+;(Поговорите с Химеко)
+----
+<!--Unknown TalkSentence: 140110801-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Silver Chariot, Away to that Blackened Land
+|zhs  = 银辇啊，迅赴那黑色大地
+|zht  = 銀輦啊，速赴那黑色大地
+|ja   = 銀の列車よ、黒き大地へ走れ
+|ko   = 은빛 전차여, 검은 대지로 나아가라
+|es   = Carruaje de plata, ve raudo hacia esa tierra ennegrecida
+|fr   = Wagon d'argent, en route vers les terres du néant
+|ru   = О серебряная колесница, мчись на тёмные земли
+|th   = ราชรถสีเงินเอ๋ย จงมุ่งสู่ผืนดินทมิฬ
+|vi   = Cỗ Xe Bạc, Mau Lao Đến Vùng Đất Đen Tối
+|de   = Silberner Streitwagen, fliege über das dunkle Land
+|id   = Kereta Perak, Pergi ke Tanah Hitam itu
+|pt   = Carroça Prateada, Rumo à Terra Enegrecida
+}}
+
+==История изменений==
+{{История изменений|3.0}}

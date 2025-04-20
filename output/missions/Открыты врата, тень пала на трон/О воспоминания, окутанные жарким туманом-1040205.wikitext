@@ -1,0 +1,325 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040205
+|Название        = 
+|Изображение     = Миссия Освоения О воспоминания, окутанные жарким туманом.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Открыты врата, тень пала на трон
+|Условия         = Завершена [[Миссия Освоения]] ''[[О рыдания, пусть не льются попусту слёзы]]''
+|Персонажи       = Аглая; Гиацина; Кастория; Мидей; Первопроходец; Торговец; Трибби; Фаенон
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = О рыдания, пусть не льются попусту слёзы
+|Следующая       = О врата, раздающийся эхом стук во снах
+|Награды         = Опыт Освоения*500; Звёздный нефрит*60; Очищенный эфир*4; Утраченный кристалл*4; Небесная амброзия*200; Кредиты*80 000
+}}
+'''О воспоминания, окутанные жарким туманом''' — [[Миссия Освоения]] в главе [[Открыты врата, тень пала на трон]].
+
+==Описание==
+{{Описание|Трибби почувствовала, что Трианна вновь воспользовалась божественной силой из-за некой опасности. Чтобы развеять свои тревоги, она вместе с Аглаей направилась в купальню. Неожиданно в купальне многие посетители падают в обморок. Гиацина установила причину недомогания: слишком высокая температура воды. Виной тому оказался нелепый поединок между Фаеноном и Мидеем.}}
+
+==Этапы==
+# Поговорите с Аглаей
+# Отправляйтесь в купальни с Аглаей
+# Попытайтесь разобраться в произошедшем
+# Искупайтесь
+# Понаблюдайте за беседой Фаенона и Мидея
+# Понаблюдайте, как Трибби прерывает беседу Фаенона и Мидея
+# Поговорите с Кратером
+# Попросите совета у Великого ремесленника Хартонуса
+# Попытайтесь разобраться в произошедшем
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Аглаей===
+{{Описание миссии|локация=Вечный священный город Охема|*Мы* почувствовали, что Трианна вновь использовала божественную силу, и переживаем за её состояние... Аги чувствует *наше* беспокойство и обещает сходить вместе с *нами* в купальню.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterShadowFactor",
+	"EnableFactor": true,
+	"OnlyEnableWhenUseShadowProbe": true
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в купальни с Аглаей===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 104027603-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 104027608-->
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+===Попытайтесь разобраться в произошедшем===
+{{Описание миссии|локация=Вечный священный город Охема|В купальне многие посетители падают в обморок. Гиацина уже установила причину недомогания: слишком высокая температура воды. Но кто за этим стоит?..}}
+{{Диалог Начало}}
+
+;(Поговорите с Мидей)
+:{{tx}}
+<!--Unknown TalkSentence: 104027001-->
+<!--Unknown TalkSentence: 104027002-->
+<!--Unknown TalkSentence: 104027003-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; EnterDistrict_G300-2)
+<!--Unknown TalkSentence: 104027609-->
+:<!--Unknown TalkSentence: 104027610-->
+
+;(Unused &mdash; EnterDistrict_G300-1)
+<!--Unknown TalkSentence: 104027611-->
+:<!--Unknown TalkSentence: 104027612-->
+
+;(Unused &mdash; EnterDistrict_G300-3)
+:{{tx}}
+:----
+:<!--Unknown TalkSentence: 104027001-->
+:<!--Unknown TalkSentence: 104027002-->
+:<!--Unknown TalkSentence: 104027003-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Искупайтесь===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G401"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Понаблюдайте за беседой Фаенона и Мидея===
+{{Описание миссии|локация=Вечный священный город Охема|Безрассудное состязание завершилось - Фаенон и Мидей решили взять передышку. Два воина говорят об испытании ядром пламени и делятся друг с другом историями из своего прошлого...}}
+{{Диалог Начало}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+{{Диалог Конец}}
+
+===Понаблюдайте, как Трибби прерывает беседу Фаенона и Мидея===
+{{Диалог Начало}}
+----
+:{{tx}}
+:<!--1-second delay-->
+:{{tx}}
+
+;(Поговорите с Торговец)
+;(Unused &mdash; EnterDistrict_G239)
+<!--Unknown TalkSentence: 104026104-->
+{{Диалог Конец}}
+
+===Поговорите с Кратером===
+{{Описание миссии|локация=Вихрь сотворения|Из-за упрямства Кратера ответственность за судьбу и будущее кремносцев снова ложится на вас...}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Диалог Конец}}
+
+===Попросите совета у Великого ремесленника Хартонуса===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+:----
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "StoryLine"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G243)
+<!--Unknown TalkSentence: 104026103-->
+
+;(Unused &mdash; EnterDistrict_G478)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400039,
+			"TalkSentenceID": 104027606,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400041,
+			"TalkSentenceID": 104027604,
+			"EnableVoice": true
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 10,
+	"InstantFinish": false,
+	"UniqueID": 1040205889
+}</pre>
+
+;(Unused &mdash; ExitDistrict_G478)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1040205889
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G478-2)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 104027605,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400009,
+			"TalkSentenceID": 104027604,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 104027607,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400043,
+			"TalkSentenceID": 104027606,
+			"EnableVoice": true
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 10,
+	"InstantFinish": false,
+	"UniqueID": 1040205890
+}</pre>
+
+;(Unused &mdash; ExitDistrict_G478-2)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1040205890
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G478-3)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 104027607,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400044,
+			"TalkSentenceID": 104027605,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 478,
+			"GroupNpcID": 400046,
+			"TalkSentenceID": 104027605,
+			"EnableVoice": true
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 10,
+	"InstantFinish": false,
+	"UniqueID": 1040205891
+}</pre>
+
+;(Unused &mdash; ExitDistrict_G478-3)
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1040205891
+	]
+}</pre>
+<!--Unknown TalkSentence: 104027601-->
+<!--Unknown TalkSentence: 104027602-->
+{{Диалог Конец}}
+
+===Попытайтесь разобраться в произошедшем===
+{{Описание миссии|локация=Вечный священный город Охема|В купальне многие посетители падают в обморок. Гиацина уже установила причину недомогания: слишком высокая температура воды. Но кто за этим стоит?..}}
+{{Диалог Начало}}
+
+;(Поговорите с Мидей)
+
+;(По прибытии на место)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Memories, Veiled in Blazing Mist
+|zhs  = 旧忆啊，热雾中显隐扑朔
+|zht  = 舊憶啊，熱霧中顯隱撲朔
+|ja   = 記憶よ、熱き霧に包まれて
+|ko   = 옛 기억이여, 뜨거운 안갯속에서 비틀거리네
+|es   = Recuerdos, envueltos en la niebla
+|fr   = Souvenirs embrumés
+|ru   = О воспоминания, окутанные жарким туманом
+|th   = ความทรงจำเอ๋ย จงเร้นแฝงกลางหมอกระอุ
+|vi   = Hỡi Ký Ức, Mơ Hồ Sau Màn Sương Nóng
+|de   = Erinnerungen, gehüllt in brennenden Nebel
+|id   = Memori, Samar-Samar di Balik Kabut Panas
+|pt   = Memórias, Veladas na Névoa Ardente
+}}
+
+==История изменений==
+{{История изменений|3.1}}

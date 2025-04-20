@@ -1,0 +1,263 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1000502
+|Название        = 
+|Изображение     = Миссия Освоения Путешествие продолжается.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Ещё вчера сегодня было завтра
+|Условия         = Завершена [[Миссия Освоения]] ''[[Путешествие продолжается]]''
+|Персонажи       = Дань Хэн; Первопроходец; Пом-Пом
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = 
+|Следующая       = Дрейф среди звёзд
+|Награды         = Опыт Освоения*200; Встречи в путешествиях*4; Кредиты*10 000
+}}
+'''Путешествие продолжается''' — [[Миссия Освоения]] в главе [[Ещё вчера сегодня было завтра]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Посоветуйтесь с ребятами и сообщите о своём решении Химеко
+# Осмотритесь в общем вагоне
+# Направляйтесь в спальный вагон
+# Настройте фонограф (необязательно)
+# Посетите комнату Дань Хэна
+# Покиньте комнату Дань Хэна
+# Покиньте комнату Март 7
+# Посетите комнату Март 7
+# Осмотрите комнату Март 7
+# Поговорите с Дань Хэном
+# Воспользуйтесь базой данных экспресса
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Посоветуйтесь с ребятами и сообщите о своём решении Химеко===
+{{Диалог Начало}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Пойдём~
+::Пора подниматься.
+::Кхм!
+::Я здесь!
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_GameState",
+	"StateName": {
+		"Value": "State_Story"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "StateGroup_Story",
+	"StateName": {
+		"Value": "State_Herta_Space_Station_Ending"
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 100050201-->
+<!--Unknown TalkSentence: 100050202-->
+<!--Unknown TalkSentence: 100050203-->
+<!--Unknown TalkSentence: 100050204-->
+<!--Unknown TalkSentence: 100050205-->
+----
+{{Диалог Конец}}
+
+===Осмотритесь в общем вагоне===
+{{Описание миссии|локация=Общий вагон|Вы поднялись на борт удивительного Звёздного экспресса, пришло время познакомиться с его оборудованием и пассажирами! Отныне это будет ваш дом.}}
+{{Диалог Начало}}
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 100050430-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_100050445)
+<!--Unknown TalkSentence: 100050445-->
+:<!--Unknown TalkSentence: 100050446-->
+:<!--Unknown TalkSentence: 100050447-->
+
+;(Unused &mdash; TalkSentence_100050445)
+<!--Unknown TalkSentence: 100050445-->
+:<!--Unknown TalkSentence: 100050446-->
+:<!--Unknown TalkSentence: 100050447-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; Mission_100050203_Prop_4_300001_OnEnter)
+:----
+:<!--Unknown TalkSentence: 100050464-->
+:<!--Unknown TalkSentence: 100050465-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Направляйтесь в спальный вагон===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Настройте фонограф (необязательно)===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Посетите комнату Дань Хэна===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_electronic_tips"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 100050501-->
+<!--Unknown TalkSentence: 100050502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100050504-->
+:<!--0.1-second delay-->
+{{Диалог Конец}}
+
+===Покиньте комнату Дань Хэна===
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Покиньте комнату Март 7===
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Посетите комнату Март 7===
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Осмотрите комнату Март 7===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 100050568-->
+:<!--3-second delay-->
+<!--Unknown TalkSentence: 100050466-->
+<!--Unknown TalkSentence: 100050467-->
+{{Диалог Конец}}
+
+===Поговорите с Дань Хэном===
+{{Диалог Начало}}
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 100050510-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100050512-->
+<!--Unknown TalkSentence: 100050523-->
+<!--Unknown TalkSentence: 100050524-->
+<!--Unknown TalkSentence: 100050525-->
+;(Unused &mdash; Wait_Option_100050405_96)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100050514-->
+:<!--Unknown TalkSentence: 100050515-->
+:<!--Unknown TalkSentence: 100050521-->
+:<!--Unknown TalkSentence: 100050523-->
+:<!--Unknown TalkSentence: 100050524-->
+:<!--Unknown TalkSentence: 100050525-->
+
+;(Unused &mdash; Wait_Option_100050405_101)
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100050517-->
+:<!--Unknown TalkSentence: 100050518-->
+:<!--Unknown TalkSentence: 100050523-->
+:<!--Unknown TalkSentence: 100050524-->
+:<!--Unknown TalkSentence: 100050525-->
+{{Диалог Конец}}
+
+===Воспользуйтесь базой данных экспресса===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "100050210_Finish"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Voyage Continues
+|zhs  = 旅途正在继续
+|zht  = 旅途正在繼續
+|ja   = 旅は続く
+|ko   = 계속되는 여정
+|es   = La travesía continúa
+|fr   = Le voyage continue
+|ru   = Путешествие продолжается
+|th   = การเดินทางกำลังดำเนินต่อไป
+|vi   = Hành Trình Đang Tiếp Diễn
+|de   = Die Reise geht weiter
+|id   = Perjalanan Sedang Berlanjut
+|pt   = A Viagem Continua
+}}
+
+==История изменений==
+{{История изменений|2.7}}

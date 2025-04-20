@@ -1,0 +1,1082 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040208
+|Название        = 
+|Изображение     = Миссия Освоения О врата, раздающийся эхом стук во снах.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Открыты врата, тень пала на трон
+|Условия         = Завершена [[Миссия Освоения]] ''[[О воспоминания, окутанные жарким туманом]]''
+|Персонажи       = Аглая; Гиацина; Кастория; Мидей; Первопроходец; Трианна; Трибби; Триннона; Фаенон
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = О воспоминания, окутанные жарким туманом
+|Следующая       = О неприятель, пылающий золотой кровью
+|Награды         = Опыт Освоения*500; Звёздный нефрит*60; Очищенный эфир*4; Утраченный кристалл*4; Небесная амброзия*200; Кредиты*80 000
+}}
+'''О врата, раздающийся эхом стук во снах''' — [[Миссия Освоения]] в главе [[Открыты врата, тень пала на трон]].
+
+==Описание==
+{{Описание|Кремносец по имени Кратер неожиданно похитил Триннону и попытался войти в Вихрь сотворения, дабы пройти испытание раздора. Когда он потерпел неудачу, его схватила Аглая. Трибби и Триннона с пониманием относятся к нетерпению Кратера и решают использовать силы Оронис, чтобы восстановить его воспоминания о давних временах и снять груз с его сердца. Из-за беспокойства Кратера Трибби видит кошмар, в котором возвращается в прошлое. Очнувшись, троица решает отправиться в Омут судьбы и поговорить с Оронис, но по прибытии обнаруживает Похитителя пламени. Ценой своей божественной силы Трианна отправляет Трибби и Триннону подальше от поля боя.}}
+
+==Этапы==
+# Усните и погрузитесь в сон Трибби
+# Усните и продолжите находиться во сне Трибби
+# Поговорите с Аглаей
+# Понаблюдайте за беседой Фаенона и Анаксы
+# Встретьтесь с Оронис и верните воспоминания
+# Отыщите шафран и встретьтесь с Оронис
+# Следуйте за Трианной и отыщите шафран
+# Прочтите найденное Трианной письмо
+# Продолжайте следовать за Трианной и искать шафран
+# Осмотрите найденный Трианной кувшин
+# Встретьтесь с Оронис и попытайтесь её убедить
+# Продолжайте наблюдать за беседой Фаенона и Анаксы
+# Отыщите Оронис
+# Следуйте за Трианной и отыщите шафран
+# Продолжайте следовать за Трианной и искать шафран
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Усните и погрузитесь в сон Трибби===
+{{Описание миссии|локация=Вечный священный город Охема|Сон возвращает *нас* к смутным воспоминаниям о давно прошедших временах, и в этой иллюзии запечатлены *наши* самые глубокие тревоги.}}
+{{Диалог Начало}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40412
+}</pre>
+{{Диалог Конец}}
+
+===Усните и продолжите находиться во сне Трибби===
+{{Диалог Начало}}
+
+;(Поговорите с Погрузиться в сон)
+
+{{Диалог Конец}}
+
+===Поговорите с Аглаей===
+{{Диалог Начало}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": []
+}</pre>
+{{Диалог Конец}}
+
+===Понаблюдайте за беседой Фаенона и Анаксы===
+{{Описание миссии|локация=Вечный священный город Охема|Похоже, Фаенон нашёл запертого Анаксу не только для того, чтобы поболтать о прошлом.}}
+{{Диалог Начало}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Диалог Конец}}
+
+===Встретьтесь с Оронис и верните воспоминания===
+{{Описание миссии|локация=Омут судьбы Янусополиса|Чтобы восстановить память и выполнить обещание, данное Кратеру, *мы* незаметно проникаем в Омут судьбы в поисках предметов, переживших те времена.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<!--Unknown TalkSentence: 104031302-->
+<!--Unknown TalkSentence: 104031303-->
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020802,
+	"MissionCustomValue": {
+		"Index": 2,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+----
+<!--Unknown TalkSentence: 104037801-->
+<!--Unknown TalkSentence: 104037802-->
+<!--Unknown TalkSentence: 104037803-->
+<!--Unknown TalkSentence: 104037804-->
+<!--Unknown TalkSentence: 104037805-->
+<!--Unknown TalkSentence: 104037806-->
+<!--Unknown TalkSentence: 104037807-->
+<!--Unknown TalkSentence: 104037808-->
+<!--Unknown TalkSentence: 104037809-->
+<!--Unknown TalkSentence: 104037810-->
+<!--Unknown TalkSentence: 104037811-->
+<!--Unknown TalkSentence: 104037812-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отыщите шафран и встретьтесь с Оронис===
+{{Диалог Начало}}
+;(If {{F|FSV_UnlockEraSwitchProp}} is equal to 1)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":73}},"ID":{"FixedValue":{"Value":300001}}}},"State":"Open","Inverse":true}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 73
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G158"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 104031301-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<!--Unknown TalkSentence: 104031306-->
+<!--Unknown TalkSentence: 104031307-->
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020803,
+	"MissionCustomValue": {
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Следуйте за Трианной и отыщите шафран===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G159)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 159,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 1.5,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 202
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300001
+							}
+						}
+					}
+				]
+			},
+			"EnableSteer": true,
+			"TurnBackOnGraphEnd": false
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104020810
+		}
+	],
+	"PathOffset": []
+}</pre>
+<!--Unknown TalkSentence: 104031304-->
+<!--Unknown TalkSentence: 104031305-->
+{{Диалог Конец}}
+
+===Прочтите найденное Трианной письмо===
+{{Диалог Начало}}
+
+;(Поговорите с Осмотреть)
+----
+<!--Unknown TalkSentence: 104030801-->
+<!--Unknown TalkSentence: 104030802-->
+<!--Unknown TalkSentence: 104030803-->
+<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190803
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 104030804-->
+<!--Unknown TalkSentence: 104030805-->
+<!--Unknown TalkSentence: 104030806-->
+<!--Unknown TalkSentence: 104030807-->
+<!--Unknown TalkSentence: 104030808-->
+<!--Unknown TalkSentence: 104030809-->
+<!--Unknown TalkSentence: 104030810-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G160"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<!--Unknown TalkSentence: 104031309-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<!--Unknown TalkSentence: 104031310-->
+<!--Unknown TalkSentence: 104031311-->
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020804,
+	"MissionCustomValue": {
+		"Index": 1,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте следовать за Трианной и искать шафран===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 161,
+	"PathwayID": 1,
+	"MotionFlag": "FastRun",
+	"SpeedScale": 6.6,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"FixedValue": {
+								"Value": 202
+							}
+						},
+						"ID": {
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			},
+			"EnableSteer": true,
+			"TurnBackOnGraphEnd": false
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104020813
+		}
+	],
+	"PathOffset": []
+}</pre>
+<!--Unknown TalkSentence: 104031308-->
+{{Диалог Конец}}
+
+===Осмотрите найденный Трианной кувшин===
+{{Диалог Начало}}
+
+;(Поговорите с Осмотреть)
+----
+<!--Unknown TalkSentence: 104030901-->
+<!--Unknown TalkSentence: 104030902-->
+<!--Unknown TalkSentence: 104030903-->
+<!--Unknown TalkSentence: 104030904-->
+<!--Unknown TalkSentence: 104030905-->
+<!--Unknown TalkSentence: 104030906-->
+<!--Unknown TalkSentence: 104030907-->
+<!--Unknown TalkSentence: 104030908-->
+<!--Unknown TalkSentence: 104030909-->
+<!--Unknown TalkSentence: 104030910-->
+<!--Unknown TalkSentence: 104030911-->
+<!--Unknown TalkSentence: 104030912-->
+<!--Unknown TalkSentence: 104030913-->
+<!--Unknown TalkSentence: 104030914-->
+<!--Unknown TalkSentence: 104030915-->
+<!--Unknown TalkSentence: 104030916-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G162"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Встретьтесь с Оронис и попытайтесь её убедить===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 104031312-->
+<!--Unknown TalkSentence: 104031313-->
+<!--Unknown TalkSentence: 104031314-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 104031318-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003,
+			300004,
+			300005,
+			300006,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300014,
+			300015,
+			300016,
+			300017,
+			300018,
+			300019,
+			300020,
+			300021,
+			300022,
+			300023,
+			300025,
+			300026,
+			300027,
+			300028,
+			300029,
+			300030,
+			300031,
+			300032,
+			300033,
+			300034,
+			300035,
+			300036,
+			300037,
+			300038,
+			300039,
+			300040,
+			300041,
+			300042,
+			300043,
+			300044,
+			300045,
+			300046,
+			300047,
+			300048,
+			300049,
+			300050,
+			300051,
+			300052,
+			300053,
+			300054,
+			300055,
+			300056,
+			300057,
+			300058,
+			300059,
+			300060,
+			300061,
+			300062,
+			300063
+		]
+	},
+	"IsHide": true
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003,
+			300004,
+			300005,
+			300006,
+			300008,
+			300009,
+			300010,
+			300013,
+			300014,
+			300015,
+			300025,
+			300026,
+			300027,
+			300033,
+			300034,
+			300035,
+			300036,
+			300037,
+			300038,
+			300039,
+			300040,
+			300041,
+			300042,
+			300043,
+			300044,
+			300045,
+			300046,
+			300047,
+			300048,
+			300049,
+			300050,
+			300051,
+			300052,
+			300053,
+			300054,
+			300055,
+			300056
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<!--Unknown TalkSentence: 104031315-->
+<!--Unknown TalkSentence: 104031316-->
+<!--Unknown TalkSentence: 104031317-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011,
+			300012,
+			300016,
+			300017,
+			300018,
+			300019,
+			300020,
+			300021,
+			300022,
+			300023,
+			300028,
+			300029,
+			300030,
+			300031,
+			300032,
+			300057,
+			300058,
+			300059,
+			300060,
+			300061,
+			300062,
+			300063
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Диалог Конец}}
+
+===Продолжайте наблюдать за беседой Фаенона и Анаксы===
+{{Описание миссии|локация=Вечный священный город Охема|Похоже, Фаенон нашёл запертого Анаксу не только для того, чтобы поболтать о прошлом.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Диалог Конец}}
+
+===Отыщите Оронис===
+{{Описание миссии|локация=Омут судьбы Янусополиса|Чтобы восстановить память и выполнить обещание, данное Кратеру, *мы* незаметно проникаем в Омут судьбы в поисках предметов, переживших те времена.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Лети...
+:::Трианна?
+:::Трибби...
+:::До завтра.
+:;(Cutscene ends)
+:----
+{{Диалог Конец}}
+
+===Следуйте за Трианной и отыщите шафран===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Продолжайте следовать за Трианной и искать шафран===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Passages, Knocking Echoes in Dreams
+|zhs  = 门扉啊，叩声仍激荡梦中
+|zht  = 門扉啊，叩聲仍激盪夢中
+|ja   = 扉よ、夢の中の叩く音はやまず
+|ko   = 문이여, 두드리는 소리가 여전히 꿈속을 격동시키는구나
+|es   = Portales, ecos que llaman en sueños
+|fr   = Passage vers les rêves du passé
+|ru   = О врата, раздающийся эхом стук во снах
+|th   = ประตูเอ๋ย เสียงเคาะยังดังก้องอยู่ในฝัน
+|vi   = Hỡi Cánh Cổng, Tiếng Gõ Vẫn Vang Vọng Trong Mơ
+|de   = Tore, lasst das Klopfen in Träumen widerhallen
+|id   = Pintu, Ketukan Masih Menggema dalam Mimpi
+|pt   = Passagens, Ecos Batendo em Sonhos
+}}
+
+==История изменений==
+{{История изменений|3.1}}

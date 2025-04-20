@@ -1,0 +1,214 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040210
+|Название        = 
+|Изображение     = Миссия Освоения О неприятель, пылающий золотой кровью.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Открыты врата, тень пала на трон
+|Условия         = 
+|Персонажи       = Первопроходец; Фаенон
+|СтартЛокация    = Охота на Похитителя пламени
+|Мир             = Амфореус
+|Локации         = Охота на Похитителя пламени
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*300; Звёздный нефрит*40; Очищенный эфир*4; Небесная амброзия*120; A Hunt for the Divine*1 { text = A Hunt for the Divine }; Кредиты*60 000
+}}
+'''О неприятель, пылающий золотой кровью''' — [[Миссия Освоения]] в главе [[Открыты врата, тень пала на трон]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь на поле боя
+# Вступите в битву
+
+==Прохождение==
+{{Дополнить}}
+
+----
+:{{tx}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+
+;(Unused &mdash; 1A)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 104033950,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1301
+}</pre>
+
+;(Unused &mdash; 1B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 104033951,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1302
+}</pre>
+
+;(Unused &mdash; 2A)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 104033954,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1303
+}</pre>
+
+;(Unused &mdash; 2B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 104033955,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1304
+}</pre>
+
+;(Unused &mdash; 3B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 104033956,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1305
+}</pre>
+
+;(Unused &mdash; 4B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 104033957,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1306
+}</pre>
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Духи раздора, слушайте мой приказ...
+::Я Копьё Ярости...
+::Мучения, в которых нуждается мир!
+::Узрите...
+::В Кремносе появился новый бог.
+;(Cutscene ends)
+----
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 4,
+	"PathwayID": 1,
+	"MotionFlag": "FastRun",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104021002
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+;(Unused &mdash; 104020105kaiche)
+<!--Unknown TalkSentence: 104031350-->
+{{Диалог Конец}}
+
+===Отправляйтесь на поле боя===
+{{Описание миссии|локация=Охота на Похитителя пламени|Финальная битва с Похитителем пламени произойдёт в Кремносе. Перед лицом небывало могучего противника златиусам придётся напрячь все свои силы.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<!--Unknown TalkSentence: 104031352-->
+<!--Unknown TalkSentence: 104031351-->
+{{Диалог Конец}}
+
+===Вступите в битву===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20421075}-->}})
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Наконец-то, получилось!
+:::Вековые врата, откройтесь!
+:::Какой позор, Спаситель.
+:::А чего ты с неба не упал?
+:::Этот город принадлежит мне...
+:::Почему нельзя идти через главный вход?
+:;(Cutscene ends)
+:----
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20421075}-->}})
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Наконец-то.
+:::Пожалуйста, Мемо!
+:::Ме~
+:::Покайся в воспоминаниях погибших...
+:::Палач!
+:;(Cutscene ends)
+:----
+;(Enter battle)
+:{{Enemy List|Похититель пламени глубокой тьмы*1/+53.8% НР, -12% Скорость}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Nemesis, Scorched by Golden Blood
+|zhs  = 仇寇啊，且领受金血烧灼
+|zht  = 仇寇啊，且領受金血燒灼
+|ja   = 仇敵よ、黄金の血に焼かれよ
+|ko   = 원수여, 황금 피의 뜨거운 불길을 받아들여라
+|es   = Némesis, ardiente en sangre dorada
+|fr   = Ennemi juré brûlé par le sang doré
+|ru   = О неприятель, пылающий золотой кровью
+|th   = ศัตรูเอ๋ย จงแผดเผาด้วยโลหิตทอง
+|vi   = Hỡi Kẻ Thù, Hãy Nhận Lấy Máu Vàng Bỏng Rát
+|de   = Erzfeind, von goldenem Blut versengt
+|id   = Musuh, Rasakan Darah Emas yang Membara
+|pt   = Nêmesis, Abrasados pelo Sangue Dourado
+}}
+
+==История изменений==
+{{История изменений|3.1}}

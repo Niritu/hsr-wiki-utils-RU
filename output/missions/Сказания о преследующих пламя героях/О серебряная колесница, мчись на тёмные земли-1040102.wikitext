@@ -1,0 +1,1291 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040102
+|Название        = 
+|Изображение     = Миссия Освоения О серебряная колесница, мчись на тёмные земли.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Сказания о преследующих пламя героях
+|Условия         = 
+|Персонажи       = «Март 7»; Атакованный горожанин; Беловолосый юноша; Виртус; Геозавр; Дань Хэн; Кастория; Мидей; Нежный женский голос; Нолдус; Паникующий беженец; Паникующий горожанин; Первопроходец; Рыжеволосая девочка; Спокойная беженка; Старик; Трианна; Трибби; Триннона; Фаенон; Хартонус
+|СтартЛокация    = ???
+|Мир             = Амфореус
+|Локации         = ???
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*1 200; Звёздный нефрит*150; Путеводитель путешественника*12; Утраченный кристалл*12; Небесная амброзия*240; Living Flame*1 { text = Living Flame }; Кредиты*160 000
+}}
+'''О серебряная колесница, мчись на тёмные земли''' — [[Миссия Освоения]] в главе [[Сказания о преследующих пламя героях]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Приведите Дань Хэна в чувство
+# Найдите источник странного шума
+# Проведите разведку на Амфореусе, не забывая об осторожности
+# Сделайте пару снимков изумительного пейзажа вместо Март 7
+# Войдите в храм и выясните, в чём причина конфликта
+# Попробуйте поговорить с Трибби наедине
+# Следуйте за Трибби
+# Продолжайте следовать за Трибби
+# Идите дальше и догоните Нолдуса в глубине храма
+# Оседлайте геозавра и отправляйтесь в священный город
+# Охема подверглась нападению, протяните городу руку помощи
+# Отправляйтесь в Мраморный дворец
+# Сразитесь с Никадором Копьём Ярости
+# Помогите Фаенону одолеть противников
+# Следуйте за Касторией
+
+==Прохождение==
+{{Дополнить}}
+
+===Приведите Дань Хэна в чувство===
+{{Описание миссии|локация=???|Вагон экспресса подвергся атаке и был вынужден совершить экстренную посадку. Хорошо, что никто не пострадал. На первый взгляд, в этом мире есть цивилизация. Соблюдая меры предосторожности, мы решаем осмотреть эти неизведанные земли.}}
+{{Диалог Начало}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Вагон готов к отцеплению! Три... два... один!
+::Мемо?
+::Мы знакомы?
+;(Cutscene ends)
+----
+----
+:{{tx}}
+
+;(Поговорите с Дань Хэн)
+:{{tx}}
+<!--Unknown TalkSentence: 140120201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1310600,
+	"ShowNotice": false
+}</pre>
+----
+<!--Unknown TalkSentence: 140120301-->
+<!--Unknown TalkSentence: 140120302-->
+<!--Unknown TalkSentence: 140120303-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140120304-->
+:<!--Unknown TalkSentence: 140120305-->
+:<!--Unknown TalkSentence: 140120306-->
+:<!--Unknown TalkSentence: 140120307-->
+:<!--Unknown TalkSentence: 140120308-->
+:<!--Unknown TalkSentence: 140120309-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140120305-->
+:<!--Unknown TalkSentence: 140120306-->
+:<!--Unknown TalkSentence: 140120307-->
+:<!--Unknown TalkSentence: 140120308-->
+:<!--Unknown TalkSentence: 140120309-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140120306-->
+:<!--Unknown TalkSentence: 140120307-->
+:<!--Unknown TalkSentence: 140120308-->
+:<!--Unknown TalkSentence: 140120309-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Найдите источник странного шума===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 140120401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140121901-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121902-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"LessEqual"}-->}})
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"Equal"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"LessEqual","CompareValue":3}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo4"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"GreaterEqual","CompareValue":3}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo5"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"LessEqual","CompareValue":1}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo2"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "FlashBack"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter"
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter2"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"Equal","CompareValue":2}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo3"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "FlashBack"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter"
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter2"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"Equal","CompareValue":3}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"Equal","CompareValue":4}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "FlashBack"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300006
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter"
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter2"
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":74,"DynamicName":{"Value":"MimiGoStep"},"CompareType":"Equal","CompareValue":5}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "StartGo5"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "FlashBack"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300007
+		]
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter"
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "PreEnter2"
+	}
+}</pre>
+<!--Unknown TalkSentence: 140121908-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400007,
+		400008
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400009,
+		400010
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+;(Unused &mdash; EnterArea_Cry)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		140123740
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400011
+		]
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121903-->
+{{Диалог Конец}}
+
+===Проведите разведку на Амфореусе, не забывая об осторожности===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121909-->
+<!--Unknown TalkSentence: 140121910-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140120501-->
+<!--Unknown TalkSentence: 140120502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 140121925-->
+<!--Unknown TalkSentence: 140121904-->
+;(Unused &mdash; Laughter)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		140123738,
+		140123739
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121905-->
+<!--Unknown TalkSentence: 140121906-->
+<!--Unknown TalkSentence: 140121907-->
+{{Диалог Конец}}
+
+===Сделайте пару снимков изумительного пейзажа вместо Март 7===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(Unused &mdash; Wait_Option_104010207_141)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G9",
+	"AnchorName": "Anchor3",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; Photo_Gate)
+----
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G9",
+	"AnchorName": "Anchor3",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+:<!--Unknown TalkSentence: 140120701-->
+:<!--Unknown TalkSentence: 140120702-->
+:<!--Unknown TalkSentence: 140120703-->
+:<!--Unknown TalkSentence: 140120704-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G9",
+	"AnchorName": "Anchor3",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "LongRange",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContainerGiantTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"TargetType": "Prop",
+					"Targets": [
+						300005
+					]
+				},
+				"Radius": 30,
+				"ShowAimTag": false,
+				"UseGameObjectNode": false,
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"ContainerFlagName": "GiantTarget_2",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnStartPhotoGraph": [
+		{
+			"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+			"InstanceIDList": [
+				300002
+			]
+		}
+	],
+	"OnExitPhotoGraph": [
+		{
+			"$type": "RPG.GameCore.AdvCreateGroupEntity",
+			"InstanceIDList": [
+				300002
+			]
+		}
+	],
+	"OverrideConfig": {
+		"InitFov": 0.9,
+		"ShowFinishToastManually": true,
+		"OverrideMaxFov": 60,
+		"OverrideMinFov": 10
+	},
+	"ExtraSettings": {
+		"FreeStyleConfig": [],
+		"LookAtCameraTarget": {
+			"$type": "RPG.GameCore.TargetFetchAdvFakeAvatar"
+		},
+		"PlayerControlSetting": {
+			"AnchorConfig": {
+				"AreaName": {
+					"Value": "LevelArea_P40401_F40401002_G9"
+				},
+				"AnchorName": {
+					"Value": "Anchor4"
+				}
+			},
+			"OverrideCameraHeightByBodySize": "Lad"
+		}
+	},
+	"BindName": {
+		"Value": "104010222_Titan"
+	},
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 4239232322731573076
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 17484210035024907104
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "104010222_Titan",
+					"ContainerFlagName": "GiantTarget_2",
+					"Size": {},
+					"Ratio": 0.5
+				},
+				"BindContainerFlagNames": [
+					"GiantTarget_2"
+				]
+			}
+		]
+	},
+	"HideTwoPointFourParam": false
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 140121927-->
+
+;(Unused &mdash; Wait_Option_104010206_127)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G8",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+
+;(Unused &mdash; Photo_Titan)
+----
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G8",
+	"AnchorName": "Anchor1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+:<!--Unknown TalkSentence: 140120601-->
+:<!--Unknown TalkSentence: 140120602-->
+::{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40401_F40401002_G8",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoInTriggerRange",
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "LongRange",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContainerGiantTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.GroupFetchLocalTarget",
+					"TargetType": "Prop",
+					"Targets": [
+						300005
+					]
+				},
+				"Radius": 80,
+				"ShowAimTag": false,
+				"GameObjectNode": {
+					"Value": "Chest_M"
+				}
+			},
+			"ContainerFlagName": "GiantTarget_1",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OnExitPhotoGraph": [
+		{
+			"$type": "RPG.GameCore.AdvCreateGroupEntity",
+			"InstanceIDList": [
+				300002
+			]
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300005
+			]
+		},
+		"ShowFinishToastManually": true,
+		"OverrideMaxFov": 60,
+		"OverrideMinFov": 10
+	},
+	"BindName": {
+		"Value": "104010221_Titan"
+	},
+	"ShotResultCondition": {
+		"TargetConditionName": {
+			"Hash": 4239232322731573076
+		},
+		"ShotResultCondition": [
+			{
+				"PredicateName": {
+					"Hash": 497575914243302126
+				},
+				"Predicate": {
+					"$type": "RPG.GameCore.ByTargetContainerRatioInRect",
+					"BindPhotographName": "104010221_Titan",
+					"ContainerFlagName": "GiantTarget_1",
+					"Size": {},
+					"Ratio": 0.65
+				},
+				"BindContainerFlagNames": [
+					"GiantTarget_1"
+				]
+			}
+		]
+	},
+	"HideTwoPointFourParam": false
+}</pre>
+<!--Unknown TalkSentence: 140121911-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140120801-->
+<!--Unknown TalkSentence: 140120802-->
+<!--Unknown TalkSentence: 140120803-->
+<!--Unknown TalkSentence: 140120804-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Осторожно!
+::У тебя есть... что-то занятное.
+;(Cutscene ends)
+----
+----
+:{{tx}}
+<!--Unknown TalkSentence: 140120901-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140120905-->
+:<!--Unknown TalkSentence: 140120906-->
+:<!--Unknown TalkSentence: 140120907-->
+:<!--Unknown TalkSentence: 140120908-->
+:<!--Unknown TalkSentence: 140120909-->
+:<!--Unknown TalkSentence: 140120910-->
+:<!--Unknown TalkSentence: 140120911-->
+:<!--Unknown TalkSentence: 140120912-->
+:<!--Unknown TalkSentence: 140120913-->
+:<!--Unknown TalkSentence: 140120914-->
+:<!--Unknown TalkSentence: 140120915-->
+:<!--Unknown TalkSentence: 140120916-->
+:<!--Unknown TalkSentence: 140120917-->
+:<!--Unknown TalkSentence: 140120918-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140120904-->
+:<!--Unknown TalkSentence: 140120905-->
+:<!--Unknown TalkSentence: 140120906-->
+:<!--Unknown TalkSentence: 140120907-->
+:<!--Unknown TalkSentence: 140120908-->
+:<!--Unknown TalkSentence: 140120909-->
+:<!--Unknown TalkSentence: 140120910-->
+:<!--Unknown TalkSentence: 140120911-->
+:<!--Unknown TalkSentence: 140120912-->
+:<!--Unknown TalkSentence: 140120913-->
+:<!--Unknown TalkSentence: 140120914-->
+:<!--Unknown TalkSentence: 140120915-->
+:<!--Unknown TalkSentence: 140120916-->
+:<!--Unknown TalkSentence: 140120917-->
+:<!--Unknown TalkSentence: 140120918-->
+:;(Return to previous option selection)
+
+----
+:{{tx}}
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 140121003-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 140121007-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 140121010-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 140121014-->
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140121017-->
+::{{tx}}
+{{Диалог Конец}}
+
+===Войдите в храм и выясните, в чём причина конфликта===
+{{Описание миссии|локация=???|Мы впервые вступаем в контакт с жителями Амфореуса, которые называют себя златиусами. Вместе с двумя из них мы входим в храм, чтобы осмотреть его. Они говорят, что собираются спасти беженцев, но, похоже, между пострадавшими произошёл конфликт.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121101-->
+<!--Unknown TalkSentence: 140121102-->
+<!--Unknown TalkSentence: 140121103-->
+<!--Unknown TalkSentence: 140121104-->
+<!--Unknown TalkSentence: 140121105-->
+<!--Unknown TalkSentence: 140121106-->
+<!--Unknown TalkSentence: 140121107-->
+<!--Unknown TalkSentence: 140121108-->
+<!--Unknown TalkSentence: 140121109-->
+<!--Unknown TalkSentence: 140121110-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140121111-->
+:<!--Unknown TalkSentence: 140121112-->
+:<!--Unknown TalkSentence: 140121113-->
+:<!--Unknown TalkSentence: 140121114-->
+:<!--Unknown TalkSentence: 140121115-->
+:<!--Unknown TalkSentence: 140121116-->
+:<!--Unknown TalkSentence: 140121117-->
+:<!--Unknown TalkSentence: 140121118-->
+:<!--Unknown TalkSentence: 140121119-->
+:<!--Unknown TalkSentence: 140121120-->
+:<!--Unknown TalkSentence: 140121121-->
+:<!--Unknown TalkSentence: 140121122-->
+:<!--Unknown TalkSentence: 140121123-->
+:<!--Unknown TalkSentence: 140121124-->
+:<!--Unknown TalkSentence: 140121125-->
+:<!--Unknown TalkSentence: 140121126-->
+:<!--Unknown TalkSentence: 140121127-->
+:<!--Unknown TalkSentence: 140121128-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140121113-->
+:<!--Unknown TalkSentence: 140121114-->
+:<!--Unknown TalkSentence: 140121115-->
+:<!--Unknown TalkSentence: 140121116-->
+:<!--Unknown TalkSentence: 140121117-->
+:<!--Unknown TalkSentence: 140121118-->
+:<!--Unknown TalkSentence: 140121119-->
+:<!--Unknown TalkSentence: 140121120-->
+:<!--Unknown TalkSentence: 140121121-->
+:<!--Unknown TalkSentence: 140121122-->
+:<!--Unknown TalkSentence: 140121123-->
+:<!--Unknown TalkSentence: 140121124-->
+:<!--Unknown TalkSentence: 140121125-->
+:<!--Unknown TalkSentence: 140121126-->
+:<!--Unknown TalkSentence: 140121127-->
+:<!--Unknown TalkSentence: 140121128-->
+<!--Unknown TalkSentence: 140121113-->
+<!--Unknown TalkSentence: 140121114-->
+<!--Unknown TalkSentence: 140121115-->
+<!--Unknown TalkSentence: 140121116-->
+<!--Unknown TalkSentence: 140121117-->
+<!--Unknown TalkSentence: 140121118-->
+<!--Unknown TalkSentence: 140121119-->
+<!--Unknown TalkSentence: 140121120-->
+<!--Unknown TalkSentence: 140121121-->
+<!--Unknown TalkSentence: 140121122-->
+<!--Unknown TalkSentence: 140121123-->
+<!--Unknown TalkSentence: 140121124-->
+<!--Unknown TalkSentence: 140121125-->
+<!--Unknown TalkSentence: 140121126-->
+<!--Unknown TalkSentence: 140121127-->
+<!--Unknown TalkSentence: 140121128-->
+{{Диалог Конец}}
+
+===Попробуйте поговорить с Трибби наедине===
+{{Диалог Начало}}
+
+;(Поговорите с Фаенон)
+----
+<!--Unknown TalkSentence: 140121201-->
+
+;(Unused &mdash; 1040102_TimeSwitch)
+<!--Unknown TalkSentence: 140121301-->
+:<!--Unknown TalkSentence: 140121302-->
+:<!--Unknown TalkSentence: 140121303-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 140121307-->
+:<!--Unknown TalkSentence: 140121308-->
+::{{tx}}
+<!--Unknown TalkSentence: 140121913-->
+{{Диалог Конец}}
+
+===Следуйте за Трибби===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 140121918-->
+<!--Unknown TalkSentence: 140121914-->
+<!--Unknown TalkSentence: 140121919-->
+{{Диалог Конец}}
+
+===Продолжайте следовать за Трибби===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(Unused &mdash; EnterArea_G36)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "FCV_OnTBWalkEnd"
+	},
+	"Value": {
+		"Value": true
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Идите дальше и догоните Нолдуса в глубине храма===
+{{Описание миссии|локация=???|Девочка по имени Трибби помогает пострадавшим покинуть опасное место с помощью своей удивительной способности переходить в любое пространство и время. Скоро вы все отправитесь в Охему - там должно быть поспокойнее.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 140121401-->
+<!--Unknown TalkSentence: 140121402-->
+;(Enter battle)
+:{{Enemy List|Воин ярости*2; Хорист ярости*1; Охотница ярости*1}}
+----
+<!--Unknown TalkSentence: 140121501-->
+<!--Unknown TalkSentence: 140121502-->
+<!--Unknown TalkSentence: 140121503-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Оседлайте геозавра и отправляйтесь в священный город===
+{{Диалог Начало}}
+
+;(Поговорите с Геозавр)
+<!--Unknown TalkSentence: 140121801-->
+<!--Unknown TalkSentence: 140121802-->
+<!--Unknown TalkSentence: 140121803-->
+<!--Unknown TalkSentence: 140121804-->
+<!--Unknown TalkSentence: 140121805-->
+<!--Unknown TalkSentence: 140121806-->
+<!--Unknown TalkSentence: 140121807-->
+<!--Unknown TalkSentence: 140121808-->
+<!--Unknown TalkSentence: 140121809-->
+<!--Unknown TalkSentence: 140121810-->
+<!--Unknown TalkSentence: 140121811-->
+<!--Unknown TalkSentence: 140121812-->
+<!--Unknown TalkSentence: 140121813-->
+<!--Unknown TalkSentence: 140121814-->
+<!--Unknown TalkSentence: 140121815-->
+<!--Unknown TalkSentence: 140121816-->
+<!--Unknown TalkSentence: 140121817-->
+<!--Unknown TalkSentence: 140121818-->
+<!--Unknown TalkSentence: 140121819-->
+<!--Unknown TalkSentence: 140121820-->
+<!--Unknown TalkSentence: 140121821-->
+<!--Unknown TalkSentence: 140121822-->
+<!--Unknown TalkSentence: 140121823-->
+<!--Unknown TalkSentence: 140121824-->
+<!--Unknown TalkSentence: 140121825-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140121806-->
+:<!--Unknown TalkSentence: 140121807-->
+:<!--Unknown TalkSentence: 140121808-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140121814-->
+:<!--Unknown TalkSentence: 140121815-->
+:<!--Unknown TalkSentence: 140121816-->
+:<!--Unknown TalkSentence: 140121817-->
+:<!--Unknown TalkSentence: 140121818-->
+:;(Return to previous option selection)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Эй, очнись! Что-то происходит!
+::Город атакуют!
+;(Cutscene ends)
+----
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+<!--Unknown TalkSentence: 140122101-->
+<!--Unknown TalkSentence: 140122102-->
+<!--Unknown TalkSentence: 140122103-->
+<!--Unknown TalkSentence: 140122104-->
+<!--Unknown TalkSentence: 140122105-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140122107-->
+:<!--Unknown TalkSentence: 140122108-->
+:<!--Unknown TalkSentence: 140122109-->
+:<!--Unknown TalkSentence: 140122110-->
+:<!--Unknown TalkSentence: 140122111-->
+:<!--Unknown TalkSentence: 140122112-->
+:<!--Unknown TalkSentence: 140122113-->
+:<!--Unknown TalkSentence: 140122114-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140122109-->
+:<!--Unknown TalkSentence: 140122110-->
+:<!--Unknown TalkSentence: 140122111-->
+:<!--Unknown TalkSentence: 140122112-->
+:<!--Unknown TalkSentence: 140122113-->
+:<!--Unknown TalkSentence: 140122114-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140122111-->
+:<!--Unknown TalkSentence: 140122112-->
+:<!--Unknown TalkSentence: 140122113-->
+:<!--Unknown TalkSentence: 140122114-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140122111-->
+<!--Unknown TalkSentence: 140122112-->
+<!--Unknown TalkSentence: 140122113-->
+<!--Unknown TalkSentence: 140122114-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Охема подверглась нападению, протяните городу руку помощи===
+{{Описание миссии|локация=Вечный священный город|На Охему нападает титан раздора Никадор. В минуту опасности мы протягиваем городу руку помощи и вместе с Фаеноном наносим поражение отпрыску титанов, защищая горожан.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 140122401-->
+<!--Unknown TalkSentence: 140122402-->
+<!--Unknown TalkSentence: 140122403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Отправляйтесь в Мраморный дворец===
+{{Описание миссии|локация=Вечный священный город|Златиусы Кастория и Мидей помогают нам избавиться от препятствий на пути. Скоро мы вместе с Фаеноном встретимся лицом к лицу с Никадором Копьём Ярости и завоюем звание героев.}}
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Сразитесь с Никадором Копьём Ярости===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 140123727-->
+<!--Unknown TalkSentence: 140123728-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140123729-->
+<!--Unknown TalkSentence: 140123730-->
+{{Диалог Конец}}
+
+===Помогите Фаенону одолеть противников===
+{{Описание миссии|локация=Вечный священный город|На Охему нападает титан раздора Никадор. В минуту опасности мы протягиваем городу руку помощи и вместе с Фаеноном наносим поражение отпрыску титанов, защищая горожан.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140122501-->
+<!--Unknown TalkSentence: 140122502-->
+<!--Unknown TalkSentence: 140123717-->
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::«Сзади безопасно...»
+::И это всё?
+::Не время для насмешек. Ты знаешь, с кем мы сражаемся.
+::Небрежность может стоить тебе жизни, Спаситель!
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Enemy List|Воин ярости*2; Охотница ярости*2; Философ ярости*1}}
+<!--Unknown TalkSentence: 140123704-->
+----
+<!--Unknown TalkSentence: 140122601-->
+<!--Unknown TalkSentence: 140122602-->
+<!--Unknown TalkSentence: 140122603-->
+<!--Unknown TalkSentence: 140122604-->
+<!--Unknown TalkSentence: 140122605-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140122607-->
+<!--Unknown TalkSentence: 140122608-->
+<!--Unknown TalkSentence: 140122609-->
+<!--Unknown TalkSentence: 140122610-->
+<!--Unknown TalkSentence: 140122611-->
+<!--Unknown TalkSentence: 140122612-->
+<!--Unknown TalkSentence: 140122613-->
+<!--Unknown TalkSentence: 140122614-->
+<!--Unknown TalkSentence: 140122615-->
+<!--Unknown TalkSentence: 140122616-->
+<!--Unknown TalkSentence: 140122617-->
+<!--Unknown TalkSentence: 140122618-->
+<!--Unknown TalkSentence: 140122619-->
+<!--Unknown TalkSentence: 140122620-->
+<!--Unknown TalkSentence: 140122621-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+:{{tx}}
+
+;(Unused &mdash; ThanatosServant)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 152,
+			"GroupNpcID": 400003,
+			"InstanceID": 400003,
+			"TalkSentenceID": 140123747
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 20
+}</pre>
+
+;(Unused &mdash; StayAway)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 152,
+			"GroupNpcID": 400005,
+			"InstanceID": 400005,
+			"TalkSentenceID": 140123746
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 20,
+	"UniqueID": 1
+}</pre>
+
+;(Unused &mdash; GloriousDeath)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 152,
+			"GroupNpcID": 400001,
+			"InstanceID": 400001,
+			"TalkSentenceID": 140123748
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 20,
+	"UniqueID": 2
+}</pre>
+
+;(Unused &mdash; StyxVibe)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 152,
+			"GroupNpcID": 400004,
+			"InstanceID": 400004,
+			"TalkSentenceID": 140123745
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 20,
+	"UniqueID": 3
+}</pre>
+
+;(Unused &mdash; Shadow)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 152,
+			"GroupNpcID": 400013,
+			"InstanceID": 400013,
+			"TalkSentenceID": 140123749
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 20,
+	"UniqueID": 4
+}</pre>
+
+;(Поговорите с Мидей)
+----
+<!--Unknown TalkSentence: 140122701-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Хартонус)
+----
+<!--Unknown TalkSentence: 140122801-->
+<!--Unknown TalkSentence: 140122802-->
+<!--Unknown TalkSentence: 140122803-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 140122701-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140123722-->
+<!--Unknown TalkSentence: 140123723-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+;(По прибытии на место)
+;(Unused &mdash; EnterArea_G39)
+<!--Unknown TalkSentence: 140123726-->
+<!--Unknown TalkSentence: 140123724-->
+<!--Unknown TalkSentence: 140123725-->
+{{Диалог Конец}}
+
+===Следуйте за Касторией===
+{{Описание миссии|локация=Вечный священный город|Златиусы Кастория и Мидей помогают нам избавиться от препятствий на пути. Скоро мы вместе с Фаеноном встретимся лицом к лицу с Никадором Копьём Ярости и завоюем звание героев.}}
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission Finish: 104010256-->)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"NpcIDInOwnerGroup": {
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_Castorice_01_Walk_Lod0.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"PriorityGroup": "MazeGroupHigh",
+	"Priority": "High",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/CastoriceFilter.asset",
+	"IsDistanceAttenuationOn": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"MaxAttenuationDistance": 15
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OverrideFinishActionAutoTransfer",
+	"SubmissionID": 104010259,
+	"TransferType": "Black"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<!--Unknown TalkSentence: 140123401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140121912-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Silver Chariot, Away to that Blackened Land
+|zhs  = 银辇啊，迅赴那黑色大地
+|zht  = 銀輦啊，速赴那黑色大地
+|ja   = 銀の列車よ、黒き大地へ走れ
+|ko   = 은빛 전차여, 검은 대지로 나아가라
+|es   = Carruaje de plata, ve raudo hacia esa tierra ennegrecida
+|fr   = Wagon d'argent, en route vers les terres du néant
+|ru   = О серебряная колесница, мчись на тёмные земли
+|th   = ราชรถสีเงินเอ๋ย จงมุ่งสู่ผืนดินทมิฬ
+|vi   = Cỗ Xe Bạc, Mau Lao Đến Vùng Đất Đen Tối
+|de   = Silberner Streitwagen, fliege über das dunkle Land
+|id   = Kereta Perak, Pergi ke Tanah Hitam itu
+|pt   = Carroça Prateada, Rumo à Terra Enegrecida
+}}
+
+==История изменений==
+{{История изменений|3.0}}

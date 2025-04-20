@@ -1,0 +1,385 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040316
+|Название        = 
+|Изображение     = Миссия Освоения О смерть, ускользающая из пальцев подобно росе.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Цветы средь упокойных юдолей
+|Условия         = 
+|Персонажи       = Кастория; Неизвестный приговорённый; Неизлечимо больная пастушка; Отважная воительница; Первопроходец; Пленный чужеземец; Старейшина Амунет
+|СтартЛокация    = Галерея Айдонии
+|Мир             = Амфореус
+|Локации         = Галерея Айдонии
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Путеводитель путешественника*2; Кредиты*5 000
+}}
+'''О смерть, ускользающая из пальцев подобно росе''' — [[Миссия Освоения]] в главе [[Цветы средь упокойных юдолей]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите со «старейшиной» Амунет
+# Казните неизвестного приговорённого
+# Казните отважную воительницу
+# Казните пленного чужеземца
+# Казните неизлечимо больную пастушку
+# Поговорите со старейшиной Амунет, чтобы понять предназначение палача
+# Одолейте Авангард ярости
+# Поговорите со старейшиной Амунет, чтобы понять предназначение палача
+
+==Прохождение==
+{{Дополнить}}
+
+===Поговорите со «старейшиной» Амунет===
+{{Описание миссии|локация=Галерея Айдонии|Вы думаете о старейшине Амунет, а также о полисе Айдонии, где поклоняются Танатос, - отсюда начинаются ваши воспоминания.<br />Ещё вы помните о том, как стали палачом и девой сражений.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+{{Диалог Конец}}
+
+===Казните неизвестного приговорённого===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+<!--Unknown TalkSentence: 140306801-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140306812-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140306804-->
+:<!--Unknown TalkSentence: 140306805-->
+{{Диалог Конец}}
+
+===Казните отважную воительницу===
+{{Диалог Начало}}
+
+;(Поговорите с Даровать славу)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 15,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140308110-->
+<!--Unknown TalkSentence: 140308111-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 104031603,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 27,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+;(Unused &mdash; G12_Fadeout)
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1
+}</pre>
+
+{{Диалог Конец}}
+
+===Казните пленного чужеземца===
+{{Диалог Начало}}
+
+;(Поговорите с Пожаловать наказание)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 16,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140308113-->
+<!--Unknown TalkSentence: 140308114-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 104031604,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 27,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+
+<!--Unknown TalkSentence: 140308112-->
+{{Диалог Конец}}
+
+===Казните неизлечимо больную пастушку===
+{{Диалог Начало}}
+
+;(Поговорите с Преподнести сон)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 17,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140308116-->
+<!--Unknown TalkSentence: 140308117-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 104031605,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 27,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+
+<!--Unknown TalkSentence: 140308115-->
+{{Диалог Конец}}
+
+===Поговорите со старейшиной Амунет, чтобы понять предназначение палача===
+{{Описание миссии|локация=Галерея Айдонии|Вы думаете о старейшине Амунет, а также о полисе Айдонии, где поклоняются Танатос, - отсюда начинаются ваши воспоминания.<br />Старейшина вовсе не желает вашего превращения в хладнокровного палача, напротив, она хочет, чтобы вы достаточно осознали значимость жизни и смерти, после чего с правильными помыслами выполнили своё предназначение.}}
+{{Диалог Начало}}
+
+;(Поговорите с Старейшина Амунет)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40424_F40424001_G18"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140308119-->
+<!--Unknown TalkSentence: 140308120-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 104031609,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 27,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+<!--Unknown TalkSentence: 140308118-->
+{{Диалог Конец}}
+
+===Одолейте Авангард ярости===
+{{Описание миссии|локация=Галерея Айдонии|Вы думаете о старейшине Амунет, а также о полисе Айдонии, где поклоняются Танатос, - отсюда начинаются ваши воспоминания.<br />Воспользуйтесь врождённым талантом, чтобы принять их.<br />«Покажи мне, что ты достойна называться девой. Или хотя бы покажи, что ты намерена ею стать».}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140306924-->
+<!--Unknown TalkSentence: 140306925-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMazeButtonEffect",
+	"Enable": true,
+	"BtnType": "MazeSkill"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ToastPile",
+	"DescTextID": {
+		"Hash": 4996247614040360955
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 104031608,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 27,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите со старейшиной Амунет, чтобы понять предназначение палача===
+{{Описание миссии|локация=Галерея Айдонии|Вы думаете о старейшине Амунет, а также о полисе Айдонии, где поклоняются Танатос, - отсюда начинаются ваши воспоминания.<br />Старейшина вовсе не желает вашего превращения в хладнокровного палача, напротив, она хочет, чтобы вы достаточно осознали значимость жизни и смерти, после чего с правильными помыслами выполнили своё предназначение.}}
+{{Диалог Начало}}
+----
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Ах, эй!
+::Ха-ха! Хорошего дня!
+;(Cutscene ends)
+----
+----
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Death, Dripping Like Morning Dew
+|zhs  = 死亡啊，如朝露滑落指尖
+|zht  = 死亡啊，如朝露滑落指尖
+|ja   = 死よ、朝露の如く指先を伝え
+|ko   = 죽음이여, 새벽 이슬처럼 손끝에서 흘러내려라
+|es   = Muerte, gotea como el rocío entre los dedos
+|fr   = Ô mort, tu t'évanouis comme la rosée du matin
+|ru   = О смерть, ускользающая из пальцев подобно росе
+|th   = ความตายเอ๋ย จงหยดผ่านปลายนิ้วดั่งน้ำค้าง
+|vi   = Cái Chết, Hãy Lướt Qua Đầu Ngón Tay Như Sương Sớm
+|de   = O Tod, der dem Morgentau gleicht
+|id   = Maut, Laksana Embun Pagi yang Luruh di Ujung Jari
+|pt   = Morte, Gotejando Como Orvalho da Manhã
+}}
+
+==История изменений==
+{{История изменений|3.2}}

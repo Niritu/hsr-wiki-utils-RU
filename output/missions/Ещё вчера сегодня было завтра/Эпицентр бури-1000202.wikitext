@@ -1,0 +1,182 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1000202
+|Название        = 
+|Изображение     = Миссия Освоения Эпицентр бури.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Ещё вчера сегодня было завтра
+|Условия         = Завершена [[Миссия Освоения]] ''[[Эпицентр бури]]''
+|Персонажи       = Арлан; Дань Хэн; Март 7; Первопроходец
+|СтартЛокация    = Зона хранения
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона хранения
+|Предыдущая      = 
+|Следующая       = Момент вселенского спокойствия
+|Награды         = Падение небес*1 { text = Падение небес }
+}}
+'''Эпицентр бури''' — [[Миссия Освоения]] в главе [[Ещё вчера сегодня было завтра]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Встретьтесь с Арланом в Комнате наблюдения
+# Используйте ключ шифрования
+# Поднимитесь на верхний уровень и сядьте на лифт до Главной контрольной зоны
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Встретьтесь с Арланом в Комнате наблюдения===
+{{Описание миссии|локация=Зона хранения|Словно в классических сценах кино, лифт не работает.<br />Хотя Дань Хэн, которого Март 7 называет ходячей энциклопедией, успел прибыть вовремя, даже он не знает, что нужно делать.<br />Но глава Отдела безопасности Арлан, которого спас Дань Хэн, должен знать ответ...<br />Как и ожидалось, Дань Хэн снова спасает положение.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E7",
+	"SubMissionID": 100020111
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 100020111
+}</pre>
+{{Диалог Конец}}
+
+===Используйте ключ шифрования===
+{{Описание миссии|локация=Зона хранения|Увидев настороженный взгляд Арлана, вы заподозрили, что ключ шифрования можно использовать не только для того, чтобы получить право доступа, но и для того, чтобы подтвердить вашу личность.<br />Скорее воспользуйтесь им.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 100020328-->
+----
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropMoveTo",
+	"Duration": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"AreaName": "LevelArea_P20002_F20002001_G8",
+	"AnchorName": "Elevator_2F",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_elevator_slowup"
+	}
+}</pre>
+:<!--3.5-second delay-->
+<!--Unknown TalkSentence: 100020329-->
+<!--Unknown TalkSentence: 100020330-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 100020332-->
+<!--Unknown TalkSentence: 100020333-->
+<!--Unknown TalkSentence: 100020337-->
+<!--Unknown TalkSentence: 100020338-->
+<!--Unknown TalkSentence: 100020339-->
+<!--Unknown TalkSentence: 100020340-->
+<!--Unknown TalkSentence: 100020341-->
+{{Диалог Конец}}
+
+===Поднимитесь на верхний уровень и сядьте на лифт до Главной контрольной зоны===
+{{Описание миссии|локация=Зона хранения|Кажется, Арлан беспокоится, что будет для вас обузой. Но вы переубеждаете его, чувствуя, что между вами возникает молчаливое взаимопонимание. Вот что значит быть напарниками?<br />Скорее поднимитесь на верхний этаж вместе со своими напарниками.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 100020347-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 100020348-->
+<!--Unknown TalkSentence: 100020349-->
+<!--Unknown TalkSentence: 100020363-->
+<!--Unknown TalkSentence: 100020364-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 100020351-->
+<!--Unknown TalkSentence: 100020352-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_M3",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 100020365-->
+<!--Unknown TalkSentence: 100020366-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_M4",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<!--Unknown TalkSentence: 100020367-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_07",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 0.1
+	}
+}</pre>
+:<!--0.5-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Eye of the Storm
+|zhs  = 漩涡止于中心
+|zht  = 漩渦止於中心
+|ja   = 中心で止まる渦
+|ko   = 중심에 멈춘 소용돌이
+|es   = El ojo de la tormenta
+|fr   = L'œil de la tempête
+|ru   = Эпицентр бури
+|th   = กระแสน้ำวนที่จุดศูนย์กลาง
+|vi   = Vòng Xoáy Kết Thúc Ở Trung Tâm
+|de   = Auge des Sturms
+|id   = Pusat Pusaran
+|pt   = Olho da Tempestade
+}}
+
+==История изменений==
+{{История изменений|2.7}}

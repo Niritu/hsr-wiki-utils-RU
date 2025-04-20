@@ -1,0 +1,167 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1000401
+|Название        = 
+|Изображение     = Миссия Освоения Неисчезающие тени.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Ещё вчера сегодня было завтра
+|Условия         = Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+|Персонажи       = Герта; Дань Хэн; Март 7; Первопроходец; Химеко
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = Виртуальная вселенная: Первичный тест
+|Награды         = Опыт Освоения*1 200; Звёздный нефрит*80; Журнал приключений*3; Кредиты*30 000
+}}
+'''Неисчезающие тени''' — [[Миссия Освоения]] в главе [[Ещё вчера сегодня было завтра]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите Химеко
+# Пройдите в офис Герты
+# Поговорите с Гертой
+# Опробуйте Виртуальную вселенную
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите Химеко===
+{{Описание миссии|локация=Главная контрольная зона|Вы открываете глаза и обнаруживаете, что по-прежнему находитесь на космической станции и наблюдаете потолок, в котором нет ничего необычного.<br />Вы прокручиваете в голове всё, через что пришлось пройти. Кажется, что разум вас не обманывает. Вы бы хотели, чтобы Химеко была рядом.<br />У вас так много вопросов...}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 12,
+	"GroupNpcID": 400002
+}</pre>
+<!--Unknown TalkSentence: 100040200-->
+<!--Unknown TalkSentence: 100040201-->
+<!--Unknown TalkSentence: 100040202-->
+<!--Unknown TalkSentence: 100040203-->
+<!--Unknown TalkSentence: 100040204-->
+<!--Unknown TalkSentence: 100040205-->
+<!--Unknown TalkSentence: 100040206-->
+<!--Unknown TalkSentence: 100040207-->
+<!--Unknown TalkSentence: 100040208-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100040209-->
+:<!--Unknown TalkSentence: 100040210-->
+:<!--Unknown TalkSentence: 100040211-->
+:<!--Unknown TalkSentence: 100040212-->
+:<!--Unknown TalkSentence: 100040213-->
+:<!--Unknown TalkSentence: 100040214-->
+:<!--Unknown TalkSentence: 100040215-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100040211-->
+:<!--Unknown TalkSentence: 100040212-->
+:<!--Unknown TalkSentence: 100040213-->
+:<!--Unknown TalkSentence: 100040214-->
+:<!--Unknown TalkSentence: 100040215-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100040213-->
+:<!--Unknown TalkSentence: 100040214-->
+:<!--Unknown TalkSentence: 100040215-->
+::{{tx}}
+<!--Unknown TalkSentence: 100040213-->
+<!--Unknown TalkSentence: 100040214-->
+<!--Unknown TalkSentence: 100040215-->
+:{{tx}}
+
+;(Поговорите с Герта)
+<!--Unknown TalkSentence: 100040301-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Unused &mdash; TalkSentence_100050105)
+<!--Unknown TalkSentence: 100050106-->
+:<!--Unknown TalkSentence: 100050107-->
+:<!--Unknown TalkSentence: 100050108-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; TalkSentence_100050109)
+<!--Unknown TalkSentence: 100050110-->
+:<!--Unknown TalkSentence: 100050111-->
+:<!--Unknown TalkSentence: 100050112-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Unused &mdash; TalkSentence_100050113)
+<!--Unknown TalkSentence: 100050114-->
+::;(Return to previous option selection)
+::;(Return to previous option selection)
+:;(Return to previous option selection)
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1000200
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1000200
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyTrialPlayer"
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите в офис Герты===
+{{Описание миссии|локация=Главная контрольная зона|Оказывается, Герта существует не в одном экземпляре... Чем больше вы об этом думаете, тем больше смысла находите. Та Герта, с которой вы беседуете, хочет, чтобы вы прошли в её офис.<br />Скорее всего, вам просто выдадут очередное поручение, но идти всё равно придётся.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Поговорите с Гертой===
+{{Диалог Начало}}
+
+;(Получено {{Item|Особый пропуск «Герты»|20|x=1|text=Особый пропуск «Герты»}})
+
+;(Поговорите с Герта)
+<!--Unknown TalkSentence: 100060121-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Герта)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.2\Config\Level\Mission\9999901\Act\Act801000103.json'-->)
+
+;(Поговорите с Герта)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.2\Config\Level\Mission\9999901\Act\Act801000101.json'-->)
+{{Диалог Конец}}
+
+===Опробуйте Виртуальную вселенную===
+{{Описание миссии|локация=Офис Герты|Оказывается, Герта существует не в одном экземпляре... Чем больше вы об этом думаете, тем больше смысла находите. Та Герта, с которой вы беседуете, хочет, чтобы вы прошли в её офис.<br />Похоже, Герта совместно с другими членами Общества гениев разработала Виртуальную вселенную, чтобы исследовать истины вселенной.<br />Попробуйте и вы.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Lingering Shadows
+|zhs  = 阴影从未离去
+|zht  = 陰影從未離去
+|ja   = 影は離れない
+|ko   = 맴도는 그림자
+|es   = Sombras persistentes
+|fr   = Ombres persistantes
+|ru   = Неисчезающие тени
+|th   = เงามืดที่ไม่เคยจางหาย
+|vi   = Bóng Tối Chưa Rời Đi
+|de   = Nachhallende Schatten
+|id   = Bayangan Melekat
+|pt   = Sombras Duradouras
+}}
+
+==История изменений==
+{{История изменений|2.7}}

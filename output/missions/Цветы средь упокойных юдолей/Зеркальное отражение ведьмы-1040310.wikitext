@@ -1,0 +1,366 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040310
+|Название        = 
+|Изображение     = Миссия Освоения Зеркальное отражение ведьмы.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Цветы средь упокойных юдолей
+|Условия         = Завершена [[Миссия Освоения]] ''[[О учёный, жди у ворот истины]]''
+|Персонажи       = Вельт; Воскресенье; Герта; Первопроходец
+|СтартЛокация    = Изолированная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Изолированная зона
+|Предыдущая      = О учёный, жди у ворот истины
+|Следующая       = 
+|Награды         = Опыт Освоения*200; Звёздный нефрит*20; Утраченный кристалл*3; Небесная амброзия*40; Elegy of Netherwing*1 { text = Elegy of Netherwing }; Кредиты*20 000
+}}
+'''Зеркальное отражение ведьмы''' — [[Миссия Освоения]] в главе [[Цветы средь упокойных юдолей]].
+
+==Описание==
+{{Описание|Спустя несколько дней после того, как прервалась аудиенция Вельта и Воскресенья у Нус, Герта заинтересовалась Амфореусом и с помощью волшебного зеркала создала себе оцифрованную сущность души, чтобы попасть на Амфореус. Внезапно появился Ликург и пригрозил Лордом Опустошителем, если Герта продолжит свой путь.}}
+
+==Этапы==
+# Послушайте речь Герты
+# Отдайте приказ Первому Зеркалу
+# Отдайте приказ Второму Зеркалу
+# Отдайте приказ Третьему Зеркалу
+# Вернитесь к Первому Зеркалу и приготовьтесь к гиперпрыжку
+# Идите вперёд и найдите вход на Амфореус
+# Осмотритесь вокруг и найдите остатки воспоминаний
+# Осмотрите странную чашу
+
+==Прохождение==
+{{Дополнить}}
+
+===Послушайте речь Герты===
+{{Описание миссии|локация=Изолированная зона|Звёздный экспресс должен проявить благодарность. К счастью, госпожа Герта заинтересовалась Амфореусом и собирается провести полевые исследования.<br />Госпожа Герта, могли бы вы почаще говорить со мной, Четвёртым Зеркалом?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 140314701-->
+<!--Unknown TalkSentence: 140314702-->
+
+;(Поговорите с Воскресенье)
+----
+<!--Unknown TalkSentence: 140314801-->
+<!--Unknown TalkSentence: 140314802-->
+<!--Unknown TalkSentence: 140314803-->
+{{Диалог Конец}}
+
+===Отдайте приказ Первому Зеркалу===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 140315701-->
+<!--Unknown TalkSentence: 140315702-->
+{{Диалог Конец}}
+
+===Отдайте приказ Второму Зеркалу===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Отдайте приказ Третьему Зеркалу===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Вернитесь к Первому Зеркалу и приготовьтесь к гиперпрыжку===
+{{Диалог Начало}}
+
+
+{{Диалог Конец}}
+
+===Идите вперёд и найдите вход на Амфореус===
+{{Описание миссии|локация=Вихрь сотворения|Учись, Звёздный экспресс. Госпоже Герте не нужно физическое воплощение, чтобы посетить Амфореус. Она может мгновенно раскрыть тайны этого мира одним движением руки.<br />Не спрашивайте, откуда я это знаю, я давний Гертофан.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140315101-->
+<!--Unknown TalkSentence: 140315102-->
+<!--Unknown TalkSentence: 140315103-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Осмотритесь вокруг и найдите остатки воспоминаний===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Осмотрите странную чашу===
+{{Диалог Начало}}
+;(If {{F|FSV_CoreLevel}} is equal to 0)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(If {{F|FSV_CoreLevel}} is not equal to 0)
+:;(Return to previous option selection)
+;(Unused &mdash; Clt_TriggerPerformance)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUsing1Start"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+::<!--2.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerDissolve"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "Cam02"
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUsing2Start"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "Cam03"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GensisSky_01_Star_Lod0.prefab",
+			"IsAttachToTargetEntity": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_prop_genisiscore_startrail"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerEndSubmit"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_GenesisKindlingType"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_GenesisKindlingCtrl"
+	},
+	"Value": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "Cam02"
+	},
+	"IsActive": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPropInteractBtnSwitch",
+	"SwitchState": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideTopPageWithoutAnim",
+	"PlayAnim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"LockSource": "InstantKill"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard",
+	"IsShow": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"CharacterUniqueName": "LocalPlayer",
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ReleaseCharacter",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+
+;(Unused &mdash; Clt_TriggerExitBlackSq)
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+
+;(Unused &mdash; Clt_TriggerForbCtrl)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPropInteractBtnSwitch"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideTopPageWithoutAnim",
+	"Hide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "InstantKill"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard"
+}</pre>
+<!--Unknown TalkSentence: 140315501-->
+<!--Unknown TalkSentence: 140315502-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Witch's Mirrored Reversal
+|zhs  = 魔女的镜中回天
+|zht  = 魔女的鏡中迴天
+|ja   = 魔女の鏡、廻天を見せよ
+|ko   = 마녀의 거울 속 하늘 회귀
+|es   = Retorno del espejo de la bruja
+|fr   = Image miroir de la sorcière
+|ru   = Зеркальное отражение ведьмы
+|th   = กระจกผกผันของแม่มด
+|vi   = Sự Xoay Chuyển Trong Gương Của Ma Nữ
+|de   = Das Spiegelbild der Hexe
+|id   = Menembus Langit Melalui Cermin Penyihir
+|pt   = Reversão Espelhada da Bruxa
+}}
+
+==История изменений==
+{{История изменений|3.2}}

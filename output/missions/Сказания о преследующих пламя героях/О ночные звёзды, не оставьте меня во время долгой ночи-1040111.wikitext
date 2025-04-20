@@ -1,0 +1,267 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040111
+|Название        = 
+|Изображение     = Миссия Освоения О ночные звёзды, не оставьте меня во время долгой ночи.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Сказания о преследующих пламя героях
+|Условия         = Завершена [[Миссия Освоения]] ''[[О ночные звёзды, не оставьте меня во время долгой ночи]]''
+|Персонажи       = Аглая; Дань Хэн; Кастория; Мидей; Первопроходец; Трианна; Фаенон
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = 
+|Следующая       = О опустошённая земля, вспомни былую славу
+|Награды         = Опыт Освоения*700; Звёздный нефрит*90; Путеводитель путешественника*6; Очищенный эфир*6; Небесная амброзия*140; Origin and Finale*1 { text = Origin and Finale }; Кредиты*80 000
+}}
+'''О ночные звёзды, не оставьте меня во время долгой ночи''' — [[Миссия Освоения]] в главе [[Сказания о преследующих пламя героях]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Успокойтесь и хорошенько отдохните
+# Расскажите Дань Хэну о голосе из сна
+# Отправляйтесь в купальню златиусов и встретьтесь с остальными
+# Поговорите с Трианной и подготовьтесь к отбытию в Кремнос
+
+==Прохождение==
+{{Дополнить}}
+
+===Успокойтесь и хорошенько отдохните===
+{{Описание миссии|локация=Вечный священный город Охема|Успокойтесь и хорошенько отдохните}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10401_F10401001_G6"
+		},
+		"AnchorName": {
+			"Value": "CheckPoint05"
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10401_F10401001_G154"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104010416_1497_loop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+<!--Unknown TalkSentence: 140141601-->
+<!--Unknown TalkSentence: 140141602-->
+<!--Unknown TalkSentence: 140141603-->
+<!--Unknown TalkSentence: 140141604-->
+<!--Unknown TalkSentence: 140141605-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141607-->
+:<!--Unknown TalkSentence: 140141608-->
+:<!--Unknown TalkSentence: 140141609-->
+:<!--Unknown TalkSentence: 140141610-->
+:<!--Unknown TalkSentence: 140141611-->
+:<!--Unknown TalkSentence: 140141612-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141609-->
+:<!--Unknown TalkSentence: 140141610-->
+:<!--Unknown TalkSentence: 140141611-->
+:<!--Unknown TalkSentence: 140141612-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141611-->
+:<!--Unknown TalkSentence: 140141612-->
+::{{tx}}
+<!--Unknown TalkSentence: 140141611-->
+<!--Unknown TalkSentence: 140141612-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Расскажите Дань Хэну о голосе из сна===
+{{Описание миссии|локация=Вечный священный город Охема|Узнав от Фаенона о тяжёлой миссии златиусов по спасению мира, мы всё же решили остаться на Амфореусе. После отдыха златиусы снова собрались вместе, чтобы пойти в поход на каструм Кремнос, где некогда властвовал Никадор, и захватить ядро пламени, принадлежавшее Копью Ярости.}}
+{{Диалог Начало}}
+
+;(Поговорите с Дань Хэн)
+:{{tx}}
+<!--Unknown TalkSentence: 140141701-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141703-->
+:<!--Unknown TalkSentence: 140141704-->
+:<!--Unknown TalkSentence: 140141705-->
+:<!--Unknown TalkSentence: 140141706-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141708-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141705-->
+:<!--Unknown TalkSentence: 140141706-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141708-->
+<!--Unknown TalkSentence: 140141705-->
+<!--Unknown TalkSentence: 140141706-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140141708-->
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 104011103,
+	"MessageSectionID": 1400100
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь в купальню златиусов и встретьтесь с остальными===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 140141801-->
+<!--Unknown TalkSentence: 140141802-->
+<!--Unknown TalkSentence: 140141803-->
+<!--Unknown TalkSentence: 140141804-->
+<!--Unknown TalkSentence: 140141805-->
+<!--Unknown TalkSentence: 140141806-->
+<!--Unknown TalkSentence: 140141807-->
+<!--Unknown TalkSentence: 140141808-->
+<!--Unknown TalkSentence: 140141809-->
+<!--Unknown TalkSentence: 140141810-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141812-->
+:<!--Unknown TalkSentence: 140141813-->
+:<!--Unknown TalkSentence: 140141814-->
+:<!--Unknown TalkSentence: 140141815-->
+:<!--Unknown TalkSentence: 140141816-->
+:<!--Unknown TalkSentence: 140141817-->
+:<!--Unknown TalkSentence: 140141818-->
+:<!--Unknown TalkSentence: 140141819-->
+:<!--Unknown TalkSentence: 140141820-->
+:<!--Unknown TalkSentence: 140141821-->
+:<!--Unknown TalkSentence: 140141822-->
+:<!--Unknown TalkSentence: 140141823-->
+:<!--Unknown TalkSentence: 140141824-->
+:<!--Unknown TalkSentence: 140141825-->
+:<!--Unknown TalkSentence: 140141826-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141814-->
+:<!--Unknown TalkSentence: 140141815-->
+:<!--Unknown TalkSentence: 140141816-->
+:<!--Unknown TalkSentence: 140141817-->
+:<!--Unknown TalkSentence: 140141818-->
+:<!--Unknown TalkSentence: 140141819-->
+:<!--Unknown TalkSentence: 140141820-->
+:<!--Unknown TalkSentence: 140141821-->
+:<!--Unknown TalkSentence: 140141822-->
+:<!--Unknown TalkSentence: 140141823-->
+:<!--Unknown TalkSentence: 140141824-->
+:<!--Unknown TalkSentence: 140141825-->
+:<!--Unknown TalkSentence: 140141826-->
+<!--Unknown TalkSentence: 140141814-->
+<!--Unknown TalkSentence: 140141815-->
+<!--Unknown TalkSentence: 140141816-->
+<!--Unknown TalkSentence: 140141817-->
+<!--Unknown TalkSentence: 140141818-->
+<!--Unknown TalkSentence: 140141819-->
+<!--Unknown TalkSentence: 140141820-->
+<!--Unknown TalkSentence: 140141821-->
+<!--Unknown TalkSentence: 140141822-->
+<!--Unknown TalkSentence: 140141823-->
+<!--Unknown TalkSentence: 140141824-->
+<!--Unknown TalkSentence: 140141825-->
+<!--Unknown TalkSentence: 140141826-->
+<!--Unknown TalkSentence: 140142305-->
+<!--Unknown TalkSentence: 140142306-->
+
+;(Поговорите с Дань Хэн)
+----
+<!--Unknown TalkSentence: 140142001-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 140142003-->
+<!--Unknown TalkSentence: 140142004-->
+
+;(Поговорите с Кастория)
+----
+<!--Unknown TalkSentence: 140142101-->
+<!--Unknown TalkSentence: 140142102-->
+
+;(Поговорите с Аглая)
+----
+<!--Unknown TalkSentence: 140142201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Трианной и подготовьтесь к отбытию в Кремнос===
+{{Диалог Начало}}
+
+;(Поговорите с Трианна)
+<!--Unknown TalkSentence: 140141901-->
+<!--Unknown TalkSentence: 140141902-->
+<!--Unknown TalkSentence: 140141903-->
+<!--Unknown TalkSentence: 140141904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141908-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 140141907-->
+:<!--Unknown TalkSentence: 140141908-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104011107
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Night Stars, Accompany My Slumber
+|zhs  = 晚星啊，莫让我长夜独卧
+|zht  = 晚星啊，莫讓我長夜獨臥
+|ja   = 星々よ、長夜の眠りに寄り添え
+|ko   = 저녁별이여, 긴 밤을 홀로 남겨두지 말아다오
+|es   = Estrellas de la noche, acompáñenme en mi sueño
+|fr   = Nuit étoilée, joins-toi à mon sommeil
+|ru   = О ночные звёзды, не оставьте меня во время долгой ночи
+|th   = ดาวราตรีเอ๋ย โปรดอยู่เคียงข้าในคืนยาวไกล
+|vi   = Hỡi Sao Đêm, Đừng Để Tôi Ngủ Một Mình Trong Đêm Dài
+|de   = Sterne der Nacht, begleitet meinen Schlummer
+|id   = Bintang Malam, Temani Tidurku
+|pt   = Estrelas Noturnas, Acompanhem o meu Sonhar
+}}
+
+==История изменений==
+{{История изменений|3.0}}

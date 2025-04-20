@@ -1,0 +1,763 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1000101
+|Название        = 
+|Изображение     = Миссия Освоения Хаос глубин.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Ещё вчера сегодня было завтра
+|Условия         = 
+|Персонажи       = Дань Хэн; Женский голос; Кафка; Март 7; Мужской голос; Первопроходец; Серебряный Волк
+|СтартЛокация    = Базовая зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Базовая зона
+|Предыдущая      = 
+|Следующая       = Эпицентр бури
+|Награды         = Опыт Освоения*600; Кредиты*5 000
+}}
+'''Хаос глубин''' — [[Миссия Освоения]] в главе [[Ещё вчера сегодня было завтра]].
+
+==Описание==
+{{Описание|На месте событий появилась таинственная изящная женщина. Она смеётся над жертвами вторжения, но жестоко расправляется с их обидчиками.<br />В радиопереговорах таинственная помощница указывает на то, что у них общая цель.<br />Они точно знают, что не являются главными героями этой истории.<br />Всё готово. Пора вам пробудиться и отправиться в путь.}}
+
+==Этапы==
+# Используйте фальшивую личность, чтобы пройти проверку безопасности
+# Пройдите длинный коридор и войдите во внутреннюю часть космической станции
+# Одолейте одинокого Рейнджера пустоты - пусть это будет разминкой
+# Встретьтесь с Серебряным Волком и покиньте Приёмный центр
+# Следуйте по указанному Серебряным Волком маршруту
+# Избавиться от Рейнджеров пустоты на пути не составляет труда
+# Комната наблюдения в конце коридора выглядит подозрительно
+# Помогите Серебряному Волку осмотреть терминалы Комнаты наблюдения
+# Она попросила дотронуться до экрана, чтобы произошло кое-что необычное
+# Добудьте Стелларон с помощью Серебряного Волка
+# Посмотрите, что происходит снаружи
+# Осмотрите диковину, чтобы раскрыть секрет Комнаты наблюдения
+# Серебряный Волк указывает, что всё не так просто
+# Кажется, Серебряный Волк уже во всём разобралась
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Используйте фальшивую личность, чтобы пройти проверку безопасности===
+{{Описание миссии|локация=Базовая зона|На месте событий появилась таинственная изящная женщина. Она смеётся над жертвами вторжения, но жестоко расправляется с их обидчиками.<br />В радиопереговорах таинственная помощница указывает на то, что у них общая цель.<br />Является ли их появление предвестником ещё большего хаоса? Или же это начало новой истории?}}
+{{Диалог Начало}}
+----
+;([[#Gallery|Cutscene]] plays)
+::А!
+::Что это?!
+::Возглавь эвакуацию, быстро!
+::Вперёд!
+::Осторожно!
+::Кажется, я не вовремя.
+::Нет, нет... Я думаю, ты не могла бы выбрать более подходящего момента.
+;(Cutscene ends)
+----
+----
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 52
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "FadeInTrigger",
+	"ParameterType": "Trigger"
+}</pre>
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 200010201-->
+<!--Unknown TalkSentence: 200010202-->
+<!--Unknown TalkSentence: 200010203-->
+<!--Unknown TalkSentence: 200010204-->
+<!--Unknown TalkSentence: 200010205-->
+<!--Unknown TalkSentence: 200010206-->
+<!--Unknown TalkSentence: 200010207-->
+<!--Unknown TalkSentence: 200010208-->
+<!--Unknown TalkSentence: 200010209-->
+<!--Unknown TalkSentence: 200010210-->
+<!--Unknown TalkSentence: 200010211-->
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+<!--Unknown TalkSentence: 200010719-->
+<!--Unknown TalkSentence: 200010720-->
+<!--Unknown TalkSentence: 200010721-->
+<!--Unknown TalkSentence: 200010722-->
+{{Диалог Конец}}
+
+===Пройдите длинный коридор и войдите во внутреннюю часть космической станции===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "MainMission_LookatArea"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"UnlockCameraAfterRecover": true,
+	"LookAtDuration": 5,
+	"MaxAngle": 60,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 1.2,
+			"CenterPos": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 1,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	},
+	"FollowLookAtTarget": false
+}</pre>
+{{Диалог Конец}}
+
+===Одолейте одинокого Рейнджера пустоты - пусть это будет разминкой===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "1003"
+	}
+}</pre>
+:{{tx}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Встретьтесь с Серебряным Волком и покиньте Приёмный центр===
+{{Описание миссии|локация=Базовая зона|Помощница женщины выходит из-за кулис на сцену. Это юная девушка, которая уже завладела нужной ей информацией из базы данных космической станции.<br />Цель - попасть в комнату в глубине коридора.<br />- Стелларон там?<br />- Там мы узнаем, где Стелларон.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Следуйте по указанному Серебряным Волком маршруту===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200010808-->
+<!--Unknown TalkSentence: 200010809-->
+{{Диалог Конец}}
+
+===Избавиться от Рейнджеров пустоты на пути не составляет труда===
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Комната наблюдения в конце коридора выглядит подозрительно===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E5",
+	"SubMissionID": 100010113
+}</pre>
+:{{tx}}
+;(Enter battle)
+:{{Enemy List|Рейнджер пустоты: Захватчик*2/-44.4% Сила атаки, +38.3% НР; Рейнджер пустоты: Исказитель*2/-44.4% Сила атаки, -61.7% НР, -20 Скорость}}
+<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300029
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"FixedValue": {
+			"Value": 1200
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyTrialPlayer"
+}</pre>
+{{Диалог Конец}}
+
+===Помогите Серебряному Волку осмотреть терминалы Комнаты наблюдения===
+{{Описание миссии|локация=Базовая зона|Добравшись до Комнаты наблюдения, парочка обнаруживает загадку, которую оставила хозяйка космической станции.<br />«Прятать одну диковину за другой диковиной... Это в её стиле».<br />Но зачастую знать путь - не значит знать, чем он закончится.}}
+{{Диалог Начало}}
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_100010117"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300013
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Поговорите с Кафка)
+<!--Unknown TalkSentence: 200011110-->
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_100010118"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300014
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Поговорите с Кафка)
+<!--Unknown TalkSentence: 200011110-->
+{{Диалог Конец}}
+
+===Она попросила дотронуться до экрана, чтобы произошло кое-что необычное===
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DisableAfterTriggered": true,
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_100010128"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Добудьте Стелларон с помощью Серебряного Волка===
+{{Описание миссии|локация=Базовая зона|В конце своей миссии женщина медленно протягивает руку к Стелларону.<br />Она прекрасно знает, что не она является главным героем этой истории.<br />Что ж, все приготовления завершены. Пора проснуться и начать своё путешествие.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 100020101-->
+<!--Unknown TalkSentence: 100020102-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_03",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+<!--Unknown TalkSentence: 100020103-->
+<!--Unknown TalkSentence: 100020104-->
+<!--Unknown TalkSentence: 100020105-->
+<!--Unknown TalkSentence: 100020106-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_03",
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:{{tx}}
+:{{tx}}
+<!--Unknown TalkSentence: 100020109-->
+<!--Unknown TalkSentence: 100020110-->
+<!--Unknown TalkSentence: 100020111-->
+<!--Unknown TalkSentence: 100020112-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100020113-->
+:<!--Unknown TalkSentence: 100020114-->
+:<!--Unknown TalkSentence: 100020115-->
+:<!--Unknown TalkSentence: 100020116-->
+:<!--Unknown TalkSentence: 100020117-->
+:<!--Unknown TalkSentence: 100020118-->
+:<!--Unknown TalkSentence: 100020119-->
+:<!--Unknown TalkSentence: 100020120-->
+:<!--Unknown TalkSentence: 100020121-->
+:<!--Unknown TalkSentence: 100020122-->
+:<!--Unknown TalkSentence: 100020123-->
+:<!--Unknown TalkSentence: 100020124-->
+:<!--Unknown TalkSentence: 100020125-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100020115-->
+:<!--Unknown TalkSentence: 100020116-->
+:<!--Unknown TalkSentence: 100020117-->
+:<!--Unknown TalkSentence: 100020118-->
+:<!--Unknown TalkSentence: 100020119-->
+:<!--Unknown TalkSentence: 100020120-->
+:<!--Unknown TalkSentence: 100020121-->
+:<!--Unknown TalkSentence: 100020122-->
+:<!--Unknown TalkSentence: 100020123-->
+:<!--Unknown TalkSentence: 100020124-->
+:<!--Unknown TalkSentence: 100020125-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 100020118-->
+:<!--Unknown TalkSentence: 100020119-->
+:<!--Unknown TalkSentence: 100020120-->
+:<!--Unknown TalkSentence: 100020121-->
+:<!--Unknown TalkSentence: 100020122-->
+:<!--Unknown TalkSentence: 100020123-->
+:<!--Unknown TalkSentence: 100020124-->
+:<!--Unknown TalkSentence: 100020125-->
+<!--Unknown TalkSentence: 100020118-->
+<!--Unknown TalkSentence: 100020119-->
+<!--Unknown TalkSentence: 100020120-->
+<!--Unknown TalkSentence: 100020121-->
+<!--Unknown TalkSentence: 100020122-->
+<!--Unknown TalkSentence: 100020123-->
+<!--Unknown TalkSentence: 100020124-->
+<!--Unknown TalkSentence: 100020125-->
+<pre>{
+	"$type": "RPG.GameCore.DestroyTrialPlayer"
+}</pre>
+----
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 100020201-->
+<!--Unknown TalkSentence: 100020202-->
+<!--Unknown TalkSentence: 100020203-->
+<!--Unknown TalkSentence: 100020204-->
+:{{tx}}
+<!--Unknown TalkSentence: 100020201-->
+<!--Unknown TalkSentence: 100020202-->
+<!--Unknown TalkSentence: 100020203-->
+<!--Unknown TalkSentence: 100020204-->
+<!--Unknown TalkSentence: 100020205-->
+<!--Unknown TalkSentence: 100020206-->
+<!--Unknown TalkSentence: 100020207-->
+:{{Диалог|Стрелка}} undefined
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Посмотрите, что происходит снаружи===
+{{Описание миссии|локация=Зона хранения|Оторвав взгляд от незнакомого потолка, вы смотрите на окружающие вас диковины. В голове всё ещё раздаются отзвуки женского голоса, но сейчас у вас не получается вспомнить, о чём говорилось.<br />«Когда наступит момент сделать выбор, сделай тот, о котором ты точно не будешь жалеть...»<br />Вы решаете последовать за Март 7 и Дань Хэном, который только что ушёл. По крайней мере, эти люди не похожи на злодеев.<br />Итак, теперь у вас есть новые напарники, пора покинуть это место.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Осмотрите диковину, чтобы раскрыть секрет Комнаты наблюдения===
+{{Описание миссии|локация=Базовая зона|Добравшись до Комнаты наблюдения, парочка обнаруживает загадку, которую оставила хозяйка космической станции.<br />«Прятать одну диковину за другой диковиной... Это в её стиле».<br />Но зачастую знать путь - не значит знать, чем он закончится.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnablePerformanceMode",
+	"Enable": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 27,
+	"GroupNpcID": 400004
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_n1_scan"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_n1_scan"
+	}
+}</pre>
+:<!--1.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_04",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--1.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 8
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M6",
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnablePerformanceMode"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"Enable": true,
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "MainMission_2000101"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "Waypoint_3"
+	},
+	"LookAtTransitionDuration": 1,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"UnlockCameraAfterRecover": true,
+	"LookAtDuration": 1,
+	"MaxAngle": 360,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 1.2,
+			"CenterPos": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 1,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	},
+	"ScreenRange": {}
+}</pre>
+:<!--1-second delay-->
+{{Диалог Конец}}
+
+===Серебряный Волк указывает, что всё не так просто===
+{{Диалог Начало}}
+
+;(Поговорите с Кафка)
+<!--Unknown TalkSentence: 200011701-->
+<!--Unknown TalkSentence: 200011702-->
+<!--Unknown TalkSentence: 200011703-->
+{{Диалог Конец}}
+
+===Кажется, Серебряный Волк уже во всём разобралась===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200011403-->
+
+;(Поговорите с Кафка)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 200011501-->
+<!--Unknown TalkSentence: 200011502-->
+<!--Unknown TalkSentence: 200011503-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_n1_error"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerHack",
+	"ParameterType": "Trigger"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M3",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<!--4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M4",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M5",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 1
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<!--Unknown TalkSentence: 200011504-->
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "MainMission_2000101"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "Waypoint_2"
+	},
+	"LookAtTransitionDuration": 1,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LookAtDuration": 1,
+	"MaxAngle": 360,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 1.2,
+			"CenterPos": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 1,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000101",
+	"AnchorName": "Camera_1000101_M1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 27,
+	"GroupNpcID": 400003
+}</pre>
+:<!--1-second delay-->
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 100019503,
+					"ProtectTime": 3
+				}
+			]
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 88
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Chaos In the Deep
+|zhs  = 混乱行至深处
+|zht  = 混亂行至深處
+|ja   = 混乱は奥底に至る
+|ko   = 깊은 곳에 이른 혼란
+|es   = Caos en la profundidad
+|fr   = Chaos dans les profondeurs
+|ru   = Хаос глубин
+|th   = อลวนสุดห้วงลึก
+|vi   = Đi Đến Nơi Tận Cùng
+|de   = Chaos der Tiefe
+|id   = Kekacauan Mengakar
+|pt   = Caos nas Profundezas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

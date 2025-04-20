@@ -1,0 +1,275 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040206
+|Название        = 
+|Изображение     = Миссия Освоения О рыдания, пусть не льются попусту слёзы.png
+|Тип             = Миссия Освоения
+|События         = 
+|Глава           = Открыты врата, тень пала на трон
+|Условия         = Завершена [[Миссия Освоения]] ''[[О роща, отчего мудрецы молчат?]]''
+|Персонажи       = Анакса; Дань Хэн; Женщина с ласковым выражением лица; Кастория; Первопроходец; Старик Фабио; Страж; Титус; Трианна; Худощавый старик; Юноша
+|СтартЛокация    = Вечный священный город Охема
+|Мир             = Амфореус
+|Локации         = Вечный священный город Охема
+|Предыдущая      = О роща, отчего мудрецы молчат?
+|Следующая       = О воспоминания, окутанные жарким туманом
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Очищенный эфир*6; Утраченный кристалл*6; Небесная амброзия*240; Dusk of Rationality*1 { text = Dusk of Rationality }; Кредиты*80 000
+}}
+'''О рыдания, пусть не льются попусту слёзы''' — [[Миссия Освоения]] в главе [[Открыты врата, тень пала на трон]].
+
+==Описание==
+{{Описание|После ожесточённого боя вы вместе с Анаксой и ядром пламени Керкес возвращаетесь назад в Охему и готовитесь отчитаться перед Аглаей. Перед тем как встретиться с Аглаей, Анакса выдвинул своё условие: навестить дома жертв чёрного течения.}}
+
+==Этапы==
+# Доложите Аглае о выполнении поручения
+# Выразите соболезнования семьям погибших
+# Доложите Аглае о выполнении поручения
+# Поговорите с Касторией и Анаксой
+# Вернитесь в личную купальню и завершите этот день
+
+==Прохождение==
+{{Дополнить}}
+
+===Доложите Аглае о выполнении поручения===
+{{Описание миссии|локация=Вечный священный город Охема|После ожесточённого боя (Первопроходец) и остальные отводят невредимого Анаксу назад в Охему и готовятся отчитаться перед Аглаей.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+:<!--Unknown TalkSentence: 104027701-->
+:<!--Unknown TalkSentence: 104027702-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Худощавый старик)
+<!--Unknown TalkSentence: 104028001-->
+<!--Unknown TalkSentence: 104028002-->
+<!--Unknown TalkSentence: 104028003-->
+<!--Unknown TalkSentence: 104028004-->
+<!--Unknown TalkSentence: 104028005-->
+<!--Unknown TalkSentence: 104028006-->
+<!--Unknown TalkSentence: 104028007-->
+<!--Unknown TalkSentence: 104028008-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 104028010-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Old",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100030289
+		}
+	]
+}</pre>
+
+;(Поговорите с Женщина с ласковым выражением лица)
+<!--Unknown TalkSentence: 104027901-->
+<!--Unknown TalkSentence: 104027902-->
+<!--Unknown TalkSentence: 104027903-->
+<!--Unknown TalkSentence: 104027904-->
+<!--Unknown TalkSentence: 104027905-->
+<!--Unknown TalkSentence: 104027906-->
+<!--Unknown TalkSentence: 104027907-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 104027909-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Lady",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100020000
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Выразите соболезнования семьям погибших===
+{{Описание миссии|локация=Вечный священный город Охема|Перед тем как встретиться с Аглаей, Анакса выдвинул своё условие: навестить дома жертв чёрного течения.}}
+{{Диалог Начало}}
+
+;(Поговорите с Юноша)
+<!--Unknown TalkSentence: 104028101-->
+<!--Unknown TalkSentence: 104028102-->
+<!--Unknown TalkSentence: 104028103-->
+<!--Unknown TalkSentence: 104028104-->
+<!--Unknown TalkSentence: 104028105-->
+<!--Unknown TalkSentence: 104028106-->
+<!--Unknown TalkSentence: 104028107-->
+<!--Unknown TalkSentence: 104028108-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 104028110-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Male",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100010237
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 104027801-->
+<!--Unknown TalkSentence: 104027802-->
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+:----
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "StoryLine"
+}</pre>
+{{Диалог Конец}}
+
+===Доложите Аглае о выполнении поручения===
+{{Диалог Начало}}
+----
+:{{tx}}
+<!--Unknown TalkSentence: 104028201-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 104028203-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": []
+}</pre>
+{{Описание миссии|локация=Вечный священный город Охема|В связи с плотной занятостью Аглая временно не может лично встретиться с вернувшимися из Рощи. (Первопроходец) и остальные, уставшие с дороги, решают немного отдохнуть.}}
+
+;(Unused &mdash; EnterDistrict_G264_01)
+:{{tx}}
+:----
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 104020601,
+	"MessageSectionID": 1451500
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Касторией и Анаксой===
+{{Диалог Начало}}
+
+;(Поговорите с )
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 104028401-->
+<!--Unknown TalkSentence: 104028402-->
+<!--Unknown TalkSentence: 104028403-->
+<!--Unknown TalkSentence: 104028404-->
+<!--Unknown TalkSentence: 104028405-->
+<!--Unknown TalkSentence: 104028406-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028410-->
+:<!--Unknown TalkSentence: 104028411-->
+:<!--Unknown TalkSentence: 104028412-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028409-->
+:<!--Unknown TalkSentence: 104028410-->
+:<!--Unknown TalkSentence: 104028411-->
+:<!--Unknown TalkSentence: 104028412-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Вернитесь в личную купальню и завершите этот день===
+{{Диалог Начало}}
+
+;(Поговорите с Дань Хэн)
+:{{tx}}
+<!--Unknown TalkSentence: 104028501-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028503-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028509-->
+:<!--Unknown TalkSentence: 104028510-->
+:<!--Unknown TalkSentence: 104028511-->
+:<!--Unknown TalkSentence: 104028512-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028505-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028509-->
+:<!--Unknown TalkSentence: 104028510-->
+:<!--Unknown TalkSentence: 104028511-->
+:<!--Unknown TalkSentence: 104028512-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028507-->
+::{{tx}}
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 104028509-->
+:<!--Unknown TalkSentence: 104028510-->
+:<!--Unknown TalkSentence: 104028511-->
+:<!--Unknown TalkSentence: 104028512-->
+<!--Unknown TalkSentence: 104028503-->
+:{{tx}}
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 104028509-->
+<!--Unknown TalkSentence: 104028510-->
+<!--Unknown TalkSentence: 104028511-->
+<!--Unknown TalkSentence: 104028512-->
+
+;(Unused &mdash; EnterDistrict_G302_02)
+<!--Unknown TalkSentence: 104029103-->
+
+;(Поговорите с Страж)
+<!--Unknown TalkSentence: 104028303-->
+
+;(Поговорите с Кастория)
+<!--Unknown TalkSentence: 104028428-->
+:<!--1-second delay-->
+<!--Unknown TalkSentence: 104029101-->
+<!--Unknown TalkSentence: 104029102-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Lamentations, Bring Not Empty Tears
+|zhs  = 悲音啊，莫让生者空垂涕
+|zht  = 悲音啊，莫讓生者空垂涕
+|ja   = 悲しき音よ、生者たちに涙を零させるな
+|ko   = 슬픈 소리여, 산 자가 공허히 울게 하지 마라
+|es   = Lamentos, que las lágrimas no sean en vano
+|fr   = Mélodie des larmes endeuillées
+|ru   = О рыдания, пусть не льются попусту слёзы
+|th   = เสียงโศกเอ๋ย อย่าให้คนเป็นต้องร่ำไห้
+|vi   = Hỡi Âm Thanh Buồn, Đừng Để Người Sống Rơi Nước Mắt Vô Ích
+|de   = Kummer, bring keine leeren Tränen
+|id   = Ratapan, Jangan Biarkan Tangisan Sia-sia
+|pt   = Lamentações, Não Tragam Lágrimas Vazias
+}}
+
+==История изменений==
+{{История изменений|3.1}}
