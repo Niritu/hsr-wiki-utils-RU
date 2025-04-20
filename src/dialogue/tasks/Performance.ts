@@ -85,7 +85,7 @@ export class TransitionTask extends BaseDialogueTask {
 		if (this.type != 'Black') return undefined
 		if (this.sentence_id) {
 			const text = textMap.getSentence(this.sentence_id, true)
-			return ':' + `{{Black Screen|${text}}}`
+			return ':' + `{{Чёрный экран|${text}}}`
 		} else {
 			return (level > 0 ? ':' : '') + '----'
 		}
