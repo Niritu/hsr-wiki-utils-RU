@@ -1,0 +1,593 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2011701
+|Название        = 
+|Изображение     = Миссия Освоения Моя кровиночка.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Эра пробуждения
+|Условия         = 
+|Персонажи       = Бегунчик; Зеле; Кассиди; Летунчик; Лука; Нервный вор; Первопроходец; Сварог
+|СтартЛокация    = Поселение роботов
+|Мир             = Ярило-VI
+|Локации         = Поселение роботов
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*500; Звёздный нефрит*100; Путеводитель путешественника*10; Утраченный кристалл*8; Obsidian of Desolation*6; Кредиты*100 000
+}}
+'''Моя кровиночка''' — [[Миссия компаньона]] в главе [[Эра пробуждения]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с механиком Кассиди
+# Найдите роботов-друзей Кассиди
+# Почините Летунчика, робота Кассиди
+# Проследуйте за Летунчиком и найдите Бегунчика
+# Повзаимодействуйте с Бегунчиком
+# Проследуйте за Бегунчиком и доложите Кассиди
+# Одолейте монстров Фрагментума
+# Одолейте сильного монстра Фрагментума
+# Помогите Луке и найдите Сварога
+# Бросьте вызов Сварогу и завершите «испытания»
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<!--Unknown TalkSentence: 217010101-->
+<!--Unknown TalkSentence: 217010102-->
+----
+{{Диалог Конец}}
+
+===Поговорите с механиком Кассиди===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Первая цель испытаний... мелкие поручения. Пообщайтесь с механиком Кассиди и узнайте, как помочь ему.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217010201-->
+<!--Unknown TalkSentence: 217010202-->
+<!--Unknown TalkSentence: 217010203-->
+<!--Unknown TalkSentence: 217010204-->
+<!--Unknown TalkSentence: 217010205-->
+<!--Unknown TalkSentence: 217010206-->
+<!--Unknown TalkSentence: 217010207-->
+<!--Unknown TalkSentence: 217010208-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 217010210-->
+<!--Unknown TalkSentence: 217010213-->
+<!--Unknown TalkSentence: 217010214-->
+<!--Unknown TalkSentence: 217010215-->
+<!--Unknown TalkSentence: 217010216-->
+
+;(Поговорите с Кассиди)
+<!--Unknown TalkSentence: 217018101-->
+<!--Unknown TalkSentence: 217018102-->
+
+;(Поговорите с Нервный вор)
+<!--Unknown TalkSentence: 217018201-->
+<!--Unknown TalkSentence: 217018202-->
+<!--Unknown TalkSentence: 217018203-->
+{{Диалог Конец}}
+
+===Найдите роботов-друзей Кассиди===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Первая цель испытаний... мелкие поручения.<br />Роботы-друзья механика Кассиди, Летунчик и Бегунчик, были непостижимым образом украдены. Вам нужно помочь Кассиди вернуть его законную собственность.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217010401-->
+<!--Unknown TalkSentence: 217010402-->
+<!--Unknown TalkSentence: 217010403-->
+<!--Unknown TalkSentence: 217010404-->
+----
+{{Диалог Конец}}
+
+===Почините Летунчика, робота Кассиди===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Первая цель испытаний... мелкие поручения.<br />Вы находите одного из роботов-друзей механика Кассиди, Летунчика. Однако он находится в очень плохом состоянии. Продемонстрируйте свои навыки и почините его.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Проследуйте за Летунчиком и найдите Бегунчика===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Первая цель испытаний... мелкие поручения.<br />Вы чините Летунчика и его функция автоматической навигации приведёт вас к Бегунчику, другому роботу Кассиди.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300006
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019908-->
+<!--Unknown TalkSentence: 217019909-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019908-->
+<!--Unknown TalkSentence: 217019909-->
+;(Unused &mdash; MazePuzzle_Drone_Up)
+:<!--2-second delay-->
+:<!--Unknown TalkSentence: 217010609-->
+
+;(Unused &mdash; Maze_Prop_RobotGamePlay_Mission)
+
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217010701-->
+<!--Unknown TalkSentence: 217010702-->
+<!--Unknown TalkSentence: 217010703-->
+<!--Unknown TalkSentence: 217010704-->
+<!--Unknown TalkSentence: 217010705-->
+<!--Unknown TalkSentence: 217010706-->
+<!--Unknown TalkSentence: 217010707-->
+<!--Unknown TalkSentence: 217010708-->
+<!--Unknown TalkSentence: 217010709-->
+<!--Unknown TalkSentence: 217010710-->
+<!--Unknown TalkSentence: 217010711-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+----
+<!--Unknown TalkSentence: 217010806-->
+<!--Unknown TalkSentence: 217010807-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 217010809-->
+<!--Unknown TalkSentence: 217010812-->
+<!--Unknown TalkSentence: 217010813-->
+<!--Unknown TalkSentence: 217010814-->
+----
+{{Диалог Конец}}
+
+===Повзаимодействуйте с Бегунчиком===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Первая цель испытаний... мелкие поручения.<br />Вы разбираетесь с вором и находите роботов механика Кассиди. Пришло время сообщить ему хорошие новости.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Проследуйте за Бегунчиком и доложите Кассиди===
+{{Диалог Начало}}
+
+----
+<!--Unknown TalkSentence: 217011001-->
+<!--Unknown TalkSentence: 217011002-->
+<!--Unknown TalkSentence: 217011003-->
+<!--Unknown TalkSentence: 217011004-->
+<!--Unknown TalkSentence: 217011005-->
+<!--Unknown TalkSentence: 217011006-->
+----
+<!--Unknown TalkSentence: 217011007-->
+<!--Unknown TalkSentence: 217011008-->
+<!--Unknown TalkSentence: 217011009-->
+<!--Unknown TalkSentence: 217011010-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 217011012-->
+<!--Unknown TalkSentence: 217011017-->
+<!--Unknown TalkSentence: 217011018-->
+<!--Unknown TalkSentence: 217011019-->
+<!--Unknown TalkSentence: 217011020-->
+<!--Unknown TalkSentence: 217011021-->
+<!--Unknown TalkSentence: 217011022-->
+----
+{{Диалог Конец}}
+
+===Одолейте монстров Фрагментума===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Вторая цель испытаний проста и сурова... зачистить всех монстров Фрагментума, которые проникли в Поселение роботов.<br />Очевидно, что в этом деле нет никого лучше вас. Вперёд!}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300010
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019914-->
+<!--Unknown TalkSentence: 217019915-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019912-->
+<!--Unknown TalkSentence: 217019913-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217011101-->
+<!--Unknown TalkSentence: 217011102-->
+<!--Unknown TalkSentence: 217011103-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40123_F40123001_G4",
+	"AnchorName": "Anchor23",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"CustomCurveName": "Blend_FastToSlow",
+		"BlendTime": 1
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Одолейте сильного монстра Фрагментума===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Вторая цель испытаний проста и сурова... зачистить всех монстров Фрагментума, которые проникли в Поселение роботов.<br />Перед вами появляется могущественный монстр Фрагментума. Разберитесь с ним!}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300012
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217011201-->
+<!--Unknown TalkSentence: 217011202-->
+<!--Unknown TalkSentence: 217011203-->
+<!--Unknown TalkSentence: 217011204-->
+<!--Unknown TalkSentence: 217011205-->
+<!--Unknown TalkSentence: 217011206-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+----
+<!--Unknown TalkSentence: 217011306-->
+<!--Unknown TalkSentence: 217011307-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 217011309-->
+:<!--Unknown TalkSentence: 217011313-->
+:<!--Unknown TalkSentence: 217011314-->
+:<!--Unknown TalkSentence: 217011315-->
+:<!--Unknown TalkSentence: 217011316-->
+:<!--Unknown TalkSentence: 217011317-->
+:<!--Unknown TalkSentence: 217011318-->
+:<!--Unknown TalkSentence: 217011319-->
+:<!--Unknown TalkSentence: 217011320-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 217011311-->
+:<!--Unknown TalkSentence: 217011312-->
+:<!--Unknown TalkSentence: 217011313-->
+:<!--Unknown TalkSentence: 217011314-->
+:<!--Unknown TalkSentence: 217011315-->
+:<!--Unknown TalkSentence: 217011316-->
+:<!--Unknown TalkSentence: 217011317-->
+:<!--Unknown TalkSentence: 217011318-->
+:<!--Unknown TalkSentence: 217011319-->
+:<!--Unknown TalkSentence: 217011320-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Помогите Луке и найдите Сварога===
+{{Описание миссии|локация=Поселение роботов|Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Конечная цель испытаний - бросить вызов Сварогу. Вы с Зеле считаете, что это полнейший бред, но Лука настаивает на достижении целей, которые он поставил перед собой.<br />Вы с Зеле решаете идти с ним на случай, если что-то пойдёт не так.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300014
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019919-->
+<!--Unknown TalkSentence: 217019920-->
+<!--Unknown TalkSentence: 217019921-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 217019916-->
+<!--Unknown TalkSentence: 217019917-->
+<!--Unknown TalkSentence: 217019918-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 217011401-->
+<!--Unknown TalkSentence: 217011402-->
+<!--Unknown TalkSentence: 217011403-->
+<!--Unknown TalkSentence: 217011404-->
+<!--Unknown TalkSentence: 217011405-->
+<!--Unknown TalkSentence: 217011406-->
+<!--Unknown TalkSentence: 217011407-->
+<!--Unknown TalkSentence: 217011408-->
+<!--Unknown TalkSentence: 217011409-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 217011411-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 217011413-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 217011415-->
+:<!--Unknown TalkSentence: 217011416-->
+;(Unused &mdash; LLS)
+
+
+;(Unused &mdash; SHLS)
+
+{{Диалог Конец}}
+
+===Бросьте вызов Сварогу и завершите «испытания»===
+{{Описание миссии|локация=Поселение роботов|Вы Лука, ключевой участник Дикого Огня, лучший боец Камнеграда.<br />Вы прекрасно понимаете, что возможность сразиться со Сварогом лицом к лицу выпадает раз в жизни... Это мечта, которую вы всегда хотели осуществить.<br />Идите и сразитесь с ним, отбросив все сожаления!}}
+{{Диалог Начало}}
+----
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400030,
+			"TalkSentenceID": 217019922
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400030,
+			"TalkSentenceID": 217019923
+		}
+	],
+	"LoopInterval": 3
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400029,
+			"TalkSentenceID": 217019924
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400029,
+			"TalkSentenceID": 217019925
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 3,
+	"UniqueID": 1
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Mo Cuishle
+|zhs  = 我的挚爱，我的血肉
+|zht  = 我的摯愛，我的血肉
+|ja   = 私の最愛、私の血
+|ko   = 나의 사랑, 나의 혈육
+|es   = Mo Cuishle
+|fr   = Mon amour, ma chair, mon sang
+|ru   = Моя кровиночка
+|th   = รักแท้ของฉัน เลือดเนื้อของฉัน
+|vi   = Tình Yêu Của Tôi, Nhịp Đập Của Tôi
+|de   = Mo Cuishle
+|id   = Kesayanganku, Darah Dagingku
+|pt   = Mo Cuishle
+}}
+
+==История изменений==
+{{История изменений|2.7}}

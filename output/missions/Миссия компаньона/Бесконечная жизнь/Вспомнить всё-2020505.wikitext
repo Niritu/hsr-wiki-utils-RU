@@ -1,0 +1,561 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020505
+|Название        = 
+|Изображение     = Миссия Освоения Вспомнить всё.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = Завершена [[Миссия компаньона]] ''[[Вспомнить всё]]''
+|Персонажи       = Вельт; Дань Хэн; Март 7; Первопроходец; Пом-Пом; Фу Сюань; Химеко
+|СтартЛокация    = Звёздный экспресс из воспоминаний
+|Мир             = Лофу Сяньчжоу
+|Локации         = Звёздный экспресс из воспоминаний
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Oath of Steel*6; Кредиты*90 000
+}}
+'''Вспомнить всё''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите «инородный объект» в воспоминании
+# Найдите способ покинуть это воспоминание
+
+==Прохождение==
+{{Дополнить}}
+
+----
+<!--Unknown TalkSentence: 202181381-->
+<!--Unknown TalkSentence: 202181382-->
+<!--Unknown TalkSentence: 202181383-->
+<!--Unknown TalkSentence: 202181384-->
+<!--Unknown TalkSentence: 202181385-->
+<!--Unknown TalkSentence: 202181386-->
+<!--Unknown TalkSentence: 202181387-->
+<!--Unknown TalkSentence: 202181388-->
+----
+{{Диалог Конец}}
+
+===Найдите «инородный объект» в воспоминании===
+{{Описание миссии|локация=Звёздный экспресс из воспоминаний|Март 7 теперь на шаг ближе к концу (или началу) и, наконец, видит того, кто создавал препятствия на пути - это Посланник.<br />Посланник, похоже, запер Март 7 и Фу Сюань в воспоминаниях, которые представляют собой замкнутый цикл. Март 7 была безымянной девушкой, дрейфующей в космосе, пока Звёздный экспресс не спас её, и она впервые не обрела «семью».<br />Март 7 с удовольствием осталась бы в данном воспоминании подольше, но это всего лишь часть коварного плана Посланника - ведь каждый скучает по дому и втайне желает, чтобы мирная повседневная жизнь длилась вечно, в будущем и прошлом...<br />К сожалению, это невозможно.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 202180542-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 202180543-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 202180544-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 202180545-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<!--Unknown TalkSentence: 202180546-->
+<!--Unknown TalkSentence: 202180547-->
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_door_transition"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+<!--Unknown TalkSentence: 202181389-->
+<!--Unknown TalkSentence: 202181390-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 202181401-->
+<!--Unknown TalkSentence: 202181402-->
+<!--Unknown TalkSentence: 202181403-->
+<!--Unknown TalkSentence: 202181404-->
+<!--Unknown TalkSentence: 202181405-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 202181411-->
+<!--Unknown TalkSentence: 202181412-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 202181421-->
+<!--Unknown TalkSentence: 202181422-->
+
+:{{Диалог|Изучение}} Осмотреть
+<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 202050503,
+	"TargetMissionCustomValue": {
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			100
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 2020505,
+		"MissionCustomValue": {
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				100
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+;(If {{F|MissionCV-2020505-undefined}} is equal to 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_door_transition"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		}
+	]
+}</pre>
+;(If {{F|MissionCV-2020505-undefined}} is not equal to 1)
+:;(Return to previous option selection)
+;(Unused &mdash; Random_202050503)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 0.34
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.32
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.34
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Welt202050503"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Himeko202050503"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Danheng202050503"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Talk_Himeko202050503)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Talk_Danheng202050503)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Найдите способ покинуть это воспоминание===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202180548-->
+<!--Unknown TalkSentence: 202180549-->
+<!--Unknown TalkSentence: 202180550-->
+
+;(Поговорите с Фу Сюань)
+<!--Unknown TalkSentence: 202181431-->
+<!--Unknown TalkSentence: 202181432-->
+
+:{{Диалог|Изучение}} Осмотреть
+<!--Unknown TalkSentence: 202181441-->
+<!--Unknown TalkSentence: 202181442-->
+<!--Unknown TalkSentence: 202181443-->
+:{{Диалог|Стрелка}} undefined
+::----
+::{{tx}}
+:{{Диалог|Выход}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

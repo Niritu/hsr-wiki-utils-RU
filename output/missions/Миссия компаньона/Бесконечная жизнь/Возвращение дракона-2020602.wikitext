@@ -1,0 +1,308 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020602
+|Название        = 
+|Изображение     = Миссия Освоения Возвращение дракона.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = 
+|Персонажи       = Байлу; Дань Хэн; Искажённый голос; Ласковый женский голос; Первопроходец; Разозлённый голос; Старческий голос; Хуаньси; Цзин Юань
+|СтартЛокация    = Чешуйчатое ущелье
+|Мир             = Лофу Сяньчжоу
+|Локации         = Чешуйчатое ущелье
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*500; Звёздный нефрит*100; Путеводитель путешественника*3; Утраченный кристалл*3; Lifeless Blade*6; "Samudrartha"*1 { text = Samudrartha }; Кредиты*40 000
+}}
+'''Возвращение дракона''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Направляйтесь к Древу амброзии и восстановите печать
+# Покиньте Чешуйчатое ущелье с помощью эхомиража
+# Встретьтесь с Хуаньси и покиньте Чешуйчатое ущелье
+# Поговорите с Байлу и запечатайте Древо
+
+==Прохождение==
+{{Дополнить}}
+
+:{{tx}}
+<!--Unknown TalkSentence: 202063901-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202063903-->
+:<!--Unknown TalkSentence: 202063904-->
+:<!--Unknown TalkSentence: 202063905-->
+:<!--Unknown TalkSentence: 202063906-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202063904-->
+:<!--Unknown TalkSentence: 202063905-->
+:<!--Unknown TalkSentence: 202063906-->
+::{{tx}}
+<!--Unknown TalkSentence: 202063904-->
+<!--Unknown TalkSentence: 202063905-->
+<!--Unknown TalkSentence: 202063906-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Направляйтесь к Древу амброзии и восстановите печать===
+{{Описание миссии|локация=Чешуйчатое ущелье|Видьядхара Лофу обязаны запечатать Древо амброзии. Верховный старейшина видьядхара и тот, кто обладает силой предыдущего Верховного старейшины, должны вместе исполнить этот долг.<br />Дань Хэн сказал, что хочет передать свою силу Верховному старейшине Лофу, но разве силу можно просто так раздавать и возвращать, когда вздумается?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202064001-->
+<!--Unknown TalkSentence: 202064002-->
+<!--Unknown TalkSentence: 202064003-->
+<!--Unknown TalkSentence: 202064004-->
+<!--Unknown TalkSentence: 202064005-->
+<!--Unknown TalkSentence: 202064006-->
+<!--Unknown TalkSentence: 202064007-->
+<!--Unknown TalkSentence: 202064008-->
+<!--Unknown TalkSentence: 202064009-->
+<!--Unknown TalkSentence: 202064010-->
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Не дайте древу воскреснуть,
+::ибо это навлечёт чуму бессмертия.
+::Воды древнего моря,
+::подчинитесь Верховному старейшине и
+::усмирите
+::чёрные корни.
+::Странно,
+::во время снятия печати всё обычно иначе.
+::Почему сейчас ничего не происходит?
+::В чём дело? Вид у тебя озадаченный.
+::Не дайте древу воскреснуть, ибо это навлечёт чуму бессмертия.
+::Не дайте древу воскреснуть, ибо это навлечёт чуму бессмертия.
+::Воды древнего моря,
+::подчинитесь Верховному старейшине и
+::усмирите чёрные корни.
+;(Cutscene ends)
+----
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.SetStageItemState",
+	"ItemList": [
+		{
+			"BlockAlias": "02_Effect",
+			"PrefabAlias": "Dragon_Effect_00"
+		}
+	],
+	"EnableState": true
+}</pre>
+<!--Unknown TalkSentence: 202064201-->
+<!--Unknown TalkSentence: 202064202-->
+----
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40232_F40232002_G10",
+	"AnchorName": "Anchor5",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"CustomCurveName": "Blend_FastToSlow",
+		"BlendTime": 3
+	}
+}</pre>
+<!--Unknown TalkSentence: 202064203-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40232_F40232002_G10",
+	"AnchorName": "Anchor5"
+}</pre>
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(Поговорите с Эхомираж видьядхара)
+<!--Unknown TalkSentence: 202065201-->
+<!--Unknown TalkSentence: 202065202-->
+<!--Unknown TalkSentence: 202065203-->
+<!--Unknown TalkSentence: 202065204-->
+<!--Unknown TalkSentence: 202065205-->
+<!--Unknown TalkSentence: 202065206-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202065208-->
+<!--Unknown TalkSentence: 202065211-->
+<!--Unknown TalkSentence: 202065212-->
+<!--Unknown TalkSentence: 202065213-->
+----
+
+;(Поговорите с Байлу)
+----
+<!--Unknown TalkSentence: 202064901-->
+<!--Unknown TalkSentence: 202064902-->
+<!--Unknown TalkSentence: 202064903-->
+<!--Unknown TalkSentence: 202064904-->
+<!--Unknown TalkSentence: 202064905-->
+<!--Unknown TalkSentence: 202064906-->
+<!--Unknown TalkSentence: 202064907-->
+<!--Unknown TalkSentence: 202064908-->
+<!--Unknown TalkSentence: 202064909-->
+<!--Unknown TalkSentence: 202064910-->
+<!--Unknown TalkSentence: 202064911-->
+<!--Unknown TalkSentence: 202064912-->
+<!--Unknown TalkSentence: 202064913-->
+<!--Unknown TalkSentence: 202064914-->
+----
+
+;(Поговорите с )
+----
+<!--Unknown TalkSentence: 202064901-->
+<!--Unknown TalkSentence: 202064902-->
+<!--Unknown TalkSentence: 202064903-->
+<!--Unknown TalkSentence: 202064904-->
+<!--Unknown TalkSentence: 202064905-->
+<!--Unknown TalkSentence: 202064906-->
+<!--Unknown TalkSentence: 202064907-->
+<!--Unknown TalkSentence: 202064908-->
+<!--Unknown TalkSentence: 202064909-->
+<!--Unknown TalkSentence: 202064910-->
+<!--Unknown TalkSentence: 202064911-->
+<!--Unknown TalkSentence: 202064912-->
+<!--Unknown TalkSentence: 202064913-->
+<!--Unknown TalkSentence: 202064914-->
+----
+----
+----
+<!--Unknown TalkSentence: 202064301-->
+<!--Unknown TalkSentence: 202064302-->
+<!--Unknown TalkSentence: 202064303-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 202064305-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 202064307-->
+:{{Диалог|Стрелка}} undefined
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 202064309-->
+::----
+{{Диалог Конец}}
+
+===Покиньте Чешуйчатое ущелье с помощью эхомиража===
+{{Описание миссии|локация=Чешуйчатое ущелье|Наёмники видьядхара скрывались от вас с помощью облачных гимнов, и затем напали. Как опытный воин, Дань Хэн более чем способен постоять за себя, но Байлу - совсем другое дело, и ей понадобится ваша защита!<br />Эхомиражи видьядхара отвечают как Дань Хэну, так и Байлу. Послушайте, что они говорят, и, возможно, это поможет вам понять, что произошло много лет назад.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202064310-->
+<!--Unknown TalkSentence: 202064311-->
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202064401-->
+<!--Unknown TalkSentence: 202064402-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202064501-->
+<!--Unknown TalkSentence: 202064502-->
+<!--Unknown TalkSentence: 202064503-->
+<!--Unknown TalkSentence: 202064504-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202064506-->
+:<!--Unknown TalkSentence: 202064509-->
+:<!--Unknown TalkSentence: 202064510-->
+:<!--Unknown TalkSentence: 202064511-->
+:<!--Unknown TalkSentence: 202064512-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202064508-->
+:<!--Unknown TalkSentence: 202064509-->
+:<!--Unknown TalkSentence: 202064510-->
+:<!--Unknown TalkSentence: 202064511-->
+:<!--Unknown TalkSentence: 202064512-->
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 2,
+	"GroupNpcID": 400002,
+	"DestroyList": []
+}</pre>
+:<!--1-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202064601-->
+<!--Unknown TalkSentence: 202064602-->
+<!--Unknown TalkSentence: 202064603-->
+<!--Unknown TalkSentence: 202064604-->
+<!--Unknown TalkSentence: 202064605-->
+<!--Unknown TalkSentence: 202064606-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Встретьтесь с Хуаньси и покиньте Чешуйчатое ущелье===
+{{Описание миссии|локация=Чешуйчатое ущелье|Вы вот-вот прибудете к Монументу драконьего ливня. Если всё пойдёт как задумано, наёмники не смогут незаметно атаковать. Конечно, может произойти и то, что не задумывалось.<br />Тем не менее, даже если что-то случится, это не так уж важно. Дань Хэн всегда надёжен, на него можно положиться.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202064701-->
+<!--Unknown TalkSentence: 202064702-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 202064801-->
+<!--Unknown TalkSentence: 202064802-->
+<!--Unknown TalkSentence: 202064803-->
+<!--Unknown TalkSentence: 202064804-->
+<!--Unknown TalkSentence: 202064805-->
+<!--Unknown TalkSentence: 202064806-->
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing_D",
+	"SubMissionID": 202060216
+}</pre>
+<!--Unknown TalkSentence: 202064808-->
+<!--Unknown TalkSentence: 202064809-->
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 202064810-->
+<!--Unknown TalkSentence: 202064811-->
+<!--Unknown TalkSentence: 202064812-->
+:{{Чёрный экран|undefined}}
+{{Диалог Конец}}
+
+===Поговорите с Байлу и запечатайте Древо===
+{{Описание миссии|локация=Чешуйчатое ущелье|Даже личная служанка следила за ней, кому же теперь может доверять Байлу? Она хочет поговорить с Дань Хэном. Возможно, чтобы привести мысли в порядок или поделиться идеей...<br />Если бы не наёмники, они бы давно уже пообщались. Что ж, лучшего момента может не представиться.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = The Dragon Returns Home
+|zhs  = 龙返其乡
+|zht  = 龍返其鄉
+|ja   = 龍、其の郷に帰りて
+|ko   = 용의 귀향
+|es   = El dragón vuelve a su hogar
+|fr   = Le retour du dragon
+|ru   = Возвращение дракона
+|th   = มังกรคืนถิ่น
+|vi   = Rồng Hồi Hương
+|de   = Der Drache kehrt heim
+|id   = Sang Naga Kembali
+|pt   = O Dragão Retorna ao Lar
+}}
+
+==История изменений==
+{{История изменений|2.7}}

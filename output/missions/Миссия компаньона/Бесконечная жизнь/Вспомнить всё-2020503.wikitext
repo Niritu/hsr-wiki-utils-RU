@@ -1,0 +1,399 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020503
+|Название        = 
+|Изображение     = Миссия Освоения Вспомнить всё.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = Завершена [[Миссия компаньона]] ''[[Вспомнить всё]]''
+|Персонажи       = Броня из воспоминаний; Гепард из воспоминаний; Зеле из воспоминаний; Март 7; Пела из воспоминаний; Первопроходец; Сампо из воспоминаний; Фу Сюань
+|СтартЛокация    = Белобог из воспоминаний
+|Мир             = Лофу Сяньчжоу
+|Локации         = Белобог из воспоминаний
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Oath of Steel*6; Кредиты*90 000
+}}
+'''Вспомнить всё''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Найдите «искажённую» часть воспоминания
+# Взаимодействуйте с «инородным объектом», чтобы вернуться к более старым воспоминаниям
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Найдите «искажённую» часть воспоминания===
+{{Описание миссии|локация=Белобог из воспоминаний|Когда речь заходит о Белобоге, то первая мысль обычно о метелях и низких температурах, но самое яркое воспоминание Март 7 об этом месте - впечатляющий вестибюль отеля «Гёте».<br />Возможно, это потому, что она стала разыскиваемой преступницей на следующий день после того, как заселилась в отель. Или же... потому, что маленький, но яркий костёр в заснеженном приключении запоминается больше всего, каким бы великолепным оно ни было.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 202181101-->
+<!--Unknown TalkSentence: 202181102-->
+<!--Unknown TalkSentence: 202181103-->
+<!--Unknown TalkSentence: 202181104-->
+<!--Unknown TalkSentence: 202181105-->
+<!--Unknown TalkSentence: 202181106-->
+<!--Unknown TalkSentence: 202181107-->
+<!--Unknown TalkSentence: 202181108-->
+<!--Unknown TalkSentence: 202181109-->
+<!--Unknown TalkSentence: 202181110-->
+<!--Unknown TalkSentence: 202181111-->
+<!--Unknown TalkSentence: 202181112-->
+<!--Unknown TalkSentence: 202181113-->
+<!--Unknown TalkSentence: 202181114-->
+<!--Unknown TalkSentence: 202181115-->
+<!--Unknown TalkSentence: 202181116-->
+<!--Unknown TalkSentence: 202181117-->
+<!--Unknown TalkSentence: 202181118-->
+----
+<!--Unknown TalkSentence: 202180532-->
+<!--Unknown TalkSentence: 202180533-->
+
+;(Поговорите с Сампо)
+<!--Unknown TalkSentence: 202181131-->
+<!--Unknown TalkSentence: 202181132-->
+<!--Unknown TalkSentence: 202181133-->
+<!--Unknown TalkSentence: 202181134-->
+<!--Unknown TalkSentence: 202181135-->
+<!--Unknown TalkSentence: 202181136-->
+<!--Unknown TalkSentence: 202181137-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Гепард)
+<!--Unknown TalkSentence: 202181151-->
+<!--Unknown TalkSentence: 202181152-->
+<!--Unknown TalkSentence: 202181153-->
+<!--Unknown TalkSentence: 202181154-->
+<!--Unknown TalkSentence: 202181155-->
+<!--Unknown TalkSentence: 202181156-->
+<!--Unknown TalkSentence: 202181157-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 4,
+	"GroupNpcID": 400002,
+	"DestroyList": []
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Пела)
+<!--Unknown TalkSentence: 202181171-->
+<!--Unknown TalkSentence: 202181172-->
+<!--Unknown TalkSentence: 202181173-->
+<!--Unknown TalkSentence: 202181174-->
+<!--Unknown TalkSentence: 202181175-->
+<!--Unknown TalkSentence: 202181176-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Броня)
+<!--Unknown TalkSentence: 202181201-->
+<!--Unknown TalkSentence: 202181202-->
+<!--Unknown TalkSentence: 202181203-->
+<!--Unknown TalkSentence: 202181204-->
+<!--Unknown TalkSentence: 202181205-->
+<!--Unknown TalkSentence: 202181206-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Зеле)
+<!--Unknown TalkSentence: 202181221-->
+<!--Unknown TalkSentence: 202181222-->
+<!--Unknown TalkSentence: 202181223-->
+<!--Unknown TalkSentence: 202181224-->
+<!--Unknown TalkSentence: 202181225-->
+<!--Unknown TalkSentence: 202181226-->
+<!--Unknown TalkSentence: 202181227-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202181229-->
+:<!--Unknown TalkSentence: 202181230-->
+:<!--Unknown TalkSentence: 202181231-->
+:<!--Unknown TalkSentence: 202181232-->
+:<!--Unknown TalkSentence: 202181233-->
+:<!--Unknown TalkSentence: 202181234-->
+:<!--Unknown TalkSentence: 202181235-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack",
+	"ExecuteOnSkip": true
+}</pre>
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:{{Диалог|Выход}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 202180570
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050302
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 5,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180571
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050304
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 202181251-->
+<!--Unknown TalkSentence: 202181252-->
+<!--Unknown TalkSentence: 202181253-->
+<!--Unknown TalkSentence: 202181254-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202181256-->
+::<!--0.5-second delay-->
+:{{Диалог|Выход}} undefined
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180565
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180566
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050307
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 202180567
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050308
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180568
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180569
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050309
+}</pre>
+----
+<!--Unknown TalkSentence: 202181241-->
+<!--Unknown TalkSentence: 202181242-->
+----
+{{Диалог Конец}}
+
+===Взаимодействуйте с «инородным объектом», чтобы вернуться к более старым воспоминаниям===
+{{Описание миссии|локация=Белобог из воспоминаний|Март 7 не думает, что «монитор с космической станции "Герта"» может представлять всю станцию целиком. Она предполагает, что этот элемент появился здесь только потому, что станция полностью покрыта мониторами той же модели и сборки... Их присутствие неизгладимо отпечаталось в её памяти.<br />«Но это не так уж плохо, - подумала она, - единственное, что ещё я запомнила, - это Зверь Судного дня... К счастью, появились мониторы!»}}
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission not Finish: 202050304-->)
+:<!--Unknown TalkSentence: 202180534-->
+:<!--Unknown TalkSentence: 202180535-->
+:<!--Unknown TalkSentence: 202180536-->
+:<!--Unknown TalkSentence: 202180537-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,227 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2011801
+|Название        = 
+|Изображение     = Миссия Освоения Моя кровиночка.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Эра пробуждения
+|Условия         = 
+|Персонажи       = Зеле; Первопроходец
+|СтартЛокация    = Заклёпкоград
+|Мир             = Ярило-VI
+|Локации         = Заклёпкоград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*500; Звёздный нефрит*100; Путеводитель путешественника*10; Утраченный кристалл*8; Obsidian of Desolation*6; Кредиты*100 000
+}}
+'''Моя кровиночка''' — [[Миссия компаньона]] в главе [[Эра пробуждения]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Проследите за Лукой и не дайте себя обнаружить!
+# Следуйте за Лукой и не дайте себя обнаружить!
+# Исследуйте предмет, оставленный Лукой
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Проследите за Лукой и не дайте себя обнаружить!===
+{{Описание миссии|локация=Заклёпкоград|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Тихонько проследите за Лукой и узнайте, что он скрывает.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Mission_201180102)
+
+
+;(Unused &mdash; hookready)
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 201180102,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 11,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300007
+}</pre>
+
+;(Unused &mdash; Track_OnFail_Found)
+<pre>{
+	"$type": "RPG.GameCore.CharacterStopFreeStyle",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Track_OnFail_Reset)
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionWayPoint",
+	"SubMissionID": 201180102
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IconPath": "SpriteOutput/MapPics/Billboard/IconBillboardMapCompanion02.png",
+	"OnNameBoard": true
+}</pre>
+{{Диалог Конец}}
+
+===Следуйте за Лукой и не дайте себя обнаружить!===
+{{Диалог Начало}}
+
+;(Unused &mdash; Mission_201180105)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CharacterStopFreeStyle",
+	"CharacterUniqueName": "LocalPlayer",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
+		"IncludeStoryPlayer": false
+	},
+	"NormalizedTransitionDuration": 0.1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+
+;(Unused &mdash; Track_OnFail_Reset01)
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionWayPoint",
+	"SubMissionID": 201180105
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IconPath": "SpriteOutput/MapPics/Billboard/IconBillboardMapCompanion02.png",
+	"OnNameBoard": true
+}</pre>
+
+;(Unused &mdash; isReached02)
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 201180105,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 12,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300004
+}</pre>
+{{Диалог Конец}}
+
+===Исследуйте предмет, оставленный Лукой===
+{{Описание миссии|локация=Заклёпкоград|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Лука оставил загадочную коробку перед приютом. Откройте её и узнайте, что там скрывается.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 218019905-->
+<!--Unknown TalkSentence: 218019906-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Mo Cuishle
+|zhs  = 我的挚爱，我的血肉
+|zht  = 我的摯愛，我的血肉
+|ja   = 私の最愛、私の血
+|ko   = 나의 사랑, 나의 혈육
+|es   = Mo Cuishle
+|fr   = Mon amour, ma chair, mon sang
+|ru   = Моя кровиночка
+|th   = รักแท้ของฉัน เลือดเนื้อของฉัน
+|vi   = Tình Yêu Của Tôi, Nhịp Đập Của Tôi
+|de   = Mo Cuishle
+|id   = Kesayanganku, Darah Dagingku
+|pt   = Mo Cuishle
+}}
+
+==История изменений==
+{{История изменений|2.7}}

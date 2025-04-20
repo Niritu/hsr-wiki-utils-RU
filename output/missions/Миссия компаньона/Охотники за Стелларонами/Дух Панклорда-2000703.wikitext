@@ -1,0 +1,257 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000703
+|Название        = 
+|Изображение     = Миссия Освоения Дух Панклорда.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Охотники за Стелларонами
+|Условия         = 
+|Персонажи       = Первопроходец; Серебряный Волк; Серебряный Волк (?); Скрюллум
+|СтартЛокация    = Зона поддержки
+|Мир             = Космическая станция «Герта»
+|Локации         = Зона поддержки
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*5; Очищенный эфир*5; Кредиты*100 000
+}}
+'''Дух Панклорда''' — [[Миссия компаньона]] в главе [[Охотники за Стелларонами]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Погрузитесь глубже в Виртуальную вселенную
+# Найдите данные эфирного картриджа
+# Погрузитесь глубже в Виртуальную вселенную
+# Найдите данные эфирного картриджа
+# Достигните максимальной глубины цепочки передачи данных
+# Погрузитесь глубже в Виртуальную вселенную
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Погрузитесь глубже в Виртуальную вселенную===
+{{Описание миссии|локация=Зона поддержки|С помощью Скрюллума вы вошли в Виртуальную вселенную. Неудивительно, что Серебряный Волк добралась и сюда.<br />У вас есть догадка касательно того, какая игра здесь ведётся, и она будет раскрыта в конце этого приключения.}}
+{{Диалог Начало}}
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 200072402-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200072405-->
+:<!--Unknown TalkSentence: 200072406-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200072408-->
+<!--Unknown TalkSentence: 200072409-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+----
+<!--Unknown TalkSentence: 200072501-->
+<!--Unknown TalkSentence: 200072502-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200072504-->
+<!--Unknown TalkSentence: 200072509-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200072510-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 16
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Найдите данные эфирного картриджа===
+{{Диалог Начало}}
+
+;(Поговорите с Событие)
+----
+<!--Unknown TalkSentence: 200072601-->
+<!--Unknown TalkSentence: 200072602-->
+<!--Unknown TalkSentence: 200072603-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200072605-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Погрузитесь глубже в Виртуальную вселенную===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+----
+<!--Unknown TalkSentence: 200072622-->
+:<!--2-second delay-->
+----
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "Activing",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+:<!--2-second delay-->
+----
+<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200072623-->
+{{Диалог Конец}}
+
+===Найдите данные эфирного картриджа===
+{{Диалог Начало}}
+
+;(Поговорите с Герта)
+----
+----
+<!--Unknown TalkSentence: 200072701-->
+<!--Unknown TalkSentence: 200072702-->
+<!--Unknown TalkSentence: 200072703-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200072705-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Достигните максимальной глубины цепочки передачи данных===
+{{Диалог Начало}}
+;(По прибытии на место)
+----
+----
+<!--Unknown TalkSentence: 200072801-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200072901-->
+<!--Unknown TalkSentence: 200072902-->
+<!--Unknown TalkSentence: 200072903-->
+<!--Unknown TalkSentence: 200072904-->
+<!--Unknown TalkSentence: 200072905-->
+<!--Unknown TalkSentence: 200072906-->
+<!--Unknown TalkSentence: 200072907-->
+<!--Unknown TalkSentence: 200072908-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Погрузитесь глубже в Виртуальную вселенную===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+----
+<!--Unknown TalkSentence: 200072622-->
+:<!--2-second delay-->
+----
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "Activing",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+:<!--2-second delay-->
+----
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200072623-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Punklorde Mentality
+|zhs  = 朋克洛德精神
+|zht  = 龐克洛德精神
+|ja   = パンクロード精神
+|ko   = 펑크 로드 스피릿
+|es   = Mentalidad de Punklorde
+|fr   = Mentalité punklordienne
+|ru   = Дух Панклорда
+|th   = Punklorde Mentality
+|vi   = Tinh Thần Punklorde
+|de   = Mental Punklorde
+|id   = Punklorde Mentality
+|pt   = Mentalidade de Punklorde
+}}
+
+==История изменений==
+{{История изменений|2.7}}

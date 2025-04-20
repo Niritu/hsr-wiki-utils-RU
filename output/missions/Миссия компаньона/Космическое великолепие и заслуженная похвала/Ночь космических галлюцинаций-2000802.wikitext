@@ -1,0 +1,978 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000802
+|Название        = 
+|Изображение     = Миссия Освоения Ночь космических галлюцинаций.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Космическое великолепие и заслуженная похвала
+|Условия         = 
+|Персонажи       = Аргенти; Веллит; Вельт; Дань Хэн; Март 7; Первопроходец; Пом-Пом; Химеко
+|СтартЛокация    = Общий вагон
+|Мир             = Звёздный экспресс
+|Локации         = Общий вагон
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*8; Key of Knowledge*6; "Cosmic Sacrifice for Love"*1 { text = Cosmic Sacrifice for Love }; "A Gentleman's Fantasy"*1 { text = A Gentleman's Fantasy }; Кредиты*70 000
+}}
+'''Ночь космических галлюцинаций''' — [[Миссия компаньона]] в главе [[Космическое великолепие и заслуженная похвала]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Узнайте, кто такие ваши загадочные визитёры
+# Успокойте «оруженосца» Рыцаря Красоты
+# Поговорите с Пом-Пом
+# Помогите Март 7
+# Вернитесь в общий вагон и осмотритесь
+# Поговорите с Химеко о подсказках
+# Сделайте фотографии и найдите подсказки
+# Найдите способ искать быстрее
+# Помогите Аргенти в иллюзии
+# Вернитесь в общий вагон
+# Обсудите стратегию с Вельтом
+# Поговорите с Химеко и Дань Хэном
+# Подбодрите всех
+# Поговорите с Аргенти без посторонних
+# Расскажите Вельту
+# Помогите Веллиту остановить Аргенти
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 200083301-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200083303-->
+<!--Unknown TalkSentence: 200083304-->
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::И вот...
+::Что произошло?!
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01_Varient1.enviroProfile.asset"
+	}
+}</pre>
+----
+<!--Unknown TalkSentence: 200080101-->
+:<!--0.3-second delay-->
+:<!--0.3-second delay-->
+----
+<!--Unknown TalkSentence: 200080102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 200080104-->
+<!--Unknown TalkSentence: 200080109-->
+----
+:<!--0.5-second delay-->
+<!--Unknown TalkSentence: 200083401-->
+<!--Unknown TalkSentence: 200083402-->
+<!--Unknown TalkSentence: 200083403-->
+<!--Unknown TalkSentence: 200083404-->
+----
+{{Диалог Конец}}
+
+===Узнайте, кто такие ваши загадочные визитёры===
+{{Описание миссии|локация=Общий вагон|Космический корабль... умудрился протаранить Звёздный экспресс?! И к вагону идут два загадочных гостя!<br />Попробуйте узнать, что это за люди...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 3
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Ещё одна аномалия в сияющей вселенной...
+::расцветающая во всплеске красок.
+::Твоя красота непревзойдённа.
+::Дама?
+::Прошу, разреши мне сделать комплимент от всего сердца.
+::Ты подобна цветку на заснеженном зимнем лугу.
+::Ох!
+::Ещё одно прекрасное создание.
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E2",
+	"SubMissionID": 200080203
+}</pre>
+----
+<!--Unknown TalkSentence: 200080201-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200080203-->
+:<!--Unknown TalkSentence: 200080209-->
+:<!--Unknown TalkSentence: 200080210-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200080205-->
+:<!--Unknown TalkSentence: 200080209-->
+:<!--Unknown TalkSentence: 200080210-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200080207-->
+:<!--Unknown TalkSentence: 200080208-->
+:<!--Unknown TalkSentence: 200080209-->
+:<!--Unknown TalkSentence: 200080210-->
+<!--Unknown TalkSentence: 200080203-->
+<!--Unknown TalkSentence: 200080209-->
+<!--Unknown TalkSentence: 200080210-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200083601-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200083501-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200083801-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 200083701-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 200083901-->
+----
+<!--Unknown TalkSentence: 200080240-->
+<!--Unknown TalkSentence: 200080301-->
+----
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200080303-->
+<!--Unknown TalkSentence: 200080306-->
+<!--Unknown TalkSentence: 200080307-->
+<!--Unknown TalkSentence: 200080308-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200080310-->
+<!--Unknown TalkSentence: 200080311-->
+{{Диалог Конец}}
+
+===Успокойте «оруженосца» Рыцаря Красоты===
+{{Описание миссии|локация=Общий вагон|Космический корабль... умудрился протаранить Звёздный экспресс?!<br />Вы решаете подбодрить сотрудника КММ, который выглядит, как типичный третий лебедь в пятом ряду, и относится к случившемуся совсем не так, как Рыцарь Красоты... Кажется, они друг с другом не больно-то ладят! Так почему же появились на экспрессе вдвоём?}}
+{{Диалог Начало}}
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 200084901-->
+
+;(Поговорите с Веллит)
+----
+<!--Unknown TalkSentence: 200080401-->
+<!--Unknown TalkSentence: 200080402-->
+<!--Unknown TalkSentence: 200080403-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200080405-->
+<!--Unknown TalkSentence: 200080406-->
+<!--Unknown TalkSentence: 200080407-->
+<!--Unknown TalkSentence: 200080408-->
+<!--Unknown TalkSentence: 200080409-->
+<!--Unknown TalkSentence: 200080410-->
+<!--Unknown TalkSentence: 200080411-->
+<!--Unknown TalkSentence: 200080412-->
+<!--Unknown TalkSentence: 200080413-->
+;(Return to previous option selection)
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200084101-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 200084201-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200084001-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200084301-->
+{{Диалог Конец}}
+
+===Поговорите с Пом-Пом===
+{{Описание миссии|локация=Общий вагон|Космический корабль... умудрился протаранить Звёздный экспресс?! А в вагоне появились загадочные гости!<br />Кажется, с новым «бедствием» экспресса вам придётся разбираться вместе...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200080501-->
+<!--Unknown TalkSentence: 200080502-->
+<!--Unknown TalkSentence: 200080503-->
+<!--Unknown TalkSentence: 200080504-->
+<!--Unknown TalkSentence: 200080505-->
+<!--Unknown TalkSentence: 200080506-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200080508-->
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 200080511-->
+<!--Unknown TalkSentence: 200080512-->
+----
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 200084901-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 200084401-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200084601-->
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 200084701-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200084501-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200084801-->
+:{{tx}}
+----
+<!--Unknown TalkSentence: 200080701-->
+<!--Unknown TalkSentence: 200080702-->
+<!--Unknown TalkSentence: 200080703-->
+<!--Unknown TalkSentence: 200080704-->
+<!--Unknown TalkSentence: 200080705-->
+----
+{{Диалог Конец}}
+
+===Помогите Март 7===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:<!--2-second delay-->
+<!--Unknown TalkSentence: 200080801-->
+----
+<!--Unknown TalkSentence: 200080802-->
+<!--Unknown TalkSentence: 200080803-->
+;(Enter battle)
+:{{Enemy List|Незрелый жаложук*2; Молодой жаложук*2}}
+----
+<!--Unknown TalkSentence: 200080901-->
+<!--Unknown TalkSentence: 200080902-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+<!--Unknown TalkSentence: 200080903-->
+<!--Unknown TalkSentence: 200080904-->
+<!--Unknown TalkSentence: 200080905-->
+<!--Unknown TalkSentence: 200080906-->
+<!--Unknown TalkSentence: 200080907-->
+<!--Unknown TalkSentence: 200080908-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+<!--Unknown TalkSentence: 200080909-->
+<!--Unknown TalkSentence: 200080910-->
+<!--Unknown TalkSentence: 200080911-->
+<!--Unknown TalkSentence: 200080912-->
+<!--Unknown TalkSentence: 200080913-->
+<!--Unknown TalkSentence: 200080914-->
+<!--Unknown TalkSentence: 200080915-->
+<!--Unknown TalkSentence: 200080916-->
+<!--Unknown TalkSentence: 200080917-->
+----
+{{Диалог Конец}}
+
+===Вернитесь в общий вагон и осмотритесь===
+{{Описание миссии|локация=Спальный вагон|Космический корабль... умудрился протаранить Звёздный экспресс?!<br />Вечер перестаёт быть томным...}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите с Химеко о подсказках===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Сделайте фотографии и найдите подсказки===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200080918-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200081001-->
+<!--Unknown TalkSentence: 200081002-->
+<!--Unknown TalkSentence: 200081003-->
+<!--Unknown TalkSentence: 200081004-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsAim": true,
+	"AimTagExtraOffset": 0.35
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200081101-->
+<!--Unknown TalkSentence: 200081102-->
+<!--Unknown TalkSentence: 200081103-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200081201-->
+<!--Unknown TalkSentence: 200081202-->
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"IsAim": true,
+	"AimTagExtraOffset": 0.1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 200081301-->
+<!--Unknown TalkSentence: 200081302-->
+<!--Unknown TalkSentence: 200081303-->
+{{Диалог Конец}}
+
+===Найдите способ искать быстрее===
+{{Описание миссии|локация=Общий вагон|Космический корабль... умудрился протаранить Звёздный экспресс?!<br />У Пом-Пом нашёлся портативный набор для уборки в поезде. Кто знал, что он пригодится в такой момент...}}
+{{Диалог Начало}}
+
+:{{tx}}
+{{Диалог Конец}}
+
+===Помогите Аргенти в иллюзии===
+{{Описание миссии|локация=Спальный вагон|Космический корабль... умудрился протаранить Звёздный экспресс?!<br />И предугадать действия этого Рыцаря Красоты становится всё сложнее...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 3
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200081701-->
+<!--Unknown TalkSentence: 200081702-->
+<!--Unknown TalkSentence: 200081703-->
+;(Enter battle)
+:{{Enemy List|Незрелый жаложук*2; Молодой жаложук*2}}
+----
+:<!--2-second delay-->
+<!--Unknown TalkSentence: 200081801-->
+<!--Unknown TalkSentence: 200081802-->
+<!--Unknown TalkSentence: 200081803-->
+<!--Unknown TalkSentence: 200081804-->
+<!--Unknown TalkSentence: 200081805-->
+<!--Unknown TalkSentence: 200081806-->
+<!--Unknown TalkSentence: 200081807-->
+<!--Unknown TalkSentence: 200081808-->
+<!--Unknown TalkSentence: 200081809-->
+<!--Unknown TalkSentence: 200081810-->
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 200081811-->
+<!--Unknown TalkSentence: 200081812-->
+----
+----
+<!--Unknown TalkSentence: 200081901-->
+<!--Unknown TalkSentence: 200081902-->
+<!--Unknown TalkSentence: 200081903-->
+<!--Unknown TalkSentence: 200081904-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200081906-->
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 200081910-->
+:<!--Unknown TalkSentence: 200081911-->
+:<!--Unknown TalkSentence: 200081912-->
+:<!--Unknown TalkSentence: 200081913-->
+:<!--Unknown TalkSentence: 200081914-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_spaceship_insideworm_twist"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 7,
+	"ID": 300001
+}</pre>
+:<!--Unknown TalkSentence: 200081915-->
+:<!--Unknown TalkSentence: 200081916-->
+:<!--Unknown TalkSentence: 200081917-->
+::----
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200081908-->
+:<!--Unknown TalkSentence: 200081909-->
+::<!--0.3-second delay-->
+:<!--Unknown TalkSentence: 200081910-->
+:<!--Unknown TalkSentence: 200081911-->
+:<!--Unknown TalkSentence: 200081912-->
+:<!--Unknown TalkSentence: 200081913-->
+:<!--Unknown TalkSentence: 200081914-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_spaceship_insideworm_twist"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 7,
+	"ID": 300001
+}</pre>
+:<!--Unknown TalkSentence: 200081915-->
+:<!--Unknown TalkSentence: 200081916-->
+:<!--Unknown TalkSentence: 200081917-->
+::----
+<!--Unknown TalkSentence: 200081906-->
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 200081910-->
+<!--Unknown TalkSentence: 200081911-->
+<!--Unknown TalkSentence: 200081912-->
+<!--Unknown TalkSentence: 200081913-->
+<!--Unknown TalkSentence: 200081914-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_spaceship_insideworm_twist"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 7,
+	"ID": 300001
+}</pre>
+<!--Unknown TalkSentence: 200081915-->
+<!--Unknown TalkSentence: 200081916-->
+<!--Unknown TalkSentence: 200081917-->
+----
+{{Диалог Конец}}
+
+===Вернитесь в общий вагон===
+{{Описание миссии|локация=Спальный вагон|Гигантский жаложук что... как-то умудрился проглотить экспресс?!}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Обсудите стратегию с Вельтом===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200081918-->
+<!--Unknown TalkSentence: 200081919-->
+<!--Unknown TalkSentence: 200081920-->
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 21,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 200085801
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 10,
+	"UniqueID": 2371
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Химеко и Дань Хэном===
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200085601-->
+
+;(Поговорите с Веллит)
+<!--Unknown TalkSentence: 200081813-->
+<!--Unknown TalkSentence: 200081814-->
+<!--Unknown TalkSentence: 200081815-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200085801-->
+
+;(Поговорите с Химеко)
+----
+<!--Unknown TalkSentence: 200086101-->
+<!--Unknown TalkSentence: 200086102-->
+<!--Unknown TalkSentence: 200086103-->
+----
+{{Диалог Конец}}
+
+===Подбодрите всех===
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 200086001-->
+<!--Unknown TalkSentence: 200086002-->
+<!--Unknown TalkSentence: 200086003-->
+<!--Unknown TalkSentence: 200086004-->
+<!--Unknown TalkSentence: 200086005-->
+<!--Unknown TalkSentence: 200086006-->
+<!--Unknown TalkSentence: 200086007-->
+<!--Unknown TalkSentence: 200086008-->
+<!--Unknown TalkSentence: 200086009-->
+<!--Unknown TalkSentence: 200086010-->
+<!--Unknown TalkSentence: 200086011-->
+<!--Unknown TalkSentence: 200086012-->
+<!--Unknown TalkSentence: 200086013-->
+<!--Unknown TalkSentence: 200086014-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200086016-->
+----
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200085501-->
+{{Диалог Конец}}
+
+===Поговорите с Аргенти без посторонних===
+{{Описание миссии|локация=Общий вагон|Алая ночь галлюцинаций всё никак не закончится.<br />Аргенти приглашает вас «без лишних ушей». Нормальным людям вообще не постичь его действия...}}
+{{Диалог Начало}}
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 200085701-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200085601-->
+
+;(Поговорите с Веллит)
+<!--Unknown TalkSentence: 200081813-->
+<!--Unknown TalkSentence: 200081814-->
+<!--Unknown TalkSentence: 200081815-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200085801-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200085501-->
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 200082101-->
+<!--Unknown TalkSentence: 200082102-->
+<!--Unknown TalkSentence: 200082103-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200082106-->
+:<!--Unknown TalkSentence: 200082107-->
+:<!--Unknown TalkSentence: 200082108-->
+:<!--Unknown TalkSentence: 200082109-->
+:<!--Unknown TalkSentence: 200082110-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200082106-->
+:<!--Unknown TalkSentence: 200082107-->
+:<!--Unknown TalkSentence: 200082108-->
+:<!--Unknown TalkSentence: 200082109-->
+:<!--Unknown TalkSentence: 200082110-->
+:;(Return to previous option selection)
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+<!--Unknown TalkSentence: 200082801-->
+<!--Unknown TalkSentence: 200082802-->
+<!--Unknown TalkSentence: 200082803-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Расскажите Вельту===
+{{Описание миссии|локация=Общий вагон|Алая ночь галлюцинаций всё никак не закончится.<br />Хотя она превратилась в самую величественную награду за заслуги, это всё равно лишь гимн вселенной, смолкший после первых нот.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 200082814-->
+<!--Unknown TalkSentence: 200082815-->
+
+;(Поговорите с Вельт Янг)
+----
+<!--Unknown TalkSentence: 200082901-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200082903-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 23,
+	"GroupNpcID": 400003,
+	"DestroyList": []
+}</pre>
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200086231-->
+
+;(Поговорите с Пом-Пом)
+<!--Unknown TalkSentence: 200086501-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200086301-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200086221-->
+
+;(Поговорите с Аргенти)
+<!--Unknown TalkSentence: 200086401-->
+{{Диалог Конец}}
+
+===Помогите Веллиту остановить Аргенти===
+{{Описание миссии|локация=Общий вагон|Алая ночь галлюцинаций всё никак не закончится.<br />Похоже, даже у третьестепенных персонажей есть свои планы и амбиции. У Веллита, считающего себя героем второго плана, появились собственные соображения...}}
+{{Диалог Начало}}
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 200086241-->
+
+;(Поговорите с Март 7)
+<!--Unknown TalkSentence: 200086231-->
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200086301-->
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200086221-->
+
+;(Поговорите с Аргенти)
+----
+<!--Unknown TalkSentence: 200083001-->
+<!--Unknown TalkSentence: 200083002-->
+<!--Unknown TalkSentence: 200083003-->
+<!--Unknown TalkSentence: 200083004-->
+<!--Unknown TalkSentence: 200083005-->
+<!--Unknown TalkSentence: 200083006-->
+<!--Unknown TalkSentence: 200083007-->
+<!--Unknown TalkSentence: 200083008-->
+<!--Unknown TalkSentence: 200083009-->
+<!--Unknown TalkSentence: 200083010-->
+<!--Unknown TalkSentence: 200083011-->
+<!--Unknown TalkSentence: 200083012-->
+----
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Ура! Получилось!
+::Так значит экспресс создал...
+::взрыв во вселенной?!
+::Нет, это лишь иллюзия, созданная Жаложуком.
+::Он столько тут мельтешил, что мы надышались пыльцы с его крыльев.
+::А? Какое огромное насекомое! Наверняка тоже иллюзия!
+::К сожалению, нет.
+;(Cutscene ends)
+----
+----
+<!--Unknown TalkSentence: 200086201-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+<!--Unknown TalkSentence: 200086202-->
+<!--Unknown TalkSentence: 200086203-->
+<!--Unknown TalkSentence: 200086204-->
+<!--Unknown TalkSentence: 200086205-->
+<!--Unknown TalkSentence: 200086206-->
+<!--Unknown TalkSentence: 200086207-->
+<!--Unknown TalkSentence: 200086208-->
+----
+<!--Unknown TalkSentence: 200086601-->
+<!--Unknown TalkSentence: 200086602-->
+<!--Unknown TalkSentence: 200086603-->
+<!--Unknown TalkSentence: 200086604-->
+<!--Unknown TalkSentence: 200086605-->
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 200086601-->
+<!--Unknown TalkSentence: 200086602-->
+<!--Unknown TalkSentence: 200086603-->
+<!--Unknown TalkSentence: 200086604-->
+<!--Unknown TalkSentence: 200083201-->
+:<!--0.4-second delay-->
+<!--Unknown TalkSentence: 200083202-->
+<!--Unknown TalkSentence: 200083203-->
+<!--Unknown TalkSentence: 200083204-->
+<!--Unknown TalkSentence: 200083205-->
+<!--Unknown TalkSentence: 200083206-->
+<!--Unknown TalkSentence: 200083207-->
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 200083208-->
+<!--Unknown TalkSentence: 200083209-->
+<!--Unknown TalkSentence: 200083210-->
+<!--Unknown TalkSentence: 200083211-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200083213-->
+<!--Unknown TalkSentence: 200083220-->
+<!--Unknown TalkSentence: 200083221-->
+<!--Unknown TalkSentence: 200083222-->
+<!--Unknown TalkSentence: 200083223-->
+<!--Unknown TalkSentence: 200083224-->
+<!--Unknown TalkSentence: 200083225-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Night of Universal Hallucinations
+|zhs  = 宇宙幻觉之夜
+|zht  = 宇宙幻覺之夜
+|ja   = 宇宙幻覚の夜
+|ko   = 우주 환각의 밤
+|es   = Noche de alucinaciones universales
+|fr   = Nuit des hallucinations cosmiques
+|ru   = Ночь космических галлюцинаций
+|th   = ค่ำคืนจักรวาลที่ลวงตา
+|vi   = Đêm Vũ Trụ Ảo Giác
+|de   = Nacht der kosmischen Illusionen
+|id   = Malam Halusinasi Alam Semesta
+|pt   = Noite das Alucinações Universais
+}}
+
+==История изменений==
+{{История изменений|2.7}}

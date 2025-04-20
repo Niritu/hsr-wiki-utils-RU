@@ -1,0 +1,405 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020504
+|Название        = 
+|Изображение     = Миссия Освоения Вспомнить всё.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = Завершена [[Миссия компаньона]] ''[[Вспомнить всё]]''
+|Персонажи       = (Первопроходец) из воспоминаний; Арлан из воспоминаний; Аста из воспоминаний; Герта из воспоминаний; Дань Хэн из воспоминаний; Март 7; Первопроходец; Фу Сюань
+|СтартЛокация    = Космическая станция «Герта» из воспоминаний
+|Мир             = Лофу Сяньчжоу
+|Локации         = Космическая станция «Герта» из воспоминаний
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Oath of Steel*6; Кредиты*90 000
+}}
+'''Вспомнить всё''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Идите за Дань Хэном и исследуйте свою память
+# Найдите «искажённую» часть воспоминания
+# Найдите «инородный объект» в воспоминании
+
+==Прохождение==
+{{Дополнить}}
+
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 202181271-->
+<!--Unknown TalkSentence: 202181272-->
+<!--Unknown TalkSentence: 202181273-->
+<!--Unknown TalkSentence: 202181274-->
+<!--Unknown TalkSentence: 202181275-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43201_F43201003_G7",
+	"AnchorName": "Anchor4",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Идите за Дань Хэном и исследуйте свою память===
+{{Описание миссии|локация=Космическая станция «Герта» из воспоминаний|Неудивительно, что Дань Хэн появился в этом воспоминании, но Март 7 поражена тем, что он ведёт себя так, словно кричит: «Нет времени объяснять. Скорее садись на экспресс!»<br />Это не так уж плохо. Иметь проводника лучше, чем бесцельно рыться в собственных воспоминаниях в одиночестве.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202180538-->
+<!--Unknown TalkSentence: 202180539-->
+<!--Unknown TalkSentence: 202180540-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E6",
+	"SubMissionID": 202050402
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 7,
+	"GroupNpcID": 400001,
+	"DestroyList": []
+}</pre>
+<!--Unknown TalkSentence: 202181281-->
+<!--Unknown TalkSentence: 202181282-->
+<!--Unknown TalkSentence: 202181283-->
+<!--Unknown TalkSentence: 202181284-->
+<!--Unknown TalkSentence: 202181285-->
+<!--Unknown TalkSentence: 202181286-->
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 202181301-->
+<!--Unknown TalkSentence: 202181302-->
+<!--Unknown TalkSentence: 202181303-->
+<!--Unknown TalkSentence: 202181304-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Арлан)
+<!--Unknown TalkSentence: 202181321-->
+<!--Unknown TalkSentence: 202181322-->
+<!--Unknown TalkSentence: 202181323-->
+<!--Unknown TalkSentence: 202181324-->
+<!--Unknown TalkSentence: 202181325-->
+<!--Unknown TalkSentence: 202181326-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Герта)
+<!--Unknown TalkSentence: 202181341-->
+<!--Unknown TalkSentence: 202181342-->
+<!--Unknown TalkSentence: 202181343-->
+<!--Unknown TalkSentence: 202181344-->
+<!--Unknown TalkSentence: 202181345-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 202180574
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+{{Диалог Конец}}
+
+===Найдите «искажённую» часть воспоминания===
+{{Описание миссии|локация=Космическая станция «Герта» из воспоминаний|Фу Сюань оставила предупреждение, а затем полностью прервала связь с Март 7. Март немного напугана, но этот страх заставляет её чувствовать себя нелепо - почему здесь так зловеще и одиноко, хотя это её собственные воспоминания?<br />Она не может не вспомнить кошмар, который приснился ей несколько ночей назад. Она забыла содержание сна, как только проснулась, но беспомощное чувство страха продолжалось более часа.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 9,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180575
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050405
+}</pre>
+
+;(Поговорите с (Первопроходец))
+<!--Unknown TalkSentence: 202181361-->
+<!--Unknown TalkSentence: 202181362-->
+<!--Unknown TalkSentence: 202181363-->
+<!--Unknown TalkSentence: 202181364-->
+<!--Unknown TalkSentence: 202181365-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202181367-->
+:<!--Unknown TalkSentence: 202181368-->
+:<!--Unknown TalkSentence: 202181369-->
+:<!--Unknown TalkSentence: 202181370-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack",
+	"ExecuteOnSkip": true
+}</pre>
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:{{Диалог|Выход}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180572
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 202180573
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+{{Диалог Конец}}
+
+===Найдите «инородный объект» в воспоминании===
+{{Описание миссии|локация=Космическая станция «Герта» из воспоминаний|Преодолев различные препятствия, Март 7 наконец приближается к отправной точке её воспоминаний. Однако чем ближе она подходит, тем большую тревогу чувствует. Откуда берётся это «препятствие»?<br />Предупреждение Фу Сюань эхом отдаётся в её голове, вызывая желание остановиться и вернуться тем же путём... «Но Первопроходцам предначертано лишь прокладывать путь вперёд, даже когда они оглядываются назад». Март 7 вполне удовлетворена этой неудачной шуткой и решает рассказать её Дань Хэну, когда вернётся.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+<!--Unknown TalkSentence: 202180541-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<!--0.7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,769 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000211
+|Название        = 
+|Изображение     = Миссия Освоения Неожиданный поворот.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Рассвет после тьмы
+|Условия         = 
+* Завершена [[Миссия приключения]] ''[[Дорога возрождения]]''
+* Завершена [[Миссия Освоения]] ''[[Долгое ожидание лезвия клинка]]''
+|Персонажи       = Арлан; Аста; Взбудораженный исследователь; Взбудораженный сотрудник Отдела безопасности; Воодушевлённый сотрудник Отдела безопасности; Дань Хэн; Задумчивый исследователь после долгого времени размышлений; Исследователи; Капоте; Март 7; Март 7 и Аста; Небдительный исследователь; Непреклонный исследователь; Пеппи; Первопроходец; Разгневанный исследователь; Разозлённый исследователь; Растерянный исследователь; Расчувствовавшийся исследователь; С виду настороженный исследователь; Сотрудник Отдела безопасности; Улыбчивый исследователь
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*350; Звёздный нефрит*60; Журнал приключений*6; Hertareum*100; "fReeStyLE"*1 { text = fReeStyLE }; Кредиты*20 000
+}}
+'''Неожиданный поворот''' — [[Миссия компаньона]] в главе [[Рассвет после тьмы]].
+
+==Описание==
+{{Описание|Арлан исчезает, и вам с Астой с трудом удаётся отыскать его. Оказывается, он втайне тренируется справляться с давлением, которое на него оказывает начальница...<br />Это удивительно, учитывая, как сдержано обычно ведёт себя Арлан. Всё встаёт на свои места, когда вы узнаёте, что под начальницей подразумевалась сама Герта.}}
+
+==Этапы==
+# Узнайте подробности у Асты
+# Следуйте за Пеппи
+# Вытяните информацию из профессора Капоте
+# Поговорите с поклонниками Капоте
+# Передайте Асте всё, что узнали
+# Продолжайте идти за Пеппи
+# Узнайте о практике Арлана от Дань Хэна
+# Передайте Асте всё, что узнали
+# Продолжайте идти за Пеппи
+# Выследите подозрительные кристаллы и найдите Арлана
+# Одолейте мутантов
+# Спросите Арлана о практике
+# Продолжайте расспрашивать Арлана, чтобы докопаться до сути практик
+# Помогите Дань Хэну одолеть противников
+# Спросите о подробностях Март 7, которая сидит рядом с перроном
+# Выследите подозрительные кристаллы и найдите Арлана
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Узнайте подробности у Асты===
+{{Описание миссии|локация=Главная контрольная зона|Кажется, Аста столкнулась с чем-то по-настоящему серьёзным.<br />Она ждёт вас на старом месте. Идите туда и узнайте, что случилось.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "PhoneNoticePage"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "MobilePhonePage"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200031301-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031303-->
+<!--Unknown TalkSentence: 200031304-->
+;(Return to previous option selection)
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200031301-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031303-->
+<!--Unknown TalkSentence: 200031304-->
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 200031301-->
+{{Диалог Конец}}
+
+===Следуйте за Пеппи===
+{{Описание миссии|локация=Главная контрольная зона|Нюх-нюх-нюх.<br />Следуйте за Пеппи!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200031401-->
+<!--Unknown TalkSentence: 200031402-->
+<!--Unknown TalkSentence: 200031403-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031405-->
+<!--Unknown TalkSentence: 200031406-->
+<!--Unknown TalkSentence: 200031410-->
+----
+{{Диалог Конец}}
+
+===Вытяните информацию из профессора Капоте===
+{{Описание миссии|локация=Главная контрольная зона|Кажется, профессор Капоте что-то знает о практиках.<br />Осторожно выудите из него эти сведения.}}
+{{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 18245525267712877410
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200021105_Prop_50_300002_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 18245525267712877410
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200021107_Prop_50_300003_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 18245525267712877410
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200021109_Prop_50_300004_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 18245525267712877410
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200021111_Prop_50_300005_BtnClick"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с поклонниками Капоте===
+{{Описание миссии|локация=Главная контрольная зона|У одного из поклонников Капоте есть расшифровка записи, в которой упоминаются важные зацепки.<br />Поскольку из самого профессора ничего полезного не вытянешь, попробуйте зайти с другой стороны.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Открытка с ответом мастера Капоте его фанатам|20|x=1|text=Открытка с ответом мастера Капоте его фанатам}})
+
+;(Поговорите с Исследователь)
+<!--Unknown TalkSentence: 200031561-->
+<!--Unknown TalkSentence: 200031562-->
+<!--Unknown TalkSentence: 200031563-->
+<!--Unknown TalkSentence: 200031564-->
+<!--Unknown TalkSentence: 200031565-->
+<!--Unknown TalkSentence: 200031566-->
+<!--Unknown TalkSentence: 200031567-->
+{{Диалог Конец}}
+
+===Передайте Асте всё, что узнали===
+{{Описание миссии|локация=Главная контрольная зона|Вы узнали довольно много всего от поклонников Капоте.<br />Передайте всю информацию Асте - возможно, у неё появятся какие-то идеи.}}
+{{Диалог Начало}}
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200031572-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031574-->
+{{Диалог Конец}}
+
+===Продолжайте идти за Пеппи===
+{{Описание миссии|локация=Базовая зона|Нюх-нюх-нюх.<br />Продолжайте идти за Пеппи!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200031606-->
+<!--Unknown TalkSentence: 200031607-->
+;(Enter battle)
+:{{Enemy List|Отродье льда*1; Мнимый ткач*2; Отродье пламени*1}}
+{{Диалог Конец}}
+
+===Узнайте о практике Арлана от Дань Хэна===
+{{Описание миссии|локация=Базовая зона|Последние остатки Легиона были зачищены, и теперь можно спокойно расспросить об Арлане.<br />Спросите Дань Хэна о том, где находится Арлан, и о его практике.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Пропуск Арлана|20|x=1|text=Пропуск Арлана}})
+
+;(Поговорите с Дань Хэн)
+<!--Unknown TalkSentence: 200031611-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Передайте Асте всё, что узнали===
+{{Описание миссии|локация=Базовая зона|Вы узнали довольно много всего от Дань Хэна и сотрудников Отдела безопасности.<br />Передайте всю информацию Асте - возможно, у неё появятся какие-то идеи.}}
+{{Диалог Начало}}
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200031671-->
+<!--Unknown TalkSentence: 200031672-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Продолжайте идти за Пеппи===
+{{Описание миссии|локация=Зона поддержки|Нюх-нюх-нюх.<br />Оказывается, Пеппи может найти Март 7 просто по её фотографии. Кажется, Пеппи узнаёт людей не только по запаху...}}
+{{Диалог Начало}}
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 200031706-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031708-->
+<!--Unknown TalkSentence: 200031709-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031714-->
+<!--Unknown TalkSentence: 200031715-->
+<!--Unknown TalkSentence: 200031716-->
+;(Получено {{Item|Фото спины Арлана|20|x=1|text=Фото спины Арлана}})
+{{Диалог Конец}}
+
+===Выследите подозрительные кристаллы и найдите Арлана===
+{{Описание миссии|локация=Зона поддержки|Судя по тому, что сказала Март 7, Арлан сейчас в одиночку занимается какими-то подозрительными кристаллами.<br />Изучите их подробней и поищите Арлана.}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200031741-->
+<!--Unknown TalkSentence: 200031742-->
+{{Диалог Конец}}
+
+===Одолейте мутантов===
+{{Описание миссии|локация=Зона поддержки|Это оказался совершенно новый вид монстров, который раньше не встречал даже многоопытный Арлан из Отдела безопасности. К ним надо подходить со всей осторожностью!<br />А что касается практик... Сперва займитесь зачисткой этих монстров!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200031787-->
+<!--Unknown TalkSentence: 200031788-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+===Спросите Арлана о практике===
+{{Описание миссии|локация=Зона поддержки|С монстрами наконец-то покончено, и пора расспросить Арлана о цели его загадочной практики.<br />Вы собрали немало подсказок, но всё равно вам кажется, что до правды ещё копать и копать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Арлан)
+:{{tx}}
+{{Диалог Конец}}
+
+===Продолжайте расспрашивать Арлана, чтобы докопаться до сути практик===
+{{Описание миссии|локация=Зона поддержки|Похоже, Арлан не собирается выкладывать всё там, где слышат остальные.<br />Используйте уже собранные зацепки, чтобы помочь Асте доказать правильность её гипотезы.}}
+{{Диалог Начало}}
+
+;(Поговорите с Арлан)
+<!--Unknown TalkSentence: 200031764-->
+<!--Unknown TalkSentence: 200031765-->
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140132,
+		140133,
+		140134
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140132,
+			"TriggerCustomString": "TalkSentence_200031767"
+		},
+		{
+			"Item1": 140133,
+			"TriggerCustomString": "TalkSentence_200031776"
+		},
+		{
+			"Item1": 140134,
+			"TriggerCustomString": "TalkSentence_200031783"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_200031767)
+<!--Unknown TalkSentence: 200031767-->
+:<!--Unknown TalkSentence: 200031768-->
+:<!--Unknown TalkSentence: 200031769-->
+:<!--Unknown TalkSentence: 200031770-->
+:<!--Unknown TalkSentence: 200031771-->
+:<!--Unknown TalkSentence: 200031772-->
+:<!--Unknown TalkSentence: 200031773-->
+:<!--Unknown TalkSentence: 200031774-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140132,
+		140133,
+		140134
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140132,
+			"TriggerCustomString": "TalkSentence_200031767"
+		},
+		{
+			"Item1": 140133,
+			"TriggerCustomString": "TalkSentence_200031776"
+		},
+		{
+			"Item1": 140134,
+			"TriggerCustomString": "TalkSentence_200031783"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031776)
+<!--Unknown TalkSentence: 200031776-->
+:<!--Unknown TalkSentence: 200031777-->
+:<!--Unknown TalkSentence: 200031778-->
+:<!--Unknown TalkSentence: 200031779-->
+:<!--Unknown TalkSentence: 200031780-->
+:<!--Unknown TalkSentence: 200031781-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140132,
+		140133,
+		140134
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140132,
+			"TriggerCustomString": "TalkSentence_200031767"
+		},
+		{
+			"Item1": 140133,
+			"TriggerCustomString": "TalkSentence_200031776"
+		},
+		{
+			"Item1": 140134,
+			"TriggerCustomString": "TalkSentence_200031783"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031783)
+<!--Unknown TalkSentence: 200031783-->
+:<!--Unknown TalkSentence: 200031784-->
+:<!--Unknown TalkSentence: 200031785-->
+:<!--Unknown TalkSentence: 200031786-->
+:<!--Unknown TalkSentence: 200031801-->
+:<!--Unknown TalkSentence: 200031802-->
+:<!--Unknown TalkSentence: 200031803-->
+:<!--Unknown TalkSentence: 200031804-->
+:<!--Unknown TalkSentence: 200031805-->
+:<!--Unknown TalkSentence: 200031806-->
+:<!--Unknown TalkSentence: 200031807-->
+:<!--Unknown TalkSentence: 200031808-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140135,
+		140136,
+		140137
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140135,
+			"TriggerCustomString": "TalkSentence_200031821"
+		},
+		{
+			"Item1": 140136,
+			"TriggerCustomString": "TalkSentence_200031810"
+		},
+		{
+			"Item1": 140137,
+			"TriggerCustomString": "TalkSentence_200031816"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031810)
+<!--Unknown TalkSentence: 200031810-->
+:<!--Unknown TalkSentence: 200031811-->
+:<!--Unknown TalkSentence: 200031812-->
+:<!--Unknown TalkSentence: 200031813-->
+:<!--Unknown TalkSentence: 200031814-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140135,
+		140136,
+		140137
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140135,
+			"TriggerCustomString": "TalkSentence_200031821"
+		},
+		{
+			"Item1": 140136,
+			"TriggerCustomString": "TalkSentence_200031810"
+		},
+		{
+			"Item1": 140137,
+			"TriggerCustomString": "TalkSentence_200031816"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031816)
+<!--Unknown TalkSentence: 200031816-->
+:<!--Unknown TalkSentence: 200031817-->
+:<!--Unknown TalkSentence: 200031818-->
+:<!--Unknown TalkSentence: 200031819-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140135,
+		140136,
+		140137
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140135,
+			"TriggerCustomString": "TalkSentence_200031821"
+		},
+		{
+			"Item1": 140136,
+			"TriggerCustomString": "TalkSentence_200031810"
+		},
+		{
+			"Item1": 140137,
+			"TriggerCustomString": "TalkSentence_200031816"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031821)
+<!--Unknown TalkSentence: 200031821-->
+:<!--Unknown TalkSentence: 200031822-->
+:<!--Unknown TalkSentence: 200031823-->
+:<!--Unknown TalkSentence: 200031824-->
+:<!--Unknown TalkSentence: 200031825-->
+:<!--Unknown TalkSentence: 200031826-->
+:<!--Unknown TalkSentence: 200031827-->
+:<!--Unknown TalkSentence: 200031828-->
+:<!--Unknown TalkSentence: 200031829-->
+:<!--Unknown TalkSentence: 200031830-->
+:<!--Unknown TalkSentence: 200031841-->
+:<!--Unknown TalkSentence: 200031842-->
+:<!--Unknown TalkSentence: 200031843-->
+:<!--Unknown TalkSentence: 200031844-->
+:<!--Unknown TalkSentence: 200031845-->
+:<!--Unknown TalkSentence: 200031846-->
+:<!--Unknown TalkSentence: 200031847-->
+:<!--Unknown TalkSentence: 200031848-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200031850-->
+:<!--Unknown TalkSentence: 200031851-->
+:<!--Unknown TalkSentence: 200031852-->
+:<!--Unknown TalkSentence: 200031853-->
+:<!--Unknown TalkSentence: 200031854-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140138
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140138,
+			"TriggerCustomString": "TalkSentence_200031856"
+		}
+	],
+	"SlotNum": 1,
+	"InfoText": {
+		"Hash": 18096028862919064994
+	},
+	"SimpleTalk": {
+		"TalkSentenceID": 200031765
+	},
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_200031856)
+<!--Unknown TalkSentence: 200031856-->
+:<!--Unknown TalkSentence: 200031857-->
+:<!--Unknown TalkSentence: 200031858-->
+:<!--Unknown TalkSentence: 200031859-->
+:<!--Unknown TalkSentence: 200031860-->
+:<!--Unknown TalkSentence: 200031861-->
+:<!--Unknown TalkSentence: 200031862-->
+:<!--Unknown TalkSentence: 200031863-->
+:<!--Unknown TalkSentence: 200031864-->
+:<!--Unknown TalkSentence: 200031865-->
+:<!--Unknown TalkSentence: 200031866-->
+:<!--Unknown TalkSentence: 200031867-->
+:<!--Unknown TalkSentence: 200031868-->
+:<!--Unknown TalkSentence: 200031869-->
+:<!--Unknown TalkSentence: 200031870-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200031872-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Помогите Дань Хэну одолеть противников===
+{{Описание миссии|локация=Базовая зона|Дань Хэн вместе с другими сотрудниками Отдела безопасности зачищает остатки Легиона.<br />Предложите ему свою помощь!}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Спросите о подробностях Март 7, которая сидит рядом с перроном===
+{{Описание миссии|локация=Зона поддержки|Если верить Дань Хэну, Март должна быть вместе с Арланом.<br />Аста очень волнуется за Арлана. Идите туда и спросите, что происходит.}}
+{{Диалог Начало}}
+
+;(Поговорите с Март 7)
+----
+<!--Unknown TalkSentence: 200031706-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031708-->
+<!--Unknown TalkSentence: 200031709-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200031714-->
+<!--Unknown TalkSentence: 200031715-->
+<!--Unknown TalkSentence: 200031716-->
+{{Диалог Конец}}
+
+===Выследите подозрительные кристаллы и найдите Арлана===
+{{Описание миссии|локация=Зона поддержки|Судя по тому, что сказала Март 7, Арлан сейчас в одиночку занимается какими-то подозрительными кристаллами.<br />Изучите их подробней и поищите Арлана.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = An Unexpected Turn of Events
+|zhs  = 阴差阳错
+|zht  = 陰差陽錯
+|ja   = 偶然の重なり
+|ko   = 잘못된 우연
+|es   = Un giro inesperado
+|fr   = Une tournure inattendue
+|ru   = Неожиданный поворот
+|th   = จับพลัดจับผลู
+|vi   = Hiểu Lầm Ngoài Ý Muốn
+|de   = Eine überraschende Wendung
+|id   = Kesalahan Tak Terduga
+|pt   = Uma Reviravolta Inesperada
+}}
+
+==История изменений==
+{{История изменений|2.7}}

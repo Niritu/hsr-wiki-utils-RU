@@ -1,0 +1,246 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2000202
+|Название        = 
+|Изображение     = Миссия Освоения ТыМеняЗнаешь.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Рассвет после тьмы
+|Условия         = Завершена [[Миссия компаньона]] ''[[ТыМеняЗнаешь]]''
+|Персонажи       = Арлан; Аста; Первопроходец; Ричард; Химеко
+|СтартЛокация    = Главная контрольная зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Главная контрольная зона
+|Предыдущая      = 
+|Следующая       = Признаки Фрагментума
+|Награды         = Опыт Освоения*350; Звёздный нефрит*60; Журнал приключений*6; Hertareum*100; "Flashpoint"*1 { text = Flashpoint }; Кредиты*20 000
+}}
+'''ТыМеняЗнаешь''' — [[Миссия компаньона]] в главе [[Рассвет после тьмы]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Химеко и получите её согласие на фотографию
+# Сделайте фото Химеко и отправьте его Памеле
+# Найдите исследователя, который соответствует описанию Памелы
+# Поговорите с Ричардом и узнайте о слухах и ключе шифрования
+# Доложите Асте
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Химеко и получите её согласие на фотографию===
+{{Описание миссии|локация=Главная контрольная зона|Просьба Памелы звучит странно, поэтому вы решаете напрямую обратиться к «жертве». Удивительно, но Химеко, похоже, не возражает.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1011600
+}</pre>
+
+;(Поговорите с Химеко)
+<!--Unknown TalkSentence: 200020301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Сделайте фото Химеко и отправьте его Памеле===
+{{Описание миссии|локация=Главная контрольная зона|Химеко принимает позу для фотографии, вы делаете фото и немедленно отправляете его Памеле, чтобы получить информацию.}}
+{{Диалог Начало}}
+:<!--3-second delay-->
+:<!--6-second delay-->
+:<!--5-second delay-->
+:<!--3-second delay-->
+:<!--3-second delay-->
+<!--Unknown TalkSentence: 200020301-->
+<!--Unknown TalkSentence: 200020302-->
+<!--Unknown TalkSentence: 200020303-->
+<!--Unknown TalkSentence: 200020304-->
+<!--Unknown TalkSentence: 200020305-->
+<!--Unknown TalkSentence: 200020306-->
+<!--Unknown TalkSentence: 200020307-->
+<!--Unknown TalkSentence: 200020308-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200020311-->
+:<!--Unknown TalkSentence: 200020312-->
+:<!--Unknown TalkSentence: 200020313-->
+:<!--Unknown TalkSentence: 200020314-->
+:<!--Unknown TalkSentence: 200020315-->
+:<!--Unknown TalkSentence: 200020316-->
+:<!--Unknown TalkSentence: 200020317-->
+:<!--Unknown TalkSentence: 200020318-->
+:<!--Unknown TalkSentence: 200020319-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200020321-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200020312-->
+:<!--Unknown TalkSentence: 200020313-->
+:<!--Unknown TalkSentence: 200020314-->
+:<!--Unknown TalkSentence: 200020315-->
+:<!--Unknown TalkSentence: 200020316-->
+:<!--Unknown TalkSentence: 200020317-->
+:<!--Unknown TalkSentence: 200020318-->
+:<!--Unknown TalkSentence: 200020319-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 200020321-->
+::{{tx}}
+<!--Unknown TalkSentence: 200020312-->
+<!--Unknown TalkSentence: 200020313-->
+<!--Unknown TalkSentence: 200020314-->
+<!--Unknown TalkSentence: 200020315-->
+<!--Unknown TalkSentence: 200020316-->
+<!--Unknown TalkSentence: 200020317-->
+<!--Unknown TalkSentence: 200020318-->
+<!--Unknown TalkSentence: 200020319-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200020321-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1011000,
+	"ShowNotice": false
+}</pre>
+{{Диалог Конец}}
+
+===Найдите исследователя, который соответствует описанию Памелы===
+{{Описание миссии|локация=Базовая зона|Памела сказала, что распространитель слухов - «парень в очках в чёрной оправе и с косой чёлкой».<br />Найдите исследователя, который подходит под описание.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200020339-->
+;(Unused &mdash; 200020111_fail)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 7123181355810595772
+	},
+	"IsShowAim": true
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 200020111_success)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
+	"IsIdentifySuccess": true,
+	"IsShowToast": true,
+	"ToastText": {
+		"Hash": 845206858745524995
+	},
+	"IsShowAim": true
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Ричардом и узнайте о слухах и ключе шифрования===
+{{Описание миссии|локация=Базовая зона|Настоящее имя Ричарда Затычкина - распространителя слухов в анонимной группе - Ричард. Вы не смогли удержаться от смеха, когда узнали, что он использовал своё настоящее имя в анонимном чате.<br />Ричард рассказывает вам о своих выводах и настаивает на том, что собирается сообщить об Асте госпоже Герте.<br />Просматривая представленные им «доказательства», вы приходите к выводу, что это выдумки.}}
+{{Диалог Начало}}
+
+;(Поговорите с Исследователь)
+<!--Unknown TalkSentence: 200020339-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200020341-->
+<!--Unknown TalkSentence: 200020345-->
+<!--Unknown TalkSentence: 200020346-->
+<!--Unknown TalkSentence: 200020347-->
+{{Диалог Конец}}
+
+===Доложите Асте===
+{{Описание миссии|локация=Главная контрольная зона|Разобравшись в слухах о предполагаемой растрате Асты, вы решаете сообщить обо всем ей самой.<br />Вас удивило не столько богатство Асты, сколько правда, стоящая за анонимной чат-группой...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1011700,
+	"ShowNotice": false
+}</pre>
+
+;(Поговорите с Аста)
+<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 500012201
+}</pre>
+<!--Unknown TalkSentence: 500012202-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 200020401-->
+<!--Unknown TalkSentence: 200020402-->
+<!--Unknown TalkSentence: 200020403-->
+<!--Unknown TalkSentence: 200020404-->
+<!--Unknown TalkSentence: 200020405-->
+<!--Unknown TalkSentence: 200020406-->
+<!--Unknown TalkSentence: 200020407-->
+<!--Unknown TalkSentence: 200020408-->
+<!--Unknown TalkSentence: 200020409-->
+<!--Unknown TalkSentence: 200020410-->
+<!--Unknown TalkSentence: 200020411-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200020413-->
+<!--Unknown TalkSentence: 200020414-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Аста)
+<!--Unknown TalkSentence: 200020401-->
+<!--Unknown TalkSentence: 200020402-->
+<!--Unknown TalkSentence: 200020403-->
+<!--Unknown TalkSentence: 200020404-->
+<!--Unknown TalkSentence: 200020405-->
+<!--Unknown TalkSentence: 200020406-->
+<!--Unknown TalkSentence: 200020407-->
+<!--Unknown TalkSentence: 200020408-->
+<!--Unknown TalkSentence: 200020409-->
+<!--Unknown TalkSentence: 200020410-->
+<!--Unknown TalkSentence: 200020411-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 200020413-->
+<!--Unknown TalkSentence: 200020414-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = You Already Know Me
+|zhs  = 知名不具
+|zht  = 知名不具
+|ja   = 名乗るほどの者ではない
+|ko   = 무명인사
+|es   = Ya me conoces
+|fr   = Tu-me-connais-déjà
+|ru   = ТыМеняЗнаешь
+|th   = คนที่คุณก็รู้ว่าใคร
+|vi   = Có Biết Tôi Không
+|de   = Du_kennst_mich_schon
+|id   = Kamu Tahu Aku
+|pt   = Você Já me Conhece
+}}
+
+==История изменений==
+{{История изменений|2.7}}

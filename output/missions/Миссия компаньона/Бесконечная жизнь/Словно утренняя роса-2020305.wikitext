@@ -1,0 +1,688 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020305
+|Название        = 
+|Изображение     = Миссия Освоения Словно утренняя роса.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = Завершена [[Миссия Освоения]] ''[[Ветвистые рога и спутанные корни]]''
+|Персонажи       = Байлу; Банься; Баттута; Взволнованный целитель Комиссии по алхимии; Гуанда; Дахао; Девушка в костюме медсестры; Первопроходец; Сунъянь; Цзинъянь
+|СтартЛокация    = Возвышающее святилище
+|Мир             = Лофу Сяньчжоу
+|Локации         = Возвышающее святилище
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*5; Очищенный эфир*5; "Into the Breach"*1 { text = Into the Breach }; Кредиты*110 000
+}}
+'''Словно утренняя роса''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|История Байлу и Банься подошла к концу, и сердцеед получил по заслугам.<br />После такого необычного медицинского приёма Байлу больше никогда не будет прежней.}}
+
+==Этапы==
+# Отправляйтесь в канцелярию Комиссии по балансу и поговорите с Дахао
+# Отправляйтесь в Возвышающее святилище и найдите Байлу
+# Помогите Байлу и медсестре спрятаться от Комиссии по алхимии
+# Поговорите с целителем Комиссии по алхимии и выясните его цели
+# Одолейте Ученика Санктус Медикус
+# Расскажите Байлу и медсестре о преследователе
+# Узнайте личность целителя Комиссии по алхимии и получите доказательства его причастности
+# Спросите мнение Байлу (необязательно)
+# Спросите Банься, почему она что-то скрывает
+# Найдите Гуанду и отправьтесь на его звёздном ялике
+
+==Прохождение==
+{{Дополнить}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь в канцелярию Комиссии по балансу и поговорите с Дахао===
+{{Описание миссии|локация=Канцелярия Комиссии по балансу|Дахао видел, как вы спасали Целительницу-дракона в Возвышающем святилище, и попросил вас о помощи. Вас же не заставят присматривать за маленькими детьми, правда?}}
+{{Диалог Начало}}
+
+;(Поговорите с Дахао)
+;(If {{cx}}<!--during performance 502020101-->)
+:<!--Unknown TalkSentence: 502020137-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 502020101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502020136
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Цзинъянь)
+;(If {{cx}}<!--during performance 502032101-->)
+:<!--Unknown TalkSentence: 502032101-->
+:<!--Unknown TalkSentence: 502032102-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032104-->
+::<!--Unknown TalkSentence: 502032105-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032112-->
+::<!--Unknown TalkSentence: 502032113-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502032121-->
+;(If {{cx}}<!--not during performance 502032101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502032164
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Сунъянь)
+;(If {{cx}}<!--during performance 502033101-->)
+:<!--Unknown TalkSentence: 502033101-->
+:<!--Unknown TalkSentence: 502033102-->
+:<!--Unknown TalkSentence: 502033103-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502033105-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502033111-->
+::<!--Unknown TalkSentence: 502033112-->
+:<!--Unknown TalkSentence: 502033105-->
+;(If {{cx}}<!--not during performance 502033101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502033151
+}</pre>
+:<!--Unknown TalkSentence: 502033152-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Баттута)
+;(If {{cx}}<!--during performance 502034101-->)
+:<!--Unknown TalkSentence: 502034101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502034103-->
+;(If {{cx}}<!--not during performance 502034101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502034149
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Дахао)
+<!--Unknown TalkSentence: 202050101-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050103-->
+:<!--Unknown TalkSentence: 202050104-->
+:<!--Unknown TalkSentence: 202050109-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050106-->
+:<!--Unknown TalkSentence: 202050109-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050108-->
+:<!--Unknown TalkSentence: 202050109-->
+<!--Unknown TalkSentence: 202050104-->
+<!--Unknown TalkSentence: 202050109-->
+{{Диалог Конец}}
+
+===Отправляйтесь в Возвышающее святилище и найдите Байлу===
+{{Описание миссии|локация=Возвышающее святилище|Целительница ускользнула из-под наблюдения. Учитывая нехватку рабочей силы в Комиссии по балансу и ненадёжность Комиссии по алхимии, Дахао считает, что вы лучше всех сможете присмотреть за Байлу.<br />Вам буквально все на Лофу подобное говорят, от этого трудно отмахнуться.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202050201-->
+<!--Unknown TalkSentence: 202050202-->
+<!--Unknown TalkSentence: 202050203-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050205-->
+:<!--Unknown TalkSentence: 202050206-->
+:<!--Unknown TalkSentence: 202050207-->
+:<!--Unknown TalkSentence: 202050208-->
+:<!--Unknown TalkSentence: 202050209-->
+:<!--Unknown TalkSentence: 202050210-->
+:<!--Unknown TalkSentence: 202050211-->
+:<!--Unknown TalkSentence: 202050212-->
+:<!--Unknown TalkSentence: 202050213-->
+:<!--Unknown TalkSentence: 202050214-->
+:<!--Unknown TalkSentence: 202050215-->
+:<!--Unknown TalkSentence: 202050216-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050208-->
+:<!--Unknown TalkSentence: 202050209-->
+:<!--Unknown TalkSentence: 202050210-->
+:<!--Unknown TalkSentence: 202050211-->
+:<!--Unknown TalkSentence: 202050212-->
+:<!--Unknown TalkSentence: 202050213-->
+:<!--Unknown TalkSentence: 202050214-->
+:<!--Unknown TalkSentence: 202050215-->
+:<!--Unknown TalkSentence: 202050216-->
+<!--Unknown TalkSentence: 202050208-->
+<!--Unknown TalkSentence: 202050209-->
+<!--Unknown TalkSentence: 202050210-->
+<!--Unknown TalkSentence: 202050211-->
+<!--Unknown TalkSentence: 202050212-->
+<!--Unknown TalkSentence: 202050213-->
+<!--Unknown TalkSentence: 202050214-->
+<!--Unknown TalkSentence: 202050215-->
+<!--Unknown TalkSentence: 202050216-->
+{{Диалог Конец}}
+
+===Помогите Байлу и медсестре спрятаться от Комиссии по алхимии===
+{{Описание миссии|локация=Возвышающее святилище|Дахао упомянул, что Комиссии по алхимии верить нельзя, Байлу и медсестра активно избегают встречи с ними. Помогите им спрятаться.<br />Сначала обеспечьте их безопасность, а затем выясните цель преследователя.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 92
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202050308-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202050307-->
+----
+<!--Unknown TalkSentence: 202050301-->
+<!--Unknown TalkSentence: 202050302-->
+<!--Unknown TalkSentence: 202050303-->
+<!--Unknown TalkSentence: 202050304-->
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 202050306-->
+{{Диалог Конец}}
+
+===Поговорите с целителем Комиссии по алхимии и выясните его цели===
+{{Описание миссии|локация=Возвышающее святилище|Дахао упомянул, что Комиссии по алхимии верить нельзя, Байлу и медсестра активно избегают встречи с ними. Вы должны выяснить цель преследователя.<br />Вы должны обеспечить безопасность Байлу, раз уж взяли ответственность.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202050401-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202050403-->
+<!--Unknown TalkSentence: 202050408-->
+<!--Unknown TalkSentence: 202050409-->
+
+;(Получено {{Item|Бумага для писем Учеников Санктус Медикус|20|x=1|text=Бумага для писем Учеников Санктус Медикус}})
+{{Диалог Конец}}
+
+===Одолейте Ученика Санктус Медикус===
+{{Описание миссии|локация=Возвышающее святилище|Удивительно, но преследователь очень внимателен. Как только он понимает, что вы его проверяете, тут же переходит в атаку.<br />Поскольку он начал первым, не сдерживайтесь!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack"
+}</pre>
+;(Enter battle)
+:{{Enemy List|Поражённый Марой солдат*2; Ученик Санктус Медикус: Внутренний алхимик*2}}
+{{Диалог Конец}}
+
+===Расскажите Байлу и медсестре о преследователе===
+{{Описание миссии|локация=Возвышающее святилище|Преследователь, похоже, связан с Учениками Санктус Медикус. Расскажите Байлу и медсестре об этом, а также о проблемах, с которыми они могут столкнуться.<br />Они с нетерпением ждут ваших новостей.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Байлу)
+<!--Unknown TalkSentence: 202050702-->
+<!--Unknown TalkSentence: 202050703-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Банься)
+----
+<!--Unknown TalkSentence: 202050801-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202050803-->
+<!--Unknown TalkSentence: 202050804-->
+;(Unused &mdash; TalkSentence_202050628)
+<!--Unknown TalkSentence: 202050628-->
+:<!--Unknown TalkSentence: 202050629-->
+:<!--Unknown TalkSentence: 202050639-->
+:<!--Unknown TalkSentence: 202050640-->
+:<!--Unknown TalkSentence: 202050641-->
+:<!--Unknown TalkSentence: 202050642-->
+:<!--Unknown TalkSentence: 202050643-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050651"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050645"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050654"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050648"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050643"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050631)
+<!--Unknown TalkSentence: 202050631-->
+:<!--Unknown TalkSentence: 202050632-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050634"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050628"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050637"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050631"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050626"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050634)
+<!--Unknown TalkSentence: 202050634-->
+:<!--Unknown TalkSentence: 202050635-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050634"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050628"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050637"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050631"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050626"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050637)
+<!--Unknown TalkSentence: 202050637-->
+:<!--Unknown TalkSentence: 202050638-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050634"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050628"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050637"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050631"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050626"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050645)
+<!--Unknown TalkSentence: 202050645-->
+:<!--Unknown TalkSentence: 202050646-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050651"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050645"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050654"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050648"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050643"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050648)
+<!--Unknown TalkSentence: 202050648-->
+:<!--Unknown TalkSentence: 202050649-->
+:<!--Unknown TalkSentence: 202050656-->
+:<!--Unknown TalkSentence: 202050657-->
+:<!--Unknown TalkSentence: 202050658-->
+:<!--Unknown TalkSentence: 202050659-->
+:<!--Unknown TalkSentence: 202050660-->
+:<!--Unknown TalkSentence: 202050661-->
+
+;(Unused &mdash; TalkSentence_202050651)
+<!--Unknown TalkSentence: 202050651-->
+:<!--Unknown TalkSentence: 202050652-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050651"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050645"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050654"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050648"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050643"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202050654)
+<!--Unknown TalkSentence: 202050654-->
+:<!--Unknown TalkSentence: 202050655-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140156,
+		140157,
+		140158,
+		140159
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140156,
+			"TriggerCustomString": "TalkSentence_202050651"
+		},
+		{
+			"Item1": 140157,
+			"TriggerCustomString": "TalkSentence_202050645"
+		},
+		{
+			"Item1": 140158,
+			"TriggerCustomString": "TalkSentence_202050654"
+		},
+		{
+			"Item1": 140159,
+			"TriggerCustomString": "TalkSentence_202050648"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202050643"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Mission_202030511_PropUITrigger)
+<!--Unknown TalkSentence: 202050601-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050603-->
+:<!--Unknown TalkSentence: 202050606-->
+::{{Чёрный экран|undefined}}
+:<!--Unknown TalkSentence: 202050608-->
+:<!--Unknown TalkSentence: 202050609-->
+:<!--Unknown TalkSentence: 202050610-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050618-->
+:<!--Unknown TalkSentence: 202050619-->
+{{Диалог Конец}}
+
+===Узнайте личность целителя Комиссии по алхимии и получите доказательства его причастности===
+{{Описание миссии|локация=Возвышающее святилище|Вы собирались мирно направить целителя по ложному пути, но он сразу же проявил враждебность. Даже если он сейчас без сознания, у вас всё ещё есть способ выяснить его цель.<br />Проще говоря, проверьте вещи этого подозрительного человека.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202050501-->
+
+;(Поговорите с Адепт Учеников Санктус Медикус)
+<!--Unknown TalkSentence: 202050503-->
+<!--Unknown TalkSentence: 202050504-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Спросите мнение Байлу (необязательно)===
+{{Описание миссии|локация=Возвышающее святилище|Байлу не знала, что Банься - одна из Учеников Санктус Медикус.<br />Прежде чем допрашивать Банься, ещё раз поговорите с Байлу.}}
+{{Диалог Начало}}
+
+;(Поговорите с Байлу)
+<!--Unknown TalkSentence: 202050702-->
+<!--Unknown TalkSentence: 202050703-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Спросите Банься, почему она что-то скрывает===
+{{Описание миссии|локация=Возвышающее святилище|Банься скрыла тот факт, что она ученица Санктус Медикус, но она совсем не причинила вреда Байлу. Вы должны спросить её, какова её цель, прежде чем позволить ей путешествовать с Байлу.<br />Эти двое заключили какую-то сомнительную сделку. Вы должны выяснить подробности.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202050701-->
+
+;(Поговорите с Банься)
+----
+<!--Unknown TalkSentence: 202050801-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202050803-->
+<!--Unknown TalkSentence: 202050804-->
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Найдите Гуанду и отправьтесь на его звёздном ялике===
+{{Описание миссии|локация=Возвышающее святилище|Обойдите Комиссию десяти владык и войдите в Облачную переправу. Кто-то однажды рассказал вам об этом методе...<br />Гуанда из Комиссии по балансу, кажется, знает, что делать.}}
+{{Диалог Начало}}
+
+;(Поговорите с Гуанда)
+----
+<!--Unknown TalkSentence: 202050901-->
+<!--Unknown TalkSentence: 202050902-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202050905-->
+<!--Unknown TalkSentence: 202050907-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202050906-->
+<!--Unknown TalkSentence: 202050909-->
+<!--Unknown TalkSentence: 202050910-->
+<!--Unknown TalkSentence: 202050911-->
+;(Unused &mdash; Raid202030512_ClosePage)
+:----
+----
+----
+<!--Unknown TalkSentence: 202062101-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202062103-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202062105-->
+<!--Unknown TalkSentence: 202062106-->
+----
+<!--Unknown TalkSentence: 202062201-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202062203-->
+:<!--Unknown TalkSentence: 202062206-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202062205-->
+:<!--Unknown TalkSentence: 202062214-->
+:<!--Unknown TalkSentence: 202062206-->
+<!--Unknown TalkSentence: 202062203-->
+<!--Unknown TalkSentence: 202062206-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Evanesce Like the Morning Dew
+|zhs  = 譬如朝露
+|zht  = 譬如朝露
+|ja   = 譬えば朝露の如く
+|ko   = 아침 이슬처럼
+|es   = Como el rocío de la mañana
+|fr   = Évanescence de la rosée du matin
+|ru   = Словно утренняя роса
+|th   = เสมือนน้ำค้างยามรุ่งอรุณ
+|vi   = Ví Như Sương Mai
+|de   = Wie der Morgentau
+|id   = Bagaikan Embun Fajar
+|pt   = Dissipar Como o Orvalho da Manhã
+}}
+
+==История изменений==
+{{История изменений|2.7}}

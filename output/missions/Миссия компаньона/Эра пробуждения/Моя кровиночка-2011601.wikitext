@@ -1,0 +1,326 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2011601
+|Название        = 
+|Изображение     = Миссия Освоения Моя кровиночка.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Эра пробуждения
+|Условия         = Завершена [[Миссия Освоения]] ''[[Тишина галактики]]''
+|Персонажи       = Взволнованные зрители; Зеле; Лука; Наташа; Олег; Первопроходец
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*500; Звёздный нефрит*100; Путеводитель путешественника*10; Утраченный кристалл*8; Obsidian of Desolation*6; Кредиты*100 000
+}}
+'''Моя кровиночка''' — [[Миссия компаньона]] в главе [[Эра пробуждения]].
+
+==Описание==
+{{Описание|Вы вернулись в Подземье Белобога и подружились с юным бойцом Лукой.<br />Лука настаивает, чтобы вы с Зеле сопровождали его в «испытаниях».}}
+
+==Этапы==
+# Послушайте разговор Олега с Зеле
+# Посмотрите, как Лука защищает свой титул в Бойцовском клубе
+# Поговорите с Лукой и начните его «испытания»
+# Поговорите с Олегом и спросите насчёт Луки
+# Найдите Зеле и проследите за Лукой вместе с ней
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Послушайте разговор Олега с Зеле===
+{{Описание миссии|локация=Камнеград|Восстановление Белобога неуклонно набирает обороты, и ситуация в Подземье стабилизируется. Люди вновь обретают утраченные радости жизни. Олег и Зеле, кажется, увлечены беседой, когда мимо случайно проходит {{MC|ж=великая героиня, спасшая|м=великий герой, спасший}} мир...}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 142
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 216010101-->
+<!--Unknown TalkSentence: 216010102-->
+<!--Unknown TalkSentence: 216010103-->
+<!--Unknown TalkSentence: 216010104-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10102_F10102001_G142",
+	"AnchorName": "Anchor4",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"CustomCurveName": "Blend_FastToSlow",
+		"BlendTime": 1
+	},
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 216010105-->
+<!--Unknown TalkSentence: 216010106-->
+----
+<!--Unknown TalkSentence: 216010202-->
+<!--Unknown TalkSentence: 216010203-->
+<!--Unknown TalkSentence: 216010204-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 216010206-->
+<!--Unknown TalkSentence: 216010207-->
+<!--Unknown TalkSentence: 216010214-->
+<!--Unknown TalkSentence: 216010215-->
+<!--Unknown TalkSentence: 216010216-->
+<!--Unknown TalkSentence: 216010217-->
+<!--Unknown TalkSentence: 216010218-->
+
+;(Поговорите с Олег)
+<!--Unknown TalkSentence: 216018101-->
+<!--Unknown TalkSentence: 216018102-->
+
+;(Поговорите с Лука)
+<!--Unknown TalkSentence: 216010701-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010703-->
+:<!--Unknown TalkSentence: 216010704-->
+:<!--Unknown TalkSentence: 216010705-->
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4012301,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 216010707-->
+:<!--Unknown TalkSentence: 216010708-->
+
+;(Поговорите с Зеле)
+<!--Unknown TalkSentence: 216018201-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 216018203-->
+<!--Unknown TalkSentence: 216018206-->
+<!--Unknown TalkSentence: 216018207-->
+{{Диалог Конец}}
+
+===Посмотрите, как Лука защищает свой титул в Бойцовском клубе===
+{{Описание миссии|локация=Бойцовский клуб|В Подземье вы встречаете Олега и Зеле, своих старых друзей.<br />Олег надеется, что вы сможете поддержать его ученика Луку, чемпиона бойцовского клуба Камнеграда.<br />Если нет срочных дел, то почему бы и не сходить развеяться?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 22
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+<!--Unknown TalkSentence: 216010402-->
+<!--Unknown TalkSentence: 216010403-->
+<!--Unknown TalkSentence: 216010404-->
+<!--Unknown TalkSentence: 216010405-->
+<!--Unknown TalkSentence: 216010406-->
+<!--Unknown TalkSentence: 216010407-->
+<!--Unknown TalkSentence: 216010408-->
+<!--Unknown TalkSentence: 216010409-->
+----
+
+;(Поговорите с Лука)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+<!--Unknown TalkSentence: 216010402-->
+<!--Unknown TalkSentence: 216010403-->
+<!--Unknown TalkSentence: 216010404-->
+<!--Unknown TalkSentence: 216010405-->
+<!--Unknown TalkSentence: 216010406-->
+<!--Unknown TalkSentence: 216010407-->
+<!--Unknown TalkSentence: 216010408-->
+<!--Unknown TalkSentence: 216010409-->
+----
+
+;(Поговорите с Зеле)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+<!--Unknown TalkSentence: 216010402-->
+<!--Unknown TalkSentence: 216010403-->
+<!--Unknown TalkSentence: 216010404-->
+<!--Unknown TalkSentence: 216010405-->
+<!--Unknown TalkSentence: 216010406-->
+<!--Unknown TalkSentence: 216010407-->
+<!--Unknown TalkSentence: 216010408-->
+<!--Unknown TalkSentence: 216010409-->
+----
+----
+----
+<!--Unknown TalkSentence: 216010601-->
+<!--Unknown TalkSentence: 216010602-->
+<!--Unknown TalkSentence: 216010603-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010605-->
+:<!--Unknown TalkSentence: 216010609-->
+:<!--Unknown TalkSentence: 216010610-->
+:<!--Unknown TalkSentence: 216010611-->
+:<!--Unknown TalkSentence: 216010612-->
+:<!--Unknown TalkSentence: 216010613-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010607-->
+:<!--Unknown TalkSentence: 216010608-->
+:<!--Unknown TalkSentence: 216010609-->
+:<!--Unknown TalkSentence: 216010610-->
+:<!--Unknown TalkSentence: 216010611-->
+:<!--Unknown TalkSentence: 216010612-->
+:<!--Unknown TalkSentence: 216010613-->
+<!--Unknown TalkSentence: 216010605-->
+<!--Unknown TalkSentence: 216010609-->
+<!--Unknown TalkSentence: 216010610-->
+<!--Unknown TalkSentence: 216010611-->
+<!--Unknown TalkSentence: 216010612-->
+<!--Unknown TalkSentence: 216010613-->
+{{Диалог Конец}}
+
+===Поговорите с Лукой и начните его «испытания»===
+{{Описание миссии|локация=Камнеград|Для вас в новинку наблюдать, как Лука защищает свой титул. Однако для Луки это всего лишь очередной обычный день.<br />Лука рассказывает вам с Зеле о своём «плане испытаний» и хочет, чтобы вы сопровождали его на протяжении всего пути и стали свидетелями его роста.<br />Как человек, который не знает слова «нет», вы, конечно, соглашаетесь на его просьбу.}}
+{{Диалог Начало}}
+----
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 216010801-->
+<!--Unknown TalkSentence: 216010802-->
+<!--Unknown TalkSentence: 216010803-->
+<!--Unknown TalkSentence: 216010804-->
+----
+<!--Unknown TalkSentence: 216010805-->
+<!--Unknown TalkSentence: 216010806-->
+:<!--1.5-second delay-->
+<!--Unknown TalkSentence: 216010807-->
+<!--Unknown TalkSentence: 216010808-->
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 216010809-->
+<!--Unknown TalkSentence: 216010810-->
+<!--Unknown TalkSentence: 216010811-->
+;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010813-->
+:<!--Unknown TalkSentence: 216010818-->
+:<!--Unknown TalkSentence: 216010819-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010815-->
+:<!--Unknown TalkSentence: 216010818-->
+:<!--Unknown TalkSentence: 216010819-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 216010817-->
+:<!--Unknown TalkSentence: 216010818-->
+:<!--Unknown TalkSentence: 216010819-->
+:;(Return to previous option selection)
+
+;(Поговорите с Наташа)
+<!--Unknown TalkSentence: 216010846-->
+<!--Unknown TalkSentence: 216010847-->
+{{Диалог Конец}}
+
+===Поговорите с Олегом и спросите насчёт Луки===
+{{Описание миссии|локация=Камнеград|Лука сражался до тех пор, пока не потерял сознание в битве со Сварогом. Он по-прежнему отказывается рассказывать вам и Зеле об истинной цели своих «испытаний».<br />Вы решаете спросить у человека, который должен знать его лучше всех, - тренера Олега, не вёл ли себя странно этот молодой боец.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Олег)
+;(If {{cx}}<!--during performance 501030501-->)
+;(If {{cx}}<!--not during performance 501030501-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501030527
+}</pre>
+<!--Unknown TalkSentence: 501030503-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1113400
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1113400
+}</pre>
+{{Диалог Конец}}
+
+===Найдите Зеле и проследите за Лукой вместе с ней===
+{{Описание миссии|локация=Камнеград|Лука сражался до тех пор, пока не потерял сознание в битве со Сварогом. Он по-прежнему отказывается рассказывать вам и Зеле об истинной цели своей «испытаний».<br />Однако Зеле не планирует отставать от Луки. Она хочет узнать, что за всем этим стоит.<br />Зеле уже выяснила, где находится Лука. Встретьтесь с ней в городе.}}
+{{Диалог Начало}}
+:<!--1-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Mo Cuishle
+|zhs  = 我的挚爱，我的血肉
+|zht  = 我的摯愛，我的血肉
+|ja   = 私の最愛、私の血
+|ko   = 나의 사랑, 나의 혈육
+|es   = Mo Cuishle
+|fr   = Mon amour, ma chair, mon sang
+|ru   = Моя кровиночка
+|th   = รักแท้ของฉัน เลือดเนื้อของฉัน
+|vi   = Tình Yêu Của Tôi, Nhịp Đập Của Tôi
+|de   = Mo Cuishle
+|id   = Kesayanganku, Darah Dagingku
+|pt   = Mo Cuishle
+}}
+
+==История изменений==
+{{История изменений|2.7}}

@@ -1,0 +1,781 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2021802
+|Название        = 
+|Изображение     = Миссия Освоения Вальс на маскараде.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Толкование сновидений
+|Условия         = 
+|Персонажи       = Первопроходец; Сампо; Член клана Гончих; Чёрный Лебедь; Шериф
+|СтартЛокация    = Пузырь памяти Чёрного Лебедя
+|Мир             = Пенакония
+|Локации         = Пузырь памяти Чёрного Лебедя
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*6; Starfire Essence*3; Celestial Section*3; "Challenge to the Reader"*1 { text = Challenge to the Reader }; Кредиты*60 000
+}}
+'''Вальс на маскараде''' — [[Миссия компаньона]] в главе [[Толкование сновидений]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Осмотрите место преступления
+# Расспросите члена клана Гончих о деле
+# Поговорите с детективом и его помощником
+# Расспросите помощника детектива о подозреваемых
+# Найдите улики на месте преступления
+# Просмотрите собранные улики
+# Войдите в комнату, в которой Искорка спрятала подсказки к решению головоломки
+# Найдите улики, оставленные Искоркой
+# Изучите улики вместе с Сампо
+# Найдите решение головоломки
+# Сообщите детективу личность убийцы
+# Поспешите на место следующего преступления Искорки
+# Поговорите с шерифом и помощницей шерифа
+# Расспросите помощницу шерифа о подозреваемых
+# Найдите улики на месте преступления
+# Просмотрите собранные улики
+# Войдите в комнату, в которой Искорка спрятала подсказки к решению головоломки
+# Найдите улики, оставленные Искоркой
+# Изучите улики вместе с Сампо
+# Найдите решение головоломки
+# Поспешите на место следующего преступления Искорки
+# Поспешите в убежище Искорки
+# Осмотрите необычный мусорный бак
+# Найдите решение головоломки
+# Сообщите шерифу личность убийцы
+# Поспешите на место следующего преступления Искорки
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Осмотрите место преступления===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Как только вы входите в сон, который приготовила для вас Чёрный Лебедь, вас тут же забрасывает на место преступления. Вы видите Чёрного Лебедя, стража закона из клана Гончих и... Сампо?! А он что здесь делает?!}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202202001-->
+<!--Unknown TalkSentence: 202202002-->
+<!--Unknown TalkSentence: 202202003-->
+<!--Unknown TalkSentence: 202202004-->
+<!--Unknown TalkSentence: 202202005-->
+<!--Unknown TalkSentence: 202202006-->
+<!--Unknown TalkSentence: 202202007-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202202009-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202202012-->
+::{{tx}}
+<!--Unknown TalkSentence: 202202009-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Расспросите члена клана Гончих о деле===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Видимо, вы имеете дело с «убийством» (к счастью, настоящее убийство на Пенаконии почти невозможно), а убийцей без всяких сомнений является загадочная Искорка. Чёрный Лебедь не намерена раскрывать стражу порядка личность убийцы, напротив, с Искоркой она хочет поиграть. Ход мыслей Искорки и Чёрного Лебедя остаётся для вас неясен.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поговорите с детективом и его помощником===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Искорка оставила на месте преступления множество вещей - их она использовала для постановки собственной пьесы. Кажется, «убийство» совершено лишь для привлечения внимания зрителей, а «загадка» на самом деле брошена в качестве вызова Чёрному Лебедю.}}
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{F|MissionCV-2021802-1}} is equal to 0)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180206,
+	"MissionCustomValue": {
+		"Index": 1,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-2021802-1}} is not equal to 0)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+::{{tx}}
+{{Диалог Конец}}
+
+===Расспросите помощника детектива о подозреваемых===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Чёрный Лебедь начинает сбор улик и старается разгадать загадку, оставленную Искоркой. Вы искренне удивляетесь, зачем Искорке потребовалось так утруждаться. Впрочем, в отношении таких личностей, как Искорка, задавать вопрос «зачем» бесполезно. Стоит присоединиться к Чёрному Лебедю и решить головоломку Искорки: возможно, в ней и скрыты её истинные мотивы.}}
+{{Диалог Начало}}
+
+;(Получено {{Item|Краткое описание дела I|20|x=1|text=Краткое описание дела I}})
+{{Диалог Конец}}
+
+===Найдите улики на месте преступления===
+{{Диалог Начало}}
+
+;(Получено {{Item|Улика: удостоверение Шамари|20|x=1|text=Улика: удостоверение Шамари}})
+
+;(Получено {{Item|Улика: гигантский деревянный молоток|20|x=1|text=Улика: гигантский деревянный молоток}})
+{{Диалог Конец}}
+
+===Просмотрите собранные улики===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Войдите в комнату, в которой Искорка спрятала подсказки к решению головоломки===
+{{Диалог Начало}}
+
+
+;(По прибытии на место)
+
+;(Получено {{Item|Улика: правила безопасности особняка Златомолотов|20|x=1|text=Улика: правила безопасности особняка Златомолотов}})
+
+
+;(Получено {{Item|Улика: кнопка гарантированного взаимного уничтожения|20|x=1|text=Улика: кнопка гарантированного взаимного уничтожения}})
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "Button01",
+			"IconType": "CheckIcon",
+			"ButtonText": {
+				"Value": "PropInteractTitle_1"
+			}
+		}
+	],
+	"DisableAfterTriggered": true,
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите улики, оставленные Искоркой===
+{{Диалог Начало}}
+
+;(Получено {{Item|Улика: игрушечная Пом-Пом|20|x=1|text=Улика: игрушечная Пом-Пом}})
+{{Диалог Конец}}
+
+===Изучите улики вместе с Сампо===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202203109-->
+
+:{{Диалог|Разговор}} Исключить Лева
+<!--Unknown TalkSentence: 202204043-->
+<!--Unknown TalkSentence: 202204044-->
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"SubMissionID": 202180238,
+	"ItemIDList": [
+		140341,
+		140342,
+		140343,
+		140344,
+		140345
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140342,
+			"TriggerCustomString": "SubmitSucceed_202180238"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 202204044
+	},
+	"MaskErrorItem": true,
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SubmitFail_202180238"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 202180238,
+			"MissionCustomValue": {
+				"Index": 2,
+				"isLocal": true,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+;(If {{F|MissionCV-2021802-2}} is equal to 1)
+;(Unused &mdash; SubmitSucceed_202180238)
+:;(If {{cx}}<!--SubMission Finish: 202180239-->)
+:;(If {{cx}}<!--SubMission not Finish: 202180239-->)
+<!--Unknown TalkSentence: 202204046-->
+:<!--Unknown TalkSentence: 202204053-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180238,
+	"MissionCustomValue": {
+		"Index": 2,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Unused &mdash; SubmitFail_202180238)
+<!--Unknown TalkSentence: 202204047-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"SubMissionID": 202180238,
+	"ItemIDList": [
+		140341,
+		140342,
+		140343,
+		140344,
+		140345
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140342,
+			"TriggerCustomString": "SubmitSucceed_202180238"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 202204044
+	},
+	"MaskErrorItem": true,
+	"OnSubmitSucceed": [],
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SubmitFail_202180238"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 202180238,
+			"MissionCustomValue": {
+				"Index": 2,
+				"isLocal": true,
+				"ValidValueParamList": [
+					0,
+					1
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Найдите решение головоломки===
+{{Диалог Начало}}
+;(If {{cx}}<!--SubMission not Finish: 202180240-->)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 1.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TimeStopFilter.asset",
+	"MuteAudioEvent": true
+}</pre>
+;(Потеряно {{Item|Улика: удостоверение Шамари|20|x=1|text=Улика: удостоверение Шамари}})
+{{Диалог Конец}}
+
+===Сообщите детективу личность убийцы===
+{{Диалог Начало}}
+
+;(Потеряно {{Item|Краткое описание дела I|20|x=1|text=Краткое описание дела I}})
+{{Диалог Конец}}
+
+===Поспешите на место следующего преступления Искорки===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Вы разгадали загадку, однако игра ещё не окончена. Детектив сообщает Чёрному Лебедю о намерении Искорки совершить новое преступление, которое хранительница памяти не успеет предотвратить. Вы ощущаете короткий, но сильный эмоциональный всплеск во всём Мире грёз - вероятно оттого, что Чёрный Лебедь не любит, когда её водят за нос.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		300002
+	],
+	"AdvancedSpawnList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+<!--Unknown TalkSentence: 202204058-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+<!--Unknown TalkSentence: 202204059-->
+<!--Unknown TalkSentence: 202204060-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300005
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300007
+	]
+}</pre>
+<!--Unknown TalkSentence: 202204133-->
+<!--Unknown TalkSentence: 202204134-->
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 202204057-->
+{{Диалог Конец}}
+
+===Поговорите с шерифом и помощницей шерифа===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Очередное убийство, очередная пьеса, очередная загадка. Сампо крайне встревожен происходящим и готов поскорее вернуться в своё тихое и уединённое царство зимы. Чёрный Лебедь, напротив, сохраняет спокойствие и получает настоящее удовольствие от детективной игры, затеянной Искоркой. Впрочем, ни тот, ни другая не привыкли выражать свои эмоции, потому вам неизвестно, что они чувствуют на самом деле.<br />Тем не менее, учитывая, что Торговый дом Мира грёз - место развлечений, вместо раздумий о чужих переживаниях уместнее было бы сконцентрироваться на решении загадки от Искорки. Пусть эта логическая игра принесёт вам радость.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Расспросите помощницу шерифа о подозреваемых===
+{{Диалог Начало}}
+
+;(Получено {{Item|Краткое описание дела II|20|x=1|text=Краткое описание дела II}})
+{{Диалог Конец}}
+
+===Найдите улики на месте преступления===
+{{Диалог Начало}}
+
+;(Получено {{Item|Улика: бухгалтерская книга Цянь Кэтун|20|x=1|text=Улика: бухгалтерская книга Цянь Кэтун}})
+
+;(Получено {{Item|Улика: галстук Лева|20|x=1|text=Улика: галстук Лева}})
+{{Диалог Конец}}
+
+===Просмотрите собранные улики===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Войдите в комнату, в которой Искорка спрятала подсказки к решению головоломки===
+{{Диалог Начало}}
+
+
+;(По прибытии на место)
+
+;(Получено {{Item|Улика: табурет Права|20|x=1|text=Улика: табурет Права}})
+
+
+;(Получено {{Item|Улика: копчёная селёдка|20|x=1|text=Улика: копчёная селёдка}})
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":24}},"ID":{"FixedValue":{"Value":300001}}},"MultiPropID":[]}}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":24}},"ID":{"FixedValue":{"Value":300001}}},"MultiPropID":[]},"State":"Open"}-->}})
+{{Диалог Конец}}
+
+===Найдите улики, оставленные Искоркой===
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":24}},"ID":{"FixedValue":{"Value":300001}}},"MultiPropID":[]},"State":"Open"}-->}})
+;(Получено {{Item|Улика: кольцо Центра|20|x=1|text=Улика: кольцо Центра}})
+{{Диалог Конец}}
+
+===Изучите улики вместе с Сампо===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202203174-->
+{{Диалог Конец}}
+
+===Найдите решение головоломки===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Поспешите на место следующего преступления Искорки===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Чёрный Лебедь разгадала загадку, на самом деле таковой даже не являвшуюся... однако игра ещё не окончена. В очередной раз, следуя указаниям Искорки, Чёрный Лебедь мчится на следующее место преступления. Кажется, вы ощущаете новый эмоциональный всплеск... Эта игра Чёрному Лебедю начинает надоедать.}}
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		300001
+	],
+	"AdvancedSpawnList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202204127-->
+<!--Unknown TalkSentence: 202204128-->
+<!--Unknown TalkSentence: 202204129-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Динь-дон! Настал самый волнующий и романтический момент пьесы:
+вызов зрителям!
+::Известно, что грозная Недотёпа Искорка может принимать чужой облик.
+И сейчас злодейка Искорка притворилась другим персонажем.
+::Вам предстоит угадать, что это за персонаж!
+::А если вас заинтересовало убийство в запертой комнате, которое хранительница памяти проигнорировала, можете испытать свои силы.
+Я очень старалась над этой загадкой, и пусть мои труды не пропадут зря!
+::Гений в маске - госпожа Искорка - бросает вызов!
+Все улики на месте. Приятной охоты!
+;(Cutscene ends)
+----
+
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 202204130-->
+
+;(Потеряно {{Item|Улика: бухгалтерская книга Цянь Кэтун|20|x=1|text=Улика: бухгалтерская книга Цянь Кэтун}})
+{{Диалог Конец}}
+
+===Поспешите в убежище Искорки===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|«Вызов зрителям»... Вы прочли множество детективных романов, которыми с вами поделилась Март 7, а потому такой сюжетный ход вам отлично знаком. Впрочем, обычно вызов зрителям бросает сам автор, а в игре, начатой Искоркой, эту задачу внезапным образом берёт на себя убийца. Такой поворот событий больше похож на устрашение аудитории, чем на бросание ей вызова... но другого от Искорки и не ожидалось.<br />В общем, удачной охоты.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		300001
+	],
+	"AdvancedSpawnList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202204131-->
+<!--Unknown TalkSentence: 202204132-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::А... А-а-а-а! Госпожа, ты... ты убила Искорку!
+;(Cutscene ends)
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Осмотрите необычный мусорный бак===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Перед Чёрным Лебедем возникает не что иное, как мусорный бак. Бак в белобожском стиле. Эта картина могла бы вас шокировать, однако на своём пути вы уже повидали немало странностей. Осознав свою неспособность удивляться подобным находкам, вы подмечаете, как много жизненного опыта успели приобрести.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Найдите решение головоломки===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Очередное убийство, очередная пьеса, очередная загадка. Сампо крайне встревожен происходящим и готов поскорее вернуться в своё тихое и уединённое царство зимы. Чёрный Лебедь, напротив, сохраняет спокойствие и получает настоящее удовольствие от детективной игры, затеянной Искоркой. Впрочем, ни тот, ни другая не привыкли выражать свои эмоции, потому вам неизвестно, что они чувствуют на самом деле.<br />Тем не менее, учитывая, что Торговый дом Мира грёз - место развлечений, вместо раздумий о чужих переживаниях уместнее было бы сконцентрироваться на решении загадки от Искорки. Пусть эта логическая игра принесёт вам радость.}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Сообщите шерифу личность убийцы===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Осудить Лева
+<!--Unknown TalkSentence: 202204079-->
+<!--Unknown TalkSentence: 202204080-->
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140346,
+		140347,
+		140348,
+		140349,
+		140350
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140347,
+			"TriggerCustomString": "TalkSentence_202204081"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 202204080
+	},
+	"MaskErrorItem": true,
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202204086"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectCancel_202180277"
+			}
+		}
+	]
+}</pre>
+;(If {{F|MissionCV-2021802-5}} is equal to 1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_blackswan_reasoningfilter_loop_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+;(Unused &mdash; TalkSentence_202204081)
+<!--Unknown TalkSentence: 202204081-->
+:<!--Unknown TalkSentence: 202204082-->
+:<!--Unknown TalkSentence: 202204083-->
+:<!--Unknown TalkSentence: 202204084-->
+:<!--Unknown TalkSentence: 202204085-->
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180248,
+	"MissionCustomValue": {
+		"Index": 5,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::----
+
+;(Unused &mdash; TalkSentence_202204086)
+<!--Unknown TalkSentence: 202204086-->
+:<!--Unknown TalkSentence: 202204087-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140346,
+		140347,
+		140348,
+		140349,
+		140350
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140347,
+			"TriggerCustomString": "TalkSentence_202204081"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 202204080
+	},
+	"MaskErrorItem": true,
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_202204086"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectCancel_202180277"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; SelectCancel_202180277)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180248,
+	"MissionCustomValue": {
+		"Index": 5,
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Поспешите на место следующего преступления Искорки===
+{{Описание миссии|локация=Пузырь памяти Чёрного Лебедя|Чёрный Лебедь разгадала загадку, на самом деле таковой даже не являвшуюся... однако игра ещё не окончена. В очередной раз, следуя указаниям Искорки, Чёрный Лебедь мчится на следующее место преступления. Кажется, вы ощущаете новый эмоциональный всплеск... Эта игра Чёрному Лебедю начинает надоедать.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Masquerade Duet
+|zhs  = 假面双人舞
+|zht  = 假面雙人舞
+|ja   = 仮面幻想曲
+|ko   = 가면의 듀엣
+|es   = Dueto enmascarado
+|fr   = Mascarade à deux
+|ru   = Вальс на маскараде
+|th   = คู่เต้นรำสวมหน้ากาก
+|vi   = Vũ Điệu Mặt Nạ Đôi
+|de   = Maskerade im Duett
+|id   = Tarian Topeng Duet
+|pt   = Dueto Mascarado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

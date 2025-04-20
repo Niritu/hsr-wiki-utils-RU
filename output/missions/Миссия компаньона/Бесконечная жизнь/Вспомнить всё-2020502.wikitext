@@ -1,0 +1,404 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020502
+|Название        = 
+|Изображение     = Миссия Освоения Вспомнить всё.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = 
+|Персонажи       = (Первопроходец) из воспоминаний; Вельт из воспоминаний; Март 7; Первопроходец; Тинъюнь из воспоминаний; Фу Сюань; Фу Сюань из воспоминаний; Цзин Юань из воспоминаний
+|СтартЛокация    = Комиссии по алхимии из воспоминаний
+|Мир             = Лофу Сяньчжоу
+|Локации         = Комиссии по алхимии из воспоминаний
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Oath of Steel*6; Кредиты*90 000
+}}
+'''Вспомнить всё''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Укажите на ненастоящую Фу Сюань
+# Найдите «искажённую» часть воспоминания
+# Взаимодействуйте с «инородным объектом», чтобы вернуться к более старым воспоминаниям
+
+==Прохождение==
+{{Дополнить}}
+
+<pre>{
+	"$type": "RPG.GameCore.HideTopPage",
+	"Hide": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_specialvision_reverse"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<!--1-second delay-->
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetEffectAnimatorTrigger",
+	"UniqueEffectName": "Mission2020502_SpecialVision",
+	"TriggerName": "TriggerVisionClose"
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.HideTopPage"
+}</pre>
+<!--Unknown TalkSentence: 202180201-->
+<!--Unknown TalkSentence: 202180202-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202180204-->
+:<!--Unknown TalkSentence: 202180205-->
+:<!--Unknown TalkSentence: 202180206-->
+:<!--Unknown TalkSentence: 202180207-->
+::{{tx}}
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202180206-->
+:<!--Unknown TalkSentence: 202180207-->
+::{{tx}}
+<!--Unknown TalkSentence: 202180206-->
+<!--Unknown TalkSentence: 202180207-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Укажите на ненастоящую Фу Сюань===
+{{Описание миссии|локация=Комиссии по алхимии из воспоминаний|Когда Высшая матрица предвидения приступает к своим вычислениям, Март 7 возвращается в не столь отдалённое прошлое.<br />Для собственной безопасности она должна сначала выполнить задание Фу Сюань.<br />К счастью, задача не слишком сложная. Ей просто нужно выяснить, кто из двоих, стоящих перед ней, настоящая Верховная провидица.}}
+{{Диалог Начало}}
+
+;(Поговорите с Фу Сюань с рукой на бедре)
+<!--Unknown TalkSentence: 202180811-->
+<!--Unknown TalkSentence: 202180812-->
+<!--Unknown TalkSentence: 202180813-->
+<!--Unknown TalkSentence: 202180814-->
+<!--Unknown TalkSentence: 202180815-->
+<!--Unknown TalkSentence: 202180816-->
+<!--Unknown TalkSentence: 202180817-->
+<!--Unknown TalkSentence: 202180818-->
+<!--Unknown TalkSentence: 202180819-->
+<!--Unknown TalkSentence: 202180820-->
+<!--Unknown TalkSentence: 202180821-->
+<!--Unknown TalkSentence: 202180822-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(Поговорите с Вельт Янг)
+<!--Unknown TalkSentence: 202180951-->
+<!--Unknown TalkSentence: 202180952-->
+<!--Unknown TalkSentence: 202180953-->
+<!--Unknown TalkSentence: 202180954-->
+<!--Unknown TalkSentence: 202180955-->
+<!--Unknown TalkSentence: 202180956-->
+<!--Unknown TalkSentence: 202180957-->
+<!--Unknown TalkSentence: 202180958-->
+<!--Unknown TalkSentence: 202180959-->
+<!--Unknown TalkSentence: 202180960-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с (Первопроходец))
+<!--Unknown TalkSentence: 202180931-->
+<!--Unknown TalkSentence: 202180932-->
+<!--Unknown TalkSentence: 202180933-->
+<!--Unknown TalkSentence: 202180934-->
+<!--Unknown TalkSentence: 202180935-->
+<!--Unknown TalkSentence: 202180936-->
+<!--Unknown TalkSentence: 202180937-->
+<!--Unknown TalkSentence: 202180938-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Тинъюнь)
+<!--Unknown TalkSentence: 202180921-->
+<!--Unknown TalkSentence: 202180922-->
+<!--Unknown TalkSentence: 202180923-->
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 4,
+	"GroupNpcID": 400003,
+	"DestroyList": []
+}</pre>
+:{{Диалог|Выход}} undefined
+----
+<!--Unknown TalkSentence: 202180901-->
+<!--Unknown TalkSentence: 202180902-->
+<!--Unknown TalkSentence: 202180903-->
+<!--Unknown TalkSentence: 202180904-->
+<!--Unknown TalkSentence: 202180905-->
+<!--Unknown TalkSentence: 202180906-->
+<!--Unknown TalkSentence: 202180907-->
+<!--Unknown TalkSentence: 202180908-->
+<!--Unknown TalkSentence: 202180909-->
+----
+<!--Unknown TalkSentence: 202180529-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180563
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050204
+}</pre>
+{{Диалог Конец}}
+
+===Найдите «искажённую» часть воспоминания===
+{{Описание миссии|локация=Комиссии по алхимии из воспоминаний|Воспоминания о Лофу Сяньчжоу совсем недавние и всё ещё свежи в памяти Март 7. Однако она ощущает грусть, когда смотрит на людей и события, запечатлевшиеся в памяти.<br />«Прошло не так много времени, но многое уже никогда не будет прежним», - думает она про себя.}}
+{{Диалог Начало}}
+----
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 5,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180564
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050206
+}</pre>
+
+;(Поговорите с Цзин Юань)
+<!--Unknown TalkSentence: 202180971-->
+<!--Unknown TalkSentence: 202180972-->
+<!--Unknown TalkSentence: 202180973-->
+<!--Unknown TalkSentence: 202180974-->
+<!--Unknown TalkSentence: 202180975-->
+<!--Unknown TalkSentence: 202180976-->
+<!--Unknown TalkSentence: 202180977-->
+<!--Unknown TalkSentence: 202180978-->
+<!--Unknown TalkSentence: 202180979-->
+<!--Unknown TalkSentence: 202180980-->
+<!--Unknown TalkSentence: 202180981-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202180983-->
+:<!--Unknown TalkSentence: 202180984-->
+:<!--Unknown TalkSentence: 202180985-->
+:<!--Unknown TalkSentence: 202180986-->
+:<!--Unknown TalkSentence: 202180987-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack",
+	"ExecuteOnSkip": true
+}</pre>
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:{{Диалог|Выход}} undefined
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 202180562
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050209
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180560
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180561
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050210
+}</pre>
+----
+<!--Unknown TalkSentence: 202181001-->
+<!--Unknown TalkSentence: 202181002-->
+<!--Unknown TalkSentence: 202181003-->
+<!--Unknown TalkSentence: 202181004-->
+<!--Unknown TalkSentence: 202181005-->
+<!--Unknown TalkSentence: 202181006-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43201_F43201001_G6",
+	"AnchorName": "Anchor6",
+	"IsActive": false,
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2.5
+	},
+	"DynamicParams": {}
+}</pre>
+
+:{{Диалог|Изучение}} Осмотреть
+----
+<!--Unknown TalkSentence: 202181021-->
+<!--Unknown TalkSentence: 202181022-->
+<!--Unknown TalkSentence: 202181023-->
+<!--Unknown TalkSentence: 202181024-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202181026-->
+:<!--Unknown TalkSentence: 202181027-->
+:<!--Unknown TalkSentence: 202181028-->
+:<!--Unknown TalkSentence: 202181029-->
+:;(Экран становится чёрным)
+:<!--Unknown TalkSentence: 202181030-->
+::----
+:{{Диалог|Выход}} undefined
+::----
+{{Диалог Конец}}
+
+===Взаимодействуйте с «инородным объектом», чтобы вернуться к более старым воспоминаниям===
+{{Описание миссии|локация=Комиссии по алхимии из воспоминаний|«Прикоснуться к обогревателю» звучит как ужасная идея. Однако это не реальность, и здравый смысл реальной жизни здесь неприменим.<br />Март 7 верит, что Фу Сюань не причинит ей вреда... но она всё равно инстинктивно не хочет прикасаться к чему-то настолько горячему.}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202180530-->
+<!--Unknown TalkSentence: 202180531-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==История изменений==
+{{История изменений|2.7}}

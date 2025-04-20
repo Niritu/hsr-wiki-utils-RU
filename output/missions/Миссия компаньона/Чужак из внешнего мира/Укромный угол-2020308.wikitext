@@ -1,0 +1,944 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020308
+|Название        = 
+|Изображение     = Миссия Освоения Укромный угол.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Чужак из внешнего мира
+|Условия         = 
+|Персонажи       = Бабл-ти со звёздным таро; Вельт; Вельт (ненастоящий); Дозорный Облачных Рыцарей; Лоча; Март 7; Монстр; Первопроходец; Пуэр
+|СтартЛокация    = Комиссия по предсказаниям
+|Мир             = Лофу Сяньчжоу
+|Локации         = Комиссия по предсказаниям
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''Укромный угол''' — [[Миссия компаньона]] в главе [[Чужак из внешнего мира]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Вскройте замок двери, которая закрывает причал
+# Найдите место встречи
+# Найдите место встречи на очень опасных причалах
+# Доберитесь до места встречи и начните опасную сделку
+# Сделка не удалась, Облачные Рыцари приближаются, бегите
+# Найдите место встречи на очень опасных причалах
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Вскройте замок двери, которая закрывает причал===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, подобный дверной замок не мог остановить Лочу, но представлять, как джентльмен Лоча взламывает замок, сидя на корточках в тёмном углу, довольно забавно. Хех.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202072101-->
+<!--Unknown TalkSentence: 202072102-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Найдите место встречи===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, Лоча должен был встретиться здесь с покупателем Стелларона. Оглянитесь вокруг, здесь должно быть место, подходящее для незаконной торговли.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202072201-->
+<!--Unknown TalkSentence: 202072202-->
+----
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TimeStopFilter.asset"
+}</pre>
+<!--Unknown TalkSentence: 202072203-->
+<!--Unknown TalkSentence: 202072204-->
+<!--Unknown TalkSentence: 202072205-->
+----
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TimeStopFilter.asset"
+}</pre>
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202073208-->
+<!--Unknown TalkSentence: 202073209-->
+<!--Unknown TalkSentence: 202073210-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "LevelArea_P42221_F42221001_G4"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "Anchor1"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 2,
+	"MaxAngle": 60,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 1.2,
+			"CenterPos": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 1,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Найдите место встречи на очень опасных причалах===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, если Лоча потратил целых два часа на проведение сделки, это означает, что место очень опасное.<br />Эм... Разве это не детективная история? Зачем здесь экшн?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202072301-->
+<!--Unknown TalkSentence: 202072302-->
+<!--Unknown TalkSentence: 202072303-->
+<!--Unknown TalkSentence: 202072304-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202073223-->
+{{Диалог Конец}}
+
+===Доберитесь до места встречи и начните опасную сделку===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, после опасного приключения Лоча наконец-то добрался до места встречи. Кто осмелился купить Стелларон, чтобы нанести ущерб кораблю Сяньчжоу?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+<!--Unknown TalkSentence: 202072601-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202072603-->
+<!--Unknown TalkSentence: 202072604-->
+<!--Unknown TalkSentence: 202072605-->
+<!--Unknown TalkSentence: 202072606-->
+<!--Unknown TalkSentence: 202072607-->
+<!--Unknown TalkSentence: 202072608-->
+<!--Unknown TalkSentence: 202072609-->
+<!--Unknown TalkSentence: 202072610-->
+<!--Unknown TalkSentence: 202072611-->
+<!--Unknown TalkSentence: 202072612-->
+<!--Unknown TalkSentence: 202072613-->
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140190,
+		140195,
+		140191,
+		140192,
+		140193,
+		140194
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140190,
+			"TriggerCustomString": "TalkSentence_202072615"
+		},
+		{
+			"Item1": 140191,
+			"TriggerCustomString": "TalkSentence_202072625"
+		},
+		{
+			"Item1": 140192,
+			"TriggerCustomString": "TalkSentence_202072633"
+		},
+		{
+			"Item1": 140193,
+			"TriggerCustomString": "TalkSentence_202072647"
+		},
+		{
+			"Item1": 140194,
+			"TriggerCustomString": "TalkSentence_202072656"
+		},
+		{
+			"Item1": 140195,
+			"TriggerCustomString": "TalkSentence_202072665"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 6,
+					"GroupNpcID": 400001,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {
+				"AreaName": "LevelArea_P42221_F42221001_G6",
+				"AnchorName": "Anchor3",
+				"IsActive": false
+			},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P42221_F42221001_G12"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {},
+			"WaitStreamingFinish": true
+		},
+		{
+			"$type": "RPG.GameCore.PropSetVisibility",
+			"Visible": true,
+			"SpecifiedRelativePaths": [],
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 6
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300001
+						}
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 202070201-->
+<!--Unknown TalkSentence: 202070202-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202073211-->
+<!--Unknown TalkSentence: 202073212-->
+<!--Unknown TalkSentence: 202073213-->
+<!--Unknown TalkSentence: 202073214-->
+;(Unused &mdash; TalkSentence_202072615)
+<!--Unknown TalkSentence: 202072615-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202072617-->
+:<!--Unknown TalkSentence: 202072620-->
+:<!--Unknown TalkSentence: 202072621-->
+:<!--Unknown TalkSentence: 202072622-->
+:<!--Unknown TalkSentence: 202072623-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140190,
+		140195,
+		140191,
+		140192,
+		140193,
+		140194
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140190,
+			"TriggerCustomString": "TalkSentence_202072615"
+		},
+		{
+			"Item1": 140191,
+			"TriggerCustomString": "TalkSentence_202072625"
+		},
+		{
+			"Item1": 140192,
+			"TriggerCustomString": "TalkSentence_202072633"
+		},
+		{
+			"Item1": 140193,
+			"TriggerCustomString": "TalkSentence_202072647"
+		},
+		{
+			"Item1": 140194,
+			"TriggerCustomString": "TalkSentence_202072656"
+		},
+		{
+			"Item1": 140195,
+			"TriggerCustomString": "TalkSentence_202072665"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 6,
+					"GroupNpcID": 400001,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {
+				"AreaName": "LevelArea_P42221_F42221001_G6",
+				"AnchorName": "Anchor3",
+				"IsActive": false
+			},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P42221_F42221001_G12"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {},
+			"WaitStreamingFinish": true
+		},
+		{
+			"$type": "RPG.GameCore.PropSetVisibility",
+			"Visible": true,
+			"SpecifiedRelativePaths": [],
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 6
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300001
+						}
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202072625)
+<!--Unknown TalkSentence: 202072625-->
+:<!--Unknown TalkSentence: 202072626-->
+:<!--Unknown TalkSentence: 202072627-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; TalkSentence_202072633)
+<!--Unknown TalkSentence: 202072633-->
+:<!--Unknown TalkSentence: 202072634-->
+:<!--Unknown TalkSentence: 202072635-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+
+;(Unused &mdash; TalkSentence_202072647)
+<!--Unknown TalkSentence: 202072647-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202072649-->
+:<!--Unknown TalkSentence: 202072652-->
+:<!--Unknown TalkSentence: 202072653-->
+:<!--Unknown TalkSentence: 202072654-->
+:<!--Unknown TalkSentence: 202072655-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140190,
+		140195,
+		140191,
+		140192,
+		140193,
+		140194
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140190,
+			"TriggerCustomString": "TalkSentence_202072615"
+		},
+		{
+			"Item1": 140191,
+			"TriggerCustomString": "TalkSentence_202072625"
+		},
+		{
+			"Item1": 140192,
+			"TriggerCustomString": "TalkSentence_202072633"
+		},
+		{
+			"Item1": 140193,
+			"TriggerCustomString": "TalkSentence_202072647"
+		},
+		{
+			"Item1": 140194,
+			"TriggerCustomString": "TalkSentence_202072656"
+		},
+		{
+			"Item1": 140195,
+			"TriggerCustomString": "TalkSentence_202072665"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 6,
+					"GroupNpcID": 400001,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {
+				"AreaName": "LevelArea_P42221_F42221001_G6",
+				"AnchorName": "Anchor3",
+				"IsActive": false
+			},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P42221_F42221001_G12"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {},
+			"WaitStreamingFinish": true
+		},
+		{
+			"$type": "RPG.GameCore.PropSetVisibility",
+			"Visible": true,
+			"SpecifiedRelativePaths": [],
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 6
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300001
+						}
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202072656)
+<!--Unknown TalkSentence: 202072656-->
+:<!--Unknown TalkSentence: 202072657-->
+:<!--Unknown TalkSentence: 202072658-->
+:<!--Unknown TalkSentence: 202072659-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202072661-->
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140190,
+		140195,
+		140191,
+		140192,
+		140193,
+		140194
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140190,
+			"TriggerCustomString": "TalkSentence_202072615"
+		},
+		{
+			"Item1": 140191,
+			"TriggerCustomString": "TalkSentence_202072625"
+		},
+		{
+			"Item1": 140192,
+			"TriggerCustomString": "TalkSentence_202072633"
+		},
+		{
+			"Item1": 140193,
+			"TriggerCustomString": "TalkSentence_202072647"
+		},
+		{
+			"Item1": 140194,
+			"TriggerCustomString": "TalkSentence_202072656"
+		},
+		{
+			"Item1": 140195,
+			"TriggerCustomString": "TalkSentence_202072665"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [
+				{
+					"GroupID": 6,
+					"GroupNpcID": 400001,
+					"DestroyList": []
+				}
+			],
+			"CreateProp": {
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupPropID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"ID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				},
+				"GroupID": {
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"AdvCreateGroupEntity": {},
+			"AdvDestroyGroupEntity": {},
+			"ActiveVirtualCamera": {
+				"AreaName": "LevelArea_P42221_F42221001_G6",
+				"AnchorName": "Anchor3",
+				"IsActive": false
+			},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P42221_F42221001_G12"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {},
+			"WaitStreamingFinish": true
+		},
+		{
+			"$type": "RPG.GameCore.PropSetVisibility",
+			"Visible": true,
+			"SpecifiedRelativePaths": [],
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+				"FetchType": "SinglePropByPropID",
+				"SinglePropID": {
+					"GroupID": {
+						"FixedValue": {
+							"Value": 6
+						}
+					},
+					"ID": {
+						"FixedValue": {
+							"Value": 300001
+						}
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TalkSentence_202072665)
+:<!--0.5-second delay-->
+:<!--Unknown TalkSentence: 202072665-->
+:<!--Unknown TalkSentence: 202072666-->
+:;(Экран становится чёрным)
+:<!--Unknown TalkSentence: 202072667-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P42221_F42221001_G6",
+	"AnchorName": "Anchor3",
+	"IsActive": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:<!--Unknown TalkSentence: 202070201-->
+:<!--Unknown TalkSentence: 202070202-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+----
+<!--Unknown TalkSentence: 202072701-->
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 7,
+	"GroupNpcID": 400008,
+	"DestroyList": []
+}</pre>
+<!--Unknown TalkSentence: 202072702-->
+<!--Unknown TalkSentence: 202072703-->
+{{Диалог Конец}}
+
+===Сделка не удалась, Облачные Рыцари приближаются, бегите===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, сделка сорвалась, времени на размышления нет! Бегите!}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 7
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	},
+	"CreateList": []
+}</pre>
+<!--Unknown TalkSentence: 202072720-->
+<!--Unknown TalkSentence: 202072721-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_arriving_car"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+<!--Unknown TalkSentence: 202072722-->
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "soldierNear_202030811",
+	"AreaName": "LevelArea_P42221_F42221001_G7",
+	"AnchorName": "Anchor6",
+	"MotionFlag": "Walk",
+	"WaitUntilFinish": false,
+	"DontTurnInPlaceInEnd": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CharacterNavigateTo",
+	"CharacterUniqueName": "Luocha_202030811",
+	"AreaName": "LevelArea_P42221_F42221001_G7",
+	"AnchorName": "Anchor4",
+	"MotionFlag": "Run",
+	"DontTurnInPlaceInEnd": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_getaway_car"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 202072723-->
+----
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202072711-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202072711-->
+{{Диалог Конец}}
+
+===Найдите место встречи на очень опасных причалах===
+{{Описание миссии|локация=Комиссия по предсказаниям|Согласно выводам гениального детектива Март 7, если Лоча потратил целых два часа на проведение сделки, это означает, что место очень опасное.<br />Эм... Разве это не детективная история? Зачем здесь экшн?}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 12
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TimeStopFilter.asset"
+}</pre>
+<!--Unknown TalkSentence: 202072401-->
+<!--Unknown TalkSentence: 202072402-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202072404-->
+<!--Unknown TalkSentence: 202072407-->
+<!--Unknown TalkSentence: 202072408-->
+<!--Unknown TalkSentence: 202072501-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hidden Corner
+|zhs  = 隐秘的角落
+|zht  = 隱秘的角落
+|ja   = 密かな隅っこ
+|ko   = 은밀한 모퉁이
+|es   = Un rincón escondido
+|fr   = Coin caché
+|ru   = Укромный угол
+|th   = มุมลับ
+|vi   = Góc Tối Ẩn Giấu
+|de   = Verborgener Winkel
+|id   = Sudut Tersembunyi
+|pt   = Canto Escondido
+}}
+
+==История изменений==
+{{История изменений|2.7}}

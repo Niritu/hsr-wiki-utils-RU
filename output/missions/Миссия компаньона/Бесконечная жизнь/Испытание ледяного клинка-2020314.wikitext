@@ -1,0 +1,579 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2020314
+|Название        = 
+|Изображение     = Миссия Освоения Испытание ледяного клинка.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = 
+|Персонажи       = Командир Облачных Рыцарей; Первопроходец; Роман, забытый пассажиром; Цзинлю; Яньцин
+|СтартЛокация    = Облачная переправа
+|Мир             = Лофу Сяньчжоу
+|Локации         = Облачная переправа
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*350; Звёздный нефрит*100; Путеводитель путешественника*5; Очищенный эфир*5; "Blade Abracadabra"*1 { text = Blade Abracadabra }; Кредиты*50 000
+}}
+'''Испытание ледяного клинка''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Спросите командира Облачных Рыцарей о текущей ситуации в Облачной переправе
+# Найти улики в Облачной переправе
+# Отправляйтесь на причал Облачной переправы
+# Пустите Дитина по следу разыскиваемого
+# Сопроводите Цзинлю
+# Исследуйте навигационную систему и определите расположение звёздного ялика, захваченного Блэйдом
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Спросите командира Облачных Рыцарей о текущей ситуации в Облачной переправе===
+{{Описание миссии|локация=Облачная переправа|Когда генерал вызвал заключённого Блэйда в суд, всё стало понятно. Дом кандалов никогда не смог бы заманить в ловушку кого-то вроде него. Он смотрит на всех так, как будто все они уже мертвы. Это взгляд убийцы, забравшего множество жизней... Его побег из тюрьмы был совершён с определённой целью. Какой же?<br />Охота на Блэйда прекратилась в Облачной переправе. Генерал занят официальными делами, поэтому нужно помочь ему.}}
+{{Диалог Начало}}
+----
+<!--Unknown TalkSentence: 202140114-->
+<!--Unknown TalkSentence: 202140115-->
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202140101-->
+<!--Unknown TalkSentence: 202140102-->
+<!--Unknown TalkSentence: 202140103-->
+<!--Unknown TalkSentence: 202140104-->
+<!--Unknown TalkSentence: 202140105-->
+<!--Unknown TalkSentence: 202140106-->
+<!--Unknown TalkSentence: 202140107-->
+<!--Unknown TalkSentence: 202140108-->
+<!--Unknown TalkSentence: 202140109-->
+<!--Unknown TalkSentence: 202140110-->
+<!--Unknown TalkSentence: 202140111-->
+<!--Unknown TalkSentence: 202140112-->
+<!--Unknown TalkSentence: 202140113-->
+----
+<!--Unknown TalkSentence: 202145102-->
+<!--Unknown TalkSentence: 202145103-->
+
+;(Поговорите с Цзинлю)
+<!--Unknown TalkSentence: 202145107-->
+<!--Unknown TalkSentence: 202145108-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300019
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031402_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300010
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "PropUITriggered_5_300010"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300010
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300021
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031412_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300021
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300009
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"FixedValue": {
+					"Value": 300016
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031454_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202145104-->
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300013
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "PropUITriggered_5_300013"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"FixedValue": {
+					"Value": 300013
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Найти улики в Облачной переправе===
+{{Описание миссии|локация=Облачная переправа|Никто не мог взойти или сойти с корабля Сяньчжоу без звёздного ялика. Разыскиваемый человек задержался бы здесь только для того, чтобы угнать звёздный ялик и сбежать, так что он оставил бы после себя улики. Но Облачная переправа содержит тысячи вещей. Невозможно проверить их все, так ведь?}}
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202145201-->
+<!--Unknown TalkSentence: 202145202-->
+<!--Unknown TalkSentence: 202145301-->
+<!--Unknown TalkSentence: 202145302-->
+<!--Unknown TalkSentence: 202145303-->
+{{Диалог Конец}}
+
+===Отправляйтесь на причал Облачной переправы===
+{{Описание миссии|локация=Облачная переправа|О Яньцин, ты не учёл одну вещь. Если разыскиваемому человеку нужен звёздный ялик, ему требуется только найти навигационную систему. Какая разница, что он делал в Облачной переправе?}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202145404-->
+----
+<!--Unknown TalkSentence: 202145401-->
+<!--Unknown TalkSentence: 202145402-->
+<!--Unknown TalkSentence: 202145403-->
+----
+{{Диалог Конец}}
+
+===Пустите Дитина по следу разыскиваемого===
+{{Описание миссии|локация=Облачная переправа|В процессе поисков в Облачной переправе найдено несколько трупов, поражённых Марой. Раны, оставленные на телах, не были нанесены оружием Облачного Рыцаря... Если мои выводы верны, разыскиваемый человек должен был сбежать с ближайшего причала.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202140401-->
+<!--Unknown TalkSentence: 202140402-->
+;(Enter battle)
+:{{Enemy List|Ученик Санктус Медикус: Внутренний алхимик*1}}
+{{Диалог Конец}}
+
+===Сопроводите Цзинлю===
+{{Описание миссии|локация=Облачная переправа|Пока я шёл по следам, госпожа попала в ловушку нескольких монстров, поражённых Марой. Странно, учитывая, что Облачные Рыцари заперли порт. Откуда здесь путешественники? Она сильно рискует, путешествуя одна, я должен сопроводить её в безопасное место, прежде чем завершить свою миссию. Жаль, что её глаза закрыты чёрной тканью, она не сможет увидеть моё изящное владение мечом.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{Чёрный экран|undefined}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202140601-->
+----
+<!--Unknown TalkSentence: 202140602-->
+<!--Unknown TalkSentence: 202140603-->
+----
+----
+<!--Unknown TalkSentence: 202140702-->
+<!--Unknown TalkSentence: 202140703-->
+<!--Unknown TalkSentence: 202140704-->
+<!--Unknown TalkSentence: 202140705-->
+<!--Unknown TalkSentence: 202140706-->
+<!--Unknown TalkSentence: 202140707-->
+<!--Unknown TalkSentence: 202140708-->
+<!--Unknown TalkSentence: 202140709-->
+<!--Unknown TalkSentence: 202140710-->
+<!--Unknown TalkSentence: 202140711-->
+<!--Unknown TalkSentence: 202140712-->
+<!--Unknown TalkSentence: 202140713-->
+<!--Unknown TalkSentence: 202140714-->
+<!--Unknown TalkSentence: 202140715-->
+<!--Unknown TalkSentence: 202140716-->
+<!--Unknown TalkSentence: 202140717-->
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"FixedValue": {
+			"Value": 300034
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202140801-->
+{{Диалог Конец}}
+
+===Исследуйте навигационную систему и определите расположение звёздного ялика, захваченного Блэйдом===
+{{Описание миссии|локация=Облачная переправа|Бедствие Стелларона, очевидно, кем-то подстроено. Злодей, который мне встретился, может контролировать Мерзостей. К счастью, моих умений достаточно, чтобы с ними справиться. Интересно то, что та девушка по одному лишь звуку моего меча смогла понять, кто я. Испытаю её ещё раз, как исследую навигационную систему.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Mission_202031409_Puzzle_Finish)
+
+
+;(Unused &mdash; FinalTimelineEnd_202031409)
+<!--Unknown TalkSentence: 202141101-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+----
+<!--Unknown TalkSentence: 202140901-->
+<!--Unknown TalkSentence: 202140902-->
+<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190429
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+:<!--1-second delay-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Frosty Blade's Trial
+|zhs  = 霜刃一试
+|zht  = 霜刃一試
+|ja   = 霜刃一試し
+|ko   = 서늘한 칼날의 시련
+|es   = Una investigación afilada
+|fr   = Épreuve de la lame du givre
+|ru   = Испытание ледяного клинка
+|th   = บททดสอบแห่งคมดาบน้ำแข็ง
+|vi   = Thử Thách Lưỡi Băng
+|de   = Prüfung der Frostklinge
+|id   = Percobaan Pedang Salju
+|pt   = Teste da Lâmina Glacial
+}}
+
+==История изменений==
+{{История изменений|2.7}}

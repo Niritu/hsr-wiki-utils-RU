@@ -1,0 +1,1085 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 2021002
+|Название        = 
+|Изображение     = Миссия Освоения Блуждающее облако.png
+|Тип             = Миссия компаньона
+|События         = 
+|Глава           = Бесконечная жизнь
+|Условия         = 
+|Персонажи       = Байлу; Блэйд; Дань Хэн; Первопроходец; Цзин Юань; Цзинлю; Цинцзу; Яньцин
+|СтартЛокация    = Обитель божественного предвидения
+|Мир             = Лофу Сяньчжоу
+|Локации         = Обитель божественного предвидения
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*6; Утраченный кристалл*4; Lifeless Blade*6; Кредиты*50 000
+}}
+'''Блуждающее облако''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в Обитель божественного предвидения и узнайте, что сейчас с Охотниками за Стелларонами
+# Поговорите с Цзинлю
+# Отправляйтесь в порт Звездочёт Навалия
+# Запустите линию производства яликов в порту Звездочёт Навалия
+# Отправляйтесь на причал звёздных яликов
+# Запустите ялик
+# Отправляйтесь в Комиссию по ремёслам
+# Уничтожьте монстров в Комиссии по ремёслам
+# Догоните Яньцина
+# Отправляйтесь в Комиссию по алхимии
+# Поговорите с Байлу
+# Верните аптечку Байлу
+# Одолейте Мерзостей и верните аптечку Байлу
+# Поговорите с Цзинлю
+# Попрощайтесь с Яньцином
+# Отправляйтесь в Чешуйчатое ущелье
+# Поговорите с Цзинлю и Цзин Юанем
+# Попрощайтесь с Цзинлю
+# Попрощайтесь с Блэйдом
+# Попрощайтесь с Цзин Юанем
+# Ответьте на сообщение Март 7
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Отправляйтесь в Обитель божественного предвидения и узнайте, что сейчас с Охотниками за Стелларонами===
+{{Описание миссии|локация=Обитель божественного предвидения|Вы полны решимости пойти на встречу в одиночку, чтобы не позволить обидам вашей предыдущей жизни затронуть друзей с экспресса.<br />Размышляя о намерениях автора письма, вы полагаете, что наиболее вероятным отправителем является Охотник за Стелларонами, который намерен своим мечом решить старые обиды. Однако его «приглашения» всегда были прямыми и агрессивными. Что же изменилось теперь? Вы решаете отправиться в Обитель божественного предвидения и расспросить генерала о местонахождении Охотника.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Suprise01"
+}</pre>
+<!--Unknown TalkSentence: 202120701-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Цзинлю)
+----
+<!--Unknown TalkSentence: 202123901-->
+<!--Unknown TalkSentence: 202123902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123904-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+:<!--Unknown TalkSentence: 202123905-->
+:<!--Unknown TalkSentence: 202123914-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123907-->
+:<!--Unknown TalkSentence: 202123908-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+:<!--Unknown TalkSentence: 202123909-->
+:<!--Unknown TalkSentence: 202123910-->
+:<!--Unknown TalkSentence: 202123914-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123912-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:<!--Unknown TalkSentence: 202123913-->
+:<!--Unknown TalkSentence: 202123914-->
+<!--Unknown TalkSentence: 202123905-->
+<!--Unknown TalkSentence: 202123914-->
+
+
+;(Поговорите с Цинцзу)
+<!--Unknown TalkSentence: 202120801-->
+<!--Unknown TalkSentence: 202120802-->
+{{Диалог Конец}}
+
+===Поговорите с Цзинлю===
+{{Описание миссии|локация=Обитель божественного предвидения|В Обители божественного предвидения появилась непрошенная гостья. У лейтенанта Яньцина и стратега Цинцзу уже болит голова. Им нужно принять «гостью» и сопроводить пленника. Её голос и облик будоражат ваши давно похороненные воспоминания. Вы понимаете, что её намерения вовсе не дружественные.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цзинлю)
+----
+<!--Unknown TalkSentence: 202123901-->
+<!--Unknown TalkSentence: 202123902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123904-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+:<!--Unknown TalkSentence: 202123905-->
+:<!--Unknown TalkSentence: 202123914-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123907-->
+:<!--Unknown TalkSentence: 202123908-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+:<!--Unknown TalkSentence: 202123909-->
+:<!--Unknown TalkSentence: 202123910-->
+:<!--Unknown TalkSentence: 202123914-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202123912-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:<!--Unknown TalkSentence: 202123913-->
+:<!--Unknown TalkSentence: 202123914-->
+<!--Unknown TalkSentence: 202123905-->
+<!--Unknown TalkSentence: 202123914-->
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в порт Звездочёт Навалия===
+{{Описание миссии|локация=Обитель божественного предвидения|По словам Цзинлю, она вернулась на Сяньчжоу и собрала своих старых друзей, чтобы вспомнить об обещаниях, которые они давали, когда их сердца всё ещё бились как одно целое. Однако до этого она хотела бы посетить кое-какие места и отдать дань уважения ушедшим товарищам.}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud01"
+}</pre>
+<!--Unknown TalkSentence: 202121001-->
+<!--Unknown TalkSentence: 202121002-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+<!--Unknown TalkSentence: 202121003-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<!--Unknown TalkSentence: 202121005-->
+:;(Экран становится чёрным)
+:<!--Unknown TalkSentence: 202121006-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:<!--Unknown TalkSentence: 202121011-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+:<!--Unknown TalkSentence: 202121012-->
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<!--Unknown TalkSentence: 202121008-->
+:<!--Unknown TalkSentence: 202121009-->
+:;(Экран становится чёрным)
+:<!--Unknown TalkSentence: 202121010-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:<!--Unknown TalkSentence: 202121011-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+:<!--Unknown TalkSentence: 202121012-->
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 202121005-->
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 202121006-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+<!--Unknown TalkSentence: 202121011-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 202121012-->
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Запустите линию производства яликов в порту Звездочёт Навалия===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202121301-->
+<!--Unknown TalkSentence: 202121302-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202121303-->
+<!--Unknown TalkSentence: 202121304-->
+{{Диалог Конец}}
+
+===Отправляйтесь на причал звёздных яликов===
+{{Диалог Начало}}
+;(По прибытии на место)
+{{Диалог Конец}}
+
+===Запустите ялик===
+{{Диалог Начало}}
+;(Unused &mdash; p202110209)
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Комиссию по ремёслам===
+{{Диалог Начало}}
+:{{tx}}
+----
+<!--Unknown TalkSentence: 202121701-->
+<!--Unknown TalkSentence: 202121702-->
+<!--Unknown TalkSentence: 202121703-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+<!--Unknown TalkSentence: 202121704-->
+<!--Unknown TalkSentence: 202121705-->
+<!--Unknown TalkSentence: 202121706-->
+<!--Unknown TalkSentence: 202121707-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+<!--Unknown TalkSentence: 202121708-->
+<!--Unknown TalkSentence: 202121709-->
+----
+{{Диалог Конец}}
+
+===Уничтожьте монстров в Комиссии по ремёслам===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202121801-->
+<!--Unknown TalkSentence: 202121802-->
+<!--Unknown TalkSentence: 202121803-->
+<!--Unknown TalkSentence: 202121804-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202121805-->
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202121805-->
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 15
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud02"
+}</pre>
+<!--Unknown TalkSentence: 202122001-->
+<!--Unknown TalkSentence: 202122002-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 15,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+			"InstanceIDList": [
+				400001
+			]
+		}
+	]
+}</pre>
+:<!--1.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G15",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"BlendTime": 2
+	},
+	"DynamicParams": {}
+}</pre>
+:<!--1.5-second delay-->
+<!--Unknown TalkSentence: 202122003-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202121805-->
+----
+{{Диалог Конец}}
+
+===Догоните Яньцина===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 6,
+			"GroupID": 11,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202122201
+		},
+		{
+			"AutoSkipTime": 6,
+			"TalkSentenceID": 202122202
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 6,
+	"UniqueID": 1
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 202100227
+}</pre>
+<!--Unknown TalkSentence: 202124501-->
+<!--Unknown TalkSentence: 202124502-->
+<!--Unknown TalkSentence: 202124503-->
+<!--Unknown TalkSentence: 202124504-->
+<!--Unknown TalkSentence: 202124505-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202124507-->
+:<!--Unknown TalkSentence: 202124508-->
+:<!--Unknown TalkSentence: 202124509-->
+:<!--Unknown TalkSentence: 202124510-->
+:<!--Unknown TalkSentence: 202124511-->
+:<!--Unknown TalkSentence: 202124512-->
+:<!--Unknown TalkSentence: 202124513-->
+:<!--Unknown TalkSentence: 202124514-->
+:<!--Unknown TalkSentence: 202124515-->
+:<!--Unknown TalkSentence: 202124516-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202124518-->
+::{{tx}}
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"ResetToFloorDefault": true
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202124510-->
+:<!--Unknown TalkSentence: 202124511-->
+:<!--Unknown TalkSentence: 202124512-->
+:<!--Unknown TalkSentence: 202124513-->
+:<!--Unknown TalkSentence: 202124514-->
+:<!--Unknown TalkSentence: 202124515-->
+:<!--Unknown TalkSentence: 202124516-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 202124518-->
+::{{tx}}
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"ResetToFloorDefault": true
+}</pre>
+<!--Unknown TalkSentence: 202124510-->
+<!--Unknown TalkSentence: 202124511-->
+<!--Unknown TalkSentence: 202124512-->
+<!--Unknown TalkSentence: 202124513-->
+<!--Unknown TalkSentence: 202124514-->
+<!--Unknown TalkSentence: 202124515-->
+<!--Unknown TalkSentence: 202124516-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202124518-->
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"ResetToFloorDefault": true
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 202122101-->
+<!--Unknown TalkSentence: 202122102-->
+<!--Unknown TalkSentence: 202122103-->
+<!--Unknown TalkSentence: 202122104-->
+<!--Unknown TalkSentence: 202122105-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G11",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<!--Unknown TalkSentence: 202122107-->
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 202122108-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+<!--Unknown TalkSentence: 202122109-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G11",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+<!--Unknown TalkSentence: 202122114-->
+<!--Unknown TalkSentence: 202122115-->
+<!--Unknown TalkSentence: 202122116-->
+<!--Unknown TalkSentence: 202122117-->
+<!--Unknown TalkSentence: 202122118-->
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в Комиссию по алхимии===
+{{Описание миссии|локация=Комиссия по алхимии|Отдав дань уважения, вы следуете за ней к Чешуйчатому ущелью. По какой-то причине у неё появилось желание обратиться за медицинской помощью. В Комиссии по алхимии нет никого лучше Девушки-дракона, чтобы поставить диагноз бывшему Мастеру меча Лофу.}}
+{{Диалог Начало}}
+:{{tx}}
+
+;(Поговорите с Байлу)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy01"
+}</pre>
+<!--Unknown TalkSentence: 202122301-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+{{Диалог Конец}}
+
+===Поговорите с Байлу===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Верните аптечку Байлу===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202122503-->
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 202122504-->
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"FixedValue": {
+			"Value": 400003
+		}
+	},
+	"PathwayGroupID": 7,
+	"PathwayID": 2,
+	"MotionFlag": "Run",
+	"SpeedScale": 1.2
+}</pre>
+<!--Unknown TalkSentence: 202122505-->
+{{Диалог Конец}}
+
+===Одолейте Мерзостей и верните аптечку Байлу===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"SubMissionID": 202100244
+}</pre>
+<!--Unknown TalkSentence: 202122506-->
+<!--Unknown TalkSentence: 202122507-->
+<!--Unknown TalkSentence: 202122508-->
+<!--Unknown TalkSentence: 202122509-->
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 202100244
+}</pre>
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Диалог Конец}}
+
+===Поговорите с Цзинлю===
+{{Диалог Начало}}
+<!--Unknown TalkSentence: 202122512-->
+
+;(Поговорите с Цзинлю)
+----
+<!--Unknown TalkSentence: 202122601-->
+<!--Unknown TalkSentence: 202122602-->
+<!--Unknown TalkSentence: 202122603-->
+<!--Unknown TalkSentence: 202122604-->
+<!--Unknown TalkSentence: 202122605-->
+<!--Unknown TalkSentence: 202122606-->
+<!--Unknown TalkSentence: 202122607-->
+<!--Unknown TalkSentence: 202122608-->
+<!--Unknown TalkSentence: 202122609-->
+<!--Unknown TalkSentence: 202122610-->
+<!--Unknown TalkSentence: 202122611-->
+<!--Unknown TalkSentence: 202122612-->
+<!--Unknown TalkSentence: 202122613-->
+<!--Unknown TalkSentence: 202122614-->
+<!--Unknown TalkSentence: 202122615-->
+<!--Unknown TalkSentence: 202122616-->
+<!--Unknown TalkSentence: 202122617-->
+----
+{{Диалог Конец}}
+
+===Попрощайтесь с Яньцином===
+{{Описание миссии|локация=Чешуйчатое ущелье|Бывшие друзья воссоединяются в Чешуйчатом ущелье. Как сказал Цзин Юань: «Старые сети только мутят воду, не стоит их поднимать». Однако кто-то должен положить конец старым обидам.}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Отправляйтесь в Чешуйчатое ущелье===
+{{Диалог Начало}}
+:{{tx}}
+
+;(Поговорите с Блэйд)
+<!--Unknown TalkSentence: 202122902-->
+
+;(Поговорите с Цзинлю)
+----
+<!--Unknown TalkSentence: 202122701-->
+<!--Unknown TalkSentence: 202122702-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Close01"
+}</pre>
+<!--Unknown TalkSentence: 202122703-->
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+<!--Unknown TalkSentence: 202122704-->
+<!--Unknown TalkSentence: 202122705-->
+<!--Unknown TalkSentence: 202122706-->
+<!--Unknown TalkSentence: 202122707-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+<!--Unknown TalkSentence: 202122708-->
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing_D",
+	"SubMissionID": 202100234
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::Мы уже были здесь однажды, семьсот лет назад...
+::Мы смеялись, сражались... и с надеждой смотрели в будущее.
+::Их образы всё ещё стоят у меня перед глазами, словно некогда увиденные сны.
+::Мне казалось, что те отрадные дни будут длиться столь же долго, сколько длятся жизни сяньчжоуцев.
+::Но... те грёзы...
+::развеялись, словно облака на небе.
+;(Cutscene ends)
+----
+----
+;(Экран становится чёрным)
+<!--Unknown TalkSentence: 202123301-->
+<!--Unknown TalkSentence: 202123302-->
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 202100234
+}</pre>
+:{{tx}}
+{{Диалог Конец}}
+
+===Поговорите с Цзинлю и Цзин Юанем===
+{{Диалог Начало}}
+
+;(Поговорите с Цзинлю)
+----
+<!--Unknown TalkSentence: 202122801-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 202122803-->
+<!--Unknown TalkSentence: 202122806-->
+<!--Unknown TalkSentence: 202122807-->
+<!--Unknown TalkSentence: 202122808-->
+<!--Unknown TalkSentence: 202122809-->
+----
+{{Диалог Конец}}
+
+===Попрощайтесь с Цзинлю===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Попрощайтесь с Блэйдом===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Попрощайтесь с Цзин Юанем===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Ответьте на сообщение Март 7===
+{{Описание миссии|локация=Чешуйчатое ущелье|Словно пробудив вас от старого сна, сообщение напоминает вам, что вы всё ещё находитесь в начале нового пути, и у вас есть друзья, которые пойдут с вами, где бы вы ни оказались.}}
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1217300
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Clouds Leave No Trace
+|zhs  = 云无留迹
+|zht  = 雲無留跡
+|ja   = 流雲無痕
+|ko   = 흔적을 남기지 않은 구름
+|es   = Las nubes no dejan huellas
+|fr   = Les nuages s'estompent sans laisser de trace
+|ru   = Блуждающее облако
+|th   = เมฆที่ไร้ร่องรอย
+|vi   = Mây Đi Không Dấu Vết
+|de   = Die vorbeiziehende Wolke
+|id   = Awan Tidak Meninggalkan Jejak
+|pt   = Nuvens Não Deixam Rastros
+}}
+
+==История изменений==
+{{История изменений|2.7}}
