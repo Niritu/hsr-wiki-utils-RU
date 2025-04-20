@@ -1,0 +1,314 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3020103
+|Название        = 
+|Изображение     = Миссия Освоения Страж берега.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Гуанда; Жоюэ; Иньшу; Кан Ту; Ляньянь; Малыш Фу; Наньцзе; Первопроходец; Синсюэ; У Хэ; Фунгизонтик; Цзин Фан; Цун; Шумяо; Юэюань; Яньцуй
+|СтартЛокация    = Комиссия по алхимии
+|Мир             = Лофу Сяньчжоу
+|Локации         = Комиссия по алхимии
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Страж берега''' — [[Ежедневная миссия]] в [[Лофу Сяньчжоу]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Юэюань в Комиссии по алхимии
+# Патрулируйте берег Чешуйчатого ущелья
+# Отдайте письмо малышу Фу (необязательно)
+# Отдайте Юэюань бутылку с посланием (необязательно)
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Юэюань в Комиссии по алхимии===
+{{Описание миссии|локация=Комиссия по алхимии|После того, как Комиссия по алхимии вновь открылась, среди честных людей затесались преступники. Одних хранителей жемчуга недостаточно для патрулирования. Они пригласили храбрых добровольцев.<br />Хранительница жемчуга Юэюань надеется, что вы сможете помочь с патрулированием... Серьёзно, где вся охрана?}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Юэюань)
+;(If {{cx}}<!--during performance 502046101-->)
+;(If {{cx}}<!--not during performance 502046101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502046202
+}</pre>
+<!--Unknown TalkSentence: 502046110-->
+{{Диалог Конец}}
+
+===Патрулируйте берег Чешуйчатого ущелья===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 302010118-->
+{{Диалог Конец}}
+
+===Отдайте письмо малышу Фу (необязательно)===
+{{Диалог Начало}}
+
+
+;(Поговорите с Жоюэ)
+;(If {{cx}}<!--during performance 502013101-->)
+:<!--Unknown TalkSentence: 502013101-->
+:<!--Unknown TalkSentence: 502013102-->
+:<!--Unknown TalkSentence: 502013103-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502013105-->
+:<!--Unknown TalkSentence: 502013106-->
+:<!--Unknown TalkSentence: 502013107-->
+;(If {{cx}}<!--not during performance 502013101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502013151
+}</pre>
+:<!--Unknown TalkSentence: 502013152-->
+:<!--Unknown TalkSentence: 502013103-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Шумяо)
+;(If {{cx}}<!--during performance 502021101-->)
+;(If {{cx}}<!--not during performance 502021101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502021101
+}</pre>
+<!--Unknown TalkSentence: 502021109-->
+
+;(Поговорите с Синсюэ)
+;(If {{cx}}<!--during performance 502022101-->)
+;(If {{cx}}<!--not during performance 502022101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502022144
+}</pre>
+<!--Unknown TalkSentence: 502022111-->
+
+;(Поговорите с Яньцуй)
+;(If {{cx}}<!--during performance 502014101-->)
+;(If {{cx}}<!--not during performance 502014101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502014155
+}</pre>
+
+;(Поговорите с Ляньянь)
+;(If {{cx}}<!--during performance 502015101-->)
+:<!--Unknown TalkSentence: 502015101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502015103-->
+:<!--Unknown TalkSentence: 502015106-->
+:<!--Unknown TalkSentence: 502015107-->
+;(If {{cx}}<!--not during performance 502015101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502015136
+}</pre>
+:<!--Unknown TalkSentence: 502015137-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Иньшу)
+;(If {{cx}}<!--during performance 502016101-->)
+:<!--Unknown TalkSentence: 502016101-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502016103-->
+::<!--Unknown TalkSentence: 502016104-->
+::<!--Unknown TalkSentence: 502016105-->
+::<!--Unknown TalkSentence: 502016109-->
+::<!--Unknown TalkSentence: 502016110-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502016107-->
+::<!--Unknown TalkSentence: 502016108-->
+::<!--Unknown TalkSentence: 502016109-->
+::<!--Unknown TalkSentence: 502016110-->
+:<!--Unknown TalkSentence: 502016104-->
+:<!--Unknown TalkSentence: 502016105-->
+:<!--Unknown TalkSentence: 502016109-->
+:<!--Unknown TalkSentence: 502016110-->
+;(If {{cx}}<!--not during performance 502016101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502016137
+}</pre>
+:<!--Unknown TalkSentence: 502016138-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Малыш Фу)
+;(If {{cx}}<!--during performance 502023101-->)
+:<!--Unknown TalkSentence: 502023101-->
+:<!--Unknown TalkSentence: 502023102-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502023104-->
+:<!--Unknown TalkSentence: 502023105-->
+;(If {{cx}}<!--not during performance 502023101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502023156
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Цзин Фан)
+;(If {{cx}}<!--during performance 502026101-->)
+:<!--Unknown TalkSentence: 502026101-->
+:<!--Unknown TalkSentence: 502026102-->
+:<!--Unknown TalkSentence: 502026103-->
+:<!--Unknown TalkSentence: 502026104-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502026106-->
+:<!--Unknown TalkSentence: 502026111-->
+;(If {{cx}}<!--not during performance 502026101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502026147
+}</pre>
+:<!--Unknown TalkSentence: 502026148-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Кан Ту)
+;(If {{cx}}<!--during performance 502024101-->)
+:<!--Unknown TalkSentence: 502024101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 502024101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502024134
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Цун)
+;(If {{cx}}<!--during performance 502017101-->)
+:<!--Unknown TalkSentence: 502017101-->
+:<!--Unknown TalkSentence: 502017102-->
+:<!--Unknown TalkSentence: 502017103-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502017105-->
+:<!--Unknown TalkSentence: 502017108-->
+:<!--Unknown TalkSentence: 502017109-->
+;(If {{cx}}<!--not during performance 502017101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502017301
+}</pre>
+:<!--Unknown TalkSentence: 502017302-->
+
+;(Поговорите с Фунгизонтик)
+;(If {{cx}}<!--during performance 502018101-->)
+:<!--Unknown TalkSentence: 502018101-->
+:<!--Unknown TalkSentence: 502018102-->
+:<!--Unknown TalkSentence: 502018103-->
+:<!--Unknown TalkSentence: 502018104-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502018106-->
+::<!--Unknown TalkSentence: 502018107-->
+::<!--Unknown TalkSentence: 502018112-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 502018109-->
+::<!--Unknown TalkSentence: 502018110-->
+::<!--Unknown TalkSentence: 502018111-->
+::<!--Unknown TalkSentence: 502018112-->
+:<!--Unknown TalkSentence: 502018106-->
+:<!--Unknown TalkSentence: 502018107-->
+:<!--Unknown TalkSentence: 502018112-->
+;(If {{cx}}<!--not during performance 502018101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502018101
+}</pre>
+:<!--Unknown TalkSentence: 502018102-->
+:<!--Unknown TalkSentence: 502018162-->
+:<!--Unknown TalkSentence: 502018163-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с У Хэ)
+;(If {{cx}}<!--during performance 502019101-->)
+:<!--Unknown TalkSentence: 502019101-->
+:<!--Unknown TalkSentence: 502019102-->
+:<!--Unknown TalkSentence: 502019103-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502019105-->
+:<!--Unknown TalkSentence: 502019106-->
+:<!--Unknown TalkSentence: 502019113-->
+:<!--Unknown TalkSentence: 502019114-->
+;(If {{cx}}<!--not during performance 502019101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502019153
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502019154
+}</pre>
+
+;(Поговорите с Гуанда)
+;(If {{cx}}<!--during performance 502025101-->)
+:<!--Unknown TalkSentence: 502025101-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 502025103-->
+:<!--Unknown TalkSentence: 502025108-->
+:<!--Unknown TalkSentence: 502025109-->
+;(If {{cx}}<!--not during performance 502025101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 502025145
+}</pre>
+{{Диалог Конец}}
+
+===Отдайте Юэюань бутылку с посланием (необязательно)===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Guardian of the Shoreline
+|zhs  = 海滩守护者
+|zht  = 海灘守護者
+|ja   = 砂浜の守護者
+|ko   = 바닷가의 수호자
+|es   = {{MC|ж=Guardiana|м=Guardián}} de la bahía
+|fr   = Alerte à Xianzhou
+|ru   = Страж берега
+|th   = ผู้พิทักษ์ชายหาด
+|vi   = Người Bảo Vệ Bãi Biển
+|de   = Wächter des Strandes
+|id   = Penjaga Pantai
+|pt   = Guardião do Litoral
+}}
+
+==История изменений==
+{{История изменений|2.7}}

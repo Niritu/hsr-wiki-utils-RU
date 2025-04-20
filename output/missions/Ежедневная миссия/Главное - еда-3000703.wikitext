@@ -1,0 +1,122 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3000703
+|Название        = 
+|Изображение     = Миссия Освоения Главное - еда.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Инженер по техническому обслуживанию; Неисправный робот; Первопроходец
+|СтартЛокация    = Базовая зона
+|Мир             = Космическая станция «Герта»
+|Локации         = Базовая зона
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Главное - еда''' — [[Ежедневная миссия]] в [[Космическая станция «Герта»]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с инженером по техническому обслуживанию
+# Найдите неисправных роботов и перезапустите их
+# Сообщите о перезапуске робота инженеру
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с инженером по техническому обслуживанию===
+{{Описание миссии|локация=Базовая зона|У инженера по техобслуживанию есть несколько новых идей о причинах неисправности робота-доставщика: нужно перезапустить неисправного робота. Сделайте это, чтобы проверить, верна ли его догадка.}}
+{{Диалог Начало}}
+
+;(Поговорите с Инженер по техническому обслуживанию)
+<!--Unknown TalkSentence: 300070301-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 300070303-->
+:<!--Unknown TalkSentence: 300070306-->
+:<!--Unknown TalkSentence: 300070307-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 300070305-->
+:<!--Unknown TalkSentence: 300070306-->
+:<!--Unknown TalkSentence: 300070307-->
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Найдите неисправных роботов и перезапустите их===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body"
+}</pre>
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 300070315-->
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body"
+}</pre>
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 300070316-->
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot2",
+	"MeshName": "Body"
+}</pre>
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 300070317-->
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot3",
+	"MeshName": "Body"
+}</pre>
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 300070318-->
+
+;(Поговорите с Маленький робот)
+<!--Unknown TalkSentence: 300070318-->
+{{Диалог Конец}}
+
+===Сообщите о перезапуске робота инженеру===
+{{Диалог Начало}}
+
+;(Поговорите с Инженер по техническому обслуживанию)
+<!--Unknown TalkSentence: 300070319-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 300070321-->
+<!--Unknown TalkSentence: 300070324-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 300070326-->
+<!--Unknown TalkSentence: 300070327-->
+----
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Meals Are More Important
+|zhs  = 吃饭要紧
+|zht  = 吃飯要緊
+|ja   = 食事は大事
+|ko   = 끼니는 중요하지
+|es   = La comida es muy importante
+|fr   = L'aile et la cuisse
+|ru   = Главное - еда
+|th   = มื้ออาหารใครว่าไม่สำคัญ
+|vi   = Ăn Uống Quan Trọng
+|de   = Mahlzeiten sind wichtiger
+|id   = Makan Itu Penting
+|pt   = Refeições São Muito Importantes
+}}
+
+==История изменений==
+{{История изменений|2.7}}

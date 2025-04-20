@@ -1,0 +1,329 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011202
+|Название        = 
+|Изображение     = Миссия Освоения На пороге науки.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Агнес; Амо; Доминик; Лавонна; Лила; Маня; Наблюдающая женщина; Наблюдающий мужчина; Наблюдающий ребёнок; Наблюдающий старик; Ника; Первопроходец; Регин; Росси; Селина; Старый Гёте; Тамила; Уоллес; Фурдо; Чавез; Чиновник Министерства образования
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''На пороге науки''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином в отеле «Гёте»
+# Найдите сотрудника из Надмирья, который поможет Регину
+# Соберитесь с духом и снова найдите сотрудника Министерства образования
+# Сообщите Регину плохие новости
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином в отеле «Гёте»===
+{{Описание миссии|локация=Вестибюль отеля|Учёному Регину требуется помощь.<br />Он хочет представить свою диссертацию и нуждается в вашей помощи.}}
+{{Диалог Начало}}
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+<!--Unknown TalkSentence: 301120204-->
+:{{Диалог|Стрелка}} undefined
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:;(Return to previous option selection)
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите сотрудника из Надмирья, который поможет Регину===
+{{Описание миссии|локация=Административный район|Учёный Регин надеется представить свою диссертацию о Макрокосмическом временном туннеле Верховной хранительнице.<br />Однако, судя по всему, у него конфликт с сотрудниками Министерства образования Белобога, поэтому он «нанял» вас в качестве своего доверенного лица.<br />Найдите в Надмирье человека, который сможет представить диссертацию за него.}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Агнес)
+;(If {{cx}}<!--during performance 501023801-->)
+:<!--Unknown TalkSentence: 501023828-->
+:<!--Unknown TalkSentence: 501023829-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501023831-->
+:<!--Unknown TalkSentence: 501023836-->
+:<!--Unknown TalkSentence: 501023838-->
+:<!--Unknown TalkSentence: 501023839-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 501023801-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023871
+}</pre>
+:<!--Unknown TalkSentence: 501023872-->
+:<!--Unknown TalkSentence: 501023873-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Чавез)
+;(If {{cx}}<!--during performance 501027101-->)
+:<!--Unknown TalkSentence: 501027101-->
+:<!--Unknown TalkSentence: 501027102-->
+;(If {{cx}}<!--not during performance 501027101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027142
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010271_18)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027112-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Доминик)
+<!--Unknown TalkSentence: 501029704-->
+<!--Unknown TalkSentence: 501029705-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Фурдо)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027213-->
+:<!--Unknown TalkSentence: 501027214-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027216-->
+:<!--Unknown TalkSentence: 501027217-->
+:<!--Unknown TalkSentence: 501027218-->
+:<!--Unknown TalkSentence: 501027219-->
+:<!--Unknown TalkSentence: 501027220-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027225-->
+:<!--Unknown TalkSentence: 501027226-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 501023533-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Лавонна)
+;(If {{cx}}<!--during performance 501023901-->)
+;(If {{cx}}<!--not during performance 501023901-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023980
+}</pre>
+
+;(Поговорите с Лила)
+:<!--0.3-second delay-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023651-->
+:<!--Unknown TalkSentence: 501023652-->
+:<!--Unknown TalkSentence: 501023653-->
+:<!--Unknown TalkSentence: 501023637-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023655-->
+:<!--Unknown TalkSentence: 501023656-->
+:<!--Unknown TalkSentence: 501023657-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 501023662-->
+
+;(Поговорите с Маня)
+<!--Unknown TalkSentence: 301120217-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301120219-->
+<!--Unknown TalkSentence: 301120220-->
+<!--Unknown TalkSentence: 301120222-->
+<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190303
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+<!--Unknown TalkSentence: 301120223-->
+;(Unused &mdash; ManyaHoldHead)
+
+
+;(Поговорите с Ника)
+;(If {{cx}}<!--during performance 501024001-->)
+:<!--Unknown TalkSentence: 501024042-->
+:<!--Unknown TalkSentence: 501024043-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024046-->
+:<!--Unknown TalkSentence: 501024049-->
+;(If {{cx}}<!--not during performance 501024001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024077
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Селина)
+;(If {{cx}}<!--SubMission Finish: 200120106-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+:<!--Unknown TalkSentence: 501026846-->
+:<!--Unknown TalkSentence: 504049402-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--SubMission not Finish: 200120106-->)
+:;(If {{cx}}<!--during performance 501026801-->)
+::<!--Unknown TalkSentence: 501026801-->
+::<!--Unknown TalkSentence: 501026802-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 501026801-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+::<!--Unknown TalkSentence: 501026846-->
+::<!--Unknown TalkSentence: 501026847-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Тамила)
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 501024463-->
+<!--Unknown TalkSentence: 501024464-->
+<!--Unknown TalkSentence: 501024465-->
+<!--Unknown TalkSentence: 501024466-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Амо)
+;(If {{cx}}<!--during performance 501024201-->)
+:<!--Unknown TalkSentence: 501024232-->
+;(If {{cx}}<!--not during performance 501024201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024272
+}</pre>
+:<!--Unknown TalkSentence: 501024273-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Соберитесь с духом и снова найдите сотрудника Министерства образования===
+{{Описание миссии|локация=Административный район|Учёный Регин надеется представить свою диссертацию о Макрокосмическом временном туннеле Верховной хранительнице.<br />Вы ошиблись, проходя тест сотрудника Министерства образования, но Регин всего за пару секунд назвал правильный ответ.<br />У вас не остаётся другого выбора, кроме как идти умолять сотрудника Министерства образования дать вам второй шанс.}}
+{{Диалог Начало}}
+
+;(Поговорите с Маня)
+<!--Unknown TalkSentence: 301120544-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301120546-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301120548-->
+;(Unused &mdash; OfficerAkimbo01)
+
+{{Диалог Конец}}
+
+===Сообщите Регину плохие новости===
+{{Описание миссии|локация=Вестибюль отеля|Учёный Регин надеется представить свою диссертацию о Макрокосмическом временном туннеле Верховной хранительнице.<br />Однако сотрудник Министерства образования пытается помешать подаче заявки, требуя, чтобы вы прошли тест.<br />Вопрос настолько сложный, что даже такой умный человек, как вы, ошибся. Придётся сообщить Регину плохие новости.}}
+{{Диалог Начало}}
+
+;(Поговорите с Регин)
+<!--Unknown TalkSentence: 301120525-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301120527-->
+<!--Unknown TalkSentence: 301120528-->
+<!--Unknown TalkSentence: 301120532-->
+:<!--1-second delay-->
+----
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 301120534-->
+<!--Unknown TalkSentence: 301120535-->
+<!--Unknown TalkSentence: 301120536-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = On the Doorsteps of Science
+|zhs  = 在科学的大门前
+|zht  = 在科學的大門前
+|ja   = 科学の門の前で
+|ko   = 과학의 문 앞에서
+|es   = En el umbral de la ciencia
+|fr   = Aux portes de la science
+|ru   = На пороге науки
+|th   = เบื้องหน้าประตูใหญ่แห่งวิทยาศาสตร์
+|vi   = Trước Cánh Cổng Khoa Học
+|de   = Auf der Schwelle zur Wissenschaft
+|id   = Di Ambang Pintu Ilmu Pengetahuan
+|pt   = Na Frente da Ciência
+}}
+
+==История изменений==
+{{История изменений|2.7}}

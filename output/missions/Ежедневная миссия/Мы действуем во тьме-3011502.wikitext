@@ -1,0 +1,260 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011502
+|Название        = 
+|Изображение     = Миссия Освоения Мы действуем во тьме.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Агнес; Амо; Доминик; Лавонна; Лила; Маня; Наблюдающая женщина; Наблюдающий мужчина; Наблюдающий ребёнок; Наблюдающий старик; Наташа; Ника; Первопроходец; Селина; Тамила; Уоллес; Фурдо; Чавез
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Мы действуем во тьме''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Осмотрите доску объявлений
+# Поговорите с Агнес о её просьбе
+# Поговорите с Наташей в клинике в Подземье
+# Доложите Агнес
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Осмотрите доску объявлений===
+{{Описание миссии|локация=Административный район|Идите к доске объявлений в Надмирье и проверьте, есть ли у Общества законных прав какие-либо новые поручения.}}
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Осмотреть
+<!--Unknown TalkSentence: 301150539-->
+<!--Unknown TalkSentence: 301150540-->
+<!--Unknown TalkSentence: 301150541-->
+<!--Unknown TalkSentence: 301150648-->
+<!--Unknown TalkSentence: 301150649-->
+<!--Unknown TalkSentence: 301150650-->
+<!--Unknown TalkSentence: 301150770-->
+<!--Unknown TalkSentence: 301150771-->
+<!--Unknown TalkSentence: 301150772-->
+<!--Unknown TalkSentence: 301150858-->
+<!--Unknown TalkSentence: 301150859-->
+<!--Unknown TalkSentence: 301150860-->
+{{Диалог Конец}}
+
+===Поговорите с Агнес о её просьбе===
+{{Описание миссии|локация=Административный район|Вы видите, что Агнес опубликовала поручение на доске объявлений Общества законных прав и хочет воспользоваться своими законными правами. Помогите Агнес!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Агнес)
+;(If {{cx}}<!--during performance 501023801-->)
+:<!--Unknown TalkSentence: 501023828-->
+:<!--Unknown TalkSentence: 501023829-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501023831-->
+:<!--Unknown TalkSentence: 501023836-->
+:<!--Unknown TalkSentence: 501023838-->
+:<!--Unknown TalkSentence: 501023839-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 501023801-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023871
+}</pre>
+:<!--Unknown TalkSentence: 501023872-->
+:<!--Unknown TalkSentence: 501023873-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Чавез)
+;(If {{cx}}<!--during performance 501027101-->)
+:<!--Unknown TalkSentence: 501027101-->
+:<!--Unknown TalkSentence: 501027102-->
+;(If {{cx}}<!--not during performance 501027101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027142
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010271_18)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027112-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Доминик)
+<!--Unknown TalkSentence: 501029704-->
+<!--Unknown TalkSentence: 501029705-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Фурдо)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027213-->
+:<!--Unknown TalkSentence: 501027214-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027216-->
+:<!--Unknown TalkSentence: 501027217-->
+:<!--Unknown TalkSentence: 501027218-->
+:<!--Unknown TalkSentence: 501027219-->
+:<!--Unknown TalkSentence: 501027220-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027225-->
+:<!--Unknown TalkSentence: 501027226-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 501023533-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Лавонна)
+;(If {{cx}}<!--during performance 501023901-->)
+;(If {{cx}}<!--not during performance 501023901-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023980
+}</pre>
+
+;(Поговорите с Лила)
+:<!--0.3-second delay-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023651-->
+:<!--Unknown TalkSentence: 501023652-->
+:<!--Unknown TalkSentence: 501023653-->
+:<!--Unknown TalkSentence: 501023637-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023655-->
+:<!--Unknown TalkSentence: 501023656-->
+:<!--Unknown TalkSentence: 501023657-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 501023662-->
+
+;(Поговорите с Маня)
+<!--Unknown TalkSentence: 501023730-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Ника)
+;(If {{cx}}<!--during performance 501024001-->)
+:<!--Unknown TalkSentence: 501024042-->
+:<!--Unknown TalkSentence: 501024043-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024046-->
+:<!--Unknown TalkSentence: 501024049-->
+;(If {{cx}}<!--not during performance 501024001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024077
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Селина)
+;(If {{cx}}<!--SubMission Finish: 200120106-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+:<!--Unknown TalkSentence: 501026846-->
+:<!--Unknown TalkSentence: 504049402-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--SubMission not Finish: 200120106-->)
+:;(If {{cx}}<!--during performance 501026801-->)
+::<!--Unknown TalkSentence: 501026801-->
+::<!--Unknown TalkSentence: 501026802-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 501026801-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+::<!--Unknown TalkSentence: 501026846-->
+::<!--Unknown TalkSentence: 501026847-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Тамила)
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 501024463-->
+<!--Unknown TalkSentence: 501024464-->
+<!--Unknown TalkSentence: 501024465-->
+<!--Unknown TalkSentence: 501024466-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Амо)
+;(If {{cx}}<!--during performance 501024201-->)
+:<!--Unknown TalkSentence: 501024232-->
+;(If {{cx}}<!--not during performance 501024201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024272
+}</pre>
+:<!--Unknown TalkSentence: 501024273-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Поговорите с Наташей в клинике в Подземье===
+{{Диалог Начало}}
+
+;(Поговорите с Наташа)
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 301150523-->
+<!--Unknown TalkSentence: 301150524-->
+<!--Unknown TalkSentence: 301150525-->
+;(Unused &mdash; TalkSentence_301150522)
+
+{{Диалог Конец}}
+
+===Доложите Агнес===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Grinding in the Dark
+|zhs  = 躬耕于黑暗
+|zht  = 躬耕於黑暗
+|ja   = 闇に生きる
+|ko   = 우리는 어둠 속에서 움직인다
+|es   = Trabajo en las sombras
+|fr   = Travailler dans l'ombre
+|ru   = Мы действуем во тьме
+|th   = ทำงานในความมืด
+|vi   = Cày Trong Bóng Tối
+|de   = Arbeit im Dunkeln
+|id   = Bekerja dalam Kegelapan
+|pt   = Grindando na Escuridão
+}}
+
+==История изменений==
+{{История изменений|2.7}}

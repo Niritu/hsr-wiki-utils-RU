@@ -1,0 +1,299 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3010203
+|Название        = 
+|Изображение     = Миссия Освоения Руководство по перекладыванию ответственности.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Агнес; Амо; Доминик; Лавонна; Лила; Маня; Наблюдающая женщина; Наблюдающий мужчина; Наблюдающий ребёнок; Наблюдающий старик; Ника; Первопроходец; Селина; Тамила; Уоллес; Фурдо; Чавез
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Руководство по перекладыванию ответственности''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Уоллесом в Надмирье
+# Сфотографируйте Уоллеса с машиной
+# Покажите Уоллесу фотографию
+# Убедите Фурдо подружиться с Уоллесом
+# Рассказать Уоллесу плохие новости
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Уоллесом в Надмирье===
+{{Описание миссии|локация=Административный район|Кажется, Уоллес в Административном районе о чём-то переживает...<br />Вы как раз хотели узнать, как у него дела.}}
+{{Диалог Начало}}
+
+;(Поговорите с Агнес)
+;(If {{cx}}<!--during performance 501023801-->)
+:<!--Unknown TalkSentence: 501023828-->
+:<!--Unknown TalkSentence: 501023829-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501023831-->
+:<!--Unknown TalkSentence: 501023836-->
+:<!--Unknown TalkSentence: 501023838-->
+:<!--Unknown TalkSentence: 501023839-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 501023801-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023871
+}</pre>
+:<!--Unknown TalkSentence: 501023872-->
+:<!--Unknown TalkSentence: 501023873-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Чавез)
+;(If {{cx}}<!--during performance 501027101-->)
+:<!--Unknown TalkSentence: 501027101-->
+:<!--Unknown TalkSentence: 501027102-->
+;(If {{cx}}<!--not during performance 501027101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027142
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010271_18)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027112-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Доминик)
+<!--Unknown TalkSentence: 501029704-->
+<!--Unknown TalkSentence: 501029705-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Фурдо)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027213-->
+:<!--Unknown TalkSentence: 501027214-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027216-->
+:<!--Unknown TalkSentence: 501027217-->
+:<!--Unknown TalkSentence: 501027218-->
+:<!--Unknown TalkSentence: 501027219-->
+:<!--Unknown TalkSentence: 501027220-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027225-->
+:<!--Unknown TalkSentence: 501027226-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 301020302-->
+<!--Unknown TalkSentence: 301020303-->
+<!--Unknown TalkSentence: 301020304-->
+<!--Unknown TalkSentence: 301020305-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+
+;(Поговорите с Лавонна)
+;(If {{cx}}<!--during performance 501023901-->)
+;(If {{cx}}<!--not during performance 501023901-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023980
+}</pre>
+
+;(Поговорите с Лила)
+:<!--0.3-second delay-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023651-->
+:<!--Unknown TalkSentence: 501023652-->
+:<!--Unknown TalkSentence: 501023653-->
+:<!--Unknown TalkSentence: 501023637-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501023655-->
+:<!--Unknown TalkSentence: 501023656-->
+:<!--Unknown TalkSentence: 501023657-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+:<!--Unknown TalkSentence: 501023662-->
+
+;(Поговорите с Маня)
+<!--Unknown TalkSentence: 501023730-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Ника)
+;(If {{cx}}<!--during performance 501024001-->)
+:<!--Unknown TalkSentence: 501024042-->
+:<!--Unknown TalkSentence: 501024043-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024046-->
+:<!--Unknown TalkSentence: 501024049-->
+;(If {{cx}}<!--not during performance 501024001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024077
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Селина)
+;(If {{cx}}<!--SubMission Finish: 200120106-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+:<!--Unknown TalkSentence: 501026846-->
+:<!--Unknown TalkSentence: 504049402-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--SubMission not Finish: 200120106-->)
+:;(If {{cx}}<!--during performance 501026801-->)
+::<!--Unknown TalkSentence: 501026801-->
+::<!--Unknown TalkSentence: 501026802-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 501026801-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+::<!--Unknown TalkSentence: 501026846-->
+::<!--Unknown TalkSentence: 501026847-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Тамила)
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 501024463-->
+<!--Unknown TalkSentence: 501024464-->
+<!--Unknown TalkSentence: 501024465-->
+<!--Unknown TalkSentence: 501024466-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Амо)
+;(If {{cx}}<!--during performance 501024201-->)
+:<!--Unknown TalkSentence: 501024232-->
+;(If {{cx}}<!--not during performance 501024201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024272
+}</pre>
+:<!--Unknown TalkSentence: 501024273-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Сфотографируйте Уоллеса с машиной===
+{{Описание миссии|локация=Административный район|Уоллес переживает из-за того, что у него нет друзей.<br />Он разработал план по поиску новых друзей, первым шагом которого является фотография.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; Mission_301020310)
+
+
+;(Unused &mdash; 301020310_fail)
+<pre>{
+	"$type": "RPG.GameCore.ToastPile",
+	"ImgPath": "SpriteOutput/UI/MobilePhone/TextPanel.png",
+	"DescTextID": {
+		"Hash": 10364261400690773299
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Покажите Уоллесу фотографию===
+{{Описание миссии|локация=Административный район|Уоллес переживает из-за того, что у него нет друзей.<br />Вы помогли Уоллесу сделать фотографию, покажите её.}}
+{{Диалог Начало}}
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 301020321-->
+<!--Unknown TalkSentence: 301020322-->
+<!--Unknown TalkSentence: 301020323-->
+<!--Unknown TalkSentence: 301020324-->
+<!--Unknown TalkSentence: 301020325-->
+----
+{{Диалог Конец}}
+
+===Убедите Фурдо подружиться с Уоллесом===
+{{Описание миссии|локация=Административный район|Уоллес переживает из-за того, что у него нет друзей.<br />Он хочет подружиться с Фурдо и просит вас поговорить с ним. Вы решаете помочь ему.}}
+{{Диалог Начало}}
+
+;(Поговорите с Фурдо)
+<!--Unknown TalkSentence: 301020332-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301020334-->
+:<!--Unknown TalkSentence: 301020335-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301020339-->
+:<!--Unknown TalkSentence: 301020340-->
+:<!--Unknown TalkSentence: 301020341-->
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301020337-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301020339-->
+:<!--Unknown TalkSentence: 301020340-->
+:<!--Unknown TalkSentence: 301020341-->
+:;(Return to previous option selection)
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 501023533-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Рассказать Уоллесу плохие новости===
+{{Описание миссии|локация=Административный район|Фурдо не хочет дружить с Уоллесом.<br />Какие плохие новости... Вернитесь к Уоллесу и расскажите обо всём.}}
+{{Диалог Начало}}
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 301020352-->
+:{{Диалог|Стрелка}} undefined
+:{{Чёрный экран|undefined}}
+<!--Unknown TalkSentence: 301020355-->
+<!--Unknown TalkSentence: 301020356-->
+<!--Unknown TalkSentence: 301020357-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Out of Thin Air Guide
+|zhs  = 无中生友指南
+|zht  = 無中生友指南
+|ja   = 責任転嫁指南
+|ko   = 뜬금없는 조언
+|es   = Guía para hacer amigos de la nada
+|fr   = L'argent n'achète pas tout
+|ru   = Руководство по перекладыванию ответственности
+|th   = คู่มือการผูกมิตร
+|vi   = Hướng Dẫn Từ Không Thành Có
+|de   = Freunde aus heiterem Himmel
+|id   = Panduan Kambing Hitam
+|pt   = Guia Que Surgiu do Nada
+}}
+
+==История изменений==
+{{История изменений|2.7}}

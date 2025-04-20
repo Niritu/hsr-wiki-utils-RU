@@ -1,0 +1,157 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3010105
+|Название        = 
+|Изображение     = Миссия Освоения Полёт к новому дню.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Алина; Первопроходец
+|СтартЛокация    = Камнеград
+|Мир             = Ярило-VI
+|Локации         = Камнеград
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Полёт к новому дню''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Алиной
+# Найдите улики, связанные с почтовым голубем
+# Поговорите с Алиной
+# Соберите странные бумажные шарики
+# Поговорите с Алиной
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Алиной===
+{{Описание миссии|локация=Камнеград|Алина, девочка из Камнеграда, о чём-то беспокоится. Пойдите и поговорите с ней.}}
+{{Диалог Начало}}
+
+;(Поговорите с Алина)
+<!--Unknown TalkSentence: 301043102-->
+<!--Unknown TalkSentence: 301043103-->
+<!--Unknown TalkSentence: 301043104-->
+<!--Unknown TalkSentence: 301043105-->
+<!--Unknown TalkSentence: 301043106-->
+{{Диалог Конец}}
+
+===Найдите улики, связанные с почтовым голубем===
+{{Описание миссии|локация=Камнеград|Над Камнеградом кружит голубь, несущий детские мечты. Найдите его раньше всех и принесите Алине.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "3010423_Anchor"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint_1"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 3,
+	"MaxAngle": 60
+}</pre>
+<!--Unknown TalkSentence: 301043203-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "3010423_Anchor"
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "3010423_Anchor"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint_2"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 3,
+	"MaxAngle": 60
+}</pre>
+<!--Unknown TalkSentence: 301043302-->
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "3010423_Anchor"
+	}
+}</pre>
+
+:{{Диалог|Уведомление}} Осмотреть
+{{Диалог Конец}}
+
+===Поговорите с Алиной===
+{{Описание миссии|локация=Камнеград|Вы не нашли почтового голубя, но обнаружили странный бумажный шарик. Пойдите и поговорите с Алиной.}}
+{{Диалог Начало}}
+
+;(Поговорите с Алина)
+<!--Unknown TalkSentence: 301043502-->
+<!--Unknown TalkSentence: 301043503-->
+<!--Unknown TalkSentence: 301043504-->
+<!--Unknown TalkSentence: 301043505-->
+{{Диалог Конец}}
+
+===Соберите странные бумажные шарики===
+{{Описание миссии|локация=Камнеград|Алина надеется, что вы сможете принести ей остальные клочки бумаги. Вы решаете ещё немного пройтись по Камнеграду...}}
+{{Диалог Начало}}
+
+:{{Диалог|Уведомление}} Осмотреть
+
+:{{Диалог|Уведомление}} Осмотреть
+{{Диалог Конец}}
+
+===Поговорите с Алиной===
+{{Описание миссии|локация=Камнеград|По всему Камнеграду разбросаны странные бумажные шарики. Вы начинаете понимать, почему Алина волнуется...}}
+{{Диалог Начало}}
+
+;(Поговорите с Алина)
+<!--Unknown TalkSentence: 301043806-->
+<!--Unknown TalkSentence: 301043802-->
+<!--Unknown TalkSentence: 301043803-->
+<!--Unknown TalkSentence: 301043804-->
+<!--Unknown TalkSentence: 301043805-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Fly to Tomorrow
+|zhs  = 飞向明天
+|zht  = 飛向明天
+|ja   = いざ明日へ
+|ko   = 내일로의 비행
+|es   = Volar hacia el mañana
+|fr   = Envol vers demain
+|ru   = Полёт к новому дню
+|th   = ทะยานสู่วันพรุ่งนี้
+|vi   = Bay Đến Ngày Mai
+|de   = Flug nach Morgen
+|id   = Terbang ke Esok Hari
+|pt   = Voe Para o Amanhã
+}}
+
+==История изменений==
+{{История изменений|2.7}}

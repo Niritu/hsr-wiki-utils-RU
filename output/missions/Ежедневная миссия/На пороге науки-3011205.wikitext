@@ -1,0 +1,157 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011205
+|Название        = 
+|Изображение     = Миссия Освоения На пороге науки.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец; Регин; Росси; Старый Гёте; Чиновник Министерства образования
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''На пороге науки''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Регином в отеле «Гёте»
+# Помогите Регину проверить подборку задач Министерства образования Белобога
+# Доложите о результатах Регину
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Регином в отеле «Гёте»===
+{{Описание миссии|локация=Вестибюль отеля|Учёному Регину требуется помощь.<br />Похоже, он заинтересован банком вопросов Министерства образования Белобога. Может быть, вы сможете ему помочь.}}
+{{Диалог Начало}}
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+<!--Unknown TalkSentence: 301120602-->
+<!--Unknown TalkSentence: 301120603-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301120605-->
+<!--Unknown TalkSentence: 301120608-->
+<!--Unknown TalkSentence: 301120609-->
+<!--Unknown TalkSentence: 301120610-->
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Помогите Регину проверить подборку задач Министерства образования Белобога===
+{{Описание миссии|локация=Административный район|Учёный Регин хочет, чтобы вы проверили подборку задач Министерства образования Белобога.<br />Отправляйтесь в Надмирье, чтобы найти сотрудников Министерства образования и проверить, смогут ли они поставить вас в тупик.}}
+{{Диалог Начало}}
+
+;(Поговорите с Чиновник Министерства образования)
+<!--Unknown TalkSentence: 301120901-->
+<!--Unknown TalkSentence: 301120902-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301120908-->
+:<!--Unknown TalkSentence: 301120909-->
+:<!--Unknown TalkSentence: 301120910-->
+:<!--Unknown TalkSentence: 301120911-->
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"FixedValue": {
+			"Value": 190307
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+:<!--Unknown TalkSentence: 301120912-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301120905-->
+:<!--Unknown TalkSentence: 301120906-->
+::{{Диалог|Стрелка}} undefined
+:;(Return to previous option selection)
+{{Диалог Конец}}
+
+===Доложите о результатах Регину===
+{{Описание миссии|локация=Вестибюль отеля|Учёный Регин хочет, чтобы вы проверили подборку задач Министерства образования Белобога.<br />Не имеет значения, правильно ли вы всё поняли. Вы получили необходимую информацию. Найдите Регина и сообщите ему о результатах.}}
+{{Диалог Начало}}
+
+;(Поговорите с Регин)
+<!--Unknown TalkSentence: 301120802-->
+:<!--1-second delay-->
+----
+;(Return to previous option selection)
+<!--Unknown TalkSentence: 301120804-->
+<!--Unknown TalkSentence: 301120805-->
+<!--Unknown TalkSentence: 301120806-->
+<!--Unknown TalkSentence: 301120807-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = On the Doorsteps of Science
+|zhs  = 在科学的大门前
+|zht  = 在科學的大門前
+|ja   = 科学の門の前で
+|ko   = 과학의 문 앞에서
+|es   = En el umbral de la ciencia
+|fr   = Aux portes de la science
+|ru   = На пороге науки
+|th   = เบื้องหน้าประตูใหญ่แห่งวิทยาศาสตร์
+|vi   = Trước Cánh Cổng Khoa Học
+|de   = Auf der Schwelle zur Wissenschaft
+|id   = Di Ambang Pintu Ilmu Pengetahuan
+|pt   = Na Frente da Ciência
+}}
+
+==История изменений==
+{{История изменений|2.7}}

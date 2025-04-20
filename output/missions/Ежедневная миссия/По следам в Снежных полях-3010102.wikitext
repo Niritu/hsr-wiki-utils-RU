@@ -1,0 +1,236 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3010102
+|Название        = 
+|Изображение     = Миссия Освоения По следам в Снежных полях.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Агнес; Амо; Доминик; Лавонна; Лила; Маня; Наблюдающая женщина; Наблюдающий мужчина; Наблюдающий ребёнок; Наблюдающий старик; Ника; Первопроходец; Селина; Тамила; Уоллес; Фурдо; Чавез
+|СтартЛокация    = Административный район
+|Мир             = Ярило-VI
+|Локации         = Административный район
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''По следам в Снежных полях''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Лилой
+# Соберите следы диких животных
+# Передайте результаты расследования Лиле
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите с Лилой===
+{{Описание миссии|локация=Административный район|Опытный зоолог Белобога Лила, кажется, ищет кого-нибудь, кто мог бы ей помочь. Поговорите с ней.}}
+{{Диалог Начало}}
+
+;(Поговорите с Агнес)
+;(If {{cx}}<!--during performance 501023801-->)
+:<!--Unknown TalkSentence: 501023828-->
+:<!--Unknown TalkSentence: 501023829-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501023831-->
+:<!--Unknown TalkSentence: 501023836-->
+:<!--Unknown TalkSentence: 501023838-->
+:<!--Unknown TalkSentence: 501023839-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+;(If {{cx}}<!--not during performance 501023801-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023871
+}</pre>
+:<!--Unknown TalkSentence: 501023872-->
+:<!--Unknown TalkSentence: 501023873-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Чавез)
+;(If {{cx}}<!--during performance 501027101-->)
+:<!--Unknown TalkSentence: 501027101-->
+:<!--Unknown TalkSentence: 501027102-->
+;(If {{cx}}<!--not during performance 501027101-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027142
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010271_18)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027112-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Доминик)
+<!--Unknown TalkSentence: 501029704-->
+<!--Unknown TalkSentence: 501029705-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Фурдо)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027213-->
+:<!--Unknown TalkSentence: 501027214-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501027216-->
+:<!--Unknown TalkSentence: 501027217-->
+:<!--Unknown TalkSentence: 501027218-->
+:<!--Unknown TalkSentence: 501027219-->
+:<!--Unknown TalkSentence: 501027220-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501027225-->
+:<!--Unknown TalkSentence: 501027226-->
+:;(Return to previous option selection)
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Уоллес)
+<!--Unknown TalkSentence: 501023533-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Лавонна)
+;(If {{cx}}<!--during performance 501023901-->)
+;(If {{cx}}<!--not during performance 501023901-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501023980
+}</pre>
+
+;(Поговорите с Лила)
+<!--Unknown TalkSentence: 301010202-->
+<!--Unknown TalkSentence: 301010203-->
+<!--Unknown TalkSentence: 301010204-->
+<!--Unknown TalkSentence: 301010205-->
+<!--Unknown TalkSentence: 301010206-->
+<!--Unknown TalkSentence: 301010207-->
+<!--Unknown TalkSentence: 301010208-->
+
+;(Поговорите с Маня)
+<!--Unknown TalkSentence: 501023730-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Ника)
+;(If {{cx}}<!--during performance 501024001-->)
+:<!--Unknown TalkSentence: 501024042-->
+:<!--Unknown TalkSentence: 501024043-->
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024046-->
+:<!--Unknown TalkSentence: 501024049-->
+;(If {{cx}}<!--not during performance 501024001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024077
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Селина)
+;(If {{cx}}<!--SubMission Finish: 200120106-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+:<!--Unknown TalkSentence: 501026846-->
+:<!--Unknown TalkSentence: 504049402-->
+:;(Return to previous option selection)
+;(If {{cx}}<!--SubMission not Finish: 200120106-->)
+:;(If {{cx}}<!--during performance 501026801-->)
+::<!--Unknown TalkSentence: 501026801-->
+::<!--Unknown TalkSentence: 501026802-->
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Стрелка}} undefined
+:;(If {{cx}}<!--not during performance 501026801-->)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501026845
+}</pre>
+::<!--Unknown TalkSentence: 501026846-->
+::<!--Unknown TalkSentence: 501026847-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+
+;(Поговорите с Тамила)
+:<!--0.3-second delay-->
+<!--Unknown TalkSentence: 501024463-->
+<!--Unknown TalkSentence: 501024464-->
+<!--Unknown TalkSentence: 501024465-->
+<!--Unknown TalkSentence: 501024466-->
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+
+;(Поговорите с Амо)
+;(If {{cx}}<!--during performance 501024201-->)
+:<!--Unknown TalkSentence: 501024232-->
+;(If {{cx}}<!--not during performance 501024201-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501024272
+}</pre>
+:<!--Unknown TalkSentence: 501024273-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Соберите следы диких животных===
+{{Описание миссии|локация=Пригородные снежные поля|Ходят слухи, что в пригороде Белобога в Снежных полях до сих пор находят следы снежных волков. Специалисту по зоологии Лиле нужна ваша помощь в завершении её экологического исследования ледяного поля. Необходимо найти следы, например шерсть, следы лап, что ещё... Экскременты?}}
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+===Передайте результаты расследования Лиле===
+{{Диалог Начало}}
+
+;(Поговорите с Лила)
+<!--Unknown TalkSentence: 301010210-->
+<!--Unknown TalkSentence: 301010211-->
+:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301010213-->
+<!--Unknown TalkSentence: 301010216-->
+<!--Unknown TalkSentence: 301010217-->
+<!--Unknown TalkSentence: 301010218-->
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Scout on the Snow Plains
+|zhs  = 雪原寻踪
+|zht  = 雪原尋蹤
+|ja   = 雪原捜索
+|ko   = 설원 추적
+|es   = Búsqueda en las llanuras nevadas
+|fr   = Explorer les Plaines des neiges
+|ru   = По следам в Снежных полях
+|th   = ตามรอยทุ่งหิมะ
+|vi   = Truy Tìm Tung Tích Trên Cánh Đồng Tuyết
+|de   = Spurensuche in der Schneewüste
+|id   = Pelacakan Dataran Salju
+|pt   = Vasculhe as Planícies Nevadas
+}}
+
+==История изменений==
+{{История изменений|2.7}}

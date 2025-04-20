@@ -1,0 +1,107 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011604
+|Название        = 
+|Изображение     = Миссия Освоения Призрак прошлого.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Отдыхающий старик; Первопроходец
+|СтартЛокация    = Сточный проход
+|Мир             = Ярило-VI
+|Локации         = Сточный проход
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Призрак прошлого''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Разберитесь с проблемами отголосков Фрагментума и помогите им освободиться
+
+==Прохождение==
+{{Дополнить}}
+
+===Разберитесь с проблемами отголосков Фрагментума и помогите им освободиться===
+{{Описание миссии|локация=Сточный проход|Среброгривые Стражи наткнулись на отголоски Фрагментума. Они не смогли их освободить, поскольку прижизненные желания призраков не были исполнены. Нужно им помочь.<br />Похоже, ленивый старик хочет починить смартфон...}}
+{{Диалог Начало}}
+
+;(Поговорите с Отдыхающий старик)
+<!--Unknown TalkSentence: 301160292-->
+<!--Unknown TalkSentence: 301160282-->
+<!--Unknown TalkSentence: 301160283-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301160285-->
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"FixedValue": {
+				"Value": 0.3
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.3
+			}
+		},
+		{
+			"FixedValue": {
+				"Value": 0.3
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+			"CustomString": {
+				"Value": "CablePuzzle_Mission_30116_01"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+			"CustomString": {
+				"Value": "CablePuzzle_Mission_30116_02"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+			"CustomString": {
+				"Value": "CablePuzzle_Mission_30116_03"
+			}
+		}
+	]
+}</pre>
+<!--Unknown TalkSentence: 301160286-->
+<!--Unknown TalkSentence: 301160287-->
+<!--Unknown TalkSentence: 301160288-->
+:{{Диалог|Стрелка}} undefined
+<!--Unknown TalkSentence: 301160290-->
+:{{Чёрный экран|undefined}}
+
+;(Поговорите с Отдыхающий старик)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ghost of the Past
+|zhs  = 过去之灵
+|zht  = 過去之靈
+|ja   = 過去の霊
+|ko   = 과거의 영혼
+|es   = Un fantasma del pasado
+|fr   = Fantôme du passé
+|ru   = Призрак прошлого
+|th   = วิญญาณจากอดีต
+|vi   = Linh Hồn Xưa Cũ
+|de   = Geist aus der Vergangenheit
+|id   = Hantu dari Masa Lalu
+|pt   = Fantasma do Passado
+}}
+
+==История изменений==
+{{История изменений|2.7}}

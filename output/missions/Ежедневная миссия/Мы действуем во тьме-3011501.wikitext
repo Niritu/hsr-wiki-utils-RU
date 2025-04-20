@@ -1,0 +1,165 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011501
+|Название        = 
+|Изображение     = Миссия Освоения Мы действуем во тьме.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Бова; Бова и Росси; Первопроходец; Регин; Росси; Старый Гёте
+|СтартЛокация    = Вестибюль отеля
+|Мир             = Ярило-VI
+|Локации         = Вестибюль отеля
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Мы действуем во тьме''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите со старым Гёте
+# Найдите Росси в вестибюле отеля
+# Доложите старому Гёте
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Поговорите со старым Гёте===
+{{Описание миссии|локация=Вестибюль отеля|Старый Гёте обычно очень болтлив, и вы никогда раньше не видели, чтобы он говорил так загадочно... В вас разгорается любопытство, когда этот таинственный старик невзначай намекает на свою связь с тайным обществом.<br />Выполните его задание и узнайте правду!}}
+{{Диалог Начало}}
+
+
+;(Поговорите с Старый Гёте)
+;(If {{cx}}<!--during performance 501028701-->)
+:<!--Unknown TalkSentence: 501028701-->
+:<!--Unknown TalkSentence: 501028702-->
+;(If {{cx}}<!--not during performance 501028701-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501028736
+}</pre>
+:<!--Unknown TalkSentence: 501028737-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028709-->
+::{{Диалог|Стрелка}} undefined
+::<!--Unknown TalkSentence: 501028711-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028712-->
+:<!--Unknown TalkSentence: 501028713-->
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+;(Unused &mdash; Wait_Option_5010287_21)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501028715-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+
+;(Поговорите с Регин)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024149-->
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024166-->
+:<!--Unknown TalkSentence: 501024167-->
+:<!--Unknown TalkSentence: 501024168-->
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} undefined
+:<!--Unknown TalkSentence: 501024170-->
+:<!--Unknown TalkSentence: 501024171-->
+::{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 501024173-->
+:{{Диалог|Выход}} undefined
+
+;(Поговорите с Росси)
+;(If {{cx}}<!--during performance 501027001-->)
+:<!--Unknown TalkSentence: 501027001-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+;(If {{cx}}<!--not during performance 501027001-->)
+:<pre>{
+	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
+	"TalkSentenceID": 501027048
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowMenu"
+}</pre>
+{{Диалог Конец}}
+
+===Найдите Росси в вестибюле отеля===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 19,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 301150201
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 3,
+			"GroupNpcID": 400011,
+			"TalkSentenceID": 301150202
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+<!--Unknown TalkSentence: 301150203-->
+<!--Unknown TalkSentence: 301150204-->
+<!--Unknown TalkSentence: 301150205-->
+<!--Unknown TalkSentence: 301150206-->
+<!--Unknown TalkSentence: 301150207-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301150209-->
+:<!--Unknown TalkSentence: 301150220-->
+:<!--Unknown TalkSentence: 301150221-->
+:<!--Unknown TalkSentence: 301150222-->
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301150211-->
+:<!--Unknown TalkSentence: 301150212-->
+:;(Return to previous option selection)
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} undefined
+:<!--Unknown TalkSentence: 301150218-->
+:<!--Unknown TalkSentence: 301150219-->
+:<!--Unknown TalkSentence: 301150220-->
+:<!--Unknown TalkSentence: 301150221-->
+:<!--Unknown TalkSentence: 301150222-->
+{{Диалог Конец}}
+
+===Доложите старому Гёте===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Grinding in the Dark
+|zhs  = 躬耕于黑暗
+|zht  = 躬耕於黑暗
+|ja   = 闇に生きる
+|ko   = 우리는 어둠 속에서 움직인다
+|es   = Trabajo en las sombras
+|fr   = Travailler dans l'ombre
+|ru   = Мы действуем во тьме
+|th   = ทำงานในความมืด
+|vi   = Cày Trong Bóng Tối
+|de   = Arbeit im Dunkeln
+|id   = Bekerja dalam Kegelapan
+|pt   = Grindando na Escuridão
+}}
+
+==История изменений==
+{{История изменений|2.7}}

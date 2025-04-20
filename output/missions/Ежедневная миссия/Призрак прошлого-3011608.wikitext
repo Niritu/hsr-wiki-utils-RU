@@ -1,0 +1,159 @@
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3011608
+|Название        = 
+|Изображение     = Миссия Освоения Призрак прошлого.png
+|Тип             = Ежедневная миссия
+|События         = 
+|Глава           = 
+|Условия         = 
+|Персонажи       = Первопроходец; Энергичный страж
+|СтартЛокация    = Коридор исчезающего эха
+|Мир             = Ярило-VI
+|Локации         = Коридор исчезающего эха
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Призрак прошлого''' — [[Ежедневная миссия]] в [[Ярило-VI]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Разберитесь с проблемами отголосков Фрагментума и помогите им освободиться
+
+==Прохождение==
+{{Дополнить}}
+
+
+===Разберитесь с проблемами отголосков Фрагментума и помогите им освободиться===
+{{Описание миссии|локация=Коридор исчезающего эха|Среброгривые Стражи наткнулись на отголоски Фрагментума. Они не смогли их освободить, поскольку прижизненные желания призраков не были исполнены. Нужно им помочь.<br />Энергичный воин Среброгривых Стражей, похоже, беспокоится о своих обязанностях...}}
+{{Диалог Начало}}
+
+;(Поговорите с Энергичный страж)
+<!--Unknown TalkSentence: 301160601-->
+<!--Unknown TalkSentence: 301160602-->
+<!--Unknown TalkSentence: 301160603-->
+<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"SubMissionID": 301160801,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		401007,
+		401009,
+		401011,
+		402001,
+		402005
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 401007,
+			"TriggerCustomString": "CMI_401007"
+		},
+		{
+			"Item1": 401009,
+			"TriggerCustomString": "CMI_401009"
+		},
+		{
+			"Item1": 401011,
+			"TriggerCustomString": "CMI_401011"
+		},
+		{
+			"Item1": 402001,
+			"TriggerCustomString": "CMI_402001"
+		},
+		{
+			"Item1": 402005,
+			"TriggerCustomString": "CMI_402005"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 301160801-->)
+;(Unused &mdash; CMI_401007)
+<!--Unknown TalkSentence: 301160611-->
+:<!--Unknown TalkSentence: 301160612-->
+:<!--Unknown TalkSentence: 301160613-->
+:<!--Unknown TalkSentence: 301160614-->
+:<!--Unknown TalkSentence: 301160615-->
+:<!--Unknown TalkSentence: 301160616-->
+:<!--Unknown TalkSentence: 301160617-->
+:<!--Unknown TalkSentence: 301160618-->
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+
+;(Unused &mdash; CMI_401009)
+<!--Unknown TalkSentence: 301160621-->
+:<!--Unknown TalkSentence: 301160622-->
+:<!--Unknown TalkSentence: 301160623-->
+:<!--Unknown TalkSentence: 301160624-->
+:<!--Unknown TalkSentence: 301160625-->
+:<!--Unknown TalkSentence: 301160626-->
+:<!--Unknown TalkSentence: 301160627-->
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+
+;(Unused &mdash; CMI_401011)
+<!--Unknown TalkSentence: 301160631-->
+:<!--Unknown TalkSentence: 301160632-->
+:<!--Unknown TalkSentence: 301160633-->
+:<!--Unknown TalkSentence: 301160634-->
+:<!--Unknown TalkSentence: 301160635-->
+:<!--Unknown TalkSentence: 301160636-->
+:<!--Unknown TalkSentence: 301160637-->
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+
+;(Unused &mdash; CMI_402001)
+<!--Unknown TalkSentence: 301160641-->
+:<!--Unknown TalkSentence: 301160642-->
+:<!--Unknown TalkSentence: 301160643-->
+:<!--Unknown TalkSentence: 301160644-->
+:<!--Unknown TalkSentence: 301160645-->
+:<!--Unknown TalkSentence: 301160646-->
+:<!--Unknown TalkSentence: 301160647-->
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+
+;(Unused &mdash; CMI_402005)
+<!--Unknown TalkSentence: 301160651-->
+:<!--Unknown TalkSentence: 301160652-->
+:<!--Unknown TalkSentence: 301160653-->
+:<!--Unknown TalkSentence: 301160654-->
+:<!--Unknown TalkSentence: 301160655-->
+:<!--Unknown TalkSentence: 301160656-->
+:<!--Unknown TalkSentence: 301160657-->
+:<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Ghost of the Past
+|zhs  = 过去之灵
+|zht  = 過去之靈
+|ja   = 過去の霊
+|ko   = 과거의 영혼
+|es   = Un fantasma del pasado
+|fr   = Fantôme du passé
+|ru   = Призрак прошлого
+|th   = วิญญาณจากอดีต
+|vi   = Linh Hồn Xưa Cũ
+|de   = Geist aus der Vergangenheit
+|id   = Hantu dari Masa Lalu
+|pt   = Fantasma do Passado
+}}
+
+==История изменений==
+{{История изменений|2.7}}
