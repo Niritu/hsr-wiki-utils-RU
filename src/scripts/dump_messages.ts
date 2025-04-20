@@ -27,65 +27,65 @@ for (const contact of MessagesContact.loadAll()) {
 			const messages = (await section.getMessages()).optimize()
 			out.push(
 				`===${header}===`,
-				group.isDaily() ? `{{Messages|text=\n${await messages.wikitext()}\n}}` : `{{Messages\n|start_condition = \n|text =\n${await messages.wikitext()}\n}}`,
+				group.isDaily() ? `{{Сообщения\n|условие_получения = \n|текст=\n${await messages.wikitext()}\n}}` : `{{Сообщения\n|условие_получения = \n|текст =\n${await messages.wikitext()}\n}}`,
 				'----',
 				''
 			)
-			messages.getParticipants().forEach(participant => participants.add(`[[${participant.name == '(Trailblazer)' ? 'Trailblazer' : participant.name}]]`))
+			messages.getParticipants().forEach(participant => participants.add(`[[${participant.name == '(Первопроходец)' ? 'Первопроходец' : participant.name}]]`))
 		}
 	}
 
-	const infobox = new Template('Messages Infobox')
+	const infobox = new Template('Сообщение Инфобокс')
 		.addParam('id', contact.id)
 
 	if (contact.fake_name && contact.fake_name != contact.name) {
-		infobox.addParam('name', contact.fake_name)
+		infobox.addParam('Название', contact.fake_name)
 	}
 	infobox
-		.addParam('image', `${contact.type == 'Group' ? 'NPC' : contact.type} ${contact.name} Icon.png`)
-		.addParam('type', contact.type)
+		.addParam('Изображение', `${contact.type == 'Группа' ? 'НИП' : contact.type} ${contact.name} Иконка.png`)
+		.addParam('Тип', contact.type)
 
-	if (contact.type != 'Group') {
+	if (contact.type != 'Группа') {
 		infobox
-			.addParam('sender', contact.name)
-			.addParam('signature', contact.signature || '')
+			.addParam('Отправитель', contact.name)
+			.addParam('Описание', contact.signature || '')
 	} else {
-		infobox.addParam('participants', [...participants.values()].sort().join('; '))
+		infobox.addParam('Персонажи', [...participants.values()].sort().join('; '))
 	}
 
 	if (contact.fake_faction && contact.fake_faction != contact.faction) {
-		const condition = contact.reveal_mission_id ? `{{Mission|${Mission.fromId(contact.reveal_mission_id).pagetitle}|showChapter=0}}` : '{{cx}}'
-		infobox.addParam('faction', `[[${contact.fake_faction}]] (Before completing ${condition})<br />[[${contact.faction}]] (After completing ${condition})`)
+		const condition = contact.reveal_mission_id ? `Миссия [[${Mission.fromId(contact.reveal_mission_id).pagetitle}]]` : '{{Дополнить}}'
+		infobox.addParam('Фракция', `[[${contact.fake_faction}]] (Перед завершением ${condition})<br />[[${contact.faction}]] (После завершения ${condition})`)
 	} else {
-		infobox.addParam('faction', contact.faction ?? '')
+		infobox.addParam('Фракция', contact.faction ?? '')
 	}
 	
 	const output: string[] = [
-		pageInfoHeader(`Messages/${contact.name}`),
+		pageInfoHeader(`Сообщения/${contact.name}`),
 		infobox.block(),
 		''
 	]
 	
 	if (mission.length > 0) {
 		output.push(
-			'==Mission-Specific==',
+			'==Сюжетные сообщения==',
 			...mission
 		)
 	}
 	
 	if (daily.length > 0) {
 		output.push(
-			'==Daily==',
+			'==Ежедневные сообщения==',
 			...daily
 		)
 	}
 	
 	output.push(
-		'==Change History==',
-		`{{Change History|${(await ChangeHistory.messageContact.findAdded(contact.id))[0]}}}`,
+		'==История изменений==',
+		`{{История изменений|${(await ChangeHistory.messageContact.findAdded(contact.id))[0]}}}`,
 		'',
-		'==Navigation==',
-		'{{Messages Navbox}}'
+		'==Навигация==',
+		'{{Сообщения Навбокс}}'
 	)
 	
 	if (daily.length == 0 && mission.length == 0) continue
