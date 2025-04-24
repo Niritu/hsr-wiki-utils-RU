@@ -18,7 +18,7 @@ export class SimpleTalkTask extends BaseDialogueTask {
 
 	wikitext(): undefined | string {
 		if (this.black_screen) {
-			return `;(Screen fades to black)`
+			return `;(Экран становится чёрным)`
 		}
 	}
 }
@@ -69,7 +69,7 @@ export class OptionTalkTaskEntry extends TalkSentenceTaskEntry {
 	}
 	
 	wikitext(): string {
-		const dicon = this.icon_type == 'ChatIcon' ? '{{DIcon}}' : `{{DIcon|${DICON_MAP[this.icon_type]}}}`
+		const dicon = this.icon_type == 'ChatIcon' ? '{{Диалог}}' : `{{Диалог|${DICON_MAP[this.icon_type]}}}`
 		return `:${dicon} ${this.option_text || textMap.getSentence(this.sentence_id, true, false, false)}`
 	}
 }

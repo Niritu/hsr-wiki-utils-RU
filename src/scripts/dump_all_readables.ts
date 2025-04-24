@@ -34,13 +34,12 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	const infobox = new Template('Книга Инфобокс', {
 		id: zeroPad(series.id, 3),
-		partIds: readables.map(readable => readable.id).join(';'),
-		title: pageTitle != series.name ? series.name : '',
-		image: firstReadableItem,
-		world: series.getWorld(),
-		parts: readables.length,
-		author: '<!--нужно добавить-->',
-		description: series.description.replaceAll('\n', '<br />'),
+		Название: pageTitle != series.name ? series.name : '',
+		Изображение: firstReadableItem,
+		Мир: series.getWorld(),
+		Томов: readables.length,
+		Автор: '<!--нужно добавить-->',
+		Описание: series.description.replaceAll('\n', '<br />'),
 	})
 	
 	for (const [i, readable] of readables.entries()) {

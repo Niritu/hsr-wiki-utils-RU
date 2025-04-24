@@ -10,20 +10,20 @@ if (existsSync('./output/tutorials/')) {
 }
 
 for (const tutorial of Tutorial.loadAll()) {
-	const template = new Template<'Tutorial', TemplateMap['Tutorial']>('Tutorial', {
-		sort: tutorial.page_ids[0], // idk why its like this on the wiki... theres a dedicated Order param in the excels?
-		title: tutorial.name,
-		subtitle: '', // unused by the game but still added to every tutorial page for some reason
-		type: tutorial.can_review ? tutorial.type : '',
-		about: '',
+	const template = new Template<'Обучение', TemplateMap['Обучение']>('Обучение', {
+		сортировка: tutorial.page_ids[0], // idk why its like this on the wiki... theres a dedicated Order param in the excels?
+		название: tutorial.name,
+		подназвание: '', // unused by the game but still added to every tutorial page for some reason
+		тип: tutorial.can_review ? tutorial.type : '',
+		статья: '',
 	})
 	
-	const fileTitle = sanitizeString(tutorial.pagetitle.replace('Tutorial/', '').replaceAll(':', ''))
+	const fileTitle = sanitizeString(tutorial.pagetitle.replace('Обучение/', '').replaceAll(':', ''))
 	
 	for (const [i, page] of tutorial.getPages().entries()) {
-		const fileName = `Tutorial ${fileTitle} ${i + 1}.png`
-		template.addParam(`image${i + 1}`, `${fileName}${uploadPrompt(page.image, fileName, 'Tutorial Files')}`)
-		template.addParam(`text${i+1}`, page.text)
+		const fileName = `Обучение ${fileTitle} ${i + 1}.png`
+		template.addParam(`изображение${i + 1}`, `${fileName}${uploadPrompt(page.image, fileName, 'Изображения обучений')}`)
+		template.addParam(`текст${i+1}`, page.text)
 	}
 	
 	const output = pageInfoHeader(tutorial.pagetitle) + '\n' + template.block(9)

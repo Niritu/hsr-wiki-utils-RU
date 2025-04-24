@@ -62,10 +62,10 @@ const MESSAGE_IMAGE_NAMES = {
 }
 
 const STICKER_OVERRIDES = {
-	'sticker_7_2': 'Файл:Пом-Пом Стикер 26.png',
-	'sticker_7_3': 'Файл:Пом-Пом Стикер 22.png',
-	'sticker_7_4': 'Файл:Пом-Пом Стикер 15.png',
-	'sticker_7_5': 'Файл:Пом-Пом Стикер 11.png',
+	'sticker_7_2': 'Файл:Стикер ГПП 07 Пом-Пом 03.png',
+	'sticker_7_3': 'Файл:Стикер ГПП 07 Пом-Пом 04.png',
+	'sticker_7_4': 'Файл:Стикер ГПП 07 Пом-Пом 05.png',
+	'sticker_7_5': 'Файл:Стикер ГПП 07 Пом-Пом 02.png',
 }
 
 export class MessagesContact {
@@ -286,7 +286,7 @@ export class MessageItem {
 				const fileName = MESSAGE_IMAGE_NAMES[this.content_id!] ? `Сообщение ${MESSAGE_IMAGE_NAMES[this.content_id!]}` : `Сообщение ${this.sender_type == 'НИП' ? this.sender!.name : this.group.contact.name} ${this.content_id! - 10000}`
 				return !imageData.FemaleImagePath 
 					? `[[Файл:${fileName}.png|256px]]`
-					: `[[Файл:${fileName} (Келус).png|256px]] [[File:${fileName} (Стелла).png|256px]]`
+					: `[[Файл:${fileName} (Келус).png|256px]] [[Файл:${fileName} (Стелла).png|256px]]`
 			case 'Link':
 				const linkData = MessageItemLink[this.content_id!]
 				return `{Ссылка: надпись = ${textMap.getText(linkData.Title)} ;; изображение = ${this.content_id! - 10000}.png ;; ссылка = Лисья история о привидениях/Страшилки Лофу}`

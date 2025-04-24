@@ -150,7 +150,7 @@ export abstract class AbstractDialogueTree<T extends AbstractDialogueNodeItem> {
 							this.findFork(thread, currentNode.children!)!.children = undefined
 						}
 
-						const note = new TranscriptionNote('consecutive-choice', 'All choices lead to the following options')
+						const note = new TranscriptionNote('consecutive-choice', 'Все нижеуказанные выборы ведут к следующим вариантам')
 						const noteNode: DialogueNode<T | TranscriptionNote> = {
 							item: note,
 							children: currentNode.children,

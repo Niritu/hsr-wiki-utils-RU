@@ -48,7 +48,7 @@ for (const contact of MessagesContact.loadAll()) {
 	if (contact.type != 'Группа') {
 		infobox
 			.addParam('Отправитель', contact.name)
-			.addParam('Описание', contact.signature || '')
+			.addParam('ПодписьСоо', contact.signature || '')
 	} else {
 		infobox.addParam('Персонажи', [...participants.values()].sort().join('; '))
 	}
