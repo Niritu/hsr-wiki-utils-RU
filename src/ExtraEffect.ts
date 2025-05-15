@@ -3,31 +3,24 @@ import { getExcelFile } from './files/GameFile.js'
 import { textMap } from './TextMap.js'
 
 export const EE_ALIASES: Record<string, string[]> = {
-	'Action Delayed': ['delayed'],
-	'Action Advanced': ['advanced', 'advanced forward', 'advance forward', 'action advances', 'advances its action'],
-	'Extra Turn': ['extra action'],
-	'Follow-up ATK': ['follow-up attack', 'follow-up'],
-	'Additional DMG': ['additional damage', 'additional', 'additional ice dmg'],
-	'Weakness Break State': ['weakness broken', 'weakness break'],
-	'Downed State': ['downed', 'knocked down'],
-	'Buff': ['buffs', 'buff(s)'],
-	'Debuff': ['debuffs', 'debuff(s)'],
-	'DoT Debuff': ['dot'],
-	'distribute': ['distributed'],
-	'Grit': ['fighting spirit'],
-	'Spores': ['spore', 'spore(s)', "spore's"],
-	'AoE ATK': ['aoe', 'aoe attack'],
-	'Overflow DMG': ['overflow', 'overflows', 'overflow damage'],
-	'Summon Memosprite': ['summons the memosprite'],
-	'Even Distribution': ['distributed evenly'],
-	
-	'Soul Chrysalis/Butterfly Soul': ['butterfly soul', 'soul chrysalis'],
-	
-	'Delay Effects': ['delay effect', 'delay effect(s)'],
-
-	// inconsistent
-	'Joint Attack': ['joint atk'],
-	'Joint ATK': ['joint attack'],
+	'Базовый шанс': ['базового шанса'],
+	'Бонус-атака': ['бонус-атаки', 'бонус-атакой', 'бонус-атаку', 'бонус-атак'],
+	'Дополнительный урон': ['дополнительный физический урон', 'совместную атаку', 'дополнительный ледяной урон'],
+	'Дополнительный ход': ['дополнительного хода'],
+	'Задержка действия': ['действие этого противника задерживается', 'задерживает её действие', 'задерживает его действие', 'задерживаются'],
+	'Контратака': ['контратаки', 'контратаку'],
+	'Неспособность сражаться': ['неспособными сражаться', 'неспособны сражаться', 'неспособен сражаться', 'неспособна сражаться', 'становится неспособна сражаться'],
+	'Ослабление': ['ослаблению'],
+	'Ослабления контроля': ['эффектам контроля', 'эффекта контроля'],
+	'Подкрепление': ['подкрепления'],
+	'Призыв духа памяти': ['призывает духа памяти', 'призывается дух памяти'],
+	'Пробитие сопротивления': ['пробитие всех типов сопротивления', 'пробитие мнимого сопротивления', 'пробитие квантового сопротивления', 'пробитие огненного сопротивления', 'пробитие ледяного сопротивления', 'пробитие ветряного сопротивления', 'пробитие физического сопротивления', 'пробитие электрического сопротивления'],
+	'Пробитие уязвимости': ['с пробитой уязвимостью', 'пробитой уязвимости', 'пробитую уязвимость', 'уязвимость цели'],
+	'Продвижение действия': ['продвигает действие', 'продвигает следующее действие', 'продвигает его действие вперёд', 'продвигается вперёд', 'продвигаются вперёд', 'действие вперёд', 'продвигает'],
+	'Совместная атака': ['совместной атакой', 'совместную атаку'],
+	'Урон пробития': ['урона ледяного пробития'],
+	'Урон суперпробития': ['урона суперпробития'],
+	'Усиление': ['усиления'],
 }
 
 export const ExtraEffectConfig = await getExcelFile<InternalExtraEffect>('ExtraEffectConfig.json', 'ExtraEffectID')
