@@ -60,7 +60,7 @@ for (const effect of Object.values(ExtraEffectConfig)) {
 
 export function replaceUnderlinedEE(str: string, activeEE: number[]) {
 	return str
-		.replaceAll(/<u>(["\.]*)(.+?)(["\.]*)<\/u>/gi, (fullMatch: string, before: string, eeName: string, after: string) => {
+		.replaceAll(/<u>(["\.\s]*)(.+?)(["\.\s]*)<\/u>/gi, (fullMatch: string, before: string, eeName: string, after: string) => {
 			let lowerName = eeName.toLowerCase()
 				.replaceAll(/[\.\"]/gi, '')
 			
