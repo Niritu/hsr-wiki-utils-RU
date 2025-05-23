@@ -2,15 +2,14 @@
 {{Миссия Инфобокс
 |id              = 5000403
 |Название        = 
-|Изображение     = Миссия Освоения Таинственный обряд.png
+|Изображение     = Миссия Таинственный обряд.png
 |Тип             = Миссия приключения
 |События         = 
 |Глава           = Хроники Амфореуса
 |Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
 |Персонажи       = Первопроходец
-|СтартЛокация    = Вечный священный город Охема
+|СтартЛокация    = [[Амфореус]] — [[Вечный священный город Охема]]
 |Мир             = Амфореус
-|Локации         = Вечный священный город Охема
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Звёздный нефрит*10; Утраченные золотые частицы*2; Golden Honeycake*1; Dried Sagelore Fruit*1; Кредиты*5 000
@@ -38,7 +37,7 @@
 <!--Unknown TalkSentence: 500043001-->
 <!--Unknown TalkSentence: 500043002-->
 <!--Unknown TalkSentence: 500043003-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500043006-->
 ::{{tx}}
 :<pre>{
@@ -59,11 +58,12 @@
 :<!--Unknown TalkSentence: 500043008-->
 :<!--Unknown TalkSentence: 500043009-->
 :<!--Unknown TalkSentence: 500043010-->
-:{{Диалог|Выход}} undefined
+:{{Диалог|Exit}} undefined
 :<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500040301,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2,
@@ -72,12 +72,12 @@
 	}
 }</pre>
 
-:{{Диалог|Изучение}} Осмотреть
+:{{Диалог|Loupe}} Осмотреть
 ----
 <!--Unknown TalkSentence: 500043201-->
 <!--Unknown TalkSentence: 500043202-->
 
-:{{Диалог|Изучение}} Осмотреть
+:{{Диалог|Loupe}} Осмотреть
 ----
 <!--Unknown TalkSentence: 500043301-->
 <!--Unknown TalkSentence: 500043302-->
@@ -87,10 +87,10 @@
 {{Описание миссии|локация=Вечный священный город Охема|В Охеме вам случайно достался древний свиток, в котором описан таинственный ритуал. Интересно, что получится, если собрать все материалы и совершить призыв в указанном месте, следуя записанным в свитке инструкциям?}}
 {{Диалог Начало}}
 
-:{{Диалог|Изучение}} Осмотреть
+:{{Диалог|Loupe}} Осмотреть
 <!--Unknown TalkSentence: 500043601-->
 <!--Unknown TalkSentence: 500043602-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 <pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
 	"SubmissionID": 500040303,
@@ -101,6 +101,7 @@
 			"SubmissionID": 500040303,
 			"MissionCustomValue": {
 				"Index": 2,
+				"Name": "OldValue_2",
 				"isLocal": true,
 				"ValidValueParamList": [
 					0,
@@ -125,6 +126,7 @@
 			"SubmissionID": 500040303,
 			"MissionCustomValue": {
 				"Index": 2,
+				"Name": "OldValue_2",
 				"isLocal": true,
 				"ValidValueParamList": [
 					0,
@@ -216,16 +218,17 @@
 <!--Unknown TalkSentence: 500043102-->
 <!--Unknown TalkSentence: 500043103-->
 <!--Unknown TalkSentence: 500043104-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500043106-->
 ::{{tx}}
-:{{Диалог|Выход}} undefined
+:{{Диалог|Exit}} undefined
 :<!--Unknown TalkSentence: 500043111-->
 ::{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500040305,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2,
@@ -235,12 +238,12 @@
 	"CustomValue": 1
 }</pre>
 
-:{{Диалог|Изучение}} Осмотреть
+:{{Диалог|Loupe}} Осмотреть
 ----
 <!--Unknown TalkSentence: 500043201-->
 <!--Unknown TalkSentence: 500043202-->
 
-:{{Диалог|Изучение}} Осмотреть
+:{{Диалог|Loupe}} Осмотреть
 ----
 <!--Unknown TalkSentence: 500043301-->
 <!--Unknown TalkSentence: 500043302-->

@@ -2,15 +2,14 @@
 {{Миссия Инфобокс
 |id              = 5000410
 |Название        = 
-|Изображение     = Миссия Освоения Неестественная смерть.png
+|Изображение     = Миссия Неестественная смерть.png
 |Тип             = Миссия приключения
 |События         = 
 |Глава           = Хроники Амфореуса
 |Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
 |Персонажи       = Геката; Отчаявшаяся учёная; Паникующий учёный; Первопроходец; Перифас
-|СтартЛокация    = Бормочущие заросли Рощи муз
+|СтартЛокация    = [[Амфореус]] — [[Бормочущие заросли Рощи муз]]
 |Мир             = Амфореус
-|Локации         = Бормочущие заросли Рощи муз
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
@@ -38,7 +37,7 @@
 {{Описание миссии|локация=Бормочущие заросли Рощи муз|«Людям не под силу умереть вместе. Даже если смерть наступает одновременно, каждый всё равно умирает в одиночку».<br />Станьте свидетелем последних мгновений смерти друзей Перифаса от чёрного течения.}}
 {{Диалог Начало}}
 
-:{{Диалог|Разговор}} Перифас
+:{{Диалог|Talk}} Перифас
 <!--Unknown TalkSentence: 500050334-->
 
 ;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
@@ -195,13 +194,13 @@
 				"MainMissionID": 5000410,
 				"MissionCustomValue": {
 					"Index": 3,
+					"Name": "OldValue_3",
 					"isLocal": true,
 					"ValidValueParamList": [
 						0,
 						1
 					]
 				},
-				"EquationType": "Equal",
 				"TargetValue": 1
 			},
 			"SuccessTaskList": [
@@ -271,21 +270,21 @@
 ::<!--Unknown TalkSentence: 500050310-->
 ::<!--Unknown TalkSentence: 500050311-->
 ::<!--Unknown TalkSentence: 500050312-->
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
 :::<!--Unknown TalkSentence: 500050316-->
 ::<!--Unknown TalkSentence: 500050317-->
 ::<!--Unknown TalkSentence: 500050318-->
 ::<!--Unknown TalkSentence: 500050319-->
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500050323-->
 ;(If Миссия [[Неестественная смерть]] has been completed)
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareType":"Equal","CompareValue":{"FixedValue":{"Value":1}}}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareValue":{"FixedValue":{"Value":1}}}-->}})
 ::<!--Unknown TalkSentence: 500050323-->
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareType":"Equal","CompareValue":{"FixedValue":{"Value":1}}}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_HecateDialogue"},"CompareValue":{"FixedValue":{"Value":1}}}-->}})
 ::<!--Unknown TalkSentence: 500050301-->
 ::<!--Unknown TalkSentence: 500050302-->
 ::<!--Unknown TalkSentence: 500050303-->
@@ -298,16 +297,16 @@
 ::<!--Unknown TalkSentence: 500050310-->
 ::<!--Unknown TalkSentence: 500050311-->
 ::<!--Unknown TalkSentence: 500050312-->
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
 :::<!--Unknown TalkSentence: 500050316-->
 ::<!--Unknown TalkSentence: 500050317-->
 ::<!--Unknown TalkSentence: 500050318-->
 ::<!--Unknown TalkSentence: 500050319-->
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
-:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
+:::{{Диалог|Arrow}} undefined
 
 {{Диалог Конец}}
 

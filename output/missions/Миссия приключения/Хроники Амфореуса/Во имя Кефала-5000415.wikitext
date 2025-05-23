@@ -2,7 +2,7 @@
 {{Миссия Инфобокс
 |id              = 5000415
 |Название        = 
-|Изображение     = Миссия Освоения Во имя Кефала.png
+|Изображение     = Миссия Во имя Кефала.png
 |Тип             = Миссия приключения
 |События         = 
 |Глава           = Хроники Амфореуса
@@ -10,9 +10,8 @@
 * Завершена [[Миссия приключения]] ''[[Девочка, монетки, дом]]''
 * Завершена [[Миссия Освоения]] ''[[Зеркальное отражение ведьмы]]''
 |Персонажи       = Киронес; Молодой страж; Первопроходец; Серена
-|СтартЛокация    = Палата полубогов: Рассветная вершина
+|СтартЛокация    = [[Амфореус]] — [[Палата полубогов: Рассветная вершина]]
 |Мир             = Амфореус
-|Локации         = Палата полубогов: Рассветная вершина
 |Предыдущая      = Девочка, монетки, дом
 |Следующая       = 
 |Награды         = Звёздный нефрит*10; Конденсированный эфир*3; Кредиты*8 000
@@ -43,7 +42,7 @@
 ;(Поговорите с Серена)
 :{{tx}}
 :<!--Unknown TalkSentence: 500080001-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<!--Unknown TalkSentence: 500080003-->
 ::<!--Unknown TalkSentence: 500080004-->
 ::<!--Unknown TalkSentence: 500080005-->
@@ -51,11 +50,11 @@
 ::<!--Unknown TalkSentence: 500080007-->
 ::<!--Unknown TalkSentence: 500080008-->
 ::<!--Unknown TalkSentence: 500080009-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<!--Unknown TalkSentence: 500080007-->
 ::<!--Unknown TalkSentence: 500080008-->
 ::<!--Unknown TalkSentence: 500080009-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080010-->
 :<!--Unknown TalkSentence: 500080011-->
 :<!--Unknown TalkSentence: 500080012-->
@@ -65,11 +64,12 @@
 :<!--Unknown TalkSentence: 500080016-->
 :<!--Unknown TalkSentence: 500080017-->
 <!--Unknown TalkSentence: 500080101-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500041502,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2
@@ -79,11 +79,12 @@
 }</pre>
 ::<!--Unknown TalkSentence: 500080105-->
 ::<!--Unknown TalkSentence: 500080106-->
-::{{Диалог|Выход}} undefined
+::{{Диалог|Exit}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500041502,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2
@@ -103,16 +104,16 @@
 ;(Поговорите с Молодой страж)
 :{{tx}}
 <!--Unknown TalkSentence: 500080201-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080203-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080206-->
 :<!--Unknown TalkSentence: 500080207-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080206-->
 :<!--Unknown TalkSentence: 500080207-->
 :;(Return to previous option selection)
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 <!--Unknown TalkSentence: 500080206-->
 <!--Unknown TalkSentence: 500080207-->
 {{Диалог Конец}}
@@ -157,9 +158,9 @@
 ;(По прибытии на место)
 <!--Unknown TalkSentence: 500080401-->
 <!--Unknown TalkSentence: 500080402-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 {{Диалог Конец}}
 
 ===Посетите другую огромную фреску===
@@ -172,13 +173,13 @@
 <!--Unknown TalkSentence: 500080503-->
 <!--Unknown TalkSentence: 500080504-->
 <!--Unknown TalkSentence: 500080505-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080507-->
 ::{{tx}}
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080509-->
 ::{{tx}}
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080511-->
 ::{{tx}}
 <!--Unknown TalkSentence: 500080507-->
@@ -209,9 +210,9 @@
 <!--Unknown TalkSentence: 500080604-->
 <!--Unknown TalkSentence: 500080605-->
 <!--Unknown TalkSentence: 500080606-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 {{Диалог Конец}}
 
 ===Утешьте Серену===
@@ -221,19 +222,19 @@
 ;(Поговорите с Киронес)
 <!--Unknown TalkSentence: 500080701-->
 <!--Unknown TalkSentence: 500080702-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080704-->
 :<!--Unknown TalkSentence: 500080705-->
-:{{Диалог|Выход}} undefined
+:{{Диалог|Exit}} undefined
 
 ;(Поговорите с Серена)
 <!--Unknown TalkSentence: 500080801-->
 <!--Unknown TalkSentence: 500080802-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500080805-->
 :<!--Unknown TalkSentence: 500080806-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 <!--Unknown TalkSentence: 500080807-->
 :{{tx}}
 {{Диалог Конец}}
@@ -277,13 +278,13 @@
 ;(Поговорите с Серена)
 <!--Unknown TalkSentence: 500081101-->
 <!--Unknown TalkSentence: 500081102-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500081104-->
 :<!--Unknown TalkSentence: 500081105-->
 :<!--Unknown TalkSentence: 500081106-->
 :<!--Unknown TalkSentence: 500081107-->
 ::{{tx}}
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 500081106-->
 :<!--Unknown TalkSentence: 500081107-->
 ::{{tx}}

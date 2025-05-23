@@ -2,15 +2,14 @@
 {{Миссия Инфобокс
 |id              = 8003202
 |Название        = 
-|Изображение     = Миссия Освоения Снова в деле I.png
+|Изображение     = Миссия Снова в деле I.png
 |Тип             = Миссия приключения
 |События         = Шум рынка в Переулке ауруматонов
 |Глава           = Шум рынка в Переулке ауруматонов
 |Условия         = Завершена [[Миссия приключения]] ''[[Снова в деле I]]''
 |Персонажи       = Байлу; Вторящий голос; Дружелюбный рабочий; Женщина, похожая на секретаря торговой гильдии; Минси; Насмешливый голос; Обиженный рабочий; Первопроходец; Представитель торгового отдела КММ; Придирчивый голос; Сушан; Тётя Каланча; Энергичный женский голос; Юаньфэн
-|СтартЛокация    = Переулок ауруматонов
+|СтартЛокация    = [[Лофу Сяньчжоу]] — [[Переулок ауруматонов]]
 |Мир             = Лофу Сяньчжоу
-|Локации         = Переулок ауруматонов
 |Предыдущая      = 
 |Следующая       = Управление причалом I
 |Награды         = Опыт Освоения*200; Звёздный нефрит*40; Путеводитель путешественника*5; Утраченный кристалл*5; Кредиты*45 000
@@ -47,6 +46,7 @@
 	"SubmissionID": 800320201,
 	"MissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"ValidValueParamList": [
 			0,
 			1
@@ -67,8 +67,8 @@
 <!--Unknown TalkSentence: 800320211-->
 <!--Unknown TalkSentence: 800320212-->
 <!--Unknown TalkSentence: 800320213-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--0.8-second delay-->
 <!--Unknown TalkSentence: 800320215-->
 <!--Unknown TalkSentence: 800320218-->
@@ -81,18 +81,18 @@
 
 ;(Поговорите с Тётя Каланча)
 <!--Unknown TalkSentence: 800320301-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 <!--Unknown TalkSentence: 800320303-->
 <!--Unknown TalkSentence: 800320308-->
 
 ;(Поговорите с Байлу)
-:;(If {{F|MissionCV-8003202-undefined}} is not equal to 5)
+:;(If {{F|MissionCV-8003202-undefined}} is not undefined 5)
 :::----
 ::<!--Unknown TalkSentence: 800320331-->
-:::{{Диалог|Стрелка}} undefined
-::;(If {{F|MissionCV-8003202-undefined}} is equal to 1)
+:::{{Диалог|Arrow}} undefined
+::;(If {{F|MissionCV-8003202-undefined}} is undefined 1)
 :::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
 	"SubMissionID": 800320231,
@@ -111,12 +111,12 @@
 	],
 	"SimpleTalk": {}
 }</pre>
-::;(If {{F|MissionCV-8003202-undefined}} is not equal to 1)
+::;(If {{F|MissionCV-8003202-undefined}} is not undefined 1)
 :::;(Return to previous option selection)
-:;(If {{F|MissionCV-8003202-undefined}} is equal to 5)
+:;(If {{F|MissionCV-8003202-undefined}} is undefined 5)
 :::----
 ::<!--Unknown TalkSentence: 800320351-->
-:::{{Диалог|Стрелка}} undefined
+:::{{Диалог|Arrow}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
 	"SubMissionID": 800320235,
@@ -179,16 +179,16 @@
 <!--Unknown TalkSentence: 800320285-->
 ;(Unused &mdash; 800320207_GiveFood)
 <!--Unknown TalkSentence: 800320333-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
 
 ;(Unused &mdash; TalkSentence_800320356)
 :<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320356-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
 ::<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320358-->
 ::----
@@ -197,14 +197,14 @@
 :<!--Unknown TalkSentence: 800320362-->
 ::{{Чёрный экран|undefined}}
 ::{{Чёрный экран|undefined}}
-:;(If {{F|MissionCV-8003202-undefined}} is equal to 1)
+:;(If {{F|MissionCV-8003202-undefined}} is undefined 1)
 ::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItem",
 	"SubMissionID": 800320231,
 	"IsAutoConsume": true,
 	"SimpleTalk": {}
 }</pre>
-:;(If {{F|MissionCV-8003202-undefined}} is not equal to 1)
+:;(If {{F|MissionCV-8003202-undefined}} is not undefined 1)
 ::;(Return to previous option selection)
 <!--Unknown TalkSentence: 800320219-->
 <pre>{
@@ -238,8 +238,8 @@
 ----
 <!--Unknown TalkSentence: 800320401-->
 <!--Unknown TalkSentence: 800320404-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320407-->
 ----
 ----
@@ -284,11 +284,11 @@
 <!--Unknown TalkSentence: 800320421-->
 <!--Unknown TalkSentence: 800320422-->
 <!--Unknown TalkSentence: 800320423-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 ::<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320425-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 ::<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320428-->
 ----
@@ -310,7 +310,7 @@
 <!--Unknown TalkSentence: 800320438-->
 <!--Unknown TalkSentence: 800320439-->
 <!--Unknown TalkSentence: 800320440-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320442-->
 :<!--Unknown TalkSentence: 800320443-->
 :<!--Unknown TalkSentence: 800320444-->
@@ -318,13 +318,13 @@
 :<!--Unknown TalkSentence: 800320446-->
 :<!--Unknown TalkSentence: 800320447-->
 ::{{tx}}
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320444-->
 :<!--Unknown TalkSentence: 800320445-->
 :<!--Unknown TalkSentence: 800320446-->
 :<!--Unknown TalkSentence: 800320447-->
 ::{{tx}}
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320446-->
 :<!--Unknown TalkSentence: 800320447-->
 ::{{tx}}
@@ -341,7 +341,7 @@
 <!--Unknown TalkSentence: 800320501-->
 <!--Unknown TalkSentence: 800320502-->
 <!--Unknown TalkSentence: 800320503-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 ::<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320505-->
 ::<!--0.3-second delay-->
@@ -349,7 +349,7 @@
 :<!--Unknown TalkSentence: 800320509-->
 :<!--Unknown TalkSentence: 800320510-->
 :;(Return to previous option selection)
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 ::<!--0.8-second delay-->
 :<!--Unknown TalkSentence: 800320507-->
 ::<!--0.3-second delay-->
@@ -382,8 +382,8 @@
 
 ;(Поговорите с Сушан)
 <!--Unknown TalkSentence: 800320641-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320643-->
 :<!--Unknown TalkSentence: 800320646-->
 :<!--Unknown TalkSentence: 800320647-->
@@ -398,9 +398,9 @@
 ;(Поговорите с Байлу)
 <!--Unknown TalkSentence: 800320661-->
 :<!--Unknown TalkSentence: 800320662-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
+::{{Диалог|Arrow}} undefined
 :<!--Unknown TalkSentence: 800320664-->
 <!--Unknown TalkSentence: 800320661-->
 :<!--Unknown TalkSentence: 800320662-->

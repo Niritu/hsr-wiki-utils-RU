@@ -2,15 +2,14 @@
 {{Миссия Инфобокс
 |id              = 5000405
 |Название        = 
-|Изображение     = Миссия Освоения Расколотые воспоминания.png
+|Изображение     = Миссия Расколотые воспоминания.png
 |Тип             = Миссия приключения
 |События         = 
 |Глава           = Хроники Амфореуса
 |Условия         = Завершена [[Миссия Освоения]] ''[[О занавес ночи, скрой безмолвное прошлое]]''
 |Персонажи       = Геката; Деметрия; Первопроходец
-|СтартЛокация    = Вечный священный город Охема
+|СтартЛокация    = [[Амфореус]] — [[Вечный священный город Охема]]
 |Мир             = Амфореус
-|Локации         = Вечный священный город Охема
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Звёздный нефрит*10; Конденсированный эфир*2; Кредиты*5 000
@@ -39,14 +38,14 @@
 <!--Unknown TalkSentence: 500045001-->
 <!--Unknown TalkSentence: 500045002-->
 <!--Unknown TalkSentence: 500045003-->
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
 <!--Unknown TalkSentence: 500045005-->
 <!--Unknown TalkSentence: 500045006-->
 <!--Unknown TalkSentence: 500045007-->
 <!--Unknown TalkSentence: 500045008-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 {{Диалог Конец}}
 
 ===Исследуйте лагерь за городом===
@@ -57,7 +56,7 @@
 ===Вернитесь в прошлое и поищите зацепки===
 {{Диалог Начало}}
 
-:{{Диалог|Разговор}} Слушать
+:{{Диалог|Talk}} Слушать
 :{{tx}}
 
 ;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
@@ -252,6 +251,7 @@
 	"SubmissionID": 500040507,
 	"MissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"isLocal": true,
 		"ValidValueParamList": [
 			0,
@@ -262,12 +262,13 @@
 	}
 }</pre>
 :{{tx}}
-:{{Диалог|Разговор}} undefined
+:{{Диалог|Talk}} undefined
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 500040507,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"isLocal": true,
 		"ValidValueParamList": [
 			0,
@@ -281,6 +282,7 @@
 		"MainMissionID": 5000405,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"isLocal": true,
 			"ValidValueParamList": [
 				0,
@@ -294,12 +296,13 @@
 		"DirectValue": 1
 	}
 }</pre>
-:{{Диалог|Разговор}} undefined
+:{{Диалог|Talk}} undefined
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 500040507,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"isLocal": true,
 		"ValidValueParamList": [
 			0,
@@ -313,6 +316,7 @@
 		"MainMissionID": 5000405,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"isLocal": true,
 			"ValidValueParamList": [
 				0,
@@ -326,12 +330,13 @@
 		"DirectValue": 1
 	}
 }</pre>
-:{{Диалог|Разговор}} undefined
+:{{Диалог|Talk}} undefined
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 500040507,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"isLocal": true,
 		"ValidValueParamList": [
 			0,
@@ -345,6 +350,7 @@
 		"MainMissionID": 5000405,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"isLocal": true,
 			"ValidValueParamList": [
 				0,
@@ -359,10 +365,10 @@
 	}
 }</pre>
 :{{tx}}
-;(If {{F|MissionCV-5000405-1}} is equal to 3)
+;(If {{F|MissionCV-5000405-1}} is undefined 3)
 :<!--Unknown TalkSentence: 500045523-->
 ::{{tx}}
-;(If {{F|MissionCV-5000405-1}} is not equal to 3)
+;(If {{F|MissionCV-5000405-1}} is not undefined 3)
 :;(Return to previous option selection)
 {{Диалог Конец}}
 
@@ -374,9 +380,9 @@
 <!--Unknown TalkSentence: 500045603-->
 <!--Unknown TalkSentence: 500045604-->
 <!--Unknown TalkSentence: 500045605-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
+:{{Диалог|Arrow}} undefined
 {{Диалог Конец}}
 
 ===Сообщите о результатах Деметрии===
@@ -428,11 +434,12 @@
 :<!--Unknown TalkSentence: 500045709-->
 :<!--Unknown TalkSentence: 500045710-->
 :<!--Unknown TalkSentence: 500045711-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500040509,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2,
@@ -442,7 +449,7 @@
 	"CustomValue": 1
 }</pre>
 :::{{tx}}
-::{{Диалог|Возврат}} undefined
+::{{Диалог|Return}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 500040509,
@@ -500,11 +507,12 @@
 :<!--Unknown TalkSentence: 500045721-->
 :<!--Unknown TalkSentence: 500045722-->
 :<!--Unknown TalkSentence: 500045723-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500040509,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2,
@@ -514,7 +522,7 @@
 	"CustomValue": 2
 }</pre>
 :::{{tx}}
-::{{Диалог|Возврат}} undefined
+::{{Диалог|Return}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 500040509,
@@ -586,11 +594,12 @@
 :<!--Unknown TalkSentence: 500045735-->
 :<!--Unknown TalkSentence: 500045736-->
 :<!--Unknown TalkSentence: 500045737-->
-::{{Диалог|Стрелка}} undefined
+::{{Диалог|Arrow}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 500040509,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			1,
 			2,
@@ -600,7 +609,7 @@
 	"CustomValue": 3
 }</pre>
 :::{{tx}}
-::{{Диалог|Возврат}} undefined
+::{{Диалог|Return}} undefined
 ::<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 500040509,
