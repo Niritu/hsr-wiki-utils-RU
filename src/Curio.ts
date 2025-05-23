@@ -136,10 +136,10 @@ export const RogueTournMiracleDisplay = await getExcelFile<InternalCurioDisplay>
 export const RogueTournHandbookMiracle = await getExcelFile<InternalIndexCurio>('RogueTournHandbookMiracle.json', 'HandbookMiracleID')
 
 const TYPE_MAP = {
-	100: 'su',
-	130: 'swarm',
-	160: 'gng',
-	260: 'und',
+	100: 'вв',
+	130: 'рой',
+	160: 'зиш',
+	260: 'облнеп',
 }
 
 export class Curio {
@@ -189,16 +189,16 @@ export class Curio {
 	}
 	
 	entry(): string {
-		const template = new Template('Curio Information')
-			.addParam('name', this.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, ''))
-			.addParam('price', '')
-			.addParam('effect', this.effect)
-			.addParam('story', ':' + this.lore)
-			.addParam('notes', this.getNotes().join('\n'))
-			.addParam('available', this.obtainable_in.join(','))
-			.addParam('mentions', getMentions(this.lore).join('; '))
+		const template = new Template('Диковина Информация')
+			.addParam('Название', this.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, ''))
+			.addParam('Цена', '')
+			.addParam('Эффект', this.effect)
+			.addParam('История', ':' + this.lore)
+			.addParam('Примечания', this.getNotes().join('\n'))
+			.addParam('Доступно', this.obtainable_in.join(','))
+			.addParam('Упоминания', getMentions(this.lore).join('; '))
 		
-		if (template.getParam('name') != this.name) template.addParam('displayname', this.name)
+		if (template.getParam('Название') != this.name) template.addParam('Отображаемое_название', this.name)
 		
 		return template.block(12)
 	}

@@ -14,7 +14,7 @@ const EquationDisplayData = await getFile<Dictionary<InternalEquationDisplay>>('
 const ExtraEffectData = await getFile<Dictionary<InternalExtraEffect>>('ExcelOutput/ExtraEffectConfig.json')
 
 export const PERIOD_MAP = {
-	Tourn1: 'The Human Comedy',
+	Tourn1: 'Комедия жизни',
 	Tourn2: textMap.getText(16383159019624647075n),
 } as const
 
@@ -94,30 +94,30 @@ export class Equation {
 	}
 		
 	entry() {
-		const template = new Template('Equation')
-			.addParam('name', this.name)
-			.addParam('rarity', this.rarity)
-			.addParam('path1', `${this.path1}*${this.path1count}`)
+		const template = new Template('Уравнение')
+			.addParam('Название', this.name)
+			.addParam('Редкость', this.rarity)
+			.addParam('Путь1', `${this.path1}*${this.path1count}`)
 		
 		if (this.path2) {
-			template.addParam('path2', `${this.path2}*${this.path2count}`)
+			template.addParam('Путь2', `${this.path2}*${this.path2count}`)
 		}
 		
 		template
-			.addParam('effect', this.description.replaceAll('\n', '<br />'))
-			.addParam('story', this.story.replaceAll('\n', '<br />'))
+			.addParam('Эффект', this.description.replaceAll('\n', '<br />'))
+			.addParam('История', this.story.replaceAll('\n', '<br />'))
 		
 		return template.block(7)
 	}
 	
 	infobox() {
-		const template = new Template('Equation Infobox')
-			.addParam('period', this.period_name)
-			.addParam('rarity', this.rarity)
-			.addParam('path1', `${this.path1}*${this.path1count}`)
-			.addParam('path2', this.path2 ? `${this.path2}*${this.path2count}` : undefined)
-			.addParam('effect', this.description.replaceAll('\n', '<br />'))
-			.addParam('mentions', getMentions(this.story, this.name).join('; '))
+		const template = new Template('Уравнение Инфобокс')
+			.addParam('Период', this.period_name)
+			.addParam('Редкость', this.rarity)
+			.addParam('Путь1', `${this.path1}*${this.path1count}`)
+			.addParam('Путь2', this.path2 ? `${this.path2}*${this.path2count}` : undefined)
+			.addParam('Эффект', this.description.replaceAll('\n', '<br />'))
+			.addParam('Упоминания', getMentions(this.story, this.name).join('; '))
 		
 		return template.block(7)
 	}
