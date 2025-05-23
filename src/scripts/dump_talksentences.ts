@@ -75,19 +75,15 @@ for (const sentence of Object.values(TalkSentences)/*.sort((a, b) => (a.TalkSent
 		switch (diconMap[sentence.TalkSentenceID]) {
 			case 'BlackScreen':
 				output.push(`:{{Чёрный экран|${content}}}`)
-				outputVoices.push(`:${voice}{{Чёрный экран|${content}}}`)
 				break
 			default:
 				output.push(`:{{Диалог|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${content}`)
-				outputVoices.push(`:{{Диалог|${DICON_MAP[diconMap[sentence.TalkSentenceID]]}}} ${voice}${content}`)
 				break
 		}
 	} else if (textMap.getText(sentence.TextmapTalkSentenceName)) {
 		output.push(`:'''${textMap.getText(sentence.TextmapTalkSentenceName)}:''' ${content}`)
-		outputVoices.push(`:${voice}'''${textMap.getText(sentence.TextmapTalkSentenceName)}:''' ${content}`)
 	} else {
 		output.push(`:${content}`)
-		outputVoices.push(`:${voice}${content}`)
 	}
 }
 

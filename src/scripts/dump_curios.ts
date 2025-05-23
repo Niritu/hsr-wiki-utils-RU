@@ -5,26 +5,26 @@ import { uploadPrompt } from '../util/General.js';
 const rarities = ['Weighted', '3', '2', '1', 'Negative', undefined]
 
 // DIVERGENT UNIVERSE //
-const outputDU: string[] = ['{{Divergent Universe Tabs}}','']
+const outputDU: string[] = ['{{Вкладки Расходящейся вселенной}}','']
 
 const curiosDU = Curio.loadAll(true)
 
 for (const rarity of rarities) {
 	outputDU.push(
-		`==${rarity}-Star Curios==`,
-		'{{Curio Information/Header}}'
+		`==${rarity}-звёздочные диковины==`,
+		'{{Диковина Информация/Начало}}'
 	)
 	
-	outputDU.push(...curiosDU.filter(curio => curio.rarity == rarity && curio.period == 'Tourn2').map(curio => curio.entry() + uploadPrompt(curio.icon_path, `Curio ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '') }.png`, 'Curio Icons')))
+	outputDU.push(...curiosDU.filter(curio => curio.rarity == rarity && curio.period == 'Tourn2').map(curio => curio.entry() + uploadPrompt(curio.icon_path, `Диковина ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '') }.png`, 'Изображения диковин')))
 
-	outputDU.push('{{Curio Information/Footer}}','')
+	outputDU.push('{{Диковина Информация/Конец}}','')
 }
 
 writeFileSync('./output/curios-du.wikitext', outputDU.join('\n'))
 
 // CARD MODULE //
 const module_output: string[] = ['return {']
-module_output.push(...curiosDU.filter(curio => curio.rarity && curio.period == 'Tourn2').map(curio => `\t["${curio.name.replaceAll('"', '\\"')}"] = { rarity = "${curio.rarity}" },`))
+module_output.push(...curiosDU.filter(curio => curio.rarity && curio.period == 'Tourn2').map(curio => `\t["${curio.name.replaceAll('"', '\\"')}"] = { Редкость = "${curio.rarity}" },`))
 
 module_output.push('}')
 
@@ -42,10 +42,10 @@ for (const curio of curiosSUTemp) {
 	}
 }
 
-outputSU.push('{{Curio Information/Header}}')
+outputSU.push('{{Диковина Информация/Начало}}')
 for (const curio of curiosSU) {
-	outputSU.push(curio.entry() + uploadPrompt(curio.icon_path, `Curio ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '')}.png`, 'Curio Icons'))
+	outputSU.push(curio.entry() + uploadPrompt(curio.icon_path, `Диковина ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '')}.png`, 'Иконки диковин'))
 }
-outputSU.push('{{Curio Information/Footer}}')
+outputSU.push('{{Диковина Информация/Конец}}')
 
 writeFileSync('./output/curios.wikitext', outputSU.join('\n'))

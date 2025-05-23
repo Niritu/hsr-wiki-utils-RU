@@ -19,7 +19,7 @@ const PAGE_FORMAT =
 |Условия         = <<REQUIREMENTS>>
 |Персонажи       = <<CHARACTERS>>
 |СтартЛокация    = [[<<START_WORLD>>]] — [[<<START_AREA>>]]
-|Локации         = <<START_AREA>>
+|Мир             = <<START_WORLD>>
 |Предыдущая      = <<PREV>>
 |Следующая       = <<NEXT>>
 |Награды         = <<REWARDS>>
@@ -84,14 +84,14 @@ for (const [i, missionData] of allMissionData.entries()) {
 		.replaceAll('<<EVENT>>', mission.event?.name ?? '')
 	
 	const image = await mission.getImage()
-	const imageName = `Миссия Освоения ${title.replaceAll(':', '')}.png`
+	const imageName = `Миссия ${title.replaceAll(':', '')}.png`
 	if (typeof(image) == 'string') {
 		output = output.replaceAll('<<IMAGE>>', imageName + uploadPrompt(image, imageName, "Перекрёсток судеб"))
 	} else if (!image) {
 		output = output.replaceAll('<<IMAGE>>', `${imageName}`)
 	} else {
-		const stelleName = `Миссия Освоения ${title.replaceAll(':', '') } (Стелла).png`
-		const caelusName = `Миссия Освоения ${title.replaceAll(':', '') } (Келус).png`
+		const stelleName = `Миссия ${title.replaceAll(':', '') } (Стелла).png`
+		const caelusName = `Миссия ${title.replaceAll(':', '') } (Келус).png`
 		output = output.replaceAll('<<IMAGE>>', 
 			uploadPrompt(image.stelle, stelleName, "Перекрёсток судеб") 
 			+ uploadPrompt(image.caelus, caelusName, "Перекрёсток судеб")
