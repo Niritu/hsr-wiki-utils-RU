@@ -82,6 +82,6 @@ export class FinishLevelGraph extends BaseDialogueTask {
 	
 	wikitext(_level: number, tree: ActDialogueTree, node: DialogueNode<this>): string | undefined {
 		if (tree.type != 'occurrence' || tree.inverseFind(node, (n) => n.item instanceof FinishLevelGraph && n != node)) return undefined
-		return `;(Immediately ends the occurrence)`
+		return `;(Событие немедленно завершается)`
 	}
 }

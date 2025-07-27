@@ -109,10 +109,10 @@ export class RogueOption extends BaseDialogueTask {
 					return ':' + specialDialogue
 				}
 			} else {
-				return `:{{DIcon|Star}} ${optionData?.choice} &mdash; ${optionData?.result}`
+				return `:{{Диалог|Звезда}} ${optionData?.choice} &mdash; ${optionData?.result}`
 			}
 		} else if (this.sentence_id) {
-			return `:{{DIcon|${DICON_MAP[this.icon_type ?? 'ChatContinueIcon']}}} ${textMap.getSentence(this.sentence_id, false, false)}`
+			return `:{{Диалог|${DICON_MAP[this.icon_type ?? 'ChatContinueIcon']}}} ${textMap.getSentence(this.sentence_id, false, false)}`
 		} else {
 			throw new TypeError(`Has neither option_id and sentence_id`)
 		}
