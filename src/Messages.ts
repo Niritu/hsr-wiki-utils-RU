@@ -62,10 +62,10 @@ const MESSAGE_IMAGE_NAMES = {
 }
 
 const STICKER_OVERRIDES = {
-	'sticker_7_2': 'File:Sticker PPG 07 Pom-Pom 03.png',
-	'sticker_7_3': 'File:Sticker PPG 07 Pom-Pom 04.png',
-	'sticker_7_4': 'File:Sticker PPG 07 Pom-Pom 05.png',
-	'sticker_7_5': 'File:Sticker PPG 07 Pom-Pom 02.png',
+	'sticker_7_2': 'Файл:Стикер ГПП 07 Пом-Пом 03.png',
+	'sticker_7_3': 'Файл:Стикер ГПП 07 Пом-Пом 04.png',
+	'sticker_7_4': 'Файл:Стикер ГПП 07 Пом-Пом 05.png',
+	'sticker_7_5': 'Файл:Стикер ГПП 07 Пом-Пом 02.png',
 }
 
 export class MessagesContact {
@@ -96,14 +96,14 @@ export class MessagesContact {
 		
 		switch (data.ContactsType) {
 			case 1:
-				this.type = 'Character'
+				this.type = 'Персонаж'
 				break
 			case 3:
-				this.type = 'Group'
+				this.type = 'Группа'
 				break
 			case 2:
 			default:
-				this.type = 'NPC'
+				this.type = 'НИП'
 				break
 		}
 		this.icon_path = data.IconPath
@@ -285,14 +285,14 @@ export class MessageItem {
 				const imageData = MessageItemImage[this.content_id!]
 				const fileName = MESSAGE_IMAGE_NAMES[this.content_id!] ? `Message ${MESSAGE_IMAGE_NAMES[this.content_id!]}` : `Message ${this.sender_type == 'NPC' ? this.sender!.name : this.group.contact.name} ${this.content_id! - 10000}`
 				return !imageData.FemaleImagePath 
-					? `[[File:${fileName}.png|256px]]`
-					: `[[File:${fileName} (Caelus).png|256px]] [[File:${fileName} (Stelle).png|256px]]`
+					? `[[Файл:${fileName}.png|256px]]`
+					: `[[Файл:${fileName} Келус.png|256px]] [[File:${fileName} Стелла.png|256px]]`
 			case 'Link':
 				const linkData = MessageItemLink[this.content_id!]
-				return `{Link: caption = ${textMap.getText(linkData.Title)} ;; image = Message Link ${this.content_id! - 10000}.png ;; link = A Foxian Tale of the Haunted/Ghostly Grove}`
+				return `{Ссылка: надпись = ${textMap.getText(linkData.Title)} ;; изображение = ${this.content_id! - 10000}.png ;; ссылка = Лисья история о привидениях/Страшилки Лофу}`
 			case 'Raid':
 				const raidData = MessageItemRaidEntrance[this.id]
-				return `{Domain Invite: ${textMap.getText(RaidConfig[raidData.RaidID].RaidName)}}` // TODO: proper DoE support
+				return `{Испытание: ${textMap.getText(RaidConfig[raidData.RaidID].RaidName)}}` // TODO: proper DoE support
 			case 'Sticker':
 				const stickerData = EmojiConfig[this.content_id!] ?? Object.values(EmojiConfig).find(emoji => emoji.EmojiPath.includes(`/${this.content_id}.png`))
 				if (!stickerData) {
@@ -312,9 +312,9 @@ export class MessageItem {
 			case 'PlayerAuto':
 				return `:'''${this.sender?.display_name}:''' ${this.contentWikitext()}`
 			case 'Player':
-				return `:{Choice} ${this.option_text || this.contentWikitext()}\n${':'.repeat(indent)}:'''${this.sender?.display_name}:''' ${this.contentWikitext()}`
+				return `:{Выбор} ${this.option_text || this.contentWikitext()}\n${':'.repeat(indent)}:'''${this.sender?.display_name}:''' ${this.contentWikitext()}`
 			case 'System':
-				return `:{{DIcon|Warning}} ${this.contentWikitext()}`
+				return `:{{Диалог|Предупреждение}} ${this.contentWikitext()}`
 		}
 	}
 }
@@ -361,6 +361,6 @@ export class MessageTree extends AbstractDialogueTree<MessageItem> {
 	}
 	
 	async wikitext(): Promise<string> {
-		return (await super.wikitext()) + (this.section.mission_link_id ? `\n;{Accepted Mission: ${Mission.fromId(this.section.mission_link_id).pagetitle}}` : '')
+		return (await super.wikitext()) + (this.section.mission_link_id ? `\n;{Принятая миссия: ${Mission.fromId(this.section.mission_link_id).pagetitle}}` : '')
 	}
 }

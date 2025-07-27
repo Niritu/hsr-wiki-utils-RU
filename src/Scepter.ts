@@ -32,7 +32,7 @@ export const DisplayTypeMap = {
 }
 
 function varTemplate(params: (string | number)[]) {
-	return `{{SU Rarity Vars|${params.join('|')}}}`
+	return `{{ВВ Варианты редкости|${params.join('|')}}}`
 }
 
 export class Scepter {
@@ -80,7 +80,7 @@ export class Scepter {
 		
 		if (data1.UnlockID) {
 			const finishWay = RogueMagicFinishWay[RogueMagicUnlock[data1.UnlockID].UnlockFinishWay]
-			this.unlock_requirement = textMap.getText(RogueMagicUnlock[data1.UnlockID].RogueUnlockDetail) || (finishWay.FinishType == 'RogueMagicTalentEnable' ? `Expand the [[Simulated Universe: Unknowable Domain/Cognitive Boundary|Cognitive Boundary]] to unlock` : '{{cx}}')
+			this.unlock_requirement = textMap.getText(RogueMagicUnlock[data1.UnlockID].RogueUnlockDetail) || (finishWay.FinishType == 'RogueMagicTalentEnable' ? `Расширьте [[Виртуальная вселенная: Область непознанного/Границы мышления|Границы мышления]] для доступа` : '{{cx}}')
 		}
 	}
 
@@ -95,14 +95,14 @@ export class Scepter {
 	}
 	
 	templateEntry(): string {
-		const information = new Template('Scepter Information', {
-			name: this.name + uploadPrompt(this.image_path, `Scepter ${this.name}.png`, 'Scepter Icons'),
-			type: this.type || '',
-			unlock: this.unlock_requirement || '',
-			effect: this.description.replaceAll('\n', '<br />') + '\n----\n' + this.active_component.descriptionWikitext(),
-			story: this.story.replaceAll('\n', '<br />'),
-			notes: '',
-			mentions: '',
+		const information = new Template('Информация скипетра', {
+			Название: this.name + uploadPrompt(this.image_path, `Скипетр ${this.name}.png`, 'Изображения скипетров'),
+			Тип: this.type || '',
+			Доступ: this.unlock_requirement || '',
+			Эффект: this.description.replaceAll('\n', '<br />') + '\n----\n' + this.active_component.descriptionWikitext(),
+			История: this.story.replaceAll('\n', '<br />'),
+			Примечания: '',
+			Упоминания: '',
 		})
 		return information.block()
 	}
@@ -156,7 +156,7 @@ export class Component {
 			
 			let desc = textMap.getText(data.MagicUnitDesc, buff?.ParamList)
 			if (!this.is_decision) {
-				desc = desc.replaceAll('{{Color|h|', `{{Color|rarity${data.MagicUnitLevel + 2}|`)
+				desc = desc.replaceAll('{{Цвет|Выделенный|', `{{Цвет|редкость${data.MagicUnitLevel + 2}|`)
 			}
 			
 			for (const [i, val] of buff?.ParamList?.entries() ?? []) {
@@ -176,7 +176,7 @@ export class Component {
 
 		if (data1.UnlockID) {
 			const finishWay = RogueMagicFinishWay[RogueMagicUnlock[data1.UnlockID].UnlockFinishWay]
-			this.unlock_requirement = textMap.getText(RogueMagicUnlock[data1.UnlockID].RogueUnlockDetail) || (finishWay.FinishType == 'RogueMagicTalentEnable' ? `Expand the [[Simulated Universe: Unknowable Domain/Cognitive Boundary|Cognitive Boundary]] to unlock` : '{{cx}}')
+			this.unlock_requirement = textMap.getText(RogueMagicUnlock[data1.UnlockID].RogueUnlockDetail) || (finishWay.FinishType == 'RogueMagicTalentEnable' ? `Расширьте [[Виртуальная вселенная: Область непознанного/Границы мышления|Границы мышления]] для доступа` : '{{cx}}')
 		}
 		
 		if (dataVersions.length > 1) {
@@ -207,7 +207,7 @@ export class Component {
 						const vars = varTemplate(params.map(param => param.toLocaleString()))
 						const varsPercent = varTemplate(params.map(param => percent(param, 5, false)))
 						desc = desc
-							.replaceAll(new RegExp(`{{Color\\|h\\|(#${n}\\[?i?\\]?%?)}}`, 'g'), '$1')
+							.replaceAll(new RegExp(`{{Цвет\\|Выделенный\\|(#${n}\\[?i?\\]?%?)}}`, 'g'), '$1')
 							.replaceAll(`#${n}[i]%`, varsPercent)
 							.replaceAll(`#${n}[i]`, vars)
 							.replaceAll(`#${n}`, vars)
@@ -228,7 +228,7 @@ export class Component {
 		const output: string[] = []
 		for (const [i, desc] of this.descriptions.entries()) {
 			output.push(
-				`{{Color|rarity${i + 3}|${i + 1}-star:}}<br />`
+				`{{Цвет|редкость${i + 3}|${i + 1}-звёздочный:}}<br />`
 				 + desc.replaceAll('\n', '<br />')
 			)
 		}
@@ -236,12 +236,12 @@ export class Component {
 	}
 
 	templateEntry(): string {
-		const information = new Template('Component Information', {
-			name: this.name + uploadPrompt(this.icon_path, `Component ${this.name}.png`, 'Component Icons'),
-			alignment: this.alignment || this.type || '',
-			unlock: this.unlock_requirement?.replaceAll(/Clear "(.+?)" /gi, 'Clear "[[Simulated Universe: Unknowable Domain/Exploration#$1|$1]]" ') || '',
-			effect: this.descriptionWikitext(),
-			notes: '',
+		const information = new Template('Информация компонента', {
+			Название: this.name + uploadPrompt(this.icon_path, `Компонент ${this.name}.png`, 'Изображения компонентов'),
+			Группа: this.alignment || this.type || '',
+			Доступ: this.unlock_requirement?.replaceAll(/Clear "(.+?)" /gi, 'Сначала пройдите "[[Виртуальная вселенная: Область непознанного/Исследования#$1|$1]]" ') || '',
+			Эффект: this.descriptionWikitext(),
+			Примечания: '',
 		})
 		return information.block()
 	}

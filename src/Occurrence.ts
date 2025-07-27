@@ -42,22 +42,22 @@ const OVERRIDE_PROGRESS: Record<string, number> = {
 	'414401-2': 3, // Loneliness, Cosmic Beauty Bugs, Simulated Universe (II); Divergent Universe: The Human Comedy
 }
 
-export type SUMode = 'su' | 'pinf' | 'swarm' | 'gng' | 'du' | 'du_thc' | 'und'
+export type SUMode = 'вв' | 'бескизм' | 'рой' | 'зиш' | 'рв' | 'рв_кж' | 'облнеп'
 
 export function displaySUMode(mode: SUMode, the?: boolean): string | undefined {
 	switch (mode) {
-		case 'su':
-			return (the ? 'the ' : '') + '[[Simulated Universe]]'
-		case 'swarm':
-			return '[[Simulated Universe: Swarm Disaster]]'
-		case 'gng':
-			return '[[Simulated Universe: Gold and Gears]]'
-		case 'pinf':
-			return '[[Planar Infinity]]'
-		case 'du':
-			return (the ? 'the ' : '') + '[[Divergent Universe]]'
-		case 'und':
-			return '[[Simulated Universe: Unknowable Domain]]'
+		case 'вв':
+			return (the ? '' : '') + '[[Виртуальная вселенная|Виртуальной вселенной]]'
+		case 'рой':
+			return '[[Виртуальная вселенная: Нашествие роя|Виртуальной вселенной: Нашествие роя]]'
+		case 'зиш':
+			return '[[Виртуальная вселенная: Золото и шестерёнки|Виртуальной вселенной: Золото и шестерёнки]]'
+		case 'бескизм':
+			return '[[Бесконечное измерение|Бесконечном измерении]]'
+		case 'рв':
+			return (the ? '' : '') + '[[Расходящаяся вселенная|Расходящейся вселенной]]'
+		case 'облнеп':
+			return '[[Виртуальная вселенная: Область непознанного|Виртуальной вселенной: Область непознанного]]'
 	}
 }
 
@@ -73,19 +73,19 @@ export class OccurrenceSeries {
 		this.path = data.NPCJsonPath
 		
 		if (this.id > 6e5) {
-			this.mode = 'du' // protean hero ids: 60000-69999
+			this.mode = 'рв' // protean hero ids: 60000-69999
 		} else if (this.id > 5e5) {
-			this.mode = 'und' // unknowable domain ids: 50001-59999
+			this.mode = 'облнеп' // unknowable domain ids: 50001-59999
 		} else if (this.id > 4e5) {
-			this.mode = 'du_thc' // the human comedy ids: 40001-49999
+			this.mode = 'рв_кж' // the human comedy ids: 40001-49999
 		} else if (this.id >= 3e5) {
-			this.mode = 'gng' // gold and gears ids: 30001-39999
+			this.mode = 'зиш' // gold and gears ids: 30001-39999
 		} else if (this.id >= 2e5) {
-			this.mode = 'pinf' // planar infinity ids: 20001-29999
+			this.mode = 'бескизм' // planar infinity ids: 20001-29999
 		} else if (this.id >= 1e5) {
-			this.mode = 'swarm' // swarm disaster ids: 10001-19999
+			this.mode = 'рой' // swarm disaster ids: 10001-19999
 		} else {
-			this.mode = 'su' // simulated universe ids: 1-9999
+			this.mode = 'вв' // simulated universe ids: 1-9999
 		}
 	}
 	
@@ -188,7 +188,7 @@ export class Occurrence {
 				choice: textMap.getText(displayData.OptionTitle, params),
 				result: textMap.getText(displayData.OptionDesc, params),
 				path: internalOption.SpecialOptionID ? SPECIAL_OPTION_PATHS[internalOption.SpecialOptionID] : undefined,
-				modes: this.mode.startsWith('du_') ? [] : [this.mode],
+				modes: this.mode.startsWith('рв_') ? [] : [this.mode],
 			}
 			this.options.push(option)
 		}
@@ -215,11 +215,11 @@ export class AbstractOccurrence {
 	modes: SUMode[] = []
 	
 	get active_modes() {
-		return this.modes.filter(mode => !mode.startsWith('du_'))
+		return this.modes.filter(mode => !mode.startsWith('рв_'))
 	}
 
 	get active_occurrences() {
-		return this.occurrences.filter(occurrence => !occurrence.mode.startsWith('du_'))
+		return this.occurrences.filter(occurrence => !occurrence.mode.startsWith('рв_'))
 	}
 	
 	constructor(public id: string) {
@@ -232,7 +232,7 @@ export class AbstractOccurrence {
 		if (this.occurrences.includes(occurrence)) return this
 		// if (occurrence.mode.startsWith('du_')) return this // ignore old DU versions
 		
-		if (!this.modes.includes(occurrence.mode) || occurrence.mode.startsWith('du_')) {
+		if (!this.modes.includes(occurrence.mode) || occurrence.mode.startsWith('рв_')) {
 			this.modes.push(occurrence.mode)
 		}
 		
@@ -247,7 +247,7 @@ export class AbstractOccurrence {
 			const existingOption = this.options.find(eopt => eopt.choice == option.choice && eopt.result == option.result && eopt.path == option.path)
 			
 			if (existingOption) {
-				if (existingOption.modes.includes(occurrence.mode) || occurrence.mode.startsWith('du_')) continue
+				if (existingOption.modes.includes(occurrence.mode) || occurrence.mode.startsWith('рв_')) continue
 				existingOption.modes.push(occurrence.mode)
 			} else {
 				for (let ci = Math.max(this.options.length - 1, 0); ci > i - 1; ci--) {
@@ -262,7 +262,7 @@ export class AbstractOccurrence {
 	}
 	
 	get active_options() {
-		return this.options.filter(opt => opt.modes.find(mode => !mode.startsWith('du_')))
+		return this.options.filter(opt => opt.modes.find(mode => !mode.startsWith('рв_')))
 	}
 	
 	static fromOccurrence(occurrence: Occurrence) {
@@ -323,7 +323,7 @@ export class OccurrenceDialogueTree extends ActDialogueTree {
 	
 	async wikitext(): Promise<string> {
 		let wikitext = await super.wikitext()
-		if (wikitext.endsWith(';(Immediately ends the occurrence)')) {
+		if (wikitext.endsWith(';(Событие немедленно завершается)')) {
 			wikitext = wikitext.substring(0, wikitext.length - 35)
 		}
 		return wikitext

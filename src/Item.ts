@@ -204,15 +204,15 @@ export class Item {
 		ChatBubble: 'Chat Box',
 		ChessRogueDiceSurface: 'Dice Face',
 		Eidolon: 'Eidolon Activation Material',
-		Food: 'Consumable',
+		Food: 'расходный предмет',
 		Formula: 'Formula',
 		// Gift: '', // existing items of this type do not have a type on the wiki
 		// ForceOpitonalGift: '',
 		HeadIcon: 'Profile Picture',
 		// Material: '', // very general category
-		Mission: 'Mission Item',
+		Mission: 'предмет',
 		PhoneTheme: 'Phone Wallpaper',
-		MusicAlbum: 'Disk',
+		MusicAlbum: 'Записи',
 		TravelBrochurePaster: 'Dreamscape Pass Sticker',
 		PamSkin: 'Pom-Pom Skin',
 	}
@@ -314,7 +314,7 @@ export class Item {
 			return `Profile Picture ${this.name.replace(': ', ' - ')}.png`
 		}
 
-		return COMMON_ICON_MAP[this.icon_path] ?? `Item ${sanitizeString(this.pagetitle)}.png`
+		return COMMON_ICON_MAP[this.icon_path] ?? `Предмет ${sanitizeString(this.pagetitle)}.png`
 	}
 	
 	getInventoryTab(): InventoryTab | undefined {

@@ -68,12 +68,12 @@ export const COLOR_MAP = {
 	'dd7a00': 'Выделенный',
 	'dbc291': 'Ключевой',
 	'42a8b9': 'fthuser',
-	'87e0ff': 'blue',
+	'87e0ff': 'Ледяной',
 	'77ede5': 'heliobus',
 	'eb4d3d': 'Огненный',
 	'ec505f': 'Огненный',
-	'ff3a3e': 'red',
-	'f3da75': 'imaginary',
+	'ff3a3e': 'Огненный',
+	'f3da75': 'Мнимый',
 	'6f7cda': 'hblue',
 	'ad5e68': 'hred',
 	'ff4f53': 'humanoid',
@@ -229,8 +229,8 @@ export class TextMap {
 			.replaceAll(/<\s*\/?\s*i\s*>/gi, "''")
 			.replaceAll(/<\s*\/?\s*b\s*>/gi, "'''")
 			.replaceAll(/\u00a0/g, this.lang == 'KR' ? ' ' : '&nbsp;')
-			.replaceAll(/⟨⟨Color\|(\w+?)\|(\s*)(.+?)(\s*)⟩⟩/gis, '$2⟨⟨Цвет|$1|$3⟩⟩$4')
-			.replaceAll(/⟨⟨Color\|\w+?\|⟩⟩/gis, '')
+			.replaceAll(/⟨⟨Цвет\|(\w+?)\|(\s*)(.+?)(\s*)⟩⟩/gis, '$2⟨⟨Цвет|$1|$3⟩⟩$4')
+			.replaceAll(/⟨⟨Цвет\|\w+?\|⟩⟩/gis, '')
 			.replaceAll(/<\/?unbreak>/gi, '')
 			.replaceAll('{SPACE}', ' ')
 		
@@ -275,6 +275,18 @@ export class TextMap {
 				voiceIds = [sentence.VoiceID]
 			}
 		}
+		
+		const vo = (allowVO && voiceIds) ? voiceIds.filter(id => VoiceConfig[id]).map(id => {
+			const voice = VoiceConfig[id]
+			const voicePath = voice.VoicePath.replaceAll('_', ' ')
+			if (voice.IsPlayerInvolved) {
+				return ``
+			} else {
+				return ``
+			}
+		}).join('') : ''
+		
+		return vo + this.wikiFormatting(!textOnly && name ? `'''${name}:''' ${text.includes('<br />') ? '<br />' : ''}${text}` : text)
 	}
 	
 	getSentenceMeta(sentenceId: number | string) {
@@ -321,10 +333,17 @@ export class TextMap {
 		console.groupEnd()
 	}
 	
+	static async preloadOL(version?: Version) {
+		return Promise.all(Object.entries(OTHER_LANGUAGES).map(([, lang]) => this.load(version, lang)))
+	}
+	
 	static async generateOL(keys?: (string | number | bigint | HashReference) | (string | number | bigint | HashReference | undefined)[], params?: TextParams): Promise<string> {
 		const output = ['{{На других языках']
 		if (!Array.isArray(keys)) keys = [keys]
 		const targetWsp = keys.length > 1 ? 9 : 5
+		
+		await this.preloadOL()
+		
 		for (const [i, key] of keys.entries()) {
 			if (i != 0) output.push('')
 			for (let [tkey, lang] of Object.entries(OTHER_LANGUAGES)) {
