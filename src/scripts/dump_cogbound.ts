@@ -5,6 +5,7 @@ import { ItemReference } from '../files/Item.js'
 import { Component } from '../Scepter.js'
 import { HashReference, textMap } from '../TextMap.js'
 import { pageInfoHeader, uploadPrompt } from '../util/General.js'
+import { teardown } from '../util/JSONParser.js'
 import { WeirdKey } from '../WeirdKey.js'
 
 export const RogueMagicMiscDisplay = await getExcelFile<InternalMiscDisplay>('RogueMagicMiscDisplay.json', 'DisplayID')
@@ -25,8 +26,8 @@ const output: string[] = [
 	'{{Simulated Universe: Unknowable Domain Tabs}}',
 	'',
 	'==Nodes==',
-	'{{SU Ability',
-	'|currency = Conjecture',
+	'{{ВВ Способность',
+	'|currency = Гипотеза',
 ]
 
 for (const talent of RogueMagicTalent) {
@@ -36,7 +37,7 @@ for (const talent of RogueMagicTalent) {
 		.filter(param => param[WeirdKey.get('DescParamType')] == 'MagicUnit')
 		.map(param => new Component(Number(param[WeirdKey.get('TalentDescParamValue')].replace(/_.+/, ''))))
 	
-	let componentsList = components.length > 0 ? ` {{Item List|${components.map(cmp => cmp.name).join('; ')}|type=Component}}` : ''
+	let componentsList = components.length > 0 ? ` {{Item List|${components.map(cmp => cmp.name).join('; ')}|type=Компонент}}` : ''
 	
 	let icon = `${name}${uploadPrompt(talent.TalentIcon, `Icon ${name}.png`, 'SU Ability Tree Icons')}`
 	if (talent.TalentIcon == 'SpriteOutput/Rogue/Talent/1006.png') {
@@ -60,3 +61,5 @@ output.push(
 )
 
 await writeFile('./output/und-cogbound.wikitext', output.join('\n'))
+
+teardown()

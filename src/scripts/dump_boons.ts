@@ -3,6 +3,7 @@ import { GoldenBloodBoon } from '../Boon.js';
 import { Dictionary } from '../Shared.js';
 import { textMap, TextMap } from '../TextMap.js';
 import { pageInfoHeader, uploadPrompt } from '../util/General.js';
+import { teardown } from '../util/JSONParser.js';
 import { Table } from '../util/Table.js';
 
 const sets: Dictionary<Dictionary<boolean>> = {}
@@ -33,7 +34,7 @@ for (const [cycle, heirs] of Object.entries(sets)) {
 	for (const heir of Object.keys(heirs)) {
 		output.push(`===${heir}===`)
 		
-		const table = new Table('article-table tdc1', ['Icon', 'Name', 'Effects'])
+		const table = new Table('article-table tdc1', ['Иконка', 'Название', 'Эффекты'])
 		let level = 0
 		for (const boon of boons.filter(boon => boon.titan_heir == heir).sort((b0, b1) => ((b0.level * 1000000) + b0.id) - ((b1.level * 1000000) + b1.id))) {
 			if (boon.level != level) {
@@ -43,7 +44,7 @@ for (const [cycle, heirs] of Object.entries(sets)) {
 			table.addRowWithAttr(
 				`id="${boon.name.replaceAll('"', '&quot;')}"`,
 				[
-					`[[File:Icon Golden Blood's Boon ${heir}.png|50px|link=|alt=${heir}]]${uploadPrompt(boon.icon, `Icon Golden Blood's Boon ${heir}.png`, "Golden Blood's Boon Icons")}`,
+					`[[Файл:Иконка Дар золотой крови ${heir}.png|50px|link=|alt=${heir}]]${uploadPrompt(boon.icon, `Иконка Дар золотой крови ${heir}.png`, "Иконки Дара золотой крови")}`,
 					`'''${boon.name}'''`,
 					boon.description.replaceAll('\n', '<br />')
 				]
@@ -63,3 +64,5 @@ output.push(
 )
 
 writeFileSync('./output/du-boons.wikitext', output.join('\n'))
+
+teardown()

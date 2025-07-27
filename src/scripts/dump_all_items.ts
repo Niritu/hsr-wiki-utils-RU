@@ -5,6 +5,7 @@ import { n, sanitizeString } from '../Shared.js';
 import { TextMap } from '../TextMap.js';
 import { ItemMainType, ItemSubType } from '../files/Item.js';
 import { uploadPrompt } from '../util/General.js';
+import { teardown } from '../util/JSONParser.js';
 import { Template } from '../util/Template.js';
 
 rmSync('./output/items/', { recursive: true })
@@ -54,71 +55,71 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 			'[END_PAGE_INFO] --%>'
 		)
 		
-		if (types.includes('Dreamscape Pass Sticker')) {
-			output.push('{{Stub|Location information}}')
+		if (types.includes('Записи')) {
+			output.push('{{Дополнить}}')
 		}
 		
-		const infobox = new Template('Item Infobox')
+		const infobox = new Template('Предмет Инфобокс')
 		
 		if (item.name != item.pagetitle) {
-			infobox.addParam('title', item.name)
+			infobox.addParam('Название', item.name)
 		}
 		
 		const img = await item.getImage()
 		
 		infobox
 			.addParam('id', item.id)
-			.addParam('image', img + uploadPrompt(item.icon_path, img, 'Item Icons'))
-			.addParam('type', types[0] || '')
+			.addParam('Изображение', img + uploadPrompt(item.icon_path, img, 'Item Icons'))
+			.addParam('Тип', types[0] || '')
 		
 		for (const [i, type] of types.entries()) {
 			if (i == 0) continue
-			infobox.addParam(`type${i + 1}`, type)
+			infobox.addParam(`Тип${i + 1}`, type)
 		}
-		
+
 		infobox
-			.addParam('invCategory', item.inventory_tab || '')
-			.addParam('rarity', item.rarity)
-			.addParam('effect', item.effect.replaceAll('\n', '<br />'))
-			.addParam('description', item.desc.replaceAll('\n', '<br />'))
-		
+			.addParam('Инвентарь', item.inventory_tab || '')
+			.addParam('Редкость', item.rarity)
+			.addParam('Эффект', item.effect.replaceAll('\n', '<br />'))
+			.addParam('Описание', item.desc.replaceAll('\n', '<br />'))
+
 		const sources = await item.getSources()
 		for (const [i, source] of sources.entries()) {
 			const override = sourceEntryLinkOverride.find(link => source.includes(link))
-			infobox.addParam(`source${i + 1}`, override ? source.replaceAll(override, `[[${override}]]`) : '[[' + source + ']]')
+			infobox.addParam(`Источник${i + 1}`, override ? source.replaceAll(override, `[[${override}]]`) : '[[' + source + ']]')
 		}
 		
 		output.push(infobox.block())
 		
 		if (item.bg_desc) {
-			output.push(`{{Description|${item.bg_desc.includes('=') ? '1=' : ''}${item.bg_desc.replaceAll('\n', '<br />')}}}`)
+			output.push(`{{Описание|${item.bg_desc.includes('=') ? '1=' : ''}${item.bg_desc.replaceAll('\n', '<br />')}}}`)
 		}
 		
 		switch (item.purpose_id) {
 			case 2:
 				const forType = item.desc.match(/Ascension of (\w+) characters/)?.[1]
-				output.push(`'''${item.name}''' is a ${item.rarity}-star [[Character Ascension Material]]. It is used to ascend characters of the {{Color|${forType}|link=1}} type.`)
+				output.push(`'''${item.name}''' — ${item.rarity}-звёздочный материал для возвышения уровня [[Персонажи|персонажей]] {{${forType}|}} типа.`)
 				break
 				
 			case 3:
-				output.push(`'''${item.name}''' is a ${item.rarity}-star [[Trace Material]] and [[Light Cone Ascension Material]].`)
+				output.push(`'''${item.name}''' — ${item.rarity}-звёздочный материал для возвышения уровня [[Следы|Следов]] и [[Световые конусы|Световых конусов]].`)
 				break
 			
 			case 7:
-				output.push(`'''${item.name}''' is a ${item.rarity}-star [[Trace Material]] and [[Character Ascension Material]].`)
+				output.push(`'''${item.name}''' — ${item.rarity}-звёздочный материал для возвышения уровня [[Следы|Следов]], [[Световые конусы|Световых конусов]] или [[Персонажи|персонажей]].`)
 				break
 			
 			case 17:
-				output.push(`'''${item.name}''' is a Tier-${item.rarity} [[Synthesis Material]].`)
+				output.push(`'''${item.name}''' — ${item.rarity}-звёздочный [[Материалы для синтеза|материал для синтеза]].`)
 				break
 			
 			case 20:
-				output.push(`'''${item.name}''' is a [[Phonograph]] Record that the player can use to unlock the corresponding soundtrack to play on the [[Astral Express]]. It contains the soundtrack [[${item.name.replaceAll("''", '').replaceAll(/^"|"$/g, '')}]].`)
+				output.push(`'''${item.name}''' — запись для [[Фонограф]]а, открывающая соответствующий трек для проигрывания в [[Общий вагон|Общем вагоне]] и [[Вагон для вечеринок|вагоне для вечеринок]].`)
 				break
 			
 			default:
 				const firstType = types[0] || (source == 'profile_pics' ? 'Profile Picture' : 'Item')
-				output.push(`'''${item.name}''' is a${n(firstType)} ${typeLinkOverride[firstType] || `[[${firstType}]]`}.`)
+				output.push(`'''${item.name}''' —${n(firstType)} ${typeLinkOverride[firstType] || `[[${firstType}]] миссии, который можно получить во время [[миссии]] ''[[]]''`}.`)
 				break
 		}
 		
@@ -145,45 +146,51 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 		let readableData = item.getText()
 		if (readableData) {
 			output.push(
-				`\n==Text==`,
-				`<div align="center">{{Color|Keyword|${readableData.title}}}</div>`
+				`\n==Текст==`,
+				`<div align="center">{{Цвет|Ключевой|${readableData.title}}}</div>`
 			)
 			if (readableData.content) {
 				output.push(
 					readableData.content
-						.replaceAll(/{{Color\|(\w+)\|/gi, '{{Color|$1|nobold=1|')
+						.replaceAll(/{{Цвет\|(\w+)\|/gi, '{{Цвет|$1|nobold=1|')
 						.replaceAll('\n', '<br />')
 						.replaceAll('<br /><br />', '\n\n')
 				)
 			}
 			if (readableData.image_path) {
-				let filename = `Item ${sanitizeString(item.name)}.png`
-				output.push(`[[File:${filename}|185px]]${uploadPrompt(readableData.image_path, filename, 'Item Images')}`)
+				let filename = `Предмет ${sanitizeString(item.name)}.png`
+				output.push(`[[Файл:${filename}|185px]]${uploadPrompt(readableData.image_path, filename, 'Изображения предметов')}`)
 			}
 		}
 		
 		output.push(
-			'\n==Other Languages==',
+			'\n==На других языках==',
 			await TextMap.generateOL(item.name_hash),
 		)
 		
 		const [releaseVersion] = await ChangeHistory.item[source as keyof typeof ChangeHistory.item].findAdded(item.id.toString())
 		output.push(
-			'\n==Change History==',
-			`{{Change History|${releaseVersion ?? `<!--unknown-->`}}}`
+			'\n==История изменений==',
+			`{{История изменений|${releaseVersion ?? `<!--unknown-->`}}}`
 		)
 
 		switch (item.inventory_tab) {
 			case 'Consumables':
-				output.push(`\n==Navigation==\n{{Consumable Navbox}}`)
+				output.push(`\n==Навигация==\n{{Расходные предметы Навбокс}}`,
+				'',
+				'[[en:]]')
 				break
 			
 			case 'Other Materials':
-				output.push(`\n==Navigation==\n{{Synthesis Material Navbox}}`)
+				output.push(`\n==Навигация==\n{{Материалы синтеза Навбокс}}`,
+				'',
+				'[[en:]]')
 				break
 			
 			case 'Upgrade Materials':
-				output.push(`\n==Navigation==\n{{Upgrade Material Navbox}}`)
+				output.push(`\n==Навигация==\n{{Материалы улучшения Навбокс}}`,
+				'',
+				'[[en:]]')
 				break
 		}
 
@@ -191,3 +198,5 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 		writeFileSync(`./output/items/${source}/${sanitizeString(types[0] || (SINGLE_TYPE[source] ? '' : 'Unknown'))}/${sanitizeString(item.name)}-${item.id}.wikitext`, output.join('\n'))
 	}
 }
+
+teardown()

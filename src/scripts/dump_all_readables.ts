@@ -4,6 +4,7 @@ import { Item } from '../Item.js';
 import { ReadableSeries } from '../Readable.js';
 import { sanitizeString, wikiTitle, zeroPad } from '../Shared.js';
 import { TextMap } from '../TextMap.js';
+import { teardown } from '../util/JSONParser.js';
 import { getCharacterMentions, getFactionMentions } from '../util/Mentions.js';
 import { Template } from '../util/Template.js';
 
@@ -30,6 +31,10 @@ for (const series of ReadableSeries.loadAll()) {
 	}
 	
 	const output = [
+		`<%-- [PAGE_INFO]`,
+		`PageTitle=#${pageTitle}#`,
+		`[END_PAGE_INFO] --%>`,
+		`{{Дополнить}}`,
 	]
 	
 	const infobox = new Template('Книга Инфобокс', {
@@ -54,14 +59,12 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	output.push(
 		infobox.block(12),
-		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]].`,
-		'<!--',
-		'==Получение==',
-		'<gallery>',
-		'Книга НАЗВАНИЕ.png|НАЗВАНИЕ',
-		'Локация НАЗВАНИЕ.png|Расположение на карте. Ближайший пространственный якорь «[[НАЗВАНИЕ]]»',
-		'</gallery>',
-		'-->',
+		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]]е.`,
+		'',
+		'==Локация==',
+		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',
+		'',
+		'==Текст=='
 	)
 	
 	for (const readable of readables) {
@@ -76,9 +79,13 @@ for (const series of ReadableSeries.loadAll()) {
 		await TextMap.generateOL(series.name_hash),
 		'',
 		'==История изменений==',
-		`{{История изменений|${(await ChangeHistory.readableSeries.findAdded(series.id))?.[0]}}}`
+		`{{История изменений|${(await ChangeHistory.readableSeries.findAdded(series.id))?.[0]}}}`,
+		'',
+		'[[en:]]'
 	)
 	
 	await mkdir(`./output/readables/${series.getWorld()}/`, { recursive: true })
 	await writeFile(`./output/readables/${series.getWorld()}/${sanitizeString(series.name.replaceAll(',', ''))}-${series.id}.wikitext`, output.join('\n'))
 }
+
+teardown()

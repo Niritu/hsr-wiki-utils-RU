@@ -4,6 +4,7 @@ import { Item } from '../Item.js';
 import { sanitizeString, wikiTitle } from '../Shared.js';
 import { TextMap } from '../TextMap.js';
 import { uploadPrompt } from '../util/General.js';
+import { teardown } from '../util/JSONParser.js';
 import { Template } from '../util/Template.js';
 
 if (existsSync('./output/consumables')) {
@@ -19,11 +20,11 @@ const SHOP_KEYWORD_MATCH = new RegExp(`(?:[^\\w]|^)(${SHOP_KEYWORDS.join('|')})(
 const sourceEntryLinkOverride = ['Omni-Synthesizer', 'Assignment', 'Simulated Universe']
 
 const groupMap = {
-	2000: 'Restorative Consumables',
-	2001: 'Energy Regen Consumables',
-	2003: 'Attack Consumables',
-	2006: 'Defense Consumables',
-	2009: 'Special Consumables'
+	2000: 'Расходные предметы HP',
+	2001: 'Расходные предметы энергии',
+	2003: 'Расходные предметы силы атаки',
+	2006: 'Расходные предметы защиты',
+	2009: 'Расходные предметы'
 }
 
 for (const itemData of Object.values(await Item.itemData.main.get())) {
@@ -41,10 +42,10 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 		'[END_PAGE_INFO] --%>'
 	)
 
-	const infobox = new Template('Consumable Infobox')
+	const infobox = new Template('Расходный предмет Инфобокс')
 
 	if (item.name != item.pagetitle) {
-		infobox.addParam('title', item.name)
+		infobox.addParam('Название', item.name)
 	}
 
 	const recipe = await item.getRecipe()
@@ -52,50 +53,47 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 
 	infobox
 		.addParam('id', item.id)
-		.addParam('image', img + uploadPrompt(item.icon_path, img, 'Consumable Icons'))
-		.addParam('type', groupMap[item.group_id!])
-		.addParam('rarity', item.rarity)
-		.addParam('effect', item.effect.replaceAll('\n', '<br />'))
-		.addParam('description', item.desc.replaceAll('\n', '<br />'))
-		.addParam('effectType', '')
-		.addParam('effectType2', '')
-		.addParam('effectType3', '')
-		.addParam('recipe', recipe ? `{{cx|Source missing}}` : '')
-		.addParam('source1', '')
-		.addParam('source2', '')
-		.addParam('source3', '')
+		.addParam('Изображения', img + uploadPrompt(item.icon_path, img, 'Изображения расходных предметов'))
+		.addParam('Тип', groupMap[item.group_id!])
+		.addParam('Редкость', item.rarity)
+		.addParam('Эффект', item.effect.replaceAll('\n', '<br />'))
+		.addParam('Описание', item.desc.replaceAll('\n', '<br />'))
+		.addParam('Рецепт', recipe ? `{{cx|Отсутствует источник}}` : '')
+		.addParam('Источник1', '')
+		.addParam('Источник2', '')
+		.addParam('Источник3', '')
 
 	const sources = await item.getSources()
 	for (const [i, source] of sources.entries()) {
 		const override = sourceEntryLinkOverride.find(link => source.includes(link))
-		infobox.addParam(`source${i + 1}`, override ? source.replaceAll(override, `[[${override}]]`) : '[[' + source + ']]')
+		infobox.addParam(`Источник${i + 1}`, override ? source.replaceAll(override, `[[${override}]]`) : '[[' + source + ']]')
 	}
 
 	output.push(infobox.block())
 
 	if (item.bg_desc) {
-		output.push(`{{Description|${item.bg_desc.includes('=') ? '1=' : ''}${item.bg_desc.replaceAll('\n', '<br />')}}}`)
+		output.push(`{{Описание|${item.bg_desc.includes('=') ? '1=' : ''}${item.bg_desc.replaceAll('\n', '<br />')}}}`)
 	}
 	
-	output.push(`'''${item.name}''' is a consumable that the player can ${recipe ? 'synthesize' : 'use'}.`)
+	output.push(`'''${item.name}''' — расходный [[Предметы|предмет]], который игрок может ${recipe ? 'создать' : 'использовать'}.`)
 
-	if (sources.find(src => SHOP_KEYWORD_MATCH.test(src) && !src.includes('Synthesize'))) {
-		output.push(`\n==Sold By==\n{{Shop Availability}}`)
+	if (sources.find(src => SHOP_KEYWORD_MATCH.test(src) && !src.includes('Создание'))) {
+		output.push(`\n<!--==Локация==\n{{Галерея|position=left|hideaddbutton=true|captionalign=center|navigation=false\n|Локация Название_локации.png|Название_локации\n}}-->`)
 	}
 	
 	if (recipe) {
-		const recipeTemplate = new Template('Recipe')
+		const recipeTemplate = new Template('Рецепт')
 		
 		recipeTemplate
-			.addParam('type', 'Synthesis')
-			.addParam('group', 'Consumable')
+			.addParam('Тип', 'Синтез')
+			.addParam('Группа', 'Расходные предметы')
 		
 		recipe.data.forEach(({ item, count }) => recipeTemplate.addParam(wikiTitle(item.name, 'item'), count))
 		
-		recipeTemplate.addParam('sort', recipe.data.map(entry => wikiTitle(entry.item.name, 'item')).join(';'))
+		recipeTemplate.addParam('Сортировка', recipe.data.map(entry => wikiTitle(entry.item.name, 'item')).join(';'))
 		
 		output.push(
-			'\n==Recipe==',
+			'\n==Рецепт==',
 			recipeTemplate.block()
 		)
 	}
@@ -105,19 +103,23 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 	// }
 
 	output.push(
-		'\n==Other Languages==',
+		'\n==На других языках==',
 		await TextMap.generateOL(item.name_hash),
 	)
 
 	const [releaseVersion] = await ChangeHistory.item.main.findAdded(item.id.toString())
 	output.push(
-		'\n==Change History==',
-		`{{Change History|${releaseVersion ?? `<!--unknown-->`}}}`,
+		'\n==История изменений==',
+		`{{История изменений|${releaseVersion ?? `<!--unknown-->`}}}`,
 		
-		'\n==Navigation==',
-		'{{Consumable Navbox}}'
+		'\n==Навигация==',
+		'{{Расходные предметы Навбокс}}',
+		'',
+		'[[en:]]'
 	)
 
 	mkdirSync(`./output/consumables/`, { recursive: true })
 	writeFileSync(`./output/consumables/${sanitizeString(item.name)}-${item.id}.wikitext`, output.join('\n'))
 }
+
+teardown()

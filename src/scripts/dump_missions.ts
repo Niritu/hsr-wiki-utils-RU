@@ -6,15 +6,19 @@ import { Mission } from '../Mission.js'
 import { DICON_MAP, wikiTitle } from '../Shared.js'
 import { TextMap, textMap } from '../TextMap.js'
 import { uploadPrompt } from '../util/General.js'
+import { teardown } from '../util/JSONParser.js'
 
 const PAGE_FORMAT =
-`{{Дополнить|Диалоги.}}
+`<%-- [PAGE_INFO]
+PageTitle=#<<TITLE>>#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = <<ID>>
 |Название        = <<NAME_PARAM>>
 |Изображение     = <<IMAGE>>
 |Тип             = <<TYPE>>
-|События         = <<EVENT>>
+|Событие         = <<EVENT>>
 |Глава           = <<CHAPTERTITLE>>
 |Условия         = <<REQUIREMENTS>>
 |Персонажи       = <<CHARACTERS>>
@@ -34,7 +38,6 @@ const PAGE_FORMAT =
 
 ==Прохождение==
 {{Дополнить}}
-
 <<DIALOGUE>>
 
 ==На других языках==
@@ -42,6 +45,11 @@ const PAGE_FORMAT =
 
 ==История изменений==
 {{История изменений|<<VERSION>>}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава 3}}
+
+[[en:]]
 `
 
 function sanitize(str: string) {
@@ -123,7 +131,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		
 		if (step.name && step.name != lastName) {
 			dialogueEntry.push(
-				i > 0 ? '{{Диалог Конец}}\n' : undefined,
+				i > 0 ? `{{Диалог Конец|${step.name}}}\n` : undefined,
 				`===${step.name}===`
 			)
 		} else if (process.argv.includes('--add-triggers')) {
@@ -131,11 +139,11 @@ for (const [i, missionData] of allMissionData.entries()) {
 		}
 		
 		if (step.description && step.description != lastDesc) {
-			dialogueEntry.push(`{{Описание миссии|локация=${(await step.getFloor() ?? await step.getArea())?.name || '<!--необходимо добавить-->'}${i > 0 ? '' : ''}|${step.description.replaceAll('\n', '<br />')}}}`)
+			dialogueEntry.push(`{{Описание миссии|тип=${mission.type}|локация=${(await step.getFloor() ?? await step.getArea())?.name || '<!--необходимо добавить-->'}${i > 0 ? '' : ''}|${step.description.replaceAll('\n', '<br />')}}}`)
 		}
 		
 		if (step.name && step.name != lastName) {
-			dialogueEntry.push('{{Диалог Начало}}')
+			dialogueEntry.push(`{{Диалог Начало|${step.name}}}`)
 			if (process.argv.includes('--no-dialogue')) {
 				dialogueEntry.push(':{{tx}}')
 			}
@@ -240,3 +248,5 @@ for (const [i, missionData] of allMissionData.entries()) {
 }
 
 console.log(`Готово! Сгенерировал ${Object.keys(Mission.missionData).length} страниц миссий за ${Math.floor((Date.now() - startTime) / 1000)} секунд`)
+
+teardown()
