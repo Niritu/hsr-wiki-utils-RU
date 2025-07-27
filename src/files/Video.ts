@@ -20,22 +20,22 @@ export class VideoTask extends BaseDialogueTask {
 	
 	async wikitext(level: number): Promise<string> {
 		if (!this.caption_path) {
-			return ';([[#Gallery|Cutscene]] plays)'
+			return ';(Начинается [[#Галерея|катсцена]])'
 		}
 		
 		const captionData = await getFileSafe<VideoCaptionData>(this.caption_path)
 		if (!captionData) {
-			return '----\n' + ':'.repeat(level) + ';([[#Gallery|Cutscene]] plays)\n'
+			return '----\n' + ':'.repeat(level) + ';(Начинается [[#Галерея|катсцена]])\n'
 				+ ':'.repeat(level + 2) + `{{tx}}{{subst:void|<!--Failed to load captions from ${this.caption_path}-->}}`
-				+ '\n' + ':'.repeat(level) + ';(Cutscene ends)\n'
+				+ '\n' + ':'.repeat(level) + ';(Катсцена заканчивается)\n'
 				+ ':'.repeat(level) + '----'
 		}
 		
-		return '----\n' + ':'.repeat(level) + ';([[#Gallery|Cutscene]] plays)\n' + captionData.CaptionList
+		return '----\n' + ':'.repeat(level) + ';(Начинается [[#Галерея|катсцена]])\n' + captionData.CaptionList
 			.sort((c0, c1) => c0.StartTime - c1.StartTime)
 			.map(caption => `${':'.repeat(level + 2)}${textMap.getText(caption.CaptionTextID)}`)
 			.join('\n')
-			+ '\n' + ':'.repeat(level) + ';(Cutscene ends)\n'
+			+ '\n' + ':'.repeat(level) + ';(Катсцена заканчивается)\n'
 			+ ':'.repeat(level) + '----'
 	}
 	

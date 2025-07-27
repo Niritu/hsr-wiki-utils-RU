@@ -1,7 +1,7 @@
 import { Value } from '../Shared.ts'
 import { HashReference } from '../TextMap.ts'
 
-export type RelicSlot = 'HEAD' | 'HAND' | 'BODY' | 'FOOT' | 'NECK' | 'OBJECT'
+export type RelicSlot = 'HEAD' | 'HAND' | 'BODY' | 'FOOT' | 'OBJECT' | 'NECK'
 export type RelicRarity = 'CombatPowerRelicRarity2' | 'CombatPowerRelicRarity3' | 'CombatPowerRelicRarity4' | 'CombatPowerRelicRarity5'
 
 export interface InternalRelicSet {
