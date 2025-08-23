@@ -1,15 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=#Лабиринт Янус#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 4016001
 |Название        = 
-|Изображение     = Миссия Освоения Лабиринт Янус.png
+|Изображение     = Миссия Лабиринт Янус.png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = 
-|Условия         = Завершена [[Миссия Освоения]] ''[[О дорога, яви прошлое ещё раз]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[О дорога, яви прошлое ещё раз]]»
 |Персонажи       = Первопроходец
 |СтартЛокация    = [[Амфореус]] — [[Святилище предсказаний Янусополиса]]
-|Локации         = Святилище предсказаний Янусополиса
+|Мир             = Амфореус
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Кредиты*5 000
@@ -48,16 +51,15 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Вернитесь к лабиринту Янус и осмотритесь===
-{{Описание миссии|локация=Святилище предсказаний Янусополиса|В воспоминаниях вы имели дело с лабиринтом Янус, но этот механизм не просто замок, как может показаться. Для других у него есть иное предназначение. Осмотритесь вокруг - возможно, вы узнаете что-то новое...}}
+{{Описание миссии|тип=Миссия приключения|локация=Святилище предсказаний Янусополиса|В воспоминаниях вы имели дело с лабиринтом Янус, но этот механизм не просто замок, как может показаться. Для других у него есть иное предназначение. Осмотритесь вокруг - возможно, вы узнаете что-то новое...}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Пройдите испытание лабиринта Янус и завершите предсказание===
-{{Описание миссии|локация=Святилище предсказаний Янусополиса|Волею случая вы стали помощником в составлении предсказания с помощью лабиринта Янус. Раз уж взялись за дело, доведите его до конца - помогите жрецам Храма трёх титанов судьбы разобрать накопившиеся поручения о поиске утраченного.}}
+{{Описание миссии|тип=Миссия приключения|локация=Святилище предсказаний Янусополиса|Волею случая вы стали помощником в составлении предсказания с помощью лабиринта Янус. Раз уж взялись за дело, доведите его до конца - помогите жрецам Храма трёх титанов судьбы разобрать накопившиеся поручения о поиске утраченного.}}
 {{Диалог Начало}}
-;(If {{F|undefined}} is equal to 0)
+;(If {{F|undefined}} is undefined 0)
 <pre>{
 	"$type": "RPG.GameCore.GenericSwitchCase",
 	"SwitchRef": {
@@ -70,6 +72,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 2
 				}
@@ -78,6 +81,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 12
 						}
@@ -88,6 +92,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
@@ -96,6 +101,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 20
 						}
@@ -106,6 +112,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
@@ -114,6 +121,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 25
 						}
@@ -124,6 +132,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
@@ -132,6 +141,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 21
 						}
@@ -142,6 +152,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 6
 				}
@@ -150,6 +161,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 27
 						}
@@ -160,6 +172,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 7
 				}
@@ -168,6 +181,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 26
 						}
@@ -178,6 +192,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 8
 				}
@@ -186,6 +201,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 19
 						}
@@ -196,6 +212,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 9
 				}
@@ -204,6 +221,7 @@
 				{
 					"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
 					"PuzzleID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 22
 						}
@@ -220,6 +238,7 @@
 		"Value": "FCV_SwitchGravityBallCase"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 0
 		}
@@ -295,11 +314,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 229
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300003
 				}
@@ -318,11 +339,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 229
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -351,11 +374,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 229
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -377,6 +402,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 0
 				}
@@ -389,7 +415,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 1
 					},
 					"SuccessTaskList": [],
@@ -408,6 +433,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 2
 				}
@@ -420,7 +446,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 2
 					},
 					"FailedTaskList": [
@@ -438,6 +463,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
@@ -450,7 +476,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 3
 					},
 					"FailedTaskList": [
@@ -468,6 +493,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
@@ -480,7 +506,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 4
 					},
 					"FailedTaskList": [
@@ -498,6 +523,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
@@ -510,7 +536,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 5
 					},
 					"FailedTaskList": [
@@ -528,6 +553,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 6
 				}
@@ -540,7 +566,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 6
 					},
 					"FailedTaskList": [
@@ -558,6 +583,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 7
 				}
@@ -570,7 +596,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 7
 					},
 					"FailedTaskList": [
@@ -588,6 +613,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 8
 				}
@@ -600,7 +626,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 8
 					},
 					"FailedTaskList": [
@@ -618,6 +643,7 @@
 		{
 			"$type": "RPG.GameCore.NumberCaseContainer",
 			"Case": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 9
 				}
@@ -630,7 +656,6 @@
 						"DynamicName": {
 							"Value": "MissionState"
 						},
-						"CompareType": "Equal",
 						"CompareValue": 9
 					},
 					"FailedTaskList": [
@@ -774,4 +799,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.1}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

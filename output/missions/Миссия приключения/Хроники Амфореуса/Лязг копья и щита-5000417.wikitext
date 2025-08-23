@@ -1,20 +1,23 @@
+<%-- [PAGE_INFO]
+PageTitle=#Лязг копья и щита#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 5000417
 |Название        = 
 |Изображение     = Миссия Лязг копья и щита.png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = Хроники Амфореуса
-|Условия         = Завершена [[Миссия Освоения]] ''[[О рассвет, озари конец мира]]''
-|Персонажи       = Первопроходец
-|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
-|Мир             = <!--стартовый мир-->
+|Условия         = Завершена [[Миссия Освоения]] «[[О рассвет, озари конец мира]]»
+|Персонажи       = Гликон; Голос снаружи; Келок; Килик; Кратер; Охрана; Первопроходец; Создание чёрного течения
+|СтартЛокация    = [[Амфореус]] — [[Зал утраченного солнца Рассветной вершины]]
+|Мир             = Амфореус
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Звёздный нефрит*10; Журнал приключений*6; Кредиты*10 000
 }}
-'''Лязг копья и щита''' — [[Миссия приключения]] в главе [[Хроники Амфореуса]].
+'''Лязг копья и щита''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -23,14 +26,11 @@
 # Узнайте у Кратера, что происходит
 # Осмотрите поглощённый чёрным течением храм
 # Одолейте созданий чёрного течения
-# Заманите созданий чёрного течения под галерею
-# Предоставьте всё Гликону
-# Одолейте созданий чёрного течения
-# Заманите созданий чёрного течения под галерею
 # Узнайте у торговцев, как обстоят дела
 # Прикройте уходящих торговцев
-# Одолейте монстров чёрного течения
+# Заманите созданий чёрного течения под галерею
 # Предоставьте всё Гликону
+# Одолейте монстров чёрного течения
 # Обсудите с Гликоном следующий шаг
 # Соберите щиты
 # Соберите и разместите щиты
@@ -39,99 +39,1303 @@
 # Сражайтесь с созданиями чёрного течения
 # Узнайте у стражников, как обстоят дела
 # Поговорите с Гликоном
+# Предоставьте всё Гликону
 
 ==Прохождение==
 {{Дополнить}}
 
+;(Поговорите с Гликон)
+----
+:'''Гликон:''' В чём же причина? Неужели... он боится конкуренции?
+:'''Гликон:''' О, {{MC|ж=моя поклонница|м=мой поклонник}}, это ты. Прошу прощения, сегодня я не даю автографов.
+:{{Диалог|Стрелка}} Что ты там бормотал?
+:{{Диалог|Стрелка}} Кошмар. Совсем не даёшь?
+::'''Гликон:''' Я сегодня не в настроении давать автографы.
+:{{Диалог|Стрелка}} Да кому нужен твой автограф?
+::'''Гликон:''' А? Тебя не прельщает автограф такого знаменитого героя арены, как я? Смелое заявление.
+::'''Гликон:''' Но сегодня я и правда не в настроении давать автографы.
+:'''Гликон:''' Чёрное течение бушует, многие оказались в ловушке, и в опасный час взывают к моему имени! Как трёхкратный чемпион Окенасских игр по метанию диска, разве могу я закрывать на это глаза?
+:'''Гликон:''' Но упрямый старик Кратер приказал стражникам никого не выпускать - особенно меня.
+:'''Гликон:''' Ха-ха, но его можно понять. Всё-таки моя смерть была бы огромной потерей для всего человечества.
+:{{Диалог|Стрелка}} Я узнаю, в чём дело.
+:'''Гликон:''' Вот спасибо! Я приглашу тебя на первый ряд на соревновании по метанию диска на следующих Окенасских играх - так ты сможешь на себе прочувствовать ударную силу летящего диска!
+:{{Диалог|Стрелка}} Ха-ха, это пустяки.
+:{{Диалог|Стрелка}} На себе силу диска я точно не хочу чувствовать.
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 76,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 500083601
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
 ===Узнайте у Кратера, что происходит===
-{{Описание миссии|локация=<!--необходимо добавить-->|В убежище на Рассветной вершине вы узнаёте от Гликона, героя арены, что Кратер требует сохранять порядок, однако отказал ему, Гликону, в просьбе отправиться спасать жителей.<br />Узнайте у Кратера, что происходит.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|В убежище на Рассветной вершине вы узнаёте от Гликона, героя арены, что Кратер требует сохранять порядок, однако отказал ему, Гликону, в просьбе отправиться спасать жителей.<br />Узнайте у Кратера, что происходит.}}
 {{Диалог Начало}}
+
+;(Поговорите с Кратер)
+:'''Кратер:''' Снова ты? Даже если с тобой {{MC|ж=сама|м=сам}} {{MC|ж=госпожа|м=господин}} (Первопроходец), разрешения ты не получишь.
+:'''Кратер:''' Мы и так едва удерживаем эту местность, а тут ещё выделять людей на спасательную операцию. Отпускать гражданских в одиночку - всё равно что посылать их на смерть. Это для твоего же блага.
+:'''Гликон:''' Гражданских? Я уже говорил, что никакой я не гражданский.
+:'''Гликон:''' Я рассказывал о своих славных боевых заслугах, показывал, какие крепкие у меня мышцы... я даже дал тебе свой автограф!
+:{{Диалог|Стрелка}} Он к тебе со всей душой.
+:{{Диалог|Стрелка}} Да кому это надо?
+:'''Кратер:''' Т-так ты сам мне его всучил!
+:'''Кратер:''' Прошу прощения, господин Гликон. Я признаю твои достижения на арене, но спорт отличается от настоящего боя. Я не могу просто так отправлять людей на смерть.
+:{{Диалог|Стрелка}} А если я пойду с ним?
+:'''Кратер:''' Если {{MC|ж=госпожа|м=господин}} (Первопроходец) желает его сопроводить... Разумеется, я полностью доверяю вашей силе.
+:'''Гликон:''' Отлично, (Первопроходец)! На следующих Окенасских играх во время речи при получении награды я первым делом поблагодарю именно тебя. Это большая честь!
+:{{Диалог|Стрелка}} Напиши про меня не меньше страницы.
+:{{Диалог|Стрелка}} Пощади меня.
+:'''Кратер:''' Мне доложили о сигнале бедствия от беженцев, находящихся в храме напротив. Внутренняя конструкция похожа на здешнюю, так что если мы избавимся от монстров, то сможем организовать хорошее убежище.
+:{{tx}}
 {{Диалог Конец}}
 
 ===Осмотрите поглощённый чёрным течением храм===
-{{Описание миссии|локация=<!--необходимо добавить-->|Когда наступает чёрное течение, вы не можете оставаться равнодушными. По совету Кратера вы с Гликоном решаете осмотреть храм напротив.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Когда наступает чёрное течение, вы не можете оставаться равнодушными. По совету Кратера вы с Гликоном решаете осмотреть храм напротив.}}
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Келок:''' Спасите... Я больше не могу...
+:'''Килик:''' Не говори так, приятель! Уже забыл наш уговор? Мы вместе будем стоять на вершине всей торговли в Охеме!
+:'''Келок:''' Сбережения, которые я накопил за все эти годы, я спрятал... я спрятал...
+:'''Келок:''' Ох-х...
+:'''Килик:''' Договаривай давай!
+:{{Диалог|Стрелка}} Держись, я иду!
+:{{Диалог|Стрелка}} И в последний момент на помощь приходит герой!
+:'''Килик:''' Ах, это вы! Милостивый {{Rubi|Аквила|титан неба}}, наконец-то нас спасут!
+:{{Диалог|Стрелка}} А вы что здесь делаете?
+::'''Килик:''' Это долгая история...
+::А вы кто?
+:{{Диалог|Стрелка}} А вы кто?
+:'''Килик:''' Правду говорят, что у важных людей память неважная! Мы торговали копьями и щитами на Мраморной ярмарке, круглыми днями смотрели, как вы ходите туда-сюда.
+:'''Келок:''' Ох-х...
+:'''Килик:''' Держись, у нас появился шанс на спасение!
+:'''Келок:''' Я... слишком высоко... Буэ!
+:'''Келок:''' ...Мне уже лучше.
+:'''Килик:''' Эх, это всего второй этаж! Как ты собирался взбираться на вершину торговли в Охеме?
+:{{Диалог|Стрелка}} Так он просто боится высоты...
+:{{Диалог|Стрелка}} А вёл себя так, будто при смерти.
+:'''Гликон:''' Ах, вам ни к чему и дальше быть такими сильными - теперь, когда к вам на помощь пришёл настоящий силач. Мы раскидаем монстров как метательные диски. Верно, (Первопроходец)?
+:{{tx}}
+:{{Диалог|Стрелка}} Взять дело в свои руки.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{tx}}
+:{{Диалог|Стрелка}} Попросить Килика.
+::'''Килик:''' Вы обратились к нужному человеку. Чего-чего, а хитроумных планов у меня предостаточно.
+::'''Килик:''' Пока я занимаю эту высоту, можете заманить монстров сюда, а я закидаю их ящиками.
+::'''Килик:''' Но всё будет зависеть от вашего мастерства. Если вас догонят, то бой будет тяжёлым.
+::{{Диалог|Стрелка}} Нас не догонят!
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:::{{tx}}
+::{{Диалог|Возврат}} Лучше придумать план понадёжнее.
+:::{{Диалог|Стрелка}} Взять дело в свои руки.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::{{tx}}
+:::{{Диалог|Стрелка}} Обратиться к Гликону.
+::::'''Гликон:''' А? Я? С-серьёзно?
+::::{{Диалог|Стрелка}} Покажи монстрам предел человеческих возможностей!
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:::::{{tx}}
+::::{{Диалог|Возврат}} Нужно об этом ещё подумать.
+:::::{{Диалог|Стрелка}} Взять дело в свои руки.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::::{{tx}}
+::::;(Return to previous option selection)
+:{{Диалог|Стрелка}} Обратиться к Гликону.
+::'''Гликон:''' А? Я? С-серьёзно?
+::{{Диалог|Стрелка}} Покажи монстрам предел человеческих возможностей!
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:::{{tx}}
+::{{Диалог|Возврат}} Нужно об этом ещё подумать.
+:::{{Диалог|Стрелка}} Взять дело в свои руки.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::{{tx}}
+:::{{Диалог|Стрелка}} Попросить Килика.
+::::'''Килик:''' Вы обратились к нужному человеку. Чего-чего, а хитроумных планов у меня предостаточно.
+::::'''Килик:''' Пока я занимаю эту высоту, можете заманить монстров сюда, а я закидаю их ящиками.
+::::'''Килик:''' Но всё будет зависеть от вашего мастерства. Если вас догонят, то бой будет тяжёлым.
+::::{{Диалог|Стрелка}} Нас не догонят!
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:::::{{tx}}
+::::{{Диалог|Возврат}} Лучше придумать план понадёжнее.
+:::::{{Диалог|Стрелка}} Взять дело в свои руки.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041703,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::::{{tx}}
 {{Диалог Конец}}
 
 ===Одолейте созданий чёрного течения===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Ещё ни одно создание не пережило удар вашей биты, так что вы берёте дело в свои руки.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Ещё ни одно создание не пережило удар вашей биты, так что вы берёте дело в свои руки.}}
 {{Диалог Начало}}
-{{Диалог Конец}}
-
-===Заманите созданий чёрного течения под галерею===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Килик придумал выход из ситуации. Если вы привлечёте монстров к их ногам, они быстро с ними разберутся.}}
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Предоставьте всё Гликону===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Зачем тратить силы на такие пустяки? Вы решаете предоставить всё Гликону.}}
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Одолейте созданий чёрного течения===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Ещё ни одно создание не пережило удар вашей биты, так что вы берёте дело в свои руки.}}
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Заманите созданий чёрного течения под галерею===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Килик придумал выход из ситуации. Если вы привлечёте монстров к их ногам, они быстро с ними разберутся.}}
-{{Диалог Начало}}
+----
+;(Экран становится чёрным)
+:Монстров в храме больше не осталось. Килик помогает Келоку спуститься вниз.
 {{Диалог Конец}}
 
 ===Узнайте у торговцев, как обстоят дела===
-{{Описание миссии|локация=<!--необходимо добавить-->|Вы спасли Килика и Келока. Узнайте у них, как обстоят дела.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Вы спасли Килика и Келока. Узнайте у них, как обстоят дела.}}
 {{Диалог Начало}}
+
+;(Поговорите с Килик)
+:{{tx}}
+:'''Келок:''' Уф, спасибо вам. На твёрдой земле мне стало гораздо легче.
+:{{Диалог|Стрелка}} Что вы тут делаете?
+:'''Келок:''' Ха-ха, с тех пор как мы перестали продавать щиты и копья, мы придумываем новые вещицы.
+:'''Килик:''' Нам пришла в голову отличная идея: мехагелиосовый абажур! «Пусть ваши свечи сияют подобно мехагелиосу!» А в храм мы пришли для обсуждения вопросов сотрудничества.
+:'''Килик:''' Однако не успели мы дождаться своей очереди на аудиенцию у жрецов, как случилась беда. Все в панике разбежались, большинство скрылось в задней части храма, а мы побежали на второй этаж... не хотел бы я повторять этот опыт.
+:'''Гликон:''' В задней части есть ещё беженцы? Надвигаются как минимум две волны чёрного течения. Нельзя дать им туда прорваться.
+:{{Диалог|Стрелка}} Нужно защитить это место.
+::'''Келок:''' Мы поможем! Перед началом нового мира было бы упущением не поучаствовать в такой авантюре. Встретимся в следующей жизни!
+::Спрячьтесь в убежище напротив.
+::'''Келок:''' Хе-хе, спрятаться? Не в нашем стиле бежать с поля боя! Даже когда нас ловили на продаже подделок, мы не пасовали, а продолжали открыто защищаться.
+::'''Келок:''' К тому же перед началом нового мира было бы упущением не поучаствовать в такой авантюре. Встретимся в следующей жизни!
+::Ладно. Встретимся после эры воскресающей земли!
+:{{Диалог|Стрелка}} Спрячьтесь в убежище напротив.
+::'''Келок:''' Хе-хе, спрятаться? Не в нашем стиле бежать с поля боя! Даже когда нас ловили на продаже подделок, мы не пасовали, а продолжали открыто защищаться.
+::'''Келок:''' К тому же перед началом нового мира было бы упущением не поучаствовать в такой авантюре. Встретимся в следующей жизни!
+::Ладно. Встретимся после эры воскресающей земли!
+:{{Диалог|Стрелка}} Ладно. Встретимся после эры воскресающей земли!
+:'''Келок:''' Эх, к тому же перед началом нового мира было бы упущением не поучаствовать в такой авантюре. Встретимся в следующей жизни!
+:'''Килик:''' А ещё мы обязаны отомстить... Мерзкие монстры, из-за вас все наши планы отыграться пошли прахом!
+:'''Келок:''' Я тоже хочу отомстить... Мерзкие монстры, все мои заготовки для переговоров со жрецами псу под хвост!
+:'''Гликон:''' Я тоже хочу отомстить... Мерзкие монстры, я так и не выиграл четвёртую золотую медаль за метание диска в индивидуальном зачёте!
+:{{Диалог|Стрелка}} Мстители, общий сбор!
+:{{Диалог|Стрелка}} А план у вас есть?
+:'''Гликон:''' Нам не хватает бойцов и припасов. Даже с таким сильным лидером, как я, боюсь, нам не сдержать чёрное течение.
+:'''Килик:''' Неподалёку хранятся подделки... э-э, товары, которые у нас конфисковал Сенат. Можем их взять.
+:'''Килик:''' Там есть оружие - раздадим его беженцам. И ещё доспехи - свалим их, будет баррикада...
+:'''Келок:''' Хе-хе, точно. Несокрушимый щит из ногтей Геориоса, который выдержит любые удары...
+:'''Килик:''' И сильнейшее копьё, отлитое из копья самого Никадора, что разобьёт любые доспехи!
+:{{Диалог|Стрелка}} Ожидаемо.
+:{{Диалог|Стрелка}} Так это же подделки.
+:{{Диалог|Стрелка}} А богатые у вас запасы.
+:'''Келок:''' Эй, как будто у нас сейчас есть выбор!
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 89
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 500001
+		}
+	},
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 5000417,
+				"MissionCustomValue": {
+					"Index": 2,
+					"Name": "OldValue_2",
+					"ValidValueParamList": [
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 500083602,
+							"ProtectTime": 2
+						}
+					]
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+						"MainMissionID": 5000417,
+						"MissionCustomValue": {
+							"Index": 2,
+							"Name": "OldValue_2",
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3
+							]
+						},
+						"TargetValue": 1
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayMissionTalk",
+							"SimpleTalkList": [
+								{
+									"TalkSentenceID": 500083606,
+									"ProtectTime": 2
+								}
+							]
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PredicateTaskList",
+							"Predicate": {
+								"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+								"MainMissionID": 5000417,
+								"MissionCustomValue": {
+									"Index": 2,
+									"Name": "OldValue_2",
+									"ValidValueParamList": [
+										0,
+										1,
+										2,
+										3
+									]
+								},
+								"TargetValue": 2
+							},
+							"SuccessTaskList": [
+								{
+									"$type": "RPG.GameCore.PlayMissionTalk",
+									"SimpleTalkList": [
+										{
+											"TalkSentenceID": 500083607,
+											"ProtectTime": 2
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; 500041715_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500041715,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "CollectShield01",
+		"Type": "ClientOnly",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000417,
+		"MissionCustomValue": {
+			"Index": 4,
+			"Name": "CollectShield01",
+			"Type": "ClientOnly",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 90
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 500001
+		}
+	},
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 5000417,
+				"MissionCustomValue": {
+					"Index": 2,
+					"Name": "OldValue_2",
+					"Type": "Former",
+					"ValidValueParamList": [
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 500083602,
+							"ProtectTime": 2
+						}
+					]
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+						"MainMissionID": 5000417,
+						"MissionCustomValue": {
+							"Index": 2,
+							"Name": "OldValue_2",
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3
+							]
+						},
+						"TargetValue": 1
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayMissionTalk",
+							"SimpleTalkList": [
+								{
+									"TalkSentenceID": 500083606,
+									"ProtectTime": 2
+								}
+							]
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PredicateTaskList",
+							"Predicate": {
+								"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+								"MainMissionID": 5000417,
+								"MissionCustomValue": {
+									"Index": 2,
+									"Name": "OldValue_2",
+									"ValidValueParamList": [
+										0,
+										1,
+										2,
+										3
+									]
+								},
+								"TargetValue": 2
+							},
+							"SuccessTaskList": [
+								{
+									"$type": "RPG.GameCore.PlayMissionTalk",
+									"SimpleTalkList": [
+										{
+											"TalkSentenceID": 500083607,
+											"ProtectTime": 2
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; 500041716_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"TowardMaxPitchAngle": 89.39,
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500041716,
+	"TargetMissionCustomValue": {
+		"Index": 2,
+		"Name": "CollectShield02",
+		"Type": "ClientOnly",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000417,
+		"MissionCustomValue": {
+			"Index": 5,
+			"Name": "CollectShield02",
+			"Type": "ClientOnly",
+			"ValidValueParamList": [
+				0,
+				1,
+				2
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 91
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 500001
+		}
+	},
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+				"MainMissionID": 5000417,
+				"MissionCustomValue": {
+					"Index": 2,
+					"Name": "OldValue_2",
+					"Type": "Former",
+					"ValidValueParamList": [
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 500083602,
+							"ProtectTime": 2
+						}
+					]
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+						"MainMissionID": 5000417,
+						"MissionCustomValue": {
+							"Index": 2,
+							"Name": "OldValue_2",
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3
+							]
+						},
+						"TargetValue": 1
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayMissionTalk",
+							"SimpleTalkList": [
+								{
+									"TalkSentenceID": 500083606,
+									"ProtectTime": 2
+								}
+							]
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PredicateTaskList",
+							"Predicate": {
+								"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+								"MainMissionID": 5000417,
+								"MissionCustomValue": {
+									"Index": 2,
+									"Name": "OldValue_2",
+									"ValidValueParamList": [
+										0,
+										1,
+										2,
+										3
+									]
+								},
+								"TargetValue": 2
+							},
+							"SuccessTaskList": [
+								{
+									"$type": "RPG.GameCore.PlayMissionTalk",
+									"SimpleTalkList": [
+										{
+											"TalkSentenceID": 500083607,
+											"ProtectTime": 2
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; 500041717_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 500041717,
+	"TargetMissionCustomValue": {
+		"Index": 3,
+		"Name": "CollectShield03",
+		"Type": "ClientOnly",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 5000417,
+		"MissionCustomValue": {
+			"Index": 6,
+			"Name": "CollectShield03",
+			"Type": "ClientOnly",
+			"ValidValueParamList": [
+				0,
+				1,
+				2
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Прикройте уходящих торговцев===
-{{Описание миссии|локация=<!--необходимо добавить-->|Чтобы сдержать натиск чёрного течения, торговцы решают принести конфискованные у них товары и построить баррикады.<br />Вы сомневаетесь в качестве этих товаров, но другого выхода нет, так что стоит их проводить.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Чтобы сдержать натиск чёрного течения, торговцы решают принести конфискованные у них товары и построить баррикады.<br />Вы сомневаетесь в качестве этих товаров, но другого выхода нет, так что стоит их проводить.}}
 {{Диалог Начало}}
+
+;(Поговорите с Килик)
+:{{tx}}
+:{{Диалог|Стрелка}} Взять дело в свои руки.
+::Вы вдруг вспомнили, что вам не хватает кое-каких материалов улучшения. Сами знаете, материалов много не бывает.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041710,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} Попросить Килика.
+::Вы могли бы попросить Килика, но он уже ушёл.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Обратиться к Гликону.
+::'''Гликон:''' Я?!
+::{{Диалог|Стрелка}} Вперёд! Ослепи их красотой здорового тела!
+:::После кратких раздумий о защите славы героев арены Гликон бросается вперёд.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041710,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{Диалог|Возврат}} Нужно об этом ещё подумать.
+:::{{Диалог|Стрелка}} Взять дело в свои руки.
+::::Вы вдруг вспомнили, что вам не хватает кое-каких материалов улучшения. Сами знаете, материалов много не бывает.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041710,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} Попросить Килика.
+::::Вы могли бы попросить Килика, но он уже ушёл.
+::::{{tx}}
+:::;(Return to previous option selection)
 {{Диалог Конец}}
 
-===Одолейте монстров чёрного течения===
-{{Описание миссии|локация=<!--необходимо добавить-->|Стоило торговцам уйти, как тут же нахлынула новая волна созданий чёрного течения.<br />Монстры не в силах противостоять вашей бите, поэтому вы вступаете в бой.}}
+===Заманите созданий чёрного течения под галерею===
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Килик придумал выход из ситуации. Если вы привлечёте монстров к их ногам, они быстро с ними разберутся.}}
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(Unused &mdash; NPCFollow_5000417_01)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041705,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"Type": "ClientOnly",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAIFollow",
+	"FetchTarget": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"FetchFollowTarget": true,
+	"FollowTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"StartWalkDistance": 5,
+	"StartSprintDistance": 10,
+	"PreferSlotIDs": [
+		2,
+		3
+	],
+	"DisableTeleport": true
+}</pre>
+
+;(Unused &mdash; MonsterNearPlayer_5000417)
+----
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041705,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+----
+;(Экран становится чёрным)
+:Килик ловко улучил момент с ящиками, и монстры кучей повалились наземь. Вы с Гликоном очистили храм от оставшихся неприятелей.
+:Килик помог Келоку спуститься вниз.
 {{Диалог Конец}}
 
 ===Предоставьте всё Гликону===
-{{Описание миссии|локация=<!--необходимо добавить-->|Стоило торговцам уйти, как тут же нахлынула новая волна созданий чёрного течения.<br />Зачем тратить силы на такие пустяки? Вы решаете предоставить всё Гликону.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Чтобы спасти попавших в ловушку Келока и Килика, нужно избавиться от созданий чёрного течения.<br />Зачем тратить силы на такие пустяки? Вы решаете предоставить всё Гликону.}}
 {{Диалог Начало}}
+----
+:{{tx}}
+{{Диалог Конец}}
+
+===Одолейте монстров чёрного течения===
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Стоило торговцам уйти, как тут же нахлынула новая волна созданий чёрного течения.<br />Монстры не в силах противостоять вашей бите, поэтому вы вступаете в бой.}}
+{{Диалог Начало}}
+----
+:{{tx}}
 {{Диалог Конец}}
 
 ===Обсудите с Гликоном следующий шаг===
-{{Описание миссии|локация=<!--необходимо добавить-->|Вы не можете сидеть сложа руки в ожидании торговцев. Обсудите с Гликоном следующий шаг.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Вы не можете сидеть сложа руки в ожидании торговцев. Обсудите с Гликоном следующий шаг.}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Соберите щиты===
-{{Описание миссии|локация=<!--необходимо добавить-->|Гликон предложил возвести баррикаду из разбросанных щитов. Соберите их и постройте заграждение.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Гликон предложил возвести баррикаду из разбросанных щитов. Соберите их и постройте заграждение.}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Соберите и разместите щиты===
 {{Диалог Начало}}
+----
+:'''Гликон:''' Неплохо, достаточно крепкие. Поставь их у входа.
 {{Диалог Конец}}
 
 ===Разместите щиты и постройте баррикаду===
 {{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002,
+		300003,
+		300004
+	]
+}</pre>
+;(Unused &mdash; 500041720_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 93,
+		"GroupInstanceID": 1
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; 500041720_2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 93,
+		"GroupInstanceID": 2
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+;(Unused &mdash; 500041720_3)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 93,
+		"GroupInstanceID": 3
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+
+;(Unused &mdash; DeleteMark_500041720)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002,
+		300003
+	]
+}</pre>
+;(Unused &mdash; 500041721_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 94,
+		"GroupInstanceID": 1
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; 500041721_2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 94,
+		"GroupInstanceID": 2
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+;(Unused &mdash; DeleteMark_500041721)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002,
+		300003
+	]
+}</pre>
+;(Unused &mdash; 500041722_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 95,
+		"GroupInstanceID": 1
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; 500041722_2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 95,
+		"GroupInstanceID": 2
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+;(Unused &mdash; DeleteMark_500041722)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Соберите и разместите щиты===
 {{Диалог Начало}}
+
+;(Unused &mdash; TriggerPerformance_500041711)
+----
+::Вы с Гликоном расставляете щиты.
+::'''Гликон:''' Уф... Сойдёт. По возвращении со своим оружием они могут не опасаться атак чёрного течения.
+::{{Диалог|Стрелка}} Надеюсь, они не пострадают по пути.
+::{{Диалог|Стрелка}} Не стоит сильно надеяться на их товары.
+::'''Гликон:''' Кажется, я что-то слышал. Они вернулись?
+::Вы прислушиваетесь, но это не голоса торговцев, а резкие и громкие вопли.
+::На улицы хлынула чёрная масса. Нас ждёт ещё одна атака.
+::'''Создание чёрного течения:''' {{Rubi|''Dilas''|крик титанов}}!
+::'''Гликон:''' Хе-хе, нечеловеческие твари, если бы вы слышали моё имя, то бежали бы куда глаза глядят.
+::'''Гликон:''' Мы их раздавим, да, (Первопроходец)? Как колесница на полном ходу!
+::{{Диалог|Стрелка}} Сделаем это, Гликон!
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
 {{Диалог Конец}}
 
 ===Сражайтесь с созданиями чёрного течения===
-{{Описание миссии|локация=<!--необходимо добавить-->|Торговцы исчезли без следа, и чтобы не дать созданиям чёрного течения вторгнуться сюда и добраться до беженцев, скрывающихся внутри, вам придётся самим вступить в бой...}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Торговцы исчезли без следа, и чтобы не дать созданиям чёрного течения вторгнуться сюда и добраться до беженцев, скрывающихся внутри, вам придётся самим вступить в бой...}}
 {{Диалог Начало}}
+----
+:'''Гликон:''' Уф, уф... эти монстры... неумолимы, словно поклонники, гонящиеся за автографом!
+:'''Создание чёрного течения:''' {{Rubi|''Dilas''|крик титанов}}!
+:{{Диалог|Стрелка}} Возьми себя в руки, Гликон!
+::'''Гликон:''' Я н-не могу пошевелиться...
+::Позвать стражу напротив храма.
+:{{Диалог|Стрелка}} Позвать стражу напротив храма.
+:Улучив момент, вы видите, что стража напротив тоже с трудом отбивает нападение.
+:Монстры чёрного течения всё идут и идут непрерывным потоком, они вот-вот ворвутся в атриум - в этот момент из-за дверей доносится голос...
+:'''Голос снаружи:''' Мы здесь!
+:'''Келок:''' Хе-хе...
+:'''Келок:''' Когда чёрное течение поглотит высочайшие горы и заполонит собой низины, единственное, что станет нашей последней надеждой и откроет новую эпоху - это он, несокрушимый щит!
+:'''Килик:''' Когда тёмной ночью станет последний рассвет, когда тьма поглотит весь свет, единственное, что искоренит всякое зло и защитит наш мир - это оно, сильнейшее копьё!
+:'''Килик:''' Не переживайте, мы сейчас вам всё принесём!
+:{{Диалог|Стрелка}} Не глупи! Бегите!
+:{{Диалог|Стрелка}} А кто повысил сложность?
+:{{Диалог|Стрелка}} Отлично, мы спасены!
+:'''Килик:''' Хе-хе...
+:'''Килик:''' Некогда один покупатель спросил нас, что будет, если сильнейшее копьё обратить против несокрушимого щита. В результате оба орудия разбились на куски.
+:'''Килик:''' Но копьё и щит не должно обращать друг против друга. Что произойдёт, если обернуть их против общего врага?
+:'''Келок:''' ...Сейчас узнаем!
+:Торговцы закинули сумки на спину и с копьём в левой руке, щитом в правой бросились к атриуму...
+:Вражеские клинки разломали копья, разбили щиты - и, наконец, пронзили тела.
+:Вот так, сражённые клинками и стрелами, они пали посреди атриума.
+:'''Келок:''' Это...
+:'''Килик:''' Сильнейшее копьё и самый крепкий щит.
+:С этими словами и улыбкой на устах они закрыли глаза.
+:{{Диалог|Стрелка}} Во имя чего они полегли?!
+:{{Диалог|Стрелка}} Обязательно умирать сегодня?
+:{{Диалог|Стрелка}} Эра воскресающей земли - это вам не шутки!
+:'''Гликон:''' А-а-а...
+:{{tx}}
 {{Диалог Конец}}
 
 ===Узнайте у стражников, как обстоят дела===
-{{Описание миссии|локация=<!--необходимо добавить-->|Всё закончилось. Вы заплатили немалую цену, но смогли защитить это место. Прибывшая подмога занялась обороной. Поговорите со стражниками и не забудьте подойти к Гликону.}}
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Всё закончилось. Вы заплатили немалую цену, но смогли защитить это место. Прибывшая подмога занялась обороной. Поговорите со стражниками и не забудьте подойти к Гликону.}}
 {{Диалог Начало}}
+
+;(Поговорите с Охрана)
+----
+:'''Охрана:''' О, это вы. Я наблюдал за вашей битвой с другой стороны, это было опасно! Мы хотели броситься к вам на помощь, но нас остановила внезапная атака чёрного течения.
+:'''Охрана:''' Теперь всё хорошо. Благодаря копьям и щитам, принесённым двумя героями, мы сможем удерживать это место с меньшим количеством бойцов.
+:'''Охрана:''' Надеюсь, их сон мирен.
+:{{Диалог|Разговор}} Насчёт беженцев...
+::'''Охрана:''' Большинство укрывшихся в задней части беженцев целы и невредимы. У них с собой ничего нет, но господин Кратер приказал принести им недостающие припасы и лекарства, раненым была оказана помощь.
+::'''Охрана:''' Есть и другие места с запертыми в них беженцами, и мы позаботимся о них до наступления нового мира.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Насчёт этих копий и щитов...
+::'''Охрана:''' А, честно говоря, их качество оставляет желать лучшего.
+::'''Охрана:''' Но в такое тяжёлое время мы благодарны и этому. Так мы сможем продержаться подольше.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} У меня больше нет вопросов.
+::'''Охрана:''' Клянусь именем отца небес, что мы сделаем всё возможное, чтобы их жертва не оказалась напрасной.
 {{Диалог Конец}}
 
 ===Поговорите с Гликоном===
 {{Диалог Начало}}
+{{Диалог Конец}}
+
+===Предоставьте всё Гликону===
+{{Описание миссии|тип=Миссия приключения|локация=Зал утраченного солнца Рассветной вершины|Стоило торговцам уйти, как тут же нахлынула новая волна созданий чёрного течения.<br />Зачем тратить силы на такие пустяки? Вы решаете предоставить всё Гликону.}}
+{{Диалог Начало}}
+----
+:«А-а! Ой... Ай-а! Не бейте сюда!» - издалека доносились звуки драки.
+:...
+:После жестокого сражения, наблюдать за которым вам не хватило духу, Гликон, прихрамывая, вернулся назад.
+:'''Гликон:''' Ха-ха! Пришлось попотеть, но... кхм... со мной им не справиться.
+:{{Диалог|Стрелка}} Я тебя {{MC|ж=недооценивала|м=недооценивал}}!
+:{{Диалог|Стрелка}} Теперь мне всерьёз захотелось автограф.
+:'''Гликон:''' Само собой, {{MC|ж=подруга|м=друг}}. Само собой.
+:{{tx}}
 {{Диалог Конец}}
 
 ==На других языках==
@@ -152,4 +1356,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.3}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

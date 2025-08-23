@@ -1,0 +1,554 @@
+<%-- [PAGE_INFO]
+PageTitle=#Сияющая амброзия#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4540504
+|Название        = 
+|Изображение     = Миссия Сияющая амброзия.png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] «[[О герой, запой пеан воскресающей земли]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Вихрь сотворения]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Сияющая амброзия''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в Вихрь сотворения и изучите Дары прилива
+
+==Прохождение==
+{{Дополнить}}
+===Отправляйтесь в Вихрь сотворения и изучите Дары прилива===
+{{Описание миссии|тип=Миссия приключения|локация=Вихрь сотворения|Некоторые конструкции Вихря сотворения стали прозрачными, как и везде. А как себя ведёт чаша, что раздавала вам подарки? Сходите взглянуть.}}
+{{Диалог Начало}}
+
+;(Поговорите с Чаша приливов)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "TitanAtlas"
+	}
+}</pre>
+::...День наполнен тишиной, его заполонила тьма...
+::...Пламя взмывает ввысь, ливнем гремит барабанов дробь...
+::...Воины, окроплённые кровью златой, облачённые в обрывки плаща...
+::...Бронзой ограждаете вы тела, медью звенит моя скорбь...
+::...
+::{{Диалог|Магазин}} Войти в Дары прилива.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::{{Диалог|Изучение}} Вслушаться в голоса созвездий.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} Уйти.
+;(Return to previous option selection)
+
+;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage)
+<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "WorldShopMission"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; WorldShopMission)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "KraterOfferingWorldShop"
+	}
+}</pre>
+::Как только голоса созвездий стихли, до ваших ушей тут же донёсся звук... прибоя?
+::*бормотание титана*
+::Незнакомый крик приносит надежду, затягивая ваше сознание в колодец...
+::{{Диалог|Магазин}} Войти в Дары прилива.
+::{{Диалог|Изучение}} Вслушаться в голоса созвездий.
+::{{Диалог|Выход}} Уйти.
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 504045003,
+			"MaskConfig": {}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Levelup)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045004
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045005
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045006
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Put)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045007
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045008
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045009
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Out)
+;(If {{cx}}<!--not during performance 504045001-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045010
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045011
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage2)
+<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G95)
+:<!--3-second delay-->
+::'''(Первопроходец):''' (Вихрь сотворения... тоже стал таким.)
+::'''(Первопроходец):''' (Нужно проверить чашу.)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Resplendent Ambrosia
+|zhs  = 焕然的秘酿
+|zht  = 煥然的秘釀
+|ja   = 燦然と輝くネクタール
+|ko   = 빛나는 암브로시아
+|es   = Ambrosía resplandeciente
+|fr   = Ambroisie resplendissante
+|ru   = Сияющая амброзия
+|th   = น้ำอมฤตอันโชติช่วง
+|vi   = Rượu Mật Rực Rỡ
+|de   = Strahlende Ambrosia
+|id   = Ambrosia yang Cemerlang
+|pt   = Ambrosia Resplandecente
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

@@ -1,21 +1,23 @@
+<%-- [PAGE_INFO]
+PageTitle=#Искатели теней: Пятая остановка - Камнеград#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 8002104
 |Название        = 
-|Изображение     = Миссия Освоения Искатели теней Пятая остановка - Камнеград.png
+|Изображение     = Миссия Искатели теней Пятая остановка - Камнеград.png
 |Тип             = Миссия приключения
-|События         = Искатели теней
+|Событие         = Искатели теней
 |Глава           = 
 |Условия         = 
 * Достигните [[Уровень Освоения|Уровня Освоения]] 21
-* Завершена [[Миссия приключения]] ''[[Искатели теней: Четвёртая остановка - Административный район]]''
+* Завершена [[Миссия приключения]] «[[Искатели теней: Четвёртая остановка - Административный район]]»
 |Персонажи       = Первопроходец; Сампо; Хук
-|СтартЛокация    = Камнеград
+|СтартЛокация    = [[Ярило-VI]] — [[Камнеград]]
 |Мир             = Ярило-VI
-|Локации         = Камнеград
 |Предыдущая      = Искатели теней: Четвёртая остановка - Административный район
 |Следующая       = Искатели теней: Шестая остановка - Заклёпкоград
-|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Key of Knowledge*3; Кредиты*40 000
+|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Ключ к знаниям*3; Кредиты*40 000
 }}
 '''Искатели теней: Пятая остановка - Камнеград''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
 
@@ -30,9 +32,8 @@
 ==Прохождение==
 {{Дополнить}}
 
-
 ===Найдите объекты и сфотографируйте их===
-{{Описание миссии|локация=Камнеград|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Камнеграда...}}
+{{Описание миссии|тип=Миссия приключения|локация=Камнеград|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Камнеграда...}}
 {{Диалог Начало}}
 <pre>{
 	"$type": "RPG.GameCore.HideEntity",
@@ -41,11 +42,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -60,11 +63,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -82,14 +87,15 @@
 
 ;(Unused &mdash; Trigger_Performance_800210406)
 :{{Чёрный экран|undefined}}
-:<!--Unknown TalkSentence: 800210207-->
-:<!--Unknown TalkSentence: 800210208-->
-::{{Диалог|Стрелка}} undefined
-:::{{Чёрный экран|undefined}}
+::'''Хук:''' Эй, {{MC|ж=почётная соратница|м=почётный соратник}}! Помоги мне, быстрее!
+::'''Хук:''' Я выскочила всего на минутку, но дверь заперлась. Впусти меня!
+::{{Диалог|Стрелка}} Впустить Хук.
+:::{{Чёрный экран|Вы помещаете Хук в кадр...}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 800210407,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			0,
 			1
@@ -104,11 +110,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -124,11 +132,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -136,14 +146,15 @@
 		}
 	}
 }</pre>
-::<!--Unknown TalkSentence: 800210210-->
-::<!--Unknown TalkSentence: 800210211-->
-::{{Диалог|Стрелка}} undefined
-::<!--Unknown TalkSentence: 800210213-->
+:::'''Хук:''' Фух, я вернулась. Спасибо большое, {{MC|ж=почётная соратница|м=почётный соратник}}!
+:::'''Хук:''' Какая хорошая камера. Хочешь запечатлеть могучую фигуру Хук Великий Мрак? Давай же, это твоя награда за моё спасение!
+::{{Диалог|Стрелка}} Сфотографировать.
+:::'''Хук:''' Эй, эй, эй, {{MC|ж=почётная соратница|м=почётный соратник}}. Что ты делаешь с камерой? Впусти меня!
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 800210407,
 	"MissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": [
 			0,
 			1
@@ -157,11 +168,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -176,11 +189,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -205,11 +220,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -224,11 +241,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 173
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -266,8 +285,8 @@
 
 ===Прочтите сообщение Март 7===
 {{Диалог Начало}}
-;(If {{F|MissionCV-8002104-undefined}} is equal to 1)
-;(If {{F|MissionCV-8002104-undefined}} is not equal to 1)
+;(If {{F|MissionCV-8002104-undefined}} is undefined 1)
+;(If {{F|MissionCV-8002104-undefined}} is not undefined 1)
 :;(Return to previous option selection)
 {{Диалог Конец}}
 
@@ -289,4 +308,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

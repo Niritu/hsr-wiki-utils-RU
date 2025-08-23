@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 4040222
 |Название        = 
-|Изображение     = Миссия Освоения .png
+|Изображение     = Миссия .png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = 
-|Условия         = Завершена [[Миссия Освоения]] ''[[Гончая гонится за лисой]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[Гончая гонится за лисой]]»
 |Персонажи       = Иньшу; Первопроходец; Печальная женщина; Управляющий Ханьдянь
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Центральная гавань Приюта звёздных яликов]]
-|Локации         = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Звёздный нефрит*10; Strale*10; Кредиты*5 000
+|Награды         = Звёздный нефрит*10; Стрелы*10; Кредиты*5 000
 }}
 '''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
 
@@ -24,15 +27,16 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 107
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300002
 		}
@@ -59,15 +63,17 @@
 		}
 	]
 }</pre>
-;(Потеряно {{Item|Грязная деталь|20|x=1|text=Грязная деталь}})
+;(Потеряно {{Предмет|Грязная деталь|20|x=1}})
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 62
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300001
 		}
@@ -97,269 +103,19 @@
 
 ;(По прибытии на место)
 ----
-<!--Unknown TalkSentence: 412220701-->
-<!--Unknown TalkSentence: 412220702-->
-<!--Unknown TalkSentence: 412220703-->
-<!--Unknown TalkSentence: 412220704-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 412220706-->
-:<!--Unknown TalkSentence: 412220707-->
-:<!--Unknown TalkSentence: 412220708-->
-:<!--Unknown TalkSentence: 412220709-->
-:<!--Unknown TalkSentence: 412220710-->
-:<pre>{
-	"$type": "RPG.GameCore.SelectMissionItem",
-	"ItemIDList": [
-		140183
-	],
-	"ItemHiddenIDList": [],
-	"ItemSelect": [
-		{
-			"Item1": 140183,
-			"TriggerCustomString": "Selected_1_404022207"
-		}
-	],
-	"SlotNum": 1,
-	"SimpleTalk": {},
-	"OnSubmitSucceed": [],
-	"OnSubmitFail": [
-		{
-			"$type": "RPG.GameCore.PerformanceTransition",
-			"CreateNpcList": [],
-			"CaptureNpcList": [],
-			"DestroyNpcList": [
-				{
-					"GroupID": 62,
-					"GroupNpcID": 400002,
-					"DestroyList": []
-				}
-			],
-			"CreateProp": {
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupPropID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"CreateList": []
-			},
-			"DestroyProp": {
-				"TargetType": {
-					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
-				},
-				"ID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"DestroyList": []
-			},
-			"AdvCreateGroupEntity": {},
-			"AdvDestroyGroupEntity": {},
-			"ActiveVirtualCamera": {},
-			"ActiveTemplateVirtualCamera": {},
-			"SwitchCharacterAnchor": {},
-			"AdvNpcFaceToPlayer": {
-				"FromDialog": false
-			}
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	],
-	"OnSubmitCancel": [
-		{
-			"$type": "RPG.GameCore.PerformanceTransition",
-			"CreateNpcList": [],
-			"CaptureNpcList": [],
-			"DestroyNpcList": [
-				{
-					"GroupID": 62,
-					"GroupNpcID": 400002,
-					"DestroyList": []
-				}
-			],
-			"CreateProp": {
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupPropID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"CreateList": []
-			},
-			"DestroyProp": {
-				"TargetType": {
-					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
-				},
-				"ID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"DestroyList": []
-			},
-			"AdvCreateGroupEntity": {},
-			"AdvDestroyGroupEntity": {},
-			"ActiveVirtualCamera": {},
-			"ActiveTemplateVirtualCamera": {},
-			"SwitchCharacterAnchor": {},
-			"AdvNpcFaceToPlayer": {
-				"FromDialog": false
-			}
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	]
-}</pre>
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 412220712-->
-:<!--Unknown TalkSentence: 412220713-->
-:<pre>{
-	"$type": "RPG.GameCore.SelectMissionItem",
-	"ItemIDList": [
-		140183
-	],
-	"ItemHiddenIDList": [],
-	"ItemSelect": [
-		{
-			"Item1": 140183,
-			"TriggerCustomString": "Selected_1_404022207"
-		}
-	],
-	"SlotNum": 1,
-	"SimpleTalk": {},
-	"OnSubmitSucceed": [],
-	"OnSubmitFail": [
-		{
-			"$type": "RPG.GameCore.PerformanceTransition",
-			"CreateNpcList": [],
-			"CaptureNpcList": [],
-			"DestroyNpcList": [
-				{
-					"GroupID": 62,
-					"GroupNpcID": 400002,
-					"DestroyList": []
-				}
-			],
-			"CreateProp": {
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupPropID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"CreateList": []
-			},
-			"DestroyProp": {
-				"TargetType": {
-					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
-				},
-				"ID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"DestroyList": []
-			},
-			"AdvCreateGroupEntity": {},
-			"AdvDestroyGroupEntity": {},
-			"ActiveVirtualCamera": {},
-			"ActiveTemplateVirtualCamera": {},
-			"SwitchCharacterAnchor": {},
-			"AdvNpcFaceToPlayer": {
-				"FromDialog": false
-			}
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	],
-	"OnSubmitCancel": [
-		{
-			"$type": "RPG.GameCore.PerformanceTransition",
-			"CreateNpcList": [],
-			"CaptureNpcList": [],
-			"DestroyNpcList": [
-				{
-					"GroupID": 62,
-					"GroupNpcID": 400002,
-					"DestroyList": []
-				}
-			],
-			"CreateProp": {
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupPropID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"CreateList": []
-			},
-			"DestroyProp": {
-				"TargetType": {
-					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
-				},
-				"ID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"GroupID": {
-					"FixedValue": {
-						"Value": 0
-					}
-				},
-				"DestroyList": []
-			},
-			"AdvCreateGroupEntity": {},
-			"AdvDestroyGroupEntity": {},
-			"ActiveVirtualCamera": {},
-			"ActiveTemplateVirtualCamera": {},
-			"SwitchCharacterAnchor": {},
-			"AdvNpcFaceToPlayer": {
-				"FromDialog": false
-			}
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	]
-}</pre>
-<!--Unknown TalkSentence: 412220709-->
-<!--Unknown TalkSentence: 412220710-->
+:'''Печальная женщина:''' У вас правда нет железных ящиков?
+:'''Иньшу:''' У нас в продаже был тираж книги одного иномирца - «Железный ящик». Книги лежали здесь, на второй стойке справа. Но, к сожалению, их уже все распродали...
+:'''Печальная женщина:''' Но я ищу не книгу, а настоящий железный ящик.
+:'''Иньшу:''' У нас тут семейный книжный магазин. Мы продаём книги, а не ящики.
+:{{Диалог|Стрелка}} Зачем искать ящик в книжной лавке?
+::'''Печальная женщина:''' Это типа шутка такая. Могу рассказать её тебе, если хочешь.
+::'''Печальная женщина:''' Как ты видишь, я видьядхара. До моего последнего перерождения я встретила иномирца, который назвал себя посланником Сада воспоминаний и тем, кто сможет сохранить мою память.
+::'''Печальная женщина:''' Он пообещал мне, что сохранит все дорогие мне воспоминания внутри пузыря памяти, который поместит в железный ящик. Тот человек сказал, что после моего перерождения я смогу воспользоваться им и вернуть себе память прошлой жизни.
+::'''Печальная женщина:''' Прошлая «я» оставила мне ключ и записную книжку. К сожалению, в этой книжной лавке нет железных ящиков, а значит, что тот посланник оказался мошенником... Ох...
+::'''Печальная женщина:''' Где же может быть этот железный ящик?
+:{{Диалог|Стрелка}} Значит, тебе нужен этот ящик?
+::'''Печальная женщина:''' Ты носишь с собой железный ящик? Какое невероятное совпадение!
+::'''Печальная женщина:''' Должно быть, это судьба. Пузырь памяти в этом ящике хранит все дорогие мне воспоминания...
 <pre>{
 	"$type": "RPG.GameCore.SelectMissionItem",
 	"ItemIDList": [
@@ -389,11 +145,13 @@
 			],
 			"CreateProp": {
 				"GroupID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
 				},
 				"GroupPropID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
@@ -405,11 +163,13 @@
 					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
 				},
 				"ID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
 				},
 				"GroupID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
@@ -443,11 +203,13 @@
 			],
 			"CreateProp": {
 				"GroupID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
 				},
 				"GroupPropID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
@@ -459,11 +221,13 @@
 					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
 				},
 				"ID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
 				},
 				"GroupID": {
+					"IsDynamic": false,
 					"FixedValue": {
 						"Value": 0
 					}
@@ -484,16 +248,18 @@
 		}
 	]
 }</pre>
-;(Потеряно {{Item|Старая шкатулка|20|x=1|text=Старая шкатулка}})
-<!--Unknown TalkSentence: 412220801-->
+;(Потеряно {{Предмет|Старая шкатулка|20|x=1}})
+:Возможно, тебе удастся обменять его на что-то ценное. Можешь попытать удачи в «Пагоде ювелира». Наверняка управляющий Ханьдянь хорошо за него заплатит.
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 107
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300003
 		}
@@ -519,7 +285,7 @@
 		}
 	]
 }</pre>
-;(Потеряно {{Item|Кувшин со слезами чешуйчатых|20|x=1|text=Кувшин со слезами чешуйчатых}})
+;(Потеряно {{Предмет|Кувшин со слезами чешуйчатых|20|x=1}})
 {{Диалог Конец}}
 
 ==На других языках==
@@ -540,4 +306,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

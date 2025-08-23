@@ -66,7 +66,7 @@ export const OTHER_LANGUAGES: Dictionary<SupportedLanguage> = {
 export const COLOR_MAP = {
 	'f29e38': 'Выделенный',
 	'dd7a00': 'Выделенный',
-	'dbc291': 'Ключевой',
+	'dbc291': 'Ключевой|nobold=1',
 	'42a8b9': 'fthuser',
 	'87e0ff': 'Ледяной',
 	'77ede5': 'heliobus',

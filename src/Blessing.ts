@@ -103,11 +103,11 @@ export const MazeBuff = await getFile<InternalMazeBuff[]>('ExcelOutput/MazeBuff.
 
 const iconVariants = [
 	'',
-	'Attack',
-	'Defense',
-	'Buff',
-	'Debuff',
-	'Support'
+	'Атака',
+	'Защита',
+	'Усиление',
+	'Ослабление',
+	'Поддержка'
 ]
 
 export class Blessing {

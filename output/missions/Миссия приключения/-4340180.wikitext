@@ -1,0 +1,2050 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340180
+|Название        = 
+|Изображение     = Миссия .png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] «[[О герой, разбей печальную статую]]»
+|Персонажи       = Кирена; Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Элизия Эйдес]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(Поговорите с Кирена)
+:'''Кирена:''' Здравствуй...♪
+:'''Кирена:''' (Первопроходец), ты выглядишь так же удивлённо, как в моих воспоминаниях.
+:{{Диалог|Стрелка}} Мы знакомы?..
+::'''Кирена:''' Не то чтобы «знакомы»... Скорее, я помню тебя.
+::Ты ещё жива?..
+::'''Кирена:''' Хи-хи, интересный способ завести беседу.
+::Ты Кирена или Мемо?
+::У меня много вопросов...
+:{{Диалог|Стрелка}} Ты ещё жива?..
+::'''Кирена:''' Хи-хи, интересный способ завести беседу.
+::Ты Кирена или Мемо?
+::У меня много вопросов...
+:{{Диалог|Стрелка}} Ты Кирена или Мемо?
+:{{Диалог|Стрелка}} У меня много вопросов...
+:'''Кирена:''' (Первопроходец), я понимаю, у тебя много вопросов, да? Я бы хотела ответить на них, но, честно говоря, сама я ничего не понимаю...
+:'''Кирена:''' Это я, (Первопроходец). Ты меня не узнаёшь? Неужели я настолько поменялась?
+:{{Диалог|Стрелка}} Ты Мемо...
+:{{Диалог|Стрелка}} Тебе удалось восстановить все воспоминания?
+:'''Кирена:''' Для меня это тоже невероятно. Как будто я видела долгий-предолгий сон. Воспоминания Кирены... и воспоминания Мемо... они все перепутались. Но когда я проснулась... от них остались только отдельные фрагменты.
+:{{tx}}
+
+
+;(Поговорите с Кирена)
+:Судя по ровному дыханию, Кирена крепко спит.
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvNpcEx","FetchType":"SingleNpcByNpcID","SingleNpcID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":147}},"GroupNpcID":{"IsDynamic":false,"FixedValue":{"Value":400008}}}}}-->}})
+:{{Диалог|Стрелка}} Разбудить её.
+:;(Экран становится чёрным)
+::'''Кирена:''' Хр-р... Хр-р-р... Хи-хи, шучу. Я не сплю.
+::'''Кирена:''' Отдыхая на столе, я издалека увидела как ты, (Первопроходец), идёшь сюда. {{MC|ж=Такая же энергичная|м=Такой же энергичный}}, как и в воспоминаниях.
+:{{Диалог|Стрелка}} Ждать, пока она проснётся.
+:;(Экран становится чёрным)
+::'''Кирена:''' Хр-р... Хр-р-р... Хи-хи, шучу. Я не сплю.
+::'''Кирена:''' Отдыхая на столе, я издалека увидела как ты, (Первопроходец), идёшь сюда. {{MC|ж=Такая же спокойная|м=Такой же спокойный}}, как и в воспоминаниях.
+:'''Кирена:''' Итак, чем займёмся?
+:{{Диалог|Стрелка}} Хочу сделать что-нибудь значимое.
+::'''Кирена:''' Эхе! И я, и я тоже. Можно с тобой, (Первопроходец)?
+:<pre>{
+	"$type": "RPG.GameCore.RandomSelector",
+	"Cases": [
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018001,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018001
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS_1"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018001,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018002,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre",
+						"EndBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 434082023,
+							"ProtectTime": 2
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018002
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor2"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018002,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018004,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre",
+						"EndBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018004
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS_2"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor3"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018004,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018005,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre",
+						"EndBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 434081437,
+							"ProtectTime": 2
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018005
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor4"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018005,
+				"SubMissionState": "Started"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Стрелка}} Давай осмотримся вокруг и больше узнаем об этом месте.
+::'''Кирена:''' Эхе! Тогда расслабленно прогуляемся по округе. (Первопроходец), а я буду твоим гидом, да?
+:<pre>{
+	"$type": "RPG.GameCore.RandomSelector",
+	"Cases": [
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018006,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 434082035,
+							"ProtectTime": 2
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018006
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor5"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018006,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018007,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018007
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor6"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018007,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018008,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 434082036,
+							"ProtectTime": 2
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018008
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor7"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018008,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018010,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018010
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor11"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018010,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 434018011,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018011
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "4340180_EndDS"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10441_F10441001_G147"
+						},
+						"AnchorName": {
+							"Value": "Anchor10"
+						}
+					}
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018011,
+				"SubMissionState": "Started"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пока ничего не хочется делать...
+::'''Кирена:''' Эхе! Я буду здесь. (Первопроходец), скажи, когда понадоблюсь.
+
+;(Unused &mdash; 4340180_EndDS)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"realSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"besideWater"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Swing"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"standBytable"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400005
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Flower"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400006
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Chimera"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400007
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400012
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400012
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+
+;(Unused &mdash; 4340180_Default)
+<pre>{
+	"$type": "RPG.GameCore.RandomSelector",
+	"Cases": [
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400001
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "fakeSleep"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400008
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "realSleep"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400008
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "besideWater"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400010
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400004
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "Swing"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.AdvNpcRide",
+					"SourceType": {
+						"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+						"FetchType": "SingleNpcByNpcID",
+						"SingleNpcID": {
+							"GroupID": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 147
+								}
+							},
+							"GroupNpcID": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 400004
+								}
+							}
+						}
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+						"FetchType": "SinglePropByPropID",
+						"SinglePropID": {
+							"GroupID": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							},
+							"ID": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 300023
+								}
+							}
+						}
+					},
+					"SourceAttachPoint": {
+						"Value": "SelectRoot"
+					},
+					"AttachPoint": {
+						"Value": "AvatarAttachPoint"
+					},
+					"OffsetPosition": {
+						"X": 0,
+						"Y": -0.08,
+						"Z": 0
+					},
+					"OffsetRotation": {
+						"X": 0,
+						"Y": 0,
+						"Z": -90
+					}
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400009
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400005
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "standBytable"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400009
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400006
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "Flower"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+							"InstanceIDList": [
+								400010
+							]
+						}
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareSubMissionState",
+				"SubMissionID": 434018016,
+				"SubMissionState": "Started"
+			}
+		},
+		{
+			"OnSelect": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400007
+					]
+				},
+				{
+					"$type": "RPG.GameCore.SetClientGroupProperty",
+					"GroupID": 147,
+					"DynamicName": {
+						"Value": "Chimera"
+					},
+					"Value": 1
+				},
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+					"InstanceIDList": [
+						400011
+					]
+				}
+			],
+			"Predicate": {
+				"$type": "RPG.GameCore.ByAnd",
+				"PredicateList": [
+					{
+						"$type": "RPG.GameCore.ByCompareMainMissionState",
+						"MainMissionID": 4340188
+					},
+					{
+						"$type": "RPG.GameCore.ByCompareSubMissionState",
+						"SubMissionID": 434018016,
+						"SubMissionState": "Started"
+					}
+				]
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 4340180_EndDS_1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"realSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"besideWater"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Swing"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"standBytable"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400005
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Flower"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400006
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Chimera"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400007
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400015
+	]
+}</pre>
+
+;(Unused &mdash; 4340180_EndDS_2)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"realSleep"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"besideWater"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Swing"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"standBytable"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400005
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Flower"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400006
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+:;(Otherwise, if {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"Chimera"},"CompareValue":1}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400007
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":147,"DynamicName":{"Value":"fakeSleep"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400016
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvNpcRide",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 147
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400016
+				}
+			}
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"SourceAttachPoint": {
+		"Value": "SelectRoot"
+	},
+	"AttachPoint": {
+		"Value": "AvatarAttachPoint"
+	},
+	"OffsetPosition": {
+		"X": 0,
+		"Y": -0.08,
+		"Z": 0
+	},
+	"OffsetRotation": {
+		"X": 0,
+		"Y": 0,
+		"Z": -90
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

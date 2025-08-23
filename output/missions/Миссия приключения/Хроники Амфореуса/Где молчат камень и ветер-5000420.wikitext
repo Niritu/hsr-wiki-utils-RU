@@ -1,0 +1,972 @@
+<%-- [PAGE_INFO]
+PageTitle=#Где молчат камень и ветер#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 5000420
+|Название        = 
+|Изображение     = Миссия Где молчат камень и ветер.png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = Хроники Амфореуса
+|Условия         = Завершена [[Миссия Освоения]] «[[О узник, перешагни тень и узри море]]»
+|Персонажи       = Аполлоний Камненосец; Виргиния Поющий Ветер; Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Поющий берег Стиксия]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Звёздный нефрит*10; Конденсированный эфир*4; Кредиты*10 000
+}}
+'''Где молчат камень и ветер''' — [[Миссия приключения]] в [[Амфореус]] в главе [[Хроники Амфореуса]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поговорите с Виргинией Поющий Ветер
+# Передайте Аполлонию письмо от Виргиниии
+# Продолжайте искать Аполлония, чтобы передать ему письмо
+# Поговорите с Виргинией и остальными
+# Войдите в древние руины под городом и найдите следы Аполлония
+# Отправляйтесь к лабиринту Янус и найдите следы Аполлония
+# Посмотрите, как Аполлоний активирует лабиринт Янус
+# Ознакомьтесь с подсказками, которые Аполлоний получил от лабиринта Янус
+# Отправляйтесь ко входу в Стиксию и остановите Аполлония, который пытается покинуть полис
+# Вернитесь к Виргинии
+# Воссоединитесь с вернувшимся Аполлонием и остальными
+# Поговорите со стоящей в отдалении Гисиленсой
+# Отправляйтесь ко входу в Стиксию и узнайте решение Виргинии
+# Поговорите с Виргинией Поющий Ветер
+
+==Прохождение==
+{{Дополнить}}
+===Поговорите с Виргинией Поющий Ветер===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|В прибрежном полисе вечного праздника все наслаждаются беззаботной и счастливой жизнью в мире фантазий. Только вот Виргинию, кажется, что-то тревожит...}}
+{{Диалог Начало}}
+
+;(Поговорите с Виргиния)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042001.json'-->)
+:'''Виргиния Поющий Ветер:''' ...Ах, (Первопроходец)! Вы передумали?
+::{{Диалог|Стрелка}} Поющий Ветер, я ужасно хочу узнать все слухи.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500042013,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "IsGoingOn",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500042013,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "IsGoingOnRepeat",
+		"Type": "ClientOnly",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::'''Виргиния Поющий Ветер:''' П-правда?! Спасибо, огромное спасибо!
+:::'''Виргиния Поющий Ветер:''' Держите письмо. Спасибо, (Первопроходец).
+:::'''Виргиния Поющий Ветер:''' Т-только не читайте! Иначе я найду какую-нибудь дыру и больше никогда оттуда не вылезу...
+::{{Диалог|Выход}} Я в таком не {{MC|ж=сильна|м=силён}}, попроси кого-нибудь другого.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500042013,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "IsGoingOn",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500042013,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "IsGoingOnRepeat",
+		"Type": "ClientOnly",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:::'''Виргиния Поющий Ветер:''' Ох, п-прошу прощения, (Первопроходец)...
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 172,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 500086501
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Передайте Аполлонию письмо от Виргиниии===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|В этом письме скрывается вся любовь, которую Виргиния Поющий Ветер боится выразить вслух. Найдите Аполлония Камненосца и помогите ему узнать о чувствах смущённой девушки!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042003.json'-->)
+
+;(Unused &mdash; EnterDistrict_G{GroupID}_1)
+:'''(Первопроходец):''' (Это... любовное письмо Виргинии Аполлонию.)
+{{Диалог Конец}}
+
+===Продолжайте искать Аполлония, чтобы передать ему письмо===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Сплетничающие златиусы рассказывают вам кое-что о Виргинии и Аполлонии. Письмо в вашей руке словно стало тяжелее.}}
+{{Диалог Начало}}
+
+;(Поговорите с Аполлоний)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042004.json'-->)
+{{Диалог Конец}}
+
+===Поговорите с Виргинией и остальными===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Ответ Аполлония расстроил Виргинию. Однако сегодня она выглядит обеспокоенной. Узнайте у неё, что случилось.}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042005.json'-->)
+{{Диалог Конец}}
+
+===Войдите в древние руины под городом и найдите следы Аполлония===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Аполлоний неожиданно исчез... Последний раз его видели в древних руинах под городом. Следуйте за воспоминаниями и отыщите его следы.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; DestoryNPC_500042014)
+
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Аполлоний Камненосец:''' Лабиринт Янус, который указывает судьбу, находится под этими водами...
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Аполлоний Камненосец:''' Какое уединённое место... Неужели это тоже не место для праздника?
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Аполлоний Камненосец:''' Этот путь мне знаком. Неужели сама судьба ведёт меня вперёд?..
+{{Диалог Конец}}
+
+===Отправляйтесь к лабиринту Янус и найдите следы Аполлония===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Кажется, Аполлоний направился к лабиринту Янус... Что он хочет выяснить с помощью этого устройства?}}
+{{Диалог Начало}}
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042007.json'-->)
+{{Диалог Конец}}
+
+===Посмотрите, как Аполлоний активирует лабиринт Янус===
+{{Диалог Начало}}
+;(If {{F|undefined}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.GravityBallPuzzleSwitchBoard",
+	"PuzzleID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 49
+		}
+	}
+}</pre>
+;(Unused &mdash; PuzzleSwitchPerformance)
+
+
+;(Unused &mdash; PuzzleStartPerformance)
+:<!--0.3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_gravityball_platform"
+	},
+	"EmitterType": "Prop",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab"
+		}
+	]
+}</pre>
+::<!--2.5-second delay-->
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.RemoveEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	},
+	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
+	"Flags": []
+}</pre>
+
+;(Unused &mdash; PuzzleResetPerformance)
+
+
+;(Unused &mdash; PuzzleFinishPerformance)
+<pre>{
+	"$type": "RPG.GameCore.GravityBallPuzzleLastFinishCondition",
+	"DefaultGroupEvent": {
+		"Value": "default_finish"
+	},
+	"ConditionLogic": []
+}</pre>
+
+;(Unused &mdash; default_finish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "enter_pad"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+::<!--1.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerStopUsing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ToastPage",
+	"MessageOne": {
+		"Hash": 2012001348524219443
+	},
+	"MessageTwo": {
+		"Hash": 3531031601469204543
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleExitPerformance)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerStopUsing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleFinished)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorSavedValue",
+		"Name": {
+			"Value": "FSV_SwitchGravityBallCase"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "MissionState"
+						},
+						"CompareValue": 1
+					},
+					"SuccessTaskList": [],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "MissionState"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGroupProperty",
+		"PropertyName": {
+			"Value": "CurrentPuzzleID"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 44
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_1"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_1"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 47
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_2"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_2"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 40
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_3"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_3"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 46
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_4"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_4"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 48
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_5"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_5"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 42
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_6"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_6"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 45
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_7"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_7"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 41
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_8"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_8"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 43
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "CaseState_9"
+						}
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "CaseState_9"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; PuzzleBallFall)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "BlendCamera"
+	},
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveData": {},
+		"BlendTime": 3
+	}
+}</pre>
+
+;(Unused &mdash; PuzzleEnterHiddenStoryPerformance)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerStopUsing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_BugQuest"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 9
+		}
+	}
+}</pre>
+
+;(Unused &mdash; HiddenStoryInputIncrease)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
+		"Name": {
+			"Value": "FCV_BugQuest"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 3
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 4
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 6
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 7
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_BugQuest"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; HiddenStoryInputReset)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_BugQuest"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 10
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Ознакомьтесь с подсказками, которые Аполлоний получил от лабиринта Янус===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу в Стиксию и остановите Аполлония, который пытается покинуть полис===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Аполлоний узнал правду о пире и теперь хочет покинуть иллюзию? Не дайте ему совершить смертельный выбор...}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042008.json'-->)
+{{Диалог Конец}}
+
+===Вернитесь к Виргинии===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Как же рассказать друзьям Аполлония о его исчезновении? Вы не знаете, что делать...}}
+{{Диалог Начало}}
+----
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 500042009,
+	"MessageSectionID": 1453400
+}</pre>
+{{Диалог Конец}}
+
+===Воссоединитесь с вернувшимся Аполлонием и остальными===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Аполлоний вернулся? Как такое возможно...}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042009.json'-->)
+:'''(Первопроходец):''' Аполлония нашли? Это невозможно...
+{{Диалог Конец}}
+
+===Поговорите со стоящей в отдалении Гисиленсой===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Похоже, не только вы со златиусами стали свидетелями признания Виргинии, но и кое-кто ещё.}}
+{{Диалог Начало}}
+
+;(Поговорите с Гисиленса)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042010.json'-->)
+{{Диалог Конец}}
+
+===Отправляйтесь ко входу в Стиксию и узнайте решение Виргинии===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|Камень хочет упасть с обрыва ради дуновения ветра. Ветер хочет стихнуть ради того, чтобы камень не рухнул.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\5000420\DS500042011.json'-->)
+{{Диалог Конец}}
+
+===Поговорите с Виргинией Поющий Ветер===
+{{Описание миссии|тип=Миссия приключения|локация=Поющий берег Стиксия|В прибрежном полисе вечного праздника все наслаждаются беззаботной и счастливой жизнью в мире фантазий. Только вот Виргинию, кажется, что-то тревожит...}}
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Where Stone and Wind Stood Still
+|zhs  = 石悬风止处
+|zht  = 石懸風止處
+|ja   = 石と風が止まる処
+|ko   = 돌과 바람이 머무는 곳
+|es   = Donde el viento y la roca se detuvieron
+|fr   = Là où pierre et vent restent en suspens
+|ru   = Где молчат камень и ветер
+|th   = ที่ซึ่งศิลากับวายุหยุดนิ่ง
+|vi   = Nơi Đá Lơ Lửng Gió Ngừng
+|de   = Wo Stein und Wind verharrten
+|id   = Tempat Batu dan Angin Terdiam
+|pt   = Onde Pedra e Vento Permaneceram Parados
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

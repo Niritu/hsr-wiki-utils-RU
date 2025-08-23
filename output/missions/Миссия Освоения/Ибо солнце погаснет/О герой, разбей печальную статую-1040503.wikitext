@@ -1,0 +1,160 @@
+<%-- [PAGE_INFO]
+PageTitle=#О герой, разбей печальную статую#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040503
+|Название        = 
+|Изображение     = Миссия О герой, разбей печальную статую.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Ибо солнце погаснет
+|Условия         = Завершена [[Миссия Освоения]] «[[О герой, воплоти кровавую надежду]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Вихрь сотворения]]
+|Мир             = Амфореус
+|Предыдущая      = О герой, воплоти кровавую надежду
+|Следующая       = О герой, запой пеан воскресающей земли
+|Награды         = Опыт Освоения*1 900; Звёздный нефрит*240; Путеводитель путешественника*10; Утраченный кристалл*10; Беспорядочная амброзия*760; Кредиты*120 000
+}}
+'''О герой, разбей печальную статую''' — [[Миссия Освоения]] в главе [[Ибо солнце погаснет]].
+
+==Описание==
+{{Описание|Вы видите воспоминания Похитителя пламени Каосланы о том, как на протяжении тридцати миллионов циклов он крал ядра пламени, чтобы не допустить наступление эры воскресающей земли. Сражаясь с бывшими друзьями, ставшими врагами, он постепенно терял себя. Но внутренний герой никогда не оставлял его на протяжении его пути.}}
+
+==Этапы==
+# Одолейте Похитителя пламени
+# Казните Похитителя пламени
+# Посмотрите все воспоминания Каосланы
+# Станьте свидетелем конца Каосланы
+# Боритесь с богами
+
+==Прохождение==
+{{Дополнить}}
+===Одолейте Похитителя пламени===
+{{Описание миссии|тип=Миссия Освоения|локация=Вихрь сотворения|(Первопроходец) возвращается мыслями к Вихрю сотворения, к моменту наступления эры воскресающей земли, и вместе с Фаеноном встречает волю последнего посетителя, который сгорел дотла ради спасения.}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G87_2)
+----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act460_Caption.json-->}}
+:;(Cutscene ends)
+:----
+:;(Enter battle)
+::{{Список врагов|mode=sent|???*1/-12% Скорость}}
+
+;(Unused &mdash; EnterDistrict_G87_1)
+----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act450_Caption.json-->}}
+:;(Cutscene ends)
+:----
+:;(Enter battle)
+::{{Список врагов|mode=sent|Похититель пламени глубокой тьмы*1/-12% Скорость}}
+{{Диалог Конец}}
+
+===Казните Похитителя пламени===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act470_Caption.json-->}}
+:;(Cutscene ends)
+:----
+{{Диалог Конец}}
+
+===Посмотрите все воспоминания Каосланы===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Продолжить воспоминания Похитителя пламени
+
+
+{{Диалог Конец}}
+
+===Станьте свидетелем конца Каосланы===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act490_Caption.json-->}}
+:;(Cutscene ends)
+:----
+{{Диалог Конец}}
+
+===Боритесь с богами===
+{{Диалог Начало}}
+
+;(Unused &mdash; 104050305EndSpecialUI)
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+
+;(Unused &mdash; OpenUISS)
+
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+:;([[#Gallery|Cutscene]] plays)
+:----
+::{{tx}}
+:----
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act501_Caption.json-->}}
+:;(Cutscene ends)
+:----
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.TarotBook.ExperimentFile.TarotBookExperimentPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "true"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "OpenUISS"
+			}
+		}
+	],
+	"OnUIExitImmediately": []
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Hero, Shatter That Woeful Effigy
+|zhs  = 英雄啊，粉碎那悲哀的造像
+|zht  = 英雄啊，粉碎那悲哀的造像
+|ja   = 英雄よ、哀しみの彫像を砕け
+|ko   = 영웅이여, 그 비애의 조각상을 부숴라
+|es   = {{MC|ж=Heroína|м=Héroe}}, destruye esa efigie desdichada
+|fr   = Héros, détruis cette triste idole
+|ru   = О герой, разбей печальную статую
+|th   = วีรชนเอ๋ย จงทำลายรูปปั้นผู้เศร้าโศก
+|vi   = Hỡi anh hùng, hãy phá hủy bức tượng bi thương đó
+|de   = O Helden, zerschmettert diese traurige Statue
+|id   = Wahai Pahlawan, Hancurkan Patung Menyedihkan Itu
+|pt   = Herói, Estilhace a Efígie Infortuna
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

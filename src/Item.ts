@@ -1,14 +1,11 @@
 import { Dictionary, sanitizeString, titleCase, wikiTitle, wikiTitleLink } from './Shared.js';
 import { textMap } from './TextMap.js';
 import { LazyData, LazyExcelData, getExcelFile, getFile } from './files/GameFile.js';
-import { InternalCureInfo, type InternalItem, type InternalItemComefrom, type InternalItemPurpose, type InternalPassPage, type InternalPassSticker, type InternalRecipeConfig, type InternalRewardData, type ItemConfig, type ItemMainType, type ItemRarity, type ItemReference, type ItemSortData, type ItemSubType } from './files/Item.js';
+import { InternalCureInfo, InternalInventoryTabData, type InternalItem, type InternalItemComefrom, type InternalItemPurpose, type InternalPassPage, type InternalPassSticker, type InternalRecipeConfig, type InternalRewardData, type ItemConfig, type ItemMainType, type ItemRarity, type ItemReference, type ItemSortData, type ItemSubType } from './files/Item.js';
 import { GotoData } from './files/graph/MapData.js';
 import { MappingInfo } from './maps/MapingInfo.js';
 
 type ItemSourceData = Dictionary<InternalItemComefrom>
-
-export type InventoryTab = 'Upgrade Materials' | 'Light Cone' | 'Missions' 
-	| 'Consumables' | 'Valuables' | 'Relics' | 'Other Materials'
 
 const HAS_EFFECT: ItemSubType[] = ['Food']
 
@@ -48,27 +45,28 @@ export const enum ItemPurpose {
 }
 
 export const COMMON_ICON_MAP = {
-	'SpriteOutput/ItemFigures/140236.png': 'Item The Xianzhou Luofu Readable 6.png',
-	'SpriteOutput/ItemFigures/190001.png': 'Item Jarilo-VI Readable 2.png',
-	'SpriteOutput/ItemFigures/190002.png': 'Item Jarilo-VI Readable.png',
-	'SpriteOutput/ItemFigures/190003.png': 'Item Sealed Letter.png',
-	'SpriteOutput/ItemFigures/190004.png': 'Item Journal.png',
-	'SpriteOutput/ItemFigures/190005.png': 'Item Journal Page.png',
-	'SpriteOutput/ItemFigures/190006.png': 'Item Electronic Notice.png',
-	'SpriteOutput/ItemFigures/190007.png': 'Item Xianzhou Parchment.png',
-	'SpriteOutput/ItemFigures/190008.png': 'Item The Xianzhou Luofu Readable.png',
-	'SpriteOutput/ItemFigures/190009.png': 'Item The Xianzhou Luofu Readable 3.png',
-	'SpriteOutput/ItemFigures/190010.png': 'Item The Xianzhou Luofu Readable 4.png',
-	'SpriteOutput/ItemFigures/190011.png': 'Item The Xianzhou Luofu Readable 2.png',
-	'SpriteOutput/ItemFigures/190012.png': 'Item The Xianzhou Luofu Readable 5.png',
-	'SpriteOutput/ItemFigures/190013.png': 'Item Penacony Readable 4.png',
-	'SpriteOutput/ItemFigures/190014.png': 'Item Penacony Readable 3.png',
-	'SpriteOutput/ItemFigures/190015.png': 'Item Penacony Readable 2.png',
-	'SpriteOutput/ItemFigures/190016.png': 'Item Penacony Readable 1.png',
+	'SpriteOutput/ItemFigures/140236.png': 'Иконка письма Чжуншань.png',
+	'SpriteOutput/ItemFigures/190001.png': 'Иконка Книга.png',
+	'SpriteOutput/ItemFigures/190002.png': 'Предмет Записи.png',
+	'SpriteOutput/ItemFigures/190003.png': 'Иконка Письмо.png',
+	'SpriteOutput/ItemFigures/190004.png': 'Журнал с КСГ.png',
+	'SpriteOutput/ItemFigures/190005.png': 'Записи с КСГ.png',
+	'SpriteOutput/ItemFigures/190006.png': 'Электронная почта с КСГ.png',
+	'SpriteOutput/ItemFigures/190007.png': 'Иконка Пергамент Сяньчжоу.png',
+	'SpriteOutput/ItemFigures/190008.png': 'Иконка рукописи с Лофу Сяньчжоу.png',
+	'SpriteOutput/ItemFigures/190009.png': 'Иконка письма.png',
+	'SpriteOutput/ItemFigures/190010.png': 'Предмет Записи с Лофу Сяньчжоу.png',
+	'SpriteOutput/ItemFigures/190011.png': 'Иконка рукописи с Лофу Сяньчжоу 3.png',
+	'SpriteOutput/ItemFigures/190012.png': 'Рукописи Лофу Сяньчжоу 4.png',
+	'SpriteOutput/ItemFigures/190013.png': 'Предмет Газета.png',
+	'SpriteOutput/ItemFigures/190014.png': 'Предмет Плёнка Пенакония.png',
+	'SpriteOutput/ItemFigures/190015.png': 'Предмет Журнал Пенакония.png',
+	'SpriteOutput/ItemFigures/190016.png': 'Предмет Книга Пенакония.png',
 }
 
 const sortData = Object.fromEntries((await getFile<ItemSortData[]>('ExcelOutput/ItemDisplaySort.json')).map(sort => [sort.ID, sort]))
 const ItemCureInfoData = await getExcelFile<InternalCureInfo>('ItemCureInfoData.json', 'ID')
+const InventoryTabData = await getExcelFile<InternalInventoryTabData>('InventoryTabData.json', 'ID')
 
 export class Item {
 	static readonly itemData = {
@@ -102,7 +100,7 @@ export class Item {
 	
 	id: number
 	type: ItemMainType
-	subtype: ItemSubType
+	subtype: ItemSubType | number
 	name: string
 	name_hash: number | bigint
 	effect: string
@@ -113,7 +111,7 @@ export class Item {
 	icon_path: string
 	icon_path_small: string
 	purpose_id?: number
-	inventory_tab?: InventoryTab
+	inventory_tab?: string
 	inventory_tab_tag?: number
 	group_id?: number
 	
@@ -147,7 +145,7 @@ export class Item {
 	}
 
 	get pagetitle(): string {
-		return wikiTitle(this.name + (this.subtype == 'HeadIcon' ? ' (Profile Picture)' : ''), 'item', this.id)
+		return wikiTitle(this.name + (this.subtype == 'HeadIcon' ? ' (Аватар)' : ''), 'предмет', this.id)
 	}
 	
 	async getSources(): Promise<string[]> {
@@ -200,21 +198,21 @@ export class Item {
 		AvatarCard: 'Character',
 		AetherSkill: 'Expansion Chip',
 		AetherSpirit: 'Aether Spirit',
-		Book: 'Readable',
-		ChatBubble: 'Chat Box',
+		Book: 'книга',
+		ChatBubble: 'Тема сообщений',
 		ChessRogueDiceSurface: 'Dice Face',
-		Eidolon: 'Eidolon Activation Material',
+		Eidolon: 'Материал активации эйдолона',
 		Food: 'расходный предмет',
 		Formula: 'Formula',
 		// Gift: '', // existing items of this type do not have a type on the wiki
 		// ForceOpitonalGift: '',
-		HeadIcon: 'Profile Picture',
+		HeadIcon: 'Аватар профиля',
 		// Material: '', // very general category
-		Mission: 'предмет',
-		PhoneTheme: 'Phone Wallpaper',
-		MusicAlbum: 'Записи',
+		Mission: 'Предмет миссии',
+		PhoneTheme: 'Обои смартфона',
+		MusicAlbum: 'Запись',
 		TravelBrochurePaster: 'Dreamscape Pass Sticker',
-		PamSkin: 'Pom-Pom Skin',
+		PamSkin: 'Скин Пом-Пом',
 	}
 	
 	async getTypes(): Promise<string[]> {
@@ -311,43 +309,16 @@ export class Item {
 				return `Dreamscape Pass Sticker ${sanitizeString(this.pagetitle.replaceAll(' (Dreamscape Pass Sticker)', ''))}.png`
 			}
 		} else if (this.subtype == 'HeadIcon') {
-			return `Profile Picture ${this.name.replace(': ', ' - ')}.png`
+			return `Аватар ${this.name.replace(': ', ' ')}.png`
 		}
 
 		return COMMON_ICON_MAP[this.icon_path] ?? `Предмет ${sanitizeString(this.pagetitle)}.png`
 	}
 	
-	getInventoryTab(): InventoryTab | undefined {
+	getInventoryTab(): string | undefined {
 		if (!this.visible) return undefined
-		switch (this.subtype) {
-			case 'Material':
-				switch (this.inventory_tab_tag) {
-					case 1: return 'Upgrade Materials'
-					case 2: return 'Other Materials'
-					case 3: return 'Valuables'
-					default: return
-				}
-			
-			case 'Virtual':
-				return 'Upgrade Materials'
-
-			case 'Equipment':
-				return 'Light Cone'
-
-			case 'Mission':
-				return 'Missions'
-
-			case 'Food':
-			case 'Formula':
-				return 'Consumables'
-			
-			case 'Gift':
-			case 'MusicAlbum':
-				return 'Valuables'
-			
-			case 'Relic':
-				return 'Relics'
-		}
+		const tab = Object.values(InventoryTabData).find(tab => tab.DisplayItemSubType.includes(this.subtype) && tab.InventoryDisplayTag == this.inventory_tab_tag)
+		return textMap.getText(tab?.TabName) || undefined
 	}
 	
 	async getRecipe(): Promise<ItemList | null> {
@@ -369,7 +340,7 @@ export class Item {
 		
 		const argsString = Object.entries(args).map(([key, val]) => (val != undefined) ? `|${key}=${val}` : '').join('')
 		
-		return `{{Item|${this.name}|${size}${argsString}}}`
+		return `{{Предмет|${this.name}|${size}${argsString}}}`
 	}
 	
 	asItemListEntry(args: Dictionary<string | number> = {}) {
@@ -409,7 +380,7 @@ export interface ItemListEntry {
 
 const MISSION_COMMON = [COMMON_ITEMS.STELLAR_JADE, COMMON_ITEMS.CREDIT, COMMON_ITEMS.TRAILBLAZE_EXP]
 const rewardData = await getFile<Dictionary<InternalRewardData>>('ExcelOutput/RewardData.json')
-const FULL_DISPLAY_TYPES: (ItemSubType | ItemMainType)[] = [
+const FULL_DISPLAY_TYPES: (ItemSubType | ItemMainType | number)[] = [
 	'HeadIcon', 'Book', 'ChatBubble', 'Equipment',
 	'AetherSkill', 'AetherSpirit', 'ChessRogueDiceSurface',
 	'Formula', 'PhoneTheme', 'MusicAlbum'
@@ -480,7 +451,7 @@ export class ItemList {
 
 		const delim = '; '//adding.some(entry => entry.item.name.includes(',')) ? ';' : ','
 		const addList = adding.map(entry => `${entry.item.pagetitle}*${entry.count.toLocaleString()}` + (
-			entry.item.subtype.includes('Relic') ? ` { rarity = ${entry.item.rarity} }`
+			(entry.item.type != 'Material' && entry.item.subtype.toString().includes('Relic')) ? ` { rarity = ${entry.item.rarity} }`
 			: (FULL_DISPLAY_TYPES.includes(entry.item.type) || FULL_DISPLAY_TYPES.includes(entry.item.subtype)) ? ` { text = ${entry.item.name} }`
 			: ''
 		)

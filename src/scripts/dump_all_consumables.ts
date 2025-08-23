@@ -75,10 +75,10 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 		output.push(`{{Описание|${item.bg_desc.includes('=') ? '1=' : ''}${item.bg_desc.replaceAll('\n', '<br />')}}}`)
 	}
 	
-	output.push(`'''${item.name}''' — расходный [[Предметы|предмет]], который игрок может ${recipe ? 'создать' : 'использовать'}.`)
+	output.push(`'''${item.name}''' — [[расходный предмет]], который игрок может ${recipe ? 'создать' : 'использовать'}.`)
 
 	if (sources.find(src => SHOP_KEYWORD_MATCH.test(src) && !src.includes('Создание'))) {
-		output.push(`\n<!--==Локация==\n{{Галерея|position=left|hideaddbutton=true|captionalign=center|navigation=false\n|Локация Название_локации.png|Название_локации\n}}-->`)
+		output.push(`\n<!--==Локация==\n{{Отметка карты|<!--название карты-->|<!--id отметки-->}}-->`)
 	}
 	
 	if (recipe) {

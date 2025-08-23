@@ -1,0 +1,192 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 4340192
+|Название        = 
+|Изображение     = Миссия .png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] «[[О герой, разбей печальную статую]]»
+|Персонажи       = (Блюстительница полей/Божественная Вуббабу/Варвара/Моти/Химераме); Кирена; Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Элизия Эйдес]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+;(Unused &mdash; TriggerPink1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G229",
+	"AnchorName": "Anchor3"
+}</pre>
+::Ветряной колокольчик издаёт мелодичный звук. Больше ничего не...
+::Погодите-ка, а это что?! На сарай опустился груз, который ему в жизни не выдержать - сверху вдруг появился огромный зверь...
+::{{Диалог|Стрелка}} Что происходит?
+::{{Диалог|Стрелка}} Откуда здесь геозавр?!
+:;(Экран становится чёрным)
+::'''???:''' Звон ветряного колокольчика напоминает трепет влюблённого сердца. Как романтично!
+::'''Кирена:''' Не волнуйся, это всё моё волшебство. У меня получилось вызвать существо из книги, но оно не нападёт. И сарай тоже не пострадает.
+::'''Кирена:''' Кстати, в ветряном колокольчике ещё осталась магия. (Первопроходец), попробуй, когда будешь проходить здесь в следующий раз.
+;(Unused &mdash; TriggerPink2)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G230",
+	"AnchorName": "Anchor1"
+}</pre>
+::Ветряной колокольчик издаёт мелодичный звук. На этот раз вместо геозавра появляется янусов конь.
+::Неужели это ловушка, а внутри спрятались монстры, которые хотят ворваться в это чудесное поселение...
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_TrojanCtrl"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::Как бы отвечая на ваши несправедливые обвинения, деревянная лошадь раскрывается: смотри, внутри совсем пусто...
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G230",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+;(Unused &mdash; TriggerPink3)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G231",
+	"AnchorName": "Anchor1"
+}</pre>
+::Ветряной колокольчик издаёт мелодичный звук. На этот раз появился миленький тюленчик.
+:<pre>{
+	"$type": "RPG.GameCore.PropTriggerAnimState",
+	"AnimStateName": "jump01",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 231
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+::Похоже, магия в колокольчике заканчивается. В следующий раз уже не сработает.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G231",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+
+;(Unused &mdash; TriggerPink5)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G232",
+	"AnchorName": "Anchor1"
+}</pre>
+::Ветряной колокольчик издаёт мелодичный звук. Вы же знаете, что волшебства Кирены в нём уже не осталось и ничего не произойдёт...
+::Погодите-ка, появилась маленькая химера! Выглядит знакомо...
+::'''(Блюстительница полей/Божественная Вуббабу/Варвара/Моти/Химераме):''' Ау-у-у!
+::О, да это же (Блюстительница полей/Божественная Вуббабу/Варвара/Моти/Химераме)! Наверное, играла неподалёку и вышла к вам на звук колокольчика.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10441_F10441001_G232",
+	"AnchorName": "Anchor1",
+	"IsActive": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

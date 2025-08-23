@@ -59,7 +59,7 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	output.push(
 		infobox.block(12),
-		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]]е.`,
+		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]].`,
 		'',
 		'==Локация==',
 		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',

@@ -1,16 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 4340149
 |Название        = 
-|Изображение     = Миссия Освоения .png
+|Изображение     = Миссия .png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = 
-|Условия         = Завершена [[Миссия Освоения]] ''[[О серебряная колесница, мчись на тёмные земли]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[О серебряная колесница, мчись на тёмные земли]]»
 |Персонажи       = Огонёк Геориоса; Первопроходец
-|СтартЛокация    = Вечный священный город Охема
+|СтартЛокация    = [[Амфореус]] — [[Вечный священный город Охема]]
 |Мир             = Амфореус
-|Локации         = Вечный священный город Охема
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
@@ -26,14 +28,53 @@
 ==Прохождение==
 {{Дополнить}}
 
-
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049001-->)
-:<!--Unknown TalkSentence: 434049001-->
-:<!--Unknown TalkSentence: 434049002-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух, только посмотрите на весь этот водяной пар. Здесь так влажно и совсем никого нет. И как я здесь застрял?
+::'''Огонёк Геориоса:''' Мне так страшно. С таким трудом удалось зажечь эту крошечную искру разума. Не может же она вот так взять и погаснуть. {{MC|ж=Добрая прохожая|м=Добрый прохожий}}, не пожертвуешь ли немного топлива, чтобы помочь мне продержаться подольше?
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' Я... изначально был фрагментом божественного тела {{Rubi|Геориоса|титан земли}}, ш-шух, наблюдал всю историю изменений земли и запоминал, где должен быть каждый камень.
+:::'''Огонёк Геориоса:''' А потом... гора рухнула, гравий разлетелся в разные стороны. Не знаю, сколько длился мой путь, но очнулся я уже здесь.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Любой труд приносит свои плоды, ш-шух, так было всегда. Не переживай, у меня для тебя что-нибудь да найдётся.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014901,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180009,
+		181015
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180009,
+			"TriggerCustomString": "MissionOn_434014901"
+		},
+		{
+			"Item1": 181015,
+			"TriggerCustomString": "MissionNo_434014901"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049007
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049001-->)
-:<!--Unknown TalkSentence: 434049051-->
+::'''Огонёк Геориоса:''' Любой труд приносит свои плоды, ш-шух, так было всегда. Не переживай, у меня для тебя что-нибудь да найдётся.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014901,
@@ -76,16 +117,17 @@
 		"Value": "FCV_TheafFlame_01_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049008-->
+::'''Огонёк Геориоса:''' Ш-шух, не сравнить с изначальным ядром пламени, но это поможет мне продержаться ещё какое-то время. Спасибо тебе, {{MC|ж=благодетельница|м=благодетель}}.
 
 ;(Unused &mdash; MissionNo_434014901)
-<!--Unknown TalkSentence: 434049009-->
-;(If {{F|FSV_TheafFlameInteractState_01}} is equal to 1)
+:'''Огонёк Геориоса:''' ...Голоден, ш-шух, как же я голоден! Что ты мне {{MC|ж=дала|м=дал}}? Я чувствую такую пустоту...
+;(If {{F|FSV_TheafFlameInteractState_01}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -97,10 +139,50 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049004-->)
-:<!--Unknown TalkSentence: 434049101-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух, спасибо тебе. Мне так повезло, что я тебя встретил. Я уже давно прозябаю здесь совсем один, мимо постоянно кто-то проходит, но никто не останавливается, даже не смотрит на меня! Ах, куда катится мир...
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' ...Ш-шух? А так сразу непонятно, кто я? Вечно горящее духовное пламя - вот кто я такой!
+:::'''Огонёк Геориоса:''' Само собой, я не обычный камень, а божественный. Я выпал из тела {{Rubi|Геориоса|титан земли}}. Ш-шух, из благодарности за твою помощь я не стану придираться к таким мелочам.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, земля не скупится на дары. Вот что я тебе скажу: если я останусь доволен твоим подношением, то отблагодарю тебя как следует.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014902,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		408001,
+		140000
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 408001,
+			"TriggerCustomString": "MissionNo_434014902"
+		},
+		{
+			"Item1": 140000,
+			"TriggerCustomString": "MissionOn_434014902"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049106
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049004-->)
-:<!--Unknown TalkSentence: 434049151-->
+::'''Огонёк Геориоса:''' Ш-шух, земля не скупится на дары. Вот что я тебе скажу: если я останусь доволен твоим подношением, то отблагодарю тебя как следует.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014902,
@@ -143,16 +225,17 @@
 		"Value": "FCV_TheafFlame_02_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049107-->
+::'''Огонёк Геориоса:''' Ш-шух, неплохо, неплохо. Вот мой ответный подарок за твою доброту. Держи!
 
 ;(Unused &mdash; MissionNo_434014902)
-<!--Unknown TalkSentence: 434049108-->
-;(If {{F|FSV_TheafFlameInteractState_02}} is equal to 1)
+:'''Огонёк Геориоса:''' ...А оно воспламеняется? Если оно не горит, Ш-шух, тогда мне такое не нужно!
+;(If {{F|FSV_TheafFlameInteractState_02}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -164,11 +247,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049007-->)
-:<!--Unknown TalkSentence: 434049201-->
-:<!--Unknown TalkSentence: 434049202-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух, опасно! Колеблющийся огонёк едва не погас посреди этого мрачного места.
+::'''Огонёк Геориоса:''' Это ты меня {{MC|ж=спасла|м=спас}}? Ш-шух, спасибо тебе. Все придорожные камни будут скандировать твоё имя, а вершины скал изменят форму по твоему подобию. Ты - самая высокая гора, самый длинный склон.
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' Некогда я следовал за {{Rubi|Геориосом|титан земли}} повсюду, оставляя следы на камнях, засеивая плодородные почвы бесчисленными семенами, поднимая горы и выкапывая овраги.
+:::'''Огонёк Геориоса:''' Но божественная сила исчезла, и осталась лишь слабая искра пламени. Я.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, посмотри, как танцует пламя, такое чистое, волшебное, тёплое и никогда не гаснущее. Разве тебе не хочется взять его с собой? Оставь подношение, и твои труды не будут напрасны.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014903,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180004,
+		180001
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180004,
+			"TriggerCustomString": "MissionOn_434014903"
+		},
+		{
+			"Item1": 180001,
+			"TriggerCustomString": "MissionNo_434014903"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049207
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049007-->)
-:<!--Unknown TalkSentence: 434049207-->
+::'''Огонёк Геориоса:''' Ш-шух, посмотри, как танцует пламя, такое чистое, волшебное, тёплое и никогда не гаснущее. Разве тебе не хочется взять его с собой? Оставь подношение, и твои труды не будут напрасны.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014903,
@@ -211,16 +334,17 @@
 		"Value": "FCV_TheafFlame_03_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049208-->
+::'''Огонёк Геориоса:''' Возьми. Ш-шух, когда опустится долгая ночь, и всякий свет погаснет во мраке, тогда ты оценишь его по достоинству.
 
 ;(Unused &mdash; MissionNo_434014903)
-<!--Unknown TalkSentence: 434049209-->
-;(If {{F|FSV_TheafFlameInteractState_03}} is equal to 1)
+:'''Огонёк Геориоса:''' Мокро! Мокро! Пламя терпеть не может сырость, убери скорее!
+;(If {{F|FSV_TheafFlameInteractState_03}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -232,11 +356,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049010-->)
-:<!--Unknown TalkSentence: 434049301-->
-:<!--Unknown TalkSentence: 434049302-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух. Привет! Здесь так красиво, и воздух свежий. Мне очень нравится.
+::'''Огонёк Геориоса:''' Жить здесь вечно? Или же продолжить путь, поддавшись стремительному потоку? Духовное пламя не знает ответа и тихо горит. Но если подбросить топлива, можно увидеть будущее.
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' Неужели {{Rubi|Геориос|титан земли}} создал этот клочок земли и поместил на него ничтожного меня с какой-то целью? Стану ли я частью великого пророчества?
+:::'''Огонёк Геориоса:''' Земля никогда не даёт ответов, возвращая лишь урожай.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух. Дабы увидеть желаемые плоды, сперва стоит посеять семена.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014904,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		181003,
+		180007
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180007,
+			"TriggerCustomString": "MissionOn_434014904"
+		},
+		{
+			"Item1": 181003,
+			"TriggerCustomString": "MissionNo_434014904"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049307
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049010-->)
-:<!--Unknown TalkSentence: 434049307-->
+::'''Огонёк Геориоса:''' Ш-шух. Дабы увидеть желаемые плоды, сперва стоит посеять семена.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014904,
@@ -279,16 +443,17 @@
 		"Value": "FCV_TheafFlame_04_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049308-->
+::'''Огонёк Геориоса:''' Хорошее семя. Ш-шух, возьми - это твой урожай.
 
 ;(Unused &mdash; MissionNo_434014904)
-<!--Unknown TalkSentence: 434049309-->
-;(If {{F|FSV_TheafFlameInteractState_04}} is equal to 1)
+:'''Огонёк Геориоса:''' И это ты хочешь посеять? Ш-шух, ты совсем не отличаешь съедобные плоды от семян?!
+;(If {{F|FSV_TheafFlameInteractState_04}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -300,11 +465,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049013-->)
-:<!--Unknown TalkSentence: 434049401-->
-:<!--Unknown TalkSentence: 434049402-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух, оживает... Моё пламя снова горит! Только посмотри - такое живое и яркое!
+::'''Огонёк Геориоса:''' Это всё благодаря тебе, ш-шух. Дай-ка подумать, как бы я наградил тебя и воспел твои заслуги в прежние времена, до того как гора разлетелась на тысячи обломков?
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' В самом начале, когда в мире не было ничего - ни неба, ни земли, - именно {{Rubi|Геориос|титан земли}} поднялся из пустоты и создал место, где могло жить всё сущее.
+:::'''Огонёк Геориоса:''' Ш-шух, так началась моя история. Мне не было числа, и мы стали фундаментом: подняли горные хребты, создали саму землю.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, прояви почтение и покажи свою искренность - и земля наградит тебя.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014905,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		2,
+		140004
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 2,
+			"TriggerCustomString": "MissionOn_434014905"
+		},
+		{
+			"Item1": 140004,
+			"TriggerCustomString": "MissionNo_434014905"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049407
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049013-->)
-:<!--Unknown TalkSentence: 434049407-->
+::'''Огонёк Геориоса:''' Ш-шух, прояви почтение и покажи свою искренность - и земля наградит тебя.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014905,
@@ -347,16 +552,17 @@
 		"Value": "FCV_TheafFlame_05_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049408-->
+::'''Огонёк Геориоса:''' Да, отлично! Ш-шух, возьми немного моего огня. Он тебе пригодится.
 
 ;(Unused &mdash; MissionNo_434014905)
-<!--Unknown TalkSentence: 434049409-->
-;(If {{F|FSV_TheafFlameInteractState_05}} is equal to 1)
+:'''Огонёк Геориоса:''' Ш-шух, если бросить твою искренность в костёр, она сгорит в мгновение ока!
+;(If {{F|FSV_TheafFlameInteractState_05}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -368,11 +574,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049016-->)
-:<!--Unknown TalkSentence: 434049501-->
-:<!--Unknown TalkSentence: 434049502-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух, ты {{MC|ж=нашла|м=нашёл}} меня. Маленький огонёк, что блуждает в поисках тихого и спокойного места. Мне здесь не нравится. Много странных запахов. Не остановиться, не обернуться - так духовное пламя совсем погаснет.
+::'''Огонёк Геориоса:''' {{MC|ж=Прохожая|м=Прохожий}}, что {{MC|ж=нашла|м=нашёл}} меня, мне нужно что-то хорошее. Дай же мне, дай мне.
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' Я, ш-шух, создание {{Rubi|Геориоса|титан земли}}. Живу долго, повидал немало. Боюсь темноты и сырости, боюсь угаснуть.
+:::'''Огонёк Геориоса:''' Люблю камни, люблю огонь, люблю хорошее. Ш-шух, дай мне, дай мне.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, будет, не переживай. Пламя тебя не обманет, защитит тебя в ночи.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014906,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180011,
+		180010
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 180010,
+			"TriggerCustomString": "MissionOn_434014906"
+		},
+		{
+			"Item1": 180011,
+			"TriggerCustomString": "MissionNo_434014906"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049507
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049016-->)
-:<!--Unknown TalkSentence: 434049507-->
+::'''Огонёк Геориоса:''' Ш-шух, будет, не переживай. Пламя тебя не обманет, защитит тебя в ночи.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014906,
@@ -415,16 +661,17 @@
 		"Value": "FCV_TheafFlame_06_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049508-->
+::'''Огонёк Геориоса:''' Хорошо. Я получил, что хотел, и стал сильнее. Это тебе, тебе.
 
 ;(Unused &mdash; MissionNo_434014906)
-<!--Unknown TalkSentence: 434049509-->
-;(If {{F|FSV_TheafFlameInteractState_06}} is equal to 1)
+:'''Огонёк Геориоса:''' Не надо, не надо. Это будет сниться пламени в кошмарах. Пламени нужно что-то другое, мягче.
+;(If {{F|FSV_TheafFlameInteractState_06}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -436,11 +683,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049019-->)
-:<!--Unknown TalkSentence: 434049601-->
-:<!--Unknown TalkSentence: 434049602-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух. Кто ты? От моего пламени остались совсем крохи, с тобой не поделюсь!
+::'''Огонёк Геориоса:''' Если только... ты не подбросишь топлива в угасающий огонь, тогда он снова разгорится с полной силой. Ш-шух, тогда я и с тобой поделюсь, а пока... не подходи!
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' {{Rubi|Геориос|Титан земли}} сам слепил моё тело и зажёг во мне искру разума с помощью ядра пламени. Ш-шух, долгие годы я оберегаю этот крошечный огонёк.
+:::'''Огонёк Геориоса:''' Но... как видишь, даже самый твёрдый камень стирается от времени. От меня осталось совсем немного.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, пламя непостоянно, но земля неизменна. Труды всегда окупаются.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014907,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		180005,
+		181012
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 181012,
+			"TriggerCustomString": "MissionOn_434014907"
+		},
+		{
+			"Item1": 180005,
+			"TriggerCustomString": "MissionNo_434014907"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049607
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049019-->)
-:<!--Unknown TalkSentence: 434049607-->
+::'''Огонёк Геориоса:''' Ш-шух, пламя непостоянно, но земля неизменна. Труды всегда окупаются.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014907,
@@ -483,16 +770,17 @@
 		"Value": "FCV_TheafFlame_07_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049608-->
+::'''Огонёк Геориоса:''' Я чувствую силу, ш-шух. Хорошая работа. Возьми духовное пламя, оно твоё.
 
 ;(Unused &mdash; MissionNo_434014907)
-<!--Unknown TalkSentence: 434049609-->
-;(If {{F|FSV_TheafFlameInteractState_07}} is equal to 1)
+:'''Огонёк Геориоса:''' Плохое топливо! Ш-шух, духовное пламя впитывает в себя всё сущее, но сжигать это - пустая трата сил!
+;(If {{F|FSV_TheafFlameInteractState_07}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -504,11 +792,51 @@
 
 ;(Поговорите с Огонёк Геориоса)
 ;(If {{cx}}<!--during performance 434049022-->)
-:<!--Unknown TalkSentence: 434049701-->
-:<!--Unknown TalkSentence: 434049702-->
-:;(Return to previous option selection)
+::'''Огонёк Геориоса:''' Ш-шух. Не то чтобы я боялся высоты, но здесь такой ветер. Немного дурно.
+::'''Огонёк Геориоса:''' Спасибо, ты {{MC|ж=спасла|м=спас}} меня. Если никуда не спешишь, не подкинешь мне топлива? Здесь мало кто ходит. Если бы не ты, я бы так и угас.
+::{{Диалог|Разговор}} Расскажи о себе.
+:::'''Огонёк Геориоса:''' Я маленький камешек, который катится, подгоняемый ветром. Ш-шух, когда отделился от тела {{Rubi|Геориоса|титан земли}}, я был уверен, что сейчас-то начнутся приключения.
+:::'''Огонёк Геориоса:''' Но на этой вершине не происходит ничего интересного, только летают всякие жуки, да по небу плывут облака.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} А что мне за это будет?
+:::'''Огонёк Геориоса:''' Ш-шух, хороший вопрос. У меня ничего нет. Если не против, можешь взять вот это пламя.
+::<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
+	"SubmissionID": 434014908,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		181005,
+		181004
+	],
+	"ItemHiddenIDList": [],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 181004,
+			"TriggerCustomString": "MissionOn_434014908"
+		},
+		{
+			"Item1": 181005,
+			"TriggerCustomString": "MissionNo_434014908"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {
+		"TalkSentenceID": 434049707
+	},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
 ;(If {{cx}}<!--not during performance 434049022-->)
-:<!--Unknown TalkSentence: 434049707-->
+::'''Огонёк Геориоса:''' Ш-шух, хороший вопрос. У меня ничего нет. Если не против, можешь взять вот это пламя.
 :<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_SelectConsumeItem",
 	"SubmissionID": 434014908,
@@ -551,16 +879,17 @@
 		"Value": "FCV_TheafFlame_08_FlameState"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 434049708-->
+::'''Огонёк Геориоса:''' Неплохо. В таком безлюдном месте привередничать я не стану. Ш-шух, как и договаривались, это тебе!
 
 ;(Unused &mdash; MissionNo_434014908)
-<!--Unknown TalkSentence: 434049709-->
-;(If {{F|FSV_TheafFlameInteractState_08}} is equal to 1)
+:'''Огонёк Геориоса:''' Слишком холодно... Ш-шух, забери это. Ш... Ш-шух, я замерзаю...
+;(If {{F|FSV_TheafFlameInteractState_08}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -589,4 +918,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.0}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

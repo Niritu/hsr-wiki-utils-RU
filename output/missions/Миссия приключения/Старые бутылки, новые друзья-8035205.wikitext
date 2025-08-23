@@ -1,0 +1,770 @@
+<%-- [PAGE_INFO]
+PageTitle=#Старые бутылки, новые друзья#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8035205
+|Название        = 
+|Изображение     = Миссия Старые бутылки, новые друзья.png
+|Тип             = Миссия приключения
+|Событие         = Старые бутылки, новые друзья
+|Глава           = 
+|Условия         = Завершена [[Миссия приключения]] «[[Старые бутылки, новые друзья]]»
+|Персонажи       = Первопроходец; Цыц
+|СтартЛокация    = [[Пенакония]] — [[Отель «Грёзы» (Мир грёз)]]
+|Мир             = Пенакония
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Кредиты*5 000
+}}
+'''Старые бутылки, новые друзья''' — Событие [[Миссия приключения]] из события [[Старые бутылки, новые друзья]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Поприветствуйте последнего гостя
+# Передайте «Особые рецепты»
+
+==Прохождение==
+{{Дополнить}}
+===Поприветствуйте последнего гостя===
+{{Описание миссии|тип=Миссия приключения|локация=Отель «Грёзы» (Мир грёз)|Вас позвали в качестве приглашённого бармена в бар «Проснись и пой», чтобы вы восстановили «Особые рецепты». Остался последний рецепт... Кто же станет следующим гостем?}}
+{{Диалог Начало}}
+
+:{{Диалог|Журнал путешествий}} Временная барная стойка
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; ShowBar2MainPage)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; ShowMainPage)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; ShowBar2MainPage)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G685)
+<pre>{
+	"$type": "RPG.GameCore.WaitDrinkMakerCheersInitFinish",
+	"OnFinish": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 803520502,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre",
+				"EndBlack": "NoPost"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 803520503,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre",
+				"EndBlack": "NoPost"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 803520504,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 803520502
+		},
+		{
+			"$type": "RPG.GameCore.ShowUI",
+			"Name": "Ui.DrinkMakerCheers.Summary.DrinkMakerCheersSummaryPage",
+			"WaitForExit": true,
+			"Param": {
+				"Value": "500"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; ShowMainPage)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; ShowBar2MainPage)
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G686)
+----
+::{{tx}}
+::Вы попробовали достаточно рецептов.
+::{{Диалог|Стрелка}} Нужно отчитаться Шивон.
+::{{Диалог|Стрелка}} Пора получить у Шивон зарплату!
+{{Диалог Конец}}
+
+===Передайте «Особые рецепты»===
+{{Описание миссии|тип=Миссия приключения|локация=Отель «Грёзы» (Мир грёз)|Встретив гостей, вы получили новые идеи и прилив вдохновения, что позволило вам завершить «Особые рецепты». Пришло время рассказать обо всём Шивон и получить заслуженную награду!}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G692)
+:{{tx}}
+::'''Цыц:''' Добро пожаловать, Первопроходец. Вы хорошо потрудились, смешивая напитки. Не желаете ли выпить, перекусить или послушать свежую шутку?
+::{{Диалог|Стрелка}} Это ты?!
+::{{Диалог|Стрелка}} Чувствую себя прямо как дома.
+::'''Цыц:''' Раньше у меня было всего два выходных, а это мало, чтобы вволю погулять вне экспресса. Теперь стало получше.
+::'''Цыц:''' Потому что на экспрессе два воскресенья.
+::'''Цыц:''' О, должен обратить ваше внимание на то, что это всего лишь шутка, и господин Воскресенье на самом деле не продлевает выходные. Пусть он и пытался.
+::'''Цыц:''' Госпожа Шивон сказала, что ей нужно присмотреть за ребёнком друга, пока тот в отъезде, и поручила мне управление баром. Я же, Первопроходец, просто проходивший мимо бармен.
+::{{Диалог|Стрелка}} Снова она поручает случайным прохожим работу.
+::{{Диалог|Стрелка}} «Присмотреть за ребёнком друга»?
+::'''Цыц:''' Перед уходом госпожа Шивон пробормотала что-то под нос. Кажется, я расслышал: «Соня остался в Зале выжженных песков, нужно вернуть его домой»... Похоже, это действительно неотложное дело.
+::'''Цыц:''' О, точно. Первопроходец, я слышал от госпожи Шивон, что вы осваиваете «Особые рецепты»? Так интересно! Если вы не заняты, не посчастливится ли мне попробовать бокальчик?
+::Никому не показывать, чему вы научились, - это всё равно что держать новую одежду в шкафу. Самое время показать Цыцу ваши умения.
+::{{Диалог|Стрелка}} Увидимся по ту сторону стойки!
+::{{Диалог|Стрелка}} Пора размяться на своём поле!
+::Барная ложка звонко стучит о стенки бокала.
+::Сделано!
+::{{Диалог|Стрелка}} (Подать напиток.)
+::{{Диалог|Стрелка}} (Добавить несмешную шутку.)
+:::'''(Первопроходец):''' Вопрос: почему Шивон против того, чтобы её изображали на стаканах в баре?
+:::'''(Первопроходец):''' Ответ: потому что она не хочет оказаться запятнанной.
+:::Цыц изо всех сил старается сохранить сдержанность гостя, но вы прекрасно видите, что в его электронных глазах горит едва скрываемое восхищение.
+::'''Цыц:''' Мне знаком вкус этого коктейля. Первопроходец, не могли бы вы показать мне весь рецепт?
+::'''Цыц:''' Хм... бумажный вариант совпадает с барной картой экспресса. Есть вероятность, что он как-то связан с Безымянным, впервые посетившим Пенаконию.
+::'''Цыц:''' Что ещё более вероятно... он попал сюда от тогдашнего бармена экспресса. То есть меня.
+::{{Диалог|Стрелка}} В следующий раз закончи свои записи.
+::{{Диалог|Стрелка}} Неудивительно, что он такой странный!
+::'''Цыц:''' Хе-хе, прошло много времени. Я уже не тот, что был прежде, и рецепт претерпел немало изменений от тех, к кому он перешёл после меня. По этой истории можно было бы снять фильм и назвать его, к примеру, «Крепкий стакашек».
+::'''Цыц:''' О, а у этого названия есть большой потенциал!
+::'''Цыц:''' Так приятно наблюдать за восхождением новой барной звезды со Звёздного экспресса, что слёзы на глаза наворачиваются.
+::'''Цыц:''' Невольно представляется, как после этого вы замените меня в роли бармена, а я отправлюсь в первопроходческую экспедицию и буду исследовать звёзды.
+::'''Цыц:''' И повсюду, где бы ни ступила моя нога, я принесу ваши рецепты.
+::{{Диалог|Стрелка}} Цыц...
+::{{tx}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Old Brews & New Friends
+|zhs  = 旧瓶新友
+|zht  = 舊瓶新友
+|ja   = 古いボトルと新たな友
+|ko   = 낡은 잔, 새로운 벗
+|es   = Bebidas viejas y amigos nuevos
+|fr   = Nouveaux amis avec de la bouteille
+|ru   = Старые бутылки, новые друзья
+|th   = เพื่อนใหม่ในขวดเก่า
+|vi   = Bình Cũ Bạn Mới
+|de   = Alte Flasche und neue Freunde
+|id   = Botol Lama dan Kawan Baru
+|pt   = Velhas Bebidas, Novas Amizades
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

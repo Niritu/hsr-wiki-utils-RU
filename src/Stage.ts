@@ -141,7 +141,7 @@ export class Stage {
 			const key = enemy.asEnemyListEntry('<<NUM>>')
 			monsterList.set(key, (monsterList.get(key) || 0) + 1)
 		}
-		return `{{Enemy List|${[...monsterList.entries()].map(([str, amnt]) => str.replaceAll('<<NUM>>', amnt.toString())).join('; ')}}}`
+		return `{{Список врагов|mode=sent|${[...monsterList.entries()].map(([str, amnt]) => str.replaceAll('<<NUM>>', amnt.toString())).join('; ')}}}`
 	}
 	
 	asEnemyLists(): string[] {

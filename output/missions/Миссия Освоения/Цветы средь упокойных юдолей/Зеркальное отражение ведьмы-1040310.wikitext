@@ -1,15 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=#Зеркальное отражение ведьмы#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 1040310
 |Название        = 
-|Изображение     = Миссия Освоения Зеркальное отражение ведьмы.png
+|Изображение     = Миссия Зеркальное отражение ведьмы.png
 |Тип             = Миссия Освоения
-|События         = 
+|Событие         = 
 |Глава           = Цветы средь упокойных юдолей
-|Условия         = Завершена [[Миссия Освоения]] ''[[О учёный, жди у ворот истины]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[О учёный, жди у ворот истины]]»
 |Персонажи       = Вельт; Воскресенье; Герта; Первопроходец
 |СтартЛокация    = [[Космическая станция «Герта»]] — [[Изолированная зона]]
-|Локации         = Изолированная зона
+|Мир             = Космическая станция «Герта»
 |Предыдущая      = О учёный, жди у ворот истины
 |Следующая       = 
 |Награды         = Опыт Освоения*200; Звёздный нефрит*20; Утраченный кристалл*3; Небесная амброзия*40; Elegy of Netherwing*1 { text = Elegy of Netherwing }; Кредиты*20 000
@@ -31,9 +34,8 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Послушайте речь Герты===
-{{Описание миссии|локация=Изолированная зона|Звёздный экспресс должен проявить благодарность. К счастью, госпожа Герта заинтересовалась Амфореусом и собирается провести полевые исследования.<br />Госпожа Герта, могли бы вы почаще говорить со мной, Четвёртым Зеркалом?}}
+{{Описание миссии|тип=Миссия Освоения|локация=Изолированная зона|Звёздный экспресс должен проявить благодарность. К счастью, госпожа Герта заинтересовалась Амфореусом и собирается провести полевые исследования.<br />Госпожа Герта, могли бы вы почаще говорить со мной, Четвёртым Зеркалом?}}
 {{Диалог Начало}}
 ;(По прибытии на место)
 
@@ -42,20 +44,20 @@
 
 ;(Поговорите с Вельт Янг)
 ----
-<!--Unknown TalkSentence: 140314701-->
-<!--Unknown TalkSentence: 140314702-->
+:'''Вельт:''' Спасибо, госпожа Герта. Друзья - это кровь Звёздного экспресса. Когда всё утихнет, мы обязательно отблагодарим вас за помощь.
+:'''Герта:''' (Вельт... Какой же вежливый молодой человек.)
 
 ;(Поговорите с Воскресенье)
 ----
-<!--Unknown TalkSentence: 140314801-->
-<!--Unknown TalkSentence: 140314802-->
-<!--Unknown TalkSentence: 140314803-->
+:'''Воскресенье:''' Госпожа, наблюдая за вашей работой, я многому научился. Трудно представить, что выдающемуся учёному, как вы, удаётся так... непринуждённо вести себя в большинстве случаев.
+:'''Воскресенье:''' Ваши спокойствие и собранность - качества, которым мне стоит поучиться.
+:'''Герта:''' (Почему всё, что вылетает изо рта этого мальчишки, звучит так двусмысленно?!)
 {{Диалог Конец}}
 
 ===Отдайте приказ Первому Зеркалу===
 {{Диалог Начало}}
-<!--Unknown TalkSentence: 140315701-->
-<!--Unknown TalkSentence: 140315702-->
+:'''Герта:''' Отлично. Всё готово...
+:'''Герта:''' Зеркала, за работу.
 {{Диалог Конец}}
 
 ===Отдайте приказ Второму Зеркалу===
@@ -75,14 +77,14 @@
 {{Диалог Конец}}
 
 ===Идите вперёд и найдите вход на Амфореус===
-{{Описание миссии|локация=Вихрь сотворения|Учись, Звёздный экспресс. Госпоже Герте не нужно физическое воплощение, чтобы посетить Амфореус. Она может мгновенно раскрыть тайны этого мира одним движением руки.<br />Не спрашивайте, откуда я это знаю, я давний Гертофан.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Вихрь сотворения|Учись, Звёздный экспресс. Госпоже Герте не нужно физическое воплощение, чтобы посетить Амфореус. Она может мгновенно раскрыть тайны этого мира одним движением руки.<br />Не спрашивайте, откуда я это знаю, я давний Гертофан.}}
 {{Диалог Начало}}
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 140315101-->
-<!--Unknown TalkSentence: 140315102-->
-<!--Unknown TalkSentence: 140315103-->
+:'''Герта:''' Ого... Ну и тряска. Надо было попросить Второе Зеркало немного снизить мощность.
+:'''Герта:''' Ох, какой великолепный вид. Это вход на Амфореус?
+:'''Герта:''' Ну-ка, ну-ка. Возможно, я смогу найти способ проникнуть внутрь.
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -97,25 +99,66 @@
 
 ===Осмотрите странную чашу===
 {{Диалог Начало}}
-;(If {{F|FSV_CoreLevel}} is equal to 0)
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-;(If {{F|FSV_CoreLevel}} is not equal to 0)
-:;(Return to previous option selection)
+
 ;(Unused &mdash; Clt_TriggerPerformance)
 <pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst"
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
+		"Name": {
+			"Value": "FCV_BowlType"
+		}
 	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst_digitalize"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		}
+	]
 }</pre>
 :<pre>{
 	"$type": "RPG.GameCore.TriggerEntityEventV2",
@@ -146,17 +189,63 @@
 }</pre>
 ::<!--0.5-second delay-->
 :<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop"
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
+		"Name": {
+			"Value": "FCV_BowlType"
+		}
 	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop_digitalize"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		}
+	]
 }</pre>
 ::<!--2-second delay-->
 :<pre>{
@@ -181,17 +270,63 @@
 	}
 }</pre>
 :<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst"
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
+		"Name": {
+			"Value": "FCV_BowlType"
+		}
 	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerSound",
+					"SoundName": {
+						"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst_digitalize"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		}
+	]
 }</pre>
 ::<!--3-second delay-->
 :<pre>{
@@ -251,6 +386,7 @@
 		"Value": "FCV_GenesisKindlingType"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 0
 		}
@@ -262,6 +398,7 @@
 		"Value": "FCV_GenesisKindlingCtrl"
 	},
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 0
 		}
@@ -304,6 +441,9 @@
 	"$type": "RPG.GameCore.ReleaseCharacter",
 	"CharacterUniqueName": "LocalPlayer"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PauseToastQueue"
+}</pre>
 
 ;(Unused &mdash; Clt_TriggerExitBlackSq)
 <pre>{
@@ -336,8 +476,8 @@
 :<pre>{
 	"$type": "RPG.GameCore.GlobalShowBillboard"
 }</pre>
-<!--Unknown TalkSentence: 140315501-->
-<!--Unknown TalkSentence: 140315502-->
+:'''Герта:''' Это или проекция, или подделка. Не стоит внимания.
+:'''Герта:''' Итак... Как же мне попасть на Амфореус?
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -362,4 +502,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.2}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

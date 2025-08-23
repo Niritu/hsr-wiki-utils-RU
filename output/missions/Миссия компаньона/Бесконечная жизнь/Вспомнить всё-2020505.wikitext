@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=#Вспомнить всё#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 2020505
 |Название        = 
-|Изображение     = Миссия Освоения Вспомнить всё.png
+|Изображение     = Миссия Вспомнить всё.png
 |Тип             = Миссия компаньона
-|События         = 
+|Событие         = 
 |Глава           = Бесконечная жизнь
-|Условия         = Завершена [[Миссия компаньона]] ''[[Вспомнить всё]]''
+|Условия         = Завершена [[Миссия компаньона]] «[[Вспомнить всё]]»
 |Персонажи       = Вельт; Дань Хэн; Март 7; Первопроходец; Пом-Пом; Фу Сюань; Химеко
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Звёздный экспресс из воспоминаний]]
-|Локации         = Звёздный экспресс из воспоминаний
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Oath of Steel*6; Кредиты*90 000
+|Награды         = Опыт Освоения*450; Звёздный нефрит*100; Путеводитель путешественника*8; Утраченный кристалл*8; Клятва мёрзлой стали*6; Кредиты*90 000
 }}
 '''Вспомнить всё''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
 
@@ -25,21 +28,20 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 ----
-<!--Unknown TalkSentence: 202181381-->
-<!--Unknown TalkSentence: 202181382-->
-<!--Unknown TalkSentence: 202181383-->
-<!--Unknown TalkSentence: 202181384-->
-<!--Unknown TalkSentence: 202181385-->
-<!--Unknown TalkSentence: 202181386-->
-<!--Unknown TalkSentence: 202181387-->
-<!--Unknown TalkSentence: 202181388-->
+:'''Март 7:''' Спасибо за помощь, госпожа Фу Сюань...
+:'''Фу Сюань:''' Хм, обещаю, что буду неусыпно наблюдать за тобой. Я получила благословение {{Rubi|Путницы Мудрости|Нус}} и поэтому никогда не приемлю попытки скрыть правду.
+:'''Март 7:''' Та девушка назвала себя посланницей... Так зачем же я понадобилась Саду воспоминаний?
+:'''Фу Сюань:''' Каждый член Сада придерживается собственных убеждений. Поверхностное их изучение не даст точного ответа.
+:'''Фу Сюань:''' Это ведь Звёздный экспресс? Кажется, ты приближаешься к источнику. Скоро Высшая матрица предвидения продолжит вычисления.
+:'''Фу Сюань:''' Ты помнишь, где именно тебя обнаружили?
+:'''Март 7:''' Лёд... нашли в комнате экспресса. Там я впоследствии и обосновалась.
+:'''Фу Сюань:''' Давай пройдёмся по составу и найдём твою комнату.
 ----
 {{Диалог Конец}}
 
 ===Найдите «инородный объект» в воспоминании===
-{{Описание миссии|локация=Звёздный экспресс из воспоминаний|Март 7 теперь на шаг ближе к концу (или началу) и, наконец, видит того, кто создавал препятствия на пути - это Посланник.<br />Посланник, похоже, запер Март 7 и Фу Сюань в воспоминаниях, которые представляют собой замкнутый цикл. Март 7 была безымянной девушкой, дрейфующей в космосе, пока Звёздный экспресс не спас её, и она впервые не обрела «семью».<br />Март 7 с удовольствием осталась бы в данном воспоминании подольше, но это всего лишь часть коварного плана Посланника - ведь каждый скучает по дому и втайне желает, чтобы мирная повседневная жизнь длилась вечно, в будущем и прошлом...<br />К сожалению, это невозможно.}}
+{{Описание миссии|тип=Миссия компаньона|локация=Звёздный экспресс из воспоминаний|Март 7 теперь на шаг ближе к концу (или началу) и, наконец, видит того, кто создавал препятствия на пути - это Посланник.<br />Посланник, похоже, запер Март 7 и Фу Сюань в воспоминаниях, которые представляют собой замкнутый цикл. Март 7 была безымянной девушкой, дрейфующей в космосе, пока Звёздный экспресс не спас её, и она впервые не обрела «семью».<br />Март 7 с удовольствием осталась бы в данном воспоминании подольше, но это всего лишь часть коварного плана Посланника - ведь каждый скучает по дому и втайне желает, чтобы мирная повседневная жизнь длилась вечно, в будущем и прошлом...<br />К сожалению, это невозможно.}}
 {{Диалог Начало}}
 ;(По прибытии на место)
 
@@ -76,11 +78,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -89,11 +93,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -102,11 +108,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -114,7 +122,7 @@
 		}
 	]
 }</pre>
-<!--Unknown TalkSentence: 202180542-->
+:'''Вельт:''' Дань Хэн, давай-ка расколем эту глыбу льда. Возможно, нам удастся спасти девушку, замурованную в ней.
 
 ;(По прибытии на место)
 <pre>{
@@ -123,11 +131,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -136,11 +146,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -149,11 +161,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -161,7 +175,7 @@
 		}
 	]
 }</pre>
-<!--Unknown TalkSentence: 202180543-->
+:'''Химеко:''' Осторожнее, не навредите ей...
 
 ;(По прибытии на место)
 <pre>{
@@ -170,11 +184,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -183,11 +199,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -196,11 +214,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -208,7 +228,7 @@
 		}
 	]
 }</pre>
-<!--Unknown TalkSentence: 202180544-->
+:'''Дань Хэн:''' Понял. Пом-Пом, неси аптечку.
 
 ;(По прибытии на место)
 <pre>{
@@ -217,11 +237,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -230,11 +252,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -243,11 +267,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -255,7 +281,7 @@
 		}
 	]
 }</pre>
-<!--Unknown TalkSentence: 202180545-->
+:'''Пом-Пом:''' Несу-несу-несу!
 
 ;(По прибытии на место)
 <pre>{
@@ -264,11 +290,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -282,8 +310,8 @@
 	"Duration": 1,
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
 }</pre>
-<!--Unknown TalkSentence: 202180546-->
-<!--Unknown TalkSentence: 202180547-->
+:'''Март 7:''' Наверное, это... тот день, когда экипаж нашёл меня? Я совсем ничего не помню.
+:'''Фу Сюань:''' Некоторые воспоминания скрыты глубже. Для их проявления потребуется больше времени.
 
 :{{Диалог|Изучение}} Осмотреть
 <pre>{
@@ -294,29 +322,30 @@
 	"EmitterType": "LocalPlayer"
 }</pre>
 ----
-<!--Unknown TalkSentence: 202181389-->
-<!--Unknown TalkSentence: 202181390-->
+:'''Март 7:''' Что происходит?.. Почему мы вернулись в самое начало?
+:'''Фу Сюань:''' Дело рук Посланника. Она снова сбивает тебя с пути.
 
 ;(Поговорите с Вельт Янг)
-<!--Unknown TalkSentence: 202181401-->
-<!--Unknown TalkSentence: 202181402-->
-<!--Unknown TalkSentence: 202181403-->
-<!--Unknown TalkSentence: 202181404-->
-<!--Unknown TalkSentence: 202181405-->
+:'''Вельт:''' Конечно же, хотелось бы её приютить... Вернее, таково моё заключение, основанное на ключевых моральных принципах, - если мы её нашли, нам стоит о ней позаботиться.
+:'''Вельт:''' С другой стороны, это может быть опасно для экипажа Звёздного экспресса...
+:'''Пом-Пом:''' На Звёздном экспрессе найдётся место каждому! Ни о чём не волнуйтесь - просто действуйте в соответствии с вашими представлениями об идеальном поведении, а Пом-Пом позаботится обо всём остальном.
+:'''Вельт:''' Спасибо... Теперь мне стало спокойнее. Надеюсь, она освоится на экспрессе и сумеет с нами подружиться...
+:'''Пом-Пом:''' Не волнуйтесь! Пом-Пом повторяет: на Звёздном экспрессе найдётся место каждому!
 
 ;(Поговорите с Химеко)
-<!--Unknown TalkSentence: 202181411-->
-<!--Unknown TalkSentence: 202181412-->
+:'''Химеко:''' Казалось, что эта бедняжка была скована льдом, но у найденного вещества совсем другие физические свойства... Поразительно.
+:'''Химеко:''' В разных условиях его кристаллы принимают по крайней мере шесть разных форм... Шестифазный лёд... Галактика и впрямь полна загадок.
 
 ;(Поговорите с Дань Хэн)
-<!--Unknown TalkSentence: 202181421-->
-<!--Unknown TalkSentence: 202181422-->
+:'''Дань Хэн:''' Мы единогласно решили тебя приютить... Я - изгнанник и, как я понимаю, тебе тоже некуда возвращаться... Как бы то ни было, на экспрессе мы не будем чувствовать себя одиноко.
+:'''Дань Хэн:''' По словам Химеко, твоё состояние в норме... Правда она не знала, когда ты очнёшься.
 
 :{{Диалог|Изучение}} Осмотреть
 <pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 202050503,
 	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
 		"isRange": true,
 		"ValidValueParamList": [
 			0,
@@ -327,6 +356,7 @@
 		"Type": "CustomValue",
 		"MainMissionID": 2020505,
 		"MissionCustomValue": {
+			"Name": "OldValue_0",
 			"isRange": true,
 			"ValidValueParamList": [
 				0,
@@ -338,7 +368,7 @@
 		"DirectValue": 1
 	}
 }</pre>
-;(If {{F|MissionCV-2020505-undefined}} is equal to 1)
+;(If {{F|MissionCV-2020505-undefined}} is undefined 1)
 :<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -353,11 +383,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -366,11 +398,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400005
 				}
@@ -378,23 +412,26 @@
 		}
 	]
 }</pre>
-;(If {{F|MissionCV-2020505-undefined}} is not equal to 1)
+;(If {{F|MissionCV-2020505-undefined}} is not undefined 1)
 :;(Return to previous option selection)
 ;(Unused &mdash; Random_202050503)
 <pre>{
 	"$type": "RPG.GameCore.RandomConfig",
 	"OddsList": [
 		{
+			"IsDynamic": false,
 			"FixedValue": {
 				"Value": 0.34
 			}
 		},
 		{
+			"IsDynamic": false,
 			"FixedValue": {
 				"Value": 0.32
 			}
 		},
 		{
+			"IsDynamic": false,
 			"FixedValue": {
 				"Value": 0.34
 			}
@@ -429,11 +466,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -442,11 +481,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400005
 				}
@@ -455,11 +496,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -475,11 +518,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -488,11 +533,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400004
 				}
@@ -501,11 +548,13 @@
 		{
 			"$type": "RPG.GameCore.GroupEntityInfo",
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupInstanceID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -521,22 +570,22 @@
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202180548-->
-<!--Unknown TalkSentence: 202180549-->
-<!--Unknown TalkSentence: 202180550-->
+:'''???:''' Не оглядывайся, иди вперёд.
+:'''???:''' Не оглядывайся, иди вперёд.
+:'''???:''' Не оглядывайся, иди вперёд.
 
 ;(Поговорите с Фу Сюань)
-<!--Unknown TalkSentence: 202181431-->
-<!--Unknown TalkSentence: 202181432-->
+:'''Фу Сюань:''' Всё это время твоему продвижению мешал некто посторонний...
+:'''Фу Сюань:''' Возможно, единственный способ узнать о своём прошлом - сделать шаг назад.
 
 :{{Диалог|Изучение}} Осмотреть
-<!--Unknown TalkSentence: 202181441-->
-<!--Unknown TalkSentence: 202181442-->
-<!--Unknown TalkSentence: 202181443-->
-:{{Диалог|Стрелка}} undefined
+:'''Март 7:''' «Не оглядывайся, иди вперёд...» Ну конечно! Если я сделаю с точностью до наоборот, всё встанет на свои места! Какая я всё-таки умничка.
+:'''Фу Сюань:''' Как только ты откроешь дверь, Матрица предвидения начнёт моделирование прошлого.
+:'''Фу Сюань:''' Дай знать, как будешь готова.
+:{{Диалог|Стрелка}} (Открыть дверь.)
 ::----
 ::{{tx}}
-:{{Диалог|Выход}} undefined
+:{{Диалог|Выход}} (Подождать.)
 {{Диалог Конец}}
 
 ==На других языках==
@@ -557,4 +606,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия компаньона Навбокс|Глава }}
+
+[[en:]]

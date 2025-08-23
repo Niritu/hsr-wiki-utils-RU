@@ -1,0 +1,260 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 8035206
+|Название        = 
+|Изображение     = Миссия .png
+|Тип             = Миссия приключения
+|Событие         = Старые бутылки, новые друзья
+|Глава           = 
+|Условия         = 
+* Завершена [[Миссия приключения]] «[[Опечаленные монстры VI]]»
+* Завершена [[Миссия Освоения]] «[[И на восьмой день он отправился в путь]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Пенакония]] — [[Отель «Грёзы» (Мир грёз)]]
+|Мир             = Пенакония
+|Предыдущая      = Опечаленные монстры VI
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — Событие [[Миссия приключения]] из события [[Старые бутылки, новые друзья]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+:{{Диалог|Журнал путешествий}} Временная барная стойка
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerUINotify",
+					"NotifyTypeName": "DrinkMakerCheersShowMainPageEnd"
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.DrinkMakerCheers.Entrance.DrinkMakerCheersEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.BlockInputController",
+			"ActionNameList": []
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"DynamicParams": {}
+				}
+			]
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByHeroGender",
+				"Gender": "GENDER_MAN"
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400002
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			],
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						400003
+					]
+				},
+				{
+					"$type": "RPG.GameCore.ActiveVirtualCamera",
+					"AreaName": "LevelArea_P20311_F20311001_G656",
+					"AnchorName": "Anchor3",
+					"IsActive": false,
+					"DynamicParams": {}
+				}
+			]
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

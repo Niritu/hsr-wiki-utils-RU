@@ -1,15 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=#О поэт, расскажи мне о небе II#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 1040408
 |Название        = 
 |Изображение     = Миссия О поэт, расскажи мне о небе II.png
 |Тип             = Миссия Освоения
-|События         = 
+|Событие         = 
 |Глава           = Падение на пороге рассвета
 |Условия         = 
-|Персонажи       = Первопроходец
-|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
-|Мир             = <!--стартовый мир-->
+|Персонажи       = Гиацина; Дань Хэн; Мемо; Надпись на скрижали; Первопроходец; Фаенон
+|СтартЛокация    = [[Амфореус]] — [[Небесный каструм Циркадное Око]]
+|Мир             = Амфореус
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*8; Утраченный кристалл*8; Небесная амброзия*240; Proi Proi*1 { text = Proi Proi }; Кредиты*80 000
@@ -20,72 +23,691 @@
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
 
 ==Этапы==
+# Одолейте Аквилу Циркадное Око
 # Используйте молитвенный киот, чтобы восстановить разрушенную платформу
+# Выберитесь из Парящей крепости!
+# Используйте сферу чудес, чтобы пройти сквозь стену
+# Продолжайте выбираться из рушащейся Парящей крепости
 # Используйте сферу чудес, чтобы пройти сквозь стену
 # Продолжайте выбираться из рушащейся Парящей крепости
 # Поднимитесь на платформу и вернитесь к куполу Парящей крепости
 # Выберитесь из Парящей крепости!
-# Поднимитесь на платформу и вернитесь к куполу Парящей крепости
-# Выберитесь из Парящей крепости!
-# Одолейте Аквилу Циркадное Око
-# Продолжайте выбираться из рушащейся Парящей крепости
-# Используйте сферу чудес, чтобы пройти сквозь стену
-# Продолжайте выбираться из рушащейся Парящей крепости
-# Одолейте Аквилу Циркадное Око
 
 ==Прохождение==
 {{Дополнить}}
+===Одолейте Аквилу Циркадное Око===
+{{Описание миссии|тип=Миссия Освоения|локация=Небесный каструм Циркадное Око|Правда горька: Селиоза давно разочаровалась в своём народе. Род Гиацины восходит к безымянному златиусу, избежавшей казни, однако Гиацина не позволяет этим мыслям омрачить её настрой. Теперь нам предстоит сразиться с Аквилой Циркадное Око, чтобы поставить точку в истории о небесах и предопределении.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_SunState"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 9
+		}
+	}
+}</pre>
+----
+:'''Фаенон:''' Наконец-то... правда, стоящая за легендой, раскрыта.
+:'''Фаенон:''' Гиацинтия...
+:'''Гиацина:''' ...
+:'''Гиацина:''' Я - потомок безымянного златиуса?
+:'''Гиацина:''' Мой род не происходит от героев...
+:'''Гиацина:''' А от безымянного златиуса, что молила о пощаде.
+:'''Гиацина:''' Хрупкие жизни всего моего рода... были спасены лишь по прихоти Селиозы...
+:{{Диалог|Стрелка}} Нельзя подчиняться её презрению.
+::'''Фаенон:''' Возможно, она права, и смертные полны недостатков. Но это всё равно не повод попирать достоинство человека.
+::Люди не так уж и безнадёжны.
+::'''Фаенон:''' В людях она видит лишь грехи, но мы покажем, что в этом не все мы.
+::Возможно, в её сердце осталось немного сострадания.
+:{{Диалог|Стрелка}} Люди не так уж и безнадёжны.
+::'''Фаенон:''' В людях она видит лишь грехи, но мы покажем, что в этом не все мы.
+::Возможно, в её сердце осталось немного сострадания.
+:{{Диалог|Стрелка}} Возможно, в её сердце осталось немного сострадания.
+:'''Фаенон:''' Она отказалась от смертной плоти и приняла божественность... Она считает, что человечество не заслуживает спасения.
+:'''Гиацина:''' Господин Солабис, госпожа Лунабис...
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act350_Caption.json-->}}
+;(Cutscene ends)
+----
+{{Диалог Конец}}
 
 ===Используйте молитвенный киот, чтобы восстановить разрушенную платформу===
-{{Описание миссии|локация=<!--необходимо добавить-->|После ожесточённой битвы Аквила падает в золотую купель, и Гиацина забирает его ядро пламени. Теперь нужно как можно быстрее выбраться из рушащейся небесной крепости.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Парящая крепость Циркадного Ока|После ожесточённой битвы Аквила падает в золотую купель, и Гиацина забирает его ядро пламени. Теперь нужно как можно быстрее выбраться из рушащейся небесной крепости.}}
 {{Диалог Начало}}
-{{Диалог Конец}}
+;(По прибытии на место)
 
-===Используйте сферу чудес, чтобы пройти сквозь стену===
-{{Диалог Начало}}
-{{Диалог Конец}}
+;(По прибытии на место)
+----
+:{{tx}}
+;(If {{F|undefined}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.SetTimelineEntityState",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"StateName": {
+		"Value": "L0_Idle"
+	}
+}</pre>
+:'''Дань Хэн:''' Небесный каструм рушится из-за падения Аквилы?
 
-===Продолжайте выбираться из рушащейся Парящей крепости===
-{{Диалог Начало}}
-{{Диалог Конец}}
+:{{Диалог|Изучение}} Осмотреть
+----
+:'''Надпись на скрижали:''' Дорогая Селиоза!
+:'''Надпись на скрижали:''' У тебя всё хорошо? *Мы* давно не получали ответа...
+:'''Надпись на скрижали:''' Пожалуй, *мы* понимаем, почему ты не отвечаешь, но *мы* всё равно хотим оставить тебе наши слова в надежде, что ты их прочтёшь.
+:'''Надпись на скрижали:''' Боюсь, это *наше* последнее письмо. Олейнус погрузился во тьму, а из чёрного течения то и дело появляются ужасные монстры, сея хаос по всему городу.
+:'''Надпись на скрижали:''' Сейчас я изо всех сил стараюсь помочь жителям сбежать. *Мы* открыли множество Вековых врат и отправили их в Охему, к сестре Трибби...
+:'''Надпись на скрижали:''' Ухаживать за Вечными вратами - это так утомительно... В последние дни *наши* тела, кажется, стали меньше. Не говоря уже о том, что повелитель Олейнуса всё ещё ищет *нас*...
+:'''Надпись на скрижали:''' Но *мы* не можем остановиться, потому что в мире так много людей, которые нуждаются в помощи...
+:'''Надпись на скрижали:''' Нужно доставить их в безопасное место, подальше от чёрного течения... Это *наше* дело. Любая из *наших* сестёр поступила бы так же.
+:'''Надпись на скрижали:''' Милая Селиоза, ты стала героем? *Мы* надеемся, что да. Если это так, то ещё больше людей поверит в пророчество и найдёт в себе силы объединиться.
+:'''Надпись на скрижали:''' *Мы* устали и хотим немного поспать... Надеемся, во сне *мы* сможем снова встретиться с мамой и сёстрами...
+:'''Надпись на скрижали:''' - Скучаю по тебе, Триша.
 
-===Поднимитесь на платформу и вернитесь к куполу Парящей крепости===
-{{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Выберитесь из Парящей крепости!===
 {{Диалог Начало}}
-{{Диалог Конец}}
-
-===Поднимитесь на платформу и вернитесь к куполу Парящей крепости===
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Выберитесь из Парящей крепости!===
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Одолейте Аквилу Циркадное Око===
-{{Описание миссии|локация=<!--необходимо добавить-->|Правда горька: Селиоза давно разочаровалась в своём народе. Род Гиацины восходит к безымянному златиусу, избежавшей казни, однако Гиацина не позволяет этим мыслям омрачить её настрой. Теперь нам предстоит сразиться с Аквилой Циркадное Око, чтобы поставить точку в истории о небесах и предопределении.}}
-{{Диалог Начало}}
-{{Диалог Конец}}
-
-===Продолжайте выбираться из рушащейся Парящей крепости===
-{{Описание миссии|локация=<!--необходимо добавить-->|После ожесточённой битвы Аквила падает в золотую купель, и Гиацина забирает его ядро пламени. Теперь нужно как можно быстрее выбраться из рушащейся небесной крепости.}}
-{{Диалог Начало}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act390_Caption.json-->}}
+;(Cutscene ends)
+----
+----
+:{{tx}}
 {{Диалог Конец}}
 
 ===Используйте сферу чудес, чтобы пройти сквозь стену===
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Мемо:''' Сфера чудес! Она поможет открыть проход!
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"End"},"CompareType":"Less","CompareValue":1}-->}})
+<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"DynamicName": {
+		"Value": "End"
+	},
+	"Value": 1
+}</pre>
+:'''Мемо:''' Ура, сработало! Идём!
+;(По прибытии на место)
+:'''Гиацина:''' Фаенон, Аглая...
+:'''Фаенон:''' Знаю.
+:'''Фаенон:''' Знаю...
 {{Диалог Конец}}
 
 ===Продолжайте выбираться из рушащейся Парящей крепости===
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40431_F40431002_G37",
+	"AnchorName": "Anchor1"
+}</pre>
+:'''Дань Хэн:''' Сфера мерцает... С её помощью можно открыть проход!
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40431_F40431002_G37",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
 {{Диалог Конец}}
 
-===Одолейте Аквилу Циркадное Око===
-{{Описание миссии|локация=<!--необходимо добавить-->|Правда горька: Селиоза давно разочаровалась в своём народе. Род Гиацины восходит к безымянному златиусу, избежавшей казни, однако Гиацина не позволяет этим мыслям омрачить её настрой. Теперь нам предстоит сразиться с Аквилой Циркадное Око, чтобы поставить точку в истории о небесах и предопределении.}}
+===Используйте сферу чудес, чтобы пройти сквозь стену===
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_330dev_longrisemovement"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"IsHide": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40431_F40431002_G11",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 3
+	}
+}</pre>
+:<!--2.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"GroupId": 11,
+	"PointID": 4,
+	"MotionFlag": "Walk",
+	"AccurateStop": true,
+	"OnReach": [],
+	"SpeedScale": 0.5
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40431_F40431002_G11",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"CustomCurveName": "BlendCut11"
+	}
+}</pre>
+----
+:'''Гиацина:''' Раскаты грома...
+:'''Гиацина:''' На небесной фреске изображены сцены конца света.
+:{{Диалог|Стрелка}} Как там погода?
+::'''Дань Хэн:''' Фреска давно разрушена и больше не управляет погодой. Всё, что происходит здесь, не повлияет на внешний мир... надеюсь.
+::По крайней мере, путешествие Преследующих пламя вот-вот завершится триумфом.
+:{{Диалог|Стрелка}} По крайней мере, путешествие Преследующих пламя вот-вот завершится триумфом.
+:'''Дань Хэн:''' Аквила - одиннадцатое ядро пламени. Последнее ядро Кефала хранится в зале Сената на Рассветной вершине.
+:'''Фаенон:''' Мы всего в шаге от чуда. Смертные наконец станут хозяевами собственных судеб...
+:{{tx}}
+{{Диалог Конец}}
+
+===Продолжайте выбираться из рушащейся Парящей крепости===
+{{Диалог Начало}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Этот путь не кажется безопасным... Ступайте аккуратно!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Обвал усиливается!
+:'''Фаенон:''' (Первопроходец), держись рядом! Не упадите!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame",
+	"WaitFrameCount": 2
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByInTrackCameraByPathID","UseOwnerGroup":true,"PathID":{"IsDynamic":false,"FixedValue":{"Value":1}},"DetectRange":{"IsDynamic":true,"PostfixExpr":{"OpCodes":"AQAR","FixedValues":[],"DynamicHashes":[655055761]}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"SelectFollowTargetType": "Anchor",
+	"SelectLookAtTargetType": "Anchor",
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	]
+}</pre>
+;(Unused &mdash; EndTrack)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 51
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": -1
+		}
+	},
+	"ExitFromStart": [],
+	"ExitFromEnd": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Мемо:''' Теперь сфера мерцает ещё реже...
+:'''Мемо:''' Выберите правильный момент!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(Unused &mdash; Clt_UpdateResult)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGraphDynamicString",
+		"Name": "Loc_Result01",
+		"TargetType": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300001
+			]
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.StringCaseContainer",
+			"Case": {
+				"Custom": true,
+				"Key": "Result01_01"
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GenericSwitchCase",
+					"SwitchRef": {
+						"$type": "RPG.GameCore.SwitchRefGraphDynamicString",
+						"Name": "Loc_Result02",
+						"TargetType": {
+							"$type": "RPG.GameCore.GroupFetchLocalTarget",
+							"TargetType": "Prop",
+							"Targets": [
+								300001
+							]
+						}
+					},
+					"Cases": [
+						{
+							"$type": "RPG.GameCore.StringCaseContainer",
+							"Case": {
+								"Custom": true,
+								"Key": "Result02_01"
+							},
+							"OnSuccess": [
+								{
+									"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+									"DynamicName": {
+										"Value": "PuzzleState"
+									},
+									"Value": 1
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Group_UpdateCompassState)
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGroupProperty",
+		"PropertyName": {
+			"Value": "Lock"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.GenericSwitchCase",
+					"SwitchRef": {
+						"$type": "RPG.GameCore.SwitchRefGroupProperty",
+						"PropertyName": {
+							"Value": "PuzzleState"
+						}
+					},
+					"Cases": [
+						{
+							"$type": "RPG.GameCore.NumberCaseContainer",
+							"Case": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							},
+							"OnSuccess": [
+								{
+									"$type": "RPG.GameCore.TriggerEntityEventV2",
+									"EventName": {
+										"Value": "Clt_TriggerDeactivate"
+									},
+									"TargetType": {
+										"$type": "RPG.GameCore.GroupFetchLocalTarget",
+										"TargetType": "Prop",
+										"Targets": [
+											300001
+										]
+									}
+								}
+							]
+						}
+					],
+					"Default": [
+						{
+							"$type": "RPG.GameCore.TriggerEntityEventV2",
+							"EventName": {
+								"Value": "Clt_TriggerActivate"
+							},
+							"TargetType": {
+								"$type": "RPG.GameCore.GroupFetchLocalTarget",
+								"TargetType": "Prop",
+								"Targets": [
+									300001
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerLock"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:'''Фаенон:''' (Первопроходец)... Ты умеешь спасать мир!
+{{Диалог Конец}}
+
+===Поднимитесь на платформу и вернитесь к куполу Парящей крепости===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' У каждого из нас есть причина, чтобы продолжать жить...
+:'''Фаенон:''' И все хотят увидеть второй рассвет Охемы...
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Гиацина:''' Наконец-то... теперь можно отдышаться?
+:'''Дань Хэн:''' Платформа похожа на клетку... Надеюсь, сбоев не будет.
+<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "FallingEyeShake",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 2,
+			"ShakeTime": 3,
+			"RangeAttenuationDelay": 2,
+			"RangeAttenuationTarget": 0.3,
+			"RangeAttenuationDuration": 1
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_330dev_aigleroarvibrate"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''Гиацина:''' Что? Что за звук?..
+:'''Фаенон:''' Как только платформа остановится, сразу несёмся к выходу...
+:'''Фаенон:''' Скорее, ну же!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40431_F40431002_G21"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Выберитесь из Парящей крепости!===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act370_Caption.json-->}}
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Разрушитель, Месть Солнцегрозице, Циркадное Око*1/-10% Сила атаки, -5% НР}}
+<!--Unknown TalkSentence: 144080918-->
+<!--Unknown TalkSentence: 144080919-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Гиацина:''' Колонны сейчас упадут!
+:'''Фаенон:''' (Первопроходец), помоги нам!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<!--Unknown TalkSentence: 144080936-->
+<!--Unknown TalkSentence: 144080937-->
+<!--Unknown TalkSentence: 144080938-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
 {{Диалог Конец}}
 
 ==На других языках==
@@ -106,4 +728,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.3}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

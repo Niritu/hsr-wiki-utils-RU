@@ -1,21 +1,23 @@
+<%-- [PAGE_INFO]
+PageTitle=#Искатели теней: Третья остановка - Зона поддержки#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 8002106
 |Название        = 
-|Изображение     = Миссия Освоения Искатели теней Третья остановка - Зона поддержки.png
+|Изображение     = Миссия Искатели теней Третья остановка - Зона поддержки.png
 |Тип             = Миссия приключения
-|События         = Искатели теней
+|Событие         = Искатели теней
 |Глава           = 
 |Условия         = 
 * Достигните [[Уровень Освоения|Уровня Освоения]] 21
-* Завершена [[Миссия приключения]] ''[[Искатели теней: Вторая остановка - Зона хранения]]''
+* Завершена [[Миссия приключения]] «[[Искатели теней: Вторая остановка - Зона хранения]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = Зона поддержки
+|СтартЛокация    = [[Космическая станция «Герта»]] — [[Зона поддержки]]
 |Мир             = Космическая станция «Герта»
-|Локации         = Зона поддержки
 |Предыдущая      = Искатели теней: Вторая остановка - Зона хранения
 |Следующая       = Искатели теней: Четвёртая остановка - Административный район
-|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Oath of Steel*3; Кредиты*40 000
+|Награды         = Звёздный нефрит*70; Путеводитель путешественника*4; Клятва мёрзлой стали*3; Кредиты*40 000
 }}
 '''Искатели теней: Третья остановка - Зона поддержки''' — Событие [[Миссия приключения]] из события [[Искатели теней]].
 
@@ -30,9 +32,8 @@
 ==Прохождение==
 {{Дополнить}}
 
-
 ===Найдите объекты и сфотографируйте их===
-{{Описание миссии|локация=Зона поддержки|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны поддержки...}}
+{{Описание миссии|тип=Миссия приключения|локация=Зона поддержки|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны поддержки...}}
 {{Диалог Начало}}
 
 
@@ -66,7 +67,7 @@
 	]
 }</pre>
 ;(Unused &mdash; Talk_800210601)
-:{{Чёрный экран|undefined}}
+:{{Чёрный экран|Спустя некоторое время...}}
 :<pre>{
 	"$type": "RPG.GameCore.HideEntity",
 	"Target": {
@@ -77,11 +78,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300002
 						}
@@ -93,11 +96,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300005
 						}
@@ -109,11 +114,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300006
 						}
@@ -135,7 +142,7 @@
 }</pre>
 
 ;(Unused &mdash; Talk_800210601_End)
-:{{Чёрный экран|undefined}}
+:{{Чёрный экран|Спустя некоторое время...}}
 :<pre>{
 	"$type": "RPG.GameCore.HideEntity",
 	"Target": {
@@ -146,11 +153,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300002
 						}
@@ -162,11 +171,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300005
 						}
@@ -178,11 +189,13 @@
 				"FetchType": "SinglePropByPropID",
 				"SinglePropID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 129
 						}
 					},
 					"ID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 300006
 						}
@@ -216,6 +229,7 @@
 				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
 				"MainMissionID": 8002106,
 				"MissionCustomValue": {
+					"Name": "OldValue_0",
 					"isLocal": true,
 					"isRange": true,
 					"ValidValueParamList": [
@@ -278,6 +292,7 @@
 				"$type": "RPG.GameCore.ByCompareMissionCustomValue",
 				"MainMissionID": 8002106,
 				"MissionCustomValue": {
+					"Name": "OldValue_0",
 					"isLocal": true,
 					"isRange": true,
 					"ValidValueParamList": [
@@ -327,7 +342,7 @@
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 800210188-->
+:'''(Первопроходец):''' (Объект на фотографии кажется огромным...)
 {{Диалог Конец}}
 
 ===Прочтите сообщение Март 7===
@@ -345,6 +360,7 @@
 	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
 	"PhotoGraphMode": "Identify",
 	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 15
 		}
@@ -371,4 +387,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

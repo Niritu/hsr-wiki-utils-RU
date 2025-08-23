@@ -1,0 +1,939 @@
+<%-- [PAGE_INFO]
+PageTitle=#О океан, похорони тёмный винный сон#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040611
+|Название        = 
+|Изображение     = Миссия О океан, похорони тёмный винный сон.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Пока живы герои
+|Условия         = Завершена [[Миссия Освоения]] «[[О нектар, заполни пустой ствол]]»
+|Персонажи       = Аполлоний Камненосец; Виргиния Поющий Ветер; Гисиленса; Голос Ликурга; Керидра; Лабинус Сломанный Клинок; Первопроходец; Сенека Зимний Ливень
+|СтартЛокация    = [[Амфореус]] — [[Поющий берег Стиксия]]
+|Мир             = Амфореус
+|Предыдущая      = О нектар, заполни пустой ствол
+|Следующая       = О узник, перешагни тень и узри море
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Очищенный эфир*6; Утраченный кристалл*6; Беспорядочная амброзия*240; Кредиты*80 000
+}}
+'''О океан, похорони тёмный винный сон''' — [[Миссия Освоения]] в главе [[Пока живы герои]].
+
+==Описание==
+{{Описание|С помощью силы титана под водами Стиксии вы узнаёте правду о первой Погоне за пламенем: Керидра пожертвовала пятьюстами златиусами, чтобы овладеть силой правосудия, тем самым оборвав связь с Гисиленсой. На морском дне стоит надгробие в честь обоих путешествий Преследующих пламя. Несмотря на насмешки Ликурга, вы остаётесь верными своим убеждениям и продолжаете миссию героев.}}
+
+==Этапы==
+# Исследуйте подводный дворец и морские секреты
+# Воссоединитесь с... героями прошлого?
+# Изгоните обезумевшую сирену
+# Станьте свидетелем жертвы двух героев
+# Идите дальше, к кровавому морю
+# Идите дальше, к погребённому завтра
+# Измените время и пространство, узнайте правду
+# Послушайте разговор Гисиленсы и Керидры
+# Верните в прошлое разбитый сосуд времени
+# Измените время и пространство, найдите вход в водоворот
+# Пройдите через ряску
+# Идите дальше, к тёмным глубинам
+# Идите дальше, к безмолвной могиле
+# Отпразднуйте медовым нектаром первое путешествие Преследующих пламя
+# Отпразднуйте медовым нектаром второе путешествие Преследующих пламя
+# Вернитесь в прошлое, восстановите надгробный камень
+# Идите дальше, к вечной песне
+# Идите дальше, к той, что ждёт вас
+
+==Прохождение==
+{{Дополнить}}
+===Исследуйте подводный дворец и морские секреты===
+{{Описание миссии|тип=Миссия Освоения|локация=Поющий берег Стиксия|В тот день великий корабль, нагруженный славой и пятьюстами героями, отплыл из Стиксии в объятия огромных волн в тумане. Через несколько дней океан успокоился, и тысячу лет не поднималась ни одна волна.<br />Никто не знает, что за история скрывается среди тумана и волн. Возможно, о ней помнит лишь океан.<br />Пылающее честолюбие подожгло дрова на корабле, а пустой пепел погрузился на морское дно.<br />Идите же, ощутите холодный огонь и горящие слёзы.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061117.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"PriorityGroup": "PerformanceGroup",
+	"Priority": "High",
+	"StartRate": 0.5,
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/EraFlipperFlash_Enhance.asset"
+}</pre>
+:<!--0.4-second delay-->
+:'''Голос Ликурга:''' А теперь покиньте этот выдуманный пир...
+:'''Голос Ликурга:''' И поднимитесь на кровавую сцену.
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"PriorityGroup": "MazeGroupHigh",
+	"Priority": "High",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/EraFlipperFlash_Enhance.asset"
+}</pre>
+{{Диалог Конец}}
+
+===Воссоединитесь с... героями прошлого?===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G59)
+
+:'''Голос Ликурга:''' Искажённое время и пространство отражают её замешательство...
+{{Диалог Конец}}
+
+===Изгоните обезумевшую сирену===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061101.json'-->)
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Служанка морской пены*3}}
+::Wave 2: {{Список врагов|mode=sent|Служанка морской пены*2; Госпожа волн*1}}
+:'''Голос Ликурга:''' И так были скрыты безжалостные преступления цезаря.
+{{Диалог Конец}}
+
+===Станьте свидетелем жертвы двух героев===
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061102.json'-->)
+{{Диалог Конец}}
+
+===Идите дальше, к кровавому морю===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G62)
+
+
+:{{Диалог|Разговор}} Слушать
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061103.json'-->)
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040611\Act\Act104061104.json'-->)
+{{Диалог Конец}}
+
+===Идите дальше, к погребённому завтра===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061105.json'-->)
+{{Диалог Конец}}
+
+===Измените время и пространство, узнайте правду===
+{{Диалог Начало}}
+;(If {{F|undefined}} is not undefined 2)
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 21
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 500001
+		}
+	},
+	"TickInterval": 0.1,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareFloorSavedValue",
+				"DynamicName": {
+					"Value": "FSV_ChangeDownEra"
+				},
+				"CompareValue": 1
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByRegionEraState",
+						"EaraState": "State02"
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.PPFilterStackEffect",
+							"PriorityGroup": "MazeGroupHigh",
+							"Priority": "High",
+							"StartRate": 0.5,
+							"Duration": 0.5,
+							"AssetPath": "EnviroSystem/PostProcessFilterAsset/EraFlipperFlash_Enhance.asset"
+						},
+						{
+							"$type": "RPG.GameCore.WaitSecond",
+							"WaitTime": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0.15
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_GamePlay_EraFlipper_Global_DayToNight"
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_amphoreus_eraflip_daytonight"
+							}
+						},
+						{
+							"$type": "RPG.GameCore.RemoveEffect",
+							"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_EraFlipperConsole_01_Switch_Lod0.prefab",
+							"Flags": []
+						},
+						{
+							"$type": "RPG.GameCore.TriggerEffect",
+							"Flags": [],
+							"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_EraFlipperConsole_01_Switch_Lod0.prefab",
+							"SubObjectModifyDataList": []
+						},
+						{
+							"$type": "RPG.GameCore.FlipEraRegion"
+						},
+						{
+							"$type": "RPG.GameCore.WaitSecond",
+							"WaitTime": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0.35
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.PPFilterStackEffect",
+							"Active": false,
+							"PriorityGroup": "MazeGroupHigh",
+							"Priority": "High",
+							"StartRate": 0,
+							"Rate": 0,
+							"RecoverDuration": 0,
+							"AssetPath": "EnviroSystem/PostProcessFilterAsset/EraFlipperFlash_Enhance.asset"
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; DownstairsTrigger_G67)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061106.json'-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104061110,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "PerformanceTriggerDownstairs",
+		"Type": "ClientOnly",
+		"DisplayValue": 1,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Unused &mdash; UpstairsTrigger_G67)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061121.json'-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104061110,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "PerformanceTriggerDownstairs",
+		"Type": "ClientOnly",
+		"DisplayValue": 1,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Послушайте разговор Гисиленсы и Керидры===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061109.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061110.json'-->)
+
+:{{Диалог|Разговор}} Слушать
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061107.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"MuteTriggerWhenInvisible": true
+}</pre>
+
+;(По прибытии на место)
+:'''Голос Ликурга:''' Правительница и её клинок.
+:'''Голос Ликурга:''' Во вселенной существует бесчисленное множество подобных миров. Большинство их историй заканчиваются... трагедией.
+{{Диалог Конец}}
+
+===Верните в прошлое разбитый сосуд времени===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040611\Act\Act104061108.json'-->)
+{{Диалог Конец}}
+
+===Измените время и пространство, найдите вход в водоворот===
+{{Диалог Начало}}
+
+;(Unused &mdash; FinishInvestigation_G73)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"MuteTriggerWhenInvisible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	},
+	"MuteTriggerWhenInvisible": true
+}</pre>
+{{Диалог Конец}}
+
+===Пройдите через ряску===
+{{Диалог Начало}}
+;(If {{F|undefined}} is undefined 0)
+:'''(Первопроходец):''' (Дорога уходит под воду? Мне понадобится сфера Оронис, чтобы вернуть сосуд времени из прошлого...)
+;(If {{F|undefined}} is undefined 1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckTimelineEntityState","Target":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":40}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300001}}},"MultiPropID":[]},"StateName":{"Value":"L1_Broken"},"Inverse":true}-->}})
+::'''Голос Ликурга:''' Разбейте сосуд времени, и пусть застоявшиеся воды вновь обернутся потоками...
+::'''Голос Ликурга:''' Подобно расколотой судьбе Амфореуса.
+;(If {{F|undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.WaitFloorSavedValueChangeV2",
+	"Name": {
+		"Value": "FSV_DownSpot"
+	},
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareFloorSavedValue",
+		"DynamicName": {
+			"Value": "FSV_DownSpot"
+		},
+		"CompareValue": 1
+	},
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCheckTimelineEntityState",
+				"Target": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 40
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300001
+							}
+						}
+					},
+					"MultiPropID": []
+				},
+				"StateName": {
+					"Value": "L1_Broken"
+				},
+				"Inverse": true
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 146111714,
+							"ProtectTime": 2
+						},
+						{
+							"TalkSentenceID": 146111715,
+							"ProtectTime": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104061130
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Идите дальше, к тёмным глубинам===
+{{Диалог Начало}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_SunWaterAnimState"},"CompareType":"Greater","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061119.json'-->)
+
+;(Unused &mdash; EnterDistrict_G89)
+;(If {{F|Loc_MissionTalk}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_MissionTalk",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::'''Керидра:''' Ты так долго молчишь, дукс Знамя Клинков... Начинаешь жалеть о своём выборе?
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+::'''Гисиленса:''' ...
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+::'''Гисиленса:''' Ни к чему разговоры. Вихрь сотворения Фагусы прямо перед нами.
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_MissionTalk",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G90)
+;(If {{F|Loc_MissionTalk}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_MissionTalk",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::'''Гисиленса:''' После испытания... наши пути разойдутся.
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+::'''Керидра:''' Значит, ты не поплывёшь к звёздам, дукс Знамя Клинков?
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+::'''Гисиленса:''' Я всегда была созданием моря. Звёзды в небе... не для меня.
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_MissionTalk",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(Unused &mdash; EnterDistrict_G92)
+:'''Голос Ликурга:''' Это жестокое путешествие...
+::'''Голос Ликурга:''' Наконец-то подойдёт к концу.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Голос Ликурга:''' Взгляните, надгробье...
+:'''Голос Ликурга:''' Но чьё же на нём высечено имя?
+{{Диалог Конец}}
+
+===Идите дальше, к безмолвной могиле===
+{{Описание миссии|тип=Миссия Освоения|локация=Поющий берег Стиксия|Подобно тому, как кто-то несёт светоч надежды, ступая сквозь сумерки своей судьбы, пока не попадает в могилу...<br />Ваша надежда подводит вас к концу времени.<br />Идите же, прощайте. Рядом с храмом находится уготованная самой природой обитель.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061113.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Mission\1040611\Story104061114.json'-->)
+{{Диалог Конец}}
+
+===Отпразднуйте медовым нектаром первое путешествие Преследующих пламя===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Сделать подношение героям
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061115.json'-->)
+{{Диалог Конец}}
+
+===Отпразднуйте медовым нектаром второе путешествие Преследующих пламя===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Сделать подношение полубогам
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061116.json'-->)
+;(If {{cx}}<!--SubMission Finish: 104061120-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Visible": true,
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+:;(По прибытии на место)
+:;(По прибытии на место)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_BGM_Amphoreus_Hysilens_Humming"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 260,
+	"ID": 300001,
+	"IsPropLodLoop": true,
+	"IsEnableGetPlayingPosition": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SynchronouslyTriggerSound",
+	"SynchronizedSoundName": {
+		"Value": "Ev_BGM_Amphoreus_Hysilens_Humming"
+	},
+	"SoundName": {
+		"Value": "Ev_BGM_Amphoreus_Hysilens_Lyrics"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 260,
+	"ID": 300002,
+	"IsPropLodLoop": true,
+	"IsEnableGetPlayingPosition": true
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 104061120-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitFloorCustomValueChangeV2",
+	"Name": {
+		"Value": "FCV_Hysilens_Humming"
+	},
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.SetEntityVisible",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300001
+				]
+			},
+			"Visible": true,
+			"MuteTriggerWhenInvisible": true,
+			"SetAudio": true
+		},
+		{
+			"$type": "RPG.GameCore.AdvSetupCustomTaskTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300004
+				]
+			},
+			"TriggerName": "MissionTrigger",
+			"OnEnter": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "DisableSound_G260"
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.AdvSetupCustomTaskTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300003
+				]
+			},
+			"TriggerName": "MissionTrigger",
+			"OnEnter": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "EnableSound_G260"
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.TriggerSound",
+			"SoundName": {
+				"Value": "Ev_BGM_Amphoreus_Hysilens_Humming"
+			},
+			"EmitterType": "Prop",
+			"GroupID": 260,
+			"ID": 300001,
+			"IsPropLodLoop": true,
+			"IsEnableGetPlayingPosition": true
+		},
+		{
+			"$type": "RPG.GameCore.SynchronouslyTriggerSound",
+			"SynchronizedSoundName": {
+				"Value": "Ev_BGM_Amphoreus_Hysilens_Humming"
+			},
+			"SoundName": {
+				"Value": "Ev_BGM_Amphoreus_Hysilens_Lyrics"
+			},
+			"EmitterType": "Prop",
+			"GroupID": 260,
+			"ID": 300002,
+			"IsPropLodLoop": true,
+			"IsEnableGetPlayingPosition": true
+		}
+	],
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareFloorCustomFloatV2",
+		"Name": {
+			"Value": "FCV_Hysilens_Humming"
+		},
+		"CompareValue": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+{{Диалог Конец}}
+
+===Вернитесь в прошлое, восстановите надгробный камень===
+{{Диалог Начало}}
+
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Sequence",
+	"VoiceIDs": [
+		146111724,
+		146111725
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G95_2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G95_1)
+:'''Гисиленса:''' Мир и я остановимся здесь... до нашей следующей встречи.
+
+;(Unused &mdash; EnterDistrict_G96)
+:'''Керидра:''' Вперёд...
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G142)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G143)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G144)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G145)
+:'''Лабинус Сломанный Клинок:''' Вперёд. Ради славы золотой крови!
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G146)
+:'''Сенека Зимний Ливень:''' Вперёд. Ради веры в Преследующих пламя!
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G147)
+:'''Аполлоний Камненосец:''' Вперёд. Ради спасения мира!
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G148)
+:'''Виргиния Поющий Ветер:''' Вперёд. Ради надежд человечества!
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerFadeOut"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Идите дальше, к вечной песне===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040611\DS104061120.json'-->)
+:'''(Первопроходец):''' Последний полубог... Я здесь.
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"LookAtTarget": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(Unused &mdash; EnterDistrict_G80)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040611\Act\Act104061118.json'-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Диалог Конец}}
+
+===Идите дальше, к той, что ждёт вас===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Sea, Bury the Wine-Dark Dreams
+|zhs  = 大海啊，埋葬暗酒色的梦
+|zht  = 大海啊，埋葬暗酒色的夢
+|ja   = 大海よ、暗酒の色を湛えた夢を葬れ
+|ko   = 바다여, 어두운 술빛 꿈을 묻어다오
+|es   = Mar, entierra los sueños del color del vino oscuro
+|fr   = Mer, engloutis les rêves avinés
+|ru   = О океан, похорони тёмный винный сон
+|th   = มหาสมุทรเอ๋ย จงกลบฝังความฝันสีชาด
+|vi   = Hỡi Biển Lớn, Hãy Chôn Vùi Giấc Mơ Màu Rượu
+|de   = Meer, begrabe weinrote Träume
+|id   = Lautan, Kuburkanlah Mimpi Berwarna Anggur Kelabu
+|pt   = Ó Mar, Enterre os Sonhos Cor de Vinho
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

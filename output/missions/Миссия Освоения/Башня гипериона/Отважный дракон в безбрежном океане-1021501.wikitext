@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=#Отважный дракон в безбрежном океане#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 1021501
 |Название        = 
-|Изображение     = Миссия Освоения Отважный дракон в безбрежном океане.png
+|Изображение     = Миссия Отважный дракон в безбрежном океане.png
 |Тип             = Миссия Освоения
-|События         = 
+|Событие         = 
 |Глава           = Башня гипериона
-|Условия         = Завершена [[Миссия Освоения]] ''[[Горнил обречение и Древа свирепость]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[Горнил обречение и Древа свирепость]]»
 |Персонажи       = Вельт; Голос Верховного старейшины; Дань Хэн; Март 7; Первопроходец; Старческий голос; Цзин Юань
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Чешуйчатое ущелье]]
-|Локации         = Чешуйчатое ущелье
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = Горнил обречение и Древа свирепость
 |Следующая       = Конец погребения, начало пути
-|Награды         = Опыт Освоения*600; Звёздный нефрит*60; Shadow of Preservation*1; Путеводитель путешественника*14; "Pedujara: Even Immortality Ends"*1 { text = Pedujara: Even Immortality Ends }; "Pedujara: Demiseless Existence"*1 { text = Pedujara: Demiseless Existence }; Кредиты*150 000
+|Награды         = Опыт Освоения*600; Звёздный нефрит*60; Тень Сохранения*1; Путеводитель путешественника*14; Pedujara: Even Immortality Ends*1 { text = Pedujara: Even Immortality Ends }; Pedujara: Demiseless Existence*1 { text = Pedujara: Demiseless Existence }; Кредиты*150 000
 }}
 '''Отважный дракон в безбрежном океане''' — [[Миссия Освоения]] в главе [[Башня гипериона]].
 
@@ -30,25 +33,26 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 :{{tx}}
 
 ;(Поговорите с Фу Сюань)
-<!--Unknown TalkSentence: 102142302-->
+:Фу Сюань разрабатывает стратегию боя вместе с Облачными Рыцарями - не время тревожить её.
 
 :{{Диалог|undefined}} Эхомираж видьядхара
-<!--Unknown TalkSentence: 102150301-->
-<!--Unknown TalkSentence: 102150302-->
-<!--Unknown TalkSentence: 102150303-->
-<!--Unknown TalkSentence: 102150304-->
+:'''Старческий голос:''' Запечатать Древо с помощью Чешуйчатого ущелья? Измена! Кощунство!
+:'''Старческий голос:''' Да вы в своём уме?! Думаете, сяньчжоуцы этому обрадуются? Тем, кто не принадлежит к нашему роду, никогда нас не понять!
+:'''Голос Верховного старейшины:''' Я понимаю ваши опасения, но решение уже принято. Это действия, которые нам необходимо предпринять.
+:'''Старческий голос:''' Я... хорошо. В таком случае я доложу об этом мудрейшим - вас лишат имени и власти Верховного старейшины.
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 20
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300004
 		}
@@ -58,11 +62,13 @@
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 20
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300005
 		}
@@ -72,29 +78,30 @@
 ;(По прибытии на место)
 
 :{{Диалог|undefined}} Осмотреть
-<!--Unknown TalkSentence: 102151501-->
-<!--Unknown TalkSentence: 102151502-->
-<!--Unknown TalkSentence: 102151503-->
-<!--Unknown TalkSentence: 102151504-->
-<!--Unknown TalkSentence: 102151505-->
+:'''Март 7:''' Что это?
+:'''Цзин Юань:''' Госпожа Март, я бы посоветовал вам воздержаться от вмешательства в дела видьядхара.
+:'''Март 7:''' Кого? Видьядхара? Хотите сказать, эти жемчужины превратятся в людей?
+:'''Цзин Юань:''' Когда жизнь видьядхара прерывается, они возвращаются в древнее море под защиту скорлупы, после чего снова выходят на поверхность. Это и есть цикл великого перерождения.
+:'''Март 7:''' Ого-о-о...
 
 :{{Диалог|Изучение}} Осмотреть
-;(If {{F|MissionCV-1021501-2}} is equal to 0)
+;(If {{F|MissionCV-1021501-2}} is undefined 0)
 ::----
 ::----
-:<!--Unknown TalkSentence: 102152218-->
-:<!--Unknown TalkSentence: 102152219-->
-:<!--Unknown TalkSentence: 102152213-->
-:<!--Unknown TalkSentence: 102152214-->
-:<!--Unknown TalkSentence: 102152215-->
-:<!--Unknown TalkSentence: 102152216-->
-:<!--Unknown TalkSentence: 102152217-->
+::'''Дань Хэн:''' «Яйцо видьядхара хранится под белым сияньем луны. И в водах древнейшего моря они будут вновь рождены»...
+::'''Дань Хэн:''' Фреска описывает сбрасывание скорлупы видьядхара в Лунных глубинах - начало нового перерождения.
+::'''Март 7:''' Любопытная фреска... Похоже, время никак не отразилось на ней.
+::'''Дань Хэн:''' Эта фреска должна быть связана с остальными. Она повествует о процессе перерождения видьядхара: от вылупления в древнем море до возврата яйца в это самое море для повторения цикла.
+::'''Март 7:''' Думаешь, она связана с печатями?
+::'''Дань Хэн:''' Может быть.
+::'''Март 7:''' «Может быть»? Эм, с тобой всегда приходится голову ломать - не могу уследить за ходом твоей мысли...
 ::----
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150161,
 	"TargetMissionCustomValue": {
 		"Index": 2,
+		"Name": "OldValue_2",
 		"ValidValueParamList": [
 			0,
 			1
@@ -105,6 +112,7 @@
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
 			"Index": 2,
+			"Name": "OldValue_2",
 			"ValidValueParamList": [
 				0,
 				1
@@ -115,33 +123,35 @@
 		"DirectValue": 1
 	}
 }</pre>
-;(If {{F|MissionCV-1021501-2}} is not equal to 0)
+;(If {{F|MissionCV-1021501-2}} is not undefined 0)
 ::----
-:<!--Unknown TalkSentence: 102152218-->
-:<!--Unknown TalkSentence: 102152219-->
+::'''Дань Хэн:''' «Яйцо видьядхара хранится под белым сияньем луны. И в водах древнейшего моря они будут вновь рождены»...
+::'''Дань Хэн:''' Фреска описывает сбрасывание скорлупы видьядхара в Лунных глубинах - начало нового перерождения.
 ::----
 {{Диалог Конец}}
 
 ===Войдите в древние руины видьядхара===
-{{Описание миссии|локация=Чешуйчатое ущелье|На глазах у всех Дань Хэн продемонстрировал облик, который не желал показывать другим, - облик Верховного старейшины видьядхара. Используя эту силу, чтобы раздвинуть воды древнего моря, он открыл путь, ведущий к корням Древа.<br />Пока вы шли, Лорд Опустошитель Фантилия ушла далеко вглубь корней, замышляя заговор против долгоживущих видов Лофу.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Чешуйчатое ущелье|На глазах у всех Дань Хэн продемонстрировал облик, который не желал показывать другим, - облик Верховного старейшины видьядхара. Используя эту силу, чтобы раздвинуть воды древнего моря, он открыл путь, ведущий к корням Древа.<br />Пока вы шли, Лорд Опустошитель Фантилия ушла далеко вглубь корней, замышляя заговор против долгоживущих видов Лофу.}}
 {{Диалог Начало}}
 ;(По прибытии на место)
 
 ;(По прибытии на место)
 :{{tx}}
-<!--Unknown TalkSentence: 102150119-->
-<!--Unknown TalkSentence: 102150120-->
+:'''Март 7:''' Какой громадный дворец и совсем заброшенный... Наверное, это тяжело им далось - представьте, как бы вы расстроились, если бы вам пришлось так же меня бросить!
+:'''Дань Хэн:''' Это была неизбежная жертва для видьядхара.
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 102150118-->
+:'''Март 7:''' Фух, какое огромное расстояние между ступеньками. Нужно найти способ спуститься.
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 31
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300001
 		}
@@ -153,27 +163,31 @@
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
-:<!--Unknown TalkSentence: 102151202-->
-:<!--Unknown TalkSentence: 102152204-->
-:<!--Unknown TalkSentence: 102152205-->
-:<!--Unknown TalkSentence: 102152206-->
-:<!--Unknown TalkSentence: 102152207-->
+::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
+::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
+::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
+::'''Цзин Юань:''' Справишься?
+::'''Дань Хэн:''' Постараюсь...
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150104,
 	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": []
 	},
 	"ValueA": {
 		"Type": "CustomValue",
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
+			"Name": "OldValue_0",
 			"ValidValueParamList": []
 		}
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
@@ -181,11 +195,13 @@
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 32
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300001
 		}
@@ -197,26 +213,30 @@
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
-:<!--Unknown TalkSentence: 102151202-->
-:<!--Unknown TalkSentence: 102152204-->
-:<!--Unknown TalkSentence: 102152205-->
-:<!--Unknown TalkSentence: 102152211-->
+::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
+::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
+::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
+::'''Цзин Юань:''' Дальше орудуют Мерзости - будьте осторожны.
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150105,
 	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": []
 	},
 	"ValueA": {
 		"Type": "CustomValue",
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
+			"Name": "OldValue_0",
 			"ValidValueParamList": []
 		}
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
@@ -224,11 +244,13 @@
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 33
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300001
 		}
@@ -240,27 +262,31 @@
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
-:<!--Unknown TalkSentence: 102151202-->
-:<!--Unknown TalkSentence: 102152204-->
-:<!--Unknown TalkSentence: 102152205-->
-:<!--Unknown TalkSentence: 102152206-->
-:<!--Unknown TalkSentence: 102152207-->
+::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
+::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
+::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
+::'''Цзин Юань:''' Справишься?
+::'''Дань Хэн:''' Постараюсь...
 :<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150106,
 	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
 		"ValidValueParamList": []
 	},
 	"ValueA": {
 		"Type": "CustomValue",
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
+			"Name": "OldValue_0",
 			"ValidValueParamList": []
 		}
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
@@ -289,11 +315,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 34
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -315,11 +343,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 34
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
@@ -334,15 +364,16 @@
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
-::<!--Unknown TalkSentence: 102151201-->
-::<!--Unknown TalkSentence: 102152201-->
-::<!--Unknown TalkSentence: 102152202-->
-::<!--Unknown TalkSentence: 102152203-->
+:::'''Дань Хэн:''' Получилось.
+:::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
+:::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
+:::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
 ::<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150112,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"ValidValueParamList": [
 			0,
 			1,
@@ -355,6 +386,7 @@
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"ValidValueParamList": [
 				0,
 				1,
@@ -365,12 +397,14 @@
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
 ;(Unused &mdash; SequencePillar01_Failed)
-<!--Unknown TalkSentence: 102152210-->
+:'''Март 7:''' Посмотрите сюда. Кажется, основания этих фонариков отличаются друг от друга...
 
 ;(Unused &mdash; 215_Puzzle02Finished)
 :----
@@ -386,11 +420,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 35
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -411,11 +447,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 35
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
@@ -430,15 +468,16 @@
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
-::<!--Unknown TalkSentence: 102151201-->
-::<!--Unknown TalkSentence: 102152201-->
-::<!--Unknown TalkSentence: 102152202-->
-::<!--Unknown TalkSentence: 102152203-->
+:::'''Дань Хэн:''' Получилось.
+:::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
+:::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
+:::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
 ::<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150113,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"ValidValueParamList": [
 			0,
 			1,
@@ -451,6 +490,7 @@
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"ValidValueParamList": [
 				0,
 				1,
@@ -461,12 +501,14 @@
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
 ;(Unused &mdash; SequencePillar02_Failed)
-<!--Unknown TalkSentence: 102152212-->
+:'''Вельт:''' Вы заметили каменную плитку, на которую наступил монстр? Интересно, имеет ли она отношение к печати...
 
 ;(Unused &mdash; 215_Puzzle03Finished)
 :----
@@ -482,11 +524,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 36
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -507,11 +551,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 36
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
@@ -526,15 +572,16 @@
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
-::<!--Unknown TalkSentence: 102151201-->
-::<!--Unknown TalkSentence: 102152201-->
-::<!--Unknown TalkSentence: 102152202-->
-::<!--Unknown TalkSentence: 102152203-->
+:::'''Дань Хэн:''' Получилось.
+:::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
+:::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
+:::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
 ::<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150114,
 	"TargetMissionCustomValue": {
 		"Index": 1,
+		"Name": "OldValue_1",
 		"ValidValueParamList": [
 			0,
 			1,
@@ -547,6 +594,7 @@
 		"MainMissionID": 1021501,
 		"MissionCustomValue": {
 			"Index": 1,
+			"Name": "OldValue_1",
 			"ValidValueParamList": [
 				0,
 				1,
@@ -557,19 +605,21 @@
 	},
 	"ValueB": {
 		"DirectValue": 1,
-		"MissionCustomValue": {}
+		"MissionCustomValue": {
+			"Name": "OldValue_0"
+		}
 	}
 }</pre>
 
 ;(Unused &mdash; SequencePillar03_Failed)
-<!--Unknown TalkSentence: 102152208-->
-:<!--Unknown TalkSentence: 102152209-->
+:'''Цзин Юань:''' А в чём сложность, мой друг? Ты, похоже, не имеешь ни малейшего о них представления...
+::'''Цзин Юань:''' Могут ли окружающие нас фрески быть как-то связаны с печатями?
 {{Диалог Конец}}
 
 ===Одолейте Мерзостей, захвативших это место===
 {{Диалог Начало}}
-<!--Unknown TalkSentence: 102152212-->
-;(Получено {{Item|Плитка откровения|20|x=1|text=Плитка откровения}})
+:'''Вельт:''' Вы заметили каменную плитку, на которую наступил монстр? Интересно, имеет ли она отношение к печати...
+;(Получено {{Предмет|Плитка откровения|20|x=1}})
 {{Диалог Конец}}
 
 ===Осмотрите плитку откровения под ногой Мерзости===
@@ -581,11 +631,13 @@
 <pre>{
 	"$type": "RPG.GameCore.CreateProp",
 	"GroupID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 30
 		}
 	},
 	"GroupPropID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 300027
 		}
@@ -621,11 +673,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 34
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -647,11 +701,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 34
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
@@ -677,11 +733,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 35
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -702,11 +760,13 @@
 		},
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 35
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
@@ -739,4 +799,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

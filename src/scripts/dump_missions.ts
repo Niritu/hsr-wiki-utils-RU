@@ -47,7 +47,7 @@ PageTitle=#<<TITLE>>#
 {{История изменений|<<VERSION>>}}
 
 ==Навигация==
-{{Миссия Освоения Навбокс|Глава 3}}
+{{<<TYPE>> Навбокс|Глава }}
 
 [[en:]]
 `
@@ -74,7 +74,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 	let missionStartTime = Date.now()
 	
 	const mission = new Mission(missionData)
-	const title = wikiTitle(mission.name, 'Миссия', mission.id)
+	const title = wikiTitle(mission.name, 'mission', mission.id)
 	
 	let output = PAGE_FORMAT
 		.replaceAll('<<TITLE>>', title)
@@ -124,18 +124,18 @@ for (const [i, missionData] of allMissionData.entries()) {
 	const addedMapDialogue = new Set<string | number>()
 	
 	for (const [i, step] of steps.entries()) {
-		if (step.name && step.name != lastName) stepList.push(`# ${step.name}` + (process.argv.includes('--add-triggers') ? `{{subst:void|<!--${step.id} / ${step.order_reason}-->}}` : ''))
+		if (step.name && step.name != lastName) stepList.push(`# ${step.name}` + (process.argv.includes('--add-triggers') ? `` : ''))
 		const stepDialogue = await step.loadDialogue()
 	
 		const dialogueEntry: (string | undefined)[] = []
 		
 		if (step.name && step.name != lastName) {
 			dialogueEntry.push(
-				i > 0 ? `{{Диалог Конец|${step.name}}}\n` : undefined,
+				i > 0 ? '{{Диалог Конец}}\n' : undefined,
 				`===${step.name}===`
 			)
 		} else if (process.argv.includes('--add-triggers')) {
-			dialogueEntry.push(``)
+			dialogueEntry.push(`{{subst:void|<!--${step.id} / ${step.order_reason}-->}}`)
 		}
 		
 		if (step.description && step.description != lastDesc) {
@@ -143,7 +143,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		}
 		
 		if (step.name && step.name != lastName) {
-			dialogueEntry.push(`{{Диалог Начало|${step.name}}}`)
+			dialogueEntry.push('{{Диалог Начало}}')
 			if (process.argv.includes('--no-dialogue')) {
 				dialogueEntry.push(':{{tx}}')
 			}
@@ -211,7 +211,7 @@ for (const [i, missionData] of allMissionData.entries()) {
 		const area = await step.getFloor() || await step.getArea()
 		if (area && area.name) {
 			firstLocation = area.name
-			firstWorld = textMap.getText(area instanceof Area ? area.world.WorldName : (await area.getArea()).world.WorldName)
+			firstWorld = textMap.getText(area instanceof Area ? area.world.WorldName : (await area.getArea())?.world.WorldName)
 			break
 		}
 	}

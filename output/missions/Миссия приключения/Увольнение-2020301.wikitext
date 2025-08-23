@@ -1,15 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=#Увольнение#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 2020301
 |Название        = 
-|Изображение     = Миссия Освоения Увольнение.png
+|Изображение     = Миссия Увольнение.png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = 
-|Условия         = Завершена [[Миссия Освоения]] ''[[Ветвистые рога и спутанные корни]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[Ветвистые рога и спутанные корни]]»
 |Персонажи       = Первопроходец; Таньтань
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Центральная гавань Приюта звёздных яликов]]
-|Локации         = Центральная гавань Приюта звёздных яликов
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = 
 |Следующая       = ???
 |Награды         = Кредиты*10 000
@@ -24,83 +27,343 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 {{Диалог Конец}}
 
 ===Отправляйтесь на улицы Приюта звёздных яликов и поговорите с Таньтанем===
-{{Описание миссии|локация=Центральная гавань Приюта звёздных яликов|Секретарь Сикуй оставила вам сообщение в Звёздном дворце. Она слышала, что инспектор скорости Таньтань хочет сделать пробную программу «Замеры скорости на Сяньчжоу».<br />Считать транспортные средства должно быть несложно. Если у вас есть время, поговорите с Таньтанем.}}
+{{Описание миссии|тип=Миссия приключения|локация=Центральная гавань Приюта звёздных яликов|Секретарь Сикуй оставила вам сообщение в Звёздном дворце. Она слышала, что инспектор скорости Таньтань хочет сделать пробную программу «Замеры скорости на Сяньчжоу».<br />Считать транспортные средства должно быть несложно. Если у вас есть время, поговорите с Таньтанем.}}
 {{Диалог Начало}}
 
 ;(Поговорите с Таньтань)
-<!--Unknown TalkSentence: 202010101-->
-<!--Unknown TalkSentence: 202010102-->
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 202010104-->
-;(Return to previous option selection)
-;(Return to previous option selection)
-;(Return to previous option selection)
-:<!--0.5-second delay-->
-----
-<pre>{
+:'''Таньтань:''' Это тебя Звёздный дворец отправил проверять скорость звёздных яликов?
+:'''Таньтань:''' Держи, мы скоро начинаем.
+:{{Диалог|Стрелка}} Обучения не будет?
+:'''Таньтань:''' Встань на мосту со счётчиком в руке и посмотри вниз. Подсчитай количество звёздных яликов, прошедших через мост за указанный промежуток времени. После того, как закончишь считать, назови мне число.
+:{{Диалог|Стрелка}} Легкотня!
+::'''Таньтань:''' ...Хочешь сказать, что считать звёздные ялики слишком просто?
+::'''Таньтань:''' Видишь, какой работой я занимаюсь?
+:{{Диалог|Стрелка}} Работа проще некуда...
+::'''Таньтань:''' «Твоя работа и правда такая скучная?» «Это и есть легендарная кража зарплаты?»
+::'''Таньтань:''' Ты, конечно, этого не {{MC|ж=говорила|м=говорил}}, но я знаю, о чём ты думаешь...
+:{{Диалог|Стрелка}} Это слишком сложно!
+::'''Таньтань:''' ...
+::'''Таньтань:''' От твоих слов мне становится немного легче. Ты же не пытаешься меня утешить, да?
+::'''Таньтань:''' Конечно, это может быть и сарказм.
+:'''Таньтань:''' Кхм, должность инспектора скорости звёздных яликов считается худшей в Звёздном дворце. Все, кого посылают сюда, считают себя оскорблёнными.
+:'''Таньтань:''' Зачем нужен работник, если машина может сама измерить скорость и выписать штраф?
+:'''Таньтань:''' Большинство делает вывод о работе, основываясь на первом впечатлении. Да, машина может собрать статистику, но решение проблем зависит от людей.
+:'''Таньтань:''' Как насчёт небольшого теста? Я покажу, насколько сложна эта работа.
+:'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Звёздные ялики разных цветов и моделей наводняют Приют звёздных яликов}}.
+:'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Тебе необходимо запомнить все модели и цвета звёздных яликов, которые проходят мимо в течение указанного времени. После этого я задам несколько вопросов}}.
+:'''Таньтань:''' Например, я могу спросить: {{Цвет|Ключевой|nobold=1|«Сколько синих пассажирских звёздных яликов?»}} В общем, небольшое испытание, что скажешь?
+:'''Таньтань:''' Начнём, когда будешь {{MC|ж=готова|м=готов}}.
+:{{Диалог|Разговор}} Подожди, у меня есть вопрос.
+::{{Диалог|Разговор}} Напомни правила.
+:::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Звёздные ялики разных цветов и моделей наводняют Приют звёздных яликов}}.
+:::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Тебе необходимо запомнить все модели и цвета звёздных яликов, которые проходят мимо в течение указанного времени. После этого я задам несколько вопросов}}.
+:::'''Таньтань:''' Например, я могу спросить: {{Цвет|Ключевой|nobold=1|«Сколько синих пассажирских звёздных яликов?»}} Нужно ответить на мой вопрос, основываясь на своих наблюдениях.
+:::{{Диалог|Разговор}} Какие бывают модели?
+::::'''Таньтань:''' Сейчас в Приюте звёздных яликов разрешены только две модели: {{Цвет|Ключевой|nobold=1|пассажирские и грузовые}}.
+::::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Грузовые звёздные ялики}} различаются по количеству перевозимого груза, обычно бывают {{Цвет|Ключевой|nobold=1|красного или зелёного цвета}}.
+::::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Пассажирские звёздные ялики}} бывают очень разными, но только трёх цветов: {{Цвет|Ключевой|nobold=1|синего, зелёного и белого}}.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} У меня больше нет вопросов.
+:::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Начинаем!
+:::::<!--0.5-second delay-->
+:::::----
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_14.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_15.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.CreateAirline",
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
 }</pre>
-----
-<pre>{
+:::::----
+::::<pre>{
 	"$type": "RPG.GameCore.CreateAirline",
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
 }</pre>
-:<!--11-second delay-->
-----
-<pre>{
+:::::<!--11-second delay-->
+:::::----
+::::<pre>{
 	"$type": "RPG.GameCore.CreateAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.CreateAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.CreateAirline",
 	"GroupID": 10,
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
 }</pre>
-<pre>{
+::::<pre>{
 	"$type": "RPG.GameCore.RemoveAirline",
 	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
 }</pre>
-<!--Unknown TalkSentence: 202010301-->
+:::::'''Таньтань:''' Согласно твоим наблюдениям, сколько {{Цвет|Ключевой|nobold=1|белых пассажирских яликов}} полностью прошло под мостом?
+:::::{{Диалог|Стрелка}} Четыре.
+::::::'''Таньтань:''' Неправильно.
+:::::{{Диалог|Стрелка}} Три.
+::::::'''Таньтань:''' Правильно, их было три.
+:::::{{Диалог|Стрелка}} Два.
+::::::'''Таньтань:''' Неправильно.
+::::{{Диалог|Выход}} Подожди, я ещё не {{MC|ж=готова|м=готов}}.
+:::::'''Таньтань:''' Хорошо, начнём, когда скажешь.
+::{{Диалог|Разговор}} Какие бывают модели?
+:::'''Таньтань:''' Сейчас в Приюте звёздных яликов разрешены только две модели: {{Цвет|Ключевой|nobold=1|пассажирские и грузовые}}.
+:::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Грузовые звёздные ялики}} различаются по количеству перевозимого груза, обычно бывают {{Цвет|Ключевой|nobold=1|красного или зелёного цвета}}.
+:::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Пассажирские звёздные ялики}} бывают очень разными, но только трёх цветов: {{Цвет|Ключевой|nobold=1|синего, зелёного и белого}}.
+:::{{Диалог|Разговор}} Напомни правила.
+::::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Звёздные ялики разных цветов и моделей наводняют Приют звёздных яликов}}.
+::::'''Таньтань:''' {{Цвет|Ключевой|nobold=1|Тебе необходимо запомнить все модели и цвета звёздных яликов, которые проходят мимо в течение указанного времени. После этого я задам несколько вопросов}}.
+::::'''Таньтань:''' Например, я могу спросить: {{Цвет|Ключевой|nobold=1|«Сколько синих пассажирских звёздных яликов?»}} Нужно ответить на мой вопрос, основываясь на своих наблюдениях.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} У меня больше нет вопросов.
+:::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Начинаем!
+:::::<!--0.5-second delay-->
+:::::----
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_14.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_15.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+:::::----
+::::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+:::::<!--11-second delay-->
+:::::----
+::::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+:::::'''Таньтань:''' Согласно твоим наблюдениям, сколько {{Цвет|Ключевой|nobold=1|белых пассажирских яликов}} полностью прошло под мостом?
+:::::{{Диалог|Стрелка}} Четыре.
+::::::'''Таньтань:''' Неправильно.
+:::::{{Диалог|Стрелка}} Три.
+::::::'''Таньтань:''' Правильно, их было три.
+:::::{{Диалог|Стрелка}} Два.
+::::::'''Таньтань:''' Неправильно.
+::::{{Диалог|Выход}} Подожди, я ещё не {{MC|ж=готова|м=готов}}.
+:::::'''Таньтань:''' Хорошо, начнём, когда скажешь.
+::{{Диалог|Возврат}} У меня больше нет вопросов.
+:::{{Диалог|Стрелка}} Начинаем!
+::::<!--0.5-second delay-->
+::::----
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_14.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_15.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+::::----
+:::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+::::<!--11-second delay-->
+::::----
+:::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+::::'''Таньтань:''' Согласно твоим наблюдениям, сколько {{Цвет|Ключевой|nobold=1|белых пассажирских яликов}} полностью прошло под мостом?
+::::{{Диалог|Стрелка}} Четыре.
+:::::'''Таньтань:''' Неправильно.
+::::{{Диалог|Стрелка}} Три.
+:::::'''Таньтань:''' Правильно, их было три.
+::::{{Диалог|Стрелка}} Два.
+:::::'''Таньтань:''' Неправильно.
+:::{{Диалог|Выход}} Подожди, я ещё не {{MC|ж=готова|м=готов}}.
+::::'''Таньтань:''' Хорошо, начнём, когда скажешь.
+:{{Диалог|Стрелка}} Начинаем!
+::<!--0.5-second delay-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_14.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_15.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+::<!--11-second delay-->
+::----
+:<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_01.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_02.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CreateAirline",
+	"GroupID": 10,
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_03.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_02.prefab"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveAirline",
+	"PrefabPath": "Props/Outputs/Chap02/Chap02_Prop_StarSkiff/Level/Chap02_Prop_StarSkiff_Init_X100_Mission_03.prefab"
+}</pre>
+::'''Таньтань:''' Согласно твоим наблюдениям, сколько {{Цвет|Ключевой|nobold=1|белых пассажирских яликов}} полностью прошло под мостом?
+::{{Диалог|Стрелка}} Четыре.
+:::'''Таньтань:''' Неправильно.
+::{{Диалог|Стрелка}} Три.
+:::'''Таньтань:''' Правильно, их было три.
+::{{Диалог|Стрелка}} Два.
+:::'''Таньтань:''' Неправильно.
+:{{Диалог|Выход}} Подожди, я ещё не {{MC|ж=готова|м=готов}}.
+::'''Таньтань:''' Хорошо, начнём, когда скажешь.
 {{Диалог Конец}}
 
 ==На других языках==
@@ -121,4 +384,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

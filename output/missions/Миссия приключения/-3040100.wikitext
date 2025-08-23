@@ -1,0 +1,406 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3040100
+|Название        = 
+|Изображение     = Миссия .png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] «[[О серебряная колесница, мчись на тёмные земли]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Вихрь сотворения]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(Поговорите с Петрос)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400001
+		}
+	]
+}</pre>
+
+;(Поговорите с Магуса)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400002
+		}
+	]
+}</pre>
+
+;(Поговорите с Улисс)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400003
+		}
+	]
+}</pre>
+
+;(Поговорите с Нерея)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400004
+		}
+	]
+}</pre>
+
+;(Поговорите с Альбус)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400005
+		}
+	]
+}</pre>
+
+;(Поговорите с Боларис)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400006
+		}
+	]
+}</pre>
+
+;(Поговорите с Хигилос)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400007
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400007
+		}
+	]
+}</pre>
+
+;(Поговорите с Лукреция)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400008
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400008
+		}
+	]
+}</pre>
+
+;(Поговорите с Маркус)
+:Вы записываете это... Пусть западный ветер принесёт покой.
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 175
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400009
+				}
+			}
+		}
+	},
+	"Duration": 1
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400009
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [
+		400001
+	],
+	"AdvancedSpawnList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 216,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190875
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Mission_454050302)
+
+
+;(Unused &mdash; TalkSentence_504033124)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

@@ -1,0 +1,374 @@
+<%-- [PAGE_INFO]
+PageTitle=#О мать, с приходом весны наступает разлука#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040506
+|Название        = 
+|Изображение     = Миссия О мать, с приходом весны наступает разлука.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Ибо солнце погаснет
+|Условия         = 
+|Персонажи       = «Фу Сюань»; Дань Хэн; Март 7; Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Пространство Пути]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Путеводитель путешественника*2; Утраченный кристалл*2; Кредиты*30 000
+}}
+'''О мать, с приходом весны наступает разлука''' — [[Миссия Освоения]] в главе [[Ибо солнце погаснет]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Отправляйтесь в Пространство Пути
+# Пройдите через Врата памяти
+# Поговорите с Фу Сюань
+# Следуйте за Фу Сюань
+# Встретьтесь со своими друзьями
+# Следуйте за своими друзьями и пройдите через Врата памяти
+# Следуйте за Фу Сюань
+
+==Прохождение==
+{{Дополнить}}
+===Отправляйтесь в Пространство Пути===
+{{Описание миссии|тип=Миссия Освоения|локация=Пространство Пути|Новое волнующее приключение вот-вот должно было начаться, но меня сразила таинственная болезнь... Что, я даже впала в кому?!<br />Когда я очнулась, картина перед глазами поразила меня: причудливый мир разума, в котором раздаётся демонический шёпот. Неужели это...<br />...Нет, я ничего не понимаю! Да и очнулась ли я на самом деле?}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+{{Диалог Конец}}
+
+===Пройдите через Врата памяти===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G5-2)
+:<!--0.05-second delay-->
+::<!--0.1-second delay-->
+
+;(Unused &mdash; EnterDistrict_G5-3)
+:'''???:''' О нет. Не верь им...
+::'''???:''' Они тебя обманывают, иди обратно...
+::'''Март 7:''' Ещё один голос? А это кто?
+{{Диалог Конец}}
+
+===Поговорите с Фу Сюань===
+{{Диалог Начало}}
+:<!--1-second delay-->
+:'''Март 7:''' Это... Верховная провидица? С Лофу?
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41441_F41441001_G7"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Следуйте за Фу Сюань===
+{{Диалог Начало}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G6-2)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0.8,
+	"Duration": 0.2,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_filterAsset_EraFlipperFlash_Enhance_fadeIn"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G6,Anchor2"
+		}
+	},
+	"WaitFinish": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0.1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G6,Anchor1"
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G6-3)
+:'''???:''' Не позволяй этим злодеям одурачить тебя...
+{{Диалог Конец}}
+
+===Встретьтесь со своими друзьями===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 9,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"PathOffset": []
+}</pre>
+;(Unused &mdash; EnterDistrict_G9)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41441_F41441001_G10"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Следуйте за своими друзьями и пройдите через Врата памяти===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 10,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"PathOffset": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	],
+	"SkipCreated": true
+}</pre>
+;(Unused &mdash; EnterDistrict_G8-2)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0.8,
+	"Duration": 0.2,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_filterAsset_EraFlipperFlash_Enhance_fadeIn"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G8,Anchor2"
+		}
+	},
+	"WaitFinish": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0.1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G8,Anchor1"
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G8-3)
+:'''???:''' Подожди! Остановись...
+::'''???:''' Сладкие речи...
+::'''???:''' Но смотри в оба, не дай им обмануть тебя.
+:<!--2-second delay-->
+:'''Дань Хэн:''' Войди в прошлое, Март...
+:'''Дань Хэн:''' Отыщи истинную себя.
+:'''«Фу Сюань»:''' Сюда, Март. Пройди через Врата памяти - прошлое ждёт.
+:'''???:''' Остановись! Они просто притворяются людьми из твоих воспоминаний...
+:'''Март 7:''' Опять этот голос...
+{{Диалог Конец}}
+
+===Следуйте за Фу Сюань===
+{{Диалог Начало}}
+:<!--2-second delay-->
+:'''Март 7:''' Ворота... двигаются? Где Верховная провидица?
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+:'''Март 7:''' А это... Дань Хэн и (Первопроходец)?
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Mother, Parted by the Turning of Seasons
+|zhs  = 母亲啊，暌离于冬去春来
+|zht  = 母親啊，暌離於冬去春來
+|ja   = 母よ、季節の境に別れを告げよ
+|ko   = 어머니, 겨울이 가고 봄이 올 때 이별하니
+|es   = Madre, separada por el paso de las estaciones
+|fr   = Mère, séparée par le passage des saisons
+|ru   = О мать, с приходом весны наступает разлука
+|th   = มารดาเอ๋ย ลาจากเหมันต์สู่วสันต์
+|vi   = Mẹ ơi, xa cách từ khi đông qua xuân đến
+|de   = O Mutter, getrennt beim Wechsel der Jahreszeiten
+|id   = Oh Ibu, Terpisah oleh Pergantian Musim
+|pt   = Mãe, Separada pela Mudança das Estações
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

@@ -1,0 +1,737 @@
+<%-- [PAGE_INFO]
+PageTitle=#О вернувшийся ветер, вознеси пыль прошлого#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040609
+|Название        = 
+|Изображение     = Миссия О вернувшийся ветер, вознеси пыль прошлого.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Пока живы герои
+|Условия         = 
+|Персонажи       = Гиацина из воспоминаний; Кирена; Кирена из воспоминаний; Ликург из воспоминаний; Мидей из воспоминаний; Первопроходец; Цифер из воспоминаний
+|СтартЛокация    = [[Амфореус]] — [[Затерянный во времени священный город]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Очищенный эфир*6; Утраченный кристалл*6; Беспорядочная амброзия*240; Кредиты*80 000
+}}
+'''О вернувшийся ветер, вознеси пыль прошлого''' — [[Миссия Освоения]] в главе [[Пока живы герои]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Вернитесь на Амфореус
+# Исследуйте странное явление в чаше духов
+# Исследуйте фрагменты воспоминаний в этом месте (необязательно)
+# Идите дальше и откройте погребённое под пылью прошлое
+# Идите дальше и запомните кровавую историю
+# Идите дальше и найдите скрытые тени
+# Идите дальше и станьте свидетелем бесстрашного подвига
+# Идите дальше и закончите незавершённое дело
+# Идите дальше и продолжите долгое путешествие
+# Примите церемониальный меч, несущий время
+
+==Прохождение==
+{{Дополнить}}
+===Вернитесь на Амфореус===
+{{Описание миссии|тип=Миссия Освоения|локация=Затерянный во времени священный город|Последний полис Охема окутан множеством мифов.<br />Когда-то она была подобна невинной нимфе, охраняемой правосудием, носящей роскошные одежды романтики, купавшейся в рассвете неба. Она танцевала на земле, слушала песни океана, следовала наставлениям разума, избегала уловок коварства, держалась вдали от раздора и смерти. Шла она через множество врат, и люди видели в ней опору мира...<br />Но время отняло у неё счастье, красоту, жизнь и многое другое. Скелет тихо лежит в саркофаге. Но под рёбрами из резного белого нефрита лежит нетронутое сердце.<br />Смахните пыль с прекрасного сердца и прислушайтесь. Прислушайтесь к его биению, что сохранилось для вас.}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040608\DS104060801.json'-->)
+{{Диалог Конец}}
+
+===Исследуйте странное явление в чаше духов===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040608\DS104060802.json'-->)
+{{Диалог Конец}}
+
+===Исследуйте фрагменты воспоминаний в этом месте (необязательно)===
+{{Диалог Начало}}
+
+:{{Диалог|Разговор}} Слушать
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040608\Act\Act104060810.json'-->)
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		},
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+:{{Диалог|Разговор}} Слушать
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040608\Act\Act104060810.json'-->)
+
+;(Unused &mdash; EnterDistrict_G87)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 87,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"AlignRotation": true,
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G88)
+:'''Кирена:''' Смотри... Это же картины прошлого.
+{{Диалог Конец}}
+
+===Идите дальше и откройте погребённое под пылью прошлое===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G89)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 89,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G90)
+:'''Ликург из воспоминаний:''' Вечный священный город... Как эта вечность может сравниться с тем, что описано в стихах?
+{{Диалог Конец}}
+
+===Идите дальше и запомните кровавую историю===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G91)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 91,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G92)
+:'''Цифер из воспоминаний:''' То есть... Принцесса-домоседка... не вернётся?
+{{Диалог Конец}}
+
+===Идите дальше и найдите скрытые тени===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.5-second delay-->
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G93)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 93,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G94)
+:'''Мидей из воспоминаний:''' Если расколов меня на части, этот мир сможет прожить хотя бы на секунду больше... пусть будет так.
+{{Диалог Конец}}
+
+===Идите дальше и станьте свидетелем бесстрашного подвига===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G95)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 95,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G96)
+:'''Цифер из воспоминаний:''' Права была портниха: чтобы сохранить одну ложь, понадобится ещё больше лжи...
+{{Диалог Конец}}
+
+===Идите дальше и закончите незавершённое дело===
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.5-second delay-->
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G97)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 97,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G98)
+:'''Гиацина из воспоминаний:''' Киренушка... как же здесь тихо...
+{{Диалог Конец}}
+
+===Идите дальше и продолжите долгое путешествие===
+{{Диалог Начало}}
+;(По прибытии на место)
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Mission\1040608\Story104060809.json'-->)
+{{Диалог Конец}}
+
+===Примите церемониальный меч, несущий время===
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G86)
+:'''Гиацина из воспоминаний:''' Последняя эстафетная палочка... Интересно, как долго придётся тебе ждать, чтобы (Первопроходец) её {{MC|ж=схватила|м=схватил}}?
+::'''Кирена из воспоминаний:''' Это не имеет значения. Ждать я умею лучше всего.
+::'''Кирена из воспоминаний:''' В конце концов, потребовалось тридцать три миллиона циклов, чтобы (Первопроходец) {{MC|ж=появилась|м=появился}} в нашем мире... Что значит ещё несколько мгновений?
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Zephyr, Uplift Bygone Dust Cloudsward
+|zhs  = 归风啊，席卷旧尘登云天
+|zht  = 歸風啊，席捲舊塵登雲天
+|ja   = 帰る風よ、旧き塵と共に空へ舞え
+|ko   = 돌아오는 바람이여, 옛 먼지 쓸어 구름 위로 올라가다오
+|es   = Céfiro, barre el polvo y asciende a los cielos
+|fr   = Zéphyr, balaie la poussière vers les cieux
+|ru   = О вернувшийся ветер, вознеси пыль прошлого
+|th   = ลมหวนเอ๋ย โปรดพัดธุลีในวันวานสู่หมู่เมฆ
+|vi   = Hỡi Ngọn Gió Trở Về, Hãy Cuốn Bụi Xưa Lên Trời Mây
+|de   = Zephir, heb vergangenen Staub gen Himmel
+|id   = Angin yang Kembali, Hembuskan Debu Lama Menuju Awan
+|pt   = Ó Zéfiro, Eleva o Pó do Passado Rumo às Nuvens
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

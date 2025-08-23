@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=#Прогулка по саду и прерванный сон#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 2021702
 |Название        = 
-|Изображение     = Миссия Освоения Прогулка по саду и прерванный сон.png
+|Изображение     = Миссия Прогулка по саду и прерванный сон.png
 |Тип             = Продолжение Освоения
-|События         = 
+|Событие         = 
 |Глава           = Лисья история о привидениях
 |Условия         = 
 |Персонажи       = Голос за дверью; Голос из зеркала; Голос издалека; Неизвестная хелиоби; Первопроходец; Сюэи; Таинственный голос; Хвост; Хохо; Циррус
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Иллюзорный лабиринт: Пожар]]
-|Локации         = Иллюзорный лабиринт: Пожар
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Опыт Освоения*1 500; Звёздный нефрит*150; Путеводитель путешественника*15; Очищенный эфир*12; Утраченный кристалл*12; "Dancing Fantasms"*1 { text = Dancing Fantasms }; Кредиты*150 000
+|Награды         = Опыт Освоения*1 500; Звёздный нефрит*150; Путеводитель путешественника*15; Очищенный эфир*12; Утраченный кристалл*12; Dancing Fantasms*1 { text = Dancing Fantasms }; Кредиты*150 000
 }}
 '''Прогулка по саду и прерванный сон''' — [[Продолжение Освоения]] в главе [[Лисья история о привидениях]].
 
@@ -35,17 +38,17 @@
 ==Прохождение==
 {{Дополнить}}
 
-
 ===Найдите выход из иллюзорного лабиринта===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Вы часто видите в новостях, как в поисках пропавшего теряются и те, кто пустился на поиски. К сожалению, сегодня вам предстоит сыграть главную роль в такой истории. Вы постепенно теряете из виду даже Хохо, а когда замечаете странное бронзовое зеркало, вас утягивает в иллюзию. Там полно дверей и стен, и вы только ходите кругами, окончательно потеряв ориентиры.<br />Если верить народным сказкам с Сяньчжоу, которые вам рассказывали, к тому моменту, как вы выберетесь, снаружи могут пройти сотни лет. Вам совсем не хочется остаток жизни блуждать по лабиринту, так что скорее ищите выход!}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|Вы часто видите в новостях, как в поисках пропавшего теряются и те, кто пустился на поиски. К сожалению, сегодня вам предстоит сыграть главную роль в такой истории. Вы постепенно теряете из виду даже Хохо, а когда замечаете странное бронзовое зеркало, вас утягивает в иллюзию. Там полно дверей и стен, и вы только ходите кругами, окончательно потеряв ориентиры.<br />Если верить народным сказкам с Сяньчжоу, которые вам рассказывали, к тому моменту, как вы выберетесь, снаружи могут пройти сотни лет. Вам совсем не хочется остаток жизни блуждать по лабиринту, так что скорее ищите выход!}}
 {{Диалог Начало}}
 :{{tx}}
-;(If {{F|group state}} is equal to 1)
+;(If {{F|group state}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -53,7 +56,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room1}} is equal to 5)
+;(If {{F|Room1}} is undefined 5)
 :<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -61,11 +64,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -81,11 +86,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300006
 				}
@@ -99,6 +106,7 @@
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -111,7 +119,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room1}} is equal to 5)
+;(If {{F|Room1}} is undefined 5)
 :<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -119,11 +127,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -139,11 +149,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300006
 				}
@@ -157,6 +169,7 @@
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -169,7 +182,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room1}} is equal to 2)
+;(If {{F|Room1}} is undefined 2)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -177,11 +190,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300007
 				}
@@ -195,6 +210,7 @@
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 3
 		}
@@ -207,7 +223,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room1}} is equal to 3)
+;(If {{F|Room1}} is undefined 3)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -215,11 +231,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -235,11 +253,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300006
 				}
@@ -255,11 +275,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -275,11 +297,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300007
 				}
@@ -293,6 +317,7 @@
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -305,7 +330,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room1}} is equal to 1)
+;(If {{F|Room1}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -313,11 +338,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -333,11 +360,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300006
 				}
@@ -353,11 +382,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 14
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -371,6 +402,7 @@
 	"Name": "Room1",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 4
 		}
@@ -381,12 +413,13 @@
 	"TargetState": 4,
 	"NeedBlock": false
 }</pre>
-;(If {{F|group state}} is equal to 1)
+;(If {{F|group state}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Room3",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -401,11 +434,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300022
 				}
@@ -421,11 +456,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300023
 				}
@@ -441,11 +478,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300024
 				}
@@ -459,6 +498,7 @@
 	"Name": "Room3",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -478,11 +518,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300022
 				}
@@ -498,11 +540,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300023
 				}
@@ -518,11 +562,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300024
 				}
@@ -536,6 +582,7 @@
 	"Name": "Room3",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -555,11 +602,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300025
 				}
@@ -573,6 +622,7 @@
 	"Name": "Room3",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 3
 		}
@@ -585,12 +635,13 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room3}} is equal to 0)
+;(If {{F|Room3}} is undefined 0)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Room3",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -603,9 +654,9 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room3}} is equal to 1)
-<!--Unknown TalkSentence: 202260021-->
-<!--Unknown TalkSentence: 202260022-->
+;(If {{F|Room3}} is undefined 1)
+:'''Голос издалека:''' Хе-хе, теперь-то замечаешь? Все дороги в этом месте - сплошная головоломка...
+:'''Голос издалека:''' Давай же, потеряшка! Хочешь выбраться? Тогда найди меня!
 
 ;(По прибытии на место)
 :{{tx}}
@@ -614,12 +665,12 @@
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202260084-->
-<!--Unknown TalkSentence: 202260085-->
+:'''Циррус:''' Эй, разуй глаза... Я заставила куклу парить. Смотри!
+:'''Циррус:''' Сколько же здесь бумажных кукол. Твоя подружка-судья наверняка оставила для тебя пару зацепок. Может, посмотришь?
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202260086-->
-<!--Unknown TalkSentence: 202260087-->
+:'''Циррус:''' Эй, эй! Я ведь хочу помочь. Изучи-ка зацепки.
+:'''Циррус:''' Мне обязательно тащить и тебя?..
 ----
 ;(Unused &mdash; 202170206_PickUpReading)
 <pre>{
@@ -628,14 +679,14 @@
 		300011
 	]
 }</pre>
-;(If {{F|group state}} is equal to 2)
+;(If {{F|group state}} is undefined 2)
 ----
-<!--Unknown TalkSentence: 202260465-->
-<!--Unknown TalkSentence: 202260466-->
-<!--Unknown TalkSentence: 202260795-->
-<!--Unknown TalkSentence: 202260467-->
+:'''Хохо:''' Взгляните! За дверью... Какое-то зеркало...
+:'''(Первопроходец):''' (Кажется, я {{MC|ж=видела|м=видел}} похожее зеркало, когда {{MC|ж=попала|м=попал}} сюда.)
+:'''Голос из зеркала:''' Этот... звук... Хохо... сюда.
+:'''Хохо:''' Что происходит?.. Кажется, я слышала голос из зеркала...
 ----
-<!--Unknown TalkSentence: 202260032-->
+:'''Хохо:''' Знакомый голос...
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -643,7 +694,7 @@
 	]
 }</pre>
 ;(Unused &mdash; HHTX_GDQ_FinalCheck)
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300006}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300007}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300008}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300009}}}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}]}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300007}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300008}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300006}},"IsDestructed":true}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}],"PuzzleDestructedStates":[]}-->}})
 ::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -651,9 +702,9 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-::<!--Unknown TalkSentence: 202260639-->
-::<!--Unknown TalkSentence: 202260640-->
-::<!--Unknown TalkSentence: 202260641-->
+:::Вы стучите в дверь - три раза по левой стороне, три раза по правой.
+:::'''Голос за дверью:''' Этикет соблюдён. Входите, дорогие гости.
+:::Дверь слегка приоткрывается. Сквозь щель вы замечаете, что внутри никого нет, как будто там никого и не было.
 ::<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -661,11 +712,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 7
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300003
 				}
@@ -682,11 +735,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 7
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300026
 				}
@@ -703,11 +758,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 7
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300025
 				}
@@ -722,19 +779,19 @@
 	"TargetState": 2
 }</pre>
 :::----
-::<!--Unknown TalkSentence: 202260465-->
-::<!--Unknown TalkSentence: 202260466-->
-::<!--Unknown TalkSentence: 202260795-->
-::<!--Unknown TalkSentence: 202260467-->
+:::'''Хохо:''' Взгляните! За дверью... Какое-то зеркало...
+:::'''(Первопроходец):''' (Кажется, я {{MC|ж=видела|м=видел}} похожее зеркало, когда {{MC|ж=попала|м=попал}} сюда.)
+:::'''Голос из зеркала:''' Этот... звук... Хохо... сюда.
+:::'''Хохо:''' Что происходит?.. Кажется, я слышала голос из зеркала...
 :::----
-::<!--Unknown TalkSentence: 202260032-->
+:::'''Хохо:''' Знакомый голос...
 ::<pre>{
 	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
 	"InstanceIDList": [
 		300023
 	]
 }</pre>
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300006}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300007}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300008}}},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300009}}}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"FixedValue":{"Value":7}},"GroupPropID":{"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}]}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300007}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300008}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300006}},"IsDestructed":true}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}],"PuzzleDestructedStates":[]}-->}})
 ::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -742,18 +799,18 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-::<!--Unknown TalkSentence: 202260636-->
-::<!--Unknown TalkSentence: 202260637-->
-::<!--Unknown TalkSentence: 202260638-->
+:::Вы стучите в дверь - три раза по левой стороне, три раза по правой.
+:::'''Голос за дверью:''' Без соблюдения должного этикета дверь не откроется. Возвращайтесь туда, откуда пришли, гости...
+:::Всё возвращается на круги своя.
 
 ;(Unused &mdash; 202170214_Mirror)
 :----
-:<!--Unknown TalkSentence: 202260468-->
-:<!--Unknown TalkSentence: 202260469-->
-:<!--Unknown TalkSentence: 202260470-->
-:<!--Unknown TalkSentence: 202260471-->
-:<!--Unknown TalkSentence: 202260472-->
-;(If {{F|group state}} is equal to 3)
+::'''Голос из зеркала:''' Хохо, это ты там в зеркале? Наконец-то я тебя нашла!
+::'''Хохо:''' Госпожа Сюэи?!
+::'''Сюэи:''' Сад безмятежности окутан неизвестной силой... Будьте осторожны!
+::'''Хохо:''' Мы до сих пор не нашли Гуйнайфэнь... Я не знаю, куда она пошла...
+::'''Сюэи:''' Сейчас важнее всего избавить вас от этой иллюзии. Подойдите. Пройдите через зеркало и перейдите на нашу сторону.
+;(If {{F|group state}} is undefined 3)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -761,11 +818,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300012
 				}
@@ -781,11 +840,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300008
 				}
@@ -799,6 +860,7 @@
 	"Name": "Group10",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 3
 		}
@@ -806,12 +868,13 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Group10}} is equal to 0)
+;(If {{F|Group10}} is undefined 0)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Group10",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -831,11 +894,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300012
 				}
@@ -849,6 +914,7 @@
 	"Name": "Group10",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 3
 		}
@@ -860,7 +926,7 @@
 	"NeedBlock": false
 }</pre>
 ;(Unused &mdash; GDQ_Room4_Check)
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300001}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300002}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"}]}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300001}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300002}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true}]}-->}})
 ::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -868,11 +934,11 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-::<!--Unknown TalkSentence: 202260639-->
-::<!--Unknown TalkSentence: 202260640-->
-::<!--Unknown TalkSentence: 202260641-->
-::<!--Unknown TalkSentence: 202260028-->
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300001}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300002}}},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300004}},"TargetState":"Destructed"},{"GroupID":{"FixedValue":{"Value":10}},"GroupPropID":{"FixedValue":{"Value":300005}},"TargetState":"Destructed"}]}-->}})
+:::Вы стучите в дверь - три раза по левой стороне, три раза по правой.
+:::'''Голос за дверью:''' Этикет соблюдён. Входите, дорогие гости.
+:::Дверь слегка приоткрывается. Сквозь щель вы замечаете, что внутри никого нет, как будто там никого и не было.
+:::'''Циррус:''' Кажется, мы готовы. Осталось только выбраться отсюда.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300001}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300002}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true}]}-->}})
 ::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -880,19 +946,21 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-::<!--Unknown TalkSentence: 202260636-->
-::<!--Unknown TalkSentence: 202260637-->
-::<!--Unknown TalkSentence: 202260638-->
+:::Вы стучите в дверь - три раза по левой стороне, три раза по правой.
+:::'''Голос за дверью:''' Без соблюдения должного этикета дверь не откроется. Возвращайтесь туда, откуда пришли, гости...
+:::Всё возвращается на круги своя.
 ::<pre>{
 	"$type": "RPG.GameCore.ResetAllPuzzleStatesClientOnly",
 	"PuzzleStates": [
 		{
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupPropID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -900,23 +968,29 @@
 		},
 		{
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupPropID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300002
 				}
 			}
-		},
+		}
+	],
+	"PuzzleDestructedStates": [
 		{
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupPropID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -924,11 +998,13 @@
 		},
 		{
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupPropID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -936,7 +1012,7 @@
 		}
 	]
 }</pre>
-;(If {{F|group state}} is equal to 1)
+;(If {{F|group state}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -944,11 +1020,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 11
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -959,7 +1037,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Group11}} is equal to 0 and {{F|group state}} is equal to undefined)
+;(If {{F|Group11}} is undefined 0 and {{F|group state}} is undefined undefined)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -967,11 +1045,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 11
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -985,6 +1065,7 @@
 	"Name": "Group11",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -995,12 +1076,13 @@
 	"TargetState": 1,
 	"NeedBlock": false
 }</pre>
-;(If {{F|group state}} is equal to 1)
+;(If {{F|group state}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -1015,11 +1097,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -1035,11 +1119,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -1055,11 +1141,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300007
 				}
@@ -1073,6 +1161,7 @@
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -1092,11 +1181,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -1112,11 +1203,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -1132,11 +1225,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300007
 				}
@@ -1150,6 +1245,7 @@
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 2
 		}
@@ -1169,11 +1265,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300006
 				}
@@ -1187,6 +1285,7 @@
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 3
 		}
@@ -1199,12 +1298,13 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room2}} is equal to 0)
+;(If {{F|Room2}} is undefined 0)
 <pre>{
 	"$type": "RPG.GameCore.SetGraphDynamicFloat",
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
 		}
@@ -1217,7 +1317,7 @@
 }</pre>
 
 ;(По прибытии на место)
-;(If {{F|Room2}} is equal to 1)
+;(If {{F|Room2}} is undefined 1)
 <pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
@@ -1225,11 +1325,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -1245,11 +1347,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300005
 				}
@@ -1265,11 +1369,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 13
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300007
 				}
@@ -1283,6 +1389,7 @@
 	"Name": "Room2",
 	"TargetIDs": [],
 	"Value": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 4
 		}
@@ -1296,7 +1403,7 @@
 {{Диалог Конец}}
 
 ===Поищите подсказки в историях о привидениях===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|С помощью Циррус вы обнаруживаете вырванную страницу, на которой рассказывается безумная история про хелиоби и генерала Лофу, произошедшая несколько веков назад. Сам стиль письма даёт какой-то намёк о том, как видеть сквозь иллюзии.}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|С помощью Циррус вы обнаруживаете вырванную страницу, на которой рассказывается безумная история про хелиоби и генерала Лофу, произошедшая несколько веков назад. Сам стиль письма даёт какой-то намёк о том, как видеть сквозь иллюзии.}}
 {{Диалог Начало}}
 
 {{Диалог Конец}}
@@ -1306,43 +1413,155 @@
 
 ;(Поговорите с Хохо)
 ----
-<!--Unknown TalkSentence: 202260391-->
-<!--Unknown TalkSentence: 202260392-->
-<!--Unknown TalkSentence: 202260350-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:'''Хохо:''' (Первопроходец), это ты! Я-я наконец нашла ещё одну живую душу!
+:'''Хохо:''' Как я счастлива! Я думала, что застряну здесь навеки... Я так рада тебя видеть!
+:'''Хохо:''' ...Эм, ты не {{MC|ж=видела|м=видел}} госпожу Гуйнайфэнь? Я до сих пор её не нашла. С ней всё будет в порядке?..
+:{{Диалог|Стрелка}} Давай найдём её.
+:{{Диалог|Стрелка}} Думаю, она попала в ловушку где-то здесь.
+:{{Диалог|Стрелка}} Забудь о ней - в меня вселился хелиоби!
+:'''(Первопроходец):''' Забудь. Гуйнайфэнь уже наверняка сожрали хелиоби.
+:'''Хохо:''' Как... Как же так?! Если такое могло случиться с такой выносливой девушкой, как госпожа Гуйнайфэнь... это значит, что я в ещё большей опасности...
+:{{Диалог|Стрелка}} (Это что, я говорю???)
+::'''Циррус:''' (Хе-хе... А ты {{MC|ж=знала|м=знал}}, что голосовыми связками человека управлять легче всего?)
+:{{Диалог|Стрелка}} (Неужели Гуйнайфэнь и правда сожрали хелиоби?)
+::'''Циррус:''' (А ты угадай!)
+:'''Хохо:''' (Первопроходец), ты ведь можешь найти выход, правда? Пожалуйста, возьми меня с собой...
+:'''Хвост:''' Уф, опять, что ли?! Ты же судья Комиссии десяти владык - почему ты всегда просишь других о помощи?
+:'''Хохо:''' Знаешь, я не создана быть судьёй. Сначала я думала, что, может, если я проработаю достаточно долго в Комиссии десяти владык, то стану смелее. Но теперь... я знаю, что это невозможно.
+:'''Хвост:''' Тьфу, бесполезное созданье. Почему я только запечатан в ком-то вроде тебя?
+:'''Хохо:''' Ты-то сам бахвалился своей силой, а теперь мы оба в ловушке... Может, это ты тут бесполезный?!
+:{{Диалог|Стрелка}} Успокойся! Я вытащу тебя отсюда!
+:{{Диалог|Стрелка}} Я тоже не могу найти выход. На тебя вся надежда.
+:{{Диалог|Стрелка}} ПОМОГИТЕ! В меня вселился хелиоби!
+:'''(Первопроходец):''' Незачем следовать за мной. Я ухожу, но без тебя. Прощай!
+:'''Хохо:''' Что? Нет! П-прошу, не бросай меня. Подожди, пожалуйста...
+:{{Диалог|Стрелка}} Я этого не {{MC|ж=говорила|м=говорил}}!
+::'''Циррус:''' (Ты {{MC|ж=уверена|м=уверен}}? Можешь поклясться, что у тебя нет ни малейшей мысли бросить её?)
+:{{Диалог|Стрелка}} Циррус, ну ты и скотина...
+::'''Циррус:''' (Скотина? Полагаю, с таксономической точки зрения ты ближе к этому определению, чем я...)
+:{{Диалог|Стрелка}} ...
+::'''Циррус:''' (О, ты больше не собираешься сопротивляться? Тогда позволь мне придумать несколько фраз. Просто будь умницей и повтори их за мной.)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005,
+		300006
+	]
+}</pre>
+:'''(Первопроходец):''' Комиссии десяти владык необходимо пересмотреть свои критерии найма. Как вообще можно назначать судьёй таких бесполезных людей?
+:'''Хохо:''' Хнык-хнык...
+:'''Хвост:''' Эй, а ну прекрати. Только я могу ругать это дитя... Я и другие судьи. Тебе понятно?!
+:'''Хвост:''' Ну-ка, ну-ка. Я чувствую какой-то знакомый запах...
+:'''Хвост:''' Циррус... это ты. Похоже, тебе всё ещё нравится заниматься этим жалким чревовещанием.
+:'''(Первопроходец):''' Ха-ха... Ха-ха-ха! Ох, как смешно! Просто умора! Я {{MC|ж=думала|м=думал}}, ты уже сбежал от пыток Печи.
+:'''(Первопроходец):''' Кто бы мог подумать, что самый агрессивный осколок Игнамара Великого станет верной шавкой, запечатанной внутри плаксы...
+:'''(Первопроходец):''' Ой! Прости меня! Я {{MC|ж=сказала|м=сказал}} «верная шавка»? Нет-нет-нет, так не пойдёт... Ты всего лишь «хвост» верной шавки, да? Просто хвост, хвост, хвост!
+:'''Хвост:''' Смейся, пока можешь, трусиха! Я проглочу тебя целиком, как только ты покинешь тело {{MC|м=этого пацана|ж=этой девчонки}}!
+:'''(Первопроходец):''' Ох, как страшно! Ах-ха-ха, шучу!
+:'''(Первопроходец):''' Ты не смог бы покинуть тело судьи, даже если бы попытался! Ты не можешь её поглотить, не говоря уже о том, чтобы сбежать от неё. Ах-ха-ха, Господин Хвост. Ты так жалок...
+:'''Хвост:''' ...Вот же! Придумай что-нибудь, слабачка!
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Хохо:''' {{MC|м=Г-господин|ж=Г-госпожа}} (Первопроходец), возьми этот талисман и прикрепи к себе - он на время подавит влияние хелиоби...
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Хохо:''' Хнык-хнык...
+:'''Хвост:''' Эй! {{MC|м=Пацан|ж=Девчонка}}! Скажи что-нибудь приятное Хохо. Её плач зудит в моём ухе, словно комар.
+----
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202260029-->
+:'''Циррус:''' Хе-хе, вот видишь? Я тебе говорила, что помогу. Выход прямо по курсу. Только не останавливайся...
 
 ;(По прибытии на место)
 ----
-<!--Unknown TalkSentence: 202260337-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 202260340-->
-<!--Unknown TalkSentence: 202260347-->
+:'''Циррус:''' Постой. Ты помнишь о нашей сделке? Ты {{MC|ж=должна|м=должен}} помочь мне скрыться от Комиссии десяти владык.
+:{{Диалог|Стрелка}} Там впереди судья. Что, боишься?
+::'''Циррус:''' Ха! Кого, ту судью? Да я за версту её страх учуяла! Эта трусиха даже права не имеет называться судьёй.
+::'''Циррус:''' Но... вся загвоздка в том существе, запечатанном в ней. Вот с ним я не хотела бы связываться.
+:{{Диалог|Стрелка}} Я вытащу отсюда и её.
+::'''Циррус:''' Уф... Это и есть та штука, которую люди называют сочувствием? Фу, какая кислятина...
+:{{Диалог|Стрелка}} Я держу обещания.
+::'''Циррус:''' М-м, я чувствую твою принципиальность - у неё такой богатый вкус. Даже переваривается труднее...
+:{{Диалог|Стрелка}} Я НЕ {{MC|ж=заключала|м=заключал}} с тобой сделку.
+::'''Циррус:''' До сих пор упрямишься? Ну ничего-ничего. Пройдёшь ещё пару кругов и передумаешь.
+:'''Циррус:''' Забудь о судье - просто вытащи нас обоих отсюда.
 ----
 
 ;(По прибытии на место)
 ----
-<!--Unknown TalkSentence: 202260348-->
-<!--Unknown TalkSentence: 202260349-->
+:'''Хохо:''' ...Погоди! Пожалуйста, не оставляй меня!
+:'''Хохо:''' Пожалуйста, умоляю! М-Можешь подойти поближе? Мне так страшно...
 ----
-<!--Unknown TalkSentence: 202260350-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:'''Хохо:''' ...Эм, ты не {{MC|ж=видела|м=видел}} госпожу Гуйнайфэнь? Я до сих пор её не нашла. С ней всё будет в порядке?..
+:{{Диалог|Стрелка}} Давай найдём её.
+:{{Диалог|Стрелка}} Думаю, она попала в ловушку где-то здесь.
+:{{Диалог|Стрелка}} Забудь о ней - в меня вселился хелиоби!
+:'''(Первопроходец):''' Забудь. Гуйнайфэнь уже наверняка сожрали хелиоби.
+:'''Хохо:''' Как... Как же так?! Если такое могло случиться с такой выносливой девушкой, как госпожа Гуйнайфэнь... это значит, что я в ещё большей опасности...
+:{{Диалог|Стрелка}} (Это что, я говорю???)
+::'''Циррус:''' (Хе-хе... А ты {{MC|ж=знала|м=знал}}, что голосовыми связками человека управлять легче всего?)
+:{{Диалог|Стрелка}} (Неужели Гуйнайфэнь и правда сожрали хелиоби?)
+::'''Циррус:''' (А ты угадай!)
+:'''Хохо:''' (Первопроходец), ты ведь можешь найти выход, правда? Пожалуйста, возьми меня с собой...
+:'''Хвост:''' Уф, опять, что ли?! Ты же судья Комиссии десяти владык - почему ты всегда просишь других о помощи?
+:'''Хохо:''' Знаешь, я не создана быть судьёй. Сначала я думала, что, может, если я проработаю достаточно долго в Комиссии десяти владык, то стану смелее. Но теперь... я знаю, что это невозможно.
+:'''Хвост:''' Тьфу, бесполезное созданье. Почему я только запечатан в ком-то вроде тебя?
+:'''Хохо:''' Ты-то сам бахвалился своей силой, а теперь мы оба в ловушке... Может, это ты тут бесполезный?!
+:{{Диалог|Стрелка}} Успокойся! Я вытащу тебя отсюда!
+:{{Диалог|Стрелка}} Я тоже не могу найти выход. На тебя вся надежда.
+:{{Диалог|Стрелка}} ПОМОГИТЕ! В меня вселился хелиоби!
+:'''(Первопроходец):''' Незачем следовать за мной. Я ухожу, но без тебя. Прощай!
+:'''Хохо:''' Что? Нет! П-прошу, не бросай меня. Подожди, пожалуйста...
+:{{Диалог|Стрелка}} Я этого не {{MC|ж=говорила|м=говорил}}!
+::'''Циррус:''' (Ты {{MC|ж=уверена|м=уверен}}? Можешь поклясться, что у тебя нет ни малейшей мысли бросить её?)
+:{{Диалог|Стрелка}} Циррус, ну ты и скотина...
+::'''Циррус:''' (Скотина? Полагаю, с таксономической точки зрения ты ближе к этому определению, чем я...)
+:{{Диалог|Стрелка}} ...
+::'''Циррус:''' (О, ты больше не собираешься сопротивляться? Тогда позволь мне придумать несколько фраз. Просто будь умницей и повтори их за мной.)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005,
+		300006
+	]
+}</pre>
+:'''(Первопроходец):''' Комиссии десяти владык необходимо пересмотреть свои критерии найма. Как вообще можно назначать судьёй таких бесполезных людей?
+:'''Хохо:''' Хнык-хнык...
+:'''Хвост:''' Эй, а ну прекрати. Только я могу ругать это дитя... Я и другие судьи. Тебе понятно?!
+:'''Хвост:''' Ну-ка, ну-ка. Я чувствую какой-то знакомый запах...
+:'''Хвост:''' Циррус... это ты. Похоже, тебе всё ещё нравится заниматься этим жалким чревовещанием.
+:'''(Первопроходец):''' Ха-ха... Ха-ха-ха! Ох, как смешно! Просто умора! Я {{MC|ж=думала|м=думал}}, ты уже сбежал от пыток Печи.
+:'''(Первопроходец):''' Кто бы мог подумать, что самый агрессивный осколок Игнамара Великого станет верной шавкой, запечатанной внутри плаксы...
+:'''(Первопроходец):''' Ой! Прости меня! Я {{MC|ж=сказала|м=сказал}} «верная шавка»? Нет-нет-нет, так не пойдёт... Ты всего лишь «хвост» верной шавки, да? Просто хвост, хвост, хвост!
+:'''Хвост:''' Смейся, пока можешь, трусиха! Я проглочу тебя целиком, как только ты покинешь тело {{MC|м=этого пацана|ж=этой девчонки}}!
+:'''(Первопроходец):''' Ох, как страшно! Ах-ха-ха, шучу!
+:'''(Первопроходец):''' Ты не смог бы покинуть тело судьи, даже если бы попытался! Ты не можешь её поглотить, не говоря уже о том, чтобы сбежать от неё. Ах-ха-ха, Господин Хвост. Ты так жалок...
+:'''Хвост:''' ...Вот же! Придумай что-нибудь, слабачка!
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Хохо:''' {{MC|м=Г-господин|ж=Г-госпожа}} (Первопроходец), возьми этот талисман и прикрепи к себе - он на время подавит влияние хелиоби...
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Хохо:''' Хнык-хнык...
+:'''Хвост:''' Эй! {{MC|м=Пацан|ж=Девчонка}}! Скажи что-нибудь приятное Хохо. Её плач зудит в моём ухе, словно комар.
+----
 {{Диалог Конец}}
 
 ===Встретьтесь с Хохо===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Циррус не внушает доверия, но её указания всё-таки приводят вас к Хохо.<br />Ну, раз даже судьи могут застревать в иллюзиях, тогда в Саду точно есть... Нет, вам совсем не хочется думать о том, что может быть в Саду безмятежности. Потому что это явно что-то очень жуткое.}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|Циррус не внушает доверия, но её указания всё-таки приводят вас к Хохо.<br />Ну, раз даже судьи могут застревать в иллюзиях, тогда в Саду точно есть... Нет, вам совсем не хочется думать о том, что может быть в Саду безмятежности. Потому что это явно что-то очень жуткое.}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
@@ -1356,8 +1575,8 @@
 	"SubMissionID": 202170212
 }</pre>
 ----
-<!--Unknown TalkSentence: 202260412-->
-:{{Диалог|Стрелка}} undefined
+:'''Хохо:''' Хнык-хнык...
+:{{Диалог|Стрелка}} Прости, Хохо. Ты... в порядке?
 :<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -1365,11 +1584,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 6
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -1378,9 +1599,9 @@
 	},
 	"EmotionName": "Sad01"
 }</pre>
-:<!--Unknown TalkSentence: 202260414-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202260416-->
+::'''Хохо:''' Это не твоя вина... Это та злобная хелиоби посеяла между нами раздор...
+:{{Диалог|Стрелка}} Возьми себя в руки, ты же судья.
+::'''Хохо:''' ...Если бы тут были другие судьи вместо меня, тебя бы уже давно спасли...
 :<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -1388,11 +1609,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 6
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -1401,37 +1624,119 @@
 	},
 	"EmotionName": "Sad01"
 }</pre>
-<!--Unknown TalkSentence: 202260417-->
-<!--Unknown TalkSentence: 202260418-->
-<!--Unknown TalkSentence: 202260419-->
-<!--Unknown TalkSentence: 202260420-->
-<!--Unknown TalkSentence: 202260421-->
-<!--Unknown TalkSentence: 202260422-->
-<!--Unknown TalkSentence: 202260423-->
+:'''Хохо:''' Такой добрый человек, как ты, не стал бы говорить таких гадостей - только захват хелиоби заставил тебя так себя вести. Но то, что сказала хелиоби, - правда...
+:'''Хохо:''' Я всегда была застенчива и труслива... Моя жизнь превратилась в кошмар, когда в меня вселился Хвост...
+:'''Хохо:''' Когда я училась в школе, люди всегда спрашивали, почему у меня пылает хвост... Куда бы я ни пошла, люди замечали это.
+:'''Хвост:''' О, так это я во всём виноват? Если бы ты просто позволила мне поглотить тебя с самого начала, я бы избавил тебя от хлопот!
+:'''Хохо:''' А потом... потом я попала в Комиссию десяти владык. Там все со странностями, поэтому я подумала, что нашла место, где буду чувствовать себя комфортно. Но работа... эта работа слишком опасна! Мне приходится каждый день сражаться с демонами, призраками и злодеями...
+:'''Хохо:''' Я... я просто не создана для этого. Если я вернусь живой... Я подам заявление на увольнение.
+:'''Хохо:''' Кто только придумал сделать хелиофоба с хелиоби, запечатанным в хвосте, охотником за хелиоби... Прости, я была такой бесполезной...
+:{{Диалог|Стрелка}} Хохо, ты проделала отличную работу.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Surprise01"
+}</pre>
+::'''Хохо:''' ...П-правда?
+:{{Диалог|Стрелка}} Это ты оставила мне бумажных кукол. Спасибо.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Close02"
+}</pre>
+::'''Хохо:''' ...Я-я рада, что это помогло.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Хвост:''' Слышишь? Хватит плакать. Ты полезная. И куклы твои бумажные тоже полезные.
+:'''Хвост:''' Уф, с меня хватит! Вот как верну себе свободу, сначала проглочу эту трусливую Циррус, а следом и эту маленькую плаксу!
+:'''Циррус:''' Как жаль, что господин Хвост уже не тот, каким был раньше. Будь у нас прежняя сила, мы могли бы забыть о ловушке призрака и сожрать её создателя, Пожара.
+:'''Хохо:''' Ваша прежняя сила?
+:'''Циррус:''' Что ж, господин Хвост, похоже, она ничего не знает о твоём прошлом... Послушай, малышка, ты знаешь, почему хелиоби собираются в этом заброшенном саду вместо того, чтобы захватывать человеческие жилища?
+:'''Хохо:''' ...Тимбилдинг?
+:'''Циррус:''' ...
+----
 
 ;(Поговорите с Хвост)
 ;(If {{cx}}<!--during performance 202170211-->)
-:<!--Unknown TalkSentence: 202260403-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202260405-->
+::'''Хвост:''' Хоть Циррус несла полную чепуху, она всё равно ранила сердце Хохо, так что иди и утешь бедную девочку.
+::{{Диалог|Стрелка}} Ты разве её не презираешь?
+:::'''Хвост:''' Да, именно поэтому ей нужна группа поддержки вроде тебя, понятно? Вперёд!
+::{{Диалог|Стрелка}} Почему бы тебе не подойти и не сказать ей что-нибудь приятное?
+:::'''Хвост:''' {{MC|ж=Размечталась|м=Размечтался}}. Я никому ничего приятного не говорю.
+::{{Диалог|Стрелка}} Ты можешь свободно передвигаться, даже если ты запечатан?
+:::'''Хвост:''' Свободно передвигаться?! Вот как ты это называешь? Это максимум, насколько я могу от неё отойти.
+:::'''Хвост:''' Думаешь, я бы играл тут с вами, тупицами, в дочки-матери, если бы мог улететь?
+::{{Диалог|Выход}} (Молча уйти.)
 ;(If {{cx}}<!--not during performance 202170211-->)
-:<!--Unknown TalkSentence: 202260643-->
+::'''Хвост:''' На что ты смотришь? Иди и утешь бедную девочку.
 
 ;(Поговорите с Циррус)
 ;(If {{cx}}<!--during performance 202170210-->)
-:<!--Unknown TalkSentence: 202260393-->
-::{{Диалог|Стрелка}} undefined
-::<!--Unknown TalkSentence: 202260395-->
-::<!--Unknown TalkSentence: 202260399-->
-::{{Диалог|Стрелка}} undefined
-::<!--Unknown TalkSentence: 202260397-->
-::<!--Unknown TalkSentence: 202260398-->
-::<!--Unknown TalkSentence: 202260399-->
-:<!--Unknown TalkSentence: 202260395-->
-:<!--Unknown TalkSentence: 202260399-->
+::'''Циррус:''' Ах-х, праздник-то какой! Человеческие эмоции такие приятные на вкус. Выпить твоих печальных слёз - всё равно что выпить кувшин хорошего вина...
+::{{Диалог|Стрелка}} Хватит говорить о моём теле вслух.
+:::'''Циррус:''' Хе-хе, я просто наслаждаюсь своей свободой. Ты ещё не {{MC|ж=использовала|м=использовал}} талисман? Я смирная, как котёнок...
+::{{Диалог|Стрелка}} Тебе нравится доводить эту девочку до слёз, да?
+:::'''Циррус:''' Как бы ты {{MC|ж=ответила|м=ответил}}, если бы я спросила, любишь ли ты вкусно покушать?
+:::'''Циррус:''' Клянусь, для хелиоби, которому нравится дразнить ваши слабые человеческие чувства, нет ничего более забавного.
+::'''Циррус:''' Не забудь о нашей сделке: я покину твоё тело, только если добьюсь своей цели.
+::{{Диалог|Стрелка}} Скажи, ты всё ещё паразитируешь на мне?
+:::'''Циррус:''' Конечно. Ты ведь не думаешь, что я покинула твоё тело только потому, что ты меня видишь? Так наивно!
+::{{Диалог|Выход}} (Молча уйти.)
 ;(If {{cx}}<!--not during performance 202170210-->)
-:<!--Unknown TalkSentence: 202260642-->
+::'''Циррус:''' Я знаю, что ты хочешь спросить. Да, мне весело доводить девочку до слёз, и нет, я не покинула твоё тело. Так что побереги свои силы.
 {{Диалог Конец}}
 
 ===Поговорите с Хвостом (необязательно)===
@@ -1439,7 +1744,7 @@
 {{Диалог Конец}}
 
 ===Поговорите с Хохо и успокойте её===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Циррус от вас не отходит и не перестаёт рассказывать про давнюю вражду Сяньчжоу с хелиоби. Она также умудряется перехватить контроль над вашим ртом, чтобы посеять семена раздора в вашей группке потерявшихся. Только совместными усилиями получится выбраться из иллюзии. Утешьте Хохо, а потом вместе придумайте, как выйти отсюда.}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|Циррус от вас не отходит и не перестаёт рассказывать про давнюю вражду Сяньчжоу с хелиоби. Она также умудряется перехватить контроль над вашим ртом, чтобы посеять семена раздора в вашей группке потерявшихся. Только совместными усилиями получится выбраться из иллюзии. Утешьте Хохо, а потом вместе придумайте, как выйти отсюда.}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
@@ -1453,24 +1758,33 @@
 {{Диалог Конец}}
 
 ===Изучите странное бронзовое зеркало===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Как и при попадании сюда, вы видите бронзовое зеркало, которое издаёт странный звук. Может, это судья Комиссии десяти владык, а может - хелиоби, который играется с вами, как кошка с мышкой.<br />Зато даже монстры не причинят вам никакого вреда через зеркало, так ведь? Надо проверить, что там.}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|Как и при попадании сюда, вы видите бронзовое зеркало, которое издаёт странный звук. Может, это судья Комиссии десяти владык, а может - хелиоби, который играется с вами, как кошка с мышкой.<br />Зато даже монстры не причинят вам никакого вреда через зеркало, так ведь? Надо проверить, что там.}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Выслушайте голос из зеркала и узнайте, настоящий ли он===
-{{Описание миссии|локация=Иллюзорный лабиринт: Пожар|Из зеркала доносится голос Сюэи, но сложно сказать, настоящий он или нет. Возможно, это поймёт только тот, кто хорошо её знает. Например, Хохо.}}
+{{Описание миссии|тип=Продолжение Освоения|локация=Иллюзорный лабиринт: Пожар|Из зеркала доносится голос Сюэи, но сложно сказать, настоящий он или нет. Возможно, это поймёт только тот, кто хорошо её знает. Например, Хохо.}}
 {{Диалог Начало}}
 
 :{{Диалог|Изучение}} Осмотреть
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":4}},"ID":{"FixedValue":{"Value":300009}}}}}-->}})
-:<!--Unknown TalkSentence: 202260665-->
-:<!--Unknown TalkSentence: 202260666-->
-:<!--Unknown TalkSentence: 202260667-->
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-::{{Диалог|Стрелка}} undefined
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"FixedValue":{"Value":4}},"ID":{"FixedValue":{"Value":300009}}}}}-->}})
-:<!--Unknown TalkSentence: 202260761-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":4}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}}}-->}})
+::'''Сюэи:''' Ситуация в Саду безмятежности ухудшается. Почему вы ещё не покинули его? У вас там что-то случилось?
+::'''Хохо:''' Это уже больше похоже на настоящую госпожу Сюэи.
+::'''Сюэи:''' Настоящая госпожа Сюэи? Значит, внутри иллюзии есть самозванцы?
+::{{Диалог|Стрелка}} Здесь есть несколько бронзовых зеркал.
+::{{Диалог|Стрелка}} Хелиоби пытается нас обмануть.
+::'''Сюэи:''' Понятно. Не волнуйтесь. Хохо хорошо меня знает - она сможет отличить меня от подделок.
+::'''Хохо:''' Н-но вдруг я не смогу вас отличить?
+::'''Сюэи:''' Ты должна довериться себе. Давай же.
+::{{Диалог|Стрелка}} Пройти через зеркало.
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+::{{Диалог|Выход}} Осмотреть другие зеркала.
+:::'''Хохо:''' Но...
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":4}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}}}-->}})
+::'''Хохо:''' ...Мы уже проходили через это зеркало. Скорее всего, госпожа Сюэи за этим зеркалом - фальшивка. Давайте больше не пойдём туда.
 {{Диалог Конец}}
 
 ==На других языках==
@@ -1491,4 +1805,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Продолжение Освоения Навбокс|Глава }}
+
+[[en:]]

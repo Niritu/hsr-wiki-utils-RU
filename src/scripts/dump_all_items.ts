@@ -118,13 +118,13 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 				break
 			
 			default:
-				const firstType = types[0] || (source == 'profile_pics' ? 'Profile Picture' : 'Item')
-				output.push(`'''${item.name}''' —${n(firstType)} ${typeLinkOverride[firstType] || `[[${firstType}]] миссии, который можно получить во время [[миссии]] ''[[]]''`}.`)
+				const firstType = types[0] || (source == 'profile_pics' ? 'Аватар' : 'Предмет')
+				output.push(`'''${item.name}''' —${n(firstType)} ${typeLinkOverride[firstType] || `[[${firstType}]]`}.`)
 				break
 		}
 		
-		if (sources.find(src => SHOP_KEYWORDS.find(keyword => src.toLowerCase().includes(keyword) && !src.includes('Synthesize')))) {
-			output.push(`\n==Sold By==\n{{Shop Availability}}`)
+		if (sources.find(src => SHOP_KEYWORDS.find(keyword => src.toLowerCase().includes(keyword) && !src.includes('Синтез')))) {
+			output.push(`\n==Приобретение==\n{{Наличие в магазинах}}`)
 		}
 		
 		if (sources.find(src => src.match(/enem(?:y|ies)/i) || src.match(/equilibrium level/i))) {
@@ -139,8 +139,8 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 			output.push(`\n==Trace Usage==\n{{Trace Usage}}`)
 		}
 		
-		if (types.includes('Synthesis Material')) {
-			output.push(`\n==Usage==\n{{Craft Usage}}`)
+		if (types.includes('Материал для синтеза')) {
+			output.push(`\n==Применение==\n{{Используется в создании}}`)
 		}
 		
 		let readableData = item.getText()
@@ -175,19 +175,19 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 		)
 
 		switch (item.inventory_tab) {
-			case 'Consumables':
+			case 'Расходные предметы':
 				output.push(`\n==Навигация==\n{{Расходные предметы Навбокс}}`,
 				'',
 				'[[en:]]')
 				break
 			
-			case 'Other Materials':
+			case 'Другие материалы':
 				output.push(`\n==Навигация==\n{{Материалы синтеза Навбокс}}`,
 				'',
 				'[[en:]]')
 				break
 			
-			case 'Upgrade Materials':
+			case 'Материалы улучшения':
 				output.push(`\n==Навигация==\n{{Материалы улучшения Навбокс}}`,
 				'',
 				'[[en:]]')

@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 4040102
 |Название        = 
-|Изображение     = Миссия Освоения .png
+|Изображение     = Миссия .png
 |Тип             = Миссия приключения
-|События         = 
+|Событие         = 
 |Глава           = 
-|Условия         = Завершена [[Миссия Освоения]] ''[[Неисчезающие тени]]''
+|Условия         = Завершена [[Миссия Освоения]] «[[Неисчезающие тени]]»
 |Персонажи       = Второй из Грозной четвёрки; Загадочный ребёнок; Первая из Грозной четвёрки; Первопроходец; Третий из Грозной четвёрки
 |СтартЛокация    = [[Ярило-VI]] — [[Камнеград]]
-|Локации         = Камнеград
+|Мир             = Ярило-VI
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Shield (Item)*20; Рецепт: Рукавицы гнева*1 { text = Рецепт: Рукавицы гнева }
+|Награды         = Щиты*20; Рецепт: Рукавицы гнева*1 { text = Рецепт: Рукавицы гнева }
 }}
 '''''' — [[Миссия приключения]] в [[Ярило-VI]].
 
@@ -25,10 +28,9 @@
 ==Прохождение==
 {{Дополнить}}
 
-
-;(Получено {{Item|Приглашение на турнир «Тёмный кулак»|20|x=1|text=Приглашение на турнир «Тёмный кулак»}})
-<!--Unknown TalkSentence: 411020308-->
-<!--Unknown TalkSentence: 411020309-->
+;(Получено {{Предмет|Приглашение на турнир «Тёмный кулак»|20|x=1}})
+:'''Загадочный ребёнок:''' Удивительно, у тебя есть приглашение.
+:'''Загадочный ребёнок:''' Значит, тебя избрали. Следуй за мной.
 ----
 <pre>{
 	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
@@ -39,11 +41,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 120
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300001
 				}
@@ -51,12 +55,12 @@
 		}
 	}
 }</pre>
-<!--Unknown TalkSentence: 411020401-->
-<!--Unknown TalkSentence: 411020402-->
-<!--Unknown TalkSentence: 411020403-->
-<!--Unknown TalkSentence: 411020404-->
-<!--Unknown TalkSentence: 411020405-->
-:{{Диалог|Стрелка}} undefined
+:'''Загадочный ребёнок:''' Внимание, избранные! Для участия в турнире «Тёмный кулак» на подземном ринге прибыл новый участник...
+:'''Загадочный ребёнок:''' Поприветствуйте - (Первопроходец)!
+:'''???:''' Ура, новичок!
+:'''???:''' ...
+:'''???:''' Вот же размазня...
+:{{Диалог|Стрелка}} Ты зачем так говоришь?
 :<pre>{
 	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
 	"EnablePropCamera": false,
@@ -66,11 +70,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 120
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -78,11 +84,8 @@
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 411020407-->
-:<!--Unknown TalkSentence: 411020413-->
-:<!--Unknown TalkSentence: 411020414-->
-:<!--Unknown TalkSentence: 411020415-->
-:{{Диалог|Стрелка}} undefined
+::'''???:''' Потому что ты выглядишь {{MC|ж=хилой|м=хилым}}!
+:{{Диалог|Стрелка}} Разве это не «подземный» ринг?
 :<pre>{
 	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
 	"EnablePropCamera": false,
@@ -92,11 +95,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 120
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -104,12 +109,9 @@
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 411020409-->
-:<!--Unknown TalkSentence: 411020410-->
-:<!--Unknown TalkSentence: 411020413-->
-:<!--Unknown TalkSentence: 411020414-->
-:<!--Unknown TalkSentence: 411020415-->
-:{{Диалог|Стрелка}} undefined
+::'''???:''' Разумеется! Где же ещё быть Подземью, как не под землёй.
+::'''???:''' Вижу, ты совсем ничего не знаешь. Только не разрыдайся, когда проиграешь!
+:{{Диалог|Стрелка}} Разве это не опасно для детей?
 :<pre>{
 	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
 	"EnablePropCamera": false,
@@ -119,11 +121,13 @@
 		"FetchType": "SinglePropByPropID",
 		"SinglePropID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 120
 				}
 			},
 			"ID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 300004
 				}
@@ -131,25 +135,151 @@
 		}
 	}
 }</pre>
-:<!--Unknown TalkSentence: 411020412-->
-:<!--Unknown TalkSentence: 411020413-->
-:<!--Unknown TalkSentence: 411020414-->
-:<!--Unknown TalkSentence: 411020415-->
-<!--Unknown TalkSentence: 411020407-->
-<!--Unknown TalkSentence: 411020413-->
-<!--Unknown TalkSentence: 411020414-->
-<!--Unknown TalkSentence: 411020415-->
-<!--Unknown TalkSentence: 411021201-->
-<!--Unknown TalkSentence: 411021202-->
-<!--Unknown TalkSentence: 411021203-->
-<!--Unknown TalkSentence: 411021204-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 411021207-->
-<!--Unknown TalkSentence: 411021208-->
-<!--Unknown TalkSentence: 411021209-->
-<!--Unknown TalkSentence: 411021210-->
-<!--Unknown TalkSentence: 411021211-->
+::'''???:''' Трусишь что ли? Домой захотелось?
+:'''Загадочный ребёнок:''' Тихо-тихо! (Первопроходец) тут в первый раз, так что позвольте мне зачитать правила и представить участников.
+:'''Загадочный ребёнок:''' (Первопроходец), напротив тебя стоят три человека. Это Грозная четвёрка.
+:'''Загадочный ребёнок:''' Если сможешь одолеть всех за один раунд в «Камень, ножницы, бумага», то получишь замечательный приз от комитета!
+:{{Диалог|Стрелка}} Погоди, схватка - это игра в «Камень, ножницы, бумага»?
+::'''Второй из Грозной четвёрки:''' ...
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 120
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+::{{Диалог|Стрелка}} Почему ты всё время молчишь?
+::<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 120
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+:::'''Загадочный ребёнок:''' В тихом омуте черти водятся. Он лучший из членов Грозной четвёрки.
+::{{Диалог|Стрелка}} М-м, ладно.
+:{{Диалог|Стрелка}} Почему в Грозной четвёрке всего три человека?
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 120
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+::'''Первая из Грозной четвёрки:''' Отец не пускает Джимми, пока тот не закончит домашнюю работу...
+::'''Загадочный ребёнок:''' Тихо! Местонахождение членов Грозной четвёрки - строжайшая тайна!
+:{{Диалог|Стрелка}} У вас есть комитет? Как официально.
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 120
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+::'''Загадочный ребёнок:''' Разумеется, наши поединки совершенно легальны!
+::'''Третий из Грозной четвёрки:''' Наши поединки совершенно легальны!
+::{{Диалог|Стрелка}} Ты что, попугай?
+::<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 120
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+:::'''Третий из Грозной четвёрки:''' Смеешь потешаться надо мной? Ты за это получишь!
+::{{Диалог|Стрелка}} М-м, ладно.
+:'''Загадочный ребёнок:''' Ладно, хватит болтать. Давайте начнём поединок.
+:'''Загадочный ребёнок:''' Новичок (Первопроходец) получает два очка! Похоже, у нас есть победитель, а игра окончена...
+:'''Загадочный ребёнок:''' По условиям игры тебе положен приз!
+:'''Загадочный ребёнок:''' Это секрет изготовления наших рукавиц гнева!
+:'''Загадочный ребёнок:''' Следуй инструкциям, и ты тоже сможешь сделать себе мощные рукавицы! Самое то для «Тёмного кулака», да?
+:{{Диалог|Стрелка}} Да, очень угрожающе!
+:{{Диалог|Стрелка}} Откуда у вас такие опасные вещи?
+::'''Загадочный ребёнок:''' Это секрет турнира «Тёмный кулак» на подземном ринге!
+:'''Загадочный ребёнок:''' Так, уже поздно. Мэри, Том, Дэвид, надо возвращаться в клинику.
+:'''Первая из Грозной четвёрки:''' Ладно, идём!
+:'''Второй из Грозной четвёрки:''' ...
+:'''Третий из Грозной четвёрки:''' Но я вернусь, и ты у нас попляшешь!
 :<!--1-second delay-->
 ----
 {{Диалог Конец}}
@@ -172,4 +302,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

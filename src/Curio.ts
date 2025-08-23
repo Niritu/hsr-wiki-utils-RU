@@ -180,7 +180,7 @@ export class Curio {
 	getNotes(): string[] {
 		const notes: string[] = []
 		if (!this.is_indexable) {
-			notes.push(`* This Curio is not included in the Simulated Universe Index.`)
+			notes.push(`* Эта диковина не включена в индекс Виртуальной вселенной.`)
 		}
 		// for (const unlock of this.unlock_list) {
 		// 	notes.push(`* This Curio is only obtainable ${unlock.desc.replace('Unlocked ', '')}`)

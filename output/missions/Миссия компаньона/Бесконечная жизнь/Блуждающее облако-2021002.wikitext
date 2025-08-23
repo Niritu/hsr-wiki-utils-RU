@@ -1,18 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=#Блуждающее облако#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 2021002
 |Название        = 
-|Изображение     = Миссия Освоения Блуждающее облако.png
+|Изображение     = Миссия Блуждающее облако.png
 |Тип             = Миссия компаньона
-|События         = 
+|Событие         = 
 |Глава           = Бесконечная жизнь
 |Условия         = 
 |Персонажи       = Байлу; Блэйд; Дань Хэн; Первопроходец; Цзин Юань; Цзинлю; Цинцзу; Яньцин
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[Обитель божественного предвидения]]
-|Локации         = Обитель божественного предвидения
+|Мир             = Лофу Сяньчжоу
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*6; Утраченный кристалл*4; Lifeless Blade*6; Кредиты*50 000
+|Награды         = Опыт Освоения*600; Звёздный нефрит*100; Путеводитель путешественника*6; Утраченный кристалл*4; Безжизненный клинок*6; Кредиты*50 000
 }}
 '''Блуждающее облако''' — [[Миссия компаньона]] в главе [[Бесконечная жизнь]].
 
@@ -45,9 +48,8 @@
 ==Прохождение==
 {{Дополнить}}
 
-
 ===Отправляйтесь в Обитель божественного предвидения и узнайте, что сейчас с Охотниками за Стелларонами===
-{{Описание миссии|локация=Обитель божественного предвидения|Вы полны решимости пойти на встречу в одиночку, чтобы не позволить обидам вашей предыдущей жизни затронуть друзей с экспресса.<br />Размышляя о намерениях автора письма, вы полагаете, что наиболее вероятным отправителем является Охотник за Стелларонами, который намерен своим мечом решить старые обиды. Однако его «приглашения» всегда были прямыми и агрессивными. Что же изменилось теперь? Вы решаете отправиться в Обитель божественного предвидения и расспросить генерала о местонахождении Охотника.}}
+{{Описание миссии|тип=Миссия компаньона|локация=Обитель божественного предвидения|Вы полны решимости пойти на встречу в одиночку, чтобы не позволить обидам вашей предыдущей жизни затронуть друзей с экспресса.<br />Размышляя о намерениях автора письма, вы полагаете, что наиболее вероятным отправителем является Охотник за Стелларонами, который намерен своим мечом решить старые обиды. Однако его «приглашения» всегда были прямыми и агрессивными. Что же изменилось теперь? Вы решаете отправиться в Обитель божественного предвидения и расспросить генерала о местонахождении Охотника.}}
 {{Диалог Начало}}
 ;(По прибытии на место)
 
@@ -61,11 +63,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -74,17 +78,13 @@
 	},
 	"EmotionName": "Suprise01"
 }</pre>
-<!--Unknown TalkSentence: 202120701-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-
-;(Поговорите с Цзинлю)
-----
-<!--Unknown TalkSentence: 202123901-->
-<!--Unknown TalkSentence: 202123902-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123904-->
+:'''Яньцин:''' Ничего себе, это же Дань Хэн!
+:{{Диалог|Стрелка}} Приветствую.
+:{{Диалог|Стрелка}} Мне нужно поговорить с генералом.
+:'''Дань Хэн:''' Приветствую. Мне нужно поговорить с генералом.
+:'''Яньцин:''' Пф. Что, хочешь компенсацию за полученные увечья? Да пожалуйста, пусть хоть следующие сто лет её из моей зарплаты удерживают...
+:{{Диалог|Стрелка}} В этом нет необходимости.
+::'''Дань Хэн:''' В этом нет необходимости. Облачные Рыцари лишь выполняли свой долг. Это я должен извиняться за нанесённый ущерб.
 :<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -92,211 +92,42 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-::<!--1.5-second delay-->
-:<!--Unknown TalkSentence: 202123905-->
-:<!--Unknown TalkSentence: 202123914-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123907-->
-:<!--Unknown TalkSentence: 202123908-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-::<!--1.5-second delay-->
-:<!--Unknown TalkSentence: 202123909-->
-:<!--Unknown TalkSentence: 202123910-->
-:<!--Unknown TalkSentence: 202123914-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123912-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-:<!--Unknown TalkSentence: 202123913-->
-:<!--Unknown TalkSentence: 202123914-->
-<!--Unknown TalkSentence: 202123905-->
-<!--Unknown TalkSentence: 202123914-->
-
-
-;(Поговорите с Цинцзу)
-<!--Unknown TalkSentence: 202120801-->
-<!--Unknown TalkSentence: 202120802-->
-{{Диалог Конец}}
-
-===Поговорите с Цзинлю===
-{{Описание миссии|локация=Обитель божественного предвидения|В Обители божественного предвидения появилась непрошенная гостья. У лейтенанта Яньцина и стратега Цинцзу уже болит голова. Им нужно принять «гостью» и сопроводить пленника. Её голос и облик будоражат ваши давно похороненные воспоминания. Вы понимаете, что её намерения вовсе не дружественные.}}
-{{Диалог Начало}}
-
-;(Поговорите с Цзинлю)
-----
-<!--Unknown TalkSentence: 202123901-->
-<!--Unknown TalkSentence: 202123902-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123904-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-::<!--1.5-second delay-->
-:<!--Unknown TalkSentence: 202123905-->
-:<!--Unknown TalkSentence: 202123914-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123907-->
-:<!--Unknown TalkSentence: 202123908-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-::<!--1.5-second delay-->
-:<!--Unknown TalkSentence: 202123909-->
-:<!--Unknown TalkSentence: 202123910-->
-:<!--Unknown TalkSentence: 202123914-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202123912-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		}
-	},
-	"EmotionName": "Angry01"
-}</pre>
-:<!--Unknown TalkSentence: 202123913-->
-:<!--Unknown TalkSentence: 202123914-->
-<!--Unknown TalkSentence: 202123905-->
-<!--Unknown TalkSentence: 202123914-->
-:{{tx}}
-{{Диалог Конец}}
-
-===Отправляйтесь в порт Звездочёт Навалия===
-{{Описание миссии|локация=Обитель божественного предвидения|По словам Цзинлю, она вернулась на Сяньчжоу и собрала своих старых друзей, чтобы вспомнить об обещаниях, которые они давали, когда их сердца всё ещё бились как одно целое. Однако до этого она хотела бы посетить кое-какие места и отдать дань уважения ушедшим товарищам.}}
-{{Диалог Начало}}
-:{{tx}}
-:{{tx}}
-----
-<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
-					"Value": 400002
+					"Value": 400001
 				}
 			}
 		}
 	},
-	"EmotionName": "Proud01"
+	"EmotionName": "Trouble02"
 }</pre>
-<!--Unknown TalkSentence: 202121001-->
-<!--Unknown TalkSentence: 202121002-->
+:{{Диалог|Стрелка}} Я здесь по другому вопросу...
+::'''Дань Хэн:''' Облачные Рыцари лишь выполняли свой долг. Я пришёл расспросить генерала об Охотниках за Стелларонами.
+:'''Цинцзу:''' Ты очень не вовремя. Генерал занят срочной работой, и сегодня он тебя, скорее всего, принять не сможет... хотя сообщение для тебя он оставил. Дань Хэн, узнаёшь девушку на лестнице?
+:{{Диалог|Стрелка}} Кажется.
+::'''Дань Хэн:''' Не могу сказать, что знаю, кто это, но выглядит она знакомо. Гостья генерала?
+:{{Диалог|Стрелка}} Нет...
+::'''Дань Хэн:''' Нет. Но раз генерал занят, приду в другой раз.
 <pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -305,14 +136,497 @@
 	},
 	"EmotionName": "Trouble01"
 }</pre>
-<!--Unknown TalkSentence: 202121003-->
+:'''Цинцзу:''' Вообще её не помнишь? Ясно. Видимо, памяти о прошлой жизни после перерождения у тебя и правда не осталось.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"DynamicParams": {}
+}</pre>
+:'''Цинцзу:''' Это Цзинлю, прошлый Мастер меча Лофу Сяньчжоу. Она была самым близким другом Пожирателя Луны - твоей предыдущей инкарнации. И... наставницей генерала.
+:'''Цинцзу:''' Хроники былых войн рассказывают, что её меч уничтожил множество Обитателей Изобилия. Удар её клинка не выдерживали даже Стражи пера вьюнокрылых, волк-отец борисинцев или гигантский мехазверь. Она настоящая легенда.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Цинцзу:''' Но это было в далёком прошлом. Жаль, что даже такая героиня, как она, не смогла избежать Мары. Говорят, что в итоге Цзинлю сошла с ума и убивала всех, до кого могла дотянуться. Её объявили преступницей, и она сбежала во внешние миры.
+:'''Цинцзу:''' И казалось бы, ни у кого не хватит сил арестовать такого легендарного бойца, но... Почему-то она сама появилась на Лофу с кем-то подозрительным, замаскированным под странствующего торговца, и сказала, что хочет сдаться и предстать перед правосудием...
+:'''Цинцзу:''' Но выставила одно условие: что перед судом ей дадут один день свободы. Она хотела в последний раз встретиться с давними друзьями в Чешуйчатом ущелье... Поверить не могу, что Цзин Юань на это согласился!
+:'''Цинцзу:''' Перед уходом он приказал нам сопровождать Цзинлю в этот её последний день на Лофу. Мы не почётного гостя сопровождаем, а конвоируем преступницу...
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 202100201
+}</pre>
+;(Экран становится чёрным)
+:Цинцзу вдруг умолкает. Вы тоже ощущаете, как вас окутывает холодок.
+:'''Цзинлю:''' Ты пришёл, Пожиратель Луны.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"DynamicParams": {}
+}</pre>
+:'''Цзинлю:''' Раз ты проделал такой путь, не хочешь поговорить со мной?
+:'''Цзинлю:''' Или мне звать тебя тем именем, которым тебя нарекли в этой жизни? Дань Хэном?
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 202100201
+}</pre>
+
+;(Поговорите с Цзинлю)
+----
+:'''Цзинлю:''' Когда я оставила Сяньчжоу, до меня дошла весть, что они забрали твою чешую и рога, принудили тебя к перерождению и заточили в Доме кандалов.
+:'''Цзинлю:''' Я думала, что Пожиратель Луны исчез навсегда. Но потом я вернулась на Лофу и увидела, как ты раздвигаешь морские воды. До сих пор это зрелище великолепно.
+:{{Диалог|Стрелка}} Я... знаю тебя?
+::'''Дань Хэн:''' Мы... знакомы?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Цзинлю:''' Хм... Может быть да, а может и нет. Но этот холодный безразличный тон мне очень знаком.
+:{{Диалог|Стрелка}} Я помню тебя, но смутно.
+::'''Дань Хэн:''' Я знаю тебя, но я ничего не помню.
+::'''Дань Хэн:''' Воспоминания прошлой жизни подобны разбитому стеклу... Мне не собрать воедино реальность из отдельных осколков...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Цзинлю:''' «Я не помню»... Так скажет всякий, кто хочет убежать от своего прошлого.
+::'''Цзинлю:''' Перерождение видьядхара стирает всю память о предыдущей жизни. Ты же сохранил осколки воспоминаний и силу Верховного старейшины.
+:{{Диалог|Стрелка}} Моя прошлая жизнь окончена.
+::'''Дань Хэн:''' Жизнь Пожирателя Луны окончена. Перед тобой сейчас совершенно другой человек.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::'''Цзинлю:''' Я понимаю. Грехи должны быть прощены после перерождения. Теперь ты Безымянный, путешествующий среди звёзд... Но разве можно по-настоящему проститься со своим прошлым?
+:'''Цзинлю:''' Если моя догадка верна, мудрейшие не желали допустить исчезания драконьей крови и надеялись на воскрешение Пожирателя Луны. Вот почему они вмешались в процесс перерождения... И превратили тебя в того, кем ты являешься сейчас....
+:{{Диалог|Стрелка}} Ты тоже стремишься продолжить наследование титула Верховного старейшины?
+::'''Дань Хэн:''' Ты тоже хочешь восстановить наследование титула Верховного старейшины, как и мудрейшие?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Впрочем, дела видьядхара меня не касаются.
+:{{Диалог|Стрелка}} Ты хочешь заставить Пожирателя Луны заплатить за то, что он сделал?
+::'''Дань Хэн:''' Действия Пожирателя Луны затронули многих... Ты здесь, чтобы добиться справедливости?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Кто дал мне, преступнице, право судить?
+:{{Диалог|Стрелка}} Зачем ты здесь?
+::'''Дань Хэн:''' Ты здесь не для того, чтобы вспоминать былые времена. Зачем ты здесь?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Ты что, не слышал? Та девчонка-видьядхара всё понятно объяснила.
+:'''Цзинлю:''' Я вернулась на Лофу, чтобы сдаться Альянсу и искупить свои грехи.
+:'''Цзинлю:''' До суда мне хотелось бы кое о чём попросить. Об одном-единственном дне, чтобы навестить старых друзей и исполнить давние обещания.
+:'''Цзинлю:''' Цзин Юань всегда был отзывчивым человеком. Он слышал о твоём приезде и согласился на мою просьбу.
+:'''Дань Хэн:''' Так это ты отправила письмо на экспресс?
+:'''Цзинлю:''' Именно.
+:{{Чёрный экран|В то же время...}}
+
+
+;(Поговорите с Цинцзу)
+:'''Цинцзу:''' Господин Дань Хэн, ей нужен именно ты.
+:'''Яньцин:''' Будь с ней очень осторожен.
+{{Диалог Конец}}
+
+===Поговорите с Цзинлю===
+{{Описание миссии|тип=Миссия компаньона|локация=Обитель божественного предвидения|В Обители божественного предвидения появилась непрошенная гостья. У лейтенанта Яньцина и стратега Цинцзу уже болит голова. Им нужно принять «гостью» и сопроводить пленника. Её голос и облик будоражат ваши давно похороненные воспоминания. Вы понимаете, что её намерения вовсе не дружественные.}}
+{{Диалог Начало}}
+
+;(Поговорите с Цзинлю)
+----
+:'''Цзинлю:''' Когда я оставила Сяньчжоу, до меня дошла весть, что они забрали твою чешую и рога, принудили тебя к перерождению и заточили в Доме кандалов.
+:'''Цзинлю:''' Я думала, что Пожиратель Луны исчез навсегда. Но потом я вернулась на Лофу и увидела, как ты раздвигаешь морские воды. До сих пор это зрелище великолепно.
+:{{Диалог|Стрелка}} Я... знаю тебя?
+::'''Дань Хэн:''' Мы... знакомы?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Цзинлю:''' Хм... Может быть да, а может и нет. Но этот холодный безразличный тон мне очень знаком.
+:{{Диалог|Стрелка}} Я помню тебя, но смутно.
+::'''Дань Хэн:''' Я знаю тебя, но я ничего не помню.
+::'''Дань Хэн:''' Воспоминания прошлой жизни подобны разбитому стеклу... Мне не собрать воедино реальность из отдельных осколков...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Цзинлю:''' «Я не помню»... Так скажет всякий, кто хочет убежать от своего прошлого.
+::'''Цзинлю:''' Перерождение видьядхара стирает всю память о предыдущей жизни. Ты же сохранил осколки воспоминаний и силу Верховного старейшины.
+:{{Диалог|Стрелка}} Моя прошлая жизнь окончена.
+::'''Дань Хэн:''' Жизнь Пожирателя Луны окончена. Перед тобой сейчас совершенно другой человек.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::'''Цзинлю:''' Я понимаю. Грехи должны быть прощены после перерождения. Теперь ты Безымянный, путешествующий среди звёзд... Но разве можно по-настоящему проститься со своим прошлым?
+:'''Цзинлю:''' Если моя догадка верна, мудрейшие не желали допустить исчезания драконьей крови и надеялись на воскрешение Пожирателя Луны. Вот почему они вмешались в процесс перерождения... И превратили тебя в того, кем ты являешься сейчас....
+:{{Диалог|Стрелка}} Ты тоже стремишься продолжить наследование титула Верховного старейшины?
+::'''Дань Хэн:''' Ты тоже хочешь восстановить наследование титула Верховного старейшины, как и мудрейшие?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Впрочем, дела видьядхара меня не касаются.
+:{{Диалог|Стрелка}} Ты хочешь заставить Пожирателя Луны заплатить за то, что он сделал?
+::'''Дань Хэн:''' Действия Пожирателя Луны затронули многих... Ты здесь, чтобы добиться справедливости?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Кто дал мне, преступнице, право судить?
+:{{Диалог|Стрелка}} Зачем ты здесь?
+::'''Дань Хэн:''' Ты здесь не для того, чтобы вспоминать былые времена. Зачем ты здесь?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Цзинлю:''' Ты что, не слышал? Та девчонка-видьядхара всё понятно объяснила.
+:'''Цзинлю:''' Я вернулась на Лофу, чтобы сдаться Альянсу и искупить свои грехи.
+:'''Цзинлю:''' До суда мне хотелось бы кое о чём попросить. Об одном-единственном дне, чтобы навестить старых друзей и исполнить давние обещания.
+:'''Цзинлю:''' Цзин Юань всегда был отзывчивым человеком. Он слышал о твоём приезде и согласился на мою просьбу.
+:'''Дань Хэн:''' Так это ты отправила письмо на экспресс?
+:'''Цзинлю:''' Именно.
+:{{Чёрный экран|В то же время...}}
+:{{tx}}
+{{Диалог Конец}}
+
+===Отправляйтесь в порт Звездочёт Навалия===
+{{Описание миссии|тип=Миссия компаньона|локация=Обитель божественного предвидения|По словам Цзинлю, она вернулась на Сяньчжоу и собрала своих старых друзей, чтобы вспомнить об обещаниях, которые они давали, когда их сердца всё ещё бились как одно целое. Однако до этого она хотела бы посетить кое-какие места и отдать дань уважения ушедшим товарищам.}}
+{{Диалог Начало}}
+:{{tx}}
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud01"
+}</pre>
+:'''Яньцин:''' Если хотела посмотреть на звёздные ялики, можно было бы просто пойти к Нефритовым вратам. Зачем тащиться аж сюда?
+:'''Цзинлю:''' Юноша, ты когда-нибудь слышал про Байхэн, девушку-пилота из лисьего народа?
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:'''Яньцин:''' Байхэн... Вроде знакомое имя...
 <pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P43202_F43202003_G4",
 	"AnchorName": "Anchor4",
 	"DynamicParams": {}
 }</pre>
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} Байхэн...
 :<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -327,53 +641,7 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
-:<!--Unknown TalkSentence: 202121005-->
-:;(Экран становится чёрным)
-:<!--Unknown TalkSentence: 202121006-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Active": false,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
-	},
-	"EmotionName": "Trouble02"
-}</pre>
-:<!--Unknown TalkSentence: 202121011-->
-:<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "LevelArea_P43202_F43202003_G4",
-	"AnchorName": "Anchor3",
-	"DynamicParams": {}
-}</pre>
-:<!--Unknown TalkSentence: 202121012-->
-:<pre>{
-	"$type": "RPG.GameCore.StopPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 4
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400002
-				}
-			}
-		}
-	}
-}</pre>
-:{{Диалог|Стрелка}} undefined
+:{{Диалог|Стрелка}} Пилот...
 :<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -388,56 +656,6 @@
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
-:<!--Unknown TalkSentence: 202121008-->
-:<!--Unknown TalkSentence: 202121009-->
-:;(Экран становится чёрным)
-:<!--Unknown TalkSentence: 202121010-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Active": false,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
-	},
-	"EmotionName": "Trouble02"
-}</pre>
-:<!--Unknown TalkSentence: 202121011-->
-:<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "LevelArea_P43202_F43202003_G4",
-	"AnchorName": "Anchor3",
-	"DynamicParams": {}
-}</pre>
-:<!--Unknown TalkSentence: 202121012-->
-:<pre>{
-	"$type": "RPG.GameCore.StopPermanentEmotion",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"FixedValue": {
-					"Value": 4
-				}
-			},
-			"GroupNpcID": {
-				"FixedValue": {
-					"Value": 400002
-				}
-			}
-		}
-	}
-}</pre>
-<!--Unknown TalkSentence: 202121005-->
-;(Экран становится чёрным)
-<!--Unknown TalkSentence: 202121006-->
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
@@ -450,14 +668,14 @@
 	},
 	"EmotionName": "Trouble02"
 }</pre>
-<!--Unknown TalkSentence: 202121011-->
+:'''Дань Хэн:''' ...
 <pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P43202_F43202003_G4",
 	"AnchorName": "Anchor3",
 	"DynamicParams": {}
 }</pre>
-<!--Unknown TalkSentence: 202121012-->
+:'''Цзинлю:''' Пожиратель Луны, если к тебе возвращаются воспоминания, поделись ими.
 <pre>{
 	"$type": "RPG.GameCore.StopPermanentEmotion",
 	"TargetType": {
@@ -465,11 +683,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 4
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400002
 				}
@@ -477,6 +697,62 @@
 		}
 	}
 }</pre>
+:{{Диалог|Стрелка}} Я... ничего не помню.
+::'''Дань Хэн:''' Я ничего не помню.
+::'''Цзинлю:''' Но ты научился лгать.
+:{{Диалог|Стрелка}} Я вспоминаю только обрывки...
+::'''Дань Хэн:''' Кажется... она была соратницей Пожирателя Луны.
+::'''Цзинлю:''' Соратница и друг Пожирателю Луны и всем нам.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Цзинлю:''' Хотя... Это всё уже в прошлом. Мы пришли в порт Звездочёт Навалия, потому что я хотела здесь почтить её память.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Яньцин:''' А?.. В смысле, через церемонию утешения лисьего народа?
+:'''Цзинлю:''' Да... Отправить звёздный ялик. Он воплощает путешествие погибшего к звёздам. Обстоятельства сложились так, что я не смогла с ней попрощаться... И до сих пор об этом сожалею.
+:'''Цзинлю:''' Звёздный ялик мы тут найдём - я знаю, что их здесь производят... но не представляю, как именно.
+:'''Яньцин:''' Ясно... Тогда идите за мной.
+----
 {{Диалог Конец}}
 
 ===Запустите линию производства яликов в порту Звездочёт Навалия===
@@ -484,12 +760,12 @@
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202121301-->
-<!--Unknown TalkSentence: 202121302-->
+:'''Яньцин:''' Осторожно, тут до сих пор могут встретиться духи Стелларона.
+:'''Цзинлю:''' О нас двоих беспокоиться не нужно.
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202121303-->
-<!--Unknown TalkSentence: 202121304-->
+:'''Яньцин:''' Я тоже ничего не знаю про производство звёздных яликов...
+:'''Яньцин:''' Но запустить механизмы должно быть несложно.
 {{Диалог Конец}}
 
 ===Отправляйтесь на причал звёздных яликов===
@@ -507,9 +783,9 @@
 {{Диалог Начало}}
 :{{tx}}
 ----
-<!--Unknown TalkSentence: 202121701-->
-<!--Unknown TalkSentence: 202121702-->
-<!--Unknown TalkSentence: 202121703-->
+:'''Цзинлю:''' Эх... С восстановления Древа амброзии тут всё кишит Мерзостями. Даже великая Печь сотворения Комиссии по ремёслам едва держится.
+:'''Яньцин:''' Бедствие разразилось внезапно, и все ремесленники с учениками разбежались. До подхода подкрепления здесь лишь один ремесленник держал оборону, и поэтому Печь сотворения вообще удалось спасти.
+:'''Цзинлю:''' Интересно. Упёртость, которая сильнее даже страха за собственную жизнь... Напоминает мне об одном знакомом. Он был очень надменным, и если бы увидел, в каком хаосе пребывает Комиссия по ремёслам сегодня, то хохотал бы над такой некомпетентностью Сяньчжоу.
 <pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -517,11 +793,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -530,10 +808,10 @@
 	},
 	"EmotionName": "Angry01"
 }</pre>
-<!--Unknown TalkSentence: 202121704-->
-<!--Unknown TalkSentence: 202121705-->
-<!--Unknown TalkSentence: 202121706-->
-<!--Unknown TalkSentence: 202121707-->
+:'''Яньцин:''' На что это ты намекаешь?! Что плохого в том, чтобы спасать собственную жизнь и подождать, пока не придут Облачные Рыцари?
+:'''Цзинлю:''' Ну а где были те Облачные Рыцари, когда беда уже постучалась в двери? Насколько я слышала, всех спасла горстка каких-то иномирцев.
+:'''Яньцин:''' Гроты на Лофу немаленькие... К тому же часть рыцарей отправили на кампанию на Яоцине. Они не могли охранять всё сразу, людей не хватало.
+:'''Цзинлю:''' Пф. Юноша, почему бы нам не продолжить нашу дуэль? Покажи, улучшились ли у тебя навыки фехтования, которыми ты так гордишься.
 <pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -541,11 +819,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 10
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -554,26 +834,26 @@
 	},
 	"EmotionName": "Trouble01"
 }</pre>
-<!--Unknown TalkSentence: 202121708-->
-<!--Unknown TalkSentence: 202121709-->
+:'''Яньцин:''' Да ты просто хочешь свалить на меня всю грязную работу. Думаешь, я тут буду в лепёшку разбиваться ради преступницы?
+:'''Цзинлю:''' Сейчас иди вперёд. Встретимся у Печи сотворения.
 ----
 {{Диалог Конец}}
 
 ===Уничтожьте монстров в Комиссии по ремёслам===
 {{Диалог Начало}}
-<!--Unknown TalkSentence: 202121801-->
-<!--Unknown TalkSentence: 202121802-->
-<!--Unknown TalkSentence: 202121803-->
-<!--Unknown TalkSentence: 202121804-->
+:'''Дань Хэн:''' Зачем ты его отослала?
+:'''Цзинлю:''' Неважно... Но у нас с тобой не было хорошего состязания уже сотни лет.
+:'''Дань Хэн:''' Я не хочу сражаться.
+:'''Цзинлю:''' Я и не прошу наставлять на меня копьё. Но разве местные Мерзости не побуждают тебя поднять оружие?
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202121805-->
+:'''Цзинлю:''' Уже уходишь? Мы ещё не закончили.
 ----
 ;(По прибытии на место)
 
 ;(По прибытии на место)
 ----
-<!--Unknown TalkSentence: 202121805-->
+:'''Цзинлю:''' Уже уходишь? Мы ещё не закончили.
 ----
 <pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
@@ -582,11 +862,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 15
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -595,11 +877,12 @@
 	},
 	"EmotionName": "Proud02"
 }</pre>
-<!--Unknown TalkSentence: 202122001-->
-<!--Unknown TalkSentence: 202122002-->
+:'''Яньцин:''' Ну давай же!
+:'''Яньцин:''' Что в этот раз так долго?
 <pre>{
 	"$type": "RPG.GameCore.AdvSetAILeadWay",
 	"EntityInstanceID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 400001
 		}
@@ -630,10 +913,10 @@
 	"DynamicParams": {}
 }</pre>
 :<!--1.5-second delay-->
-<!--Unknown TalkSentence: 202122003-->
+:'''Цзинлю:''' Не волнуйся, Пожиратель Луны, времени у нас предостаточно.
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202121805-->
+:'''Цзинлю:''' Уже уходишь? Мы ещё не закончили.
 ----
 {{Диалог Конец}}
 
@@ -667,57 +950,25 @@
 	"StateName": "State_Relaxing",
 	"SubMissionID": 202100227
 }</pre>
-<!--Unknown TalkSentence: 202124501-->
-<!--Unknown TalkSentence: 202124502-->
-<!--Unknown TalkSentence: 202124503-->
-<!--Unknown TalkSentence: 202124504-->
-<!--Unknown TalkSentence: 202124505-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202124507-->
-:<!--Unknown TalkSentence: 202124508-->
-:<!--Unknown TalkSentence: 202124509-->
-:<!--Unknown TalkSentence: 202124510-->
-:<!--Unknown TalkSentence: 202124511-->
-:<!--Unknown TalkSentence: 202124512-->
-:<!--Unknown TalkSentence: 202124513-->
-:<!--Unknown TalkSentence: 202124514-->
-:<!--Unknown TalkSentence: 202124515-->
-:<!--Unknown TalkSentence: 202124516-->
-::{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202124518-->
-::{{tx}}
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetAudioEmotionState",
-	"StateName": "State_Relaxing",
-	"ResetToFloorDefault": true
-}</pre>
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202124510-->
-:<!--Unknown TalkSentence: 202124511-->
-:<!--Unknown TalkSentence: 202124512-->
-:<!--Unknown TalkSentence: 202124513-->
-:<!--Unknown TalkSentence: 202124514-->
-:<!--Unknown TalkSentence: 202124515-->
-:<!--Unknown TalkSentence: 202124516-->
-::{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 202124518-->
-::{{tx}}
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetAudioEmotionState",
-	"StateName": "State_Relaxing",
-	"ResetToFloorDefault": true
-}</pre>
-<!--Unknown TalkSentence: 202124510-->
-<!--Unknown TalkSentence: 202124511-->
-<!--Unknown TalkSentence: 202124512-->
-<!--Unknown TalkSentence: 202124513-->
-<!--Unknown TalkSentence: 202124514-->
-<!--Unknown TalkSentence: 202124515-->
-<!--Unknown TalkSentence: 202124516-->
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 202124518-->
+:'''Яньцин:''' Ты что, поддалась мне, чтобы я пришёл сюда первым?
+:'''Цзинлю:''' Конечно, нет. Должно быть, ты настолько улучшил свою технику, что я просто не смогла за тобой угнаться.
+:'''Яньцин:''' Хм-м... Значит, мы здесь, чтобы почтить память твоего маложивущего друга?
+:'''Цзинлю:''' Подслушивать нехорошо. И вообще, когда я сказала, что его больше нет в этом мире?
+:'''Яньцин:''' Хм, даже криогенные капсулы не способны надолго продлить жизни маложивущих видов. Если он всё ещё жив, сейчас он, наверное, умирающий старик.
+:{{Диалог|Стрелка}} Он ещё жив?
+::'''Дань Хэн:''' Инсин... ещё жив?
+::'''Цзинлю:''' Конечно, он жив... но лучше бы он был мёртв.
+::Он стал долгоживущим?
+:{{Диалог|Стрелка}} Он стал долгоживущим?
+:'''Дань Хэн:''' Он превратился в долгоживущего?
+:'''Цзинлю:''' Верно. Такие вот повороты судьбы.
+:'''Цзинлю:''' Несмотря на то, что некоторые люди рождаются с несравненным даром предвидения и исключительным интеллектом, на распутье судьбы они делают самый опрометчивый выбор.
+:'''Цзинлю:''' Каким бы умным он ни был, он предпринял глупую попытку использовать плоть эманатора Изобилия, чтобы помочь Пожирателю Луны воскресить умершего друга.
+:'''Цзинлю:''' Из-за собственной глупости он превратился в чудовище, проклятое бессмертием. Его душа раскололась, и он стал тем самым злом, которое ненавидел больше всего. Какая ирония...
+:'''Яньцин:''' Кажется, ты не сильно-то сочувствуешь старому товарищу.
+:'''Цзинлю:''' Я дала ему второй шанс - разве это не считается?
+:{{Диалог|Стрелка}} Второй шанс?
+:'''Дань Хэн:''' Что ты с ним сделала?
 :{{tx}}
 :{{tx}}
 <pre>{
@@ -728,11 +979,11 @@
 
 ;(По прибытии на место)
 ----
-<!--Unknown TalkSentence: 202122101-->
-<!--Unknown TalkSentence: 202122102-->
-<!--Unknown TalkSentence: 202122103-->
-<!--Unknown TalkSentence: 202122104-->
-<!--Unknown TalkSentence: 202122105-->
+:'''Цзинлю:''' Можешь по-прежнему убеждать себя, что ты всего лишь реинкарнация Дань Фэна, что грехи прошлого тебя не касаются... и настаивать, что ничего не помнишь.
+:'''Цзинлю:''' Но от боя не убежишь, Дань Хэн. Копьём ты владеешь в точности как Пожиратель Луны.
+:'''Цзинлю:''' Бой похож на литьё металла - его пламя убирает изъяны и обнажает настоящую натуру человека.
+:'''Цзинлю:''' Это слова того, кто сделал для тебя Пронзающего облака. Помнишь?
+:'''Цзинлю:''' Из всех нас ты был ему самым близким человеком. Так странно было наблюдать, как кто-то настолько надменный ладит с таким гордецом.
 <pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P43202_F43202004_G11",
@@ -746,29 +997,36 @@
 	},
 	"EmotionName": "Trouble01"
 }</pre>
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-<pre>{
+:{{Диалог|Стрелка}} Инсин?..
+:<pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
 	},
 	"EmotionName": "Sad02"
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
 		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+:{{Диалог|Стрелка}} (Постараться вспомнить.)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
 }</pre>
-<!--Unknown TalkSentence: 202122107-->
-;(Экран становится чёрным)
-<!--Unknown TalkSentence: 202122108-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
@@ -781,24 +1039,24 @@
 	},
 	"EmotionName": "Trouble02"
 }</pre>
-<!--Unknown TalkSentence: 202122109-->
+:'''Дань Хэн:''' Инсин...
 <pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P43202_F43202004_G11",
 	"AnchorName": "Anchor3",
 	"DynamicParams": {}
 }</pre>
-<!--Unknown TalkSentence: 202122114-->
-<!--Unknown TalkSentence: 202122115-->
-<!--Unknown TalkSentence: 202122116-->
-<!--Unknown TalkSentence: 202122117-->
-<!--Unknown TalkSentence: 202122118-->
+:'''Цзинлю:''' Хм... имя его ты всё же помнишь.
+:'''Цзинлю:''' Ещё ребёнком он поклялся отомстить Мерзостям. И эта клятва привела его на Сяньчжоу, куда он прилетел с далёких звёзд, чтобы тренироваться.
+:'''Цзинлю:''' В нашу первую встречу ростом он был по мой меч... но уже хвастался тем, что изучит все искусства Комиссии по ремёслам к своим ста годам. Ха-ха, у этого сорванца самомнения было едва ли не больше, чем у Верховного старейшины.
+:'''Цзинлю:''' Поначалу я была не в восторге от его дерзости, но, когда мы встретились снова, то оказалось, что он мог создавать оружие, которое поражало опытных ремесленников. В Комиссии по ремёслам его даже прозвали Мастером Горнила.
+:'''Цзинлю:''' К сожалению, Альянс ни за что бы не позволил маложивущему заправлять в Комиссии по ремёслам. В конце концов ему пришлось доказывать свои способности только среди нас, изгоев.
 ----
 :{{tx}}
 {{Диалог Конец}}
 
 ===Отправляйтесь в Комиссию по алхимии===
-{{Описание миссии|локация=Комиссия по алхимии|Отдав дань уважения, вы следуете за ней к Чешуйчатому ущелью. По какой-то причине у неё появилось желание обратиться за медицинской помощью. В Комиссии по алхимии нет никого лучше Девушки-дракона, чтобы поставить диагноз бывшему Мастеру меча Лофу.}}
+{{Описание миссии|тип=Миссия компаньона|локация=Комиссия по алхимии|Отдав дань уважения, вы следуете за ней к Чешуйчатому ущелью. По какой-то причине у неё появилось желание обратиться за медицинской помощью. В Комиссии по алхимии нет никого лучше Девушки-дракона, чтобы поставить диагноз бывшему Мастеру меча Лофу.}}
 {{Диалог Начало}}
 :{{tx}}
 
@@ -811,11 +1069,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 3
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400001
 				}
@@ -824,10 +1084,264 @@
 	},
 	"EmotionName": "Happy01"
 }</pre>
-<!--Unknown TalkSentence: 202122301-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:'''Байлу:''' Дань Хэн? Какая неожиданность! Ты в порядке? Давай, проходи.
+:{{Диалог|Стрелка}} Я не на осмотр...
+:{{Диалог|Стрелка}} Она пришла за консультацией.
+:'''Дань Хэн:''' Байлу, она пришла за консультацией.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Pround02"
+}</pre>
+:'''Байлу:''' О, я вижу. Ты пришла из-за глаз? Или тебя беспокоит что-то ещё?
+:'''Цзинлю:''' Мои глаза в порядке. Я скрываю их, чтобы не дать ожить воспоминаниям и не пробудить внутренних демонов. Мои мысли в последнее время беспорядочны, и меня иногда мучают кошмары. Ты сможешь успокоить мой разум, Девушка-дракон?
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Байлу:''' Подобные симптомы... не похоже, чтобы я в этом разбиралась.
+:'''Байлу:''' А, да какая разница. Целители в Комиссии по алхимии не выбирают себе пациентов. Дай мне свою руку - начнём с измерения пульса. Тебе нужно будет взять несколько контрастных червей, чтобы я смогла провести диагностику.
+:{{Чёрный экран|Байлу измеряет пульс...}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Suprise02"
+}</pre>
+:'''Байлу:''' Твоя рука... Она ледяная!
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Байлу:''' Подожди, пожалуйста. Дань Хэн, можно тебя на минуту?
+:{{Чёрный экран|Байлу измеряет пульс...}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:'''Байлу:''' У твоей подруги очень необычный «недуг».
+:'''Байлу:''' Её пульс очень слабый... Как правило, это значит...
+:{{Диалог|Стрелка}} Что она долго не проживёт.
+::'''Дань Хэн:''' ...Что она долго не проживёт.
+:{{Диалог|Стрелка}} Что лечения нет.
+::'''Дань Хэн:''' ...Что лечения нет.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:'''Байлу:''' Пу-пу-пу... Дай целителю поставить настоящий диагноз!
+:'''Байлу:''' У твоей подруги уникальный случай. Она выглядит здоровой, но её руки холодны как лёд. Я чувствую, как тёмный поток бежит и пульсирует по её венам и среди её эссенции нутра.
+:'''Байлу:''' Никогда не видела ничего подобного. С подробным исследованием, возможно, мне удастся сделать запись в летописи медицины. Вы с подругой сможете прийти на повторный приём?
+:{{Диалог|Стрелка}} (Отказаться и тактично объяснить ситуацию.)
+::'''Дань Хэн:''' Сегодня её последний день на Лофу.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Байлу:''' Эх, как жалко. Если бы она смогла остаться ещё на пару дней, возможно, мне бы удалось найти способ её излечить.
+:{{Диалог|Стрелка}} (Отказать и сказать как есть.)
+::'''Дань Хэн:''' Она преступница. Решать Облачным Рыцарям и Комиссии десяти владык.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Байлу:''' Говорят, нельзя судить о книге по обложке. Выглядит такой мягкой и изящной... Как она может быть преступницей? А, это не моя забота.
+:'''Байлу:''' Ох, сделаю всё, что в моих силах... Вне зависимости от того, что я назначу, ей необходимо постоянно пить много тёплой воды.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+:'''Байлу:''' Пойдём, я выпишу ей порошок жизненной силы для возвращения души. Он её не излечит, но... Так, а куда девался мой большой ящик с лекарствами?
+:'''Байлу:''' Прошу прощения, с изгнания Учеников Санктус Медикус здесь повсюду беспорядок.
+:'''Байлу:''' Дань Хэн, ты не против сходить со мной за лекарством? Мне бы пригодилась твоя помощь.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400008
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad02"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202005_G3",
+	"AnchorName": "Anchor5",
+	"DynamicParams": {}
+}</pre>
+:'''Цзинлю:''' У тебя неприятности, Девушка-дракон? Я пойду с тобой.
+:'''Байлу:''' Нет-нет... Всё в порядке...
+----
 {{Диалог Конец}}
 
 ===Поговорите с Байлу===
@@ -839,15 +1353,16 @@
 ;(По прибытии на место)
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202122503-->
+:'''Байлу:''' Хм, я чувствую запах трав. Они должны быть где-то здесь.
 
 ;(По прибытии на место)
-<!--Unknown TalkSentence: 202122504-->
+:'''Байлу:''' Эй! Отдай мой ящик с лекарствами!
 
 ;(По прибытии на место)
 <pre>{
 	"$type": "RPG.GameCore.AdvSetAILeadWay",
 	"EntityInstanceID": {
+		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 400003
 		}
@@ -857,7 +1372,7 @@
 	"MotionFlag": "Run",
 	"SpeedScale": 1.2
 }</pre>
-<!--Unknown TalkSentence: 202122505-->
+:'''Байлу:''' Уф, быстро бегает! Не дай ему уйти!
 {{Диалог Конец}}
 
 ===Одолейте Мерзостей и верните аптечку Байлу===
@@ -871,10 +1386,10 @@
 	"StateName": "State_Tense",
 	"SubMissionID": 202100244
 }</pre>
-<!--Unknown TalkSentence: 202122506-->
-<!--Unknown TalkSentence: 202122507-->
-<!--Unknown TalkSentence: 202122508-->
-<!--Unknown TalkSentence: 202122509-->
+:'''Байлу:''' Проклятье! Тут защитник побольше выискался!
+:'''Байлу:''' С каких пор в Комиссии по алхимии стали собираться все эти существа?
+:'''Дань Хэн:''' Осторожнее.
+:'''Цзинлю:''' Я справлюсь с ними, Девушка-дракон. Отойди - холод моего меча замораживает всё на своём пути.
 <pre>{
 	"$type": "RPG.GameCore.SetAudioEmotionState",
 	"StateName": "State_Tense",
@@ -887,32 +1402,32 @@
 
 ===Поговорите с Цзинлю===
 {{Диалог Начало}}
-<!--Unknown TalkSentence: 202122512-->
+:'''Байлу:''' Так, убедимся, что всё на месте... Отлично, успокоин и порошки для усиления ци есть. Давайте возвращаться - нельзя заставлять пациента долго ждать.
 
 ;(Поговорите с Цзинлю)
 ----
-<!--Unknown TalkSentence: 202122601-->
-<!--Unknown TalkSentence: 202122602-->
-<!--Unknown TalkSentence: 202122603-->
-<!--Unknown TalkSentence: 202122604-->
-<!--Unknown TalkSentence: 202122605-->
-<!--Unknown TalkSentence: 202122606-->
-<!--Unknown TalkSentence: 202122607-->
-<!--Unknown TalkSentence: 202122608-->
-<!--Unknown TalkSentence: 202122609-->
-<!--Unknown TalkSentence: 202122610-->
-<!--Unknown TalkSentence: 202122611-->
-<!--Unknown TalkSentence: 202122612-->
-<!--Unknown TalkSentence: 202122613-->
-<!--Unknown TalkSentence: 202122614-->
-<!--Unknown TalkSentence: 202122615-->
-<!--Unknown TalkSentence: 202122616-->
-<!--Unknown TalkSentence: 202122617-->
+:'''Байлу:''' Снова прошу прощения за задержку. Эти лекарства не исцелят тебя, но укрепят твоё тело и успокоят разум.
+:'''Цзинлю:''' Хорошо. Судьба долгоживущих неизбежна, даже с самыми лучшими целителями.
+:'''Байлу:''' Ты... поражена Марой? Но я не вижу у тебя симптомов. После произошедшего на Лофу мне довелось лечить нескольких поражённых Марой. У них у всех была несвязная речь, бред и устрашающие мутации тела.
+:'''Байлу:''' Но, кажется, у тебя ничего из этого нет...
+:'''Цзинлю:''' Я заключила сделку, которая позволит мне сохранить ту жизнь, что у меня осталась. Я в сознании, но можно сказать точно - мой разум уже на пределе...
+:'''Цзинлю:''' И всё же у меня столько неисполненных желаний, столько незаконченных дел...
+:'''Байлу:''' Вот как. Значит, ты научилась жить со своей болезнью. Я не смогу по-настоящему помочь в вопросах духа, но медицинские источники говорят, что спокойствие разума ведёт к исцелению тела. Если ты сможешь забыть о прошлом, то, возможно, это уменьшит проявление симптомов.
+:'''Цзинлю:''' В самом деле? Как жаль... моя ненависть перекрывает остальные эмоции. Я решила держаться за неё, принять её и использовать как стержень моего существования.
+:'''Цзинлю:''' Всё, что у меня осталось, - это меч в моей руке и ненависть к прошлому. Без них я... провалюсь в бездну пустоты.
+:'''Цзинлю:''' Спасибо за совет, Девушка-дракон. Встреча с тобой исцелила меня больше, чем смогло бы любое средство или лекарство.
+:'''Цзинлю:''' Кстати, среди тех, кого ты лечила в последние дни... Был ли кто-нибудь в бинтах?
+:'''Байлу:''' В бинтах? Довольно размытое описание... Не думаю. У нас есть раненые пациенты со всего Сяньчжоу, и после бедствия Древа амброзии ранений становится всё больше.
+:'''Цзинлю:''' Человек, о котором я спрашиваю, высокий, с серьёзным выражением лица. Он тоже постоянно носит при себе грубый меч. Ты видела кого-нибудь похожего, Девушка-дракон?
+:'''Байлу:''' Хм... О, да! Был один человек сегодня, который подходит под описание.
+:'''Байлу:''' Его рана, должно быть, была нанесена мечом, а ещё от него сильно пахло кровью... Хотя по тому, как он двигался, не сказать, что она его сильно беспокоила. Он даже не взял лекарство, которое я выписала.
+:'''Цзинлю:''' Хм. Вероятно, он искал лекарство иного рода.
+:'''Цзинлю:''' Кажется, все на месте. Пора проведать нашего старого друга.
 ----
 {{Диалог Конец}}
 
 ===Попрощайтесь с Яньцином===
-{{Описание миссии|локация=Чешуйчатое ущелье|Бывшие друзья воссоединяются в Чешуйчатом ущелье. Как сказал Цзин Юань: «Старые сети только мутят воду, не стоит их поднимать». Однако кто-то должен положить конец старым обидам.}}
+{{Описание миссии|тип=Миссия компаньона|локация=Чешуйчатое ущелье|Бывшие друзья воссоединяются в Чешуйчатом ущелье. Как сказал Цзин Юань: «Старые сети только мутят воду, не стоит их поднимать». Однако кто-то должен положить конец старым обидам.}}
 {{Диалог Начало}}
 
 {{Диалог Конец}}
@@ -922,12 +1437,12 @@
 :{{tx}}
 
 ;(Поговорите с Блэйд)
-<!--Unknown TalkSentence: 202122902-->
+:Блэйд холодно смотрит на вас.
 
 ;(Поговорите с Цзинлю)
 ----
-<!--Unknown TalkSentence: 202122701-->
-<!--Unknown TalkSentence: 202122702-->
+:'''Цзинлю:''' Встреча без вина, но с грустью и горечью. Какое печальное воссоединение.
+:'''Цзинлю:''' Цзин Юань, тебе не пора отправить меня на Сюйлин?
 <pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -935,11 +1450,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -948,7 +1465,7 @@
 	},
 	"EmotionName": "Close01"
 }</pre>
-<!--Unknown TalkSentence: 202122703-->
+:'''Цзин Юань:''' Законы Альянса неизменны... К сожалению, твоя следующая остановка - Юйцюэ.
 <pre>{
 	"$type": "RPG.GameCore.StopPermanentEmotion",
 	"TargetType": {
@@ -956,11 +1473,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -968,10 +1487,10 @@
 		}
 	}
 }</pre>
-<!--Unknown TalkSentence: 202122704-->
-<!--Unknown TalkSentence: 202122705-->
-<!--Unknown TalkSentence: 202122706-->
-<!--Unknown TalkSentence: 202122707-->
+:'''Цзин Юань:''' Я сообщил обо всём адмиралу, и вышло так, что {{Rubi|Прозорливый Стратег|Яо Гуан с Юйцюэ}} проявила интерес к делу. Они установили Десятигранный световой барьер в надежде заранее встретить вас.
+:'''Цзинлю:''' Цзин Юань... Ты совсем не изменился, всё также пытаешься разрушить чужие планы...
+:'''Цзинлю:''' Но, в конце концов, ты, я, Облачные Рыцари или генералы Повелителя Небесной Дуги... Мы все - просто пешки в играх высших сил. Я сыта по горло предопределённым путём.
+:'''Цзинлю:''' Неважно. Я отклонюсь от курса, если ты настаиваешь, но исхода это не изменит. Я буду на победившей стороне.
 <pre>{
 	"$type": "RPG.GameCore.TriggerPermanentEmotion",
 	"TargetType": {
@@ -979,11 +1498,13 @@
 		"FetchType": "SingleNpcByNpcID",
 		"SingleNpcID": {
 			"GroupID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 5
 				}
 			},
 			"GroupNpcID": {
+				"IsDynamic": false,
 				"FixedValue": {
 					"Value": 400003
 				}
@@ -992,7 +1513,7 @@
 	},
 	"EmotionName": "Angry01"
 }</pre>
-<!--Unknown TalkSentence: 202122708-->
+:'''Цзин Юань:''' Тогда я доведу это дело до конца.
 ----
 :{{tx}}
 <pre>{
@@ -1012,8 +1533,8 @@
 ----
 ----
 ;(Экран становится чёрным)
-<!--Unknown TalkSentence: 202123301-->
-<!--Unknown TalkSentence: 202123302-->
+:'''Блэйд:''' Знакомое чувство...
+:'''Блэйд:''' Словно... мы снова на моём первом уроке по фехтованию.
 :{{tx}}
 :{{tx}}
 <pre>{
@@ -1029,14 +1550,15 @@
 
 ;(Поговорите с Цзинлю)
 ----
-<!--Unknown TalkSentence: 202122801-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 202122803-->
-<!--Unknown TalkSentence: 202122806-->
-<!--Unknown TalkSentence: 202122807-->
-<!--Unknown TalkSentence: 202122808-->
-<!--Unknown TalkSentence: 202122809-->
+:'''Цзинлю:''' Что планируешь делать дальше, Пожиратель Луны?
+:{{Диалог|Стрелка}} Собираюсь вернуться на экспресс.
+::'''Дань Хэн:''' Когда встреча закончится, я вернусь на экспресс и продолжу путешествие.
+:{{Диалог|Стрелка}} Об этом ещё только предстоит подумать...
+::'''Дань Хэн:''' Я ещё не решил, что мне со всем этим делать... Думаю, я продолжу путешествие.
+:'''Цзинлю:''' Ты не сможешь вечно оставаться на экспрессе. У твоих друзей есть свои собственные заботы, как и у нас когда-то.
+:'''Цзинлю:''' Когда я сбежала с Лофу много лет назад, думала забыть о своей мести и просто отпустить. Но с течением времени я только яснее понимала... Она сопровождала меня, как старый друг, что каждый день ноет над ухом.
+:'''Цзинлю:''' Память о том, что я сделала, когда стала поражённой Марой, проросла глубоко внутри. Раз я не могу избавить себя от неё, значит, должна встретить лицом к лицу.
+:'''Цзинлю:''' Может быть, когда я увижу падение Изобилия, ты и Инсин станете по-настоящему свободными. Прощай, Пожиратель Луны.
 ----
 {{Диалог Конец}}
 
@@ -1055,7 +1577,7 @@
 {{Диалог Конец}}
 
 ===Ответьте на сообщение Март 7===
-{{Описание миссии|локация=Чешуйчатое ущелье|Словно пробудив вас от старого сна, сообщение напоминает вам, что вы всё ещё находитесь в начале нового пути, и у вас есть друзья, которые пойдут с вами, где бы вы ни оказались.}}
+{{Описание миссии|тип=Миссия компаньона|локация=Чешуйчатое ущелье|Словно пробудив вас от старого сна, сообщение напоминает вам, что вы всё ещё находитесь в начале нового пути, и у вас есть друзья, которые пойдут с вами, где бы вы ни оказались.}}
 {{Диалог Начало}}
 <pre>{
 	"$type": "RPG.GameCore.PlayMessage",
@@ -1081,4 +1603,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия компаньона Навбокс|Глава }}
+
+[[en:]]

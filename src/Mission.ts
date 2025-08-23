@@ -90,7 +90,7 @@ export class Mission {
 		if (!this.name) {
 			return `{{cx}}<!--Hidden Mission ID ${this.id}-->`
 		}
-		return `[[${this.displayType}]] ''${wikiTitleLink(this.name, 'mission')}''`
+		return `[[${this.displayType}]] «${wikiTitleLink(this.name, 'mission')}»`
 	}
 	
 	static fromId(missionId: string | number): Mission {

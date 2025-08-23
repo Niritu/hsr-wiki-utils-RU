@@ -1,0 +1,193 @@
+<%-- [PAGE_INFO]
+PageTitle=#О время, пронеси меня через тысячи лет#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040602
+|Название        = 
+|Изображение     = Миссия О время, пронеси меня через тысячи лет.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Пока живы герои
+|Условия         = 
+|Персонажи       = Первопроходец; Странный монитор
+|СтартЛокация    = [[Амфореус]] — [[????]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*6; Очищенный эфир*6; Беспорядочная амброзия*240; Кредиты*80 000
+}}
+'''О время, пронеси меня через тысячи лет''' — [[Миссия Освоения]] в главе [[Пока живы герои]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Изучите таинственное пространство
+# Что-то не так... Проверьте монитор ещё раз
+# Изучите таинственное пространство
+# Изучите монитор в самом конце
+
+==Прохождение==
+{{Дополнить}}
+===Изучите таинственное пространство===
+{{Описание миссии|тип=Миссия Освоения|локация=????|Перед каждой экспедицией должна пройти буря, предвещающая будущие трудности. Единственный зритель из зрительного зала Залегендья рассказывает вам историю о том, что было, пока были живы герои, начиная пролог трагедии.}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040602\DS104060201.json'-->)
+
+;(Unused &mdash; PlayVoice1_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021402,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice2_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021403,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice3_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021404,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice4_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021405,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+{{Диалог Конец}}
+
+===Что-то не так... Проверьте монитор ещё раз===
+{{Диалог Начало}}
+:'''Странный монитор:''' Аномалия: (Первопроходец).
+:'''Странный монитор:''' Выполняется команда: запись.
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+{{Диалог Конец}}
+
+===Изучите таинственное пространство===
+{{Диалог Начало}}
+
+;(Unused &mdash; DistrictTrigger_G10)
+
+{{Диалог Конец}}
+
+===Изучите монитор в самом конце===
+{{Диалог Начало}}
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Time, Ferry Me Through Ages
+|zhs  = 流年啊，渡我漂游千百载
+|zht  = 流年啊，渡我漂游千百載
+|ja   = 流れる時よ、幾千の年月を越えていけ
+|ko   = 흐르는 세월이여, 수천 년을 건너게 해다오
+|es   = Tiempo, llévame flotando a través de los años
+|fr   = Temps, laisse-moi traverser les âges
+|ru   = О время, пронеси меня через тысячи лет
+|th   = ห้วงเวลาเอ๋ย จงพาฉันล่องลอยผ่านพันปี
+|vi   = Hỡi Năm Tháng, Hãy Đưa Tôi Phiêu Du Hàng Ngàn Năm
+|de   = O Zeit, trage mich durch die Epochen
+|id   = Aliran Waktu, Bawalah Aku Mengarungi Ribuan Tahun
+|pt   = Ó Tempo, Leva-me Através das Eras
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

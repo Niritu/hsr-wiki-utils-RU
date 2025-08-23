@@ -1,19 +1,21 @@
+<%-- [PAGE_INFO]
+PageTitle=#Выставка фотографий: Изящество древности#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 8027205
 |Название        = 
-|Изображение     = Миссия Освоения Выставка фотографий Изящество древности.png
+|Изображение     = Миссия Выставка фотографий Изящество древности.png
 |Тип             = Миссия приключения
-|События         = Между кадрами...
+|Событие         = Между кадрами...
 |Глава           = 
 |Условия         = 
 |Персонажи       = Март 7; Март 7 и (Первопроходец); Первопроходец; Хвост; Хохо
-|СтартЛокация    = Дом кандалов
+|СтартЛокация    = [[Лофу Сяньчжоу]] — [[Дом кандалов]]
 |Мир             = Лофу Сяньчжоу
-|Локации         = Дом кандалов
 |Предыдущая      = 
 |Следующая       = 
-|Награды         = Звёздный нефрит*60; Путеводитель путешественника*4; Dynamic Outlining*3; Кредиты*30 000
+|Награды         = Звёздный нефрит*60; Путеводитель путешественника*4; Динамичные контуры*3; Кредиты*30 000
 }}
 '''Выставка фотографий: Изящество древности''' — Событие [[Миссия приключения]] из события [[Между кадрами...]].
 
@@ -29,30 +31,45 @@
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Обсудите тему дня с Март 7===
-{{Описание миссии|локация=Дом кандалов|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Кажется, у Март 7 появилось новое вдохновение. Обсудите с ней тему дня.}}
 {{Диалог Начало}}
 
 ;(Unused &mdash; EnterDistrict_G236)
 :{{tx}}
-:<!--Unknown TalkSentence: 802723201-->
-::{{Диалог|Стрелка}} undefined
-::<!--Unknown TalkSentence: 802723203-->
-::<!--Unknown TalkSentence: 802723204-->
-::<!--Unknown TalkSentence: 802723205-->
-::<!--Unknown TalkSentence: 802723206-->
-::<!--Unknown TalkSentence: 802723207-->
-::;(Return to previous option selection)
-::{{Диалог|Стрелка}} undefined
-::<!--Unknown TalkSentence: 802723205-->
-::<!--Unknown TalkSentence: 802723206-->
-::<!--Unknown TalkSentence: 802723207-->
-::;(Return to previous option selection)
+::'''Март 7:''' Хм-м. (Первопроходец), я всю округу обошла, пока не нашла это место!
+::{{Диалог|Стрелка}} Ты переоделась?
+:::'''Март 7:''' Попасть сюда было непросто, пришлось подстроиться под местные веяния.
+:::Навевает не самые приятные воспоминания...
+::{{Диалог|Стрелка}} Навевает не самые приятные воспоминания...
+::'''Март 7:''' Не переживай. Я рядом, а вместе нас никто не остановит.
+::'''Март 7:''' Прочитав вчерашние комментарии, я поняла, какой кадр нам нужен.
+::'''Март 7:''' Сегодняшняя тема - «Изящество древности», и для этого мало просто снять типичное здание Возвышающего святилища, оживлённую лавку Переулка ауруматонов или поток из яликов в Облачной переправе...
+::{{Диалог|Стрелка}} Какие мудрые слова.
+::{{Диалог|Стрелка}} Тогда что нам снимать?
+::'''Март 7:''' Хе-хе. Дом кандалов! Больше всего зрителей привлекает то, что им недоступно. Например, это место.
+::{{Диалог|Стрелка}} Цитра?
+::{{Диалог|Стрелка}} Хелиоби?
+::{{Диалог|Стрелка}} Тюремный стиль?
+::'''Март 7:''' Судя по всему, они подражают древним мудрецам с Сяньчжоу, устраивая учёное собрание с декламацией стихов и музыкой.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G236"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Сфотографируйте хелиоби===
-{{Описание миссии|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
 {{Диалог Начало}}
 ;(Unused &mdash; PhotoGraphFinishCustomString_G237)
 <pre>{
@@ -65,11 +82,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400004
 						}
@@ -81,11 +100,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400005
 						}
@@ -97,11 +118,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400006
 						}
@@ -113,11 +136,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400009
 						}
@@ -129,11 +154,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400010
 						}
@@ -154,11 +181,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400001
 						}
@@ -170,11 +199,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400002
 						}
@@ -186,11 +217,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400003
 						}
@@ -202,11 +235,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400007
 						}
@@ -218,11 +253,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400008
 						}
@@ -244,11 +281,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400001
 						}
@@ -260,11 +299,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400002
 						}
@@ -276,11 +317,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400003
 						}
@@ -292,11 +335,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400007
 						}
@@ -308,11 +353,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400008
 						}
@@ -333,11 +380,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400004
 						}
@@ -349,11 +398,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400005
 						}
@@ -365,11 +416,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400006
 						}
@@ -381,11 +434,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400009
 						}
@@ -397,11 +452,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 237
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400010
 						}
@@ -414,7 +471,7 @@
 {{Диалог Конец}}
 
 ===Обсудите фотографию с Март 7===
-{{Описание миссии|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
 {{Диалог Начало}}
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
@@ -423,39 +480,83 @@
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
 }</pre>
 :{{tx}}
-<!--Unknown TalkSentence: 802723251-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
+:'''Март 7:''' Эм... Это не то изящество, о котором я думала.
+:{{Диалог|Стрелка}} Все хотят идти в ногу со временем.
+:{{Диалог|Стрелка}} Как-то чересчур современно...
+:'''Март 7:''' Какой странный объектив. Никак не могу понять, что он делает...
+:'''Март 7:''' Неважно. Как тебе вариант «Тусовка хелиоби»?
+:{{Диалог|Стрелка}} Пусть будет «Тусовка хелиоби».
+::'''Март 7:''' А у хелиоби насыщенная жизнь.
+:{{Диалог|Стрелка}} А может... «Бомонд хелиоби»?
+::'''Март 7:''' Они на редкость образованные хелиоби.
+:{{Диалог|Стрелка}} А может... «Призрачная вечеринка»?
+::'''Март 7:''' Как-то мрачновато... Но так-то отсюда недалеко до загробного мира.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 200,
+	"Value": "1"
+}</pre>
+:'''Март 7:''' Кстати, а почему хелиоби в Доме кандалов?
+:'''???:''' Т-темно как... А нам точно надо идти дальше?..
+:Поравнявшись с вами, обладательница взволнованного голоса увидела вас и облегчённо вздохнула.
+:'''Хохо:''' Ох, это в-вы, я т-так рада...
+:'''Хвост:''' Эх. Столько тренировок - и всё впустую. Как испугается, сразу зовёт на помощь. Позорище.
+:'''Хвост:''' Это просто шайка хелиоби-графоманов, ничего такого! Я бы точно ни одному из них не дал вот так сбежать!
+:'''Хохо:''' Хнык...
+:{{Диалог|Стрелка}} А мне как раз не хватает модели для фото...
+:{{Диалог|Стрелка}} Подожди с тренировками. Как насчёт фото?
+:{{Диалог|Стрелка}} Фотосессия - это тоже своего рода тренировка храбрости.
+:'''Хохо:''' Фото? Меня? Ладно... Но... Прямо здесь?
+:'''Март 7:''' Мне тоже интересно, как объектив поменяет Хохо.
+:Фотосессия - это тоже своего рода тренировка храбрости.
+:'''Март 7:''' Какое-то у меня плохое предчувствие. А что если объектив превратит Хохо в озверевшего в бою борисинца или ещё кого похуже...
+:{{Диалог|Стрелка}} Не попробуешь - не узнаешь!
+:{{Диалог|Стрелка}} Теперь ещё больше хочу попробовать...
 {{Диалог Конец}}
 
 ===Сфотографируйте Хохо===
-{{Описание миссии|локация=Дом кандалов|Как Хохо будет выглядеть в объективе-калейдоскопе? Опробуйте эффект объектива-калейдоскопа на Хохо.}}
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Как Хохо будет выглядеть в объективе-калейдоскопе? Опробуйте эффект объектива-калейдоскопа на Хохо.}}
 {{Диалог Начало}}
 :{{tx}}
-<!--Unknown TalkSentence: 802723301-->
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 802723303-->
-<!--Unknown TalkSentence: 802723304-->
-<!--Unknown TalkSentence: 802723305-->
-<!--Unknown TalkSentence: 802723306-->
-<!--Unknown TalkSentence: 802723307-->
-<!--Unknown TalkSentence: 802723308-->
-<!--Unknown TalkSentence: 802723309-->
-<!--Unknown TalkSentence: 802723310-->
-<!--Unknown TalkSentence: 802723311-->
-<!--Unknown TalkSentence: 802723312-->
-<!--Unknown TalkSentence: 802723313-->
-<!--Unknown TalkSentence: 802723314-->
-<!--Unknown TalkSentence: 802723315-->
-<!--Unknown TalkSentence: 802723316-->
-<!--Unknown TalkSentence: 802723317-->
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-:{{Диалог|Стрелка}} undefined
-<!--Unknown TalkSentence: 802723409-->
-<!--Unknown TalkSentence: 802723410-->
-{{Описание миссии|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
+:Вы направляете на Хохо объектив-калейдоскоп.
+:{{Диалог|Стрелка}} Хохо, смотри в камеру!
+:'''Хвост:''' Сейчас лопну от смеха - она от вспышки камеры дрожит.
+:'''Хохо:''' ...
+:'''Хвост:''' Что такое? Так испугалась, что все слова растеряла?
+:'''Март 7:''' Стойте. Господин Хвост, с Хохо что-то не так...
+:'''Хохо:''' А-а-а-а! Ну всё... Лопнуло здесь только моё терпение!
+:'''Хохо:''' Ты не более, чем приживала, который вечно задирает нос! Как судья Комиссии десяти владык, я признаю тебя виновным в тунеядстве, язвительности и непрошенных указаниях!
+:'''Хохо:''' Тебе назначено наказание по совокупности преступлений - приговор вступает в силу немедленно!
+:'''Март 7 и (Первопроходец):''' Чего?
+:'''Хохо:''' И вы... Вы посмели сбежать из тюрьмы! Вы тоже будете наказаны! А-а-а-а-а...
+:Хохо прерывает собрание хелиоби и разом их всех разгоняет.
+:'''Март 7:''' Беда! Да как работает этот объектив?!
+:'''Хвост:''' Хе-хе, подняла на меня голос. Растёт!
+:Хохо странно себя ведёт...
+:Быстрее, за ней!
+:'''Март 7:''' Поверить не могу, что Хохо стала совсем другим человеком. А я-то почему так не поменялась после фотографии?
+:{{Диалог|Стрелка}} Похоже, что у тебя более высокое сопротивление эффектам.
+:{{Диалог|Стрелка}} Это физиология Безымянных!
+:'''Хвост:''' Хе-хе, подняла на меня голос. Растёт!
+:{{Диалог|Стрелка}} Хохо странно себя ведёт...
+:{{Диалог|Стрелка}} Быстрее, за ней!
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G239"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:'''Хвост:''' Чую, уже недалеко!
+:'''Хвост:''' Я пойду вперёд, а вы догоняйте!
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Чтобы выполнить задание и выиграть награду, вы вместе с Март 7 отправляетесь на поиски кадров в качестве её помощника.<br />Сделайте фотографию, прислушавшись к вдохновению.}}
 ;(Unused &mdash; PhotoGraphFinishCustomString_G240)
 <pre>{
 	"$type": "RPG.GameCore.HideEntityV2",
@@ -467,11 +568,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400004
 						}
@@ -483,11 +586,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400005
 						}
@@ -499,11 +604,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400006
 						}
@@ -515,11 +622,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400009
 						}
@@ -531,11 +640,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400010
 						}
@@ -556,11 +667,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400001
 						}
@@ -572,11 +685,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400002
 						}
@@ -588,11 +703,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400003
 						}
@@ -604,11 +721,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400007
 						}
@@ -620,11 +739,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400008
 						}
@@ -646,11 +767,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400001
 						}
@@ -662,11 +785,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400002
 						}
@@ -678,11 +803,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400003
 						}
@@ -694,11 +821,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400007
 						}
@@ -710,11 +839,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400008
 						}
@@ -735,11 +866,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400004
 						}
@@ -751,11 +884,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400005
 						}
@@ -767,11 +902,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400006
 						}
@@ -783,11 +920,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400009
 						}
@@ -799,11 +938,13 @@
 				"FetchType": "SingleNpcByNpcID",
 				"SingleNpcID": {
 					"GroupID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 240
 						}
 					},
 					"GroupNpcID": {
+						"IsDynamic": false,
 						"FixedValue": {
 							"Value": 400010
 						}
@@ -832,55 +973,60 @@
 {{Диалог Конец}}
 
 ===Обсудите фотографию с Март 7===
-{{Описание миссии|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
+{{Описание миссии|тип=Миссия приключения|локация=Дом кандалов|Съёмки завершены, пора обсудить результаты с Март 7.}}
 {{Диалог Начало}}
 
 ;(Поговорите с Хохо)
 ----
-<!--Unknown TalkSentence: 802723401-->
+:'''Хохо:''' Хе-хе, не переживай, {{MC|ж=госпожа|м=господин}} (Первопроходец). Я сообщу, когда соберу всех хелиоби.
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
 	"Priority": "High",
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
 }</pre>
-<!--Unknown TalkSentence: 802723351-->
-<!--Unknown TalkSentence: 802723352-->
-<!--Unknown TalkSentence: 802723353-->
-<!--Unknown TalkSentence: 802723354-->
-<!--Unknown TalkSentence: 802723355-->
-<!--Unknown TalkSentence: 802723356-->
-<!--Unknown TalkSentence: 802723357-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 802723359-->
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult"
-}</pre>
-:<!--Unknown TalkSentence: 802723364-->
-:<!--Unknown TalkSentence: 802723365-->
-:<!--Unknown TalkSentence: 802723366-->
-:<!--Unknown TalkSentence: 802723367-->
-:{{Диалог|Стрелка}} undefined
-:<!--Unknown TalkSentence: 802723361-->
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
-}</pre>
-:<!--Unknown TalkSentence: 802723364-->
-:<!--Unknown TalkSentence: 802723365-->
-:<!--Unknown TalkSentence: 802723366-->
-:<!--Unknown TalkSentence: 802723367-->
-<!--Unknown TalkSentence: 802723359-->
+:Вы снимаете Хохо с контейнера и помогаете ей спуститься на землю.
+:'''Хохо:''' Господин Хвост, я не знаю, что это было... Я вдруг...
+:'''Хвост:''' Тьфу, я-то подумал, что ты повзрослела, а над тобой просто эта штука подшутила. Тебе ещё учиться и учиться.
+:'''Хвост:''' Однако это и впрямь жуткая вещь... Я чувствую вокруг неё зловещую ауру, которая способна затуманить людской разум. Поосторожнее с ней.
+:'''Хохо:''' Прошу прощения, {{MC|ж=госпожа|м=господин}} (Первопроходец). Как судья Комиссии десяти владык, я не могу позволить злому духу и дальше бесчинствовать...
+:'''Хвост:''' Ого, вы смотрите, кто у нас заважничал. А чему-то ты от этой вещицы всё же научилась.
+:'''Март 7:''' Возражений не имею. (Первопроходец), а ты?
+:{{Диалог|Стрелка}} Приговор вступает в силу немедленно!
+::'''Хохо:''' Б-большое спасибо!
+:{{Диалог|Стрелка}} А компенсация будет?
+::'''Хохо:''' Я конфискую объектив в частном порядке, в Комиссии компенсация за это не предусмотрена... Если вы не против, то примите бутылку горячего молока дутой козы.
 :{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
 }</pre>
-<!--Unknown TalkSentence: 802723364-->
-<!--Unknown TalkSentence: 802723365-->
-<!--Unknown TalkSentence: 802723366-->
-<!--Unknown TalkSentence: 802723367-->
+:Хохо старательно положила объектив-калейдоскоп в мешочек и туго его завязала.
+:'''Март 7:''' Пора загружать фото. Хохо, как бы ты его назвала?
+:'''Хохо:''' Эм-м, я? Может... «Не забираться»? Но лучше его вообще удалить, недоброе фото...
+:'''Хвост:''' Как по мне, лучше назвать его «Крохотная судья и огромный хелиоби».
+:{{Диалог|Стрелка}} Значит, «Не забираться».
+:{{Диалог|Стрелка}} «Крохотная судья и огромный хелиоби».
+:{{Диалог|Стрелка}} Лучше «Хелиоби и судья - одна семья».
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 201,
+	"Value": "1"
+}</pre>
+:'''Март 7:''' Итак, с сегодняшней темой закончили. Это был долгий день. Хохо, господин Хвост, вы уж нас извините.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G241"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==
@@ -901,4 +1047,9 @@
 }}
 
 ==История изменений==
-{{История изменений|2.7}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

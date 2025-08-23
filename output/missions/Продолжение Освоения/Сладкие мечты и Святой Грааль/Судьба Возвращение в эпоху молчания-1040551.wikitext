@@ -1,0 +1,177 @@
+<%-- [PAGE_INFO]
+PageTitle=#Судьба: Возвращение в эпоху молчания#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1040551
+|Название        = 
+|Изображение     = Миссия Судьба Возвращение в эпоху молчания.png
+|Тип             = Продолжение Освоения
+|Событие         = 
+|Глава           = Сладкие мечты и Святой Грааль
+|Условия         = Завершена [[Продолжение Освоения]] «[[Судьба: Ночь сновидений]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Пенакония]] — [[Тематический парк Студии «Часы»]]
+|Мир             = Пенакония
+|Предыдущая      = Судьба: Ночь сновидений
+|Следующая       = Судьба: Возвращение звёздного моря
+|Награды         = Опыт Освоения*800; Звёздный нефрит*100; Путеводитель путешественника*6; Очищенный эфир*6; Кредиты*120 000
+}}
+'''Судьба: Возвращение в эпоху молчания''' — [[Продолжение Освоения]] в главе [[Сладкие мечты и Святой Грааль]].
+
+==Описание==
+{{Описание|Грейди - гнилая душа, появившаяся ещё десять янтарных эр назад, режиссёр плохих фильмов, он пытается поиграть с вами. Его мечта стать великим режиссёром рухнула из-за отсутствия таланта, оставив после себя состарившееся сердце, поглощённое самоуничижением и навязчивыми идеями. Кто бы мог подумать, что ключом к открытию его благородного фантазма и душевных ран станет безвкусная встреча фанатов разных поколений?}}
+
+==Этапы==
+# Отправляйтесь в Тематический парк Студии «Часы»
+# Отойдите подальше от подозрительного телевизора
+# Сбегите из благородного фантазма Ассасина
+# Отправляйтесь на сцену финальной битвы
+
+==Прохождение==
+{{Дополнить}}
+===Отправляйтесь в Тематический парк Студии «Часы»===
+{{Описание миссии|тип=Продолжение Освоения|локация=Тематический парк Студии «Часы»|Если Первопроходец не {{MC|ж=писала|м=писал}} ковбою, что же ждёт {{MC|ж=её|м=его}} в тематическом парке?}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+:;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040551\DS104055100.json'-->)
+:----
+:;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Mission\1040551\Story104055101.json'-->)
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+:;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040551\DS104055102.json'-->)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20321_F20321001_G350"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				},
+				"ResetTurnInPlace": true
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Отойдите подальше от подозрительного телевизора===
+{{Описание миссии|тип=Продолжение Освоения|локация=Тематический парк Студии «Часы»|Стали бы вы наступать на цветастую межзвёздную мину из антиматерии? Так зачем подходить к телевизору, который очевидно является ловушкой?}}
+{{Диалог Начало}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040551\DS104055103.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40448
+}</pre>
+{{Диалог Конец}}
+
+===Сбегите из благородного фантазма Ассасина===
+{{Описание миссии|тип=Продолжение Освоения|локация=Тематический парк Студии «Часы»|Давайте, насладитесь же этим леденящим шоу ужасов, подготовленным лично для вас.}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040551\DS104055104.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20321_F20321001_G352"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь на сцену финальной битвы===
+{{Описание миссии|тип=Продолжение Освоения|локация=Тематический парк Студии «Часы»|Вас ждёт злодейский старик Оти и переметнувшаяся на сторону врага госпожа Нота. Кажется, битва будет не из простых.}}
+{{Диалог Начало}}
+
+;(Поговорите с Бутхилл)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040551\Act\Act104055101.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "G353OpenRaid"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{Диалог|Разговор}} Слушать
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Config\Level\Mission\1040551\Act\Act104055102.json'-->)
+;(If {{cx}}<!--SubMission not Finish: 104055108-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040551\DS104055105.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "G353OpenRaid"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; G353OpenRaid)
+
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Fate/Back to the Age of Silence
+|zhs  = 命运/重返静默时代
+|zht  = 命運/重返靜默時代
+|ja   = Fate&nbsp;/&nbsp;沈黙の時代への回帰
+|ko   = Fate/침묵의 시대로의 귀환
+|es   = Fate/Retorno a la era del silencio
+|fr   = Fate/Retour à l'ère du silence
+|ru   = Судьба: Возвращение в эпоху молчания
+|th   = Fate/ หวนสู่ยุคแห่งความเงียบงัน
+|vi   = Fate/Trở Lại Thời Đại Tĩnh Lặng
+|de   = Fate/Zurück zur Ära der Stille
+|id   = Fate/Kembali ke Era yang Sunyi
+|pt   = Fate/Retorno à Era do Silêncio
+}}
+
+==История изменений==
+{{История изменений|3.5}}
+
+==Навигация==
+{{Продолжение Освоения Навбокс|Глава }}
+
+[[en:]]

@@ -1,15 +1,18 @@
+<%-- [PAGE_INFO]
+PageTitle=#О рассвет, озари конец мира#
+[END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 1040410
 |Название        = 
 |Изображение     = Миссия О рассвет, озари конец мира.png
 |Тип             = Миссия Освоения
-|События         = 
+|Событие         = 
 |Глава           = Падение на пороге рассвета
-|Условия         = Завершена [[Миссия Освоения]] ''[[О рассвет, озари конец мира]]''
-|Персонажи       = Первопроходец
-|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
-|Мир             = <!--стартовый мир-->
+|Условия         = Завершена [[Миссия Освоения]] «[[О рассвет, озари конец мира]]»
+|Персонажи       = «Похититель пламени»; Дань Хэн; Испуганная гражданка; Кенида; Мемо; Паникующая гражданка; Первопроходец; Фаенон; Цифер
+|СтартЛокация    = [[Амфореус]] — [[Зал утраченного солнца Рассветной вершины]]
+|Мир             = Амфореус
 |Предыдущая      = 
 |Следующая       = ???
 |Награды         = Опыт Освоения*1 400; Звёздный нефрит*180; Путеводитель путешественника*12; Очищенный эфир*12; Небесная амброзия*560; Lightless Dawncloud*1 { text = Lightless Dawncloud }; Кредиты*180 000
@@ -21,58 +24,1164 @@
 
 ==Этапы==
 # Отправляйтесь в Зал утраченного солнца Рассветной вершины и продолжайте приключение
+# Уберите камни с помощью молитвы Оронис
 # Спуститесь с горы
 # Заберите ядро пламени Кефала
 # Вскройте тайный замок, чтобы открыть ларь ядра
-# Быстрее вернитесь в Мраморный дворец
-# Вскройте тайный замок, чтобы открыть ларь ядра
 # Заберите ядро пламени Кефала
 # Вернитесь в Мраморный дворец
-# Уберите камни с помощью молитвы Оронис
+# Быстрее вернитесь в Мраморный дворец
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Отправляйтесь в Зал утраченного солнца Рассветной вершины и продолжайте приключение===
-{{Описание миссии|локация=<!--необходимо добавить-->|Я проложил путь к Вихрю сотворения с помощью духовных вод, а Гиацина приняла силу Аквилы и попрощалась со всеми. Мы спешим на помощь в Охему.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Зал утраченного солнца Рассветной вершины|Я проложил путь к Вихрю сотворения с помощью духовных вод, а Гиацина приняла силу Аквилы и попрощалась со всеми. Мы спешим на помощь в Охему.}}
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Небо... горит.
+:'''Фаенон:''' Рассвет Охемы... закончился...
+:'''Фаенон:''' Почему это происходит?
+:{{Диалог|Стрелка}} Гиацина сможет починить небо?..
+::'''Фаенон:''' Нет... Уже слишком поздно. Чёрное течение поглотило небо...
+::'''Фаенон:''' От этого мрака исходит сила, превосходящая силу титанов.
+::Об этом было сказано в пророчестве?
+:{{Диалог|Стрелка}} Об этом было сказано в пророчестве?
+:'''Фаенон:''' Если бы существовали подобные записи, Трибби бы обязательно предупредила.
+:'''Фаенон:''' Даже если Гиацина получит власть над небом, она не сможет рассеять эту тьму...
+:'''Фаенон:''' Чёрное течение... Его сила превосходит силу титанов.
+:'''Фаенон:''' Мы можем только надеяться, что она спасёт как можно больше жизней...
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' Путь транспортной платформы заблокирован...
+:'''Фаенон:''' (Первопроходец)! Нам нужно время!
+{{Диалог Конец}}
+
+===Уберите камни с помощью молитвы Оронис===
+{{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
 {{Диалог Конец}}
 
 ===Спуститесь с горы===
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(Поговорите с Старейшина Кенида)
+;(If {{cx}}<!--SubMission Finish: 104041004--> and {{cx}}<!--SubMission not Finish: 104041018-->)
+----
+:'''Кенида:''' Грехи златиусов... наконец обратились в божественное наказание...
+:'''Кенида:''' Никто... не уйдёт отсюда...
+:'''Дань Хэн:''' (Первопроходец), не обращай на неё внимания. Сосредоточься на задании.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Путь очищен от камней.
+:'''Фаенон:''' Отлично. Теперь мы можем спуститься.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' Создания чёрного течения... на Рассветной вершине?!
+:'''Фаенон:''' О нет! Люди в городе!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' Нужно выяснить, откуда они проникли в город...
+:'''Фаенон:''' Держись, Трибби! Мы скоро вернёмся!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Ещё враги. Плохи дела внизу...
+:'''Фаенон:''' Любой, кто посмеет встать у меня на пути... отведает Рассвета.
 {{Диалог Конец}}
 
 ===Заберите ядро пламени Кефала===
-{{Описание миссии|локация=<!--необходимо добавить-->|На священный город опустилась вечная ночь, вызвав полнейший хаос. Наш единственный выход - заполучить последнее ядро пламени и перейти в эру воскресающей земли. Как только мы найдём ядро пламени Кефала, мы тут же отправимся в Вихрь сотворения.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Зал утраченного солнца Рассветной вершины|На священный город опустилась вечная ночь, вызвав полнейший хаос. Наш единственный выход - заполучить последнее ядро пламени и перейти в эру воскресающей земли. Как только мы найдём ядро пламени Кефала, мы тут же отправимся в Вихрь сотворения.}}
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Кенида:''' О, отец небес Кефал, помилуй этих невежественных и презренных детей человеческих...
+:'''Кенида:''' Как наивно они считали, что эти еретики с золотой кровью спасут их...
+:'''Кенида:''' Багровое небо, охваченное пламенем и демонами, очистит их глупость...
+:'''Фаенон:''' Кенида...
+:'''Кенида:''' О, господин Спаситель?
+:'''Кенида:''' Не хочешь помолиться вместе со мной милосердному Кефалу?
+:'''Кенида:''' Взгляни на эти растерзанные земли... Это всё - грехи, совершённые тобою, нечестивым еретиком...
+:{{Диалог|Стрелка}} Она немного не в себе.
+::'''Дань Хэн:''' Угу... Не будем тратить время на жалкую сумасшедшую.
+::Пора отомстить за Аглаю.
+::'''Дань Хэн:''' ...
+::'''Дань Хэн:''' У нас есть дела поважнее... Не будем тратить время на жалкую сумасшедшую.
+::Ты противишься божественной воле!
+:{{Диалог|Стрелка}} Пора отомстить за Аглаю.
+::'''Дань Хэн:''' ...
+::'''Дань Хэн:''' У нас есть дела поважнее... Не будем тратить время на жалкую сумасшедшую.
+::Ты противишься божественной воле!
+:{{Диалог|Стрелка}} Ты противишься божественной воле!
+:'''Дань Хэн:''' Не спорь... Не будем тратить время на жалкую сумасшедшую.
+:'''Фаенон:''' Дань Хэн прав. Мой клинок жаждет забрать твою ничтожную жизнь...
+:'''Фаенон:''' Но для тебя, чей конец уже так близок, лучшее наказание - это увидеть, как златиусы исполнят своё предназначение.
+:'''Фаенон:''' Только так... ты наконец поймёшь, как глупы и бессмысленны были твои злодеяния.
+:'''Кенида:''' Ха... Исполнят предназначение?
+:'''Кенида:''' Ядро пламени Кефала исчезло без следа. И как же вы... исполните предназначение?
+:'''Дань Хэн:''' Исчезло без следа?..
+:'''Фаенон:''' Она сошла с ума... и несёт полный вздор.
+:'''Фаенон:''' На протяжении многих лет здесь поклонялись ядру пламени Кефала... Только члены Сената знают, как открыть ларь ядра.
+:{{Диалог|Стрелка}} Нам сейчас нужно отыскать кого-то из важных старейшин?
+::'''Фаенон:''' Нет... Такие сложности не нужны.
+::Нам придётся попросить помощи у Кениды.
+::'''Фаенон:''' Нет... Нам не нужна её помощь.
+::Нам нужно найти Ликурга?
+:{{Диалог|Стрелка}} Нам придётся попросить помощи у Кениды.
+::'''Фаенон:''' Нет... Нам не нужна её помощь.
+::Нам нужно найти Ликурга?
+:{{Диалог|Стрелка}} Нам нужно найти Ликурга?
+:'''Фаенон:''' Нет... Это займёт много времени.
+:'''Фаенон:''' Профессор Анакса учил меня не только тому, что пишут в книгах.
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Гиацина... У неё получилось?
+:'''Фаенон:''' Она верит, что сможет исцелить этот мир...
+:'''Фаенон:''' Если бы у неё получилось, мы бы почувствовали.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Это...
+:'''Фаенон:''' Чистильщик?!
 {{Диалог Конец}}
 
 ===Вскройте тайный замок, чтобы открыть ларь ядра===
 {{Диалог Начало}}
-{{Диалог Конец}}
 
-===Быстрее вернитесь в Мраморный дворец===
-{{Описание миссии|локация=<!--необходимо добавить-->|Создания чёрного течения и Похититель пламени наступают, но ядра пламени Кефала нигде нет. Мы решаем довериться Цифер, которая охраняет ядро пламени, и возвращаемся в Мраморный дворец.}}
-{{Диалог Начало}}
-{{Диалог Конец}}
+:{{Диалог|Изучение}} Осмотреть
+:{{tx}}
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20433_F20433001_G52"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "9958"
+	}
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"Srv_PuzzlePart1"},"CompareValue":1}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"Srv_PuzzlePart2"},"CompareValue":1}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"Srv_PuzzleState"},"CompareValue":2}-->}})
+<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"DynamicName": {
+		"Value": "Srv_PuzzleState"
+	},
+	"Value": 1
+}</pre>
+;(Unused &mdash; Group_TriggerPuzzleStart)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001,
+			300002,
+			300006,
+			300007
+		]
+	}
+}</pre>
+::<!--5.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerVisible"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerShowHole"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGraphDynamicFloat",
+		"Name": "ResultDigitalNum",
+		"TargetType": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300001
+			]
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 160
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 160
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 10
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 80
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 80
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 4
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 144
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 96
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 96
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGraphDynamicFloat",
+		"Name": "ResultDigitalNum",
+		"TargetType": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300002
+			]
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 160
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 160
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 10
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 80
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 80
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 4
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 144
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 96
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300004
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 96
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUpdateKeyBit"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "DebugLogShow"
+}</pre>
 
-===Вскройте тайный замок, чтобы открыть ларь ядра===
-{{Описание миссии|локация=<!--необходимо добавить-->|На священный город опустилась вечная ночь, вызвав полнейший хаос. Наш единственный выход - заполучить последнее ядро пламени и перейти в эру воскресающей земли. Как только мы найдём ядро пламени Кефала, мы тут же отправимся в Вихрь сотворения.}}
-{{Диалог Начало}}
+;(Unused &mdash; Group_SetGroupKeyPause)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300001,
+		300002
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300001,
+		300002
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300008]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300009]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300008,
+		300009
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300008]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300009]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300009
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300008,
+		300009
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Group_ReSetGroupKeyPause)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300001,
+		300002
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"IsPause": false,
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"IsPause": false,
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300001,
+		300002
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300008]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}} or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300009]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300008,
+		300009
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300008]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"IsPause": false,
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByCompareDynamicValue","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300009]},"DynamicKey":"Loc_IsInPauseCtrl","CompareType":"Equal","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.PauseTimeRewindTarget",
+	"IsPause": false,
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300009
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupPauseSolving",
+	"TargetSelf": false,
+	"TargetIDs": [
+		300008,
+		300009
+	],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:'''Дань Хэн:''' ...Получилось!
+:'''Фаенон:''' Бери ядро пламени, пора уходить!
+:'''Кенида:''' Ха-ха... Ха-ха-ха...
 {{Диалог Конец}}
 
 ===Заберите ядро пламени Кефала===
 {{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+:'''Фаенон:''' Дань Хэн, ты можешь ещё раз использовать технику духовных вод?
+:'''Дань Хэн:''' У меня закончились духовные воды. И...
+:'''Дань Хэн:''' Когда мы покинули Циркадное Око... я почувствовал, что связь с водами Амфореуса оборвалась.
+:'''Фаенон:''' Это тоже влияние чёрного течения?.. Похоже, нам остаётся только спуститься с горы.
+:'''Фаенон:''' Ох!
+:'''Кенида:''' Ха... А вы думали... Я окончательно сошла с ума?..
+:'''Кенида:''' Если никто и никогда не прикасался к ядру пламени...
+:'''Кенида:''' То вы думали... у меня не хватит силы забрать его?
+:'''Кенида:''' Ха-ха-ха!!!
+:{{Диалог|Стрелка}} Ой, мы пропали...
+::'''Фаенон:''' Успокойся и подумай хорошенько.
+::И где же нам искать ядро пламени?..
+::'''Фаенон:''' Успокойся и подумай хорошенько.
+::Психованная! Пустите! Я её порублю!!!
+:{{Диалог|Стрелка}} И где же нам искать ядро пламени?..
+::'''Фаенон:''' Успокойся и подумай хорошенько.
+::Психованная! Пустите! Я её порублю!!!
+:{{Диалог|Стрелка}} Психованная! Пустите! Я её порублю!!!
+:'''Фаенон:''' (Первопроходец), успокойся!
+:'''Цифер:''' {{Цвет|Ключевой|nobold=1|«Я выполню свою часть, а ты...»}}
+:'''Цифер:''' {{Цвет|Ключевой|nobold=1|«Постарайся не умереть, пока не расплатишься со мной».}}
+:'''Фаенон:''' Не будем пока думать о ядре пламени. Нам нужно продолжать спускаться.
+:'''Мемо:''' Не думать? Но...
+:'''Фаенон:''' Перед тем как отправиться на бой с Аквилой, я поручил госпоже Цифер охранять ядро пламени Кефала... любыми средствами.
+:'''Фаенон:''' Раз ядра пламени здесь нет... Значит, она что-то придумала. Другими словами... она выполнила свой долг по-своему.
+:'''Фаенон:''' Мы продолжим двигаться к Вихрю сотворения. Цифер обязательно придёт.
+:{{Диалог|Стрелка}} Ты настолько ей доверяешь?
+:{{Диалог|Стрелка}} А что если с ней что-то случилось?..
+:'''Дань Хэн:''' Если у неё не вышло...
+:'''Фаенон:''' Дань Хэн, (Первопроходец), у нас нет другого выбора. Мы должны довериться ей.
+:'''Фаенон:''' Если ближайшая ритуальная чаша в десяти тысячах шагах отсюда... нам остаётся только что есть духу бежать в этом направлении в надежде, что мы встретимся через одну тысячу шагов.
+:'''Фаенон:''' Если она не появится, то мы продолжим двигаться вперёд... Надеясь, что она появится через две тысячи шагов.
+:'''Фаенон:''' Три, четыре, пять тысяч... Я не буду терять надежды...
+:'''Фаенон:''' До тех пор, пока она не появится перед нами в своей обычной нахальной манере.
+:'''Дань Хэн:''' ...Я понимаю.
+:'''Дань Хэн:''' По крайней мере, до сегодняшнего дня... я не припомню ни одного златиуса, кто бы провалил свою миссию Преследующего пламя.
+:'''Фаенон:''' И она не исключение.
+:'''Фаенон:''' Но перед этим... мы должны выжить и вырваться из окружения!
+:{{Диалог|Стрелка}} Конечно!
+:{{Диалог|Стрелка}} Ты должен верить в нас!
+:{{Диалог|Стрелка}} Конец света? Одним больше, одним меньше.
+;(Unused &mdash; Wait_Option_104041108_180)
+:<!--1-second delay-->
+
+
+:{{Диалог|Разговор}} Кенида
+:Предводительница чистильщиков погружается в вечный сон. Её смерть возмутительно безмятежна.
+:Возможно, на отдалённом краю западного ветра найдётся справедливый закон, который осудит душу старейшины за все грехи.
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Фаенон:''' Всё кончено. Пойдёмте. Мы...
+:'''Дань Хэн:''' Фаенон...
+:'''Фаенон:''' Ох...
+:{{Диалог|Стрелка}} Заслуженная судьба.
+::'''Фаенон:''' Может быть, но...
+::Она была сильным противником.
+::'''Фаенон:''' Она совершила непростительное, но...
+::Плакать я по ней не буду.
+:{{Диалог|Стрелка}} Она была сильным противником.
+::'''Фаенон:''' Она совершила непростительное, но...
+::Плакать я по ней не буду.
+:{{Диалог|Стрелка}} Плакать я по ней не буду.
+:'''Фаенон:''' Она не искала сочувствия, но...
+:'''Фаенон:''' Как чистильщица, она была готова прибегнуть к запретному искусству, чтобы сохранить себя и память на тысячу лет... Наверное, это своего рода извращённая стойкость?
+:{{tx}}
+:'''Мемо:''' Эй, а можно побыстрее?
+:'''Мемо:''' У меня плохое предчувствие!
 {{Диалог Конец}}
 
 ===Вернитесь в Мраморный дворец===
-{{Описание миссии|локация=<!--необходимо добавить-->|Создания чёрного течения и Похититель пламени наступают, но ядра пламени Кефала нигде нет. Мы решаем довериться Цифер, которая охраняет ядро пламени, и возвращаемся в Мраморный дворец.}}
+{{Описание миссии|тип=Миссия Освоения|локация=Зал утраченного солнца Рассветной вершины|Создания чёрного течения и Похититель пламени наступают, но ядра пламени Кефала нигде нет. Мы решаем довериться Цифер, которая охраняет ядро пламени, и возвращаемся в Мраморный дворец.}}
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' !..
+:'''Мемо:''' ...Друзья!
+:'''Мемо:''' Смотрите, там...
+:'''Дань Хэн:''' Похититель пламени...
+:'''Фаенон:''' Под конец... он пришёл.
+:{{Диалог|Стрелка}} Нам некогда сражаться...
+::'''Фаенон:''' Согласен.
+::Хочешь узнать, был ли толк от твоих тренировок?
+:{{Диалог|Стрелка}} Хочешь узнать, был ли толк от твоих тренировок?
+:'''Фаенон:''' Нет... Не сейчас.
+:'''Фаенон:''' Я всегда ждал возможности сразиться с ним в честном бою...
+:{{tx}}
 {{Диалог Конец}}
 
-===Уберите камни с помощью молитвы Оронис===
-{{Описание миссии|локация=<!--необходимо добавить-->|Я проложил путь к Вихрю сотворения с помощью духовных вод, а Гиацина приняла силу Аквилы и попрощалась со всеми. Мы спешим на помощь в Охему.}}
+===Быстрее вернитесь в Мраморный дворец===
 {{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Мемо:''' О чём это вообще?!
+:'''Фаенон:''' Так значит ты тоже... ищешь чудо сотворения?
+:'''Фаенон:''' Если так, то ты должен присоединиться к златиусам! Почему же ты преграждаешь нам путь, Похититель пламени?
+:'''«Похититель пламени»:''' ...
+:'''«Похититель пламени»:''' Закат... Как и было обещано...
+:'''«Похититель пламени»:''' Нужно... начать сначала...
+:{{Диалог|Стрелка}} С ним нет смысла беседовать.
+::'''Фаенон:''' Отсутствие разума... уже не исправить.
+::Покажи, чему ты научился, Фаенон.
+::'''Фаенон:''' Всё-таки... битвы нам не избежать.
+::Повторение - мать учения?..
+:{{Диалог|Стрелка}} Покажи, чему ты научился, Фаенон.
+::'''Фаенон:''' Всё-таки... битвы нам не избежать.
+::Повторение - мать учения?..
+:{{Диалог|Стрелка}} Повторение - мать учения?..
+:'''Фаенон:''' Если слова не помогают... пусть клинок покажет нашу решимость!
+:'''Фаенон:''' На наших плечах будущее слишком многих людей...
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Мемо:''' Почему?! Я думала, что в Охеме безопасно!
+:'''Фаенон:''' Не думаю, что в этом мире остался хоть один безопасный уголок!
+:'''Фаенон:''' Ему нужно ядро пламени. Мы должны с ним покончить.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Дань Хэн:''' Тайная тропа Янус - единственный способ пересечь озеро!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Фаенон:''' Рано или поздно он догонит нас...
+:'''Фаенон:''' Бегите! Не останавливайтесь!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Паникующая гражданка:''' Это господин Фаенон!
+:'''Испуганная гражданка:''' Что произошло?!
+:'''Фаенон:''' Возвращайтесь в храм! Защищайте своих родных и друзей!
+:'''Фаенон:''' Хаос скоро закончится... Я обещаю!
 {{Диалог Конец}}
 
 ==На других языках==
@@ -93,4 +1202,9 @@
 }}
 
 ==История изменений==
-{{История изменений|3.3}}
+{{История изменений|3.5}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]
