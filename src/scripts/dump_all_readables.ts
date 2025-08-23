@@ -64,7 +64,7 @@ for (const series of ReadableSeries.loadAll()) {
 		'==Локация==',
 		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',
 		'',
-		'==Текст=='
+		`==${pageTitle}==`
 	)
 	
 	for (const readable of readables) {
