@@ -318,6 +318,28 @@ PageTitle=#Высшее состязание, детские вопросы#
 :'''Юньли:''' Звучит как вступительная реплика для злодея на сцене.
 :'''Сикуй:''' Ха-ха-ха-ха, мне нравится ваша беззаботность. Непросто сохранять спокойствие в такой напряжённой ситуации.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20242_F20242001_G40"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -497,6 +519,28 @@ PageTitle=#Высшее состязание, детские вопросы#
 :'''Юньли:''' Я сказала тебе предугадать тактику противника, а не критиковать моего Железяку!
 :'''Юньли:''' Наблюдение за оружием, которое используют противники, определение их тактики и недостатков - кратчайший путь к победе. Например, огромный и тяжёлый меч явно не подходит для долгой битвы, поэтому будет разумно потянуть время.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20242_F20242001_G111"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Попытайтесь выяснить, насколько сильны остальные участники соревнований===
@@ -519,6 +563,28 @@ PageTitle=#Высшее состязание, детские вопросы#
 :{{Диалог|Стрелка}} Да, хочу взглянуть на арену.
 ::'''Юньли:''' Я так и знала. Пошли.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20242_F20242001_G132"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Отправляйтесь на верхнюю палубу «Рассекателя небес»===

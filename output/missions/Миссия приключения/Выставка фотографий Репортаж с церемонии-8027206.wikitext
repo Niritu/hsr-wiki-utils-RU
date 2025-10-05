@@ -147,6 +147,209 @@ PageTitle=#Выставка фотографий: Репортаж с церем
 ::{{Диалог|Стрелка}} Март, вот ты хитрюга!
 :::'''Март 7:''' Хе-хе, это меня их энтузиазмом заразило. Снимай-снимай, а не то их усилия пропадут впустую.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoGraph",
+	"MissionID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 8027204
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 350
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "MultiTakePhoto",
+	"IdentifyDisplayType": "PhotoExhibition",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 350
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 20,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720601",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyRadiusOverride": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 20
+			}
+		},
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+			"FetchType": "SinglePropByPropID",
+			"SinglePropID": {
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 350
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		},
+		"InitFov": 1
+	},
+	"NotStartPhotoInTriggerRangeMode": true
+}</pre>
+
+:<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"MissionID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 8027204
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 350
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "MultiTakePhoto",
+	"IdentifyDisplayType": "PhotoExhibition",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 350
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 20,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720601",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyRadiusOverride": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 20
+			}
+		},
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+			"FetchType": "SinglePropByPropID",
+			"SinglePropID": {
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 350
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		},
+		"InitFov": 1
+	},
+	"NotStartPhotoInTriggerRangeMode": true
+}</pre>
 {{Диалог Конец}}
 
 ===Обсудите фотографию с Март 7===
@@ -182,6 +385,22 @@ PageTitle=#Выставка фотографий: Репортаж с церем
 :{{Диалог|Стрелка}} Твой меч... в другой стороне!
 ::Твой меч... в другой стороне!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "11"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionNextShotDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "12"
+	}
+}</pre>
 :'''Март 7:''' Мы всё ближе и ближе... Сюда!
 {{Диалог Конец}}
 
@@ -211,6 +430,68 @@ PageTitle=#Выставка фотографий: Репортаж с церем
 {{Диалог Начало}}
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--1.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 354
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy01"
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 354,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802723707
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 354,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802723708
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 354,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802723709
+		},
+		{
+			"AutoSkipTime": 8,
+			"GroupID": 354,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802723710
+		}
+	],
+	"LoopInterval": 2,
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
 
 ;(Unused &mdash; PhotoGraphFinishCustomString)
 <pre>{
@@ -269,6 +550,26 @@ PageTitle=#Выставка фотографий: Репортаж с церем
 		}
 	}
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "12"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
+}</pre>
 {{Диалог Конец}}
 
 ===Сфотографируйте построение робоптах===
@@ -322,6 +623,209 @@ PageTitle=#Выставка фотографий: Репортаж с церем
 ::{{Диалог|Стрелка}} Март, вот ты хитрюга!
 :::'''Март 7:''' Хе-хе, это меня их энтузиазмом заразило. Снимай-снимай, а не то их усилия пропадут впустую.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"UseType": "StartPhotoGraph",
+	"MissionID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 8027204
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 351
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "MultiTakePhoto",
+	"IdentifyDisplayType": "PhotoExhibition",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 351
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 20,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720601",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyRadiusOverride": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 20
+			}
+		},
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+			"FetchType": "SinglePropByPropID",
+			"SinglePropID": {
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 351
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		},
+		"InitFov": 1
+	},
+	"NotStartPhotoInTriggerRangeMode": true
+}</pre>
+
+:<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.BindSwitchPhotoGraphFuncBtn",
+	"SimpleMode": false,
+	"MissionID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 8027204
+		}
+	},
+	"RangeTriggerProp": {
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 351
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ColliderRelativePathList": [],
+	"PhotoGraphMode": "MultiTakePhoto",
+	"IdentifyDisplayType": "PhotoExhibition",
+	"AimTargetContainerConfig": [
+		{
+			"AimTargetConfig": {
+				"$type": "RPG.GameCore.PhotoGraphAimContaierTarget",
+				"AimTargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+					"FetchType": "SinglePropByPropID",
+					"SinglePropID": {
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 351
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				},
+				"GameObjectNode": {
+					"Value": "Root"
+				}
+			},
+			"OverrideCameraTip": true,
+			"TipPriority": 1,
+			"TipConfigs": [
+				{
+					"MinDistance": 20,
+					"MaxDistance": 99,
+					"TipText": {
+						"Hash": 4021565249410092732
+					}
+				}
+			],
+			"ContainerFlagName": "Target_802720601",
+			"IsTopContainer": true,
+			"IsAimTargetConfig": true
+		}
+	],
+	"OverrideConfig": {
+		"IdentifyRadiusOverride": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 20
+			}
+		},
+		"IdentifyLookAt": {
+			"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+			"FetchType": "SinglePropByPropID",
+			"SinglePropID": {
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 351
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		},
+		"InitFov": 1
+	},
+	"NotStartPhotoInTriggerRangeMode": true
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

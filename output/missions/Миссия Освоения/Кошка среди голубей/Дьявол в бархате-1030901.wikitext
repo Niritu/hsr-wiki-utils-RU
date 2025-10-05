@@ -87,6 +87,28 @@ PageTitle=#Дьявол в бархате#
 :{{Диалог|Стрелка}} Я не могу принять решение в одиночку...
 :'''Авантюрин:''' Не волнуйся. Возвращайся к своим компаньонам и обсуди ситуацию с ними.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20311_F20311001_G258"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Чёрный Лебедь)
 :'''Чёрный Лебедь:''' На первый взгляд, в этой сделке для тебя нет ничего плохого. Но Авантюрин - прозорливый торговец, его схема наверняка не так проста, как кажется.
@@ -126,6 +148,28 @@ PageTitle=#Дьявол в бархате#
 :{{Диалог|Стрелка}} У меня больше нет вопросов.
 ::'''Чёрный Лебедь:''' Всё случилось так быстро, что я могу только делать предположения. Когда выберешься отсюда, поговори со своими друзьями. Надеюсь, вы сможете понять, кто или что стало причиной этой неразберихи.
 ::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20311_F20311001_G259"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Чёрным Лебедем===

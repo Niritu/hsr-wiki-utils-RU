@@ -813,9 +813,606 @@ PageTitle=#О рассвет, озари конец мира#
 		]
 	}
 }</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008,
+			300009
+		]
+	}
+}</pre>
+::<!--5.5-second delay-->
 :<pre>{
-	"$type": "RPG.GameCore.DebugLog",
-	"Message": "DebugLogShow"
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerVisible"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerShowHole"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGraphDynamicFloat",
+		"Name": "ResultDigitalNum",
+		"TargetType": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300008
+			]
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 160
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 160
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 10
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 80
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 80
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 4
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 144
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 96
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_1stKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 96
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGraphDynamicFloat",
+		"Name": "ResultDigitalNum",
+		"TargetType": {
+			"$type": "RPG.GameCore.GroupFetchLocalTarget",
+			"TargetType": "Prop",
+			"Targets": [
+				300009
+			]
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 160
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 160
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 10
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 80
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 80
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 4
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 144
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 96
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetGraphDynamicFloat",
+					"Name": "Loc_2ndKeyBit",
+					"TargetSelf": false,
+					"TargetIDs": [
+						300011
+					],
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 96
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUpdateKeyBit"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011
+		]
+	}
 }</pre>
 
 ;(Unused &mdash; Group_SetGroupKeyPause)
@@ -1087,6 +1684,10 @@ PageTitle=#О рассвет, озари конец мира#
 :{{Диалог|Стрелка}} Конечно!
 :{{Диалог|Стрелка}} Ты должен верить в нас!
 :{{Диалог|Стрелка}} Конец света? Одним больше, одним меньше.
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Ветхий лук чёрного течения*2; Сенатор чёрного течения*1}}
+::Wave 2: {{Список врагов|mode=sent|Разъеденный чёрным течением топор*2; Сенатор чёрного течения*1; Разъеденное чёрным течением лезвие*1}}
+::Wave 3: {{Список врагов|mode=sent|Разъеденное чёрным течением лезвие*2; Боец чёрного течения*1}}
 ;(Unused &mdash; Wait_Option_104041108_180)
 :<!--1-second delay-->
 
@@ -1135,6 +1736,24 @@ PageTitle=#О рассвет, озари конец мира#
 :'''Фаенон:''' Нет... Не сейчас.
 :'''Фаенон:''' Я всегда ждал возможности сразиться с ним в честном бою...
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20433_F20433001_G69"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Быстрее вернитесь в Мраморный дворец===
@@ -1160,6 +1779,11 @@ PageTitle=#О рассвет, озари конец мира#
 :'''Фаенон:''' Если слова не помогают... пусть клинок покажет нашу решимость!
 :'''Фаенон:''' На наших плечах будущее слишком многих людей...
 :{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act420_Caption.json-->}}
+;(Cutscene ends)
+----
 ;(По прибытии на место)
 
 ;(По прибытии на место)

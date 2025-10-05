@@ -69,7 +69,7 @@ PageTitle=#Бумажная дуэль#
 
 ;(Поговорите с Золотой Господин)
 ;(If [[Fate's Ensemble]] is active)
-:;(If {{cx}}<!--during performance 414034101-->)
+:;(First interaction)
 ::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
@@ -106,9 +106,9 @@ PageTitle=#Бумажная дуэль#
 :::'''Золотой Господин:''' Наверное, дальше снимут про меня?
 :::'''Золотой Господин:''' Чирик-чирик! Не могу дождаться!
 :::{{Диалог|Стрелка}} Что за фильмы?
-::;(If {{cx}}<!--during performance 414030303-->)
+::;(If {{cx}}<!--performance 414030303 has been seen-->)
 ::::'''Золотой Господин:''' Чирик? В Грёзавиле новичок!
-::;(If {{cx}}<!--not during performance 414030303-->)
+::;(If {{cx}}<!--performance 414030303 has not been seen-->)
 ::::'''Золотой Господин:''' Чирик! О, это же {{MC|ж=моя знакомая дорогая гостья|м=мой знакомый дорогой гость}}.
 ::::'''Золотой Господин:''' Хм-м... Ты как раз вовремя.
 ::::'''Золотой Господин:''' Добро пожаловать в место мечты и радости всего Грёзавиля! Это Сад часов, чирик!
@@ -120,9 +120,8 @@ PageTitle=#Бумажная дуэль#
 :::{{Диалог|Стрелка}} Отлично, буду режиссёром!
 :::{{Диалог|Стрелка}} Но я никогда не {{MC|ж=снимала|м=снимал}} кино...
 :::'''Золотой Господин:''' Не беспокойся. У меня много птичек-помощников, и они отлично знают своё дело! Я уже написал сценарий. Осталось только снять, чирик!
-:;(If {{cx}}<!--not during performance 414034101-->)
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
-::<pre>{
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
+:::<pre>{
 	"$type": "RPG.GameCore.TriggerSound",
 	"SoundName": {
 		"Value": "Ev_vo_origamibirds_appear"
@@ -154,10 +153,11 @@ PageTitle=#Бумажная дуэль#
 		}
 	}
 }</pre>
-:::'''Золотой Господин:''' Чирик?
-:::'''Золотой Господин:''' Поразительно! Вы вернули всех помощников, чирик!
-:::'''Золотой Господин:''' Вот ваша награда, и подарок сверху. И пусть ни у кого не повернётся язык назвать меня скрягой, чирик!
-::<pre>{
+::::'''Золотой Господин:''' Чирик?
+::::'''Золотой Господин:''' Поразительно! Вы вернули всех помощников, чирик!
+::::'''Золотой Господин:''' Вот ваша награда, и подарок сверху. И пусть ни у кого не повернётся язык назвать меня скрягой, чирик!
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
 	"$type": "RPG.GameCore.QuestGetReward",
 	"QuestIDList": [
 		{
@@ -174,8 +174,1366 @@ PageTitle=#Бумажная дуэль#
 		}
 	]
 }</pre>
-:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
-::;(Return to previous option selection)
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200112
+			}
+		}
+	]
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Золотой Господин:''' Чирик?
+:::::'''Золотой Господин:''' Замечательно! Вы уже привели столько помощников, чирик!
+:::::'''Золотой Господин:''' А вот и обещанная награда, чирик!
+::::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200111
+			}
+		}
+	]
+}</pre>
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+:::::'''Золотой Господин:''' Если увидишь возле сада других птиц, проследи, чтобы они вернулись к Большому гнезду! Я в долгу не останусь, не волнуйся!
+:;(Subsequent interactions)
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Золотой Господин:''' Ого, все мои помощники и правда пришли! Поверить не могу, я наконец-то приступаю к съёмкам, чирик!
+:::::'''Золотой Господин:''' Вот твоя награда, и подарок сверху. И пусть ни у кого не повернётся язык назвать меня скрягой, чирик!
+::::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200111
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200112
+			}
+		}
+	]
+}</pre>
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::::'''Золотой Господин:''' Ого, все мои помощники пришли! Можно наконец начинать съёмки, чирик!
+::::::'''Золотой Господин:''' Возьми и этот подарок. И пусть ни у кого не повернётся язык назвать меня скрягой, чирик!
+:::::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200112
+			}
+		}
+	]
+}</pre>
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Inverse":true}-->}})
+::::::'''Золотой Господин:''' Объявляю официальное начало съёмок моего документального фильма! Название?.. Давайте просто «Золотой Господин и 108 птичек», чирик!
+::::::{{Диалог}} Расскажи о себе...
+:::::::'''Золотой Господин:''' Я - Золотой Господин, второй величайший архитектор Грёзавиля. После профессора Филина, чирик!
+:::::::'''Золотой Господин:''' Хм-м, такая сиятельная особа, как я, должна навечно остаться на плёнке, как думаешь?
+::::::{{Диалог}} Расскажи мне о птицах-оригами...
+:::::::'''Золотой Господин:''' Что ты хочешь узнать, {{MC|ж=дорогая гостья|м=дорогой гость}}? Вся информация будет включена в фильм, чирик!
+:::::::{{Диалог|Стрелка}} Расскажи о Саде часов...
+::::::::'''Золотой Господин:''' Грёзавиль начался с Сада часов. Его придумал Часик, а построил я. Хм-м, Сад отличается весьма оригинальным дизайном.
+::::::::'''Золотой Господин:''' Большое гнездо - самое ослепительное место на площади Золотого листа... А Сад часов - самое величественное место гнезда, чирик!
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Стрелка}} Расскажи о других жителях города...
+::::::::'''Золотой Господин:''' Все граждане Грёзавиля - очень интересные личности. Разумеется, я среди них самый выдающийся.
+::::::::'''Золотой Господин:''' Иногда я посещаю чаепития госпожи Ноты... Госпожа Нота готовит невероятно вкусные ягоды и играет замечательную музыку. Думаю, она вторая после меня.
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Стрелка}} Расскажи о профессоре Филине...
+::::::::'''Золотой Господин:''' Хм-м... Хм-м-м! Ты тоже знаешь великого профессора Филина? Профессор Филин - самая умная и сильная птица во всём поселении! Он стоит во главе птиц-оригами, чирик.
+::::::::'''Золотой Господин:''' Согласно легенде, профессор Филин сам построил Грёзавиль, веточка за веточкой... Великая птица, чирик! Когда-нибудь я стану таким же великим, чирик!
+::::::::'''Золотой Господин:''' Когда придёт время, сам профессор Филин будет меня превозносить, чирик!
+:::::::;(Return to previous option selection)
+::::::{{Диалог}} Мне нужны подсказки.
+::::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":6}},"Inverse":true}-->}})
+::::::::'''Золотой Господин:''' Хм-м... Сад часов такой большой. Я не помню, куда подевались мои помощники, чирик...
+::::::::'''Золотой Господин:''' Вот была бы у меня волшебная монетка, пробуждающая воспоминания, чирик. Но увы, я потратил весь свой запас, чирик...
+::::::::{{Диалог|Стрелка}} (Вытащить жетон Айдена.)
+::::::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 6
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerSound",
+			"SoundName": {
+				"Value": "Ev_vo_origamibirds_appear"
+			},
+			"EmitterType": "TargetEvaluator",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 414030980,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 414030981
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 414030982,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 131
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034173
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 132
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034174
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 133
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034175
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034176
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 134
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034177
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 135
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034178
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 136
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034179
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 137
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034180
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 138
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034181
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 145
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034182
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 146
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034183
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 139
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034184
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 140
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034185
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 147
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034186
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 141
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034187
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 142
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034188
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 143
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034189
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 148
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034190
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 149
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034191
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 150
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034192
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_414034194"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::::::::{{Диалог|Выход}} Забудь об этом.
+:::::::::'''Золотой Господин:''' Хе-хе, ну, бедность не порок, чирик.
+::::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":6}},"Inverse":true}-->}})
+::::::::'''Золотой Господин:''' Я не смогу снять фильм в одиночку. Мне нужны птички-помощники, чирик!
+::::::::'''Золотой Господин:''' Сперва, пожалуйста, верни помощника, о котором мы только что говорили.
+:::::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+::::::{{Диалог|Выход}} В следующий раз.
+::::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::::::'''Золотой Господин:''' Хм-м... Надеюсь, ты будешь с нетерпением ждать выхода моего шедевра!
+::::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::::::'''Золотой Господин:''' М-м, поручаю поиски помощников тебе!
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Золотой Господин:''' Ого, как быстро собрались помощники. Можем начинать съёмки, чирик!
+:::::'''Золотой Господин:''' А вот и обещанная награда, чирик!
+::::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200111
+			}
+		}
+	]
+}</pre>
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200111}},"Inverse":true}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Золотой Господин:''' Тебе тоже не терпится увидеть мой фильм, да? Хм-м, ну а как же иначе, чирик! Не забудь позвать всех моих помощников, чирик!
+:::::{{Диалог}} Расскажи о себе...
+::::::'''Золотой Господин:''' Я - Золотой Господин, второй величайший архитектор Грёзавиля. После профессора Филина, чирик!
+::::::'''Золотой Господин:''' Хм-м, такая сиятельная особа, как я, должна навечно остаться на плёнке, как думаешь?
+:::::{{Диалог}} Расскажи мне о птицах-оригами...
+::::::'''Золотой Господин:''' Что ты хочешь узнать, {{MC|ж=дорогая гостья|м=дорогой гость}}? Вся информация будет включена в фильм, чирик!
+::::::{{Диалог|Стрелка}} Расскажи о Саде часов...
+:::::::'''Золотой Господин:''' Грёзавиль начался с Сада часов. Его придумал Часик, а построил я. Хм-м, Сад отличается весьма оригинальным дизайном.
+:::::::'''Золотой Господин:''' Большое гнездо - самое ослепительное место на площади Золотого листа... А Сад часов - самое величественное место гнезда, чирик!
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} Расскажи о других жителях города...
+:::::::'''Золотой Господин:''' Все граждане Грёзавиля - очень интересные личности. Разумеется, я среди них самый выдающийся.
+:::::::'''Золотой Господин:''' Иногда я посещаю чаепития госпожи Ноты... Госпожа Нота готовит невероятно вкусные ягоды и играет замечательную музыку. Думаю, она вторая после меня.
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} Расскажи о профессоре Филине...
+:::::::'''Золотой Господин:''' Хм-м... Хм-м-м! Ты тоже знаешь великого профессора Филина? Профессор Филин - самая умная и сильная птица во всём поселении! Он стоит во главе птиц-оригами, чирик.
+:::::::'''Золотой Господин:''' Согласно легенде, профессор Филин сам построил Грёзавиль, веточка за веточкой... Великая птица, чирик! Когда-нибудь я стану таким же великим, чирик!
+:::::::'''Золотой Господин:''' Когда придёт время, сам профессор Филин будет меня превозносить, чирик!
+::::::;(Return to previous option selection)
+:::::{{Диалог}} Мне нужны подсказки.
+:::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":6}},"Inverse":true}-->}})
+:::::::'''Золотой Господин:''' Хм-м... Сад часов такой большой. Я не помню, куда подевались мои помощники, чирик...
+:::::::'''Золотой Господин:''' Вот была бы у меня волшебная монетка, пробуждающая воспоминания, чирик. Но увы, я потратил весь свой запас, чирик...
+:::::::{{Диалог|Стрелка}} (Вытащить жетон Айдена.)
+:::::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 6
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerSound",
+			"SoundName": {
+				"Value": "Ev_vo_origamibirds_appear"
+			},
+			"EmitterType": "TargetEvaluator",
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 414030980,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 414030981
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 414030982,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 131
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034173
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 132
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034174
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 133
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034175
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 144
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034176
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 134
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034177
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 135
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034178
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 136
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034179
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 137
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034180
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 138
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034181
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 145
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034182
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 146
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034183
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 139
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034184
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 140
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034185
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 147
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034186
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 141
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034187
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 142
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034188
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 143
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034189
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 148
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034190
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 149
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034191
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 150
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 414034192
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_414034194"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:::::::{{Диалог|Выход}} Забудь об этом.
+::::::::'''Золотой Господин:''' Хе-хе, ну, бедность не порок, чирик.
+:::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":6}},"Inverse":true}-->}})
+:::::::'''Золотой Господин:''' Я не смогу снять фильм в одиночку. Мне нужны птички-помощники, чирик!
+:::::::'''Золотой Господин:''' Сперва, пожалуйста, верни помощника, о котором мы только что говорили.
+::::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+:::::{{Диалог|Выход}} В следующий раз.
+:::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::::'''Золотой Господин:''' Хм-м... Надеюсь, ты будешь с нетерпением ждать выхода моего шедевра!
+:::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::::'''Золотой Господин:''' М-м, поручаю поиски помощников тебе!
 ;(If [[Fate's Ensemble]] is active)
 ::Вы слышите... Тихий звук доносится откуда-то: то ли птица поёт, то ли слуховая галлюцинация из глубин сознания.
 ::Затем вы опускаете голову... Здесь всё не так, как вы предполагаете.
@@ -230,6 +1588,28 @@ PageTitle=#Бумажная дуэль#
 <pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310310
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310313
+				}
+			]
+		}
+	]
+}</pre>
 ;(Unused &mdash; TalkOption_823100022)
 <pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
@@ -260,6 +1640,28 @@ PageTitle=#Бумажная дуэль#
 <pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310311
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802310313
+				}
+			]
+		}
+	]
+}</pre>
 ;(Unused &mdash; TalkOption_823100022)
 <pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
@@ -282,6 +1684,24 @@ PageTitle=#Бумажная дуэль#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"WaitForExit": true,
+					"Param": {
+						"Value": "1200"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 ;(Unused &mdash; G128_TurnMarch7th)
 <pre>{
 	"$type": "RPG.GameCore.AdvNpcFaceTo",
@@ -296,7 +1716,8 @@ PageTitle=#Бумажная дуэль#
 		300002
 	]
 }</pre>
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 3)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -319,6 +1740,28 @@ PageTitle=#Бумажная дуэль#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 3)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]
@@ -369,7 +1812,8 @@ PageTitle=#Бумажная дуэль#
 ===Откройте карту и узнайте о третьем игровом автомате===
 {{Диалог Начало}}
 
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -392,6 +1836,28 @@ PageTitle=#Бумажная дуэль#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

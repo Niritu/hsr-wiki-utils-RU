@@ -49,7 +49,8 @@ PageTitle=#Отдых в выжженных песках#
 ===Приготовьтесь к финальному испытанию===
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Финальное испытание уже близко, но вокруг словно бы происходит что-то странное.}}
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802240201,
 	"MissionCustomValue": {
@@ -60,6 +61,19 @@ PageTitle=#Отдых в выжженных песках#
 		]
 	},
 	"CustomValue": 6
+}</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240201,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			5,
+			6
+		]
+	},
+	"CustomValue": 5
 }</pre>
 
 ;(Unused &mdash; EnterArea_LocalGroup)
@@ -144,6 +158,19 @@ PageTitle=#Отдых в выжженных песках#
 ===Отправляйтесь к финишу===
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Отправляйтесь к финишу. Впереди вас могут ждать ответы.}}
 {{Диалог Начало}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_C2BrokenBridge"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.StartMissionCameraTemplate",
 	"CamDuration": {
@@ -391,6 +418,62 @@ PageTitle=#Отдых в выжженных песках#
 ===Отправляйтесь к финишу===
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Отправляйтесь к финишу. Впереди вас могут ждать ответы.}}
 {{Диалог Начало}}
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2.5
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "Camera"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "FinishLookAtPerformance_802240203"
+	}
+}</pre>
 :<!--0.5-second delay-->
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloat",
@@ -537,12 +620,7 @@ PageTitle=#Отдых в выжженных песках#
 :<pre>{
 	"$type": "RPG.GameCore.SetWaypointIgnoreLock"
 }</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomString","Name":{"Value":"PlanetInteractiveIndex"},"CompareValue":{"Value":"3"},"Inverse":true}-->}})
 :<pre>{
-	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
-	"Reset": true
-}</pre>
-<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802240227,
 	"MissionCustomValue": {
@@ -563,14 +641,54 @@ PageTitle=#Отдых в выжженных песках#
 }</pre>
 ;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomString","Name":{"Value":"PlanetInteractiveIndex"},"CompareValue":{"Value":"3"},"Inverse":true}-->}})
 :<pre>{
-	"$type": "RPG.GameCore.SetWaypointIgnoreLock"
-}</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomString","Name":{"Value":"PlanetInteractiveIndex"},"CompareValue":{"Value":"3"},"Inverse":true}-->}})
-:<pre>{
 	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
 	"Reset": true
 }</pre>
-<pre>{
+:;(If {{F|MissionCV-8022401-1}} is undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240227,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3,
+			11,
+			12,
+			21,
+			22
+		]
+	},
+	"CustomValue": 21
+}</pre>
+:;(If {{F|MissionCV-8022401-1}} is not undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240227,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3,
+			11,
+			12,
+			21,
+			22
+		]
+	},
+	"CustomValue": 22
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomString","Name":{"Value":"PlanetInteractiveIndex"},"CompareValue":{"Value":"3"},"Inverse":true}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetWaypointIgnoreLock"
+}</pre>
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802240228,
 	"MissionCustomValue": {
@@ -588,6 +706,51 @@ PageTitle=#Отдых в выжженных песках#
 		]
 	},
 	"CustomValue": 3
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomString","Name":{"Value":"PlanetInteractiveIndex"},"CompareValue":{"Value":"3"},"Inverse":true}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
+	"Reset": true
+}</pre>
+:;(If {{F|MissionCV-8022401-1}} is undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240228,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3,
+			11,
+			12,
+			21,
+			22
+		]
+	},
+	"CustomValue": 21
+}</pre>
+:;(If {{F|MissionCV-8022401-1}} is not undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240228,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3,
+			11,
+			12,
+			21,
+			22
+		]
+	},
+	"CustomValue": 22
 }</pre>
 {{Диалог Конец}}
 

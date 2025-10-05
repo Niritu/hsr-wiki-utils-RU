@@ -40,8 +40,7 @@ PageTitle=#Пение клинков кладёт конец войне#
 ;(Поговорите с Линша)
 :'''Линша:''' Все готовы?
 :{{Диалог|Стрелка}} Вперёд!
-:{{Диалог|Выход}} Давайте немного подождём.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 202200404,
 	"MissionCustomValue": {
@@ -53,6 +52,26 @@ PageTitle=#Пение клинков кладёт конец войне#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Давайте немного подождём.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(If {{F|MissionCV-2022004-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40235,
+	"OnCancel": [],
+	"OnEnter": []
 }</pre>
 ;(If {{cx}}<!--SubMission not Finish: 202200405-->)
 ;(По прибытии на место)
@@ -105,8 +124,7 @@ PageTitle=#Пение клинков кладёт конец войне#
 :'''Юньли:''' Думаешь, ты один тут такой с хорошими манерами? Если госпожа Линша в чём-то нуждается, то я с радостью использую свой меч и помогу ей.
 :'''Линша:''' Это так мило, что вы оба такие заботливые и вежливые. Ну что, пойдём?
 :{{Диалог|Стрелка}} Вперёд!
-:{{Диалог|Выход}} Погодите-ка минутку!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 202200404,
 	"MissionCustomValue": {
@@ -118,6 +136,48 @@ PageTitle=#Пение клинков кладёт конец войне#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Погодите-ка минутку!
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20231_F20231001_G163"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|MissionCV-2022004-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40235,
+	"OnCancel": [],
+	"OnEnter": []
 }</pre>
 
 ;(Поговорите с Пациент)

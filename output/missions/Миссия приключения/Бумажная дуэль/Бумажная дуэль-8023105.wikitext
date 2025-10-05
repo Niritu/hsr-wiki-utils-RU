@@ -95,6 +95,7 @@ PageTitle=#Бумажная дуэль#
 	},
 	"Flags": [],
 	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :<pre>{
@@ -153,6 +154,24 @@ PageTitle=#Бумажная дуэль#
 }</pre>
 :{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
 <pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"Param": {
+						"Value": "1400"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 5)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -176,6 +195,28 @@ PageTitle=#Бумажная дуэль#
 			"IconType": "ChatLoopIcon",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 5)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]
@@ -212,6 +253,27 @@ PageTitle=#Бумажная дуэль#
 :'''Март 7:''' Что-то со мной ты так не {{MC|ж=скромничала|м=скромничал}}. Давай сыграем! Сначала сыграй со мной. И пусть победит сильнейший!
 :'''Март 7:''' Кстати, (Первопроходец), давай активируем птицу-оригами госпожи Зарянки! Я бы взглянула...
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+:{{tx}}
 ;(Unused &mdash; Activity230_PveResultClose)
 <pre>{
 	"$type": "RPG.GameCore.ClosePage",
@@ -238,6 +300,25 @@ PageTitle=#Бумажная дуэль#
 }</pre>
 :{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
 <pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"WaitForExit": true,
+					"Param": {
+						"Value": "1500"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 6)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -261,6 +342,28 @@ PageTitle=#Бумажная дуэль#
 			"IconType": "ChatLoopIcon",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 6)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

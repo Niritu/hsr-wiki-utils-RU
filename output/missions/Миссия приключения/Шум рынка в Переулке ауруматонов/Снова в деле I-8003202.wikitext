@@ -101,17 +101,49 @@ PageTitle=#Снова в деле I#
 ::'''Тётя Каланча:''' Получается, ты тоже мало что про КММ знаешь...
 :'''Тётя Каланча:''' Ох, не отпускать же тебя с пустыми руками... Вот меню, выбирай что хочешь. Я угощаю.
 :{{Диалог|Стрелка}} Мне, пожалуйста, клыкопирулет.
-:{{Диалог|Стрелка}} Мне, пожалуйста, бисквит из поющего лотоса.
-:{{Диалог|Стрелка}} Мне, пожалуйста, шашлычок из ягодного фазана.
-:{{Диалог|Стрелка}} Мне, пожалуйста, горячее молоко дутой козы.
-:{{Диалог|Стрелка}} Мне, пожалуйста, содовую сою.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 800320205,
 	"MissionCustomValue": {
 		"Name": "OldValue_0"
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} Мне, пожалуйста, бисквит из поющего лотоса.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800320205,
+	"MissionCustomValue": {
+		"Name": "OldValue_0"
+	},
+	"CustomValue": 2
+}</pre>
+:{{Диалог|Стрелка}} Мне, пожалуйста, шашлычок из ягодного фазана.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800320205,
+	"MissionCustomValue": {
+		"Name": "OldValue_0"
+	},
+	"CustomValue": 3
+}</pre>
+:{{Диалог|Стрелка}} Мне, пожалуйста, горячее молоко дутой козы.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800320205,
+	"MissionCustomValue": {
+		"Name": "OldValue_0"
+	},
+	"CustomValue": 4
+}</pre>
+:{{Диалог|Стрелка}} Мне, пожалуйста, содовую сою.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 800320205,
+	"MissionCustomValue": {
+		"Name": "OldValue_0"
+	},
+	"CustomValue": 5
 }</pre>
 :'''Тётя Каланча:''' Отлично.
 ----
@@ -141,7 +173,64 @@ PageTitle=#Снова в деле I#
 	"SimpleTalk": {}
 }</pre>
 ::;(If {{F|MissionCV-8003202-undefined}} is not undefined 1)
-:::;(Return to previous option selection)
+:::;(If {{F|MissionCV-8003202-undefined}} is undefined 2)
+::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800320232,
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800320207_GiveFood"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:::;(If {{F|MissionCV-8003202-undefined}} is not undefined 2)
+::::;(If {{F|MissionCV-8003202-undefined}} is undefined 3)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800320233,
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800320207_GiveFood"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::::;(If {{F|MissionCV-8003202-undefined}} is not undefined 3)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 800320234,
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "800320207_GiveFood"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
 :;(If {{F|MissionCV-8003202-undefined}} is undefined 5)
 :::----
 :::'''Байлу:''' Нашлось что-нибудь вкусненькое?
@@ -226,8 +315,8 @@ PageTitle=#Снова в деле I#
 ::----
 ::'''Тётя Каланча:''' Ой, Девушка-дракон... Вот, ещё порция, не стесняйся.
 ::'''Байлу:''' Спасибо, тётушка!
-::{{Чёрный экран|Под звуки оживлённого ночного рынка время пролетает незаметно.}}
-::{{Чёрный экран|Вы неосознанно погружаетесь в атмосферу Переулка ауруматонов.}}
+::{{Black Screen|Под звуки оживлённого ночного рынка время пролетает незаметно.}}
+::{{Black Screen|Вы неосознанно погружаетесь в атмосферу Переулка ауруматонов.}}
 :;(If {{F|MissionCV-8003202-undefined}} is undefined 1)
 ::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItem",
@@ -236,7 +325,36 @@ PageTitle=#Снова в деле I#
 	"SimpleTalk": {}
 }</pre>
 :;(If {{F|MissionCV-8003202-undefined}} is not undefined 1)
-::;(Return to previous option selection)
+::;(If {{F|MissionCV-8003202-undefined}} is undefined 2)
+:::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320232,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+::;(If {{F|MissionCV-8003202-undefined}} is not undefined 2)
+:::;(If {{F|MissionCV-8003202-undefined}} is undefined 3)
+::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320233,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+:::;(If {{F|MissionCV-8003202-undefined}} is not undefined 3)
+::::;(If {{F|MissionCV-8003202-undefined}} is undefined 4)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320234,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+::::;(If {{F|MissionCV-8003202-undefined}} is not undefined 4)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320235,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
 
 ;(Unused &mdash; TalkSentence_800320356)
 :<!--0.8-second delay-->
@@ -251,8 +369,8 @@ PageTitle=#Снова в деле I#
 ::----
 ::'''Тётя Каланча:''' Ой, Девушка-дракон... Вот, ещё порция, не стесняйся.
 ::'''Байлу:''' Э?! Н-не надо, тётушка! Я и пить-то не хочу... Ох, спасибо, тётушка...
-::{{Чёрный экран|Под звуки оживлённого ночного рынка время пролетает незаметно.}}
-::{{Чёрный экран|Вы неосознанно погружаетесь в атмосферу Переулка ауруматонов.}}
+::{{Black Screen|Под звуки оживлённого ночного рынка время пролетает незаметно.}}
+::{{Black Screen|Вы неосознанно погружаетесь в атмосферу Переулка ауруматонов.}}
 :;(If {{F|MissionCV-8003202-undefined}} is undefined 1)
 ::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItem",
@@ -261,7 +379,36 @@ PageTitle=#Снова в деле I#
 	"SimpleTalk": {}
 }</pre>
 :;(If {{F|MissionCV-8003202-undefined}} is not undefined 1)
-::;(Return to previous option selection)
+::;(If {{F|MissionCV-8003202-undefined}} is undefined 2)
+:::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320232,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+::;(If {{F|MissionCV-8003202-undefined}} is not undefined 2)
+:::;(If {{F|MissionCV-8003202-undefined}} is undefined 3)
+::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320233,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+:::;(If {{F|MissionCV-8003202-undefined}} is not undefined 3)
+::::;(If {{F|MissionCV-8003202-undefined}} is undefined 4)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320234,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
+::::;(If {{F|MissionCV-8003202-undefined}} is not undefined 4)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItem",
+	"SubMissionID": 800320235,
+	"IsAutoConsume": true,
+	"SimpleTalk": {}
+}</pre>
 :'''(Первопроходец):''' (Надо послушать, что думают о местной еде другие посетители...)
 <pre>{
 	"$type": "RPG.GameCore.WaitMissionTalkFinish"
@@ -435,7 +582,7 @@ PageTitle=#Снова в деле I#
 :::<!--0.8-second delay-->
 :::'''Минси:''' ...Правда? Прошу тебя, не отказывайся так сразу.
 ::'''Минси:''' Почему бы тебе сначала не посоветоваться со своими друзьями?
-::{{Чёрный экран|undefined}}
+::{{Black Screen|undefined}}
 {{Диалог Конец}}
 
 ===Обсудите следующие шаги с вашими спутниками===

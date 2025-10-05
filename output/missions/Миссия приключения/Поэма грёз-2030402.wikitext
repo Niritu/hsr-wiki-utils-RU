@@ -119,11 +119,6 @@ PageTitle=#Поэма грёз#
 	"Active": false,
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
 }</pre>
-;(If {{F|MissionCV-2030402-2}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
 {{Диалог Конец}}
 
 ===Найдите Доктора Лазурь===
@@ -176,6 +171,24 @@ PageTitle=#Поэма грёз#
 :'''Вон:''' Что ж такое! Почему вы все за него?!
 :'''Джоуи:''' Хе-хе. Господин Вон и правда ведёт себя, как будто они с этим юнцом ровесники...
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322001_G23"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 
 ;(По прибытии на место)
 :'''(Первопроходец):''' (Наверно, это давнее воспоминание, ещё из тех времён, когда только началось строительство Мира грёз...)
@@ -302,11 +315,6 @@ PageTitle=#Поэма грёз#
 	"Active": false,
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
 }</pre>
-;(If {{F|MissionCV-2030402-2}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Доктором Лазурью===
@@ -363,6 +371,24 @@ PageTitle=#Поэма грёз#
 :{{Диалог|Стрелка}} Я здесь как раз за этим.
 :'''Барлоу:''' Спасибо, {{MC|м=незнакомец|ж=незнакомка}}. Стоит поспешить.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322003_G11"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Помогите Барлоу скрыться===
@@ -403,6 +429,29 @@ PageTitle=#Поэма грёз#
 :'''Барлоу:''' Ха-ха, тогда соври ему как-нибудь, что Барлоу уже покинул планету. Возможно, он не поверит, однако... пока есть надежда, всё будет хорошо.
 :'''Барлоу:''' Спасибо и... прощай, {{MC|м=безымянный доброжелатель|ж=безымянная доброжелательница}}.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P43322_F43322003_G13"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetTextJoinValue",
+			"TextJoinID": 100,
+			"Value": "2"
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Упорядочьте свои мысли===
@@ -459,11 +508,6 @@ PageTitle=#Поэма грёз#
 :<pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
-}</pre>
-;(If {{F|MissionCV-2030402-2}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
 }</pre>
 {{Диалог Конец}}
@@ -837,6 +881,45 @@ PageTitle=#Поэма грёз#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203040223,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203040223,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 

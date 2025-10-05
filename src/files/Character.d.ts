@@ -89,13 +89,13 @@ export interface AvatarSkillTreeData {
 	AvatarPromotionLimit: number
 	LevelUpSkillID: number[]
 	IconPath: string
-	PointName?: string
-	PointDesc?: string
+	PointName?: HashReference
+	PointDesc?: HashReference
 	SimplePointDesc?: string
 	ExtraEffectIDList: number[]
 	SimpleExtraEffectIDList: number[]
 	RecommendPriority: number
 	AbilityName?: string
 	PointTriggerKey: HashReference
-	ParamList: number[]
+	ParamList: Value<number>[]
 }

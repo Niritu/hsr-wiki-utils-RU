@@ -1,6 +1,6 @@
 import JSONbig from 'json-bigint'
 import { TalkSentenceConfig, textMap } from '../TextMap.js'
-import { DialogueNode, TranscriptionNote } from '../util/AbstractDialogueTree.js'
+import { DialogueNode, NODE, TranscriptionNote } from '../util/AbstractDialogueTree.js'
 import { ActDialogueTree } from './Dialogue.js'
 import { GraphEnvironment } from './Environment.js'
 
@@ -12,6 +12,9 @@ export abstract class BaseDialogueTask {
 	entries?: BaseDialogueTaskEntry[]
 	branches?: BaseDialogueTaskEntry[]
 	conditional?: boolean
+	declare custom_string?: string
+	
+	[NODE]?: DialogueNode<this>
 	
 	constructor(data: { $type: string }) {
 		this.$type = data.$type
@@ -39,6 +42,9 @@ export abstract class BaseNonTextDialogueTask extends BaseDialogueTask {
 export abstract class BaseDialogueTaskEntry {
 	trigger?: string
 	trigger_act?: string
+	declare custom_string?: string
+
+	[NODE]?: DialogueNode<this>
 	
 	abstract equals(otherEntry: BaseDialogueTask | BaseDialogueTaskEntry | TranscriptionNote): boolean
 
@@ -80,5 +86,11 @@ export class UnknownTask extends BaseDialogueTask {
 	
 	wikitext(_lines: number, _tree: ActDialogueTree): string {
 		return `<pre>${JSONbig.stringify(this.data, (k, v) => (k != 'TaskEnabled' && k != 'IsClientOnly') ? v : undefined, '\t')}</pre>`
+	}
+	
+	equals(otherTask: BaseDialogueTask | BaseDialogueTaskEntry | TranscriptionNote): boolean {
+		return otherTask instanceof UnknownTask
+			&& this.$type == otherTask.$type
+			&& JSONbig.stringify(this.data) == JSONbig.stringify(otherTask.data)
 	}
 }

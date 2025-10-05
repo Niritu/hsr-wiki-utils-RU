@@ -94,6 +94,20 @@ PageTitle=#Я Пеппи#
 :{{Диалог|Стрелка}} Робот-рисожар остатков, ну пожалуйста!
 ::'''Робот-рисожар остатков:''' Бз-з-з!
 ::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
 
 ;(Поговорите с Робот-рисожар остатков)
 :'''Робот-рисожар остатков:''' Привет, бип! Я перевожу то, что говорит Пеппи, бип. Вы готовы?

@@ -221,12 +221,43 @@ PageTitle=#Отважная душа из дальнего мира#
 ::'''Хвост:''' Это просто невыносимо. От него исходит такое уныние, что мне самому уже плохо стало. Пора за дело.
 ::{{Диалог|Стрелка}} Вся надежда на тебя, господин Хвост.
 :::'''Хвост:''' Следующий раз - платный, я серьёзно!
-::{{Диалог|Выход}} Минутку.
-:::'''Хвост:''' Хватит возиться, давай быстрее!
-::{{tx}}
-:<pre>{
+:::{{tx}}
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+::{{Диалог|Выход}} Минутку.
+:::'''Хвост:''' Хватит возиться, давай быстрее!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "EndPerformance"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "802510305_OpenRaid"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EndPerformance)
@@ -241,13 +272,32 @@ PageTitle=#Отважная душа из дальнего мира#
 :{{Диалог|Стрелка}} Вся надежда на тебя, господин Хвост.
 ::'''Хвост:''' Следующий раз - платный, я серьёзно!
 ::'''Лука:''' А? Господин Хвост?.. Почему вы так близко?
-:;(Экран становится чёрным)
+:;(Screen fades to black)
 ::'''Лука:''' К-как х-холодно! Меня трясёт...
-:{{Диалог|Выход}} Минутку.
-::'''Хвост:''' Хватит возиться, давай быстрее!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Минутку.
+::'''Хвост:''' Хватит возиться, давай быстрее!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "802510305_OpenRaid"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; 802510305_OpenRaid)

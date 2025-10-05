@@ -37,6 +37,22 @@ PageTitle=##
 }</pre>
 :{{Диалог|Выход}} У меня есть другие дела.
 ::'''Рэндольф:''' Хорошо. Если захочешь поснимать, я всегда буду тебе рад.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "G253_OpenUI"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; G253_OpenUI)
 <pre>{

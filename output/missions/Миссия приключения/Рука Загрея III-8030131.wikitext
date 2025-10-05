@@ -71,8 +71,14 @@ PageTitle=#Рука Загрея III#
 	"Message": "###机械手Player位置重置###"
 }</pre>
 ::<!--0.2-second delay-->
-<pre>{
+;(If {{F|FCV_isHand}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable"
+}</pre>
+;(If {{F|FCV_isHand}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
+	"IsVisiable": true
 }</pre>
 {{Диалог Конец}}
 

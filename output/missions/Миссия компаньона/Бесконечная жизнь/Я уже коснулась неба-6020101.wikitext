@@ -231,6 +231,306 @@ PageTitle=#Я уже коснулась неба#
 				"ID": {
 					"IsDynamic": false,
 					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "DroneIdentifyPage"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionWayPoint",
+	"SubMissionID": 602010102
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetForceStreamingThisFrame",
+	"StartLoadingTick": true
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitStreamingJobFinished",
+	"StopLoadingTick": true
+}</pre>
+:'''Вельт:''' Вот она. Кажется, госпожа Сикуй послала нас за ней. Быстрее, Мерзости загнали её в ловушку. И будь осторожнее, (Первопроходец).
+----
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose",
+	"UIControllerName": "DroneIdentifyPage"
+}</pre>
+:'''Вельт:''' Плохо дело. Звук крушения привлёк монстров. Нужно добраться до места и побыстрее.
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 134
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
 						"Value": 300001
 					}
 				}
@@ -345,6 +645,8 @@ PageTitle=#Я уже коснулась неба#
 ::'''Вельт:''' Не волнуйся, госпожа Цинни. Видали и похуже.
 :{{Диалог|Стрелка}} Хорошо, тогда до встречи.
 ::'''Вельт:''' Нет, (Первопроходец), слишком поздно искать помощь. Не волнуйся, госпожа Цинни, нас прислала Комиссия по полётам.
+;(Enter battle)
+::{{tx|Enemy list missing}}
 
 ;(По прибытии на место)
 :'''???:''' Назад, твари! Я не боюсь вас! Не подходите!
@@ -370,6 +672,9 @@ PageTitle=#Я уже коснулась неба#
 :'''Вельт:''' Продержись ещё немного. Я знаю, ты справишься.
 :'''Юйкун:''' Вы достаточно продержались, подмога прибыла!
 :{{tx}}
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Зверь Изобилия: Древесный волк*1; Зверь Изобилия: Золотая гончая*2}}
+::Wave 2: {{Список врагов|mode=sent|Зверь Изобилия: Древесный волк*2; Зверь Изобилия: Золотая гончая*2}}
 {{Диалог Конец}}
 
 ===Спасите пострадавшую из ловушки===
@@ -378,7 +683,7 @@ PageTitle=#Я уже коснулась неба#
 
 ===Устраните Мерзостей Изобилия, окруживших пострадавшую===
 {{Диалог Начало}}
-:{{Чёрный экран|Когда все Мерзости были уничтожены, за девушкой пришли Облачные Рыцари.}}
+:{{Black Screen|Когда все Мерзости были уничтожены, за девушкой пришли Облачные Рыцари.}}
 :'''Вельт:''' Не знал, что рулевая Комиссии по полётам самолично решает такие проблемы.
 :'''Юйкун:''' В самом деле, я должна заниматься бумагами в Звёздном дворце. Но Цинни решила ввязаться в неприятности и потревожить наших уважаемых гостей... Как её мать, я просто не могла не прийти.
 :{{Диалог|Стрелка}} Мать...
@@ -402,6 +707,40 @@ PageTitle=#Я уже коснулась неба#
 :'''Юйкун:''' Цинни, ты же обещала!.. Ладно, это мы обсудим, когда вернёмся.
 :'''Юйкун:''' Прошу нас извинить, спасители. С нетерпением буду ждать нашей встречи.
 ----
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20212_F20212001_G95",
+	"AnchorName": "Anchor8"
+}</pre>
+:'''Вельт:''' Я не знал, что Юйкун так может...
+:{{Диалог|Стрелка}} Может быть строгой мамочкой?
+::'''Вельт:''' (Первопроходец), ты... выражаешься очень необычно...
+::'''Вельт:''' Но так и есть. Внешность мало что может рассказать о правителях Сяньчжоу. И неважно, как долго они живут на этом свете.
+::'''Вельт:''' При виде дочери Юйкун не смогла скрыть своего беспокойства. Только тогда стало ясно, что она и чья-то мать.
+::{{Диалог|Стрелка}} Похоже, вы хорошо её понимаете, господин Янг...
+::'''Вельт:''' Да... В конце концов, я тоже был отцом и тоже беспокоился о своём ребёнке. Сделал ли он домашнее задание, или что приготовить на ужин.
+:{{Диалог|Стрелка}} Может быть воинственной?
+::'''Вельт:''' Да... Я думал, что глава Комиссии по полётам - обходительная бизнес-леди. Как та юная девушка из лисьего народа...
+::'''Вельт:''' Но увидев её в бою, я понял, что Юйкун - опытная воительница. Она проявила себя как хорошего стратега: с умом выбирала цели и удары.
+::'''Вельт:''' Возможно, госпожа рулевая руководствовалась не только спасением дочери. Она жаждала сражения.
+::{{Диалог|Стрелка}} Кажется, вы хорошо её понимаете, господин Янг.
+::'''Вельт:''' Хе-хе, ну... На родине я так долго наслаждался миром, что успел позабыть кое-что. Я - боец. Я сел в Экспресс и почувствовал, как во мне просыпается страсть.
+:'''Вельт:''' Но вот чего я понять не могу: да, Цинни без разрешения села за штурвал звёздного ялика и подвергла себя опасности, но ради благой цели. И всё же, судя по реакции Юйкун, за этим кроется нечто большее...
+:'''Вельт:''' Ладно, не будем заставлять Юйкун ждать. Нам нужно в Звёздный дворец.
+:{{Диалог|Стрелка}} Может, не стоит заявляться туда так рано?..
+::'''Вельт:''' Не стоит, но нас пригласили. Опаздывать тоже нехорошо.
+:{{Диалог|Стрелка}} ВО ДВОРЕЦ!
+::'''Вельт:''' Ох... Давай-ка воздержимся во дворце от внезапных возгласов, (Первопроходец).
+::'''Вельт:''' Помни, это не просто экскурсия: мы будем на приёме у рулевой Комиссии по полётам. Нужно соблюдать дипломатический этикет.
+:'''Вельт:''' Ну хорошо, идём, а то опоздаем.
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20212_F20212001_G95",
+	"AnchorName": "Anchor8",
+	"IsActive": false
+}</pre>
 {{Диалог Конец}}
 
 ===Отправляйтесь в Звёздный дворец и примите благодарность Юйкун===
@@ -424,7 +763,13 @@ PageTitle=#Я уже коснулась неба#
 :'''Юйкун:''' Но сражаясь с вами плечом к плечу, я поняла, что ещё остались вещи, которые меня пугают... Простите. Это неподобающая тема для беседы с гостями.
 :'''Юйкун:''' Я пригласила вас, чтобы побольше узнать об экспрессе, а не докучать такими банальностями.
 :'''Юйкун:''' О, я подготовила вам напитки. Вы просто обязаны попробовать «Весну китовых приливов»!
-:{{Чёрный экран|Несмотря на неловкое начало, все получили удовольствие от встречи с Юйкун.}}
+:{{Black Screen|Несмотря на неловкое начало, все получили удовольствие от встречи с Юйкун.}}
+----
+:'''Юйкун:''' Прошу, примите эти подарки в знак благодарности за спасение моей дочери. Я слышала, что Безымянные пересекли звёздное море, но даже не представляла, что многому смогу у вас научиться.
+:'''Вельт:''' В Комиссии по полётам мне говорили, что вы превосходный пилот, госпожа Юйкун. И лучшая среди Облачных Рыцарей. Теперь я увидел вас в бою и могу с уверенностью заявить: слухи не врали. Надеюсь, когда-нибудь я смогу засвидетельствовать и ваш полёт.
+:'''Вельт:''' Нам пора уходить. У госпожи рулевой, должно быть, множество дел. С нетерпением буду ждать следующей встречи, госпожа Юйкун.
+:'''Юйкун:''' Боюсь разочаровать вас, господин Янг. Я давно уже не летаю.
+----
 
 ;(По прибытии на место)
 :'''Юйкун:''' Почему ты меня не слушаешь?
@@ -515,7 +860,7 @@ PageTitle=#Я уже коснулась неба#
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-:{{Чёрный экран|Цинни получает сообщение, читает его и хмурится.}}
+:{{Black Screen|Цинни получает сообщение, читает его и хмурится.}}
 <pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P10201_F10201001_G77",
@@ -537,13 +882,6 @@ PageTitle=#Я уже коснулась неба#
 :{{Диалог|Стрелка}} Так мы отблагодарим тебя за содовую сою.
 ::'''Вельт:''' ...
 ::'''Цинни:''' И-извините! Больше ни слова о ней!
-<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "LevelArea_P10201_F10201001_G77",
-	"AnchorName": "Anchor6",
-	"IsActive": false
-}</pre>
-----
 ;(Получено {{Предмет|Воспоминание Цинни|20|x=1}})
 {{Диалог Конец}}
 
@@ -680,6 +1018,672 @@ PageTitle=#Я уже коснулась неба#
 	"IconPath": "SpriteOutput/MapPics/NaviIcons/IconMapPlay6.png",
 	"OnNameBoard": true
 }</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300011
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300011
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300011
+					}
+				}
+			}
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 98
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 98
+		}
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose"
+}</pre>
+::'''Цинни:''' Ну нет, (Первопроходец), ты издеваешься? Мы ищем украшение, помнишь?
+::'''Цинни:''' Думаешь, моя мама стала бы носить с собой такое?
+::'''Вельт:''' И всё же красивая ваза, и узор на ней причудливый. Это же узор Удачи божественного зверя?
+::'''Цинни:''' Вы так умны, господин Янг!
+::'''Вельт:''' Признаться, я только недавно о нём узнал.
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300010
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300010
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300010
+					}
+				}
+			}
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 98
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose"
+}</pre>
+::'''Вельт:''' Глефа? После боя осталась? Много же здесь было Облачных Рыцарей.
+::'''Цинни:''' Нет, просто копия... Наверно, бутафория для иммерсии.
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300009
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300009
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300009
+					}
+				}
+			}
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 98
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ResetMissionWayPoint",
+	"SubMissionID": 602010111
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300001
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300002
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "MultiPropByPropID",
+		"MultiPropID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"OnNameBoard": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300006
+					}
+				}
+			}
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 98
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose"
+}</pre>
+::'''Цинни:''' Птичья клетка... А, я тут вспомнила. Вы слышали о птицах, живущих на равнинах Вечной охоты? Их перья прекрасны, однако в клетке они живут недолго, а потому их нельзя приручить.
+::'''Цинни:''' Оно и понятно... Как птица, чьё место в небе, смогла бы жить в клетке?
+
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300012
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300012
+					}
+				}
+			}
+		]
+	},
+	"OnIdentifyFinish": [],
+	"OnPreviewFinish": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 98
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300012
+					}
+				}
+			}
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 98
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"OnNameBoard": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.WaitUIControllerClose"
+}</pre>
+::'''Вельт:''' Великовато для украшения.
 
 ;(Unused &mdash; ClosePhotoGraph1)
 <pre>{
@@ -1115,7 +2119,7 @@ PageTitle=#Я уже коснулась неба#
 ::'''Цинни:''' Поняла.
 ::{{Диалог|Стрелка}} Спасибо, господин Яньмин!
 ::{{Диалог|Стрелка}} Вот и вся секретность Комиссии по полётам.
-:::'''Яньмин:''' Обеспечение служебной тайны и порядка - обязанность каждого гражданина Сяньчжоу.
+:::'''Яньмин:''' Хе-хе, наглости тебе не занимать... Тебе повезло, что у меня есть чувство юмора.
 ::{{Диалог|Стрелка}} И больше не попадайтесь нам за сованием носа в чужие дела!
 :::'''Яньмин:''' Хе-хе, наглости тебе не занимать... Тебе повезло, что у меня есть чувство юмора.
 ::'''Яньмин:''' Поспешите. Госпожа Юйкун скоро вернётся.
@@ -1227,7 +2231,7 @@ PageTitle=#Я уже коснулась неба#
 ::'''Цинни:''' Поняла.
 ::{{Диалог|Стрелка}} Спасибо, господин Яньмин!
 ::{{Диалог|Стрелка}} Вот и вся секретность Комиссии по полётам.
-:::'''Яньмин:''' Обеспечение служебной тайны и порядка - обязанность каждого гражданина Сяньчжоу.
+:::'''Яньмин:''' Хе-хе, наглости тебе не занимать... Тебе повезло, что у меня есть чувство юмора.
 ::{{Диалог|Стрелка}} И больше не попадайтесь нам за сованием носа в чужие дела!
 :::'''Яньмин:''' Хе-хе, наглости тебе не занимать... Тебе повезло, что у меня есть чувство юмора.
 ::'''Яньмин:''' Поспешите. Госпожа Юйкун скоро вернётся.
@@ -1555,7 +2559,7 @@ PageTitle=#Я уже коснулась неба#
 	},
 	"EmitterType": "LocalPlayer"
 }</pre>
-:;(Экран становится чёрным)
+:;(Screen fades to black)
 ::'''Юйкун:''' Разум - загадочная штука... Я прожила более двух сотен лет и забыла почти всё сказанное... но наш разговор в тот день помню так, будто он произошёл вчера.
 ::'''Юйкун:''' Тогда я говорила с Цайи в последний раз.
 ::{{tx}}

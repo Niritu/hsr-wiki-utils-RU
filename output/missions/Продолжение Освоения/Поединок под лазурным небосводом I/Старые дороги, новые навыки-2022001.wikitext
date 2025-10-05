@@ -68,6 +68,28 @@ PageTitle=#Старые дороги, новые навыки#
 :'''Март 7:''' А ещё только у тебя так много друзей на Лофу. Если ты не пойдёшь с нами, я обязательно потеряюсь! Ты просто {{MC|ж=обязана|м=обязан}} быть нашим проводником!
 :'''Пом-Пом:''' Раз все согласны с планом, пора совершать прыжок. Точка назначения - Лофу Сяньчжоу.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10000_F10000000_G180"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Обсудите план поездки с экипажем (необязательно)===

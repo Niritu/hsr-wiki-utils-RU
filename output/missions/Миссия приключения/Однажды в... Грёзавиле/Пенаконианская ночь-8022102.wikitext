@@ -45,9 +45,18 @@ PageTitle=#Пенаконианская ночь#
 :::'''Пис:''' Кхм, в последнее время нам не хватает средств. Надеемся на ваше понимание.
 ::'''Пис:''' Далее нам предстоит монтировать основной фильм. Реконструкция тематического парка, судьба Студии «Часы», надежды господина Часовщика и будущее Часика... в ваших руках, режиссёр!
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -75,6 +84,7 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::{{Диалог|Выход}} Давай в другой раз.
+:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
 ;(Otherwise, if {{cx}}<!--SubMission not Finish: 802211101-->)
 ::'''Пис:''' Спин-оффы различных персонажей - это славная традиция Студии «Часы». Так раскрываются персонажи, которых было мало в основном сюжете. Это ещё больше повышает популярность мультфильмов.
 ::'''Пис:''' Попросите наших мультипликаторов помочь. Они настоящие ценители, поэтому всегда носят маски персонажей. Вы легко их узнаете.
@@ -82,9 +92,31 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -112,28 +144,115 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+::::{{Диалог|Выход}} Давай в другой раз.
+:::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+::{{Диалог|Выход}} Давай в другой раз.
+:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+::{{Диалог|Журнал путешествий}} Начинаем.
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+::{{Диалог|Разговор}} Я хочу кое о чём спросить.
+:::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
+:::{{Диалог|Разговор}} О чём серия «Мемуары о сладких грёзах»?
+::::'''Пис:''' Сюжет серии вращается вокруг истории Грёзавиля, где живёт Часик и его друзья. Но я думаю, это вы и так уже знаете.
+::::'''Пис:''' Серия сосредоточится на прибытии Часика в Грёзавиль, его взлётах и падениях, жизни с местными и вкладе Часика в развитие города... Считайте, полная коллекция приключений Часика с самого начала.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Как на Пенаконии делают мультфильмы?
+::::'''Пис:''' Очень просто. Помимо привычных технологий, вроде умных иллюстраций, ментальных проекций и алгоритмической генерации, мы также привлекаем к производству труппу «Сладкие грёзы» - талантливых художников, способных воссоздать старомодную рукотворную графику...
+::::'''Пис:''' Но раскадровки Студии «Часы» полностью нарисованы от руки самим господином Часовщиком. Он настаивает на том, чтобы каждый кадр был прорисован аниматорами.
+::::'''Пис:''' Анимационные технологии не стоят на месте, поэтому графика в современных фильмах неестественно усложнена. Однако ни одна из этих работ не сравнится с нарисованными от руки мультфильмами о Часике производства Пенаконии. И мы очень этим гордимся!
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Расскажи, как был разрушен тематический парк.
+::::'''Пис:''' О, мне грустно от одной мысли об этом. Тематический парк всегда был одним из важнейших источников дохода. Совершенно внезапно клан Гончих его закрыл - якобы из-за результатов инспекции по безопасности...
+::::'''Пис:''' Угадайте, что случилось после инспекции? Экран театра распался надвое, а труппа «Сладкие грёзы» превратилась в труппу «Кошмарики». Семья попыталась свалить вину на каких-то чужаков! Нелепость!
+::::'''Пис:''' И это ещё не всё. Чуть позже объявилось несколько человек из клана Ночных Дроздов. Они заявили, что повреждения имеют необычный характер и носят следы... Небытия. Они завалили нас техническими терминами и выставили непомерный счёт за ремонт. Мы не могли себе это позволить.
+::::'''Пис:''' Вскоре с нами связался представитель клана Ирисов и предложил купить авторские права. Если вам интересно моё мнение, это очень похоже на сговор. Они хотят воспользоваться нашей слабостью и присвоить Часика!
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Что думаешь о Часовщике?
+::::'''Пис:''' Ну... Я почти всю жизнь проработал в Студии «Часы», но всего один раз лично встретился с председателем...
+::::'''Пис:''' У нас был разговор о моём повышении. Он состоялся во время вечеринки на круизном корабле «Закат».
+::::'''Пис:''' Я уже порядочно выпил, когда меня затащили в гостевую комнату где-то в конце коридора. Внутри, рядом с окном, сидел одетый с иголочки мужчина в шляпе. Он вглядывался в яркий океан пузырей грёз.
+::::'''Пис:''' Он спросил меня: «Как думаешь, что "Часик" приносит людям?» И я ответил: «Счастье, смех, трогательные впечатления и немного размышлений о сладких грёзах». Если честно, последнее я выдумал под действием алкоголя.
+::::'''Пис:''' Он усмехнулся и велел мне выйти. На следующий день я получил уведомление о назначении на должность исполнительного продюсера... Да, загадочный человек.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} У меня больше нет вопросов.
+::::{{Диалог|Журнал путешествий}} Начинаем.
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 :::;(Return to previous option selection)
 ::::{{Диалог|Выход}} Давай в другой раз.
+:::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
 ::{{Диалог|Выход}} Давай в другой раз.
+:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210207--> and {{cx}}<!--SubMission not Finish: 802210311-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -142,9 +261,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -172,9 +300,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -182,9 +319,18 @@ PageTitle=#Пенаконианская ночь#
 :::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
 
 ;(Unused &mdash; ActivitMovie_OpenUI)
-<pre>{
+:;(If {{cx}}<!--SubMission Finish: 802210103-->)
+::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+:;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 
 ;(Unused &mdash; ActivitMovie_OpenTempUI)
@@ -313,9 +459,18 @@ PageTitle=#Пенаконианская ночь#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -343,9 +498,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -355,18 +519,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -375,9 +557,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -405,9 +596,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -419,9 +619,18 @@ PageTitle=#Пенаконианская ночь#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -449,9 +658,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -461,18 +679,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -481,9 +717,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -511,9 +756,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -562,6 +816,18 @@ PageTitle=#Пенаконианская ночь#
 :{{Диалог|Стрелка}} Снимем рекламу.
 :Снимем рекламу.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_802210201"
+			}
+		}
+	]
+}</pre>
 
 ;(Поговорите с Пис)
 ;(If {{cx}}<!--SubMission Finish: 802212004-->)
@@ -574,18 +840,36 @@ PageTitle=#Пенаконианская ночь#
 :::'''Пис:''' Ха-ха! Монтаж фильма, вероятно, более интересное занятие!
 ::'''Пис:''' Поклонники с нетерпением ждут выхода «Мемуаров о сладких грёзах». Давайте продолжим монтировать!
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужен отдых.
 :::'''Пис:''' Хорошо, я буду ждать вас здесь.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -613,9 +897,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Хорошо, я буду ждать вас здесь.
@@ -625,18 +918,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Хорошо, я буду ждать вас здесь.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -645,9 +956,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -675,9 +995,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -696,7 +1025,9 @@ PageTitle=#Пенаконианская ночь#
 ::'''Представитель торговой улицы:''' Простите, что заставил ждать. Я представитель торговой улицы Двенадцать миг-районов. Хочу предложить вам совместную работу над рекламой.
 ::'''Представитель торговой улицы:''' Вы - режиссёр «Мемуаров о сладких грёзах»? Как раз вовремя. Прошу, взгляните на сценарий...
 ::'''Представитель торговой улицы:''' {{Цвет|Ключевой|nobold=1|«Большое ограбление братца Хану»}}. Действие происходит в Грёзавиле. Основная идея: использовать в кадре продукцию бренда и образ братца Хану из «Мемуаров о сладких грёзах». Выгодное предложение для обеих сторон.
+::'''Представитель торговой улицы:''' Все на местах. Можете начать съёмки, когда пожелаете.
 :'''Представитель торговой улицы:''' Все на местах. Можете начать съёмки, когда пожелаете.
+;(All choices lead to the following options)
 :{{Диалог|Стрелка}} Без проблем. Камера, мотор!
 :<pre>{
 	"$type": "RPG.GameCore.OpenTreasureChallenge",
@@ -723,17 +1054,35 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' Съёмки фильма пройдут лучше, если увеличить бюджет. Кроме того, вы сможете привлечь больше ресурсов.
 ::'''Пис:''' Рассчитываю на вашу помощь!
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Сначала снимем рекламу.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -761,9 +1110,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 ::{{Диалог|Выход}} Давай в другой раз.
@@ -771,17 +1129,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -790,9 +1167,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -820,9 +1206,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -833,9 +1228,18 @@ PageTitle=#Пенаконианская ночь#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -863,9 +1267,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -875,18 +1288,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -895,9 +1326,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -925,9 +1365,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -988,18 +1437,36 @@ PageTitle=#Пенаконианская ночь#
 ::{{Диалог|Стрелка}} Какую ещё работу ты хочешь мне поручить?
 ::'''Пис:''' Поклонники с нетерпением ждут выхода «Мемуаров о сладких грёзах». Давайте продолжим монтировать!
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужен отдых.
 :::'''Пис:''' Хорошо, я буду ждать вас здесь.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -1027,9 +1494,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Хорошо, я буду ждать вас здесь.
@@ -1039,18 +1515,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Хорошо, я буду ждать вас здесь.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -1059,9 +1553,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -1089,9 +1592,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -1137,7 +1649,38 @@ PageTitle=#Пенаконианская ночь#
 	"$type": "RPG.GameCore.EndDialogueEntityInteract"
 }</pre>
 ::{{Диалог|Выход}} Мне нужно ещё подумать...
-;(Return to previous option selection)
+:;(If {{cx}}<!--SubMission Finish: 802212404-->)
+:::'''Агент труппы:''' Самый волшебный и романтичный фильм - {{Цвет|Ключевой|nobold=1|«Возвышение сладких грёз»}}! Хотите переснять какие-нибудь сцены?
+:::{{Диалог|Стрелка}} Ага, за работу!
+:::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 44305002,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.EndDialogueEntityInteract"
+}</pre>
+:::{{Диалог|Выход}} Я просто посмотреть хочу.
+:;(If {{cx}}<!--SubMission not Finish: 802212404-->)
+:::'''Агент труппы:''' Самый волшебный и романтичный фильм - {{Цвет|Ключевой|nobold=1|«Возвышение сладких грёз»}}! Можете начать съёмки в любое удобное время.
+:::{{Диалог|Стрелка}} Интересно! Камера, мотор!
+:::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 44305002,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.EndDialogueEntityInteract"
+}</pre>
+:::{{Диалог|Выход}} Мне нужно ещё подумать...
 
 {{Диалог Конец}}
 
@@ -1150,18 +1693,36 @@ PageTitle=#Пенаконианская ночь#
 ::'''Пис:''' У нас бывали разногласия, но в бизнесе не бывает вечных врагов. Предлагаю вам заняться этим роликом, если вас это заинтересовало. Так вы сможете отточить свои режиссёрские навыки.
 ::'''Пис:''' Удачи, {{MC|ж=госпожа|м=господин}} режиссёр! На вас возложена огромная ответственность - снять рекламу! Вы умеете снимать фильмы, наверняка и с рекламой проблем не возникнет!
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Сначала снимем рекламу.
 :::'''Пис:''' Вы сняли великолепную рекламу!
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210102-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -1189,9 +1750,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Вы сняли великолепную рекламу!
@@ -1200,9 +1770,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
@@ -1211,9 +1790,18 @@ PageTitle=#Пенаконианская ночь#
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -1241,9 +1829,18 @@ PageTitle=#Пенаконианская ночь#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!

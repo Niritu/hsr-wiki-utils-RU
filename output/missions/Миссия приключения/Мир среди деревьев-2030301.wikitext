@@ -71,6 +71,21 @@ PageTitle=#Мир среди деревьев#
 <pre>{
 	"$type": "RPG.GameCore.TriggerSound"
 }</pre>
+:{{Black Screen|Ждать приходится долго, но наконец Гончие снимают караул вокруг Чадвика и уходят...}}
+:'''(Первопроходец):''' (Они ушли, наконец-то... Ну и терпение у них!)
+:'''(Первопроходец):''' (Скорее к Чадвику!)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20313_F20313001_G207",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"BlendTime": 1.5
+	},
+	"DynamicParams": {}
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -229,6 +244,19 @@ PageTitle=#Мир среди деревьев#
 :'''Скрюллум:''' Профессор Кальдерон Чадвик, прошу простить столь внезапное появление. Мы надеемся, что наш спонтанный визит не вызовет у вас возражений.
 :'''Скрюллум:''' После вас, {{MC|ж=госпожа|м=господин}} (Первопроходец).
 ----
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10305_F10305001_G87"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Поищите доказательства пребывания Чадвика в его номере===

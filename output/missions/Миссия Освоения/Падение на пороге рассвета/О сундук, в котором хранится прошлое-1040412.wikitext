@@ -175,7 +175,8 @@ PageTitle=#О сундук, в котором хранится прошлое#
 :{{tx}}
 ----
 :{{tx}}
-<pre>{
+;(If {{F|undefined}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetEntityVisible",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -186,7 +187,7 @@ PageTitle=#О сундук, в котором хранится прошлое#
 	},
 	"Visible": true
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.HideWaypoint",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -196,6 +197,27 @@ PageTitle=#О сундук, в котором хранится прошлое#
 		]
 	},
 	"OnNameBoard": false
+}</pre>
+;(If {{F|undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypoint",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
 }</pre>
 ;(По прибытии на место)
 

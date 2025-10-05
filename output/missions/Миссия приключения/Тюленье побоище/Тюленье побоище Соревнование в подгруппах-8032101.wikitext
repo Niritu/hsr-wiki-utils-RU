@@ -9,7 +9,7 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 |Тип             = Миссия приключения
 |Событие         = Тюленье побоище
 |Глава           = Тюленье побоище
-|Условия         = Завершена [[Миссия приключения]] «[[Тюленье побоище: Пролог]]»
+|Условия         = Завершена [[Миссия приключения]] ''[[Тюленье побоище: Пролог]]''
 |Персонажи       = Аквафис; Ангельский тюлень; Апофис; Дань Хэн; Заикающийся зритель; Звук издалека; Звук сверху; Первопроходец; Перевёрнутый тюлень; Периппас; Приглашённый актёр из массовки; Пузырик; Тимос; Трансляция состязания; Трибби; Трибби и Триннона; Триннона; Тюлень в повязках; Цифер
 |СтартЛокация    = [[Амфореус]] — [[Вечный священный город Охема]]
 |Мир             = Амфореус
@@ -56,6 +56,24 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::{{Диалог|Стрелка}} Ура, покупки! Всё равно не свои деньги трачу.
 ::'''Трибби:''' {{MC|ж=Серовласка|м=Серовласый}}, увидимся на состязании!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G417"
+				},
+				"AnchorName": {
+					"Value": "Transform"
+				}
+			}
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterDistrict_G741_2)
 <pre>{
@@ -85,11 +103,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -105,11 +152,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -124,11 +200,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterDistrict_G653)
@@ -146,9 +251,41 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Наконец-то это закончилось. Время объявить нашего победителя, и это... (Первопроходец)! Поздравляю!
 ::'''Апофис:''' {{MC|ж=Участница|м=Участник}} (Первопроходец), желаете сразу перейти к следующему бою? Ваш соперник уже готов.
 ::{{Диалог|Стрелка}} Абсолютно! Куй железо, пока горячо!
-::{{Диалог|Выход}} Мне нужно передохнуть...
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+::{{Диалог|Выход}} Мне нужно передохнуть...
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 803210103
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "ShowUI_ActivityMarbleMainPage"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 803210103
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -164,11 +301,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -183,11 +349,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterDistrict_G654)
@@ -335,9 +530,13 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 :::Перерыв закончился, воды очистили, а пострадавшим тюленям оказали помощь.
 :::'''Апофис:''' Благодарю всех за понимание и проявленное терпение! Ледяную чашу уже восстановили, и наше состязание продолжается...
 :::{{Диалог|Стрелка}} Да-да-да, я уже {{MC|ж=готова|м=готов}}.
-:::{{Диалог|Выход}} Давайте попозже.
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:::{{Диалог|Выход}} Давайте попозже.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
 }</pre>
 <pre>{
 	"$type": "RPG.GameCore.PerformanceEndSeq",
@@ -435,11 +634,40 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::'''Апофис:''' Приветствую на умопомрачительном фестивале на воде, приуроченном ко дню рождения Фагусы! «Тюленье побоище» в самом разгаре! {{MC|ж=Участница|м=Участник}} (Первопроходец), вы готовы?
 :{{Диалог|Журнал путешествий}} Скорее дайте мне кого-нибудь протаранить!
 ::'''Апофис:''' Вперёд, «Тюленье побоище» начина-а-а-ается!
-:{{Диалог|Выход}} Ещё нет.
-::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Ещё нет.
+::'''Апофис:''' Мы подождём готовности обеих сторон. Надеюсь, вы покажете всю свою мощь!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "ShowUI_G417"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -468,6 +696,24 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::{{Диалог|Стрелка}} Всё благодаря тебе.
 ::Пузырик гордо машет хвостом - очевидно, какое удовлетворение принесла ему эта победа. За время соревнования в подгруппах вы стали лучше понимать друг друга...
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G655"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Узнайте, что с кубком===
@@ -495,6 +741,24 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 ::{{Диалог|Стрелка}} Правда? Ха-ха, впервые слышу.
 :;(Return to previous option selection)
 :;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G747"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 <!--Unknown TalkSentence: 803210310-->
 
 ;(Поговорите с Трибби)
@@ -505,6 +769,24 @@ PageTitle=#Тюленье побоище: Соревнование в подгр
 :{{tx}}
 ;(Return to previous option selection)
 ;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G740"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

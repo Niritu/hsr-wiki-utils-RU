@@ -39,9 +39,18 @@ PageTitle=#Концовка в стиле Часика#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -69,9 +78,18 @@ PageTitle=#Концовка в стиле Часика#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -81,27 +99,54 @@ PageTitle=#Концовка в стиле Часика#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!
 ;(Otherwise)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, вы вернулись! Поработаем над фильмом?
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -129,9 +174,18 @@ PageTitle=#Концовка в стиле Часика#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начнём.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Без проблем. Вы всегда можете вернуться и поучаствовать в производстве!
@@ -208,9 +262,18 @@ PageTitle=#Концовка в стиле Часика#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -238,9 +301,18 @@ PageTitle=#Концовка в стиле Часика#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -250,18 +322,36 @@ PageTitle=#Концовка в стиле Часика#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise, if {{cx}}<!--SubMission Finish: 802210312--> and {{cx}}<!--SubMission not Finish: 802210401-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, плёнка с последним фильмом готова. Вы можете перейти к финальному монтажу.
 ::{{Диалог|Журнал путешествий}} Начнём.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Пис:''' Надо торопиться. Зрители уже беспокоятся!

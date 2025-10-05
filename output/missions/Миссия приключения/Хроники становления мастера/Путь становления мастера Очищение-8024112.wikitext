@@ -62,13 +62,67 @@ PageTitle=#Путь становления мастера: Очищение#
 :::Ты хочешь вселиться в Скотта?
 ::{{Диалог|Стрелка}} Ты хочешь вселиться в Скотта?
 ::'''Хвост:''' Хе-хе, вселиться будет недостаточно, мне придётся проникнуть в его душу.
+::'''Хвост:''' Ну что ж, время расставит всё по местам. Я заставлю Скотта стать другим человеком и искренне признать поражение. Скажи-ка, это доставит тебе удовольствие?
+::'''Март 7:''' Ого! Ну вы даёте, господин Хвост!
 :'''Хвост:''' Ну что ж, время расставит всё по местам. Я заставлю Скотта стать другим человеком и искренне признать поражение. Скажи-ка, это доставит тебе удовольствие?
-:'''Март 7:''' Ого! Ну вы даёте, господин Хвост!
+::'''Март 7:''' Ого! Ну вы даёте, господин Хвост!
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "OpenRaid_40236"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(All choices lead to the following options)
 :{{Диалог|Стрелка}} Мы надеемся на тебя, господин Хвост!
-:{{Диалог|Выход}} Подождите, есть кое-что ещё.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Подождите, есть кое-что ещё.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "Close_40236"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "OpenRaid_40236"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "Close_40236"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; OpenRaid_40236)

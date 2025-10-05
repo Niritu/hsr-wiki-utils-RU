@@ -27,7 +27,8 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 403000222-->)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 401011603,
 	"MissionCustomValue": {
@@ -38,6 +39,16 @@ PageTitle=##
 		]
 	},
 	"CustomValue": 1
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 403000222-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 401011603,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
 }</pre>
 {{Диалог Конец}}
 

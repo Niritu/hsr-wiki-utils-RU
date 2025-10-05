@@ -116,6 +116,7 @@ PageTitle=#Бумажная дуэль#
 	},
 	"Flags": [],
 	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :<pre>{
@@ -316,6 +317,23 @@ PageTitle=#Бумажная дуэль#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"Param": {
+						"Value": "1100"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Проведите обзор битвы с Серебряным Волком===
@@ -369,12 +387,23 @@ PageTitle=#Бумажная дуэль#
 :'''Серебряный Волк:''' ...Не нравится? Держи своё мнение при себе.
 :'''Тина:''' Не смею больше отвлекать вас. Желаю приятной игры!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.RequestChangeMatchThreeBirdLocation",
+	"BirdID": 301,
+	"LocationID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Откройте карту и узнайте о втором игровом автомате===
 {{Диалог Начало}}
 
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -397,6 +426,28 @@ PageTitle=#Бумажная дуэль#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

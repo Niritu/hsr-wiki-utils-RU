@@ -43,7 +43,68 @@ PageTitle=##
 	"CustomValue": 1
 }</pre>
 ;(If {{F|MissionCV-2022002-2}} is not undefined 1)
-:;(Return to previous option selection)
+:;(If {{F|MissionCV-2022002-2}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012601,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(If {{F|MissionCV-2022002-2}} is not undefined 2)
+::;(If {{F|MissionCV-2022002-2}} is undefined 3)
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012601,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 3
+}</pre>
+::;(If {{F|MissionCV-2022002-2}} is not undefined 3)
+:::;(If {{F|MissionCV-2022002-2}} is undefined 4)
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012601,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 4
+}</pre>
+:::;(If {{F|MissionCV-2022002-2}} is not undefined 4)
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012601,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 1
+}</pre>
 
 :{{Диалог|?}} Слушать
 :'''Пепеши:''' Не переживай, мы не собираемся тебе мстить. Во-первых, мы же в тюрьме, за нами наблюдают Призрачные стражницы. Во-вторых, нам явно тебя не победить.
@@ -134,6 +195,34 @@ PageTitle=##
 	"CustomValue": 2
 }</pre>
 ::{{tx}}
+:;(If {{F|MissionCV-4340126-1}} is undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G200"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:;(If {{F|MissionCV-4340126-1}} is not undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20241_F20241001_G200"
+		},
+		"AnchorName": {
+			"Value": "Anchor3"
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

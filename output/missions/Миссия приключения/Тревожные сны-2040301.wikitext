@@ -292,7 +292,7 @@ PageTitle=#Тревожные сны#
 :{{tx}}
 :Вы успели. Тяжело дыша, вы останавливаетесь перед Пасифеей. В вашем сознании раздаётся эхом лишь одна мысль.
 :{{Диалог|Стрелка}} Кхе-кхе... Дайте отдышаться.
-;(If {{cx}}<!--not during performance 504037001-->)
+;(If {{cx}}<!--performance 504037001 has not been seen-->)
 ::{{tx}}
 ;(Otherwise)
 ::{{tx}}
@@ -369,6 +369,10 @@ PageTitle=#Тревожные сны#
 :::{{Диалог|Стрелка}} Наш дуэт непобедим.
 :::'''Пасифея:''' Шёпот Оронис содержит в себе не только тайны будущего, но и воспоминания о прошлом.
 :::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OverrideFinishActionAutoTransfer",
+	"SubmissionID": 204030108
+}</pre>
 {{Диалог Конец}}
 
 ===Расскажите о ситуации Трибби===
@@ -399,7 +403,8 @@ PageTitle=#Тревожные сны#
 
 :{{Диалог|Разговор}} Слушать
 :'''Колеблющаяся мать:''' Не отвлекайся, Пасифея. Следуй указаниям служителя.
-<pre>{
+;(If {{F|undefined}} is undefined 0)
+:<pre>{
 	"$type": "RPG.GameCore.PropSetVisibility",
 	"SpecifiedRelativePaths": [],
 	"TargetType": {
@@ -410,7 +415,7 @@ PageTitle=#Тревожные сны#
 		]
 	}
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.PropEnableCollider",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -420,10 +425,47 @@ PageTitle=#Тревожные сны#
 		]
 	}
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.TriggerEntityEventV2",
 	"EventName": {
 		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(If {{F|undefined}} is not undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"Visible": true,
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"Enabled": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUnlock"
 	},
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -590,6 +632,7 @@ PageTitle=#Тревожные сны#
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -692,7 +735,8 @@ PageTitle=#Тревожные сны#
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -768,7 +812,8 @@ PageTitle=#Тревожные сны#
 
 :{{Диалог|Разговор}} Слушать
 :'''Горожане у храма:''' Слава Оронис! Слава Оронис!
-<pre>{
+;(If {{F|undefined}} is undefined 0)
+:<pre>{
 	"$type": "RPG.GameCore.PropSetVisibility",
 	"SpecifiedRelativePaths": [],
 	"TargetType": {
@@ -779,7 +824,7 @@ PageTitle=#Тревожные сны#
 		]
 	}
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.PropEnableCollider",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -789,10 +834,47 @@ PageTitle=#Тревожные сны#
 		]
 	}
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.TriggerEntityEventV2",
 	"EventName": {
 		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(If {{F|undefined}} is not undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"Visible": true,
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"Enabled": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerUnlock"
 	},
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -977,6 +1059,7 @@ PageTitle=#Тревожные сны#
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -1079,7 +1162,8 @@ PageTitle=#Тревожные сны#
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -1295,6 +1379,11 @@ PageTitle=#Тревожные сны#
 :На своём пути ты обретёшь славу, и слова о героизме будут высечены на твоём надгробии.
 :Но, этому не суждено случиться. Ты просто Пасифея, которой суждено стать девой Храма трёх титанов судьбы. Пленница без достоинства и свободы.
 :{{tx}}
+----
+:{{tx}}
+;(If {{F|undefined}} is undefined 1)
+;(Otherwise)
+:{{tx}}
 {{Диалог Конец}}
 
 ===Поднимите завесу прошлого===
@@ -1444,6 +1533,8 @@ PageTitle=#Тревожные сны#
 :::{{Диалог|Стрелка}} Я буду девой.
 :::{{Размер|28|Славная судьба, в итоге ты стала девой.}}
 :::{{tx}}
+----
+:{{tx}}
 {{Диалог Конец}}
 
 ===Вернитесь к Пасифее===
@@ -1517,6 +1608,26 @@ PageTitle=#Тревожные сны#
 ::'''Пасифея:''' Отголоски из-за небесного предела. Странно, эта болтовня с ним никак не связана, но она отзывается в нём. Он ждал моего возвращения?..
 ::'''Пасифея:''' {{MC|ж=Госпожа|м=Господин}} (Первопроходец), пожалуйста, верни меня обратно.
 ::'''Пасифея:''' Это нагло с моей стороны, просить брать балласт вроде меня в такое опасное место, но... я обязана его найти.
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 204030133
+				}
+			]
+		}
+	],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 204030134
+		}
+	]
+}</pre>
+;(All choices lead to the following options)
 :{{Диалог|Стрелка}} Пошли.
 :{{Диалог|Выход}} Нужно ещё немного времени.
 :<pre>{
@@ -1528,6 +1639,20 @@ PageTitle=#Тревожные сны#
 	"BlackType": "None"
 }</pre>
 ::'''Пасифея:''' Хорошо, я подожду здесь.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 204030133
+				}
+			]
+		}
+	],
+	"BeforeCases": []
+}</pre>
 {{Диалог Конец}}
 
 ===Верните Пасифею домой===

@@ -52,6 +52,19 @@ PageTitle=#Красавица и Разрушение#
 :'''Воскресенье:''' Я не против, но это зависит от результата переговоров.
 :'''Химеко:''' Если Порядок вынудил вас посадить Вельта и Зарянку в тюрьму, и теперь вы пытаетесь этим давить на нас, то, по моему мнению, разговаривать нам не о чем.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_sunday_disappear"
+	}
+}</pre>
+:'''Март 7:''' Эй, куда он пропал?
+:'''Воскресенье:''' Добро пожаловать, вы больше не в Мире грёз Пенаконии. Это мой внутренний мир. Здесь пейзаж всё тот же, потому что ваши сознания сформировали сходные концепции, чтобы его дополнить.
+:{{Диалог|Стрелка}} Ты нас запер?
+:{{Диалог|Стрелка}} Да кому придёт в голову показывать свой внутренний мир...
+::'''Март 7:''' Другими словами...
+:'''Химеко:''' Вы и с Вельтом проделали то же самое?..
+:{{tx}}
 :{{tx}}
 :{{tx}}
 :{{tx}}
@@ -139,6 +152,35 @@ PageTitle=#Красавица и Разрушение#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280109"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; Perf)
 :{{tx}}
@@ -168,6 +210,35 @@ PageTitle=#Красавица и Разрушение#
 ::{{Диалог|Выход}} Подумать ещё.
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280109"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 :{{tx}}
 :{{tx}}
@@ -202,6 +273,35 @@ PageTitle=#Красавица и Разрушение#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280112"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 ;(Unused &mdash; Perf)
 :{{tx}}
 ::{{Цвет|Ключевой|nobold=1|Попросить клан Гончих прекратить розыск, чтобы искатель грёз продолжил жить и преследовать свою мечту?}}
@@ -231,6 +331,35 @@ PageTitle=#Красавица и Разрушение#
 ::{{Диалог|Выход}} Подумать ещё.
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280112"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -267,6 +396,55 @@ PageTitle=#Красавица и Разрушение#
 ::{{Диалог|Выход}} Подумать ещё.
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 103280114,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "OptionChosen_1032801"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "WayChosen"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 ;(Unused &mdash; OptionChosen_1032801)
 <pre>{
@@ -308,6 +486,55 @@ PageTitle=#Красавица и Разрушение#
 ::{{Диалог|Выход}} Подумать ещё.
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 103280117,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "WayChosen"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "OptionChosen_1032801"
+					}
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 

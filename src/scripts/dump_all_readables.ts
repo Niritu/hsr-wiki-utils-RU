@@ -39,6 +39,7 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	const infobox = new Template('Книга Инфобокс', {
 		id: zeroPad(series.id, 3),
+		partIds: readables.map(readable => readable.id).join(';'),
 		Название: pageTitle != series.name ? series.name : '',
 		Изображение: firstReadableItem,
 		Мир: series.getWorld(),

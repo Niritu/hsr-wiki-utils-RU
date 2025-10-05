@@ -68,8 +68,7 @@ PageTitle=##
 ::{{Диалог|Стрелка}} Пошли, я тоже хочу во всём разобраться!
 :::'''Патрульная тюремщица:''' Да, пошли.
 ::{{tx}}
-:{{Диалог|Выход}} Ну всё, хватит.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434012401,
 	"MissionCustomValue": {
@@ -82,16 +81,60 @@ PageTitle=##
 	},
 	"CustomValue": 1
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:{{Диалог|Выход}} Ну всё, хватит.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012401,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G170"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+					"InstanceIDList": [
+						300003
+					]
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Поговорите с Хуньтин)
 :'''Хуньтин:''' Готовы?
 :{{Диалог|Стрелка}} Скорее, дайте мне задать вопросы.
 ::'''Хуньтин:''' Хорошо, что Дитин уже в пути. Можем начинать.
-:{{Диалог|Выход}} Мне нужно ещё подумать.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434012404,
 	"MissionCustomValue": {
@@ -104,6 +147,20 @@ PageTitle=##
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Мне нужно ещё подумать.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012404,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
 }</pre>
 :'''Хуньтин:''' Отлично, теперь я позволю вам задать друг другу по одному вопросу, и вы должны будете на них ответить. Так как кто-то из вас врёт, я и не надеюсь на два честных ответа.
 :'''Хуньтин:''' Поэтому я буду делать выводы, исходя из того, какие вопросы вы задаёте и как на них отвечаете. Но, конечно же, я не стану сразу сообщать вам о своём решении. Давай начнём с тебя. {{MC|ж=Подозреваемая|м=Подозреваемый}} №&nbsp;1, спрашивай.

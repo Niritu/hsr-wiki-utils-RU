@@ -83,6 +83,7 @@ export abstract class BaseDomain extends MappingInfo {
 
 	async getUnlockCriteria(): Promise<Mission[]> {
 		return (await this.getGuideData()).UnlockMission.map(id => Mission.fromId(id))
+			.filter(mission => mission != undefined)
 	}
 	
 	costDisplay(): string {

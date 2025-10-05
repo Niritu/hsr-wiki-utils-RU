@@ -151,6 +151,10 @@ PageTitle=#Глупцам нет покоя#
 :'''Доктор Рацио:''' Не валяйте дурака. Думайте.
 :'''(Первопроходец):''' (Думаю, я...)
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43002
+}</pre>
 
 ;(Получено {{Предмет|Бездна памяти: Кризис доверия|20|x=1}})
 {{Диалог Конец}}
@@ -188,33 +192,31 @@ PageTitle=#Глупцам нет покоя#
 ;(Поговорите с Доктор Рацио)
 :'''Доктор Рацио:''' Прошу, начинайте свою речь. Но хорошенько обдумайте то, что сейчас скажите.
 ;(Unused &mdash; Ask0)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Ask1)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Ask2)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Show2)
-:{{tx}}
+
 
 ;(Unused &mdash; ShowFail)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Fail)
+<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Failure"
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Failure"
+}</pre>
+
 <pre>{
 	"$type": "RPG.GameCore.DebateShowToast",
 	"ToastType": "Failure"
@@ -343,33 +345,26 @@ PageTitle=#Глупцам нет покоя#
 	]
 }</pre>
 ;(Unused &mdash; Ask0)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Ask1)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Ask2)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Show_2)
-:{{tx}}
+
 
 ;(Unused &mdash; ShowFail)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.DebateReturnTestimony"
-}</pre>
+
 
 ;(Unused &mdash; Fail)
+<pre>{
+	"$type": "RPG.GameCore.DebateShowToast",
+	"ToastType": "Failure"
+}</pre>
+
 <pre>{
 	"$type": "RPG.GameCore.DebateShowToast",
 	"ToastType": "Failure"

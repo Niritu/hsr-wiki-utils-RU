@@ -108,7 +108,7 @@ PageTitle=#Андалузская обезьяна#
 	},
 	"CustomValue": 1
 }</pre>
-:;(Экран становится чёрным)
+:;(Screen fades to black)
 ::...
 ::'''???:''' Ба... на... ны...
 ::'''(Первопроходец):''' (Что за шум?)
@@ -127,6 +127,12 @@ PageTitle=#Андалузская обезьяна#
 			1
 		]
 	}
+}</pre>
+;(If {{F|MissionCV-1034201-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Legacy",
+	"LoadingType": "RefreshLoading"
 }</pre>
 {{Диалог Конец}}
 

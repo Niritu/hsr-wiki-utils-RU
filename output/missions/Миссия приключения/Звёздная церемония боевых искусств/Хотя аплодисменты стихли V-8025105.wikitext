@@ -130,6 +130,13 @@ PageTitle=#Хотя аплодисменты стихли V#
 ::'''Кармелла:''' Точно! Неважно, как всё сложится на вызове Мастеру, ты уже суперзвезда!
 ::'''Лука:''' Именно поэтому мне и кажется, что это всё - один сплошной сон.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Board.FightFestBoardCutDialog",
+	"Param": {
+		"Value": "5"
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Поднимитесь на арену, чтобы сразиться в финальном матче===
@@ -251,8 +258,115 @@ PageTitle=#Хотя аплодисменты стихли V#
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Лука:''' Мне нужно немного времени.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "FightFestBattleStart"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+					"RaceID": 1005,
+					"OnConfirm": [
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Throng"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "C",
+							"PerformanceID": 802510001,
+							"MaskConfig": {
+								"UseExcelData": false,
+								"EndBlack": "NoPost"
+							}
+						},
+						{
+							"$type": "RPG.GameCore.SetMissionAudioState",
+							"SetBGMEmotionState": true,
+							"BGMEmotionStateName": "State_BGM_D1"
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "C",
+							"PerformanceID": 802510506,
+							"MaskConfig": {
+								"UseExcelData": false,
+								"StartBlack": "NoPre",
+								"EndBlack": "None",
+								"EndCrack": true
+							}
+						},
+						{
+							"$type": "RPG.GameCore.ResetMissionAudioState",
+							"ResetBGMEmotionState": true
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_CannonSalute"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+						},
+						{
+							"$type": "RPG.GameCore.RemoveStreamingSource",
+							"StreamingSource": "Mission_FightFestBattlePerformance"
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
 
-;(Unused &mdash; G64_TriggerBattle)
 ----
 ::'''Лука:''' (Я только сейчас понял... Гепард, Аргенти, Бутхилл, Сварог и, конечно же, господин Хвост - все они пытались донести до меня одно и то же.)
 ::'''Лука:''' (О, получается, я уже одной ногой в лиге сильнейших?)
@@ -268,6 +382,117 @@ PageTitle=#Хотя аплодисменты стихли V#
 ::{{Диалог|Выход}} Мне нужно немного времени.
 :::'''Лука:''' Мне нужно немного времени.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "FightFestBattleStart"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+					"RaceID": 1005,
+					"OnConfirm": [
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Throng"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "C",
+							"PerformanceID": 802510001,
+							"MaskConfig": {
+								"UseExcelData": false,
+								"EndBlack": "NoPost"
+							}
+						},
+						{
+							"$type": "RPG.GameCore.SetMissionAudioState",
+							"SetBGMEmotionState": true,
+							"BGMEmotionStateName": "State_BGM_D1"
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "C",
+							"PerformanceID": 802510506,
+							"MaskConfig": {
+								"UseExcelData": false,
+								"StartBlack": "NoPre",
+								"EndBlack": "None",
+								"EndCrack": true
+							}
+						},
+						{
+							"$type": "RPG.GameCore.ResetMissionAudioState",
+							"ResetBGMEmotionState": true
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_CannonSalute"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+						},
+						{
+							"$type": "RPG.GameCore.RemoveStreamingSource",
+							"StreamingSource": "Mission_FightFestBattlePerformance"
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; G64_TriggerBattle)
+
 
 ;(Unused &mdash; FightFestBattleStart)
 <pre>{
@@ -354,6 +579,26 @@ PageTitle=#Хотя аплодисменты стихли V#
 :{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Paper.FightFestNewsDetailPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 802510514
+		}
+	]
 }</pre>
 
 {{Диалог Конец}}

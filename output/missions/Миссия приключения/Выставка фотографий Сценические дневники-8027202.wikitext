@@ -71,6 +71,91 @@ PageTitle=#Выставка фотографий: Сценические дне�
 ::<!--2-second delay-->
 ::<!--2-second delay-->
 
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G424_NPC400001",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G424"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 424,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802722962
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 424,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802722963
+		}
+	],
+	"LoopInterval": 2,
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 424
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntity",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 424
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+
 ;(Unused &mdash; PhotoGraphFinishCustomString)
 <pre>{
 	"$type": "RPG.GameCore.HideEntity",
@@ -124,25 +209,40 @@ PageTitle=#Выставка фотографий: Сценические дне�
 :'''«Часик»:''' Тик-так! Моя розоволосая подруга, {{MC|ж=серая подруга|м=серый друг}} - благодаря вашей помощи смелый и решительный Часик наконец-то прогнал босса Камня!
 :{{Диалог|Стрелка}} Не за что, тик-так!
 ::'''«Часик»:''' Я подготовил для вас подарок, тик-так! Прошу!
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
 :{{Диалог|Стрелка}} Ты даже не вышел из образа!
 ::'''«Часик»:''' Кхм-кхм... Ха, прошу прощения, я слишком вошёл в роль. Спасибо за фото. Вот, возьмите!
-:{{tx}}
-<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult"
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
 }</pre>
 :'''«Часик»:''' Честно говоря, за всё время, что я на Пенаконии, это первый раз, когда мне довелось выступить на сцене. Увидев это фото, моя семья точно поймёт, что я не зря решил сюда приехать!
 :'''Март 7:''' Ого, какое трогательное фото! (Первопроходец), нужно придумать ему достойное название.
 :{{Диалог|Стрелка}} «Перемены с ранья».
 ::'''Март 7:''' Эм... Я понимаю, что ты имеешь в виду, но для остальных это может прозвучать двусмысленно...
 ::{{tx}}
-:{{Диалог|Стрелка}} «Большое будущее».
-:{{Диалог|Стрелка}} «*Хм*».
-::'''Март 7:''' Слишком просто! Давай хотя бы «Одобрительное "хм"».
-::{{tx}}
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 194,
 	"Value": "1"
+}</pre>
+:{{Диалог|Стрелка}} «Большое будущее».
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 194,
+	"Value": "2"
+}</pre>
+:{{Диалог|Стрелка}} «*Хм*».
+::'''Март 7:''' Слишком просто! Давай хотя бы «Одобрительное "хм"».
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 194,
+	"Value": "3"
 }</pre>
 :'''Март 7:''' Скоро начнётся вторая часть шоу, подождём пока.
 :{{Диалог|Стрелка}} У меня есть отличная идея...
@@ -162,6 +262,60 @@ PageTitle=#Выставка фотографий: Сценические дне�
 		}
 	}
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720206,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720206,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "3"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionNextShotDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Приготовьтесь сделать фотографию второй части шоу===
@@ -174,6 +328,37 @@ PageTitle=#Выставка фотографий: Сценические дне�
 {{Диалог Начало}}
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--1-second delay-->
+
+:<!--2.5-second delay-->
+
+:<!--4-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 427,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 802723104
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 427,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802723105
+		}
+	],
+	"LoopInterval": 2,
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
 
 ;(Unused &mdash; EnterDistrict_G427)
 
@@ -208,12 +393,22 @@ PageTitle=#Выставка фотографий: Сценические дне�
 :'''Март 7:''' Какая оригинальная идея. К тому же у нас получилось запечатлеть на камеру атмосферу сцены!
 :'''Март 7:''' Ладушки, пора придумывать название.
 :{{Диалог|Стрелка}} «Проснись и танцуй».
-:{{Диалог|Стрелка}} «Возвращение Сладких грёз».
-:{{Диалог|Стрелка}} «Камео».
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 195,
 	"Value": "1"
+}</pre>
+:{{Диалог|Стрелка}} «Возвращение Сладких грёз».
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 195,
+	"Value": "2"
+}</pre>
+:{{Диалог|Стрелка}} «Камео».
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 195,
+	"Value": "3"
 }</pre>
 :'''Март 7:''' Загрузится - и с сегодняшней темой закончили. (Первопроходец), хорошо потрудились!
 :{{tx}}
@@ -229,6 +424,26 @@ PageTitle=#Выставка фотографий: Сценические дне�
 			"Value": "Anchor1"
 		}
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
 }</pre>
 :...
 {{Диалог Конец}}

@@ -77,6 +77,8 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 ::{{Диалог|Стрелка}} Мемо, за работу!
 :::'''Трибби:''' Тогда *мы* поручаем это тебе.
 ::{{tx}}
+:----
+::{{tx}}
 
 ;(Unused &mdash; EnterDistrict_G65)
 :{{tx}}
@@ -169,7 +171,8 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 	},
 	"EffectList": [
 		{
-			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab"
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
+			"ForceSimulateImmediately": false
 		}
 	]
 }</pre>
@@ -185,12 +188,21 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
-:<pre>{
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"MainMissionState"}}-->}})
+::<pre>{
 	"$type": "RPG.GameCore.TutorialTaskUnlock",
 	"TriggerParam": {
 		"Value": "6348"
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"MainMissionState"}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6349"
 	}
 }</pre>
 
@@ -536,6 +548,7 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 ::'''Фаенон:''' Ты всё ещё недостаточно его знаешь. Он, может, даже пытаться не будет - просто выбьет дверь.
 ::'''Фаенон:''' Эх, Мидей... Если бы он был здесь, мы бы наверняка меньше отвлекались на решение проблем.
 ::{{tx}}
+::'''Фаенон:''' Всё, довольно разговоров, давайте приступим!
 :'''Фаенон:''' Перед нами сейчас...
 :'''Триннона:''' Алтарь {{Rubi|Таланта|титан правосудия}}.
 :'''Триннона:''' Но мы не его ищем. Сейчас налево.
@@ -658,6 +671,10 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 	],
 	"PathOffset": []
 }</pre>
+
+:'''Фаенон:''' Это секретный проход...
+::'''Триннона:''' Это был секретный проход, который приверженцы мамы подготовили для неё... и меня... как меру предосторожности.
+::'''Триннона:''' И теперь он стал *нашим* путём отступления. Всё по плану.
 {{Диалог Конец}}
 
 ===Продолжайте следовать за Трибиос===
@@ -809,6 +826,14 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 		},
 		"MultiMonsterID": []
 	}
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.RemoveAdventureModifier",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvAllNPCMonsters"
+	},
+	"ModifierName": "ADV_Monster_Common_HuntNPC"
 }</pre>
 
 ;(Unused &mdash; Voice3)
@@ -1015,6 +1040,8 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 	"PathOffset": []
 }</pre>
 
+:'''Трибиос:''' Тут тоже стража. Главное - не дать им себя заметить...
+
 ;(Unused &mdash; Tribbiegogogo2)
 :'''Трибиос:''' Основная дорога точно охраняется... Что же мне делать?
 {{Диалог Конец}}
@@ -1172,6 +1199,46 @@ PageTitle=#О дорога, яви прошлое ещё раз#
 			"EnableVoice": true
 		}
 	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 148,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 104037763,
+			"EnableVoice": true
+		},
+		{
+			"GroupID": 148,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 104037764,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 111
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400005
+		]
+	},
+	"PathwayGroupID": 148,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 2,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104021354
+		}
+	],
+	"PathOffset": []
 }</pre>
 
 ;(Unused &mdash; 73Bubble)

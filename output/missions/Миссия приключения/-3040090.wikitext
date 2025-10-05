@@ -52,7 +52,7 @@ PageTitle=##
 ::Су-ме-ре-чный двор...
 ::'''Гиацина:''' Ислседвоания пакозвыают, что даже иксажнёные солва монжо пноять. Вдиишь, Сребершяка, все бкувы зедсь преептуаны, а ты всё ранво всё поинмеашь.
 ::'''Гиацина:''' Это нормально, человеческий мозг заполняет пробелы, основываясь на уже полученной информации. Закрой глаза, я благословлю тебя, и тебе станет легче!
-;(Экран становится чёрным)
+;(Screen fades to black)
 :Вы не уверены, было ли происходящее реальным и *правда* ли вы видели свою собеседницу, или это всё было иллюзией богини пиршеств. К счастью, вы снова понимаете слова и чётко видите окружающее, а мир вокруг вас вернулся к порядку.
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
@@ -60,6 +60,12 @@ PageTitle=##
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/DizzinessVarient.asset"
 }</pre>
 :'''(Первопроходец):''' Ик~
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 
 
 ;(Поговорите с Осмотреть)
@@ -88,6 +94,12 @@ PageTitle=##
 :'''Гиацина:''' Ладно, я пойду. Кстати, лучше больше не пей «Сюрприз Фагусы».
 :С громким «Бах!» вы снова становитесь {{MC|ж=самой собой|м=самим собой}}.
 :К счастью, ваше превращение продлилось всего несколько «ау-у-у». Снилось ли (Первопроходец), что {{MC|ж=она|м=он}} - химера, или химере снится, что она - (Первопроходец)... Неизвестно.
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 
 
 ;(Поговорите с Осмотреть)
@@ -120,6 +132,12 @@ PageTitle=##
 :::Стоит обязательно запомнить эту встречу.
 :Пусть даже это обычная амброзия без всякого эффекта, всё же она дарует благословение надежды.
 :Это всего лишь пустяки.
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 
 
 ;(Поговорите с Осмотреть)
@@ -146,6 +164,12 @@ PageTitle=##
 :{{Диалог|Стрелка}} ...Вы ведь последователи Загрея, да?
 ::'''Странная девочка:''' Я же сказала, что нет. Можешь не верить, если не хочешь.
 :'''Странная девочка:''' Можешь идти, здесь тебе больше нечего делать.
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 
 
 ;(Поговорите с Осмотреть)
@@ -236,12 +260,50 @@ PageTitle=##
 :{{Диалог|Стрелка}} Простите, я пас.
 ::Кажется, образ обезьяны отлично подходит вашему душевному состоянию!
 :...Возможно, вы просто эволюционировали?
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 ;(Unused &mdash; End_504005482)
 ;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":863}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300002}}}}}-->}})
 :<pre>{
 	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
 	"InstanceIDList": [
 		300002
+	]
+}</pre>
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":863}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300003}}}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":863}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300004}}}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":863}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300005}}}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300005
+	]
+}</pre>
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvNpcEx","FetchType":"SingleNpcByNpcID","SingleNpcID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":863}},"GroupNpcID":{"IsDynamic":false,"FixedValue":{"Value":400002}}}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400002
 	]
 }</pre>
 

@@ -91,12 +91,14 @@ PageTitle=#Золотое очищение#
 
 ;(По прибытии на место)
 :{{tx}}
-;(If {{F|group state}} is undefined 4)
+;(If {{F|group state}} is not undefined 4)
+:;(If {{F|group state}} is undefined 3)
 :<pre>{
+	"$type": "RPG.GameCore.ChangeGroupState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.SetFloorSavedValue"
 }</pre>
-;(If {{F|group state}} is not undefined 4)
-:;(Return to previous option selection)
 ----
 :{{tx}}
 {{Диалог Конец}}

@@ -193,7 +193,43 @@ PageTitle=#Плохой ребёнок, хороший подарок#
 	"CustomValue": 2
 }</pre>
 :::::{{tx}}
-;(Return to previous option selection)
+----
+::'''Серена:''' {{MC|ж=Госпожа|м=Господин}}, ты снова здесь?
+::'''Серена:''' Я бы хотела, чтобы Ясон и Латена тоже побывали на Рассветной вершине и услышали пророчество Кефала. Могу я попросить тебя поговорить со стражами?
+::{{Диалог|Стрелка}} Хорошо, я спрошу у стражей.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041902,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "IsHelpChildren",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			0
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::'''Серена:''' Отлично! Тогда мы будем смирно ждать здесь. Ждать хороших новостей.
+::{{Диалог|Выход}} Я всё {{MC|ж=обдумала|м=обдумал}} и ничем не могу помочь.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 500041902,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "IsHelpChildren",
+		"Type": "Former",
+		"ValidValueParamList": [
+			1,
+			2,
+			0
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:::'''Серена:''' У-у! Ничего, я найду способ. Должен быть другой способ.
 
 ;(Unused &mdash; EnterDistrict_G{GroupID})
 <pre>{

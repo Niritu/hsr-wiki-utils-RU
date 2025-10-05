@@ -199,12 +199,14 @@ PageTitle=#О герой, зажги первое солнце#
 
 ;(Unused &mdash; EnterDistrict_G{GroupID})
 :{{tx}}
-;(If {{F|group state}} is undefined 4)
+;(If {{F|group state}} is not undefined 4)
+:;(If {{F|group state}} is undefined 3)
 :<pre>{
+	"$type": "RPG.GameCore.ChangeGroupState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.SetFloorSavedValue"
 }</pre>
-;(If {{F|group state}} is not undefined 4)
-:;(Return to previous option selection)
 :'''Анакса:''' Мы все готовы к полному уничтожению...
 :'''Анакса:''' Не думал, что кто-то придёт нам на помощь.
 
@@ -298,7 +300,8 @@ PageTitle=#О герой, зажги первое солнце#
 	"$type": "RPG.GameCore.AdvHideMazeBtn",
 	"SkillType": "MazeSkill"
 }</pre>
-:<pre>{
+:;(If {{F|IsSetMoveInputToAxis}} is undefined 0)
+::<pre>{
 	"$type": "RPG.GameCore.ActiveTrackCamera",
 	"Enable": true,
 	"LevelAreaCameraKey": {
@@ -313,6 +316,12 @@ PageTitle=#О герой, зажги первое солнце#
 		}
 	},
 	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
 		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
@@ -376,6 +385,93 @@ PageTitle=#О герой, зажги первое солнце#
 			}
 		}
 	]
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is not undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"OverrideInputByTrack": true
 }</pre>
 ;(Unused &mdash; EndTrack)
 <pre>{
@@ -1291,6 +1387,47 @@ PageTitle=#О герой, зажги первое солнце#
 ::'''Фаенон:''' Я не знаю, напарник...
 ::'''Фаенон:''' ...Прости. Я должен был отправить тебя домой. Это ведь моё путешествие. Ты не {{MC|м=должен был|ж=должна была}} становиться его частью...
 ::{{tx}}
+:----
+::'''Внутренний герой:''' За миллионы циклов я распрощался со всеми вами, и ничего не изменилось.
+::'''Внутренний герой:''' Каждый раз слов оставалось всё меньше. Твой огонь разгорается, и ты всё больше становишься... абсолютной яростью, воплощением ненависти.
+::'''Фаенон:''' У меня... не было выбора.
+::'''Внутренний герой:''' Понимаю. Если не хочешь, чтобы произошло самое ужасное, это единственный выход.
+::'''Внутренний герой:''' Но на этот раз всё иначе. Твоё упорство изменило ход вещей. На горизонте я вижу слабый, но осязаемый луч света, прорывающийся сквозь вечную ночь.
+::'''Фаенон:''' ...Оказалось, что не моё пламя освещало путь.
+::'''Внутренний герой:''' Помнишь? В первом цикле ты и Мидеймос встретились у Весов правосудия, у вас был поединок. Каждый клал на чашу весов то, что ему дороже всего, то, что «тяжелее судьбы мира».
+::'''Внутренний герой:''' И в миг сомнений ты получил мой ответ...
+::'''Внутренний герой:''' ...О чём это я? {{Цвет|Ключевой|nobold=1|Я и есть ты.}} Это останется неизменным, даже если ты меня похоронишь и выберешь другой путь.
+::'''Внутренний герой:''' Давай попробуем ещё раз. Когда у весов сомнения взяли верх, {{Цвет|Ключевой|nobold=1|ответ ты нашёл в своём сердце...}}
+::'''Внутренний герой:''' Помнишь его?
+::'''Фаенон:''' ...
+::'''Фаенон:''' {{Цвет|Ключевой|nobold=1|Помни прошлое и стань героем будущего.}}
+::'''Фаенон:''' {{Цвет|Ключевой|nobold=1|Нечто тяжелее судьбы мира - это решимость взять на себя прошлое, что нельзя изменить, и нести его в будущее.}}
+::'''Внутренний герой:''' Да. (Первопроходец), мой напарник, мой соратник...
+::'''Внутренний герой:''' Ты {{MC|ж=прибыла|м=прибыл}} в этот странный мир и до нынешнего момента {{MC|ж=была|м=был}} {{MC|ж=связана|м=связан}} с его жестокой судьбой.
+::'''Внутренний герой:''' Ты не {{MC|ж=сдавалась|м=сдавался}} в трудную минуту. Вместо этого ты без тени колебаний {{MC|ж=спасала|м=спасал}} миры, один за другим. Билет на твоей груди... это метка героя.
+::'''Внутренний герой:''' Если я решу пройти через эту дверь и принять конец, угодный Разрушению, {{Цвет|Ключевой|nobold=1|пусть солнце, созданное из миллионов ярких ядер пламени, сожжёт меня дотла вместе с богом Разрушения и всеми его приспешниками...}}
+::'''Внутренний герой:''' Тогда тот мир, который мы покинем, мой дом, где ещё остаётся надежда...
+::'''Внутренний герой:''' {{Цвет|Ключевой|nobold=1|Возьмёшь ли ты всё, что мы несли на своих плечах, вернёшься в самое начало и остановишь {{Rubi|{{Цвет|Ключевой|nobold=1|рождение Сталесклепа}}|{{Цвет|Ключевой|nobold=1|завершение}}}}, спасёшь наш любимый мир и перепишешь его незавидную историю?}}
+::{{Диалог|Стрелка}} Да.
+::{{Диалог|Стрелка}} Я стану рассветом Амфореуса.
+::{{Диалог|Стрелка}} Я... не позволю Сталесклепу завершиться...
+::'''Внутренний герой:''' Тогда...
+::'''Фаенон:''' Если (Первопроходец) сможет взять целый мир на себя...
+::'''Фаенон:''' На пути спасения {{MC|м=он|ж=она}} сможет продвинуться дальше, чем огонь, который умеет только сжигать.
+::'''Фаенон:''' Некто отправится в будущее...
+::'''Фаенон:''' Некто останется в прошлом.
+::'''Фаенон:''' Если мой Рассвет сможет сразить богов, возможно, узел судьбы удастся разорвать.
+::'''Фаенон:''' И если ты предотвратишь {{Rubi|рождение Сталесклепа|завершение}}... то эти тридцать миллионов циклов не будут напрасными.
+::'''Фаенон:''' Пора испытать наш союз, напарник.
+::{{Диалог|Стрелка}} Ступай и борись за будущее, Фаенон.
+::{{Диалог|Стрелка}} Я позабочусь об этом мире, Фаенон.
+::{{Диалог|Стрелка}} Давай оба станем Спасителями, Фаенон.
+::'''Фаенон:''' Кирена, нам открывается новая страница.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
 	"GroupID": {
@@ -1537,7 +1674,8 @@ PageTitle=#О герой, зажги первое солнце#
 	"$type": "RPG.GameCore.AdvHideMazeBtn",
 	"SkillType": "MazeSkill"
 }</pre>
-:<pre>{
+:;(If {{F|IsSetMoveInputToAxis}} is undefined 0)
+::<pre>{
 	"$type": "RPG.GameCore.ActiveTrackCamera",
 	"Enable": true,
 	"LevelAreaCameraKey": {
@@ -1552,6 +1690,12 @@ PageTitle=#О герой, зажги первое солнце#
 		}
 	},
 	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
 		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
@@ -1615,6 +1759,93 @@ PageTitle=#О герой, зажги первое солнце#
 			}
 		}
 	]
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is not undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"OverrideInputByTrack": true
 }</pre>
 ;(Unused &mdash; EndTrack)
 <pre>{
@@ -1681,12 +1912,14 @@ PageTitle=#О герой, зажги первое солнце#
 
 ===Станьте свидетелем ответа Каосланы===
 {{Диалог Начало}}
-;(If {{F|group state}} is undefined 4)
+;(If {{F|group state}} is not undefined 4)
+:;(If {{F|group state}} is undefined 3)
 :<pre>{
+	"$type": "RPG.GameCore.ChangeGroupState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.SetFloorSavedValue"
 }</pre>
-;(If {{F|group state}} is not undefined 4)
-:;(Return to previous option selection)
 {{Диалог Конец}}
 
 ===Сотворите чудо Оронис и верните ядро пламени===

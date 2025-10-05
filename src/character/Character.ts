@@ -1,9 +1,13 @@
 import { AvatarData } from '../files/Character.js'
 import { getExcelFile } from '../files/GameFile.js'
 import { AttackType } from '../Shared.js'
-import { HashReference, textMap } from '../TextMap.js'
+import { HashReference, pathDisplayName, textMap } from '../TextMap.js'
+import { CharacterAbility } from './CharacterAbility.js'
+import { CharacterEidolon } from './CharacterEidolon.js'
+import { CharacterTrace } from './CharacterTrace.js'
 
 export const AvatarConfig = await getExcelFile<AvatarData>('AvatarConfig.json', 'AvatarID')
+export const AvatarServantConfig = await getExcelFile<any>('AvatarServantConfig.json', 'ServantID')
 
 export class Character {
 	id: number
@@ -19,6 +23,7 @@ export class Character {
 	
 	combat_type: AttackType
 	combat_path: string
+	path_display: string
 	max_energy: number
 	
 	ascension_group: number
@@ -51,11 +56,16 @@ export class Character {
 		
 		this.combat_type = data.DamageType
 		this.combat_path = data.AvatarBaseType
+		this.path_display = pathDisplayName(data.AvatarBaseType)
 		this.max_energy = data.SPNeed?.Value || 0
 		
 		this.ascension_group = data.ExpGroup
 		this.eidolon_ids = data.RankIDList
-		this.skill_ids = data.SkillList
+		this.skill_ids = [...data.SkillList]
+		
+		if (AvatarServantConfig[`1${this.id}`]) {
+			this.skill_ids.push(...AvatarServantConfig[`1${this.id}`].SkillIDList)
+		}
 		
 		this.released = data.Release || false
 		
@@ -74,5 +84,28 @@ export class Character {
 		const data = AvatarConfig[id]
 		if (!data) return undefined
 		return new Character(data)
+	}
+	
+	static allReleased() {
+		return Object.values(AvatarConfig)
+			.filter(data => data.Release)
+			.map(data => new Character(data))
+	}
+	
+	getAbilities(): CharacterAbility[] {
+		return this.skill_ids
+			.map(id => CharacterAbility.fromId(id))
+			.filter(ability => ability != undefined && ability.type != 'MazeNormal') as CharacterAbility[]
+	}
+	
+	getTraces(): CharacterTrace[] {
+		return CharacterTrace.getForCharacter(this.id)
+	}
+
+	getEidolons(): CharacterEidolon[] {
+		return this.eidolon_ids
+			.map(id => CharacterEidolon.fromId(id))
+			.filter(eidolon => eidolon != undefined)
+			.sort((e0, e1) => e0.level - e1.level)
 	}
 }

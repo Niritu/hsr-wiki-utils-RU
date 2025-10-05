@@ -78,9 +78,26 @@ PageTitle=#Цунами войны#
 ::'''Боб:''' ...Ну, знаешь ли, так в своё время игры и называли...
 :'''Боб:''' В любом случае эта игра пока на стадии тестирования, и дядюшка Лисандр попросил меня оставить местечко для тебя. Может, попробуешь сыграть?
 <pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityFeverTime.ActivityFeverTimeMainPage",
+	"OnUIExitImmediately": []
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.TriggerEntityEvent",
 	"EventName": {
 		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
 	},
 	"InstanceID": {
 		"IsDynamic": false,

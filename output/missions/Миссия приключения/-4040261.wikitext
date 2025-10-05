@@ -28,7 +28,6 @@ PageTitle=##
 ==Прохождение==
 {{Дополнить}}
 
-
 :{{Диалог|?}} Осмотреть
 ;(If {{F|MissionCV-4040261-1}} is undefined 1)
 :<pre>{
@@ -81,7 +80,18 @@ PageTitle=##
 ::'''Призрачная актриса:''' Что думаешь? Представь, что для меня это способ бороться со скукой. У меня хорошее настроение, поэтому я не буду носиться здесь повсюду. А когда я спокойна, то у всех вокруг тоже будет хорошее настроение, правда же?
 ::----
 ::----
-;(Все нижеуказанные выборы ведут к следующим вариантам)
+:;(If {{F|MissionCV-4040261-3}} is undefined 1)
+:;(If {{F|MissionCV-4040261-3}} is not undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
+;(All choices lead to the following options)
 :{{Диалог|Стрелка}} Я буду учиться у тебя.
 :<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
@@ -115,7 +125,17 @@ PageTitle=##
 }</pre>
 ::'''Призрачная актриса:''' Ох... Ладно. Если вдруг передумаешь, возвращайся.
 ----
-
+;(If {{F|MissionCV-4040261-3}} is undefined 1)
+;(If {{F|MissionCV-4040261-3}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_suigarden_ghostopera"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 195,
+	"ID": 300001
+}</pre>
 
 :{{Диалог|?}} Разучить оперу
 ----

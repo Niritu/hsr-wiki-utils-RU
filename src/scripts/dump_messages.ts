@@ -28,7 +28,7 @@ for (const contact of MessagesContact.loadAll()) {
 			const messages = (await section.getMessages()).optimize()
 			out.push(
 				`===${header}===`,
-				group.isDaily() ? `{{Сообщения\n|условие_получения = \n|текст=\n${await messages.wikitext()}\n}}` : `{{Сообщения\n|условие_получения = \n|текст =\n${await messages.wikitext()}\n}}`,
+				group.isDaily() ? `{{Сообщения|текст =\n${await messages.wikitext()}\n}}` : `{{Сообщения\n|условие_получения = \n|текст =\n${await messages.wikitext()}\n}}`,
 				'----',
 				''
 			)

@@ -53,7 +53,18 @@ PageTitle=#Чистая совесть и сломанная клетка#
 	}
 }</pre>
 ;(If {{F|Fsv_Niraya}} is not undefined 1)
-:;(Return to previous option selection)
+:;(If {{F|Fsv_Niraya}} is undefined 2)
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"Enabled": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
 
 ;(Поговорите с Посланник)
 :'''Посланник:''' Если вы готовы, то я провожу вас в Дом кандалов.
@@ -71,7 +82,7 @@ PageTitle=#Чистая совесть и сломанная клетка#
 
 ;(По прибытии на место)
 ;(If {{cx}}<!--SubMission Finish: 202210403-->)
-:;(Экран становится чёрным)
+:;(Screen fades to black)
 ::Ханья преграждает вам путь. Она обязана убедиться, что вы последуете туда, куда нужно.
 ;(If {{cx}}<!--SubMission not Finish: 202210403-->)
 ::'''Посланник:''' Её честь пока не пришла. Прошу, подождите немного.
@@ -356,6 +367,20 @@ PageTitle=#Чистая совесть и сломанная клетка#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Одну минуту, пожалуйста.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 202210405
+				}
+			]
+		}
+	]
+}</pre>
 ----
 :{{tx}}
 :{{Диалог|Стрелка}} Это вход в Дом кандалов?
@@ -371,6 +396,35 @@ PageTitle=#Чистая совесть и сломанная клетка#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Одну минуту, пожалуйста.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 202210405
+				}
+			]
+		}
+	],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20241_F20241001_G5"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поднимитесь на смотровую башню Дома кандалов===
@@ -501,48 +555,43 @@ PageTitle=#Чистая совесть и сломанная клетка#
 
 ===Пройдите сквозь ширму телепортации, чтобы отправиться вглубь Дома кандалов===
 {{Диалог Начало}}
-;(If {{F|Fly}} is undefined 2)
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
 ;(If {{F|Fly}} is not undefined 2)
-:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
 
 ;(Поговорите с Ханья)
 :'''Ханья:''' Будьте очень осторожны и смотрите, куда наступаете.

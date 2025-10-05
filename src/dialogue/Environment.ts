@@ -23,6 +23,8 @@ export class GraphEnvironment {
 	
 	dynamic_values: Record<string, DynamicValue> = {}
 	
+	voice_ids: number[] = []
+	
 	registerPostMissionDialogue(item: DialogueTaskEntry) {
 		this.post_mission.push(item)
 	}

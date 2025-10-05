@@ -47,7 +47,45 @@ PageTitle=##
 	"CustomValue": 1
 }</pre>
 ;(If {{F|MissionCV-4340108-undefined}} is not undefined 1)
-:;(Return to previous option selection)
+:;(If {{F|MissionCV-4340108-undefined}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1304500
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434010803,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(If {{F|MissionCV-4340108-undefined}} is not undefined 2)
+::;(If {{F|MissionCV-4340108-undefined}} is undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1304600
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434010803,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

@@ -30,7 +30,8 @@ PageTitle=#Бумажная дуэль: Коллекционная версия#
 ===Ознакомьтесь с новым игровым режимом на игровом автомате===
 {{Описание миссии|тип=Миссия приключения|локация=«(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)»|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
 {{Диалог Начало}}
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -53,6 +54,28 @@ PageTitle=#Бумажная дуэль: Коллекционная версия#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

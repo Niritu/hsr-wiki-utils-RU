@@ -37,9 +37,16 @@ PageTitle=#Матч! Яньцин!#
 
 ;(Поговорите с Яньцин)
 :'''Яньцин:''' Сражения эфирных духов не имеют ничего общего с фехтованием...
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu",
-	"DisplaySingleMenuItem": true
+;(If )
+:{{Диалог|undefined}} Устроим сетевой матч!
+::'''Яньцин:''' Но любой поединок - это дополнительная практика. Мастер, прошу тебя о наставлении.
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherChallenge.AetherChallengePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "12"
+	}
 }</pre>
 :'''Яньцин:''' Я по-прежнему думаю, что мой меч гораздо удобнее эфирных духов...
 <pre>{

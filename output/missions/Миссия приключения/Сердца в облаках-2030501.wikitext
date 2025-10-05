@@ -66,6 +66,28 @@ PageTitle=#Сердца в облаках#
 ::'''Секретарь Семьи:''' Не переживайте. В знак искренности нашего клана по отношению к Звёздному экспрессу, я подобрала несколько кандидатур из базы талантов Люцерн...
 ;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":12}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300003}}}},"State":"Open"}-->}})
 ::<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G162"
+						},
+						"AnchorName": {
+							"Value": "Anchor2"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Выберите кандидата на должность старшего помощника===
@@ -131,6 +153,79 @@ PageTitle=#Сердца в облаках#
 ::'''Секретарь Семьи:''' Конечно. Спешить некуда.
 ::{{tx}}
 :;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+						"MainMissionID": 2030501,
+						"MissionCustomValue": {
+							"Name": "OldValue_0",
+							"ValidValueParamList": [
+								1,
+								2,
+								3
+							]
+						},
+						"TargetValue": 2
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10341_F10341001_G163"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PredicateTaskList",
+							"Predicate": {
+								"$type": "RPG.GameCore.ByCompareMissionCustomValue",
+								"MainMissionID": 2030501,
+								"MissionCustomValue": {
+									"Name": "OldValue_0",
+									"ValidValueParamList": [
+										1,
+										2,
+										3
+									]
+								},
+								"TargetValue": 3
+							},
+							"SuccessTaskList": [
+								{
+									"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+									"SwitchCharacterAnchorConfig": {
+										"IsLocalPlayer": true,
+										"CharacterUniqueName": "LocalPlayer",
+										"AreaName": {
+											"Value": "LevelArea_P10341_F10341001_G163"
+										},
+										"AnchorName": {
+											"Value": "Anchor1"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
 
 {{Диалог Конец}}
 
@@ -356,6 +451,28 @@ PageTitle=#Сердца в облаках#
 :'''Роза:''' Будьте спокойны, галовианское чувство прекрасного вас точно не разочарует.
 :'''Роза:''' Хм, прекрасно. Идеально подходит.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G167"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Хладожилом===
@@ -519,6 +636,28 @@ PageTitle=#Сердца в облаках#
 :'''Хладожил:''' Не переживайте, я видел бюст - он выглядит весьма неплохо, схожесть с вами около 60-70%.
 :'''Хладожил:''' С каждым взглядом на скульптуру я всё больше ей поражаюсь, от неё так и веет новшествами. Другим капитанам мы точно не уступаем...
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10341_F10341001_G172"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Педро===

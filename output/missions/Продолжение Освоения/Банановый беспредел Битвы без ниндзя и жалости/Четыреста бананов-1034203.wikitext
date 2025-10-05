@@ -88,6 +88,24 @@ PageTitle=#Четыреста бананов#
 :'''Дань Хэн:''' Откуда ты столько знаешь?
 :{{tx}}
 <pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10306_F10306001_G37"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
 	"SubmissionID": 103420329,
 	"MessageSectionID": 1311900
@@ -265,6 +283,28 @@ PageTitle=#Четыреста бананов#
 :'''Изумлённый студент:''' Ого, это же Баюнановая обезьянка!
 :'''«Бананофессор»:''' Меня зовут профессор Примон. Конечно же, вы можете называть меня в духе модной традиции - *бананофессор*!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G42"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Дождитесь начала экзамена в общей аудитории===
@@ -302,8 +342,7 @@ PageTitle=#Четыреста бананов#
 ----
 :Судя по номеру, это ваше место. Дождитесь прихода преподавателя.
 :{{Диалог|Стрелка}} Сесть и подождать.
-:{{Диалог|Выход}} Может, позже.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420306,
 	"MissionCustomValue": {
@@ -316,6 +355,72 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Может, позже.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420306,
+	"MissionCustomValue": {
+		"Index": 7,
+		"Name": "OldValue_7",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(If {{F|MissionCV-1034203-7}} is undefined 1)
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Простите...
+::Артисты, тише, тише.
+::Прошу перестать шуметь,
+::не слоняться туда-сюда
+::и выключить записывающие устройства...
+::Приготовьтесь.
+::Фильм вот-вот начнётся.
+;(Cutscene ends)
+----
+----
+:{{tx}}
+----
+:'''Март 7:''' Господин Река такой крутой! В два счёта переубедил Семью.
+:'''Дань Хэн:''' Какая странная реакция, словно она внезапно поменяла мнение.
+:{{Диалог|Стрелка}} Мне тоже так показалось.
+::'''Март 7:''' Неужели она пала жертвой харизмы великого режиссёра?
+::Больше на шантаж похоже.
+::'''Март 7:''' Господин Река упомянул об «академической подтасовке». Кто бы мог подумать, что в Академии оригами тоже можно встретить такое?
+::Может, господин Река владеет Заводным механизмом?
+:{{Диалог|Стрелка}} Больше на шантаж похоже.
+::'''Март 7:''' Господин Река упомянул об «академической подтасовке». Кто бы мог подумать, что в Академии оригами тоже можно встретить такое?
+::Может, господин Река владеет Заводным механизмом?
+:{{Диалог|Стрелка}} Может, господин Река владеет Заводным механизмом?
+:'''Март 7:''' С виду довольно похоже, но думаю, что это маловероятно...
+:'''Студент-волонтёр:''' Эй, {{MC|ж=студентка|м=студент}} с серыми волосами! Твоя очередь! Отправляйся в класс театрального искусства.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G44"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -484,12 +589,8 @@ PageTitle=#Четыреста бананов#
 :'''Господин Река:''' И вот первый вопрос: расскажи о себе.
 :{{Диалог|Стрелка}} Я - {{MC|м=Безымянный|ж=Безымянная}} со Звёздного экспресса.
 ::'''Господин Река:''' Да, и это то, что тебя характеризует прежде всего. Это честный ответ.
-:{{Диалог|Стрелка}} Суперзвезда праздника. {{MC|ж=Держательница|м=Держатель}} акций Пенаконии.
-::'''Господин Река:''' Делаешь акцент на своей значимости, чтобы подчеркнуть собственную ценность. Назовём это дальновидностью.
-:{{Диалог|Стрелка}} Человек-бита. Или Ниндзя-бита.
-::'''Господин Река:''' Ха-ха, а ты ещё шутишь прямо на экзамене, глядя в лицо экзаменатору! Умеешь играть на публику!
-:{{tx}}
-<pre>{
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -520,15 +621,10 @@ PageTitle=#Четыреста бананов#
 		"DirectValue": 1
 	}
 }</pre>
-:'''Господин Река:''' Ладно, второй вопрос: каким своим достоинством ты гордишься больше всего?
-:{{Диалог|Стрелка}} Я не щажу своей жизни.
-::'''Господин Река:''' Хм, понимаю. Ты не боишься трудностей, это может внести дополнительную ценность в картину.
-:{{Диалог|Стрелка}} Могу за себя постоять.
-::'''Господин Река:''' Говоришь, у тебя отличное телосложение? Неплохо, съёмочная группа обожает выносливых и трудолюбивых новичков.
-:{{Диалог|Стрелка}} Меня сложно смутить.
-::'''Господин Река:''' Отлично! Смелость и открытость - незаменимые качества на сцене. О таком таланте мечтают большинство актёров.
-:{{tx}}
-<pre>{
+:{{Диалог|Стрелка}} Суперзвезда праздника. {{MC|ж=Держательница|м=Держатель}} акций Пенаконии.
+::'''Господин Река:''' Делаешь акцент на своей значимости, чтобы подчеркнуть собственную ценность. Назовём это дальновидностью.
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -557,18 +653,77 @@ PageTitle=#Четыреста бананов#
 		"DirectValue": 1
 	}
 }</pre>
-:'''Господин Река:''' А третий вопрос пусть задаст она.
-:'''Господин Река:''' Эта малышка - ассистент режиссёра. Мой надёжный партнёр. Съёмка, запись монтаж... Она мастер на все руки, а уж на актёров у неё глаз намётан даже лучше, чем у меня.
-:'''«Ассистент режиссёра»:''' ...
-:'''Господин Река:''' Да, это очень хороший вопрос. Отвечай, (Первопроходец).
-:{{Диалог|Стрелка}} Она не издала ни звука.
-::'''Господин Река:''' Камера способна передать сцену лучше любых слов. Её молчание и есть вопрос, а твоя реакция и есть ответ. Вполне логичный ответ.
-:{{Диалог|Стрелка}} Она очаровательна.
-::'''Господин Река:''' М-м, когда тебя ставят в затруднительное положение, твоя реакция - довольно ловкий приём, вот только ассистент режиссёра не любит, когда кто-то хвалит её внешность.
-:{{Диалог|Стрелка}} Ква-ква-ква!
-::'''«Ассистент режиссёра»:''' ...
-:{{tx}}
-<pre>{
+:{{Диалог|Стрелка}} Человек-бита. Или Ниндзя-бита.
+::'''Господин Река:''' Ха-ха, а ты ещё шутишь прямо на экзамене, глядя в лицо экзаменатору! Умеешь играть на публику!
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Господин Река:''' Ладно, второй вопрос: каким своим достоинством ты гордишься больше всего?
+:{{Диалог|Стрелка}} Я не щажу своей жизни.
+::'''Господин Река:''' Хм, понимаю. Ты не боишься трудностей, это может внести дополнительную ценность в картину.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Могу за себя постоять.
+::'''Господин Река:''' Говоришь, у тебя отличное телосложение? Неплохо, съёмочная группа обожает выносливых и трудолюбивых новичков.
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -587,6 +742,144 @@ PageTitle=#Четыреста бананов#
 		"MissionCustomValue": {
 			"Index": 2,
 			"Name": "OldValue_2",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Меня сложно смутить.
+::'''Господин Река:''' Отлично! Смелость и открытость - незаменимые качества на сцене. О таком таланте мечтают большинство актёров.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Господин Река:''' А третий вопрос пусть задаст она.
+:'''Господин Река:''' Эта малышка - ассистент режиссёра. Мой надёжный партнёр. Съёмка, запись монтаж... Она мастер на все руки, а уж на актёров у неё глаз намётан даже лучше, чем у меня.
+:'''«Ассистент режиссёра»:''' ...
+:'''Господин Река:''' Да, это очень хороший вопрос. Отвечай, (Первопроходец).
+:{{Диалог|Стрелка}} Она не издала ни звука.
+::'''Господин Река:''' Камера способна передать сцену лучше любых слов. Её молчание и есть вопрос, а твоя реакция и есть ответ. Вполне логичный ответ.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 2,
+			"Name": "OldValue_2",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Она очаровательна.
+::'''Господин Река:''' М-м, когда тебя ставят в затруднительное положение, твоя реакция - довольно ловкий приём, вот только ассистент режиссёра не любит, когда кто-то хвалит её внешность.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Ква-ква-ква!
+::'''«Ассистент режиссёра»:''' ...
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
 			"ValidValueParamList": [
 				0,
 				1,
@@ -636,13 +929,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -656,6 +944,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -719,8 +1092,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -736,32 +1209,12 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
@@ -803,13 +1256,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -823,6 +1271,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -886,8 +1419,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -903,32 +1536,12 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
@@ -968,13 +1581,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -988,6 +1596,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -1051,8 +1744,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -1068,32 +1861,12 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
@@ -1261,12 +2034,8 @@ PageTitle=#Четыреста бананов#
 :'''Господин Река:''' И вот первый вопрос: расскажи о себе.
 :{{Диалог|Стрелка}} Я - {{MC|м=Безымянный|ж=Безымянная}} со Звёздного экспресса.
 ::'''Господин Река:''' Да, и это то, что тебя характеризует прежде всего. Это честный ответ.
-:{{Диалог|Стрелка}} Суперзвезда праздника. {{MC|ж=Держательница|м=Держатель}} акций Пенаконии.
-::'''Господин Река:''' Делаешь акцент на своей значимости, чтобы подчеркнуть собственную ценность. Назовём это дальновидностью.
-:{{Диалог|Стрелка}} Человек-бита. Или Ниндзя-бита.
-::'''Господин Река:''' Ха-ха, а ты ещё шутишь прямо на экзамене, глядя в лицо экзаменатору! Умеешь играть на публику!
-:{{tx}}
-<pre>{
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -1297,15 +2066,10 @@ PageTitle=#Четыреста бананов#
 		"DirectValue": 1
 	}
 }</pre>
-:'''Господин Река:''' Ладно, второй вопрос: каким своим достоинством ты гордишься больше всего?
-:{{Диалог|Стрелка}} Я не щажу своей жизни.
-::'''Господин Река:''' Хм, понимаю. Ты не боишься трудностей, это может внести дополнительную ценность в картину.
-:{{Диалог|Стрелка}} Могу за себя постоять.
-::'''Господин Река:''' Говоришь, у тебя отличное телосложение? Неплохо, съёмочная группа обожает выносливых и трудолюбивых новичков.
-:{{Диалог|Стрелка}} Меня сложно смутить.
-::'''Господин Река:''' Отлично! Смелость и открытость - незаменимые качества на сцене. О таком таланте мечтают большинство актёров.
-:{{tx}}
-<pre>{
+:{{Диалог|Стрелка}} Суперзвезда праздника. {{MC|ж=Держательница|м=Держатель}} акций Пенаконии.
+::'''Господин Река:''' Делаешь акцент на своей значимости, чтобы подчеркнуть собственную ценность. Назовём это дальновидностью.
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -1334,18 +2098,77 @@ PageTitle=#Четыреста бананов#
 		"DirectValue": 1
 	}
 }</pre>
-:'''Господин Река:''' А третий вопрос пусть задаст она.
-:'''Господин Река:''' Эта малышка - ассистент режиссёра. Мой надёжный партнёр. Съёмка, запись монтаж... Она мастер на все руки, а уж на актёров у неё глаз намётан даже лучше, чем у меня.
-:'''«Ассистент режиссёра»:''' ...
-:'''Господин Река:''' Да, это очень хороший вопрос. Отвечай, (Первопроходец).
-:{{Диалог|Стрелка}} Она не издала ни звука.
-::'''Господин Река:''' Камера способна передать сцену лучше любых слов. Её молчание и есть вопрос, а твоя реакция и есть ответ. Вполне логичный ответ.
-:{{Диалог|Стрелка}} Она очаровательна.
-::'''Господин Река:''' М-м, когда тебя ставят в затруднительное положение, твоя реакция - довольно ловкий приём, вот только ассистент режиссёра не любит, когда кто-то хвалит её внешность.
-:{{Диалог|Стрелка}} Ква-ква-ква!
-::'''«Ассистент режиссёра»:''' ...
-:{{tx}}
-<pre>{
+:{{Диалог|Стрелка}} Человек-бита. Или Ниндзя-бита.
+::'''Господин Река:''' Ха-ха, а ты ещё шутишь прямо на экзамене, глядя в лицо экзаменатору! Умеешь играть на публику!
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Господин Река:''' Ладно, второй вопрос: каким своим достоинством ты гордишься больше всего?
+:{{Диалог|Стрелка}} Я не щажу своей жизни.
+::'''Господин Река:''' Хм, понимаю. Ты не боишься трудностей, это может внести дополнительную ценность в картину.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Могу за себя постоять.
+::'''Господин Река:''' Говоришь, у тебя отличное телосложение? Неплохо, съёмочная группа обожает выносливых и трудолюбивых новичков.
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 103420310,
 	"TargetMissionCustomValue": {
@@ -1364,6 +2187,144 @@ PageTitle=#Четыреста бананов#
 		"MissionCustomValue": {
 			"Index": 2,
 			"Name": "OldValue_2",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Меня сложно смутить.
+::'''Господин Река:''' Отлично! Смелость и открытость - незаменимые качества на сцене. О таком таланте мечтают большинство актёров.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Господин Река:''' А третий вопрос пусть задаст она.
+:'''Господин Река:''' Эта малышка - ассистент режиссёра. Мой надёжный партнёр. Съёмка, запись монтаж... Она мастер на все руки, а уж на актёров у неё глаз намётан даже лучше, чем у меня.
+:'''«Ассистент режиссёра»:''' ...
+:'''Господин Река:''' Да, это очень хороший вопрос. Отвечай, (Первопроходец).
+:{{Диалог|Стрелка}} Она не издала ни звука.
+::'''Господин Река:''' Камера способна передать сцену лучше любых слов. Её молчание и есть вопрос, а твоя реакция и есть ответ. Вполне логичный ответ.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 2,
+			"Name": "OldValue_2",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Она очаровательна.
+::'''Господин Река:''' М-м, когда тебя ставят в затруднительное положение, твоя реакция - довольно ловкий приём, вот только ассистент режиссёра не любит, когда кто-то хвалит её внешность.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"ValidValueParamList": [
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:{{Диалог|Стрелка}} Ква-ква-ква!
+::'''«Ассистент режиссёра»:''' ...
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103420310,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1034203,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
 			"ValidValueParamList": [
 				0,
 				1,
@@ -1413,13 +2374,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -1433,6 +2389,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -1496,8 +2537,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -1513,32 +2654,12 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
@@ -1580,13 +2701,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -1600,6 +2716,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -1663,8 +2864,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -1680,32 +2981,12 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
@@ -1745,13 +3026,8 @@ PageTitle=#Четыреста бананов#
 ::'''Господин Река:''' Снято. Твой экзамен завершён. Давай посмотрим, что у нас получилось...
 ::{{tx}}
 :;(If {{F|MissionCV-1034203-undefined}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
-:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
 	"MissionCustomValue": {
@@ -1765,6 +3041,91 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is greater than or equal to 3)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-undefined}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-1}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-2}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 ::'''Господин Река:''' (Первопроходец), добро пожаловать на кастинг.
 ::'''Господин Река:''' Смысл кастинга очень прост. Тебе просто нужно будет ответить на несколько вопросов. Конечно, моё решение будет зависеть не только от твоих ответов. Важно, как ты будешь вести себя перед объективом камеры.
@@ -1828,8 +3189,108 @@ PageTitle=#Четыреста бананов#
 ::{{Диалог|Стрелка}} Нет, не устраивает. Я буду выбирать {{MC|ж=сама|м=сам}}.
 :::'''Господин Река:''' Не вопрос. Я уважаю желания актёров. Так персонажем какой школы ты хочешь стать?
 :::{{Диалог|Стрелка}} Школа грёзотворчества.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
 :::{{Диалог|Стрелка}} Школа богатств.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :::{{Диалог|Стрелка}} Школа гармонии.
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{tx}}
+:;(If {{F|MissionCV-1034203-6}} is undefined 1)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190728
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420310,
+	"MissionCustomValue": {
+		"Index": 6,
+		"Name": "OldValue_6",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190727
+		}
+	}
+}</pre>
+:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
+:::{{tx}}
 ::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420310,
@@ -1845,36 +3306,38 @@ PageTitle=#Четыреста бананов#
 	},
 	"CustomValue": 3
 }</pre>
-::{{tx}}
-:;(If {{F|MissionCV-1034203-6}} is undefined 1)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 2)
-:;(Otherwise, if {{F|MissionCV-1034203-6}} is undefined 3)
-::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 103420310,
-	"MissionCustomValue": {
-		"Index": 6,
-		"Name": "OldValue_6",
-		"ValidValueParamList": [
-			0,
-			1,
-			2,
-			3
-		]
-	},
-	"CustomValue": 1
-}</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowReading",
 	"BookID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 190728
+			"Value": 190721
 		}
 	}
 }</pre>
 ::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G258"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterArea_G170)
 :'''Март 7:''' А ты кто?..
@@ -2043,9 +3506,7 @@ PageTitle=#Четыреста бананов#
 ::'''(Первопроходец):''' (Этот банан кажется таким знакомым...)
 :'''Чалетка:''' Теперь... Добавим немного «эмоций», которые придадут десерту особый вкус. Это часть специфики кухни Мира грёз.
 :{{Диалог|Стрелка}} Добавим «радость».
-:{{Диалог|Стрелка}} Добавим «безмятежность».
-:{{Диалог|Стрелка}} Добавим «голод».
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103420327,
 	"MissionCustomValue": {
@@ -2059,6 +3520,38 @@ PageTitle=#Четыреста бананов#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} Добавим «безмятежность».
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420327,
+	"MissionCustomValue": {
+		"Index": 4,
+		"Name": "OldValue_4",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:{{Диалог|Стрелка}} Добавим «голод».
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103420327,
+	"MissionCustomValue": {
+		"Index": 4,
+		"Name": "OldValue_4",
+		"ValidValueParamList": [
+			0,
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
 }</pre>
 :'''Чалетка:''' И наконец, нам нужен соус. Сахарная глазурь с Пенаконии, особая корица из Асданы или острая подлива по специальному рецепту отеля.
 :'''Дань Хэн:''' Острая подлива?!
@@ -2289,6 +3782,70 @@ PageTitle=#Четыреста бананов#
 :{{Диалог|Стрелка}} Откуда здесь...
 :'''Март 7:''' Хм, вы говорите о ней?
 :{{tx}}
+----
+:'''Глава дисциплинарного комитета:''' Попалась! Теперь посмотрим, как быстро ты умеешь бегать!
+:'''Раппа:''' ...Синоби-гигаку, похоже, наш отдых подходит к концу.
+:'''Синоби-гигаку?:''' Верно, Ниндзя Хаоса. Это местный воин... Нет, это демон, явившийся в наказание за наши злодеяния.
+:'''Раппа:''' Так жаль... Неважно, как быстра походка ниндзя, нам не избежать воздаяния за наши поступки.
+:'''Синоби-гигаку?:''' Клинок ниндзя не просто может противостоять судьбе, он должен противостоять ей!
+:'''Раппа:''' Твоя решимость вызывает уважение! Синоби-гигаку, ты на полпути к Пределу ниндзя-рейнджера.
+:'''Синоби-гигаку?:''' Слышишь? Наше ниндзюцу обратит тебя в пепел, демон!
+:'''Март 7:''' Эм... мы будем драться?!
+:...
+:'''Синоби-гигаку?:''' Чего вы ждёте, воины? Выходите и сразитесь!
+:'''Глава дисциплинарного комитета:''' Это ни в какие ворота... Эй вы, из театрального кружка, эта дамочка рядом с вами натворила дел, и даже не смейте ей подыгрывать!
+:{{Диалог|Стрелка}} Так, значит, это прилавок театрального кружка...
+:{{Диалог|Стрелка}} Ниндзя? Почему «ниндзя»?
+:{{Диалог|Стрелка}} Похоже, я всё ещё в том пузыре грёз...
+:'''Синоби-гигаку?:''' Ну ты даёшь! Подыграй нам! Мы записываем видео!
+:'''Глава дисциплинарного комитета:''' Значит, она из вашего клуба?
+:'''Синоби-гигаку?:''' Нет, она даже не из академии. Но она отлично вошла в роль, просто прекрасная актриса!
+:'''Глава дисциплинарного комитета:''' Разве это не вызывает ещё больше подозрений?
+:'''Раппа:''' Мы с Синоби-гигаку встретились случайно. Но я тут не одна. Эти Безымянные Ниндзя - мои спутники.
+:{{Диалог|Стрелка}} Да, это я!
+:{{Диалог|Стрелка}} Что происходит?
+:'''Март 7:''' Хм, ты её знаешь?
+:{{Диалог|Стрелка}} Можно сказать, что так.
+:{{Диалог|Стрелка}} Да не то чтобы...
+:{{Диалог|Стрелка}} Лучше бы не {{MC|ж=знала|м=знал}}.
+:'''Глава дисциплинарного комитета:''' Так, ты подруга этих акционеров... Тогда понятно.
+:{{tx}}
+----
+:'''Раппа:''' Ниндзя-бита, вот мы и снова встретились! Какое счастливое совпадение, наверное, это судьба!
+:'''Раппа:''' А с вами, Безымянные Ниндзя, мы видимся впервые. Я Ниндзя Хаоса, моё имя Раппа.
+:'''Март 7:''' Безымянные Ниндзя? Может, просто Безымянные? Так-то у нас есть имена... Меня зовут Март 7, а это Дань Хэн.
+:'''Раппа:''' Какие славные прозвища! Приветствую вас, Ниндзя-стекляшка и Ниндзя-дракон!
+:'''Март 7:''' ...
+:'''Дань Хэн:''' Меня зовут Дань Хэн.
+:'''Раппа:''' Слушаюсь, Ниндзя-дракон Аои Дань Хэн.
+:'''Март 7:''' Хм... Она так старается... Такое поведение, кажется, называется... «синдром восьмиклассника»?
+:{{Диалог|Стрелка}} Может, она из Загадочников.
+:{{Диалог|Стрелка}} Немного напоминает Рыцаря Красоты.
+:{{Диалог|Стрелка}} Твою ж милашку! Галактический рейнджер?
+:'''Дань Хэн:''' Наш мир полон чудес. Кто знает, может и впрямь существует «планета ниндзюцу».
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G162"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 :'''Март 7:''' Э! Почему они толпятся посреди дороги?..
 {{Диалог Конец}}
 

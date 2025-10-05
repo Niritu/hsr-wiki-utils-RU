@@ -72,6 +72,32 @@ PageTitle=#Изолированная зона#
 	"AnchorName": "Anchor1"
 }</pre>
 <pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300039
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerOpen",
+	"ParameterType": "Trigger"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.ChangePropState"
 }</pre>
 :<!--1-second delay-->
@@ -108,6 +134,32 @@ PageTitle=#Изолированная зона#
 	"AnchorName": "Anchor1"
 }</pre>
 <pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300045
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerOpen",
+	"ParameterType": "Trigger"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.ChangePropState"
 }</pre>
 :<!--1-second delay-->
@@ -142,6 +194,15 @@ PageTitle=#Изолированная зона#
 :{{Диалог|Изучение}} Осмотреть
 ;(If {{cx}}<!--SubMission Finish: 800020111-->)
 ;(Otherwise)
+::'''Леонард:''' В зоне остались необнаруженные Визитные карточки взлома. Выйти из симуляции?
+::{{Диалог|Стрелка}} Остаться
+::{{Диалог|Выход}} Подтвердить выход
+::<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 102000000,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
 :'''Леонард:''' Испытание завершено. Выйти из симуляции?
 :{{Диалог|Стрелка}} Остаться
 :{{Диалог|Выход}} Подтвердить выход

@@ -97,6 +97,25 @@ PageTitle=#«Возвышение сладких грёз»#
 ::{{Диалог|Стрелка}} Если честно, уже снимаю.
 ::'''Спешащий режиссёр:''' Ха-ха! Смешно! Ну, тогда желаю удачи.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P44305_F44305002_G36"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с разгневанным режиссёром===
@@ -147,6 +166,25 @@ PageTitle=#«Возвышение сладких грёз»#
 :;(If {{F|MissionCV-8022125-1}} is undefined 0)
 :;(If {{F|MissionCV-8022125-1}} is not undefined 0)
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P44305_F44305002_G53"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; TriggerBattle)
 ;(Enter battle)
@@ -187,6 +225,25 @@ PageTitle=#«Возвышение сладких грёз»#
 :::'''Разгневанный режиссёр:''' Хм, такой шанс дважды не предлагают.
 ::'''Разгневанный режиссёр:''' Ладно, тут я почти закончил. А ты отправляйся на следующую площадку. Там, наверное, тоже помощь пригодится.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P44305_F44305002_G36"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с увлечённым режиссёром===
@@ -219,6 +276,32 @@ PageTitle=#«Возвышение сладких грёз»#
 	"EndWithCrack": true
 }</pre>
 :{{Диалог|Выход}} (Уйти.)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "TriggerBattle"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; TriggerBattle)
 ;(Enter battle)
@@ -273,6 +356,25 @@ PageTitle=#«Возвышение сладких грёз»#
 :::{{tx}}
 ::'''Увлечённый режиссёр:''' «После тяжёлого сражения Часик и его спутники наконец отбивают Большое гнездо у врагов».
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P44305_F44305002_G53"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				}
+			}
+		}
+	]
+}</pre>
 
 
 ;(Поговорите с Часик)
@@ -298,16 +400,35 @@ PageTitle=#«Возвышение сладких грёз»#
 :;(If {{F|MissionCV-8022125-4}} is undefined 0)
 :;(If {{F|MissionCV-8022125-4}} is not undefined 0)
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P44305_F44305002_G53"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				}
+			}
+		}
+	]
+}</pre>
 ;(If {{F|MissionCV-8022125-4}} is not undefined 0)
 ::<!--0.1-second delay-->
-:<pre>{
+<pre>{
 	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
 	"RaidTargetID": 443050043,
 	"IsIncrease": true,
 	"DeltaValue": 1
 }</pre>
-:;(If {{F|Ending}} is undefined 0)
-::<pre>{
+;(If {{F|Ending}} is undefined 0)
+:<pre>{
 	"$type": "RPG.GameCore.SetAdvAchievement",
 	"QuestID": 4053210
 }</pre>
@@ -324,6 +445,21 @@ PageTitle=#«Возвышение сладких грёз»#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+;(If {{F|Ending}} is not undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802212517,
+	"MissionCustomValue": {
+		"Index": 5,
+		"Name": "OldValue_5",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
 }</pre>
 {{Диалог Конец}}
 

@@ -232,6 +232,24 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 :{{Диалог|Стрелка}} Подождите...
 :'''Мемо:''' Прощай. Время. Пришло.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40402_F40402001_G10"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Попрощайтесь с одним из Охотников за Стелларонами из воспоминаний===
@@ -240,19 +258,101 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 ;(Поговорите с Светлячок)
 :'''(Первопроходец):''' У меня осталось совсем немного времени в этих воспоминаниях... Может, стоит попрощаться со Светлячком?
 :{{Диалог|Стрелка}} Попрощаться со Светлячком.
-:{{Диалог|Выход}} Нужно об этом ещё подумать.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 22
+}</pre>
+:{{Диалог|Выход}} Нужно об этом ещё подумать.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 20
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 22,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 104010717,
+					"MaskConfig": {
+						"UseExcelData": false
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetLoadingStratageType",
+					"StratageType": "Plain",
+					"RollBackWhenMissionFail": true,
+					"SubmissionID": 104010712
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010712
+				}
+			]
+		},
+		{
+			"Case": 20,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Поговорите с Кафка)
 :'''(Первопроходец):''' У меня осталось совсем немного времени в этих воспоминаниях... Может, стоит попрощаться с Кафкой?
 :{{Диалог|Стрелка}} Попрощаться с Кафкой.
-:{{Диалог|Выход}} Нужно об этом ещё подумать.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 11
+}</pre>
+:{{Диалог|Выход}} Нужно об этом ещё подумать.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 10
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 11,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 104010718,
+					"MaskConfig": {
+						"UseExcelData": false
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetLoadingStratageType",
+					"StratageType": "Plain",
+					"RollBackWhenMissionFail": true,
+					"SubmissionID": 104010712
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010715
+				}
+			]
+		},
+		{
+			"Case": 10,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 {{Диалог Конец}}

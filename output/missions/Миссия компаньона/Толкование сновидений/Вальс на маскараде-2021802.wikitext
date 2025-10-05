@@ -68,6 +68,38 @@ PageTitle=#Вальс на маскараде#
 :'''Чёрный Лебедь:''' Пара намёков на уровне воспоминаний. Если все помнят одно и то же, воспоминания становятся фактом.
 :{{tx}}
 <pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		202180202
+	],
+	"State": "Started",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 202180201
+		},
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchor",
+			"IsLocalPlayer": true,
+			"CharacterUniqueName": "LocalPlayer",
+			"AreaName": {
+				"Value": "LevelArea_P43304_F43304001_G6"
+			},
+			"AnchorName": {
+				"Value": "Anchor2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_202180202"
+			}
+		}
+	]
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
 	"ExtendTime": 1
 }</pre>
@@ -171,6 +203,41 @@ PageTitle=#Вальс на маскараде#
 
 ;(Получено {{Предмет|Улика: кнопка гарантированного взаимного уничтожения|20|x=1}})
 
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		202180211
+	],
+	"State": "Started",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300001
+				]
+			},
+			"TriggerName": "MissionTrigger",
+			"ButtonsByName": [],
+			"ButtonConfigs": [
+				{
+					"ID": "Button01",
+					"IconType": "CheckIcon",
+					"ButtonText": {
+						"Value": "PropInteractTitle_1"
+					}
+				}
+			],
+			"DisableAfterTriggered": true,
+			"IsOverrideValidGuestConfig": true,
+			"OverridedValidGuestConfig": {
+				"FakePlayer": true
+			}
+		}
+	]
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
@@ -423,6 +490,49 @@ PageTitle=#Вальс на маскараде#
 }</pre>
 :'''Сампо:''' Ого... Ну и хаос. И, похоже, здесь ещё одна пара чудиков.
 :'''Чёрный Лебедь:''' Здесь больше никого нет. Похоже, госпожа Искорка использовала тот же способ, чтобы отправить спящих обратно в реальность. Ну, значит, поговорим с ними.
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		202180249
+	],
+	"State": "Started",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 202180222
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_202180249"
+			}
+		}
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		202180247
+	],
+	"State": "Started",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 202180222
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_202180247"
+			}
+		}
+	]
+}</pre>
 :{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",

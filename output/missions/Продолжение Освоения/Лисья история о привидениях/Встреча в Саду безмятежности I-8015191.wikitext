@@ -63,6 +63,20 @@ PageTitle=#Встреча в Саду безмятежности I#
 :'''Хохо:''' А насчёт нашей миссии... Циррус заперли в Саду безмятежности, но немало хелиоби сбежало после поломки Печи сотворения.
 :{{tx}}
 ----
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.HeliobusSNSMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
 
 ;(Поговорите с Сушан)
 :'''Сушан:''' Так... Су-шил-ки... Ло... «Сушилки Лофу»?! Это что ещё за сайт такой?
@@ -123,6 +137,59 @@ PageTitle=#Встреча в Саду безмятежности I#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 50,
+	"GroupNpcID": 400002,
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 50
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		}
+	]
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetAudioEmotionState",
 	"StateName": "State_Joyful",
@@ -142,7 +209,7 @@ PageTitle=#Встреча в Саду безмятежности I#
 :;(Return to previous option selection)
 :{{Диалог|Стрелка}} У меня больше нет вопросов.
 ::{{tx}}
-::{{Чёрный экран|Ханья передаёт дела Охотников за привидениями и удаляется вглубь Сада безмятежности.}}
+::{{Black Screen|Ханья передаёт дела Охотников за привидениями и удаляется вглубь Сада безмятежности.}}
 <pre>{
 	"$type": "RPG.GameCore.SetAudioEmotionState",
 	"ResetToFloorDefault": true,
@@ -178,6 +245,19 @@ PageTitle=#Встреча в Саду безмятежности I#
 :'''Сушан:''' А разве мы не должны действовать скрытно?
 :{{tx}}
 ----
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.HeliobusSNSMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

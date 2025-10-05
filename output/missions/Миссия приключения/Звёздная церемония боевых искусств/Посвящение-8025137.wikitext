@@ -10,12 +10,12 @@ PageTitle=#Посвящение#
 |Событие         = Звёздная церемония боевых искусств
 |Глава           = Звёздная церемония боевых искусств
 |Условия         = 
-* Завершена [[Миссия приключения]] «[[Отборочный матч - Охотник до Стелларонов: Сэм]]»
-* Завершена [[Миссия приключения]] «[[Отборочный матч - Блуждающий Огонь]]»
+* Завершена [[Миссия приключения]] «[[Отборочный матч — Охотник до Стелларонов: Сэм|Отборочный матч - Охотник до Стелларонов: Сэм]]»
+* Завершена [[Миссия приключения]] «[[Отборочный матч — Блуждающий Огонь|Отборочный матч - Блуждающий Огонь]]»
 |Персонажи       = Командир Облачных Рыцарей; Лука; Первопроходец; Проводница душ; Сугата; Шаматха; Юйкун
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[«Рассекатель небес»]]
 |Мир             = Лофу Сяньчжоу
-|Предыдущая      = Отборочный матч - Блуждающий Огонь
+|Предыдущая      = Отборочный матч — Блуждающий Огонь
 |Следующая       = 
 |Награды         = Звёздный нефрит*30; Путеводитель путешественника*2; Утраченный кристалл*2; Кредиты*30 000
 }}
@@ -61,6 +61,71 @@ PageTitle=#Посвящение#
 :<pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2007,
+	"ScoreRaceSpecialInviteEventID": 419107,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513702,
+			"MaskConfig": {}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		}
+	]
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloat",
 	"Name": {
@@ -101,6 +166,49 @@ PageTitle=#Посвящение#
 ::'''Лука:''' Считай это моим неутолимым любопытством.
 :{{Диалог|Стрелка}} С радостью.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20242_F20242001_G61"
+				},
+				"AnchorName": {
+					"Value": "Anchor5"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Arena"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_2.5_Throng"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Отправляйтесь в Дом кандалов и помогите с расследованием===
@@ -126,6 +234,10 @@ PageTitle=#Посвящение#
 ::'''Юйкун:''' Сто два тела на корабле - не ошибка и не недопонимание.
 ::'''Лука:''' Госпожа Шаматха, вы раньше говорили мне, что сражаетесь за монахов и детей из Храма Колеса. Вы мне врали?
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40105
+}</pre>
 {{Диалог Конец}}
 
 ===Синхронизируйте данные с Сугатой===
@@ -141,6 +253,22 @@ PageTitle=#Посвящение#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Позвольте мне покоиться с миром.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "OpenRaid_G217"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; OpenRaid_G217)
 <pre>{
@@ -165,10 +293,35 @@ PageTitle=#Посвящение#
 :'''Шаматха:''' Спасибо, госпожа Юйкун!
 :'''Юйкун:''' Приступайте к бою, как будете готовы.
 :{{Диалог|Стрелка}} Мы готовы.
-:{{Диалог|Выход}} Стоит отдохнуть.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Стоит отдохнуть.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802513711
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802513707
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Поговорите с Юйкун)
@@ -179,6 +332,23 @@ PageTitle=#Посвящение#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Стоит отдохнуть.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802513711
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterDistrict_G220)
 :{{tx}}

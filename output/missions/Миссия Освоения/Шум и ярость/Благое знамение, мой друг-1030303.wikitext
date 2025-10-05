@@ -52,7 +52,13 @@ PageTitle=#Благое знамение, мой друг#
 	"$type": "RPG.GameCore.TriggerEntityServerEvent"
 }</pre>
 ;(If {{F|FSV_PinBall}} is not undefined 0)
-:;(Return to previous option selection)
+:;(If {{F|FSV_PinBall}} is undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -122,9 +128,15 @@ PageTitle=#Благое знамение, мой друг#
 	}
 }</pre>
 ;(Unused &mdash; TV_Open)
-<pre>{
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.RequestGroupStateChange",
 	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
 }</pre>
 {{Диалог Конец}}
 
@@ -189,6 +201,20 @@ PageTitle=#Благое знамение, мой друг#
 }</pre>
 ::{{Диалог|Выход}} Может, немного позже.
 :::'''Доктор Эдвард:''' Отлично! Доктор Эдвард с радостью всё устроит, если вы готовы!
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.OpenTreasureChallenge",
+					"RaidID": 43303
+				}
+			]
+		}
+	]
+}</pre>
 :'''Доктор Эдвард:''' Добро пожаловать в Торговый дом Мира грёз! Доктор Эдвард к вашим услугам!
 ::'''Доктор Эдвард:''' Первопроходец со Звёздного экспресса, вот мы и снова встретились! Ха-ха, вижу, с вами парочка друзей! Полагаю, весёлые ребята!
 ::'''Сампо:''' Здравствуйте, Доктор Эдвард. Я бы хотел показать друзьям кое-что... весёлое. Вы ведь понимаете, о чём я.
@@ -227,6 +253,32 @@ PageTitle=#Благое знамение, мой друг#
 		}
 	],
 	"SimpleTalk": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103030310"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103030323_item"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.OpenTreasureChallenge",
+					"RaidID": 43303
+				}
+			]
+		}
+	]
 }</pre>
 ;(По прибытии на место)
 
@@ -319,6 +371,10 @@ PageTitle=#Благое знамение, мой друг#
 ::{{Диалог|Стрелка}} Я буду начеку.
 ::'''Светлячок:''' ...Конечно.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
 {{Диалог Конец}}
 
 ===Откройте дверь, чтобы начать приключение===

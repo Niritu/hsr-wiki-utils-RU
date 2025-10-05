@@ -55,6 +55,22 @@ PageTitle=#Плечо товарища, оружие в руке#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Сначала немного отдохну.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "EnterArea_G29"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterArea_G29)
 ----

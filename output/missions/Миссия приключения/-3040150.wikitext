@@ -1,0 +1,117 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 3040150
+|Название        = 
+|Изображение     = Миссия .png
+|Тип             = Миссия приключения
+|Событие         = 
+|Глава           = 
+|Условия         = Завершена [[Миссия Освоения]] «[[О ночь, которая наступает до рассвета]]»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[Амфореус]] — [[Элизия Эйдес]]
+|Мир             = Амфореус
+|Предыдущая      = 
+|Следующая       = 
+|Награды         = 
+}}
+'''''' — [[Миссия приключения]] в [[Амфореус]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+
+
+==Прохождение==
+{{Дополнить}}
+
+;(Поговорите с Темень)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\3040150\DS304015001.json'-->)
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsDestroyAllEntityType": true
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==История изменений==
+{{История изменений|3.6}}
+
+==Навигация==
+{{Миссия приключения Навбокс|Глава }}
+
+[[en:]]

@@ -43,7 +43,8 @@ PageTitle=#Фаворит#
 
 ===Узнайте об испытании у гида===
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032701-undefined}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103270227,
 	"MissionCustomValue": {
@@ -55,6 +56,20 @@ PageTitle=#Фаворит#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-1032701-undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270227,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
 }</pre>
 {{Описание миссии|тип=Миссия Освоения|локация=Отборочная площадка выжженных песков от Услады™|Первый выбор! Вы со Светлячком прибыли на сцену «Битвы в грёзах: Актёрское мастерство». По словам гида, здесь будут проверять ваши актёрские навыки...<br />Что ещё за актёрские навыки? Вы совершенно не представляете. Вы ведь всегда пользовались искренностью.}}
 ;(Unused &mdash; Perf)

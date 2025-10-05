@@ -60,6 +60,10 @@ PageTitle=#На вершине все тропы сходятся#
 :'''Март 7:''' Да, сколько же их... Эй, ты опять не о том думаешь!
 :'''Химеко:''' Давайте осмотримся. Только будьте осторожны.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetIgnoreSendEnlightSection",
+	"IsReset": true
+}</pre>
 {{Описание миссии|тип=Миссия Освоения|локация=Большой театр Пенаконии|Вы приняли приглашение Воскресенья на дуэль и спокойно прибыли в Большой театр Пенаконии, где будет решаться судьба Пенаконии и самой вселенной. Однако, вы не видите во всём театре ни души. Только звуки ваших шагов, дыхания и ударов сердца эхом отдаются по длинным коридорам.<br />Что же задумал глава клана Дубов? Вам следует быть осторожнее, чтобы не попасться в ловушку предателя.}}
 ;(Unused &mdash; InvestigateProps)
 :{{tx}}
@@ -108,6 +112,23 @@ PageTitle=#На вершине все тропы сходятся#
 ::'''???:''' «Она связала туманности в струны и создала клавесин с чёрно-белыми клавишами».
 ::'''???:''' «Стоило ей ударить по белым клавишам, как поднималось солнце, по чёрным - всходила луна».
 ::'''???:''' «Так утро сменялось вечером. И то был второй день».
+
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"LookAtTargetAreaName": {
+		"Value": "LevelArea_P20332_F20332001_G369"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "Anchor2"
+	},
+	"TemplateName": "Farther"
+}</pre>
+
+:<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"Reset": true
+}</pre>
 {{Диалог Конец}}
 
 ===Посмотрите первый акт пьесы===
@@ -188,9 +209,109 @@ PageTitle=#На вершине все тропы сходятся#
 	"IntervalTime": 1
 }</pre>
 
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300005
+	]
+}</pre>
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001,
+			300005
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300007,
+		300006
+	]
+}</pre>
+::<!--10-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300007,
+			300006
+		]
+	}
+}</pre>
+
+:<!--4-second delay-->
+::'''Воскресенье:''' «Некогда трое Безымянных остались здесь и попытались передать пограничной тюрьме Путь Освоения. К сожалению, это не помогло».
+
 ;(Unused &mdash; EnterArea_G169)
 :<!--3-second delay-->
 ::'''Воскресенье:''' «Асдану вновь охватило пламя войны, и на этот раз враг сжирал её изнутри. Заключённые остаются таковыми до самой смерти. Они умеют лишь бороться за свободу, но не жить ради неё».
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290521
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300003,
+		300004
+	]
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001,
+			300003,
+			300004
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300005,
+		300006
+	]
+}</pre>
+::<!--10-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006
+		]
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Посмотрите первый акт пьесы===
@@ -203,11 +324,115 @@ PageTitle=#На вершине все тропы сходятся#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290515
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005
+	]
+}</pre>
+:<!--7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004,
+			300005
+		]
+	}
+}</pre>
 :<!--2-second delay-->
 :'''Воскресенье:''' «В 2147 янтарной эре заключённый по имени Хануну поднял мятеж и победил. Корпорация назвала это Пограничной войной, а люди Асданы - Войной за независимость».
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300006,
+		300005
+	]
+}</pre>
+:<!--4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006
+		]
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300007,
+		300008
+	]
+}</pre>
+:<!--7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300007,
+			300008
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290517
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"IntervalTime": 1
+}</pre>
 :<!--3-second delay-->
 :'''Воскресенье:''' «Господин Хануну - великий герой, но он не учёл одной детали: он знал лишь как освободить заключённых, но не знал, как подарить им настоящую свободу».
 {{Диалог Конец}}
@@ -341,6 +566,24 @@ PageTitle=#На вершине все тропы сходятся#
 	}
 }</pre>
 
+:<!--4-second delay-->
+::'''Воскресенье:''' «Глава клана Люцерн вознамерился обратиться к Корпорации и обменять свою свободу на жизнь, но был убит собственным старшим сыном. Впоследствии тот занял место главы».
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290538
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300006
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+
 ;(Unused &mdash; final)
 <pre>{
 	"$type": "RPG.GameCore.PlayVoice",
@@ -356,6 +599,45 @@ PageTitle=#На вершине все тропы сходятся#
 	},
 	"IntervalTime": 1
 }</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300014
+	]
+}</pre>
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300014
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300015
+	]
+}</pre>
+::<!--6-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300015
+		]
+	}
+}</pre>
+
+:<!--4-second delay-->
+::'''Воскресенье:''' «Только тогда, когда Гофер привёл Семью на Землю изгнания, а пять кланов последовали за ним, Пенакония смогла обрести своё новое имя - земля грёз».
 {{Диалог Конец}}
 
 ===Помогите куклам завершить представление===
@@ -404,6 +686,22 @@ PageTitle=#На вершине все тропы сходятся#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:<!--8-second delay-->
+:'''Канцлер:''' «Если народ не способен сам понять, куда двигаться, мы сделаем выбор за него и возьмём на себя ответственность».
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103293701
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -426,6 +724,22 @@ PageTitle=#На вершине все тропы сходятся#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103293801
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+:<!--4-second delay-->
+:'''Канцлер:''' «Мы должны помогать друг другу, чтобы защищать слабых и бороться со злом».
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -450,6 +764,22 @@ PageTitle=#На вершине все тропы сходятся#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103293901
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+:<!--4-second delay-->
+:'''Канцлер:''' «До правителя всё шло своим чередом. После его ухода ничего не изменится».
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
@@ -476,6 +806,27 @@ PageTitle=#На вершине все тропы сходятся#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:<!--3-second delay-->
+:'''Канцлер:''' «Нам больше не нужен правитель. Мы сами властвуем над сущим».
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005
+	]
+}</pre>
+:<!--7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004,
+			300005
+		]
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.PlayVoice",
 	"VoiceIDs": [
@@ -571,6 +922,12 @@ PageTitle=#На вершине все тропы сходятся#
 
 ;(По прибытии на место)
 <pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
 	"SwitchCharacterAnchorConfig": {
 		"IsLocalPlayer": true,
@@ -582,6 +939,71 @@ PageTitle=#На вершине все тропы сходятся#
 			"Value": "Anchor3"
 		}
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 10
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "CamAnchor"
+	},
+	"CameraTargetName": {
+		"Value": "0"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103290550
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103290560
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "0"
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"GroupId": 425,
+	"PointID": 4,
+	"MotionFlag": "Walk"
 }</pre>
 :<!--7-second delay-->
 <pre>{
@@ -717,6 +1139,16 @@ PageTitle=#На вершине все тропы сходятся#
 ::'''Воскресенье:''' Однако, если хотите его увидеть, сначала продемонстрируйте мне веру, соизмеримую с величием Стелларона.
 ::'''Воскресенье:''' Только силой своих убеждений мы можем принести этому миру истинное счастье.
 ::{{tx}}
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Равна ли темнота свету?
+:::Равны ли грешники праведникам?
+:::Если ты рождён слабым,
+:::к какому богу следует обратиться за утешением?
+:;(Cutscene ends)
+:----
+:;(Enter battle)
+::{{Список врагов|mode=sent|Представление о прошлом, нынешнем и вечном*1/+59.1% НР; «Опьянённое празднеством настоящее»*1/+59.1% НР; «Гармоничное будущее»*1/+59.1% НР; «Заключённое в клетку прошлое»*1/+59.1% НР}}
 ----
 ;([[#Gallery|Cutscene]] plays)
 ::Время пришло. Создание возродится из останков богов...
@@ -805,6 +1237,24 @@ PageTitle=#На вершине все тропы сходятся#
 		]
 	}
 }</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290533
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+
+:<!--4-second delay-->
+::'''Воскресенье:''' «Порядка на Земле изгнания почти не было, её терзали внутренние смуты и угрозы извне. Семь великих кланов лишь внешне казались едиными, на самом деле держались порознь и постоянно враждовали».
 <pre>{
 	"$type": "RPG.GameCore.WaitEntityServerEvent"
 }</pre>
@@ -816,6 +1266,116 @@ PageTitle=#На вершине все тропы сходятся#
 ;(Unused &mdash; kuaiji)
 :<!--4-second delay-->
 ::'''Воскресенье:''' «Первым из гражданской войны выбыл клан Чёрных Слив, навеки оставшись в истории после инцидента Белой пустыни, спланированного кланом Люцерн».
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290535,
+		103290536
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IntervalTime": 1
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005
+	]
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004,
+			300005
+		]
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300006
+	]
+}</pre>
+::<!--6-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300006
+		]
+	}
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300007,
+		300008
+	]
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300007,
+			300008
+		]
+	}
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300009
+	]
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ShowSDFText",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300009
+		]
+	}
+}</pre>
 ;(Unused &mdash; Perf)
 :{{tx}}
 
@@ -859,6 +1419,24 @@ PageTitle=#На вершине все тропы сходятся#
 		]
 	}
 }</pre>
+
+:<!--4-second delay-->
+::'''Воскресенье:''' «Галактика жестока и не знает пощады. Клан Мотыльков пытался добраться до Серебряных рельсов, оставленных экспрессом, но был стёрт с лица земли остатками Роя».
+
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		103290540
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	},
+	"IntervalTime": 1
+}</pre>
 {{Диалог Конец}}
 
 ===Помогите куклам завершить представление===
@@ -869,6 +1447,63 @@ PageTitle=#На вершине все тропы сходятся#
 ::'''???:''' «Она связала туманности в струны и создала клавесин с чёрно-белыми клавишами».
 ::'''???:''' «Стоило ей ударить по белым клавишам, как поднималось солнце, по чёрным - всходила луна».
 ::'''???:''' «Так утро сменялось вечером. И то был второй день».
+
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1.5
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "Camera"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103290510
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103290510
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CallBackEventName": {
+		"Value": "Talk_103290201"
+	}
+}</pre>
 :'''???:''' «Сумеречные войны опустошили небеса и посеяли хаос на земле».
 :'''???:''' «Дабы определить место всего сущего, явилась Эна, Эон Порядка».
 :'''???:''' «И то был первый день».

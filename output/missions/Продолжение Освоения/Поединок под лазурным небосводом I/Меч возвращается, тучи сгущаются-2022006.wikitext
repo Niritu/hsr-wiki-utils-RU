@@ -72,6 +72,28 @@ PageTitle=#Меч возвращается, тучи сгущаются#
 :'''Хуайянь:''' Нет, что ты. Вы все - важные свидетели. Адмирал отлично осознаёт, с какой целью Цзин Юань проводит церемонию, и понимает, в какой он ситуации. Она упомянула это, поскольку считает важным и то, и другое.
 :'''Цзин Юань:''' Я благодарен вам за доброту и честность, старейшина Хуайянь, но разве уместно... рассказывать нам о приказе адмирала?
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10202_F10202003_G45"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Полюбуйтесь легендарным клинком===
@@ -157,6 +179,28 @@ PageTitle=#Меч возвращается, тучи сгущаются#
 :'''Март 7:''' Я понимаю.
 :'''Март 7:''' Тогда я в деле! Благодарю за доброту, генерал Хуайянь.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10202_F10202003_G46"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с другими гражданами в Обители божественного предвидения===
@@ -179,6 +223,12 @@ PageTitle=#Меч возвращается, тучи сгущаются#
 :'''Дань Хэн:''' Не волнуйся, (Первопроходец). Что бы ни случилось, я останусь здесь как свидетель от экспресса, и отвечу на любые её вопросы.
 :'''Цзин Юань:''' Спасибо вам.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40238,
+	"OnCancel": [],
+	"OnEnter": []
+}</pre>
 :<!--1.2-second delay-->
 :'''Март 7:''' А... Генерал Хуайянь ушёл. Погодите, почему мне что-то в этом разговоре кажется подозрительным?
 {{Диалог Конец}}

@@ -170,6 +170,60 @@ PageTitle=#О врата, раздающийся эхом стук во снах
 }</pre>
 
 ;(По прибытии на место)
+;(If {{F|MissionCV-1040208-2}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+::<!--0.05-second delay-->
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
@@ -324,6 +378,59 @@ PageTitle=#О врата, раздающийся эхом стук во снах
 }</pre>
 
 ;(По прибытии на место)
+;(If {{F|MissionCV-1040208-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,
@@ -591,6 +698,59 @@ PageTitle=#О врата, раздающийся эхом стук во снах
 }</pre>
 
 ;(По прибытии на место)
+;(If {{F|MissionCV-1040208-1}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
 	"Active": false,

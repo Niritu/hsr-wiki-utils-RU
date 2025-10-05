@@ -162,13 +162,17 @@ PageTitle=#Отважный дракон в безбрежном океане#
 
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+:;(If {{F|MissionCV-1021501-undefined}} is greater than 1)
+:::'''Дань Хэн:''' Последний из трёх когтей находится здесь.
+:;(If {{F|MissionCV-1021501-undefined}} is not greater than 1)
+:::'''Дань Хэн:''' ...На момент воскрешения Древа амброзии эта печать уже едва держалась.
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
 ::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
 ::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
 ::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
 ::'''Цзин Юань:''' Справишься?
 ::'''Дань Хэн:''' Постараюсь...
-:<pre>{
+<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150104,
 	"TargetMissionCustomValue": {
@@ -212,12 +216,16 @@ PageTitle=#Отважный дракон в безбрежном океане#
 
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+:;(If {{F|MissionCV-1021501-undefined}} is greater than 1)
+:::'''Дань Хэн:''' Последний из трёх когтей находится здесь.
+:;(If {{F|MissionCV-1021501-undefined}} is not greater than 1)
+:::'''Дань Хэн:''' ...На момент воскрешения Древа амброзии эта печать уже едва держалась.
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
 ::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
 ::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
 ::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
-::'''Цзин Юань:''' Дальше орудуют Мерзости - будьте осторожны.
-:<pre>{
+:'''Цзин Юань:''' Дальше орудуют Мерзости - будьте осторожны.
+<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150105,
 	"TargetMissionCustomValue": {
@@ -261,13 +269,17 @@ PageTitle=#Отважный дракон в безбрежном океане#
 
 ;(По прибытии на место)
 ;(If {{F|MissionCV-1021501-undefined}} is greater than 0)
+:;(If {{F|MissionCV-1021501-undefined}} is greater than 1)
+:::'''Дань Хэн:''' Последний из трёх когтей находится здесь.
+:;(If {{F|MissionCV-1021501-undefined}} is not greater than 1)
+:::'''Дань Хэн:''' ...На момент воскрешения Древа амброзии эта печать уже едва держалась.
 ;(If {{F|MissionCV-1021501-undefined}} is not greater than 0)
 ::'''Дань Хэн:''' Это одно из мест, о котором говорится в загадке, - один из трёх когтей. Если сломаем печать здесь, мы окажемся на шаг ближе к корням Древа.
 ::'''Март 7:''' Так называемые печати - ты об этих причудливых каменных фонариках?
 ::'''Дань Хэн:''' Именно. Насколько я помню, чтобы снять печати, нужно коснуться каменных фонариков в определённой последовательности.
 ::'''Цзин Юань:''' Справишься?
 ::'''Дань Хэн:''' Постараюсь...
-:<pre>{
+<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150106,
 	"TargetMissionCustomValue": {
@@ -363,12 +375,74 @@ PageTitle=#Отважный дракон в безбрежном океане#
 ::<!--2.5-second delay-->
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
+::;(If {{F|MissionCV-1021501-1}} is greater than 1)
+::::----
+::::<!--0.5-second delay-->
+:::<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 58
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "IsOpen",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "BridgeRecoverShake_01",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 0.35,
+			"ShakeTime": 9,
+			"ShakeDir": {
+				"X": 1,
+				"Y": 0,
+				"Z": 1
+			},
+			"RangeAttenuationDelay": 7,
+			"RangeAttenuationTarget": 0.1,
+			"RangeAttenuationDuration": 2
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+::::<!--12-second delay-->
+::::----
+::::'''Дань Хэн:''' Почитание трёх когтей завершено... теперь нам нужно направиться к корням Древа.
+::::'''Дань Хэн:''' Корни Древа всё ещё растут...
+::::'''Цзин Юань:''' Это Фантилия... нужно поторапливаться.
+::;(If {{F|MissionCV-1021501-1}} is not greater than 1)
+::::'''Дань Хэн:''' Хорошо, идёмте к третьей печати.
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
 :::'''Дань Хэн:''' Получилось.
 :::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
 :::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
 :::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
-::<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150112,
 	"TargetMissionCustomValue": {
@@ -467,12 +541,74 @@ PageTitle=#Отважный дракон в безбрежном океане#
 ::<!--2.5-second delay-->
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
+::;(If {{F|MissionCV-1021501-1}} is greater than 1)
+::::----
+::::<!--0.5-second delay-->
+:::<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 58
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "IsOpen",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "BridgeRecoverShake_01",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 0.35,
+			"ShakeTime": 9,
+			"ShakeDir": {
+				"X": 1,
+				"Y": 0,
+				"Z": 1
+			},
+			"RangeAttenuationDelay": 7,
+			"RangeAttenuationTarget": 0.1,
+			"RangeAttenuationDuration": 2
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+::::<!--12-second delay-->
+::::----
+::::'''Дань Хэн:''' Почитание трёх когтей завершено... теперь нам нужно направиться к корням Древа.
+::::'''Дань Хэн:''' Корни Древа всё ещё растут...
+::::'''Цзин Юань:''' Это Фантилия... нужно поторапливаться.
+::;(If {{F|MissionCV-1021501-1}} is not greater than 1)
+::::'''Дань Хэн:''' Хорошо, идёмте к третьей печати.
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
 :::'''Дань Хэн:''' Получилось.
 :::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
 :::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
 :::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
-::<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150113,
 	"TargetMissionCustomValue": {
@@ -571,12 +707,74 @@ PageTitle=#Отважный дракон в безбрежном океане#
 ::<!--2.5-second delay-->
 ::----
 :;(If {{F|MissionCV-1021501-1}} is greater than 0)
+::;(If {{F|MissionCV-1021501-1}} is greater than 1)
+::::----
+::::<!--0.5-second delay-->
+:::<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "Target1"
+		},
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 58
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "IsOpen",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:::<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "BridgeRecoverShake_01",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 0.35,
+			"ShakeTime": 9,
+			"ShakeDir": {
+				"X": 1,
+				"Y": 0,
+				"Z": 1
+			},
+			"RangeAttenuationDelay": 7,
+			"RangeAttenuationTarget": 0.1,
+			"RangeAttenuationDuration": 2
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+::::<!--12-second delay-->
+::::----
+::::'''Дань Хэн:''' Почитание трёх когтей завершено... теперь нам нужно направиться к корням Древа.
+::::'''Дань Хэн:''' Корни Древа всё ещё растут...
+::::'''Цзин Юань:''' Это Фантилия... нужно поторапливаться.
+::;(If {{F|MissionCV-1021501-1}} is not greater than 1)
+::::'''Дань Хэн:''' Хорошо, идёмте к третьей печати.
 :;(If {{F|MissionCV-1021501-1}} is not greater than 0)
 :::'''Дань Хэн:''' Получилось.
 :::'''Март 7:''' Генерал, вы наверняка слышали о госпоже Тинъюнь?
 :::'''Цзин Юань:''' Я получил донесение от Фу Сюань: Фантилия успела глубоко внедриться на Лофу, её действия были тщательно спланированы - теперь нам будет крайне сложно защититься.
 :::'''Цзин Юань:''' Облачные Рыцари проведут расследование, но сейчас наша первостепенная задача - нарушить замыслы Фантилии.
-::<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.CalculateMissionCustomValue",
 	"TargetSubmissionID": 102150114,
 	"TargetMissionCustomValue": {

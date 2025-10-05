@@ -56,6 +56,12 @@ PageTitle=#Изолированная зона#
 ----
 :<!--0.1-second delay-->
 <pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.AnimSetParameter",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -154,7 +160,8 @@ PageTitle=#Изолированная зона#
 	"EffectList": [
 		{
 			"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
-			"AttachPoint": "Root"
+			"AttachPoint": "Root",
+			"ForceSimulateImmediately": false
 		}
 	]
 }</pre>
@@ -196,6 +203,15 @@ PageTitle=#Изолированная зона#
 :{{Диалог|Изучение}} Осмотреть
 ;(If {{cx}}<!--SubMission Finish: 800020415-->)
 ;(Otherwise)
+::'''Леонард:''' В зоне остались необнаруженные Визитные карточки взлома. Выйти из симуляции?
+::{{Диалог|Стрелка}} Остаться
+::{{Диалог|Выход}} Подтвердить выход
+::<pre>{
+	"$type": "RPG.GameCore.UpdateTreasureChallengeProgress",
+	"RaidTargetID": 102000000,
+	"IsIncrease": true,
+	"DeltaValue": 1
+}</pre>
 :'''Леонард:''' Испытание завершено. Выйти из симуляции?
 :{{Диалог|Стрелка}} Остаться
 :{{Диалог|Выход}} Подтвердить выход

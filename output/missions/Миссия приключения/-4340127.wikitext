@@ -157,8 +157,7 @@ PageTitle=##
 :'''Сиратори:''' Текст и ключ всегда под рукой, не переживай! Тогда... указывай мне путь, мы выдвигаемся!
 :{{Диалог|Стрелка}} Пошли. Только вздумай там ноги протянуть.
 ::'''Сиратори:''' Буду ориентироваться на твой голос. На связи!
-:{{Диалог|Выход}} Подожди, у меня ещё есть дела.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434012703,
 	"MissionCustomValue": {
@@ -172,6 +171,186 @@ PageTitle=##
 	},
 	"CustomValue": 1
 }</pre>
+:{{Диалог|Выход}} Подожди, у меня ещё есть дела.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+;(If {{F|MissionCV-4340127-3}} is undefined 1)
+:{{tx}}
+:{{Диалог|Стрелка}} Я знаю, куда идти!
+::'''Сиратори:''' О, отлично!
+::{{Диалог|Стрелка}} Налево, вверх, вверх, направо.
+:::'''Сиратори:''' Я буду следовать твоим указаниям!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{Диалог|Стрелка}} Вверх, направо, вверх, вверх.
+:::'''Сиратори:''' Я буду следовать твоим указаниям!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} Направо, направо, вверх, направо.
+:::'''Сиратори:''' Я буду следовать твоим указаниям!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012704,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::{{Диалог|Возврат}} Мне нужно подумать.
+:::{{Диалог|Разговор}} Нужно ещё раз посмотреть на текст и ключ.
+::::'''Сиратори:''' Вот зашифрованный текст: Эн-не-не, не-эн-эн, эн-не-не, эн-не-не.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Что означают эти буквы?
+::::'''Сиратори:''' Согласно предшественнику, они связаны с какой-то «клавиатурой». Кажется, «W» - это вверх, «S» - вниз, «D» - направо... А дальше я не знаю.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Выход}} Возвращайся назад, попробуем ещё раз.
+::::'''Сиратори:''' Исследование контейнера - это так опасно.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+:{{Диалог|Разговор}} Нужно ещё раз посмотреть на текст и ключ.
+::'''Сиратори:''' Вот зашифрованный текст: Эн-не-не, не-эн-эн, эн-не-не, эн-не-не.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Что означают эти буквы?
+::'''Сиратори:''' Согласно предшественнику, они связаны с какой-то «клавиатурой». Кажется, «W» - это вверх, «S» - вниз, «D» - направо... А дальше я не знаю.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Выход}} Возвращайся назад, попробуем ещё раз.
+::'''Сиратори:''' Исследование контейнера - это так опасно.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434012703,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"isLocal": true,
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+;(If {{F|MissionCV-4340127-1}} is undefined 1)
+:;(If {{F|MissionCV-4340127-2}} is not undefined 1)
+:::{{tx}}
 :'''Сиратори:''' Здесь есть потайная дверь. Вот оно! Это верный путь!
 :'''Сиратори:''' Я нашёл сейф! Эй, ты {{MC|ж=указала|м=указал}} мне правильный путь, следуй сюда той же дорогой!
 :Вы с трудом вспоминаете маршрут, который только что расшифровали, и пробираетесь через огромный лабиринт контейнера.

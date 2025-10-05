@@ -48,7 +48,10 @@ export function pathDisplayName(pathName: AeonPath) {
     }
 }
 
-export type Version = '1.0' | '1.1' | '1.2' | '1.3' | '1.4' | '1.5'| '1.6' | '2.0' | '2.1' | '2.2' | '2.3' | '2.4' | '2.5' | '2.6' | '2.7' | '3.0' | '3.1' | '3.2' | '3.3' | '3.4' | '3.4.2' | '3.5'
+export type Version = 
+	| '1.0' | '1.1' | '1.2' | '1.3' | '1.4' | '1.5'| '1.6'
+	| '2.0' | '2.1' | '2.2' | '2.3' | '2.4' | '2.5' | '2.6' | '2.7'
+	| '3.0' | '3.1' | '3.2' | '3.3' | '3.4' | '3.4.2' | '3.5' | '3.6'
 
 export const VERSION_COMMITS: Dictionary<string, Version> = {
 	'1.0': '4a36e628f9f34e6221b167b6ae0235a2f3934330',
@@ -73,6 +76,7 @@ export const VERSION_COMMITS: Dictionary<string, Version> = {
 	'3.4': '63a445a896686e40bf028f6ec3969be3f8baab46',
 	'3.4.2': '212a77d183a1c571490c257fba0093349a377ad4',
 	'3.5': '2f4aec8f7188fbdd0bc6a226241ae031c3e60391',
+	'3.6': '16a9c7f8a8b5a543358481f4fa5a045e70579460',
 }
 
 export const VERSION_LIST: Version[] = Object.keys(VERSION_COMMITS).sort() as Version[]
@@ -162,6 +166,7 @@ export function wikiTitle(name: string, type?: AmbigType, id?: number) {
 		.replaceAll(/<.+?>/g, '')
 		.replaceAll("''", '')
 		.replaceAll('&mdash;', '—')
+		.replaceAll('- ', '— ')
 		.replaceAll('&ast;', "'")
 		.replaceAll('&times;', '×')
 }

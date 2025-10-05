@@ -33,15 +33,15 @@ PageTitle=#Событие магазина: «Дворец яств»#
 {{Диалог Начало}}
 
 ;(Поговорите с Тётя Крошка)
-:{{Чёрный экран|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
+:{{Black Screen|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
 		400002
 	]
 }</pre>
-:{{Чёрный экран|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
-:{{Чёрный экран|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
+:{{Black Screen|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
+:{{Black Screen|К тому времени, когда вы покончили с хлопотами и пришли в себя, Минси уже прибыла в «Дворец яств».}}
 ;(If {{F|MissionCV-8003242-undefined}} is undefined 1)
 ::'''Тётя Крошка:''' Спасибо за помощь! Шеф-повар говорит, что ты вообще ни одного заказа не {{MC|ж=перепутала|м=перепутал}}, ничего себе!
 ;(If {{F|MissionCV-8003242-undefined}} is not undefined 1)
@@ -49,14 +49,78 @@ PageTitle=#Событие магазина: «Дворец яств»#
 :'''Минси:''' Тётя Крошка заключила договор с причалом. (Первопроходец), пожалуйста, добавь маршрут от «Дворца яств» в наш план, чтобы причал получил новые заказы.
 :{{Диалог|Стрелка}} Приступим!
 :{{Диалог|Стрелка}} Дай мне! Дай мне!
-:{{Чёрный экран|Благодаря вашей помощи всё больше и больше людей посещают «Дворец яств».}}
+:{{Black Screen|Благодаря вашей помощи всё больше и больше людей посещают «Дворец яств».}}
 <pre>{
 	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
 	"InstanceIDList": [
 		400002
 	]
 }</pre>
-:{{Чёрный экран|Благодаря вашей помощи всё больше и больше людей посещают «Дворец яств».}}
+:{{Black Screen|Благодаря вашей помощи всё больше и больше людей посещают «Дворец яств».}}
+<pre>{
+	"$type": "RPG.GameCore.CreateLevelAreas",
+	"AssetPath": {
+		"Value": "Level/Common_Adventure/Alley_TopView.prefab"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_ui_menu_activity_alley_transportPage_fadeIn_long"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RadialBlurEffect",
+	"BlurStart": 0.25
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SpeedLineEffect",
+	"Speed": 0.8,
+	"Divide": 0.6,
+	"Start": 0.4,
+	"Brightness": 0.2,
+	"Density": 0.4,
+	"SpeedlineSeedPath": "Effects/Eff_Texture/Special/Noise/Eff_Noise_35.tga"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RadialBlurEffect",
+	"Active": false,
+	"BlurStart": 0.25
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SpeedLineEffect",
+	"Active": false,
+	"Speed": 0.8,
+	"Divide": 0.6,
+	"Start": 0.4,
+	"Brightness": 0.2,
+	"Density": 0.4,
+	"SpeedlineSeedPath": "Effects/Eff_Texture/Special/Noise/Eff_Noise_35.tga"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Alley_TopView",
+	"AnchorName": "TopCam",
+	"FollowTargetUniqueName": "LocalPlayer",
+	"FollowTargetAttachPoint": "CameraRoot",
+	"LookAtTargetUniqueName": "LocalPlayer",
+	"LookAtTargetAttachPoint": "CameraRoot",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"BlendTime": 2
+	},
+	"DynamicParams": {
+		"OrbitalTransposerBias": true
+	}
+}</pre>
 ----
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
@@ -72,13 +136,26 @@ PageTitle=#Событие магазина: «Дворец яств»#
 :'''Минси:''' Не волнуйся, тётя Крошка. Надеюсь, мы с тобой сможем поработать, и тогда о «Дворце яств» точно узнают все.
 
 ;(Поговорите с Тётя Крошка)
-<pre>{
-	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
-	"TalkSentenceID": 502066102
+:'''Тётя Крошка:''' Добро пожаловать! Я могу заинтересовать тебя нашими особыми блюдами?
+:{{Диалог|Магазин}} Что за особые блюда?
+:<pre>{
+	"$type": "RPG.GameCore.VerifyInteractingEntity",
+	"GroupID": 148,
+	"ConfigID": 400001
 }</pre>
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+:<pre>{
+	"$type": "RPG.GameCore.ShowShop",
+	"ShopType": 37,
+	"TaskID": []
 }</pre>
+;(If Миссия [[Снова в деле IV]] has been completed)
+:{{Диалог|Разговор}} Как идут дела в последнее время?
+::'''Тётя Крошка:''' В последнее время дела идут неплохо. Но когда дело касается бизнеса, нельзя останавливаться на достигнутом. Переулок ауруматонов развивается, и мой бизнес не должен отставать.
+::'''Тётя Крошка:''' Кстати, помнишь, что я просила принести мне несколько... ингредиентов из Мерзостей Изобилия? Я решила сосредоточиться на традиционной кухне. Именно специализация делает мою лавку особенной.
+::'''Тётя Крошка:''' Как выяснилось, моим посетителям нравится еда. «Дворец яств» ещё никогда не был таким успешным местом. И всё благодаря тебе, ха-ха.
+;(If Миссия [[Снова в деле IV]] has been completed)
+:{{Диалог|Выход}} Не надо, аппетит пропал.
+::'''Тётя Крошка:''' Спасибо за визит. Приходите ещё!
 ----
 <pre>{
 	"$type": "RPG.GameCore.CharacterTriggerAnimState",

@@ -70,6 +70,20 @@ PageTitle=#Хор гимнов#
 :::'''Дафинчи:''' Менеджер... ты можешь общаться с этими созданиями? Давай поможем этой бедной малышке.
 :::'''Дафинчи:''' Она так сильно напоминает мне... меня.
 :::{{Диалог|Стрелка}} ...Ладно, давай попробуем.
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterDistrict_G194_1)
 :'''Дафинчи:''' Я никогда не бывала в подобных местах... где выращивают живых созданий. Ты именно здесь... находишь вдохновение?

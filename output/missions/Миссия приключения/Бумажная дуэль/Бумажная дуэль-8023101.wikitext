@@ -117,13 +117,6 @@ PageTitle=#Бумажная дуэль#
 		400006
 	]
 }</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMatchThreeBirdLocation","BirdID":300,"LocationID":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
 ;(Unused &mdash; G186_Create400001)
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
@@ -188,7 +181,8 @@ PageTitle=#Бумажная дуэль#
 ===Откройте карту и узнайте о первом игровом автомате===
 {{Диалог Начало}}
 
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -211,6 +205,28 @@ PageTitle=#Бумажная дуэль#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

@@ -141,6 +141,14 @@ PageTitle=#Музыкальная охота: Начало#
 ::'''Раппа:''' Наконец, нашей школе Ниндзя Хаоса нужно громкое имя. Это решение мы оставим на дзёнина! Но помните: в душе мы всегда были и остаёмся {{Цвет|Ключевой|nobold=1|«Хаосом»}}!
 ::Пусть будет «Ансамбль Хаоса»!
 ::'''Раппа:''' Ансамбль... Какое лаконичное название. Бесхитростно, но не вульгарно. Какой прагматичный подход.
+::'''Раппа:''' Значит, так будет зваться наша школа?
+::{{Диалог|Стрелка}} Да, отличный выбор.
+:::'''Раппа:''' Отлично, сбор группы «(Ансамбль Хаоса/Банда Хаоса/Корабль Хаоса/Отель Хаоса/Вечеринка Хаоса)» завершён!
+:::{{tx}}
+::{{Диалог|Возврат}} Мне нужно ещё подумать...
+:::'''Раппа:''' Разумеется, наречение целого течения - это дело серьёзное.
+:::{{tx}}
+::;(Return to previous option selection)
 
 ;(Поговорите с Представитель Школы богатств)
 :'''Представитель Школы богатств:''' Разве {{MC|ж=новая хозяйка|м=новый хозяин}} «Лучезарного шпата», {{MC|ж=держательница|м=держатель}} акций Пенаконии может напортачить с Вечером музыки?
@@ -207,12 +215,106 @@ PageTitle=#Музыкальная охота: Начало#
 :{{Диалог|Стрелка}} Я {{MC|м=согласен|ж=согласна}}.
 ::'''Монтана:''' О! Я сейчас отправлю сообщение в группу. Подожди немного, скоро ответят.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10306_F10306001_G239"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	]
+}</pre>
 :{{Диалог|Стрелка}} Прости, я пойду {{MC|м=один|ж=одна}}.
 ::Серьёзно? Вы откажетесь от помощи такой отзывчивой и верной студентки, чтобы в одиночку бороздить космические просторы?
 ::Интересно, в школе на каждом углу попадаются участники группы. Кого не возьми - обязательно герой гитары. А вдохновение... такая редкость.
 :{{Диалог|Стрелка}} Я {{MC|м=согласен|ж=согласна}}.
 :'''Монтана:''' О! Я сейчас отправлю сообщение в группу. Подожди немного, скоро ответят.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10306_F10306001_G239"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmTransitionDialog"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmMainEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		},
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+		},
+		{
+			"$type": "RPG.GameCore.LockPlayerControl"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Помогите Раппе собрать вдохновение для сочинения песни===
@@ -224,10 +326,7 @@ PageTitle=#Музыкальная охота: Начало#
 ::'''Монтана:''' Суперзвезда праздника! Как же здорово!
 :::'''Монтана:''' Когда я проверяла сцену, заметила незавершённую мелодию. И я попросила группу дописать эту композицию, используя собранное тобой вдохновение!
 :::'''Монтана:''' Музыку можно исполнять в любое время. Попробуем?
-:<pre>{
-	"$type": "RPG.GameCore.PlayMultiVoiceTalk",
-	"TalkSentenceID": 802610901
-}</pre>
+::'''Монтана:''' Это же наша суперзвезда! Вечер музыки ещё не закончился. Что ты делаешь у сцены?
 ::{{Диалог|Журнал путешествий}} Хочу подготовить группу к выступлению.
 :::'''Монтана:''' Понятно. Даже если госпожа Раппа отсутствует, ребята из «Хаоса» не должны сдаваться!
 ::<pre>{
@@ -321,12 +420,22 @@ PageTitle=#Музыкальная охота: Начало#
 ::::'''Монтана:''' Да что угодно! Что бы Суперзвезда праздника не {{MC|ж=написала|м=написал}}, я всё почту за честь!
 :::'''Монтана:''' Пожалуйста, соглашайся. Остальные участники группы уже написали свои послания, только ты {{MC|ж=осталась|м=остался}}...
 :::{{Диалог|Стрелка}} (Написать серьёзное послание.)
-:::{{Диалог|Стрелка}} (Написать смешное послание.)
-:::{{Диалог|Стрелка}} (Написать трогательное послание.)
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 160,
 	"Value": "1"
+}</pre>
+:::{{Диалог|Стрелка}} (Написать смешное послание.)
+:::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 160,
+	"Value": "2"
+}</pre>
+:::{{Диалог|Стрелка}} (Написать трогательное послание.)
+:::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 160,
+	"Value": "3"
 }</pre>
 :::'''Монтана:''' Спасибо! Сейчас всё загружу... Вот так, а тебе отправить? Хе-хе, все будут мне завидовать.
 ::{{Диалог|Выход}} Больше нет вопросов.
@@ -538,6 +647,18 @@ PageTitle=#Музыкальная охота: Начало#
 ::'''Раппа:''' Специально изготовленное нингу для сценической битвы, что заставляет противника трепетать и приковывает взгляды во время действия - вот, что это такое!
 ::'''Арфи:''' А зачем нам скрывать лицо, помимо усиления сценического эффекта?
 ::{{tx}}
+::Вы подробно рассказываете Раппе о странном опыте...
+::'''Раппа:''' Я и впрямь не ошиблась. Музыкальные ниндзюцу дзёнина незаурядны.
+::'''Раппа:''' Только от одного наблюдения за музыкальной стихией можно получить огромное вдохновение. Какое возвышенное искусство!..
+::'''Раппа:''' Ух, так вот что мастер Коча называл просветлением? Я должна отдать все духовные силы на сочинение музыки, чтобы оправдать невероятные усилия дзёнина.
+::{{Диалог|Стрелка}} Оказывается, ты и правда умеешь писать песни?
+:::'''Раппа:''' Мы давно знакомы, когда я тебя обманывала?
+:::'''Раппа:''' Пусть каждый идёт Путём Ниндзя по-своему, незыблемый принцип в мире ниндзя - держать слово. Эту обязанность я всегда выполняла.
+:::Помочь тебе с текстом песни?
+::{{Диалог|Стрелка}} Помочь тебе с текстом песни?
+::'''Раппа:''' На сей раз в битве использовано музыкальное ниндзюцу «Электро-музыка без речитатива». Написание рифм не понадобится.
+::'''Раппа:''' Хм-хм... Ага... Ага.
+::{{tx}}
 
 ;(Unused &mdash; EnterDistrict_G118)
 :'''???:''' ...Игра под стать стремительности ниндзя! Аж дух захватывает. Хотя... можно ещё быстрее!
@@ -743,10 +864,71 @@ PageTitle=#Музыкальная охота: Начало#
 :{{Диалог|Стрелка}} Наше время пришло!
 ::'''Раппа:''' ...Осторожно ступайте по опасной дороге. Гремящая слава ждёт на пороге. Музыкальное ниндзюцу убивает тревоги!
 ::{{tx}}
-:{{Диалог|Выход}} Подождём немного...
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Подождём немного...
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.LockPlayerControl"
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G102"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802610214,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802610214,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Поговорите с Чипо)
@@ -766,10 +948,57 @@ PageTitle=#Музыкальная охота: Начало#
 :{{Диалог|Стрелка}} Наше время пришло!
 ::'''Раппа:''' ...Осторожно ступайте по опасной дороге. Гремящая слава ждёт на пороге. Музыкальное ниндзюцу убивает тревоги!
 ::'''Раппа:''' «(Ансамбль Хаоса/Банда Хаоса/Корабль Хаоса/Отель Хаоса/Вечеринка Хаоса)», вперёд вслед за мной в музыкальные угодья...
-:{{Диалог|Выход}} Подождём немного...
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Подождём немного...
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802610215,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.LockPlayerControl"
+				},
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10306_F10306001_G99"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802610215
+				}
+			]
+		}
+	]
 }</pre>
 ----
 :'''Дафинчи:''' К-как много народу...

@@ -87,6 +87,28 @@ PageTitle=#Идеи декора для космического дома: Пр�
 ;(Return to previous option selection)
 ;(Return to previous option selection)
 ;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10000_F10000003_G66"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Пом-Пом)
 :'''Пом-Пом:''' Пом-Пом подсчитывает баллы санитарной проверки... Жди объявления результатов, пом!

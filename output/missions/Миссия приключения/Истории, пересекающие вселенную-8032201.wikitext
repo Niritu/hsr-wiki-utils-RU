@@ -74,6 +74,24 @@ PageTitle=#Истории, пересекающие вселенную#
 ::'''Данкси:''' К слову скажу, что {{Цвет|Ключевой|nobold=1|начальные персонажи включают всех членов экипажа Звёздного экспресса}}.
 ::'''Дань Хэн:''' А вот и торжественная часть. Очень вовремя, как раз к празднику Освоения...
 ::{{Диалог|Стрелка}} Погнали!
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10000_F10000003_G177"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 
 {{Диалог Конец}}
 

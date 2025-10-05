@@ -65,6 +65,24 @@ PageTitle=#О герой, воплоти кровавую надежду#
 ::'''Дань Хэн:''' Ты {{MC|ж=права|м=прав}}. Непонятно, что происходит, но лучше нам уйти.
 ::'''Стражник Зеф:''' Не знаю, какой полубог нам помогает... Но прошу, следуйте за нами!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10404_F10404001_G67"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Сбегите с Амфореуса===
@@ -133,6 +151,10 @@ PageTitle=#О герой, воплоти кровавую надежду#
 ::'''Дань Хэн:''' Господин Скрюллум, я верю вам, поэтому от вас требуется лишь одно уточнение: поскольку Амфореус близок к концу, как мы можем гарантировать безопасность того, кто останется?
 ::'''Скрюллум:''' Прошу, взгляните на это...
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 41441
+}</pre>
 :<!--1-second delay-->
 :'''Дань Хэн:''' Фаенон... он не пострадает?
 :'''Стражник Зеф:''' Верьте в его решимость спасти Охему.
@@ -254,6 +276,24 @@ PageTitle=#О герой, воплоти кровавую надежду#
 ::{{Диалог|Стрелка}} Доверься мне и начни эру воскресающей земли.
 ::'''Ликург:''' Что ж... Мои суждения поверхностны. У чужаков и правда есть способы противостоять предназначению.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10402_F10402001_G72"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterDistrict_G{GroupID})
 :'''Мемо:''' Смотри, там Фаенон! И... погоди!

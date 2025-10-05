@@ -131,16 +131,16 @@ for (const [source, data] of Object.entries(Item.itemData)) {
 			output.push(`\n==Dropped By==\n{{Dropped By}}`)
 		}
 		
-		if (types.find(type => type.includes('Ascension'))) {
-			output.push(`\n==Ascension Usage==\n{{Ascension Usage}}`)
+		if (types.find(type => type.includes('Материал возвышения персонажа'))) {
+			output.push(`\n==Использование в возвышении==\n{{Использование в возвышении}}`)
 		}
 
-		if (types.find(type => type.includes('Trace'))) {
-			output.push(`\n==Trace Usage==\n{{Trace Usage}}`)
+		if (types.find(type => type.includes('Материал Следов'))) {
+			output.push(`\n==Использование в Следах==\n{{Использование в следах}}`)
 		}
 		
 		if (types.includes('Материал для синтеза')) {
-			output.push(`\n==Применение==\n{{Используется в создании}}`)
+			output.push(`\n==Использование==\n{{Используется в создании}}`)
 		}
 		
 		let readableData = item.getText()

@@ -126,6 +126,7 @@ PageTitle=#Бумажная дуэль#
 	},
 	"Flags": [],
 	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :<pre>{
@@ -162,6 +163,24 @@ PageTitle=#Бумажная дуэль#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
+					"WaitForExit": true,
+					"Param": {
+						"Value": "1300"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 ;(If {{F|Activity230DIYEntrance}} is greater than or equal to 4)
 :<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
@@ -307,7 +326,8 @@ PageTitle=#Бумажная дуэль#
 ===Откройте карту и узнайте о четвёртом игровом автомате===
 {{Диалог Начало}}
 
-<pre>{
+;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -330,6 +350,28 @@ PageTitle=#Бумажная дуэль#
 			"ID": "DIYButton",
 			"ButtonText": {
 				"Value": "TalkSentenceName_DIYPanel"
+			}
+		}
+	]
+}</pre>
+;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "PlayButton",
+			"IconType": "GeneralActivityIcon",
+			"ButtonText": {
+				"Value": "TalkSentenceName_GameConsole"
 			}
 		}
 	]

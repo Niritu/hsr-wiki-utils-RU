@@ -155,6 +155,26 @@ PageTitle=#О поэт, расскажи мне о небе I#
 ::{{Диалог|Стрелка}} А ты умеешь управляться с публикой.
 ::'''Фаенон:''' Ха... Мы так давно знакомы, что пора бы тебе уже знать, когда я лишь вежлив, а когда говорю от чистого сердца.
 ::{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10403_F10403001_G97"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -496,6 +516,24 @@ PageTitle=#О поэт, расскажи мне о небе I#
 :'''Фаенон:''' Не могу судить, кто прав, кто виноват, но когда ящик бедствий открывается, никому не избежать неприятностей.
 :'''Гиацина:''' Героиня Селиоза... Что она думала о вражде между народом солнца и народом дождя? В легендах рассказывается лишь о сражении с божеством, но о народе неба ничего не говорится.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20431_F20431001_G35"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Воспользуйтесь небесной сферой, чтобы активировать небесную фреску===
@@ -700,6 +738,8 @@ PageTitle=#О поэт, расскажи мне о небе I#
 :'''Фаенон:''' Солабис, Солнечные Крылья, сопровождавшие героиню... Я почту за честь напомнить вам о великих подвигах с помощью нашего боя...
 :{{tx}}
 :<!--1-second delay-->
+;(Enter battle)
+:{{Список врагов|mode=sent|Разъеденный чёрным течением топор*1; Грифон затмения*1; Ветхий лук чёрного течения*1}}
 ;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_RainbowExist"},"CompareType":"NotEqual","CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
 :;(If {{F|undefined}} is undefined 2)
 ::<pre>{
@@ -1241,6 +1281,24 @@ PageTitle=#О поэт, расскажи мне о небе I#
 :{{Диалог|Стрелка}} Это ответ титана?
 :'''Солабис:''' Возможно, он почувствовал наше пробуждение.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20431_F20431001_G71"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -1383,6 +1441,7 @@ PageTitle=#О поэт, расскажи мне о небе I#
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -1485,7 +1544,8 @@ PageTitle=#О поэт, расскажи мне о небе I#
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -1588,6 +1648,24 @@ PageTitle=#О поэт, расскажи мне о небе I#
 :{{Диалог|Выход}} Закончить слушать и идти дальше.
 ::'''Гиацина:''' Героиня Селиоза была разочарована деяниями народа солнца и потому решила покончить с причиной... С богом, которому они поклонялись.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20431_F20431001_G50"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 :'''Солабис:''' Аквила бежал на другую сторону крепости... Догоним его.
 :'''Солабис:''' Лунабис покажет дорогу.
 {{Диалог Конец}}
@@ -2053,6 +2131,24 @@ PageTitle=#О поэт, расскажи мне о небе I#
 :'''Дань Хэн:''' Эту возможность нельзя исключать.
 :'''Дань Хэн:''' Возможно, миф был интерпретирован неправильно... Может, кто-то другой хотел помешать жителям Амфореуса достичь миров за небесами.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20431_F20431001_G63"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Просмотрите воспоминания, чтобы узнать правду о прошлом===

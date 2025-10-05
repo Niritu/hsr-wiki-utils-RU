@@ -272,7 +272,8 @@ PageTitle=#Лабиринт Янус#
 	},
 	"EffectList": [
 		{
-			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab"
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
+			"ForceSimulateImmediately": false
 		}
 	]
 }</pre>
@@ -288,7 +289,8 @@ PageTitle=#Лабиринт Янус#
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GravityBallPuzzleBoard_01_Start_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; PuzzleResetPerformance)
@@ -665,6 +667,108 @@ PageTitle=#Лабиринт Янус#
 								"Value": "MissionState"
 							},
 							"Value": 9
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGroupProperty",
+		"PropertyName": {
+			"Value": "CurrentPuzzleID"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "HardCaseState"
+						},
+						"CompareValue": 1
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "HardCaseState"
+							},
+							"Value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "HardCaseState"
+						},
+						"CompareValue": 2
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "HardCaseState"
+							},
+							"Value": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 28
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareGroupProperty",
+						"DynamicName": {
+							"Value": "HardCaseState"
+						},
+						"CompareValue": 3
+					},
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+							"DynamicName": {
+								"Value": "HardCaseState"
+							},
+							"Value": 3
 						}
 					]
 				}

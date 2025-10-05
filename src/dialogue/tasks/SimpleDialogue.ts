@@ -1,7 +1,8 @@
-import { PlayAndWaitSimpleTalk, PlayOptionTalk, TalkOptionSimple } from '../../files/graph/Dialog.js';
+import { PlayAndWaitSimpleTalk, PlayMultiVoiceTalk, PlayOptionTalk, TalkOptionSimple } from '../../files/graph/Dialog.js';
 import { DICON_MAP } from '../../Shared.js';
-import { textMap } from '../../TextMap.js';
+import { TalkSentenceMultiVoice, textMap } from '../../TextMap.js';
 import { TranscriptionNote } from '../../util/AbstractDialogueTree.js';
+import { ActDialogueTree } from '../Dialogue.js';
 import { BaseDialogueTask, BaseDialogueTaskEntry, TalkSentenceTaskEntry } from '../DialogueBase.js';
 import { GraphEnvironment } from '../Environment.js';
 
@@ -18,7 +19,7 @@ export class SimpleTalkTask extends BaseDialogueTask {
 
 	wikitext(): undefined | string {
 		if (this.black_screen) {
-			return `;(Экран становится чёрным)`
+			return `;(Screen fades to black)`
 		}
 	}
 }
@@ -71,5 +72,21 @@ export class OptionTalkTaskEntry extends TalkSentenceTaskEntry {
 	wikitext(): string {
 		const dicon = this.icon_type == 'ChatIcon' ? '{{Диалог}}' : `{{Диалог|${DICON_MAP[this.icon_type]}}}`
 		return `:${dicon} ${this.option_text || textMap.getSentence(this.sentence_id, true, false, false)}`
+	}
+}
+
+export class PlayMultiVoiceTask extends BaseDialogueTask {
+	declare $type: 'RPG.GameCore.PlayMultiVoiceTalk'
+	
+	sentence_id: number
+	
+	constructor(data: PlayMultiVoiceTalk) {
+		super(data)
+		this.sentence_id = data.TalkSentenceID
+	}
+	
+	wikitext(lines: number, tree: ActDialogueTree): string | undefined | Promise<string | undefined> {
+		tree.environment.voice_ids.push(...TalkSentenceMultiVoice[this.sentence_id].VoiceIDList)
+		return ':' + textMap.getSentence(this.sentence_id, false, false, false)
 	}
 }

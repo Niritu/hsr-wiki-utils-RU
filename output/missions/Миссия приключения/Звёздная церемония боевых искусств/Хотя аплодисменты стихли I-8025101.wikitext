@@ -81,6 +81,56 @@ PageTitle=#Хотя аплодисменты стихли I#
 	"Value": 1
 }</pre>
 ::{{Диалог|Выход}} У меня дела.
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20242_F20242001_G66"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "802510102_OpenRaid"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20242_F20242001_G66"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802510102
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterArea_G66_3)
 :'''Журналистка с камерой:''' Почему вы решили принять участие в Церемонии боевых искусств?
@@ -126,6 +176,31 @@ PageTitle=#Хотя аплодисменты стихли I#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} У меня дела.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "OpenRaid_40102"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "Talk_802510106"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; OpenRaid_40102)
 <pre>{
@@ -226,6 +301,88 @@ PageTitle=#Хотя аплодисменты стихли I#
 :{{Диалог|Выход}} Мне нужно немного времени.
 ::'''Лука:''' Мне нужно немного времени.
 ::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "FightFestBattleStart"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+					"RaceID": 101,
+					"OnCancle": [],
+					"OnConfirm": [
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Throng"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 1
+								}
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "C",
+							"PerformanceID": 802510001,
+							"MaskConfig": {
+								"UseExcelData": false
+							}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerPerformance",
+							"ValueSource": {},
+							"PerformanceType": "D",
+							"PerformanceID": 802510107,
+							"MaskConfig": {}
+						},
+						{
+							"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+						},
+						{
+							"$type": "RPG.GameCore.RemoveStreamingSource",
+							"StreamingSource": "Mission_FightFestBattlePerformance"
+						},
+						{
+							"$type": "RPG.GameCore.SetFloorCustomFloat",
+							"Name": {
+								"Value": "FCV_2.5_Arena"
+							},
+							"Value": {
+								"IsDynamic": false,
+								"FixedValue": {
+									"Value": 0
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Кармелла)
 :'''Кармелла:''' Это твой первый бой, Лука. Тебя ждёт великая победа!

@@ -133,4 +133,32 @@ export class AreaFloor {
 		return (await this.loadAllGroups())
 			.filter(group => referenced?.includes(group.id) || group.load_conditions.find(cond => cond.Type == 'SubMission' && cond.ID == mission_id))
 	}
+	
+	async loadNonMissionGroups() {
+		return (await this.loadAllGroups())
+			.filter(group => {
+				if (group.owner_mission_id) {
+					return false
+				}
+				
+				// no load conditions
+				if (group.load_conditions.length == 0) {
+					return true
+				}
+				
+				// loaded after a mission is completed
+				let checkSingleLoadCondition = group.load_conditions.length == 1 || group.load_condition_mode == 'Or'
+				if (checkSingleLoadCondition && group.load_conditions.find(cond => cond.Phase == 'Finish')) {
+					return true
+				}
+				
+				// loaded after multiple missions are completed
+				if (!checkSingleLoadCondition && group.load_conditions.every(cond => cond.Phase == 'Finish')) {
+					return true
+				}
+				
+				// otherwise, group is assumed to be *part* of a mission
+				return false
+			})
+	}
 }

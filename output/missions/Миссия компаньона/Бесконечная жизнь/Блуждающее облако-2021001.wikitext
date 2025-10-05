@@ -44,9 +44,24 @@ PageTitle=#Блуждающее облако#
 ;(Поговорите с Пом-Пом)
 :'''Пом-Пом:''' В этот вагон точно никто не входил. Так как там оказалось письмо?
 :'''Пом-Пом:''' Бр-р! Прямо холодок по коже!
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пора.
 {{Диалог Конец}}
 
 ===Покажите анонимное письмо Пом-Пом===
@@ -70,6 +85,27 @@ PageTitle=#Блуждающее облако#
 ::'''(Первопроходец):''' (Сомневаюсь, что враги Дань Хэна стали бы отправлять приглашение...)
 :'''Пом-Пом:''' Может, покажешь письмо Дань Хэну? Ты ведь {{Rubi|знаешь|архив}}, где его найти.
 ----
+;(Unused &mdash; custom/npc_menu)
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+:{{Диалог|Выход}} Мне пора.
+
 ;(Unused &mdash; Allend)
 :----
 {{Диалог Конец}}
@@ -100,10 +136,63 @@ PageTitle=#Блуждающее облако#
 ::'''Дань Хэн:''' Подобное приглашение для него было бы слишком загадочным.
 ::'''Дань Хэн:''' (Первопроходец), прошу, отдай мне письмо. Следует с осторожностью относиться ко всему, что касается прошлого Дань Фэна.
 ::{{tx}}
+::----
+:;(Screen fades to black)
+::'''Дань Хэн:''' ...
+::При взгляде на письмо вам становится не по себе. Вы произносите облачный гимн, и сконденсировавшаяся в воздухе капля воды впитывается в бумагу.
+::Буквы исчезают, и другая строка растворяется в капле воды...
+::«Из пяти людей трое должны заплатить».
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+::'''Дань Хэн:''' Всё не так просто, как кажется на первый взгляд. Хорошо, что (Первопроходец) {{MC|ж=ушла|м=ушёл}}. Нельзя никого ввязывать в это опасное дело.
+::'''Дань Хэн:''' Но если письмо послал не {{Rubi|он|Блэйд}}, то кто?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+::'''Дань Хэн:''' Пожалуй, стоит наведаться в {{Цвет|Ключевой|nobold=1|Обитель божественного предвидения}} - расспрошу Цзин Юаня об Охотниках за Стелларонами...
+::----
 :'''Дань Хэн:''' Что такое, (Первопроходец)? Тебе что-то нужно?
 ::{{Диалог|Стрелка}} Насчёт того анонимного письма...
 ::'''Дань Хэн:''' Ох... Ты хочешь узнать, что случилось?
-:<pre>{
+<pre>{
 	"$type": "RPG.GameCore.OpenTreasureChallenge",
 	"RaidID": 43202,
 	"OnCancel": [

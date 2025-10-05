@@ -156,8 +156,8 @@ PageTitle=#Городские легенды Лофу: Записи о блуж�
 		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
 	}
 }</pre>
-:;(Otherwise)
-:<pre>{
+:;(If {{F|MissionCV-8015162-2}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionWayPoint",
 	"SubMissionID": 801516203,
 	"OverideMissionWayPointType": true,
@@ -166,6 +166,28 @@ PageTitle=#Городские легенды Лофу: Записи о блуж�
 	"WayPointGroupID": 217,
 	"OverideWayPointEntityID": true,
 	"WayPointEntityID": 300002
+}</pre>
+:;(Otherwise, if {{F|MissionCV-8015162-2}} is undefined 3)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516203,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 217,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300003
+}</pre>
+:;(Otherwise)
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 801516203,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 217,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300001
 }</pre>
 
 ;(Unused &mdash; OnClose_SuiSubmission)
@@ -747,7 +769,7 @@ PageTitle=#Городские легенды Лофу: Записи о блуж�
 ::'''Заносчивый хелиоби:''' Да неужели? Это ещё не конец!
 :;(Enter battle)
 ::{{Список врагов|mode=sent|Поражённый Марой солдат*2/+20% Сила атаки, +40% НР; Поражённая Марой стражница*2/+20% Сила атаки, +40% НР}}
-:{{Чёрный экран|Заносчивый хелиоби перестаёт убегать и возвращается на землю...}}
+:{{Black Screen|Заносчивый хелиоби перестаёт убегать и возвращается на землю...}}
 :Заносчивый хелиоби перестаёт убегать и возвращается на землю...
 :'''Солнцелуч:''' Неплохо, {{MC|м=пацан|ж=девчушка}}. Пожалуй, это самое весёлое приключение на моей памяти.
 :'''Хохо:''' Что... что ты задумал?
@@ -862,7 +884,7 @@ PageTitle=#Городские легенды Лофу: Записи о блуж�
 	"EnableFactor": true,
 	"OnlyEnableWhenUseShadowProbe": true
 }</pre>
-::{{Чёрный экран|Вы спешите к Март 7.}}
+::{{Black Screen|Вы спешите к Март 7.}}
 ::{{tx}}
 ::'''Март 7:''' Что? (Первопроходец) и... Кто это?
 ::'''Хохо:''' Приветствую. Я Хохо из Комиссии десяти владык. Ты не натыкалась, эм... ни на что странное?

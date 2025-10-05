@@ -162,6 +162,22 @@ PageTitle=#Поэма грёз#
 }</pre>
 ::'''Доктор Лазурь:''' Эй, погоди, ты что делаешь?!
 :{{Диалог|Выход}} Нужно тщательно всё спланировать...
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "OpenRaid_43322"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 
 ;(Поговорите с Господин Уиттакер)
@@ -328,10 +344,11 @@ PageTitle=#Поэма грёз#
 
 
 ;(Поговорите с Доктор Лазурь)
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
-::'''Доктор Лазурь:''' Хм? Похоже, ты {{MC|ж=нашла|м=нашёл}} всех птиц.
-::'''Доктор Лазурь:''' Отлично. Значит, закончим пораньше. Не забудь свой подарок. И тебя наверняка ещё ждут дела.
-:<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Доктор Лазурь:''' Хм? Похоже, ты {{MC|ж=нашла|м=нашёл}} всех птиц.
+:::'''Доктор Лазурь:''' Отлично. Значит, закончим пораньше. Не забудь свой подарок. И тебя наверняка ещё ждут дела.
+::<pre>{
 	"$type": "RPG.GameCore.QuestGetReward",
 	"QuestIDList": [
 		{
@@ -348,8 +365,1136 @@ PageTitle=#Поэма грёз#
 		}
 	]
 }</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
-:;(Return to previous option selection)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}})
+::::'''Доктор Лазурь:''' Хм? Похоже, ты {{MC|ж=нашла|м=нашёл}} всех оставшихся птиц.
+::::'''Доктор Лазурь:''' Это последний подарок от птиц-оригами. Возьми. И тебя наверняка ещё ждут дела.
+:::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200211
+			}
+		}
+	]
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}})
+::::'''Доктор Лазурь:''' В охоту на птиц мы уже доиграли. Быстрей говори, что у тебя, или не мешайся.
+::::{{Диалог}} Расскажи о себе...
+:::::'''Доктор Лазурь:''' Птица-оригами Доктор Лазурь, он же грёзотворец Орла. Зови как хочешь, только не мешай.
+::::::'''Доктор Лазурь:''' Хотя нет, это имя от тебя будет звучать слишком странно... Тогда лучше зови меня Доктор Лазурь.
+:::::;(Return to previous option selection)
+:::::'''Доктор Лазурь:''' Птица. Птица-оригами. Или Доктор Лазурь. Можешь как угодно меня называть, только не мешай.
+::::::'''Доктор Лазурь:''' Это благодаря Часовщику я чиню Риф потока сновидений. Ой, поправка: благодаря Часику я строю Явьвиль.
+::::::'''Доктор Лазурь:''' Кхм, а ты {{MC|ж=видела|м=видел}} мультфильмы о Часике? По сюжету птицы-оригами знакомы только с Часиком.
+::::::{{Диалог|Стрелка}} Но ты говоришь совсем не так, как другие птицы-оригами.
+::::::'''Доктор Лазурь:''' Э-э, почему это?
+::::::{{Диалог|Стрелка}} Ты знаешь Часовщика.
+:::::::'''Доктор Лазурь:''' Конечно, тут все знают Часовщика... Но лишь немногие знают, чего он на самом деле хочет.
+:::::::'''Доктор Лазурь:''' Ладно, чем вести бессмысленные разговоры, лучше поищи, что этот приятель после себя оставил.
+:::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+:::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} Ты не просто персонаж мультфильма.
+:::::::'''Доктор Лазурь:''' Верно подмечено. Увы, ещё не пришло время раскрыть сюжетную линию птиц-оригами.
+:::::::'''Доктор Лазурь:''' Чем за мной ходить, лучше поищи, что Часовщик после себя оставил.
+:::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+:::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} Ты не чирикаешь!
+:::::::'''Доктор Лазурь:''' ...
+:::::::'''Доктор Лазурь:''' Чирик. {{MC|ж=Довольна|м=Доволен}}?
+:::::::'''Доктор Лазурь:''' Почему вы все так одержимы этой детской историей?.. Чем за мной ходить, лучше поищи, что Часовщик после себя оставил.
+:::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+:::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+::::::;(Return to previous option selection)
+::::{{Диалог}} Расскажи мне о птицах-оригами...
+:::::'''Доктор Лазурь:''' О птицах-оригами? Иди, посмотри мультфильмы про Часика, там всё объясняют гораздо лучше, чем я могу рассказать.
+:::::{{Диалог|Стрелка}} Расскажи о Явьвиле...
+::::::'''Доктор Лазурь:''' В нём происходят события из второго мультфильма про Часика. «Пройдя сквозь тень Грёзавиля, Часик попадает в необычный городок, где собрались многие изгнанники грёз. Среди них Гончая, что не может не врать, потерявший рассудок филин и птица-оригами, что никогда не чирикает...»
+::::::'''Доктор Лазурь:''' Как тебе? Интересно, да? Сам только что придумал.
+::::::'''Доктор Лазурь:''' На самом деле так называемый Явьвиль - это {{Rubi|место, где мы сейчас находимся|Риф потока сновидений}}. Прибежище несчастных, которых выкинули из Мира грёз.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Расскажи о птицах-оригами...
+::::::'''Доктор Лазурь:''' Ты раньше {{MC|ж=видела|м=видел}} мема зоны воспоминаний? Это существо Мира грёз, рождённое из эмоций и желаний людей. Проще говоря, «феномен», похожий на некую форму жизни. И увиденные тобой птицы-оригами от него не отличаются.
+::::::'''Доктор Лазурь:''' С понимающей аудиторией, должным упорством и толикой лжи Энигматы... создать такую птицу не такое уж сложное дело.
+::::::'''Доктор Лазурь:''' Просто следи, чтобы они не выбрались за пределы Мира грёз. Ну, кроме меня, конечно. Я - исключение.
+::::::'''Доктор Лазурь:''' Надо будет поблагодарить того пса. Кажется, его «обман» работает и в реальном мире.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Расскажи о профессоре Филине...
+::::::'''Доктор Лазурь:''' Профессор Филин - старый друг Часика и создатель Грёзавиля. Для птиц-оригами он уважаемый учитель. Ну, конечно, так просто задумано в сюжете мультфильма.
+::::::'''Доктор Лазурь:''' На Пенаконии, какой она была раньше, его называли профессором Глауксом. Когда-то он был учёным-затцка из Гильдии эрудитов, а позже стал главой клана Ночных Дроздов.
+::::::'''Доктор Лазурь:''' Не знаю, как Часовщик уговорил его по своей воле оставить пост старшего профессора Школы звёздной экологии и перебраться во всеми забытую пустошь в Мире грёз...
+::::::'''Доктор Лазурь:''' Он невероятно талантливый грёзотворец и учитель... Жаль, что его имя всеми забыто. Ты нигде не найдёшь упоминаний о нём.
+:::::;(Return to previous option selection)
+::::{{Диалог}} Мне нужны подсказки.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+::::::'''Доктор Лазурь:''' Подсказки? Конечно. Я знаю, где находятся все птицы.
+::::::'''Доктор Лазурь:''' По монетке за каждую подсказку, и не вздумай торговаться.
+::::::{{Диалог|Стрелка}} (Вытащить жетон Айдена.)
+::::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 7
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 503070049
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503070050,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 44
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070051
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 45
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070052
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 46
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070053
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 47
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070054
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 48
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070055
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 49
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070056
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 50
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070057
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 51
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070058
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 52
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070059
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 53
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070060
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 54
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070061
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 55
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070062
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 56
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070063
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 57
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070064
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 58
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070065
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 59
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070066
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 60
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070067
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 61
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070068
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 62
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070069
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 63
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070070
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_503070072"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::::::{{Диалог|Стрелка}} Забудь об этом.
+:::::::'''Доктор Лазурь:''' До свиданья, {{MC|ж=нищая гостья|м=нищий гость}}. В следующий раз приходи с монетами.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+::::::'''Доктор Лазурь:''' В каждой игре есть свои правила. Монета за подсказку - не больше и не меньше. Ты ещё не {{MC|ж=нашла|м=нашёл}} предыдущую птицу.
+::::::'''Доктор Лазурь:''' Возвращайся, как найдёшь.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+::::{{Диалог|Выход}} В следующий раз.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::::'''Доктор Лазурь:''' Это тоже пойдёт. Не забудь поискать птиц здесь. И давай скорее, я уже хочу завершить свою сцену.
+:::::Птица машет крыльями, видимо, пытаясь указать вам на выход.
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Доктор Лазурь:''' Хм-м-м? Похоже, ты {{MC|ж=нашла|м=нашёл}} уже половину птиц.
+:::'''Доктор Лазурь:''' Это подарок от птиц-оригами. Возьми. И тебя наверняка ещё ждут дела.
+::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200210
+			}
+		}
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Доктор Лазурь:''' Ну что ещё? Я занят. Говори уже!
+:::{{Диалог}} Расскажи о себе...
+::::'''Доктор Лазурь:''' Птица-оригами Доктор Лазурь, он же грёзотворец Орла. Зови как хочешь, только не мешай.
+:::::'''Доктор Лазурь:''' Хотя нет, это имя от тебя будет звучать слишком странно... Тогда лучше зови меня Доктор Лазурь.
+::::;(Return to previous option selection)
+::::'''Доктор Лазурь:''' Птица. Птица-оригами. Или Доктор Лазурь. Можешь как угодно меня называть, только не мешай.
+:::::'''Доктор Лазурь:''' Это благодаря Часовщику я чиню Риф потока сновидений. Ой, поправка: благодаря Часику я строю Явьвиль.
+:::::'''Доктор Лазурь:''' Кхм, а ты {{MC|ж=видела|м=видел}} мультфильмы о Часике? По сюжету птицы-оригами знакомы только с Часиком.
+:::::{{Диалог|Стрелка}} Но ты говоришь совсем не так, как другие птицы-оригами.
+:::::'''Доктор Лазурь:''' Э-э, почему это?
+:::::{{Диалог|Стрелка}} Ты знаешь Часовщика.
+::::::'''Доктор Лазурь:''' Конечно, тут все знают Часовщика... Но лишь немногие знают, чего он на самом деле хочет.
+::::::'''Доктор Лазурь:''' Ладно, чем вести бессмысленные разговоры, лучше поищи, что этот приятель после себя оставил.
+::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Ты не просто персонаж мультфильма.
+::::::'''Доктор Лазурь:''' Верно подмечено. Увы, ещё не пришло время раскрыть сюжетную линию птиц-оригами.
+::::::'''Доктор Лазурь:''' Чем за мной ходить, лучше поищи, что Часовщик после себя оставил.
+::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Ты не чирикаешь!
+::::::'''Доктор Лазурь:''' ...
+::::::'''Доктор Лазурь:''' Чирик. {{MC|ж=Довольна|м=Доволен}}?
+::::::'''Доктор Лазурь:''' Почему вы все так одержимы этой детской историей?.. Чем за мной ходить, лучше поищи, что Часовщик после себя оставил.
+::::::'''Доктор Лазурь:''' Посмотрим... Моя задача - подтолкнуть посетителей Грёзавиля заняться поисками «загадки города».
+::::::'''Доктор Лазурь:''' Слышишь? Пошевеливайся. Мир грёз не так прост, как тебе кажется.
+:::::;(Return to previous option selection)
+:::{{Диалог}} Расскажи мне о птицах-оригами...
+::::'''Доктор Лазурь:''' О птицах-оригами? Иди, посмотри мультфильмы про Часика, там всё объясняют гораздо лучше, чем я могу рассказать.
+::::{{Диалог|Стрелка}} Расскажи о Явьвиле...
+:::::'''Доктор Лазурь:''' В нём происходят события из второго мультфильма про Часика. «Пройдя сквозь тень Грёзавиля, Часик попадает в необычный городок, где собрались многие изгнанники грёз. Среди них Гончая, что не может не врать, потерявший рассудок филин и птица-оригами, что никогда не чирикает...»
+:::::'''Доктор Лазурь:''' Как тебе? Интересно, да? Сам только что придумал.
+:::::'''Доктор Лазурь:''' На самом деле так называемый Явьвиль - это {{Rubi|место, где мы сейчас находимся|Риф потока сновидений}}. Прибежище несчастных, которых выкинули из Мира грёз.
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Расскажи о птицах-оригами...
+:::::'''Доктор Лазурь:''' Ты раньше {{MC|ж=видела|м=видел}} мема зоны воспоминаний? Это существо Мира грёз, рождённое из эмоций и желаний людей. Проще говоря, «феномен», похожий на некую форму жизни. И увиденные тобой птицы-оригами от него не отличаются.
+:::::'''Доктор Лазурь:''' С понимающей аудиторией, должным упорством и толикой лжи Энигматы... создать такую птицу не такое уж сложное дело.
+:::::'''Доктор Лазурь:''' Просто следи, чтобы они не выбрались за пределы Мира грёз. Ну, кроме меня, конечно. Я - исключение.
+:::::'''Доктор Лазурь:''' Надо будет поблагодарить того пса. Кажется, его «обман» работает и в реальном мире.
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Расскажи о профессоре Филине...
+:::::'''Доктор Лазурь:''' Профессор Филин - старый друг Часика и создатель Грёзавиля. Для птиц-оригами он уважаемый учитель. Ну, конечно, так просто задумано в сюжете мультфильма.
+:::::'''Доктор Лазурь:''' На Пенаконии, какой она была раньше, его называли профессором Глауксом. Когда-то он был учёным-затцка из Гильдии эрудитов, а позже стал главой клана Ночных Дроздов.
+:::::'''Доктор Лазурь:''' Не знаю, как Часовщик уговорил его по своей воле оставить пост старшего профессора Школы звёздной экологии и перебраться во всеми забытую пустошь в Мире грёз...
+:::::'''Доктор Лазурь:''' Он невероятно талантливый грёзотворец и учитель... Жаль, что его имя всеми забыто. Ты нигде не найдёшь упоминаний о нём.
+::::;(Return to previous option selection)
+:::{{Диалог}} Мне нужны подсказки.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+:::::'''Доктор Лазурь:''' Подсказки? Конечно. Я знаю, где находятся все птицы.
+:::::'''Доктор Лазурь:''' По монетке за каждую подсказку, и не вздумай торговаться.
+:::::{{Диалог|Стрелка}} (Вытащить жетон Айдена.)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 7
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 503070049
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503070050,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 44
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070051
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 45
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070052
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 46
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070053
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 47
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070054
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 48
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070055
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 49
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070056
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 50
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070057
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 51
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070058
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 52
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070059
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 53
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070060
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 54
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070061
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 55
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070062
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 56
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070063
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 57
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070064
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 58
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070065
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 59
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070066
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 60
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070067
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 61
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070068
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 62
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070069
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 63
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070070
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_503070072"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:::::{{Диалог|Стрелка}} Забудь об этом.
+::::::'''Доктор Лазурь:''' До свиданья, {{MC|ж=нищая гостья|м=нищий гость}}. В следующий раз приходи с монетами.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+:::::'''Доктор Лазурь:''' В каждой игре есть свои правила. Монета за подсказку - не больше и не меньше. Ты ещё не {{MC|ж=нашла|м=нашёл}} предыдущую птицу.
+:::::'''Доктор Лазурь:''' Возвращайся, как найдёшь.
+::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+:::{{Диалог|Выход}} В следующий раз.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Доктор Лазурь:''' Это тоже пойдёт. Не забудь поискать птиц здесь. И давай скорее, я уже хочу завершить свою сцену.
+::::Птица машет крыльями, видимо, пытаясь указать вам на выход.
 {{Диалог Конец}}
 
 ===Войдите в эмосреду Доктора Лазури===
@@ -368,6 +1513,22 @@ PageTitle=#Поэма грёз#
 }</pre>
 ::'''Доктор Лазурь:''' Эй, погоди, ты что делаешь?!
 :{{Диалог|Выход}} Нужно тщательно всё спланировать...
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "OpenRaid_43322"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Доктором Лазурью===

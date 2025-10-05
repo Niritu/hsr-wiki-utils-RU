@@ -10,7 +10,7 @@ PageTitle=#Ночь по имени Нежность#
 |Событие         = 
 |Глава           = Шум и ярость
 |Условия         = Завершена [[Миссия Освоения]] «[[Ночь по имени Нежность]]»
-|Персонажи       = Первопроходец; Светлячок; Член клана Гончих
+|Персонажи       = Грёзотворец; Первопроходец; Светлячок; Член клана Гончих
 |СтартЛокация    = [[Пенакония]] — [[Граница грёз]]
 |Мир             = Пенакония
 |Предыдущая      = 
@@ -168,6 +168,52 @@ PageTitle=#Ночь по имени Нежность#
 :'''Светлячок:''' Я скажу тебе, но... не сейчас.
 :'''Светлячок:''' Во сне я видела выжженную землю, сквозь которую пробивался росток. Он расцвёл с первыми лучами солнца и кое-что мне прошептал.
 :{{tx}}
+:'''Светлячок:''' Мне жаль, что атмосфера вдруг стала такой мрачной... Дай-ка подумать, что я могу сделать, чтобы разрядить обстановку.
+:'''Светлячок:''' Кстати, у тебя ведь много друзей на Звёздном экспрессе, правда? Что бы вы сделали, если бы случилось что-то подобное?
+:Пом-Пом брызнула бы на нас водой, чтобы успокоить...
+:'''Светлячок:''' Брызнула бы водой? Это... как-то грубовато.
+:'''Светлячок:''' Может, мы можем сделать что-то другое?
+:Дань Хэн рассказывал бы свои плоские шутки с невозмутимым выражением лица...
+:'''Светлячок:''' Шутки? Эм, у меня... не очень хорошее чувство юмора...
+:'''Светлячок:''' Может, придумаем что-то другое?
+:Химеко сварила бы для нас кофе...
+:'''Светлячок:''' Кофе... Тут мы его не заварим...
+:'''Светлячок:''' Может, мы... могли бы вдохновиться другими членами экипажа?
+:Господин Янг попытался бы сменить тему разговора...
+:'''Светлячок:''' Я... я пыталась это сделать...
+:'''Светлячок:''' ...Но у меня не получилось. Может... вы бы сделали что-то ещё?
+:Март заставила бы нас сделать с ней селфи...
+:'''Светлячок:''' Селфи, селфи... Ты {{MC|ж=права|м=прав}}. Я так много раз здесь была. Почему не додумалась сфотографироваться?
+:'''Светлячок:''' Мне будет немного неловко делать это одной. Хочешь ко мне присоединиться? Давай запечатлеем этот момент.
+:Хорошо!
+:'''Светлячок:''' Я немного стесняюсь камеры - не смейся надо мной. Вот, держи.
+:Ну не знаю.
+:'''Светлячок:''' ...Что-то не так?
+:Я шучу. Давай!
+:'''Светлячок:''' Я немного стесняюсь камеры - не смейся надо мной. Вот, держи.
+:Я не хочу.
+:'''Светлячок:''' Ну... Ладно.
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+;(Return to previous option selection)
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1300300
+}</pre>
+:'''Светлячок:''' Тебе уже пора возвращаться? Как быстро пролетело время.
+:'''Светлячок:''' Мне тоже хочется вернуться в реальность и отдохнуть... Давай попрощаемся в Золотом миге.
+----
+<pre>{
+	"$type": "RPG.GameCore.PlayerSelectMotionMode"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1300300
+}</pre>
 
 ;(По прибытии на место)
 :'''Светлячок:''' Всё. Вот мы и пришли.
@@ -222,6 +268,146 @@ PageTitle=#Ночь по имени Нежность#
 ;(Поговорите с Член клана Гончих)
 :'''Член клана Гончих:''' Ни один из ваших трюков не сработает. Пожалуйста, сделайте себе и мне одолжение и уйдите отсюда.
 :Серьёзный мужчина совсем не обращает на вас внимания. Возможно, его нужно {{Цвет|Ключевой|nobold=1|спровоцировать}}.
+;(Unused &mdash; DreamlandUIClose)
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"Enable": true,
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+	"DitherAlpha": 1,
+	"Duration": 0.2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Dreamland",
+	"AnchorName": "focusPoint0",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "HeartDialCamera"
+	},
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ReleaseCharacter",
+	"CharacterUniqueName": "DreamlandNpc"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard",
+	"IsShow": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Dreamland"
+	}
+}</pre>
+
+;(Unused &mdash; custom/npc_menu)
+:{{Диалог|Заводной механизм}} Попробовать считать его эмоции.
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CaptureCurrentInteractDialogueEntity",
+	"UniqueName": "DreamlandNpc"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CollectHeartDialCameraIndex"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Dreamland",
+	"AnchorName": "focusPoint0",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "HeartDialCamera"
+	},
+	"FollowTargetUniqueName": "DreamlandNpc",
+	"LookAtTargetUniqueName": "DreamlandNpc",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 0.8
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+	"Duration": 0.2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "LocalPlayer"
+	},
+	"AnimStateName": "StandBy",
+	"NormalizedTransitionDuration": 0
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+::<!--0.8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI",
+	"HideControlBtns": true,
+	"SuccessWithoutTalk": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvEntityStopLookAt",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchUniqueNameEntity",
+		"UniqueName": "DreamlandNpc"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.HeartDial.HeartDialMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "DreamlandUIClose"
+			}
+		}
+	]
+}</pre>
+
+:{{Диалог|Выход}} Ну мы пойдём...
+::'''Член клана Гончих:''' Спасибо за сотрудничество.
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -441,6 +627,28 @@ PageTitle=#Ночь по имени Нежность#
 	"$type": "RPG.GameCore.ChangePropState"
 }</pre>
 <pre>{
+	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"TriggerName": "MissionTrigger",
+	"ButtonsByName": [],
+	"ButtonConfigs": [
+		{
+			"ID": "Trigger1",
+			"IconType": "HeartDialRaid",
+			"ButtonText": {
+				"Value": "PropInteractTitle_275"
+			}
+		}
+	],
+	"DisableAfterTriggered": true
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.WaitSubMissionStateChange",
 	"SubMissions": [
 		103040231
@@ -498,6 +706,25 @@ PageTitle=#Ночь по имени Нежность#
 	"LoopInterval": 5,
 	"UniqueID": 250
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 250,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 103040459
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 250,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 103040460
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 250
+}</pre>
 {{Диалог Конец}}
 
 ===Найдите второй фрагмент мозаики===
@@ -514,6 +741,146 @@ PageTitle=#Ночь по имени Нежность#
 {{Диалог Начало}}
 
 ;(Поговорите с Грёзотворец)
+;(Unused &mdash; DreamlandUIClose)
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"Enable": true,
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+	"DitherAlpha": 1,
+	"Duration": 0.2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Dreamland",
+	"AnchorName": "focusPoint0",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "HeartDialCamera"
+	},
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ReleaseCharacter",
+	"CharacterUniqueName": "DreamlandNpc"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard",
+	"IsShow": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Dreamland"
+	}
+}</pre>
+
+;(Unused &mdash; custom/npc_menu)
+:{{Диалог|Заводной механизм}} Попробовать считать его эмоции.
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"Enable": true,
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GlobalShowBillboard"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CaptureCurrentInteractDialogueEntity",
+	"UniqueName": "DreamlandNpc"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CollectHeartDialCameraIndex"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Dreamland",
+	"AnchorName": "focusPoint0",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "HeartDialCamera"
+	},
+	"FollowTargetUniqueName": "DreamlandNpc",
+	"LookAtTargetUniqueName": "DreamlandNpc",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 0.8
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+	"Duration": 0.2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.CharacterTriggerAnimState",
+	"CharacterUniqueName": {
+		"Value": "LocalPlayer"
+	},
+	"AnimStateName": "StandBy",
+	"NormalizedTransitionDuration": 0
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+::<!--0.8-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI",
+	"HideControlBtns": true,
+	"SuccessWithoutTalk": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvEntityStopLookAt",
+	"SourceType": {
+		"$type": "RPG.GameCore.TargetFetchUniqueNameEntity",
+		"UniqueName": "DreamlandNpc"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.HeartDial.HeartDialMainPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "DreamlandUIClose"
+			}
+		}
+	]
+}</pre>
+
+:{{Диалог|Выход}} Не буду мешать.
+::'''Грёзотворец:''' Убирайтесь в другое место! Мне нужно побыть одному!
 ;(Unused &mdash; HeartDial_D_103040235)
 <pre>{
 	"$type": "RPG.GameCore.HeartDialEmoBlackList",

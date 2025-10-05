@@ -94,6 +94,29 @@ PageTitle=#Подземный хип-хоп#
 ::'''Бак речитатива:''' Я задам темп, а вы готовьтесь к финальному рэп-баттлу этой янтарной эры!
 ::{{Диалог|Стрелка}} (Придерживаться ритма мусорных баков?..)
 ::{{Диалог|Стрелка}} Я не боюсь!
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "MusicRhythm_Junk_Change"
+	},
+	"Value": {
+		"Value": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.MusicRhythm.MusicRhythmChooseLevelPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "3"
+	},
+	"OnUICustomEvent": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
 :'''(Первопроходец):''' (Группа из Подземья... Надеюсь, они смогут подарить мне вдохновение.)
 
 ;(Поговорите с Бак речитатива)

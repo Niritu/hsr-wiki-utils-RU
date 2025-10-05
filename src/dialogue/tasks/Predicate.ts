@@ -1,3 +1,4 @@
+import JSONb from 'json-bigint';
 import { InternalDialogTask, PredicateTaskList, SwitchCase, TaskParam } from '../../files/graph/Dialog.js';
 import { CompareType, GraphPredicate } from '../../files/graph/Predicate.js';
 import { sentenceJoin } from '../../Shared.js';
@@ -14,13 +15,24 @@ export class PredicateTask extends BaseNonTextDialogueTask {
 		
 		this.predicate = data.Predicate
 		
-		let successTasks, failedTasks
+		let successTasks: PredicateOutcome | undefined = undefined
+		let failedTasks: PredicateOutcome | undefined = undefined
 		if (data.SuccessTaskList) {
 			successTasks = new PredicateOutcome(data.Predicate, data.SuccessTaskList, false, env)
 		}
 		if (data.FailedTaskList) {
 			failedTasks = new PredicateOutcome(data.Predicate, data.FailedTaskList, true, env)
 		}
+		
+		if (data.SuccessTaskList?.[0]?.$type == 'RPG.GameCore.TriggerPerformance') {
+			if (successTasks) {
+				successTasks.context.success_performance = data.SuccessTaskList[0].PerformanceID
+			}
+			if (failedTasks) {
+				failedTasks.context.success_performance = data.SuccessTaskList[0].PerformanceID
+			}
+		}
+		
 		if (successTasks && failedTasks) {
 			this.branches = [
 				successTasks,
@@ -35,6 +47,7 @@ export class PredicateTask extends BaseNonTextDialogueTask {
 		return otherTask instanceof PredicateTask
 			&& this.predicate.$type == otherTask.predicate.$type
 			&& this.predicate.Inverse == otherTask.predicate.Inverse
+			&& JSONb.stringify(this.predicate) == JSONb.stringify(otherTask.predicate)
 	}
 }
 
@@ -84,7 +97,13 @@ export const DISPLAY_COMPARE_MAP: Record<CompareType, string> = {
 	NotEqual: 'not equal to'
 }
 
+export interface ExtraPredicateContext {
+	success_performance?: number
+}
+
 export class PredicateOutcome extends BaseDialogueTask {
+	context: ExtraPredicateContext = {}
+	
 	constructor(public predicate: GraphPredicate, tasks: InternalDialogTask[], public inverse: boolean, env: GraphEnvironment) {
 		super(predicate)
 		
@@ -93,7 +112,7 @@ export class PredicateOutcome extends BaseDialogueTask {
 			.filter(task => task != undefined)
 	}
 	
-	static async displayPredicate(predicate: GraphPredicate, inverse: boolean, environment: GraphEnvironment): Promise<string | undefined> {
+	static async displayPredicate(predicate: GraphPredicate, inverse: boolean, environment: GraphEnvironment, addContext?: ExtraPredicateContext): Promise<string | undefined> {
 		if (predicate.Inverse) {
 			inverse = !inverse
 		}
@@ -164,16 +183,20 @@ export class PredicateOutcome extends BaseDialogueTask {
 				const { Mission } = await import('../../Mission.js')
 				const mission = Mission.fromId(predicate.MainMissionID)
 				if (predicate.MainMissionState == 'Started') {
-					return `${mission.link(true)} has ${not}been started`
+					return `${mission?.link(true)} has ${not}been started`
 				} else {
-					return `${mission.link(true)} has ${not}been completed`
+					return `${mission?.link(true)} has ${not}been completed`
 				}
 				
 			case 'RPG.GameCore.ByCompareMissionCustomValue':
 				return genericCompare(`MissionCV-${predicate.MainMissionID}-${predicate.MissionCustomValue.Index}`, predicate.EquationType, predicate.TargetValue ?? 0)
 				
 			case 'RPG.GameCore.ByComparePerformance':
-				return `{{cx}}<!--${not}during performance ${predicate.PerformanceID}-->`
+				if (addContext?.success_performance == predicate.PerformanceID) {
+					return inverse ? 'subsequent interaction' : 'first interaction'
+				} else {
+					return `{{cx}}<!--performance ${predicate.PerformanceID} has ${not}been seen-->`
+				}
 				
 			// case 'RPG.GameCore.ByComparePropState':
 			// 	return '{{cx}}'
@@ -302,8 +325,15 @@ export class PredicateOutcome extends BaseDialogueTask {
 	async wikitext(_level: number, tree: ActDialogueTree, node: DialogueNode<this>): Promise<string | undefined> {
 		if (!node.next) return undefined
 		
-		const display = await PredicateOutcome.displayPredicate(this.predicate, this.inverse, tree.environment)
+		const display = await PredicateOutcome.displayPredicate(this.predicate, this.inverse, tree.environment, this.context)
 		if (display) {
+			// shorter versions of specific predicates
+			if (display == 'first interaction') {
+				return ';(First interaction)'
+			} else if (display == 'subsequent interaction') {
+				return ';(Subsequent interactions)'
+			}
+			
 			return `;(If ${display})`
 		} else {
 			if (process.argv.includes('--add-triggers')) {
@@ -316,6 +346,7 @@ export class PredicateOutcome extends BaseDialogueTask {
 		return otherTask instanceof PredicateOutcome
 			&& this.predicate.$type == otherTask.predicate.$type
 			&& this.inverse == otherTask.inverse
+			&& JSONb.stringify(this.predicate) == JSONb.stringify(otherTask.predicate)
 	}
 }
 

@@ -146,6 +146,12 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ::'''Фаенон:''' Должен отметить, что предрасположенность к явлению чудес является врождённой. Если отсутствует резонанс жреца, то обычный человек впадёт в кому, как только споёт первые несколько слов молитвы.
 :'''Фаенон:''' Но попробуй, пожалуйста, раз хочешь.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6307"
+	}
+}</pre>
 
 ;(Unused &mdash; EnterArea_G118)
 <pre>{
@@ -185,6 +191,8 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ::<!--3-second delay-->
 ::'''Фаенон:''' Смотрите, врата открылись.
 ::'''Мидей:''' Гениально. Мы бы в жизни не догадались, если бы ты сам не сказал.
+::<!--1-second delay-->
+::'''Фаенон:''' Идём. Мы можем пойти в обход от моста.
 :<pre>{
 	"$type": "RPG.GameCore.ActiveVirtualCamera",
 	"AreaName": "LevelArea_P20411_F20411001_G118",
@@ -257,12 +265,10 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ;(По прибытии на место)
 :'''Фаенон:''' Погляди на небо! Это...
 :'''Мидей:''' Остриё ярости. Даже если мир окажется расколот, оно всё равно будет висеть над нашими головами.
-;(If {{F|undefined}} is undefined 1)
-:<pre>{
+;(If {{F|undefined}} is not undefined 1)
+<pre>{
 	"$type": "RPG.GameCore.ChangePropState"
 }</pre>
-;(If {{F|undefined}} is not undefined 1)
-:;(Return to previous option selection)
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -470,6 +476,7 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -572,7 +579,8 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -747,6 +755,36 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 :{{Диалог|Стрелка}} Мы с Дань Хэном тоже пока не разобрались, в чём дело.
 :'''Фаенон:''' Неужели Амфореус был связан с другими мирами теснее, чем мы предполагали? Но в наших исторических материалах не было зафиксировано ничего подобного.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 104010543,
+	"TargetMissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"DirectValue": 1,
+		"MainMissionID": 1040105,
+		"MissionCustomValue": {
+			"Index": 1,
+			"Name": "OldValue_1",
+			"ValidValueParamList": [
+				0,
+				1,
+				2
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Продвигайтесь вглубь Кремноса===
@@ -754,6 +792,135 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 18
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_TimeRewindCommon_02_Dis_Lod0.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<!--3-second delay-->
+:'''Фаенон:''' Подожди... Что делает это существо? Оно пытается нас остановить?
+:'''Фаенон:''' Оно даже собственного товарища убило... У них нет никакой чести.
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_IsDestroyBall"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20411_F20411001_G60",
+	"AnchorName": "Anchor3"
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20411_F20411001_G60",
+	"AnchorName": "Anchor3",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20411_F20411001_G60",
+	"AnchorName": "Anchor1",
+	"SelectLookAtTargetType": "Target",
+	"LookAtTarget": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 18
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"VCameraDitherNPCOn": true
+}</pre>
+:<!--9-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20411_F20411001_G60",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 0.6,
+		"FrameBlendDelay": 3
+	},
+	"KeepMainCameraRotation": true
+}</pre>
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.EnablePlayerPlayIdleShow"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.BlockInputController",
+	"ActionNameList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetHudTemplate",
+	"TemplateID": 1011
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableNPCMonsterAI",
+	"Enable": true,
+	"GroupMonsterIDs": [],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6308"
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetHudTemplate",
 	"TemplateID": 1011,
@@ -786,6 +953,12 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ::'''Фаенон:''' «Я непременно передам Дань Хэну твои последние слова, {{MC|ж=моя подруга|м=друг мой}}!»
 ::'''Фаенон:''' Не волнуйся. Всё будет в порядке.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6309"
+	}
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -802,12 +975,30 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 ::'''Фаенон:''' Я тебя и не обвиняю. Всё-таки каструм Кремнос - это территория {{Rubi|Никадора|титан раздора}}. Местное окружение лишает тебя возможности резонировать с {{Rubi|Оронис|титан времени}}.
 ::'''Фаенон:''' В принципе, где-то в этой крепости должен быть инструмент, который использовали жрецы времени. Ага, вот и он.
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.TutorialTaskUnlock",
+			"TriggerParam": {
+				"Value": "6309"
+			}
+		}
+	]
+}</pre>
 :'''Фаенон:''' Неплохо. Вот ты и начинаешь расти над собой.
 :'''Фаенон:''' Может, снова попробуешь?
 :'''Фаенон:''' Вот так! Отлично.
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_rockbreak"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
 :..!
 :'''Фаенон:''' Судя по всему, мы можем и проиграть, если помедлим.
 ;(По прибытии на место)
@@ -822,6 +1013,8 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 :'''Фаенон:''' Как с языка {{MC|ж=сняла|м=снял}}! В тебе бьётся сердце воина, {{MC|ж=моя подруга|м=друг мой}}.
 :'''Фаенон:''' Если верить записям, то прямо под Остриём ярости находится всемирно известная арена Кремноса. Дорога, что простирается перед нами, приведёт либо к смерти, либо к славе.
 :{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Охотница ярости*3}}
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -867,6 +1060,30 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 :<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "BlackScreen_G204"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010548
+				}
+			]
+		}
+	]
 }</pre>
 ;(Unused &mdash; BlackScreen_G204)
 
@@ -1161,6 +1378,25 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 :{{Диалог|Стрелка}} Она должна была быть здесь, с нами, но она плохо себя чувствует.
 :{{tx}}
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20411_F20411001_G143"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Откройте врата с помощью плиты пророчества===
@@ -1219,6 +1455,7 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -1321,7 +1558,8 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -1510,6 +1748,24 @@ PageTitle=#О опустошённая земля, вспомни былую с�
 :'''Фаенон:''' Ах, очень жаль.
 :'''Фаенон:''' Честно говоря, то, как вы заботитесь о своей подруге, укрепило мою веру в вас.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20411_F20411001_G143"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; LookAtDone_104010588)
 

@@ -58,6 +58,37 @@ PageTitle=#Побег братца Хану#
 :'''Доктор Эдвард:''' Похоже, вас очень сильно увлёк мир пузыря грёз. Возможно, реальность была прозаичнее...
 :'''Доктор Эдвард:''' В любом случае надеюсь, что вам всё понравилось! Если вам понравилось проходить этот пузырь грёз, рекомендую попробовать следующий уровень - Нижний мир.
 :'''Доктор Эдвард:''' Сюжета в нём меньше, зато разработчики придумали множество различных испытаний с потрясающими наградами! Не пропустите!
+<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.RaidCollection.RaidCollectionMainPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "54,1"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_802022002"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha",
+			"DitherAlpha": 1
+		},
+		{
+			"$type": "RPG.GameCore.FinishPerformanceMission",
+			"Key": "Mission_802022002"
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

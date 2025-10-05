@@ -74,6 +74,28 @@ PageTitle=#Потерянное поколение#
 :{{Диалог|Стрелка}} Пустяки. Обижайте меня когда вздумается!
 :{{tx}}
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10301_F10301001_G168"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Химеко)
 :'''Химеко:''' Если Авантюрин хочет свергнуть Семью, он должен пробить в её авторитете большую брешь. И всё же, ради чего он всё это сделал?..
@@ -214,6 +236,60 @@ PageTitle=#Потерянное поколение#
 :'''Март 7:''' Ага! Как же хорошо, что в такие моменты можно положиться на наш экипаж. Что у Семьи, что у КММ - у всех свои планы...
 :'''Март 7:''' Люди на улицах веселятся как ни в чём не бывало. И никто даже не знает, что произошло... Всё кажется таким нереальным, будто и Светлячок, и госпожа Зарянка, и мы... пришельцы из другого мира.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByAnd",
+						"PredicateList": [
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100121,
+								"SubMissionState": "Finish"
+							},
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100125,
+								"SubMissionState": "Finish"
+							}
+						]
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10301_F10301001_G168"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayFullScreenTransfer",
+							"PrevDuration": 0
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103100123"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Вельт Янг)
 :'''Вельт:''' В любом случае не полагайся полностью на Авантюрина. Мы не можем позволить ему манипулировать нами.
@@ -278,6 +354,60 @@ PageTitle=#Потерянное поколение#
 :{{Диалог|Стрелка}} Странно... Похоже, я не могу вспомнить.
 :'''Вельт:''' Галактический рейнджер полностью подходит под это описание.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByAnd",
+						"PredicateList": [
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100121,
+								"SubMissionState": "Finish"
+							},
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100123,
+								"SubMissionState": "Finish"
+							}
+						]
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10301_F10301001_G168"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayFullScreenTransfer",
+							"PrevDuration": 0
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103100125"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 :'''Март 7:''' На этот раз мы играем роль настоящих детективов... Но прежде чем начать расследование, надо придумать, что сказать Семье и Авантюрину.
 :'''Химеко:''' Насколько я понимаю, Семья не питает никакой неприязни к Звёздному экспрессу - если бы они не доверяли экипажу, они бы не поручили кучке небрежно нанятых иномирцев расследовать дело, которое тянет на звание «скандального».
 :'''Химеко:''' Кроме того, это территория Семьи, так что в перспективе сотрудничество с ними должно облегчить нам задачу.

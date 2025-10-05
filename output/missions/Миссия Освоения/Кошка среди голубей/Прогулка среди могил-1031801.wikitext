@@ -95,6 +95,48 @@ PageTitle=#Прогулка среди могил#
 ::'''Март 7:''' Тогда не будем терять время и поспешим в тематический парк!
 :{{Диалог|Выход}} Подождите...
 ::'''Март 7:''' Это же не твоя травма даёт о себе знать?.. Расслабься. Всё будет в порядке.
+;(If {{F|MissionCV-1031801-undefined}} is undefined 1)
+;(If {{cx}}<!--SubMission not Finish: 103180101-->)
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43306,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	],
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PlayScreenTransfer",
+			"Mode": "FullTransfer",
+			"TransferFullDuration": {
+				"PrevDuration": 0,
+				"KeepDuration": 0.1
+			}
+		}
+	]
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 103180101-->)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43306,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.UnLockPlayerControl"
+		}
+	],
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PlayScreenTransfer",
+			"Mode": "FullTransfer",
+			"TransferFullDuration": {
+				"PrevDuration": 0,
+				"KeepDuration": 0.1
+			}
+		}
+	]
+}</pre>
 
 ;(Поговорите с Химеко)
 :'''Химеко:''' Чтобы разгадать тайну Часовщика, мы обязательно должны заполучить данные КММ. Это будет опасное дело... Но что такое Освоение, если в нём нет ни капельки опасности?

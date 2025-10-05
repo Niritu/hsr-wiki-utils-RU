@@ -48,12 +48,39 @@ PageTitle=#Битвы без ниндзя и жалости#
 :'''Господин Река:''' Актёры, готовы к финальной сцене?
 :{{Диалог|Стрелка}} Мотор! Вперёд!
 ::'''Раппа:''' Ниндзя, выдвигаемся! Пора на охоту!
-:{{Диалог|Выход}} Стоп! Постойте-ка...
-::Вы прерываете съёмку, которая должна была уже начаться. Но чтобы ваш персонаж не превратился из ниндзя в обезьяну, нужно подготовиться.
-:{{tx}}
-<pre>{
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Стоп! Постойте-ка...
+::Вы прерываете съёмку, которая должна была уже начаться. Но чтобы ваш персонаж не превратился из ниндзя в обезьяну, нужно подготовиться.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.OpenTreasureChallenge",
+					"RaidID": 43301101
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 
@@ -80,12 +107,71 @@ PageTitle=#Битвы без ниндзя и жалости#
 :'''Господин Река:''' Ох, в тебе меметического вируса сейчас больше, чем отснятого в Пенаконии за этот месяц шлака. Ещё одно взаимодействие с обезьянкой убьёт тебя...
 :Не слушайте его! Выберите свободу и растворитесь в обезьяньих объятиях, бананза!
 :{{Диалог|Стрелка}} Идём, бананза!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
 :{{Диалог|Выход}} Нет, бананза!
 ::Пронесло! Вы были на волоске от смерти, но всё-таки смогли противостоять бананрмотанию.
 ::{{tx}}
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "PlayVideo",
+					"PerformanceID": 103420554,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre",
+						"EndBlack": "NoPost"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 103420711,
+					"MaskConfig": {
+						"UseExcelData": false,
+						"StartBlack": "NoPre"
+					}
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": 0
+				}
+			]
+		}
+	],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10306_F10306001_G151"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
 }</pre>
 ;(По прибытии на место)
 

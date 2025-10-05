@@ -41,6 +41,31 @@ PageTitle=#Призрак прошлого#
 ::'''Воодушевлённый шахтёр:''' Что за Фрагментум? Какие отголоски? Я не шарю, что ты несёшь.
 :'''Воодушевлённый шахтёр:''' Пофиг, обождём. Они вот-вот откроются, а иначе я помру с голоду.
 :'''(Первопроходец):''' (Похоже, он не поверит до тех пор, пока у него перед носом не окажется еда...)
+<pre>{
+	"$type": "RPG.GameCore.SetNPCMonstersVisible"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"SubMissionID": 301160501,
+	"OnlyPerformance": false,
+	"ItemIDList": [
+		401004,
+		401012
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 401004,
+			"TriggerCustomString": "CMI_401004"
+		},
+		{
+			"Item1": 401012,
+			"TriggerCustomString": "CMI_401012"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {}
+}</pre>
 ;(If {{cx}}<!--SubMission Finish: 301160501-->)
 ;(Unused &mdash; CMI_401004)
 :'''Воодушевлённый шахтёр:''' Что, хочешь накормить меня этим? Какой мерзкий жареный рис. Цвет просто ужасный. И ты хочешь, чтобы я это съел?

@@ -465,6 +465,10 @@ PageTitle=#Мир среди деревьев#
 ===Проводите Чадвика в последний путь===
 {{Диалог Начало}}
 :<!--4-second delay-->
+:'''Чадвик:''' Скажите, господин Скрюллум... Что обо мне думают члены Общества?
+:<!--2-second delay-->
+:'''Скрюллум:''' Я не располагаю обширными данными на сей счёт. Однако могу привести оценку одной дамы, которая, вероятно, не стала бы возражать против такой цитаты.
+:'''Скрюллум:''' «Всего за несколько лет Кальдерон Чадвик достиг величайших успехов, равных которым не знали даже древние бессмертные. Он гений из гениев».
 <pre>{
 	"$type": "RPG.GameCore.AdvSetAILeadWay",
 	"EntityInstanceID": {
@@ -493,6 +497,33 @@ PageTitle=#Мир среди деревьев#
 }</pre>
 ;(Unused &mdash; start3)
 :Вы слышите довольный смешок Чадвика... и затем молчание.
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 13,
+	"PathwayID": 3,
+	"MotionFlag": "Walk",
+	"WaitForPlayer": true,
+	"StartWaitDistance": 9,
+	"StopWaitDistance": 7,
+	"ForcePlayerWalk": true,
+	"EndWalkDistance": 5,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "endroad2"
+			}
+		}
+	],
+	"PathOffset": []
+}</pre>
 ::<!--2-second delay-->
 :<pre>{
 	"$type": "RPG.GameCore.AdvSetAIFollow",

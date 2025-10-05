@@ -1,11 +1,11 @@
 <%-- [PAGE_INFO]
-PageTitle=#Отборочный матч - Фантастические Растения И Где Они Обитают#
+PageTitle=#Отборочный матч — Фантастические Растения И Где Они Обитают#
 [END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 8025135
-|Название        = 
-|Изображение     = Миссия Отборочный матч - Фантастические Растения И Где Они Обитают.png
+|Название        = Отборочный матч - Фантастические Растения И Где Они Обитают
+|Изображение     = Миссия Отборочный матч — Фантастические Растения И Где Они Обитают.png
 |Тип             = Миссия приключения
 |Событие         = Звёздная церемония боевых искусств
 |Глава           = Звёздная церемония боевых искусств
@@ -41,6 +41,36 @@ PageTitle=#Отборочный матч - Фантастические Раст
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подготовиться.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "BringUpPage_8025135"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20242_F20242001_G149"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		},
+		"ResetTurnInPlace": true
+	}
+}</pre>
 ;(Unused &mdash; BringUpPage_8025135)
 <pre>{
 	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
@@ -120,6 +150,32 @@ PageTitle=#Отборочный матч - Фантастические Раст
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подготовиться.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "G153_StartBattle"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; G153_StartBattle)
 <pre>{
@@ -195,6 +251,25 @@ PageTitle=#Отборочный матч - Фантастические Раст
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Подготовиться.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "G149_TriggerBattle"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
 
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloat",

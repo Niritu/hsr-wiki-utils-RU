@@ -48,15 +48,68 @@ PageTitle=#Мимолётные огни#
 :'''Пом-Пом:''' Я не знаю. Но точно где-то здесь. Никто не знает экспресс Акивили лучше, чем Пом-Пом. Что-то здесь не так, Пом-Пом это чувствует!
 :'''Пом-Пом:''' Можешь помочь? Мы должны найти это!
 :'''Пом-Пом:''' Обязательно должны найти!
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пора.
 :'''Пом-Пом:''' (Первопроходец), ты что-то {{MC|ж=нашла|м=нашёл}}?
 :{{Диалог|Стрелка}} Да вот одно странное зеркало...
 ::'''Пом-Пом:''' Ага! Пом-Пом тоже чувствует, что тут творится что-то не то!
 :{{Диалог|Стрелка}} Здесь ничего нет.
 ::'''Пом-Пом:''' Да что такое! Даже ты не видишь...
 :'''Пом-Пом:''' Сделай уже что-нибудь, (Первопроходец)!
+:'''Пом-Пом:''' Сделай уже что-нибудь, (Первопроходец)!
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пора.
+:'''Пом-Пом:''' Сделай уже что-нибудь, (Первопроходец)!
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пора.
 {{Диалог Конец}}
 
 ===Поговорите с Пом-Пом===
@@ -369,6 +422,12 @@ PageTitle=#Мимолётные огни#
 ::'''Пом-Пом:''' Ну и ладно...
 ::'''(Первопроходец):''' (В общем, такие дела...)
 ----
+<pre>{
+	"$type": "RPG.GameCore.ResetBillboardInfo",
+	"TargetEntityType": "Prop",
+	"ID": 300001,
+	"GroupID": 47
+}</pre>
 {{Диалог Конец}}
 
 ===Расскажите другим о странном зеркале (необязательно)===

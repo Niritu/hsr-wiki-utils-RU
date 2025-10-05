@@ -233,6 +233,8 @@ PageTitle=#Хорошего человека непросто сыскать#
 ::'''Злобный генерал:''' Ваше Высочество, лесть приятна лишь молодёжи вроде вас и жалкому простонародью, которое сейчас вас сопровождает.
 ::'''Злобный генерал:''' Впрочем, если вы отказываетесь вернуться со мной... прошу прощения за грубость.
 ::{{Диалог|Стрелка}} Спрячьтесь за мной.
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -332,7 +334,7 @@ PageTitle=#Хорошего человека непросто сыскать#
 }</pre>
 ----
 :{{tx}}
-:{{Чёрный экран|Стало очевидно: рано или поздно они меня убьют.}}
+:{{Black Screen|Стало очевидно: рано или поздно они меня убьют.}}
 <pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
 }</pre>
@@ -386,8 +388,7 @@ PageTitle=#Хорошего человека непросто сыскать#
 :'''Тисок II:''' Бери любой бокал и угости её.
 :Императрица доверяет решение вам.
 :{{Диалог|Стрелка}} (Поднести отравленное вино.)
-:{{Диалог|Стрелка}} (Поднести безопасное вино.)
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 203020211,
 	"MissionCustomValue": {
@@ -399,11 +400,23 @@ PageTitle=#Хорошего человека непросто сыскать#
 	},
 	"CustomValue": 1
 }</pre>
+:{{Диалог|Стрелка}} (Поднести безопасное вино.)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 203020211,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
 :Тисок II кивает. Она согласна с вашим решением, потому что доверяет вам больше, чем кому-либо во вселенной.
 :{{tx}}
-:{{Чёрный экран|Бокал за старшего шпиона Ленамар!}}
-:{{Чёрный экран|Благодарю за любезность! Что ж, выпьем!}}
-:{{Чёрный экран|Какое... восхитительное вино!}}
+:{{Black Screen|Бокал за старшего шпиона Ленамар!}}
+:{{Black Screen|Благодарю за любезность! Что ж, выпьем!}}
+:{{Black Screen|Какое... восхитительное вино!}}
 :{{tx}}
 {{Диалог Конец}}
 
@@ -419,7 +432,7 @@ PageTitle=#Хорошего человека непросто сыскать#
 
 ;(По прибытии на место)
 ----
-;(Экран становится чёрным)
+;(Screen fades to black)
 :'''Тисок II:''' Серый Рыцарь... Серый Рыцарь... Серый Рыцарь!
 :'''Тисок II:''' У меня есть для тебя поручение. Подойди-ка.
 :'''(Первопроходец):''' (Что это... за место?)
@@ -441,12 +454,59 @@ PageTitle=#Хорошего человека непросто сыскать#
 	"$type": "RPG.GameCore.OverridePerformanceEndCrack",
 	"EndWithCrack": true
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
 :{{Диалог|Стрелка}} Уходите, и я сделаю вид, что никогда вас не {{MC|ж=видела|м=видел}}.
 ::'''Воин мятежников:''' ...
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
 <pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203020214,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							0,
+							1
+						]
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_203020214"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_203020215"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 ;(If {{F|MissionCV-2030202-undefined}} is not undefined 1)
 
@@ -498,6 +558,10 @@ PageTitle=#Хорошего человека непросто сыскать#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+----
+;(Screen fades to black)
+:'''Тисок II:''' Серый Рыцарь! Сюда, скорее.
+:'''Тисок II:''' Ты так давно трудишься ради меня. Я хочу щедро наградить тебя.
 :<!--0.5-second delay-->
 <pre>{
 	"$type": "RPG.GameCore.AdvDestroyEntityAsync",

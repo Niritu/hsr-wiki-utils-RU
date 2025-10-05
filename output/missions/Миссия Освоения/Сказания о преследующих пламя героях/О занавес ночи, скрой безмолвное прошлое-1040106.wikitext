@@ -480,10 +480,60 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 ===Попробуйте достать гири за решёткой===
 {{Диалог Начало}}
 ;(If {{F|undefined}} is undefined 0)
-<pre>{
+;(If {{F|undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 51
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
 	"$type": "RPG.GameCore.TriggerEntityEventV2",
 	"EventName": {
 		"Value": "SwitchHand_DisableCatchable"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 51
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+;(If {{F|undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
 	},
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -589,6 +639,7 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 	"Flags": [],
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_SwitchHand_01_Catchable01_Lod0.prefab",
 	"AttachPoint": "Root",
+	"ForceSimulateImmediately": false,
 	"TowardTarget": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
 		"TargetType": "Prop",
@@ -630,6 +681,21 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 	}
 }</pre>
 
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareSwitchHandGestureType","GestureType":"Lift"}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClosed"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005
+		]
+	}
+}</pre>
+
 ;(Unused &mdash; SwitchHand_PuzzleClose)
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
@@ -641,6 +707,23 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 		"FixedValue": {
 			"Value": 0
 		}
+	}
+}</pre>
+
+;(If {{F|undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerLock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001,
+			300003,
+			300004
+		]
 	}
 }</pre>
 
@@ -769,6 +852,7 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 		"Y": 1,
 		"Z": 1
 	},
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :;(По прибытии на место)
@@ -871,7 +955,8 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 		]
 	},
 	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": []
+	"Flags": [],
+	"ForceImmediateFadeOut": false
 }</pre>
 
 ;(Unused &mdash; OraclePuzzleStartLinePerform)
@@ -1036,6 +1121,38 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 		"ExportToJson": true,
 		"BlendType": "Cut"
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20412_F20412001_G24"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "raid_40402001"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 ;(По прибытии на место)
 
@@ -1275,6 +1392,38 @@ PageTitle=#О занавес ночи, скрой безмолвное прош�
 		"ExportToJson": true,
 		"BlendType": "Cut"
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20412_F20412001_G24"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "raid_40402001"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; raid_40402001)

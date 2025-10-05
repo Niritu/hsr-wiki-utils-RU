@@ -44,7 +44,7 @@ PageTitle=##
 	}
 }</pre>
 :{{Диалог|Стрелка}} Залезть в брюхо деревянной лошади!
-:;(Экран становится чёрным)
+:;(Screen fades to black)
 ::Вы с шумом проскальзываете в деревянное нутро. Здесь куда просторнее, чем казалось снаружи, но всё сильно повреждено... Ещё и следы зубов.
 ::Тишина. Кажется, здесь абсолютно пусто. Вы оглядываетесь по сторонам. На сохранившемся участке внутренней стены есть мерцающий выступ, похожий на кнопку. На нём написано...
 ::«Домой».
@@ -67,6 +67,30 @@ PageTitle=##
 			"Value": 0
 		}
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByCompareSubMissionState",
+						"SubMissionID": 434017901,
+						"SubMissionState": "Started"
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.ClientFinishMission",
+							"SubmissionID": 434017901
+						}
+					]
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 

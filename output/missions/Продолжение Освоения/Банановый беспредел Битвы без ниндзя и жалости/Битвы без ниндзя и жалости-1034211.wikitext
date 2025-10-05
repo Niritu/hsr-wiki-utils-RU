@@ -93,12 +93,22 @@ PageTitle=#Битвы без ниндзя и жалости#
 
 ;(По прибытии на место)
 ;(If {{cx}}<!--SubMission Finish: 103421111-->)
-;(Otherwise, if {{cx}}<!--SubMission Finish: 103421110-->)
-;(Otherwise)
-:{{tx}}
-<pre>{
+::{{tx}}
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+;(Otherwise, if {{cx}}<!--SubMission Finish: 103421110-->)
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+;(Otherwise)
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 3
 }</pre>
 :'''«Бананофессор»:''' Бана-ха-ха... Жаль, что такие идеальные плоды эксперимента пойдут на уничтожение вредителей...
 :'''«Бананофессор»:''' Ба-на-нан... Результат эксперимента был немного повреждён, но его всё равно можно использовать для уничтожения вредителей...
@@ -123,6 +133,23 @@ PageTitle=#Битвы без ниндзя и жалости#
 :{{Диалог|Стрелка}} Объявляю выпускной!
 :'''«Бананофессор»:''' Неудачные объекты... все вы - не поддающиеся перебананиванию неудачные объекты.
 :{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Ба-на-нан! Впереди последний урок обананивания.
+::И он называется...
+::Мечты!
+;(Cutscene ends)
+----
+;(If {{cx}}<!--SubMission Finish: 103421111-->)
+:;(Enter battle)
+::{{Список врагов|mode=sent|Коллектив банафедры Чудесного леса*1/-18.7% НР}}
+;(Otherwise, if {{cx}}<!--SubMission Finish: 103421110-->)
+:;(Enter battle)
+::{{Список врагов|mode=sent|Коллектив банафедры Чудесного леса*1/-18.7% НР}}
+;(Otherwise)
+:;(Enter battle)
+::{{Список врагов|mode=sent|Коллектив банафедры Чудесного леса*1/-18.7% НР}}
 
 ;(По прибытии на место)
 :'''Раппа:''' Здесь я и (Первопроходец) когда-то встретились в первый раз. Похоже, великолепная охота закончится там же, где и началась. Судьба умеет удивлять.
@@ -189,6 +216,34 @@ PageTitle=#Битвы без ниндзя и жалости#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 12,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 2,
+	"OverrideOverStepRadius": true,
+	"OverStepRadius": 2,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 103421105
+		}
+	]
+}</pre>
 :'''«Бананофессор»:''' Быстрее, догоняйте, аудитория уже совсем близко.
 :<!--15-second delay-->
 ;(По прибытии на место)

@@ -1,4 +1,5 @@
-
+export const NODE = Symbol.for('dialogue_node')
+	
 export interface DialogueNode<T> {
 	item: T
 	children?: DialogueNode<T | TranscriptionNote>[]
@@ -62,6 +63,10 @@ export abstract class AbstractDialogueTree<T extends AbstractDialogueNodeItem> {
 			next: undefined,
 			prev: prevIsParent ? undefined : prev,
 			parent: prevIsParent ? prev : undefined,
+		}
+		
+		if (item) {
+			item[NODE] = newNode
 		}
 		
 		const nextItems = this.getNext(item)
@@ -135,7 +140,10 @@ export abstract class AbstractDialogueTree<T extends AbstractDialogueNodeItem> {
 					}
 					
 					currentNode.prev = threadRoots[0].parent
-					threadRoots[0].parent!.next = currentNode
+					if (threadRoots[0].parent) {
+						this.getEndOf(currentNode).next = threadRoots[0].parent.next
+						threadRoots[0].parent.next = currentNode
+					}
 					currentNode._optimized = true
 					
 					break
@@ -150,7 +158,7 @@ export abstract class AbstractDialogueTree<T extends AbstractDialogueNodeItem> {
 							this.findFork(thread, currentNode.children!)!.children = undefined
 						}
 
-						const note = new TranscriptionNote('consecutive-choice', 'Все нижеуказанные выборы ведут к следующим вариантам')
+						const note = new TranscriptionNote('consecutive-choice', 'All choices lead to the following options')
 						const noteNode: DialogueNode<T | TranscriptionNote> = {
 							item: note,
 							children: currentNode.children,
@@ -294,6 +302,20 @@ export abstract class AbstractDialogueTree<T extends AbstractDialogueNodeItem> {
 				}
 			}
 			current = current.next!
+		}
+		return list
+	}
+
+	inverseList(current: DialogueNode<T | TranscriptionNote>, nodes: true): DialogueNode<T | TranscriptionNote>[]
+	inverseList(current?: DialogueNode<T | TranscriptionNote>, nodes?: false): (T | TranscriptionNote)[]
+	inverseList(current?: DialogueNode<T | TranscriptionNote>, nodes?: boolean): (T | TranscriptionNote | DialogueNode<T | TranscriptionNote>)[]
+	inverseList(current: DialogueNode<T | TranscriptionNote> = this.root!, nodes?: boolean) {
+		const list: (T | TranscriptionNote | DialogueNode<T | TranscriptionNote>)[] = []
+		while (current) {
+			if (nodes || current.item) {
+				list.push(nodes ? current : current.item)
+			}
+			current = current.parent ?? current.prev!
 		}
 		return list
 	}

@@ -413,9 +413,95 @@ PageTitle=#Вспомнить всё#
 	]
 }</pre>
 ;(If {{F|MissionCV-2020505-undefined}} is not undefined 1)
-:;(Return to previous option selection)
-;(Unused &mdash; Random_202050503)
-<pre>{
+:;(If {{F|MissionCV-2020505-undefined}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_door_transition"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:::----
+::<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 6
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	]
+}</pre>
+:;(If {{F|MissionCV-2020505-undefined}} is not undefined 2)
+::;(If {{F|MissionCV-2020505-undefined}} is undefined 3)
+:::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_door_transition"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::::----
+::::'''Фу Сюань:''' Всё это время твоему продвижению мешал некто посторонний...
+::::'''Фу Сюань:''' Возможно, единственный способ узнать о своём прошлом - сделать шаг назад.
+:::;(If {{F|MissionCV-2020505-undefined}} is greater than or equal to 3)
+:::<pre>{
 	"$type": "RPG.GameCore.RandomConfig",
 	"OddsList": [
 		{
@@ -458,7 +544,75 @@ PageTitle=#Вспомнить всё#
 		}
 	]
 }</pre>
-
+:::<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 6
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+::;(If {{F|MissionCV-2020505-undefined}} is not undefined 3)
+:::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_door_transition"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::::----
+:::;(If {{F|MissionCV-2020505-undefined}} is greater than or equal to 3)
+:::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 0.34
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 0.32
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 0.34
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Welt202050503"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Himeko202050503"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_Danheng202050503"
+			}
+		}
+	]
+}</pre>
 ;(Unused &mdash; Talk_Himeko202050503)
 <pre>{
 	"$type": "RPG.GameCore.DestroyNPC",
@@ -510,63 +664,10 @@ PageTitle=#Вспомнить всё#
 		}
 	]
 }</pre>
-
-;(Unused &mdash; Talk_Danheng202050503)
-<pre>{
-	"$type": "RPG.GameCore.DestroyNPC",
-	"DestroyList": [
-		{
-			"$type": "RPG.GameCore.GroupEntityInfo",
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 5
-				}
-			},
-			"GroupInstanceID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400003
-				}
-			}
-		},
-		{
-			"$type": "RPG.GameCore.GroupEntityInfo",
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 5
-				}
-			},
-			"GroupInstanceID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400004
-				}
-			}
-		},
-		{
-			"$type": "RPG.GameCore.GroupEntityInfo",
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 5
-				}
-			},
-			"GroupInstanceID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400002
-				}
-			}
-		}
-	]
-}</pre>
 {{Диалог Конец}}
 
 ===Найдите способ покинуть это воспоминание===
 {{Диалог Начало}}
-
 ;(По прибытии на место)
 
 ;(По прибытии на место)

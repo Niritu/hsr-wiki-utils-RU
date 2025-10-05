@@ -148,6 +148,45 @@ PageTitle=#О неприятель, пылающий золотой кровью
 	"PathOffset": []
 }</pre>
 
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 104033952
+		}
+	],
+	"UniqueID": 401
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"PathwayGroupID": 4,
+	"PathwayID": 2,
+	"MotionFlag": "FastRun"
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 104033953
+		}
+	],
+	"UniqueID": 402
+}</pre>
+
 ;(Unused &mdash; 104020105kaiche)
 :'''Фаенон:''' Да ладно... Кремносцы?
 {{Диалог Конец}}

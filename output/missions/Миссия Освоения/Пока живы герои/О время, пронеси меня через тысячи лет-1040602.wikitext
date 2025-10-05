@@ -34,7 +34,7 @@ PageTitle=#О время, пронеси меня через тысячи лет
 {{Описание миссии|тип=Миссия Освоения|локация=????|Перед каждой экспедицией должна пройти буря, предвещающая будущие трудности. Единственный зритель из зрительного зала Залегендья рассказывает вам историю о том, что было, пока были живы герои, начиная пролог трагедии.}}
 {{Диалог Начало}}
 ----
-;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.5\Story\Discussion\Mission\1040602\DS104060201.json'-->)
+:{{tx}}
 
 ;(Unused &mdash; PlayVoice1_G6)
 <pre>{
@@ -109,19 +109,11 @@ PageTitle=#О время, пронеси меня через тысячи лет
 	"MuteAudioEvent": true
 }</pre>
 
-;(Unused &mdash; EnterDistrict_G{GroupID})
 <pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
 }</pre>
 
 ;(Unused &mdash; EnterDistrict_G{GroupID})
@@ -139,6 +131,13 @@ PageTitle=#О время, пронеси меня через тысячи лет
 	"MuteAudioEvent": true
 }</pre>
 
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
 ;(Unused &mdash; EnterDistrict_G{GroupID})
 <pre>{
 	"$type": "RPG.GameCore.PPFilterStackEffect",
@@ -152,6 +151,35 @@ PageTitle=#О время, пронеси меня через тысячи лет
 	"Rate": 0,
 	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
 	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -165,6 +193,106 @@ PageTitle=#О время, пронеси меня через тысячи лет
 ===Изучите монитор в самом конце===
 {{Диалог Начало}}
 
+
+;(Unused &mdash; HideNPC_G17)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G18)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G19)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G20)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

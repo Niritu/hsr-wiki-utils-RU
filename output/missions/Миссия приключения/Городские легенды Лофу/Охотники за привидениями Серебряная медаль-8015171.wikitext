@@ -68,6 +68,28 @@ PageTitle=#Охотники за привидениями: Серебряная 
 ::'''Гуйнайфэнь:''' Вот и договорились!
 ::'''Гуйнайфэнь:''' Значит, решено!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 801517101
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowTransitionLoadingUI",
+	"Name": "Ui.Heliobus.Transition.HeliobusTransitionDialog"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Heliobus.SNS.SNSMain.SNSDetail.HeliobusSNSDetailDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "701"
+	},
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ExitTransitionLoadingUI"
+		}
+	]
+}</pre>
 ;(Unused &mdash; 801517102p)
 :Вас накрывает целой лавиной вопросов, и вы чуть не теряетесь в этой социальной сети, которая бывает колкой, суровой, тёплой, а иногда даже трогательной.
 ::Придя в себя, вы решаете выбирать, вооружившись собственными соображениями о нравственности и тем, что вы успели узнать о Гуйнайфэнь за эти несколько дней.

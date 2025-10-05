@@ -77,6 +77,14 @@ PageTitle=#О поэт, расскажи мне о небе II#
 ----
 ----
 ;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act330_Caption.json-->}}
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Возвышенное, сияющее воплощение небес*1/-10% Сила атаки, -5% НР}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
 ::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act350_Caption.json-->}}
 ;(Cutscene ends)
 ----
@@ -314,7 +322,8 @@ PageTitle=#О поэт, расскажи мне о небе II#
 	"$type": "RPG.GameCore.AdvHideMazeBtn",
 	"SkillType": "MazeSkill"
 }</pre>
-:<pre>{
+:;(If {{F|IsSetMoveInputToAxis}} is undefined 0)
+::<pre>{
 	"$type": "RPG.GameCore.ActiveTrackCamera",
 	"Enable": true,
 	"LevelAreaCameraKey": {
@@ -329,6 +338,12 @@ PageTitle=#О поэт, расскажи мне о небе II#
 		}
 	},
 	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
 		"IsDynamic": false,
 		"FixedValue": {
 			"Value": 1
@@ -392,6 +407,93 @@ PageTitle=#О поэт, расскажи мне о небе II#
 			}
 		}
 	]
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is not undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"OverrideInputByTrack": true
 }</pre>
 ;(Unused &mdash; EndTrack)
 <pre>{

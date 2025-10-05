@@ -49,14 +49,88 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 		300001
 	]
 }</pre>
-::{{Диалог|Стрелка}} Потянуть.
-:::'''Пташка-Первопроходец:''' Правила для того, чтобы их нарушать! Чирик!
-::{{Диалог|Стрелка}} Игнорировать.
-:::'''(Первопроходец):''' (Непринуждённая причёска - тоже своего рода заметное достоинство... Пожалуй, пока не буду мешать.)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+::{{Диалог|Стрелка}} Потянуть.
+:::'''Пташка-Первопроходец:''' Правила для того, чтобы их нарушать! Чирик!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::{{Диалог|Стрелка}} Игнорировать.
+:::'''(Первопроходец):''' (Непринуждённая причёска - тоже своего рода заметное достоинство... Пожалуй, пока не буду мешать.)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720301,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720301,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720301,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 3
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterDistrict_G500_2)
@@ -68,6 +142,26 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 {{Диалог Начало}}
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--1.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 501,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802721308
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 501,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802721309
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
 {{Диалог Конец}}
 
 ===Обсудите фотографию с Март 7===
@@ -86,6 +180,22 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 :{{Диалог|Стрелка}} Наверное, это и есть сила Освоения.
 :{{Диалог|Стрелка}} Первопролётец рождён для Освоения!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "5"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionNextShotDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	}
+}</pre>
 :'''(Первопроходец):''' Попробуем подобраться поближе... Наверняка он где-то рядом со статуей.
 :'''Март 7:''' Нам нужно следовать указаниям статуи.
 ;(Unused &mdash; EnterArea_G505_3)
@@ -115,6 +225,46 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 ::{{Диалог|Стрелка}} Вот так прекрасно!
 :::'''Доктор Рацио:''' Можете делать снимки по своему усмотрению. А если что-то будет непонятно... придётся кому-то пораскинуть мозгами.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterArea_G505_1)
 :'''Март 7:''' Нам нужно следовать указаниям статуи.
@@ -146,6 +296,46 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 ::{{Диалог|Стрелка}} Вот так прекрасно!
 :::'''Доктор Рацио:''' Можете делать снимки по своему усмотрению. А если что-то будет непонятно... придётся кому-то пораскинуть мозгами.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; EnterArea_G505_2)
 :'''(Первопроходец):''' Неужели за кулисами?..
@@ -182,6 +372,46 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 ::{{Диалог|Стрелка}} Вот так прекрасно!
 :::'''Доктор Рацио:''' Можете делать снимки по своему усмотрению. А если что-то будет непонятно... придётся кому-то пораскинуть мозгами.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Обсудите фотографию с Март 7===
@@ -223,6 +453,26 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 :'''Март 7:''' В этом чувствуется щепетильность, присущая научным исследователям.
 :'''Март 7:''' На сегодня съёмка окончена. Загружу фото, посмотрим, как их оценят.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "3"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
+}</pre>
 :'''Доктор Рацио:''' Здесь и речи не идёт о «пределе возможностей» искусства фотографии... Я даже несколько переживаю, что мы так и не достигнем «линии старта».
 :'''Март 7:''' Чему бы мы ни учились, мы всегда начинаем с «линии старта».
 :'''Доктор Рацио:''' Ха, такое отношение к учёбе действительно достойно похвалы... Глупцы, что способны покорно принять истину, намного превосходят прочих самоуверенных учеников.
@@ -259,6 +509,26 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 :'''Март 7:''' В этом чувствуется щепетильность, присущая научным исследователям.
 :'''Март 7:''' На сегодня съёмка окончена. Загружу фото, посмотрим, как их оценят.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "3"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
+}</pre>
 
 ;(Unused &mdash; EnterArea_G505_3)
 :{{tx}}
@@ -287,6 +557,46 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 ::{{Диалог|Стрелка}} Вот так прекрасно!
 :::'''Доктор Рацио:''' Можете делать снимки по своему усмотрению. А если что-то будет непонятно... придётся кому-то пораскинуть мозгами.
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720309,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Сфотографируйте статую===
@@ -295,6 +605,20 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--1.5-second delay-->
 
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 502,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802721310
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
+}</pre>
+
 :{{Диалог|Птица-оригами}} Прыгнуть и потянуть!
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--0.5-second delay-->
@@ -302,6 +626,70 @@ PageTitle=#Выставка фотографий: Образ в скульпту
 	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
 	"CharacterUniqueName": "G503_NPC400002",
 	"EmotionIndex": 12
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 503
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 503
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 503,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802721311
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 503,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802721312
+		}
+	],
+	"InstantFinish": false,
+	"UniqueID": 1
 }</pre>
 
 ;(Unused &mdash; PhotoGraphFinishCustomString)

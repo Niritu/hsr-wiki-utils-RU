@@ -93,7 +93,8 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 
 ;(По прибытии на место)
 :'''Кафка:''' Послушай: продолжай двигаться.
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -104,16 +105,41 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 	},
 	"ToState": "Open"
 }</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300018
+		]
+	},
+	"ToState": "Open"
+}</pre>
 
 ;(По прибытии на место)
 :'''Светлячок:''' Однажды мы встретимся снова.
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
 		"TargetType": "Prop",
 		"Targets": [
 			300010
+		]
+	},
+	"ToState": "Open"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300019
 		]
 	},
 	"ToState": "Open"
@@ -135,13 +161,26 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 
 ;(По прибытии на место)
 :'''Аглая:''' Да. Смотри в сторону рассвета.
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
 		"TargetType": "Prop",
 		"Targets": [
 			300011
+		]
+	},
+	"ToState": "Open"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300020
 		]
 	},
 	"ToState": "Open"
@@ -163,7 +202,8 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 
 ;(По прибытии на место)
 :'''Фаенон:''' {{MC|ж=Подруга|м=Друг}}, вместе мы можем стать героями!
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -174,16 +214,41 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 	},
 	"ToState": "Open"
 }</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300021
+		]
+	},
+	"ToState": "Open"
+}</pre>
 
 ;(По прибытии на место)
 :'''(Первопроходец):''' (Почти...)
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvClientChangePropState",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
 		"TargetType": "Prop",
 		"Targets": [
 			300015
+		]
+	},
+	"ToState": "Open"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300022
 		]
 	},
 	"ToState": "Open"
@@ -1045,11 +1110,41 @@ PageTitle=#О обратный путь, не оглядывайся назад#
 :'''(Первопроходец):''' ...
 :'''(Первопроходец):''' (Раз я уже в конечной точке, то может, стоит ещё разок взглянуть на море цветов?..)
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
+::'''(Первопроходец):''' (Что это?!)
+::'''???:''' {{Цвет|#ff3a|Не бойся. В конце пути ты увидишь красный свет.}}
+::'''???:''' {{Цвет|#ff3a|Он проведёт тебя к выходу. И так вы непременно встретитесь вновь под солнечным светом.}}
+::'''(Первопроходец):''' ...
+::'''(Первопроходец):''' (Ох, ещё бы чуть-чуть и...)
+::'''(Первопроходец):''' (Что это за тени и голоса?..)
+::'''???:''' «Это доказательство того, что когда-то ты {{MC|ж=была|м=был}} {{MC|ж=жива|м=жив}}».
+::'''???:''' Твоя душа, твои воспоминания, годы странствий и путь домой, который {{Rubi|она|титан времени Оронис}} открыла тебе.
+::'''???:''' «Не останавливайся и не прекращай двигаться вперёд, чтобы все её жертвы ради тебя, вся её поддержка не пропали зря...»
+::'''Мемо:''' Сюда, {{MC|ж=подруга|м=друг}}!
+::'''Мемо:''' Возьми меня за руку. Мы идём домой!
+::{{Диалог|Стрелка}} До свидания, мир мёртвых.
+::{{Диалог|Стрелка}} Снова здравствуй, мир живых.
+::'''(Первопроходец):''' Пусть... продолжится Освоение.
+::{{tx}}
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
 :{{Диалог|Стрелка}} {{Цвет|#ff3a|Не оглядывайся, смотри вперёд.}}
+:'''(Первопроходец):''' (Что это?!)
+:'''???:''' {{Цвет|#ff3a|Не бойся. В конце пути ты увидишь красный свет.}}
+:'''???:''' {{Цвет|#ff3a|Он проведёт тебя к выходу. И так вы непременно встретитесь вновь под солнечным светом.}}
+:'''(Первопроходец):''' ...
+:'''(Первопроходец):''' (Ох, ещё бы чуть-чуть и...)
+:'''(Первопроходец):''' (Что это за тени и голоса?..)
+:'''???:''' «Это доказательство того, что когда-то ты {{MC|ж=была|м=был}} {{MC|ж=жива|м=жив}}».
+:'''???:''' Твоя душа, твои воспоминания, годы странствий и путь домой, который {{Rubi|она|титан времени Оронис}} открыла тебе.
+:'''???:''' «Не останавливайся и не прекращай двигаться вперёд, чтобы все её жертвы ради тебя, вся её поддержка не пропали зря...»
+:'''Мемо:''' Сюда, {{MC|ж=подруга|м=друг}}!
+:'''Мемо:''' Возьми меня за руку. Мы идём домой!
+:{{Диалог|Стрелка}} До свидания, мир мёртвых.
+:{{Диалог|Стрелка}} Снова здравствуй, мир живых.
+:'''(Первопроходец):''' Пусть... продолжится Освоение.
+:{{tx}}
 {{Диалог Конец}}
 
 ==На других языках==

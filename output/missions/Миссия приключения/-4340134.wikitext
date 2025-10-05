@@ -37,8 +37,7 @@ PageTitle=##
 :'''Лектор Школы богатств:''' Здравствуй, (Первопроходец). Согласно расписанию, сегодня в этой аудитории будут проводиться следующие занятия: «Основы экономики» от Школы богатств, «Основы архитектурного эскизирования» от Школы грёзотворчества и «Введение в теорию композиции» от Школы гармонии.
 :'''Лектор Школы богатств:''' Пожалуйста, убедитесь, что вам интересны данные дисциплины.
 :{{Диалог|Стрелка}} Да, они мне и нужны!
-:{{Диалог|Выход}} Извините, я не туда {{MC|м=зашёл|ж=зашла}}.
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434013401,
 	"MissionCustomValue": {
@@ -46,6 +45,16 @@ PageTitle=##
 		"ValidValueParamList": []
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Извините, я не туда {{MC|м=зашёл|ж=зашла}}.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434013401,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
 }</pre>
 
 <pre>{
@@ -104,8 +113,7 @@ PageTitle=##
 ----
 :'''Лектор Школы грёзотворчества:''' Преподаватель из Школы богатств передал, что здесь будет вольнослушатель. Это ты, да? Занятие скоро начнётся, присаживайся.
 :{{Диалог|Стрелка}} Спасибо, уже иду.
-:{{Диалог|Выход}} Извините, мне нужно в туалет!
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434013401,
 	"MissionCustomValue": {
@@ -115,6 +123,17 @@ PageTitle=##
 		"ValidValueParamList": []
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Извините, мне нужно в туалет!
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434013401,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
 }</pre>
 
 <pre>{
@@ -146,8 +165,7 @@ PageTitle=##
 ----
 :'''Лектор Школы гармонии:''' А-а, (Первопроходец), это ты, да? Рада нашей встрече. Надеюсь, тебе понравится мой урок.
 :{{Диалог|Стрелка}} Мне уже нравится!
-:{{Диалог|Выход}} Мне всё ещё нужно в туалет...
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 434013401,
 	"MissionCustomValue": {
@@ -157,6 +175,18 @@ PageTitle=##
 		"ValidValueParamList": []
 	},
 	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Мне всё ещё нужно в туалет...
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 434013401,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"isLocal": true,
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
 }</pre>
 
 ----

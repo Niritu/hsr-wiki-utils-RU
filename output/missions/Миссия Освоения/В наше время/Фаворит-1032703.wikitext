@@ -49,7 +49,8 @@ PageTitle=#Фаворит#
 
 ===Узнайте об испытании у гида===
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032702-undefined}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103270338,
 	"MissionCustomValue": {
@@ -61,6 +62,20 @@ PageTitle=#Фаворит#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-1032702-undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270338,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
 }</pre>
 {{Описание миссии|тип=Миссия Освоения|локация=Отборочная площадка выжженных песков от Услады™|Второй выбор! Вы со Светлячком прибыли на сцену «Битвы в грёзах - Час огня: Час». По словам гида, вам нужно сыграть роль популярного главного героя мультсериала о Часике - Часика. Вместе преодолейте последние трудности...<br />...Помогите ненастоящему Часику преодолеть экзистенциальный кризис. В играх тоже поднимаются важные темы, правда ведь?}}
 ;(Unused &mdash; EnterArea_LocalGroup)
@@ -114,6 +129,23 @@ PageTitle=#Фаворит#
 :::'''Светлячок:''' Да, в это трудно поверить, но сейчас Пенакония действительно в опасности... Мы должны немедленно сделать что-нибудь.
 :::'''Огромные ходики:''' О, ещё одни конкурсанты, что ищут лёгких путей. Сожалею, пусть я и сломан, но и у меня есть границы.
 ::'''Огромные ходики:''' Вы такие же, как и остальные конкурсанты. Хотите забраться внутрь меня? Да пожалуйста, но вы ничего не добьётесь... Потому что я - поломанная вещь.
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "FullScreenLock"
+}</pre>
 
 
 ;(Unused &mdash; EnterArea_G202)
@@ -485,9 +517,15 @@ PageTitle=#Фаворит#
 	}
 }</pre>
 ;(Unused &mdash; TV_Open)
-<pre>{
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.RequestGroupStateChange",
 	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
 }</pre>
 ;(Unused &mdash; EnterArea_G{GroupID})
 :'''Светлячок:''' Теперь мы вдвоём управляем братцем Хану?..

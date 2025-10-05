@@ -81,6 +81,8 @@ export class DefaultPropDialogue extends BaseMapDialogue {
 	dicon: keyof typeof DICON_MAP
 	prompt?: string
 	
+	pack_paths: string[]
+	
 	constructor(propData: InteractiveMapObject, public source: NPCInstance | PropInstance) {
 		super()
 		this.id = `${source.group.floor_id}_${source.group.id}_${source.id}`
@@ -90,6 +92,8 @@ export class DefaultPropDialogue extends BaseMapDialogue {
 
 		this.dicon = propData.InteractIconType!
 		this.prompt = textMap.getText(propData.InteractTitle)
+		
+		this.pack_paths = propData.Dialog?.PackList?.map(pack => pack.LevelGraph) ?? []
 	}
 }
 
@@ -109,7 +113,16 @@ export class NPCDialogueTree extends ActDialogueTree {
 		if (!actData) return
 		const tree = new this(data, actData)
 		tree.environment.applyData(env)
+
+		if (data instanceof DefaultPropDialogue && data.pack_paths.length > 0) {
+			for (const pack of data.pack_paths) {
+				if (!pack) continue
+				await tree.loadAct(pack)
+			}
+		}
+		
 		tree.root = await tree.processAct(actData)
+		
 		return tree
 	}
 }

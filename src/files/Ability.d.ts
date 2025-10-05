@@ -2,6 +2,12 @@ import { AttackType, Value } from '../Shared.ts'
 import { HashReference } from '../TextMap.ts'
 import { ItemReference } from './Item.js'
 
+export type AvatarSkillEffectType =
+	| "MazeAttack" | "SingleAttack" | "Enhance" | "Blast" | "AoEAttack"
+	| "Impair" | "Bounce" | "Support" | "Defence" | "Restore" | "Summon"
+
+export type AvatarSkillAttackType = "MazeNormal" | "Maze" | "Normal" | "BPSkill" | "Ultra" | "Servant" | "Talent" | "ServantTalent"
+
 export interface AvatarSkillData {
 	SkillID: number
 	SkillName: HashReference
@@ -11,7 +17,7 @@ export interface AvatarSkillData {
 	MaxLevel: number
 	SkillTriggerKey: string
 	SkillIcon: string
-	UltraSkillIcon: string
+	UltraSkillIcon?: string
 	LevelUpCostList?: unknown[]
 	SkillDesc: HashReference
 	RatedSkillTreeID?: number[]
@@ -23,6 +29,8 @@ export interface AvatarSkillData {
 	ShowHealList: Value<number>[]
 	InitCoolDown: number
 	CoolDown: number
+	SPBase?: Value<number>
+	SPNeed?: Value<number>
 	StanceDamageDisplay: number
 	SPMultipleRatio: Value<number>
 	BPNeed: Value<number>
@@ -30,16 +38,17 @@ export interface AvatarSkillData {
 	ParamList: Value<number>[]
 	SimpleParamList: Value<number>[]
 	StanceDamageType: AttackType
-	AttackType: string
-	SkillEffect: string
+	AttackType: AvatarSkillAttackType
+	SkillEffect: AvatarSkillEffectType
+	HideInUI?: boolean
 }
 
 export interface AvatarRankData {
 	RankID: number
 	Rank: number
 	Trigger: HashReference
-	Name: string
-	Desc: string
+	Name: HashReference
+	Desc: HashReference
 	ExtraEffectIDList: number[]
 	IconPath: string
 	SkillAddLevelList?: Record<string, number>

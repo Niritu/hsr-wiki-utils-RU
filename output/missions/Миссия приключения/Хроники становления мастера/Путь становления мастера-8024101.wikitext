@@ -169,6 +169,32 @@ PageTitle=#Путь становления мастера#
 :{{Диалог|Стрелка}} Детский сад какой-то...
 :'''Март 7:''' Хрюканья недостаточно! Тебе придётся принести извинения хозяйке «Неспящего графа». А ещё взять свои слова о фехтовальном искусстве Сяньчжоу назад!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G224"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
 {{Диалог Конец}}
 
 ===Поговорите с Мэнмин===
@@ -252,6 +278,23 @@ PageTitle=#Путь становления мастера#
 ::'''Март 7:''' Вот было бы здорово!
 ::'''Март 7:''' Ну вот и всё. (Первопроходец), не забывай приглядывать за мной во время обучения!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SwordTrainingCheckStoryLineFinished",
+	"StoryID": 1,
+	"OnFinished": [
+		{
+			"$type": "RPG.GameCore.ShowUI",
+			"Name": "Ui.ActivitySwordTraining.Entrance.SwordTrainingSelectStoryLinePage",
+			"OnUIEnter": []
+		}
+	],
+	"OnNotFinished": [
+		{
+			"$type": "RPG.GameCore.SwordTrainingEnterGame",
+			"StoryID": 1
+		}
+	]
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SwordTrainingCheckCanEnterGame",
 	"OnPermitted": [
@@ -284,14 +327,474 @@ PageTitle=#Путь становления мастера#
 		}
 	]
 }</pre>
+;(Unused &mdash; Trigger_802410124_random1)
+:'''Тренировочный манекен:''' Любую технику можно обойти, любой меч можно сломать, любого мечника можно победить.
+::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+::{{Диалог|Выход}} Мне хватит.
+:::'''Тренировочный манекен:''' Не опускайте руки.
+
+;(Unused &mdash; Trigger_802410124_random2)
+:'''Тренировочный манекен:''' Если воин относится к своему мечу как к богу, когда его клинок побеждает, сам он терпит поражение.
+::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+::{{Диалог|Выход}} Мне хватит.
+:::'''Тренировочный манекен:''' Не опускайте руки.
+
+;(Unused &mdash; Trigger_802410124_random3)
+:'''Тренировочный манекен:''' Главная черта первоклассного мастера меча - он никогда не забывает следить за собой.
+::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+::{{Диалог|Выход}} Мне хватит.
+:::'''Тренировочный манекен:''' Не опускайте руки.
+
+;(Unused &mdash; Trigger_802410124_random4)
+:'''Тренировочный манекен:''' Один боец может сражаться на протяжении трёх тысячи ли, а один меч может победить бессчётное число врагов.
+::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+::{{Диалог|Выход}} Мне хватит.
+:::'''Тренировочный манекен:''' Не опускайте руки.
+
+;(Unused &mdash; Trigger_802410124_random5)
+:'''Тренировочный манекен:''' Возьми же клинок и отсеки им хвост у звезды.
+::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+::{{Диалог|Выход}} Мне хватит.
+:::'''Тренировочный манекен:''' Не опускайте руки.
+
 ;(Unused &mdash; SWORD_TRAIN_SHOW_MENU)
 :'''Тренировочный манекен:''' Чтобы владеть мечом достаточно просто ума и трудолюбия, но для истинного мастерства нужен великий дух. Система тренировочных манекенов поможет отработать любую технику. Что вы планируете делать дальше?
-:<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+::{{Диалог|Журнал путешествий}} Я помогу Март 7 с тренировками.
+::<pre>{
+	"$type": "RPG.GameCore.SwordTrainingCheckStoryLineFinished",
+	"StoryID": 1,
+	"OnFinished": [
+		{
+			"$type": "RPG.GameCore.ShowUI",
+			"Name": "Ui.ActivitySwordTraining.Entrance.SwordTrainingSelectStoryLinePage",
+			"OnUIEnter": []
+		}
+	],
+	"OnNotFinished": [
+		{
+			"$type": "RPG.GameCore.SwordTrainingEnterGame",
+			"StoryID": 1
+		}
+	]
 }</pre>
+::{{Диалог|Разговор}} Ты так убедительно говоришь...
+:::'''Тренировочный манекен:''' Учеников нужно подбадривать, чтобы поддержать их страсть к обучению фехтованию, в чём мне очень помогает древнейший сборник «Сотня мудрых советов для обучения искусству меча».
+:::{{Диалог|Разговор}} Скажи и мне что-нибудь.
+:::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random1"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random2"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random3"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random4"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Trigger_802410124_random5"
+			}
+		}
+	],
+	"ContinuousNotRepeat": true
+}</pre>
+:::{{Диалог|Выход}} Мне хватит.
+::::'''Тренировочный манекен:''' Не опускайте руки.
+::{{Диалог|Выход}} Мне нужно отдохнуть. До встречи.
+:::'''Тренировочный манекен:''' Мы сегодня многому друг у друга научились. Мы ещё встретимся на этом пути, до встречи.
 
 ;(Unused &mdash; NOT_ALLOW_ENTER_GAME)
-:'''Тренировочный манекен:''' Говорят, вы отлично подготовились к бою на мечах, желаю вам, чтобы ваше лезвие всегда было острым и вы добились победы!
+:'''Тренировочный манекен:''' Говорят, вы отлично подготовились к бою на мечах, желаю вам не затупить клинка и вернуться с победой!
 
 {{Диалог Конец}}
 

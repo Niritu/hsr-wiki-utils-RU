@@ -37,9 +37,16 @@ PageTitle=#Матч! Рысь!#
 
 ;(Поговорите с Рысь)
 :'''Рысь:''' Ты ведь не станешь пытаться и меня в эту игру затащить?..
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu",
-	"DisplaySingleMenuItem": true
+;(If )
+:{{Диалог|undefined}} Устроим сетевой матч!
+::'''Рысь:''' Это обязательно? Ладно... Не пойму, чего вы все нашли в этой игре...
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherChallenge.AetherChallengePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "8"
+	}
 }</pre>
 :'''Рысь:''' Ладно, ты {{MC|ж=победила|м=победил}}.
 <pre>{

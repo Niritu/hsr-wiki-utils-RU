@@ -126,6 +126,32 @@ PageTitle=#Выставка фотографий: Церемония награ�
 :::Вы вспоминаете о Кафке, Блэйде, Серебряном Волке и Светлячке и пытаетесь дозвониться до них... Из телефона доносятся звуки непрекращающихся выстрелов и взрывов.
 :::{{tx}}
 ::;(Return to previous option selection)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "G381_TriggerPerformance_1"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "G381_TriggerPerformance_2"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; G381_TriggerPerformance_1)
 ----
@@ -211,6 +237,18 @@ PageTitle=#Выставка фотографий: Церемония награ�
 	"Param": {
 		"Value": "15"
 	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "101"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
 }</pre>
 {{Диалог Конец}}
 

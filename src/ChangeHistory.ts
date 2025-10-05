@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises';
 import config from '../config.json' with { "type": "json" };
 import { Dictionary, VERSION_LIST, Version } from './Shared.js';
 import { HashReference, SupportedLanguage, TextMap } from './TextMap.js';
+import { AvatarData } from './files/Character.js';
 import { InternalEquationData } from './files/Equation.js';
 import { HttpError, getFile } from './files/GameFile.js';
 import type { ItemConfig } from './files/Item.js';
@@ -131,6 +132,11 @@ export class ChangeHistory<FileContents extends object, SearchReturn, FindArg> {
 	static equation = new ChangeHistory(
 		'ExcelOutput/RogueTournFormula.json',
 		(equations: InternalEquationData[], equationId: number) => Object.values(equations).find(equation => equation.FormulaID == equationId)
+	)
+
+	static character = new ChangeHistory(
+		'ExcelOutput/AvatarConfig.json',
+		(characters: AvatarData[], characterId: number) => Object.values(characters).find(character => character.AvatarID == characterId && character.Release)
 	)
 	
 	static async getRenameHistory(textMapHash: HashReference | number | bigint | string) {

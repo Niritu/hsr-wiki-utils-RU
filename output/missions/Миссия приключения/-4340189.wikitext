@@ -64,6 +64,20 @@ PageTitle=##
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Да нет, не надо.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 434018903
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

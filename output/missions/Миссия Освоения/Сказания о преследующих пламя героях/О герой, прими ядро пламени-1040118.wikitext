@@ -10,7 +10,7 @@ PageTitle=#О герой, прими ядро пламени#
 |Событие         = 
 |Глава           = Сказания о преследующих пламя героях
 |Условия         = Завершена [[Миссия Освоения]] «[[Научный пир ведьмы]]»
-|Персонажи       = Аглая; Дань Хэн; Кастория; Мемо; Мидей; Первопроходец; Триннона
+|Персонажи       = Аглая; Голос прилива; Дань Хэн; Кастория; Мемо; Мидей; Первопроходец; Триннона; Эхо Ликурга
 |СтартЛокация    = [[Амфореус]] — [[Вечный священный город Охема]]
 |Мир             = Амфореус
 |Предыдущая      = Научный пир ведьмы
@@ -94,16 +94,67 @@ PageTitle=#О герой, прими ядро пламени#
 	"Value": 1
 }</pre>
 ::{{Диалог|Выход}} Уйти.
-;(Return to previous option selection)
-
-;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage)
-<pre>{
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 454050303
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 454050303
+				}
+			]
+		}
+	]
+}</pre>
+::В чаше начинает появляться рябь... бесконечно разбегаясь... Журчащая вода нашёптывает о наслаждении, о волнистых узорах прилива, которые, будто маленькие волны и это маленькое пространство, тоже стали бурлящим океаном...
+:::'''Голос прилива:''' {{Размер|36|Ах-х-х! Абсолютное блаженство! Это - верх блаженства!}}
+:::'''Голос прилива:''' Я так долго ждала этого блаженства! Спасибо тебе, {{MC|ж=дорогая|м=дорогой}}! Эта амброзия меня немного протрезвила... Твоё отражение столь прекрасно, что моё сердце поневоле начинает трепетать...
+:::{{Диалог|Стрелка}} Благодарю за комплимент.
+:::{{Диалог|Стрелка}} Да, я тоже считаю, что очень {{MC|ж=красива|м=красив}}.
+:::'''Голос прилива:''' Время... Сколько времени прошло? Ты быстро двигаешься, Оронис...
+:::'''Голос прилива:''' Это звёздное небо... Понятно. Значит, она ещё не сдалась... А ты - тоже {{MC|ж=дурочка|м=дурачок}}, что сидит на этом пиру...
+:::'''Голос прилива:''' Ну, тогда пляши от души... дай себе волю... трать своё время... Маленькая рыбёшка, что хочет приплыть в завтрашний день...
+:::'''Голос прилива:''' Когда твой пир подойдёт к концу... самое абсурдное, что ты увидишь, протрезвев - это цена пьянства...
+:::{{Диалог|Стрелка}} О чём ты вообще?
+:::{{Диалог|Стрелка}} Что ты вообще такое?
+:::{{Диалог|Стрелка}} Ты больше чуши говоришь будучи трезвой, нежели пьяной.
+:::'''Голос прилива:''' ...
+:::'''Голос прилива:''' Амброзия... Амброзия...
+:::Голос прилива вновь становится вялым, а фразы дробятся, словно волны о камни. Похоже, жажду этой чаши - ненасытного ценителя амброзии - невозможно утолить.
+::<pre>{
 	"$type": "RPG.GameCore.HideAllEntity",
 	"IsHide": true,
 	"HideNPC": true,
 	"NotHideEntity": []
 }</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.HideAllEntity",
 	"IsHide": true,
 	"HideNPC": true,
@@ -175,7 +226,7 @@ PageTitle=#О герой, прими ядро пламени#
 		}
 	]
 }</pre>
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
 	"WaitForExit": true,
@@ -189,6 +240,478 @@ PageTitle=#О герой, прими ядро пламени#
 		},
 		{
 			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+::;(If Миссия [[О герой, запой пеан воскресающей земли]] has been completed)
+:::;(If {{cx}}<!--performance 454050401 has been seen-->)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Голос прилива:''' {{MC|ж=Дорогая|м=Дорогой}}... Небесная амброзия... Налей немного... И я дам тебе подарок...
+:::::{{Диалог|Стрелка}} Всё нормально?
+::::::'''Голос прилива:''' Нет, мне скучно... Здесь так темно... и тесно... кошмар...
+:::::{{Диалог|Стрелка}} Проснись, ты посинела.
+::::::'''Голос прилива:''' Что? Посинела... Я море? Нет? Ха-ха... Тебя тоже... амброзия свалила... а?
+:::::'''Голос прилива:''' Не говори ничего, дорогуша... Амброзию мне принеси... Сокровища, реликвии... Всё, что хочешь, выбирай...
+:::::'''(Первопроходец):''' (Она не осознаёт, что реальность изменилась? Или же... просто пьяна?)
+::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::'''Эхо Ликурга:''' ...Раньше не наблюдалось случаев, в которых амброзия полностью изменяла бы у индивида восприятие внешней среды. Предположение: {{MC|ж=Безымянная|м=Безымянный}}, возможно, {{MC|ж=вступала|м=вступал}} в контакт с данной сущностью или {{MC|ж=оказала|м=оказал}} влияние на её когнитивные функции...
+:::::'''(Первопроходец):''' (Это... воспоминания Ликурга?)
+::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::'''Голос прилива:''' Амброзия... Принеси амброзию... У меня ещё столько сокровищ... Всё для тебя... дорогуша...
+:::::{{Диалог|Магазин}} Сегодня у меня для тебя кое-что особенное.
+::::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:::;(If {{cx}}<!--performance 454050401 has not been seen-->)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Голос прилива:''' Дорогуша... Ты мне амброзию {{MC|ж=принесла|м=принёс}}? Давай быстрее! Мне свежая нужна...
+:::::{{Диалог|Магазин}} Войти в Дары прилива.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Вслушаться в голоса созвездий.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Стрелка}} Поговорить с чашей.
+::::::'''Голос прилива:''' Поговорить... Я не могу... Пока не попью...
+::::::{{Диалог|Разговор}} Что ты такое?
+:::::::'''Голос прилива:''' Я... Что я такое?
+:::::::'''Голос прилива:''' Да, я пьяница, что не может протрезветь... Нет, я танцор, что резвится среди своих возлюбленных... Нет, я король, что поддаётся плотским желаниям...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''Эхо Ликурга:''' Это всё не противоречащая себе же бессмыслица. Предположение: всё сказанное - факты, которые действительно были верны в определённый момент времени...
+:::::::'''Эхо Ликурга:''' ...Как и ожидалось, приведённые выше определения указывают на модель златиуса с меткой «Океан» из {{Rubi|эксперимента №&nbsp;287|эра воскресающей земли №&nbsp;287}}, {{Rubi|эксперимента №&nbsp;8745|эра воскресающей земли №&nbsp;8745}} и {{Rubi|эксперимента №&nbsp;134962|эра воскресающей земли №&nbsp;134962}}. Предположение подтверждается.
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Поговори со мной про амброзию.
+:::::::'''Голос прилива:''' Амброзия... Небесная амброзия - самое лучшее, что есть на свете! Забродившая в теле земли... Настоянная на облаках небес... Он рассердился, хи-хи-хи...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''Эхо Ликурга:''' Может соединяться с нейронной сетью модели, вызывая в её когнитивно-решающих процессах аномальные шумы. Если воспользоваться известным понятием...
+:::::::'''Эхо Ликурга:''' Это логическое кодирование с симметричным захватом. Говоря проще - взаимная блокировка.
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Расскажи мне об этом месте.
+:::::::'''Голос прилива:''' Я тебе вот что скажу, дорогуша... Раньше здесь всё было по-другому... Рыбы... Танцы... Гуляки... резвились, плясали, резвились...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''Эхо Ликурга:''' Интересно. Если Безымянные узнают, что местоположение данного места находится прямо под Стиксией, как они повлияют на эксперимент?
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Выход}} Ладно, хватит болтать.
+:::::::'''Голос прилива:''' Дорогуша... Принеси мне амброзию... Поболтать или просто так... Я составлю тебе компанию...
+:::::::'''Голос прилива:''' В следующий раз... не забудь принести амброзии... Ещё...
+:::::{{Диалог|Выход}} Уйти.
+::::::'''Голос прилива:''' В следующий раз... не забудь принести амброзии... Ещё...
+::::<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage2"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+::;(If Миссия [[О герой, запой пеан воскресающей земли]] has not been completed)
+:::;(First interaction)
+:::::...
+:::::*Пш-ш*... *Пш-ш*... Ваших ушей снова достигают звуки волн...
+:::::Вы слышите тихий рокот волн, их бурные всплески, словно в этой маленькой чаше заключена бесконечная ширь океана. За рёвом волн слышен странный шёпот...
+::::<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		504045001
+	]
+}</pre>
+:::::'''Голос прилива:''' Пить... Как хочется пить...
+:::::Я слышу призраков. Почему воде хочется пить... Стоп, почему вода разговаривает?!
+:::::'''Голос прилива:''' {{MC|ж=Дорогая|м=Дорогой}}... Небесная амброзия... Налей немного... И я дам тебе подарок...
+:::::{{Диалог|Магазин}} Что за подарок? Я хочу посмотреть.
+::::::'''Голос прилива:''' Дорогуша... Принеси мне амброзию... Сокровища, святыни, {{MC|ж=красавцы|м=красавицы}}... Выбирай...
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Не обращать внимания. Вслушаться в голоса созвездий.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Выход}} Жуть, я ухожу.
+:::;(Subsequent interactions)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Голос прилива:''' Дорогуша... Ты {{MC|ж=принесла|м=принёс}} мне амброзию? Быстрее...
+:::::{{Диалог|Магазин}} Войти в Дары прилива.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Вслушаться в голоса созвездий.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Стрелка}} Поговорить с чашей.
+::::::'''Голос прилива:''' Поговорить... Я не могу... Пока не попью...
+::::::{{Диалог|Разговор}} Что ты такое?
+:::::::'''Голос прилива:''' Я... Что я такое?
+:::::::'''Голос прилива:''' Да, я пьяница, что не может протрезветь... Нет, я - танцор, что резвится среди своих возлюбленных... Нет, я - король, что поддаётся плотским желаниям...
+:::::::'''Голос прилива:''' Нет-нет-нет... Я - рыба в воде. Большая рыба... Большая, огромная... Столько амброзии, вкусной амброзии, которую выпила рыба... Больше не пей... Моя... Она вся моя, я хочу её...
+:::::::'''Голос прилива:''' Я хочу... Я хочу отправиться на пиршество в пасти огромной рыбы... в... море! Да, море! Море в бокале пьяницы. Тиран на пиршестве, опьянённый кораллами. Танцоры, целующиеся с каменистыми рифами!
+:::::::'''Голос прилива:''' Хи-хи... Ха-ха... Ха-ха-ха... Я хочу амброзии... Налей её до краёв в бокал для вина...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Поговори со мной про амброзию.
+:::::::'''Голос прилива:''' Амброзия... Небесная амброзия - самое лучшее что есть на свете! Забродившая в теле земли... Настоянная на облаках небес... Он рассердился, хи-хи-хи...
+:::::::'''Голос прилива:''' Подожди... Подожди... Это не твоё! Это моё! Целиком и полностью!
+:::::::'''Голос прилива:''' Верни её... мне... Я же поделилась ею с тобой... Эгоисты-смертные, которые не знают взаимности... очень...
+:::::::'''Голос прилива:''' Очень... Хи, хи-хи-хи... Очень очаровательны... Я вас всех люблю. Давайте же все выпьем...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Расскажи мне об этом месте.
+:::::::'''Голос прилива:''' Да бесполезное место. Ни тебе пирушек, ни музыки, ни амброзии... Темнота - хоть глаз выколи... Маленькое такое, узкое... Такое неприятное...
+:::::::'''Голос прилива:''' Но я тебе вот что скажу, дорогуша... Раньше здесь всё было по-другому... Рыбы... Танцы... Пьяницы... резвились, плясали, резвились...
+:::::::'''Голос прилива:''' Весело, шумно, с амброзией... Амброзия... Я хочу амброзии...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Выход}} Пока закончим на этом.
+:::::::'''Голос прилива:''' Дорогуша... Принеси мне амброзию... Поболтать или просто так... Я составлю тебе компанию...
+:::::{{Диалог|Выход}} Уйти.
+:::<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
 		}
 	]
 }</pre>
@@ -326,7 +849,7 @@ PageTitle=#О герой, прими ядро пламени#
 }</pre>
 
 ;(Unused &mdash; TriggerKrater_Levelup)
-;(If {{cx}}<!--not during performance 504045001-->)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
 :<pre>{
 	"$type": "RPG.GameCore.RandomConfig",
 	"OddsList": [
@@ -376,7 +899,7 @@ PageTitle=#О герой, прими ядро пламени#
 }</pre>
 
 ;(Unused &mdash; TriggerKrater_Put)
-;(If {{cx}}<!--not during performance 504045001-->)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
 :<pre>{
 	"$type": "RPG.GameCore.RandomConfig",
 	"OddsList": [
@@ -426,7 +949,7 @@ PageTitle=#О герой, прими ядро пламени#
 }</pre>
 
 ;(Unused &mdash; TriggerKrater_Out)
-;(If {{cx}}<!--not during performance 504045001-->)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
 :<pre>{
 	"$type": "RPG.GameCore.RandomConfig",
 	"OddsList": [
@@ -461,105 +984,6 @@ PageTitle=#О герой, прими ядро пламени#
 		"$type": "RPG.GameCore.TargetAlias",
 		"Alias": "Caster"
 	}
-}</pre>
-
-;(Unused &mdash; Ui.KraterSubmit.WorldShop.KraterWorldShopPage2)
-<pre>{
-	"$type": "RPG.GameCore.HideAllEntity",
-	"IsHide": true,
-	"HideNPC": true,
-	"NotHideEntity": []
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideAllEntity",
-	"IsHide": true,
-	"HideNPC": true,
-	"HideProp": true,
-	"NotHideEntity": [
-		{
-			"GroupID": 22,
-			"GroupNpcID": 300001
-		},
-		{
-			"GroupID": 22,
-			"GroupNpcID": 300002
-		},
-		{
-			"GroupID": 22,
-			"GroupNpcID": 300003
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300001
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300002
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300003
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300004
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300005
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300006
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300007
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300008
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300009
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300010
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300011
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300012
-		},
-		{
-			"GroupID": 9,
-			"GroupNpcID": 300013
-		}
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.ShowUI",
-	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
-	"WaitForExit": true,
-	"Param": {
-		"Value": "2"
-	},
-	"OnUIExitImmediately": [
-		{
-			"$type": "RPG.GameCore.HideAllEntity",
-			"HideNPC": true,
-			"HideProp": true,
-			"NotHideEntity": []
-		},
-		{
-			"$type": "RPG.GameCore.EndDialogueEntityInteract"
-		}
-	]
 }</pre>
 {{Диалог Конец}}
 
@@ -656,6 +1080,8 @@ PageTitle=#О герой, прими ядро пламени#
 :'''Мидей:''' Так ты хочешь награду? Это не проблема.
 :'''Мидей:''' Жители Кремноса почитают силу и военную мощь, но это не значит, что этикет нам чужд.
 :'''Дань Хэн:''' Мидей, что ты имел ввиду, когда сказал, что «волновался»?
+:{{tx}}
+----
 :{{tx}}
 {{Диалог Конец}}
 

@@ -108,7 +108,8 @@ PageTitle=#Восстановление воспоминаний#
 	]
 }</pre>
 ::{{Диалог|Выход}} Уйти.
-;(Return to previous option selection)
+:'''Аста:''' Кстати, я слышала об инциденте, о котором говорит ■■■, с этим я тоже разберусь. Я найду способ решить проблему космической станции.
+::'''(Первопроходец):''' (Значит, я {{MC|ж=консультировалась|м=консультировался}} с кем-то ещё, кроме Хинкель. Единственное, что я помню, это то, что этот человек из {{Цвет|Ключевой|nobold=1|Отдела откровений}}.)
 ;(Unused &mdash; 200090209_Wrong)
 :(Используемая Бездна памяти не может восстановить размытые воспоминания. Попробуйте другие Бездны памяти.)
 :<pre>{
@@ -359,6 +360,7 @@ PageTitle=#Восстановление воспоминаний#
 ::'''Эстер:''' Я не молодею, и зрение меня уже подводит. Ты не могла бы?..
 ::'''Эмили:''' Опять? Который раз уже?! Это уже начинает немного раздражать...
 ::{{Диалог|Стрелка}} Простите, что прерываю вас...
+::<!--0.7-second delay-->
 ::'''Эстер:''' О, ещё одна юная светлая голова! Отлично - чем больше молодёжи, тем лучше.
 ::'''Эмили:''' Что, Аста сказала тебе найти меня? Живая, но бестелесная диковина... Разве в Отделе экологии не полно специалистов по диковинам? К Отделу откровений это не имеет никакого отношения.
 ::'''Эмили:''' Однако я слышала о таком виде. Коллега, вернувшийся из командировки, рассказал, что такие формы жизни есть в Альянсе Сяньчжоу.
@@ -577,6 +579,8 @@ PageTitle=#Восстановление воспоминаний#
 ::{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Энергетическая форма жизни}}?
 ::'''Герта:''' Дело даже не в самой диковине. Я бы не беспокоилась о ней, если бы она не имела отношения к {{Цвет|Ключевой|nobold=1|Обществу гениев}}.
 ::'''Герта:''' В любом случае хорошего рабочего дня. Мне нужно ненадолго выйти. Если хочешь, чтобы тебе кто-то помог, попроси об этом Асту.
+::'''Герта:''' Дело даже не в самой диковине. Я бы не беспокоилась о ней, если бы она не имела отношения к {{Цвет|Ключевой|nobold=1|Обществу гениев}}.
+::'''Герта:''' В любом случае хорошего рабочего дня. Мне нужно ненадолго выйти. Если хочешь, чтобы тебе кто-то помог, попроси об этом Асту.
 :<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 80,
@@ -785,6 +789,11 @@ PageTitle=#Восстановление воспоминаний#
 :{{Диалог|Стрелка}} Что-то не так?
 :'''Арлан:''' ...Поговорим по дороге.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 77,
+	"Value": "2"
+}</pre>
 {{Диалог Конец}}
 
 ===Навестите Адлера===
@@ -882,6 +891,45 @@ PageTitle=#Восстановление воспоминаний#
 :'''Арлан:''' Я знал, что ты придёшь ко мне в поисках правды...
 ::'''Арлан:''' Прости. Ситуация слишком деликатная. Я могу сказать только то, что это секретная миссия.
 ::{{Диалог|Стрелка}} О ■■■■■■?
+::'''(Первопроходец):''' (Действительно, я вспоминаю, что Арлан сказал что-то ещё... О той вещи, которую я не помню...)
+::Использование Бездны памяти поможет восстановить размытые воспоминания.
+::{{Диалог|Стрелка}} Использовать Бездну памяти.
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090238_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090238_Clear"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090238_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Уйти.
 ::'''Арлан:''' Откуда ты знаешь?!
 ::'''(Первопроходец):''' (Действительно, я вспоминаю, что Арлан сказал что-то ещё... О той вещи, которую я не помню...)
 ;(Unused &mdash; 200090238_Wrong)
@@ -911,9 +959,9 @@ PageTitle=#Восстановление воспоминаний#
 ::'''(Первопроходец):''' (Кажется, я что-то упускаю. Нужно сосредоточиться.)
 ;(Otherwise)
 ::'''(Первопроходец):''' (Нужно начать с начала... С разговора с Гертой...)
-
-;(Unused &mdash; 2000902_Three_GoOne)
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -940,9 +988,38 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
-
-;(Unused &mdash; 2000902_Three_GoTwo)
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Хлопоты Асты».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -969,6 +1046,37 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Хлопоты Асты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+:{{Диалог|Выход}} Остаться в текущем воспоминании.
+
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -1025,9 +1133,9 @@ PageTitle=#Восстановление воспоминаний#
 ::'''(Первопроходец):''' (Похоже, что форма жизни с Сяньчжоу, упомянутая Эмили, вдохновила Адлера.)
 ;(Otherwise)
 ::'''(Первопроходец):''' (Нужно начать с начала... С разговора с Гертой...)
-
-;(Unused &mdash; 2000902_One_GoTwo)
-<pre>{
+;(If )
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Хлопоты Асты».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -1054,9 +1162,67 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
-
-;(Unused &mdash; 2000902_One_GoThree)
-<pre>{
+;(If )
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Хлопоты Асты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If )
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Хлопоты Асты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -1083,6 +1249,38 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Остаться в текущем воспоминании.
+
 
 :{{Диалог|Разговор}} Слушать
 :'''Эстер:''' Ох, до чего очаровательная смышлёная девочка.
@@ -1121,9 +1319,9 @@ PageTitle=#Восстановление воспоминаний#
 ::'''(Первопроходец):''' (Похоже, что форма жизни с Сяньчжоу, упомянутая Эмили, вдохновила Адлера.)
 ;(Otherwise)
 ::'''(Первопроходец):''' (Нужно начать с начала... С разговора с Гертой...)
-
-;(Unused &mdash; 2000902_Two_GoOne)
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|undefined}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -1150,9 +1348,38 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
-
-;(Unused &mdash; 2000902_Two_GoThree)
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
 	"$type": "RPG.GameCore.PropReqInteract",
 	"TargetType": {
 		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
@@ -1179,6 +1406,38 @@ PageTitle=#Восстановление воспоминаний#
 		}
 	}
 }</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Остаться в текущем воспоминании.
+
 
 :{{Диалог|Разговор}} Войти в связанное воспоминание
 ;(If {{cx}}<!--SubMission not Finish: 200090204-->)
@@ -1193,6 +1452,124 @@ PageTitle=#Восстановление воспоминаний#
 ::'''(Первопроходец):''' (Похоже, что форма жизни с Сяньчжоу, упомянутая Эмили, вдохновила Адлера.)
 ;(Otherwise)
 ::'''(Первопроходец):''' (Нужно начать с начала... С разговора с Гертой...)
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|undefined}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Поручение Герты».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Исследовать связанное воспоминание «Расследование Арлана».
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Остаться в текущем воспоминании.
 
 ;(Unused &mdash; 2000902_Two_GoOne)
 <pre>{

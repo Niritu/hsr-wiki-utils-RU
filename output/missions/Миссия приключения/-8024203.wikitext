@@ -17,7 +17,7 @@ PageTitle=##
 |Следующая       = 
 |Награды         = 
 }}
-'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба - это чудо]].
+'''''' — Событие [[Миссия приключения]] из события [[Освоение: Дружба — это чудо]].
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -59,6 +59,16 @@ PageTitle=##
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
 	"ExtendTime": 1
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Main.ActivitySummonMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 802420301
+		}
+	]
+}</pre>
 
 
 ;(Unused &mdash; EnterDistrict_G88)
@@ -91,6 +101,66 @@ PageTitle=##
 :<pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
 	"ExtendTime": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20101_F20101001_G88"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "8024203_Junk",
+		"AreaName": {
+			"Value": "LevelArea_P20101_F20101001_G89"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false,
+		"ResetTurnInPlace": true
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_W3_Junk_00/Eff_Monster_W3_Junk_00_Paster04.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivitySummon.Entrance.ActivitySummonEntrancePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
 }</pre>
 
 :{{Диалог|Журнал путешествий}} Воссоздать «чудо дружбы»

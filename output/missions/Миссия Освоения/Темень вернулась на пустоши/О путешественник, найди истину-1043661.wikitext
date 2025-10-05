@@ -1,0 +1,233 @@
+<%-- [PAGE_INFO]
+PageTitle=#О путешественник, найди истину#
+[END_PAGE_INFO] --%>
+{{Дополнить|Диалоги.}}
+{{Миссия Инфобокс
+|id              = 1043661
+|Название        = 
+|Изображение     = Миссия О путешественник, найди истину.png
+|Тип             = Миссия Освоения
+|Событие         = 
+|Глава           = Темень вернулась на пустоши
+|Условия         = 
+|Персонажи       = Далёкий мужской голос; Первопроходец
+|СтартЛокация    = [[Звёздный экспресс]] — [[Вагон для вечеринок]]
+|Мир             = Звёздный экспресс
+|Предыдущая      = 
+|Следующая       = О хранитель памяти, вернись по течению судьбы
+|Награды         = Опыт Освоения*400; Звёздный нефрит*50; Путеводитель путешественника*4; Утраченный кристалл*4; Беспорядочная амброзия*160; Кредиты*50 000
+}}
+'''О путешественник, найди истину''' — [[Миссия Освоения]] в главе [[Темень вернулась на пустоши]].
+
+==Описание==
+{{Описание|<!--официальное описание из Перекрёстка судеб-->}}
+
+==Этапы==
+# Вернитесь в свою комнату и дождитесь отправления экспресса?
+# Изучите странную картину
+# Отправляйтесь в вестибюль и выясните, что происходит
+# Посмотрите записи о посетителях
+# Ответьте на звонок
+# Изучите сообщение на фонографе
+# Сразитесь с медузой Темени
+# Сбегите вместе с Киреной
+# Поговорите с Киреной
+# Исследуйте собственные воспоминания до пробуждения
+# Сбегите вместе с Воскресеньем
+
+==Прохождение==
+{{Дополнить}}
+===Вернитесь в свою комнату и дождитесь отправления экспресса?===
+{{Описание миссии|тип=Миссия Освоения|локация=Вагон для вечеринок|Церемония наступления эры воскресающей земли прошла успешно, и путешествие по Амфореусу подошло к концу... Почему же вы ничего не помните? Неужели вам пришлось заплатить воспоминаниями?..<br />Скоро начнётся собрание по навигации. Если вы правда всё забыли, экипаж напомнит вам.<br />Кстати, кто разместил в вашей комнате эту безвкусную картину?}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366100.json'-->)
+:'''Далёкий мужской голос:''' «Тихо. Кажется, я {{MC|ж=её|м=его}} нашёл».
+:'''(Первопроходец):''' ...Кто здесь?
+{{Диалог Конец}}
+
+===Изучите странную картину===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366101.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SetLoadingStratageType",
+			"StratageType": "WhiteBackground"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Отправляйтесь в вестибюль и выясните, что происходит===
+{{Описание миссии|тип=Миссия Освоения|локация=Отель «Грёзы» (реальность)|Церемония наступления эры воскресающей земли прошла успешно, и путешествие по Амфореусу подошло к концу... Почему же вы ничего не помните? Неужели вам пришлось заплатить воспоминаниями?..<br />Это что, Пенакония? Может, вы так и не очнулись от сна Эны?}}
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366102.json'-->)
+:'''(Первопроходец):''' (Да что здесь происходит?..)
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366103.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40462_F40462002_G49"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:'''(Первопроходец):''' (Март 7, ты со мной в прятки играешь?)
+
+;(Поговорите с Химеко)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Config\Level\Mission\1043661\Act\Act104366105.json'-->)
+
+;(Поговорите с Дань Хэн)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Config\Level\Mission\1043661\Act\Act104366104.json'-->)
+
+;(Поговорите с Вельт Янг)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Config\Level\Mission\1043661\Act\Act104366106.json'-->)
+{{Диалог Конец}}
+
+===Посмотрите записи о посетителях===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366107.json'-->)
+{{Диалог Конец}}
+
+===Ответьте на звонок===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366108.json'-->)
+{{Диалог Конец}}
+
+===Изучите сообщение на фонографе===
+{{Диалог Начало}}
+
+:{{Диалог|Изучение}} Осмотреть
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366109.json'-->)
+{{Диалог Конец}}
+
+===Сразитесь с медузой Темени===
+{{Диалог Начало}}
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366110.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366111.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40462_F40462002_G54"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Сбегите вместе с Киреной===
+{{Описание миссии|тип=Миссия Освоения|локация=Отель «Грёзы» (реальность)|Церемония наступления эры воскресающей земли прошла успешно, и путешествие по Амфореусу подошло к концу... Но это не так!<br />Это иллюзия, созданная из ваших воспоминаний. Сбегите вместе с Киреной в другие воспоминания.<br />Воскресенье использует свои силы, чтобы проникнуть в ваши грёзы и спасти вас... Кто бы мог подумать, что настанет такой день.}}
+{{Диалог Начало}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366112.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SetLoadingStratageType",
+			"StratageType": "WhiteBackground"
+		}
+	]
+}</pre>
+
+{{Диалог Конец}}
+
+===Поговорите с Киреной===
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366114.json'-->)
+{{Диалог Конец}}
+
+===Исследуйте собственные воспоминания до пробуждения===
+{{Диалог Начало}}
+
+;(Поговорите с Кирена)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Config\Level\Mission\1043661\Act\Act104366116.json'-->)
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Mission\1043661\Story104366113.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366117.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SetLoadingStratageType",
+			"StratageType": "WhiteBackground"
+		}
+	]
+}</pre>
+{{Диалог Конец}}
+
+===Сбегите вместе с Воскресеньем===
+{{Диалог Начало}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Discussion\Mission\1043661\DS104366118.json'-->)
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Story\Mission\1043661\Story104366115.json'-->)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.6\Config\Level\Mission\1043661\Act\Act104366120.json'-->)
+{{Диалог Конец}}
+
+==На других языках==
+{{На других языках
+|en   = Traveler, Find Truth Beyond the Illusion
+|zhs  = 旅者啊，徘徊中忘却失真
+|zht  = 旅者啊，徘徊中忘卻失真
+|ja   = 旅人よ、迷い忘れよ真実を
+|ko   = 여행자여, 방황하다 진실을 잊어라
+|es   = Viajer{{MC|ж=a|м=o}}, encuentra la verdad en la ilusión
+|fr   = {{MC|ж=Exploratrice|м=Explorateur}}, découvre la vérité au-delà de l'illusion
+|ru   = О путешественник, найди истину
+|th   = นักเดินทางเอ๋ย จงลืมสิ่งบิดเบือนในเวียนวน
+|vi   = Hỡi lữ khách, trong bước chân lạc lối đã quên đi sự thật
+|de   = O Reisender, finde die Wahrheit jenseits der Illusion
+|id   = Pengembara, Melupakan Kebenaran dalam Bimbang
+|pt   = Viajante, Encontre a Verdade Além da Ilusão
+}}
+
+==История изменений==
+{{История изменений|3.6}}
+
+==Навигация==
+{{Миссия Освоения Навбокс|Глава }}
+
+[[en:]]

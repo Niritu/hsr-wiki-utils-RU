@@ -84,6 +84,33 @@ PageTitle=#Аншлаг#
 ::{{Диалог|Выход}} Нет уж, есть дела и поважнее.
 :::'''Чжаося:''' Хорошо, когда закончите, найдите меня! Всё равно других гостей пока нет...
 :::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomBool",
+					"Name": {
+						"Value": "FCV_MiniGameOpen"
+					},
+					"Value": {
+						"Value": true
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802520101
+				}
+			]
+		}
+	]
+}</pre>
 
 {{Диалог Конец}}
 

@@ -52,6 +52,53 @@ PageTitle=#Чистая совесть и сломанная клетка#
 :'''Фэйсяо:''' Сразу к делу. Мне нравится.
 :'''Фэйсяо:''' Судя по докладу генерала Цзин Юаня, в бедствии Древа амброзии повинен {{Rubi|Легион Разрушения|Легион Антиматерии}}, и всем генералам-арбитрам нужно следить за перемещениями Творителя Руин.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ConvinceInitialize",
+	"BaseAnchor": "ConvinceBase",
+	"LeftActorUniqueName": "Feixiao_00_C00",
+	"RightActorUniqueName": "PlayerBoy_00_C00",
+	"LeftAnchorDataKey": "Male",
+	"RightAnchorDataKey": "Player",
+	"LeftBgTexture": "Gameplays/ConvinceGameplay/Textures/ConvinceBackground_002.jpg",
+	"RightBgTexture": "Gameplays/ConvinceGameplay/Textures/ConvinceBackground_003.jpg",
+	"LeftTextNameList": [
+		{
+			"Hash": 11246227673350346627
+		}
+	],
+	"TurnNum": 3,
+	"SkillTypes": [
+		"DoubleEffect",
+		"SkipCurrent",
+		"Rollback"
+	],
+	"SkillUseNum": 2,
+	"ConvinceGameplayNPCID": 2
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ConvinceShowToast",
+	"ShowHint": true,
+	"HintText": {
+		"Hash": 7435375091965282364
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ConvinceMoveTurn"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10202_F10202003_G32"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
 ;(Unused &mdash; TalkSentence_222130206)
 :'''(Первопроходец):''' Многие миры, не только Лофу, страдают от коррозии Стелларона. Например, Ярило-VI - мир, на котором экспресс остановился до Лофу - тоже был одним из них.
 ::{{tx}}
@@ -224,7 +271,7 @@ PageTitle=#Чистая совесть и сломанная клетка#
 :{{tx}}
 
 ;(Поговорите с Фэйсяо)
-;(If {{cx}}<!--during performance 202210311-->)
+;(First interaction)
 ::Фэйсяо оглядела вас, но вам кажется, хоть на то и нет причин, будто она рассматривает вас как противника.
 ::'''Фэйсяо:''' Ты правда веришь в пророчество Охотников за Стелларонами?
 ::{{Диалог|Стрелка}} Да.
@@ -241,7 +288,7 @@ PageTitle=#Чистая совесть и сломанная клетка#
 ::{{Диалог|Стрелка}} На что вы смотрите?
 :::'''Фэйсяо:''' Ты и правда {{MC|ж=необычная|м=необычный}}, как Хуайянь и говорил.
 :::'''Фэйсяо:''' Надеюсь, мы вместе пройдём по Небесной Дуге как друзья.
-;(If {{cx}}<!--not during performance 202210311-->)
+;(Subsequent interactions)
 ::'''Фэйсяо:''' Ты и правда {{MC|ж=необычная|м=необычный}}, как Хуайянь и говорил.
 ::'''Фэйсяо:''' Надеюсь, мы вместе пройдём по Небесной Дуге как друзья.
 
@@ -255,6 +302,20 @@ PageTitle=#Чистая совесть и сломанная клетка#
 	"Value": 1
 }</pre>
 :{{Диалог|Выход}} Можно мне ещё минутку?
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 202210312
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Хуайянь)
 :'''Хуайянь:''' Ну, я рад, что мы смогли всё обговорить.

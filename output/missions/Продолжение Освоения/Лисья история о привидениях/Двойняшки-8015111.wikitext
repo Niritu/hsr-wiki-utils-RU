@@ -156,7 +156,8 @@ PageTitle=#Двойняшки#
 :'''Байлу:''' Я просто хочу повеселиться!
 
 ;(Unused &mdash; BailuChase_CheckGameClear)
-<pre>{
+:;(If {{F|AnswerID2}} is undefined 1, {{F|AnswerID3}} is undefined 1, and {{F|AnswerID5}} is undefined 1)
+::<pre>{
 	"$type": "RPG.GameCore.SetFloorCustomBool",
 	"Name": {
 		"Value": "BailuChase_GameClear"
@@ -164,6 +165,14 @@ PageTitle=#Двойняшки#
 	"Value": {
 		"Value": true
 	}
+}</pre>
+:;(If {{F|AnswerID2}} is not undefined 1, {{F|AnswerID3}} is not undefined 1, and {{F|AnswerID5}} is not undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomBool",
+	"Name": {
+		"Value": "BailuChase_GameClear"
+	},
+	"Value": {}
 }</pre>
 
 ;(Unused &mdash; BailuChase_ShowHint)
@@ -240,6 +249,8 @@ PageTitle=#Двойняшки#
 :'''Хохо:''' Осторожно! Не давай собой манипулировать.
 :'''Гуйнайфэнь:''' Фух, конечно, они пришли прямиком в нашу ловушку.
 :{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Призрачная стражница*2/+80% НР; Зачарованное изобретение: светящаяся рыба-дракон*2/+80% НР}}
 
 ;(Поговорите с Хохо)
 :'''Хохо:''' Тыква лунного ларца на месте. Если мы сможем загнать сюда госпожу Байлу, у нас получится её поймать...

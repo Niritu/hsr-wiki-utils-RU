@@ -1,23 +1,24 @@
 import { getFile } from '../files/GameFile.js';
 import { Act, InternalDialogTask } from '../files/graph/Dialog.js';
 import { Dictionary } from '../Shared.js';
-import { AbstractDialogueTree, DialogueNode, TranscriptionNote } from '../util/AbstractDialogueTree.js';
+import { AbstractDialogueTree, DialogueNode, NODE, TranscriptionNote } from '../util/AbstractDialogueTree.js';
 import { BaseDialogueTask, BaseDialogueTaskEntry, TalkSentenceTaskEntry, UnknownTask } from './DialogueBase.js';
 import { GraphEnvironment } from './Environment.js';
 import { BattleTask } from './tasks/Battle.js';
 import { CustomStringListen, CustomStringTrigger, FinishLevelGraph, GroupEventListen } from './tasks/CustomString.js';
 import { MaterialSubmissionEventTask, ShowMenuScreenTask } from './tasks/Menu.js';
 import { WaitTask } from './tasks/Misc.js';
+import { AddMenuItemTask, ShowMenuTask } from './tasks/NPCMenu.js';
 import { DialogueEventListenerTask, RogueOptionTalkTask, RogueTalkTask } from './tasks/Occurrence.js';
 import { EndPerformance, FinishPerformanceTask, TransitionTask, TriggerPerformance } from './tasks/Performance.js';
-import { PredicateTask, SwitchTask } from './tasks/Predicate.js';
-import { OptionTalkTask, SimpleTalkTask } from './tasks/SimpleDialogue.js';
+import { PredicateOutcome, PredicateTask, SwitchTask } from './tasks/Predicate.js';
+import { OptionTalkTask, PlayMultiVoiceTask, SimpleTalkTask } from './tasks/SimpleDialogue.js';
 import { TimelineTask } from './tasks/Timeline.js';
 import { CustomTaskTrigger, PropTrigger } from './tasks/TriggerTask.js';
 import { VideoTask } from './tasks/Video.js';
 
 export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask | DialogueTaskEntry> {
-	custom_string_results: Dictionary<DialogueNode<DialogueTask | DialogueTaskEntry>> = {}
+	custom_string_results: Dictionary<DialogueNode<DialogueTask | DialogueTaskEntry>[]> = {}
 	custom_string_waiting: Dictionary<DialogueNode<DialogueTask | DialogueTaskEntry>[]> = {}
 	custom_string_triggered: Dictionary<boolean> = {}
 	other_triggered: [DialogueNode<DialogueTask | DialogueTaskEntry>, DialogueNode<DialogueTask | DialogueTaskEntry>][] = []
@@ -33,7 +34,7 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 		let currentNode = prev
 		let firstNode: DialogueNode<DialogueTask | DialogueTaskEntry> | undefined = undefined
 		
-		const hasTrigger: DialogueNode<CustomStringListen | GroupEventListen>[] = []
+		const hasTrigger: DialogueNode<DialogueTask | DialogueTaskEntry>[] = []
 
 		for (const item of items) {
 			if (!item) continue
@@ -47,10 +48,12 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 			}
 			if (prevNode && !(isParent && !firstNode)) prevNode.next = currentNode
 			
+			item[NODE] = currentNode
+			
 			const looped = this.checkLoop(item, currentNode)
 			if (looped) {
 				const noteNode = {
-					item: new TranscriptionNote('custom-string-loop', looped.children?.length ? 'Return to previous option selection' : (process.argv.includes('--add-triggers') ? '<!--Return to previous option selection (makeNodesFromList)-->' : undefined)),
+					item: new TranscriptionNote('custom-string-loop', looped.children?.length ? ('Return to previous option selection' + (process.argv.includes('--add-triggers') ? '(makeNodesFromList)' : '')) : (process.argv.includes('--add-triggers') ? '<!--Return to previous option selection (makeNodesFromList)-->' : undefined)),
 					prev: (isParent && !firstNode) ? undefined : prevNode,
 					parent: (isParent && !firstNode) ? prev : undefined,
 				}
@@ -61,12 +64,12 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 
 			firstNode ??= currentNode
 
-			if (item instanceof CustomStringListen || item instanceof GroupEventListen) {
-				hasTrigger.push(currentNode as DialogueNode<CustomStringListen | CustomStringListen>)
+			if ('custom_string' in currentNode.item && currentNode.item.custom_string) {
+				hasTrigger.push(currentNode)
 			}
 			if (item instanceof BaseDialogueTask) {
 				if (item.branches?.length) {
-					if (item.branches.length > 1) {
+					if (item.branches.length > 1 || 'force_branches' in item) {
 						currentNode.children = []
 						for (const branch of item.branches) {
 							currentNode.children.push(await this.makeNodesFromList([branch], currentNode, true, true))
@@ -123,24 +126,35 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 		
 		if (this.inverseFind(onNode, n => (n.item instanceof CustomStringListen || n.item instanceof GroupEventListen) && n.item.custom_string == customString)) {
 			const noteNode = {
-				item: new TranscriptionNote('custom-string-loop', 'Return to previous option selection'),
+				item: new TranscriptionNote('custom-string-loop', 'Return to previous option selection' + (process.argv.includes('--add-triggers') ? ' (triggerCS)' : '')),
 				prev: onNode
 			}
 			onNode.next = noteNode
 			return
 		}
 		
-		if (this.custom_string_results[customString]) {
-			const node = this.cloneCheckString(this.custom_string_results[customString], onNode)
-			const oldNext = onNode.next
-			
-			onNode.next = node
-			node.prev = onNode
-			
-			if (oldNext && oldNext != this.custom_string_results[customString]) {
-				const cloneEnd = this.getEndOf(node)
-				cloneEnd.next = oldNext
-				oldNext.prev = cloneEnd
+		if (this.custom_string_results[customString]?.length) {
+			for (const result of this.custom_string_results[customString]) {
+				const node = this.cloneCheckString(result, onNode)
+				if (customString == 'custom/npc_menu') {
+					onNode.children ??= []
+					onNode.children.push(node)
+					node.parent = onNode
+					node.prev = undefined
+				} else {
+					const oldNext = onNode.next
+
+					onNode.next = node
+					node.prev = onNode
+
+					if (oldNext && oldNext != result) {
+						const cloneEnd = this.getEndOf(node)
+						cloneEnd.next = oldNext
+						oldNext.prev = cloneEnd
+					}
+
+					onNode = node
+				}
 			}
 		} else {
 			this.custom_string_waiting[customString] ??= []
@@ -149,14 +163,13 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 	}
 	
 	async registerCS(customString: string, node: DialogueNode<DialogueTask | DialogueTaskEntry>): Promise<void> {
-		if (this.custom_string_results[customString]) {
-			if (this.custom_string_results[customString] != node) {
-				console.warn(`Listener for Custom String ${customString} registered twice!`)
-			}
+		if (this.custom_string_results[customString]?.includes(node)) {
+			console.warn(`Identical listener for Custom String ${customString} registered!`)
 			return
-		}
+		}		
 		
-		this.custom_string_results[customString] = node
+		this.custom_string_results[customString] ??= []
+		this.custom_string_results[customString].push(node)
 		
 		if (this.custom_string_waiting[customString]) {
 			const waiting = this.custom_string_waiting[customString]
@@ -255,10 +268,14 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 	
 	async unusedWikitext(): Promise<string[]> {
 		const out: string[] = []
-		for (const [customString, node] of Object.entries(this.custom_string_results)) {
+		for (const [customString, nodes] of Object.entries(this.custom_string_results)) {
 			if (this.custom_string_triggered[customString]) continue
-			this.optimize([node])
-			out.push(`;(Unused &mdash; ${customString})\n` + await this.wikitextFrom(node, 1))
+			this.optimize(nodes)
+			const thisString: string[] = []
+			for (const node of nodes) {
+				thisString.push(await this.wikitextFrom(node, 1))
+			}
+			out.push(`;(Unused &mdash; ${customString})\n` + thisString.filter(s => Boolean(s.trim())).join('\n\n'))
 		}
 		return out
 	}
@@ -315,7 +332,7 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 	cloneCheckString<N extends DialogueTask | DialogueTaskEntry | TranscriptionNote>(node: DialogueNode<N>, checkAgainst: DialogueNode<DialogueTask | DialogueTaskEntry | TranscriptionNote>, prev?: DialogueNode<N | TranscriptionNote>, isParent?: boolean): DialogueNode<N | TranscriptionNote> {
 		if ('trigger' in node.item && node.item.trigger && this.inverseFind(checkAgainst, wn => node.item.equals(wn.item))) {
 			return {
-				item: new TranscriptionNote('custom-string-loop', this.find(node, n => n.children?.length) ? 'Return to previous option selection' : (process.argv.includes('--add-triggers') ? '<!--Return to previous option selection (registerCS)-->' : undefined)),
+				item: new TranscriptionNote('custom-string-loop', this.find(node, n => n.children?.length) ? ('Return to previous option selection' + (process.argv.includes('--add-triggers') ? ' (cloneCheckString)' : '')) : (process.argv.includes('--add-triggers') ? '<!--Return to previous option selection (cloneCheckString)-->' : undefined)),
 				prev: isParent ? undefined : prev,
 				parent: isParent ? prev : undefined,
 			}
@@ -327,6 +344,8 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 			parent: isParent ? prev : undefined,
 			clone: node,
 		}
+		
+		newNode.item[NODE] = newNode
 
 		newNode.next = node.next ? this.cloneCheckString(node.next, checkAgainst, newNode, false) : undefined
 		newNode.children = node.children?.map(child => this.cloneCheckString(child, checkAgainst, newNode, true))
@@ -396,6 +415,12 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 				return new ShowMenuScreenTask(itask, env)
 			case 'RPG.GameCore.ObserveMaterialSubmission':
 				return new MaterialSubmissionEventTask(itask, env)
+			case 'RPG.GameCore.AddMenuItem':
+				return new AddMenuItemTask(itask)
+			case 'RPG.GameCore.ShowMenu':
+				return new ShowMenuTask(itask)
+			case 'RPG.GameCore.PlayMultiVoiceTalk':
+				return new PlayMultiVoiceTask(itask)
 			case 'RPG.GameCore.WaitRogueSimpleTalkFinish' as any:
 			case 'RPG.GameCore.ShowRogueTalkUI' as any:
 			case 'RPG.GameCore.ShowRogueTalkBg' as any:
@@ -447,13 +472,25 @@ export abstract class ActDialogueTree extends AbstractDialogueTree<DialogueTask 
 				for (const otherTree of trees) {
 					if (otherTree == tree) continue
 					if (otherTree.custom_string_results[string]) {
-						await tree.registerCS(string, otherTree.custom_string_results[string])
+						for (const result of otherTree.custom_string_results[string]) {
+							await tree.registerCS(string, result)
+						}
 						otherTree.custom_string_triggered[string] = true
 						break
 					}
 				}
 			}
 		}
+	}
+	
+	getActiveConditionsAt(node: DialogueNode<DialogueTask | DialogueTaskEntry>) {
+		const conditions: PredicateOutcome[] = []
+		for (const item of this.inverseList(node, false)) {
+			if (item instanceof PredicateOutcome) {
+				conditions.push(item)
+			}
+		}
+		return conditions
 	}
 }
 

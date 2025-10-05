@@ -141,6 +141,18 @@ PageTitle=#Посылка для Безымянных#
 :<pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityMonopoly.Reward.ActivityMonopolyJackpotMainPage",
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_802130102"
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

@@ -126,6 +126,39 @@ PageTitle=#Виртуальная вселенная I#
 {{Диалог Начало}}
 
 ;(Поговорите с Герта)
+;(If )
+:{{Диалог}} Герта
+:<pre>{
+	"$type": "RPG.GameCore.TriggerRogueDialogue",
+	"DialoguePath": "Config/Level/Mission/4030003/Act/Act403000304.json"
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 403000304-->)
+:{{Диалог}} Герта
+:<pre>{
+	"$type": "RPG.GameCore.SwitchUIMenuBGM",
+	"StateName": "State_Menu_Rougelite"
+}</pre>
+::'''Герта:''' В Виртуальной вселенной вновь появляется кукла Герты. Раньше вы слышали только её голос, так что вам несколько странно видеть её появление. Герта смотрит на вас с каменным лицом.
+::'''Герта:''' «Это зона отдыха, где можно перевести дыхание в полной опасностей Виртуальной вселенной. Надеемся, здесь ты восстановишь здоровье, воскресишь свою команду, купишь снаряжение и усилишь свои благословения, - отстранённо произнесла Герта. - Я помогу тебе {{Цвет|Ключевой|nobold=1|усилить благословения}}, а что до остальных функций, ты можешь найти их в комнате самостоятельно».
+::{{Диалог|Стрелка}} Усиление Благословений?
+::{{Диалог|Стрелка}} Мне нужны и другие функции!
+::'''Герта:''' «Ага-ага, - ребячливо откликается Герта. - Как владелица игры я могу сделать твои благословения мощнее или полностью изменить их, но за это мне нужны {{Цвет|Ключевой|nobold=1|космические фрагменты}}. Иначе зачем тебе их собирать, верно? Приступим».
+::{{Диалог|Стрелка}} Открой экран усилений.
+:<pre>{
+	"$type": "RPG.GameCore.SwitchUIMenuBGM",
+	"StateName": "State_Menu_Rougelite",
+	"ShouldStop": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Rogue.Buff.RogueEnhanceBuffPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Исследуйте Мир 1 Виртуальной вселенной===
@@ -157,6 +190,10 @@ PageTitle=#Виртуальная вселенная I#
 	"$type": "RPG.GameCore.SwitchUIMenuBGM",
 	"StateName": "State_Menu_Rougelite",
 	"ShouldStop": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchUIMenuBGM",
+	"StateName": "State_Menu_Rougelite"
 }</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetAllRogueDoorState"

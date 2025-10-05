@@ -47,7 +47,7 @@ PageTitle=#Заводной механизм: Коллин#
 		}
 	}
 }</pre>
-:{{Чёрный экран|Только вы было собирались уходить, как дорогу вам преградил какой-то силуэт...}}
+:{{Black Screen|Только вы было собирались уходить, как дорогу вам преградил какой-то силуэт...}}
 :'''Коллин:''' Эй, это срочно... Сделай как можно быстрее. Я тебе потом всё объясню.
 :{{Диалог|Стрелка}} Ты следишь за мной?
 ::'''Коллин:''' Не время об этом думать!
@@ -104,6 +104,7 @@ PageTitle=#Заводной механизм: Коллин#
 	},
 	"Flags": [],
 	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_NPC_Full_W0_Lady_Messenger_Rim.prefab",
+	"ForceSimulateImmediately": false,
 	"SubObjectModifyDataList": []
 }</pre>
 :...
@@ -171,6 +172,28 @@ PageTitle=#Заводной механизм: Коллин#
 :'''Коллин:''' Да, кстати - вот награда, которую я тебе обещала. Держи. Даже Безымянным надо что-то есть, как остальным смертным.
 :'''Коллин:''' А когда дело будет сделано, в конце приключения мы встретимся снова.
 ----
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialToast",
+	"StepType": "Normal",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 196
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Осмотрите комнату Коллин в отеле реальности===
@@ -229,12 +252,8 @@ PageTitle=#Заводной механизм: Коллин#
 :::'''Проницательный полевой сотрудник КММ:''' По тысяче кредитов каждому, и мы никого не видели. Сойдёт?
 :::{{Диалог|Стрелка}} По тысяче так по тысяче.
 ::::'''Взволнованный сотрудник охраны КММ:''' А ты не юлишь, мне такие нравятся. Плати давай.
-:::{{Диалог|Стрелка}} Вы ещё смеете торговаться?!
-::::'''Взволнованный сотрудник охраны КММ:''' (шёпотом) Эй, ты с {{MC|м=ним|ж=ней}} поосторожней, вдруг это важная шишка. Давай это... не борзей.
-::{{Диалог|Стрелка}} По тысяче кредитов на каждого.
-:::'''Взволнованный сотрудник охраны КММ:''' Что, правда? Договорились!
-::{{tx}}
-:<pre>{
+::::{{tx}}
+:::<pre>{
 	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
 	"SubMissionID": 424030605,
 	"Desc": {
@@ -257,6 +276,163 @@ PageTitle=#Заводной механизм: Коллин#
 		{
 			"$type": "RPG.GameCore.PlayTimeline",
 			"TimelineName": "Story/Discussion/Mission/4240306/DS42403060814.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_413060879"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [],
+			"CreateProp": {
+				"CreateList": []
+			},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				},
+				"DestroyList": []
+			},
+			"AdvCreateGroupEntity": {
+				"InstanceIDList": []
+			},
+			"AdvDestroyGroupEntity": {
+				"InstanceIDList": []
+			},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10305_F10305001_G69"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {
+				"SteerImmediately": true,
+				"FinishImmadiate": true
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:::{{Диалог|Стрелка}} Вы ещё смеете торговаться?!
+::::'''Взволнованный сотрудник охраны КММ:''' (шёпотом) Эй, ты с {{MC|м=ним|ж=ней}} поосторожней, вдруг это важная шишка. Давай это... не борзей.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424030606,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 424030604,
+			"MissionCustomValue": {
+				"Name": "OldValue_0",
+				"ValidValueParamList": [
+					0,
+					1,
+					2
+				]
+			},
+			"CustomValue": 2
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/4240306/DS42403060816.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_413060879"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.PerformanceTransition",
+			"CreateNpcList": [],
+			"CaptureNpcList": [],
+			"DestroyNpcList": [],
+			"CreateProp": {},
+			"DestroyProp": {
+				"TargetType": {
+					"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+				}
+			},
+			"AdvCreateGroupEntity": {
+				"InstanceIDList": []
+			},
+			"AdvDestroyGroupEntity": {
+				"InstanceIDList": []
+			},
+			"ActiveVirtualCamera": {},
+			"ActiveTemplateVirtualCamera": {},
+			"SwitchCharacterAnchor": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10305_F10305001_G69"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			},
+			"AdvNpcFaceToPlayer": {
+				"SteerImmediately": true,
+				"FinishImmadiate": true
+			}
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::{{Диалог|Стрелка}} По тысяче кредитов на каждого.
+:::'''Взволнованный сотрудник охраны КММ:''' Что, правда? Договорились!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.ConsumeMissionItemPerformance",
+	"SubMissionID": 424030605,
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetMissionCustomValue",
+			"SubmissionID": 424030604,
+			"MissionCustomValue": {
+				"Name": "OldValue_0",
+				"ValidValueParamList": [
+					0,
+					1,
+					2
+				]
+			},
+			"CustomValue": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/4240306/DS42403060818.playable",
 			"Type": "Discussion",
 			"Parameters": []
 		},
@@ -335,7 +511,7 @@ PageTitle=#Заводной механизм: Коллин#
 ::'''Проницательный полевой сотрудник КММ:''' Кхе-кхе... КММ всегда выступает на стороне мира и согласия. Мы посоветовались и решили, что не будем больше вмешиваться.
 ::'''Проницательный полевой сотрудник КММ:''' Только не думай, будто мы испугались... Мы просто учли обстоятельства в целом и решили, что разумнее будет отступить!
 ::'''Взволнованный сотрудник охраны КММ:''' Но если ты нарушишь межзвёздный мир, тут уж мы за тебя возьмёмся!
-::{{Чёрный экран|Сотрудники КММ уходят.}}
+::{{Black Screen|Сотрудники КММ уходят.}}
 :{{Диалог|Стрелка}} Идите-идите, а то как помогу сейчас!
 ::'''Проницательный полевой сотрудник КММ:''' Ого! Мы, между прочим, из Корпорации межзвёздного мира, и если ты смеешь говорить с нами в таком тоне, значит, ты ещё не знаешь про миротворческий железный кулак.
 ::'''Взволнованный сотрудник охраны КММ:''' Раз {{MC|м=он|ж=она}} {{MC|м=такой наглый|ж=такая наглая}}, там наверняка назначена какая-то награда. Давай арестуем {{MC|м=его|ж=её}}, а там разберёмся.
@@ -347,7 +523,7 @@ PageTitle=#Заводной механизм: Коллин#
 ::'''Проницательный полевой сотрудник КММ:''' Кхе-кхе... КММ всегда выступает на стороне мира и согласия. Мы посоветовались и решили, что не будем больше вмешиваться.
 ::'''Проницательный полевой сотрудник КММ:''' Только не думай, будто мы испугались... Мы просто учли обстоятельства в целом и решили, что разумнее будет отступить!
 ::'''Взволнованный сотрудник охраны КММ:''' Но если ты нарушишь межзвёздный мир, тут уж мы за тебя возьмёмся!
-::{{Чёрный экран|Сотрудники КММ уходят.}}
+::{{Black Screen|Сотрудники КММ уходят.}}
 {{Диалог Конец}}
 
 ===Встретьтесь с Коллин за дверью===

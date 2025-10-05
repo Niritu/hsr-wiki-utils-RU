@@ -218,9 +218,14 @@ export interface MapNPC extends InteractiveMapObject {
 	SpawnConfig?: NPCSpawnConfig
 }
 
+export interface DialogPackData {
+	Name: string
+	LevelGraph: string
+}
+
 export interface NPCDialogData {
 	LevelGraph: string
-	PackList: unknown[]
+	PackList: DialogPackData[]
 	EnableCondition?: LoadConditionList
 	EnableDialogCamera?: boolean
 }
@@ -295,7 +300,7 @@ export interface MapObjectReference {
 	ID: number
 }
 
-export type PlaneType = 'Rogue' | 'Maze' | 'Challenge' | 'Town' | 'Train' | 'AetherDivide' | 'TrialActivity'
+export type PlaneType = 'Rogue' | 'Maze' | 'Challenge' | 'Town' | 'Train' | 'AetherDivide' | 'TrialActivity' | 'Raid'
 
 export interface MazePlane {
 	PlaneID: number

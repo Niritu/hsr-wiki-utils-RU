@@ -10,12 +10,12 @@ PageTitle=#Эффект параллакса#
 |Событие         = Звёздная церемония боевых искусств
 |Глава           = Звёздная церемония боевых искусств
 |Условия         = 
-* Завершена [[Миссия приключения]] «[[Отборочный матч - Авангард свинок-копилок]]»
-* Завершена [[Миссия приключения]] «[[Отборочный матч - ТриО из Чжумина]]»
+* Завершена [[Миссия приключения]] «[[Отборочный матч — Авангард свинок-копилок|Отборочный матч - Авангард свинок-копилок]]»
+* Завершена [[Миссия приключения]] «[[Отборочный матч — ТриО из Чжумина|Отборочный матч - ТриО из Чжумина]]»
 |Персонажи       = Золотоплав; Зрители; Кармелла; Линша; Лука; Первопроходец; Совастьян (Кукла с удалённым доступом); Толпа; Топаз
 |СтартЛокация    = [[Лофу Сяньчжоу]] — [[«Рассекатель небес»]]
 |Мир             = Лофу Сяньчжоу
-|Предыдущая      = Отборочный матч - ТриО из Чжумина
+|Предыдущая      = Отборочный матч — ТриО из Чжумина
 |Следующая       = 
 |Награды         = Звёздный нефрит*30; Путеводитель путешественника*2; Очищенный эфир*2; Кредиты*30 000
 }}
@@ -111,6 +111,30 @@ PageTitle=#Эффект параллакса#
 :{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.Paper.FightFestNewsDetailPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "6"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513427,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 802513404
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -277,6 +301,76 @@ PageTitle=#Эффект параллакса#
 :{{tx}}
 <pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2004,
+	"ScoreRaceSpecialInviteEventID": 419102,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "D",
+			"PerformanceID": 802513417,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre",
+				"EndBlack": "None",
+				"EndCrack": true
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Arena"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetFloorCustomFloat",
+			"Name": {
+				"Value": "FCV_2.5_Throng"
+			},
+			"Value": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		}
+	]
 }</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloat",
@@ -518,6 +612,27 @@ PageTitle=#Эффект параллакса#
 <pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerFightFestLineupInMission",
+	"RaceID": 2004,
+	"ScoreRaceSpecialInviteEventID": 419104,
+	"OnConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"PerformanceType": "E",
+			"PerformanceID": 802513427,
+			"MaskConfig": {
+				"UseExcelData": false,
+				"StartBlack": "NoPre",
+				"EndBlack": "None",
+				"EndCrack": true
+			}
+		},
+		{
+			"$type": "RPG.GameCore.TriggerFightFestBattleInMission"
+		}
+	]
+}</pre>
 
 ;(По прибытии на место)
 <pre>{
@@ -601,6 +716,13 @@ PageTitle=#Эффект параллакса#
 :'''Лука:''' Я и не ждал, что она будет рисковать ради кого-то вроде меня...
 :'''Кармелла:''' Как бы то ни было, состязание должно продолжаться. Эх... Надеюсь, больше не столкнёмся с такими мерзкими противниками.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.FightFest.ScoreMatch.FightFestScoreMatchSpecialInviteResultDialog",
+	"Param": {
+		"Value": "2004"
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Вернитесь в кают-компанию вместе с Лукой===

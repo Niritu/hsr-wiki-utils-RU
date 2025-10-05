@@ -40,6 +40,159 @@ PageTitle=#Выставка фотографий: Городской пейза�
 ;(Unused &mdash; PhotoGraphStartCustomString)
 :<!--0.5-second delay-->
 
+:<!--0.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400002",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor3"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400003",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor4"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400008",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor5"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400009",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor6"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400007",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor7"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"CharacterUniqueName": "G594_NPC400006",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G594"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetAnimation": false,
+		"ResetCamera": false
+	}
+}</pre>
+
+:<!--0.5-second delay-->
+
+:<!--0.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		1,
+		3
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 594,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 802722208
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 802722209
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 802722210
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 802722211
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 802722212
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400009,
+			"TalkSentenceID": 802722213
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 594,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 802722214
+		}
+	],
+	"LoopInterval": 2,
+	"InstantFinish": false,
+	"UniqueID": 2
+}</pre>
+
+:<!--0.5-second delay-->
+
+:<!--0.5-second delay-->
+
 ;(Unused &mdash; PhotoGraphFinishCustomString)
 <pre>{
 	"$type": "RPG.GameCore.StopNPCBubbleTalk",
@@ -117,15 +270,42 @@ PageTitle=#Выставка фотографий: Городской пейза�
 :'''Реклама Господина Селёдки:''' Ну-ка повтори! Получай!
 :'''Март 7:''' Они опять ссорятся... Давай пока придумаем название для фото.
 :{{Диалог|Стрелка}} «Настоящие торговые войны».
-:{{Диалог|Стрелка}} «Церемония боевых искусств на Пенаконии».
-:{{Диалог|Стрелка}} «Восстаньте, рекламные щиты».
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 192,
 	"Value": "1"
 }</pre>
+:{{Диалог|Стрелка}} «Церемония боевых искусств на Пенаконии».
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 192,
+	"Value": "2"
+}</pre>
+:{{Диалог|Стрелка}} «Восстаньте, рекламные щиты».
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 192,
+	"Value": "3"
+}</pre>
 :'''Март 7:''' Хе-хе, на удивление это название кажется вполне подходящим. Куда дальше?
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	},
+	"OnUIExitImmediately": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionNextShotDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Отправляйтесь в автосалон===
@@ -143,8 +323,7 @@ PageTitle=#Выставка фотографий: Городской пейза�
 ::'''«Звезданутый экспресс»:''' Ох... Мы всего лишь начинающие баки, которые мечтают о сцене. И в погоне за мечтой мы случайно вступили на тёмную дорожку. Сегодня мы попали в ваши руки, но наша гибель не будет напрасной.
 ::'''Март 7:''' Хм, хорошо, что вы это поняли.
 ::{{Диалог|Стрелка}} Платите роялти!
-::{{Диалог|Стрелка}} Давайте сюда экспонаты!
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802720103,
 	"MissionCustomValue": {
@@ -156,6 +335,20 @@ PageTitle=#Выставка фотографий: Городской пейза�
 		]
 	},
 	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} Давайте сюда экспонаты!
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802720103,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
 }</pre>
 ::'''«Звезданутый экспресс»:''' Будет сделано... Есть ещё требования?
 ::{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Попозируйте}} мне!
@@ -191,6 +384,46 @@ PageTitle=#Выставка фотографий: Городской пейза�
 			"Value": "Anchor1"
 		}
 	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720103,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720103,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		}
+	]
 }</pre>
 :'''Март 7:''' Тут находится автосалон.
 {{Диалог Конец}}
@@ -237,29 +470,71 @@ PageTitle=#Выставка фотографий: Городской пейза�
 ::'''Март 7:''' Хм... Неужели это фото и впрямь получилось таким трогательным? (Первопроходец), давай придумаем название.
 ::{{Диалог|Стрелка}} «Круг искателей грёз».
 :::'''Март 7:''' Не во все круги можно попасть так просто.
-::{{Диалог|Стрелка}} «Звезданутый экспресс».
-:::'''Март 7:''' Кто бы мог подумать, что кто-то станет выдавать себя за нас... Видимо, пора регистрировать товарный знак!
-::{{Диалог|Стрелка}} «Пенакония слезам не верит».
-:::'''Март 7:''' Думаю, на какое-то время им всё же стоит поумерить пыл. А пока как следует попрактиковаться в актёрском мастерстве. И только потом снова выходить на сцену.
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 193,
 	"Value": "1"
+}</pre>
+::{{Диалог|Стрелка}} «Звезданутый экспресс».
+:::'''Март 7:''' Кто бы мог подумать, что кто-то станет выдавать себя за нас... Видимо, пора регистрировать товарный знак!
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "2"
+}</pre>
+::{{Диалог|Стрелка}} «Пенакония слезам не верит».
+:::'''Март 7:''' Думаю, на какое-то время им всё же стоит поумерить пыл. А пока как следует попрактиковаться в актёрском мастерстве. И только потом снова выходить на сцену.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "3"
 }</pre>
 ;(If {{F|MissionCV-8027201-1}} is not undefined 1)
 ::'''Март 7:''' Неплохие кадры! Я только что украдкой взглянула на цену... Нам нужно поскорее дать фотографиям названия и убраться отсюда.
 ::'''Март 7:''' Если мы хоть немного поцарапаем покрытие, нам придётся целую янтарную эру мыть посуду на Пенаконии.
 ::{{Диалог|Стрелка}} Давай назовём «Радужное авто».
-::{{Диалог|Стрелка}} Давай назовём «Предмет обожания Безымянных».
-::{{Диалог|Стрелка}} Давай назовём «Суперкар Звёздного экспресса».
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 193,
 	"Value": "4"
 }</pre>
+::{{Диалог|Стрелка}} Давай назовём «Предмет обожания Безымянных».
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "5"
+}</pre>
+::{{Диалог|Стрелка}} Давай назовём «Суперкар Звёздного экспресса».
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 193,
+	"Value": "6"
+}</pre>
 :'''Март 7:''' Пора загрузить фотографии. На сегодня мы сняли достаточно. Интересно, как их оценят господин Река и аудитория?
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
+}</pre>
 {{Диалог Конец}}
 
 ===Сделайте фотографию роскошных автомобилей===
@@ -431,6 +706,69 @@ PageTitle=#Выставка фотографий: Городской пейза�
 	}
 }</pre>
 
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G599"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetCamera": false
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Close02"
+}</pre>
+
+:<!--0.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+::<!--0.5-second delay-->
+
 ;(Unused &mdash; PhotoGraphStartCustomString)
 <pre>{
 	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
@@ -452,12 +790,133 @@ PageTitle=#Выставка фотографий: Городской пейза�
 	"UniqueID": 1
 }</pre>
 
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G599"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		},
+		"ResetCamera": false
+	}
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Close02"
+}</pre>
+
+:<!--0.5-second delay-->
+
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+::<!--0.5-second delay-->
+
 ;(Unused &mdash; PhotoGraphFinishCustomString)
 <pre>{
 	"$type": "RPG.GameCore.StopNPCBubbleTalk",
 	"UniqueIDList": [
 		1
 	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10301_F10301001_G599"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 599
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"IsHide": true
 }</pre>
 {{Диалог Конец}}
 

@@ -204,7 +204,8 @@ PageTitle=#Отдых в выжженных песках#
 ===Выберите испытание===
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Выберите испытание, которое не проходили до этого, и посмотрите другие возможности.}}
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032701-undefined}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802240105,
 	"MissionCustomValue": {
@@ -215,6 +216,19 @@ PageTitle=#Отдых в выжженных песках#
 		]
 	},
 	"CustomValue": 2
+}</pre>
+;(If {{F|MissionCV-1032701-undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240105,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
 }</pre>
 :'''Светлячок:''' Наконец-то победа... Пора на следующий этап.
 {{Диалог Конец}}
@@ -434,7 +448,8 @@ PageTitle=#Отдых в выжженных песках#
 
 ===Выберите своё испытание===
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032702-undefined}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 802240119,
 	"MissionCustomValue": {
@@ -446,6 +461,20 @@ PageTitle=#Отдых в выжженных песках#
 		]
 	},
 	"CustomValue": 4
+}</pre>
+;(If {{F|MissionCV-1032702-undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 802240119,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			3,
+			4
+		]
+	},
+	"CustomValue": 3
 }</pre>
 {{Диалог Конец}}
 
@@ -647,9 +676,15 @@ PageTitle=#Отдых в выжженных песках#
 	}
 }</pre>
 ;(Unused &mdash; TV_Open)
-<pre>{
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.RequestGroupStateChange",
 	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
 }</pre>
 
 ;(Unused &mdash; EnterArea_G{GroupID})
@@ -900,16 +935,17 @@ PageTitle=#Отдых в выжженных песках#
 	"DynamicParams": {}
 }</pre>
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Гид исчез... Поговорите со Светлячком о произошедшем.}}
-;(If {{F|BlockShowIndex}} is undefined 6)
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 6)
+:<pre>{
 	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
 	"Reset": true
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
 	"IsVisiable": true
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.HideWaypointByProp",
 	"GroupID": {
 		"IsDynamic": false,
@@ -924,6 +960,31 @@ PageTitle=#Отдых в выжженных песках#
 		}
 	}
 }</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 5)
+:<pre>{
+	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
+	"Reset": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
+	"IsVisiable": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 101
+		}
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetWaypointSafeZone",
 	"IsReset": true,
@@ -935,15 +996,32 @@ PageTitle=#Отдых в выжженных песках#
 ;(Unused &mdash; Group_F20331001_G353)
 :'''Светлячок:''' Хм... А почему здесь нет ведущего?
 ::'''Светлячок:''' Странно это всё... (Первопроходец), давай войдём и осмотримся.
-;(If {{F|BlockShowIndex}} is undefined 5)
-:'''???:''' {{MC|ж=Уважаемая главная героиня|м=Уважаемый главный герой}}, следующая сцена должна быть совершенно новая! Вернитесь на верный путь!
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 5)
+::'''???:''' {{MC|ж=Уважаемая главная героиня|м=Уважаемый главный герой}}, следующая сцена должна быть совершенно новая! Вернитесь на верный путь!
+:<pre>{
 	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
 	"SwitchCharacterAnchorConfig": {
 		"IsLocalPlayer": true,
 		"CharacterUniqueName": "LocalPlayer",
 		"AreaName": {
 			"Value": "LevelArea_P20331_F20331001_G410"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 6)
+::'''???:''' {{MC|ж=Уважаемая главная героиня|м=Уважаемый главный герой}}, следующая сцена должна быть совершенно новая! Вернитесь на верный путь!
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G409"
 		},
 		"AnchorName": {
 			"Value": "Anchor1"
@@ -1168,6 +1246,23 @@ PageTitle=#Отдых в выжженных песках#
 :::'''Светлячок:''' Да, в это трудно поверить, но сейчас Пенакония действительно в опасности... Мы должны немедленно сделать что-нибудь.
 :::'''Огромные ходики:''' О, ещё одни конкурсанты, что ищут лёгких путей. Сожалею, пусть я и сломан, но и у меня есть границы.
 ::'''Огромные ходики:''' Вы такие же, как и остальные конкурсанты. Хотите забраться внутрь меня? Да пожалуйста, но вы ничего не добьётесь... Потому что я - поломанная вещь.
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "FullScreenLock"
+}</pre>
 
 ;(Unused &mdash; EnterArea_G202)
 :'''Часик:''' Тик-так! {{MC|ж=Моя серовласая подруга|м=Мой серовласый друг}}, мы ещё не помогли ходикам распахнуть сердечко!
@@ -1402,16 +1497,17 @@ PageTitle=#Отдых в выжженных песках#
 ===Отправляйтесь ко входу в третий этап===
 {{Описание миссии|тип=Миссия приключения|локация=Отборочная площадка выжженных песков от Услады™|Гид исчез... Поговорите со Светлячком о произошедшем.}}
 {{Диалог Начало}}
-;(If {{F|BlockShowIndex}} is undefined 6)
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 6)
+:<pre>{
 	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
 	"Reset": true
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
 	"IsVisiable": true
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.HideWaypointByProp",
 	"GroupID": {
 		"IsDynamic": false,
@@ -1426,6 +1522,31 @@ PageTitle=#Отдых в выжженных песках#
 		}
 	}
 }</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:;(If {{F|BlockShowIndex}} is undefined 5)
+:<pre>{
+	"$type": "RPG.GameCore.SetWaypointIgnoreLock",
+	"Reset": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
+	"IsVisiable": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypointByProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 101
+		}
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.SetWaypointSafeZone",
 	"IsReset": true,
@@ -1437,7 +1558,8 @@ PageTitle=#Отдых в выжженных песках#
 ;(Unused &mdash; Group_F20331001_G262)
 :'''Светлячок:''' Хм... А почему здесь нет ведущего?
 ::'''Светлячок:''' Странно это всё... (Первопроходец), давай войдём и осмотримся.
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.WaitFloorCustomValueChange",
 	"Name": {
 		"Value": "BlockShowIndex"
@@ -1476,6 +1598,50 @@ PageTitle=#Отдых в выжженных песках#
 			"IsDynamic": false,
 			"FixedValue": {
 				"Value": 5
+			}
+		}
+	}
+}</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.WaitFloorCustomValueChange",
+	"Name": {
+		"Value": "BlockShowIndex"
+	},
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 802240099
+		},
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"Action": []
+		},
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20331_F20331001_G409"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	],
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareFloorCustomFloat",
+		"Name": {
+			"Value": "BlockShowIndex"
+		},
+		"CompareValue": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 6
 			}
 		}
 	}

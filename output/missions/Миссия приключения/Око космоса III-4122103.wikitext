@@ -63,6 +63,21 @@ PageTitle=#Око космоса III#
 :'''Робоптаха-доставщик:''' Система наблюдения активна и ведёт поиск в целевой зоне.
 ::'''Робоптаха-доставщик:''' Система мониторинга указывает на то, что товар был утерян вблизи Очага золотого эликсира. Основываясь на прошлых данных, робоптаха рекомендует вам искать {{Цвет|Ключевой|nobold=1|рядом с ветвями Древа амброзии}}.
 
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 412210303,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Anchor",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 33,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 1,
+	"OverideWayPointShowRangeMin": true,
+	"WayPointShowRangeMin": -1,
+	"OverideMapWaypointRange": true,
+	"MapWaypointRange": 20
+}</pre>
+
 ;(Unused &mdash; OnStart_X301_02)
 <pre>{
 	"$type": "RPG.GameCore.SetMissionWayPoint",
@@ -89,6 +104,21 @@ PageTitle=#Око космоса III#
 :'''Робоптаха-доставщик:''' Система наблюдения активна и ведёт поиск в целевой зоне.
 ::'''Робоптаха-доставщик:''' Система мониторинга указывает на то, что товар был утерян вблизи Аптекарского рынка. Основываясь на прошлых данных, робоптаха рекомендует вам искать {{Цвет|Ключевой|nobold=1|на крыше магазина}}.
 ::'''Цзыцяо:''' В зоне, похоже, какие-то {{Цвет|Ключевой|nobold=1|сигналы-помехи}}... Что здесь? Не думаю, что они имеют отношение к вещам, которые мы ищем. Всё равно стоит проверить?
+
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 412210304,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Anchor",
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 34,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 1,
+	"OverideWayPointShowRangeMin": true,
+	"WayPointShowRangeMin": -1,
+	"OverideMapWaypointRange": true,
+	"MapWaypointRange": 20
+}</pre>
 
 ;(Unused &mdash; Talk_412210304)
 <pre>{
@@ -383,6 +413,9 @@ PageTitle=#Око космоса III#
 	"MapWaypointRange": 20
 }</pre>
 
+:'''Робоптаха-доставщик:''' Система наблюдения активна и ведёт поиск в целевой зоне.
+::'''Робоптаха-доставщик:''' Система мониторинга указывает на то, что Ученики Санктус Медикус прячутся вблизи Веранды эликсирных исследований. Основываясь на прошлых данных, с ними можно вступить в бой {{Цвет|Ключевой|nobold=1|вблизи набережной}}.
+
 ;(Unused &mdash; OnClose_X301_03)
 <pre>{
 	"$type": "RPG.GameCore.ResetMissionWayPoint",
@@ -557,6 +590,28 @@ PageTitle=#Око космоса III#
 			]
 		}
 	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"OPType": "TriggerOnly",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
 }</pre>
 ;(Unused &mdash; TalkSentence_412210343)
 :'''Цзыцяо:''' О них не волнуйся. Когда ты их {{MC|ж=нашла|м=нашёл}}, я сообщила Обители божественного предвидения. Облачные Рыцари их уже, наверное, схватили.

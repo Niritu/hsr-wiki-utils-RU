@@ -185,6 +185,21 @@ PageTitle=#Выезд#
 :'''Андерсон:''' Хм, это... сложно объяснить, {{MC|ж=госпожа|м=господин}}...
 :'''Андерсон:''' ...Прошу прощения, {{MC|ж=госпожа|м=господин}}, мне звонит коллега... Подождите минутку.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 203060107,
+	"MissionCustomValue": {
+		"Index": 9,
+		"Name": "OldValue_9",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
 :{{tx}}
 {{Диалог Конец}}
 
@@ -224,12 +239,62 @@ PageTitle=#Выезд#
 ::{{Диалог|Стрелка}} Приступим без лишних слов!
 :::Всё сделаем как скажете, {{MC|ж=управляющая|м=управляющий}} вестибюля (Первопроходец).
 :::Пусть эти растерянные VIPы отведают вашего фирменного гостеприимства, {{MC|ж=хозяйка|м=хозяин}}!
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
 ::{{Диалог|Выход}} Пусть гости ещё подождут...
 :::Атмосфера уже накалена, нельзя идти на попятную...
 :::Ладно, потратим немного времени, затем внесём корректировки в психологию... Всё-таки у вас ещё десять системных часов работы впереди.
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
+	"Value": 2
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060107
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.AdvCreateGroupEntity",
+					"InstanceIDList": [
+						300001
+					]
+				},
+				{
+					"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300001
+						]
+					},
+					"TriggerName": "MissionTrigger",
+					"ButtonsByName": [],
+					"ButtonConfigs": [
+						{
+							"ID": "StartWork",
+							"IconType": "ChatIcon",
+							"ButtonText": {
+								"Value": "PropInteractTitle_424"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }</pre>
 ;(If {{F|MissionCV-2030601-6}} is less than 1)
 <pre>{
@@ -290,12 +355,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -545,6 +614,121 @@ PageTitle=#Выезд#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060108,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060108,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060108
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060108,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060108,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060108
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -664,12 +848,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -919,6 +1107,123 @@ PageTitle=#Выезд#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060110,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							2,
+							1
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060110,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060110
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060110,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							2,
+							1
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060110,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060110
+				}
+			]
+		}
+	]
 }</pre>
 :'''(Первопроходец):''' (А это... Бутхилл и Аргенти?)
 :'''(Первопроходец):''' (Что они делают вместе?.. Когда это они начали ладить?)
@@ -1005,12 +1310,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -1260,6 +1569,123 @@ PageTitle=#Выезд#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060112,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060112,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060112
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060112,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060112,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060112
+				}
+			]
+		}
+	]
 }</pre>
 :'''(Первопроходец):''' (Опять какой-то пепеши?)
 :'''(Первопроходец):''' (Что за особенный сегодня день...)
@@ -1349,12 +1775,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -1604,6 +2034,123 @@ PageTitle=#Выезд#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060114,
+					"MissionCustomValue": {
+						"Index": 3,
+						"Name": "OldValue_3",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060114,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060114
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060114,
+					"MissionCustomValue": {
+						"Index": 3,
+						"Name": "OldValue_3",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060114,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060114
+				}
+			]
+		}
+	]
 }</pre>
 :{{tx}}
 :{{Диалог|Разговор}} (Спросить Топаз) И сколько начальный оклад?
@@ -1750,12 +2297,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -2005,6 +2556,123 @@ PageTitle=#Выезд#
 ::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060117,
+					"MissionCustomValue": {
+						"Index": 4,
+						"Name": "OldValue_4",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060117,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060117
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060117,
+					"MissionCustomValue": {
+						"Index": 4,
+						"Name": "OldValue_4",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060117,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060117
+				}
+			]
+		}
+	]
 }</pre>
 :'''(Первопроходец):''' (Погодите-ка, это же...)
 :'''(Первопроходец):''' (...Цинцюэ?! Что она делает на Пенаконии?)
@@ -2124,12 +2792,16 @@ PageTitle=#Выезд#
 :{{tx}}
 ;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 ::{{Диалог|Выход}} Отлучиться с поста.
 :::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 :::{{tx}}
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 ;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 ::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -2380,6 +3052,123 @@ PageTitle=#Выезд#
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060119,
+					"MissionCustomValue": {
+						"Index": 5,
+						"Name": "OldValue_5",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060119,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060119
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060119,
+					"MissionCustomValue": {
+						"Index": 5,
+						"Name": "OldValue_5",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060119,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060119
+				}
+			]
+		}
+	]
+}</pre>
 ;(По прибытии на место)
 
 ;(По прибытии на место)
@@ -2494,10 +3283,41 @@ PageTitle=#Выезд#
 :{{Диалог|undefined}} Операция по спасению Цинцюэ
 :'''(Первопроходец):''' (Что ж... Нужно отправляться в отель Мира грёз и спасти Цинцюэ!)
 :{{Диалог|Стрелка}} Вперёд!
-:{{Диалог|Выход}} Подождите...
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Подождите...
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "2030601_StartRaid"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; 2030601_StartRaid)
@@ -2565,12 +3385,77 @@ PageTitle=#Выезд#
 ::Ну что? Теперь есть настроение работать дальше... {{MC|ж=хозяйка|м=хозяин}}?
 ::{{Диалог|Стрелка}} Продолжаем работу.
 :::'''(Первопроходец):''' (Нельзя больше тянуть... Пришло время для работы!)
-::{{Диалог|Выход}} Подождём немного...
-:::'''(Первопроходец):''' (Кажется, тут пока никого нет... Погуляю ещё.)
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 2
+}</pre>
+::{{Диалог|Выход}} Подождём немного...
+:::'''(Первопроходец):''' (Кажется, тут пока никого нет... Погуляю ещё.)
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060124,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060124,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060124
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -2631,12 +3516,16 @@ PageTitle=#Выезд#
 ::{{tx}}
 :;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 :::{{Диалог|Выход}} Отлучиться с поста.
 ::::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 ::::{{tx}}
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 :;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -2886,6 +3775,67 @@ PageTitle=#Выезд#
 :::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060125,
+					"MissionCustomValue": {
+						"Index": 1,
+						"Name": "OldValue_1",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060125,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060125
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterArea_G144)
@@ -2941,12 +3891,16 @@ PageTitle=#Выезд#
 ::{{tx}}
 :;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 :::{{Диалог|Выход}} Отлучиться с поста.
 ::::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 ::::{{tx}}
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 :;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -3196,6 +4150,67 @@ PageTitle=#Выезд#
 :::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060127,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060127,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060127
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterArea_G144)
@@ -3251,12 +4266,16 @@ PageTitle=#Выезд#
 ::{{tx}}
 :;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 :::{{Диалог|Выход}} Отлучиться с поста.
 ::::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 ::::{{tx}}
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 :;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -3506,6 +4525,67 @@ PageTitle=#Выезд#
 :::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060128,
+					"MissionCustomValue": {
+						"Index": 3,
+						"Name": "OldValue_3",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060128,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060128
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterArea_G144)
@@ -3561,12 +4641,16 @@ PageTitle=#Выезд#
 ::{{tx}}
 :;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 :::{{Диалог|Выход}} Отлучиться с поста.
 ::::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 ::::{{tx}}
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 :;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -3816,6 +4900,67 @@ PageTitle=#Выезд#
 :::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060129,
+					"MissionCustomValue": {
+						"Index": 4,
+						"Name": "OldValue_4",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060129,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060129
+				}
+			]
+		}
+	]
 }</pre>
 
 ;(Unused &mdash; EnterArea_G144)
@@ -3871,12 +5016,16 @@ PageTitle=#Выезд#
 ::{{tx}}
 :;(If {{F|MissionCV-2030601-7}} is greater than or equal to 5)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
+:::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
 :::{{Диалог|Выход}} Отлучиться с поста.
 ::::'''(Первопроходец):''' (Кажется, тут пока никого нет... Ничего не случится, если я быстренько отойду?)
 ::::{{tx}}
-::<pre>{
+:::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 2
+	"Value": 1
 }</pre>
 :;(Otherwise, if {{F|MissionCV-2030601-7}} is less than or equal to 4)
 :::{{Диалог|Стрелка}} Ждать следующего гостя.
@@ -4126,6 +5275,67 @@ PageTitle=#Выезд#
 :::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult",
 	"Value": 1
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 203060130,
+					"MissionCustomValue": {
+						"Index": 5,
+						"Name": "OldValue_5",
+						"ValidValueParamList": [
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.CalculateMissionCustomValue",
+					"TargetSubmissionID": 203060130,
+					"TargetMissionCustomValue": {
+						"Index": 6,
+						"Name": "OldValue_6",
+						"ValidValueParamList": [
+							0,
+							1,
+							2,
+							3,
+							4,
+							5
+						]
+					},
+					"ValueA": {
+						"Type": "CustomValue",
+						"MainMissionID": 2030601,
+						"MissionCustomValue": {
+							"Index": 7,
+							"Name": "OldValue_7",
+							"isLocal": true,
+							"ValidValueParamList": [
+								0,
+								1,
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"ValueB": {}
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203060130
+				}
+			]
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 

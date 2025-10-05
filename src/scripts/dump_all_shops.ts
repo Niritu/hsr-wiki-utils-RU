@@ -152,7 +152,7 @@ for (const shop of await Shop.loadAll()) {
 						break
 					case 'MainMission':
 						const mission = Mission.fromId(args[0])
-						notes.push(`after completing ${mission.link()}`)
+						notes.push(`after completing ${mission?.link()}`)
 						break
 					case 'PreGoods':
 						const preItem = items.find(item => item.goods_id == args[0])

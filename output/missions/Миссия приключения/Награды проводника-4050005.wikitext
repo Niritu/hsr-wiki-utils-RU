@@ -58,9 +58,24 @@ PageTitle=#Награды проводника#
 
 ;(Поговорите с Пом-Пом)
 :'''Пом-Пом:''' (Первопроходец)...
-<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+:{{Диалог|Звезда}} Какой у меня уровень Освоения?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
 }</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Мне пора.
 {{Диалог Конец}}
 
 ==На других языках==

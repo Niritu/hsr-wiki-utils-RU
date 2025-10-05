@@ -157,16 +157,20 @@ PageTitle=#Выезд#
 ;(Unused &mdash; EnterArea_G13)
 :'''(Первопроходец):''' (Пф-ф, теперь никто не сможет меня остановить.)
 ::'''(Первопроходец):''' (Жди меня, Цинцюэ! {{MC|ж=Твоя подруга|м=Твой друг}} спешит на помощь!)
-;(If {{F|TV_State}} is undefined 1)
-:<pre>{
+;(If {{F|TV_State}} is not undefined 1)
+<pre>{
 	"$type": "RPG.GameCore.TriggerEntityServerEvent"
 }</pre>
-;(If {{F|TV_State}} is not undefined 1)
-:;(Return to previous option selection)
 ;(Unused &mdash; TV_Open)
-<pre>{
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.RequestGroupStateChange",
 	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
 }</pre>
 
 ;(Unused &mdash; EnterArea_G23)

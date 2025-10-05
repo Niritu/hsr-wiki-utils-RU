@@ -59,6 +59,28 @@ PageTitle=#Когда закрывается отель#
 :{{Диалог|Стрелка}} Охотники за Стелларонами...
 :'''Химеко:''' Хранители памяти обладают способностями, непостижимыми обычному уму. В зоне воспоминаний Пенаконии они как рыбы в воде: мы уже убедились в этом на примере Чёрного Лебедя.
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10305_F10305001_G57"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Поговорите с Топаз)
 :'''Топаз:''' Как вам сотрудничество с Авантюрином? Готова поспорить, весьма непривычно.
@@ -232,6 +254,34 @@ PageTitle=#Когда закрывается отель#
 :::'''Март 7:''' Если мы разрешим недопонимание, никаких беспорядков не будет!
 ::'''Март 7:''' Прошу, (Первопроходец)!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20313_F20313001_G257"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103120110"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Найдите Галлахера на Границе грёз===

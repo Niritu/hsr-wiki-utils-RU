@@ -85,10 +85,18 @@ PageTitle=#Зеркальное отражение ведьмы#
 :'''Герта:''' Ого... Ну и тряска. Надо было попросить Второе Зеркало немного снизить мощность.
 :'''Герта:''' Ох, какой великолепный вид. Это вход на Амфореус?
 :'''Герта:''' Ну-ка, ну-ка. Возможно, я смогу найти способ проникнуть внутрь.
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntity",
 	"InstanceIDList": [
 		400001
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400006
 	]
 }</pre>
 {{Диалог Конец}}
@@ -348,7 +356,8 @@ PageTitle=#Зеркальное отражение ведьмы#
 	"EffectList": [
 		{
 			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GensisSky_01_Star_Lod0.prefab",
-			"IsAttachToTargetEntity": true
+			"IsAttachToTargetEntity": true,
+			"ForceSimulateImmediately": false
 		}
 	]
 }</pre>

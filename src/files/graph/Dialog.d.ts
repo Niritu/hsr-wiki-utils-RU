@@ -366,8 +366,29 @@ export interface ObserveMaterialSubmission {
 	OnInterrupted: InternalDialogTask[]
 }
 
+export interface InternalSharedMenuItem {
+	ID: number
+	TextID: HashReference
+}
+
+export interface AddMenuItem {
+	$type: 'RPG.GameCore.AddMenuItem'
+	MenuIconType: string
+	MenuItemID?: number
+	MenuItemTextID?: HashReference
+	PerformanceType?: InternalTriggerPerformance['PerformanceType']
+	PerformanceID?: number
+	DialoguePath?: string
+}
+
+export interface PlayMultiVoiceTalk {
+	$type: 'RPG.GameCore.PlayMultiVoiceTalk'
+	TalkSentenceID: number
+}
+
 export type InternalFinishLevelGraph = NoContentTask<'RPG.GameCore.FinishLevelGraph'>
 export type InternalEndPerformance = NoContentTask<'RPG.GameCore.EndPerformance'>
+export type ShowMenu = NoContentTask<'RPG.GameCore.ShowMenu'>
 
 export type ValueSource = SharedFloat | SharedString
 
@@ -381,3 +402,4 @@ export type InternalDialogTask =
 	| InternalEndPerformance | FinishPerformanceMission | PlayTimeline | PlayVideo | WaitSecond
 	| PropSetupTrigger | PlayScreenTransfer | AdvSetupCustomTaskTrigger | TriggerBattle
 	| TriggerGroupEvent | WaitGroupEvent | SwitchCase | ShowHalfScreenPage | ObserveMaterialSubmission
+	| AddMenuItem | ShowMenu | PlayMultiVoiceTalk

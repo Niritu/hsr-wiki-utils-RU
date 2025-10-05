@@ -64,6 +64,33 @@ PageTitle=#Человек собаке друг II#
 :'''Пеппи:''' (Пошли!)
 ----
 <pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 5,
+			"GroupID": 20,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 500002331
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvTriggerAIPlaySmartObject",
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"SmartObjectID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"OnFinish": []
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
 }</pre>
 ----
@@ -120,7 +147,7 @@ PageTitle=#Человек собаке друг II#
 :'''Пеппи:''' (Спасибо за помощь, (Первопроходец). Ты самый надёжный партнёр Пеппи!)
 :'''Пеппи:''' (Сейчас я отключу синхронизацию! Ты можешь вернуться и хорошенько отдохнуть! Я сообщу, если у меня будут какие-нибудь новости!)
 :'''Пеппи:''' Гав-гав!
-:{{Чёрный экран|Пеппи отключает синхронизацию.}}
+:{{Black Screen|Пеппи отключает синхронизацию.}}
 <pre>{
 	"$type": "RPG.GameCore.PlayerRemoteControlOtherEntity",
 	"SpecialNPCID": 16001,

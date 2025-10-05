@@ -110,12 +110,10 @@ PageTitle=#Сквозь тусклое стекло#
 
 ;(По прибытии на место)
 :'''(Первопроходец):''' (Это слишком странно...)
-;(If {{F|ToyRoomState}} is undefined 0)
-:<pre>{
+;(If {{F|ToyRoomState}} is not undefined 0)
+<pre>{
 	"$type": "RPG.GameCore.TriggerEntityServerEvent"
 }</pre>
-;(If {{F|ToyRoomState}} is not undefined 0)
-:;(Return to previous option selection)
 :'''Чёрный Лебедь:''' {{MC|ж=Проснулась|м=Проснулся}}, дрёма. Похоже, тебе что-то хорошее снилось.
 :'''Чёрный Лебедь:''' Ну как? Тебе я снилась, да?
 :{{Диалог|Стрелка}} Ты нас спасла?

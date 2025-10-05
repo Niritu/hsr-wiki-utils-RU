@@ -81,32 +81,527 @@ PageTitle=#Жужжащие секреты#
 :::'''Первозданная Швея:''' Найди, где прячется этот ткач. Там тебя ждёт подарок.
 :'''Первозданная Швея:''' {{Цвет|Ключевой|nobold=1|«Это творение Керкес связано с нитью романтики. Прикоснувшись к его корням, ты сможешь завязать узелок судьбы»}}.
 ::'''Первозданная Швея:''' Найди, где прячется этот ткач. Там тебя ждёт подарок.
-:<pre>{
-	"$type": "RPG.GameCore.ShowMenu"
+:;(If Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Мне нужно больше информации.
+:::'''Первозданная Швея:''' Хорошо. Я расскажу тебе всё, что знаю.
+:::{{Диалог|Разговор}} Кто такие нимфы?
+::::'''Первозданная Швея:''' Это долгая история, по сути нимфы - это люди, некогда жившие в золотой век.
+::::'''Первозданная Швея:''' Согласно легенде, после смерти Танатос помещает последователей романтики в коконы, а потом они перерождаются бабочками и остаются рядом с титанами.
+::::'''Первозданная Швея:''' В эпоху раздора {{Rubi|Керкес|титан разума}} утратила душу и тело в результате несчастного случая. {{Rubi|Мнестия|Титан романтики}} не смогла принять потерю близкого, она собрала разрозненные останки Керкес, чтобы снова соединить их с помощью шёлковых нитей и вернуть родную душу.
+::::'''Первозданная Швея:''' Отпрыски Мнестии и Керкес тоже встали на этот горький путь и превратились в нимф созидания. Красивые и хрупкие нимфы принадлежали Мнестии, а сильные и храбрые - Керкес.
+::::'''Первозданная Швея:''' Воссоздать тело божества - задача не из лёгких. Нимфы должны были проникнуть во всё живое, впитать мудрость и любовь на многих языках, чтобы Мнестия смогла получить золотые нити. Так они и заслужили своё второе название - ткачи.
+::::'''Первозданная Швея:''' Вот только... их труд оказался напрасным.
+:::{{Диалог|Разговор}} Как нимфы тебе помогают?
+::::'''Первозданная Швея:''' И в нашем сломленном настоящем считается, что нимфы обладают редким даром. Если собрать их вместе, можно завладеть значительной силой, которая способна разрушить самую крепкую печать.
+::::{{Диалог|Стрелка}} А они согласятся?
+::::'''Первозданная Швея:''' Мы все связаны с Мнестией незримыми узами. Если рассказать им о нашей миссии с чувством и выражением, они наверняка проникнутся и захотят помочь. В конце концов, пророчество связано с титанами.
+::::'''Первозданная Швея:''' Заручившись согласием, я смогу разместить их воспоминания и души в правильном порядке и с помощью золотой нити восстановить их дар... Надеюсь, у меня получится.
+:::{{Диалог|Разговор}} Это все нимфы, которых я {{MC|м=нашёл|ж=нашла}}?
+::::'''Первозданная Швея:''' Да, золотые нити даруют благословение нимф. Оболочки насекомых, сшитые из золотых нитей, нужны, дабы не навредить их душам. Впрочем, это временные меры.
+::::'''Первозданная Швея:''' Нимфы - мои глаза, мои помощники и посланники. Мы делим с ними звание ткачей: эти узы сложно разорвать. Надеюсь, священный город сможет дать им надёжное убежище.
+::::'''Первозданная Швея:''' В прошлом нимфы строили свои дома внутри Кокона романтики, там они обменивались сокровенными тайнами. С помощью шёлковых нитей Мнестии они скрывались от зова Реки душ, подобно морякам, лавирующим среди волн в океане.
+::::'''Первозданная Швея:''' Я помню времена, когда романтику ещё не успели запятнать, она была похожа на кокон, поэтому их новые укрытия и сплетены из золотых нитей - в память о прошлом.
+::::'''Первозданная Швея:''' Однако, когда путешествие Преследующих пламя подойдёт к концу, они избавятся от этой оболочки.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} О пророчестве...
+:::'''Первозданная Швея:''' Хорошо. Я расскажу тебе всё, что знаю.
+:::{{Диалог|Разговор}} Что это за скрижали?
+::::'''Первозданная Швея:''' Ты {{MC|ж=помогла|м=помог}} мне, поэтому теперь я всё тебе расскажу.
+::::'''Первозданная Швея:''' В эпоху раздора жила прорицательница Кума. Мы с ней сталкивались пару раз. Она ни разу не использовала пророчество в корыстных целях, однако её всё равно заклеймили еретичкой. Все труды Кумы уничтожили, а имя её стёрли из истории.
+::::'''Первозданная Швея:''' Каким-то образом она смогла сохранить свои работы и даже распространила их по Амфореусу. Возможно, эти скрижали - рукописи Кумы... впрочем, некоторые моменты всё ещё скрываются под покровом тайны.
+::::'''Первозданная Швея:''' Насколько мне известно, она не была златиусом, и Танатос уже давно приняла её в свои объятия.
+::::'''Первозданная Швея:''' Для меня рукописи Кумы не представляют особой ценности. Как бы то ни было, единственный способ спасти Амфореус - следовать пророчеству и собирать ядра пламени. Впрочем, мне любопытно, как же всё-таки ей удалось сохранить древние реликвии?
+::::'''Первозданная Швея:''' Благодаря предыдущим исследованиям у меня уже есть несколько теорий, однако их ещё предстоит подтвердить: нужно больше кусочков. Поможешь мне, {{MC|м=дорогой гость|ж=дорогая гостья}}?
+:::{{Диалог|Разговор}} Зачем тебе эти пророчества?
+::::'''Первозданная Швея:''' Любопытный вопрос, {{MC|ж=дорогая гостья|м=дорогой гость}}. Но прежде хотела бы заметить: пророчества не только приоткрывают завесу будущего - порой они дают нам ключи к разгадкам и раскрывают сокрытые истины.
+::::'''Первозданная Швея:''' Жрецы Оронис используют пророчества для поиска утерянного, жрецы Янус - для выхода из лабиринтов, а жрецы Таланта - для восстановления справедливости...
+::::'''Первозданная Швея:''' Видишь, у пророчеств много чудесных применений, но их интерпретация - не главная моя цель. Это лишь семя, что я сею мимоходом.
+::::'''Первозданная Швея:''' Истинная сила таится в самих нимфах. Собрать их под своим началом для меня важнее, чем разгадывать пророчества.
+::::'''Первозданная Швея:''' Взгляни на этих бабочек романтики - такие прелестные и такие хрупкие... Будь у меня выбор, я бы предпочла стать жужелицей.
+:::{{Диалог|Разговор}} Есть успехи?
+::::'''Первозданная Швея:''' Благодаря собранным тобой скрижалям, золотая нить указала мне более точное направление.
+::::'''Первозданная Швея:''' Владелица этих скрижалей, прорицательница по имени Кума, в самом деле нарушила табу: она попыталась урвать кусочек силы романтики, чтобы превратиться в нимфу и ускользнуть от Танатос.
+::::'''Первозданная Швея:''' В её исследовании много недочётов, но для меня оно всё равно имеет ценность. Если мне удастся собрать больше благословений ткачей, я точно смогу придумать эффективный способ улучшения.
+::::'''Первозданная Швея:''' И тогда надежды госпожи Аглаи тоже смогут...
+:::{{Диалог|Разговор}} Кто такие нимфы?
+::::'''Первозданная Швея:''' Это долгая история, по сути нимфы - это люди, некогда жившие в золотой век.
+::::'''Первозданная Швея:''' Согласно легенде, после смерти Танатос помещает последователей романтики в коконы, а потом они перерождаются бабочками и остаются рядом с титанами.
+::::'''Первозданная Швея:''' В эпоху раздора {{Rubi|Керкес|титан разума}} утратила душу и тело в результате несчастного случая. {{Rubi|Мнестия|Титан романтики}} не смогла принять потерю близкого, она собрала разрозненные останки Керкес, чтобы снова соединить их с помощью шёлковых нитей и вернуть родную душу.
+::::'''Первозданная Швея:''' Отпрыски Мнестии и Керкес тоже встали на этот горький путь и превратились в нимф созидания. Красивые и хрупкие нимфы принадлежали Мнестии, а сильные и храбрые - Керкес.
+::::'''Первозданная Швея:''' Воссоздать тело божества - задача не из лёгких. Нимфы должны были проникнуть во всё живое, впитать мудрость и любовь на многих языках, чтобы Мнестия смогла получить золотые нити. Так они и заслужили своё второе название - ткачи.
+::::'''Первозданная Швея:''' Вот только... их труд оказался напрасным.
+:::{{Диалог|Разговор}} Как нимфы тебе помогают?
+::::'''Первозданная Швея:''' И в нашем сломленном настоящем считается, что нимфы обладают редким даром. Если собрать их вместе, можно завладеть значительной силой, которая способна разрушить самую крепкую печать.
+::::{{Диалог|Стрелка}} А они согласятся?
+::::'''Первозданная Швея:''' Мы все связаны с Мнестией незримыми узами. Если рассказать им о нашей миссии с чувством и выражением, они наверняка проникнутся и захотят помочь. В конце концов, пророчество связано с титанами.
+::::'''Первозданная Швея:''' Заручившись согласием, я смогу разместить их воспоминания и души в правильном порядке и с помощью золотой нити восстановить их дар... Надеюсь, у меня получится.
+:::{{Диалог|Разговор}} Это все нимфы, которых я {{MC|м=нашёл|ж=нашла}}?
+::::'''Первозданная Швея:''' Да, золотые нити даруют благословение нимф. Оболочки насекомых, сшитые из золотых нитей, нужны, дабы не навредить их душам. Впрочем, это временные меры.
+::::'''Первозданная Швея:''' Нимфы - мои глаза, мои помощники и посланники. Мы делим с ними звание ткачей: эти узы сложно разорвать. Надеюсь, священный город сможет дать им надёжное убежище.
+::::'''Первозданная Швея:''' В прошлом нимфы строили свои дома внутри Кокона романтики, там они обменивались сокровенными тайнами. С помощью шёлковых нитей Мнестии они скрывались от зова Реки душ, подобно морякам, лавирующим среди волн в океане.
+::::'''Первозданная Швея:''' Я помню времена, когда романтику ещё не успели запятнать, она была похожа на кокон, поэтому их новые укрытия и сплетены из золотых нитей - в память о прошлом.
+::::'''Первозданная Швея:''' Однако, когда путешествие Преследующих пламя подойдёт к концу, они избавятся от этой оболочки.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Я {{MC|ж=нашла|м=нашёл}} кое-что...
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_150056.png"
 }</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TutorialTaskUnlock",
-	"TriggerParam": {
-		"Value": "6127"
-	}
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}})
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_150057.png"
 }</pre>
-
-;(Unused &mdash; Start3.0Morse)
-<pre>{
-	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
-	"Name": {
-		"Value": "FCV_3.0BugFinish"
-	},
-	"Value": {
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}})
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_150058.png"
+}</pre>
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}})
+:::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_150059.png"
+}</pre>
+:::'''Первозданная Швея:''' Неужели пророчество хочет указать нам цель? Просто удивительно!
+:::'''Первозданная Швея:''' Края довольно ровные, повреждений не видно. Видимо, это и есть изначальный облик.
+::<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false
+}</pre>
+:::'''Первозданная Швея:''' В любом случае если так указано в пророчестве, он нам точно пригодится. Пусть пока побудет у тебя, {{MC|ж=дорогая гостья|м=дорогой гость}}.
+:::'''Первозданная Швея:''' У меня здесь ещё много неразгаданных пророчеств. Когда мы расшифруем их полностью, мы сможем найти более глубокий смысл.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}],"Inverse":true}-->}}, {{cx}}<!--performance 401580114 has not been seen--> and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}],"Inverse":true}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Можешь повторить пророчество?
+:::'''Первозданная Швея:''' «Бабочки знают всё».
+:::'''Первозданная Швея:''' Да, вот так просто... Возможно, нам лучше сосредоточиться на нимфах. Что они хотят нам сказать?
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Inverse":true}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|undefined}} Я {{MC|ж=собрала|м=собрал}} здесь всех нимф.
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}],"Inverse":true}-->}})
+::::'''Первозданная Швея:''' Благодарю тебя, {{MC|ж=дорогая гостья|м=дорогой гость}}. Теперь я раскрою тебе одно из великого множества пророчеств.
+::::'''Первозданная Швея:''' Похоже, что пророчество указывает ткачам путь... Это и есть ключ к отгадке.
+::::'''Первозданная Швея:''' Может, это какой-то рисунок? Или указание на некое место?.. Если тебе интересно, можешь попробовать расшифровать пророчество.
+::::'''Первозданная Швея:''' Ещё раз благодарю за помощь, {{MC|ж=дорогая гостья|м=дорогой гость}}.
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}],"Inverse":true}-->}})
+::::'''Первозданная Швея:''' Благодарю тебя... Я вижу, что тебе удалось обрести цель, о которой говорилось в пророчестве. Поразительно. Мы и не догадывались о сокрытых в тебе секретах.
+::::'''Первозданная Швея:''' В будущем ткачи станут важным подспорьем для священного города. Я подготовила для тебя небольшой подарок в знак благодарности.
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200601}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200602
+			}
+		}
+	]
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200601}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200601
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200602
+			}
+		}
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|undefined}} Где ещё остались нимфы?
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":12}},"Inverse":true}-->}})
+::::'''Первозданная Швея:''' Швея может найти их, проследив за золотыми нитями, однако для этого нужны {{Цвет|Ключевой|nobold=1|осколки памяти}}.
+::::{{Диалог|Стрелка}} Передать осколки памяти.
+::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
 		"IsDynamic": false,
 		"FixedValue": {
-			"Value": 1
+			"Value": 12
 		}
-	}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 401554104
+					}
+				]
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 12
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 208
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555205
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 209
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555206
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 210
+						}
+					},
+					"TalkInfo": {
+						"TargetBehaviors": [],
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555207
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 211
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555208
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 212
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555209
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 213
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555210
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 214
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555211
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 215
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555212
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 216
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555213
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 217
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555214
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 218
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555215
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 219
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555216
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 220
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555217
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 221
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555218
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 222
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555219
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 223
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555220
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 224
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555221
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 225
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555222
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 226
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555223
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 227
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 401555224
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_401555226"
+			}
+		}
+	],
+	"SimpleTalk": {}
 }</pre>
-
-;(Unused &mdash; Stop3.0Morse)
-<pre>{
+::::{{Диалог|Стрелка}} Не дам.
+:::::'''Первозданная Швея:''' Что ж... Без осколков памяти я не смогу тебе помочь... И геозавры не станут работать на голодный желудок. Возвращайся позже, {{MC|ж=дорогая гостья|м=дорогой гость}}.
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":12}},"Inverse":true}-->}})
+::::'''Первозданная Швея:''' Спасибо тебе, {{MC|ж=дорогая гостья|м=дорогой гость}}. Один мудрец сказал: «Никто не может читать две книги одновременно».
+::::'''Первозданная Швея:''' Швея рассказывает вам, где прячется одна из нимф. Пока вы её не найдёте, сведения о других существах останутся тайной.
+:::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200601}},"Inverse":true}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"Less"}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|undefined}} Я {{MC|ж=нашла|м=нашёл}} достаточно нимф.
+:::'''Первозданная Швея:''' Благодарю тебя. Ткачи станут важным подспорьем для священного города. Я подготовила для тебя небольшой подарок в знак благодарности.
+::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200601
+			}
+		}
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|Механизм}} О мерцании нимф...
+:::'''Первозданная Швея:''' Вы заметили их! Какие будут указания?
+:::{{Диалог|Стрелка}} Можешь сделать так, чтобы нимфы не мерцали?
+::::'''Первозданная Швея:''' Вам не нравится? Сейчас попрошу их быть поскромнее.
+:::<pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
 	"Name": {
 		"Value": "FCV_3.0BugFinish"
@@ -118,6 +613,56 @@ PageTitle=#Жужжащие секреты#
 		}
 	}
 }</pre>
+:::{{Диалог|Стрелка}} Можешь сделать так, чтобы нимфы снова замерцали?
+::::'''Первозданная Швея:''' Как пожелаете, сейчас я с ними поговорю.
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_3.0BugFinish"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:::{{Диалог|Выход}} Пока что так.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1},{"ItemID":150063,"ItemNum":1},{"ItemID":150065,"ItemNum":1},{"ItemID":150069,"ItemNum":1},{"ItemID":150071,"ItemNum":1},{"ItemID":150074,"ItemNum":1},{"ItemID":150075,"ItemNum":1},{"ItemID":150076,"ItemNum":1},{"ItemID":150077,"ItemNum":1}]}-->}} and {{cx}}<!--performance 504103001 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Я {{MC|ж=собрала|м=собрал}} все скрижали.
+:::'''Первозданная Швея:''' Посмотрим... да, {{MC|ж=дорогая гостья|м=дорогой гость}}, это все записи прорицательницы. Золотые нити смогут извлечь больше информации.
+:::'''Первозданная Швея:''' Теперь настало время раскрыть тебе всю глубину замысла госпожи Аглаи.
+:::'''Первозданная Швея:''' Всё началось с маленькой, но благородной мечты: дать отпор чёрному течению. Точнее, пережить его.
+:::'''Первозданная Швея:''' Как тебе уже известно, пережить обрушившееся на Амфореус чёрное течение не может никто - ни люди, ни мифические существа. За одним только исключением.
+:::{{Диалог|Стрелка}} Это... нимфы?
+:::'''Первозданная Швея:''' Верно. Тебе наверняка уже доводилось видеть, что ткачи способны на кратковременное сопротивление атакам чёрного течения. Пусть они не могут свободно перемещаться внутри, но и чёрное течение не может полностью их поглотить.
+:::'''Первозданная Швея:''' Таким образом, это первый шаг к созданию чего-то из ничего. Раскрытие принципа, лежащего в основе секрета ткачей, означает, что в один прекрасный день жители Амфореуса смогут больше не бояться этого бедствия.
+:::'''Первозданная Швея:''' Но, согласно текущим расчётам, для осуществления этого плана требуется гораздо больше нимф, чем мы способны отыскать. Даже мне неизвестно, где найти оставшихся нимф.
+:::'''Первозданная Швея:''' Как бы то ни было, я благодарна за всю оказанную тобой помощь.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyMirrorTakenDiff"}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1},{"ItemID":150063,"ItemNum":1},{"ItemID":150065,"ItemNum":1},{"ItemID":150069,"ItemNum":1},{"ItemID":150071,"ItemNum":1},{"ItemID":150074,"ItemNum":1},{"ItemID":150075,"ItemNum":1},{"ItemID":150076,"ItemNum":1},{"ItemID":150077,"ItemNum":1}]}-->}} and {{cx}}<!--performance 504103001 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|undefined}} Помоги мне призвать пойманных нимф.
+:::'''Первозданная Швея:''' Как пожелаешь. Я призову нимф, которых ты {{MC|ж=коснулась|м=коснулся}} золотыми нитями. Надеюсь, так тебе станет легче.
+:;(If {{cx}}<!--performance 504118008 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyMirrorTakenDiff"}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1},{"ItemID":150063,"ItemNum":1},{"ItemID":150065,"ItemNum":1},{"ItemID":150069,"ItemNum":1},{"ItemID":150071,"ItemNum":1},{"ItemID":150074,"ItemNum":1},{"ItemID":150075,"ItemNum":1},{"ItemID":150076,"ItemNum":1},{"ItemID":150077,"ItemNum":1}]}-->}} and {{cx}}<!--performance 504103001 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Сплошные баги с этими нимфами!
+:::'''Первозданная Швея:''' Что ж, как носители воспоминаний о прошлом, нимфы очень восприимчивы к влиянию беспорядочных данных: проходят сквозь стены, мерцают, зависают, не двигаются... Полагаю, тебе уже доводилось видеть с ними всякие странности.
+:::'''Первозданная Швея:''' Я пыталась исправить их поведение, но, к сожалению, у этих странностей нет определённого паттерна проявления, поэтому мне трудно локализовать конкретную причину...
+:::'''Первозданная Швея:''' Но я верю, что с наступлением эры воскресающей земли всё исправится, и количество багов с нимфами уменьшится.
+:;(If {{cx}}<!--performance 504118009 has been seen-->, the player has greater than or equal to {{Предмет|«Плод времени»|20|x=1}}, {{cx}}<!--performance 504118008 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyMirrorTakenDiff"}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1},{"ItemID":150063,"ItemNum":1},{"ItemID":150065,"ItemNum":1},{"ItemID":150069,"ItemNum":1},{"ItemID":150071,"ItemNum":1},{"ItemID":150074,"ItemNum":1},{"ItemID":150075,"ItemNum":1},{"ItemID":150076,"ItemNum":1},{"ItemID":150077,"ItemNum":1}]}-->}} and {{cx}}<!--performance 504103001 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог}} Почему эта каменная плита превратилась в яблоко?
+:::'''Первозданная Швея:''' Хм... Прошу прощения, {{MC|ж=дорогая гостья|м=дорогой гость}}. Информации об этом предмете нет в моей базе данных, я не могу объяснить.
+:::'''Первозданная Швея:''' Для сохранения информации люди вырезали слова на камне - скрижаль оды была средством, с помощью которого пророчества передавались на протяжении сотен лет.
+:::'''Первозданная Швея:''' Но то, что ты держишь в руках... словно нечто иное. Подобные описания мне встречались только в древнейших героических эпосах.
+:::'''Первозданная Швея:''' Тебе ведь пришлось пережить множество приключений, прежде чем тебе удалось её найти? Возможно, в будущем она окажется жизненно важной.
+:;(If {{cx}}<!--performance 504118009 has been seen-->, the player has greater than or equal to {{Предмет|«Плод времени»|20|x=1}}, {{cx}}<!--performance 504118008 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyMirrorTakenDiff"}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1},{"ItemID":150063,"ItemNum":1},{"ItemID":150065,"ItemNum":1},{"ItemID":150069,"ItemNum":1},{"ItemID":150071,"ItemNum":1},{"ItemID":150074,"ItemNum":1},{"ItemID":150075,"ItemNum":1},{"ItemID":150076,"ItemNum":1},{"ItemID":150077,"ItemNum":1}]}-->}} and {{cx}}<!--performance 504103001 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1},{"ItemID":150058,"ItemNum":1},{"ItemID":150057,"ItemNum":1},{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200602}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200604}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200606}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200607}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}} and {{cx}}<!--performance 401580115 has been seen-->, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150065,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150063,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150059,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150058,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150057,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150056,"ItemNum":1}]}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150069,"ItemNum":1}]}-->}}, or {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareItemNum","ItemPair":[{"ItemID":150071,"ItemNum":1}]}-->}}, Миссия [[Жужжащие секреты]] has been completed, and Миссия [[Жужжащие секреты]] has been completed)
+:{{Диалог|Выход}} Мне пора.
+:::'''Первозданная Швея:''' До свидания. Буду ждать хороших вестей.
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6127"
+	}
+}</pre>
+
 {{Диалог Конец}}
 
 ===Прикоснитесь к корням Древа уз===
@@ -146,7 +691,7 @@ PageTitle=#Жужжащие секреты#
 |ru   = Жужжащие секреты
 |th   = ความลับของเสียงแมลง
 |vi   = Bí Mật Tiếng Côn Trùng
-|de   = Das Geheimnis des Insektenzirpens
+|de   = Geheimnis des Zirpens
 |id   = Rahasia Suara Serangga
 |pt   = O Segredo do Canto dos Insetos
 }}

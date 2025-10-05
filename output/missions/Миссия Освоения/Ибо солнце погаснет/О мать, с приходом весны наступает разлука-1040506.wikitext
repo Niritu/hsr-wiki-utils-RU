@@ -53,6 +53,12 @@ PageTitle=#О мать, с приходом весны наступает раз
 		300001
 	]
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
 ;(Unused &mdash; EnterDistrict_G5-2)
 :<!--0.05-second delay-->
 ::<!--0.1-second delay-->
@@ -96,6 +102,12 @@ PageTitle=#О мать, с приходом весны наступает раз
 	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
 	"InstanceIDList": [
 		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
 	]
 }</pre>
 ;(Unused &mdash; EnterDistrict_G6-2)
@@ -177,18 +189,39 @@ PageTitle=#О мать, с приходом весны наступает раз
 
 ===Встретьтесь со своими друзьями===
 {{Диалог Начало}}
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
 	"InstanceIDList": [
 		400002
 	]
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetAILeadWay",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
 		"Targets": [
 			400002
+		]
+	},
+	"PathwayGroupID": 9,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"PathOffset": []
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
 		]
 	},
 	"PathwayGroupID": 9,
@@ -220,13 +253,14 @@ PageTitle=#О мать, с приходом весны наступает раз
 
 ===Следуйте за своими друзьями и пройдите через Врата памяти===
 {{Диалог Начало}}
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
 	"InstanceIDList": [
 		400002
 	]
 }</pre>
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.AdvSetAILeadWay",
 	"TargetType": {
 		"$type": "RPG.GameCore.GroupFetchLocalTarget",
@@ -239,10 +273,37 @@ PageTitle=#О мать, с приходом весны наступает раз
 	"MotionFlag": "Run",
 	"PathOffset": []
 }</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"PathwayGroupID": 10,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"PathOffset": []
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
 	"InstanceIDList": [
 		300001
+	],
+	"SkipCreated": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
 	],
 	"SkipCreated": true
 }</pre>

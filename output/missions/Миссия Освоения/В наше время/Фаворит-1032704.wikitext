@@ -33,7 +33,8 @@ PageTitle=#Фаворит#
 
 ===Победите в «Противостоянии суперзвёзд»===
 {{Диалог Начало}}
-<pre>{
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:<pre>{
 	"$type": "RPG.GameCore.SetMissionCustomValue",
 	"SubmissionID": 103270414,
 	"MissionCustomValue": {
@@ -45,6 +46,20 @@ PageTitle=#Фаворит#
 		]
 	},
 	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270414,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
 }</pre>
 {{Описание миссии|тип=Миссия Освоения|локация=Отборочная площадка выжженных песков от Услады™|Вас ждёт самый сложный уровень «Отбора на праздник Услады™» - «Противостояние суперзвёзд»! Только тот, кто будет смеяться последним, станет следующей Суперзвездой праздника Пенаконии...<br />Будете ли это вы? Или тот высокий, сильный и обаятельный мужчина, с лёгкостью получивший высший балл за актёрское мастерство? Не переключайтесь!}}
 ;(Unused &mdash; EnterArea_LocalGroup)
@@ -384,6 +399,10 @@ PageTitle=#Фаворит#
 	},
 	"CustomValue": 1
 }</pre>
+:;(If {{F|MissionCV-1032704-undefined}} is undefined 0)
+:;(If {{F|MissionCV-1032704-undefined}} is not undefined 0)
+::;(Enter battle)
+:::{{Список врагов|mode=sent|Пережаренный из труппы «Кошмарики»*2/-33.3% Сила атаки, -44.4% НР, -180 }}
 ;(Unused &mdash; MissionTalk)
 :'''(Первопроходец):''' (Быть не может, кого я вижу... это некто исключительный.)
 :{{tx}}
@@ -392,6 +411,62 @@ PageTitle=#Фаворит#
 
 ;(Поговорите с Аргенти)
 :'''Аргенти:''' Идите! Ваше место на пьедестале... Насладитесь славой победителей!
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2.5
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "Camera"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "FinishLookAtPerformance_103270402"
+	}
+}</pre>
 :<!--0.5-second delay-->
 <pre>{
 	"$type": "RPG.GameCore.SetFloorCustomFloat",
@@ -755,10 +830,27 @@ PageTitle=#Фаворит#
 	},
 	"CustomValue": 1
 }</pre>
+:;(If {{F|MissionCV-1032704-undefined}} is undefined 0)
+:;(If {{F|MissionCV-1032704-undefined}} is not undefined 0)
+::;(Enter battle)
+:::{{Список врагов|mode=sent|Пережаренный из труппы «Кошмарики»*2/-33.3% Сила атаки, -44.4% НР, -180 }}
 :{{tx}}
 
 ;(Поговорите с Аргенти)
 :'''Аргенти:''' Идите! Ваше место на пьедестале... Насладитесь славой победителей!
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_C1BrokenBridge"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.StartMissionCameraTemplate",
 	"CamDuration": {

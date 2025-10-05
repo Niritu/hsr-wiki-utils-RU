@@ -103,9 +103,18 @@ PageTitle=#Часик на 42-й улице#
 ;(If {{cx}}<!--SubMission Finish: 802210102--> and {{cx}}<!--SubMission not Finish: 802210207-->)
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, можем начать монтаж?
 ::{{Диалог|Журнал путешествий}} Начинаем.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::{{Диалог|Разговор}} Я хочу кое о чём спросить.
 :::'''Пис:''' Конечно! Чтобы создать шедевр, крайне важно хорошо разбираться в предмете. Спрашивайте! Я расскажу всё, что знаю сам.
@@ -133,9 +142,18 @@ PageTitle=#Часик на 42-й улице#
 :::;(Return to previous option selection)
 :::{{Диалог|Возврат}} У меня больше нет вопросов.
 ::::{{Диалог|Журнал путешествий}} Начинаем.
-::::<pre>{
+::::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+::::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ::::{{Диалог|Выход}} Давай в другой раз.
 :::::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
@@ -145,12 +163,21 @@ PageTitle=#Часик на 42-й улице#
 ::'''Пис:''' {{MC|ж=Госпожа|м=Господин}} режиссёр, Ирисы рецензируют фильмы в {{Цвет|Ключевой|nobold=1|Большом театре Пенаконии}}. Там же хранятся запрещённые плёнки.
 ::'''Пис:''' Вы почётный гость Семьи. Если у вас найдётся минутка, не могли бы вы попросить Семью вернуть плёнку «Тайны сладких грёз»? Конечно, если это не помешает монтажу.
 ::{{Диалог|Журнал путешествий}} Продолжим монтаж.
-::<pre>{
+::;(If {{cx}}<!--SubMission Finish: 802210103-->)
+:::<pre>{
 	"$type": "RPG.GameCore.ShowUI",
 	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
 }</pre>
+::;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+:::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
+}</pre>
 ::{{Диалог|Выход}} Пойду искать представителей Семьи.
-:::'''Пис:''' Ну, время никого не ждёт. Постарайтесь как можно скорее закончить монтаж. Чем раньше это случится, тем скорее все трудности окажутся позади.
+:::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ;(Otherwise)
 ::'''Пис:''' Почему вы опять здесь? «Мемуары о сладких грёзах» на пике популярности, дела студии идут в гору. Во вмешательстве Семьи нет никакой необходимости!
 ::'''Мимоза:''' Неужели? И финальная серия готова?
@@ -238,12 +265,28 @@ PageTitle=#Часик на 42-й улице#
 ::'''Пис:''' Поклонники с нетерпением ждут выхода «Мемуаров о сладких грёзах». Давайте продолжим монтировать!
 ::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ::{{Диалог|Стрелка}} Начинаем финальный монтаж.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
 ::{{Диалог|Стрелка}} Мне нужно немного времени.
 :::Мне нужно немного времени.
 :::{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:;(If {{cx}}<!--SubMission Finish: 802210103-->)
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage"
+}</pre>
+:;(If {{cx}}<!--SubMission not Finish: 802210103-->)
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkScriptDetailPage",
+	"Param": {
+		"Value": "1"
+	}
 }</pre>
 ;(Unused &mdash; ActivitMovie_OpenTempUI)
 <pre>{
@@ -344,12 +387,71 @@ PageTitle=#Часик на 42-й улице#
 ::'''Пис:''' Поклонники с нетерпением ждут выхода «Мемуаров о сладких грёзах». Давайте продолжим монтировать!
 ::'''Пис:''' Спасибо вам! Буду ждать хороших новостей.
 ::{{Диалог|Стрелка}} Начинаем финальный монтаж.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
 ::{{Диалог|Стрелка}} Мне нужно немного времени.
 :::Мне нужно немного времени.
 :::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
 :<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ShowUI",
+					"Name": "Ui.ActivityClockPark.Entrance.ActivityClockParkMainPage",
+					"OnUIEnter": [
+						{
+							"$type": "RPG.GameCore.TriggerCustomString",
+							"CustomString": {
+								"Value": "Talk_802210317"
+							}
+						}
+					],
+					"OnUIExitImmediately": [
+						{
+							"$type": "RPG.GameCore.TriggerCustomString",
+							"CustomString": {
+								"Value": "Talk_802210317"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_802210317"
+					}
+				}
+			]
+		}
+	],
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"CharacterUniqueName": "Group_F20321001_G299_G196N400001",
+				"AreaName": {
+					"Value": "LevelArea_P20321_F20321001_G299"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				},
+				"ResetCamera": false,
+				"ResetTurnInPlace": true
+			}
+		}
+	]
 }</pre>
 {{Диалог Конец}}
 
@@ -566,6 +668,24 @@ PageTitle=#Часик на 42-й улице#
 :'''Михей:''' Пис мне говорил, что ты {{MC|ж=участвовала|м=участвовал}} в производстве.
 :'''Михей:''' У вас возникли какие-то трудности во время работы? Мимоза раньше была помощником Часовщика по анимации, и она досконально знает историю Часика. Если проблема по технической части, лучше обсуди всё с ней...
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10304_F10304001_G43"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Следуйте за Мимозой и Михеем на кладбище Безымянных===

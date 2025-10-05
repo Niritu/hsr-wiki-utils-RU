@@ -89,6 +89,30 @@ PageTitle=#Операция по фотосъёмке: день 1#
 :{{Диалог|Выход}} У меня есть другие дела.
 ::'''Рэндольф:''' Хорошо, буду ждать тебя здесь.
 ::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "G266_OpenUI"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 802430101
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; G266_OpenUI)
 <pre>{
@@ -111,6 +135,22 @@ PageTitle=#Операция по фотосъёмке: день 1#
 }</pre>
 :{{Диалог|Выход}} У меня есть другие дела.
 ::'''Рэндольф:''' Хорошо. Если захочешь поснимать, я всегда буду тебе рад.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "G253_OpenUI"
+					}
+				}
+			]
+		}
+	]
+}</pre>
 
 ;(Unused &mdash; G253_OpenUI)
 <pre>{

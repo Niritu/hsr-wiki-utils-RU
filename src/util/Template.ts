@@ -260,6 +260,59 @@ export interface TemplateMap {
 		path1: string
 		path2: string
 		mentions: string
+	},
+	'Character Infobox': {
+		title?: string
+		image: string
+		type: string
+		realname?: string
+		species?: string
+		deceased?: string
+		pathlore?: string
+		pathNote?: string
+		pathRef?: string
+		faction?: string
+		factionNote?: string
+		factionRef?: string
+		world: string
+		location: string
+		relatives?: string
+	},
+	'Ability Infobox': {
+		title?: string
+		image: string
+		character: string
+		type: string
+		reqAsc?: number
+		tag?: string
+		toughdmg?: string | number
+		energyGen?: string | number
+		energyCost?: string | number
+		duration: string	
+		desc: string
+		utility1: string
+		utility2?: string
+		utility3?: string
+		utility4?: string
+		scale_att1: string
+		scale_att2?: string
+		scale_att3?: string
+		sortkey?: number
+	},
+	'Eidolon Infobox': {
+		title: string
+		image: string
+		character: string
+		level: number | string
+		duration: string
+		desc: string
+		utility1: string
+		utility2?: string
+		utility3?: string
+		utility4?: string
+		scale_att1: string
+		scale_att2?: string
+		scale_att3?: string
 	}
 }
 

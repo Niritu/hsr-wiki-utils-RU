@@ -36,9 +36,15 @@ PageTitle=#Нижний мир: Приключения Хану II#
 
 
 ;(Unused &mdash; TV_Open)
-<pre>{
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
 	"$type": "RPG.GameCore.RequestGroupStateChange",
 	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
 }</pre>
 {{Диалог Конец}}
 

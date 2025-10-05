@@ -261,17 +261,43 @@ PageTitle=#Выставка фотографий: Фокус на брендах
 :'''Март 7:''' Выглядит неплохо... Мощный фонтан из стеклянной бутылки демонстрирует неоспоримую власть коммерческой империи!
 :'''Март 7:''' (Первопроходец), давай придумаем название для фото.
 :{{Диалог|Стрелка}} «Фонтан».
-:{{Диалог|Стрелка}} «Сны - то что надо!»
-:{{Диалог|Стрелка}} «Нравится даже обезьянам».
-::'''Март 7:''' Хм... Баюнановая обезьянка сказала бы: «ба-на-на».
-::{{tx}}
-<pre>{
+:<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 204,
 	"Value": "1"
 }</pre>
+:{{Диалог|Стрелка}} «Сны - то что надо!»
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 204,
+	"Value": "2"
+}</pre>
+:{{Диалог|Стрелка}} «Нравится даже обезьянам».
+::'''Март 7:''' Хм... Баюнановая обезьянка сказала бы: «ба-на-на».
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 204,
+	"Value": "3"
+}</pre>
 :'''Март 7:''' Согласно регламенту, как только мы придумаем название для фото, его можно загружать в сеть. Интересно, как его оценят... Я так волнуюсь!
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "13"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionNextShotDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "14"
+	}
+}</pre>
 {{Диалог Конец}}
 
 ===Поймайте Баюнановую обезьянку===
@@ -285,6 +311,14 @@ PageTitle=#Выставка фотографий: Фокус на брендах
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AddStreamingSource",
+	"StreamingSource": {
+		"CenterName": "Mission_Performance_G357",
+		"AreaName": "LevelArea_P20322_F20322001_G2",
+		"AnchorName": "Miniature_World_Location"
+	}
+}</pre>
 ----
 :'''Баюнановая обезьянка:''' Ба-на-на!
 :'''Март 7:''' Куда это ты бежишь? Сопротивление бесполезно, сдавайся! (Первопроходец), в атаку!
@@ -393,6 +427,10 @@ PageTitle=#Выставка фотографий: Фокус на брендах
 	"SubObjectModifyDataList": []
 }</pre>
 :{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.RemoveStreamingSource",
+	"StreamingSource": "Mission_Performance_G357"
+}</pre>
 {{Диалог Конец}}
 
 ===Сфотографируйте Баюнановую обезьянку===
@@ -415,27 +453,125 @@ PageTitle=#Выставка фотографий: Фокус на брендах
 ::'''Баюнановая обезьянка:''' Ба-на-на!
 ::'''Март 7:''' У неё такой осмысленный взгляд...
 ::{{Диалог|Стрелка}} Встряхнуть.
-::{{Диалог|Стрелка}} Дёрнуть.
-::{{Диалог|Стрелка}} Подбросить.
-:<pre>{
+::<pre>{
 	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+::{{Диалог|Стрелка}} Дёрнуть.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Стрелка}} Подбросить.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
 }</pre>
 ::'''Март 7:''' Оказывается, это просто игрушка... На пике популярности Баюнановых обезьянок лабананоранты сделали много обезьяньего мерча, в том числе и эту игрушку.
 ::'''Март 7:''' Ошибочка вышла. Но снимок получился отличный. (Первопроходец), как его подпишем?
 ::{{Диалог|Стрелка}} «Баюнановая горилла».
 :::'''Март 7:''' Если бы все Баюнановые обезьянки были таких размеров, дела могли бы принять совсем другой оборот... Но госпожа Раппа говорила, что может побить даже обезьяну размером со звезду.
-::{{Диалог|Стрелка}} «Красавица и бабуин».
-:::'''Март 7:''' Напоминает название мультфильма от Студии «Часы»... Зачем ты меня {{MC|ж=вписала|м=вписал}} в название?
-::{{Диалог|Стрелка}} «Атака обезьян-титанов».
-:::'''Март 7:''' Ой-ёй, как-то страшно стало, что Баюнановые обезьянки снова нас атакуют...
-::{{tx}}
-:<pre>{
+:::{{tx}}
+::<pre>{
 	"$type": "RPG.GameCore.SetTextJoinValue",
 	"TextJoinID": 205,
 	"Value": "1"
 }</pre>
+::{{Диалог|Стрелка}} «Красавица и бабуин».
+:::'''Март 7:''' Напоминает название мультфильма от Студии «Часы»... Зачем ты меня {{MC|ж=вписала|м=вписал}} в название?
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 205,
+	"Value": "2"
+}</pre>
+::{{Диалог|Стрелка}} «Атака обезьян-титанов».
+:::'''Март 7:''' Ой-ёй, как-то страшно стало, что Баюнановые обезьянки снова нас атакуют...
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 205,
+	"Value": "3"
+}</pre>
 ::'''Март 7:''' С сегодняшними двумя фотографиями мы закончили. Как же я устала снимать... Хорошая работа, (Первопроходец)!
 ::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720707,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720707,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 2
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 802720707,
+					"MissionCustomValue": {
+						"Name": "OldValue_0",
+						"ValidValueParamList": [
+							1,
+							2,
+							3
+						]
+					},
+					"CustomValue": 3
+				}
+			]
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionShotResultDialog",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "14"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Result.ActivityPhotoExhibitionGroupFinishPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "7"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.Activity.ActivityPhotoExhibition.Entrance.ActivityPhotoExhibitionMainPage"
+}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

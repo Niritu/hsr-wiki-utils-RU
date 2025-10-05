@@ -1,11 +1,11 @@
 <%-- [PAGE_INFO]
-PageTitle=#Главное - еда#
+PageTitle=#Главное — еда#
 [END_PAGE_INFO] --%>
 {{Дополнить|Диалоги.}}
 {{Миссия Инфобокс
 |id              = 3000703
-|Название        = 
-|Изображение     = Миссия Главное - еда.png
+|Название        = Главное - еда
+|Изображение     = Миссия Главное — еда.png
 |Тип             = Ежедневная миссия
 |Событие         = 
 |Глава           = 
@@ -54,10 +54,18 @@ PageTitle=#Главное - еда#
 
 ===Найдите неисправных роботов и перезапустите их===
 {{Диалог Начало}}
-<pre>{
+;(If {{cx}}<!--SubMission Finish: 300070302-->)
+:<pre>{
 	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
 	"CharacterUniqueName": "Robot1",
 	"MeshName": "Body"
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 300070302-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body",
+	"EmotionIndex": 2
 }</pre>
 
 ;(Поговорите с Маленький робот)

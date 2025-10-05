@@ -30,9 +30,15 @@ PageTitle=##
 ;(If Миссия [[Прогулка среди могил]] has not been completed)
 
 :{{Диалог|Изучение}} Осмотреть
-<pre>{
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:<pre>{
 	"$type": "RPG.GameCore.TalkFigure",
 	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
 }</pre>
 :На полу лежит практически исчезнувший смартфон. На экране - неотправленное сообщение... с фотографией двух улыбающихся людей.
 :{{Диалог|Стрелка}} (Вы поднимаете смартфон.)

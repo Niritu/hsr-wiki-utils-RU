@@ -283,7 +283,7 @@ export class MessageItem {
 				return this.text?.replaceAll('\n', '<br />') || ''
 			case 'Image':
 				const imageData = MessageItemImage[this.content_id!]
-				const fileName = MESSAGE_IMAGE_NAMES[this.content_id!] ? `Message ${MESSAGE_IMAGE_NAMES[this.content_id!]}` : `Message ${this.sender_type == 'NPC' ? this.sender!.name : this.group.contact.name} ${this.content_id! - 10000}`
+				const fileName = MESSAGE_IMAGE_NAMES[this.content_id!] ? `Сообщение ${MESSAGE_IMAGE_NAMES[this.content_id!]}` : `Сообщение ${this.sender_type == 'НИП' ? this.sender!.name : this.group.contact.name} ${this.content_id! - 10000}`
 				return !imageData.FemaleImagePath 
 					? `[[Файл:${fileName}.png|256px]]`
 					: `[[Файл:${fileName} Келус.png|256px]] [[File:${fileName} Стелла.png|256px]]`

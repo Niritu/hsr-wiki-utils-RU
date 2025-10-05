@@ -104,6 +104,28 @@ PageTitle=#Путь становления мастера: Диалог#
 :'''Март 7:''' Самое время нанести решающий удар!
 :{{Диалог|Стрелка}} Ну, убеждать Скотта я уже {{MC|ж=научилась|м=научился}}...
 :{{Диалог|Стрелка}} Давай я этим займусь! Я специалист по переговорам!
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10202_F10202004_G395"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
 {{Диалог Конец}}
 
 ===Отправляйтесь в Переулок ауруматонов и поговорите со Скоттом===

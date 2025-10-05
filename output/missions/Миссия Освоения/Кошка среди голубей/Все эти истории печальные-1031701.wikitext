@@ -81,6 +81,53 @@ PageTitle=#Все эти истории печальные#
 		400001
 	]
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		103170104
+	],
+	"State": "Finish",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+			"InstanceIDList": [
+				400001
+			]
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [
+		103170104
+	],
+	"State": "Finish",
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.AdvSetAIMoveTo",
+			"EntityInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			},
+			"GroupId": 30,
+			"PointID": 2,
+			"MotionFlag": "FastRun",
+			"SkipStartTurn": true,
+			"OnReach": []
+		}
+	]
+}</pre>
 ;(Unused &mdash; LetKKWXFacePlayer)
 
 ;(Unused &mdash; LookatPerformanceM)
@@ -115,6 +162,7 @@ PageTitle=#Все эти истории печальные#
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:'''Ребёнок:''' Папа, мама... Подождите...
 <pre>{
 	"$type": "RPG.GameCore.AdvSetAIMoveTo",
 	"EntityInstanceID": {
@@ -169,6 +217,26 @@ PageTitle=#Все эти истории печальные#
 	"EmitterType": "Prop",
 	"GroupID": 2,
 	"ID": 300002
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<!--2.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"GroupId": 277,
+	"PointID": 1,
+	"MotionFlag": "FastRun",
+	"OnReach": []
 }</pre>
 :<!--8-second delay-->
 <pre>{
@@ -246,6 +314,12 @@ PageTitle=#Все эти истории печальные#
 		400002
 	]
 }</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 ;(По прибытии на место)
 <pre>{
 	"$type": "RPG.GameCore.WaitSubMissionStateChange",
@@ -318,6 +392,12 @@ PageTitle=#Все эти истории печальные#
 ;(По прибытии на место)
 :{{tx}}
 ;(If {{cx}}<!--SubMission not Finish: 103170127-->)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
 <pre>{
 	"$type": "RPG.GameCore.WaitSubMissionStateChange",
 	"SubMissions": [
@@ -424,6 +504,12 @@ PageTitle=#Все эти истории печальные#
 ;(По прибытии на место)
 ;(If {{cx}}<!--SubMission not Finish: 103170143-->)
 <pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
 	"$type": "RPG.GameCore.AdvSetAIMoveTo",
 	"EntityInstanceID": {
 		"IsDynamic": false,
@@ -498,9 +584,18 @@ PageTitle=#Все эти истории печальные#
 	"CustomValue": 1
 }</pre>
 ;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Часик:''' Братец Хану! Куда... Куда ты?
 ;(По прибытии на место)
 
 ;(По прибытии на место)
+:'''Босс Камень:''' Он может направляться только в одно место, будь то в прошлом, настоящем или будущем!
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Птица-оригами:''' Конец прекрасному сну! Прекрасный сон бесконечен!
 ;(По прибытии на место)
 
 ;(По прибытии на место)
