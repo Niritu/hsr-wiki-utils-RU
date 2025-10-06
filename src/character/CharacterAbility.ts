@@ -134,7 +134,7 @@ export class CharacterAbility {
 	}
 	
 	getScalingTable() {
-		const output: string[] = [`{{Масштабирование навыка`]
+		const output: string[] = [`{{Масштабирование навыка|тип=${this.type_display}`]
 		for (const paramList of this.params_by_attribute) {
 			if (paramList[0] == paramList[paramList.length - 1]) continue
 			output.push('|' + paramList.map(param => `${roundTo(param * 100, 2)}%`).join(';'))
