@@ -32,7 +32,7 @@ for (const contact of MessagesContact.loadAll()) {
 				'----',
 				''
 			)
-			messages.getParticipants().forEach(participant => participants.add(`[[${participant.name == '(Первопроходец)' ? 'Первопроходец' : participant.name}]]`))
+			messages.getParticipants().forEach(participant => participants.add(`${participant.name == '(Первопроходец)' ? 'Первопроходец' : participant.name}`))
 		}
 	}
 

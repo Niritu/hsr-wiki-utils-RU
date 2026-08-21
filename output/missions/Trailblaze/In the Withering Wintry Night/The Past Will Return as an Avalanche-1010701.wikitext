@@ -1,0 +1,667 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Past Will Return as an Avalanche#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1010701
+|title         = 
+|image         = <!--Mission The Past Will Return as an Avalanche.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Withering Wintry Night
+|requirements  = [[Trailblaze Mission]] ''[[The Past Will Return as an Avalanche]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Bronya; Clara; Eric; Guardbot; Perkins; Seele; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Rivet Town]]
+|world         = Jarilo-VI
+|area          = Rivet Town
+|prev          = 
+|next          = Lying in Rust
+|rewards       = Trailblaze EXP*700; Stellar Jade*80; Adventure Log*6; Condensed Aether*3; "Ghost From the Past"*1 { text = "Ghost From the Past" }
+}}
+'''''The Past Will Return as an Avalanche''''' is a [[Trailblaze Mission]] in the chapter [[In the Withering Wintry Night]].
+
+==Steps==
+# Find a vantage point for observation
+# Search for the supplies, go to the market square
+# Look for missing supplies on the market square
+# Find the way to the orphanage
+# Go to the orphanage and search for the supplies
+# Search for supplies in the orphanage
+# Search for supplies around the orphanage
+# Ask Clara why she's here
+# Meet up with Seele and the others
+# Go to the orphanage and search for the supplies
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:'''Seele:''' We're here. This is Rivet Town... *sigh* Everything looks familiar...
+:'''Seele:''' Let's go, and watch your step. I haven't been here in a long time. There are probably some monsters around.
+:'''Seele:''' We can't see anything here... Let's find higher ground to get a better view.
+{{Dialogue End}}
+
+===Find a vantage point for observation{{subst:void|<!--101070102-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|According to Natasha, there may still be remaining medical supplies in the abandoned Rivet Town. The mission for you and Seele is to retrieve the supplies and deplete them of their final value... Erm, to let them shine and be useful in the clinic.<br />You arrive at the entrance of the mining town. Although this place looks to be completely desolate, in reality, Fragmentum monsters have been dwelling here for quite some time. This is a dangerous place.<br />It'd be best to make observations and plan out your route before making your way in.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 49
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.CaptureLocalPlayer",
+	"CharacterUniqueName": "LocalPlayer"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1010701_temp",
+	"AnchorName": "Camera_101070102",
+	"FollowTargetUniqueName": "LocalPlayer",
+	"LookAtTargetAnchorName": "LookAt_101070102",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true,
+		"BlendTime": 1
+	},
+	"VCameraDitherMaxDistance": 3
+}</pre>
+:'''Seele:''' Way over there, see that house on the hill? That's Natasha's old orphanage.
+:'''Seele:''' After Oleg found me, he sent me there. I spent over half my childhood in that place.
+:{{Диалог|Стрелка}} It looks quite impressive...
+:{{Диалог|Стрелка}} That must be a time of plenty.
+:{{Диалог|Стрелка}} I'd like to retire here.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1010701_temp",
+	"AnchorName": "Camera_101070102",
+	"IsActive": false,
+	"FollowTargetUniqueName": "LocalPlayer",
+	"LookAtTargetAnchorName": "LookAt_101070102",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true
+	},
+	"VCameraDitherMaxDistance": 0
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "1010701_temp",
+	"AnchorName": "Camera_101070102_02",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"UseDefaultBlendCurve": true
+	},
+	"VCameraDitherMaxDistance": 0
+}</pre>
+:'''Seele:''' Natasha said that the house was donated by some rich businessman. Whatever his business may have been, he must have been a good person.
+:'''Seele:''' Oh, I miss those carefree days as a kid...
+:'''Bronya:''' ...
+:'''Seele:''' What? Nothing to say?
+:'''Bronya:''' No, it's just... this place seems familiar somehow. Never mind.
+:'''Seele:''' ...Weirdo.
+:'''Seele:''' Look down there. See the mess that remains of those old stalls? That's Rivet Town's market. The supplies Natasha wants are probably there.
+:'''Seele:''' Let's keep moving. Watch out for monsters.
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Level/Mission/1010701/1010701_temp.prefab"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Search for the supplies, go to the market square{{subst:void|<!--101070103-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|According to Natasha, there may still be remaining medical supplies in the abandoned Rivet Town. The mission for you and Seele is to retrieve the supplies and deplete them of their final value... Erm, to let them shine and be useful in the clinic.<br />Seele believes that the supplies Natasha is after are likely to be stocked up in the town's market square. Why don't you head over there and take a look?}}
+{{Dialogue Start}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' There's a bunch of crates piled over there. Maybe we can find what we're looking for.
+:'''Seele:''' Watch out for monsters. They like to hide. If you need to, clear the area before you dig for the supplies.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' Careful! Enemies ahead.
+:'''Seele:''' These aren't like vagrants. They won't&mdash;
+:'''Bronya:''' Don't treat me like a new recruit. I'm all too familiar with the monsters of the Fragmentum. Let's get ready to fight!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Bronya:''' A... restaurant?
+:'''Seele:''' Heh, the most famous restaurant in town. Natasha would bring the kids who behaved well here for a special meal.
+:'''Bronya:''' So did she ever bring you?
+:'''Seele:''' Do I seem like I was a goody two-shoes? Of course not.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Bronya:''' The facilities here seem to be in pretty good shape, not like those of a place that has been abandoned for years.
+:'''Seele:''' Now that you mention it, it does seem a little... Could people still be living here? Impossible...
+{{Dialogue End}}
+
+===Look for missing supplies on the market square{{subst:void|<!--101070118-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You come to the market square only to find the crates for medical supplies looted empty.<br />The looter, however, seems too gentle for creatures in the Fragmentum, judging by what happened at the scene...<br />Bronya and Seele have arrived at the scene and both of them think that this does not look like something that monsters would do.<br />The perpetrator is likely to still be in the vicinity. Join Seele in her search on the square and leave no stone unturned!}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 101070118
+}</pre>
+:'''Seele:''' ...Eric?
+:'''Seele:''' Hey, brat! How could you come here by yourself. Don't you know how dangerous this place is?
+:'''Eric:''' S&mdash;Seele? Y&mdash;You aren't the boss of me! I&mdash;I can go wherever I want, it's none of your beeswax!
+:'''Seele:''' You took the materials and hid them all here? Not bad, kid.
+:'''Seele:''' But if we didn't take care of those monsters, what were you planning to do? Just stay here, shaking in your boots?
+:'''Seele:''' Still stubborn, huh? Then tell me, how exactly were you gonna get those big metal plates out of here past those monsters?
+:'''Eric:''' Wh&mdash;Who asked you to do anything? I was just about to escape, I didn't need your help at all!
+:{{Диалог|Стрелка}} That's enough. He's just a kid...
+::That's enough. He's just a kid...
+::'''Seele:''' Don't let him fool you. Everyone in the Underworld knows that this brat is a no-good thief. If I remember correctly, even the clothes you're wearing came off another kid's back?
+:{{Диалог|Стрелка}} Can you share the materials? They're to help injured people.
+::Can you share the materials? They're to help injured people.
+::'''Seele:''' Don't be so polite to him. Everyone in the Underworld knows this brat is a no-good thief. If I remember correctly, even the clothes you're wearing came off another kid's back?
+::'''Eric:''' Uh... About that...
+::'''Seele:''' Tell us, what do you even want metal plates and gauze bandages for? We need them to save people.
+::'''Eric:''' ...200...
+::'''Seele:''' What?
+::'''Eric:''' Uh... 200 shield...
+::'''Seele:''' ...Are you kidding me? You want to negotiate?
+::{{Диалог|Стрелка}} I... don't have any money with me.
+:::I... don't have any money with me.
+:::'''Bronya:''' Me neither... I never bring my coin purse with me on a mission.
+:::What a rip-off!
+:::'''Bronya:''' It's just 200... but I never bring my coin purse with me on a mission.
+::{{Диалог|Стрелка}} What a rip-off!
+:::What a rip-off!
+:::'''Bronya:''' It's just 200... but I never bring my coin purse with me on a mission.
+::{{Диалог|Стрелка}} How much is 200 shield worth?
+:::How much is 200 shield worth?
+:::'''Bronya:''' ...Not much, but I didn't bring my coin purse.
+:::'''Seele:''' You're actually planning to give this little crook money? I'm telling you. This is his same old trick&mdash;
+:::{{tx}}
+::How much is 200 shield worth?
+::'''Bronya:''' ...Not much, but I didn't bring my coin purse.
+::'''Seele:''' You're actually planning to give this little crook money? I'm telling you. This is his same old trick&mdash;
+::{{tx}}
+:Can you share the materials? They're to help injured people.
+:'''Seele:''' Don't be so polite to him. Everyone in the Underworld knows this brat is a no-good thief. If I remember correctly, even the clothes you're wearing came off another kid's back?
+:'''Eric:''' Uh... About that...
+:'''Seele:''' Tell us, what do you even want metal plates and gauze bandages for? We need them to save people.
+:'''Eric:''' ...200...
+:'''Seele:''' What?
+:'''Eric:''' Uh... 200 shield...
+:'''Seele:''' ...Are you kidding me? You want to negotiate?
+:{{Диалог|Стрелка}} I... don't have any money with me.
+::I... don't have any money with me.
+::'''Bronya:''' Me neither... I never bring my coin purse with me on a mission.
+::What a rip-off!
+::'''Bronya:''' It's just 200... but I never bring my coin purse with me on a mission.
+:{{Диалог|Стрелка}} What a rip-off!
+::What a rip-off!
+::'''Bronya:''' It's just 200... but I never bring my coin purse with me on a mission.
+:{{Диалог|Стрелка}} How much is 200 shield worth?
+::How much is 200 shield worth?
+::'''Bronya:''' ...Not much, but I didn't bring my coin purse.
+::'''Seele:''' You're actually planning to give this little crook money? I'm telling you. This is his same old trick&mdash;
+::{{tx}}
+:How much is 200 shield worth?
+:'''Bronya:''' ...Not much, but I didn't bring my coin purse.
+:'''Seele:''' You're actually planning to give this little crook money? I'm telling you. This is his same old trick&mdash;
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Severe",
+	"SubMissionID": 101070118
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' ...We made it! It's been so long... but this place hasn't changed one bit.
+:'''Seele:''' Oh! It looks like there's a lot of stuff piled outside. Let's go see if there's any rubbing alcohol for Nat.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' This is the street alright. The orphanage should be at the end.
+:'''Bronya:''' These shops and signs... Why do I feel like I've seen them before?
+:'''Bronya:''' But when...?
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' The entrance to the orphanage is up this way.
+:'''Seele:''' I wonder what the old place is like now. Maybe some things will still look familiar.
+:'''Bronya:''' These stairs... they seem to have become more narrow.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' Almost there! I didn't expect this place to be so well preserved.
+:'''Seele:''' Y'know, if we could've worked together to push back the Fragmentum... maybe we wouldn't have had to take off and leave our homes behind.
+:'''Bronya:''' ...
+----
+:'''Seele:''' ...That object was pretty important to you, right?
+:'''Seele:''' Are you sure you're okay just giving it to Eric like that?
+:'''Bronya:''' If it will make him change his ways, it's more than worth it.
+:'''Seele:''' Hah, and what if he doesn't?
+:'''Bronya:''' From a young age, my mother taught me to be forgiving and to preserve the goodwill in people's hearts... Even if I am but a small glimmer of light in this world, I must try my best to shine brightly for others.
+:'''Bronya:''' I must give him a chance, Seele, because other people can't.
+:'''Seele:''' ...
+:'''Seele:''' I don't really get what you just said. Anyway, ahem, we should get moving.
+:'''Seele:''' Eric said that we need to take the shopping street to go any further. I think I still remember where it is... this way.
+----
+;(Obtain {{Предмет|Box of Metal Plates and Bandages|20|x=1}})
+{{Dialogue End}}
+
+===Find the way to the orphanage{{subst:void|<!--101070123-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You discover that the culprit who robbed the supplies is a young thief named Eric. Bronya's generosity has compelled her to make the decision of trading with the thief for the supplies, even though Seele finds him to be untrustworthy.<br />In return for Bronya's friendliness, Eric shares relevant intel regarding the orphanage with everyone. But does this mean that he will change his ways? The answer is unknown &mdash; however, maybe you will have the opportunity to witness it sometime in the future.<br />Right now, your primary objective is to head to the orphanage and continue your search for the supplies.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Go to the orphanage and search for the supplies{{subst:void|<!--101070105-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You finally find your way through the complex roads of Rivet Town and discover the path to the orphanage. As you make your way uphill, you can see the luxurious mansions that overlook the town, watching its every move each and every day.<br />You see that Seele's expression has turned complex, but what's more confusing is that Bronya seems to be having the same emotions...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Bronya:''' These crates have been sitting here for many years, right? Even if they have materials in them, are you sure they are still usable...?
+:'''Seele:''' Do you think undergrounders care about expiration dates? Even having any supplies is a miracle in itself.
+:'''Seele:''' No... No... Empty...
+:'''Seele:''' How are they all empty? Who could've&mdash;
+:'''Bronya:''' Careful! Enemy behind you!
+:{{Диалог|Стрелка}} That's a big one...
+:{{Диалог|Стрелка}} It looks tough...
+:'''Bronya:''' I've only seen this kind of monster before in the restricted zone...
+:{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Ice Out of Space*1/-60 }}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' Hey, where are you going!? Let's look around the orphanage first.
+----
+{{Dialogue End}}
+
+===Search for supplies in the orphanage{{subst:void|<!--101070113-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You arrive at the orphanage entrance and have somewhat understood what's bothering Bronya &mdash; although it's just speculation, she might have lived here in the past...<br />Anyways, first search this place for the supplies that Natasha wants.}}
+{{Dialogue Start}}
+
+
+:{{DIcon|Разговор}} Investigate
+:'''Seele:''' I found this. Here, take it.
+:'''Bronya:''' What is this? ...A brooch?
+:'''Seele:''' Natasha would often teach us how to make different handicrafts. This must be some kid's masterpiece.
+:'''Bronya:''' And why give it to me?
+:'''Seele:''' You gave your medal to that kid Eric. This thing might not be as valuable, but it's at least a replacement of sorts.
+:'''Bronya:''' But didn't someone work hard to make this? I can't just take it from here...
+:'''Seele:''' ...You sure are prissy, huh? Just take it.
+
+:{{DIcon|Разговор}} Investigate
+:'''Bronya:''' What's up here? Some kind of toy?
+:'''Seele:''' Yep. You pick, red or blue?
+:'''Bronya:''' Hm... blue.
+:'''Seele:''' Ha! Look at this. After over ten years, the teeth marks are still here.
+:'''Bronya:''' Teeth marks?
+:'''Seele:''' Alright, well... this one time, a big kid was trying to steal this toy from me. I couldn't outwrestle him for it, so I just bit down hard and hung on for dear life.
+:'''Bronya:''' ...How boorish.
+
+:{{DIcon|Разговор}} Investigate
+:'''Bronya:''' This swing is covered in dust... Hey, don't sit on it! It's filthy!
+:'''Seele:''' Ah, it sure brings back memories... I still remember one time I swung super high, and everyone was scared I would fly off.
+:'''Bronya:''' ...Who knew swinging could be so intense?
+:'''Seele:''' At the time, I wanted to swing myself into the sky and fly up to the Overworld.
+:'''Bronya:''' So dangerous... You're lucky to have lived till now.
+:'''Seele:''' Hmph, aren't we all, though?
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Sorrow",
+	"SubMissionID": 101070107
+}</pre>
+:'''Bronya:''' This is... something from when I was a child.
+:'''Seele:''' Wh&mdash;When you were a child!? Are you sure...?
+:{{Диалог|Стрелка}} You came to this town as a child?
+::You came to this town as a child?
+::'''Bronya:''' No, I remember now...
+::Just a coincidence. Lots of kids probably have this toy.
+::'''Bronya:''' There is no such coincidence in this world. I remember now...
+:{{Диалог|Стрелка}} Just a coincidence. Lots of kids probably have this toy.
+::Just a coincidence. Lots of kids probably have this toy.
+::'''Bronya:''' There is no such coincidence in this world. I remember now...
+:{{Диалог|Стрелка}} Could it be, when you were a child...
+::Could it be, when you were a child...
+::'''Bronya:''' Yes. I remember now...
+::'''Bronya:''' I&mdash;I used to live here... B&mdash;Before the Architects took me away, before Madam Cocolia adopted me... I used to live here! I'm... an undergrounder.
+::'''Seele:''' You're... an undergrounder? Wait a minute... you're saying that Cocolia, the Supreme Guardian, adopted you? Then&mdash;
+::'''Bronya:''' Yes. I'm the successor chosen by the Architects. In the future, I will become the guardian who leads Belobog.
+::'''Seele:''' ...
+::'''Bronya:''' Why... Why didn't I remember this until now? My childhood memories are so blurry...
+::{{Диалог|Стрелка}} You were too little to remember clearly.
+::{{Диалог|Стрелка}} Cocolia must have done something to make you forget.
+:::Cocolia must have done something to make you forget.
+:::'''Bronya:''' No, mother would never do that to me... there's no way she would.
+::'''Bronya:''' The Architects said that the guardian's successor is selected from among all people in Belobog. The selection process can take anywhere from a few years to a few decades.
+::{{tx}}
+:Could it be, when you were a child...
+:'''Bronya:''' Yes. I remember now...
+:'''Bronya:''' I&mdash;I used to live here... B&mdash;Before the Architects took me away, before Madam Cocolia adopted me... I used to live here! I'm... an undergrounder.
+:'''Seele:''' You're... an undergrounder? Wait a minute... you're saying that Cocolia, the Supreme Guardian, adopted you? Then&mdash;
+:'''Bronya:''' Yes. I'm the successor chosen by the Architects. In the future, I will become the guardian who leads Belobog.
+:'''Seele:''' ...
+:'''Bronya:''' Why... Why didn't I remember this until now? My childhood memories are so blurry...
+:{{Диалог|Стрелка}} You were too little to remember clearly.
+:{{Диалог|Стрелка}} Cocolia must have done something to make you forget.
+::Cocolia must have done something to make you forget.
+::'''Bronya:''' No, mother would never do that to me... there's no way she would.
+:'''Bronya:''' The Architects said that the guardian's successor is selected from among all people in Belobog. The selection process can take anywhere from a few years to a few decades.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Severe",
+	"SubMissionID": 101070107
+}</pre>
+;(Obtain {{Предмет|Box of Rubbing Alcohol|20|x=1}})
+{{Dialogue End}}
+
+===Search for supplies around the orphanage{{subst:void|<!--101070108-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You naturally find the supplies, Bronya naturally finds the item to prove her past, and Seele naturally feels very shocked about all of this.<br />The two who almost became childhood friends naturally go for a trip down the memory lane and begin a very long and deep conversation...<br />Although you would really like to ask them when they became such great friends that share all their secrets with one another, would you be able to bring yourself to disturb the rare peace in front of you?<br />You couldn't. So you decide to venture further around the orphanage to search for the supplies...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (I should let those two be alone for a bit...)
+:'''(Trailblazer):''' (The only thing left to find is painkillers. I'll see if there's any nearby.)
+
+;(По прибытии на место)
+:{{tx}}
+:'''Guardbot:''' Warning. Warning. Danger detected&mdash;
+:{{Диалог|Стрелка}} I mean no harm&mdash;
+:{{Диалог|Стрелка}} I'm just passing by&mdash;
+:{{Диалог|Стрелка}} I'm a goner&mdash;
+:'''Guardbot:''' Protect Clara. Initiating active defense mode&mdash;
+:'''Clara:''' Perkins, don't! Stop!
+:'''Clara:''' I've seen this person before. {{MC|ж=Sh&mdash;She's|м=H&mdash;He's}} not bad, right?
+:'''Perkins:''' Command received. Danger removed. Deactivating active defense mode.
+:'''Clara:''' This place is dangerous. You should leave.
+:{{Диалог|Стрелка}} I'm looking for medicine to help the injured.
+::I'm looking for medicine to help the injured.
+::'''Clara:''' Oh? I came here for these painkillers, too.
+::'''Clara:''' There are a lot of people hurt at the vagrant camp, I guess the miners are no different? *sigh* If everyone could just get along, things would be easier...
+:{{Диалог|Стрелка}} Shouldn't you be the one leaving, missy?
+::Shouldn't you be the one leaving, missy?
+::'''Clara:''' Perkins is protecting me. I'll be alright. I'm going to leave after I gather up these painkillers.
+::'''Clara:''' ...Uh, is that what you're here for too?
+::'''Clara:''' That would make sense. I'm sure a lot of miners are injured, right? *sigh* If everyone could just get along, things would be easier...
+::'''Clara:''' Mm... Here you are. I hope the medicine is of help to you...
+::{{Диалог|Стрелка}} What's your relationship with Svarog?
+::{{Диалог|Стрелка}} Is Svarog here, too?
+:::Is Svarog here, too?
+:::'''Clara:''' No.
+::'''Clara:''' Mr. Svarog, he... he's my family. I met Mr. Svarog when I was real little. He took me in and took care of me.
+::'''Clara:''' I'm really sorry about what happened back in the Great Mine... Mr. Svarog doesn't trust any humans besides me, especially everyone from Wildfire.
+::{{Диалог|Стрелка}} Why did Svarog attack us?
+:::Why did Svarog attack us?
+:::'''Clara:''' Mr. Svarog doesn't want to hurt people, but he always follows the calculations of his analysis. He thinks that interaction with humans is... inefficient.
+::{{Диалог|Стрелка}} Why did Svarog want to get involved in the incident in the mines?
+:::Why did Svarog want to get involved in the incident in the mines?
+:::'''Clara:''' He heard that the miners and vagrants had begun to engage in a large-scale conflict... He wanted to stop everyone from getting hurt fighting over the mines.
+:::'''Clara:''' Wildfire wants everyone to leave the underground... But Mr. Svarog wants everyone to stay here. According to his calculations, the overground is already unsafe.
+:::{{Диалог|Стрелка}} But the underground is safer?
+::::But the underground is safer?
+::::'''Clara:''' Yes, at least according to Mr. Svarog's calculations...
+::::There must be some error in his system.
+::::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+:::{{Диалог|Стрелка}} There must be some error in his system.
+::::There must be some error in his system.
+::::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+:::{{Диалог|Стрелка}} So he stands guard at the huge pillar stopping people from leaving?
+::::So he stands guard at the huge pillar stopping people from leaving?
+::::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+::::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+::::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+::::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+::::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+::::{{tx}}
+:::So he stands guard at the huge pillar stopping people from leaving?
+:::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+:::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+:::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+:::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+:::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+:::{{tx}}
+::Why did Svarog want to get involved in the incident in the mines?
+::'''Clara:''' He heard that the miners and vagrants had begun to engage in a large-scale conflict... He wanted to stop everyone from getting hurt fighting over the mines.
+::'''Clara:''' Wildfire wants everyone to leave the underground... But Mr. Svarog wants everyone to stay here. According to his calculations, the overground is already unsafe.
+::{{Диалог|Стрелка}} But the underground is safer?
+:::But the underground is safer?
+:::'''Clara:''' Yes, at least according to Mr. Svarog's calculations...
+:::There must be some error in his system.
+:::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+::{{Диалог|Стрелка}} There must be some error in his system.
+:::There must be some error in his system.
+:::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+::{{Диалог|Стрелка}} So he stands guard at the huge pillar stopping people from leaving?
+:::So he stands guard at the huge pillar stopping people from leaving?
+:::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+:::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+:::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+:::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+:::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+:::{{tx}}
+::So he stands guard at the huge pillar stopping people from leaving?
+::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+::{{tx}}
+:Shouldn't you be the one leaving, missy?
+:'''Clara:''' Perkins is protecting me. I'll be alright. I'm going to leave after I gather up these painkillers.
+:'''Clara:''' ...Uh, is that what you're here for too?
+:'''Clara:''' That would make sense. I'm sure a lot of miners are injured, right? *sigh* If everyone could just get along, things would be easier...
+:'''Clara:''' Mm... Here you are. I hope the medicine is of help to you...
+:{{Диалог|Стрелка}} What's your relationship with Svarog?
+:{{Диалог|Стрелка}} Is Svarog here, too?
+::Is Svarog here, too?
+::'''Clara:''' No.
+:'''Clara:''' Mr. Svarog, he... he's my family. I met Mr. Svarog when I was real little. He took me in and took care of me.
+:'''Clara:''' I'm really sorry about what happened back in the Great Mine... Mr. Svarog doesn't trust any humans besides me, especially everyone from Wildfire.
+:{{Диалог|Стрелка}} Why did Svarog attack us?
+::Why did Svarog attack us?
+::'''Clara:''' Mr. Svarog doesn't want to hurt people, but he always follows the calculations of his analysis. He thinks that interaction with humans is... inefficient.
+:{{Диалог|Стрелка}} Why did Svarog want to get involved in the incident in the mines?
+::Why did Svarog want to get involved in the incident in the mines?
+::'''Clara:''' He heard that the miners and vagrants had begun to engage in a large-scale conflict... He wanted to stop everyone from getting hurt fighting over the mines.
+::'''Clara:''' Wildfire wants everyone to leave the underground... But Mr. Svarog wants everyone to stay here. According to his calculations, the overground is already unsafe.
+::{{Диалог|Стрелка}} But the underground is safer?
+:::But the underground is safer?
+:::'''Clara:''' Yes, at least according to Mr. Svarog's calculations...
+:::There must be some error in his system.
+:::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+::{{Диалог|Стрелка}} There must be some error in his system.
+:::There must be some error in his system.
+:::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+::{{Диалог|Стрелка}} So he stands guard at the huge pillar stopping people from leaving?
+:::So he stands guard at the huge pillar stopping people from leaving?
+:::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+:::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+:::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+:::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+:::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+:::{{tx}}
+::So he stands guard at the huge pillar stopping people from leaving?
+::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+::{{tx}}
+:Why did Svarog want to get involved in the incident in the mines?
+:'''Clara:''' He heard that the miners and vagrants had begun to engage in a large-scale conflict... He wanted to stop everyone from getting hurt fighting over the mines.
+:'''Clara:''' Wildfire wants everyone to leave the underground... But Mr. Svarog wants everyone to stay here. According to his calculations, the overground is already unsafe.
+:{{Диалог|Стрелка}} But the underground is safer?
+::But the underground is safer?
+::'''Clara:''' Yes, at least according to Mr. Svarog's calculations...
+::There must be some error in his system.
+::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+:{{Диалог|Стрелка}} There must be some error in his system.
+::There must be some error in his system.
+::'''Clara:''' No, there can't be... Mr. Svarog is healthy, his system is always being maintained.
+:{{Диалог|Стрелка}} So he stands guard at the huge pillar stopping people from leaving?
+::So he stands guard at the huge pillar stopping people from leaving?
+::'''Clara:''' Yes... Mr. Svarog is very stubborn.
+::'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+::{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+::{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+::'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+::{{tx}}
+:So he stands guard at the huge pillar stopping people from leaving?
+:'''Clara:''' Yes... Mr. Svarog is very stubborn.
+:'''Clara:''' He says that his responsibility is "preservation." To do that, he must make decisions that best protect humanity.
+:{{Диалог|Стрелка}} The Fragmentum will swallow up all of the underground sooner or later.
+:{{Диалог|Стрелка}} Sounds a lot like the Supreme Guardian.
+:'''Clara:''' I know that Wildfire wants to talk to Mr. Svarog... But no matter how many times you talk to him, Mr. Svarog won't change his mind...
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''???:''' ...
+:'''(Trailblazer):''' (What's that sound...)
+
+;(По прибытии на место)
+:'''???:''' Oh! It's here, we found it! Thank you, Perkins!
+:'''???:''' Beep &mdash; Don't mention it, Clara.
+:'''(Trailblazer):''' (I should let those two be alone for a bit...)
+:'''(Trailblazer):''' (The only thing left to find is painkillers. I'll see if there's any nearby.)
+{{Dialogue End}}
+
+===Ask Clara why she's here{{subst:void|<!--101070120-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You've had the feeling that someone has gotten to the supplies before you but you didn't think it'd be someone that you were close with.<br />Okay, maybe not that close... but you've at least met her before &mdash; you're technically family to Clara now.<br />So what is cute Clara doing alone (with a robot) in such a dangerous place? You have to get to the bottom of this.}}
+{{Dialogue Start}}
+----
+:'''Seele:''' ...Why are you helping the vagrants look for medicine? If they're so great, how could they make a little girl go around running errands for them?
+:'''Clara:''' N&mdash;No, it's not like that. I wasn't made to do anything... It's just that, the living conditions for the vagrants aren't great. There's not even a clinic in their camp. So, I wanted to help them out.
+:'''Clara:''' Also, not all of them are bad people... everyone just wants to survive.
+:'''Seele:''' ...
+:'''Clara:''' Miss Seele, did this medicine belong to Miss Natasha? Then... can you give me some? The vagrants' injuries are quite serious.
+:'''Seele:''' *sigh* I see. Let's split these painkillers then.
+:'''Clara:''' R&mdash;Really? We don't need to ask Miss Natasha first?
+:'''Seele:''' If I know Nat, she won't mind. Although this will make it more difficult for us... she'll understand. She always does.
+:'''Clara:''' Great, thank you, Miss Seele...
+:'''Bronya:''' Are you leaving? This old town is too dangerous. We'll accompany you part of the way.
+:'''Clara:''' I&mdash;It's fine, I have Perkins for company. And... I have some more things I need to look for here first.
+:'''Bronya:''' Understood. Be careful, though.
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Level/Mission/1010701/1010701_temp.prefab"
+	}
+}</pre>
+;(Obtain {{Предмет|Box of Special Painkillers|20|x=1}})
+
+;(Talk to Clara)
+----
+:'''Seele:''' ...Why are you helping the vagrants look for medicine? If they're so great, how could they make a little girl go around running errands for them?
+:'''Clara:''' N&mdash;No, it's not like that. I wasn't made to do anything... It's just that, the living conditions for the vagrants aren't great. There's not even a clinic in their camp. So, I wanted to help them out.
+:'''Clara:''' Also, not all of them are bad people... everyone just wants to survive.
+:'''Seele:''' ...
+:'''Clara:''' Miss Seele, did this medicine belong to Miss Natasha? Then... can you give me some? The vagrants' injuries are quite serious.
+:'''Seele:''' *sigh* I see. Let's split these painkillers then.
+:'''Clara:''' R&mdash;Really? We don't need to ask Miss Natasha first?
+:'''Seele:''' If I know Nat, she won't mind. Although this will make it more difficult for us... she'll understand. She always does.
+:'''Clara:''' Great, thank you, Miss Seele...
+:'''Bronya:''' Are you leaving? This old town is too dangerous. We'll accompany you part of the way.
+:'''Clara:''' I&mdash;It's fine, I have Perkins for company. And... I have some more things I need to look for here first.
+:'''Bronya:''' Understood. Be careful, though.
+----
+{{Dialogue End}}
+
+===Meet up with Seele and the others{{subst:void|<!--101070121-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You've had the feeling that someone has gotten to the supplies before you but you didn't think it'd be someone that you were close with.<br />Okay, maybe not that close... but you've at least met her before &mdash; you're technically family to Clara now.<br />Seele and Bronya finally end their conversation and approach the two of you just as you are asking Clara about her reason for being here.<br />Perfect timing, now it's time for everyone to figure out what to do next.}}
+{{Dialogue Start}}
+
+;(Talk to Seele)
+:'''Seele:''' Metal plates and bandages... rubbing alcohol... painkillers. Great, that's everything.
+:'''Seele:''' Let's go report to Natasha in Boulder Town, it won't take long to get back.
+{{Dialogue End}}
+
+===Go to the orphanage and search for the supplies{{subst:void|<!--101070114-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|You finally find your way through the complex roads of Rivet Town and discover the path to the orphanage. As you make your way uphill, you can see the luxurious mansions that overlook the town, watching its every move each and every day.<br />You see that Seele's expression has turned complex, but what's more confusing is that Bronya seems to be having the same emotions...}}
+{{Dialogue Start}}
+----
+:'''Seele:''' Ha... That was it?
+:{{Диалог|Стрелка}} Well, it was three against one.
+::'''Seele:''' Nah, I could've taken it on by myself. But still... fighting alongside you two was pretty fun.
+:{{Диалог|Стрелка}} It wouldn't have been so easy on your own though.
+::'''Seele:''' Please, you don't think I could do it? But still... fighting alongside you two was pretty fun.
+:'''Seele:''' Should be all clear now. Let's poke around.
+:'''Seele:''' The kids at the orphanage were always getting into scraps when we played out here. If I remember it right, there ought to be some supplies for our cuts and bruises stored in that corner there.
+:'''Seele:''' I just hope the monster didn't get to them.
+:'''Bronya:''' ...It wasn't my imagination.
+:'''Seele:''' Huh? What are you talking about?
+:'''Bronya:''' This building, this playground equipment... I've seen it all before.
+:'''Seele:''' What!? Come on, the overground and underground have been sealed off from each other for over ten years. It would've been news if a Silvermane Guard had come down here, let alone an Overworld princess.
+:'''Seele:''' Wait, unless, before that...
+:'''Bronya:''' ...Yes, it's a possibility. That would explain why my memory of it is so blurry.
+:'''Bronya:''' Come on, I need to look around a bit more before I can be sure...
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveLevelAreas",
+	"AreaName": {
+		"Value": "Level/Mission/1010701/1010701_temp.prefab"
+	}
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Past Will Return as an Avalanche
+|zhs  = 已故去的必如雪崩再来
+|zht  = 已故去的必如雪崩再來
+|ja   = 過ぎ去ったことは雪崩のように再来する
+|ko   = 눈사태처럼 돌아오는 떠난 이
+|es   = El pasado regresará con fuerza
+|fr   = Le passé déferlera comme une avalanche
+|ru   = Прошлое накроет снежной лавиной
+|th   = เรื่องที่ผ่านไปแล้วจะกลับมาเหมือนหิมะถล่ม
+|vi   = Quá Khứ Sẽ Trở Lại Như Tuyết Lở
+|de   = Die Vergangenheit kommt als Lawine zurück
+|id   = Yang Pergi Pasti Kembali Bak Longsor Salju
+|pt   = O Passado Retornará Como Uma Avalanche
+}}
+
+==Change History==
+{{Change History|3.5}}

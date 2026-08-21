@@ -1,0 +1,145 @@
+<%-- [PAGE_INFO]
+PageTitle=#A Walk Among the Tombstones#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1032201
+|title         = 
+|image         = <!--Mission A Walk Among the Tombstones.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Aventurine; Himeko; March 7th; Trailblazer; Welt
+|startLocation = [[Penacony]] - [[Clock Studios Theme Park]]
+|world         = Penacony
+|area          = Clock Studios Theme Park
+|prev          = 
+|next          = ???
+|rewards       = Trailblaze EXP*900; Stellar Jade*110; Traveler's Guide*16; Flames Afar*1 { text = Flames Afar }; Kakavasha (Аватар)*1 { text = Kakavasha }; "Citizen Hanunue"*1 { text = "Citizen Hanunue" }; Credit*200 000
+}}
+'''''A Walk Among the Tombstones''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Get onstage and confront Aventurine
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Get onstage and confront Aventurine{{subst:void|<!--103220101-->}}===
+{{Mission Description|type=trailblaze|location=Clock Studios Theme Park|Aventurine seems to have waited for quite some time on the stage in the center of Clock Studios Theme Park...<br />...Join this crazed gambler for a perfect collaborative performance that will blow everyone in Penacony away.}}
+{{Dialogue Start}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aventurine:''' Ladies, gentlemen, dream seekers, tycoons, esteemed guests of the Watchmaker and The Family...
+:'''Aventurine:''' ...Also not forgetting the Nameless of the renowned Astral Express! Welcome to the Interastral Peace Corporation's live show!
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_spotlight_on"
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aventurine:''' Astral Express, you're late, and this... "unsought guest."
+:'''Himeko:''' We've kept your appointment, Mr. Aventurine. It is customary to show yourself as well.
+:'''Aventurine:''' I will, naturally. But before that, I've got to introduce our guest of honor.
+:'''Aventurine:''' Everyone give it up for... {{MC|м=Mr.|ж=Miss}} Stellaron!
+:{{Диалог|Стрелка}} We're not here for any pageantry.
+:{{Диалог|Стрелка}} Does this have anything to do with the wanted murderer?
+:{{Диалог|Стрелка}} Mommy, look! I'm on TV!
+::'''March 7th:''' ...
+:'''Welt:''' Let me remind you that in all likelihood, this stage and {{MC|ж=her|м=his}} identity have nothing to do with the wanted murderer.
+:'''Aventurine:''' Oh no, they do, of course they do. Otherwise, why would I work so hard to gain your trust and then invite you all here?
+:'''Aventurine:''' Because {{MC|ж=she|м=he}} is the only one who saw all three homicides. {{MC|ж=She|м=He}} is the key to proving that The Family's "death does not exist in dreams" promise is nothing but a sham!
+:'''Himeko:''' Three homicides?
+:'''Aventurine:''' That's right, madam &mdash; the third one is about to happen right now, right here in Clock Studios Theme Park...
+:'''Aventurine:''' {{Цвет|Ключевой|nobold=1|A truly grand death}}.
+:'''Aventurine:''' You, you, you, and you... All of you are going to die! And it's all because of you, {{MC|м=Mr.|ж=Miss}} Stellaron...
+:'''Aventurine:''' ...You will become the personification of "Death."
+:{{Диалог|Стрелка}} What are you on about?
+::'''Aventurine:''' I thought my intent was crystal clear...
+::You sure you're gonna survive this?
+::'''Aventurine:''' Don't underestimate the Preservation. The cornerstone of the Amber Lord will surely guide me...
+::I ain't that powerful...
+:{{Диалог|Стрелка}} You sure you're gonna survive this?
+::'''Aventurine:''' Don't underestimate the Preservation. The cornerstone of the Amber Lord will surely guide me...
+::I ain't that powerful...
+:{{Диалог|Стрелка}} I ain't that powerful...
+:'''Aventurine:''' Never underestimate yourself. Like I said, you have the power to turn the tide on the entire game...
+:'''Aventurine:''' Let me be a little clearer: I will detonate the Stellaron in you, and cause a teeny-tiny '''accident''' on Penacony...
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::The dice are cast &mdash; Ladies and gentlemen, ready to unveil your cards?
+::The Architects' flawed stone...
+::Of no value at all.
+::I'm putting down the bet.
+::I'm taking the gamble.
+::I'm claiming the win.
+::I'll let fate spin the wheel, a daring gamble. Walking the brink of death... for rebirth.
+::All for the Amber Lord!
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+;(Enter battle)
+:{{Список врагов|mode=sent|Ten Stonehearts: Aventurine of Stratagems*1/+50% HP}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Always hide your ace with a straight face...
+::I'm starting to get a bit impatient with you all.
+::Friends, to fully relish this&mdash;
+::I'm betting every last chip!
+::Only by casting aside reason does one truly gamble...
+::"Emanator"&mdash; I know you'll match my wager.
+::Right?
+;(Cutscene ends)
+----
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::I wish to mourn the departed, weeping like rain, to swell the crossing stream...
+::...as the tide arrives, leading you back home.
+;(Cutscene ends)
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = A Walk Among the Tombstones
+|zhs  = 行过死荫之地
+|zht  = 行過死蔭之地
+|ja   = 墓場を往く死の影
+|ko   = 무덤으로 향하다
+|es   = Un paseo por el reino de la muerte
+|fr   = Promenade parmi les morts
+|ru   = Прогулка среди могил
+|th   = ฝ่าดินแดนแห่งความตาย
+|vi   = Đi Qua Vùng Đất Chết
+|de   = Grabspaziergang
+|id   = Melintasi Tanah Kematian
+|pt   = Um Passeio Entre as Lápides
+}}
+
+==Change History==
+{{Change History|3.5}}

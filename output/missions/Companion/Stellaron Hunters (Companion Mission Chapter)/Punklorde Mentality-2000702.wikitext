@@ -1,0 +1,246 @@
+<%-- [PAGE_INFO]
+PageTitle=#Punklorde Mentality#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2000702
+|title         = 
+|image         = <!--Mission Punklorde Mentality.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Stellaron Hunters (Companion Mission Chapter)
+|requirements  = [[Companion Mission]] ''[[Punklorde Mentality]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Screwllum; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Herta's Office]]
+|world         = Herta Space Station
+|area          = Herta's Office
+|prev          = 
+|next          = Sealed Sector
+|rewards       = Trailblaze EXP*600; Stellar Jade*100; Traveler's Guide*5; Refined Aether*5; Credit*100 000
+}}
+'''''Punklorde Mentality''''' is a [[Companion Mission]] in the chapter [[Stellaron Hunters (Companion Mission Chapter)|Stellaron Hunters]].
+
+==Steps==
+# Go to Herta's Office
+# Talk with Screwllum
+# Enter the Simulated Universe with Screwllum's help
+# (Optional) Talk to Leonard
+# Enter the Simulated Universe with Screwllum's help
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Go to Herta's Office{{subst:void|<!--200070201-->}}===
+{{Mission Description|type=companion|location=Herta's Office|Silver Wolf's path of infiltration eventually leads to Herta's office. After giving it some thoughts, Leonard and you decide to tell this bad news to Herta herself.}}
+{{Dialogue Start}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"DestroyList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"DestroyList": []
+}</pre>
+{{Dialogue End}}
+
+===Talk with Screwllum{{subst:void|<!--200070203-->}}===
+{{Mission Description|type=companion|location=Herta's Office|update|Silver Wolf's path of infiltration eventually leads to Herta's office. After giving it some thoughts, Leonard and you decide to tell this bad news to Herta herself.<br />However, the moment you entered the office, you got a surprise...}}
+{{Dialogue Start}}
+
+;(Talk to Screwllum)
+----
+:'''Screwllum:''' My apologies, {{MC|ж=madam|м=sir}}.
+:{{Диалог|Стрелка}} What happened?
+:{{Диалог|Стрелка}} What's with her?
+:{{Диалог|Стрелка}} Never expected to see that kind of expression on her face.
+:'''Screwllum:''' This all started with me &mdash; I was the one that brought up the request to end our academic collaboration. Don't get me wrong, I have nothing against Herta or the project. The Simulated Universe is a great experiment and Herta is a true genius.
+:'''Screwllum:''' However, we have our differences when it comes down to our long-term vision for the future. These differences will often manifest into bias, and bias will get in the way of the formulation of knowledge.
+:'''Screwllum:''' Deep down, I want to continue to believe in Herta... the question is whether one should end a collaboration that no longer holds true to its initial intent. From an objective standpoint, I should end it immediately.
+:'''Screwllum:''' Are you worried about her mental state?
+:{{Диалог|Стрелка}} A little.
+::'''Screwllum:''' Judging by the result, I have failed to choose the most suitable time to raise this matter.
+:{{Диалог|Стрелка}} Not at all.
+::'''Screwllum:''' Then I'm glad I haven't caused you vexation on her behalf.
+:{{Диалог|Стрелка}} I'm more worried about the mental state of the researchers.
+::'''Screwllum:''' Thank you for the humor. It is good for tense moments like these.
+:'''Screwllum:''' The emotions of organic life are like tides &mdash; it is my fault for not noticing the trajectory of the moon. Let Herta be alone for a while so she can calm her emotions. It'll be beneficial for our negotiations later as well.
+:'''Screwllum:''' As for the Simulated Universe... If that's the reason you're here, maybe I can help in answering your questions.
+:{{Диалог|Стрелка}} (Explain what happened)
+:'''Screwllum:''' Hmm. Search: Bonfire in the depths of the woods. A lone stone sword points to the stars... "Punklorde Mentality"? That is no ordinary curio, my friend.
+:'''Screwllum:''' That is a love letter a Galaxy Ranger has written for the universe. {{MC|ж=Young madam|м=Young sir}}, how much do you know about Punklorde?
+:{{Диалог|Стрелка}} I've heard of it.
+:{{Диалог|Стрелка}} Don't know much.
+:{{Диалог|Стрелка}} Nobody, and I mean nobody, knows more about Punklorde than I do.
+::'''Screwllum:''' Hehe, conversing with you is truly a delightful experience.
+:'''Screwllum:''' It is a planet made of data and symbols. The edges of reality and illusion are blurred in Punklorde, as are its days and nights.
+:'''Screwllum:''' An "Aether Cartridge" is a chip that Punklordian hackers use to edit reality. The ways through which a hacker perceives and modifies the world are recorded on the chip.
+:'''Screwllum:''' It's a recording of the hacker's life and proof of their existence. The one on the space station belonged to someone truly legendary.
+:'''Screwllum:''' He became a Galaxy Ranger by accident and spent many long years traveling among the stars. He encountered countless fascinating individuals and saw wonders witnessed by few.
+:'''Screwllum:''' Many of the records and details recorded therein are beyond the knowledge of even the IPC and the Intelligentsia Guild. That is why it became part of the masses of calculation data for the Simulated Universe.
+:'''Screwllum:''' Yes. No need to worry, my friend. The cartridge has never left the space station.
+:'''Screwllum:''' It's as I said – it is a very important reference for the Simulated Universe &mdash; that is why its data has been extracted and added to the calculations of the universe model.
+:'''Screwllum:''' Herta was probably impulsive and added the cartridge into the simulation without telling anyone, resulting in the item being listed as lost.
+:{{Диалог|Стрелка}} So it was a false alarm...?
+:{{Диалог|Стрелка}} I'm still a little worried...
+:{{Диалог|Стрелка}} That person could've gotten into the office...
+:'''Screwllum:''' I understand your concern. If the individual in question did indeed try to hack into Herta's office, then the Simulated Universe is undoubtedly her next target.
+:'''Screwllum:''' As such, please allow me to offer my limited abilities to assist you with your investigation, {{MC|ж=madam|м=sir}}.
+:'''Screwllum:''' As you already know, the Simulated Universe will be shut down temporarily. It will remain shut until Herta and I come to a clear conclusion.
+:'''Screwllum:''' Yes, this is the last chance to investigate the cartridge data.
+:'''Screwllum:''' By way of apology for shutting down the Simulated Universe, I will use my abilities in the Universe to provide you with what assistance I can.
+:'''Screwllum:''' This is my recommendation. Please take your time to consider it.
+----
+{{Dialogue End}}
+
+===Enter the Simulated Universe with Screwllum's help{{subst:void|<!--200070204-->}}===
+{{Mission Description|type=companion|location=Herta's Office|update|Screwllum's visit was to terminate the Simulated Universe project, how surprising! Thankfully, the robot gentleman is an open-minded individual, and he is more than happy to provide you with whatever help you need in your investigation before shutting down the system for good.}}
+{{Dialogue Start}}
+
+
+;(Talk to Screwllum)
+----
+:'''Screwllum:''' Well, {{MC|ж=madam|м=sir}}, are you ready?
+:{{Диалог|Разговор}} I've got something to ask you...
+::'''Screwllum:''' Please, ask away. I welcome all forms of curiosity and the pursuit of knowledge.
+::{{Диалог|Разговор}} Are you really shutting down the Simulated Universe?
+:::'''Screwllum:''' Yes. There are other concerns besides those I've mentioned.
+:::'''Screwllum:''' I believe that the miracles inside the Simulated Universe have the right to grow and develop organically. The will of others shouldn't be imposed upon it, just like in the actual universe.
+:::'''Screwllum:''' The more Herta tries, the further she moves away from the Universe that she had hoped for. Conclusion: The endless iterations of the Simulated Universe are wearing down her talents, day by day.
+:::'''Screwllum:''' I hope to free my dear friend from it.
+:::'''Screwllum:''' Nevertheless, I must also clarify that this is my opinion alone. You should form your own judgment on Herta, {{MC|ж=young madam|м=young sir}}.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} Who are the Galaxy Rangers that you speak of?
+:::'''Screwllum:''' They are a group that carries a balance scale with them at all times. They believe all the justice in the universe needs to be achieved through individual deeds.
+:::{{Диалог|Стрелка}} Then, what's the love letter for the universe?
+:::'''Screwllum:''' That was the most suitable way of describing the Galaxy Rangers in my interpretation.
+:::'''Screwllum:''' They are directed by the Path of The Hunt and are always accompanied by song and the sound of horns. They pursue justice for the individuals and groups they encounter along the way, and shower them with splendid wines and poems.
+:::'''Screwllum:''' However, all stories come to an end, just as they disappeared from the spotlight long ago.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} Tell me more about Punklorde's hackers.
+:::'''Screwllum:''' There is a group of lifeforms there that know nothing of fatigue. They are attempting to touch upon the umbilical cord of the truth.
+:::'''Screwllum:''' They are compiling the languages, thoughts, and even emotions of the entire planet into symbols that even inorganic lifeforms can understand.
+:::'''Screwllum:''' You see, in the vast sea of data, life exists only in one form: A line of code. Whether it's a butterfly, a whale, or even you &mdash; the length of that line of code dictates the boundaries of what the entity entails.
+:::{{Диалог|Стрелка}} So, I'm actually a butterfly.
+::::'''Screwllum:''' I've always thought of you that way.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} So, I'm actually a whale.
+::::'''Screwllum:''' Please, it's only a metaphor.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} So, I'm actually data.
+::::'''Screwllum:''' Maybe the emotions of organic lifeforms are an expression of data, don't you think?
+:::;(Return to previous option selection)
+::{{Диалог|Возврат}} That's all the questions I have...
+:::{{Диалог|Стрелка}} Let's get going.
+::::'''Screwllum:''' Very well, get going we shall.
+::::'''Screwllum:''' I will be sending you into the Simulated Universe using an alternative method. It might feel a little different than usual.
+::::'''Screwllum:''' This will help us quickly locate the cartridge in the vast sea of data. We'll start with this data link. Now, please prepare yourself for a deep dive with your consciousness...
+:::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000301,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:::{{Диалог|Выход}} I'm not ready yet...
+::::'''Screwllum:''' Take your time, I'll be waiting.
+::::----
+:{{Диалог|Стрелка}} Let's get going.
+::'''Screwllum:''' Very well, get going we shall.
+::'''Screwllum:''' I will be sending you into the Simulated Universe using an alternative method. It might feel a little different than usual.
+::'''Screwllum:''' This will help us quickly locate the cartridge in the vast sea of data. We'll start with this data link. Now, please prepare yourself for a deep dive with your consciousness...
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000301,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} I'm not ready yet...
+::'''Screwllum:''' Take your time, I'll be waiting.
+::----
+{{Dialogue End}}
+
+===(Optional) Talk to Leonard{{subst:void|<!--200070205-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Enter the Simulated Universe with Screwllum's help{{subst:void|<!--200070208-->}}===
+{{Mission Description|type=companion|location=Herta's Office|update|Screwllum's visit is to terminate the Simulated Universe project. How surprising! Thankfully, the robot gentleman is an open-minded individual, and he is more than happy to provide you with whatever help you need in your investigation before shutting down the system for good.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Punklorde Mentality
+|zhs  = 朋克洛德精神
+|zht  = 龐克洛德精神
+|ja   = パンクロード精神
+|ko   = 펑크 로드 스피릿
+|es   = Mentalidad de Punklorde
+|fr   = Mentalité punklordienne
+|ru   = Дух Панклорда
+|th   = Punklorde Mentality
+|vi   = Tinh Thần Punklorde
+|de   = Mental Punklorde
+|id   = Punklorde Mentality
+|pt   = Mentalidade de Punklorde
+}}
+
+==Change History==
+{{Change History|3.5}}

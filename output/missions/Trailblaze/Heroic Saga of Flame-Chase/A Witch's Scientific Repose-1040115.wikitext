@@ -1,0 +1,238 @@
+<%-- [PAGE_INFO]
+PageTitle=#A Witch's Scientific Repose#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040115
+|title         = 
+|image         = <!--Mission A Witch's Scientific Repose.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Heroic Saga of Flame-Chase
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Fourth Mirror; Herta; Second Mirror; Third Mirror; Trailblazer; Voice of Path 1; Voice of Path 2
+|startLocation = [[Astral Express]] - [[Audience Terminal: Energy Sector]]
+|world         = Astral Express
+|area          = Audience Terminal: Energy Sector
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Traveler's Guide*9; Lost Crystal*9; Celestial Ambrosia*160; Credit*100 000
+}}
+'''''A Witch's Scientific Repose''''' is a [[Trailblaze Mission]] in the chapter [[Heroic Saga of Flame-Chase]].
+
+==Steps==
+# Clear the abnormalities in the Energy Supply Zone
+# Go to the Computing Zone
+# Clear the abnormalities in the Computing Zone
+# Go to the Communications Zone
+# Defeat the out-of-control Herta puppets
+# Head deeper to investigate the puppet's signal
+# Interact with the terminal and try to speak with Nous
+# Approach the First Mirror to advance the audience's progress
+# Approach the Second Mirror to advance the audience's progress
+# Approach the Third Mirror to advance the audience's progress
+# Approach the Fourth Mirror to advance the audience's progress
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Clear the abnormalities in the Energy Supply Zone{{subst:void|<!--104011501-->}}===
+{{Mission Description|type=trailblaze|location=Audience Terminal: Energy Sector|Inside the Herta Space Station, Herta's audience with Nous had yet to end. Using all the energy available in the station, Herta activates the Audience System's terminal to try to communicate with Nous. However, the system unexpectedly failed. Upon investigation, all three sectors within the terminal are malfunctioning, requiring Herta to personally attend to each one to resolve the issues.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+
+:{{DIcon|Разговор}} Memory Bubble
+----
+:'''Fourth Mirror:''' What's this, ma'am?
+:'''Herta:''' Mm, looks like one of those Memory Bubbles. It's not worth that much attention. You'll find many more in the other zones.
+:'''Fourth Mirror:''' Hmm... is that so.
+:'''Fourth Mirror:''' Brrr... Aaaaand Madam Herta never fails to impress! Those things are no match for you!
+:'''Herta:''' Hmph, a piece of cake!
+:'''Herta:''' Now that this place is cleaned up, let's set everything in order and move on to the next zone.
+{{Dialogue End}}
+
+===Go to the Computing Zone{{subst:void|<!--104011505-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} "Audience System" Terminal
+
+
+{{Dialogue End}}
+
+===Clear the abnormalities in the Computing Zone{{subst:void|<!--104011507-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Memory Bubble
+----
+:'''Fourth Mirror:''' There's a Memory Bubble here too...
+:'''Herta:''' Why are you so interested in it?
+:'''Fourth Mirror:''' Okay, I'll admit it. I find them somewhat... creepy?
+:{{tx}}
+{{Dialogue End}}
+
+===Go to the Communications Zone{{subst:void|<!--104011510-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} "Audience System" Terminal
+
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--1-second delay-->
+;(Enter battle)
+:{{Список врагов|mode=sent|Herta #ErrorModel*1}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Defeat the out-of-control Herta puppets{{subst:void|<!--104011515-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Memory Bubble
+----
+:'''Fourth Mirror:''' A Memory Bubble tucked away this far in?
+:'''Herta:''' Heh... I think I know what this is about now. This is interesting.
+:'''Herta:''' But we can leave that for later... Let's take care of the malfunctioning puppets first.
+{{Dialogue End}}
+
+===Head deeper to investigate the puppet's signal{{subst:void|<!--104011517-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+:'''Fourth Mirror:''' They're completely battered, save for... their heads?
+:'''Herta:''' Never strike someone in the face &mdash; the same goes for puppets.
+:'''Herta:''' I'm picking up signals from more puppets somewhere farther in. Let's go take a look.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--1-second delay-->
+;(Enter battle)
+:{{Список врагов|mode=sent|Herta #ErrorModel*1}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OverrideFinishActionAutoTransfer",
+	"SubmissionID": 104011519
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Interact with the terminal and try to speak with Nous{{subst:void|<!--104011521-->}}===
+{{Mission Description|type=trailblaze|location=Audience Terminal: Communications Sector|update|The root cause of the malfunction is an invasion of Memosnatchers. After uprooting the problem, Herta is about to formally enter the Path Space to seek an audience with Nous.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Approach the First Mirror to advance the audience's progress{{subst:void|<!--104011523-->}}===
+{{Mission Description|type=trailblaze|location=Audience Terminal: Path Space|update|The audience appears to be proceeding smoothly, but... the voice from beyond the sky that Herta hears doesn't seem quite right.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Approach the Second Mirror to advance the audience's progress{{subst:void|<!--104011524-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.ForceSetDialogCamera",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:'''Second Mirror:''' Madam Herta! We're hearing those voices again!
+:'''Second Mirror:''' What now? What should we do!?
+:'''Herta:''' Keep your cool, Second Mirror. What did they say this time? Play it again for me.
+:'''Voice of Path 1:''' 0126...
+:'''Voice of Path 2:''' Wait a minute. This door... isn't locked?
+:'''Herta:''' Door...? Locked...?
+:'''Herta:''' No, this isn't the Voice of the Path at all...! What in the world is going on?
+<pre>{
+	"$type": "RPG.GameCore.ClearDialogCamera"
+}</pre>
+{{Dialogue End}}
+
+===Approach the Third Mirror to advance the audience's progress{{subst:void|<!--104011525-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.ForceSetDialogCamera",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:'''Third Mirror:''' Hyuk hyuk hyuk... Madam Herta, those lads outside... seem to be discussing something interesting...
+:'''Third Mirror:''' Wanna listen in on them? Hyuk hyuk hyuk...
+:'''Herta:''' Third Mirror! Stop that nightmarish cackle. It's giving me goosebumps.
+:'''Herta:''' Wait, did you say "those lads outside"? Could it be...
+:'''Third Mirror:''' Eheheh... Why don't you listen for yourself?
+:'''Voice of Path 1:''' She fainted?
+:'''Voice of Path 2:''' Mm-hmm, looks like it.
+:'''Herta:''' ...
+:'''Herta:''' ...This isn't right. I'm sure we've got intruders in the lab!
+:'''Voice of Path 2:''' Should we rouse her, Mr. Yang?
+:'''Voice of Path 1:''' ...Let's do it. I'm not sure she'll be happy about it, but we have no time to waste.
+:'''Herta:''' ...Wait! S&mdash;Stop whatever you're about to do...
+:'''Herta:''' No, don't even think about it! Whoever you are, you'd better not interrupt me right now!
+:'''Herta:''' I must continue forward... Just a few more steps and I'll be able to see Droidhead!
+<pre>{
+	"$type": "RPG.GameCore.ClearDialogCamera"
+}</pre>
+{{Dialogue End}}
+
+===Approach the Fourth Mirror to advance the audience's progress{{subst:void|<!--104011526-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = A Witch's Scientific Repose
+|zhs  = 魔女的科学剩宴
+|zht  = 魔女的科學剩宴
+|ja   = 魔女の科学的余剰
+|ko   = 마녀의 자투리 과학
+|es   = Sobras científicas de una bruja
+|fr   = Repos scientifique d'une sorcière
+|ru   = Научный пир ведьмы
+|th   = เศษเสี้ยวการวิจัยของแม่มด
+|vi   = Tiệc Khoa Học Của Ma Nữ
+|de   = Wissenschaftliche Rast einer Hexe
+|id   = Pesta Ilmiah Penyihir
+|pt   = O Repouso Científico Da Bruxa
+}}
+
+==Change History==
+{{Change History|3.5}}

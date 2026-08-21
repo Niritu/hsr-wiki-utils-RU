@@ -1,0 +1,640 @@
+<%-- [PAGE_INFO]
+PageTitle=#Farther Than The Snow Plains#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011412
+|title         = 
+|image         = <!--Mission Farther Than The Snow Plains.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Slices of Life Before the Furnace
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Lynx; Pela; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Outlying Snow Plains]]
+|world         = Jarilo-VI
+|area          = Outlying Snow Plains
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*400; Stellar Jade*100; Traveler's Guide*8; Lost Crystal*6; Sprout of Life*6; Credit*80 000
+}}
+'''''Farther Than The Snow Plains''''' is a [[Companion Mission]] in the chapter [[Slices of Life Before the Furnace]].
+
+==Steps==
+# Find a suitable camping spot
+# Establish the camp
+# Ask whether Pela can fix the heater
+# Collect the Geomarrow Activation Element and food
+# Return to the camp and prepare dinner
+# Ascertain the abnormality in the camp
+# (Optional) Take a picture of the mysterious creature
+# (Optional) Eliminate the mysterious creature
+# Investigate the item left by the mysterious creature
+# Fix the heater
+# Cook dinner with Lynx
+# Wait for the aurora with Lynx
+# Talk with everyone
+# View the aurora
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Find a suitable camping spot{{subst:void|<!--201141201-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|Pela and Lynx's goal for this trip was actually to observe the aurora &mdash; They need to first find a suitable camping ground before they can achieve that goal.}}
+{{Dialogue Start}}
+----
+:'''Pela:''' Phew... I never knew how long it took to get from the Administrative District to the Snow Plains.
+:'''Pela:''' So much snow... Even in the northern mountains, it wasn't like this.
+:{{Диалог|Стрелка}} Did you bring enough warm clothes?
+::'''Lynx:''' The snow is supposed to get heavier later in the day... Have you got enough warm clothes?
+::'''Pela:''' Yep, I brought everything you told me to &mdash; all thanks to your camping guide.
+::'''Pela:''' Speaking of which, according to the guide, the first thing we need to do is find a good place to set up camp, right? Flat, dry, sheltered, facing the sun, high elevation...
+:{{Диалог|Стрелка}} We need to find a good place to set up camp first.
+::'''Lynx:''' The snow is supposed to get heavier later in the day... We need to find a good place to set up camp first.
+::'''Pela:''' Right! The guide says we should find a flat, dry, sheltered location &mdash; facing the sun at high elevation...
+:'''Lynx:''' ...You remembered all that? I expected no less from you! But it's gonna be hard finding a place that fits those criteria.
+:'''Lynx:''' Well, we'll just keep moving and see. The place has to be convenient enough for us to observe the aurora, too.
+:'''Pela:''' Hehe, thanks, Lynxy!
+:'''Pela:''' I'll leave it to you then. I'm gonna follow right behind you.
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Pela:''' (It's probably best to stick close to the camp...)
+----
+
+;(По прибытии на место)
+:'''Lynx:''' (It's probably better not to separate...)
+----
+
+;(По прибытии на место)
+:'''Pela:''' (It's probably best to stick close to the camp...)
+----
+:'''Pela:''' Flat, dry, sheltered, facing the sun, high elevation...
+:'''Pela:''' ...and we need to be able to observe the aurora... This is going to be difficult.
+
+;(По прибытии на место)
+:'''Pela:''' This slope has a good view... It'll be easy to watch the aurora.
+:'''Lynx:''' Nope. The wind blows strongly through here, and there are signs of direwolf activity... It'd be too dangerous to make camp.
+:'''Pela:''' I see... Then let's keep moving.
+
+;(По прибытии на место)
+----
+:'''Pela:''' Hmm... This area is sheltered and facing the sun, plus it's flat ground, but...
+:'''Lynx:''' But there are cliffs all around. We'll be in trouble if there's a landslide or rockfall. Also, there isn't much of a view...
+:'''Lynx:''' Ah! I remember a good place that's not too far from here. Follow me!
+:'''Pela:''' Huh? ...Okay!
+----
+{{Dialogue End}}
+
+===Establish the camp{{subst:void|<!--201141203-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Pela and Lynx found a suitable camping spot. Prepare the camping equipment and wait for the aurora.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' We're at a dead end...
+:'''Pela:''' Lynxy, are you sure this is the place?
+:'''Lynx:''' Yep. This is the path to Kandor Valley. There are low cliffs on both sides, but I cleared all the monsters here a while ago, so it should be safe and sound.
+:'''Lynx:''' Also, the mountain wind during this season usually comes from the north, which is another reason why we couldn't camp on that previous slope. These two hills can block the Snow Plains gales for us.
+:'''Pela:''' I never even noticed! Huh, camping is a complicated science...
+:'''Lynx:''' ...Not really, but the environment outside of Belobog is very tough.
+:'''Lynx:''' If the weather here was as good as inside the city, then we could have camped anywhere.
+:'''Pela:''' That's true. I hope that becomes a reality one day.
+:'''Pela:''' Hmm, only problem is... the view here isn't great. Are you sure we'll be able to watch the aurora?
+:'''Lynx:''' Hehe, don't worry about that for now &mdash; let's get the tent ready then go find our dinner.
+:'''Pela:''' Sure! I can help out with the tent &mdash; I memorized that section in the camping guide.
+:'''Lynx:''' Okay, then I'll go set up the stove. If you have any questions, just ask me.
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_heater_start_falied_01"
+	}
+}</pre>
+:'''Lynx:''' (Huh? Why isn't the heater working...?)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_heater_start_falied_02"
+	}
+}</pre>
+:'''Lynx:''' (Darn, doesn't seem like an easy fix...)
+:'''Lynx:''' (Alright. I'll ask Pela...)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+{{Dialogue End}}
+
+===Ask whether Pela can fix the heater{{subst:void|<!--201141204-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Lynx seems to have run into trouble while setting up the stove. She can only ask for Pela for help.}}
+{{Dialogue Start}}
+
+;(Talk to Pela)
+:'''Pela:''' Weird... That's what the guide says...
+:'''Pela:''' Hey, Lynxy! Come and have a look at this!
+:'''Pela:''' I did everything according to the guide, but the tent's still wobbly...
+:{{Диалог|Стрелка}} Have a check.
+:'''Lynx:''' Mm, lemme have a check...
+----
+;(Screen fades to black)
+:'''Lynx:''' Main poles, check. Brow poles, check. Ropes, check...
+:'''Lynx:''' ...Ah, it's the pegs!
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_knock_nails"
+	}
+}</pre>
+:'''Lynx:''' The pegs. I forgot to mention &mdash; thick snow needs leaded iron pegs.
+:'''Pela:''' Got it! It's definitely sturdier now... Nice job, Lynxy!
+:'''Lynx:''' You're too kind... My oversight.
+:'''Lynx:''' Uhh... I've got a question, too. Can you take a look at this stove? I think it's broken...
+:'''Pela:''' Huh? Sure, let me take a look.
+----
+:'''Pela:''' Hmm... The Geomarrow fuel activation component probably stopped working. Do you have a spare one?
+:'''Lynx:''' No... Serval told me this was a brand-new stove...
+:'''Lynx:''' (Did I bring the wrong stove...? Does this mean we have to make a fire with Geomarrow? I specifically got this stove from Serval...)
+:'''Pela:''' That's okay. These components are really common. Maybe we can find a spare one in the ruins around here.
+:'''Pela:''' You take it easy &mdash; I'll see if I can find one. Oh, and I'll keep an eye out for food too!
+:'''Lynx:''' ...I'll come with you!
+----
+:'''Lynx:''' Finding food is easy, but finding that component is gonna be hard...
+:'''Pela:''' We'll do our best. If we can't find one, we'll just do what your guide says and chop wood to make a fire.
+:'''Lynx:''' Oh, actually, I have some spare chunks of Geomarrow...
+;(Obtain {{Предмет|Ice-Fresh Raw Frostweave Salmon Slices|20|x=1}})
+
+;(Obtain {{Предмет|Mimic Snow Slugs|20|x=1}})
+{{Dialogue End}}
+
+===Collect the Geomarrow Activation Element and food{{subst:void|<!--201141223-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Pela and Lynx have finished setting up the camp. Then they decide to gather food as well as trying to find a Geomarrow Activation Element, even though it would be incredibly rare to find one out in the Outlying Snow Plains.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+:'''Lynx:''' I think we've searched through everything here... Let's head back, Pela.
+:'''Pela:''' *sigh* Okay... I feel bad that we didn't find a spare component.
+:'''Lynx:''' It's fine, we'll just light a fire with Geomarrow... Let's go back and have some food.
+{{Dialogue End}}
+
+===Return to the camp and prepare dinner{{subst:void|<!--201141210-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Although they didn't find the Geomarrow Activation Element, Pela and Lynx manages to collect enough food for tonight. Now is the time to return to the camping ground.}}
+{{Dialogue Start}}
+:'''Lynx:''' Pela...
+:'''Pela:''' Hm? What's up?
+:'''Lynx:''' We... don't really need that stove to cook.
+:'''Pela:''' ...I know. But since we were looking for food, I figured we might as well try to fix the stove.
+{{Dialogue End}}
+
+===Ascertain the abnormality in the camp{{subst:void|<!--201141211-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Pela and Lynx reach the camping ground, but discover an unexpected guest in the camp. They need to confirm what is happening in the camp without alarming the intruder.<br />However, you are well aware that the "intruder" is just a harmless Warp Trotter. Now is not the time to step out and help, though. Let the two girls deal with this "crisis" on their own.}}
+{{Dialogue Start}}
+:'''Lynx:''' I think there's something in the camp... Be careful.
+:'''Pela:''' Is it some kind of animal?
+
+;(По прибытии на место)
+----
+:'''Pela:''' ...Lynxy, wait. That thing in the camp is a dangerous Fragmentum creature.
+:'''Lynx:''' Mm, I see it too. But it doesn't seem aggressive... and it's all chubby and cute...
+:'''Pela:''' Don't be fooled by its appearance. About 20% of our Silvermane Guard Fragmentum losses are a result of chasing this creature.
+:'''Pela:''' We haven't figured out everything about it yet, but there's one thing we're sure of... they have the power to control people. We need to be careful.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40101_F40101006_G12",
+	"AnchorName": "Anchor5",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 12,
+	"GroupNpcID": 400001,
+	"DestroyList": []
+}</pre>
+:'''Lynx:''' Huh? But this little buddy gave me something good last time, and it didn't hurt me...
+:'''Pela:''' That must be the first step in their mind control process. You were lucky.
+:'''Pela:''' We should defeat it just to be safe. Fragmentum creatures are Belobog's enemies &mdash; they shouldn't be trusted.
+:'''Lynx:''' Ah, but...
+:'''Pela:''' Mm?
+:'''Lynx:''' I didn't even get to take a photo of it last time. Now's a good chance...
+:'''Lynx:''' Can I at least take a picture, Pela? That's also my job as a researcher.
+:'''Pela:''' ...I understand, but the sound of the shutter and the camera bulb might send it into a frenzy...
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40101_F40101006_G12",
+	"AnchorName": "Anchor8",
+	"DynamicParams": {}
+}</pre>
+:'''Lynx:''' ...Ah, it noticed us.
+:'''Pela:''' It might be looking for an opportunity to attack. Be careful!
+----
+{{Dialogue End}}
+
+===(Optional) Take a picture of the mysterious creature{{subst:void|<!--201141212-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Pela and Lynx have opposing ideas over what to do with this mysterious creature &mdash; take a photo of it? Or to sniff out this dangerous element while they can? The two girls need to make a choice.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; PhotoGraphGOGOGO)
+<pre>{
+	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
+	"PhotoGraphMode": "Identify",
+	"IdentifyRadiusOverride": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+
+;(Unused &mdash; PhotoGraphFinish_201141212)
+
+{{Dialogue End}}
+
+===(Optional) Eliminate the mysterious creature{{subst:void|<!--201141213-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' Careful, Lynx &mdash; It's going to attack!
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40101_F40101006_G12",
+	"AnchorName": "Anchor4",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+;(Enter battle)
+:{{Список врагов|mode=sent|Flamespawn*1; Warp Trotter*1; Frostspawn*1}}
+{{Dialogue End}}
+
+===Investigate the item left by the mysterious creature{{subst:void|<!--201141221-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Either way, the Warp Trotter leaves the camping ground, but it seems to have left something for the two girls.<br />The two girls decide to move up to investigate what the mysterious creature had prepared for them.}}
+{{Dialogue Start}}
+----
+:'''Lynx:''' Finally got a picture...
+:{{Диалог|Стрелка}} It disappeared.
+::'''Pela:''' It disappeared... Did it run away?
+::'''Lynx:''' Yeah... that's the nature of these little things. They disappear in a flash when they get scared.
+:{{Диалог|Стрелка}} Maybe it's still around somewhere.
+::'''Pela:''' It disappeared... Lynxy, be on the lookout for an ambush.
+::'''Lynx:''' Don't worry, Pela... that's the nature of these little things. They disappear in a flash when they get scared.
+:'''Lynx:''' That's my conclusion from my long-term observations. As for those lost Guards... maybe they were chasing these little creatures and couldn't find their way back.
+:'''Pela:''' ...
+:'''Pela:''' Sorry. Maybe I was overreacting...
+:'''Lynx:''' Don't be sorry. It pays to be careful.
+:'''Lynx:''' Anyway, crisis resolved! We can now make some food...
+:'''Lynx:''' ...Huh? Our little buddy seems to have dropped something.
+----
+----
+:'''Pela:''' Phew... Hopefully it won't be coming back any time soon.
+:'''Lynx:''' It disappeared again...
+:'''Pela:''' It must have used some Fragmentum loophole to escape. Do you really want to take after it, Lynxy?
+:'''Lynx:''' No, just a bit curious. But these guys do disappear in a flash when they get scared.
+:'''Lynx:''' Anyway, crisis resolved! We can now make some food...
+:'''Lynx:''' ...Huh? Our little buddy seems to have dropped something.
+----
+
+;(Obtain {{Предмет|Geomarrow Activation Element|20|x=1}})
+{{Dialogue End}}
+
+===Fix the heater{{subst:void|<!--201141215-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|What a surprise. The two girls receive the Geomarrow Activation Element they have been looking for. Now is the time for Pela to show off her skills and fix the heater.}}
+{{Dialogue Start}}
+
+;(Lose {{Предмет|Geomarrow Activation Element|20|x=1}})
+{{Dialogue End}}
+
+===Cook dinner with Lynx{{subst:void|<!--201141216-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|The girls finally fix the heater. Though Belobog is currently enveloped in the perpetual solar sunlight, it is still time for dinner. Check the food ingredients collected so far and find a way to make a delicious camping meal with them.}}
+{{Dialogue Start}}
+----
+:'''Pela:''' Okay, all done.
+:'''Lynx:''' What is this magic? I couldn't figure out the problem at all...
+:'''Pela:''' No magic here. Just a trick or two I learned from Serval.
+:'''Lynx:''' My sister...
+:'''Pela:''' Yep, that's her. What's the matter?
+:'''Lynx:''' Ah... nothing. Just... sometimes I'm a bit jealous of Serval, you know? She knows everything...
+:'''Pela:''' Hehe, same as you, then.
+:'''Lynx:''' ...Huh?
+:'''Pela:''' I'm serious! Outdoor explorer, mechanic &mdash; they're both experts in their field, right? I think you two are awesome.
+:'''Pela:''' Anyway, it wouldn't be hard for you to get her to teach you something. You're her sister, she'd be happy to teach you.
+:'''Lynx:''' You say that, but...
+:'''Lynx:''' ...Never mind. It's getting late. Let's cook something.
+:'''Pela:''' Yay! That's my favorite part... Wait, no, my favorite part is watching the aurora!
+:'''Lynx:''' Anyways, let's take a look at what ingredients we have.
+:'''Lynx:''' (Every ingredient has its own effect, and combining them will create unexpected results...)
+:'''Lynx:''' (What kind of effects are they gonna make? Let's just give it a try.)
+<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140202,
+		140203
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140202,
+			"TriggerCustomString": "SelectItem_1"
+		},
+		{
+			"Item1": 140203,
+			"TriggerCustomString": "SelectItem_2"
+		},
+		{
+			"Item1": 140202,
+			"Item2": 140203,
+			"TriggerCustomString": "SelectItem_3"
+		}
+	],
+	"SlotNum": 2,
+	"SimpleTalk": {},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectItem_201141125_Cancel"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectItem_201141125_Cancel"
+			}
+		}
+	]
+}</pre>
+;(Lose {{Предмет|Ice-Fresh Raw Frostweave Salmon Slices|20|x=1}})
+;(Unused &mdash; SelectItem_201141125_Cancel)
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140202,
+		140203
+	],
+	"ItemHiddenIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140202,
+			"TriggerCustomString": "SelectItem_1"
+		},
+		{
+			"Item1": 140203,
+			"TriggerCustomString": "SelectItem_2"
+		},
+		{
+			"Item1": 140202,
+			"Item2": 140203,
+			"TriggerCustomString": "SelectItem_3"
+		}
+	],
+	"SlotNum": 2,
+	"SimpleTalk": {},
+	"OnSubmitFail": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectItem_201141125_Cancel"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "SelectItem_201141125_Cancel"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; SelectItem_1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 201141216,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::'''Lynx:''' Ah... 700-year-old raw fish.
+::'''Pela:''' You don't have to emphasize the "700 years" part, y'know...
+::'''Lynx:''' The older, the rarer! Plus, you had to enter that ruin for it &mdash; even more special...
+::'''Pela:''' You don't have to emphasize that either!
+::'''Lynx:''' Then let's just say it'll be tonight's main course, haha. Time to show you my culinary skills!
+::'''Pela:''' Um... Why don't I cook tonight? You can take a break...
+::'''Lynx:''' It's no problem! Leave it to me.
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_cooking"
+	}
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_408409.png"
+}</pre>
+::'''Lynx:''' Ta-da. Frostweave Salmon Bread is ready!
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_408409.png"
+}</pre>
+::'''Pela:''' Ah... It smells so good! I'm gonna dig in!
+:;(Screen fades to black)
+::You feel an amazing energy as you enjoy a meal with your fellow campers...
+::----
+
+;(Unused &mdash; SelectItem_2)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 201141216,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::'''Lynx:''' Ah... Cute mimic snow slug.
+::'''Pela:''' Are we really going to eat that...?
+::'''Lynx:''' Don't worry. It may not look tasty, but I guarantee you'll fall in love with it on the first bite.
+::'''Pela:''' I still don't believe this is supposed to be food...
+::'''Lynx:''' Then let's just say it'll be tonight's main course, haha. Time to show you my culinary skills!
+::'''Pela:''' Um... Why don't I cook tonight? You can take a break...
+::'''Lynx:''' It's no problem! Leave it to me.
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_cooking"
+	}
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_408204.png"
+}</pre>
+::'''Lynx:''' Ta-da. The Stone-Roasted Meat Skewer is ready!
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_408204.png"
+}</pre>
+::'''Pela:''' Ah... It smells so good! I'm gonna dig in!
+:;(Screen fades to black)
+::You feel an amazing energy as you enjoy a meal with your fellow campers...
+::----
+
+;(Unused &mdash; SelectItem_3)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 201141216,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			1,
+			2,
+			3
+		]
+	},
+	"CustomValue": 3
+}</pre>
+::'''Lynx:''' Ah... raw fish from 700 years ago and some cute mimic snow slug.
+::'''Pela:''' I don't think... either is edible...
+::'''Lynx:''' Don't worry. We'll make them into a hotpot. Just add cream, biscuit crumbs, and the canned sardines I brought...
+::'''Pela:''' You're putting canned sardines into a hotpot!? Please don't say that...
+::'''Lynx:''' Well then, this will be the main course for tonight &mdash; I'll show you what I can do as a chef!
+::'''Pela:''' Um... Why don't I cook tonight? You can take a break...
+::'''Lynx:''' Come on, it's fine. Just leave it to me.
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_cooking"
+	}
+}</pre>
+::----
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_402018.png"
+}</pre>
+::'''Lynx:''' Ta-da! The super delicious Snow Plains Combo Stew is ready!
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_402018.png"
+}</pre>
+::'''Pela:''' Ah... It smells so good! I'm gonna dig in!
+:;(Screen fades to black)
+::You feel an amazing energy as you enjoy a meal with your fellow campers...
+::----
+{{Dialogue End}}
+
+===Wait for the aurora with Lynx{{subst:void|<!--201141218-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|After they've had a meal, the girls' goals are now clear. They decide to have a long chat to spend time before the aurora emerges.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Flamespawn*1; Warp Trotter*1; Frostspawn*1}}
+{{Dialogue End}}
+
+===Talk with everyone{{subst:void|<!--201141219-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|Your appearance seems to make the girls rather confused. Now you have to explain the situation to them.}}
+{{Dialogue Start}}
+----
+:'''Pela:''' These Fragmentum monsters are coming out of thin air...
+:'''Lynx:''' They were probably attracted by the stove. The Stellaron crisis is over, why are there still so many monsters?
+:{{Диалог|Стрелка}} It takes time for the Fragmentum's influence to fade.
+::'''Pela:''' Ah. I see...
+:{{Диалог|Стрелка}} With me around, there's no need to worry!
+::'''Pela:''' Hmph, we could've handled it...
+:'''Pela:''' Wait &mdash; where did you come from all of a sudden!?
+:'''Lynx:''' Pela? Who is this?
+:'''Pela:''' Um... This is the trailblazer &mdash; the savior of Belobog.
+:'''Lynx:''' I see. Well, in that case, thanks for saving us &mdash; not to mention Belobog.
+:'''Lynx:''' So, what's a big hero like you doing out here?
+:{{Диалог|Стрелка}} Serval and Gepard sent me.
+:{{Диалог|Стрелка}} Um... Err...
+::'''Lynx:''' Never mind... I can take a guess. Serval and Gepard sent you to protect us, right?
+::'''Lynx:''' They're always like this. It's impossible to get some private time as their younger sister.
+::{{Диалог|Стрелка}} I didn't exactly see eye to eye with them...
+:::'''Pela:''' Then why did you still come here...
+::{{Диалог|Стрелка}} That's how families are.
+:::'''Pela:''' Yeah...
+:::'''Pela:''' Hold on, isn't that what I just said?
+::'''Lynx:''' Alright, alright. It's all because Serval and Gepard are worrywarts. Besides, you did save us...
+::'''Lynx:''' Since you followed us all the way here, you probably know why we're out camping today...
+::'''Lynx:''' Stay and watch the aurora with us.
+:;(Screen fades to black)
+::'''Lynx:''' It's about time for it to appear...
+::'''Pela:''' Hey! Lynxy! Look!
+::----
+;(All choices lead to the following options)
+:'''Lynx:''' *sigh*...I knew it.
+:'''Lynx:''' They're always like this. It's impossible to get some private time as their younger sister.
+:{{Диалог|Стрелка}} I didn't exactly see eye to eye with them...
+::'''Pela:''' Then why did you still come here...
+:{{Диалог|Стрелка}} That's how families are.
+::'''Pela:''' Yeah...
+::'''Pela:''' Hold on, isn't that what I just said?
+:'''Lynx:''' Alright, alright. It's all because Serval and Gepard are worrywarts. Besides, you did save us...
+:'''Lynx:''' Since you followed us all the way here, you probably know why we're out camping today...
+:'''Lynx:''' Stay and watch the aurora with us.
+;(Screen fades to black)
+:'''Lynx:''' It's about time for it to appear...
+:'''Pela:''' Hey! Lynxy! Look!
+----
+{{Dialogue End}}
+
+===View the aurora{{subst:void|<!--201141220-->}}===
+{{Mission Description|type=companion|location=Outlying Snow Plains|update|The aurora that everyone has been looking forward to finally arrives after this string of incidents. Time to enjoy your "spoils."}}
+{{Dialogue Start}}
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Farther Than The Snow Plains
+|zhs  = 比雪原更遥远
+|zht  = 比雪原更遙遠
+|ja   = 雪原よりも遥か彼方へ
+|ko   = 설원보다 먼
+|es   = Más allá de las llanuras nevadas
+|fr   = Au-delà des Plaines des neiges
+|ru   = Дальше, чем Снежные поля
+|th   = ไกลเกินกว่าทุ่งหิมะ
+|vi   = Xa Hơn Cả Cánh Đồng Tuyết
+|de   = Jenseits der Schneewüste
+|id   = Lebih Jauh dari Dataran Salju
+|pt   = Mais Longe que as Planícies Nevadas
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,462 @@
+<%-- [PAGE_INFO]
+PageTitle=#No Time for Me, My Friend#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1011502
+|title         = 
+|image         = <!--Mission No Time for Me, My Friend.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Sweltering Morning Sun
+|requirements  = [[Trailblaze Mission]] ''[[In the Dangerous Muddy Swamp]]'' completed
+|summary       = The story ended and Bronya succeeded as the Supreme Guardian. The Overworld and Underworld reunited to create a complete Belobog.<br />You spent your final relaxing time in Belobog.
+|characters    = Alina; Bronya; Cable Car Operator; Clara; Dan Heng; Dan Heng and March 7th; Dunya; Elaine; Expectant Gentleman; Fidora; Gepard; Hook; Innocent Child; Joshua; March 7th; Natasha; Nervous Silvermane Guard; Oleg; Onlookers; Seele; Silvermane Guard Announcer; Tearful Woman; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Boulder Town]]
+|world         = Jarilo-VI
+|area          = Boulder Town
+|prev          = In the Dangerous Muddy Swamp
+|next          = Silent Galaxy
+|rewards       = Trailblaze EXP*400; Refined Aether*3; Herta's Space Station*1 { rarity = 3 }; Herta's Wandering Trek*1 { rarity = 3 }; Credit*10 000
+}}
+'''''No Time for Me, My Friend''''' is a [[Trailblaze Mission]] in the chapter [[In the Sweltering Morning Sun]].
+
+==Steps==
+# Meet up with Natasha and prepare to welcome the re-opening of the Underworld
+# Talk with the cable car operator and return to the Overworld
+# Talk with Gepard
+# Go to Bronya's succession ceremony
+# Find somewhere to rest before the ceremony starts
+# Talk to Bronya
+# (Optional) Talk to the Underworld residents nearby
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Meet up with Natasha and prepare to welcome the re-opening of the Underworld{{subst:void|<!--101150119-->}}===
+{{Mission Description|type=trailblaze|location=Boulder Town|Bronya sent news that the blockade between the Overworld and Underworld is about to lift after more than a decade.<br />Go meet Natasha and pass this exciting news to every Underworld resident.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 111
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300002
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(Talk to Natasha)
+:'''Natasha:''' You made it... I thought you were about to miss out on a moment of history.
+:'''March 7th:''' No way! After all our hard work, how could we miss out on the final celebration? Right, (Trailblazer)?
+:{{Диалог|Стрелка}} I'll go sit at the children's table.
+::'''Natasha:''' Haha, I don't know how much of a celebration we'll be having... but I know Hook and Clara will be pleased to sit with you.
+:{{Диалог|Стрелка}} The smell of freedom's in the air...
+::'''Natasha:''' Hehe, I smell it too.
+:'''Natasha:''' For Oleg and I, not to mention the other adults, reopening the passageway means rediscovering old ways of living &mdash; a return to "normality..." Survival is no longer the top of the agenda...
+:'''Natasha:''' But for the children who were born into this era, who grew up in this isolation... this will be a new life altogether.
+:'''Natasha:''' ...Once you've tasted freedom, it's difficult to accept a life of separation and isolation. Those of us whose childhoods were marred by tragedy... we must strive to do better for the next generation.
+:'''Natasha:''' I'm sorry, here I am talking your ear off again. This is a day to remember. We should welcome it with smiles.
+:'''Natasha:''' If you have time, talk to the folks here &mdash; every one of them will tell you about their excitement. Then, when you're ready... let's "go home."
+
+;(Talk to Miner)
+:'''Expectant Gentleman:''' It's been more than ten years. I can finally see my little girl again...
+:'''Expectant Gentleman:''' She must have graduated by now. I hope she found a good job &mdash; government administration or legal consulting, perhaps...
+:'''Expectant Gentleman:''' Please, Amber Lord, anything but those terrible magazine publishers! She's always liked to read those pointless things...
+
+;(Talk to Miner)
+:'''Alina:''' Mommy, what do children in the Overworld dress like?
+:'''Dunya:''' Mommy doesn't know either, sweety &mdash; the Overworld is different from here. Their fashion is always changing, I don't know what's popular these days...
+:'''Alina:''' Then... will other children laugh at me when we go up?
+:'''Dunya:''' Don't be silly, that won't happen &mdash; mommy's gonna buy you some pretty new clothes as soon as we're on the surface.
+:'''Alina:''' ...Deal! Thanks, mommy.
+
+;(Talk to Cable Car Operator)
+;(First interaction)
+::'''Cable Car Operator:''' Finally... Finally I can get back to supervising the cable cars! I thought I'd spend the rest of my life in those mines...
+::'''Cable Car Operator:''' Ah, it's you! The liberators of the Underworld! You're the first passengers we've had since being sealed off &mdash; it'll be my honor to get you to the surface in one piece!
+::{{Диалог|Стрелка}} Do you have a license?
+:::'''Cable Car Operator:''' Oh, uh, I'm afraid you might have to make an exception, {{MC|ж=miss|м=mr}}. My license has expired, but then I haven't had the chance to go up and renew it for 10 years now...
+::{{Диалог|Стрелка}} Does this thing have a good safety record?
+:::'''Cable Car Operator:''' Relax, relax! In all my 20 years on the job, there were only ever, uh... Anyway, none of them were serious!
+::'''Cable Car Operator:''' *cough* So! Ready to climb aboard?
+;(Subsequent interactions)
+::'''Cable Car Operator:''' So! Ready to climb aboard?
+:{{Диалог|Стрелка}} Time to take the kids out for some fresh air.
+::'''Cable Car Operator:''' Brothers, sisters, ladies, gentlemen, boys, and girls of all ages &mdash; gather round! The cable car passenger service is about to restart!
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E2",
+	"SubMissionID": 101150121
+}</pre>
+::{{tx}}
+:{{Диалог|Выход}} Not yet.
+::'''Cable Car Operator:''' No problem, this car won't be leaving without you!
+
+:{{DIcon|Разговор}} Listen
+:'''Joshua:''' The Guards... they m&mdash;moved so q&mdash;quickly... don't you think it's a little f&mdash;fishy?
+:'''Elaine:''' I... I think it's hard to believe, but I've met that young lady Bronya. We didn't talk much, but she felt trustworthy to me.
+:'''Fidora:''' I don't really know what kind of person the new guardian is, but I heard the three outsiders are on good terms with her.
+:'''Fidora:''' Those three are really capable people. If they believe the Guards, then there's no reason for us not to.
+:'''Joshua:''' I g&mdash;guess...
+:'''Elaine:''' Fidora's right. They saved lots of people at the mines... I think they can be trusted.
+{{Dialogue End}}
+
+===Talk with the cable car operator and return to the Overworld{{subst:void|<!--101150121-->}}===
+{{Mission Description|type=trailblaze|location=Boulder Town|update|Bronya sent news that the blockade between the Overworld and Underworld is about to lift after more than a decade.<br />The cable car is about to re-open. Underworld residents would see the light again and breathe freely under the open sky.<br />Though you are rather concerned with the safety of the cable car due to its lack of maintenance, you still decide to give it a go and return to the Overworld in this traditional method.}}
+{{Dialogue Start}}
+
+;(Talk to Cable Car Operator)
+:'''Cable Car Operator:''' So! Ready to climb aboard?
+:{{Диалог|Стрелка}} Time to take the kids out for some fresh air.
+::'''Cable Car Operator:''' Brothers, sisters, ladies, gentlemen, boys, and girls of all ages &mdash; gather round! The cable car passenger service is about to restart!
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E2",
+	"SubMissionID": 101150121
+}</pre>
+::{{tx}}
+:{{Диалог|Выход}} Not yet.
+::'''Cable Car Operator:''' No problem, this car won't be leaving without you!
+{{Dialogue End}}
+
+===Talk with Gepard{{subst:void|<!--101150201-->}}===
+{{Mission Description|type=trailblaze|location=Administrative District|update|Bronya sent news that the blockade between the Overworld and Underworld is about to lift after more than a decade.<br />You and other Underworld residents take the cable car back to the Administrative District and face Gepard, with whom you had fought just a short time ago.<br />This time, however, the captain of the Silvermane Guards is wearing a smile.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' Ah, it's Gepard! Is he here to meet us?
+:'''Dan Heng:''' He's still on duty. Huh, he must have recovered quickly.
+:'''March 7th:''' Let's go say hi.
+
+;(Talk to Gepard)
+:'''Gepard:''' Welcome back to the Administrative District, Trailblazers.
+:'''March 7th:''' Trailblazers... first time anyone's called us that on this planet!
+:'''Gepard:''' The Architects think it's only right that we should address you properly. "Outsiders" is hardly fitting anymore.
+:'''Gepard:''' ...Please allow me to apologize again for what happened in the restricted zone. You were only trying to help... I should've trusted Serval's judgment.
+:{{Диалог|Стрелка}} You were just doing your job.
+::'''Gepard:''' Thanks for understanding.
+:{{Диалог|Стрелка}} Your sister knows what's up...
+::'''Gepard:''' I'll keep that in mind, thanks.
+:{{Диалог|Стрелка}} Ha! Didn't expect to get wrecked, huh?
+::'''Gepard:''' You are excellent fighters. I'd love to have you provide training for the Guards, but I know you have places to be.
+:'''Gepard:''' Lady Bronya's inaugural address will begin soon. She asked me to pass on her invitation to you.
+:'''March 7th:''' Huh? That's sooner than I expected. Is she well enough to...
+:'''Gepard:''' Not really... But Lady Bronya insisted on delivering the speech as soon as possible. She wants the people to understand what happened.
+:'''Gepard:''' The address will be held at Everwinter Monument. I hope the three of you can find time to attend.
+----
+
+;(Talk to Miner)
+:'''Expectant Gentleman:''' Sasha! My Sasha, is that you?
+:'''Tearful Woman:''' Dad! &mdash; by the Amber Lord, I thought I was never going to see you again!
+:'''Expectant Gentleman:''' Praise the Preservation, my child. Praise THEIR leniency... And who's this little one?
+:'''Tearful Woman:''' Here, Barry... say hello to grandpa!
+:'''Innocent Child:''' ...Hello grandpa!
+:'''Expectant Gentleman:''' My grandson... Is this my grandson? *sob*
+:'''Tearful Woman:''' Sorry Dad, I wanted to introduce you to my husband too, but he can't get away from the publisher today.
+:'''Expectant Gentleman:''' That's okay, my child, we've got all the time in the... did you say "publisher"?
+
+;(Talk to Silvermane Soldier)
+:'''Nervous Silvermane Guard:''' U&mdash;Uh, excuse me... are you Captain Oleg?
+:'''Oleg:''' ...Huh? I didn't think anyone would still remember my name after all this time.
+:'''Nervous Silvermane Guard:''' Of course we remember! Every young guard knows about your courageous exploits!
+:'''Oleg:''' Oh? Which ones might they be? The time I finished off that rampaging prowler with just three bullets? Or when I defended the outpost from monsters for six days straight without food or water?
+:'''Nervous Silvermane Guard:''' I haven't heard of either of them actually... But I'd love to hear all about them!
+:'''Oleg:''' Hahaha, sure! In which case, I'll cut my walk short and tell you all the grisly details...
+
+;(Talk to Natasha)
+:'''Natasha:''' I don't know if you've ever had that feeling, (Trailblazer)... When you stop and look back on the things you've done, and wonder at all the obstacles you've overcome, the strength you've displayed...
+:'''Natasha:''' And then you start to doubt yourself, and wonder if you've lost that drive... If everything were to happen again, would you still stand strong?
+:{{Диалог|Стрелка}} I know the feeling.
+::'''Natasha:''' You do? Good... I mean, it's good to know someone in this world feels the same way as me.
+:{{Диалог|Стрелка}} I don't quite understand what you mean.
+::'''Natasha:''' And that's not surprising &mdash; you're different from others. You seem to radiate a confidence most people don't have.
+:'''Natasha:''' I haven't been able to sit back once over the past ten years &mdash; a moment's negligence could have brought Wildfire crashing down... and the Underworld would've been beyond saving.
+:'''Natasha:''' Staying vigilant wasn't the issue... it was the not knowing whether I'd ever be able to let my guard down again...
+:'''Natasha:''' No matter what anyone says, I believe your arrival was the reward for my long vigil. Thank you, Trailblazer.
+
+;(Talk to Hook)
+:'''Hook:''' Wow! Did you see that, Clara? A super suuuper big steel monster just ran past!
+:'''Clara:''' I don't think that's a monster... Mr. Svarog's database has information about it. It's called... hmm, I can't remember.
+:'''Hook:''' Don't worry about the name! The important thing is I saw what it can do &mdash; it has a huuuuge appetite and swallows people whole!
+:'''Hook:''' And it just so happens to be The Moles' next target, hehe... We'll defeat the iron monster and save the people in its tummy!
+:'''Clara:''' Um... I don't think that's how it works...
+{{Dialogue End}}
+
+===Go to Bronya's succession ceremony{{subst:void|<!--101150202-->}}===
+{{Mission Description|type=trailblaze|location=Administrative District|update|Bronya sent news that the blockade between the Overworld and Underworld is about to lift after more than a decade.<br />You learn from Gepard that Bronya's succession ceremony as the Supreme Guardian is about to start.<br />You are warmly invited as someone who had gone through great difficulties with her. Go to the Everwinter Monument and wait for the ceremony to start.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' Look! There's a crowd gathering over there. Is the address starting soon?
+:'''Dan Heng:''' Looks like it. Bronya hasn't arrived yet, though. Let's find somewhere to wait.
+{{Dialogue End}}
+
+===Find somewhere to rest before the ceremony starts{{subst:void|<!--101150224-->}}===
+{{Mission Description|type=trailblaze|location=Administrative District|update|Bronya sent news that the blockade between the Overworld and Underworld is about to lift after more than a decade.<br />The succession ceremony for the young Guardian is about to start. You arrive at the Everwinter Monument early to wait for the speech.<br />The time is still early. Find somewhere to rest and enjoy a rare moment of respite in Belobog.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--10-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400012,
+			"TalkSentenceID": 101013396
+		},
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400012,
+			"TalkSentenceID": 101013397
+		}
+	],
+	"ID": 4
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400013,
+			"TalkSentenceID": 101013392
+		}
+	],
+	"ID": 7
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 101013390
+		}
+	],
+	"ID": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 101013391
+		}
+	],
+	"ID": 6
+}</pre>
+:<!--5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 101013393
+		}
+	],
+	"ID": 3
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 101013394
+		},
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 101013395
+		}
+	],
+	"ID": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 4,
+			"GroupID": 95,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 101013389
+		}
+	],
+	"ID": 5
+}</pre>
+{{Dialogue End}}
+
+===Talk to Bronya{{subst:void|<!--101150204-->}}===
+{{Mission Description|type=trailblaze|location=Qlipoth Fort|update|The story ended and Bronya succeeded as the Supreme Guardian. The Overworld and Underworld reunited to create a complete Belobog.<br />All things must end. There is always a bit of sadness at the time of farewell.<br />It is best to talk to Bronya again before you leave and tell her everything you heard from Welt.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' Ah, it's Gepard! Is he here to meet us?
+:'''Dan Heng:''' He's still on duty. Huh, he must have recovered quickly.
+:'''March 7th:''' Let's go say hi.
+:'''Gepard:''' Welcome back to the Administrative District, Trailblazers.
+:'''March 7th:''' Trailblazers... first time anyone's called us that on this planet!
+:'''Gepard:''' The Architects think it's only right that we should address you properly. "Outsiders" is hardly fitting anymore.
+:'''Gepard:''' ...Please allow me to apologize again for what happened in the restricted zone. You were only trying to help... I should've trusted Serval's judgment.
+:You were just doing your job.
+:'''Gepard:''' Thanks for understanding.
+:Your sister knows what's up...
+:'''Gepard:''' I'll keep that in mind, thanks.
+:Ha! Didn't expect to get wrecked, huh?
+:'''Gepard:''' You are excellent fighters. I'd love to have you provide training for the Guards, but I know you have places to be.
+:'''Gepard:''' Lady Bronya's inaugural address will begin soon. She asked me to pass on her invitation to you.
+:'''March 7th:''' Huh? That's sooner than I expected. Is she well enough to...
+:'''Gepard:''' Not really... But Lady Bronya insisted on delivering the speech as soon as possible. She wants the people to understand what happened.
+:'''Gepard:''' The address will be held at Everwinter Monument. I hope the three of you can find time to attend.
+:'''March 7th:''' Look! There's a crowd gathering over there. Is the address starting soon?
+:'''Dan Heng:''' Looks like it. Bronya hasn't arrived yet, though. Let's find somewhere to wait.
+:'''Silvermane Guard Announcer:''' Guards, formation!
+:'''March 7th:''' Whoa, this must be it.
+:'''Silvermane Guard Announcer:''' Citizens of Belobog, I kindly ask for your attention! Lady Bronya Rand's inaugural address will begin shortly. Please remain orderly!
+:'''Bronya:''' People of Belobog &mdash; hear me!
+:'''Bronya:''' Today we gather here to celebrate our victory... but it was a sacrifice made by a mighty guardian that delivered us this opportunity. She dispelled an evil that cost us 700 years of suffering... and in the process, she paid the ultimate price.
+:'''Bronya:''' The sacrifice of Cocolia Rand ushers in a new chapter. The blizzard beyond the walls will die away and the offensives of our Silvermane Guards will begin to contain the Fragmentum's advance.
+:'''Bronya:''' In the far north, I witnessed with my own eyes the struggle between the late supreme guardian and the evil power that sought to destroy us. In her last moments, the supreme guardian told me her greatest regret...
+:'''Bronya:''' ...The order to seal off the Underworld from the Overworld. With the passage of time, she gradually came to realize the consequences of that decision... Although tortured with guilt, she could not undo the damage.
+:'''Bronya:''' In her final moments, she wanted us to mark the Stellaron's end by reuniting Belobog. Overworlders and Underworlders must embrace the dawn of a new age... together.
+:'''Bronya:''' People of the Underworld, I dare not ask for your forgiveness &mdash; I now know the reality of your decade of suffering...
+:'''Bronya:''' But I want us to work together. We know that without your perseverance and hard work, Belobog will not recover its former glory... and the seed of civilization will not be preserved.
+:'''Bronya:''' ...And on that note, I'd like to extend my heartfelt gratitude to a few guests of the city.
+:'''Bronya:''' Most of you were not aware of their arrival... but it is thanks to them that our world now flourishes with hope.
+:'''Bronya:''' They made me realize that while we remain focused on "preserving" the ground beneath our feet, we should not forget to look up into the sky.
+:'''Bronya:''' I firmly believe that with the determination of everyone, our world, the world the Trailblazers call "Jarilo-VI," will no longer be alone among the stars.
+:'''Bronya:''' But before we accomplish that goal, I humbly ask you to follow me into the future...
+:'''Bronya:''' I, Bronya Rand, the nineteenth guardian of Belobog, hereby take my oath...
+:'''Onlookers:''' Lady Bronya! Lady Bronya! Long live Belobog!
+:'''March 7th:''' Back in this office again... The last time I was here was... the last time I was here.
+:'''March 7th:''' No more unnerving gaze this time! Hehe...
+:'''March 7th:''' Bronya, we're back!
+:'''Bronya:''' March, Dan Heng, (Trailblazer)... it's wonderful you made it to the address.
+:'''Bronya:''' Sorry, I know the invitation was very last minute... but I needed to get the news out as soon as possible. The longer people waited, the more rumors started to swirl. The situation risked spinning out of control.
+:{{Диалог|Стрелка}} Are you fully recovered?
+::'''Bronya:''' Yes, I'm fine now. Don't worry.
+::'''Bronya:''' My mother... she tried to force the voice of the Stellaron into my head... It was a terrible feeling. I don't know what would've happened if you hadn't shown up.
+::Was Seele not there for the address?
+:{{Диалог|Стрелка}} Was Seele not there for the address?
+:'''Bronya:''' She was there. She just made sure no one could see her.
+:'''Bronya:''' Seele is still new to the vastness of the Overworld &mdash; she feels uncomfortable in a big crowd... I'll help her adjust to life here.
+:'''March 7th:''' That was some speech, Bronya! If I had to talk like that in front of a huge crowd, I'd be shaking head to toe!
+:'''Bronya:''' It was all just a bunch of palatable lies. I hope you never have a similar experience, March.
+:{{Диалог|Стрелка}} The part about preserving the seed of civilization was real.
+:{{Диалог|Стрелка}} It's what you do as a leader that matters.
+:{{Диалог|Стрелка}} Sometimes people need to hear white lies.
+:'''Bronya:''' Mm... I'd prefer to be honest with the people... but I also want to preserve their hope.
+:'''March 7th:''' ...Dan Heng, wanna... talk about Mr. Yang's findings?
+:'''Dan Heng:''' Mm, allow me to explain.
+:Telling Bronya about Welt's observations...
+:'''Bronya:''' ...Which means the Fragmentum has already taken root by this point. Even though the Stellaron is sealed, we won't be able to reverse the damage immediately...
+:{{Диалог|Стрелка}} Stellarons are terrible things.
+:{{Диалог|Стрелка}} Sorry, we promised you...
+:{{tx}}
+:{{tx}}
+:{{Диалог|Стрелка}} We will find a way to root out the Fragmentum.
+:{{Диалог|Стрелка}} The Astral Express will do everything within our power to help.
+:'''Bronya:''' Besides, I agree with Mr. Yang. Ultimately, the fate of Belobog is in the hands of its own people...
+:{{tx}}
+----
+:'''March 7th:''' Congrats, (Trailblazer)! That was one heck of a first trailblazing expedition!
+:'''Dan Heng:''' Worth celebrating, I'd say.
+:{{Диалог|Стрелка}} On a scale from 1 to 5, how would you rate this journey...
+:'''Dan Heng and March 7th:''' Two point five. Five!
+:'''March 7th:''' ...What!? That run-of-the-mill, huh?
+:'''Dan Heng:''' My scoring criteria are different from yours.
+:'''March 7th:''' Ugh! Anyway, we should be asking (Trailblazer)... Any thoughts you want to share?
+:{{Диалог|Стрелка}} Time for a nap...
+::'''March 7th:''' Wait, what? No way &mdash; we're about to leave and I've hardly got any decent photos.
+::'''March 7th:''' Come on, let's go back to the Administrative District and hang out for a bit longer!
+:{{Диалог|Стрелка}} I feel like I could fight a hundred more monsters!
+::'''March 7th:''' That's the spirit! Come on, we should take some more photos before we head back to the Express.
+::'''March 7th:''' Let's go! One more round in the Administrative District!
+:{{Диалог|Стрелка}} What will the next adventure be like?
+::'''March 7th:''' Equally unforgettable, I'm sure. Anyway, don't worry about the future &mdash; live in the moment!
+::'''March 7th:''' Let's go for one more round in the Administrative District! I wanna take more photos!
+----
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 12,
+	"GroupNpcID": 400001
+}</pre>
+
+;(Talk to Seele)
+:'''Seele:''' The inauguration ceremony went very smoothly. I didn't expect so many Underworlders to come and listen to the address.
+:'''Seele:''' Everyone seemed supportive, too. Seems like Bronya made a pretty good impression on them.
+:{{Диалог|Разговор}} Maybe Natasha and Oleg helped promote her a little.
+::'''Seele:''' Possibly. They always think ahead.
+::'''Seele:''' If those two approve of Bronya, then everyone following Wildfire won't question her either.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Were you there? I don't think I saw you.
+::'''Seele:''' Of course I was! I was just hidden in the crowd. I'm glad you didn't notice me &mdash; means I'm doing something right. I want to protect Bronya in my own way.
+::'''Seele:''' She wanted me to stand next to her, but I'm glad I stuck to my guns. Besides, I'm not sure I could handle that many people staring at me.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} She will be an outstanding leader.
+::'''Seele:''' No doubt. I figured that out back in the Underworld.
+:;(Return to previous option selection)
+:{{Диалог|Выход}} We're about to leave Belobog.
+::'''Seele:''' Leave...? So soon? I thought you'd stay for a few more days &mdash; at least until everything had calmed down...
+::'''Seele:''' Ahh... I get it. People are waiting for you to go back so you can keep traveling, right?
+::'''Seele:''' Shame, I thought we'd have more time to discuss all the crazy things you guys like to talk about. Looks like that'll have to wait till next time.
+::'''Seele:''' ...And before you say anything, there will be a next time. I know we'll meet again.
+
+;(Talk to Bronya)
+:'''Bronya:''' If you walk with your head down and your heart full of fear, your steps will grow heavier and your spirit will suffer.
+:'''Bronya:''' But if you find something to look up to and move forward with hope, then your steps will grow lighter... and if you should fall, you'll be on your feet before you know it.
+:'''Bronya:''' ...Thank you for teaching me this, Trailblazers.
+{{Dialogue End}}
+
+===(Optional) Talk to the Underworld residents nearby{{subst:void|<!--101150120-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = No Time for Me, My Friend
+|zhs  = 时不我待，我的朋友
+|zht  = 時不我待，我的朋友
+|ja   = 時は待ってくれないぞ、友よ
+|ko   = 시간은 기다려주지 않아, 친구
+|es   = El tiempo no espera, amig{{MC|ж=a|м=o}} mí{{MC|ж=a|м=o}}
+|fr   = Pas de temps pour moi, mon ami
+|ru   = Время не ждёт, мой друг
+|th   = เวลาไม่คอยใครหรอกนะเพื่อน
+|vi   = Này Người Bạn, Thời Gian Không Chờ Đợi Chúng Ta
+|de   = Keine Zeit für mich, mein Freund
+|id   = Tidak Ada Waktu untukku, Temanku
+|pt   = Sem Tempo, Colega
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,297 @@
+<%-- [PAGE_INFO]
+PageTitle=#Opportunity Makes the Thief (III)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011904
+|title         = 
+|image         = <!--Mission Opportunity Makes the Thief (III).png-->
+|type          = Adventure
+|event_name    = 
+|chapter       = Everwinter City Museum Ledger of Curiosities
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Attendant Posing as Silvermane Guard; Criminal Accomplice Posing as Silvermane Guard; Greedy Buyer; Norbert; Pela; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Backwater Pass]]
+|world         = Jarilo-VI
+|area          = Backwater Pass
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*250; Stellar Jade*40; Traveler's Guide*3; Refined Aether*3; Credit*30 000
+}}
+'''''Opportunity Makes the Thief (III)''''' is an [[Adventure Mission]] on [[Jarilo-VI]] in the chapter [[Everwinter City Museum Ledger of Curiosities]].
+
+==Steps==
+# Listen to the conversation between Norbert and the Silvermane Guard
+# Catch Norbert, the suspect
+# Keep going and catch Norbert
+# Use your Camera to capture the artifact deal red-handed
+# Confront Norbert, the suspect
+# Speak with Pela and leave Backwater Pass
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Listen to the conversation between Norbert and the Silvermane Guard{{subst:void|<!--201190401-->}}===
+{{Mission Description|type=adventure|location=Backwater Pass|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />You and Pela arrive at the desolate shopping street to chase down Norbert, the suspect.<br />You see your suspect as soon as you arrive. Go and listen to what they're saying.}}
+{{Dialogue Start}}
+----
+:'''Pela:''' Uh... something doesn't feel right. It's obviously an abandoned shopping street, but it also feels like people were here not too long ago...
+:'''Pela:''' We must be cautious, (Trailblazer). Whether the culprit is Norbert or someone else... he certainly has no shortage of helpers.
+----
+:'''Pela:''' Shh...! (Trailblazer), there are people talking inside. Let's see if we can hear them!
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 10
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Attendant Posing as Silvermane Guard:''' ...B&mdash;But sir, pretending to be a Silvermane Guard is a serious crime...
+:'''Norbert:''' Stop acting like a wimp! You think you can make a fortune with that kind of attitude?
+:'''Norbert:''' Don't overthink things &mdash; just play your part. Today's password is "{{Цвет|Ключевой|nobold=1|roast the sausage, not the bread}}." You got that?
+:'''Attendant Posing as Silvermane Guard:''' Got it, sir. {{Цвет|Ключевой|nobold=1|Roast the sausage, not the bread}}.
+:'''Norbert:''' Don't let anything in that doesn't know the password &mdash; not even a fly! You got that?
+:'''Attendant Posing as Silvermane Guard:''' Don't worry Mr. Norbert, I understand.
+----
+:'''Pela:''' So it is Norbert after all! And he's making his accomplice impersonate a Silvermane Guard! The audacity!
+:'''Pela:''' We've found the culprit, (Trailblazer)! Now we just have to catch him red-handed!
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Pela:''' (Trailblazer), wait, stay still!
+:'''Pela:''' I think I heard someone talking behind the metal gate. Let's see if we can hear what they're saying.
+----
+{{Dialogue End}}
+
+===Catch Norbert, the suspect{{subst:void|<!--201190404-->}}===
+{{Mission Description|type=adventure|location=Backwater Pass|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />You and Pela arrive at the desolate shopping street to chase down Norbert, the suspect.<br />Norbert's words and actions have already revealed the indisputable fact that he is the artifact peddler. Keep going and take him into custody.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Criminal Accomplice Posing as Silvermane Guard:''' Hey, you two! Don't move!
+:'''Pela:''' Must be the accomplice... (Trailblazer), let's think fast!
+:'''Criminal Accomplice Posing as Silvermane Guard:''' Say the password or get out of here! This isn't any old shopping street, y'know!
+:{{Диалог|Стрелка}} Boil the fish, not the egg.
+::'''Criminal Accomplice Posing as Silvermane Guard:''' ...Wh&mdash;What's that supposed to mean? You'd best turn around and go home &mdash; we're busy handling the delivery of&mdash; Ahem! B&mdash;Busy handlin&mdash; um... executing official business. No loitering!
+::'''Pela:''' Wait, I remember! Roast the sausage, not the bread. That's the password, right?
+:{{Диалог|Стрелка}} Roast the sausage, not the bread.
+:{{Диалог|Стрелка}} Help me, Pela...
+::'''Pela:''' What? Oh right, the password... Roast the sausage, not the bread. That's the password, right?
+:'''Criminal Accomplice Posing as Silvermane Guard:''' Huh? I... Y&mdash;Yes, that's correct...
+:'''Pela:''' Mm-hmm! So, you are gonna let us in now? We need to talk to Mr. Norbert about some important business-related matters.
+:'''Criminal Accomplice Posing as Silvermane Guard:''' Wait, did you just say... Mr. Norbert?
+:'''Criminal Accomplice Posing as Silvermane Guard:''' Who are you guys!? This whole operation the boss hasn't shown his face once. How could a couple of outsiders just walk in knowing his name?
+:'''Pela:''' Looks like our cover's blown, (Trailblazer)...
+:'''Pela:''' Guess we'll have to do this the hard way!
+;(Enter battle)
+:{{Список врагов|mode=sent|Silvermane Soldier*1; Silvermane Cannoneer*2; Silvermane Gunner*1}}
+:'''Pela:''' We'll probably end up running into more of Norbert's goons up ahead.
+:'''Pela:''' We should proceed with caution, (Trailblazer).
+{{Dialogue End}}
+
+===Keep going and catch Norbert{{subst:void|<!--201190406-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' Look, it's Norbert again!
+:'''Pela:''' Let's see what he's talking about this time.
+:'''Norbert:''' ...And the film? Is it packed and ready to go?
+:'''Attendant Posing as Silvermane Guard:''' Right here, boss! The buyer is arriving soon. Here, this way!
+:'''Norbert:''' Very good, very good. Well done. Patience, soon we will all be rich.
+----
+:'''Pela:''' Film! Did you hear that? That film he mentioned must be the same one that was stolen from the museum.
+:'''Pela:''' Why would someone from such a wealthy family do something like this for money... It's unbelievable! We have to find a way to stop this before they sell the film!
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Pela:''' (Trailblazer), wait, don't make a move yet!
+:'''Pela:''' We should take some pictures as evidence in case the culprit denies the charges.
+:'''Pela:''' Your equipment probably has better specs than mine &mdash; I'll leave the picture-taking to you.
+
+;(Talk to Norbert)
+:'''Norbert:''' *whimper* ...Mr. Cold Feet, what should I do in a situation like this? Save me, save me!
+:'''Pela:''' What are you talking about? Who's got cold feet?
+:'''Norbert:''' Ah... N&mdash;Nothing, I was just talking to myself....
+:'''Norbert:''' I had my whole life ahead of me... is it all over? *whimper*
+:'''Pela:''' Enough blubbing. If you didn't want to face the time, why do the crime? Everyone is responsible for the decisions they make in life &mdash; no exceptions.
+
+;(Talk to Greedy Buyer)
+:'''Greedy Buyer:''' Curse it, curse it all! He warned me not to carry out the transaction in person, but I didn't want to spend money on hiring a bagman...
+:'''Greedy Buyer:''' I don't want to go to prison! Not even for a day!
+:'''Pela:''' Hmph, if you think you can commit crimes and go unpunished, dream on!
+
+;(Talk to Pela)
+:'''Pela:''' It was a difficult journey, (Trailblazer), but it had a happy ending! Not only did we manage to recover the microfilm, but we also caught the culprit behind the museum thefts... That's something worth celebrating.
+:'''Pela:''' However, I'm still a little confused... Mr. Norbert is wealthy and opportunistic, but how did he manage to find so many accomplices and organize such a large-scale smuggling operation...
+:'''Pela:''' ...These questions can wait until the interrogation. As for you and me, our work ends here. Thanks for your efforts, (Trailblazer).
+:'''Pela:''' Come on, let's take the microfilm back to the museum.
+{{Dialogue End}}
+
+===Use your Camera to capture the artifact deal red-handed{{subst:void|<!--201190408-->}}===
+{{Mission Description|type=adventure|location=Backwater Pass|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />You and Pela arrive at the desolate shopping street to chase down Norbert, the suspect.<br />Norbert and the buyer are standing right in front of you. Take out your Camera and capture the moment they strike the illegal deal.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 13
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 13
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 13
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	},
+	"OnPreviewFinish": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 13
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300004
+					}
+				}
+			}
+		]
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Pela:''' (Trailblazer), come back! We're not done!
+:'''Pela:''' Take a picture first for evidence. Then we can make a move.
+----
+{{Dialogue End}}
+
+===Confront Norbert, the suspect{{subst:void|<!--201190410-->}}===
+{{Mission Description|type=adventure|location=Backwater Pass|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />You and Pela arrive at the desolate shopping street to chase down Norbert, the suspect.<br />There is enough evidence now. Go up to the suspect and the buyer and confront them.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' Norbert of the Cusper family, and everyone else here &mdash; turn around and face me! Put your hands where I can see them!
+:'''Norbert:''' Wh&mdash;What's going on? Who are you two?
+:{{Диалог|Стрелка}} We're here to bring you to justice!
+:{{Диалог|Стрелка}} Wallace says hi!
+:'''Greedy Buyer:''' What's going on here, Norbert!? Didn't you say your security was impenetrable?
+:'''Norbert:''' Minions&mdash; I&mdash;I mean, Silvermane Guards! Get rid of these intruders immediately!
+:'''Pela:''' You've got a lot of nerve drawing your weapons in front of an Intelligence Officer of the Silvermane Guards!
+:'''Pela:''' Come on, (Trailblazer)! Let's give these imposters a taste of justice!
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+;(Obtain {{Предмет|Microfilm|20|x=1}})
+{{Dialogue End}}
+
+===Speak with Pela and leave Backwater Pass{{subst:void|<!--201190412-->}}===
+{{Mission Description|type=adventure|location=Backwater Pass|update|After a battle of wits and fists, you finally solve the museum's exhibit theft case.<br />The microfilm is back in your hands. Speak with Pela and return it to where it came from.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Opportunity Makes the Thief (III)
+|zhs  = 漫藏诲盗•其三
+|zht  = 漫藏誨盜•其三
+|ja   = 慢蔵誨盗・その3
+|ko   = 견물생심•3
+|es   = La oportunidad hace al ladrón III
+|fr   = L'occasion fait le larron (III)
+|ru   = Плохо не клади, вора в грех не вводи III
+|th   = ของมีค่าล่อตาโจร 3
+|vi   = Cơ Hội Tạo Nên Kẻ Trộm 3
+|de   = Gelegenheit macht Diebe (Teil 3)
+|id   = Kesempatan dalam Kesempitan (Bagian 3)
+|pt   = A Ocasião Faz o Ladrão (III)
+}}
+
+==Change History==
+{{Change History|3.5}}

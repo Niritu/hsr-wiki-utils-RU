@@ -11,8 +11,8 @@ PageTitle=#О герой, разбей печальную статую#
 |Глава           = Ибо солнце погаснет
 |Условия         = Завершена [[Миссия Освоения]] «[[О герой, воплоти кровавую надежду]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Амфореус]] — [[Вихрь сотворения]]
-|Мир             = Амфореус
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = О герой, воплоти кровавую надежду
 |Следующая       = О герой, запой пеан воскресающей земли
 |Награды         = Опыт Освоения*1 900; Звёздный нефрит*240; Путеводитель путешественника*10; Утраченный кристалл*10; Беспорядочная амброзия*760; Кредиты*120 000
@@ -32,106 +32,24 @@ PageTitle=#О герой, разбей печальную статую#
 ==Прохождение==
 {{Дополнить}}
 ===Одолейте Похитителя пламени===
-{{Описание миссии|тип=Миссия Освоения|локация=Вихрь сотворения|(Первопроходец) возвращается мыслями к Вихрю сотворения, к моменту наступления эры воскресающей земли, и вместе с Фаеноном встречает волю последнего посетителя, который сгорел дотла ради спасения.}}
+{{Описание миссии|тип=Миссия Освоения|локация=<!--необходимо добавить-->|(Первопроходец) возвращается мыслями к Вихрю сотворения, к моменту наступления эры воскресающей земли, и вместе с Фаеноном встречает волю последнего посетителя, который сгорел дотла ради спасения.}}
 {{Диалог Начало}}
-
-;(Unused &mdash; EnterDistrict_G87_2)
-----
-:----
-:;([[#Gallery|Cutscene]] plays)
-:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act460_Caption.json-->}}
-:;(Cutscene ends)
-:----
-:;(Enter battle)
-::{{Список врагов|mode=sent|???*1/-12% Скорость}}
-
-;(Unused &mdash; EnterDistrict_G87_1)
-----
-:----
-:;([[#Gallery|Cutscene]] plays)
-:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act450_Caption.json-->}}
-:;(Cutscene ends)
-:----
-:;(Enter battle)
-::{{Список врагов|mode=sent|Похититель пламени глубокой тьмы*1/-12% Скорость}}
 {{Диалог Конец}}
 
 ===Казните Похитителя пламени===
 {{Диалог Начало}}
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-----
-:----
-:;([[#Gallery|Cutscene]] plays)
-:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act470_Caption.json-->}}
-:;(Cutscene ends)
-:----
 {{Диалог Конец}}
 
 ===Посмотрите все воспоминания Каосланы===
 {{Диалог Начало}}
-
-:{{Диалог|Разговор}} Продолжить воспоминания Похитителя пламени
-
-
 {{Диалог Конец}}
 
 ===Станьте свидетелем конца Каосланы===
 {{Диалог Начало}}
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-----
-:----
-:;([[#Gallery|Cutscene]] plays)
-:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act490_Caption.json-->}}
-:;(Cutscene ends)
-:----
 {{Диалог Конец}}
 
 ===Боритесь с богами===
 {{Диалог Начало}}
-
-;(Unused &mdash; 104050305EndSpecialUI)
-<pre>{
-	"$type": "RPG.GameCore.SetLoadingStratageType",
-	"StratageType": "Plain"
-}</pre>
-
-;(Unused &mdash; OpenUISS)
-
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-----
-::{{tx}}
-:----
-:;([[#Gallery|Cutscene]] plays)
-:----
-::{{tx}}
-:----
-::{{tx}}
-:----
-:----
-:;([[#Gallery|Cutscene]] plays)
-:::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act501_Caption.json-->}}
-:;(Cutscene ends)
-:----
-:<pre>{
-	"$type": "RPG.GameCore.ShowUI",
-	"Name": "Ui.TarotBook.ExperimentFile.TarotBookExperimentPage",
-	"WaitForExit": true,
-	"Param": {
-		"Value": "true"
-	},
-	"OnUIEnter": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "OpenUISS"
-			}
-		}
-	],
-	"OnUIExitImmediately": []
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

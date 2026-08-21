@@ -1,0 +1,159 @@
+<%-- [PAGE_INFO]
+PageTitle=#Blazing Sun, Illuminate the Path for the Lost#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043673
+|title         = 
+|image         = <!--Mission Blazing Sun, Illuminate the Path for the Lost.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Back to Earth in Evernight
+|requirements  = [[Trailblaze Mission]] ''[[Memokeeper, Backtrack the Destiny's Current]]'' completed
+|summary       = Back in Amphoreus, Dan Heng searched for Evernight's hideout. With help from your former enemy Zandar, he ascended to Dawncloud and uses the world-cleansing golden blood to summon Phainon. Thanks to the golden light of Phainon that could "destroy the world," the seal of Earth was shattered completely. Following this guidance, Dan Heng journeyed toward the Grove of Epiphany.
+|characters    = Trailblazer
+|startLocation = [[Amphoreus]] - [["Lightless Chapel" Dawncloud]]
+|world         = Amphoreus
+|area          = "Lightless Chapel" Dawncloud
+|prev          = Memokeeper, Backtrack the Destiny's Current
+|next          = Earth, Bear the Suffering of All
+|rewards       = Trailblaze EXP*400; Stellar Jade*50; Traveler's Guide*4; Refined Aether*4; Disorder Ambrosia*160; Credit*50 000
+}}
+'''''Blazing Sun, Illuminate the Path for the Lost''''' is a [[Trailblaze Mission]] in the chapter [[Back to Earth in Evernight]].
+
+==Steps==
+# Head to Dawncloud
+# Defeat the ichor memosprite
+# Head to Dawncloud
+# Touch the world-cleansing golden blood and summon your friend
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to Dawncloud{{subst:void|<!--104367301-->}}===
+{{Mission Description|type=trailblaze|location="Lightless Chapel" Dawncloud|Now Amphoreus is ensnared by the Remembrance, one of the Three Paths, and March and (Trailblazer)... they are nowhere to be found. I'm the only one who can bring them back.<br />Amphoreus is shrouded in mystery now, but I have a friend who can help me see through the fog.}}
+{{Dialogue Start}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20433_F20433001_G222"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Defeat the ichor memosprite{{subst:void|<!--104367303-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Dialogue End}}
+
+===Head to Dawncloud{{subst:void|<!--104367304-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20433_F20433001_G224"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20433_F20433001_G225"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Touch the world-cleansing golden blood and summon your friend{{subst:void|<!--104367306-->}}===
+{{Mission Description|type=trailblaze|location="Lightless Chapel" Dawncloud|update|Sing, O Aeon! Sing of the rage of Khaslana, son of Amphoreus&mdash;<br />A drop of burning, cleansing golden blood, melting into your sun-like blazing form.<br /><br />Before that drop of golden blood fell, hatred had long since consumed you. That lengthy journey made our time together feel but a fleeting moment.<br />After that drop of golden blood fell, you've remained silent for far too long. Does your mind still hold its tenacity? Does your defiance still persist?<br />Answer me, for I need a friend to clear the fog and unveil the sun&mdash;<br /><br />If your "guidance" is destined to bring rage that destroys heaven and earth, so be it, as I need a direction forward.<br />Answer me, for only the Dawn's furor can pierce through the evernight.}}
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+----
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act600_Caption.json-->}}
+;(Cutscene ends)
+----
+----
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Blazing Sun, Illuminate the Path for the Lost
+|zhs  = 烈阳啊，为迷途照明前路
+|zht  = 烈陽啊，為迷途照明前路
+|ja   = 烈日、迷う者の道を照らして
+|ko   = 뜨거운 태양이여, 길 잃은 자의 앞길을 비춰라
+|es   = Sol ardiente, ilumina el camino de los perdidos
+|fr   = Soleil ardent, illumine la voie des égarés
+|ru   = О палящее солнце, озари путь заблудшим
+|th   = ตะวันแรงกล้าเอ๋ย จงส่องนำทางแก่ผู้หลงทาง
+|vi   = Hỡi Mặt Trời Rực Lửa, Hãy Soi Sáng Con Đường Cho Kẻ Lạc Lối
+|de   = O gleißende Sonne, erleuchte den Pfad der Verirrten
+|id   = Surya yang Menyala, Terangilah Jalan Bagi yang Tersesat
+|pt   = Sol Escaldante, Ilumine o Caminho para os Perdidos
+}}
+
+==Change History==
+{{Change History|3.6}}

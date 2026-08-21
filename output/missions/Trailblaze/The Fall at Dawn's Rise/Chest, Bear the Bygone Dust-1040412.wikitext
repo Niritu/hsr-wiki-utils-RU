@@ -1,0 +1,452 @@
+<%-- [PAGE_INFO]
+PageTitle=#О сундук, в котором хранится прошлое#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040412
+|title         = Chest, Bear the Bygone Dust
+|image         = <!--Mission О сундук, в котором хранится прошлое.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = The Fall at Dawn's Rise
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = "Spirithief" Bartholos; Cipher; Trailblazer
+|startLocation = [[Amphoreus]] - [["Dragonbone City" Styxia]]
+|world         = Amphoreus
+|area          = "Dragonbone City" Styxia
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*700; Stellar Jade*90; Traveler's Guide*6; Refined Aether*6; Celestial Ambrosia*280; Credit*90 000
+}}
+'''''Chest, Bear the Bygone Dust''''' is a [[Trailblaze Mission]] in the chapter [[The Fall at Dawn's Rise]].
+
+==Steps==
+# Head to the "Dragonbone City" Styxia and continue your adventure
+# Keep hunting for the next trove!
+# Clear the obstacles using the Hand of Zagreus
+# More treasure awaits, keep searching!
+# The treasure's here, grab it while you can!
+# More treasure awaits, keep searching!
+# Solve the puzzle of the goat's head
+# See what Bartholos is up to
+# With the rune in hand, across the river we go
+# Return the Rune to the base
+# Dig, dig &mdash; treasure awaits
+# Keep hunting for the next trove!
+# (Optional) Check out the Hand of Zagreus
+# Keep hunting for the next trove!
+# Knock out the monsters blocking the way
+# Keep hunting for the next trove!
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to the "Dragonbone City" Styxia and continue your adventure{{subst:void|<!--104041201-->}}===
+{{Mission Description|type=trailblaze|location="Dragonbone City" Styxia|After dropping (Trailblazer) and Phainon off at the Grove, Cipher rounded up the "Spirithief", Bartholos, and returned to the Nethershore for a bit of scavenging...}}
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Keep hunting for the next trove!{{subst:void|<!--104041224-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--1-second delay-->
+{{Dialogue End}}
+
+===Clear the obstacles using the Hand of Zagreus{{subst:void|<!--104041225-->}}===
+{{Dialogue Start}}
+;(If {{F|undefined}} is undefined 1)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","GroupID":30,"DynamicName":{"Value":"PuzzleFinished"},"CompareValue":1}-->}})
+<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 30,
+	"DynamicName": {
+		"Value": "PuzzleFinished"
+	},
+	"Value": 1
+}</pre>
+;(Unused &mdash; SwitchHand_TriggerPullBack)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_SwitchHand_P31"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SpeedLineEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "None"
+	},
+	"Active": false,
+	"SpeedlineSeedPath": "Effects/Eff_Texture/Special/Noise/Eff_Noise_30.png"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Custom": true,
+			"Key": "PullBackArea"
+		},
+		"LevelAreaKey": {
+			"Custom": true,
+			"Key": "PullBackAnchor"
+		}
+	}
+}</pre>
+:<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_Group_ResetTransform)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Prop位置重置###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchHandResetTransform",
+	"ID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 31
+		}
+	},
+	"AnchorID": {
+		"Custom": true,
+		"Key": "PullBackAnchor"
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_ResetPlayerPosition)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Player位置重置###"
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; GE_WhiteOut)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_ScreenEff"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Talk to "Spirithief" Bartholos)
+;(If {{F|undefined}} is undefined 0)
+----
+:'''"Spirithief" Bartholos:''' Hand of Zagreus, my darling &mdash; activate!
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_PrepareHand"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+{{Dialogue End}}
+
+===More treasure awaits, keep searching!{{subst:void|<!--104041226-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===The treasure's here, grab it while you can!{{subst:void|<!--104041230-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Награда}} Claim Treasure
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+;(If {{F|undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypoint",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"OnNameBoard": false
+}</pre>
+;(If {{F|undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideWaypoint",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cipher:''' Twinkle, twinkle, in my chest~ How this Coreflame is the best!
+:'''"Spirithief" Bartholos:''' When it comes to singing, I still sound better than you, Boss!
+:'''Cipher:''' ...Go beyond all time and space~ On the Journey of Flame-Chase~
+{{Dialogue End}}
+
+===More treasure awaits, keep searching!{{subst:void|<!--104041228-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+===Solve the puzzle of the goat's head{{subst:void|<!--104041229-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===See what Bartholos is up to{{subst:void|<!--104041202-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:'''"Spirithief" Bartholos:''' Tell me... how did you hunt for treasure when I wasn't around, Boss Lady?
+:'''Cipher:''' Hmph, trying to trick me into saying something? Not a chance.
+:'''"Spirithief" Bartholos:''' Hehe, you're as sharp as ever...
+----
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cipher:''' Huh... this feels truly magical... When did you pick up this trick?
+:'''"Spirithief" Bartholos:''' Uh... self-taught, all self-taught!
+{{Dialogue End}}
+
+===With the rune in hand, across the river we go{{subst:void|<!--104041206-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Return the Rune to the base{{subst:void|<!--104041207-->}}===
+{{Dialogue Start}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropKey","SinglePropKey":{"Custom":true,"Key":"FollowAnchor"},"SinglePropID":{},"PropIDInOwnerGroup":{"IsDynamic":false,"FixedValue":{"Value":300002}}},"State":"Open"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetFlipperLightDeviceFollowPlayer",
+	"DevicePropTarget": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "EraFlipperOwner"
+		},
+		"SinglePropID": {},
+		"PropIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 300002
+			}
+		}
+	},
+	"PointPropTarget": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropKey",
+		"SinglePropKey": {
+			"Custom": true,
+			"Key": "FollowAnchor"
+		}
+	},
+	"AimAttachPoint": "Origin",
+	"FollowOffset": {
+		"X": 0,
+		"Y": 9,
+		"Z": 0
+	}
+}</pre>
+:'''Cipher:''' We're here! Can we turn off this spotlight now? It's really blinding.
+:'''"Spirithief" Bartholos:''' No problem! Just use the device over there to shut it off.
+{{Dialogue End}}
+
+===Dig, dig &mdash; treasure awaits{{subst:void|<!--104041209-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--1-second delay-->
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cipher:''' Sniff... sniff...
+:'''Cipher:''' The scent of gold coins, gems, and fine leather... it's so refreshing!
+:'''Cipher:''' The treasures in this ancient city are all floating back up thanks to Gray Mystery and that pink squirrel!
+;(If {{F|InTrigger}} is undefined 1)
+:;(По прибытии на место)
+;(If {{F|InTrigger}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 500001
+		}
+	},
+	"TickInterval": 0.2,
+	"OnExit": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Self_TriggerPerformance"
+			}
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"LevelAreaKey": {
+					"Custom": true,
+					"Key": "LevelAreaKey"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Keep hunting for the next trove!{{subst:void|<!--104041211-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+:'''"Spirithief" Bartholos:''' Boss Lady, we're set to make a fortune this time. Got any plans on how to spend it?
+:'''Cipher:''' Of course &mdash; spend nothing. Have you forgotten my silly prophecy?
+:'''"Spirithief" Bartholos:''' Ah... I remember, of course! Hehehe...
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Spirithief" Bartholos:''' Oh! Isn't that my...
+:'''Cipher:''' ...Uh-huh?
+:'''"Spirithief" Bartholos:''' ...Ahem, isn't that a controller for the Hand of Zagreus?
+:'''Cipher:''' Ho, indeed it is.
+{{Dialogue End}}
+
+===(Optional) Check out the Hand of Zagreus{{subst:void|<!--104041213-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Spirithief" Bartholos:''' Here we go round the River of Souls~
+:'''"Spirithief" Bartholos:''' Spirithief goes, Spirithief goes~
+:'''Cipher:''' ...What are you even singing? You're totally out of tune!
+{{Dialogue End}}
+
+===Keep hunting for the next trove!{{subst:void|<!--104041219-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Knock out the monsters blocking the way{{subst:void|<!--104041221-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cipher:''' Ho, there's a big guy guarding this place!
+:'''"Spirithief" Bartholos:''' Yeah, yeah... big and dumb, just a pure lump of stupidity!
+
+:{{DIcon|Механизм}} Engage
+:'''Cipher:''' This thing's way too loud when it's on... Let's not stir up more trouble, okay?
+{{Dialogue End}}
+
+===Keep hunting for the next trove!{{subst:void|<!--104041223-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190880
+		}
+	}
+}</pre>
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Chest, Bear the Bygone Dust
+|zhs  = 宝箱啊，兀自承装下前尘
+|zht  = 寶箱啊，兀自承裝下前塵
+|ja   = 宝箱よ、過去を孤独で抱き締めよ
+|ko   = 보물상자여, 홀로 과거를 담아 주오
+|es   = Cofre, conserva los vestigios del pasado
+|fr   = Coffre, conserve les vestiges du passé
+|ru   = О сундук, в котором хранится прошлое
+|th   = หีบสมบัติเอ๋ย จงบรรจุไว้ซึ่งเศษเสี้ยวอดีต
+|vi   = Hỡi rương báu, hãy giữ lấy dấu vết của quá khứ
+|de   = O Schatztruhe, du trägst die Vergangenheit in dir
+|id   = Peti Harta, Diam-Diam Memuat Masa Silam
+|pt   = Baú, Carregue a Poeira Passada
+}}
+
+==Change History==
+{{Change History|3.5}}

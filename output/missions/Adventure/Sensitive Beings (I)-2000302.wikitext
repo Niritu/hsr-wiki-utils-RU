@@ -1,0 +1,163 @@
+<%-- [PAGE_INFO]
+PageTitle=#Sensitive Beings (I)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2000302
+|title         = 
+|image         = <!--Mission Sensitive Beings (I).png-->
+|type          = Adventure
+|event_name    = 
+|chapter       = 
+|requirements  = [[Adventure Mission]] ''[[Sensitive Beings (I)]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Maintenance Engineer; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Supply Zone]]
+|world         = Herta Space Station
+|area          = Supply Zone
+|prev          = 
+|next          = Sensitive Beings (II)
+|rewards       = Trailblaze EXP*100; Stellar Jade*30; Adventure Log*2; Hertareum*50; Credit*5 000
+}}
+'''''Sensitive Beings (I)''''' is an [[Adventure Mission]] on [[Herta Space Station]].
+
+==Steps==
+# Run the identity verification program again
+# Use the terminal to check Mare's data record
+# Use the terminal to check the data records of the others
+# Talk to the maintenance engineer and report the computing power issue
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Run the identity verification program again{{subst:void|<!--200030200-->}}===
+{{Mission Description|type=adventure|location=Supply Zone|The engineer helps you gain access to the data in the terminal. Now you can use it.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Use the terminal to check Mare's data record{{subst:void|<!--200030203-->}}===
+{{Mission Description|type=adventure|location=Supply Zone|update|The terminal stores the data records of everyone in the space station. You decide to begin by checking Mare's record.}}
+{{Dialogue Start}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030203_Prop_11_300003_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Use the terminal to check the data records of the others{{subst:void|<!--200030204-->}}===
+{{Mission Description|type=adventure|location=Supply Zone|update|You never thought Mare was someone like this. It's hard to believe that the eccentric person you know and the cute cat-lover in the record are the same. At any rate, she is not infected. Now you need to check the others...}}
+{{Dialogue Start}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/ChatIcon.png",
+	"IconType": "ChatLoopIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_200030204_Prop_11_300004_BtnClick"
+			}
+		}
+	],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Talk to the maintenance engineer and report the computing power issue{{subst:void|<!--200030205-->}}===
+{{Mission Description|type=adventure|location=Supply Zone|update|You planned to finish the investigation as soon as possible after checking Mare's data record. Unfortunately, the terminal's network signal is so poor that you have to ask for the engineer's help again...}}
+{{Dialogue Start}}
+
+;(Talk to Maintenance Engineer)
+:'''Maintenance Engineer:''' What's wrong?
+:{{Диалог|Стрелка}} I only found one record.
+::'''Maintenance Engineer:''' Good... Oh, you mean you couldn't find the others?
+:{{Диалог|Стрелка}} "Insufficient computing power. Try again later?"
+::'''Maintenance Engineer:''' Oh, that's normal. The terminal is not broken. It's nothing to worry about.
+:'''Maintenance Engineer:''' Although, it won't be operational until tomorrow.
+:{{Диалог|Стрелка}} Why?
+:'''Maintenance Engineer:''' Because the station was invaded. Originally, we had more than one terminal, connecting units on a much larger scale.
+:'''Maintenance Engineer:''' During that debacle, some units were damaged. The computing power of the terminal was thus greatly decreased, not to mention it's only running on a single-core processor right now...
+:'''Maintenance Engineer:''' The lead researcher said she was going to purchase new equipment. But it hasn't arrived yet. Therefore, with the current computing power, you can only query once a day.
+:'''Maintenance Engineer:''' And the current identity verification program has to be activated manually by me every day, so... please {{Цвет|Ключевой|nobold=1|come back tomorrow}}. Don't forget to ask me to turn on the verification.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Sensitive Beings (I)
+|zhs  = 人非草木•其一
+|zht  = 人非草木•其一
+|ja   = 人非木石・その1
+|ko   = 인간은 감정의 동물•1
+|es   = Seres sensibles: parte I
+|fr   = Êtres sensibles (I)
+|ru   = У людей есть чувства I
+|th   = มนุษย์ก็มีหัวจิตหัวใจ 1
+|vi   = Người Không Phải Cây Cỏ-1
+|de   = Empfindsame Wesen (Teil 1)
+|id   = Makhluk Berperasaan (I)
+|pt   = Seres Sensitivos (I)
+}}
+
+==Change History==
+{{Change History|3.5}}

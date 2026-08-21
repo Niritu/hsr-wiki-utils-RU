@@ -50,7 +50,6 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	for (const [i, readable] of readables.entries()) {
 		infobox.addParam(`Том${i+1}`, '{{tx}}')
-		infobox.addParam(`Источник${i+1}`, '{{tx|Отсутствует источник}}')
 	}
 	
 	let checkStrings = readables.map(book => [book.name, book.content]).flat(1)
@@ -60,7 +59,7 @@ for (const series of ReadableSeries.loadAll()) {
 	
 	output.push(
 		infobox.block(12),
-		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти на [[${series.getWorld()}]].`,
+		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти в [[${series.getWorld()}|Двумернии]].`,
 		'',
 		'==Локация==',
 		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',
@@ -80,7 +79,7 @@ for (const series of ReadableSeries.loadAll()) {
 		await TextMap.generateOL(series.name_hash),
 		'',
 		'==История изменений==',
-		`{{История изменений|${(await ChangeHistory.readableSeries.findAdded(series.id))?.[0]}}}`,
+		`{{История изменений|4.3}}`,
 		'',
 		'[[en:]]'
 	)

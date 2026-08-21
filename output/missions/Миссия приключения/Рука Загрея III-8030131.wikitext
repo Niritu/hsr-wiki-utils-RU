@@ -11,13 +11,13 @@ PageTitle=#Рука Загрея III#
 |Глава           = 
 |Условия         = 
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Амфореус]] — [[Рука Загрея III]]
-|Мир             = Амфореус
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
 }}
-'''Рука Загрея III''' — [[Миссия приключения]] в [[Амфореус]].
+'''Рука Загрея III''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -29,62 +29,12 @@ PageTitle=#Рука Загрея III#
 ==Прохождение==
 {{Дополнить}}
 ===Соберите монеты причуд===
-{{Описание миссии|тип=Миссия приключения|локация=Рука Загрея III|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой руки Загрея. Продолжить путь можно, лишь завершив испытание.}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Все комнаты гипогея надёжно запечатаны. Эта находится под защитой руки Загрея. Продолжить путь можно, лишь завершив испытание.}}
 {{Диалог Начало}}
-;(If {{F|undefined}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEventV2",
-	"EventName": {
-		"Value": "Clt_TriggerLock"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-;(Unused &mdash; SwitchHand_Group_ResetTransform)
-<pre>{
-	"$type": "RPG.GameCore.DebugLog",
-	"Message": "###机械手Prop位置重置###"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SwitchHandResetTransform",
-	"ID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 17
-		}
-	},
-	"AnchorID": {
-		"Custom": true,
-		"Key": "PullBackAnchor"
-	}
-}</pre>
-::<!--0.2-second delay-->
-
-;(Unused &mdash; SwitchHand_ResetPlayerPosition)
-<pre>{
-	"$type": "RPG.GameCore.DebugLog",
-	"Message": "###机械手Player位置重置###"
-}</pre>
-::<!--0.2-second delay-->
-;(If {{F|FCV_isHand}} is undefined 1)
-:<pre>{
-	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable"
-}</pre>
-;(If {{F|FCV_isHand}} is not undefined 1)
-:<pre>{
-	"$type": "RPG.GameCore.SetAllMissionWaypointsVisiable",
-	"IsVisiable": true
-}</pre>
 {{Диалог Конец}}
 
 ===Продолжайте управлять и продвигаться вперёд===
 {{Диалог Начало}}
-
 {{Диалог Конец}}
 
 ==На других языках==

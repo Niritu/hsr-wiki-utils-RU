@@ -107,100 +107,127 @@ export class Mission {
 	
 	prev?: Mission
 	
-	async getSteps(sortedWithDialogue: boolean): Promise<MissionStep[]> {
-		const missionInfo = await this.getMissionInfo()
-		if (missionInfo) {
-			// preferred method
-			const unsortedSteps: MissionStep[] = missionInfo.SubMissionList.map(info => new MissionStep(SubMission[info.ID], this, info))
-			
-			if (!sortedWithDialogue) return unsortedSteps
-			
-			const dialogue: (MissionDialogueTree | NPCDialogueTree | LevelGroupDialogueTree)[] = []
-			for (const step of unsortedSteps) {
-				const thisDialogue = await step.loadDialogue()
-				if (thisDialogue) {
-					dialogue.push(thisDialogue)
-				}
-				for (const npcDialogue of await step.getMapDialogue()) {
-					const npcd = await npcDialogue.loadDialogue(thisDialogue?.environment ?? { main_mission_id: this.id, sub_mission_id: step.id })
-					if (!npcd) continue
-					dialogue.push(npcd)
-				}
-			}
-			await ActDialogueTree.crossResolveStrings(dialogue)
-			
-			for (const tree of dialogue) {
-				tree.optimize()
-			}
-			
-			const sortedSteps: MissionStep[] = []
-			const addSteps = (steps: MissionStep[], why: string | ((step: MissionStep) => string)) => {
-				if (!steps.length) return
-				
-				for (const step of steps) {
-					if (step && !sortedSteps.includes(step)) {
-						step.order_reason = typeof why == 'function' ? why(step) : why
-						sortedSteps.push(step)
-						
-						if (step.finish_condition?.type == 'SubMissionFinishCnt') {
-							addSteps(
-								unsortedSteps.filter(ustep => 
-									step.finish_condition!.param_list_int!.includes(ustep.id)
-									&& !sortedSteps.includes(ustep),
-								),
-								`${typeof why == 'function' ? why(step) : why}-${step.id}:list`
-							)
-						}
-					}
-				}
+async getSteps(sortedWithDialogue: boolean): Promise<MissionStep[]> {
+    const missionInfo = await this.getMissionInfo()
 
-				addSteps(
-					unsortedSteps.filter(ustep =>
-						ustep.start_condition?.type == 'AnySequence'
-						&& ustep.start_condition.param_list_int!.find(id => steps.find(step => step.id == id))
-						&& !sortedSteps.includes(ustep)
-					),
-					(ustep => {
-						const fstep = steps.find(step => ustep.start_condition?.param_list_int!.find(id => step.id == id))
-						return `${fstep?.order_reason}-${fstep?.id}:chain`
-					})
-				)
-			}
-			
-			addSteps(missionInfo.StartSubMissionList.map(id => unsortedSteps.find(step => step.id == id)).filter(s => s != undefined), 'startids')
-			addSteps(unsortedSteps.filter(step => step.start_condition!.type == 'Auto'), 'auto')
+    if (missionInfo?.SubMissionList) {
+        // preferred method
+        const unsortedSteps: MissionStep[] = missionInfo.SubMissionList.map(info =>
+            new MissionStep(SubMission[info.ID], this, info)
+        )
 
-			for (const step of unsortedSteps.toSorted((s0, s1) => (s0.progress ?? 0) - (s1.progress ?? 0))) {
-				if (!missionInfo.FinishSubMissionList.includes(step.id)) {
-					addSteps([step], 'byid')
-				}
-			}
+        if (!sortedWithDialogue) return unsortedSteps
 
-			addSteps(missionInfo.FinishSubMissionList.map(id => unsortedSteps.find(step => step.id == id)).filter(s => s != undefined), 'finish')
-			
-			return sortedSteps
-		} else {
-			const steps: MissionStep[] = []
-			// dumber method when MissionInfo is unavailabile
-			let stepList = Object.values(SubMission).filter(data =>
-				data.SubMissionID.toString().startsWith(this.id.toString())
-				&& data.SubMissionID.toString().length - this.id.toString().length <= 2
-			)
-			if (!stepList.length) {
-				console.warn(`Не могу найти ни одной подмиссии для миссии "${this.name}" (${this.id})`)
-			}
-			let index = 1
+        const dialogue: (MissionDialogueTree | NPCDialogueTree | LevelGroupDialogueTree)[] = []
+        for (const step of unsortedSteps) {
+            const thisDialogue = await step.loadDialogue()
+            if (thisDialogue) {
+                dialogue.push(thisDialogue)
+            }
+            for (const npcDialogue of await step.getMapDialogue()) {
+                const npcd = await npcDialogue.loadDialogue(
+                    thisDialogue?.environment ?? {
+                        main_mission_id: this.id,
+                        sub_mission_id: step.id
+                    }
+                )
+                if (!npcd) continue
+                dialogue.push(npcd)
+            }
+        }
 
-			for (const currentStep of stepList) {
-				steps.push(new MissionStep(currentStep, this))
-				index++
-			}
+        await ActDialogueTree.crossResolveStrings(dialogue)
 
-			steps.sort((step1, step2) => step1.id - step2.id)
-			
-			return steps
-		}
-	}
+        for (const tree of dialogue) {
+            tree.optimize()
+        }
+
+        const sortedSteps: MissionStep[] = []
+
+        const addSteps = (steps: MissionStep[], why: string | ((step: MissionStep) => string)) => {
+            if (!steps.length) return
+
+            for (const step of steps) {
+                if (step && !sortedSteps.includes(step)) {
+                    step.order_reason = typeof why == 'function' ? why(step) : why
+                    sortedSteps.push(step)
+
+                    if (step.finish_condition?.type == 'SubMissionFinishCnt') {
+                        addSteps(
+                            unsortedSteps.filter(ustep =>
+                                step.finish_condition!.param_list_int!.includes(ustep.id)
+                                && !sortedSteps.includes(ustep),
+                            ),
+                            `${typeof why == 'function' ? why(step) : why}-${step.id}:list`
+                        )
+                    }
+                }
+            }
+
+            addSteps(
+                unsortedSteps.filter(ustep =>
+                    ustep.start_condition?.type == 'AnySequence'
+                    && ustep.start_condition.param_list_int!.find(id => steps.find(step => step.id == id))
+                    && !sortedSteps.includes(ustep)
+                ),
+                (ustep => {
+                    const fstep = steps.find(step =>
+                        ustep.start_condition?.param_list_int!.find(id => step.id == id)
+                    )
+                    return `${fstep?.order_reason}-${fstep?.id}:chain`
+                })
+            )
+        }
+
+        addSteps(
+            missionInfo.StartSubMissionList
+                .map(id => unsortedSteps.find(step => step.id == id))
+                .filter(s => s != undefined),
+            'startids'
+        )
+
+        addSteps(
+            unsortedSteps.filter(step => step.start_condition?.type == 'Auto'),
+            'auto'
+        )
+
+        for (const step of unsortedSteps.toSorted((s0, s1) => (s0.progress ?? 0) - (s1.progress ?? 0))) {
+            if (!missionInfo.FinishSubMissionList.includes(step.id)) {
+                addSteps([step], 'byid')
+            }
+        }
+
+        addSteps(
+            missionInfo.FinishSubMissionList
+                .map(id => unsortedSteps.find(step => step.id == id))
+                .filter(s => s != undefined),
+            'finish'
+        )
+
+        return sortedSteps
+    }
+
+    console.warn(`Mission ${this.id} has no SubMissionList, using fallback`)
+
+    const steps: MissionStep[] = []
+
+    let stepList = Object.values(SubMission).filter(data =>
+        data.SubMissionID.toString().startsWith(this.id.toString()) &&
+        data.SubMissionID.toString().length - this.id.toString().length <= 2
+    )
+
+    if (!stepList.length) {
+        console.warn(`Не могу найти ни одной подмиссии для миссии "${this.name}" (${this.id})`)
+    }
+
+    for (const currentStep of stepList) {
+        steps.push(new MissionStep(currentStep, this))
+    }
+
+    steps.sort((step1, step2) => step1.id - step2.id)
+
+    return steps
+}
 	
 	getRewards() {
 		const initRewards = ItemList.fromRewardId(this.data.RewardID)

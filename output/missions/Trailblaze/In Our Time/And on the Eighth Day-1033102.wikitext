@@ -1,0 +1,201 @@
+<%-- [PAGE_INFO]
+PageTitle=#And on the Eighth Day#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1033102
+|title         = 
+|image         = <!--Mission And on the Eighth Day.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In Our Time
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Acheron; Aventurine; Black Swan; Firefly; Gallagher; Guileless Girl; Robin; Sparkle; Trailblazer; Trustful Boy
+|startLocation = [[Penacony]] - [[Horizon of Existence]]
+|world         = Penacony
+|area          = Horizon of Existence
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*1 100; Stellar Jade*140; Shadow of Harmony*1; Traveler's Guide*10; Clock Credits*550; "Morns Like These"*1 { text = "Morns Like These" }; Credit*120 000
+}}
+'''''And on the Eighth Day''''' is a [[Trailblaze Mission]] in the chapter [[In Our Time]].
+
+==Steps==
+# Say your final farewells to Acheron
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Say your final farewells to Acheron{{subst:void|<!--103310201-->}}===
+{{Mission Description|type=trailblaze|location=Horizon of Existence|The golden dream is about to become restless.<br />In the long night that will follow, I fear that you may encounter countless setbacks and witness endless tragedies. In the end, only black and white will be left in your vision.<br />But you must have faith. That black-and-white world will have a fleeting moment of crimson. But, when you make your decision...<br />...It will reappear once again.<br />And you, you must carefully ruminate on its meaning, then return to the waking world.<br />We will find our answer there.}}
+{{Dialogue Start}}
+:{{tx}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Acheron:''' Why does life slumber...? We don't know the answer yet, but we're about to awaken from this dream.
+:'''Acheron:''' Or perhaps, such is the answer itself.
+:'''Acheron:''' Leave this place, return to where you belong, and... awaken Penacony from this dream.
+:{{Диалог|Стрелка}} Will you come with us?
+:{{Диалог|Стрелка}} What if folks don't wanna wake up?
+:{{Диалог|Стрелка}} Will I get to witness your hidden power?
+:'''Acheron:''' As I said, our plan is not about convincing everyone to choose the right path, but about inspiring them to save themselves. So, when will people actively save themselves?
+:{{tx}}
+:'''Acheron:''' The rain... is intensifying. Before we part ways, please allow me to ask a few final questions.
+:'''Acheron:''' So far, you have forged unbreakable bonds with numerous individuals and entities in the sweet dream.
+:'''Acheron:''' {{Цвет|#ff3a|Might I ask if you fear severing these bonds with your own hands?}}
+:{{Диалог|Стрелка}} I feel no fear.
+:'''Acheron:''' If there is a vast, lifelike dreamland that is virtually indistinguishable from reality... a realm without death, where everyone can attain the happiness and fulfillment they deserve, living blissfully ever after.
+:'''Acheron:''' {{Цвет|#ff3a|I would ask &mdash; Would you wish to stay?}}
+:{{Диалог|Стрелка}} I would never ever want to live in a dream.
+:'''Acheron:''' Imagine if this splendid dream were fated to fall apart: Friends, family, strangers... followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:'''Acheron:''' {{Цвет|#ff3a|I would ask &mdash; Would you still embark on this journey?}}
+:{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+:'''Acheron:''' I'm glad. The answer itself doesn't matter. What matters is that you've made a decision.
+:{{tx}}
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::The golden dream is getting restless.
+::In the coming long nights, I'm afraid you will face many setbacks and witness many tragedies.
+::And in the end, you will only see in black and white.
+::But please believe me that in that monochrome world, there will be a glimpse of fleeting red, and when you make a choice...
+::...it will appear once more.
+::What you must do, is ponder its significance, then return to the waking world.
+::That's where we all find our answers.
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|"Harmonious Choir" The Great Septimus*1}}
+<pre>{
+	"$type": "RPG.GameCore.PlayerSelectMotionMode",
+	"MotionMode": "ForbidFastRun"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"LookAtTarget": {
+		"$type": "RPG.GameCore.TargetFetchAnchor",
+		"GroupID": 4,
+		"GroupInstanceID": 1
+	},
+	"TemplateName": "BackUpType"
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtTemplate",
+	"Reset": true,
+	"TemplateName": "BackUpType"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.EnableFreelookCameraDragMode",
+	"Enable": true,
+	"Mode": "Orbit"
+}</pre>
+
+;(По прибытии на место)
+:'''Sparkle:''' Always distinguish between reality and imagination... alright, Gray?
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+:'''Black Swan:''' "Life is akin to a winding labyrinth, where memories serve as our sole companions."
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+:'''Aventurine:''' May your schemes... be forever concealed.
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+:'''Robin:''' Ena's Dream... is too cruel for him, and everyone else.
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+:'''Gallagher:''' To the imperfect tomorrow.
+:<!--2.5-second delay-->
+
+;(По прибытии на место)
+:'''Firefly:''' I still remember the question on the invitation letter &mdash; Why does life slumber?
+:<!--2.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.EnableFreelookCameraDragMode",
+	"Mode": "Orbit"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckLineupHeroAvatarID"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangeHeroType"
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::So...
+::Why does life slumber?
+::Because... someday...
+::We will wake from our dreams!
+::The night is still... too short...
+::Brother...
+::The dream... is over.
+;(Cutscene ends)
+----
+;(Screen fades to black)
+:...
+:'''Guileless Girl:''' Brother, do you think... the stars will fade away?
+:'''Trustful Boy:''' Where did that come all of a sudden?
+:'''Guileless Girl:''' Because the constellation that looks like a bird, the... Torrent Eagles... looks a bit dim lately.
+:'''Trustful Boy:''' It's the Torment Eagles. Don't worry, it's still there. It's just it's located in the inner ring of Penacony and can only be seen when spring and summer overlap.
+:'''Trustful Boy:''' As for the question you asked... I think stars do die, just like people.
+:'''Trustful Boy:''' But do you know, sister? No star actually belongs to the present. The light we see from them is from a long time ago.
+:'''Trustful Boy:''' Even after the stars perish, their light will travel millions of light-years, spanning countless years, to illuminate the night sky of another world.
+:'''Trustful Boy:''' In our paradise, I believe there will be a star like that, shining with the same light. Its radiance will last "forever," and its name... will be "happiness."
+:'''Guileless Girl:''' No, not just one star! We should have two stars... or maybe even more!
+:'''Trustful Boy:''' Yeah, you're right.
+:'''Guileless Girl:''' It's a deal!
+:'''Trustful Boy:''' It's a deal, then. This is our promise, and nothing will sway our ideals.
+:'''Guileless Girl:''' Yeah, you bet!
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_amb_mute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowPerformanceRollingSubtitles",
+	"PrevDuration": 0.5,
+	"JsonConfig": "Config/Performance/PerformanceRollingSubtitles2_2_2.json"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_amb_unmute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = And on the Eighth Day
+|zhs  = 然后，在第八天…
+|zht  = 然後，在第八天……
+|ja   = そして、8日目…
+|ko   = 그리고, 여덟째 날에…
+|es   = Y en el octavo día...
+|fr   = Et durant le huitième jour...
+|ru   = И на восьмой день...
+|th   = จากนั้น ในวันที่ 8...
+|vi   = Sau Đó, Vào Ngày Thứ Tám...
+|de   = Und am achten Tag ...
+|id   = Lalu, di Hari ke-8 ....
+|pt   = E no Oitavo Dia
+}}
+
+==Change History==
+{{Change History|3.5}}

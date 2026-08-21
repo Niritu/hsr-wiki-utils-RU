@@ -1,0 +1,1657 @@
+<%-- [PAGE_INFO]
+PageTitle=#Memory Rewind#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2000902
+|title         = 
+|image         = <!--Mission Memory Rewind.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Crown of the Mundane and Divine
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = "Guild Researcher"; Adler; Arlan; Asta; Emily; Esther; Herta; Hinkel; Peppy; Security Department Member; Trailblazer; Wen Shiqi
+|startLocation = [[Herta Space Station]] - [[Herta's Office]]
+|world         = Herta Space Station
+|area          = Herta's Office
+|prev          = 
+|next          = 
+|rewards       = 
+}}
+'''''Memory Rewind''''' is a [[Trailblaze Continuance]] in the chapter [[Crown of the Mundane and Divine]].
+
+==Steps==
+# Recall once more the content of your conversation with Asta
+# Find the Insight Researcher who is talking to themselves
+# Recall once more the content of your conversation with Arlan
+# Recall the content of the conversation with Emily
+# Recall once more the content of your conversation with Herta
+# Recall once more the content of your conversation with Adler
+# Recall once more the content of your conversation with Herta
+# Explore the related memory "Asta's troubles" through the Memory Bubble
+# Recall the content of the conversation with Hinkel
+# Explore the related memory "Arlan's investigation" through the Memory Bubble
+# Visit little Adler
+# Recall the content of the conversation with Adler
+# Explore the related memory "Asta's troubles" through the Memory Bubble
+# Seek assistance from Asta
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:'''Herta:''' ...Oh, right, I need your help with something else. That Curio's gone missing, and I can't just forget about it. Go find it for me when you have the time. I'm sure you can manage that, can't you?
+:'''Herta:''' Let me describe it again, in case you forgot: It's an ■■■■. It's alive, but it doesn't have a body.
+:'''Herta:''' Send me a signal when you see traces of it.
+:{{Диалог|Стрелка}} An ■■■■?
+:'''(Trailblazer):''' (I think she mentioned something important, but I can't remember.)
+:{{tx}}
+:{{tx}}
+:'''(Trailblazer):''' (My memory is kind of hazy. What did I do after that?)
+:'''(Trailblazer):''' (I think Herta mentioned Asta... That's right, I think I visited Asta...)
+
+:{{DIcon|Разговор}} Listen
+:'''Wen Shiqi:''' Hey, what brings you here, Rich? It's been so long!
+:'''Emily:''' Heh, I'm not that wonderful. I'm just okay.
+:'''Wen Shiqi:''' It's all taken care of. As long as the money's there, it's all good.
+:'''Wen Shiqi:''' Here's the account you asked for. It's legit and secure, allowing you to connect straight to the intranet.
+:'''Emily:''' Mm-hmm, sure. Can I help you with something?
+:'''Wen Shiqi:''' You flatter me &mdash; I'm just a peddler doing a little business on the side.
+:'''Wen Shiqi:''' Small-scale &mdash; best left under the table... but if you ever make it big in the Guild, don't forget your humble friend, okay?
+:'''Emily:''' Again? How many times has it been!? You're really pushing my buttons...
+:'''(Trailblazer):''' (These two aren't making any sense... this is so weird.)
+{{Dialogue End}}
+
+===Recall once more the content of your conversation with Asta{{subst:void|<!--200090212-->}}===
+{{Mission Description|type=continuance|location=Base Zone|update|You seemed to have talked with Asta about something else after receiving Hinkel's recommendations. Try to remember it.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: Researchers' Disappearance|20|x=1}})
+
+;(Talk to Asta)
+:'''Asta:''' ...Hmm, a Curio that's alive but doesn't have a body? Sorry, but nothing comes to mind...
+::(Using Cognition Chasm might help you restore hazy memories)
+::{{Диалог|Стрелка}} Use Cognition Chasm
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090209_Clear"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090209_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090209_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Leave
+:'''Asta:''' By the way, I heard about the thing ■■■ mentioned, and I'll look into it, too. I'll find a way to solve the problem for the space station.
+::'''(Trailblazer):''' (So I did consult someone other than Hinkel. The only thing I remember is that they're from the {{Цвет|Ключевой|nobold=1|Department of Insight}}.)
+;(Unused &mdash; 200090209_Wrong)
+:(The Cognition Chasm used cannot restore hazy memories. Please try another Cognition Chasm)
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090209_Clear"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090209_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090209_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 200090209_Clear)
+:(You recall more missing memories)
+::'''Asta:''' How's it going? Did you find the information you're after?
+::{{Диалог|Стрелка}} I haven't made any progress yet.
+::'''Asta:''' I see. Is that what Hinkel and ■■■ think? At least that counts as a lead.
+::'''Asta:''' See? My researchers are pretty outstanding.
+::{{Диалог|Стрелка}} I heard you're in a bit of trouble.
+:::'''Asta:''' Just business as usual, nothing to worry about.
+::{{Диалог|Стрелка}} You seem a little anxious?
+:::'''Asta:''' Anxious? Me? Is it that obvious...?
+::'''Asta:''' ...After the Legion's invasion, the space station has been under constant scrutiny. Physical damage can be easily repaired, but it takes a long time to heal the wounds in people's hearts.
+::'''Asta:''' Some researchers have been questioning the management and security of the space station ever since the invasion.
+::'''Asta:''' Things had settled down a bit with the reconstruction efforts, but the {{Цвет|Ключевой|nobold=1|researchers' disappearances}} have rattled them again.
+::{{Диалог|Стрелка}} Researchers' disappearances?
+::'''Asta:''' Yes. Four researchers have inexplicably disappeared in a matter of days. No exit logs, no traces &mdash; vanished.
+::'''Asta:''' People were just starting to regain their footing after the catastrophe. I didn't want panic to spread, so I suppressed the reports and told the Security Department to investigate in secret.
+::'''Asta:''' However, as you can see, it's hard to keep secrets in a sardine can like this.
+::'''Asta:''' Rebuilding trust is harder than establishing it in the first place... I'm concerned someone's pulling strings to sway public opinion.
+::'''Asta:''' Anyway, the most important thing is to get to the bottom of the disappearances.
+::{{Диалог|Стрелка}} Do you need my help?
+::'''Asta:''' That's okay, but thank you for the offer. Aren't you helping Madam Herta with something already?
+::'''Asta:''' By the way, I heard about the thing ■■■ mentioned, and I'll look into it, too. I'll find a way to solve the problem for the space station.
+::'''(Trailblazer):''' (So I did consult someone other than Hinkel. The only thing I remember is that they're from the {{Цвет|Ключевой|nobold=1|Department of Insight}}.)
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 76,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 74,
+	"Value": "4"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 76,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 78,
+	"Value": "3"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 79,
+	"Value": "3"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"ShowBtnEffect": true
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+{{Dialogue End}}
+
+===Find the Insight Researcher who is talking to themselves{{subst:void|<!--200090214-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|Apart from Hinkel in the Department of Insight, you also asked for clues regarding the lost Curio from someone else in that department. Who might it be?}}
+{{Dialogue Start}}
+:'''(Trailblazer):''' (Identifying that person is crucial &mdash; it could be the key to making sense of everything)
+
+:{{DIcon|Разговор}} Listen
+:'''Wen Shiqi:''' Hey, what brings you here, Rich? It's been so long!
+:'''Emily:''' Heh, I'm not that wonderful. I'm just okay.
+:'''Wen Shiqi:''' It's all taken care of. As long as the money's there, it's all good.
+:'''Wen Shiqi:''' Here's the account you asked for. It's legit and secure, allowing you to connect straight to the intranet.
+:'''Emily:''' Mm-hmm, sure. Can I help you with something?
+:'''Wen Shiqi:''' You flatter me &mdash; I'm just a peddler doing a little business on the side.
+:'''Wen Shiqi:''' Small-scale &mdash; best left under the table... but if you ever make it big in the Guild, don't forget your humble friend, okay?
+:'''Emily:''' Again? How many times has it been!? You're really pushing my buttons...
+:'''(Trailblazer):''' (Here too... My memories are just a jumbled mess of words.)
+:'''(Trailblazer):''' (Did my memory piece together irrelevant information?)
+:{{Диалог|Стрелка}} (Restore the muddled memory)
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 76,
+	"Value": "3"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 71,
+	"Value": "4"
+}</pre>
+::'''(Trailblazer):''' (Now I remember &mdash; the other person is Emily! She was at the base zone.)
+:{{Диалог|Выход}} (Trust my own memory)
+:'''(Trailblazer):''' (The other person should be from the {{Цвет|Ключевой|nobold=1|Department of Insight}}. I need to remember who it is...)
+:'''(Trailblazer):''' (Not here... That person is probably with the {{Цвет|Ключевой|nobold=1|Department of Insight}}.)
+{{Dialogue End}}
+
+===Recall once more the content of your conversation with Arlan{{subst:void|<!--200090217-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|The incident Asta mentioned got Arlan to let down his guard. He has important findings on him.}}
+{{Dialogue Start}}
+;(If {{cx}}<!--SubMission Finish: 200090258-->)
+
+;(Talk to Arlan)
+:'''Arlan:''' I figured you'd come to me to uncover the truth...
+::'''Arlan:''' I'm sorry. The situation is very delicate. I can't say anything except that it's a secret mission.
+::{{Диалог|Стрелка}} About ■■■■■■?
+::'''(Trailblazer):''' (Just as I thought, I vaguely remember that Arlan said more... It's related to the thing I forgot...)
+::(Using Cognition Chasm might help you restore hazy memories)
+::{{Диалог|Стрелка}} Use Cognition Chasm
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090226_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090226_Clear"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090226_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Leave
+:'''Arlan:''' I'm sorry. This situation is unique. I hope you can keep this a secret for me...
+;(Unused &mdash; 200090226_Wrong)
+:(The Cognition Chasm used cannot restore hazy memories. Please try another Cognition Chasm)
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090226_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090226_Clear"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090226_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 200090226_Clear)
+:(You recall more missing memories)
+::'''Arlan:''' I'm sorry. The situation is very delicate. I can't say anything except that it's a secret mission.
+::{{Диалог|Стрелка}} About the {{Цвет|Ключевой|nobold=1|researchers' disappearances}}?
+::'''Arlan:''' H&mdash;How did you know!?
+::'''Arlan:''' ...I see. Could you also tell that Lady Asta was feeling the pressure?
+::{{Диалог|Стрелка}} Have you found anything?
+::'''Arlan:''' ...I'll be honest with you &mdash; it's been tough. The surveillance didn't capture anything regarding the researchers' disappearance.
+::'''Arlan:''' There's only one clue. Adler observed that the automatic fire-suppression system was momentarily activated around the time the disappearances occurred.
+::'''Arlan:''' That means that every victim's disappearance was accompanied by some inexplicable fire. When we made visits to the scenes, some of the witness testimonies seemed to agree with this...
+::'''Arlan:''' The words they used were... spontaneous combustion of the human body.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 79,
+	"Value": "3"
+}</pre>
+{{Dialogue End}}
+
+===Recall the content of the conversation with Emily{{subst:void|<!--200090215-->}}===
+{{Mission Description|type=continuance|location=Base Zone|update|The clues provided by Emily inspired Adler afterward. Try to remember what it might be.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: The Xianzhou Alliance|20|x=1}})
+
+:{{DIcon|Разговор}} Listen
+:'''Esther:''' I say, what a wonderfully intelligent-looking young lady.
+::'''Emily:''' Heh, I'm not that wonderful. I'm just okay.
+::'''Esther:''' No need to be modest &mdash; at my age you get a feel for intelligence...
+::'''Esther:''' ...though I confess I did hear someone say you were the shining star of the Department of Insight.
+::'''Emily:''' Mm-hmm, sure. Can I help you with something?
+::'''Esther:''' See this material here? People are so inconsiderate &mdash; how's someone like me supposed to make out the small print?
+::'''Esther:''' I'm not getting any younger and my eyesight is failing. Do you think you can...?
+::'''Emily:''' Again? How many times has it been!? You're really pushing my buttons...
+::{{Диалог|Стрелка}} Sorry, if I can interrupt...
+::<!--0.7-second delay-->
+::'''Esther:''' Oh, another smart-looking youngster. Wonderful &mdash; it's about time we had some new recruits.
+::'''Emily:''' Huh, Asta told you to find me? A curio that doesn't have a body but is alive... Isn't the Department of Ecology full of Curio experts? That's got nothing to do with the Department of Insight.
+::'''Emily:''' However, I've heard of such a species. A colleague who came back from a business trip said that the Xianzhou Alliance has lifeforms like that.
+::'''Emily:''' Uh, don't get me wrong, I was merely relaying information. I didn't mean I'd help you. *sigh* The atmosphere on the space station has been getting stranger lately. It's risky taking sides.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 76,
+	"Value": "4"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 75,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 78,
+	"Value": "4"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"ShowBtnEffect": true
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+:'''Esther:''' I say, what a wonderfully intelligent-looking young lady.
+::'''Emily:''' Heh, I'm not that wonderful. I'm just okay.
+::'''Esther:''' No need to be modest &mdash; at my age you get a feel for intelligence...
+::'''Esther:''' ...though I confess I did hear someone say you were the shining star of the Department of Insight.
+::'''Emily:''' Mm-hmm, sure. Can I help you with something?
+::'''Esther:''' See this material here? People are so inconsiderate &mdash; how's someone like me supposed to make out the small print?
+::'''Esther:''' I'm not getting any younger and my eyesight is failing. Do you think you can...?
+::'''Emily:''' Again? How many times has it been!? You're really pushing my buttons...
+
+:{{DIcon|Разговор}} Listen
+:'''Wen Shiqi:''' Hey, what brings you here, Rich? It's been so long!
+:'''"Guild Researcher":''' Alright, alright, alright. Cut the pleasantries and tell me how it's going.
+:'''Wen Shiqi:''' It's all taken care of. As long as the money's there, it's all good.
+:'''Wen Shiqi:''' Here's the account you asked for. It's legit and secure, allowing you to connect straight to the intranet.
+:'''"Guild Researcher":''' I have faith in your abilities. So, how about my offer? Why not come with me after this is done?
+:'''Wen Shiqi:''' You flatter me &mdash; I'm just a peddler doing a little business on the side.
+:'''Wen Shiqi:''' Small-scale &mdash; best left under the table... but if you ever make it big in the Guild, don't forget your humble friend, okay?
+:'''"Guild Researcher":''' Sure thing. Anyway, keep your eyes peeled &mdash; I'll be bringing you something big soon!
+{{Dialogue End}}
+
+===Recall once more the content of your conversation with Herta{{subst:void|<!--200090261-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|Adler's insights finally made you recall the entirety of Herta's commission. Let's double-check the content of that commission again.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: Genius Society Member|20|x=1}})
+{{Dialogue End}}
+
+===Recall once more the content of your conversation with Adler{{subst:void|<!--200090218-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|Adler had a bold hypothesis thanks to Emily's information.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: Energy Lifeform|20|x=1}})
+
+;(Talk to Adler)
+:'''Adler:''' Have you asked the Department of Ecology head?
+::{{Диалог|Стрелка}} She said it might be a Wubbaboo.
+::'''Adler:''' She's not wrong... but that doesn't feel entirely right either.
+::{{Диалог|Стрелка}} I heard something like that also exists in the ■■■■.
+::'''(Trailblazer):''' (Huh? What did I say?)
+::(Using Cognition Chasm might help you restore hazy memories)
+::{{Диалог|Стрелка}} Use Cognition Chasm
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090218_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090218_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090218_Clear"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Leave
+:'''Adler:''' Let's call it a day. Wait for me, I'll be in touch.
+;(Unused &mdash; 200090218_Wrong)
+:(The Cognition Chasm used cannot restore hazy memories. Please try another Cognition Chasm)
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090218_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090218_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090218_Clear"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 200090218_Clear)
+:(You recall more missing memories)
+::'''Adler:''' She's not wrong... but that doesn't feel entirely right either.
+::{{Диалог|Стрелка}} I heard something like that also exists in the {{Цвет|Ключевой|nobold=1|Xianzhou Alliance}}.
+::'''Adler:''' Ahh, that's right. They're called heliobi. I guess you could say that wubbaboos and heliobi are sort of like cousins &mdash; both are types of {{Цвет|Ключевой|nobold=1|energy lifeform}}.
+::'''Adler:''' Huh, now that you mention it... I have a wild hypothesis, but it needs verifying.
+::'''Adler:''' Let's call it a day. Wait for me, I'll be in touch.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 78,
+	"Value": "5"
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 200090258-->)
+::'''(Trailblazer):''' (The Xianzhou species Emily mentioned seems to be what inspired Adler.)
+::'''(Trailblazer):''' (The disappearances Asta mentioned are likely related to Arlan's investigations too.)
+;(If {{cx}}<!--SubMission Finish: 200090258-->)
+::'''(Trailblazer):''' (The Xianzhou species Emily mentioned seems to be what inspired Adler.)
+:'''(Trailblazer):''' (Now I should be able to tie everything together.)
+{{Dialogue End}}
+
+===Recall once more the content of your conversation with Herta{{subst:void|<!--200090220-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|Adler's insights finally made you recall the entirety of Herta's commission. Let's double-check the content of that commission again.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: Genius Society Member|20|x=1}})
+
+;(Talk to Herta)
+:'''Herta:''' Let me describe it again, in case you forgot: It's an ■■■■. It's alive, but it doesn't have a body.
+::'''Herta:''' Send me a signal when you see traces of it.
+::{{Диалог|Стрелка}} An ■■■■?
+::'''(Trailblazer):''' (I think she mentioned something important, but I can't remember.)
+::'''(Trailblazer):''' (If only there were some hints, then maybe...)
+::(Using Cognition Chasm might help you restore hazy memories)
+::{{Диалог|Стрелка}} Use Cognition Chasm
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140323,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140323,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140323,
+			"TriggerCustomString": "200090203_Clear"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090203_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090203_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Leave
+:'''Herta:''' Let me describe it again, in case you forgot: It's an {{Цвет|Ключевой|nobold=1|energy lifeform}}. It's alive, but it doesn't have a body.
+::'''Herta:''' Send me a signal when you see traces of it.
+::{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Energy lifeform}}?
+::'''Herta:''' That's not the point. I wouldn't be bothering with it if it didn't have something to do with the {{Цвет|Ключевой|nobold=1|Genius Society}}.
+::'''Herta:''' Anyway, keep up the good work. I need to go out for a bit. Go ask Asta if you want someone to help you.
+::'''Herta:''' That's not the point. I wouldn't be bothering with it if it didn't have something to do with the {{Цвет|Ключевой|nobold=1|Genius Society}}.
+::'''Herta:''' Anyway, keep up the good work. I need to go out for a bit. Go ask Asta if you want someone to help you.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 80,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190513
+		}
+	},
+	"ShouldPauseGame": true
+}</pre>
+;(Unused &mdash; 200090203_Wrong)
+:(The Cognition Chasm used cannot restore hazy memories. Please try another Cognition Chasm)
+:<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140323,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140323,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140323,
+			"TriggerCustomString": "200090203_Clear"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090203_Wrong"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090203_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+;(Unused &mdash; 200090203_Clear)
+:(You recall more missing memories)
+::'''Herta:''' Let me describe it again, in case you forgot: It's an {{Цвет|Ключевой|nobold=1|energy lifeform}}. It's alive, but it doesn't have a body.
+::'''Herta:''' Send me a signal when you see traces of it.
+::{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Energy lifeform}}?
+::'''Herta:''' That's not the point. I wouldn't be bothering with it if it didn't have something to do with the {{Цвет|Ключевой|nobold=1|Genius Society}}.
+::'''Herta:''' Anyway, keep up the good work. I need to go out for a bit. Go ask Asta if you want someone to help you.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 80,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190513
+		}
+	},
+	"ShouldPauseGame": true
+}</pre>
+:'''(Trailblazer):''' (Spontaneous combustion of the human body... that is most likely the truth.)
+:'''(Trailblazer):''' (Let me remember my initial conversation with Herta, just in case...)
+
+;(Talk to Asta)
+:'''Asta:''' ...Hmm, a Curio that's alive but doesn't have a body? Sorry, but nothing comes to mind...
+:'''Asta:''' Maybe the researchers at the {{Цвет|Ключевой|nobold=1|Departments of Ecology or Insight}} may have an idea?
+:'''Asta:''' {{Цвет|Ключевой|nobold=1|Hinkel and ■■■}} are around here somewhere. I'd suggest you ask them about it.
+{{Dialogue End}}
+
+===Explore the related memory "Asta's troubles" through the Memory Bubble{{subst:void|<!--200090211-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|The memories concerning Adler seem to be rather hazy. You vaguely remember it has got to do with someone previously mentioned by Asta.}}
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Listen
+:'''Esther:''' I say, what a wonderfully intelligent-looking young lady.
+:'''"Guild Researcher":''' Alright, alright, alright. Cut the pleasantries and tell me how it's going.
+:'''Esther:''' No need to be modest &mdash; at my age you get a feel for intelligence...
+:'''Esther:''' ...though I confess I did hear someone say you were the shining star of the Department of Insight.
+:'''"Guild Researcher":''' I have faith in your abilities. So, how about my offer? Why not come with me after this is done?
+:'''Esther:''' See this material here? People are so inconsiderate &mdash; how's someone like me supposed to make out the small print?
+:'''Esther:''' I'm not getting any younger and my eyesight is failing. Do you think you can...?
+:'''"Guild Researcher":''' Sure thing. Anyway, keep your eyes peeled &mdash; I'll be bringing you something big soon!
+:'''(Trailblazer):''' (It's happening again... The words in my memory are all jumbled up.)
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 76,
+	"Value": "4"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 75,
+	"Value": "2"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 78,
+	"Value": "4"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"ShowBtnEffect": true
+}</pre>
+:<!--5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+
+;(Talk to Hinkel)
+:'''Hinkel:''' Those despicable villains are distorting the truth online!
+::'''Hinkel:''' If I discover who's behind this... they're going to wish they'd never crossed me!
+::{{Диалог|Стрелка}} (Ask for clues about the lost Curio)
+::'''Hinkel:''' A Curio that's alive but doesn't have a body? Isn't that just a Jinx?
+::{{Диалог|Стрелка}} Jinx...?
+::'''Hinkel:''' Oh, nowadays, people call them Wubbaboos.
+::{{Диалог|Стрелка}} A Wubbaboo... That doesn't sound right.
+::'''Hinkel:''' Well, I might be the Department of Ecology head, but I'm not the most knowledgeable person when it comes to Curios.
+::'''Hinkel:''' {{Цвет|Ключевой|nobold=1|Adler}} would be of more help, but he's been investigating some paranormal phenomenon. I haven't seen him all day.
+::{{Диалог|Стрелка}} So not only do I have to find a Curio, I have to find a person too?
+::'''Hinkel:''' I must say, it's a little embarrassing for the space station to be in such disarray while guests are visiting.
+::'''Hinkel:''' We've been through a huge crisis and are still recovering... but there are some who are trying to exploit the chaos to agitate the workforce.
+::'''Hinkel:''' People are growing more and more {{Цвет|Ключевой|nobold=1|distrustful}} of the management here. It's probably turned into a big headache for Asta too.
+::'''Hinkel:''' *sigh* Never mind, I shouldn't be telling you this. It's something that we researchers need to resolve ourselves. Pretend I didn't say anything.
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 74,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 71,
+	"Value": "3"
+}</pre>
+::'''(Trailblazer):''' (Adler, Adler... Right, then I ran into Arlan. Adler was with him.)
+::'''(Trailblazer):''' (It was at...)
+:'''Hinkel:''' Well, I might be the Department of Ecology head, but I'm not the most knowledgeable person when it comes to Curios.
+::'''Hinkel:''' People are growing more and more {{Цвет|Ключевой|nobold=1|distrustful}} of the management here. It's probably turned into a big headache for Asta too.
+::'''Hinkel:''' *sigh* Never mind, I shouldn't be telling you this. It's something that we researchers need to resolve ourselves. Pretend I didn't say anything.
+{{Dialogue End}}
+
+===Recall the content of the conversation with Hinkel{{subst:void|<!--200090204-->}}===
+{{Mission Description|type=continuance|location=Base Zone|update|Asta doesn't seem to have any clues either. Thankfully, Hinkel from the Department of Ecology is nearby.}}
+{{Dialogue Start}}
+
+;(Obtain {{Предмет|Cognition Chasm: Confidence Crisis|20|x=1}})
+{{Dialogue End}}
+
+===Explore the related memory "Arlan's investigation" through the Memory Bubble{{subst:void|<!--200090205-->}}===
+{{Mission Description|type=continuance|location=Base Zone|update|Hinkel recommended little Adler to you &mdash; He apparently knows the most about Curios out of the entire Department of Ecology.}}
+{{Dialogue Start}}
+:'''Arlan:''' What? He went to the scene alone with Peppy!? How could you let him...
+:'''Security Department Member:''' Calm down, brother Arlan &mdash; I know you're upset.
+:{{Диалог|Стрелка}} What are you people up to?
+:'''Arlan:''' W&mdash;We're walking the dog...
+:'''Security Department Member:''' W&mdash;We're having a walk...
+:{{Диалог|Стрелка}} Can you get your story straight first...?
+:'''Arlan:''' ...L&mdash;Like I said, we're walking the dog.
+:{{tx}}
+:'''Arlan:''' What? He went to the scene alone with Peppy!? How could you let him...
+:'''Security Department Member:''' Calm down, brother Arlan &mdash; I know you're upset.
+:What are you people up to?
+:'''Arlan:''' W&mdash;We're walking the dog...
+:'''Security Department Member:''' W&mdash;We're having a walk...
+:Can you get your story straight first...?
+:'''Arlan:''' ...L&mdash;Like I said, we're walking the dog.
+:'''Security Department Member:''' ...So I'm the dog?
+:'''(Trailblazer):''' (...They seem to be hiding something.)
+:'''Arlan:''' *sigh* Is there something you need?
+:{{Диалог|Стрелка}} I'm looking for Adler.
+:'''Security Department Member:''' Oh, really? What coincidence &mdash; we're looking for him too.
+:{{tx}}
+:'''Arlan:''' What? He went to the scene alone with Peppy!? How could you let him...
+:'''Security Department Member:''' Calm down, brother Arlan &mdash; I know you're upset.
+:What are you people up to?
+:'''Arlan:''' W&mdash;We're walking the dog...
+:'''Security Department Member:''' W&mdash;We're having a walk...
+:Can you get your story straight first...?
+:'''Arlan:''' ...L&mdash;Like I said, we're walking the dog.
+:'''Security Department Member:''' ...So I'm the dog?
+:'''(Trailblazer):''' (...They seem to be hiding something.)
+:'''Arlan:''' *sigh* Is there something you need?
+:I'm looking for Adler.
+:'''Security Department Member:''' Oh, really? What coincidence &mdash; we're looking for him too.
+:'''Security Department Member:''' That kid sure is brave &mdash; running straight to the scene on his own.
+:{{Диалог|Стрелка}} The scene of what? Is he in danger?
+::'''Security Department Member:''' Ah, um... no! No danger. Of course, he's not in danger!
+::Aren't you supposed to be walking the dog?
+:{{Диалог|Стрелка}} Aren't you supposed to be walking the dog?
+:'''Security Department Member:''' Ah, yes, well... Peppy isn't here, you see.
+:'''Security Department Member:''' *sigh* Brother Arlan, I&mdash;I can't keep this up anymore.
+:'''Arlan:''' Ugh, can you leave the talking to me next time?
+:{{Диалог|Стрелка}} Is there a problem?
+:'''Arlan:''' ...Let's walk and talk.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 77,
+	"Value": "2"
+}</pre>
+{{Dialogue End}}
+
+===Visit little Adler{{subst:void|<!--200090207-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|Due to Hinkel's recommendations, you decide to visit Adler. However, others seem to be looking for him too.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; 200090207_TriggerPerformance)
+:{{tx}}
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:'''Arlan:''' Why are you looking for Adler?
+:'''Arlan:''' ...A lost Curio? I see. He'll be able to help.
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Arlan:''' Careful, the Fragmentum in this area is very unstable.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (No, not this road. I didn't go there.)
+:'''Arlan:''' Peppy, are you okay?
+:'''Peppy:''' Woof!
+:{{Диалог|Стрелка}} Are you really the one who knows the most about Curios?
+:'''Adler:''' That's me. What's up?
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+{{Dialogue End}}
+
+===Recall the content of the conversation with Adler{{subst:void|<!--200090209-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|See what Adler has to say about Herta's commission.}}
+{{Dialogue Start}}
+
+;(Talk to Adler)
+:'''Adler:''' So, which Curio do you wanna know about?
+::{{Диалог|Стрелка}} One that has no body, but is alive.
+::'''Adler:''' That's all you got? Too abstract.
+::{{Диалог|Стрелка}} That's all Herta said.
+::'''Adler:''' Well, there's beauty in the abstract I guess.
+::'''Adler:''' Have you asked the Department of Ecology head?
+::{{Диалог|Стрелка}} She said it might be a Wubbaboo.
+::'''Adler:''' She's not wrong... but that doesn't feel entirely right either.
+::{{Диалог|Стрелка}} I heard something like that also exists in the ■■■■.
+::'''(Trailblazer):''' (Huh? What did I say?)
+::'''Adler:''' Huh, now that you mention it... I have a wild hypothesis, but it needs verifying.
+::'''Adler:''' Let's call it a day. Wait for me, I'll be in touch.
+::'''(Trailblazer):''' (Adler seems to have gotten a lead, but... what was the information I forgot? And from whom?)
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 78,
+	"Value": "2"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 74,
+	"Value": "3"
+}</pre>
+::'''(Trailblazer):''' (Let's go over it from the start, I may have overlooked something... Right &mdash; Asta mentioned another name.)
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"ShowBtnEffect": true
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+:'''Adler:''' Have you asked the Department of Ecology head?
+::{{Диалог|Стрелка}} She said it might be a Wubbaboo.
+::'''Adler:''' She's not wrong... but that doesn't feel entirely right either.
+::{{Диалог|Стрелка}} I heard something like that also exists in the ■■■■.
+::'''(Trailblazer):''' (Huh? What did I say?)
+::'''Adler:''' Huh, now that you mention it... I have a wild hypothesis, but it needs verifying.
+::'''Adler:''' Let's call it a day. Wait for me, I'll be in touch.
+::'''(Trailblazer):''' (Adler seems to have gotten a lead, but... what was the information I forgot? And from whom?)
+;(Unused &mdash; 200090239_Wrong)
+:(The Cognition Chasms currently collected are insufficient to restore hazy memories. Please collect more Cognition Chasms)
+
+;(Unused &mdash; 200090239_Clear)
+:(You recall more missing memories)
+::'''Adler:''' She's not wrong... but that doesn't feel entirely right either.
+::{{Диалог|Стрелка}} I heard something like that also exists in the {{Цвет|Ключевой|nobold=1|Xianzhou Alliance}}.
+::'''Adler:''' Ahh, that's right. They're called heliobi. I guess you could say that wubbaboos and heliobi are sort of like cousins &mdash; both are types of {{Цвет|Ключевой|nobold=1|energy lifeform}}.
+::'''Adler:''' Huh, now that you mention it... I have a wild hypothesis, but it needs verifying.
+::'''Adler:''' Let's call it a day. Wait for me, I'll be in touch.
+
+
+;(Talk to Arlan)
+:'''Arlan:''' I figured you'd come to me to uncover the truth...
+::'''Arlan:''' I'm sorry. The situation is very delicate. I can't say anything except that it's a secret mission.
+::{{Диалог|Стрелка}} About ■■■■■■?
+::'''Arlan:''' H&mdash;How did you know!?
+::'''(Trailblazer):''' (Just as I thought, I vaguely remember that Arlan said more... It's related to the thing I forgot...)
+:'''Arlan:''' I figured you'd come to me to uncover the truth...
+::'''Arlan:''' I'm sorry. The situation is very delicate. I can't say anything except that it's a secret mission.
+::{{Диалог|Стрелка}} About ■■■■■■?
+::'''(Trailblazer):''' (Just as I thought, I vaguely remember that Arlan said more... It's related to the thing I forgot...)
+::Using Cognition Chasm might help you restore hazy memories
+::{{Диалог|Стрелка}} Use Cognition Chasm
+::<pre>{
+	"$type": "RPG.GameCore.SelectMissionItem",
+	"ItemIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemHiddenIDList": [
+		140330,
+		140321,
+		140322
+	],
+	"ItemInvisibleIDList": [],
+	"ItemSelect": [
+		{
+			"Item1": 140330,
+			"TriggerCustomString": "200090238_Wrong"
+		},
+		{
+			"Item1": 140321,
+			"TriggerCustomString": "200090238_Clear"
+		},
+		{
+			"Item1": 140322,
+			"TriggerCustomString": "200090238_Wrong"
+		}
+	],
+	"SlotNum": 1,
+	"SimpleTalk": {},
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Leave
+::'''Arlan:''' H&mdash;How did you know!?
+::'''(Trailblazer):''' (Just as I thought, I vaguely remember that Arlan said more... It's related to the thing I forgot...)
+;(Unused &mdash; 200090238_Wrong)
+:(The Cognition Chasms currently collected are insufficient to restore hazy memories. Please collect more Cognition Chasms)
+
+;(Unused &mdash; 200090238_Clear)
+:'''Arlan:''' I'm sorry. The situation is very delicate. I can't say anything except that it's a secret mission.
+::{{Диалог|Стрелка}} About the {{Цвет|Ключевой|nobold=1|researchers' disappearances}}?
+::'''Arlan:''' H&mdash;How did you know!?
+::'''Arlan:''' ...I see. Could you also tell that Lady Asta was feeling the pressure?
+::{{Диалог|Стрелка}} Have you found anything?
+::'''Arlan:''' ...I'll be honest with you &mdash; it's been tough. The surveillance didn't capture anything regarding the researchers' disappearance.
+::'''Arlan:''' There's only one clue. Adler observed that the automatic fire-suppression system was momentarily activated around the time the disappearances occurred.
+::'''Arlan:''' That means that every victim's disappearance was accompanied by some inexplicable fire. When we made visits to the scenes, some of the witness testimonies seemed to agree with this...
+::'''Arlan:''' The words they used were... spontaneous combustion of the human body.
+
+:{{DIcon|Разговор}} Enter the related memory
+;(If {{cx}}<!--SubMission not Finish: 200090209-->)
+::'''(Trailblazer):''' (I think I missed something. I need to think harder.)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090212-->)
+::'''(Trailblazer):''' (My memories of Arlan and Adler are hazy. I need to remember the other person Asta mentioned.)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (The other person should be from the {{Цвет|Ключевой|nobold=1|Department of Insight}}. I need to remember who it is...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090215-->)
+::'''(Trailblazer):''' (What did Emily say...?)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090208-->)
+::'''(Trailblazer):''' (I think I missed something. I need to think harder.)
+;(Otherwise)
+::'''(Trailblazer):''' (I need to go over it from the start... starting with the conversation I had with Herta...)
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Explore the related memory "Asta's troubles"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090209-->)
+:{{Диалог|Стрелка}} Explore the related memory "Asta's troubles"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+:{{Диалог|Выход}} Stay in the current memory
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (No, not this road. I didn't go there.)
+
+;(Unused &mdash; Talk_200090210)
+<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"CustomString": {
+		"Value": "200090210_OnHit"
+	},
+	"ShowBtnEffect": true
+}</pre>
+
+;(Unused &mdash; 200090210_OnHit)
+<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+
+;(Unused &mdash; 2000902_Change)
+<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn",
+	"ShowBtnEffect": true
+}</pre>
+::<!--5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetFuncBtn"
+}</pre>
+{{Dialogue End}}
+
+===Explore the related memory "Asta's troubles" through the Memory Bubble{{subst:void|<!--200090202-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|Herta had commissioned you to find a lost Curio, and you might need Asta's help.}}
+{{Dialogue Start}}
+
+;(Talk to Herta)
+:'''Herta:''' Let me describe it again, in case you forgot: It's an ■■■■. It's alive, but it doesn't have a body.
+:'''Herta:''' Send me a signal when you see traces of it.
+:{{Диалог|Стрелка}} An ■■■■?
+:'''(Trailblazer):''' (I think she mentioned something important, but I can't remember.)
+:'''(Trailblazer):''' (If only there were some hints, then maybe...)
+:'''Herta:''' Anyway, keep up the good work. I need to go out for a bit. Go ask {{Цвет|Ключевой|nobold=1|Asta}} if you want someone to help you.
+
+:{{DIcon|Разговор}} Enter the related memory
+;(If {{cx}}<!--SubMission not Finish: 200090203-->)
+::'''(Trailblazer):''' (This is what I recall before I met Herta, but I can't remember some of the details.)
+::'''(Trailblazer):''' (Let me try to remember the conversation with Asta.)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090211-->)
+::'''(Trailblazer):''' (I can't recall the other person, but one of them was Hinkel. I remember her...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (The other person should be from the {{Цвет|Ключевой|nobold=1|Department of Insight}}. I need to remember who it is...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090215-->)
+::'''(Trailblazer):''' (What did Emily say...?)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090208-->)
+::'''(Trailblazer):''' (The Xianzhou species Emily mentioned seems to be what inspired Adler.)
+;(Otherwise)
+::'''(Trailblazer):''' (I need to go over it from the start... starting with the conversation I had with Herta...)
+;(If )
+:{{Диалог|Стрелка}} Explore the related memory "Asta's troubles"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If )
+:{{Диалог|Стрелка}} Explore the related memory "Asta's troubles"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If )
+:{{Диалог|Стрелка}} Explore the related memory "Asta's troubles"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Stay in the current memory
+
+
+:{{DIcon|Разговор}} Listen
+:'''Esther:''' I say, what a wonderfully intelligent-looking young lady.
+:'''"Guild Researcher":''' Alright, alright, alright. Cut the pleasantries and tell me how it's going.
+:'''Esther:''' No need to be modest &mdash; at my age you get a feel for intelligence...
+:'''Esther:''' ...though I confess I did hear someone say you were the shining star of the Department of Insight.
+:'''"Guild Researcher":''' I have faith in your abilities. So, how about my offer? Why not come with me after this is done?
+:'''Esther:''' See this material here? People are so inconsiderate &mdash; how's someone like me supposed to make out the small print?
+:'''Esther:''' I'm not getting any younger and my eyesight is failing. Do you think you can...?
+:'''"Guild Researcher":''' Sure thing. Anyway, keep your eyes peeled &mdash; I'll be bringing you something big soon!
+:'''(Trailblazer):''' (It's happening again... The words in my memory are all jumbled up.)
+:'''(Trailblazer):''' (Time to carefully recall my memories again...)
+{{Dialogue End}}
+
+===Seek assistance from Asta{{subst:void|<!--200090203-->}}===
+{{Mission Description|type=continuance|location=Base Zone|update|Asta, who manages the space station, should be able to provide some clues}}
+{{Dialogue Start}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetTextJoinValue",
+	"TextJoinID": 71,
+	"Value": "2"
+}</pre>
+:'''(Trailblazer):''' (Asta seems to have mentioned two names... two researchers from the Departments of Ecology and Insight...)
+
+:{{DIcon|Разговор}} Enter the related memory
+;(If {{cx}}<!--SubMission not Finish: 200090204-->)
+::'''(Trailblazer):''' (I can't recall the other person, but one of them was Hinkel. I remember her...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090211-->)
+::'''(Trailblazer):''' (Adler was with Arlan. They were involved in some sort of incident...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (The other person should be from the {{Цвет|Ключевой|nobold=1|Department of Insight}}. I need to remember who it is...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (What did Emily say...?)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090208-->)
+::'''(Trailblazer):''' (The Xianzhou species Emily mentioned seems to be what inspired Adler.)
+;(Otherwise)
+::'''(Trailblazer):''' (I need to go over it from the start... starting with the conversation I had with Herta...)
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|undefined}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Stay in the current memory
+
+
+:{{DIcon|Разговор}} Enter the related memory
+;(If {{cx}}<!--SubMission not Finish: 200090204-->)
+::'''(Trailblazer):''' (I can't recall the other person, but one of them was Hinkel. I remember her...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090211-->)
+::'''(Trailblazer):''' (Adler was with Arlan. They were involved in some sort of incident...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (The other person should be from the {{Цвет|Ключевой|nobold=1|Department of Insight}}. I need to remember who it is...)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090214-->)
+::'''(Trailblazer):''' (What did Emily say...?)
+;(Otherwise, if {{cx}}<!--SubMission not Finish: 200090208-->)
+::'''(Trailblazer):''' (The Xianzhou species Emily mentioned seems to be what inspired Adler.)
+;(Otherwise)
+::'''(Trailblazer):''' (I need to go over it from the start... starting with the conversation I had with Herta...)
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|undefined}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Herta's assignment."
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Стрелка}} Explore the related memory "Arlan's investigation"
+:<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 200090204--> and {{cx}}<!--SubMission Finish: 200090211-->)
+:{{Диалог|Выход}} Stay in the current memory
+
+;(Unused &mdash; 2000902_Two_GoOne)
+<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1010
+		}
+	}
+}</pre>
+
+;(Unused &mdash; 2000902_Two_GoThree)
+<pre>{
+	"$type": "RPG.GameCore.PropReqInteract",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 24
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"InteractID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1020
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Memory Rewind
+|zhs  = 记忆回溯
+|zht  = 記憶回溯
+|ja   = 記憶回顧
+|ko   = 기억 회상
+|es   = Recuperación de recuerdos
+|fr   = Retour des souvenirs
+|ru   = Восстановление воспоминаний
+|th   = ย้อนรอยความทรงจำ
+|vi   = Hồi Tưởng Ký Ức
+|de   = Erinnerungsverfolgung
+|id   = Mengingat Kenangan
+|pt   = Recuperação de Memórias
+}}
+
+==Change History==
+{{Change History|3.5}}

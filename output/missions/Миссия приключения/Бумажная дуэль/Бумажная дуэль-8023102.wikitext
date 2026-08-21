@@ -10,9 +10,9 @@ PageTitle=#Бумажная дуэль#
 |Событие         = Бумажная дуэль
 |Глава           = Бумажная дуэль
 |Условия         = Завершена [[Миссия приключения]] «[[Бумажная дуэль]]»
-|Персонажи       = Первопроходец; Серебряный Волк; Тина
-|СтартЛокация    = [[Пенакония]] — [[Золотой миг]]
-|Мир             = Пенакония
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = Бумажная дуэль: Коллекционная версия
 |Награды         = Звёздный нефрит*30; Путеводитель путешественника*4; Утраченный кристалл*4; Кредиты*60 000
@@ -24,434 +24,52 @@ PageTitle=#Бумажная дуэль#
 
 ==Этапы==
 # Отправляйтесь в указанное место и найдите игровой автомат в Золотом миге
-# Разгоните рекламные щиты
-# Исследуйте странность в траве
 # Получите одобрение золотой пташки
 # Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Серебряного Волка на новом игровом автомате
 # Проведите обзор битвы с Серебряным Волком
 # Посадите Первопролётца на выбранный игровой автомат
 # Поговорите с Тиной и узнайте о тесте
 # Откройте карту и узнайте о втором игровом автомате
+# Разгоните рекламные щиты
+# Исследуйте странность в траве
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Отправляйтесь в указанное место и найдите игровой автомат в Золотом миге===
-{{Описание миссии|тип=Миссия приключения|локация=Золотой миг|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Вы получили приглашение от Семьи. Тина из клана Ирисов приглашает вас протестировать новую игру под названием «Бумажная дуэль».<br />Не похоже на мошенничество... Можно и попробовать, верно? Терять-то нечего.}}
 {{Диалог Начало}}
-
-;(По прибытии на место)
-
-;(По прибытии на место)
-:'''Серебряный Волк:''' Оказывается, часть взаимодействия происходит офлайн. Всё потому, что создатели игры понимают, насколько прост игровой режим. А для того чтобы это компенсировать, они решили добавить побольше заданий и заставить игроков побегать... Хм, ход мыслей разработчиков слишком предсказуем.
-;(По прибытии на место)
-
-;(По прибытии на место)
-:'''Серебряный Волк:''' Посмотри на тех NPC. Вон то сборище рекламных щитов. Там наверняка что-то есть.
-:<!--3-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
-	"BubbleTalkInfoList": [
-		{
-			"AutoSkipTime": 3,
-			"GroupID": 520,
-			"GroupNpcID": 400002,
-			"TalkSentenceID": 823102151
-		}
-	],
-	"IsLoop": true,
-	"LoopInterval": 3,
-	"UniqueID": 2
-}</pre>
-{{Диалог Конец}}
-
-===Разгоните рекламные щиты===
-{{Диалог Начало}}
-:'''Серебряный Волк:''' Посмотри на тех NPC. Вон то сборище рекламных щитов. Там наверняка что-то есть.
-:<!--3-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
-	"BubbleTalkInfoList": [
-		{
-			"AutoSkipTime": 3,
-			"GroupID": 520,
-			"GroupNpcID": 400002,
-			"TalkSentenceID": 823102151
-		}
-	],
-	"IsLoop": true,
-	"LoopInterval": 3,
-	"UniqueID": 2
-}</pre>
-
-;(По прибытии на место)
-<pre>{
-	"$type": "RPG.GameCore.PlayMazeButtonEffect",
-	"Enable": true
-}</pre>
-{{Диалог Конец}}
-
-===Исследуйте странность в траве===
-{{Диалог Начало}}
-;(Unused &mdash; G518_TriggerEffect)
-<pre>{
-	"$type": "RPG.GameCore.TriggerEffect",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 518
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300002
-				}
-			}
-		}
-	},
-	"Flags": [],
-	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
-	"ForceSimulateImmediately": false,
-	"SubObjectModifyDataList": []
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		300001
-	]
-}</pre>
-
-;(Unused &mdash; G518_SwitchCharacterV2)
-<pre>{
-	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
-	"SwitchCharacterAnchorConfig": {
-		"IsLocalPlayer": true,
-		"CharacterUniqueName": "LocalPlayer",
-		"AreaName": {
-			"Value": "LevelArea_P10301_F10301001_G518"
-		},
-		"AnchorName": {
-			"Value": "Anchor1"
-		}
-	}
-}</pre>
-;(Unused &mdash; G526_StopBubbleTalk)
-<pre>{
-	"$type": "RPG.GameCore.StopNPCBubbleTalk",
-	"UniqueIDList": [
-		526400001
-	]
-}</pre>
 {{Диалог Конец}}
 
 ===Получите одобрение золотой пташки===
 {{Диалог Начало}}
-
-
-;(Поговорите с Золотой Господин)
-:'''Серебряный Волк:''' ...И всё? Это слишком легко даже для демо-версии!
-:'''Серебряный Волк:''' По сути это тестирование белого ящика. Ничего не доделано... Ладно, давай вернёмся и опробуем игры на автомате.
-:{{Диалог|Стрелка}} Вернуться на корабль.
-<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult"
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.PerformanceEndSeq",
-	"Cases": [
-		{
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.ClientFinishMission",
-					"SubmissionID": 802310202
-				}
-			]
-		},
-		{
-			"Case": 1,
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.ClientFinishMission",
-					"SubmissionID": 802310211
-				}
-			]
-		}
-	]
-}</pre>
-;(Unused &mdash; 8023102_Exit)
-<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
-}</pre>
-;(По прибытии на место)
-
-;(По прибытии на место)
-:'''Серебряный Волк:''' ...И всё? Это слишком легко даже для демо-версии!
-:'''Серебряный Волк:''' По сути это тестирование белого ящика. Ничего не доделано... Ладно, давай вернёмся и опробуем игры на автомате.
-:{{Диалог|Стрелка}} Вернуться на корабль.
-<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult"
-}</pre>
-;(Unused &mdash; 8023102_Exit)
-<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
-}</pre>
 {{Диалог Конец}}
 
 ===Вернитесь на корабль «(Лучезарный шпат/Корма Освоения/Таталов/Парящая стрелка часов)» и выиграйте дуэль против Серебряного Волка на новом игровом автомате===
 {{Диалог Начало}}
-;(If {{F|Activity230DIYEntrance}} is greater than or equal to 1)
-:<pre>{
-	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	},
-	"TriggerName": "MissionTrigger",
-	"ButtonsByName": [],
-	"ButtonConfigs": [
-		{
-			"ID": "PlayButton",
-			"IconType": "GeneralActivityIcon",
-			"ButtonText": {
-				"Value": "TalkSentenceName_GameConsole"
-			}
-		},
-		{
-			"ID": "DIYButton",
-			"ButtonText": {
-				"Value": "TalkSentenceName_DIYPanel"
-			}
-		}
-	]
-}</pre>
-;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 1)
-:<pre>{
-	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	},
-	"TriggerName": "MissionTrigger",
-	"ButtonsByName": [],
-	"ButtonConfigs": [
-		{
-			"ID": "PlayButton",
-			"IconType": "GeneralActivityIcon",
-			"ButtonText": {
-				"Value": "TalkSentenceName_GameConsole"
-			}
-		}
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.AdvEnableButtons",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	},
-	"TriggerName": "MissionTrigger",
-	"ButtonsByName": [
-		"PlayButton"
-	]
-}</pre>
-
-;(Поговорите с Серебряный Волк)
-<pre>{
-	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
-	"SourceType": {
-		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
-	},
-	"GroupId": 220,
-	"PointID": 1
-}</pre>
-:'''Серебряный Волк:''' С такой примитивной демо-версией они ещё осмелились проводить бета-тест! У меня уже не осталось никаких ожиданий...
-:'''Серебряный Волк:''' {{MC|ж=Готова|м=Готов}}? Тогда скорее начнём. Не терпится боёвку посмотреть...
-<pre>{
-	"$type": "RPG.GameCore.PerformanceEndSeq",
-	"Cases": [
-		{
-			"Case": 1,
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.ShowUI",
-					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
-					"Param": {
-						"Value": "1100"
-					}
-				}
-			]
-		}
-	]
-}</pre>
-;(По прибытии на место)
-
-;(По прибытии на место)
-<pre>{
-	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
-	"SourceType": {
-		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
-	},
-	"GroupId": 220,
-	"PointID": 1
-}</pre>
-:'''Серебряный Волк:''' С такой примитивной демо-версией они ещё осмелились проводить бета-тест! У меня уже не осталось никаких ожиданий...
-:'''Серебряный Волк:''' {{MC|ж=Готова|м=Готов}}? Тогда скорее начнём. Не терпится боёвку посмотреть...
-:{{Диалог|Журнал путешествий}} Игровой автомат включён! Чирик!
-:<pre>{
-	"$type": "RPG.GameCore.SetPerformanceResult",
-	"Value": 1
-}</pre>
-:{{Диалог|Выход}} Подожди, нужно кое-какие дела доделать.
-<pre>{
-	"$type": "RPG.GameCore.PerformanceEndSeq",
-	"Cases": [
-		{
-			"Case": 1,
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.ShowUI",
-					"Name": "Ui.MatchThree.Entrance.MatchThreeMainEntrancePage",
-					"Param": {
-						"Value": "1100"
-					}
-				}
-			]
-		}
-	]
-}</pre>
 {{Диалог Конец}}
 
 ===Проведите обзор битвы с Серебряным Волком===
 {{Диалог Начало}}
-<pre>{
-	"$type": "RPG.GameCore.WaitUIControllerClose",
-	"UIControllerName": "MatchThreeMainEntrancePage"
-}</pre>
-:<!--0.5-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.ShowUI",
-	"Name": "Ui.MatchThree.Entrance.MatchThreeNewBirdDialog",
-	"WaitForExit": true,
-	"Param": {
-		"Value": "301"
-	}
-}</pre>
-:{{tx}}
-:'''Серебряный Волк:''' Хм... Впрочем, вышло немного лучше, чем я себе представляла. Сгодится, чтобы скоротать время и немного расслабиться... Ой, что с тобой?
-:{{Диалог|Стрелка}} ...Я что, {{MC|ж=выиграла|м=выиграл}}?
-:'''Серебряный Волк:''' Как говорят в народе, победа и поражение - для PVP обычное дело. Даже если тебе удалось каким-то чудом победить меня, нечего плясать от радости так, что аж частота кадров упала!
-:{{tx}}
-;(Unused &mdash; Activity230_PveResultClose)
-<pre>{
-	"$type": "RPG.GameCore.ClosePage",
-	"PageNames": [
-		"MatchThreeMainEntrancePage"
-	],
-	"PageRootNames": []
-}</pre>
 {{Диалог Конец}}
 
 ===Посадите Первопролётца на выбранный игровой автомат===
 {{Диалог Начало}}
-
 {{Диалог Конец}}
 
 ===Поговорите с Тиной и узнайте о тесте===
 {{Диалог Начало}}
-;(По прибытии на место)
-
-;(По прибытии на место)
-:'''Тина:''' У вас отлично получается! На самом деле, в разделе DIY мы разработали и другие игровые режимы, просто в текущем бета-тесте неполная выкладка.
-:'''Тина:''' В качестве извинений дарим вам базовую модель золотой пташки.
-:'''Серебряный Волк:''' Ух ты, доступна пользовательская настройка обликов? Хотя игровой режим определённо требует доработки, периферийный геймплэй создан вполне неплохо.
-:'''Серебряный Волк:''' Да... Так выглядит получше.
-:{{Диалог|Стрелка}} ...
-::'''Серебряный Волк:''' Что за выражение лица?.. Не переживай, проекция надёжно зашифрована, никто меня не обнаружит.
-::А с какой стати ты в прототипе?
-:{{Диалог|Стрелка}} А с какой стати ты в прототипе?
-:'''Серебряный Волк:''' ...Не нравится? Держи своё мнение при себе.
-:'''Тина:''' Не смею больше отвлекать вас. Желаю приятной игры!
-:{{tx}}
-<pre>{
-	"$type": "RPG.GameCore.RequestChangeMatchThreeBirdLocation",
-	"BirdID": 301,
-	"LocationID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 1
-		}
-	}
-}</pre>
 {{Диалог Конец}}
 
 ===Откройте карту и узнайте о втором игровом автомате===
 {{Диалог Начало}}
+{{Диалог Конец}}
 
-;(If {{F|Activity230DIYEntrance}} is greater than or equal to 2)
-:<pre>{
-	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	},
-	"TriggerName": "MissionTrigger",
-	"ButtonsByName": [],
-	"ButtonConfigs": [
-		{
-			"ID": "PlayButton",
-			"IconType": "GeneralActivityIcon",
-			"ButtonText": {
-				"Value": "TalkSentenceName_GameConsole"
-			}
-		},
-		{
-			"ID": "DIYButton",
-			"ButtonText": {
-				"Value": "TalkSentenceName_DIYPanel"
-			}
-		}
-	]
-}</pre>
-;(If {{F|Activity230DIYEntrance}} is not greater than or equal to 2)
-:<pre>{
-	"$type": "RPG.GameCore.AdvSetupButtonListTrigger",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	},
-	"TriggerName": "MissionTrigger",
-	"ButtonsByName": [],
-	"ButtonConfigs": [
-		{
-			"ID": "PlayButton",
-			"IconType": "GeneralActivityIcon",
-			"ButtonText": {
-				"Value": "TalkSentenceName_GameConsole"
-			}
-		}
-	]
-}</pre>
+===Разгоните рекламные щиты===
+{{Диалог Начало}}
+{{Диалог Конец}}
+
+===Исследуйте странность в траве===
+{{Диалог Начало}}
 {{Диалог Конец}}
 
 ==На других языках==

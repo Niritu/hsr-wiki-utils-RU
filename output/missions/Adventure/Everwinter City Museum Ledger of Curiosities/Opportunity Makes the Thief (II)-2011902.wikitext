@@ -1,0 +1,425 @@
+<%-- [PAGE_INFO]
+PageTitle=#Opportunity Makes the Thief (II)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011902
+|title         = 
+|image         = <!--Mission Opportunity Makes the Thief (II).png-->
+|type          = Adventure
+|event_name    = Everwinter City Museum Ledger of Curiosities
+|chapter       = Everwinter City Museum Ledger of Curiosities
+|requirements  = 
+* [[Adventure Mission]] ''[[Opportunity Makes the Thief (I)]]'' completed
+* Reach phase 2 in [[Everwinter City Museum Ledger of Curiosities]]
+|summary       = The ''Gears and Wisdom'' exhibit, a precious artifact, was stolen, leading you and Pela to the Underworld for investigation.<br />With Clara's assistance, you have retrieved the scattered parts and restored the exhibit... in an "almost" flawless manner.
+|characters    = Clara; Enthusiastic Boy; Introverted Girl; Pela; Svarog; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[History and Culture Museum]]
+|world         = Jarilo-VI
+|area          = History and Culture Museum
+|prev          = Opportunity Makes the Thief (I)
+|next          = 
+|rewards       = Trailblaze EXP*250; Stellar Jade*40; Traveler's Guide*4; Refined Aether*4; Credit*40 000
+}}
+'''''Opportunity Makes the Thief (II)''''' is an Event [[Adventure Mission]] from the [[Everwinter City Museum Ledger of Curiosities]] event.
+
+==Steps==
+# Speak with Pela in the museum
+# Head to the Industrial Hall
+# Ask Clara about the situation in the Robot Settlement
+# Investigate the malfunctioning robot
+# Collect art pieces
+# Check for issues in the paralyzed Automaton Grizzly
+# Return to the museum and re-assemble ''Gears and Wisdom''
+# Head to Svarog's residence
+# Speak with Pela and head to the Robot Settlement
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Speak with Pela in the museum{{subst:void|<!--201190201-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|You finished one phase of the museum's operation.<br />You seem to see Pela again in the exhibit hall. Go and say hello to her, and see if there has been any progress regarding the artifact thefts.}}
+{{Dialogue Start}}
+
+;(Talk to Pela)
+:'''Pela:''' Good to see you, (Trailblazer). The General Hall has been receiving a lot of visitors lately. The yearning for history and art has reawakened in the hearts of Belobogians &mdash; thanks to your superb management!
+:'''Pela:''' Y'know, I never guessed you'd become a pro at this job &mdash; I only wanted you to experience the fun of working here...
+:'''Pela:''' So I'm curious, how do you like being the museum manager, (Trailblazer)?
+:{{Диалог|Стрелка}} Love it &mdash; loads of fun.
+::'''Pela:''' I know, right? And it really gives you a sense of accomplishment.
+:{{Диалог|Стрелка}} Who doesn't like easy money?
+::'''Pela:''' So that's what you like about it... *sigh* I guess most people probably think the same way.
+:{{Диалог|Стрелка}} It has its ups and downs.
+::'''Pela:''' I see... But at least you have a sense of accomplishment, right? Otherwise, you wouldn't still be doing it.
+:'''Pela:''' Anyway, there's something else I wanted to talk to you about &mdash; there's been a new development in the museum theft case.
+:'''Pela:''' First, I need to show you something. Here, (Trailblazer), this way.
+----
+{{Dialogue End}}
+
+===Head to the Industrial Hall{{subst:void|<!--201190202-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|update|Pela was satisfied with the results you achieved while operating the museum.<br />She wants to open up the Industrial Exhibit next, but a key exhibit in this area was stolen. Go and see what the situation is.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+:'''Pela:''' After the General Hall opened to the public, the Silvermane Guards and Wildfire did a follow-up investigation in the Underworld.
+:'''Pela:''' Progress was really slow, but they managed to hunt down some new clues.
+:'''Pela:''' If the next stage of the investigation is successful, we should be able to open up the Industrial Hall to the public.
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 13,
+	"GroupNpcID": 400004,
+	"DestroyList": []
+}</pre>
+----
+:'''Pela:''' And here we are.
+:'''Pela:''' The item that's supposed to be in this exhibit is a modern sculpture called Gears and Wisdom.
+:'''Pela:''' It's a little hard to describe &mdash; sort of... abstract. It's made up of gears and mechanical parts, and it's about the same height and weight as the average person... Basically, it's too heavy for someone to just pick up and run off with.
+:'''Pela:''' As you can see, this sculpture was placed at the entrance of the Industrial Hall because it symbolizes the industrial spirit that Belobogians have lived, breathed and produced for centuries.
+:'''Pela:''' Without it, the Industrial Hall loses its soul... We have to retrieve the sculpture before we can open to the public.
+:{{Диалог|Стрелка}} Where should we look?
+::'''Pela:''' It seems like we'll have to make another visit to the Underworld.
+::'''Pela:''' It took nearly twenty years from design to completion to make Gears and Wisdom... We can't let all that painstaking work and talent go to waste. We have to get it back.
+:{{Диалог|Стрелка}} Maybe we could make a new one?
+::'''Pela:''' Let me ask you something &mdash; do you know how long it took to make Gears and Wisdom from initial design to completion?
+::'''Pela:''' Twenty years! We can't let all that painstaking work and talent go to waste.
+:'''Pela:''' I received some intel just earlier today. Someone said they found clues related to a gang of thieves in the Underworld's Robot Settlement. I don't know if they'll lead us to the sculpture, but it's worth a try.
+:'''Pela:''' We can head over to the Robot Settlement as soon as you're ready, (Trailblazer).
+:{{Диалог|Стрелка}} Time to go get that sculpture.
+::'''Pela:''' Let's head out, then.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 201190202,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 1
+}</pre>
+::----
+:{{Диалог|Выход}} Hold on, I have something urgent to take care of first.
+::'''Pela:''' Sure, do what you need to. Come back when you're ready.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 201190202,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
+}</pre>
+----
+:'''Pela:''' Hmm, there's quite the crowd here today...
+:'''Pela:''' Where do we start?
+:{{Диалог|Стрелка}} Clara...
+:{{Диалог|Стрелка}} Clara!
+:'''Pela:''' ...Huh?
+:'''Pela:''' ...Ah, you mean the little girl in red? I remember her &mdash; I saw her in the Overworld at Lady Bronya's succession ceremony.
+:'''Pela:''' I don't know if she can give us any leads, but it's always good to say hi to a friend &mdash; basic courtesy, right?
+----
+
+;(Talk to Clara)
+----
+:'''Clara:''' Ah, it's {{MC|ж=big sister|м=big brother}}! And... Miss Pelageya Sergeyevna!
+:'''Pela:''' You remember my full name!? This kid is really something...
+:'''Pela:''' Nice to see you, Clara. What brings you to the Robot Settlement?
+:'''Clara:''' Well, something strange happened in the settlement recently. I'm asking the grownups who live nearby if they know anything about it.
+:'''Pela:''' ...Something strange? Can you share any details?
+:'''Clara:''' Well, recently... a lot of the little robots in the settlement started behaving strangely. It's like they malfunctioned suddenly, all at the same time.
+:'''Clara:''' They started roaming around, breaking into people's tents, destroying their belongings... It was a real headache for the people living here.
+:{{Диалог|Стрелка}} What did Svarog say?
+:{{Диалог|Стрелка}} Never a quiet day in the Underworld...
+::'''Clara:''' Yeah, I guess...
+:'''Clara:''' Mr. Svarog scanned the robots for irregularities, but the results all came back normal.
+:'''Clara:''' So... I don't think it's a hardware issue.
+:'''Pela:''' So they're malfunctioning collectively. Hmm...
+:{{Диалог|Стрелка}} Sounds like they could use our help.
+::'''Pela:''' *sigh* You're right. Since we're already here...
+:{{Диалог|Стрелка}} This doesn't have anything to do with our investigation.
+::'''Pela:''' Mm... You're right, it probably doesn't...
+::'''Pela:''' ...but since we're already here, they could use our help.
+:'''Pela:''' Clara, we'll help you investigate what's going on with the robots.
+:'''Clara:''' Really? But don't you and Miss Pela have something important to do?
+:'''Pela:''' It'll be fine &mdash; we have other people in the Underworld working on the investigation too. Besides, we don't have any clues yet, so we may as well do something useful.
+:'''Clara:''' Ah... thanks a lot! I was worried about handling the robots on my own... but with your help, it should be easy!
+:'''Pela:''' The duty of the Silvermane Guards is to serve the people. So, where can we find these robots? Clara, can you lead the way?
+:'''Clara:''' Of course! Just follow me.
+----
+{{Dialogue End}}
+
+===Ask Clara about the situation in the Robot Settlement{{subst:void|<!--201190205-->}}===
+{{Mission Description|type=adventure|location=Robot Settlement|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Pela and you arrive at the Robot Settlement in the Underworld to investigate this matter.<br />Clara is right in front of you. Go and say hello to her.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Investigate the malfunctioning robot{{subst:void|<!--201190206-->}}===
+{{Mission Description|type=adventure|location=Robot Settlement|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Pela and you arrive at the Robot Settlement in the Underworld to investigate this matter.<br />Seeing how you found no clues, you decide to help Clara with her troubles first.<br />A robot in the Robot Settlement is malfunctioning bizarrely. Go and give it a check-up.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Clara:''' Look, over there! There's definitely something wrong with that robot.
+:'''Pela:''' Looks normal enough on the surface... Let's take a closer look.
+;(Enter battle)
+:{{Список врагов|mode=sent|Automaton Beetle*3; Automaton Hound*1}}
+----
+:'''Pela:''' ...So aggressive. Are all the robots in the settlement like this?
+:'''Clara:''' No, it must be malfunctioning... sorry little robot, but it looks like you're sick. I'm going to take off your shell and give you a checkup.
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_mech_repair"
+	}
+}</pre>
+:{{Black Screen|Clara opened up the robot's casing and conducted an inspection...}}
+:'''Pela:''' Look...
+:'''Clara:''' This component... doesn't seem like it belongs here.
+:'''Pela:''' *gasp* Clara... can I take a look?
+:'''Clara:''' Oh, of course.
+:'''Pela:''' ...
+:'''Pela:''' There's no mistaking it... this component was taken from Gears and Wisdom!
+:{{Диалог|Стрелка}} Wow, what a coincidence.
+::'''Pela:''' I can't believe my own eyes either, but I know that sculpture inside and out.
+:{{Диалог|Стрелка}} Who would do such a depraved thing?
+::'''Pela:''' Who do you think? It's obviously the same people who stole the Meteor Fragment.
+:'''Pela:''' No wonder Wildfire and the Silvermane Guards were never able to find Gears and Wisdom...
+:'''Pela:''' Keeping such a conspicuous piece of art around wouldn't go unnoticed... the thieves must have disassembled it and hidden the parts inside the robots.
+:'''Pela:''' But the best-laid plans of snow mice and men often go awry... they didn't realize the parts would interfere with the robots' systems and cause them to run amok.
+:'''Pela:''' Now we just need to find all the malfunctioning robots and retrieve the sculpture pieces one by one.
+:{{Диалог|Стрелка}} Two birds with one stone.
+::'''Clara:''' I never imagined this would help you solve the case... That's great!
+:{{Диалог|Стрелка}} Sounds labor intensive...
+::'''Pela:''' I'm afraid so. But you'll have Clara and me to keep you company.
+::'''Clara:''' I'll do my best to help, too!
+:'''Pela:''' Let's get to work then, (Trailblazer). We're going to get all the stolen pieces back.
+----
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=1}})
+{{Dialogue End}}
+
+===Collect art pieces{{subst:void|<!--201190208-->}}===
+{{Mission Description|type=adventure|location=Robot Settlement|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Pela and you arrive at the Robot Settlement in the Underworld to investigate this matter.<br />You did not expect to find parts of ''Gears and Wisdom'' inside the malfunctioning robot.<br />Keep looking for other malfunctioning robots and collect the parts.}}
+{{Dialogue Start}}
+
+:<!--1-second delay-->
+:'''Clara:''' The grownups said that the spot where the malfunctioning robots appeared is in this direction...
+:'''Clara:''' Let's go look over there, {{MC|ж=big sister|м=big brother}}.
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=4}})
+:<!--0.5-second delay-->
+:'''Clara:''' The little robots in this area should all be back to normal now...
+:'''Pela:''' We also got some parts of the sculpture back. It's not a lot, but it's a start.
+:'''Clara:''' Let's start looking in the next area.
+
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=4}})
+
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=4}})
+----
+:'''Pela:''' Looks like we've rescued all the robots in this area too.
+:'''Pela:''' *sigh* ...This is taking longer than I imagined. At this pace, it'll take us the entire day to fix all these robots...
+:{{Диалог|Стрелка}} Is it really necessary to find all the parts?
+:{{Диалог|Стрелка}} Maybe we could just say we didn't find the other pieces?
+:'''Pela:''' Uh... I get what you're saying, but...
+:'''Pela:''' ...Alright, alright, I give up! That sculpture has dozens of individual parts &mdash; there's no way we'll recover them all at this rate...
+:'''Pela:''' We just need enough parts to put it back together... Ahem, as for the rest, I'll have replacements made.
+:'''Pela:''' But... you have to promise to keep this a secret. You too, Clara!
+:'''Clara:''' Don't worry! I'll keep your plan super secret, Miss Pela!
+:'''Pela:''' Thanks, Clara⁓ Let's get on to the next area, then.
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' ...Shh, keep your voices down, it's a big one!
+:{{Диалог|Стрелка}} Whispering isn't going to stop a robot from detecting us...
+::'''Pela:''' Ugh, I guess that's true...
+:{{Диалог|Стрелка}} (Quietly) You can say that again!
+:'''Clara:''' Poor little grizzly... there must be a lot of sculpture parts jammed inside.
+:'''Clara:''' Let's go give him a checkup, (Trailblazer).
+----
+{{Dialogue End}}
+
+===Check for issues in the paralyzed Automaton Grizzly{{subst:void|<!--201190215-->}}===
+{{Mission Description|type=adventure|location=Robot Settlement|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Pela and you arrive at the Robot Settlement in the Underworld to investigate this matter.<br />You did not expect to find parts of ''Gears and Wisdom'' inside the malfunctioning robot.<br />There is a paralyzed Automaton Grizzly before you. Check whether its interior contains a part you need to collect.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Return to the museum and re-assemble ''Gears and Wisdom''{{subst:void|<!--201190218-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|update|Pela and you successfully recovered enough parts to re-create what ''Gears and Wisdom'' looks like.<br />Return to the Industrial Exhibit in the museum and re-assemble it.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; TalkSentence_201192402)
+
+
+;(Unused &mdash; Mission_201190218_PropUITrigger)
+:----
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_gear_repair"
+	}
+}</pre>
+::{{Black Screen|You and Pela work strenuously to reassemble Gears and Wisdom...}}
+:<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"Visible": true,
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 28
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300037
+				}
+			}
+		}
+	}
+}</pre>
+::{{Black Screen|You and Pela work strenuously to reassemble Gears and Wisdom...}}
+::'''Pela:''' *sigh* If I'd known how much work that was going to be, I would've enlisted more help...
+::'''Pela:''' But see the final product for yourself &mdash; not too shabby, is it?
+::{{Диалог|Стрелка}} How different is it from the original?
+:::'''Pela:''' Well... as long as you don't pull out the blueprints and spend dozens of hours comparing... this version is virtually indistinguishable from the original. Excellent work, (Trailblazer)!
+::{{Диалог|Стрелка}} Putting it back together was really fun. Let's tear it down and do it again!
+:::'''Pela:''' ...You wanna know what happens to people who vandalize exhibits? I call the Silvermane Guards and they carry you away!
+:::'''Pela:''' Well... as long as you don't pull out the blueprints and spend dozens of hours comparing... this version is virtually indistinguishable from the original. Excellent work, (Trailblazer)!
+::{{Диалог|Стрелка}} I never thought we'd be rebuilding it ourselves...
+:::'''Pela:''' Well... Technically we didn't find all the parts, and if we called in the experts to put it back together, they would have realized...
+:::'''Pela:''' ...but take a look &mdash; as long as you don't pull out the blueprints and spend a dozen hours comparing... this version is virtually indistinguishable from the original. Excellent work, (Trailblazer)!
+::----
+::'''Pela:''' With Gears and Wisdom back, {{Цвет|Ключевой|nobold=1|the Industrial Hall can reopen to the public}}.
+::'''Pela:''' (Trailblazer), if you're still interested in managing the museum... why don't you go talk to Miss Eris about opening up the Industrial Hall?
+::'''Pela:''' In the meantime, I'll follow up on the exhibit theft case. I wonder if any new clues were found over in Svarog's domain...
+::'''Pela:''' I'll let you know if we get any new leads, (Trailblazer). I have a hunch that we're close to uncovering the culprit behind the curtain.
+::----
+----
+:'''Clara:''' Whew... all finished. This robot will reboot on its own after a while. Let's leave him be.
+:'''Clara:''' Miss Pela, here's all the sculpture pieces I found.
+:'''Pela:''' Good work, Clara. Let's see here...
+:'''Pela:''' *sigh* ...We still don't have anywhere near enough.
+:{{Диалог|Стрелка}} I'm... already exhausted...
+::'''Pela:''' To be honest, I'm a little worn out myself.
+:{{Диалог|Стрелка}} Want to keep on fixing robots? I'm ready to help.
+::'''Pela:''' Do we have any other choice? I am starting to feel a little worn out, though...
+:'''Clara:''' I know, how about we go talk to Mr. Svarog?
+:'''Clara:''' He might not be able to round up the robots, but I'm sure he'll have some good ideas.
+:'''Pela:''' Umm... I've never met Svarog before. I heard he's not easy to get along with...
+:'''Clara:''' Don't worry, Mr. Svarog has warmed up to guests a lot more now. I'll explain the whole situation to him. Here, this way.
+----
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=6}})
+{{Dialogue End}}
+
+===Head to Svarog's residence{{subst:void|<!--201190217-->}}===
+{{Mission Description|type=adventure|location=Robot Settlement|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Pela and you arrive at the Robot Settlement in the Underworld to investigate this matter.<br />You did not expect to find parts of ''Gears and Wisdom'' inside the malfunctioning robot.<br />The process of collecting parts are long and arduous... You plan to go find Svarog and ask about the situation.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Clara:''' Huh? Is Mr. Svarog... talking to other children?
+:'''Clara:''' That's not usually like him. I wonder what's going on?
+
+;(По прибытии на место)
+:'''Clara:''' Huh? Is Mr. Svarog... talking to other children?
+:'''Clara:''' That's not usually like him. I wonder what's going on?
+:'''Svarog:''' Clara, you have returned. And you have brought with you the outsider, (Trailblazer), and...
+:'''Svarog:''' Querying database... Silvermane Guard Intelligence Officer Pelageya Sergeyevna. It is a pleasure to meet you.
+:'''Pela:''' ...It's nice to meet you, Mr. Svarog.
+:'''Enthusiastic Boy:''' Hey, big sis Clara is back!
+:'''Introverted Girl:''' Big sis Clara...
+:'''Clara:''' Hello! What brings you two here today?
+:'''Svarog:''' These two young humans found a suspicious batch of components. They wished to deliver them to me and earn my "appreciation." However, the origin of these components is unknown and they have no practical utility. It is difficult to ascertain their value...
+:'''Pela:''' ...Suspicious components? Can we have a look at them?
+:'''Svarog:''' As you wish.
+:You and Pela check out the parts collected by the children.
+:'''Pela:''' Sure enough! These parts are from the museum's sculpture!
+:{{Диалог|Стрелка}} Where did you guys find the parts?
+::'''Pela:''' These kids found way more than we did fixing all those robots... what an embarrassment...
+::They found way more parts than we did...
+:{{Диалог|Стрелка}} They found way more parts than we did...
+:'''Pela:''' Yep, we were outdone by a couple of kids. Kind of embarrassing when you think about it...
+:'''Enthusiastic Boy:''' Me and my sister were playing outside &mdash; we heard some grownups talking about what they were going to do with the parts.
+:'''Enthusiastic Boy:''' It seemed suspicious... They were acting all sneaky!
+:'''Enthusiastic Boy:''' We hid in the shadows and waited until we heard them snoring...
+:'''Introverted Girl:''' And then, and then &mdash; we quietly dragged away the boxes with the parts in, a&mdash;and gave them to Mr. Svarog...
+:'''Pela:''' That was really risky behavior! If those grownups had woken up, things could have gotten really dangerous for you two.
+:'''Introverted Girl:''' *whimper* W&mdash;We were just trying to help...
+:'''Pela:''' ...Oh, don't cry! Uh &mdash; listen, these parts don't belong to Mr. Svarog, but... you two were still a big help to us!
+:{{Диалог|Стрелка}} Quick, Svarog, say something nice!
+::'''Svarog:''' I am unable to determine the logic behind this series of events, but if you insist...
+::'''Svarog:''' ...excellent job, little girl.
+::Yes, you two are real lifesavers!
+:{{Диалог|Стрелка}} Yes, you two are real lifesavers!
+:'''Svarog:''' I am unable to determine the logic behind your actions, but if you managed to help (Trailblazer) and {{MC|ж=her|м=his}} companions...
+:'''Svarog:''' ...then you are indeed worthy of praise, little girl.
+:'''Clara:''' See, I told you Mr. Svarog had warmed up to guests.
+:{{tx}}
+----
+;(Obtain {{Предмет|Dismantled Art Pieces|20|x=25}})
+
+;(Talk to Clara)
+:'''Clara:''' I'm really happy that I got to help you and Miss Pela today, {{MC|ж=big sister|м=big brother}}. Even if it was by accident.
+:'''Clara:''' People in the settlement have been smiling a lot more these days... and that makes me happy too.
+:'''Clara:''' I hope me and Mr. Svarog can make sure it stays that way... And if we ever get the chance, I want to show Mr. Svarog around the Overworld.
+
+;(Talk to Svarog)
+:'''Svarog:''' Welcome, (Trailblazer). What brings you here?
+:{{Диалог|Стрелка}} You've gotten better at getting along with humans.
+:'''Svarog:''' Did you arrive at such a conclusion through direct observation?
+:'''Svarog:''' Clara too has conveyed similar sentiments, though my emotional indices have not experienced any fluctuations.
+:'''Svarog:''' If you and Clara have both reached the same conclusion independently, then there must be some force influencing my behavior which transcends my system's algorithms.
+:'''Svarog:''' This possibility strikes me as peculiar... but not necessarily bad.
+
+;(Talk to Enthusiastic Boy)
+:'''Enthusiastic Boy:''' Did you hear that, Jackie? Mr. Svarog said nice things about you!
+:'''Introverted Girl:''' H&mdash;He said nice things about you too...
+:'''Enthusiastic Boy:''' Look, from now on we have to do good things only &mdash; that way we can become Mr. Svarog's most trustworthy... uh &mdash; second most trustworthy friends, after Clara of course.
+:'''Introverted Girl:''' O&mdash;Okay, I'll do my best...
+
+;(Talk to Introverted Girl)
+:'''Enthusiastic Boy:''' Did you hear that, Jackie? Mr. Svarog said nice things about you!
+:'''Introverted Girl:''' H&mdash;He said nice things about you too...
+:'''Enthusiastic Boy:''' Look, from now on we have to do good things only &mdash; that way we can become Mr. Svarog's most trustworthy... uh &mdash; second most trustworthy friends, after Clara of course.
+:'''Introverted Girl:''' O&mdash;Okay, I'll do my best...
+{{Dialogue End}}
+
+===Speak with Pela and head to the Robot Settlement{{subst:void|<!--201190221-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|update|The sculpture ''Gears and Wisdom'' in the Industrial Exhibit was stolen. Without this key exhibit, the Industrial Exhibit cannot open to the public.<br />To investigate this case, Pela invited you to head to the Robot Settlement with her. Go speak to her once you're prepared.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Opportunity Makes the Thief (II)
+|zhs  = 漫藏诲盗•其二
+|zht  = 漫藏誨盜•其二
+|ja   = 慢蔵誨盗・その2
+|ko   = 견물생심•2
+|es   = La oportunidad hace al ladrón II
+|fr   = L'occasion fait le larron (II)
+|ru   = Плохо не клади, вора в грех не вводи II
+|th   = ของมีค่าล่อตาโจร 2
+|vi   = Cơ Hội Tạo Nên Kẻ Trộm 2
+|de   = Gelegenheit macht Diebe (Teil 2)
+|id   = Kesempatan dalam Kesempitan (Bagian 2)
+|pt   = A Ocasião Faz o Ladrão (II)
+}}
+
+==Change History==
+{{Change History|3.5}}

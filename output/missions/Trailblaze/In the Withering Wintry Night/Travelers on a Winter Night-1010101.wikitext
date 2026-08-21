@@ -1,0 +1,311 @@
+<%-- [PAGE_INFO]
+PageTitle=#Путешественники ночью зимней#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1010101
+|title         = Travelers on a Winter Night
+|image         = <!--Mission Путешественники ночью зимней.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Withering Wintry Night
+|requirements  = [[Trailblaze Mission]] ''[[A Grand Cool Adventure]]'' completed
+|summary       = The three of you land on the surface of Jarilo-VI.<br />You are greeted by an endless expanse of snow and gusts of wind, as well as an unreliable guide with blue hair. Does civilization truly exist in this desolate place?
+|characters    = Dan Heng; Gepard; Man Hiding in Snow; March 7th; Sampo; Soldier; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Outlying Snow Plains]]
+|world         = Jarilo-VI
+|area          = Outlying Snow Plains
+|prev          = A Grand Cool Adventure
+|next          = Everwinter Night
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Adventure Log*3; Condensed Aether*1
+}}
+'''''Travelers on a Winter Night''''' is a [[Trailblaze Mission]] in the chapter [[In the Withering Wintry Night]].
+
+==Steps==
+# Search for traces of civilization in the Snow Plains
+# Investigate the strange snow drift
+# Follow Sampo and head towards Belobog
+# Follow Gepard Landau to the Guardian's residence
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Search for traces of civilization in the Snow Plains{{subst:void|<!--101010120-->}}===
+{{Mission Description|type=trailblaze|location=Outlying Snow Plains|You land on Jarilo-VI safely, but now find yourselves standing in frigid winds among barren snowfields stretching as far as the eye can see.<br />Feeling stuck, you recall Himeko's words: Successful trailblazers must learn to explore, understand, establish, and connect... Maybe this is what exploring looks like.<br />In any event, your options are now clear: Push through the snow or wait for the Stellaron to miraculously appear by itself.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
+	"EnablePropCamera": false,
+	"LockPlayerControl": false,
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 56
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:'''(Trailblazer):''' (What a strange object... It seems really out of place in the Snow Plains.)
+:'''(Trailblazer):''' (Maybe Mr. Yang will know what this is. Let's send a message to ask him.)
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 5000600,
+	"ShowNotice": false
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Dan Heng:''' This place still hasn't been corroded, yet Fragmentum monsters have already made it here.
+:'''Dan Heng:''' I fear the Stellaron may be exerting a significant influence on this world.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' *gasp* Did you see that? I think something's moving...
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_snowland_tips"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''Dan Heng:''' Mm... It's just an ordinary snowdrift. Are you sure you're not seeing things?
+:'''March 7th:''' Of course not, my eyesight's perfect! Come on, let's take a closer look.
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "MainMission_LookatArea"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint"
+	},
+	"AxisOffset": {
+		"X": 0.6,
+		"Y": 0.6
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 4,
+	"MaxAngle": 60,
+	"ExtraFreelook3rdConfig": {
+		"ExportToJson": true,
+		"BaseChangeParam": {
+			"ExportToJson": true,
+			"ZoomRatio": 0.2,
+			"CenterPos": {
+				"X": 0.45,
+				"Y": 0.5
+			},
+			"Time": 1,
+			"ChangeCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+			"RecoveryTime": 3,
+			"RecoveryCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset"
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Investigate the strange snow drift{{subst:void|<!--101010109-->}}===
+{{Mission Description|type=trailblaze|location=Outlying Snow Plains|update|Your group has landed on Jarilo-VI safely, but now find yourselves standing in cold wind among barren snowfields stretching as far as the eye can see.<br />Feeling stuck, you recall Himeko's words: Successful trailblazers must learn to explore, understand, establish, and connect... Maybe this is what exploring looks like.<br />You are surprised by a wriggling snow drift in this silvery world.<br />What else could be more alluring than a moving snow drift? You decide to approach and investigate.}}
+{{Dialogue Start}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 25
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:'''March 7th:''' ...Hey, get outta there or you'll shiver to death.
+:'''March 7th:''' Holding your breath won't help...
+:'''Dan Heng:''' I got this, March.
+:'''Dan Heng:''' If someone's got their head stuck in the sand, or the snow in this case...
+:'''Dan Heng:''' ...they just need a helping hand.
+:'''Man Hiding in Snow:''' Yeowch!
+:'''Man Hiding in Snow:''' My fine fellow, was that really necessary? Is crawling around in the snow a crime these days? I mean, c'mon, surely it doesn't warrant a spearing?
+:'''Man Hiding in Snow:''' ...But then again how can I blame you? I mean, I caught you off guard. It had to happen &mdash; you could even say I deserved it, huh? Besides, I've made a gallant group of new friends as a result, hehe...
+:'''Man Hiding in Snow:''' ...Is Captain Gepard around? H&mdash;He's an old buddy of mine...
+:'''March 7th:''' Who?
+:'''Man Hiding in Snow:''' Wait, you're not Silvermane Guards? Well, why didn't you say so? Turns out we're on the same side after all!
+:'''Man Hiding in Snow:''' Pleasure to meet you, the name's Sampo Koski.
+:{{Диалог|Стрелка}} I'm (Trailblazer).
+:I'm (Trailblazer).
+:'''Sampo:''' Excellent, I'll remember the name. I never thought I'd run into friends from the same line of work out here in this frozen wasteland. *sigh* Business is bad these days, but fear not, Sampo Koski isn't interested in hoarding. There's more than enough treasure to go around, so let's get rich together! Hahaha.
+:'''Sampo:''' Say, why don't we join forces? I have reliable intel the main strength of the Silvermane Guards is being deployed to the front line. This is a golden opportunity...
+:{{Диалог|Стрелка}} What business are you talking about?
+:{{Диалог|Стрелка}} Silvermane Guards?
+:{{Диалог|Стрелка}} The front line?
+:What business are you talking about?
+:{{tx}}
+:'''March 7th:''' ...Hey, get outta there or you'll shiver to death.
+:'''March 7th:''' Holding your breath won't help...
+:'''Dan Heng:''' I got this, March.
+:'''Dan Heng:''' If someone's got their head stuck in the sand, or the snow in this case...
+:'''Dan Heng:''' ...they just need a helping hand.
+:'''Man Hiding in Snow:''' Yeowch!
+:'''Man Hiding in Snow:''' My fine fellow, was that really necessary? Is crawling around in the snow a crime these days? I mean, c'mon, surely it doesn't warrant a spearing?
+:'''Man Hiding in Snow:''' ...But then again how can I blame you? I mean, I caught you off guard. It had to happen &mdash; you could even say I deserved it, huh? Besides, I've made a gallant group of new friends as a result, hehe...
+:'''Man Hiding in Snow:''' ...Is Captain Gepard around? H&mdash;He's an old buddy of mine...
+:'''March 7th:''' Who?
+:'''Man Hiding in Snow:''' Wait, you're not Silvermane Guards? Well, why didn't you say so? Turns out we're on the same side after all!
+:'''Man Hiding in Snow:''' Pleasure to meet you, the name's Sampo Koski.
+:I'm (Trailblazer).
+:'''Sampo:''' Excellent, I'll remember the name. I never thought I'd run into friends from the same line of work out here in this frozen wasteland. *sigh* Business is bad these days, but fear not, Sampo Koski isn't interested in hoarding. There's more than enough treasure to go around, so let's get rich together! Hahaha.
+:'''Sampo:''' Say, why don't we join forces? I have reliable intel the main strength of the Silvermane Guards is being deployed to the front line. This is a golden opportunity...
+:What business are you talking about?
+:Silvermane Guards?
+:The front line?
+:'''Sampo:''' ...Come now, friends. I can understand the mistrust, but there's no need for the charade.
+:'''Sampo:''' Then again, I know the rules, vigilance is the name of the game in our profession. It's my fault for letting my enthusiasm and sincerity get the better of me...
+:'''Sampo:''' Anyway, a meeting like this has to have been written in the stars. Ask me anything you like &mdash; I won't skimp on the details. Still, make it snappy, you're never more than ten feet from a Silvermane Guard...
+:{{Диалог|Разговор}} Is there a settlement nearby?
+::Is there a settlement nearby?
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Why were you hiding in the snow?
+::Why were you hiding in the snow?
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} I have no idea who these Silvermane Guards even are...
+::I have no idea who these Silvermane Guards even are...
+::{{tx}}
+{{Dialogue End}}
+
+===Follow Sampo and head towards Belobog{{subst:void|<!--101010110-->}}===
+{{Mission Description|type=trailblaze|location=Outlying Snow Plains|update|You discover a shivering man who buried himself in the snow drift. If he wasn't looking to take a good nap in the blistering cold then this smiling man is probably trying to hide from something... something other than the few of you.<br />After knowing more about each of you, he offers to bring you to Belobog &mdash; the only human settlement on the surface of this planet. You will most definitely find clues regarding the Stellaron there.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+:'''March 7th:''' So why were you hiding from the Silvermane Guards?
+:'''Sampo:''' Uhh, I was just storing a few relics away from prying eyes, nothing serious. If it weren't for the uncompromising nature of our civil service, there'd be no need for secrecy.
+:'''Sampo:''' So whereabouts are you guys from, anyway? I don't mean to pry or anything, I just care about my friends! No pressure...
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20101011}-->}})
+::{{tx}}
+:;(Enter battle)
+::{{Список врагов|mode=sent|Silvermane Soldier*1; Gepard*1}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20101011}-->}})
+:;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Silvermane Soldier*1; Gepard*1}}
+:'''Gepard:''' ...And the prime suspect? The one with the blue hair?
+:'''Soldier:''' Apologies, Captain! W&mdash;We lost him during the pursuit. We can't find his footprints...
+:'''Gepard:''' *sigh* No matter, we have his accomplices. He'll be close by, plotting his next move.
+:{{Диалог|Стрелка}} We're not his accomplices.
+::We're not his accomplices.
+:{{Диалог|Стрелка}} You might be waiting longer than you think...
+::You might be waiting longer than you think...
+:{{tx}}
+:'''Gepard:''' ...And the prime suspect? The one with the blue hair?
+:'''Soldier:''' Apologies, Captain! W&mdash;We lost him during the pursuit. We can't find his footprints...
+:'''Gepard:''' *sigh* No matter, we have his accomplices. He'll be close by, plotting his next move.
+:We're not his accomplices.
+:'''March 7th:''' Yeah, we'd never team up with someone like him!
+:You might be waiting longer than you think...
+:'''March 7th:''' ...As in, forever.
+:'''March 7th:''' I'm not trying to talk our way out of this, but... we're not friends with that scoundrel. Did you see how fast he ditched us?
+:'''March 7th:''' We rescued him from the snow out of the kindness of our hearts. We had no idea he might be using us to get past you! Are you really dumb enough to fall for his...
+:'''Gepard:''' I'm a captain, not an adjudication panel. As a Belobog citizen, you have the right to defend yourself, but that can only take place under the scrutiny of the Architects, not now.
+:'''Gepard:''' Take them away.
+:'''March 7th:''' But we're not from Belobog!
+:{{Диалог|Стрелка}} Take a look at our clothes.
+::Take a look at our clothes.
+:{{Диалог|Стрелка}} Does our equipment bear any resemblance to yours?
+::Does our equipment bear any resemblance to yours?
+:{{Диалог|Стрелка}} Show him the photos, March.
+::Show him the photos, March.
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetStageItemState",
+	"ItemList": [
+		{
+			"BlockAlias": "Chap01_CloseView_ADV_Area_Snowfield_01_BlockData",
+			"PrefabAlias": "Chap01_LM_Snowfield_landscapeFar_10"
+		}
+	],
+	"EnableState": true
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetStageItemState",
+	"ItemList": [
+		{
+			"BlockAlias": "Chap01_CloseView_ADV_Area_Snowfield_01_BlockData",
+			"PrefabAlias": "Chap01_LM_Snowfield_landscapeFar_10"
+		}
+	]
+}</pre>
+
+;(Fully recovers all allies' HP)
+{{Dialogue End}}
+
+===Follow Gepard Landau to the Guardian's residence{{subst:void|<!--101020101-->}}===
+{{Mission Description|type=trailblaze|location=Administrative District|update|The bad news is that your buddy Sampo has abandoned you and left you to deal with Gepard Landau, the Silvermane Guard Captain, alone. The good news, however, is that the imposing soldier is actually quite flexible.<br />You successfully persuade Gepard by making him believe that you are from a world beyond the sky. He promises to escort you to the Supreme Guardian at Belobog.<br />Everything looked perfect... There's no reason for doubt, all you have to do is follow the Silvermane Guards.}}
+{{Dialogue Start}}
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Travelers on a Winter Night
+|zhs  = 如果在冬夜，一群旅人
+|zht  = 如果在冬夜，一群旅人
+|ja   = もし冬の夜に、旅する人達がいたら
+|ko   = 겨울밤의 여행자 무리
+|es   = Viajeros en una noche de invierno
+|fr   = Voyageurs par une nuit d'hiver
+|ru   = Путешественники ночью зимней
+|th   = นักเดินทางในค่ำคืนฤดูหนาว
+|vi   = Những Nhà Lữ Hành Trong Đêm Đông
+|de   = Reisende an einem Winterabend
+|id   = Pengelana di Malam Musim Dingin
+|pt   = Viajantes em Uma Noite de Inverno
+}}
+
+==Change History==
+{{Change History|3.5}}

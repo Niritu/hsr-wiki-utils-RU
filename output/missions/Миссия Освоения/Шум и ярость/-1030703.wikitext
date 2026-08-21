@@ -11,8 +11,8 @@ PageTitle=##
 |Глава           = Шум и ярость
 |Условия         = Завершена [[Миссия Освоения]] «[[Если в полночь пробудиться]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Пенакония]] — [[Отель «Грёзы» (Мир грёз)]]
-|Мир             = Пенакония
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Если в полночь пробудиться
 |Следующая       = 
 |Награды         = 
@@ -27,39 +27,7 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-;(If Миссия [[Прогулка среди могил]] has not been completed)
 
-:{{Диалог|Изучение}} Осмотреть
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
-:<pre>{
-	"$type": "RPG.GameCore.TalkFigure",
-	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
-}</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
-:<pre>{
-	"$type": "RPG.GameCore.TalkFigure",
-	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
-}</pre>
-:На полу лежит практически исчезнувший смартфон. На экране - неотправленное сообщение... с фотографией двух улыбающихся людей.
-:{{Диалог|Стрелка}} (Вы поднимаете смартфон.)
-<pre>{
-	"$type": "RPG.GameCore.TalkFigure",
-	"Show": false,
-	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.TalkFigure",
-	"Show": false,
-	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
-}</pre>
-:Смартфон полностью растаял в пузыре грёз.
-;(If {{F|FSV_Mission_1030402}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		300001
-	]
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

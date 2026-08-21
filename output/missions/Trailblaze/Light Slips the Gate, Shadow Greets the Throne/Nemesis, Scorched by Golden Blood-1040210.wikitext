@@ -1,0 +1,260 @@
+<%-- [PAGE_INFO]
+PageTitle=#Nemesis, Scorched by Golden Blood#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040210
+|title         = 
+|image         = <!--Mission Nemesis, Scorched by Golden Blood.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Phainon; Trailblazer
+|startLocation = [[Amphoreus]] - [[Entrap the Flame Reaver]]
+|world         = Amphoreus
+|area          = Entrap the Flame Reaver
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*300; Stellar Jade*40; Refined Aether*4; Celestial Ambrosia*120; A Hunt for the Divine*1 { text = ''A Hunt for the Divine'' }; Credit*60 000
+}}
+'''''Nemesis, Scorched by Golden Blood''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Head to the battlefield
+# Join the battle
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+----
+:{{tx}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+
+;(Unused &mdash; 1A)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 104033950,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1301
+}</pre>
+
+;(Unused &mdash; 1B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 104033951,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1302
+}</pre>
+
+;(Unused &mdash; 2A)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 104033954,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1303
+}</pre>
+
+;(Unused &mdash; 2B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 104033955,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1304
+}</pre>
+
+;(Unused &mdash; 3B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 104033956,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1305
+}</pre>
+
+;(Unused &mdash; 4B)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 13,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 104033957,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 1306
+}</pre>
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Heroic souls of Strife, heed my call...
+::I am the Lance of Fury...
+::The agony this world needs!
+::Witness this...
+::A new god has come to Castrum Kremnos.
+;(Cutscene ends)
+----
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 4,
+	"PathwayID": 1,
+	"MotionFlag": "FastRun",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104021002
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 104033952
+		}
+	],
+	"UniqueID": 401
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"PathwayGroupID": 4,
+	"PathwayID": 2,
+	"MotionFlag": "FastRun"
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 104033953
+		}
+	],
+	"UniqueID": 402
+}</pre>
+
+;(Unused &mdash; 104020105kaiche)
+:'''Phainon:''' No way... A Kremnoan?
+{{Dialogue End}}
+
+===Head to the battlefield{{subst:void|<!--104021004-->}}===
+{{Mission Description|type=trailblaze|location=Entrap the Flame Reaver|update|The final battle with the Flame Reaver takes place in Castrum Kremnos. Against this mysterious mighty foe, the Chrysos Heirs must fight with everything they have.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Phainon:''' We're almost there...
+:'''Phainon:''' Did they come to fight on their own accord? Or...?
+{{Dialogue End}}
+
+===Join the battle{{subst:void|<!--104021006-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20421075}-->}})
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::At long last!
+:::Century Gate... Open!
+:::How embarrassing, "Deliverer."
+:::Heh. You didn't come down from the sky?
+:::This city is mine anyway...
+:::So why shouldn't I go through the front door?
+:;(Cutscene ends)
+:----
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareMissionBattleWin","EventID":20421075}-->}})
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Finally.
+:::Mem... It's all yours!
+:::Mem~
+:::Repent in the memories of the dead &mdash;
+:::&mdash; Executioner!
+:;(Cutscene ends)
+:----
+;(Enter battle)
+:{{Список врагов|mode=sent|Flame Reaver of the Deepest Dark*1/+53.8% HP, -12% SPD}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Nemesis, Scorched by Golden Blood
+|zhs  = 仇寇啊，且领受金血烧灼
+|zht  = 仇寇啊，且領受金血燒灼
+|ja   = 仇敵よ、黄金の血に焼かれよ
+|ko   = 원수여, 황금 피의 뜨거운 불길을 받아들여라
+|es   = Némesis, ardiente en sangre dorada
+|fr   = Ennemi juré brûlé par le sang doré
+|ru   = О неприятель, пылающий золотой кровью
+|th   = ศัตรูเอ๋ย จงแผดเผาด้วยโลหิตทอง
+|vi   = Hỡi Kẻ Thù, Hãy Nhận Lấy Máu Vàng Bỏng Rát
+|de   = O Erzfeind, von goldenem Blut versengt
+|id   = Musuh, Rasakan Darah Emas yang Membara
+|pt   = Nêmesis, Abrasados pelo Sangue Dourado
+}}
+
+==Change History==
+{{Change History|3.5}}

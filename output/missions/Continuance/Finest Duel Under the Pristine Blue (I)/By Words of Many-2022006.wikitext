@@ -1,0 +1,260 @@
+<%-- [PAGE_INFO]
+PageTitle=#By Words of Many#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2022006
+|title         = 
+|image         = <!--Mission By Words of Many.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Finest Duel Under the Pristine Blue (I)
+|requirements  = [[Trailblaze Continuance]] ''[[The Quieting of Quillons]]'' completed
+|summary       = In the Seat of Divine Foresight, Jing Yuan invited all of you to commune with General Huaiyan and scrutinize the reason of the Yaoqing and Zhuming generals' presences.<br />At this moment, you realized that, in the midst of quelling the Ambrosial Arbor crisis, the Astral Express had already caught the attention of the Xianzhou Alliance. What surprised you even more was General Huaiyan's attitude in pressing the issue subtly.
+|characters    = Dan Heng; Huaiyan; Jing Yuan; March 7th; Trailblazer; Yanqing; Yunli; Yunli & Yanqing
+|startLocation = [[The Xianzhou Luofu]] - [[Exalting Sanctum]]
+|world         = The Xianzhou Luofu
+|area          = Exalting Sanctum
+|prev          = The Quieting of Quillons
+|next          = March to Mastery: A Star Is Born
+|rewards       = Trailblaze EXP*400; Stellar Jade*50; Traveler's Guide*4; Lost Crystal*8; Credit*30 000
+}}
+'''''By Words of Many''''' is a [[Trailblaze Continuance]] in the chapter [[Finest Duel Under the Pristine Blue (I)]].
+
+==Steps==
+# Head to the Seat of Divine Foresight to see the general
+# Admire the sword
+# Talk to the others at the Seat of Divine Foresight
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Head to the Seat of Divine Foresight to see the general{{subst:void|<!--202200601-->}}===
+{{Mission Description|type=continuance|location=Exalting Sanctum|In the Seat of Divine Foresight, Jing Yuan invited all of you to commune with General Huaiyan and scrutinize the reason of the Yaoqing and Zhuming generals' presences.<br />At this moment, you realized that, in the midst of quelling the Ambrosial Arbor crisis, the Astral Express had already caught the attention of the Xianzhou Alliance. What surprised you even more was General Huaiyan's attitude in pressing the issue subtly.}}
+{{Dialogue Start}}
+:'''March 7th:''' Hey, was that the Yaoqing General who just dropped in out of nowhere? She's so awesome!
+:'''March 7th:''' I mean, when Yunli swung that massive sword, she just casually blocked her attack with ease...
+:'''Yanqing:''' ...And mine, too.
+:'''March 7th:''' Ahem, yeah... But to go up against Yunli is quite impressive, you know? That aura of heroism and grace. It almost makes me want to learn Xianzhou swordplay!
+:'''March 7th:''' You think so too, right, (Trailblazer)?
+:{{Диалог|Стрелка}} Yep, those moves were fabulous!
+::'''Dan Heng:''' I agree. General Feixiao is indeed impressive.
+::'''(Trailblazer):''' Uh... I was talking about Yanqing, actually.
+::Hmmm, that general is totally something else...
+::'''Dan Heng:''' I agree. General Feixiao is indeed impressive.
+::'''March 7th:''' I was actually hoping you'd give Yanqing some praise!
+::Oh, yeah, Xianzhou swordplay is really good! Like really, really good!
+:{{Диалог|Стрелка}} Hmmm, that general is totally something else...
+::'''Dan Heng:''' I agree. General Feixiao is indeed impressive.
+::'''March 7th:''' I was actually hoping you'd give Yanqing some praise!
+::Oh, yeah, Xianzhou swordplay is really good! Like really, really good!
+:{{Диалог|Стрелка}} Oh, yeah, Xianzhou swordplay is really good! Like really, really good!
+:'''March 7th:''' Can't you put a little more enthusiasm into it?
+:'''Yanqing:''' Thanks for the kind words, Miss March. The Wardance is coming up, and I've been chosen to represent the Cloud Knights in the ceremony.
+:'''Yanqing:''' I've had my fair share of defeats lately, and even though I know there are always more skilled swordmasters out there, seeing General Feixiao's skills today has made me feel a bit uneasy again.
+:'''Dan Heng:''' Don't underestimate yourself. After all, generals won't fight in the ring during the Wardance. Just remember the state of mind you had when you single-handedly took on me and Blade, putting life and death aside. With that mindset, you can prevail against most challengers.
+:'''Yanqing:''' I see. Thanks for the advice, Master Dan Heng! By the way, now that today's events are over, General Jing Yuan wants to invite all of you to the Seat of Divine Foresight. He has something important to discuss.
+:{{Диалог|Стрелка}} Something important?
+:'''March 7th:''' I bet it's about how to deal with the generals from the Yaoqing and the Zhuming.
+:{{tx}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+:'''Huaiyan:''' The Marshal ordered me to come to the Xianzhou Luofu, but the document only says: "Attend the Wardance and listen to Feixiao's questioning."
+:{{Диалог|Стрелка}} What does that mean?
+::'''Huaiyan:''' The Marshal is well aware of Jing Yuan's purpose in holding the ceremony and understands the situation he is facing. She mentioned it because she believes both issues are important.
+::Since it's the Marshal's orders, do we need to step aside?
+:{{Диалог|Стрелка}} Since it's the Marshal's orders, do we need to step aside?
+:'''Huaiyan:''' No need for that. You're all important witnesses. The Marshal is well aware of Jing Yuan's purpose in holding the ceremony and understands the situation he is facing. She mentioned it because she believes both issues are important.
+:'''Jing Yuan:''' Thanks for your kindness and sincerity, Elder Huaiyan, but is it appropriate... to tell everyone here about the Marshal's orders?
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10202_F10202003_G45"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Admire the sword{{subst:void|<!--202200603-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+:'''Huaiyan:''' There will be numerous contests and celebrations during the Wardance, and the main event will be the Ringmaster's Challenge.
+:'''Huaiyan:''' The host will dispatch a skilled warrior to take on challengers from all over the cosmos, showcasing the excellent martial arts of the Xianzhou Luofu. When you mentioned that the Astral Express would be attending the ceremony, I thought the high elder of the Luofu would be the ringmaster...
+:'''Jing Yuan:''' You humor me, Elder Huaiyan. The Healer Lady is just a young lady who knows nothing about martial arts. How can I assign her as the ringmaster?
+:'''Huaiyan:''' I'm no match to you when it comes to joking.
+:'''March 7th:''' What's this box for? Why don't you open it, General Huaiyan?
+:'''Huaiyan:''' This sword case is intended for the Wardance's award. It's empty now, but in a few days, a precious sword will be delivered and stored inside.
+:'''Huaiyan:''' I don't mean to boast about our skills, but this sword represents the pinnacle of the Zhuming's craftsmanship. It has a legendary history, full of heroic tales from foreign lands, tales that are too detailed to be summarized in just a few words. Since the delegation delivering the sword hasn't arrived yet, I'll just leave the case here for now.
+:'''Huaiyan:''' I've been wondering... who would be worthy of such a sword? And then it hit me &mdash; I can award it to the champion of the Ringmaster's Challenge! The ceremony's champion is sure to be a perfect match for the sword.
+:'''Huaiyan:''' Moreover, I hear that Yanqing is an excellent swordmaster, and that he will be representing the Luofu as the ringmaster, so it seems like a perfect gift for him.
+:'''Jing Yuan:''' Thank you for your generosity, Elder Huaiyan.
+:'''Yunli:''' If you want to give me a sword, just say the word, Grandpa. No need to beat around the bush.
+:'''Huaiyan:''' You've got confidence, my girl, but I don't think you can best Yanqing.
+:'''Yanqing:''' I know you're all about swords, Miss Yunli. It's just a shame that it's the sword that ultimately chooses its rightful master.
+:'''Yunli:''' Yeah, and even if someone gets their hands on such a precious sword, it'll probably end up in someone else's.
+:'''Yanqing:''' The outcome of our duel at the Alchemy Commission is still up in the air. Since you're interested, why don't you represent the Xianzhou Zhuming and challenge me in the ring?
+:'''Yunli:''' That's exactly what I had in mind! Nobody knows who's gonna come out on top! It could be me, could be someone else... It'll probably be me, but whatever happens... it won't be him!
+:{{Диалог|Стрелка}} Looks like Feixiao was right.
+:{{Диалог|Стрелка}} It'll be either death or disaster when these two clash...
+:'''March 7th:''' Not to be rude or anything... We've been watching their drama. I'm dying to find out who beats who.
+:'''Huaiyan:''' Quiet down! We have other guests here! I've prepared this sword to add some excitement to the ceremony, not to have you two squabble. It's not a good look for the Alliance.
+:'''Huaiyan:''' While you both seem confident that you'll win, you need to remember there can only be one winner and one loser in the ring, which could lead to hard feelings. Actually, I have an idea...
+:'''Huaiyan:''' We don't know who the winner will be, and it might not be either of you, but if you're eyeing that prize, you'll need to work together. I want you to take on an apprentice who will take part in the Wardance and win at least one match.
+:'''Yunli & Yanqing:''' How does that make sense?
+:'''Huaiyan:''' In my humble opinion, while a Cloud Knight is commendable by securing victories, it's even more so to pass on your skills and spread the way of swordplay.
+:'''Huaiyan:''' I'd be greatly pleased if this apprentice could represent the Express in the Wardance by displaying their Cloud Knight flair and prowess.
+:'''Jing Yuan:''' Well, Elder Huaiyan's idea is quite interesting. Imparting swordplay skills requires teamwork, and both the winner and the loser will learn a valuable lesson regardless of the outcome. The question is, whom should the two of them take as an apprentice?
+:'''March 7th:''' Huh? Who? Wait, me...?
+:'''Huaiyan:''' I noticed just now that Miss March seemed quite interested in the outcome of your sword fight, so I thought why not teach her the art of swordplay?
+:'''March 7th:''' ...Huh? Wait! Are you serious, General?
+:'''March 7th:''' Why am I being dragged into this all of a sudden? I've never practiced swordplay before! I'm a total newbie! You really think I can learn it? You'll probably realize I have no hope and give up on me, and that'd be sooo embarrassing!
+:{{Диалог|Стрелка}} Why don't you choose Dan Heng?
+::'''Dan Heng:''' Things are already complicated enough as they are, (Trailblazer).
+::'''Huaiyan:''' He strikes like lightning... Does Mr. Dan Heng really need anyone's guidance?
+::'''Huaiyan:''' As for Miss March... she's like a piece of jade in the rough, just waiting to be shaped.
+::Why don't you choose me?
+::'''Huaiyan:''' Your talent is quite... unique. Are you also interested in swordplay?
+::'''Huaiyan:''' But you know, based on my years of judging people, you don't really need to dive into swordplay to boost your skills... and I doubt there's anyone out there who can really show you the way forward.
+::'''Huaiyan:''' As for Miss March... she's like a piece of jade in the rough, just waiting to be shaped.
+::Just accept your fate, March!
+:{{Диалог|Стрелка}} Why don't you choose me?
+::'''Huaiyan:''' Your talent is quite... unique. Are you also interested in swordplay?
+::'''Huaiyan:''' But you know, based on my years of judging people, you don't really need to dive into swordplay to boost your skills... and I doubt there's anyone out there who can really show you the way forward.
+::'''Huaiyan:''' As for Miss March... she's like a piece of jade in the rough, just waiting to be shaped.
+::Just accept your fate, March!
+:{{Диалог|Стрелка}} Just accept your fate, March!
+:'''(Trailblazer):''' Isn't this a perfect chance for you? I remember you mentioning that you wanted to learn some sword moves.
+:'''March 7th:''' Yeah, I did say that, but this is all happening so quickly, don't you think?
+:'''Huaiyan:''' Miss March is like a piece of jade in the rough, just waiting to be shaped. The Wardance is the perfect opportunity to see what heights she can reach.
+:'''March 7th:''' I appreciate your kind words, General Huaiyan. But won't teaching me swordplay be a waste of Yanqing and Yunli's time? They should be preparing for the ceremony.
+:'''March 7th:''' Plus, I heard that each swordmaster has their own special moves. What if they let something slip while teaching me? If everyone knows each other's tactics, won't that mean everyone is stuck in a stalemate and unable to end their fights during the Wardance?
+:'''Yunli:''' That's considerate of you, March 7th. But don't worry. It'll take you at least a decade of hard training before you can even start learning special moves. No need to freak out – a few Zhuming swordplay tricks will mean you'll be more than equipped.
+:'''March 7th:''' R&mdash;really?
+:'''Dan Heng:''' Looks like March's curiosity has been piqued.
+:'''Huaiyan:''' Heh, the whole point is to know each other's moves. Defeating your opponent in just one move? How boring would that be! Plus, what really decides a swordsman's fate isn't some "special move" &mdash; it's the solid fundamentals.
+:'''Jing Yuan:''' So, Miss Yunli has already agreed. What do you say, Yanqing?
+:'''Yanqing:''' General... I haven't graduated yet. How can I be qualified to teach swordplay to others?
+:'''Yunli:''' So, you're admitting your defeat, huh? If you're not even confident to teach, why don't you let me be the ringmaster instead?
+:'''Jing Yuan:''' Yanqing, teaching an apprentice is also a way of honing your own skills and gaining insights. You've been an apprentice for years, it's about time you looked at swordplay from another perspective.
+:'''Yanqing:''' I see, General. Then count me in!
+:'''Jing Yuan:''' Now that Yanqing has agreed too, it all comes down to Miss March giving her nod.
+:'''Dan Heng:''' It's up to you to make the final decision, March.
+:{{Диалог|Стрелка}} Time for you to become the best swordmaster on the Express.
+::'''(Trailblazer):''' At least that way, I won't have to worry about you accidentally shooting me in the butt all the time.
+::'''March 7th:''' Hey, I've never missed my target!
+::It won't be a walk in the park, that's for sure.
+::'''March 7th:''' Yeah, while I'm smart, learning swordplay sounds like a whole lot of work.
+::'''(Trailblazer):''' It'll be great learning swordplay. That way, I won't have to worry about you accidentally shooting me in the butt all the time.
+::'''March 7th:''' Hey, I've never missed my target!
+::It's all up to you, though.
+:{{Диалог|Стрелка}} It won't be a walk in the park, that's for sure.
+::'''March 7th:''' Yeah, while I'm smart, learning swordplay sounds like a whole lot of work.
+::'''(Trailblazer):''' It'll be great learning swordplay. That way, I won't have to worry about you accidentally shooting me in the butt all the time.
+::'''March 7th:''' Hey, I've never missed my target!
+::It's all up to you, though.
+:{{Диалог|Стрелка}} It's all up to you, though.
+:'''March 7th:''' I understand.
+:'''March 7th:''' Then I'm on board! Thank you for your kindness, General Huaiyan.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10202_F10202003_G46"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Talk to the others at the Seat of Divine Foresight{{subst:void|<!--202200604-->}}===
+{{Dialogue Start}}
+
+;(Talk to Yanqing)
+:'''March 7th:''' Uh... I think we strayed off topic. How did things even get to this point?
+:'''Yanqing:''' Yeah, I brought you here because the general said he had some important matters to discuss. But how in the world... did Yunli and I suddenly become Miss March's swordplay mentors?
+:'''Dan Heng:''' Because... General Huaiyan wants us to stick around on the Luofu for some time.
+:{{Диалог|Стрелка}} But aren't we here to attend the ceremony, anyway?
+:'''Dan Heng:''' But from his point of view, we're no different from all the other tourists who may leave at any time.
+:{{tx}}
+:'''Jing Yuan:''' My apologies. Truth be told, I invited all of you to the ceremony because I wished for you to act as my witnesses. I apologize for not disclosing this information earlier.
+:'''Jing Yuan:''' In the coming weeks, I'll also invite all of you to a meeting with General Feixiao, where you may need to answer her questions and clear up any doubts she might have. So, please be prepared for the meeting.
+:{{Диалог|Стрелка}} No worries. Answering a few questions is no big deal.
+::'''Dan Heng:''' Don't worry, General. No matter what happens, I'm prepared to stay here as the Express' witness, and answer any questions.
+::Perhaps we should just pack up and leave tonight?
+:{{Диалог|Стрелка}} Perhaps we should just pack up and leave tonight?
+:'''March 7th:''' Did we do something wrong? We really did save the Luofu, so why do you want to sneak off like we're fugitives?
+:'''Dan Heng:''' Don't worry, (Trailblazer). No matter what happens, I'll stay here as a witness and answer any questions she might have.
+:'''Jing Yuan:''' Thank you, everyone.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40238,
+	"OnCancel": [],
+	"OnEnter": []
+}</pre>
+:<!--1.2-second delay-->
+:'''March 7th:''' Ah... General Huaiyan's gone. Wait, why does something feel off about what we talked about!?
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = By Words of Many
+|zhs  = 神锋有归，众议难违
+|zht  = 神鋒有歸，眾議難違
+|ja   = 回帰、神の鋒鏑
+|ko   = 귀환한 영웅, 쏠리는 이목
+|es   = Reunión de proezas y leyendas
+|fr   = Discours et discorde
+|ru   = Меч возвращается, тучи сгущаются
+|th   = คมดาบศักดิ์สิทธิ์ที่ไม่อาจต้าน
+|vi   = Anh Tài Trở Lại, Khắp Nơi Luận Bàn
+|de   = Versammlung von Legenden und Heldentaten
+|id   = Berkumpulnya Legenda dan Prestasi
+|pt   = Pelas Palavras de Muitos
+}}
+
+==Change History==
+{{Change History|3.5}}

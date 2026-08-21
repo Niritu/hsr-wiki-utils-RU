@@ -1,0 +1,185 @@
+<%-- [PAGE_INFO]
+PageTitle=#Homecoming, Within Sight Yet Beyond Grasp#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043654
+|title         = 
+|image         = <!--Mission Homecoming, Within Sight Yet Beyond Grasp.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Back to Earth in Evernight
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Dan Heng; Himeko; Pom-Pom; Trailblazer
+|startLocation = [[Astral Express]] - [[Parlor Car]]
+|world         = Astral Express
+|area          = Parlor Car
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Traveler's Guide*5; Lost Crystal*5; Disorder Ambrosia*200; Credit*60 000
+}}
+'''''Homecoming, Within Sight Yet Beyond Grasp''''' is a [[Trailblaze Mission]] in the chapter [[Back to Earth in Evernight]].
+
+==Steps==
+# Head to the Passenger Cabin
+# (Optional) Investigate the Parlor Car
+# Head to the Passenger Cabin
+# Head to March's Room
+# Head to March's room and clear out the intruder
+# Head to the Parlor Car
+# Head to March's room and clear out the intruder
+# Head to the Parlor Car
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to the Passenger Cabin{{subst:void|<!--104365401-->}}===
+{{Mission Description|type=trailblaze|location=Parlor Car|How long has it really been since everything that happened in Amphoreus, and how much time has passed on the Express? It feels like there's still some kind of barrier between you and the Astral Express. What exactly is going on here?<br />In any case, don't forget everyone's concerns when you set out. Let's see how March is doing.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+:'''Dan Heng:''' Are the voices coming from the Passenger Cabin?
+{{Dialogue End}}
+
+===(Optional) Investigate the Parlor Car{{subst:void|<!--104365411-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+----
+:'''Dan Heng:''' ...
+:'''Dan Heng:''' (I always thought this little corner felt odd. (Trailblazer) often got lost in thought here too...)
+:'''(Trailblazer):''' "Memory of Chaos, here I come..."
+:'''Dan Heng:''' (No idea what {{MC|ж=she|м=he}} was always muttering about.)
+:'''Dan Heng:''' (But now that oddness has spread to every corner of the train.)
+
+:{{DIcon|Изучение}} Investigate
+----
+:'''Pom-Pom:''' "Passengers (Trailblazer) and Dan Heng have to return safely..."
+:'''Himeko:''' "...Don't worry, Pom-Pom. They're both experienced Nameless. They'll be just fine."
+:'''Dan Heng:''' ...
+:'''Dan Heng:''' I'm right here. But where did all of you go?
+{{Dialogue End}}
+
+===Head to the Passenger Cabin{{subst:void|<!--104365402-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Passenger Cabin
+
+
+{{Dialogue End}}
+
+===Head to March's Room{{subst:void|<!--104365403-->}}===
+{{Dialogue Start}}
+:{{tx}}
+
+:{{DIcon|Изучение}} March 7th's Room
+----
+:'''Dan Heng:''' ...
+:{{Диалог|Стрелка}} Knock gently.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_main_knock_01"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+::'''Dan Heng:''' March, it's me.
+::...
+::No answer.
+::'''Dan Heng:''' ...Well, there's no other choice.
+::{{Диалог|Стрелка}} Gently push open the door.
+::'''Dan Heng:''' Sorry, March.
+:{{Диалог|Стрелка}} Barge in.
+::'''Dan Heng:''' ...No, that's not polite.
+:{{Диалог|Стрелка}} Knock gently.
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_main_knock_01"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''Dan Heng:''' March, it's me.
+:...
+:No answer.
+:'''Dan Heng:''' ...Well, there's no other choice.
+:{{Диалог|Стрелка}} Gently push open the door.
+:'''Dan Heng:''' Sorry, March.
+{{Dialogue End}}
+
+===Head to March's room and clear out the intruder{{subst:void|<!--104365405-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40461_F40461002_G9"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:'''Pom-Pom:''' Their projections are in the Parlor Car!
+{{Dialogue End}}
+
+===Head to the Parlor Car{{subst:void|<!--104365408-->}}===
+{{Mission Description|type=trailblaze|location=Passenger Cabin|update|Amphoreus is enveloped by the fierce Path of Remembrance, once again cutting off all channels of communication for outsiders. Only I can go back, and I must go back.<br />Find (Trailblazer) and March. We will reunite there.}}
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Parlor Car
+
+{{Dialogue End}}
+
+===Head to March's room and clear out the intruder{{subst:void|<!--104365407-->}}===
+{{Mission Description|type=trailblaze|location=Passenger Cabin|update|How long has it really been since everything that happened in Amphoreus, and how much time has passed on the Express? It feels like there's still some kind of barrier between you and the Astral Express. What exactly is going on here?<br />In any case, don't forget everyone's concerns when you set out. Let's see how March is doing.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Head to the Parlor Car{{subst:void|<!--104365409-->}}===
+{{Mission Description|type=trailblaze|location=Parlor Car|update|Amphoreus is enveloped by the fierce Path of Remembrance, once again cutting off all channels of communication for outsiders. Only I can go back, and I must go back.<br />Find (Trailblazer) and March. We will reunite there.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Homecoming, Within Sight Yet Beyond Grasp
+|zhs  = 归途啊，近在咫尺难抵达
+|zht  = 歸途啊，近在咫尺難抵達
+|ja   = 帰り道、目前にして至らず
+|ko   = 귀로여, 바로 앞인데도 닿을 수 없구나
+|es   = Regreso a casa, tan cerca pero tan lejos
+|fr   = La maison, à portée mais inaccessible
+|ru   = О дорога домой, так близка, но недостижима
+|th   = หนทางกลับเอ๋ย ห่างแค่เอื้อมทว่าไกลแสนไกล
+|vi   = Hỡi Đường Về, Gần Trong Gang Tấc Nhưng Khó Mà Chạm Tới
+|de   = O Heimkehr, in Sicht und doch unerreichbar
+|id   = Jalan Pulang, Begitu Dekat Tapi Tak Tergapai
+|pt   = Retorno ao Lar, Tão Próximo e Ainda Tão Distante
+}}
+
+==Change History==
+{{Change History|3.6}}

@@ -1,0 +1,89 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1030703
+|title         = 
+|image         = <!--Mission .png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = The Sound and the Fury
+|requirements  = [[Trailblaze Mission]] ''[[Should One Awaken at Midnight]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Trailblazer
+|startLocation = [[Penacony]] - [[The Reverie (Dreamscape)]]
+|world         = Penacony
+|area          = The Reverie (Dreamscape)
+|prev          = Should One Awaken at Midnight
+|next          = 
+|rewards       = 
+}}
+'''''''''' is a [[Trailblaze Mission]] in the chapter [[The Sound and the Fury]].
+
+==Steps==
+
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+;(If {{Mission|A Walk Among the Tombstones|showChapter=0}} has not been completed)
+
+:{{DIcon|Изучение}} Investigate
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
+}</pre>
+:A half-faded cell phone lies on the floor, capturing an unsent message... with a snapshot of two people wearing smiles.
+:{{Диалог|Стрелка}} (You pick it up)
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_f.png"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/Mission_1030701_1_m.png"
+}</pre>
+:The cell phone has completely dissipated into a dream bubble.
+;(If {{F|FSV_Mission_1030402}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==Change History==
+{{Change History|3.5}}

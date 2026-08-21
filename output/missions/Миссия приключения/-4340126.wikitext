@@ -10,14 +10,14 @@ PageTitle=##
 |Событие         = 
 |Глава           = 
 |Условия         = Завершена [[Продолжение Освоения]] «[[Волчий побег, неизвестный исход]]»
-|Персонажи       = Пепеши; Первопроходец; Эрудроид
-|СтартЛокация    = [[Лофу Сяньчжоу]] — [[Дом кандалов]]
-|Мир             = Лофу Сяньчжоу
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Журнал приключений*2; Кредиты*5 000
 }}
-'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -27,202 +27,7 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-;(If {{F|MissionCV-2022002-2}} is undefined 1)
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012601,
-	"MissionCustomValue": {
-		"Name": "OldValue_0",
-		"ValidValueParamList": [
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	"CustomValue": 1
-}</pre>
-;(If {{F|MissionCV-2022002-2}} is not undefined 1)
-:;(If {{F|MissionCV-2022002-2}} is undefined 2)
-::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012601,
-	"MissionCustomValue": {
-		"Name": "OldValue_0",
-		"ValidValueParamList": [
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	"CustomValue": 2
-}</pre>
-:;(If {{F|MissionCV-2022002-2}} is not undefined 2)
-::;(If {{F|MissionCV-2022002-2}} is undefined 3)
-:::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012601,
-	"MissionCustomValue": {
-		"Name": "OldValue_0",
-		"ValidValueParamList": [
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	"CustomValue": 3
-}</pre>
-::;(If {{F|MissionCV-2022002-2}} is not undefined 3)
-:::;(If {{F|MissionCV-2022002-2}} is undefined 4)
-::::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012601,
-	"MissionCustomValue": {
-		"Name": "OldValue_0",
-		"ValidValueParamList": [
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	"CustomValue": 4
-}</pre>
-:::;(If {{F|MissionCV-2022002-2}} is not undefined 4)
-::::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012601,
-	"MissionCustomValue": {
-		"Name": "OldValue_0",
-		"ValidValueParamList": [
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	"CustomValue": 1
-}</pre>
 
-:{{Диалог|?}} Слушать
-:'''Пепеши:''' Не переживай, мы не собираемся тебе мстить. Во-первых, мы же в тюрьме, за нами наблюдают Призрачные стражницы. Во-вторых, нам явно тебя не победить.
-::{{Диалог|Стрелка}} Так вы хотите меня побить?
-:::'''Эрудроид:''' Это нормальная реакция в данной ситуации, тебе так не кажется?
-::{{Диалог|Стрелка}} Вы реально забрались на Древо амброзии?
-:::'''Эрудроид:''' Угадай с трёх раз, как мы оказались в Доме кандалов?
-::'''Пепеши:''' Твоя розоволосая подруга нас предупреждала, но мы всё равно не удержались.
-::'''Эрудроид:''' Мы ещё спросили у кого-то в Комиссии по алхимии, как нам забраться на Древо, а оказалось, что он работал в Комиссии десяти владык.
-::'''Пепеши:''' На Лофу Сяньчжоу опасности и впрямь подстерегают со всех сторон.
-::{{Диалог|Стрелка}} Может, мне сходить объяснить ситуацию?
-:::'''Эрудроид:''' Не стоит. Они уже удостоверились, что мы не Искатели эликсира, и скоро нас отпустят.
-::{{Диалог|Стрелка}} А на Древо амброзии вы так и не забрались?
-:::'''Эрудроид:''' Древо запечатано народом видьядхара, нам даже приблизиться к нему в жизни сил бы не хватило...
-::'''Пепеши:''' Но заключение в Доме кандалов - тоже неплохой опыт. Мы собрали здесь хороший материал для разработки Мира грёз!
-::'''Эрудроид:''' Точно. Пусть в Комиссии десяти владык мне и сказали, что собираются стереть все воспоминания, касающиеся Дома кандалов...
-::'''Пепеши:''' Пусть и не совсем намеренно, но тебе удалось вдохнуть новую жизнь в наше творчество. Я могу звать тебя своей музой.
-::'''Эрудроид:''' Сценарий почти готов. История о банкире-борисинце, которого несправедливо посадили в тюрьму, где он обретает второе дыхание и в итоге сбегает из Дома кандалов, желая очистить своё имя.
-::'''Пепеши:''' Из грязи в князи - на Пенаконии любят такие истории, хе-хе!
-::{{Диалог|Стрелка}} Только не говорите работникам Комиссии десяти владык.
-:::'''Пепеши:''' Да, спасибо за напоминание... Я уже собиралась пойти договариваться с ними о сотрудничестве по части путешествий по историческим местам.
-::{{Диалог|Стрелка}} До чего знакомый сюжет...
-:::'''Эрудроид:''' У всех хороших сценариев есть что-то общее. Я решил назвать его «Побег из Дома кандалов».
-::'''Пепеши:''' Осталась пара формальностей, и нас выпустят. А оставшееся время мы будем чинно наслаждаться отпуском.
-::'''Эрудроид:''' До встречи.
-:'''Пепеши:''' Осталась пара формальностей, и нас отсюда выпустят.
-::'''Эрудроид:''' Я больше никогда не буду пытаться залезть на Древо амброзии.
-<pre>{
-	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
-	"GroupID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 200
-		}
-	},
-	"DistrictID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 1
-		}
-	},
-	"DisableAfterTrigger": true,
-	"TickInterval": 0.1,
-	"OnEnter": [
-		{
-			"$type": "RPG.GameCore.TriggerGroupEvent",
-			"EventName": {
-				"Value": "TriggerPerformance_434012601"
-			}
-		}
-	]
-}</pre>
-;(Unused &mdash; TriggerPerformance_434012601)
-<pre>{
-	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
-	"ExtendTime": 1
-}</pre>
-::{{tx}}
-::'''Пепеши:''' С-стой! Эй, {{MC|ж=девушка|м=парень}}!
-::{{Диалог|Стрелка}} Ты это мне?
-::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012602,
-	"MissionCustomValue": {
-		"Index": 1,
-		"Name": "OldValue_1",
-		"isLocal": true,
-		"ValidValueParamList": [
-			1,
-			2
-		]
-	},
-	"CustomValue": 1
-}</pre>
-::{{Диалог|Выход}} Ничего не слышу...
-::<pre>{
-	"$type": "RPG.GameCore.SetMissionCustomValue",
-	"SubmissionID": 434012602,
-	"MissionCustomValue": {
-		"Index": 1,
-		"Name": "OldValue_1",
-		"isLocal": true,
-		"ValidValueParamList": [
-			1,
-			2
-		]
-	},
-	"CustomValue": 2
-}</pre>
-::{{tx}}
-:;(If {{F|MissionCV-4340126-1}} is undefined 1)
-::<pre>{
-	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
-	"SwitchCharacterAnchorConfig": {
-		"IsLocalPlayer": true,
-		"CharacterUniqueName": "LocalPlayer",
-		"AreaName": {
-			"Value": "LevelArea_P20241_F20241001_G200"
-		},
-		"AnchorName": {
-			"Value": "Anchor1"
-		}
-	}
-}</pre>
-:;(If {{F|MissionCV-4340126-1}} is not undefined 1)
-::<pre>{
-	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
-	"SwitchCharacterAnchorConfig": {
-		"IsLocalPlayer": true,
-		"CharacterUniqueName": "LocalPlayer",
-		"AreaName": {
-			"Value": "LevelArea_P20241_F20241001_G200"
-		},
-		"AnchorName": {
-			"Value": "Anchor3"
-		}
-	}
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

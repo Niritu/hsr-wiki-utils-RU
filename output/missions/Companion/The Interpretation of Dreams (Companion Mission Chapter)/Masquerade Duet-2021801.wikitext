@@ -1,0 +1,110 @@
+<%-- [PAGE_INFO]
+PageTitle=#Masquerade Duet#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2021801
+|title         = 
+|image         = <!--Mission Masquerade Duet.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = The Interpretation of Dreams (Companion Mission Chapter)
+|requirements  = [[Trailblaze Mission]] ''[[Whodunit]]'' completed
+|summary       = In the memories left behind by Black Swan, you experienced deeply "Miss Sparkle's Detective Theater."<br />Best not to nitpick at the intricacies of the plan she thought so hard to come up with, lest her cane knocks on your doors at unexpected times.
+|characters    = Dr. Edward; Trailblazer
+|startLocation = [[Penacony]] - [[Golden Hour]]
+|world         = Penacony
+|area          = Golden Hour
+|prev          = 
+|next          = ???
+|rewards       = Trailblaze EXP*600; Stellar Jade*100; Traveler's Guide*6; Starfire Essence*3; Celestial Section*3; "Challenge to the Reader"*1 { text = "Challenge to the Reader" }; Credit*60 000
+}}
+'''''Masquerade Duet''''' is a [[Companion Mission]] in the chapter [[The Interpretation of Dreams (Companion Mission Chapter)|The Interpretation of Dreams]].
+
+==Steps==
+# Speak with Dr. Edward
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+{{Dialogue End}}
+
+===Speak with Dr. Edward{{subst:void|<!--202180102-->}}===
+{{Mission Description|type=companion|location=Golden Hour|update|You receive a message from Dr. Edward. Dr. Edward has invited you to the Dreamscape Sales Store to experience a dream left for you by a lady named "Black Swan." Of course, you know who Black Swan is, but cannot think why she would have left a dream for you. Go to the Dreamscape Sales Store to see. Perhaps you will only receive your answer once you experience it for yourself.}}
+{{Dialogue Start}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:'''Dr. Edward:''' Trailblazers from the Astral Express &mdash; Welcome to Dreamscape Sales Store!
+:{{Диалог|Стрелка}} Is that usually how you welcome customers?
+::'''Dr. Edward:''' Please excuse me. I struggle to think of an appropriate way of addressing such esteemed guests as yourselves.
+::Long time no see, ol' big eye.
+:{{Диалог|Стрелка}} Long time no see, ol' big eye.
+:'''Dr. Edward:''' Long time no see, diamond in the rough.
+:'''Dr. Edward:''' You must be here to experience those dream bubbles. I've already made the necessary preparations. Be careful, though &mdash; we did pass the safety inspections stipulated by "Article 027-Damaged Faris" and "Article 076-Real Wasteland..."
+:'''Dr. Edward:''' ...However, this dreamscape will feature unfiltered and unpolished fresh memories. It will make for a very vivid experience.
+:'''Dr. Edward:''' Veteran gamers call this type of dream a "thrill-dream" &mdash; I don't know if you're into that kind of thing? If you feel any discomfort, please leave the dreamscape immediately and seek professional medical help.
+:'''Dr. Edward:''' ...Luckily, I just so happen to be an excellent doctor, albeit a psychiatric one, haha! Let us begin. Please close your eyes, and rest your forehead on the dream bubble.
+:{{Диалог|Стрелка}} (Touch the dream bubble)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180103,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} I'm not so sure about this...
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202180103,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:{{tx}}
+;(If {{F|MissionCV-2021801-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43304,
+	"OnCancel": []
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Masquerade Duet
+|zhs  = 假面双人舞
+|zht  = 假面雙人舞
+|ja   = 仮面幻想曲
+|ko   = 가면의 듀엣
+|es   = Dueto enmascarado
+|fr   = Mascarade à deux
+|ru   = Вальс на маскараде
+|th   = คู่เต้นรำสวมหน้ากาก
+|vi   = Vũ Điệu Mặt Nạ Đôi
+|de   = Maskerade im Duett
+|id   = Tarian Topeng Duet
+|pt   = Dueto Mascarado
+}}
+
+==Change History==
+{{Change History|3.5}}

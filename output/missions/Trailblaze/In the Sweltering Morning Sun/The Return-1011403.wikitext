@@ -1,0 +1,170 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Return#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1011403
+|title         = 
+|image         = <!--Mission The Return.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Sweltering Morning Sun
+|requirements  = [[Trailblaze Mission]] ''[[Roads to the Past Have Long Been Closed]]'' completed
+|summary       = You defeat Cocolia, the Supreme Guardian corrupted by the Stellaron, diminishing its impact. The news of your victory shall be spread throughout Belobog.
+|characters    = Bronya; Dan Heng; March 7th; Seele; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Everwinter Hill]]
+|world         = Jarilo-VI
+|area          = Everwinter Hill
+|prev          = Roads to the Past Have Long Been Closed
+|next          = In the Dangerous Muddy Swamp
+|rewards       = Trailblaze EXP*1 200; Stellar Jade*80; Traveler's Guide*5; Refined Aether*4; Enigmatic Ectostella*2; "Everwinter"*1 { text = "Everwinter" }; "Fate"*1 { text = "Fate" }
+}}
+'''''The Return''''' is a [[Trailblaze Mission]] in the chapter [[In the Sweltering Morning Sun]].
+
+==Steps==
+# Find a way to escape this strange space and return to reality
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Find a way to escape this strange space and return to reality{{subst:void|<!--101140301-->}}===
+{{Mission Description|type=trailblaze|location=Everwinter Hill|You wake up in a strange place surrounded by nebulous stars, seemingly enveloped by an amber-colored destiny.<br />The last thing you remember is being pierced by Cocolia's lance... Could this be the afterlife? But your mind is still very clear and your body still has strength... These resounding voices in your head seem to be guiding you, telling you that you are still alive.<br />Your companions might still be in fierce combat with Cocolia. You have to find a way to get back to their side, no matter what.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.ChangeTrackingMission",
+	"TrackingMainMissionID": 1011403
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::Let me go &mdash; I gotta... I have to get to her!
+::The Stellaron...
+::...promised us the future!
+::It will...
+::...engulf everything!
+::Mother!
+::Stop!
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E1",
+	"SubMissionID": 101140300
+}</pre>
+:'''Seele:''' It's over...
+:'''Bronya:''' ...
+:'''Bronya:''' Mother... Did you wake up from that dream...?
+:'''March 7th:''' Wow... that was a tough trailblazing expedition. Dan Heng, (Trailblazer) &mdash; we made it! But, uh, what are we gonna do with the Stellaron? It's usually Mr. Yang who handles it...
+:'''Dan Heng:''' I've informed Himeko and Mr. Yang already. They'll seal the Stellaron.
+:'''March 7th:''' Nice! The crisis on this world is basically over, right?
+:'''Dan Heng:''' ...
+:'''Dan Heng:''' ...The storm still rages on.
+:'''Dan Heng:''' Now that the Stellaron is sealed, the Eternal Freeze will slowly recede. The Fragmentum won't aggressively expand anymore, but nor will it disappear. Jarilo-VI has a chance to return to life, but it will take time...
+:'''Dan Heng:''' It will depend on the efforts of the people here.
+:'''Bronya:''' Thank you... all of you.
+:{{Диалог|Стрелка}} Don't be too hard on yourself.
+::'''Bronya:''' Thank you (Trailblazer)... I&mdash;I'm fine. Don't worry.
+::What do you want to do now?
+::'''Bronya:''' This victory is only the beginning for Belobog.
+::Can't think of anything funny to say...
+:{{Диалог|Стрелка}} What do you want to do now?
+::'''Bronya:''' This victory is only the beginning for Belobog.
+::Can't think of anything funny to say...
+:{{Диалог|Стрелка}} Can't think of anything funny to say...
+:'''Bronya:''' Hehe, start thinking, we're going to need all the humor we can get... At least the biggest hurdle is behind us.
+:'''Bronya:''' There is still much to do... The people will have felt the effects of the Engine of Creation. There are so many questions to answer, so many truths to reveal...
+:'''Bronya:''' I don't know whether I can get the people to accept all this...
+:{{Диалог|Стрелка}} Tell everyone the truth.
+::'''Bronya:''' Can I really do that...?
+::'''Bronya:''' Tell everyone about Mother's true motives... about a lie perpetrated for 700 years...
+::'''Seele:''' No... No, no way.
+::Cover up the truth...
+:{{Диалог|Стрелка}} Cover up the truth...
+:'''Bronya:''' You mean...
+:'''Bronya:''' ...Use a lie to conceal a lie. But if I do that, then...
+:'''Seele:''' You have to, Bronya.
+:'''Bronya:''' ...Seele?
+:'''Seele:''' I... I don't know how to explain it... but I don't think there's any other way.
+:'''Seele:''' In the Underworld, we tell the kids "things will be better tomorrow." Everyone knows it's a lie, but it gets them to sleep with some hope.
+:'''Seele:''' Can you imagine the consequences if we told the people what happened here? They'd be devastated. If we can't trust the guardians, who &mdash; or what &mdash; can we trust...?
+:'''Bronya:''' ...
+:'''Bronya:''' ...Mother died to preserve Belobog.
+:'''March 7th:''' ...What?
+:'''Bronya:''' The visitors from beyond the sky told her the secret of the Stellaron. She knew that Alisa Rand, the first supreme guardian, had failed to destroy it...
+:'''Bronya:''' ...and yet she decided to challenge its power &mdash; a power beyond human comprehension. Supreme Guardian Cocolia sacrificed herself to dispel the dark clouds enveloping this city.
+:'''Bronya:''' ...From here on out, that's the "truth" the world will hear. What do you think?
+:'''Seele:''' It keeps the hope of preservation alive, at least.
+:'''Dan Heng:''' It's logical... and hard to disprove.
+:'''March 7th:''' Why do we have to lie? ...I'm abstaining &mdash; I like telling the truth. But... I get what you're trying to do.
+:{{Диалог|Стрелка}} Agreed &mdash; let's use this version.
+::'''Bronya:''' Thank you for understanding, (Trailblazer).
+::A lie will always be a lie...
+::'''Bronya:''' I understand, but... I must protect those that believe in the Architects...
+::...Maybe we include some of the cool stuff we did?
+:{{Диалог|Стрелка}} A lie will always be a lie...
+::'''Bronya:''' I understand, but... I must protect those that believe in the Architects...
+::...Maybe we include some of the cool stuff we did?
+:{{Диалог|Стрелка}} ...Maybe we include some of the cool stuff we did?
+:'''Bronya:''' Sorry... I'll be sure to make it up to you.
+:'''Bronya:''' For many people, mother was an outstanding guardian... The whole truth will live on in my mind &mdash; all the mistakes, madness, evil, and dreams therein... I will be the one to carry that burden.
+:{{tx}}
+----
+:'''Bronya:''' Seele, can you tell everyone in the Underworld that the Stellaron has been sealed? Tell them the blockade will soon be over... and they'll breathe freely again soon.
+:'''Seele:''' Of course, leave it to me &mdash; Nat's probably getting anxious about the delay.
+:'''Bronya:''' While you do that, I'll head back to the Administrative District. I need to tell Gepard... Serv&mdash; ah...
+:'''Seele:''' ...Are you okay!?
+:'''March 7th:''' What's wrong, Bronya? Do you feel sick?
+:'''Bronya:''' I'm... fine. I need to... hurry...
+:'''March 7th:''' She's exhausted! Quick, we need to think of something... (Trailblazer), help me out here!
+:{{Диалог|Стрелка}} Seele, take Bronya back with you.
+:{{Диалог|Стрелка}} We'll go to the Underworld and pass on the message.
+:'''Seele:''' Right... I almost forgot, you're still wanted by the guards... I might be an Underworlder, but at least I don't stand out as much as you guys.
+:'''Seele:''' That's settled then. I'll leave Nat to you. Remember to keep the secret &mdash; for Bron&mdash; No, for Belobog's sake.
+----
+:'''March 7th:''' So, (Trailblazer), wanna tell us what happened back there? Don't think you can just reappear on the battlefield with a cool weapon in your hands and skip the story.
+:{{Диалог|Стрелка}} I saw Qlipoth the Preservation...
+::'''March 7th:''' Uh... you drew the Amber Lord's gaze? Right at that moment? That's too much of a coincidence...
+:{{Диалог|Стрелка}} That's the second time I've sacrificed myself for you, March...
+::'''March 7th:''' Um... thank you? That's not answering my question though...
+:{{Диалог|Стрелка}} All of a sudden, I was infused with a great and terrible power...!
+::'''March 7th:''' Be serious! I really wanna know...
+:'''Dan Heng:''' (Trailblazer) probably doesn't know what happened either. This wouldn't be the first time... Something similar happened when we faced the Doomsday Beast on the space station. Remember that glance from Nanook?
+:'''Dan Heng:''' Originally, we thought it was because the Stellaron was linked to the Destruction, but now it seems to be more than that. We might need to speak with Mr. Yang to understand what's going on.
+:'''Dan Heng:''' Let's focus on the business at hand first. We shouldn't disrupt Himeko and Mr. Yang while they're dealing with the Stellaron. Let's talk once we're back on the Express.
+:'''March 7th:''' Mm, you're right, we need to finish what we started... Let's hurry up and find Natasha.
+----
+
+;(Talk to Seele)
+:'''Seele:''' Are you alright? Are you hurt anywhere? Do you feel dizzy? Tired? Or...
+:'''Bronya:''' ...I don't know, Seele. I feel... cold... all over.
+:'''Seele:''' Isn't that normal? This place is freezing... *sneeze* Ugh...
+:'''Bronya:''' Let's get out of here before you catch a cold too.
+:'''Seele:''' Don't worry, I'm a tough cookie. Here, hold on to me... let's go.
+----
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Return
+|zhs  = 回归
+|zht  = 回歸
+|ja   = リターンズ
+|ko   = 복귀
+|es   = El regreso
+|fr   = Le retour
+|ru   = Возвращение
+|th   = หวนคืน
+|vi   = Trở Lại...
+|de   = Die Rückkehr
+|id   = Kembali
+|pt   = O Retorno
+}}
+
+==Change History==
+{{Change History|3.5}}

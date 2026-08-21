@@ -1,0 +1,305 @@
+<%-- [PAGE_INFO]
+PageTitle=#Lamentations, Bring Not Empty Tears#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040206
+|title         = 
+|image         = <!--Mission Lamentations, Bring Not Empty Tears.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = [[Trailblaze Mission]] ''[[Grove, Wherefore Are the Wise Silent]]'' completed
+|summary       = After a fierce battle, you safely returned to Okhema with Anaxa and Cerces' Coreflame, ready to report back to Aglaea. Prior to seeing Aglaea, Anaxa asked to visit the families of those lost to the black tide.
+|characters    = Anaxa; Castorice; Dan Heng; Guard; Old Fabio; Old Man With Slender Frame; Titus; Trailblazer; Trianne; Woman With Gentle Expression; Young Man
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = Grove, Wherefore Are the Wise Silent
+|next          = Memories, Veiled in Blazing Mist
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Refined Aether*6; Lost Crystal*6; Celestial Ambrosia*240; Dusk of Rationality*1 { text = ''Dusk of Rationality'' }; Credit*80 000
+}}
+'''''Lamentations, Bring Not Empty Tears''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Report back to Aglaea
+# Send condolences to the victims' families
+# Report back to Aglaea
+# Speak with Castorice and Anaxa
+# Return to your private bath chamber and end this day
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Report back to Aglaea{{subst:void|<!--104020610-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|Following intense combat, (Trailblazer)'s group escorts Anaxa back to Okhema to report to Aglaea.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::Shortly after, in Okhema
+::'''Castorice:''' Phew... That was a close call. Thank goodness that we returned to Okhema unharmed.
+::{{Диалог|Стрелка}} Okhema, your baseballer is back!
+::{{Диалог|Стрелка}} I never want to leave the holy city again.
+::'''Trianne:''' Ugh... Little Cas, my head... It still hurts.
+::'''Trianne:''' Sorry... I know you... told me... not to open the gate...
+::'''Castorice:''' Please don't blame yourself, Lady Trianne. If it weren't for you, we would've already met our end at the Grove.
+::'''Trianne:''' I feel awful... I need to go back... to get some rest...
+::'''Castorice:''' Lady Trianne, you haven't been well since you woke up... Are you sure you can make it back on your own?
+::'''Anaxa:''' All this noise and commotion... Okhema hasn't changed a bit, has it?
+::'''Castorice:''' Are you... Professor Anaxa?
+::'''Anaxa:''' There's no need for doubt. The Titan no longer speaks. It is I, Anaxagoras of the Nousporists.
+::'''Castorice:''' ...Indeed. You are the only one who would refer to yourself like that.
+::'''Anaxa:''' ...
+::'''Castorice:''' ...Professor, let me be frank: The mission Lady Aglaea entrusted us is to search for survivors, uncover the truth about the disaster at the Grove, and... retrieve the Coreflame of {{Rubi|Cerces|Reason Titan}}.
+::'''Anaxa:''' That does not surprise me. And now, I'm a survivor who witnessed the entirety of the disaster, as well as the defenseless bearer of a Coreflame.
+::'''Anaxa:''' Are you going to bring me to Aglaea to fulfill your duty?
+::'''Castorice:''' That is indeed my duty, but I prefer not to present you to her as a captive or spoil of battle.
+::'''Anaxa:''' Fine. There's no need to make your life difficult. I'm not against meeting that woman.
+::'''Anaxa:''' But I have some things to take care of first. The families of some of my fellow Grove scholars live in the holy city. Before we meet Aglaea... I want to visit them.
+::{{Диалог|Стрелка}} Why do you have to do it before meeting Aglaea?
+::'''Castorice:''' Because Lady Aglaea... will probably be against it.
+::{{tx}}
+
+;(Talk to Old Man With Slender Frame)
+:'''Old Man With Slender Frame:''' Hello, young ones. Is there anything I can help you with?
+:'''Anaxa:''' Are you the father of Cynane and Artakama?
+:'''Old Fabio:''' Ah, yes. Did my daughters cause trouble at school again...?
+:'''Old Fabio:''' Alas, forgive this old brain of mine. Both of my daughters graduated long ago, and they are now scholars at the Grove. As I get older, memories from years past tend to blend together.
+:'''Anaxa:''' ...
+:'''Old Fabio:''' What's the matter, young one? Why so quiet? Did my daughters really get into some trouble?
+:'''Old Fabio:''' If they refuse to apologize, just let me know. Their old dad can still talk some sense into them...
+:'''Castorice:''' ...What should we do? I really can't tell him...
+:{{Диалог|Стрелка}} Don't ask me. I'm getting all teary-eyed as well...
+:'''Anaxa:''' ...Mr. Fabio, the black tide... took Cynane and Artakama.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Old",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100030289
+		}
+	]
+}</pre>
+
+;(Talk to Woman With Gentle Expression)
+:'''Woman With Gentle Expression:''' Hello... and you are...?
+:'''Anaxa:''' Hello. If I'm not mistaken, you are Callinicus' wife, right?
+:'''Woman With Gentle Expression:''' Yes. Oh, are you a messenger? No wonder I haven't heard any news for so long. There's been a change in personnel, hasn't there?
+:'''Anaxa:''' Ma'am, Callinicus passed away a few days ago defending the Grove against the black tide.
+:'''Woman With Gentle Expression:''' ...
+:'''Woman With Gentle Expression:''' So... did he manage to defend the Grove?
+:'''Castorice:''' ...Huh?
+:{{Диалог|Стрелка}} This is the first thing you ask after hearing of his passing...?
+:'''Anaxa:''' Yes. He managed to protect {{Rubi|Cerces'|Reason Titan}} Coreflame at the cost of his life.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Lady",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100020000
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Send condolences to the victims' families{{subst:void|<!--104020609-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|Prior to seeing Aglaea, Anaxa asks to visit the families of those lost to the black tide.}}
+{{Dialogue Start}}
+
+;(Talk to Young Man)
+:'''Young Man:''' What's wrong? I'm busy. There's a lot going on in the city, and I've got my hands full...
+:'''Castorice:''' Mister, we're sorry to bother you, but...
+:'''Young Man:''' ...Wait, Lady Castorice? Did Lady Aglaea send you because of some mistake I made at work?
+:'''Anaxa:''' Keep your cool, Titus. I'm Anaxagoras from the Grove of Epiphany and a colleague of your father, Old Titus.
+:'''Anaxa:''' A few days ago... your father passed away.
+:'''Titus:''' Wait, what? My old man died?
+:'''Titus:''' ...
+:'''Titus:''' Heh... That's no shocker. At his age, he was due for the River of Souls any time.
+:{{Диалог|Стрелка}} How can you say that!? He's your...
+:'''Titus:''' Heh... Just up and left me behind, that old man...
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"StoryAvatarID": "NPC_Male",
+			"NormalizedTransitionDuration": 0,
+			"StoryMotionID": 100010237
+		}
+	]
+}</pre>
+:'''Castorice:''' So, after all these years, you and Lady Aglaea are still...
+:'''Anaxa:''' Neither of us is narrow-minded. You should know the root cause of our conflict.
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+:----
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "StoryLine"
+}</pre>
+{{Dialogue End}}
+
+===Report back to Aglaea{{subst:void|<!--104020612-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+:'''Anaxa:''' That is it. That's all the colleagues' families that I remember.
+:{{Диалог|Стрелка}} Those who sacrificed their lives and their families are truly admirable.
+:'''Castorice:''' Good work, {{MC|м=Mr.|ж=Miss}} (Trailblazer) and... Professor Anaxa.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": []
+}</pre>
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|With many matters demanding her attention, Aglaea cannot yet receive those back from the Grove. (Trailblazer)'s travel-weary group decides to rest first.}}
+
+;(Unused &mdash; EnterDistrict_G264_01)
+:{{tx}}
+:----
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 104020601,
+	"MessageSectionID": 1451500
+}</pre>
+{{Dialogue End}}
+
+===Speak with Castorice and Anaxa{{subst:void|<!--104020602-->}}===
+{{Dialogue Start}}
+
+;(Talk to )
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Anaxa:''' It's fortunate we don't have to confront that woman while I'm hauling around this sick body. Castorice, and this friend I haven't gotten the chance to know &mdash; I'll take my leave for today.
+:'''Anaxa:''' That Titan made a myriad of adjustments on their own... My head still aches from that. I don't want to stay a second longer in this noisy city if I can.
+:'''Castorice:''' Please be careful. Okhema isn't the Grove. This place...
+:'''Anaxa:''' ...Is covered by her golden threads, I know. That woman is extremely confident I won't escape her grasp.
+:'''Anaxa:''' Don't worry. As I said before, I'll mind my behavior.
+:'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer), so many unexpected things happened on our journey to the Grove... We truly had no intention of putting you in danger, let alone face the black tide head on...
+:{{Диалог|Стрелка}} Trouble is my old friend by now.
+:{{Диалог|Стрелка}} We made it back alive. So much for the black tide.
+::'''Castorice:''' Please do not underestimate the threat the black tide poses.
+:'''Castorice:''' The black tide is not just an enemy of Okhema, but all of Amphoreus. Even back when the forces of Strife coveted the holy city, their warriors still undeniably halted the black tide outside Castrum Kremnos.
+:'''Castorice:''' {{Rubi|Nikador's|Strife Titan}} Coreflame now sits vacant and the black tide has returned... The Grove is an academic city with the best understanding of the black tide. It shouldn't have fallen so easily, and yet it was taken overnight, leaving the city in blood and tears, haunted by the spirits of departed heroes...
+:'''Castorice:''' The trial of Strife is imminent. I pray Mydei will be able to steel his resolve soon...
+:{{Диалог|Стрелка}} And that black-robed swordmaster...
+:{{Диалог|Стрелка}} The dreadful enemies of the Grove are also creations of the black tide?
+:'''Castorice:''' Lady Tribbie once traveled across thousands of cities in Amphoreus to repel the black tide, but even they have no recollection of this powerful enemy in all their journeys. Perhaps the fall of Strife has triggered even more terrifying events in unseen places...
+:'''Castorice:''' Lady Tribbie once traveled across thousands of cities in Amphoreus to repel the black tide, but even they have no recollection of this powerful enemy in all their journeys. Perhaps the fall of Strife has triggered even more terrifying events in unseen places...
+:'''Castorice:''' As for me... I detected a strong stench of death from that entity, but it wasn't because he had a connection with {{Rubi|Thanatos|Death Titan}}... I'm afraid it's purely because he has sent countless others to their deaths.
+:'''Castorice:''' Speaking of {{Rubi|Thanatos|Death Titan}}... {{MC|м=Mr.|ж=Miss}} (Trailblazer), there is something else I wish to verify with you.
+:'''Castorice:''' You must have an idea of the... curse I bear by now. I was born as the Shadow of Death, a poison shunned by all living beings...
+:'''Castorice:''' Yet when you caught me in the Grove...
+:'''Castorice:''' ...I'm curious why you weren't affected by my power, {{MC|м=Mr.|ж=Miss}} (Trailblazer)?
+:{{Диалог|Стрелка}} I had totally forgotten about this until you brought it up.
+:{{Диалог|Стрелка}} Maybe it just hasn't taken effect yet?
+::'''Castorice:''' That might be the case if we only brushed the very tips of our fingers, but back then...
+::I'm used to it. I'm just special like that.
+::Now that you mention it, I think the same thing happened in the Vortex...
+:{{Диалог|Стрелка}} I'm used to it. I'm just special like that.
+:{{Диалог|Стрелка}} Now that you mention it, I think the same thing happened in the Vortex...
+:'''Castorice:''' My apologies for the abrupt question. For all my life, I've always wondered: What is my connection to death? And why am I inextricably linked to {{Rubi|Thanatos|Death Titan}}?
+:{{tx}}
+{{Dialogue End}}
+
+===Return to your private bath chamber and end this day{{subst:void|<!--104020603-->}}===
+{{Dialogue Start}}
+
+;(Talk to Dan Heng)
+:{{tx}}
+:'''Dan Heng:''' Long time no see. I've heard about what happened from Phainon... You've been through a lot.
+:{{Диалог|Стрелка}} Not at all. It's all in service to Trailblaze.
+::'''Dan Heng:''' Heh... I wasn't expecting Amphoreus to temper the will of the Nameless.
+:{{Диалог|Стрелка}} Life is a struggle.
+::'''Dan Heng:''' ...May you never succumb to the dark side of Trailblaze.
+:{{Диалог|Стрелка}} I missed you so much, my dearest friend!
+::'''Dan Heng:''' ...It seems you took things pretty hard.
+:{{tx}}
+:{{Диалог|Стрелка}} What were you doing while I was gone?
+:'''Dan Heng:''' I was organizing logs. I also asked Hyacine for some research material from the Grove.
+:'''Dan Heng:''' I discovered something interesting. Do you remember that Amphoreus's sky was sealed away by a Titan? {{Rubi|Aquila's|Sky Titan}} presence keeps this world isolated from the rest of the world beyond the sky.
+:'''Dan Heng:''' It seems Hyacine's ancestors were the Sky Priests who worshipped {{Rubi|Aquila|Sky Titan}}. Perhaps she can give us more clues to find a way back to the Astral Express.
+:'''Dan Heng:''' Nothing out of the ordinary happened in the holy city in the past few days. I didn't have to talk to anyone either. It was kind of nice spending time alone.
+:{{Диалог|Стрелка}} Just you wait. Your good times are coming to an end!
+::'''Dan Heng:''' After what happened at the Grove, there's sure to be unrest in the coming days. We should rest for now.
+::Awful! I should have stayed and organized documents with you.
+:{{Диалог|Стрелка}} Awful! I should have stayed and organized documents with you.
+:'''Dan Heng:''' ...I'm afraid you'd probably find the task of organizing just as awful.
+:'''Dan Heng:''' You look tired. You should get some sleep before we set off tomorrow...
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "StoryLine"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G302_02)
+:'''(Trailblazer):''' (Oh, he looks like he's been well.)
+
+;(Talk to Guard)
+:'''Guard:''' My apologies, Miss Castorice... Lady Aglaea has just informed me that she has no time to receive anyone at the moment.
+
+;(Talk to Castorice)
+:'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer), you must be tired after being on the move these past few days. Please set aside the tragedy at the Grove for now and rest for the day.
+:<!--1-second delay-->
+:'''(Trailblazer):''' (Castorice is right. I should get some rest. Mem is probably exhausted too. {{MC|ж=She hasn't|м=They haven't}} made a peep.)
+:'''(Trailblazer):''' (I wonder how Dan Heng has been holding up these past few days.)
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Lamentations, Bring Not Empty Tears
+|zhs  = 悲音啊，莫让生者空垂涕
+|zht  = 悲音啊，莫讓生者空垂涕
+|ja   = 悲しき音よ、生者たちに涙を零させるな
+|ko   = 슬픈 소리여, 산 자가 공허히 울게 하지 마라
+|es   = Lamentos, que las lágrimas no sean en vano
+|fr   = Mélodie des larmes endeuillées
+|ru   = О рыдания, пусть не льются попусту слёзы
+|th   = เสียงโศกเอ๋ย อย่าให้คนเป็นต้องร่ำไห้
+|vi   = Hỡi Âm Thanh Buồn, Đừng Để Người Sống Rơi Nước Mắt Vô Ích
+|de   = O Kummer, bring keine leeren Tränen
+|id   = Ratapan, Jangan Biarkan Tangisan Sia-sia
+|pt   = Lamentações, Não Tragam Lágrimas Vazias
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,384 @@
+<%-- [PAGE_INFO]
+PageTitle=#Night Veil, Shroud the Silent Past#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040107
+|title         = 
+|image         = <!--Mission Night Veil, Shroud the Silent Past.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Heroic Saga of Flame-Chase
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = (Trailblazer)?; Kafka; Mem; Oronyx; Trailblazer
+|startLocation = [[Astral Express]] - [[Memorealm Express]]
+|world         = Astral Express
+|area          = Memorealm Express
+|prev          = 
+|next          = Kremnos, Cleanse Thy Rusted Blood (I)
+|rewards       = Trailblaze EXP*1 000; Stellar Jade*130; Traveler's Guide*8; Refined Aether*8; Victory In a Blink*1 { text = Victory In a Blink }; Celestial Ambrosia*200; Credit*100 000
+}}
+'''''Night Veil, Shroud the Silent Past''''' is a [[Trailblaze Mission]] in the chapter [[Heroic Saga of Flame-Chase]].
+
+==Steps==
+# Investigate the first "Non-Existent Memory"
+# Investigate the second "Non-Existent Memory"
+# Head to the Parlor Car
+# Speak with the Stellaron Hunters in the Non-Existent Memory
+# Assist the Stellaron Hunters
+# Choose a Stellaron Hunter in the memory to bid goodbye
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Investigate the first "Non-Existent Memory"{{subst:void|<!--104010701-->}}===
+{{Mission Description|type=trailblaze|location=Memorealm Express|According to (Trailblazer), Oronyx showed {{MC|ж=her|м=him}} the Stellaron Hunters... It was a memory that should not exist, yet it seems so vivid and realistic.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+
+:{{DIcon|Разговор}} Listen
+:{{tx}}
+:'''(Trailblazer):''' Is that... me?
+:'''(Trailblazer):''' There's also Himeko and Dan Heng... What memory is this?
+{{Dialogue End}}
+
+===Investigate the second "Non-Existent Memory"{{subst:void|<!--104010703-->}}===
+{{Dialogue Start}}
+
+;(Talk to Listen)
+:{{tx}}
+
+:{{DIcon|Разговор}} Listen
+:'''Kafka:''' Do you have any dietary restrictions, (Trailblazer)?
+:'''(Trailblazer)?:''' I'll eat anything.
+:'''Kafka:''' You really aren't picky about food.
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P40402_F40402002_G4"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40402_F40402002_G4",
+	"AnchorName": "Anchor1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"CustomCurveName": "BlendCut11"
+	}
+}</pre>
+:'''(Trailblazer):''' Another set of nonexistent memories... This time, Sam's also here.
+:'''(Trailblazer):''' Getting to know myself from a different perspective... feels a little strange.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40402_F40402002_G4",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
+{{Dialogue End}}
+
+===Head to the Parlor Car{{subst:void|<!--104010713-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Memorealm Express
+
+:'''(Trailblazer):''' (It's the first time that the Express has felt so unfamiliar...)
+:'''(Trailblazer):''' (I want to take a look in the Parlor Car...)
+{{Dialogue End}}
+
+===Speak with the Stellaron Hunters in the Non-Existent Memory{{subst:void|<!--104010704-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Assist the Stellaron Hunters{{subst:void|<!--104010709-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+:'''(Trailblazer):''' I don't understand... What's the point of all of this?
+:'''???:''' Happiness... sealed away...
+:'''???:''' Mother... Are you still there?
+:'''???:''' Are you watching?
+:{{Диалог|Стрелка}} ...Titan?
+:{{Диалог|Стрелка}} ...Oronyx?
+:{{Диалог|Стрелка}} ...I can understand what you're saying now?
+:'''Oronyx:''' Memories flowing in reverse... Pounding.
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Sky father... are you watching?
+::...Mem?
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01_Varient1.enviroProfile.asset"
+	}
+}</pre>
+----
+:{{tx}}
+:'''???:''' ...?
+:{{Диалог|Стрелка}} Who are you!?
+:{{Диалог|Стрелка}} What just happened!?
+:{{Диалог|Стрелка}} Did I unlock a new Path just like that!?
+:'''???:''' You are? I am... Who?
+:'''???:''' Gaze, watching. Outside, cold.
+:'''???:''' You... warm. Me like, warmth.
+:{{Диалог|Стрелка}} All of this does not make sense...
+::All of this does not make sense...
+:{{Диалог|Стрелка}} Can anyone explain this to me?
+::Can anyone explain this to me?
+::'''???:''' Confusion... Same. Answer, unknown.
+::'''Oronyx:''' I've finally found it... Precious memory. At long last... I've caught THEIR gaze.
+::'''Oronyx:''' Accompany {{MC|м=him,|ж=her,}} {{Цвет|Ключевой|nobold=1|Mem}}...
+::'''Oronyx:''' {{MC|м=He|ж=She}} will make the memories of this world complete once again... {{MC|м=He|ж=She}} will find... Mother...
+::{{Диалог|Стрелка}} Is your name "Mem"?
+::{{Диалог|Стрелка}} Who is... Mother?
+:::'''Mem:''' Mother? Who? Don't remember.
+:::{{Диалог|Стрелка}} Is your name "Mem"?
+::'''Mem:''' Name? Mine? Don't remember.
+::'''Mem:''' Mem... Address. For now.
+::'''Mem:''' Travel, like. With you, together?
+::'''Mem:''' Memory... collected. Piece together, complete.
+::{{Диалог|Стрелка}} Nikador's weakness...
+::{{Диалог|Стрелка}} ...Can you help us find it?
+::'''Mem:''' Ador... Nik? Titan?
+::'''Mem:''' Need, memories. Help... I can.
+::{{Диалог|Стрелка}} Then come with me.
+::{{Диалог|Стрелка}} As long as you're able to help.
+::'''Oronyx:''' Shadow in the memory...
+::'''Oronyx:''' They... are your companions?
+::{{Диалог|Стрелка}} Yes, they are my companions.
+:::Yes, they are my companions.
+:::I also can't say for sure...
+::{{Диалог|Стрелка}} I also can't say for sure...
+:::I also can't say for sure...
+::{{Диалог|Стрелка}} No, they are enemies.
+:::No, they are enemies.
+:::'''Mem:''' Bad people. Troublesome. Help, needed.
+:::{{tx}}
+::No, they are enemies.
+::'''Mem:''' Bad people. Troublesome. Help, needed.
+::{{tx}}
+:Can anyone explain this to me?
+:'''???:''' Confusion... Same. Answer, unknown.
+:'''Oronyx:''' I've finally found it... Precious memory. At long last... I've caught THEIR gaze.
+:'''Oronyx:''' Accompany {{MC|м=him,|ж=her,}} {{Цвет|Ключевой|nobold=1|Mem}}...
+:'''Oronyx:''' {{MC|м=He|ж=She}} will make the memories of this world complete once again... {{MC|м=He|ж=She}} will find... Mother...
+:{{Диалог|Стрелка}} Is your name "Mem"?
+:{{Диалог|Стрелка}} Who is... Mother?
+::'''Mem:''' Mother? Who? Don't remember.
+::{{Диалог|Стрелка}} Is your name "Mem"?
+:'''Mem:''' Name? Mine? Don't remember.
+:'''Mem:''' Mem... Address. For now.
+:'''Mem:''' Travel, like. With you, together?
+:'''Mem:''' Memory... collected. Piece together, complete.
+:{{Диалог|Стрелка}} Nikador's weakness...
+:{{Диалог|Стрелка}} ...Can you help us find it?
+:'''Mem:''' Ador... Nik? Titan?
+:'''Mem:''' Need, memories. Help... I can.
+:{{Диалог|Стрелка}} Then come with me.
+:{{Диалог|Стрелка}} As long as you're able to help.
+:'''Oronyx:''' Shadow in the memory...
+:'''Oronyx:''' They... are your companions?
+:{{Диалог|Стрелка}} Yes, they are my companions.
+::Yes, they are my companions.
+::I also can't say for sure...
+:{{Диалог|Стрелка}} I also can't say for sure...
+::I also can't say for sure...
+:{{Диалог|Стрелка}} No, they are enemies.
+::No, they are enemies.
+::'''Mem:''' Bad people. Troublesome. Help, needed.
+::{{tx}}
+:No, they are enemies.
+:'''Mem:''' Bad people. Troublesome. Help, needed.
+:{{tx}}
+{{Mission Description|type=trailblaze|location=Memorealm Express|update|In this nonexistent memory, (Trailblazer) actually received a glance from Fuli, the Aeon of Remembrance. A marvelous creature appeared next to {{MC|ж=her|м=him}}, perhaps a gift from Oronyx. (Trailblazer) seems a little... despondent, but thankfully {{MC|ж=she|м=he}} quickly regained composure.}}
+:{{tx}}
+:<!--1-second delay-->
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+:'''Mem:''' Victory, victory!
+:'''Mem:''' Mighty, companions!
+:{{Диалог|Стрелка}} The Stellaron Hunters... disappeared.
+::'''Mem:''' Disappear, temporarily.
+:{{Диалог|Стрелка}} I want to leave this place.
+::'''Mem:''' Leave... It's, time.
+:{{tx}}
+:{{Диалог|Стрелка}} Firefly...
+:{{Диалог|Стрелка}} Kafka...
+:{{Диалог|Стрелка}} Wait...
+:'''Mem:''' Farewell. Time, there is.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40402_F40402001_G10"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Choose a Stellaron Hunter in the memory to bid goodbye{{subst:void|<!--104010712-->}}===
+{{Dialogue Start}}
+
+;(Talk to Firefly)
+:'''(Trailblazer):''' There is very little time left to stay in this memory... Do you want to leave the chance of bidding goodbye to Firefly?
+:{{Диалог|Стрелка}} Bid Firefly goodbye.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 22
+}</pre>
+:{{Диалог|Выход}} Need time to think about it.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 20
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 22,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 104010717,
+					"MaskConfig": {
+						"UseExcelData": false
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetLoadingStratageType",
+					"StratageType": "Plain",
+					"RollBackWhenMissionFail": true,
+					"SubmissionID": 104010712
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010712
+				}
+			]
+		},
+		{
+			"Case": 20,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Talk to Kafka)
+:'''(Trailblazer):''' There is very little time left to stay in this memory... Do you want to leave the chance of bidding goodbye to Kafka?
+:{{Диалог|Стрелка}} Bid Kafka goodbye.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 11
+}</pre>
+:{{Диалог|Выход}} Need time to think about it.
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 10
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 11,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerPerformance",
+					"ValueSource": {},
+					"PerformanceType": "D",
+					"PerformanceID": 104010718,
+					"MaskConfig": {
+						"UseExcelData": false
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetLoadingStratageType",
+					"StratageType": "Plain",
+					"RollBackWhenMissionFail": true,
+					"SubmissionID": 104010712
+				},
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104010715
+				}
+			]
+		},
+		{
+			"Case": 10,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Night Veil, Shroud the Silent Past
+|zhs  = 夜帷啊，轻遮那静默过往
+|zht  = 夜帷啊，輕遮那靜默過往
+|ja   = 夜の帷よ、静かな過去を遮れ
+|ko   = 밤의 장막이여, 침묵의 과거를 가려라
+|es   = Velo de la noche, envuelve el silencioso pasado
+|fr   = Voile de la nuit, cache le passé endormi
+|ru   = О занавес ночи, скрой безмолвное прошлое
+|th   = ม่านราตรีเอ๋ย จงปกคลุมอดีตแสนสงัด
+|vi   = Màn Đêm, Nhẹ Nhàng Che Đi Quá Khứ Tĩnh Lặng
+|de   = O Vorhang der Nacht, verschleiere die stille Vergangenheit
+|id   = Tirai Malam, Menyelubungi Masa Lalu yang Sunyi
+|pt   = Véu Noturno, Encubra o Passado Silencioso
+}}
+
+==Change History==
+{{Change History|3.5}}

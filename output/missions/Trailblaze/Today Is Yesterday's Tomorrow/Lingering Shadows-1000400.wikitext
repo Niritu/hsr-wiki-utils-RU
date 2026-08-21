@@ -1,0 +1,189 @@
+<%-- [PAGE_INFO]
+PageTitle=#Lingering Shadows#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1000400
+|title         = 
+|image         = <!--Mission Lingering Shadows.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Today Is Yesterday's Tomorrow
+|requirements  = [[Trailblaze Mission]] ''[[A Moment of Peace]]'' completed
+|summary       = New crisis &mdash; the Doomsday Beast is coming, and it seems that you've become some sort of "key element."<br />If you want to get out of this predicament and save the space station from destruction, the only way may be to head to the railway platform and meet up with the Express and the man named Welt.
+|characters    = Dan Heng; March 7th; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Supply Zone]]
+|world         = Herta Space Station
+|area          = Supply Zone
+|prev          = A Moment of Peace
+|next          = Simulated Universe: First Closed Beta
+|rewards       = Shadow of Destruction*1
+}}
+'''''Lingering Shadows''''' is a [[Trailblaze Mission]] in the chapter [[Today Is Yesterday's Tomorrow]].
+
+==Steps==
+# Clear the obstacles and continue forward
+# Find a way to leave the spare parts warehouse
+# Reach the railway platform as quickly as possible
+# Search for Himeko
+# Reach the railway platform as quickly as possible
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Clear the obstacles and continue forward{{subst:void|<!--100040123-->}}===
+{{Mission Description|type=trailblaze|location=Supply Zone|New crisis &mdash; the Doomsday Beast is coming, and it seems that you've become some sort of "key element."<br />If you want to get out of this predicament and save the space station from destruction, the only way may be to head to the railway platform and meet up with the Express and the man named Welt.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''March 7th:''' The exit's over there... how do we get to it?
+----
+{{Dialogue End}}
+
+===Find a way to leave the spare parts warehouse{{subst:void|<!--100040114-->}}===
+{{Dialogue Start}}
+:<!--60-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropStateExecute",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300015
+				}
+			}
+		}
+	},
+	"Execute": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 100040120,
+					"ProtectTime": 4,
+					"ForceToNextTime": 4
+				}
+			]
+		}
+	]
+}</pre>
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Reach the railway platform as quickly as possible{{subst:void|<!--100040106-->}}===
+{{Mission Description|type=trailblaze|location=Supply Zone|update|New crisis &mdash; the Doomsday Beast is coming, and it seems that you've become some sort of "key element."<br />If you want to get out of this predicament and save the space station from destruction, the only way may be to head to the railway platform and meet up with the Express and the man named Welt.<br />You're getting closer to the railway platform, hurry.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(По прибытии на место)
+:'''March 7th:''' Aww yeah, it's the platform!
+:'''Dan Heng:''' ...The Express isn't here.
+:'''March 7th:''' It has to be nearby! Let me go take a peek with my sharp eyes.
+----
+;([[#Gallery|Cutscene]] plays)
+::March!
+::I must leave now
+::What happened...
+::You must see the end of your story.
+::...Who is that?
+::Reach the end of the story in your own way.
+::See
+::THEY have already noticed you.
+::Mr. Yang! Is {{MC|ж=she|м=he}}...
+::They're okay now
+::Let's talk somewhere else.
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.RemoveVirtualLineupBindPlane"
+}</pre>
+{{Dialogue End}}
+
+===Search for Himeko{{subst:void|<!--100040120-->}}===
+{{Mission Description|type=trailblaze|location=Master Control Zone|update|You open your eyes and find yourself still in the space station, staring at a ceiling that doesn't look so strange.<br />You are living through what just happened. It seems your mind is not playing tricks on you. You wish Himeko was here.<br />You have so many questions to ask.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.ByHeroGender",
+	"Gender": "GENDER_WOMAN"
+}</pre>
+:{{tx}}
+----
+:'''Dan Heng:''' It's good that you've made it through in one piece. You can rest easy now that the threat from the Legion has been neutralized.
+:{{Диалог|Стрелка}} Did we win?
+::'''Dan Heng:''' Well, this invasion seems to be nothing more than a random provocation. As soon as the Doomsday Beast fell, the Legion retreated.
+:{{Диалог|Стрелка}} Even the Doomsday Beast, is no match...
+::'''Dan Heng:''' You're not wrong, but be careful about blurting things out loud &mdash; it could attract unwanted attention.
+:{{Диалог|Стрелка}} Who am I, where am I...
+::'''Dan Heng:''' Well, this is the Herta Space Station.
+:'''Dan Heng:''' I guess I'll leave you to rest up a bit for the time being. By the way, what's your beacon address? That way if anything happens, I can contact you.
+:You and Dan Heng exchanged phone numbers.
+:'''Dan Heng:''' Go see Himeko when you have the time. She said she had something to discuss with you.
+----
+;(Fully recovers all allies' HP)
+
+;(Fully recovers all allies' HP)
+
+;(Fully recovers all allies' HP)
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1000000
+}</pre>
+;(Fully recovers all allies' HP)
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1000100
+}</pre>
+;(Fully recovers all allies' HP)
+{{Dialogue End}}
+
+===Reach the railway platform as quickly as possible{{subst:void|<!--100040107-->}}===
+{{Mission Description|type=trailblaze|location=Supply Zone|update|New crisis &mdash; the Doomsday Beast is coming, and it seems that you've become some sort of "key element."<br />If you want to get out of this predicament and save the space station from destruction, the only way may be to head to the railway platform and meet up with the Express and the man named Welt.<br />You're getting closer to the railway platform, hurry.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Lingering Shadows
+|zhs  = 阴影从未离去
+|zht  = 陰影從未離去
+|ja   = 影は離れない
+|ko   = 맴도는 그림자
+|es   = Sombras persistentes
+|fr   = Ombres persistantes
+|ru   = Неисчезающие тени
+|th   = เงามืดที่ไม่เคยจางหาย
+|vi   = Bóng Tối Chưa Rời Đi
+|de   = Nachhallende Schatten
+|id   = Bayangan Melekat
+|pt   = Sombras Duradouras
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,1825 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Knocking at Ungodly Hours#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1030102
+|title         = 
+|image         = <!--Mission The Knocking at Ungodly Hours.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = The Sound and the Fury
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Acheron; Trailblazer
+|startLocation = [[Penacony]] - [[A Strange Dream]]
+|world         = Penacony
+|area          = A Strange Dream
+|prev          = 
+|next          = 
+|rewards       = 
+}}
+'''''The Knocking at Ungodly Hours''''' is a [[Trailblaze Mission]] in the chapter [[The Sound and the Fury]].
+
+==Steps==
+# Leave the strange room
+# Continue down the unfamiliar corridor
+# Search for an exit in the unfamiliar lobby
+# Speak with Acheron
+# Advance with Acheron
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:'''???:''' Not another one...
+:'''???:''' ...Come with me.
+:{{Диалог|Стрелка}} Who are you?
+:{{Диалог|Стрелка}} What is this place?
+:{{Диалог|Стрелка}} Where are we going?
+:'''???:''' These questions... have no meaning. But, I will answer you as best as I can: This is the border between reality and the Memory Zone, a... dreamscape.
+:{{tx}}
+{{Dialogue End}}
+
+===Leave the strange room{{subst:void|<!--103010208-->}}===
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|This warp jump is quite unusual. In the blink of an eye, you transition from the comfortable couch of the Parlor Car to an unfamiliar location. A stranger awakens you, claiming that both of you coincidentally share the same dream, and offers to guide you to an exit. <br />Follow her guidance and leave this area.}}
+{{Dialogue Start}}
+
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Continue down the unfamiliar corridor{{subst:void|<!--103010202-->}}===
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|The warrior calls herself "Acheron," a Galaxy Ranger.<br />Continue to follow in her footsteps and leave this strange dream.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Acheron:''' Galaxy Ranger, Acheron... This is what they call me. You can call me whatever you want.
+:<!--3-second delay-->
+:<!--1-second delay-->
+
+;(По прибытии на место)
+:'''Acheron:''' I'm not there. Turn back.
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|Acheron leads you to a door. Is this the dreamscape exit?}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Acheron:''' Open this door... Take a look at the mesmerizing dreamscape, while you can still remember.
+:<!--2-second delay-->
+:<!--1-second delay-->
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|The warrior calls herself "Acheron," a Galaxy Ranger.<br />Continue to follow in her footsteps and leave this strange dream.}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Acheron:''' After you.
+:<!--1-second delay-->
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (This is, no way...)
+
+;(По прибытии на место)
+:'''Acheron:''' This way.
+{{Dialogue End}}
+
+===Search for an exit in the unfamiliar lobby{{subst:void|<!--103010204-->}}===
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|Acheron leads you to a lobby. She points out a path for you, but you see no clear path through this room.<br />Search around to find the true path.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (How is this even possible!?)
+:'''Acheron:''' (Why not?)
+:'''(Trailblazer):''' (She can hear the thoughts in my head?)
+:'''Acheron:''' (Why not?)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (Am I supposed to walk up the wall...?)
+{{Dialogue End}}
+
+===Speak with Acheron{{subst:void|<!--103010205-->}}===
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|After a disorienting exploration, you realize that you have somehow ended up on the lobby ceiling.<br />Acheron seems to be long accustomed to this and simply points out the dreamscape exit just ahead.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:'''Acheron:''' We're almost there. Can you still walk?
+:{{Диалог|Стрелка}} Now I Am Become Trailblaze, the Perambulator of Walls.
+::'''Acheron:''' You're funny. If you can crack jokes, you're probably fine.
+::I feel a bit faint...
+:{{Диалог|Стрелка}} I feel a bit faint...
+:'''Acheron:''' Don't panic, this is normal.
+:'''Acheron:''' Don't stop, don't turn back, don't look down. Or up, for that matter.
+:{{tx}}
+{{Dialogue End}}
+
+===Advance with Acheron{{subst:void|<!--103010206-->}}===
+{{Mission Description|type=trailblaze|location=A Strange Dream|update|Acheron guides you through a magnificent dreamscape. It seems that the exit is just ahead.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 103010206,
+	"OverideMissionWayPointType": true,
+	"MissionWayPointType": "Prop",
+	"OverideWayPointFloorID": true,
+	"WayPointFloorID": 43301001,
+	"OverideWayPointGroupID": true,
+	"WayPointGroupID": 9,
+	"OverideWayPointEntityID": true,
+	"WayPointEntityID": 300003
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckFloorCustomBool","Name":{"Value":"Mission_103010207_OpenDoor"}}-->}})
+::'''???:''' Welcome to the Reverie! May you experience an unforgettable holiday! If you need help checking in, please head straight to the concierge...
+::<!--1-second delay-->
+::'''???:''' Welcome to the Reverie! May you experience an unforgettable holiday! If you need help checking in, please head straight to the concierge...
+::'''Acheron:''' ...We're here.
+::'''Acheron:''' Leave this realm, and rise as you would on any other day. Forget this fortuitous encounter, and return whence you came.
+::'''Acheron:''' But before you do, I would make a request of you.
+::'''Acheron:''' You may think it somewhat strange, perhaps even rude, but I wish to know...
+::'''Acheron:''' {{Цвет|Огненный|...Have we met somewhere before?}}
+::{{Диалог|Стрелка}} Perhaps we have.
+:::'''Acheron:''' {{MC|м={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, he crossed blades with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}|ж={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, she stood shoulder to shoulder with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}}}
+:::'''Acheron:''' May I ask you a few more questions? I... tend to forget things &mdash; which is why, rather than memories, I'm accustomed to using my emotions to capture what I normally wouldn't otherwise. The answer is inconsequential. Your spontaneous reaction is what matters.
+:::'''Acheron:''' For instance, when you awaken in your room, your lips speak several names. Are they your companions? Family? Enemies? You seem to have forged unbreakable bonds with many people and many incidents...
+:::'''Acheron:''' {{Цвет|Огненный|Might I ask if you fear losing these bonds?}}
+:::{{Диалог|Стрелка}} I cannot bear such a fear.
+:::{{Диалог|Стрелка}} If it means losing them, I would.
+:::{{Диалог|Стрелка}} If it means that I will disappear, I would.
+:::{{Диалог|Стрелка}} I feel no fear.
+:::{{Диалог|Стрелка}} I don't know.
+:::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+:::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+:::{{Диалог|Стрелка}} I would, no matter the cost.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I would never want to live in a dream.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::{{Диалог|Стрелка}} Probably not.
+:::'''Acheron:''' {{MC|м={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, he crossed blades with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}|ж={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, she stood shoulder to shoulder with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}}}
+:::'''Acheron:''' May I ask you a few more questions? I... tend to forget things &mdash; which is why, rather than memories, I'm accustomed to using my emotions to capture what I normally wouldn't otherwise. The answer is inconsequential. Your spontaneous reaction is what matters.
+:::'''Acheron:''' For instance, when you awaken in your room, your lips speak several names. Are they your companions? Family? Enemies? You seem to have forged unbreakable bonds with many people and many incidents...
+:::'''Acheron:''' {{Цвет|Огненный|Might I ask if you fear losing these bonds?}}
+:::{{Диалог|Стрелка}} I cannot bear such a fear.
+:::{{Диалог|Стрелка}} If it means losing them, I would.
+:::{{Диалог|Стрелка}} If it means that I will disappear, I would.
+:::{{Диалог|Стрелка}} I feel no fear.
+:::{{Диалог|Стрелка}} I don't know.
+:::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+:::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+:::{{Диалог|Стрелка}} I would, no matter the cost.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I would never want to live in a dream.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::{{Диалог|Стрелка}} I don't know.
+:::'''Acheron:''' {{MC|м={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, he crossed blades with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}|ж={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, she stood shoulder to shoulder with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}}}
+:::'''Acheron:''' May I ask you a few more questions? I... tend to forget things &mdash; which is why, rather than memories, I'm accustomed to using my emotions to capture what I normally wouldn't otherwise. The answer is inconsequential. Your spontaneous reaction is what matters.
+:::'''Acheron:''' For instance, when you awaken in your room, your lips speak several names. Are they your companions? Family? Enemies? You seem to have forged unbreakable bonds with many people and many incidents...
+:::'''Acheron:''' {{Цвет|Огненный|Might I ask if you fear losing these bonds?}}
+:::{{Диалог|Стрелка}} I cannot bear such a fear.
+::::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+::::{{Диалог|Стрелка}} I would, no matter the cost.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} I would never want to live in a dream.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} If it means losing them, I would.
+::::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+::::{{Диалог|Стрелка}} I would, no matter the cost.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} I would never want to live in a dream.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} If it means that I will disappear, I would.
+::::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+::::{{Диалог|Стрелка}} I would, no matter the cost.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} I would never want to live in a dream.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} I feel no fear.
+::::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+::::{{Диалог|Стрелка}} I would, no matter the cost.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} I would never want to live in a dream.
+:::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+:::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+:::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::::'''Acheron:''' ...I understand.
+::::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::::{{Диалог|Стрелка}} Will we meet again?
+::::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::::{{tx}}
+::::;(Return to previous option selection)
+:::;(Return to previous option selection)
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} What do you mean?
+:::'''Acheron:''' {{MC|м={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, he crossed blades with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}|ж={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, she stood shoulder to shoulder with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}}}
+:::'''Acheron:''' May I ask you a few more questions? I... tend to forget things &mdash; which is why, rather than memories, I'm accustomed to using my emotions to capture what I normally wouldn't otherwise. The answer is inconsequential. Your spontaneous reaction is what matters.
+:::'''Acheron:''' For instance, when you awaken in your room, your lips speak several names. Are they your companions? Family? Enemies? You seem to have forged unbreakable bonds with many people and many incidents...
+:::'''Acheron:''' {{Цвет|Огненный|Might I ask if you fear losing these bonds?}}
+:::{{Диалог|Стрелка}} I cannot bear such a fear.
+:::{{Диалог|Стрелка}} If it means losing them, I would.
+:::{{Диалог|Стрелка}} If it means that I will disappear, I would.
+:::{{Диалог|Стрелка}} I feel no fear.
+:::{{Диалог|Стрелка}} I don't know.
+:::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+:::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+:::{{Диалог|Стрелка}} I would, no matter the cost.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I would never want to live in a dream.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::{{Диалог|Стрелка}} What's going on...
+:::'''Acheron:''' {{MC|м={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, he crossed blades with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}|ж={{Цвет|#ff3a|You evoke memories of an old friend. In the haze of my recollections, she stood shoulder to shoulder with me, much like this surreal dreamscape where we stood close, yet forever out of reach.}}}}
+:::'''Acheron:''' May I ask you a few more questions? I... tend to forget things &mdash; which is why, rather than memories, I'm accustomed to using my emotions to capture what I normally wouldn't otherwise. The answer is inconsequential. Your spontaneous reaction is what matters.
+:::'''Acheron:''' For instance, when you awaken in your room, your lips speak several names. Are they your companions? Family? Enemies? You seem to have forged unbreakable bonds with many people and many incidents...
+:::'''Acheron:''' {{Цвет|Огненный|Might I ask if you fear losing these bonds?}}
+:::{{Диалог|Стрелка}} I cannot bear such a fear.
+:::{{Диалог|Стрелка}} If it means losing them, I would.
+:::{{Диалог|Стрелка}} If it means that I will disappear, I would.
+:::{{Диалог|Стрелка}} I feel no fear.
+:::{{Диалог|Стрелка}} I don't know.
+:::'''Acheron:''' Mm... Then, if there was a vast dreamscape, so lifelike it's indistinguishable from reality. There, no one faces life's separations or deaths. Everyone attains their deserved happiness and lives joyfully ever after.
+:::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you wish to stay?}}
+:::{{Диалог|Стрелка}} I would, no matter the cost.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} If I didn't have to pay any price, I would.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} That depends on the price I'd have to pay.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I would never want to live in a dream.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+::::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+::::{{Диалог|Стрелка}} No, this is the first time we've met.
+::::'''Acheron:''' ...I understand.
+::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+::::{{Диалог|Стрелка}} Will we meet again?
+::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+::::{{tx}}
+:::{{Диалог|Стрелка}} I don't know.
+::::'''Acheron:''' Now... imagine if this splendid dream were fated to fall apart: Friends, family, strangers, followed by the gentle breeze, soaring birds, the stars... and ultimately, yourself.
+::::'''Acheron:''' Everyone, and every face they remember, the joy and the heartaches, the vows sealed and those left hanging... all will inevitably march towards a predetermined ending. If you had grasped the journey's finale right from its inception...
+::::'''Acheron:''' {{Цвет|Огненный|I would ask: Would you still embark on this journey?}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; the price is too dear.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; I have already tasted the beauty of dreams.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would abandon it &mdash; Trailblazing was never my intent.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+::::{{Диалог|Стрелка}} I would blaze a trail without hesitation.
+:::::'''Acheron:''' I know this is hard, you don't have to be hard-pressed to make a decision. As I have said... the answer is inconsequential.
+:::::'''Acheron:''' Hearing, touch, thought &mdash; through these, you gain emotions &mdash; cherish them. With emotions, we make choices. And so we return to the original question...
+:::::'''Acheron:''' {{Цвет|Огненный|I would ask... Do you still remember me?}}
+:::::{{Диалог|Стрелка}} I seem to remember you from somewhere...
+:::::{{Диалог|Стрелка}} No, this is the first time we've met.
+:::::'''Acheron:''' ...I understand.
+:::::'''Acheron:''' How interesting. For a split second, it felt like countless versions of you, alike yet distinct, gave entirely different responses.
+:::::'''Acheron:''' That was my final question, thank you. We all have our paths to walk, so we shall bid our farewells.
+:::::{{Диалог|Стрелка}} Will we meet again?
+:::::{{Диалог|Стрелка}} You haven't told me how to leave this place...
+:::::'''Acheron:''' The golden dream is getting restless. In the coming long night, I'm afraid you will face many tribulations and witness many tragedies. And finally... your sight will only see black and white.
+:::::{{tx}}
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::What you must do now is ponder its significance.
+:::And then...
+:::You can return to the waking world.
+:::That's where we all find our answers.
+:;(Cutscene ends)
+:----
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckFloorCustomBool","Name":{"Value":"Mission_103010207_OpenDoor"}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.WaitFloorCustomValueChange",
+	"Name": {
+		"Value": "Mission_103010207_OpenDoor"
+	},
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCheckFloorCustomBool",
+				"Name": {
+					"Value": "Mission_103010207_OpenDoor"
+				}
+			},
+			"SuccessTaskList": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "Event_103010206_DoorOpen"
+					}
+				}
+			],
+			"FailedTaskList": []
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Acheron:''' These voices... They are just shadows of the dreamscape. Pay no heed to them.
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayerSelectMotionMode",
+	"MotionMode": "ForbidFastRun"
+}</pre>
+;(Unused &mdash; Event_103010206_run_1)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 9,
+	"PathwayID": 2,
+	"MotionFlag": "Run",
+	"WaitForPlayer": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Event_103010206_run_2"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Event_103010206_run_2)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"GroupId": 9,
+	"PointID": 2,
+	"MotionFlag": "Run",
+	"AlignRotation": true,
+	"FinishAfterStop": true,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 103012302
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|Mission_103010207_LeaveRaid}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "Mission_103010207_LeaveRaid"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Knocking at Ungodly Hours
+|zhs  = 丑时三刻的敲门声
+|zht  = 丑時三刻的敲門聲
+|ja   = 丑三つ時のノック
+|ko   = 1시 45분의 노크 소리
+|es   = Alguien llama a la puerta en la madrugada
+|fr   = Visite impromptue
+|ru   = Стук в дверь ни свет ни заря
+|th   = เสียงเคาะประตูรบกวนยามวิกาล
+|vi   = Tiếng Gõ Cửa Vào Giờ Sửu
+|de   = Das Klopfen vor Tagesanbruch
+|id   = Suara Ketukan Pintu di Jam-Jam Spiritual
+|pt   = Batendo nas Piores Horas
+}}
+
+==Change History==
+{{Change History|3.5}}

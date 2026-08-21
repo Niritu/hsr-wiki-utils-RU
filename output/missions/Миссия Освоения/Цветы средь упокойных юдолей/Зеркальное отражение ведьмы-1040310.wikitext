@@ -10,11 +10,11 @@ PageTitle=#Зеркальное отражение ведьмы#
 |Событие         = 
 |Глава           = Цветы средь упокойных юдолей
 |Условия         = Завершена [[Миссия Освоения]] «[[О учёный, жди у ворот истины]]»
-|Персонажи       = Вельт; Воскресенье; Герта; Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Изолированная зона]]
-|Мир             = Космическая станция «Герта»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = О учёный, жди у ворот истины
-|Следующая       = 
+|Следующая       = О звёздное небо, очисти мысли от хаоса
 |Награды         = Опыт Освоения*200; Звёздный нефрит*20; Утраченный кристалл*3; Небесная амброзия*40; Elegy of Netherwing*1 { text = Elegy of Netherwing }; Кредиты*20 000
 }}
 '''Зеркальное отражение ведьмы''' — [[Миссия Освоения]] в главе [[Цветы средь упокойных юдолей]].
@@ -35,70 +35,29 @@ PageTitle=#Зеркальное отражение ведьмы#
 ==Прохождение==
 {{Дополнить}}
 ===Послушайте речь Герты===
-{{Описание миссии|тип=Миссия Освоения|локация=Изолированная зона|Звёздный экспресс должен проявить благодарность. К счастью, госпожа Герта заинтересовалась Амфореусом и собирается провести полевые исследования.<br />Госпожа Герта, могли бы вы почаще говорить со мной, Четвёртым Зеркалом?}}
+{{Описание миссии|тип=Миссия Освоения|локация=<!--необходимо добавить-->|Звёздный экспресс должен проявить благодарность. К счастью, госпожа Герта заинтересовалась Амфореусом и собирается провести полевые исследования.<br />Госпожа Герта, могли бы вы почаще говорить со мной, Четвёртым Зеркалом?}}
 {{Диалог Начало}}
-;(По прибытии на место)
-
-;(По прибытии на место)
-:{{tx}}
-
-;(Поговорите с Вельт Янг)
-----
-:'''Вельт:''' Спасибо, госпожа Герта. Друзья - это кровь Звёздного экспресса. Когда всё утихнет, мы обязательно отблагодарим вас за помощь.
-:'''Герта:''' (Вельт... Какой же вежливый молодой человек.)
-
-;(Поговорите с Воскресенье)
-----
-:'''Воскресенье:''' Госпожа, наблюдая за вашей работой, я многому научился. Трудно представить, что выдающемуся учёному, как вы, удаётся так... непринуждённо вести себя в большинстве случаев.
-:'''Воскресенье:''' Ваши спокойствие и собранность - качества, которым мне стоит поучиться.
-:'''Герта:''' (Почему всё, что вылетает изо рта этого мальчишки, звучит так двусмысленно?!)
 {{Диалог Конец}}
 
 ===Отдайте приказ Первому Зеркалу===
 {{Диалог Начало}}
-:'''Герта:''' Отлично. Всё готово...
-:'''Герта:''' Зеркала, за работу.
 {{Диалог Конец}}
 
 ===Отдайте приказ Второму Зеркалу===
 {{Диалог Начало}}
-
 {{Диалог Конец}}
 
 ===Отдайте приказ Третьему Зеркалу===
 {{Диалог Начало}}
-
 {{Диалог Конец}}
 
 ===Вернитесь к Первому Зеркалу и приготовьтесь к гиперпрыжку===
 {{Диалог Начало}}
-
-
 {{Диалог Конец}}
 
 ===Идите вперёд и найдите вход на Амфореус===
-{{Описание миссии|тип=Миссия Освоения|локация=Вихрь сотворения|Учись, Звёздный экспресс. Госпоже Герте не нужно физическое воплощение, чтобы посетить Амфореус. Она может мгновенно раскрыть тайны этого мира одним движением руки.<br />Не спрашивайте, откуда я это знаю, я давний Гертофан.}}
+{{Описание миссии|тип=Миссия Освоения|локация=<!--необходимо добавить-->|Учись, Звёздный экспресс. Госпоже Герте не нужно физическое воплощение, чтобы посетить Амфореус. Она может мгновенно раскрыть тайны этого мира одним движением руки.<br />Не спрашивайте, откуда я это знаю, я давний Гертофан.}}
 {{Диалог Начало}}
-;(По прибытии на место)
-
-;(По прибытии на место)
-:'''Герта:''' Ого... Ну и тряска. Надо было попросить Второе Зеркало немного снизить мощность.
-:'''Герта:''' Ох, какой великолепный вид. Это вход на Амфореус?
-:'''Герта:''' Ну-ка, ну-ка. Возможно, я смогу найти способ проникнуть внутрь.
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
-:<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
-:<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		400006
-	]
-}</pre>
 {{Диалог Конец}}
 
 ===Осмотритесь вокруг и найдите остатки воспоминаний===
@@ -107,390 +66,6 @@ PageTitle=#Зеркальное отражение ведьмы#
 
 ===Осмотрите странную чашу===
 {{Диалог Начало}}
-
-;(Unused &mdash; Clt_TriggerPerformance)
-<pre>{
-	"$type": "RPG.GameCore.GenericSwitchCase",
-	"SwitchRef": {
-		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
-		"Name": {
-			"Value": "FCV_BowlType"
-		}
-	},
-	"Cases": [
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 1
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		},
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 0
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_lightburst_digitalize"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		}
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEventV2",
-	"EventName": {
-		"Value": "Clt_TriggerUsing1Start"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-::<!--2.5-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEventV2",
-	"EventName": {
-		"Value": "Clt_TriggerDissolve"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	}
-}</pre>
-::<!--0.5-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.GenericSwitchCase",
-	"SwitchRef": {
-		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
-		"Name": {
-			"Value": "FCV_BowlType"
-		}
-	},
-	"Cases": [
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 1
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		},
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 0
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_fireseed_drop_digitalize"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		}
-	]
-}</pre>
-::<!--2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"LevelAreaCameraKey": {
-		"Custom": true,
-		"Key": "Cam02"
-	}
-}</pre>
-::<!--0.5-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEventV2",
-	"EventName": {
-		"Value": "Clt_TriggerUsing2Start"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.GenericSwitchCase",
-	"SwitchRef": {
-		"$type": "RPG.GameCore.SwitchRefFloorCustomFloat",
-		"Name": {
-			"Value": "FCV_BowlType"
-		}
-	},
-	"Cases": [
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 1
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		},
-		{
-			"$type": "RPG.GameCore.NumberCaseContainer",
-			"Case": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 0
-				}
-			},
-			"OnSuccess": [
-				{
-					"$type": "RPG.GameCore.TriggerSound",
-					"SoundName": {
-						"Value": "Ev_sfx_amphoreus_prop_genisiscore_powerburst_digitalize"
-					},
-					"TargetType": {
-						"$type": "RPG.GameCore.GroupFetchLocalTarget",
-						"TargetType": "Prop",
-						"Targets": [
-							300001
-						]
-					}
-				}
-			]
-		}
-	]
-}</pre>
-::<!--3-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"LevelAreaCameraKey": {
-		"Custom": true,
-		"Key": "Cam03"
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEffectList",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300003
-		]
-	},
-	"EffectList": [
-		{
-			"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_GensisSky_01_Star_Lod0.prefab",
-			"IsAttachToTargetEntity": true,
-			"ForceSimulateImmediately": false
-		}
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_prop_genisiscore_startrail"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-::<!--4-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEventV2",
-	"EventName": {
-		"Value": "Clt_TriggerEndSubmit"
-	},
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-::<!--1-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.SetFloorCustomFloat",
-	"Name": {
-		"Value": "FCV_GenesisKindlingType"
-	},
-	"Value": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 0
-		}
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetFloorCustomFloat",
-	"Name": {
-		"Value": "FCV_GenesisKindlingCtrl"
-	},
-	"Value": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 0
-		}
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"LevelAreaCameraKey": {
-		"Custom": true,
-		"Key": "Cam02"
-	},
-	"IsActive": false
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.BlockInputController",
-	"ActionNameList": []
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetPropInteractBtnSwitch",
-	"SwitchState": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideTopPageWithoutAnim",
-	"PlayAnim": true
-}</pre>
-:<pre>{
-	"$type": "RPG.Client.AdventureGameplayLock",
-	"LockSource": "InstantKill"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.GlobalShowBillboard",
-	"IsShow": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetCharacterVisible",
-	"CharacterUniqueName": "LocalPlayer",
-	"Visible": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.ReleaseCharacter",
-	"CharacterUniqueName": "LocalPlayer"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.PauseToastQueue"
-}</pre>
-
-;(Unused &mdash; Clt_TriggerExitBlackSq)
-<pre>{
-	"$type": "RPG.GameCore.CaptureLocalPlayer",
-	"CharacterUniqueName": "LocalPlayer"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetCharacterVisible",
-	"CharacterUniqueName": "LocalPlayer"
-}</pre>
-
-;(Unused &mdash; Clt_TriggerForbCtrl)
-<pre>{
-	"$type": "RPG.GameCore.BlockInputController",
-	"Enable": true,
-	"ActionNameList": []
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetPropInteractBtnSwitch"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideTopPageWithoutAnim",
-	"Hide": true
-}</pre>
-:<pre>{
-	"$type": "RPG.Client.AdventureGameplayLock",
-	"IsLock": true,
-	"LockSource": "InstantKill"
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.GlobalShowBillboard"
-}</pre>
-:'''Герта:''' Это или проекция, или подделка. Не стоит внимания.
-:'''Герта:''' Итак... Как же мне попасть на Амфореус?
-;(По прибытии на место)
-
-;(По прибытии на место)
-:{{tx}}
 {{Диалог Конец}}
 
 ==На других языках==

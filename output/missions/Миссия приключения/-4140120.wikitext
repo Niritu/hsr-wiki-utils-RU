@@ -11,13 +11,13 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия приключения]] «[[Охота на экзотических питомцев: Забота]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Изолированная зона]]
-|Мир             = Космическая станция «Герта»
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Охота на экзотических питомцев: Забота
 |Следующая       = 
 |Награды         = Утраченные золотые частицы*2; Гертариумы*20; Кредиты*3 000
 }}
-'''''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -27,61 +27,6 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-
-<pre>{
-	"$type": "RPG.GameCore.PropSetupHitBox",
-	"OnBeHit": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "Talk_414012001_1"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.PropDestruct",
-			"TargetType": {
-				"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-				"FetchType": "SinglePropByPropID",
-				"SinglePropID": {
-					"GroupID": {
-						"IsDynamic": false,
-						"FixedValue": {
-							"Value": 153
-						}
-					},
-					"ID": {
-						"IsDynamic": false,
-						"FixedValue": {
-							"Value": 300004
-						}
-					}
-				}
-			}
-		}
-	],
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 153
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300004
-				}
-			}
-		}
-	}
-}</pre>
-;(Unused &mdash; Talk_414012001_1)
-
-
-;(Unused &mdash; Talk_414012001_2)
 
 {{Диалог Конец}}
 

@@ -1,0 +1,1112 @@
+<%-- [PAGE_INFO]
+PageTitle=#Hero, Bear Thy Coreflame#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040118
+|title         = 
+|image         = <!--Mission Hero, Bear Thy Coreflame.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Heroic Saga of Flame-Chase
+|requirements  = [[Trailblaze Mission]] ''[[A Witch's Scientific Repose]]'' completed
+|summary       = The battle against Nikador ends with victory for the Chrysos Heirs. Upon returning to Okhema, you witness Nikador's Coreflame returned. Phainon then enters the Coreflame trial, seeking to prove to Nikador's divinity that he can defeat his innermost fears.
+|characters    = Aglaea; Castorice; Dan Heng; Mem; Mydei; The Last Echo of Lygus; Trailblazer; Trinnon; Voice of the Tides
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = A Witch's Scientific Repose
+|next          = ???
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Shadow of Remembrance*1; Lost Crystal*8; Celestial Ambrosia*100; To All Things Strifeful*1 { text = ''To All Things Strifeful'' }; Credit*80 000
+}}
+'''''Hero, Bear Thy Coreflame''''' is a [[Trailblaze Mission]] in the chapter [[Heroic Saga of Flame-Chase]].
+
+==Steps==
+# Head to the Vortex of Genesis
+# Wait for Phainon to start the Coreflame's trial
+# Chat with the Chrysos Heirs
+# Speak with Aglaea
+# (Optional) Speak with Trinnon
+# (Optional) Speak with Castorice
+# Chat with the Chrysos Heirs
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:Within Amphoreus, at (Trailblazer)'s private bath chamber...
+:'''Mem:''' Good thing you're finally up! Or that Giant's light is going to give you a sunburn!
+:'''Dan Heng:''' They've been this excited for a while now... What did you feed them?
+:{{Диалог|Стрелка}} More like they snuck food themself.
+::'''Mem:''' Hmph, really now? I wouldn't do something like that!
+::'''Mem:''' Hmm... but come to think of it, I don't remember when the last time I ate something was...
+::They don't seem to need food.
+:{{Диалог|Стрелка}} They don't seem to need food.
+:'''Mem:''' Says who! I'm still a... a cute and tiny animal, alright!
+:'''Mem:''' Hmm? But come to think of it... I don't remember when the last time I ate something was...
+:'''Dan Heng:''' ...Forget it. You can skip the translation. I can somehow tell that none of that chatter's meaningful.
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the Vortex of Genesis{{subst:void|<!--104011002-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|The battle with Nikador ends with the Chrysos Heirs' victory. We return to Okhema to rest and recover. Together, we will witness the return of the Titan's Coreflame and the start of the Coreflame's trial.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Wait for Phainon to start the Coreflame's trial{{subst:void|<!--104011003-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; TriggerStellaPerformance)
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.EnablePlayerPlayIdleShow"
+}</pre>
+::'''Dan Heng:''' What a... mysterious ritual. Is there really nothing we can do but wait?
+::'''Dan Heng:''' I don't know about the rest of them, but I don't like to just sit by and wait for my fate to be decided.
+
+;(Talk to Tides of the Basin)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "TitanAtlas"
+	}
+}</pre>
+::...The day is silent, and darkness has taken the stage...
+::...Flames rise higher, and drums fall like rain...
+::...Warriors soaked in golden blood, their cloaks tattered...
+::...Bronze shields you, and brass echoes my sorrow...
+::...
+::{{Диалог|Магазин}} Enter Tidal Bounty
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+::{{Диалог|Изучение}} Listen to the Voice of Constellation
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::{{Диалог|Выход}} Leave
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 454050303
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
+		},
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 454050303
+				}
+			]
+		}
+	]
+}</pre>
+::Ripples start to form in the bowl... rolling endlessly... The murmuring water whispers of revelry, the undulating tidal patterns like tiny waves, like this small space has also become a roiling ocean...
+:::'''Voice of the Tides:''' {{Размер|36|Ahh absolute bliss! 'Tis the pinnacle of bliss!}}
+:::'''Voice of the Tides:''' Such long-awaited satisfaction, thank you, my dear! This ambrosia has sobered me up a little... The visage of your reflection is so good-looking that I can't help but get all stirred up...
+:::{{Диалог|Стрелка}} Thanks for the compliment.
+:::{{Диалог|Стрелка}} I think I'm very pretty too.
+:::'''Voice of the Tides:''' Time... How long has passed? Oronyx, you move fast...
+:::'''Voice of the Tides:''' This starry sky... I see, she still hasn't given up... You are also a fool in this banquet...
+:::'''Voice of the Tides:''' Dance hard then... indulge hard... waste time hard... Little fishy that wants to swim to tomorrow...
+:::'''Voice of the Tides:''' When your banquet ends... the absurdity that you will see when you sober up will be the price of buying inebriation...
+:::{{Диалог|Стрелка}} What are you even saying?
+:::{{Диалог|Стрелка}} What the heck are you?
+:::{{Диалог|Стрелка}} You speak less sense sober than when you're drunk.
+:::'''Voice of the Tides:''' ...
+:::'''Voice of the Tides:''' Ambrosia... Ambrosia...
+:::The tide's voice is languid once more, its words fragmented like water splashes &mdash; it seems this basin's desire for liquid is insatiable, an ever-unquenchable patron of ambrosia.
+::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+::;(If {{Mission|Hero, Sing That Anthem of Creation|showChapter=0}} has been completed)
+:::;(If {{cx}}<!--performance 454050401 has been seen-->)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Voice of the Tides:''' My dear... Celestial Ambrosia... Pour some in... I'll give you a present...
+:::::{{Диалог|Стрелка}} Are you alright?
+::::::'''Voice of the Tides:''' No... it's so boring here... dark and cramped and small... it feels awful...
+:::::{{Диалог|Стрелка}} Wake up... you've turned blue.
+::::::'''Voice of the Tides:''' Hmm? Blue... am I the ocean? Nah, hehe... you got drunk on ambrosia too... huh?
+:::::'''Voice of the Tides:''' Never mind that. My dear... Bring ambrosia here... Treasures, relics, beauties... Take your pick...
+:::::'''(Trailblazer):''' (Can't it notice the changes around? Or is it simply... too intoxicated?)
+::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::'''The Last Echo of Lygus:''' ...No documented cases of ambrosia completely overriding an individual's perception of external reality. Conjecture: The Nameless previously interacted with this entity, potentially affecting its cognitive functions...
+:::::'''(Trailblazer):''' (Is this... Lygus's observation memory?)
+::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::'''Voice of the Tides:''' Ambrosia... bring me the ambrosia... I've got more treasures... for you... darling...
+:::::{{Диалог|Магазин}} I brought something special today.
+::::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "2"
+	},
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:::;(If {{cx}}<!--performance 454050401 has not been seen-->)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Voice of the Tides:''' My dear... Did you bring me ambrosia? Hurry! I want a fresh drink...
+:::::{{Диалог|Магазин}} Enter Tidal Bounty.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Listen to the Voice of Constellation.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Стрелка}} Chat with this basin.
+::::::'''Voice of the Tides:''' Chat... I can't... without something to drink...
+::::::{{Диалог|Разговор}} What are you?
+:::::::'''Voice of the Tides:''' I am... What am I?
+:::::::'''Voice of the Tides:''' Oh yes, I am a drunk that can't sober up... No, I am a dancer frolicking among my loves... No, I am a king indulgent in desires of flesh...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''The Last Echo of Lygus:''' Not incoherent ramblings. Speculation: This sequence of definitions reflects "facts" from "discrete temporal instances"...
+:::::::'''The Last Echo of Lygus:''' ...Confirmed. These definitions correlate with the "Ocean" variant Chrysos Heir models in the {{Rubi|Experiment #287|287th Era Nova}}, {{Rubi|Experiment #8745|8745th Era Nova}}, and {{Rubi|Experiment #134,962|134,962nd Era Nova}}. Speculation substantiated.
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Talk to me about ambrosia.
+:::::::'''Voice of the Tides:''' Ambrosia... Celestial Ambrosia is supreme! Fermented with the land's body... encased in the sky's clouds... He's angry, heeheehee...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''The Last Echo of Lygus:''' It's capable of integrating with the model neural network, introducing disruptive noise into its cognitive decision-making logic. This aligns with the known concept &mdash;
+:::::::'''The Last Echo of Lygus:''' "Symmetrical Occupancy Logic Encoding," which is commonly termed, the "Deadlock."
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Tell me about this place.
+:::::::'''Voice of the Tides:''' Let me tell you, my dear... It wasn't like this in the past... The fish... they dance... The drunks... frolicking, dancing, frolicking...
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:::::::'''The Last Echo of Lygus:''' Fascinating. How might the Nameless influence the experiment if made aware of "its geospatial position is directly beneath the Styxia"?
+::::::<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+::::::;(Return to previous option selection)
+::::::{{Диалог|Выход}} Enough. That's it for today.
+:::::::'''Voice of the Tides:''' My dear... Bring ambrosia... Chat or otherwise... I'll accompany you...
+:::::::'''Voice of the Tides:''' Next time... remember to bring ambrosia... More...
+:::::{{Диалог|Выход}} Leave
+::::::'''Voice of the Tides:''' Next time... remember to bring ambrosia... More...
+::::<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage2"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+::;(If {{Mission|Hero, Sing That Anthem of Creation|showChapter=0}} has not been completed)
+:::;(First interaction)
+:::::...
+:::::*splssh* ... *splssh* ...The sounds of waves reach your ears once again...
+:::::You hear the gentle rolling of waves, their tumultuous surges, like an endless expanse of ocean contained in this small bowl. And strange whispers mingle amidst tidal roars...
+::::<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		504045001
+	]
+}</pre>
+:::::'''Voice of the Tides:''' Parched... So parched...
+:::::I'm hearing ghosts. How can water be thirsty... Wait, how can water be talking?!
+:::::'''Voice of the Tides:''' My dear... Celestial Ambrosia... Pour some in... I'll give you a present...
+:::::{{Диалог|Магазин}} What gift is that? Lemme see.
+::::::'''Voice of the Tides:''' My dear... Bring ambrosia here... Treasures, relics, beauties... Take your pick...
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Ignore it. Listen to the Voice of Constellation
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Выход}} Creepy, I'm leaving.
+:::;(Subsequent interactions)
+::::<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045001
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045002
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045003
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+:::::'''Voice of the Tides:''' My dear... Did you bring me ambrosia? Hurry...
+:::::{{Диалог|Магазин}} Enter Tidal Bounty.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:::::{{Диалог|Изучение}} Listen to the Voice of Constellation.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::::{{Диалог|Стрелка}} Chat with this basin.
+::::::'''Voice of the Tides:''' Chat... I can't... without something to drink...
+::::::{{Диалог|Разговор}} What are you?
+:::::::'''Voice of the Tides:''' I am... What am I?
+:::::::'''Voice of the Tides:''' Oh yes, I am a drunk that can't sober up... No, I am a dancer frolicking among my loves... No, I am a king indulgent in desires of flesh...
+:::::::'''Voice of the Tides:''' Nononono... I am a fish in water, a big fish... Large, huge... So much ambrosia, tasty ambrosia all drank by the fish... Don't drink anymore... Mine... It's all mine, I want it...
+:::::::'''Voice of the Tides:''' I want... I want to go to the banquet in the giant fish's mouth... in... the sea! Yes, the sea! The sea in the drunkard's glass, the tyrant at the banquet inebriated by corals, the dancers embraced in locked kisses with rocky reefs!
+:::::::'''Voice of the Tides:''' Heehee... Haha... Hahahaha... I want ambrosia... Fill up the wine glass to its brim...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Talk to me about ambrosia.
+:::::::'''Voice of the Tides:''' Ambrosia... Celestial Ambrosia is supreme! Fermented with the land's body... encased in the sky's clouds... He's angry, heeheehee...
+:::::::'''Voice of the Tides:''' Wait... Wait... That does not belong to you! It's mine, all mine!
+:::::::'''Voice of the Tides:''' Give it back... to me... I was the one who shared it with you... Selfish mortals who are oblivious to reciprocation... are really...
+:::::::'''Voice of the Tides:''' Really... Hee, heeheehee... Really adorable... I love you all... Let's all drink up...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Tell me about this place.
+:::::::'''Voice of the Tides:''' A pointless place... No banquets, no music, no ambrosia... Pitch black... So small, so narrow... So uncomfortable...
+:::::::'''Voice of the Tides:''' But let me tell you, my dear... It wasn't like this in the past... The fishes... they dance... The drunks... frolicking, dancing, frolicking...
+:::::::'''Voice of the Tides:''' Merry, rowdy, ambrosia... Ambrosia... I want ambrosia...
+::::::;(Return to previous option selection)
+::::::{{Диалог|Выход}} Let's stop here.
+:::::::'''Voice of the Tides:''' My dear... Bring ambrosia... Chat or otherwise... I'll accompany you...
+:::::{{Диалог|Выход}} Leave
+:::<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage"
+					}
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage)
+<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.TitanAtlas.TitanAtlasHandbookPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "WorldShopMission"
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; WorldShopMission)
+<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "KraterOfferingWorldShop"
+	}
+}</pre>
+::As the echoes of the constellations fall silent, the next sound to meet your ears is... waves?
+::(Titan's murmurs)
+::The unfamiliar call carries a longing to take your soul's essence into the pool...
+::{{Диалог|Магазин}} Enter Tidal Bounty
+::{{Диалог|Изучение}} Listen to the Voice of Constellation
+::{{Диалог|Выход}} Leave
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"NotHideEntity": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideAllEntity",
+	"IsHide": true,
+	"HideNPC": true,
+	"HideProp": true,
+	"NotHideEntity": [
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 22,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300001
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300002
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300003
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300004
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300005
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300006
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300007
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300008
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300009
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300010
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300011
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300012
+		},
+		{
+			"GroupID": 9,
+			"GroupNpcID": 300013
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.KraterSubmit.WorldShop.KraterWorldShopPage",
+	"WaitForExit": true,
+	"OnUIEnter": [],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.HideAllEntity",
+			"HideNPC": true,
+			"HideProp": true,
+			"NotHideEntity": []
+		},
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 504045003,
+			"MaskConfig": {}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Levelup)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045004
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045005
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045006
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Put)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045007
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045008
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045009
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+
+;(Unused &mdash; TriggerKrater_Out)
+;(If {{cx}}<!--performance 504045001 has not been seen-->)
+:<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045010
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayVoice",
+			"VoiceIDs": [
+				504045011
+			]
+		}
+	],
+	"RandomMaskTarget": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "Caster"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Chat with the Chrysos Heirs{{subst:void|<!--104011004-->}}===
+{{Dialogue Start}}
+
+;(Talk to Aglaea)
+:'''Aglaea:''' Phainon steers his own fate.
+:'''Aglaea:''' There will come a day when he leads everyone &mdash; everyone we have left &mdash; through the gates of the miracle.
+
+;(Talk to Trinnon)
+:'''Trinnon:''' Zzz... Zzz...
+:'''Trinnon:''' Snowy... zzz... will succeed...
+
+;(Talk to Castorice)
+:'''Castorice:''' Wherever he is, whatever he is fighting, I pray he makes it through this test.
+{{Dialogue End}}
+
+===Speak with Aglaea{{subst:void|<!--104011006-->}}===
+{{Dialogue Start}}
+
+;(Talk to Aglaea)
+:'''Aglaea:''' Phainon steers his own fate.
+:'''Aglaea:''' If he can conquer his fear and return as a demigod, we will be one step closer to the miracle that the prophecy promised.
+:{{Диалог|Стрелка}} You have a lot of faith in him.
+:{{Диалог|Стрелка}} What if he fails?
+::'''Aglaea:''' ...That would mean his time hasn't come yet. And that there is a more arduous mission for him to see through.
+:'''Aglaea:''' You must have noticed by now. Every Chrysos Heir here bears... a flaw of sorts. Be it the curse of immortality, or the constant erosion of their humanity, or...
+:'''Aglaea:''' But not Phainon. He is a Chrysos Heir without flaw, a perfect vessel for divinity.
+:'''Aglaea:''' There will come a day when he leads everyone &mdash; everyone we have left &mdash; through the gates of the miracle.
+
+;(Talk to Trinnon)
+:'''Trinnon:''' Zzz... Zzz...
+:'''Trinnon:''' Snowy... zzz... will succeed...
+
+;(Talk to Castorice)
+:'''Castorice:''' Wherever he is, whatever he is fighting, I pray he makes it through this test.
+{{Dialogue End}}
+
+===(Optional) Speak with Trinnon{{subst:void|<!--104011007-->}}===
+{{Dialogue Start}}
+
+;(Talk to Aglaea)
+:'''Aglaea:''' Phainon steers his own fate.
+:'''Aglaea:''' There will come a day when he leads everyone &mdash; everyone we have left &mdash; through the gates of the miracle.
+
+;(Talk to Trinnon)
+:'''Trinnon:''' Zzz... Zzz...
+:'''Dan Heng:''' Looks like she fell asleep. Presiding over this ritual must take quite a toll.
+:'''Trinnon:''' Snowy... zzz... will succeed...
+
+;(Talk to Castorice)
+:'''Castorice:''' Wherever he is, whatever he is fighting, I pray he makes it through this test.
+{{Dialogue End}}
+
+===(Optional) Speak with Castorice{{subst:void|<!--104011009-->}}===
+{{Dialogue Start}}
+
+;(Talk to Aglaea)
+:'''Aglaea:''' Phainon steers his own fate.
+:'''Aglaea:''' There will come a day when he leads everyone &mdash; everyone we have left &mdash; through the gates of the miracle.
+
+;(Talk to Trinnon)
+:'''Trinnon:''' Zzz... Zzz...
+:'''Trinnon:''' Snowy... zzz... will succeed...
+
+;(Talk to Castorice)
+:'''Castorice:''' I pray you truly are prepared, Lord Phainon.
+:{{Диалог|Стрелка}} You seem worried.
+::'''Castorice:''' I spoke at length with Lord Phainon before. There was hesitation in his words.
+:{{Диалог|Стрелка}} You spoke to him?
+::'''Castorice:''' Yes, there was hesitation in his words.
+:'''Castorice:''' The manifestation of the prophecy must have seen this. It saw Lord Phainon's heart wavering.
+:'''Castorice:''' Wherever he is, whatever he is fighting, I pray he makes it through this test.
+{{Dialogue End}}
+
+===Chat with the Chrysos Heirs{{subst:void|<!--104011010-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+:'''Mydei:''' Still too late, huh...
+:{{Диалог|Стрелка}} Oops, missed the party...
+:{{Диалог|Стрелка}} Phainon said you weren't coming.
+:'''Mydei:''' The constellation of the {{Rubi|Lance of Fury|Strife Titan}} is already illuminated. That must mean...
+:'''Castorice:''' The Coreflame has been surrendered, but Lord Phainon's test isn't over yet.
+:'''Castorice:''' The prophecy sent an ambassador. They acknowledged Lord Phainon's strength and character, but had doubts about his strength of will.
+:'''Castorice:''' He must conquer his fear and prove himself to the prophecy.
+:'''Mydei:''' ...I was right to be worried.
+:'''Mydei:''' I want to formally thank you, outsiders. Were it not for your aid, our campaign against {{Rubi|Nikador|Strife Titan}} would have been a hundred times more arduous.
+:{{Диалог|Стрелка}} Isn't it nice to be polite?
+::'''Mydei:''' Kremnoans revere strength and military might, but that does not mean we lack etiquette.
+::Talk is cheap.
+:{{Диалог|Стрелка}} Talk is cheap.
+:'''Mydei:''' You are asking for a reward? Not a problem.
+:'''Mydei:''' Kremnoans revere strength and military might, but that does not mean we lack etiquette.
+:'''Dan Heng:''' Mydei, what do you mean when you said you were "worried"?
+:{{tx}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Hero, Bear Thy Coreflame
+|zhs  = 英雄啊，且握住那枚火种
+|zht  = 英雄啊，且握住那枚火種
+|ja   = 英雄よ、その火種を握りしめろ
+|ko   = 영웅이여, 그 불씨를 손에 쥐어라
+|es   = Héroe, sostén esa Yesca
+|fr   = À toi, Héros, de porter cette flamme divine
+|ru   = О герой, прими ядро пламени
+|th   = วีรชนเอ๋ย จงไขว่คว้าเชื้อไฟ
+|vi   = Hỡi Anh Hùng, Hãy Nắm Lấy Ngọn Lửa Đó
+|de   = O Held, trage die Kernflamme
+|id   = Wahai Pahlawan, Pertahankan Api Itu
+|pt   = Herói, Carrega Tua Chama Primordial
+}}
+
+==Change History==
+{{Change History|3.5}}

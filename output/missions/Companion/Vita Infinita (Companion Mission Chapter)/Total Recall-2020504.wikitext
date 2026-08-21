@@ -1,0 +1,430 @@
+<%-- [PAGE_INFO]
+PageTitle=#Total Recall#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2020504
+|title         = 
+|image         = <!--Mission Total Recall.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = [[Companion Mission]] ''[[Total Recall]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Dan Heng (Memory); Fu Xuan; March 7th; Memory-(Trailblazer); Memory-Arlan; Memory-Asta; Memory-Herta; Trailblazer
+|startLocation = [[The Xianzhou Luofu]] - [[Memory-Herta Space Station]]
+|world         = The Xianzhou Luofu
+|area          = Memory-Herta Space Station
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*450; Stellar Jade*100; Traveler's Guide*8; Lost Crystal*8; Oath of Steel*6; Credit*90 000
+}}
+'''''Total Recall''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Follow Dan Heng and explore your own memory
+# Find the "surreal" part of this memory
+# Find the "abnormality" in this memory
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:{{Black Screen|March, wake up &mdash; we have to hurry.}}
+:'''Dan Heng (Memory):''' March, wake up &mdash; we have to hurry.
+:'''March 7th:''' Huh? Are we going? What about Miss Fu Xuan?
+:'''Dan Heng (Memory):''' Fu Xuan? Who's that? There's no time for daydreaming &mdash; the space station is in crisis.
+:'''March 7th:''' Huh? What do you mean...
+:'''Dan Heng (Memory):''' Come with me.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43201_F43201003_G7",
+	"AnchorName": "Anchor4",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveName": "BlendCut11",
+		"BlendTime": 2
+	}
+}</pre>
+{{Dialogue End}}
+
+===Follow Dan Heng and explore your own memory{{subst:void|<!--202050402-->}}===
+{{Mission Description|type=companion|location=Memory-Herta Space Station|update|It isn't surprising to see Dan Heng in this memory, but March 7th is rather startled to see him acting in a way that screams "there's no time to explain. Hurry and get onto the Express!"<br />This isn't too bad. Having a guide is better than her searching alone aimlessly in her memories.}}
+{{Dialogue Start}}
+:'''Dan Heng (Memory):''' Asta said that the Stellaron is stored in that room up ahead... and I'm guessing the Legion might also be interested in its whereabouts.
+:'''March 7th:''' ...I know this memory! This is before we met (Trailblazer).
+:'''Dan Heng (Memory):''' Who? March, you're being really weird today... Follow me.
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E6",
+	"SubMissionID": 202050402
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 7,
+	"GroupNpcID": 400001,
+	"DestroyList": []
+}</pre>
+:'''March 7th:''' Dan Heng? Where are you?
+:'''March 7th:''' Master Diviner? Can you hear me? Darn it... Something must have gone wrong!
+:'''March 7th:''' What am I gonna do... Why did Miss Fu Xuan pick the scariest time to vanish...
+:'''Fu Xuan:''' March... Can you... me ...
+:'''Fu Xuan:''' I'm getting more and more evidence that your memories have suffered interference... but I don't know where from...
+:'''March 7th:''' *sigh* Looks like I'll have to do it by myself this time.
+
+;(Talk to Asta)
+:'''Memory-Asta:''' March, have you forgotten your past experiences? Surely your bow there is enough evidence for you.
+:'''Memory-Asta:''' You were once a Galaxy Ranger engaged in a bitter fighting battle with the remnants of the Swarm. You rescued a planet in the Emerald system that was about to be swallowed by a black hole, smashing through Dr. Primitive's carefully-laid plans.
+:'''Memory-Asta:''' You were severely wounded during the battle for Vonwacq. The leader of the Rangers encased you in ice to protect you, and waited for you to recover.
+:'''March 7th:''' My bow... But Himeko made that for me! You're lying...
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400005
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Arlan)
+:'''Memory-Arlan:''' March, if you insist on looking back, you'll find nothing but confusion and chaos.
+:'''Memory-Arlan:''' You were the last princess and also the last survivor of the diamond world, Adlivun. The planet was burned to an obsidian hellscape the moment Nanook ascended.
+:'''Memory-Arlan:''' Filled with despair, your parents swaddled you in warm clothing and placed you into an ice ship. As they watched you sink into the turbulent waves of the starscape, they felt a newfound hope.
+:'''Memory-Arlan:''' You were found and raised by strangers. You are the only savior &mdash; the promise of rebirth.
+:'''March 7th:''' Wait... I wrote that! That's a story I made up about my past!
+:'''March 7th:''' Great, forget memories, now everyone gets to see my imagination...
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Herta)
+:'''Memory-Herta:''' March 7th, one of the Nameless aboard the Astral Express.
+:'''Memory-Herta:''' After being picked up by Himeko, she was freed from the Six-Phased Ice in which she was encased. She lost all memory of the past...
+:'''Memory-Herta:''' ...because she had no past to speak of. She was an Aeon, and Aeons have no past... From the moment they ascend, the past and future of their existence becomes inundated by their Path.
+:'''Memory-Herta:''' March 7th's mistake was the loss of the authority of the Aeons.
+:'''March 7th:''' Could it be...? That never even occured to me... but I guess it's not impossible!
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 202180574
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+{{Dialogue End}}
+
+===Find the "surreal" part of this memory{{subst:void|<!--202050405-->}}===
+{{Mission Description|type=companion|location=Memory-Herta Space Station|update|Fu Xuan left a word of warning, then completely cut off communications with March 7th. March is a little scared, but this fear also made her feel a little ridiculous &mdash; why is everything so ominous and lonely when this is her own memory?<br />She can't help but recall the nightmare she had a few nights ago. She forgot the content of the dream as soon as she woke up, but that helpless and isolated feeling of fear lasted for well over an hour.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 9,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180575
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050405
+}</pre>
+
+;(Talk to (Trailblazer))
+:'''Memory-(Trailblazer):''' March, leave your memories in the past.
+:'''Memory-(Trailblazer):''' Why do you insist on returning to them? If they were so important to you, wouldn't you have remembered them?
+:'''Memory-(Trailblazer):''' The moment a Nameless boards the Express, a new life begins. We set out on a new road, never to return.
+:'''Memory-(Trailblazer):''' Explore, trailblaze, but do not dwell on the past... you'll tarnish the reputation of the Nameless.
+:'''March 7th:''' ...
+:{{Диалог|Стрелка}} (Clear distortion)
+::'''March 7th:''' Enough.
+::'''March 7th:''' You're not (Trailblazer). Nothing like {{MC|м=him|ж=her}}.
+::'''March 7th:''' (Trailblazer) would never try and force me to give up something so important to me.
+::'''March 7th:''' I don't care who you are &mdash; disappear right now and let me pass. And don't you ever pretend to be one of my friends again.
+:<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack",
+	"ExecuteOnSkip": true
+}</pre>
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:{{Диалог|Выход}} (Wait)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180572
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 8,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 202180573
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050403
+}</pre>
+{{Dialogue End}}
+
+===Find the "abnormality" in this memory{{subst:void|<!--202050411-->}}===
+{{Mission Description|type=companion|location=Memory-Herta Space Station|update|After overcoming various obstacles, March 7th finally approaches the starting point of her memories. However, the closer she gets, the more anxious she feels &mdash; Where is this "obstacle" coming from?<br />Fu Xuan's warning echoes in her mind, making her almost wanting to stop and turn back the way she came...<br />"But Trailblazers must never turn back, even when they turn their back." March 7th is pretty satisfied with this dry joke and decides to tell it to Dan Heng when she gets back.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:'''March 7th:''' *sigh* Finally, all done... I better meet up with Fu Xuan if I wanna keep going through my memories.
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Duration": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/NoiseGlitch.asset"
+}</pre>
+:<!--0.7-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+:<!--0.8-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==Change History==
+{{Change History|3.5}}

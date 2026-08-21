@@ -12,14 +12,14 @@ PageTitle=##
 |Условия         = 
 * Завершена [[Миссия Освоения]] «[[Гончая гонится за лисой]]»
 * Завершена {{cx}}<!--Hidden Mission ID 4040201-->
-|Персонажи       = Первопроходец; Яньмин
-|СтартЛокация    = [[Лофу Сяньчжоу]] — [[Звёздный дворец]]
-|Мир             = Лофу Сяньчжоу
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Рецепт: Рубиновое зелье*1 { text = Рецепт: Рубиновое зелье }; Стрелы*10; Кредиты*5 000
 }}
-'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -30,70 +30,6 @@ PageTitle=##
 ==Прохождение==
 {{Дополнить}}
 
-;(Unused &mdash; YanmingZhanyong)
-
-
-;(Unused &mdash; 404021303_Finish)
-<pre>{
-	"$type": "RPG.GameCore.PropSetupUITrigger",
-	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
-	"IconType": "BoxIcon",
-	"ButtonText": {
-		"Hash": 12134815815030641458
-	},
-	"ButtonCallback": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "404021303_Finish2"
-			}
-		}
-	],
-	"OverrideTargetTypes": [],
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 27
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300002
-				}
-			}
-		}
-	}
-}</pre>
-
-;(Unused &mdash; 404021303_Finish2)
-<pre>{
-	"$type": "RPG.GameCore.PropTriggerAnimState",
-	"AnimStateName": "Activing",
-	"WatiAnimFinish": true,
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 27
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300002
-				}
-			}
-		}
-	}
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

@@ -11,8 +11,8 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия Освоения]] «[[Тишина галактики]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Зона поддержки]]
-|Мир             = Космическая станция «Герта»
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
@@ -28,38 +28,6 @@ PageTitle=##
 ==Прохождение==
 {{Дополнить}}
 
-:{{Диалог|Журнал путешествий}} Цунами войны
-<pre>{
-	"$type": "RPG.GameCore.ShowUI",
-	"Name": "Ui.ActivityFeverTime.ActivityFeverTimeMainPage",
-	"OnUIExitImmediately": []
-}</pre>
-;(If {{cx}}<!--SubMission Finish: 802120102-->)
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEvent",
-	"EventName": {
-		"Value": "Clt_TriggerClose"
-	},
-	"InstanceID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 300001
-		}
-	}
-}</pre>
-;(If {{cx}}<!--SubMission not Finish: 802120102-->)
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEntityEvent",
-	"EventName": {
-		"Value": "Clt_TriggerOpen"
-	},
-	"InstanceID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 300001
-		}
-	}
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

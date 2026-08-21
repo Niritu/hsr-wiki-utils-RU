@@ -1,0 +1,322 @@
+<%-- [PAGE_INFO]
+PageTitle=#Time, Ferry Me Through Ages#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040602
+|title         = 
+|image         = <!--Mission Time, Ferry Me Through Ages.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Before Their Deaths
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Strange Display Monitor; Trailblazer
+|startLocation = [[Amphoreus]] - [[????]]
+|world         = Amphoreus
+|area          = ????
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Traveler's Guide*6; Refined Aether*6; Disorder Ambrosia*240; Credit*80 000
+}}
+'''''Time, Ferry Me Through Ages''''' is a [[Trailblaze Mission]] in the chapter [[Before Their Deaths]].
+
+==Steps==
+# Explore the mysterious space
+# Something's not right... Check the display monitor again
+# Explore the mysterious space
+# Investigate the display monitor at the end
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Explore the mysterious space{{subst:void|<!--104060201-->}}===
+{{Mission Description|type=trailblaze|location=????|Every expedition begins with a storm that foretells the hardships to come. On the audience's seats in the Exomyth, the only audience member leads you into the story titled "Before Their Deaths," and thus draws the curtain on a tragedy.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+
+;(Unused &mdash; PlayVoice1_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021402,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice2_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021403,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice3_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021404,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+
+;(Unused &mdash; PlayVoice4_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146021405,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+{{Dialogue End}}
+
+===Something's not right... Check the display monitor again{{subst:void|<!--104060203-->}}===
+{{Dialogue Start}}
+:'''Strange Display Monitor:''' Outlier: (Trailblazer).
+:'''Strange Display Monitor:''' Executing command: Record.
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+{{Dialogue End}}
+
+===Explore the mysterious space{{subst:void|<!--104060210-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; DistrictTrigger_G10)
+
+{{Dialogue End}}
+
+===Investigate the display monitor at the end{{subst:void|<!--104060202-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; HideNPC_G17)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G18)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G19)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+
+;(Unused &mdash; HideNPC_G20)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.5,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
+	"MuteAudioEvent": true
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Time, Ferry Me Through Ages
+|zhs  = 流年啊，渡我漂游千百载
+|zht  = 流年啊，渡我漂游千百載
+|ja   = 流れる時よ、幾千の年月を越えていけ
+|ko   = 흐르는 세월이여, 수천 년을 건너게 해다오
+|es   = Tiempo, llévame flotando a través de los años
+|fr   = Temps, laisse-moi traverser les âges
+|ru   = О время, пронеси меня через тысячи лет
+|th   = ห้วงเวลาเอ๋ย จงพาฉันล่องลอยผ่านพันปี
+|vi   = Hỡi Năm Tháng, Hãy Đưa Tôi Phiêu Du Hàng Ngàn Năm
+|de   = O Zeit, trage mich durch die Epochen
+|id   = Aliran Waktu, Bawalah Aku Mengarungi Ribuan Tahun
+|pt   = Ó Tempo, Leva-me Através das Eras
+}}
+
+==Change History==
+{{Change History|3.5}}

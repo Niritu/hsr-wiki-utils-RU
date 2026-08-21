@@ -11,8 +11,8 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия приключения]] «[[Тайные сумерки]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Амфореус]] — [[Омут судьбы Янусополиса]]
-|Мир             = Амфореус
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Тайные сумерки
 |Следующая       = 
 |Награды         = 
@@ -27,30 +27,7 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-<pre>{
-	"$type": "RPG.GameCore.TriggerEntityServerEvent"
-}</pre>
-;(Unused &mdash; EnterDistrict_G149)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.PerformanceEndSeq",
-	"BeforeCases": [
-		{
-			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
-			"SwitchCharacterAnchorConfig": {
-				"IsLocalPlayer": true,
-				"CharacterUniqueName": "LocalPlayer",
-				"AreaName": {
-					"Value": "LevelArea_P20412_F20412001_G149"
-				},
-				"AnchorName": {
-					"Value": "Anchor1"
-				},
-				"ResetTurnInPlace": true
-			}
-		}
-	]
-}</pre>
+
 {{Диалог Конец}}
 
 ==На других языках==

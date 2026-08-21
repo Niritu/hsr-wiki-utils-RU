@@ -1,0 +1,2743 @@
+<%-- [PAGE_INFO]
+PageTitle=#Hero, Return to That Peace of Home#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040502
+|title         = 
+|image         = <!--Mission Hero, Return to That Peace of Home.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = For the Sun is Set to Die
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = "Healer"; "Ruler"; "Scholar"; "Servant"; "Servant" & "Healer"; "Traveler"; "Weaver"; Aglaea; Anaxa & Phainon; Castorice; Child; Cipher; Cyrene; Dolimem; Female voice coming from afar; Hunter; Livia; Lygus; Mydei; Phainon; Piso; Pythias; Relimem; Trailblazer; Trinnon
+|startLocation = [[Amphoreus]] - [[Act I: Departure]]
+|world         = Amphoreus
+|area          = Act I: Departure
+|prev          = 
+|next          = 
+|rewards       = Traveler's Guide*12; Refined Aether*12; Lost Crystal*12; Credit*150 000
+}}
+'''''Hero, Return to That Peace of Home''''' is a [[Trailblaze Mission]] in the chapter [[For the Sun is Set to Die]].
+
+==Steps==
+# Head to Act I: Departure
+# Follow Phainon to find Cyrene
+# (Optional) Find oracle cards in the barn
+# (Optional) Find oracle cards near the water
+# Find oracle cards in the Sacrament Courtyard
+# Go to the attic to find oracle cards
+# Follow the two to the backyard of the garden
+# Follow the two to enter the Membrance Maze
+# Talk to Mem...?
+# Follow Relimem to find the village chief
+# (Optional) Listen to the echoes of oracle cards
+# Talk to Cyrene about the future revealed by oracle cards
+# Save Aedes Elysiae
+# Head to Act II: Trial
+# Witness a different kind of "duel"
+# Follow Phainon to prepare for "duel"
+# Accept the test of Talanton
+# Head to Act III: Return
+# Greet Oronyx
+# Follow the two to enter the end of destiny
+# Listen to Lygus' explanation of the current situation
+# Keep going to witness the theatrical curtain call
+# (Optional) Watch memory fragment
+# Talk to Lygus to show the final memory
+# Witness the memory's curtain call
+# Follow Relimem to find the village chief
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to Act I: Departure{{subst:void|<!--104050201-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|Upon returning to the Vortex of Genesis, (Trailblazer) and Phainon returned the final Coreflame together, but rather than journeying to the new world as expected, they were pulled into an "Immersive Theater" by Lygus.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G5)
+----
+::{{tx}}
+:----
+::{{tx}}
+::'''Phainon:''' ...
+::{{Диалог|Стрелка}} Rise and shine!
+::'''Phainon:''' ...What?
+::'''Phainon:''' Ah, it's you... Whoops, fell asleep there.
+::'''Phainon:''' What a strange dream I had. It's gone now though. But look! Perfect sunshine! The day's still young!
+::'''Phainon:''' Let's go find Cyrene, partner. We promised to be there for her oracle card reading today. It's right about time...
+::'''Phainon:''' Looking at you, someone's still half asleep. Tell you what, catch some fresh air first. I'll hang around here.
+::{{Диалог|Стрелка}} What is this place...?
+::{{Диалог|Стрелка}} The Era Nova... is it done?
+::{{Диалог|Стрелка}} Cyrene?
+::'''Lygus:''' Beautiful, isn't it? This is {{Цвет|Ключевой|nobold=1|Aedes Elysiae}}, home of the nameless hero who carried {{Rubi|Kephale|Worldbearing Titan}}'s Coreflame.
+::'''Lygus:''' When he was young and innocent, he had heroic dreams, imagining his wooden sword was forged of iron...
+::'''Lygus:''' ...pretending the straw dummy propped up by a wooden pole was a giant with a single blood vessel running from spine to heel...
+::'''Lygus:''' ...dreaming of slaying the giant and becoming a hero to save the world &mdash; though to his young mind, {{Цвет|Ключевой|nobold=1|the "world" was just this small village}}.
+::{{Диалог|Стрелка}} Are we seeing Phainon's childhood?
+:::'''Lygus:''' Sharp as ever. Indeed, these memories you witness are the first steps of his journey...
+:::How does this connect to Era Nova?
+:::'''Lygus:''' What you witness is the start of his path to a new world. And trust me, you play no small part...
+:::I had no idea he used to be so chuuni.
+::{{Диалог|Стрелка}} How does this connect to Era Nova?
+:::'''Lygus:''' What you witness is the start of his path to a new world. And trust me, you play no small part...
+:::I had no idea he used to be so chuuni.
+::{{Диалог|Стрелка}} I had no idea he used to be so chuuni.
+::'''Lygus:''' Witty as always. But this is more than just a funny story. It's the start of his path...
+::'''Lygus:''' These are his first memories. Rather than watching, why not join in? Think of it as "immersive theater"...
+::'''Lygus:''' {{Цвет|Ключевой|nobold=1|Become his lifelong closest friend, witnessing his hero's journey from the best seat in the house, as the nameless hero whose unwavering guidance shaped Phainon's destiny, yet whose name was never recorded in Amphoreus's history.}}
+::{{Диалог|Стрелка}} Who could possibly be there his entire life?
+::{{Диалог|Стрелка}} What exactly do I need to do?
+::{{Диалог|Стрелка}} Oh, you direct plays now?
+::'''Lygus:''' Questions, questions... Let's follow along and find out, shall we?
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41440_F41440001_G5"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G8_1)
+
+
+;(Unused &mdash; EnterDistrict_G8_2)
+
+
+;(Unused &mdash; EnterDistrict_G8_3)
+
+
+;(Unused &mdash; EnterDistrict_G7_1)
+;(If {{cx}}<!--SubMission not Finish: 104050202-->)
+::'''Hunter:''' Hey Phainon! Where you headed? No Cyrene today?
+::'''Phainon:''' That's exactly where I'm going!
+
+;(Unused &mdash; EnterDistrict_G7_2)
+
+
+;(Unused &mdash; EnterDistrict_G6_1)
+;(If {{cx}}<!--SubMission not Finish: 104050202-->)
+::'''Child:''' Phainon, show me how to use a sword like you do!
+::'''Phainon:''' Wait till you grow a bit more!
+
+;(Unused &mdash; EnterDistrict_G6_2)
+
+{{Dialogue End}}
+
+===Follow Phainon to find Cyrene{{subst:void|<!--104050202-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G9)
+:{{tx}}
+:----
+::'''Cyrene:''' Goodness! Look at you rushing about... you've got the poor swing all startled...
+::'''Cyrene:''' ...Hmm?
+::{{Диалог|Стрелка}} Who are you...?
+:::'''Cyrene:''' Hmm... There's something oddly unfamiliar about this.
+:::Is that you...?
+:::'''Cyrene:''' It's that déjà vu~♪
+:::It's you!
+::{{Диалог|Стрелка}} Is that you...?
+:::'''Cyrene:''' It's that déjà vu~♪
+:::It's you!
+::{{Диалог|Стрелка}} It's you!
+::'''Cyrene:''' I knew it was you ♪
+::'''Phainon:''' Something wrong? What do you see?
+::'''Cyrene:''' Oh~ nothing much, just... suddenly felt a strange connection.
+::'''Cyrene:''' Look at you, leaves in your hair! Were you sleeping in a tree again, or was it the wheat fields this time? At least brush yourself off before wandering around.
+::'''Phainon:''' Come on, I'm not a kid anymore, you're the only one who still treats me like one...
+::'''Cyrene:''' Sure, sure. You may have the height advantage, but when it comes to maturity? I'm leagues ahead of you.
+::'''Cyrene:''' Still fantasizing about being in heroic adventures and imagining yourself as one of the characters. That's the kind of thing kids do, not grown-ups.
+::'''Cyrene:''' Don't you agree? And since you're playing along with his antics... who are you pretending to be today?
+::{{Диалог|Стрелка}} Hi there, I'm (Trailblazer).
+:::'''Phainon:''' *awkward cough* Well... {{MC|ж=she|м=he}} hasn't decided on a character for today yet.
+:::'''Cyrene:''' How about we stick with the usual? You know, the valiant hero from a distant shore who made a pact to learn the sword from you?
+:::Greetings. I'm the Stellaron Hunter.
+:::'''Phainon:''' *clearing throat* {{MC|м=Uh...|ж=Ah...}} today {F#s}he's going with "Stellaron Hunter."
+:::'''Cyrene:''' Steal-a-heart Hunter? Planning to steal someone's heart, are we?
+:::'''Cyrene:''' Switching roles again? What happened to being the valiant hero from a distant shore who made that solemn pact to learn the sword...
+:::Greetings. I'm the Invincible Galactic Baseballer!
+::{{Диалог|Стрелка}} Greetings. I'm the Stellaron Hunter.
+:::'''Phainon:''' *clearing throat* {{MC|м=Uh...|ж=Ah...}} today {F#s}he's going with "Stellaron Hunter."
+:::'''Cyrene:''' Steal-a-heart Hunter? Planning to steal someone's heart, are we?
+:::'''Cyrene:''' Switching roles again? What happened to being the valiant hero from a distant shore who made that solemn pact to learn the sword...
+:::Greetings. I'm the Invincible Galactic Baseballer!
+::{{Диалог|Стрелка}} Greetings. I'm the Invincible Galactic Baseballer!
+::'''Phainon:''' *clearing throat* Uh... today {F#s}he's going with "Invincible Galactic Baseballer."
+::'''Cyrene:''' Switching roles again? What happened to being the valiant hero from a distant shore who made that solemn pact to learn the sword...
+::'''Phainon:''' Spare me! Can we not bring this up?
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41440_F41440001_G9"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G39)
+:<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 39,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 1.1,
+	"WaitForPlayer": true,
+	"PathOffset": []
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G40)
+:'''Phainon:''' All awake now? Great, let's go see Cyrene.
+{{Dialogue End}}
+
+===(Optional) Find oracle cards in the barn{{subst:void|<!--104050203-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|update|The "theater" is actually someone's childhood memories, staged in the Aedes Elysiae of old. (Trailblazer), with many questions in mind, assumes the role of this person's "most important companion," joining him and Cyrene on their search for something important...}}
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+:In the sunlit barn, amid the scent of ripened wheat, they found various fruits hoarded by squirrels, and... a wooden figurine missing arms and legs.
+:'''Phainon:''' My unfinished little soldier? After all these years...
+:'''Phainon:''' Hey, this is the one Mrs. Pythias confiscated! Finally back in my hands...
+:'''Pythias:''' Phainon, Cyrene? Where are you two headed?
+:'''Phainon:''' Speak of the devil... Mrs. Pythias? Is school out already?
+:'''Pythias:''' No classes today. This morning, I used fallen leaves for a reading, seeking {{Rubi|Oronyx|Time Titan}}'s wisdom. They warned of potential injuries, so I gave everyone a holiday.
+:'''Pythias:''' Besides, it's harvest season. There's plenty of other work to be done even without classes.
+:'''Cyrene:''' With you being our only teacher in Aedes Elysiae, you must be working so hard.
+:'''Pythias:''' Anything for my students. I don't mind the work.
+:'''Pythias:''' When you travel far from here, you must visit the Grove of Epiphany for me, to see what a true haven of wisdom looks like...
+:'''Pythias:''' ...By the way, what are you looking for in here? You've been searching quite thoroughly.
+:{{Диалог|Стрелка}} (Quietly hide the wooden soldier)
+::'''Phainon:''' Thank you, my friend! Time to take our soldier home!
+::(Remain silent)
+::'''Pythias:''' Is this... a toy? Really now, aren't we past the age for these?
+::'''Phainon:''' She doesn't remember, eh? This little soldier's coming with me.
+::(Snitch on Phainon)
+:{{Диалог|Стрелка}} (Remain silent)
+::'''Pythias:''' Is this... a toy? Really now, aren't we past the age for these?
+::'''Phainon:''' She doesn't remember, eh? This little soldier's coming with me.
+::(Snitch on Phainon)
+:{{Диалог|Стрелка}} (Snitch on Phainon)
+:'''(Trailblazer):''' Mrs. Pythias, it's Phainon's toy!
+:'''Phainon:''' Hey, partner, keep it down...!
+:'''Pythias:''' Is this... a toy? Really now, aren't we past the age for these?
+:'''Phainon:''' She doesn't remember, eh? This little soldier's coming with me.
+:'''Pythias:''' Alright then, I should be going. It might rain tonight, so don't stay out too late!
+:{{tx}}
+
+{{Dialogue End}}
+
+===(Optional) Find oracle cards near the water{{subst:void|<!--104050214-->}}===
+{{Dialogue Start}}
+
+;(Talk to Piso)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190894
+		}
+	}
+}</pre>
+:'''Livia:''' It's mine. I caught it fair and square!
+:'''Piso:''' You did not! It's mine!
+:'''Livia:''' Phainon, Cyrene, come quick! Look at this huge bottle I just caught!
+:'''Piso:''' Give it here! My rod, my catch. I only let you borrow it, remember?
+:'''Phainon:''' What's got you two so worked up? Here, show me...
+:'''Phainon:''' Wait a second... this is... This is my old Wish-In-A-Bottle! How did it end up here?
+:'''Livia:''' Ooh, I wanna see! What did little Phainon wish for?
+:'''Phainon:''' Not happening. This stays sealed.
+:'''Female voice coming from afar:''' Piso! Livia! Dinner's ready!
+:'''Piso:''' Coming, Mom!
+:'''Livia:''' Finally. I'm starving! See you later!
+:'''Phainon:''' You know what's funny? I really thought tossing that bottle into the sea would carry our wishes beyond Aedes Elysiae... maybe even bring something back to us...
+:'''Phainon:''' Never thought... the waves would end up pushing it back ashore.
+:{{Диалог|Стрелка}} Funny how the past finds its way back.
+::'''Phainon:''' Kind of disappointing, isn't it...
+:{{Диалог|Стрелка}} I want to read it.
+::'''Phainon:''' Don't bother... It's just some silly childish nonsense... Nothing worth reading.
+:{{Диалог|Стрелка}} Seems more like a lake to me than an ocean.
+::'''Phainon:''' Ah... well, that would explain it. What a shame.
+:{{tx}}
+{{Dialogue End}}
+
+===Find oracle cards in the Sacrament Courtyard{{subst:void|<!--104050215-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G12)
+:'''Phainon:''' The only place we haven't searched... is Oronyx's {{Rubi|ritual courtyard|Sacrament Courtyard}}?
+::'''Phainon:''' Some secret base. It was right here in front of us the whole time...
+::'''Cyrene:''' Sorry! But look on the bright side, it was a nice walk! Unlike you, I don't have such a physically active routine.
+::'''Phainon:''' Those were the days. We'd always meet either by that statue in the village or right here.
+::'''Cyrene:''' Right! And I remember you never used the front door when you wanted me to come play. You always climbed over the wall. You were such mischief-makers!
+::'''Cyrene:''' Just like a certain someone who has a habit of showing up unexpectedly, right?
+::{{Диалог|Стрелка}} Who's that supposed to be?
+:::'''Cyrene:''' Maybe it's you~♪
+:::Can't pin me down, can you?
+:::'''Cyrene:''' Ha! I bet {{MC|ж=she|м=he}} said something clever just now.
+:::(Remain silent)
+::{{Диалог|Стрелка}} Can't pin me down, can you?
+:::'''Cyrene:''' Ha! I bet {{MC|ж=she|м=he}} said something clever just now.
+:::(Remain silent)
+::{{Диалог|Стрелка}} (Remain silent)
+::'''Cyrene:''' Oh, giving me the silent treatment? How cruel!
+::'''Phainon:''' *ahem* Hey, I was just copying those storybook heroes. They never take the beaten path!
+::'''Cyrene:''' Still, it's embarrassing, I've been the only one here for a while, and I haven't kept up with the cleaning. With so many spots to check, where should we even start?
+::{{Диалог|Стрелка}} Let's try the roof.
+:::'''Cyrene:''' Come to think of it, I haven't checked the roof in forever. Worth a shot, right?
+:::How about the courtyard?
+:::'''Cyrene:''' Leaves have taken over the courtyard...
+:::'''Phainon:''' I know, I know. We wouldn't want your clothes getting dirty. Leave the dirty work to me.
+:::'''Cyrene:''' That's not what I meant at all.
+:::What about the cellar?
+::{{Диалог|Стрелка}} How about the courtyard?
+:::'''Cyrene:''' Leaves have taken over the courtyard...
+:::'''Phainon:''' I know, I know. We wouldn't want your clothes getting dirty. Leave the dirty work to me.
+:::'''Cyrene:''' That's not what I meant at all.
+:::What about the cellar?
+::{{Диалог|Стрелка}} What about the cellar?
+::'''Cyrene:''' A cellar? I think I remember one... It was deep... so very deep...
+::'''Phainon:''' Well, if we're talking wonderland stuff, it's not that different from my hero stories.
+::'''Phainon:''' Alright, let's split up. I'll handle the yard, you check the upper floor.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41440_F41440001_G12"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:<!--1-second delay-->
+:'''Cyrene:''' In a village this size, I bet all our childhood treasures are exactly where we hid them.
+:'''Phainon:''' Mm-hmm, time must be keeping them safe for us.
+:'''Cyrene:''' No sign of the oracle cards...
+:'''Cyrene:''' Let's see... Ah! There's one place we haven't checked yet.
+{{Dialogue End}}
+
+===Go to the attic to find oracle cards{{subst:void|<!--104050217-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+;(Unused &mdash; EnterDistrict_G13)
+:The girl before you carries an air of mystery, her secrets elusive, yet her demeanor toward you is exceptionally warm...
+::You can't help but wonder: Could there really be some kind of mental connection?
+::'''Cyrene:''' Mmm... the view here hasn't changed a bit.
+::'''Cyrene:''' You know, besides the swing under the big tree, this has to be my favorite spot in all of Aedes Elysiae.
+::{{Диалог|Стрелка}} It does lift your spirits, being up high.
+:::'''Cyrene:''' You can't help but want to hum one of those old songs we used to sing...
+:::'''Cyrene:''' "Why do leaves and branches grow, which way does the wind blow...♪"
+:::The sea stretches out as far as the eye can see...
+:::'''Cyrene:''' I remember drawing Aedes Elysiae as a child, nestled between the sea and the mountains.
+:::'''Cyrene:''' I'd always stop where the sky met the sea. The world beyond was just too vast to imagine.
+:::Three, two, one... jump!
+::{{Диалог|Стрелка}} The sea stretches out as far as the eye can see...
+:::'''Cyrene:''' I remember drawing Aedes Elysiae as a child, nestled between the sea and the mountains.
+:::'''Cyrene:''' I'd always stop where the sky met the sea. The world beyond was just too vast to imagine.
+:::Three, two, one... jump!
+::{{Диалог|Стрелка}} Three, two, one... jump!
+::'''Cyrene:''' Hey, what are you doing? Please be careful!
+::'''Cyrene:''' I'm just a small-time diviner. I can't turn back time if something happens!
+::'''Cyrene:''' They always said I'd become the next Priest of {{Rubi|Time|Oronyx}}, just because I heard prophecies as a child.
+::'''Cyrene:''' But here's the thing. The more divinations I do, the more doubt creeps in. I want to believe the prophecies, but actually leaving Aedes Elysiae...
+::'''Cyrene:''' Where will that waiting ship take us, I wonder...
+::'''Phainon:''' Here they are! The oracle cards&mdash;
+::{{Диалог|Стрелка}} Looks like he won this race.
+:::'''Cyrene:''' Guess reminiscing makes us take our time, doesn't it?
+:::I was still taking in the scenery.
+::{{Диалог|Стрелка}} I was still taking in the scenery.
+::'''Cyrene:''' I've captured it all in my heart. This view, and most precious of all... my childhood friends!
+::'''Cyrene:''' There we go! Looks like the gods do listen to our thoughts.
+::{{tx}}
+:----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190895
+		}
+	}
+}</pre>
+::{{Диалог|Стрелка}} Are these... animal footprints?
+::{{Диалог|Стрелка}} Nice cards, all looking good.
+:::'''Phainon:''' No way, someone's switched them out...
+:::One, two, three, four, five... Dan Heng and Voidranger jive...
+:::'''Phainon:''' Hey, don't go changing the words!
+::{{Диалог|Стрелка}} One, two, three, four, five... Dan Heng and Voidranger jive...
+:::'''Phainon:''' Hey, don't go changing the words!
+::'''Cyrene:''' ...
+::{{tx}}
+
+;(Talk to Phainon)
+<pre>{
+	"$type": "RPG.GameCore.SetClientGroupProperty",
+	"GroupID": 14,
+	"DynamicName": {
+		"Value": "DialogPHA01"
+	}
+}</pre>
+----
+:'''Phainon:''' Leave this to me, partner. Want to bet who finds the oracle cards first?
+<pre>{
+	"$type": "RPG.GameCore.SetClientGroupProperty",
+	"GroupID": 14,
+	"DynamicName": {
+		"Value": "DialogPHA01"
+	},
+	"Value": 1
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 14,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 145025243,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 111
+}</pre>
+:<!--4-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		111
+	]
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 14,
+	"PathwayID": 1,
+	"MotionFlag": "Walk",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.WaitFor",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGroupProperty",
+				"GroupID": 14,
+				"DynamicName": {
+					"Value": "DialogPHA01"
+				},
+				"CompareValue": 1
+			}
+		},
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300002
+				]
+			},
+			"EnableSteer": true
+		},
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Point02-1040502"
+			}
+		}
+	],
+	"PathOffset": []
+}</pre>
+;(Unused &mdash; Point02-1040502)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 14,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 145025244,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 222
+}</pre>
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		222
+	]
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 14,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.WaitFor",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGroupProperty",
+				"GroupID": 14,
+				"DynamicName": {
+					"Value": "DialogPHA01"
+				},
+				"CompareValue": 1
+			}
+		},
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300003
+				]
+			},
+			"EnableSteer": true
+		},
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Point03-1040502"
+			}
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+;(Unused &mdash; Point03-1040502)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+::<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"GroupID": 14,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 145025245,
+			"EnableVoice": true
+		}
+	],
+	"UniqueID": 333
+}</pre>
+::<!--4-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.StopNPCBubbleTalk",
+	"UniqueIDList": [
+		333
+	]
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.WaitFor",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareGroupProperty",
+		"GroupID": 14,
+		"DynamicName": {
+			"Value": "DialogPHA01"
+		},
+		"CompareValue": 1
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 14,
+	"PathwayID": 3,
+	"MotionFlag": "Walk",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.WaitFor",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGroupProperty",
+				"GroupID": 14,
+				"DynamicName": {
+					"Value": "DialogPHA01"
+				},
+				"CompareValue": 1
+			}
+		},
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300001
+				]
+			},
+			"EnableSteer": true
+		},
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "Point01-1040502"
+			}
+		}
+	],
+	"PathOffset": []
+}</pre>
+:'''(Trailblazer):''' (I wonder what the view's like from up there... Worth checking out?)
+{{Dialogue End}}
+
+===Follow the two to the backyard of the garden{{subst:void|<!--104050204-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Suspicious Weeds
+:'''Phainon:''' The entrance should be around here somewhere...
+:'''Cyrene:''' Right here~ The path to the Maze is hidden under all these weeds. It's been too long since we visited the fairies.
+:{{Диалог|Стрелка}} The Membrance Maze?
+:{{Диалог|Стрелка}} Fairies?
+:{{Диалог|Стрелка}} An entrance?
+:'''Phainon:''' Did you forget? We used to visit them all the time when we were little.
+:{{tx}}
+{{Dialogue End}}
+
+===Follow the two to enter the Membrance Maze{{subst:void|<!--104050205-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Membrance Maze
+:'''Phainon:''' There it is! The entrance &mdash; that hollow in the tree&mdash;
+:'''Cyrene:''' Once you get through the tight squeeze in the hollow, you'll reach their dwelling, the Membrance Maze.
+:'''Phainon:''' Haha, I wonder if I can still squeeze through there...
+:'''Cyrene:''' Maybe worry more about whether the fairies will let you in! After all the Membrance Maze has an "invitation-only" rule, only children with pure hearts are welcomed.
+:{{Диалог|Стрелка}} Sounds like some secret society, huh?
+::'''Phainon:''' Getting approved by the Maze's fairies was like our childhood badge of honor.
+::Alright then &mdash; I'll go first.
+::'''Phainon:''' Lead the way then, partner.
+::My Trailblazer Profile should get me in, right?
+:{{Диалог|Стрелка}} Alright then &mdash; I'll go first.
+::'''Phainon:''' Lead the way then, partner.
+::My Trailblazer Profile should get me in, right?
+:{{Диалог|Стрелка}} My Trailblazer Profile should get me in, right?
+:'''Phainon:''' "Trailblazer Profile"... What's that?
+:'''Phainon:''' Regardless, how about we try getting through the hollow first?
+:'''Cyrene:''' After you, then?
+:'''Phainon:''' What? Oh, um... sure, I'll go first...
+:'''Cyrene:''' So hasty, as always...
+:'''Cyrene:''' Looks like it's just us now... Care to finish that chat?
+:'''Cyrene:''' To be honest, from the moment I saw the cute note left by the fairies, my intuition became even more certain...
+:'''Cyrene:''' Perhaps when we step into the Maze again after all these years, the wheels of fate will finally start turning.
+:{{Диалог|Стрелка}} What makes you say that?
+::'''Cyrene:''' Oh... just a girl's intuition.
+::Don't tell me you're behind all this.
+::'''Cyrene:''' ...
+::'''Cyrene:''' What if I am... what would you do?
+::'''Cyrene:''' Just kidding, don't read too much into it!
+::Once the wheels start turning, there's no going back...
+:{{Диалог|Стрелка}} Don't tell me you're behind all this.
+::'''Cyrene:''' ...
+::'''Cyrene:''' What if I am... what would you do?
+::'''Cyrene:''' Just kidding, don't read too much into it!
+::Once the wheels start turning, there's no going back...
+:{{Диалог|Стрелка}} Once the wheels start turning, there's no going back...
+:'''Cyrene:''' Oh... it's just a girl's intuition. It might not mean anything.
+:'''Cyrene:''' But you know what? Even if fate is set on its path, no matter where it steers the world... If we're together, there's nothing to worry about, right?
+:{{tx}}
+
+:<!--1-second delay-->
+:'''Phainon:''' Pretty sure this is it... Should be this way...
+:'''Phainon:''' There it is! The entrance &mdash; that hollow in the tree&mdash;
+{{Dialogue End}}
+
+===Talk to Mem...?{{subst:void|<!--104050206-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|update|Deep in the Aedes Elysiae lies a "Maze." (Trailblazer) follows the two there and encounters many... fairy-like residents that resemble Mem?}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G19)
+:'''???:''' Woah... look who's finally back memi!
+::'''???:''' Snowy, you've grown so tall and dashing! I couldn't even tell it was you at first!
+::'''Phainon:''' We had to grow up sometime.
+::'''???:''' But look at Reney. She hasn't changed one bit! How fascinating!
+::'''Cyrene:''' Perhaps I'm like you, Relimem, just another fairy of the Maze?
+::{{Диалог|Стрелка}} Mem's... purple now? Did you dye your fur?
+:::'''Phainon:''' Dye? Relimem's always been this lovely shade of lavender.
+:::So the Mems are like a organization?
+:::'''Phainon:''' An organization? Hardly. They're not that organized... They didn't even have proper names before we came along.
+:::The names just keep getting weirder...
+::{{Диалог|Стрелка}} So the Mems are like a organization?
+:::'''Phainon:''' An organization? Hardly. They're not that organized... They didn't even have proper names before we came along.
+:::The names just keep getting weirder...
+::{{Диалог|Стрелка}} The names just keep getting weirder...
+::'''Phainon:''' Tell me about it! It took me forever to get all their names straight when I first came.
+::'''Phainon:''' Dolimem, Relimem, Milimem, Falimem... Ah, I've missed these cute little troublemakers.
+::{{tx}}
+:<!--3-second delay-->
+:'''Phainon:''' I made it! That wasn't easy... I can't remember the last time I came here.
+:'''Cyrene:''' We were still kids back then.
+
+;(Unused &mdash; EnterDistrict_G17)
+:'''???:''' Wait a minute... Are you...
+::'''???:''' Look who it is! Reney and Snowy!
+{{Dialogue End}}
+
+===Follow Relimem to find the village chief{{subst:void|<!--104050221-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; EnterDistrict_G28)
+:'''Dolimem:''' "Why do leaves and branches grow, which way does the wind blow..."
+::'''Dolimem:''' "In Membrance Maze depths we seek to find, the answers future left behind."
+::'''Dolimem:''' Hehe... welcome back, my dear children.
+::{{Диалог|Стрелка}} I thought you'd be a pink Mem.
+:::'''Phainon:''' Pink ones? That's strange. I don't recall any pink fairies in the Membrance Maze. Have you seen any, Chief Dolimem?
+:::So, are the oracle cards with you?
+:::'''Phainon:''' How about we hear what the chief has to say first, my impatient friend?
+:::Now that's poetry!
+::{{Диалог|Стрелка}} So, are the oracle cards with you?
+:::'''Phainon:''' How about we hear what the chief has to say first, my impatient friend?
+:::Now that's poetry!
+::{{Диалог|Стрелка}} Now that's poetry!
+::'''Phainon:''' Right? Though Dolimem always says they're just songs, not poetry.
+::'''Cyrene:''' Oh Chief! You haven't changed a bit, still so full of life!
+::'''Dolimem:''' No need to fuss, my child. You haven't forgotten, have you? As long as our songs are sung, the children of the maze will live on&mdash;
+::'''Dolimem:''' &mdash;just as our paths stay forever linked.
+::'''Dolimem:''' Here, take it. I'm sorry I had to resort to such methods to bring you here.
+::{{Диалог|Стрелка}} This is...
+::{{Диалог|Стрелка}} ..."As I've Written"?
+::'''Cyrene:''' My book of oracle cards...
+::{{tx}}
+:'''Relimem:''' ...That's it! This way, everyone.
+:'''Relimem:''' Watch your step, the trunk's slippery!
+
+;(Unused &mdash; EnterDistrict_G29)
+:'''Relimem:''' Chief! Reney and Snowy have returned&mdash;
+
+;(Unused &mdash; EnterDistrict_G30)
+----
+::Dolimem continues to explain in greater detail...
+::'''Cyrene:''' But if that's the case, our journey...
+::'''Phainon:''' ...will have to be cancelled. If disaster's coming, we should stay in Aedes Elysiae, just to be safe.
+::{{Диалог|Стрелка}} What were you planning to do?
+::{{Диалог|Стрелка}} What about all the people out there?
+:::'''Phainon:''' That's... that's a good point. But what difference could Cyrene and I make?
+::'''Cyrene:''' We weren't planning to be gone for long... just enough time to hone our abilities. Phainon would train in Castrum Kremnos, while I would seek the Fate Titans' blessing in Janusopolis...
+::'''Cyrene:''' Then we'd return to Aedes Elysiae, to help keep our village safe.
+::'''Phainon:''' It's okay. I can still practice my swordplay here. Some things you can learn on your own.
+::'''Phainon:''' Well... probably.
+::'''Dolimem:''' That's... not very convincing...
+::'''Dolimem:''' Here's a thought: Let's have Cyrene do a reading. If fate wishes to show us its path, we might find some peace of mind.
+::'''Phainon:''' But... What if we don't like what the cards tell us?
+::{{Диалог|Стрелка}} Then we stand against it, until the very end.
+:::'''Phainon:''' Heh... never thought of doing it that way before.
+:::'''Phainon:''' Thanks, partner. We'll do it your way &mdash; whatever the cards show, we'll face it together.
+:::At least we'll know which way to run.
+:::'''Phainon:''' Not the most optimistic take, but I see your point.
+:::'''Phainon:''' Thanks, partner. We'll do it your way &mdash; whatever the cards show, we'll face it together.
+:::I feel the same way. Perhaps it's better not to know.
+::{{Диалог|Стрелка}} At least we'll know which way to run.
+:::'''Phainon:''' Not the most optimistic take, but I see your point.
+:::'''Phainon:''' Thanks, partner. We'll do it your way &mdash; whatever the cards show, we'll face it together.
+:::I feel the same way. Perhaps it's better not to know.
+::{{Диалог|Стрелка}} I feel the same way. Perhaps it's better not to know.
+::'''Phainon:''' Hearing that from you... maybe we really shouldn't unveil the cards...
+::'''Cyrene:''' Why not take a look anyway? Even if it's not what we hope for, we'll know what we need to work on, don't you think?
+::'''Phainon:''' You're right. Come on, partner &mdash; whatever the cards show, we'll face it together.
+::'''Cyrene:''' Ask with a true heart, and truth shall answer in kind.
+::{{tx}}
+::{{Диалог|Разговор}} Turn to the first page of oracle cards.
+:::{{Диалог|Разговор}} Reveal the "Weaver."
+::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Разговор}} Reveal the "Ruler."
+::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Разговор}} Reveal the "Traveler."
+::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Возврат}} Check the other cards.
+::::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+:::::{{Диалог|Разговор}} Reveal the "Servant."
+::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Reveal the "Healer."
+::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Reveal the "Scholar."
+::::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+:::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+:::::{{tx}}
+::{{Диалог|Разговор}} Turn to the second page of oracle cards.
+:::{{Диалог|Разговор}} Reveal the "Servant."
+::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+:::::{{Диалог|Разговор}} Turn to the first page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Разговор}} Reveal the "Healer."
+::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Scholar."
+:::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+:::::{{Диалог|Разговор}} Turn to the first page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Разговор}} Reveal the "Scholar."
+::::'''Cyrene:''' Behold the Scholar, bearer of many names: the Grand Magician, the Great Performer, the Eye of Wisdom, and the Defiler of {{Rubi|Cerces|Reason Titan}}.
+::::{{tx}}
+::::{{Диалог|Разговор}} Reveal the "Servant."
+:::::'''Cyrene:''' This card, the Servant, is surprisingly light, bearing the cool scent of Antila flowers, just like starlight.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} Reveal the "Healer."
+:::::'''Cyrene:''' The humble "Healer" may seem gentle in hue, but its courage matches any other, strong enough to melt even the coldest ice.
+:::::{{tx}}
+::::;(Return to previous option selection)
+::::{{Диалог|Возврат}} Check the other cards.
+:::::{{Диалог|Разговор}} Turn to the first page of oracle cards.
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+:::::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+:::::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::::{{tx}}
+:::::::;(Return to previous option selection)
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+::::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+::::::{{tx}}
+:::{{Диалог|Возврат}} Check the other cards.
+::::{{Диалог|Разговор}} Turn to the first page of oracle cards.
+:::::{{Диалог|Разговор}} Reveal the "Weaver."
+::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Reveal the "Ruler."
+::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Traveler."
+:::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+:::::{{Диалог|Разговор}} Reveal the "Traveler."
+::::::'''Cyrene:''' Ah! The Traveler, our little trickster! Always hiding behind other cards, disguising itself. What a rare catch!
+::::::{{tx}}
+::::::{{Диалог|Разговор}} Reveal the "Weaver."
+:::::::'''Cyrene:''' Behold, the "Weaver." It connects the romantic threads of the "Chrysalis of Gold," weaving all destinies into golden silk that flows toward the most brilliant, magnificent future...
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Gatekeeper."
+:::::::'''Cyrene:''' This is the "Gatekeeper," who guides people to their true path among myriad passages.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+::::::{{Диалог|Разговор}} Reveal the "Ruler."
+:::::::'''Cyrene:''' The "Ruler" stands for discipline, authority and glory, but frequently also points to isolation and warfare.
+:::::::{{tx}}
+::::::;(Return to previous option selection)
+:::::;(Return to previous option selection)
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+:::::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+:::::{{tx}}
+::{{Диалог|Стрелка}} Reveal Phainon's oracle cards.
+:::'''Cyrene:''' The "Deliverer"... According to the tripartite prophecy, this card means absolute harmony and perfection.
+:::{{tx}}
+:----
+::{{tx}}
+:----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41440_F41440001_G30"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Talk to Weaver & Gatekeeper)
+:'''"Weaver":''' Personal wishes? I have none. Only the Era Nova matters: The world's rebirth. Yet, if I am to weave a new era, then may it be one where Caenis and her Cleaners shall never tread.
+:'''"Weaver":''' These crawling parasites have no place in Okhema, especially not under the deceitful claim of "human rule."
+:'''Phainon:''' That... noble lady? The way she speaks... it's like ice in my veins...
+:{{Диалог|Стрелка}} She's truly selfless in her dedication.
+::'''Phainon:''' Huh... not exactly the warmth I'd expect from someone selfless...
+::She's as cold as winter frost.
+:{{Диалог|Стрелка}} She's as cold as winter frost.
+:'''Phainon:''' That's exactly the feeling I'm getting...
+:'''"Weaver":''' Teacher, perhaps you could share your wishes with us?
+:{{tx}}
+
+;(Talk to "Scholar")
+:'''"Scholar":''' Ah, Phainon, my student, must we go over this again?
+:'''"Scholar":''' Listen well. I detest the word "wish." It reeks of mortals crawling before their gods.
+:'''"Scholar":''' My life's work is done. All that remains is for you to take the final step and prove the ultimate truth&mdash;
+:'''"Scholar":''' I, Anaxagoras, shall become a god of the new world. Through irrefutable logic, I will prove that mortal wisdom can achieve divine greatness.
+:'''Phainon:''' Isn't he... you know, a little...?
+:'''Phainon:''' I mean, I just daydream about hero stories, but he's fantasizing about becoming a... Titan?
+:{{Диалог|Стрелка}} Careful &mdash; that's your future teacher you're talking about.
+::'''Phainon:''' Well, that's... something. Could I ever be that sure of myself?
+:{{Диалог|Стрелка}} His ambitions rest on your shoulders.
+::'''Phainon:''' Come on, you're joking right? Am I really being burdened with a dream that feels more like a fantasy?
+:{{tx}}
+{{Dialogue End}}
+
+===(Optional) Listen to the echoes of oracle cards{{subst:void|<!--104050223-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|update|The "oracle cards," childhood toys of Phainon and Cyrene, reflect the figures of Flame-Chase heroes, both familiar and strange. Do they symbolize the unyielding threads of fate? Or are they merely foggy backdrops on this theatrical stage? At this moment, (Trailblazer) could not yet tell.}}
+{{Dialogue Start}}
+
+;(Talk to Cyrene)
+:'''Cyrene:''' So tell me... has the uncertainty in your heart begun to fade?
+:'''Phainon:''' So many faces in my future... so many wishes...
+:'''Phainon:''' Still... why would fate choose to show us this path?
+:'''Dolimem:''' What's weighing on your mind?
+:'''Phainon:''' Didn't you say disaster would strike Amphoreus? If so, shouldn't Cyrene and I stay in Aedes Elysiae? How could we possibly meet all these people?
+:{{Диалог|Стрелка}} Even the darkest storm must eventually pass.
+::'''Phainon:''' That's... wonderfully optimistic. I like it.
+::Perhaps they'll come to Aedes Elysiae?
+::'''Phainon:''' Our secluded village as humanity's last haven... That makes sense.
+::This calamity is what sets you on your journey.
+:{{Диалог|Стрелка}} Perhaps they'll come to Aedes Elysiae?
+::'''Phainon:''' Our secluded village as humanity's last haven... That makes sense.
+::This calamity is what sets you on your journey.
+:{{Диалог|Стрелка}} This calamity is what sets you on your journey.
+:'''Phainon:''' If that's true, then... who will protect everyone in Aedes Elysiae?
+:'''Phainon:''' ...
+:{{tx}}
+
+;(Talk to "Ruler")
+:'''"Ruler":''' Phainon? Since when did you become so timid, asking such juvenile questions about wishes?
+:'''Phainon:''' What's that supposed to mean? And what's with that condescending tone...
+:'''Phainon:''' No way I become friends with this half-naked showoff, right?
+:{{Диалог|Стрелка}} Sorry to disappoint, but you end up being close friends.
+::'''Phainon:''' Just what kind of life am I going to lead...
+::You'll be the kind of friends who think nothing of sitting shoulder to shoulder in a hot bath.
+:{{Диалог|Стрелка}} You'll be the kind of friends who think nothing of sitting shoulder to shoulder in a hot bath.
+:'''Phainon:''' Horrifying... is that really something I'll enjoy one day?
+:'''"Ruler":''' What are you mumbling to yourself now? Whatever...
+:{{tx}}
+
+;(Talk to The Traveler, Servant & Healer)
+:'''"Traveler":''' Well, well, if it isn't our little Deliverer!
+:'''"Traveler":''' My wish? Ha! Just let me wine and dine and soak up the sun for another millennium or two. I mean, what's the point of dying rich if you never lived rich?
+:'''"Traveler":''' Right, Princess Homebody?
+:'''"Servant":''' Cipher, that's... not how I see it.
+:'''"Servant":''' My one wish... is to find that missing piece in my life, to feel someone's embrace once more. That warmth... I've felt it before, and it's my dearest memory. And speaking of riches...
+:'''"Servant":''' For someone with all those treasures behind your divine power... you've led a pretty cheap life~
+:'''"Traveler":''' Ouch, where did that come from...
+:'''"Traveler":''' Right for the jugular, huh?
+:'''"Traveler":''' What about our friend from the Grove?
+:'''"Healer":''' My wish came true before I touched the Sky. I transformed my healing power into gentle sunlight, distributing it equally to every life I cherished and loved.
+:'''"Traveler":''' You two are ''so'' selfless, aren't you? No surprise Aglaea wanted you for the Flame-Chase Journey.
+:'''"Traveler":''' You know what? I did have one wild dream, to know what it feels like being born a noble lady, drowning in riches.
+:'''"Traveler":''' Just think, if I traded places with that seamstress! Me in the mansion, her on the streets! I'd like to see if she'd still become the "Goldweaver" then! Maybe I'd even take her place!
+:'''"Servant" & "Healer":''' ...
+:{{Диалог|Стрелка}} Can we jump in and fit right into their convo?
+::'''Phainon:''' Doesn't sound like an easy task...
+::These wishes... they make you want to smile.
+:{{Диалог|Стрелка}} These wishes... they make you want to smile.
+:'''Phainon:''' I can't disagree with you. These wishes aren't weights to bear. They're like those candy wrappers the Aedes Elysiae children love, shining even brighter when bathed in sunlight.
+:'''Phainon:''' "Warm embrace," "equal healing," and... perhaps... "living free"?
+:{{tx}}
+{{Dialogue End}}
+
+===Talk to Cyrene about the future revealed by oracle cards{{subst:void|<!--104050232-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Save Aedes Elysiae{{subst:void|<!--104050225-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|update|Faced with the oncoming "catastrophe," the Phainon of the past made his choice.<br />And that very decision led him to the start of Flame-Chase Journey...}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::'''Phainon:''' ...What's going on!?
+::'''Dolimem:''' It's here... The seeds of disaster have already taken hold, sooner than we had foreseen.
+::'''Dolimem:''' This time... not even the {{Rubi|Veil of Evernight|Time Titan}} can shield us.
+::'''Phainon:''' Y&mdash;You mean... Aedes Elysiae will be swept up in the prophesied catastrophe?
+::'''Dolimem:''' I'm afraid so...
+::'''Dolimem:''' My children, take shelter in the Membrance Maze. One step outside and this horror will consume you both.
+::'''Phainon:''' But my parents... the whole village...
+::{{Диалог|Стрелка}} We need to save them &mdash; now.
+:::'''Phainon:''' You're right. Chief, what are we truly facing? Is this the power of a Titan?
+:::Is this "Calamity"... a Titan's doing?
+::{{Диалог|Стрелка}} Is this "Calamity"... a Titan's doing?
+::'''Cyrene:''' Are we facing the Three Titans of Calamity?
+::'''Dolimem:''' This is beyond any Titan, beyond any danger you could overcome with strategy alone.
+::'''Dolimem:''' It's an unspeakable horror that twists all life into abominations that never bleed nor cry. Even Titans fall to its corruption, burning from within until only empty shells remain, knowing only death and destruction...
+::'''Dolimem:''' {{Цвет|Ключевой|nobold=1|The "black tide." That's what this calamity truly is. It consumes all in its path, sparing none but the Membrance Maze.}}
+::'''Phainon:''' Not even Titans can...
+::'''Dolimem:''' Yes. So please, don't leave this forgotten realm the gods abandoned &mdash; you are the first to uncover our presence, and the only two who can enter the Maze...
+::'''Dolimem:''' We... don't wish for you to throw your lives away.
+::'''Cyrene:''' We...
+::{{Диалог|Стрелка}} Stay here, safe in the Maze.
+::{{Диалог|Стрелка}} Listen to your heart.
+::{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Protect those who must be protected.}}
+:::'''Phainon:''' ...I learned the sword to protect those close to me. If I run now... I'll never be worthy of lifting a blade again.
+:::'''Cyrene:''' Then we know what we must do.
+:::'''Phainon:''' Indeed. Our friend is right... we must take action.
+:::'''Phainon:''' Forgive me, Chief! But Aedes Elysiae needs us... and as her child, I must act!
+:::'''Dolimem:''' ...Very well. Make sure you protect yourselves.
+:::'''Phainon:''' With me, Cyrene. Join us, my friend&mdash;
+:::'''Phainon:''' Even without a sword, I'll take a rake! Even with the roughest steel, I'll keep our home safe!
+:::'''Cyrene:''' "Deliverer"...
+:::'''Cyrene:''' The card's truth extends beyond its mere literal meaning, there's another hidden layer within.
+:::'''Cyrene:''' Not someone perfect from the start, standing high above, casting merciful gazes upon the world...
+:::'''Cyrene:''' But one who starts small, from a humble village, expanding their "world within" step by step, learning to save others as they grow...
+:::'''Cyrene:''' When we were little, I told him I wished this world would never need a Deliverer...
+:::'''Cyrene:''' Now that wish has shattered, yet I'm glad... he's chosen to walk this path.
+:::'''Cyrene:''' And all of this...
+:::'''Cyrene:''' ...happened because you believed in him, friend.
+:::'''Cyrene:''' Shall we? It's only when you're by our side that Phainon and I... that our hearts find their courage.
+:::'''Cyrene:''' I know you're watching us right now... aren't you, "Great Hero" from the future?
+:::'''Lygus:''' "Deliverer."
+:::'''Lygus:''' Such cruel irony &mdash; though destined to bear the world's burden, this boy can never become the hero to bring forth the dawn.
+:::{{Диалог|Стрелка}} What are you talking about...?
+:::{{Диалог|Стрелка}} Don't tell me... I'm the one who has to deliver salvation?
+:::{{Диалог|Стрелка}} Are you here just to spoil the story?
+:::'''Lygus:''' Follow their path, (Trailblazer). Bear witness as this man, forever denied the mantle of hero, takes his first step on the path to Deliverance.
+:::{{tx}}
+:----
+::{{tx}}
+:;([[#Gallery|Cutscene]] plays)
+::{{tx}}
+:----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Dialogue End}}
+
+===Head to Act II: Trial{{subst:void|<!--104050234-->}}===
+{{Mission Description|type=trailblaze|location=Act II: Trial|update|The second act of this "drama" is Phainon's first encounter with Mydei, the Kremnos prince we all know...}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G7)
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41440_F41440002_G1"
+				},
+				"AnchorName": {
+					"Value": "PlayerStart"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Witness a different kind of "duel"{{subst:void|<!--104050235-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Follow Phainon to prepare for "duel"{{subst:void|<!--104050236-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Accept the test of Talanton{{subst:void|<!--104050239-->}}===
+{{Dialogue Start}}
+
+;(Talk to Phainon)
+----
+:'''Phainon:''' That's easy for you to say. I'm just a Holy City Guard, up against Kremnos's walking war machine of a prince...
+:'''Phainon:''' ...Don't you think this is a little bit too unfair!?
+
+;(Talk to Trinnon)
+----
+:'''Trinnon:''' Don't overthink it, Phainon. Trust your heart.
+
+:{{DIcon|Изучение}} Accept the test
+:'''Phainon:''' Now this is a tough one. What can I possibly offer against a ring that signifies so much?
+:'''Phainon:''' Well, comrade? What does your gut tell you?
+:{{Диалог|Стрелка}} The "Deliverer" card...
+::'''Phainon:''' ...Looks like we really are on the same wavelength.
+::The blade you carry...
+::'''Phainon:''' This sword has been with me through every battle. One day, it'll help write a heroic epic...
+::'''Phainon:''' But not today. I'm still young, and I have a long road ahead. So does this blade.
+::A heart of steel...
+:{{Диалог|Стрелка}} The blade you carry...
+::'''Phainon:''' This sword has been with me through every battle. One day, it'll help write a heroic epic...
+::'''Phainon:''' But not today. I'm still young, and I have a long road ahead. So does this blade.
+::A heart of steel...
+:{{Диалог|Стрелка}} A heart of steel...
+:'''Phainon:''' You mean my conviction? But... just resolve isn't enough, is it? Unless I literally gave my heart...
+:'''Phainon:''' Ha! No way. Only an Aidonian would do something that crazy.
+:'''Phainon:''' ...
+:{{tx}}
+:'''Phainon:''' Now this is a tough one. What can I possibly offer against a ring that signifies so much?
+:'''Phainon:''' Well, comrade? What does your gut tell you?
+:The "Deliverer" card...
+:'''Phainon:''' ...Looks like we really are on the same wavelength.
+:The blade you carry...
+:'''Phainon:''' This sword has been with me through every battle. One day, it'll help write a heroic epic...
+:'''Phainon:''' But not today. I'm still young, and I have a long road ahead. So does this blade.
+:A heart of steel...
+:'''Phainon:''' You mean my conviction? But... just resolve isn't enough, is it? Unless I literally gave my heart...
+:'''Phainon:''' Ha! No way. Only an Aidonian would do something that crazy.
+:'''Phainon:''' ...
+:'''Phainon:''' In the end, there's only one thing I can trust...
+:'''Phainon:''' The "Deliverer" that appeared in my life on that day... How ironic. I can't even look at this card properly, much less follow where it leads.
+:'''Phainon:''' Just thinking about how my village was swallowed by the black tide makes my hands shake. The flames, the screams, my utter failure to protect anyone...
+:'''Phainon:''' Speaking rationally, I know it's not nearly enough. Aedes Elysiae was just a small village, its loss barely a scar on Amphoreus's face.
+:'''Phainon:''' But here and now, my heart says something else...
+:'''Phainon:''' This card... It's everything I have left. Nothing weighs heavier.
+:'''???:''' Perhaps that itself is the answer.
+:'''Trinnon:''' Look, Phainon...
+:'''Cyrene:''' It's so nice to see you all again! Lady Trinnon, Phainon, and...
+:'''Cyrene:''' Hello! Seeing you here sure is a sweet surprise♪
+:{{Диалог|Стрелка}} Cyrene? But how...
+:{{Диалог|Стрелка}} Did I stumble into the wrong Amphoreus?
+:'''Cyrene:''' Why so surprised? Could it be... did you miss me?
+:{{tx}}
+:'''Phainon:''' Now this is a tough one. What can I possibly offer against a ring that signifies so much?
+:'''Phainon:''' Well, comrade? What does your gut tell you?
+:The "Deliverer" card...
+:'''Phainon:''' ...Looks like we really are on the same wavelength.
+:The blade you carry...
+:'''Phainon:''' This sword has been with me through every battle. One day, it'll help write a heroic epic...
+:'''Phainon:''' But not today. I'm still young, and I have a long road ahead. So does this blade.
+:A heart of steel...
+:'''Phainon:''' You mean my conviction? But... just resolve isn't enough, is it? Unless I literally gave my heart...
+:'''Phainon:''' Ha! No way. Only an Aidonian would do something that crazy.
+:'''Phainon:''' ...
+:'''Phainon:''' In the end, there's only one thing I can trust...
+:'''Phainon:''' The "Deliverer" that appeared in my life on that day... How ironic. I can't even look at this card properly, much less follow where it leads.
+:'''Phainon:''' Just thinking about how my village was swallowed by the black tide makes my hands shake. The flames, the screams, my utter failure to protect anyone...
+:'''Phainon:''' Speaking rationally, I know it's not nearly enough. Aedes Elysiae was just a small village, its loss barely a scar on Amphoreus's face.
+:'''Phainon:''' But here and now, my heart says something else...
+:'''Phainon:''' This card... It's everything I have left. Nothing weighs heavier.
+:'''???:''' Perhaps that itself is the answer.
+:'''Trinnon:''' Look, Phainon...
+:'''Cyrene:''' It's so nice to see you all again! Lady Trinnon, Phainon, and...
+:'''Cyrene:''' Hello! Seeing you here sure is a sweet surprise♪
+:Cyrene? But how...
+:Did I stumble into the wrong Amphoreus?
+:'''Cyrene:''' Why so surprised? Could it be... did you miss me?
+:'''Phainon:''' Cyrene?
+:'''Phainon:''' This is... incredible. I was literally just thinking about how you might be here, but I never imagined I'd see you this soon.
+:'''Cyrene:''' Hehe, I was supposed to leave with the priests, but then I heard Lady Maiden was with a white-haired young man...
+:'''Cyrene:''' I figured it had to be you, so I snuck back here!
+:'''Phainon:''' Ha... That's Cyrene for you. Unfortunately, this isn't a good time for reminiscing. That Kremnoan over there...
+:'''Mydei:''' Still playing house, boy?
+:'''Phainon:''' ...You get the idea.
+:'''Cyrene:''' Quite the hothead. Y'know, you two just might get along.
+:'''Cyrene:''' Don't worry. You already know what the answer is, don't you?
+:'''Cyrene:''' If that's your choice, I am with you.
+:'''Cyrene:''' I am with you because I remember it all too. The fields of Aedes Elysiae, those red leaves, that little swing of mine beneath the tree where I'd dream the sweetest dreams. And those dear fairies in the Lost Maze... It hurts so much knowing they're gone forever...
+:'''Cyrene:''' The pain speaks for itself. Our hometown may have been just a tiny village, but to us, it was the whole world.
+:'''Cyrene:''' But... that's not enough, Phainon. Not nearly enough.
+:'''Cyrene:''' Even though hatred can help people grow, and turn a boy into an unbreakable warrior...
+:'''Cyrene:''' What you need now is victory. You can't just stack the scales with your past suffering...
+:'''Cyrene:''' {{Цвет|Ключевой|nobold=1|You have to throw the weight of your "future" onto them as well.}}
+:'''Phainon:''' The future...? What do you mean?
+:'''Cyrene:''' Maybe that was a bit too cryptic for you, but it's actually really simple!
+:'''Cyrene:''' Why not have our mutual friend here stand on the scales with the "Deliverer"?
+:'''Cyrene:''' How about it? Can you help us?
+:{{Диалог|Стрелка}} Me...?
+::'''Cyrene:''' Of course, after all... you're what we aspire to.
+::Wouldn't that be cheating?
+:{{Диалог|Стрелка}} Wouldn't that be cheating?
+:'''Cyrene:''' Hehe, relax, our dear crown prince won't have a clue~
+:'''Phainon:''' ...Let's try that.
+:'''Phainon:''' The fate of Okhema hangs on this duel. I must claim victory, for their sake.
+:'''Phainon:''' I will stake everything I have. Stand with me, comrade, and we shall become heroes.
+:{{Диалог|Стрелка}} {{Цвет|Ключевой|nobold=1|Remember the past, and become the hero of tomorrow.}}
+:'''Phainon:''' Let's. Together we'll prove that what weighs more than the fate of the world...
+:{{tx}}
+:{{tx}}
+{{Dialogue End}}
+
+===Head to Act III: Return{{subst:void|<!--104050241-->}}===
+{{Mission Description|type=trailblaze|location=Act II: Trial|update|The third act, as it plays out before (Trailblazer), appears to mark the end of the Flame-Chase Journey. But the one who witnesses the world's end times with Phainon is Cyrene &mdash; the girl we believe to have perished in his childhood years.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Greet Oronyx{{subst:void|<!--104050242-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Follow the two to enter the end of destiny{{subst:void|<!--104050243-->}}===
+{{Dialogue Start}}
+
+;(Talk to Phainon)
+----
+:'''Cyrene:''' The future revealed by the Titan...
+:'''Phainon:''' Just what... will we see?
+
+;(Talk to Cyrene)
+----
+:'''Cyrene:''' The future revealed by the Titan...
+:'''Phainon:''' Just what... will we see?
+
+:{{DIcon|Изучение}} Enter the end of destiny
+
+{{Dialogue End}}
+
+===Listen to Lygus' explanation of the current situation{{subst:void|<!--104050246-->}}===
+{{Dialogue Start}}
+:'''Lygus:''' Now, if you would.
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 145025223,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 8,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104050248
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 145025225,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 11,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104050250
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G20_1)
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G20_2)
+
+{{Dialogue End}}
+
+===Keep going to witness the theatrical curtain call{{subst:void|<!--104050258-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--2-second delay-->
+:'''Lygus:''' Please, take your time. Look around as much as you wish.
+{{Dialogue End}}
+
+===(Optional) Watch memory fragment{{subst:void|<!--104050260-->}}===
+{{Mission Description|type=trailblaze|location=Act III: Return|update|According to (Trailblazer), certain details in this "memory" seem at odds with our journey through Amphoreus. It appears Lygus intended to use this to reveal Amphoreus's true state to (Trailblazer).}}
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #134
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #2691
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #67023
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #823156
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #7753021
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #10348765
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #24581189
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #33550334
+:{{tx}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #134
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 29
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Phainon:''' ...Executioner.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 29
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Talk to Lygus to show the final memory{{subst:void|<!--104050261-->}}===
+{{Dialogue Start}}
+
+;(Talk to Lygus)
+:'''Lygus:''' Hehe, you really think you're prepared? Allow me to give you a warning most earnest: Once you see what these memories hide...
+:'''Lygus:''' The world's course... will be forever irreversible.
+:{{Диалог|Стрелка}} Show me the final memory.
+::'''Lygus:''' Very well. As you have made up your mind, let us bear witness together.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Not yet.
+::'''Lygus:''' Very well, I'll be here. Waiting.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104050261
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"ForceCloseBlack": true,
+			"OnSuccess": []
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Witness the memory's curtain call{{subst:void|<!--104050262-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Eternal Recurrence #2691
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 31
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Mydei:''' And when I'm done with that executioner, we'll raise our cups where the west winds end.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 31
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #67023
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 30
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Anaxa & Phainon:''' Time for that wretched executioner... to pay what they owe.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 30
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #823156
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 32
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Phainon:''' Come, executioner. Let this patch of clear sky show me where to strike.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 32
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #7753021
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 33
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Cipher:''' I'll distract that executioner &mdash; you go turn {{Rubi|the world's biggest lie|prophecy}} into truth. Let me become the first wind of your new world.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 33
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #10348765
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Castorice:''' Go on, Deliverer. We'll keep that executioner in our shadows &mdash; the path before you leads to light and eternal flames.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 34
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #24581189
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Phainon:''' Let me answer your cruel fate by tearing that executioner's heart from the void.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 35
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Eternal Recurrence #33550334
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_In"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"IsOn": true,
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:'''Aglaea:''' There is nothing more to say. We part here. I shall personally dispatch that wretched executioner &mdash; not with threads of gold, but with the steel tip of a needle.
+<pre>{
+	"$type": "RPG.GameCore.SetSpecialVisionOn",
+	"VisionType": "MemoryVision",
+	"VisionEffectType": "MemoryVision",
+	"CameraEffectType": "MemoryVision",
+	"SmellProp": {}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 36
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"ParameterName": "TriggerTrans",
+	"ParameterType": "Bool"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioState",
+	"GroupName": "State_Gameplay_Amphoreus_Memory",
+	"StateName": {
+		"Value": "Memory_Out"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Follow Relimem to find the village chief{{subst:void|<!--104050218-->}}===
+{{Mission Description|type=trailblaze|location=Act I: Departure|update|Deep in the Aedes Elysiae lies a "Maze." (Trailblazer) follows the two there and encounters many... fairy-like residents that resemble Mem?}}
+{{Dialogue Start}}
+
+
+;(Unused &mdash; EnterDistrict_G18)
+:'''Cyrene:''' Someone's been working the field recently...
+::'''Relimem:''' Heehee~ We're growing these yummy "Quillorbs" now!
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Hero, Return to That Peace of Home
+|zhs  = 英雄啊，回返那安宁的家乡
+|zht  = 英雄啊，回返那安寧的家鄉
+|ja   = 英雄よ、安らぎの故郷へ還れ
+|ko   = 영웅이여, 그 평온한 고향으로 돌아가라
+|es   = {{MC|ж=Heroína|м=Héroe}}, regresa a ese hogar sereno
+|fr   = Héros, retourne à ton havre de paix
+|ru   = О герой, вернись к тишине родины
+|th   = วีรชนเอ๋ย กลับสู่บ้านเกิดอันสงบสุขเถิด
+|vi   = Hỡi anh hùng, hãy trở về quê hương bình yên
+|de   = O Helden, kehrt in die friedliche Heimat zurück
+|id   = Wahai Pahlawan, Pulang ke Rumah Tenteram Itu
+|pt   = Herói, Retorne à Paz do Seu Lar
+}}
+
+==Change History==
+{{Change History|3.5}}

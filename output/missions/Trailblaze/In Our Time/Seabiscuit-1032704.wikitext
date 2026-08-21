@@ -1,0 +1,943 @@
+<%-- [PAGE_INFO]
+PageTitle=#Seabiscuit#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1032704
+|title         = 
+|image         = <!--Mission Seabiscuit.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In Our Time
+|requirements  = [[Trailblaze Mission]] ''[[Seabiscuit]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Argenti; Firefly; Trailblazer
+|startLocation = [[Penacony]] - [[SoulGlad™ Scorchsand Audition Venue]]
+|world         = Penacony
+|area          = SoulGlad™ Scorchsand Audition Venue
+|prev          = 
+|next          = Beauty and Destruction
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Lost Crystal*12; Clock Credits*400; "A Star Is Born"*1 { text = "A Star Is Born" }; "An Actor Prepares"*1 { text = "An Actor Prepares" }; Credit*160 000
+}}
+'''''Seabiscuit''''' is a [[Trailblaze Mission]] in the chapter [[In Our Time]].
+
+==Steps==
+# Take victory in the "Superstar Showdown"
+# Reach the finish line
+# Take victory in the "Superstar Showdown"
+# Reach the finish line
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Take victory in the "Superstar Showdown"{{subst:void|<!--103270414-->}}===
+{{Dialogue Start}}
+;(If {{F|MissionCV-1032703-2}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270414,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-1032703-2}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270414,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+{{Mission Description|type=trailblaze|location=SoulGlad™ Scorchsand Audition Venue|update|You are about to face the final and most challenging stage of the SoulGlad™ Festivity Auditions &mdash; "The Superstar Showdown"! Only they who laugh last in the ring will be able to become the next Penacony Festive Superstar...<br />Will that person be you? Or will it be the towering, strong, passionate nobleman who easily secured the top score in the acting challenge? Stay tuned to find out!}}
+;(Unused &mdash; EnterArea_LocalGroup)
+
+
+
+;(Unused &mdash; EnterArea_G64)
+:'''Argenti:''' Please wait! {{MC|м=Handsome gentleman, beautiful miss|ж=My beautiful ladies}}...
+::'''Argenti:''' By the glorious light of Beauty! I never thought I would see you again. In such turbulent times, your kind faces are as spring's gentle breeze, bringing solace to my scorched heart!
+::'''Firefly:''' Are you... a Knight of Beauty?
+::{{Диалог|Стрелка}} Ahhhwww?
+:::'''Argenti:''' Hear ye! The rosy glow of the Beauty has rendered you speechless &mdash; what an honor!
+:::So the red-haired contestant was you all along!
+:::'''Argenti:''' You've already heard of my humble title elsewhere? I am deeply honored!
+::{{Диалог|Стрелка}} So the red-haired contestant was you all along!
+:::'''Argenti:''' You've already heard of my humble title elsewhere? I am deeply honored!
+::{{Диалог|Стрелка}} Will you be participating in the Charmony Festival as well?
+:::Will you be participating in the Charmony Festival as well?
+:::'''Argenti:''' Upon hearing of the impending festivities, I commanded the One and Only to bring me to Penacony with full haste. Alas, in a cosmos unguarded by the Beauty, disorder prevails, thus my passage was delayed by tending to the sick and injured...
+:::'''Argenti:''' Fortunately, the Mini Rabbit Mech Pilot, Stray Cat Duelist, Galactic Ninja, and Quad-drive Intellitron, along with thirty-two other souls in distress, all emerged from their predicaments safe and sound... I then led them all here to revel in the harmony with the countless other splendid beings.
+:::{{Диалог|Стрелка}} Is this the Beauty? It's dazzling...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::You're quite the savior, aren't ya...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::Tell the truth about the Watchmaker and the Stellaron.
+::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+::::'''Firefly:''' Actually, we've already met the Watchmaker...
+::::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+::::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+::::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+::::You don't trust your dear friend!?
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} You're quite the savior, aren't ya...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::Tell the truth about the Watchmaker and the Stellaron.
+::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+::::'''Firefly:''' Actually, we've already met the Watchmaker...
+::::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+::::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+::::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+::::You don't trust your dear friend!?
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::{{Диалог|Стрелка}} We need to seal the Stellaron on Penacony.
+:::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::::{{Диалог|Стрелка}} Tell the truth about the Watchmaker and the Stellaron.
+::::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::::{{tx}}
+::::::{{tx}}
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.OverridePerformanceEndCrack"
+}</pre>
+:::::{{Диалог|Стрелка}} You don't trust your dear friend!?
+::::::'''Argenti:''' Hmm...
+::::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::::I'm begging you, all I speak is the truth!
+::::::'''Argenti:''' Hmm...
+::::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::::{{tx}}
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::{{Диалог|Стрелка}} I'm begging you, all I speak is the truth!
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::Will you be participating in the Charmony Festival as well?
+::'''Argenti:''' Upon hearing of the impending festivities, I commanded the One and Only to bring me to Penacony with full haste. Alas, in a cosmos unguarded by the Beauty, disorder prevails, thus my passage was delayed by tending to the sick and injured...
+::'''Argenti:''' Fortunately, the Mini Rabbit Mech Pilot, Stray Cat Duelist, Galactic Ninja, and Quad-drive Intellitron, along with thirty-two other souls in distress, all emerged from their predicaments safe and sound... I then led them all here to revel in the harmony with the countless other splendid beings.
+::{{Диалог|Стрелка}} Is this the Beauty? It's dazzling...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::You're quite the savior, aren't ya...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::We need to seal the Stellaron on Penacony.
+:::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::Tell the truth about the Watchmaker and the Stellaron.
+:::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+:::'''Firefly:''' Actually, we've already met the Watchmaker...
+:::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+:::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+:::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+:::You don't trust your dear friend!?
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::I'm begging you, all I speak is the truth!
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} You're quite the savior, aren't ya...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::We need to seal the Stellaron on Penacony.
+:::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::Tell the truth about the Watchmaker and the Stellaron.
+:::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+:::'''Firefly:''' Actually, we've already met the Watchmaker...
+:::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+:::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+:::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+:::You don't trust your dear friend!?
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::I'm begging you, all I speak is the truth!
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::{{Диалог|Стрелка}} We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::{{Диалог|Стрелка}} Tell the truth about the Watchmaker and the Stellaron.
+:::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::::{{tx}}
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.OverridePerformanceEndCrack"
+}</pre>
+::::{{Диалог|Стрелка}} You don't trust your dear friend!?
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::I'm begging you, all I speak is the truth!
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(If {{F|MissionCV-1032704-undefined}} is undefined 0)
+:;(If {{F|MissionCV-1032704-undefined}} is not undefined 0)
+::;(Enter battle)
+:::{{Список врагов|mode=sent|Dreamjolt Troupe's Beyond Overcooked*2/-33.3% ATK, -44.4% HP, -180 }}
+;(Unused &mdash; MissionTalk)
+:'''(Trailblazer):''' (No way. I think I just saw someone... someone extraordinary)
+:{{tx}}
+;(По прибытии на место)
+
+
+;(Talk to Argenti)
+:'''Argenti:''' Go forth! The champion's stage belongs to the both of you... Bask in the glory you deserve!
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2.5
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "Camera"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "FinishLookAtPerformance_103270402"
+	}
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_C2BrokenBridge"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+;(Unused &mdash; FinishLookAtPerformance_103270402)
+
+{{Dialogue End}}
+
+===Reach the finish line{{subst:void|<!--103270410-->}}===
+{{Dialogue Start}}
+;(If {{F|BlockShowIndex}} is undefined 7)
+{{Dialogue End}}
+
+===Take victory in the "Superstar Showdown"{{subst:void|<!--103270405-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; EnterArea_LocalGroup)
+
+
+;(Talk to Argenti)
+:'''Argenti:''' Go forth! The champion's stage belongs to the both of you... Bask in the glory you deserve!
+
+;(Unused &mdash; EnterArea_G{GroupID})
+:'''Argenti:''' Please wait! {{MC|м=Handsome gentleman, beautiful miss|ж=My beautiful ladies}}...
+::'''Argenti:''' By the glorious light of Beauty! I never thought I would see you again. In such turbulent times, your kind faces are as spring's gentle breeze, bringing solace to my scorched heart!
+::'''Firefly:''' Are you... a Knight of Beauty?
+::{{Диалог|Стрелка}} Ahhhwww?
+:::'''Argenti:''' Hear ye! The rosy glow of the Beauty has rendered you speechless &mdash; what an honor!
+:::So the red-haired contestant was you all along!
+:::'''Argenti:''' You've already heard of my humble title elsewhere? I am deeply honored!
+::{{Диалог|Стрелка}} So the red-haired contestant was you all along!
+:::'''Argenti:''' You've already heard of my humble title elsewhere? I am deeply honored!
+::{{Диалог|Стрелка}} Will you be participating in the Charmony Festival as well?
+:::Will you be participating in the Charmony Festival as well?
+:::'''Argenti:''' Upon hearing of the impending festivities, I commanded the One and Only to bring me to Penacony with full haste. Alas, in a cosmos unguarded by the Beauty, disorder prevails, thus my passage was delayed by tending to the sick and injured...
+:::'''Argenti:''' Fortunately, the Mini Rabbit Mech Pilot, Stray Cat Duelist, Galactic Ninja, and Quad-drive Intellitron, along with thirty-two other souls in distress, all emerged from their predicaments safe and sound... I then led them all here to revel in the harmony with the countless other splendid beings.
+:::{{Диалог|Стрелка}} Is this the Beauty? It's dazzling...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::You're quite the savior, aren't ya...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::Tell the truth about the Watchmaker and the Stellaron.
+::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+::::'''Firefly:''' Actually, we've already met the Watchmaker...
+::::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+::::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+::::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+::::You don't trust your dear friend!?
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} You're quite the savior, aren't ya...
+::::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+::::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+::::I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::Tell the truth about the Watchmaker and the Stellaron.
+::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+::::'''Firefly:''' Actually, we've already met the Watchmaker...
+::::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+::::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+::::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+::::You don't trust your dear friend!?
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} I'm busy saving the world. Could you please make way?
+::::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+::::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+::::'''Argenti:''' Hmm... What would be the noblest choice...?
+::::{{Диалог|Стрелка}} We need to seal the Stellaron on Penacony.
+:::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::::{{Диалог|Стрелка}} Tell the truth about the Watchmaker and the Stellaron.
+::::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+::::::{{tx}}
+::::::{{tx}}
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:::::<pre>{
+	"$type": "RPG.GameCore.OverridePerformanceEndCrack"
+}</pre>
+:::::{{Диалог|Стрелка}} You don't trust your dear friend!?
+::::::'''Argenti:''' Hmm...
+::::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::::I'm begging you, all I speak is the truth!
+::::::'''Argenti:''' Hmm...
+::::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::::{{tx}}
+:::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::::{{Диалог|Стрелка}} I'm begging you, all I speak is the truth!
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::Will you be participating in the Charmony Festival as well?
+::'''Argenti:''' Upon hearing of the impending festivities, I commanded the One and Only to bring me to Penacony with full haste. Alas, in a cosmos unguarded by the Beauty, disorder prevails, thus my passage was delayed by tending to the sick and injured...
+::'''Argenti:''' Fortunately, the Mini Rabbit Mech Pilot, Stray Cat Duelist, Galactic Ninja, and Quad-drive Intellitron, along with thirty-two other souls in distress, all emerged from their predicaments safe and sound... I then led them all here to revel in the harmony with the countless other splendid beings.
+::{{Диалог|Стрелка}} Is this the Beauty? It's dazzling...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::You're quite the savior, aren't ya...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::We need to seal the Stellaron on Penacony.
+:::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::Tell the truth about the Watchmaker and the Stellaron.
+:::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+:::'''Firefly:''' Actually, we've already met the Watchmaker...
+:::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+:::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+:::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+:::You don't trust your dear friend!?
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::I'm begging you, all I speak is the truth!
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} You're quite the savior, aren't ya...
+:::'''Argenti:''' I do not deserve such praise! Unfortunately, that dashing IPC Ambassador, whose radiance matches that of a beautiful peacock, remains in a woeful state... How I wish he too could partake in this splendid occasion.
+:::'''Argenti:''' Okay, let's get back to business. Since fate has brought us together, it stands to reason that you both seek the accolade of the audition's victor, correct?
+:::I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::We need to seal the Stellaron on Penacony.
+:::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+:::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+:::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+:::Tell the truth about the Watchmaker and the Stellaron.
+:::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::'''Argenti:''' That's right. But what does this have to do with the Stellaron?
+:::'''Firefly:''' Actually, we've already met the Watchmaker...
+:::You revealed to Argenti all the truths about the Watchmaker and the Penacony Stellaron...
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' It's clear to me now. Evidently, you are traveling in pursuit of the Beauty's ideals.
+:::'''Argenti:''' Go forth, my dear friend, beautiful miss, the audition's crown is yours to claim! I shall remain here, gazing from afar as you bask in the limelight, joining the audience in offering you the most heartfelt cheers and applause.
+:::'''Firefly:''' Thank you, Knight of Beauty! We don't have much time left... May we meet again.
+:::You don't trust your dear friend!?
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::I'm begging you, all I speak is the truth!
+:::'''Argenti:''' Hmm...
+:::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::{{tx}}
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{Диалог|Стрелка}} I'm busy saving the world. Could you please make way?
+:::'''Argenti:''' Saving the world? What a righteous act of Beauty! If that's the case...
+:::'''Argenti:''' ...No, that won't do. The rules of the contest are sacred and inviolable, just like the Beauty.
+:::'''Argenti:''' Hmm... What would be the noblest choice...?
+:::{{Диалог|Стрелка}} We need to seal the Stellaron on Penacony.
+::::'''Firefly:''' That's right. This magnificent dream is built upon the Stellaron and the countless sacrifices of many people.
+::::'''Argenti:''' Oh? To encounter deeds so vile they stir one's very soul...
+::::'''Argenti:''' However, present-day Penacony bears no marks of the Stellaron's taint and The Family has always been renowned for spreading Harmony... How can I be sure your words hold truth?
+::::{{Диалог|Стрелка}} Tell the truth about the Watchmaker and the Stellaron.
+:::::'''Firefly:''' If I'm not wrong, the Knights of Beauty also received an invitation from the Watchmaker, right?
+:::::{{tx}}
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+::::<pre>{
+	"$type": "RPG.GameCore.OverridePerformanceEndCrack"
+}</pre>
+::::{{Диалог|Стрелка}} You don't trust your dear friend!?
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::I'm begging you, all I speak is the truth!
+:::::'''Argenti:''' Hmm...
+:::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+:::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+:::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+:::::{{tx}}
+::::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:::{{Диалог|Стрелка}} I'm begging you, all I speak is the truth!
+::::'''Argenti:''' Hmm...
+::::'''Argenti:''' Forgive me, my dear friends. If you cannot present irrefutable evidence, I must not yield, lest I dishonor the name of the Knights of Beauty.
+::::'''Argenti:''' But if what you say is true... In the name of Beauty, let us use this fated duel to test your mettle!
+::::'''Argenti:''' Though upon arrival, I was once mistaken for a towering, silver-armored fugitive with fiery red flames, due to my lack of eloquence... it matters not, for all these trials stem from the Land of Dream's Beauty.
+::::{{tx}}
+:::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270415,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:;(If {{F|MissionCV-1032704-undefined}} is undefined 0)
+:;(If {{F|MissionCV-1032704-undefined}} is not undefined 0)
+::;(Enter battle)
+:::{{Список врагов|mode=sent|Dreamjolt Troupe's Beyond Overcooked*2/-33.3% ATK, -44.4% HP, -180 }}
+:{{tx}}
+
+;(Talk to Argenti)
+:'''Argenti:''' Go forth! The champion's stage belongs to the both of you... Bask in the glory you deserve!
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_C1BrokenBridge"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.StartMissionCameraTemplate",
+	"CamDuration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2.5
+		}
+	},
+	"WaitSecondsBeforeCut": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CameraAnchor": {
+		"Custom": true,
+		"Key": "CamAnchor1"
+	},
+	"CameraTargetName": {
+		"Custom": true,
+		"Key": "LookAt"
+	},
+	"FirstTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"FirstTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"SecondTalkListStart": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"SecondTalkListEnd": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 103272430
+		}
+	},
+	"FaceToCameraTarget": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"CallBackEventName": {
+		"Value": "FinishLookAtPerformance_103270401"
+	}
+}</pre>
+;(Unused &mdash; FinishLookAtPerformance_103270401)
+
+{{Dialogue End}}
+
+===Reach the finish line{{subst:void|<!--103270409-->}}===
+{{Dialogue Start}}
+;(If {{F|BlockShowIndex}} is undefined 7)
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Seabiscuit
+|zhs  = 奔腾年代
+|zht  = 奔騰年代
+|ja   = 奔走する時代
+|ko   = 씨비스킷
+|es   = La era del tumulto
+|fr   = L'ère du tumulte
+|ru   = Фаворит
+|th   = ยุคพุ่งทะยาน
+|vi   = Thời Đại Đầy Hứa Hẹn
+|de   = Mit dem Willen zum Erfolg
+|id   = Era Melaju Cepat
+|pt   = A Era do Tumulto
+}}
+
+==Change History==
+{{Change History|3.5}}

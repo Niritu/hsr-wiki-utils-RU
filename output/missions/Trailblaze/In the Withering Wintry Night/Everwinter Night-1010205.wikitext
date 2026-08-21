@@ -1,0 +1,231 @@
+<%-- [PAGE_INFO]
+PageTitle=#Everwinter Night#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1010205
+|title         = 
+|image         = <!--Mission Everwinter Night.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Withering Wintry Night
+|requirements  = [[Trailblaze Mission]] ''[[Everwinter Night]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Dan Heng; March 7th; Teenage Cocolia; Trailblazer; Voice of the Stellaron
+|startLocation = [[Jarilo-VI]] - [[Hotel Corridor]]
+|world         = Jarilo-VI
+|area          = Hotel Corridor
+|prev          = 
+|next          = You Can Run, But You Can't Hide
+|rewards       = Trailblaze EXP*600; Adventure Log*3; Condensed Aether*1; Credit*6 000
+}}
+'''''Everwinter Night''''' is a [[Trailblaze Mission]] in the chapter [[In the Withering Wintry Night]].
+
+==Steps==
+# Rest in the Goethe Hotel
+# Go to bed
+# Investigate the commotion outside the hotel
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Rest in the Goethe Hotel{{subst:void|<!--101020201-->}}===
+{{Mission Description|type=trailblaze|location=Hotel Corridor|After an entire day of sightseeing, you've got a complete understanding of the local culture and are just an appointment at Belobog's Administrative Department away from becoming its actual citizens.<br />You return to the Goethe Hotel. The warm Geomarrow lights and the tea fragrance in the air make you feel at ease.<br />There's still some time to walk around the hotel before washing up and getting ready for bed. It seems like March 7th and Dan Heng also wants to speak with you &mdash; arrange your time before sleeping as you wish.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+----
+:'''Dan Heng:''' Is there anything left to do? We're meeting the guardian tomorrow. There won't be any time for sightseeing.
+:{{Диалог|Стрелка}} That's enough fun for today. Time to rest.
+::'''March 7th:''' It was a long day today. All I need is a hot shower and a good night's sleep.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:::{{Диалог|Стрелка}} Sleep well guys!
+::::'''March 7th:''' *yawn* You too!
+:::{{Диалог|Стрелка}} I've got a bad feeling...
+::::'''March 7th:''' Well don't talk about it then!
+:::{{Диалог|Стрелка}} {{MC|ж=Didn't someone mention a pillow fight?|м=}}
+::::'''March 7th:''' Yeah! About time!
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_WOMAN"}-->}})
+:::{{Диалог|Стрелка}} Sleep well guys!
+::::'''March 7th:''' *yawn* You too!
+:::{{Диалог|Стрелка}} I've got a bad feeling...
+::::'''March 7th:''' Well don't talk about it then!
+::'''Dan Heng:''' Let's get to bed early and save our energy. I sense the next few days could be tiring.
+::'''March 7th:''' Well, I'm off to my room then. Express lights off!
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 3,
+	"GroupNpcID": 400001
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 3,
+	"GroupNpcID": 400002
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Mission_1010201_TypeD",
+	"AnchorName": "101020201_Camera",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:{{Диалог|Выход}} Let's have another stroll.
+::----
+:<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"Visible": true,
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Go to bed{{subst:void|<!--101020203-->}}===
+{{Mission Description|type=trailblaze|location=Hotel Room|update|After an entire day of sightseeing, you've got a complete understanding of the local culture and are just an appointment at Belobog's Administrative Department away from becoming its actual citizens.<br />It's finally time for sleep and you feel an uncontrollable urge to snuggle with the soft and fluffy hotel bed.<br />Get some sleep and rest well, you deserve it &mdash; Express lights off!}}
+{{Dialogue Start}}
+
+;(Screen fades to black)
+:'''Voice of the Stellaron:''' Cocolia... Cocolia...
+:'''Teenage Cocolia:''' Wh&mdash;Who are you...? ...What are you?
+:'''Voice of the Stellaron:''' We are allies... allies of the guardians through generations.
+:'''Teenage Cocolia:''' What do you want...?
+:'''Voice of the Stellaron:''' To rebuild... this dying world...
+:'''Voice of the Stellaron:''' To help you... achieve your wish.
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_hwardrobe_knocked"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"SubMissionID": 101020204
+}</pre>
+;(Fully recovers all allies' HP)
+{{Dialogue End}}
+
+===Investigate the commotion outside the hotel{{subst:void|<!--101020205-->}}===
+{{Mission Description|type=trailblaze|location=Hotel Corridor|update|On the first night of the trailblazing expedition, you don't sleep as soundly and at ease as you did on the Express.<br />It's not because you have some kind of close bond with the Express but because you keep hearing the sound of troops moving around as you sleep.<br />And now, you can hear frantic door-knocking &mdash; your instincts tell you that something's not right... Go and investigate.}}
+{{Dialogue Start}}
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Mission_1010201_TypeD",
+	"AnchorName": "101020205_Camera",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_moodtips_tense"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''March 7th:''' Hey, (Trailblazer). Did you hear that?
+:'''Dan Heng:''' There's a group of Silvermane Guards at the entrance... and I don't think they're here to say hi.
+:'''March 7th:''' If this is our escort, it's less friendly than I was expecting.
+:{{Диалог|Стрелка}} You guys are assuming a lot. All I can see is their helmets.
+::'''March 7th:''' ...I just have a feeling.
+:{{Диалог|Стрелка}} You can't always be friendly on the job, you know.
+::'''March 7th:''' Huh, you must've had some miserable jobs.
+:{{Диалог|Стрелка}} Maybe they're not here to escort us?
+::'''March 7th:''' I guess we'll have to find out...
+:'''Dan Heng:''' Let's go and meet them. We won't know until we're down there.
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Everwinter Night
+|zhs  = 永冬城之夜
+|zht  = 永冬城之夜
+|ja   = 常冬の城の夜
+|ko   = 영원한 겨울 성의 밤
+|es   = Eterna noche invernal
+|fr   = Nuit de l'Hiver éternel
+|ru   = Ночь в городе вечнозимья
+|th   = ค่ำคืนของเมืองแห่งความหนาวนิรันดร์
+|vi   = Đêm Ở Thành Everwinter
+|de   = Immerwinternacht
+|id   = Malam Kota Salju Abadi
+|pt   = Noite do Inverno Eterno
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,199 @@
+<%-- [PAGE_INFO]
+PageTitle=#Gods, Sound the Anthem of Creation#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043677
+|title         = 
+|image         = <!--Mission Gods, Sound the Anthem of Creation.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Back to Earth in Evernight
+|requirements  = [[Trailblaze Mission]] ''[[Reunion, Promise of Tears and Smiles]]'' completed
+|summary       = All conditions for the Era Nova had been fulfilled, and various forces within and beyond Amphoreus were stirring. You returned to the Demiurge Matrix deep within the Great Tomb to return the twelve Titan's Coreflames and complete the Era Nova ritual. At that moment, the new world arrived...
+|characters    = Cyrene; Dan Heng; March 7th; Trailblazer
+|startLocation = [[Astral Express]] - [[Parlor Car]]
+|world         = Astral Express
+|area          = Parlor Car
+|prev          = Reunion, Promise of Tears and Smiles
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Traveler's Guide*5; Lost Crystal*5; Disorder Ambrosia*200; Credit*60 000
+}}
+'''''Gods, Sound the Anthem of Creation''''' is a [[Trailblaze Mission]] in the chapter [[Back to Earth in Evernight]].
+
+==Steps==
+# Talk to the Astral Express crew
+# Talk to Zandar about the Demiurge
+# Return the Coreflame and complete the final "Era Nova"
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Talk to the Astral Express crew{{subst:void|<!--104367701-->}}===
+{{Mission Description|type=trailblaze|location=Parlor Car|As the "final Era Nova" approaches, all factions must be prepared.<br />For victory, we may need to seek more allies...}}
+{{Dialogue Start}}
+:{{tx}}
+{{Dialogue End}}
+
+===Talk to Zandar about the Demiurge{{subst:void|<!--104367702-->}}===
+{{Mission Description|type=trailblaze|location=Exomyth: Test Site δ-me13|update|As the final Era Nova approaches, all factions must be prepared.<br />Zandar was well aware of the Demiurge's existence...}}
+{{Dialogue Start}}
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.EnterMapByCondition",
+	"EntranceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2045201
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Return the Coreflame and complete the final "Era Nova"{{subst:void|<!--104367703-->}}===
+{{Mission Description|type=trailblaze|location="Universal Matrix" Great Tomb of the Nameless Titan|update|Amphoreus! I do not beckon your name in haste.<br />I come here to tell a tale of history.<br />When the black tide of doom descended upon Earth, gods fell into madness, and mortals turned against each other.<br />Yet there were Flame-Chasing heroes, pioneering the great enterprise of creating a world.<br /><br />In this world, they shall meld burning golden blood into their bodies.<br />Will the destiny of days to come remember their names?<br /><br />In the name of Worldbearing, I promise you: Kephale will never forget.}}
+{{Dialogue Start}}
+:'''Cyrene:''' "All shall bid farewell to one, and that person alone will witness the miracle. Such is the will of fate."
+:'''Cyrene:''' But this time... it will be the final Flame-Chase Journey...
+:'''Cyrene:''' The epic with endless cycles is about to end.
+:'''Dan Heng:''' The extrapolations of the Erudition, the Coreflames of the Destruction, and the textures of the Remembrance... the Three Paths converge once again at the world's end.
+:'''Dan Heng:''' And "the Trailblaze" will write a new beginning for this world.
+:'''March 7th:''' Not only that, we'll also carry the history of all thirty million recurrences into the new world with us.
+:'''March 7th:''' It wouldn't be an exaggeration to call it a miracle.
+:'''(Trailblazer):''' This miracle wasn't created by just one person.
+:'''(Trailblazer):''' Phainon would have long been consumed by the Coreflames if he hadn't chiseled his companions' dying wishes into his soul... And if the heroes' resolve to chase the flames had wavered, Cyrene's journey would never have begun...
+:'''(Trailblazer):''' The heroes never yielded and never fell during Amphoreus's thirty million cycles...
+:'''(Trailblazer):''' It was "fate" that fell instead.
+:{{Диалог|Стрелка}} Come. Let us complete the final Era Nova.
+:{{Диалог|Стрелка}} Let us march toward the final battle against the Destruction.
+:{{Диалог|Стрелка}} Let us carry the memory of thirty million recurrences into the future.
+:{{Диалог|Стрелка}} Let us end this never-ending cycle.
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"CyreneNPC_00_C01"
+	],
+	"CreateUnqueNames": [
+		"Tribbie_00_C00",
+		"Tribbie_01_C00",
+		"Tribbie_02_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"Mydeimos_00_C00",
+		"Castorice_00_C00",
+		"Aglaea_00_C00",
+		"Phainon_00_C00"
+	],
+	"CreateUnqueNames": [
+		"Cerydra_00_C00",
+		"Harscyline_00_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"Tribbie_00_C00",
+		"Tribbie_01_C00",
+		"Tribbie_02_C00"
+	],
+	"CreateUnqueNames": [
+		"Aglaea_00_C00",
+		"Anaxa_00_C00",
+		"Hyacine_00_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"Cerydra_00_C00",
+		"Harscyline_00_C00"
+	],
+	"CreateUnqueNames": [
+		"Mydeimos_00_C00",
+		"Castorice_00_C00",
+		"Cipher_00_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"Aglaea_00_C00",
+		"Anaxa_00_C00",
+		"Hyacine_00_C00"
+	],
+	"CreateUnqueNames": [
+		"Phainon_00_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceDynamicLoadCharacter",
+	"DestroyUnqueNames": [
+		"Mydeimos_00_C00",
+		"Castorice_00_C00",
+		"Cipher_00_C00"
+	],
+	"CreateUnqueNames": [
+		"Phainon_00_C00"
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+----
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareVersionFinalMainMission","MainMissionID":1043677}-->}})
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndBlackText",
+	"TalkSentenceID": 100000005
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act670_Caption.json-->}}
+;(Cutscene ends)
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act680_Caption.json-->}}
+;(Cutscene ends)
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Gods, Sound the Anthem of Creation
+|zhs  = 诸神啊，奏响创世的凯歌
+|zht  = 諸神啊，奏響創世的凱歌
+|ja   = 神々よ、再創紀の凱歌を奏でよ
+|ko   = 신들이여, 창세의 개선가를 울려라
+|es   = Dioses, toquen el himno de la creación
+|fr   = Dieux, chantez l'hymne de la création
+|ru   = О боги, спойте пеан воскресающей земли
+|th   = ทวยเทพเอ๋ย จงกู่ก้องลำนำสดุดีชัย แด่ยุคนิรมิตใหม่
+|vi   = Hỡi Chư Thần, Hãy Tấu Lên Khúc Khải Hoàn Của Sáng Thế
+|de   = O Götter, lasst den Lobgesang der Schöpfung erklingen
+|id   = Para Dewa, Kumandangkan Lagu Kemenangan Era Penciptaan Ulang
+|pt   = Divindades, Entoem o Hino da Criação
+}}
+
+==Change History==
+{{Change History|3.6}}

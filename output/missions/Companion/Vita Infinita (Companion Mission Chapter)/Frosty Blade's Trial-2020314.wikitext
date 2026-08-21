@@ -1,0 +1,645 @@
+<%-- [PAGE_INFO]
+PageTitle=#Frosty Blade's Trial#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2020314
+|title         = 
+|image         = <!--Mission Frosty Blade's Trial.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = A Novel Left Behind By Tourists; Cloud Knights Captain; Jingliu; Trailblazer; Yanqing
+|startLocation = [[The Xianzhou Luofu]] - [[Cloudford]]
+|world         = The Xianzhou Luofu
+|area          = Cloudford
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*350; Stellar Jade*100; Traveler's Guide*5; Refined Aether*5; "Blade Abracadabra"*1 { text = "Blade Abracadabra" }; Credit*50 000
+}}
+'''''Frosty Blade's Trial''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Ask the Cloud Knight Captain about Cloudford's current situation
+# Find clues at Cloudford
+# Head to the Cloudford dock
+# Make the Diting track down the wanted man and ascertain his direction
+# Escort Jingliu
+# Investigate the navigator array for the location of the starskiff that Blade took
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Ask the Cloud Knight Captain about Cloudford's current situation{{subst:void|<!--202031401-->}}===
+{{Mission Description|type=companion|location=Cloudford|When the general called the prisoner, Blade, to court, I knew. The Shackling Prison would never be able to trap someone like him. He looks at everyone as if they were all as dead as those in a cemetery. It was a look that only assassins who have been macerating in death can give... His prison break was for a certain goal. What can it be?<br />The hunt for Blade stopped at Cloudford. The general is busy with official matters, as his retainer, I should take part of this responsibility for him.}}
+{{Dialogue Start}}
+----
+:'''Yanqing:''' Blade tracking entry: Traces run cold at Starskiff Haven.
+:'''Yanqing:''' I'll have to ask the Cloud Knights in the area if they saw anything...
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Yanqing:''' Captain, could you spare a moment?
+:'''Cloud Knights Captain:''' Yanqing? Why are you all the way out here on the front lines? Shouldn't you be back at the Seat of Divine Foresight?
+:'''Yanqing:''' The general already has a lot on his plate. As his retainer, it's my duty to share the burden...
+:'''Yanqing:''' Nothing new to report, I assume?
+:'''Cloud Knights Captain:''' Correct. After this "Blade" escaped from The Shackling Prison, he disappeared into thin air. I wonder if he's even still on the ship?
+:'''Yanqing:''' Or perhaps he had no intention of escaping in the first place.
+:'''Cloud Knights Captain:''' *sigh* What foul demons found their way across the stars to wreak havoc on the Luofu?
+:'''Yanqing:''' That's why I'm here &mdash; to help the general eliminate those demons.
+:'''Cloud Knights Captain:''' Is that so? I didn't receive any orders from the general.
+:'''Yanqing:''' Ahem... This is a covert operation.
+:'''Cloud Knights Captain:''' ...Then shall we dispatch a few knights for this "operation" of yours?
+:'''Yanqing:''' I appreciate the gesture... but the fewer people who know about a covert operation, the better.
+:'''Yanqing:''' Making a big show of it will only scare the snake deeper into the grass... A good hunter must operate alone.
+----
+:'''Yanqing:''' "Dispatch a few knights..." Hmph, how incapable does he think I am?
+:'''Yanqing:''' I might be young now, but just you wait...
+
+;(Talk to Jingliu)
+:'''Jingliu:''' Where exactly are we headed, young man?
+:'''Yanqing:''' To the docks. Don't worry, you'll be safe.
+:{{Диалог|Разговор}} (Where did she come from...?)
+::'''Yanqing:''' So are you from one of the other Xianzhou ships? The Yaoqing? The Fanghu?
+::'''Jingliu:''' ...I'm from the Cangcheng.
+::'''Yanqing:''' The Cangcheng? There's a ship called the Cangcheng? Why haven't I heard of it...?
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} (How long has she been away...?)
+::'''Yanqing:''' Miss Jingliu, how long has it been since you last set foot on the Luofu?
+::'''Jingliu:''' Are you always this talkative?
+::'''Yanqing:''' Uh... Just making conversation &mdash; I wanted you to know I was still here.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} (Let's get going...)
+::'''Yanqing:''' Let's get going, miss. Careful &mdash; take your time.
+::----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300019
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031402_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300010
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "PropUITriggered_5_300010"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300010
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300021
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031412_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300021
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300009
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300016
+				}
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"DestroyAfterTriggered": true,
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Mission_202031454_PropUITrigger"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300009
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Yanqing:''' Looks like the influence of the Stellaron spirits is growing...
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300013
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropSetupUITrigger",
+	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
+	"IconType": "CheckIcon",
+	"ButtonText": {
+		"Hash": 16304550243505668348
+	},
+	"ButtonCallback": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "PropUITriggered_5_300013"
+			}
+		}
+	],
+	"OverrideTargetTypes": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300013
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Find clues at Cloudford{{subst:void|<!--202031461-->}}===
+{{Mission Description|type=companion|location=Cloudford|update|No one could ingress or egress the Xianzhou ship without a starskiff. A wanted person would only linger here to hijack a starskiff to escape, so he would have left behind clues. But as the only Xianzhou opening to the cast expanse, Cloudford contains more than thousands of belongings of visitors. You can't check them out one by one, can you?}}
+{{Dialogue Start}}
+:'''Yanqing:''' Starskiffs are blocked from entering or exiting. There's no way the fugitive got through...
+:'''Yanqing:''' But if he fled towards the interior of the ship... it'll be hard to track him down over such a vast area.
+:'''Yanqing:''' Hmm... A fugitive would still have to rely on starskiffs to travel between different delves.
+:'''Yanqing:''' If we start by investigating the starskiff he stole, maybe we can get a lead...
+:'''Yanqing:''' Guess it's back to the docks again.
+{{Dialogue End}}
+
+===Head to the Cloudford dock{{subst:void|<!--202031403-->}}===
+{{Mission Description|type=companion|location=Cloudford|update|O Yanqing, you had not considered one thing. If the wanted man wants a starskiff, he needs only to find the navigator array at the dock to check records of starskiffs. As for what he did at Cloudford, what does it matter?}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Yanqing:''' What's this...?
+----
+:'''Yanqing:''' This kind of wound... is not the work of a Cloud Knight.
+:'''Yanqing:''' The best prey is one that leaves traces.
+:'''Yanqing:''' Here Diting, let's follow the scent!
+----
+{{Dialogue End}}
+
+===Make the Diting track down the wanted man and ascertain his direction{{subst:void|<!--202031404-->}}===
+{{Mission Description|type=companion|location=Cloudford|update|In the process of searching in Cloudford, I found several Mara-struck corpses. The wounds left on the bodies were not caused by Cloud Knight weapons... If my deduction is accurate, the wanted man would have escaped from a nearby dock.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300005
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Yanqing:''' Civilians are still getting attacked? Where are the Cloud Knights?
+:'''Yanqing:''' Hey, don't panic, I'll get you out of there!
+;(Enter battle)
+:{{Список врагов|mode=sent|Disciples of Sanctus Medicus: Internal Alchemist*1}}
+:{{tx}}
+{{Dialogue End}}
+
+===Escort Jingliu{{subst:void|<!--202031453-->}}===
+{{Mission Description|type=companion|location=Cloudford|update|When I follow the sword marks, a lady was trapped by several Mara-struck monsters. Odd, with the Cloud Knights locking the port, why are there travelers being stuck here? She would be in danger traveling alone, I should escort her to safety before completing my mission. It's a shame that her eyes are covered with a black cloth, so she won't be able to see my graceful swordsmanship.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{Black Screen|Yanqing marched several steps forward then returned &mdash; It'd better take the lady with blindfold together on the road.}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Jingliu:''' Where do we go from here?
+----
+:'''Yanqing:''' Shh, quiet... We've got trouble to deal with first.
+:'''Yanqing:''' Wait here a moment, miss &mdash; I'll be right back.
+----
+----
+:'''Yanqing:''' Where did these guys come from? Huh, the general was right &mdash; there's a threat lurking on the Xianzhou itself.
+:'''Jingliu:''' You are quite the swordmaster, young man.
+:'''Yanqing:''' You... you saw that?
+:'''Jingliu:''' I heard it. A sword whistles through the air and rings out upon contacting the enemy ... Whilst invisible to the eye, such signals reveal the quality of one's swordplay.
+:'''Jingliu:''' As a musician listens to the notes of a song, so a poet listens to its rhyme... and in the flow of combat, a skilled swordmaster delivers both with their blade. I'll wager the Cloud Knights capable of wielding six flying swords at a time number few indeed.
+:'''Yanqing:''' Uh, haha, thanks miss.
+:'''Jingliu:''' However, your zealousness inhibits your ability to hide your line of attack....
+:'''Yanqing:''' Huh...?
+:'''Jingliu:''' ...which causes your sword's song to become somewhat mumbled at the end.
+:'''Yanqing:''' ...I guess the connection between music and swordplay is real after all. The general told me something similar &mdash; he said my swordplay was too proud and angular. He said it lacked the maturity required to win the title of Sword Champion...
+:'''Jingliu:''' Sword Champion? If I recall correctly, that title is bestowed on one who reaches the pinnacle of swordsmanship in the Cloud Knights. But that was a long time ago...
+:'''Yanqing:''' Right! Ever since the Sedition of Imbibitor Lunae, the title of Sword Champion has gone unclaimed. But once everything settles down and the Combat Arts Ceremony returns, it's a title I'm determined to win!
+:'''Jingliu:''' The Cloud Knights have many martial arts traditions. Who was it that instructed you in swordplay, young man?
+:'''Yanqing:''' I see you're no stranger to the art &mdash; I won't keep you in suspense. My master is none other than General Jing Yuan of the Luofu.
+:'''Jingliu:''' General...
+:'''Yanqing:''' I know you haven't visited for a long time, but surely you've heard of General Jing Yuan? He says he has no affinity with the sword &mdash; that his skills are getting rusty... Well, if that's true, I never noticed from his training.
+----
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300034
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Yanqing:''' The starskiff voyage log can be accessed through the dock navigator array.
+{{Dialogue End}}
+
+===Investigate the navigator array for the location of the starskiff that Blade took{{subst:void|<!--202031409-->}}===
+{{Mission Description|type=companion|location=Cloudford|update|This Stellaron crisis is evidently puppeteered by someone. The villain I accosted along the way could control abominations! Thankfully, my swordplay is adequate to dispatch them all. What was interesting, is the lady could tell who I am just from listening to the sound of my sword-wielding. After checking the navigator array, I have to test her.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; Mission_202031409_Puzzle_Finish)
+
+
+;(Unused &mdash; FinalTimelineEnd_202031409)
+:'''Jingliu:''' It would seem we've cleared every abomination from the area. Let's find another location and continue our contest.
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Mission Description|type=companion|location=Cloudford|update|This Stellaron crisis is evidently puppeteered by someone. The villain I accosted along the way could control abominations! Thankfully, my swordplay is adequate to dispatch them all. Interestingly, that lady could tell what was going on just from listening to the sound of my sword-wielding. After checking the navigator array, I'll have to test her.}}
+----
+:'''Yanqing:''' Active starskiff, active starskiff... there!
+:'''Yanqing:''' This one goes past the Divination Commission and the Artisanship Commission...
+<pre>{
+	"$type": "RPG.GameCore.ClearTalkUI"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190429
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI",
+	"Show": true
+}</pre>
+:{{tx}}
+:'''Jingliu:''' It would seem we've cleared every abomination from the area. Let's find another location and continue our contest.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<!--1-second delay-->
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Frosty Blade's Trial
+|zhs  = 霜刃一试
+|zht  = 霜刃一試
+|ja   = 霜刃一試し
+|ko   = 서늘한 칼날의 시련
+|es   = Una investigación afilada
+|fr   = Épreuve de la lame du givre
+|ru   = Испытание ледяного клинка
+|th   = บททดสอบแห่งคมดาบน้ำแข็ง
+|vi   = Thử Thách Lưỡi Băng
+|de   = Prüfung der Frostklinge
+|id   = Percobaan Pedang Salju
+|pt   = Teste da Lâmina Glacial
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -53,7 +53,7 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 
 	infobox
 		.addParam('id', item.id)
-		.addParam('Изображения', img + uploadPrompt(item.icon_path, img, 'Изображения расходных предметов'))
+		.addParam('Изображение', img + uploadPrompt(item.icon_path, img, 'Изображения расходных предметов'))
 		.addParam('Тип', groupMap[item.group_id!])
 		.addParam('Редкость', item.rarity)
 		.addParam('Эффект', item.effect.replaceAll('\n', '<br />'))
@@ -93,7 +93,7 @@ for (const itemData of Object.values(await Item.itemData.main.get())) {
 		recipeTemplate.addParam('Сортировка', recipe.data.map(entry => wikiTitle(entry.item.name, 'item')).join(';'))
 		
 		output.push(
-			'\n==Рецепт==',
+			'\n==Создание==',
 			recipeTemplate.block()
 		)
 	}

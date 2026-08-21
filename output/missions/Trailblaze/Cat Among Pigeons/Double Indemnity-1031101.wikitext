@@ -1,0 +1,613 @@
+<%-- [PAGE_INFO]
+PageTitle=#Double Indemnity#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1031101
+|title         = 
+|image         = <!--Mission Double Indemnity.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = [[Trailblaze Mission]] ''[[Lost Generation]]'' completed
+|summary       = Aventurine initially planned to use the two murders as an excuse to retrieve the Cornerstone that contains the power of Preservation, but the Oak Family head unexpectedly turned the tables on him and hit him with a death sentence.<br />With little left but his meager life and a pouch of useless gems, Aventurine left Dewlight Pavilion. There was but an infinitesimally small chance at survival, but Aventurine nonetheless believed he still held the reins of control...
+|characters    = Aventurine; Dr. Ratio; Hendrick; Oak Family Soldier; Trailblazer
+|startLocation = [[Penacony]] - [[The Reverie (Dreamscape)]]
+|world         = Penacony
+|area          = The Reverie (Dreamscape)
+|prev          = Lost Generation
+|next          = When the Sacred Ginmill Closes
+|rewards       = Trailblaze EXP*900; Stellar Jade*110; Traveler's Guide*10; Lost Crystal*10; Clock Credits*500; "Spellbound"*1 { text = "Spellbound" }; Credit*120 000
+}}
+'''''Double Indemnity''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Watch the memory
+# Talk to Hendrick
+# Head to the foyer
+# Obtain the clue regarding the Nightingale Statue
+# Head to the Dreammaster Hall
+# Return to the foyer
+# Solve the puzzle regarding the Nightingale Statue
+# Head to The Family's council chamber and face Sunday
+# Inspect the sandpit
+# Head to the treasure room to look for a clue related to the sandpit
+# Look for the sandpit clue in the treasure room
+# Inspect the sandpit again
+# Interact with Gulliver's Arch
+# Investigate the Dream Jigsaw
+# Talk to the Oak Family Soldier
+# Collect Jigsaw Fragments
+# Look for the capsule m&mdash;a&mdash;a&mdash;a&mdash;achine
+# Collect Jigsaw Fragments
+# Head to The Family's council chamber and face Sunday
+# Meet Sunday face-to-face
+# Investigate the suspicious-looking empty base
+# Head to the Meditation Room and look for the pinball machine model
+# Place the pinball machine model on the sandpit
+# Head to higher ground to collect Jigsaw Fragments
+# Complete the Dream Jigsaw
+# Exit Sandpit
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:{{tx}}
+{{Dialogue End}}
+
+===Watch the memory{{subst:void|<!--103110101-->}}===
+{{Dialogue Start}}
+:{{tx}}
+;(Unused &mdash; G54Trigger)
+
+
+;(Talk to Hendrick)
+:{{tx}}
+:'''Hendrick:''' Enough, get going. Don't keep Mr. Sunday waiting.
+
+;(Talk to )
+:'''Aventurine:''' Ha, you're back! Just place it here... Thank you...!
+::{{Диалог|Стрелка}} Place the model in the sandpit.
+<!--Unknown TalkSentence: 103112001-->
+
+;(Talk to )
+<!--Unknown TalkSentence: 103111701-->
+:'''Aventurine:''' Ha, you're back! Just place it here... Thank you...!
+
+;(Talk to )
+:'''Aventurine:''' Great. There's another {{Цвет|Ключевой|nobold=1|pinball machine}} base here, and it's empty too.
+<!--Unknown TalkSentence: 103112201-->
+
+;(Talk to )
+:'''Dr. Ratio:''' Quite a fascinating contraption. I would rate it more favorably if that clamorous little person inside were gone.
+:'''Dr. Ratio:''' Get serious. I've no time for games. Let's head back. The hint is probably in that prominent {{Цвет|Ключевой|nobold=1|sandpit}}.
+<pre>{
+	"$type": "RPG.GameCore.TriggerUINotify",
+	"NotifyTypeName": "StoryLineSwitchToast"
+}</pre>
+{{Dialogue End}}
+
+===Talk to Hendrick{{subst:void|<!--103110103-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|The head of the Oak Family in Penacony, who seems to find you intriguing, invites you for a private chat. That's exactly what you need. To meet him, you visit the Dewlight Pavilion with Dr. Ratio... having no inkling of the perils that lie ahead of you.<br />Talk to Hendrick the guard and embark on you two's adventure at the Dewlight Pavilion.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Head to the foyer{{subst:void|<!--103110102-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You two reach a foyer full of statues and realize there is no way to proceed further... In other words, there is not even a door in sight. Looks like you have to find a way to conjure up a door...<br />Fortunately, the learned professor always knows what to do... Could he have studied the script before?}}
+{{Dialogue Start}}
+;(Unused &mdash; G55Trigger)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20322_F20322001_G55"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|FCV_RavenPuzzle_State}} is undefined 1)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20322_F20322001_G59"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{DIcon|undefined}} 
+:'''Dr. Ratio:''' Solving a problem by brute force doesn't prove your intelligence. {{Цвет|Ключевой|nobold=1|The side room}} &mdash; don't let me repeat myself.
+
+{{Dialogue End}}
+
+===Obtain the clue regarding the Nightingale Statue{{subst:void|<!--103110171-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103110104"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Head to the Dreammaster Hall{{subst:void|<!--103110111-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You two reach a foyer full of statues and realize there is no way to proceed further... In other words, there is not even a door in sight. Looks like you have to find a way to conjure up a door...<br />You two really did conjure up a door! The Dreamscape is an amazing place, isn't it?}}
+{{Dialogue Start}}
+;(Unused &mdash; G74Trigger)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20322_F20322001_G74"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Return to the foyer{{subst:void|<!--103110105-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You two reach a foyer full of statues and realize there is no way to proceed further... In other words, there is not even a door in sight. Looks like you have to find a way to conjure up a door...<br />You two have obtained the clue regarding the Nightingale Statue, hoping that it can open up the path ahead.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ShowFuncBtn",
+	"ItemID": 150035,
+	"ShowBtnEffect": true,
+	"MissionID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1031101
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Solve the puzzle regarding the Nightingale Statue{{subst:void|<!--103110106-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Head to The Family's council chamber and face Sunday{{subst:void|<!--103110116-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You two have successfully solved the puzzle about the Nightingale Statue. After walking through a narrow and long hallway, you find yourself in a luxurious classical hall.<br />You two will get to meet the head of the Oak Family with the odd name after passing through the hall.}}
+{{Dialogue Start}}
+
+
+;(Unused &mdash; FinishMission)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20322_F20322001_G141"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103110116"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Inspect the sandpit{{subst:void|<!--103110112-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|As expected, things are far from straightforward. How can the outsiders gain access to The Family's council chamber that easily? But fret not, as Dr. Ratio always has the solution. He speculates that the key to unlocking the door is hidden in the sandpit in the center of the hall.}}
+{{Dialogue Start}}
+:'''Aventurine:''' Wow, that's an enormous sandpit... I'd love to build a tall building for myself once I have enough savings.
+
+;(Talk to )
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the treasure room to look for a clue related to the sandpit{{subst:void|<!--103110172-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|There is a noticeable gap in the sandpit model, which might just be the key clue to unlocking the council chamber. As far as Dr. Ratio can remember, the block that can fit the gap is kept in the treasure room nearby.<br />The professor is as reliable as always!}}
+{{Dialogue Start}}
+:'''Dr. Ratio:''' Let's look around. When I see it, I will know it.
+:'''Aventurine:''' Fine, fine. Why do I feel that we're pursuing a degree in burglary now?
+;(По прибытии на место)
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Dr. Ratio:''' Found it. This is it.
+{{Dialogue End}}
+
+===Look for the sandpit clue in the treasure room{{subst:void|<!--103110113-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|There is a noticeable gap in the sandpit model, which might just be the key clue to unlocking the council chamber. As far as Dr. Ratio can remember, the block that can fit the gap is kept in the treasure room nearby.<br />You two arrive at the treasure room, all set to pursue a degree in burglary &mdash; that is, to look for the missing part of the sandpit model. Good luck.}}
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TeleportToRotatableRegion",
+					"TargetRegionIndex": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": -1
+						}
+					},
+					"TargetAnchorGroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 63
+						}
+					},
+					"TargetAnchorInstanceID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Inspect the sandpit again{{subst:void|<!--103110114-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You two come across a wondrous item called Gulliver's Arch in the treasure room. If you've watched the fun animation with a blue cat from the future as the protagonist, then the item will surely remind you of the tunnel that can shrink the pers&mdash;<br />Ahem, the rest of the content will not be shown due to copyright issues. Now, please put the arch on the sandpit.}}
+{{Dialogue Start}}
+;(Unused &mdash; TalkSentence_103111205)
+:'''Aventurine:''' Waaaaaah...!
+::{{tx}}
+::{{tx}}
+
+;(Unused &mdash; FinishMission)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::'''Aventurine:''' Look, there's a noticeable {{Цвет|Ключевой|nobold=1|gap}} in the model. I believe you're right.
+::'''Dr. Ratio:''' There wasn't a gap before. That man must have done it intentionally.
+::'''Aventurine:''' With your brilliant mind you shouldn't have any trouble recalling what was here last time, right, Doctor?
+::'''Dr. Ratio:''' Of course.
+::{{Диалог|Стрелка}} Insert Gulliver's Arch into the slot.
+::'''Aventurine:''' This reminds me of one of those building toys. With the blocks? I've never played with them before. I wonder if it's more interesting than stacking chips.
+::{{tx}}
+{{Dialogue End}}
+
+===Interact with Gulliver's Arch{{subst:void|<!--103110117-->}}===
+{{Dialogue Start}}
+;(If {{cx}}<!--SubMission Finish: 103110114-->)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerAppear"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_Sandbox_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:{{tx}}
+;(Unused &mdash; FinishMission)
+:{{tx}}
+::'''Aventurine:''' Let's find a way to open the door.
+{{Dialogue End}}
+
+===Investigate the Dream Jigsaw{{subst:void|<!--103110122-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|Dream Jigsaws are ubiquitous in Penacony. Generally speaking, seeing a Dream Jigsaw is the same as seeing a door... Intentional or not, this creepy design is so common in Penacony that it makes you wonder whether The Family has run out of creative ideas.<br />Anyway, you might as well go through the procedure and collect all the jigsaw fragments. You know how your professor friend isn't known for his patience.}}
+{{Dialogue Start}}
+
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+
+;(Talk to Dr. Ratio)
+:'''Dr. Ratio:''' Get serious. I've no time for games. Let's head back. The hint is probably in that prominent {{Цвет|Ключевой|nobold=1|sandpit}}.
+{{Dialogue End}}
+
+===Talk to the Oak Family Soldier{{subst:void|<!--103110123-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; FinishMission)
+:'''Oak Family Soldier:''' Hello. Welcome to the Golden Hour base model.
+::'''Oak Family Soldier:''' I am an Oak Soldier. I will be here to guide you through the tour of the base model. Happy to be of service.
+::{{Диалог|Стрелка}} Tell me about the guided tour.
+::'''Aventurine:''' Then tell me about the tour.
+::'''Oak Family Soldier:''' Hel&mdash;l&mdash;l&mdash;l&mdash;l&mdash;o. Welcome to the Golden Hour ba&mdash;a&mdash;a&mdash;a&mdash;a&mdash;se model &mdash;
+::'''Oak Family Soldier:''' I am an O&mdash;o&mdash;o&mdash;o&mdash;o&mdash;oak Soldier. I will be here to guide you through the to&mdash;o&mdash;o&mdash;o&mdash;ur of the base mo &mdash;
+::{{Диалог|Стрелка}} Hey, I was talking to you.
+::{{Диалог|Стрелка}} Tell me about the tour!
+::{{Диалог|Стрелка}} (Give it a kick.)
+::'''Oak Family Soldier:''' Model. Happy to be of service.
+::'''Oak Family Soldier:''' Gen&mdash;n&mdash;n&mdash;n&mdash;n&mdash;n&mdash;nerating guide. Please wait pa&mdash;a&mdash;a&mdash;a&mdash;a&mdash;a&mdash;atient&mdash;t&mdash;t&mdash;t...
+::'''Oak Family Soldier:''' t-t-t-t-t...
+::{{Диалог|Стрелка}} You seriously are the worst soldier.
+::{{Диалог|Стрелка}} Tell. Me. About. The. Tour.
+::{{Диалог|Стрелка}} (Kick it again.)
+::'''Oak Family Soldier:''' ...Fo&mdash;o&mdash;o&mdash;o&mdash;und the nearest check-in spot!
+::{{tx}}
+::'''Aventurine:''' What's up with that? Now The Family's toys are trying to frame me? I didn't do a thing to it, Doc. You've gotta be my witness.
+::'''Dr. Ratio:''' I saw nothing.
+{{Dialogue End}}
+
+===Collect Jigsaw Fragments{{subst:void|<!--103110132-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Look for the capsule m&mdash;a&mdash;a&mdash;a&mdash;achine{{subst:void|<!--103110141-->}}===
+{{Dialogue Start}}
+
+;(Talk to Oak Family Soldier)
+:It has crashed. It may take some time to reboot.
+;(Unused &mdash; FinishMission)
+:{{tx}}
+:;([[#Gallery|Cutscene]] plays)
+::'''Aventurine:''' So I was right. These models have interiors that look exactly like the real buildings. The only difference is that no one lives in them.
+::'''Aventurine:''' Funny that Sunday puts a miniature that makes him seem like a '''giant''' by comparison right where he can see it first thing in the morning. Insecure much?
+{{Dialogue End}}
+
+===Collect Jigsaw Fragments{{subst:void|<!--103110142-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Head to The Family's council chamber and face Sunday{{subst:void|<!--103110131-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|Now, you're all set to meet the head of Oak Family. Good luck.}}
+{{Dialogue Start}}
+;(Unused &mdash; FinishMission)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+{{Dialogue End}}
+
+===Meet Sunday face-to-face{{subst:void|<!--103110164-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; G64Trigger)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::{{tx}}
+::{{tx}}
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Please.
+:::Are these what you're looking for?
+:;(Cutscene ends)
+:----
+::{{tx}}
+::{{tx}}
+::{{tx}}
+{{Dialogue End}}
+
+===Investigate the suspicious-looking empty base{{subst:void|<!--103110151-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|Dream Jigsaws are ubiquitous in Penacony. Generally speaking, seeing a Dream Jigsaw is the same as seeing a door... Intentional or not, this creepy design is so common in Penacony that it makes you wonder whether The Family has run out of creative ideas.<br />Anyway, you might as well go through the procedure and collect all the jigsaw fragments. You know how your professor friend isn't known for his patience.}}
+{{Dialogue Start}}
+:'''Aventurine:''' One of the fragments flew upstairs. I'll need to use the {{Цвет|Ключевой|nobold=1|pinball machine}} to flick myself up there, but it's tough.
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+:<!--1-second delay-->
+:{{tx}}
+
+:{{DIcon|undefined}} 
+{{Dialogue End}}
+
+===Head to the Meditation Room and look for the pinball machine model{{subst:void|<!--103110174-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You ask the knowledgeable Dr. Ratio to help you look for a pinball machine model in the Meditation Room. So happy for him!}}
+{{Dialogue Start}}
+:'''Dr. Ratio:''' Finally, a moment of peace.
+;(По прибытии на место)
+
+:{{DIcon|Изучение}} Investigate
+:'''Dr. Ratio:''' Quite a fascinating contraption. I would rate it more favorably if that clamorous little person inside were gone.
+:'''Aventurine:''' Ratio... I can hear you...
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--15-second delay-->
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.AdvByEntityExist","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}})
+:'''Aventurine:''' Doctor... Shake a leg...?
+:'''Aventurine:''' Without that {{Цвет|Ключевой|nobold=1|Pinball machine}}, neither one of us is going anywhere anytime soon.
+:'''Dr. Ratio:''' ...
+;(Unused &mdash; EnterArea_LocalGroup)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Obtain {{Предмет|Pinball Machine Model|20|x=1}})
+
+:{{DIcon|Изучение}} Investigate
+
+:{{DIcon|Изучение}} Investigate
+:'''Dr. Ratio:''' Quite a fascinating contraption. I would rate it more favorably if that clamorous little person inside were gone.
+:'''Aventurine:''' Ratio... I can hear you...
+{{Dialogue End}}
+
+===Place the pinball machine model on the sandpit{{subst:void|<!--103110154-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|You ask the knowledgeable Dr. Ratio to help you look for a pinball machine model in the Meditation Room, and he manages to find it. So happy for him!}}
+{{Dialogue Start}}
+:'''Dr. Ratio:''' That's it... Pleasant moments of solitude are always fleeting.
+;(Lose {{Предмет|Pinball Machine Model|20|x=1}})
+;(Unused &mdash; FinishMission)
+:'''Aventurine:''' Ha, you're back! Just place it here... Thank you...!
+::{{Диалог|Стрелка}} Place the model in the sandpit.
+:;([[#Gallery|Cutscene]] plays)
+{{Dialogue End}}
+
+===Head to higher ground to collect Jigsaw Fragments{{subst:void|<!--103110156-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|Dream Jigsaws are ubiquitous in Penacony. Generally speaking, seeing a Dream Jigsaw is the same as seeing a door... Intentional or not, this creepy design is so common in Penacony that it makes you wonder whether The Family has run out of creative ideas.<br />Anyway, you might as well go through the procedure and collect all the jigsaw fragments. You know how your professor friend isn't known for his patience.}}
+{{Dialogue Start}}
+:'''Aventurine:''' Thanks, Doc!
+<!--Unknown TalkSentence: undefined-->
+{{Dialogue End}}
+
+===Complete the Dream Jigsaw{{subst:void|<!--103110161-->}}===
+{{Mission Description|type=trailblaze|location=Dewlight Pavilion|update|Dream Jigsaws are ubiquitous in Penacony. Generally speaking, seeing a Dream Jigsaw is the same as seeing a door... Intentional or not, this creepy design is so common in Penacony that it makes you wonder whether The Family has run out of creative ideas.<br />Finally, you have collected all the fragments. It's high time to leave this desolate and eerie place.}}
+{{Dialogue Start}}
+:'''Aventurine:''' All done. Piece of cake.
+{{Dialogue End}}
+
+===Exit Sandpit{{subst:void|<!--103110162-->}}===
+{{Dialogue Start}}
+:'''Aventurine:''' And the joyous tour of Toy City has come to an end. It makes me feel sad.
+:'''Aventurine:''' Penacony isn't all bad, right? I'll use this interesting experience as a talking point at the poker table.
+;(Unused &mdash; TiggerFinishMission)
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Double Indemnity
+|zhs  = 双重赔偿
+|zht  = 雙重賠償
+|ja   = 倍額保険
+|ko   = 이중 배상
+|es   = Indemnización doble
+|fr   = Double indemnisation
+|ru   = Двойное возмещение
+|th   = ชดเชยเป็นสองเท่า
+|vi   = Bồi Thường Gấp Bội
+|de   = Doppelte Abfindung
+|id   = Kompensasi Ganda
+|pt   = Indenização Dupla
+}}
+
+==Change History==
+{{Change History|3.5}}

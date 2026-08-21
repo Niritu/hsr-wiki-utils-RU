@@ -1,0 +1,560 @@
+<%-- [PAGE_INFO]
+PageTitle=#Passages, Knocking Echoes in Dreams#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040207
+|title         = 
+|image         = <!--Mission Passages, Knocking Echoes in Dreams.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Gentle Mother; Trailblazer; Tribbie
+|startLocation = [[Amphoreus]] - [[Depths of Tribbie's Dream]]
+|world         = Amphoreus
+|area          = Depths of Tribbie's Dream
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Refined Aether*4; Lost Crystal*4; Celestial Ambrosia*200; Credit*80 000
+}}
+'''''Passages, Knocking Echoes in Dreams''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Watch Tribbie's dream
+# Find missing memories
+# Activate the music box and listen to mom telling a story
+# Run! Run! Run! Run! Run!
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Watch Tribbie's dream{{subst:void|<!--104020701-->}}===
+{{Mission Description|type=trailblaze|location=Depths of Tribbie's Dream|A dream carries '''us''' back to memories long faded by time, and this dream mirrors the profound fears within '''our''' hearts.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+:{{tx}}
+
+;(Talk to Doll)
+:{{tx}}
+;(Unused &mdash; EnterDistrict_G5)
+:'''???:''' Use the spindle to connect everyone!
+
+;(Talk to ???)
+:{{tx}}
+;(Unused &mdash; EnterDistrict_G6)
+:'''???:''' Bad chest, you can't lock me away!
+
+;(Talk to Doll)
+:{{tx}}
+;(Unused &mdash; EnterDistrict_G7)
+:'''???:''' Learning can change your destiny!
+
+;(Talk to Investigate)
+----
+:'''Tribbie:''' (It's packed full... Mama must have left all of these for me.)
+:'''Tribbie:''' (All the words are blurred out... Could it be that my memory is fading?)
+{{Dialogue End}}
+
+===Find missing memories{{subst:void|<!--104020706-->}}===
+{{Dialogue Start}}
+
+:'''Tribbie:''' (Is this... from my childhood? I don't remember...)
+
+;(Talk to Investigate)
+----
+:'''Tribbie:''' (A blackboard? And what is that drawing...?)
+:'''Tribbie:''' (It doesn't ring a bell at all. Perhaps it's just a childhood doodle.)
+
+;(Talk to Investigate)
+----
+:'''Tribbie:''' (I used to sit here and listen to Mama tell stories...)
+:'''Tribbie:''' (Oh, how I wish to see you again... Mama.)
+
+;(Talk to Investigate)
+----
+:'''Tribbie:''' (Am I... dreaming?)
+:<!--1-second delay-->
+{{Dialogue End}}
+
+===Activate the music box and listen to mom telling a story{{subst:void|<!--104020707-->}}===
+{{Dialogue Start}}
+
+;(Talk to ???)
+:'''Gentle Mother:''' Now, Tribios, set them on this music box and let them compose a melody for our song.
+:'''Tribbie:''' M&mdash;Music box? What's that?
+:'''Gentle Mother:''' Sweetheart, are you still groggy from your nap? You invented it!
+:'''Tribbie:''' I... invented it? What does it do?
+:'''Gentle Mother:''' Oh, my lovely Tribbie, you're usually so bright! What's gotten into you today?
+:'''Gentle Mother:''' Well, you might as well see for yourself. Put your good friends on it and see the wonders it can do.
+:'''Tribbie:''' (Put the dolls on...)
+:{{Диалог|Стрелка}} Place the dolls
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40412_F40412001_G8"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:'''Gentle Mother:''' Come, let's line them up.
+{{Dialogue End}}
+
+===Run! Run! Run! Run! Run!{{subst:void|<!--104020714-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+;(Unused &mdash; dollout1040207)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002,
+			300003,
+			300004,
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013
+		]
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300018,
+			300042,
+			300043,
+			300056,
+			300057,
+			300062,
+			300065,
+			300068,
+			300101,
+			300104,
+			300107,
+			300108,
+			300114,
+			300115,
+			300118,
+			300123,
+			300128,
+			300130,
+			300133,
+			300137,
+			300139,
+			300142,
+			300143,
+			300144,
+			300145,
+			300147,
+			300148,
+			300151,
+			300153,
+			300155,
+			300156,
+			300157,
+			300166,
+			300167,
+			300168,
+			300170,
+			300171,
+			300174,
+			300176
+		]
+	}
+}</pre>
+::'''Tribbie:''' What's this...!?
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001,
+			300002,
+			300008,
+			300009,
+			300011,
+			300012,
+			300016,
+			300021,
+			300025,
+			300034,
+			300038,
+			300039,
+			300043,
+			300048,
+			300051,
+			300052,
+			300058,
+			300059,
+			300073,
+			300075,
+			300078,
+			300081,
+			300085,
+			300086,
+			300088,
+			300089,
+			300090,
+			300098,
+			300100,
+			300102,
+			300103,
+			300105
+		]
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		300003,
+		300004,
+		300005,
+		300006,
+		300007,
+		300008,
+		300009,
+		300010,
+		300011,
+		300012,
+		300013,
+		300014,
+		300015
+	]
+}</pre>
+::'''Tribbie:''' What's this...!?
+::<!--0.15-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"StartRate": 0.9,
+	"Rate": 0,
+	"Duration": 0.35,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002,
+		300003,
+		300004,
+		300005,
+		300006,
+		300007,
+		300008,
+		300009,
+		300010,
+		300011,
+		300012,
+		300013,
+		300014,
+		300015,
+		300016,
+		300017,
+		300018,
+		300019,
+		300020,
+		300021,
+		300022,
+		300023,
+		300024,
+		300025,
+		300026,
+		300027
+	]
+}</pre>
+::<!--0.15-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"StartRate": 0.9,
+	"Rate": 0,
+	"Duration": 0.35,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"StartRate": 0.9,
+	"Rate": 0.9,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Passages, Knocking Echoes in Dreams
+|zhs  = 门扉啊，叩声仍激荡梦中
+|zht  = 門扉啊，叩聲仍激盪夢中
+|ja   = 扉よ、夢の中の叩く音はやまず
+|ko   = 문이여, 두드리는 소리가 여전히 꿈속을 격동시키는구나
+|es   = Portales, ecos que llaman en sueños
+|fr   = Passage vers les rêves du passé
+|ru   = О врата, раздающийся эхом стук во снах
+|th   = ประตูเอ๋ย เสียงเคาะยังดังก้องอยู่ในฝัน
+|vi   = Hỡi Cánh Cổng, Tiếng Gõ Vẫn Vang Vọng Trong Mơ
+|de   = O Tore, lasst das Klopfen in Träumen widerhallen
+|id   = Pintu, Ketukan Masih Menggema dalam Mimpi
+|pt   = Passagens, Ecos Batendo em Sonhos
+}}
+
+==Change History==
+{{Change History|3.5}}

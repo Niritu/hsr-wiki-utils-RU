@@ -1,0 +1,544 @@
+<%-- [PAGE_INFO]
+PageTitle=#In the Dangerous Muddy Swamp#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1011501
+|title         = 
+|image         = <!--Mission In the Dangerous Muddy Swamp.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Sweltering Morning Sun
+|requirements  = [[Trailblaze Mission]] ''[[The Return]]'' completed
+|summary       = You bring news of your victory to the residents of the Underworld and alleviate their tensions. Bronya announces that the decade-long blockade between the Overworld and Underworld will soon come to an end.
+|characters    = Alina; Antonia; Clara; Dan Heng; Gertie; Hook; Humble Vagrant; Joshua; Julian; March 7th; Natasha; Oleg; Peak; Perkins; Svarog; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Boulder Town]]
+|world         = Jarilo-VI
+|area          = Boulder Town
+|prev          = The Return
+|next          = No Time for Me, My Friend
+|rewards       = Trailblaze EXP*150; Adventure Log*4; "Streets Abuzz"*1 { text = "Streets Abuzz" }; Credit*8 000
+}}
+'''''In the Dangerous Muddy Swamp''''' is a [[Trailblaze Mission]] in the chapter [[In the Sweltering Morning Sun]].
+
+==Steps==
+# Report the good news of your victory to Natasha
+# Go to the Great Mine and comfort the Underworlders
+# Bring the good news to Gertie at the Goethe Grand Hotel
+# Go to Rivet Town and find the members of the Moles
+# Find Julian and talk to him
+# Find the Moles who are hiding
+# Return to Natasha
+# Go to the Robot Settlement and inform Clara and Svarog
+# Follow Perkins the Robot
+# Inform Clara and Svarog
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Report the good news of your victory to Natasha{{subst:void|<!--101150101-->}}===
+{{Mission Description|type=trailblaze|location=Boulder Town|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />Bronya had fabricated a white lie to let the people of Belobog accept the passing of their Supreme Guardian in battle.<br />Seele then returned to the Overworld with Bronya, who was utterly exhausted. At the same time, someone also needs to bring the news of the victory to the Underworld.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' Look! There's a big crowd around the clinic.
+:'''March 7th:''' Do you think they felt the effects of the battle just now...? Let's go ask around.
+
+;(По прибытии на место)
+:'''March 7th:''' Look! There's a big crowd around the clinic.
+:'''March 7th:''' Do you think they felt the effects of the battle just now...? Let's go ask around.
+:'''March 7th:''' Natasha! Oleg! Hope you didn't have to wait too long.
+:'''Natasha:''' Oh! It's them!
+:'''Oleg:''' You kids move fast! By the look on your faces, I assume you come bearing good news?
+:'''March 7th:''' Mm-hmm, you bet! You might not believe this, but we summoned up all our strength, and then...
+:'''March 7th:''' ...Uh, maybe (Trailblazer) should do the talking. I'm no good at serious stuff &mdash; I'll probably say something I'll regret.
+:{{Диалог|Стрелка}} The guardian sacrificed herself to seal the Stellaron.
+::'''Dan Heng:''' We were there at the fight &mdash; we witnessed everything.
+::'''March 7th:''' "Sacrificed herself," huh... Sure. Yeah. That's the whole story...
+::Do you feel like recounting the story, Dan Heng...?
+:{{Диалог|Стрелка}} Do you feel like recounting the story, Dan Heng...?
+:'''Dan Heng:''' The supreme guardian sacrificed herself to seal the Stellaron. We were there at the fight &mdash; we witnessed everything.
+:'''March 7th:''' "Sacrificed herself," huh... Sure. Yeah. That's the whole story...
+:'''Natasha:''' Cocolia? In order to save Belobog, she... I see.
+:'''Oleg:''' So the massive tremors we felt earlier were a result of the battle, right?
+:{{Диалог|Стрелка}} Yes, it was a hard-won victory.
+:{{Диалог|Стрелка}} We quite literally saved the world...
+::'''March 7th:''' ...Through patting yourself on the back!?
+:'''Natasha:''' ...Thank you. I can't even imagine what you've been through up there. I'm just glad everything turned out alright.
+:'''Natasha:''' What about Seele?
+:'''March 7th:''' Don't worry, she's alright! It took a big toll on Bronya, so Seele took her over to the Guards.
+:'''Natasha:''' Good... I'm so glad you're all okay.
+:'''Oleg:''' Now that Cocolia is no more, I guess our Silvermane girl is about to become the next supreme guardian?
+:'''Oleg:''' She sees things through and doesn't go back on her word. The Underworld will thrive again under her watch.
+:'''March 7th:''' Mm-hmm! Oh, we brought you a message from Bronya! Ahem, "The blockade will soon be lifted. The people of the Underworld will breathe freely."
+:'''Natasha:''' "Breathe freely..." That's been our wish all along.
+:'''Natasha:''' March, Dan Heng, and (Trailblazer)... can I ask for your help again? I want to get this news out to everyone. It'll lift their spirits and bring them hope.
+:{{Диалог|Стрелка}} Count us in.
+:{{Диалог|Стрелка}} I can't wait to see their faces.
+:'''Natasha:''' Thank you. Choose whoever you like. Wildfire will take care of the rest.
+:'''March 7th:''' We've gotten to know a lot of Underworlders... (Trailblazer), who do you think we should start with?
+:{{Диалог|Стрелка}} Let's start with the mining team over at the Great Mine.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} Let's start with Hook and The Moles.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
+}</pre>
+:{{Диалог|Стрелка}} Let's start with Gertie.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 3
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 110,
+	"GroupNpcID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 110,
+	"GroupNpcID": 400002
+}</pre>
+
+;(Talk to Natasha)
+:'''March 7th:''' Look! There's a big crowd around the clinic.
+:'''March 7th:''' Do you think they felt the effects of the battle just now...? Let's go ask around.
+:'''March 7th:''' Natasha! Oleg! Hope you didn't have to wait too long.
+:'''Natasha:''' Oh! It's them!
+:'''Oleg:''' You kids move fast! By the look on your faces, I assume you come bearing good news?
+:'''March 7th:''' Mm-hmm, you bet! You might not believe this, but we summoned up all our strength, and then...
+:'''March 7th:''' ...Uh, maybe (Trailblazer) should do the talking. I'm no good at serious stuff &mdash; I'll probably say something I'll regret.
+:{{Диалог|Стрелка}} The guardian sacrificed herself to seal the Stellaron.
+::'''Dan Heng:''' We were there at the fight &mdash; we witnessed everything.
+::'''March 7th:''' "Sacrificed herself," huh... Sure. Yeah. That's the whole story...
+::Do you feel like recounting the story, Dan Heng...?
+:{{Диалог|Стрелка}} Do you feel like recounting the story, Dan Heng...?
+:'''Dan Heng:''' The supreme guardian sacrificed herself to seal the Stellaron. We were there at the fight &mdash; we witnessed everything.
+:'''March 7th:''' "Sacrificed herself," huh... Sure. Yeah. That's the whole story...
+:'''Natasha:''' Cocolia? In order to save Belobog, she... I see.
+:'''Oleg:''' So the massive tremors we felt earlier were a result of the battle, right?
+:{{Диалог|Стрелка}} Yes, it was a hard-won victory.
+:{{Диалог|Стрелка}} We quite literally saved the world...
+::'''March 7th:''' ...Through patting yourself on the back!?
+:'''Natasha:''' ...Thank you. I can't even imagine what you've been through up there. I'm just glad everything turned out alright.
+:'''Natasha:''' What about Seele?
+:'''March 7th:''' Don't worry, she's alright! It took a big toll on Bronya, so Seele took her over to the Guards.
+:'''Natasha:''' Good... I'm so glad you're all okay.
+:'''Oleg:''' Now that Cocolia is no more, I guess our Silvermane girl is about to become the next supreme guardian?
+:'''Oleg:''' She sees things through and doesn't go back on her word. The Underworld will thrive again under her watch.
+:'''March 7th:''' Mm-hmm! Oh, we brought you a message from Bronya! Ahem, "The blockade will soon be lifted. The people of the Underworld will breathe freely."
+:'''Natasha:''' "Breathe freely..." That's been our wish all along.
+:'''Natasha:''' March, Dan Heng, and (Trailblazer)... can I ask for your help again? I want to get this news out to everyone. It'll lift their spirits and bring them hope.
+:{{Диалог|Стрелка}} Count us in.
+:{{Диалог|Стрелка}} I can't wait to see their faces.
+:'''Natasha:''' Thank you. Choose whoever you like. Wildfire will take care of the rest.
+:'''March 7th:''' We've gotten to know a lot of Underworlders... (Trailblazer), who do you think we should start with?
+:{{Диалог|Стрелка}} Let's start with the mining team over at the Great Mine.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Стрелка}} Let's start with Hook and The Moles.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 2
+}</pre>
+:{{Диалог|Стрелка}} Let's start with Gertie.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 101150101,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": []
+	},
+	"CustomValue": 3
+}</pre>
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' Look, it's Antonia! The miners and vagrants are all in the same spot.
+:'''March 7th:''' I sure hope they're not arguing again... Quick, let's head over!
+
+;(Talk to Antonia)
+----
+:'''Antonia:''' ...Here, take it. I'm afraid we're short on goods and materials right now.
+:'''Humble Vagrant:''' Oh, well we actually have enough for the moment. You hang onto it...
+:'''March 7th:''' Hey! Are you guys causing trouble again?
+:'''Antonia:''' It's you! Oh, no, no, you misunderstand...
+:'''Antonia:''' There was a huge quake at the mine just now &mdash; part of it collapsed. If the vagrants here hadn't stopped to help, I doubt we'd have gotten everyone out in one piece.
+:'''Antonia:''' I was just discussing how to repay them. It's a shame the mining team is hard up right now.
+:{{Диалог|Стрелка}} Wanna hear something really great?
+::'''Antonia:''' Oh? To do with us? I'm listening...
+:{{Диалог|Стрелка}} I've got you covered.
+::'''March 7th:''' Uh... can't we get Bronya to cover the bill?
+::'''March 7th:''' Ugh, can we focus? (Trailblazer), tell them the good news already!
+:{{Black Screen|Telling the mining team and the vagrants about the victory...}}
+:'''Antonia:''' You mean to say that... we're about to be reunited with the Overworld?
+:'''Humble Vagrant:''' Are you serious!? This has... gotta be a dream. Good things... don't happen to us!
+:'''March 7th:''' Today they do! And you're not dreaming. If you don't believe us, pinch yourself!
+:'''Antonia:''' If things go back to the way they were 10 years ago... then the mining team can finally escape this poverty...
+:'''Antonia:''' ...and you won't have to rely on the charity of others. We'll finally be living with the dignity we deserve.
+:'''Humble Vagrant:''' I... *sniff* *sob*
+:{{Диалог|Стрелка}} Come on. Wipe your tears.
+:{{Диалог|Стрелка}} Let it out!
+:'''Antonia:''' Thank you, outsiders, from the bottom of my heart! The mining team'll remember you as heroes... as will the rest of the Underworld.
+:'''Antonia:''' Please tell Natasha that we're ready to get back to work... If the cable car station can start operating again, we'll dispatch a mining representative to negotiate with the Architects.
+----
+
+
+;(Talk to Julian)
+;(First interaction)
+::'''March 7th:''' Found you! You ran all the way out here just to play hide-and-seek? It's too dangerous!
+::'''Julian:''' M&mdash;Miss March!? D&mdash;Didn't you go back to the surface...?
+::'''March 7th:''' Since when did I become "Miss" March? And where's Hook and the others? Come on, call them over.
+::'''Julian:''' Aww... but we just started playing. Can't we finish this round first...?
+::{{Диалог|Стрелка}} Say no more &mdash; this is gonna be easy!
+:::'''Dan Heng:''' Seasoned pros, I see...
+:::'''March 7th:''' Hey, it wasn't like I wanted to play! The kids forced us to...
+::{{Диалог|Стрелка}} If we had lollipops, they'd give themselves up in no time.
+:::'''March 7th:''' Great idea! Shame we don't have any.
+:::'''Dan Heng:''' Well, we better go and find them.
+;(Subsequent interactions)
+:'''Julian:''' ...A&mdash;Actually, I sorta wanna go play on the swings for a while... I'll leave the seeking to you guys!
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' I see Gertie! But who's that lying on the ground?
+:'''March 7th:''' Quick, let's head over!
+
+;(Talk to Joshua)
+----
+:'''Gertie:''' Oh my, this doesn't look good... Can you hear me? Are you okay?
+:'''Joshua:''' H&mdash;He's still breathing! T&mdash;Try not to p&mdash;panic Aunt Gertie...
+:'''March 7th:''' Is everything okay? Wait, isn't that... Peak? Don't tell me he fell asleep in the middle of the road again.
+:'''Gertie:''' Oh, it's you three! Back in the Underworld so soon?
+:'''Gertie:''' Word must have gotten out that I was renovating the hotel today. Being the kind-hearted young man that he is, Peak came straight over and offered to help.
+:'''Gertie:''' There we were hard at work, when all of a sudden the hotel started shaking... I got everyone outside as fast as I could, but I think Peak was hit by a ceiling tile...
+:{{Диалог|Стрелка}} Are you sure he was "hard at work...?"
+::'''March 7th:''' Look! Seems like he's coming around.
+:{{Диалог|Стрелка}} Quick, mouth-to-mouth resuscitation...
+::'''Dan Heng:''' I... don't think that's necessary. Look, he's awake.
+----
+:'''Peak:''' Huh...? Argh...
+:'''Gertie:''' Peak, are you awake? Oh, thank goodness you're alright! Easy now, take your time...
+:'''Peak:''' Argh, my back... I was having such a great nap, how did I...
+:'''Joshua:''' A&mdash;Are you okay, bro? L&mdash;Let me take you to N&mdash;Natasha's clinic...
+:'''March 7th:''' Hey, look where he was lying. What is that?
+:'''Gertie:''' It's...
+:'''Gertie:''' ...an old photo. I thought I lost this ages ago. How did it get...
+:'''March 7th:''' Aunt Gertie, isn't that you in the photo? And Old Goethe, too! You look so young!
+:'''Gertie:''' Don't I know it. My distant cousin had only just taken over the family business at the time. He wrote me a letter inviting me to head up and take a look. It's been nearly 20 years already...
+:'''Gertie:''' *sigh* I remember chatting in the hotel lobby and drinking tea. I wonder if we'll ever get another chance to do that...
+:'''March 7th:''' ...Y'know, we've got some good news for you, haven't we, (Trailblazer)?
+:{{Black Screen|You tell Gertie about the victory...}}
+:'''Gertie:''' ...Is that true? Bronya, she... I&mdash;I can't believe my ears!
+:{{Диалог|Стрелка}} Put your faith in Bronya.
+:{{Диалог|Стрелка}} You and Old Goethe will have the kettle on the stove in no time.
+:'''Gertie:''' I... Hahaha! I don't know what to say! Turns out things aren't always lost forever. *sigh* It feels like better days are finally on the horizon!
+:'''Gertie:''' Thank you all so much for coming to tell me the good news. I haven't felt like this in a long time... We'll get plenty of guests staying at the hotel again once the passageway is open!
+:'''Gertie:''' But there's no way I'm letting them set eyes on the old place looking like this... Oh, and we're gonna need to expand the menu. Oh dear. Action stations!
+:'''Peak:''' Action... stations? Already? Ooh, um &mdash; ow, oww...! My head...
+:'''Gertie:''' Please let Dr. Natasha know not to worry &mdash; we're all okay... You three will have to come and stay again once the hotel is fully renovated!
+----
+{{Dialogue End}}
+
+===Go to the Great Mine and comfort the Underworlders{{subst:void|<!--101150105-->}}===
+{{Mission Description|type=trailblaze|location=Great Mine|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />The great tremors from the battle made the Underworlders very concerned. Natasha would like you to go comfort them and bring the good news to everyone.<br />Go to the Great Mine and see how things are going.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Bring the good news to Gertie at the Goethe Grand Hotel{{subst:void|<!--101150107-->}}===
+{{Mission Description|type=trailblaze|location=Boulder Town|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />The great tremors from the battle made the Underworlders very concerned. Natasha would like you to go comfort them and bring the good news to everyone.<br />The Goethe Grand Hotel also seems to be affected. Go see how Gertie is doing.}}
+{{Dialogue Start}}
+----
+:'''March 7th:''' Hide-and-seek update... Astral Express crew &mdash; 2, The Moles &mdash; 0!
+:'''Hook:''' Hmph, celebrate while you can! Hide-and-seek is best of five, y'know...
+:'''Hook:''' Anyway, enough about hide-and-seek. You came all this way to tell The Moles something, so spit it out.
+:'''March 7th:''' Hehe... (Trailblazer), do you wanna do the honors?
+:{{Black Screen|Telling The Moles about the victory...}}
+:'''Hook:''' ...
+:'''Julian:''' ...
+:'''March 7th:''' Huh? What's wrong? Why aren't you saying anything?
+:'''Alina:''' Hook, Julian...
+:{{Диалог|Стрелка}} Is our story that scary?
+:{{Диалог|Стрелка}} I wasn't expecting this reaction...
+:'''Julian:''' *sob*
+:'''Hook:''' ...H&mdash;Hey! Wipe your tears, Julian! You're second-in-command &mdash; no crying in front of grown-ups!
+:'''Hook:''' Hmph, you three listen up. Starting from today, you are The Moles' number one rivals!
+:'''March 7th:''' Rivals...? Why the heck are we rivals now? What are you talking about?
+:'''Alina:''' ...Hook and Julian always wanted to defeat the villains on the surface and take back our homeland.
+:'''Alina:''' But it sounds like you grown-ups just stole their thunder, so...
+:'''Hook:''' Hmph! You think we're gonna accept defeat just like that!? One day The Moles will be the heroes of the Underworld and the Overworld! Then everyone will sit... sit...
+:{{Диалог|Стрелка}} Sit up and take notice!
+:{{Диалог|Стрелка}} Sit down and shut up!
+::'''March 7th:''' ...Sit up and take notice, right?
+:'''Hook:''' Ah! Yeah &mdash; sit up and take notice! I&mdash;I would've figured it out myself. I didn't need you to remind me!
+:'''March 7th:''' So that's why you were so silent! Hmph, if you wanna be as awesome as us, you better start training every day~
+:'''Dan Heng:''' ...And start listening to Natasha.
+:'''Hook:''' Training every day... listening to the old witch... Will that really make us as awesome as you guys? In that case... deal!
+:'''Hook:''' Julian, Alina, let's run back to the town! Training starts today!
+:'''Julian:''' Y&mdash;Yes boss! Understood!
+:'''Julian:''' Uh, Alina, I can... uh... give you a piggyback if you can't make it...
+----
+
+;(Talk to Julian)
+:'''March 7th:''' Found you! You ran all the way out here just to play hide-and-seek? It's too dangerous!
+:'''Julian:''' M&mdash;Miss March!? D&mdash;Didn't you go back to the surface...?
+:'''March 7th:''' Since when did I become "Miss" March? And where's Hook and the others? Come on, call them over.
+:'''Julian:''' Aww... but we just started playing. Can't we finish this round first...?
+:{{Диалог|Стрелка}} Say no more &mdash; this is gonna be easy!
+::'''Dan Heng:''' Seasoned pros, I see...
+::'''March 7th:''' Hey, it wasn't like I wanted to play! The kids forced us to...
+:{{Диалог|Стрелка}} If we had lollipops, they'd give themselves up in no time.
+::'''March 7th:''' Great idea! Shame we don't have any.
+::'''Dan Heng:''' Well, we better go and find them.
+:'''Julian:''' ...A&mdash;Actually, I sorta wanna go play on the swings for a while... I'll leave the seeking to you guys!
+
+;(Talk to Alina)
+:'''March 7th:''' Aha! Gotcha!
+:'''Alina:''' ...Huh? Grown-ups? Where's Julian?
+:'''Alina:''' Hmph, so he is a scaredy-cat. I knew he'd get someone else to talk to me...
+:{{Диалог|Стрелка}} Well, that explains "sorta wanna go play on the swings for a while..."
+:{{Диалог|Стрелка}} It's not safe here.
+:'''March 7th:''' You should be happy it's us and not Natasha! If she'd found you, you'd be in big trouble already.
+:'''Alina:''' Mm... I guess so. Anyway, I'm gonna go find Julian.
+:'''March 7th:''' ...Do you think the Great Mine was affected by our fighting on the surface?
+:'''Dan Heng:''' Let's hope we didn't cause a collapse.
+:'''Natasha:''' Those kids better not have taken advantage of the chaos to go on an expedition.
+:'''Natasha:''' Hook does always talk about wanting to go on a Rivet Town adventure... this could be bad.
+{{Dialogue End}}
+
+===Go to Rivet Town and find the members of the Moles{{subst:void|<!--101150106-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />The great tremors from the battle made the Underworlders very concerned. Natasha would like you to go comfort them and bring the good news to everyone.<br />The kids in the Moles ran to Rivet Town during the commotion. Go check on them.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Julian:''' 48... 49... 50!
+:'''Julian:''' Ready or not, here I come!
+:'''March 7th:''' ...Julian? Quick, let's go see!
+{{Dialogue End}}
+
+===Find Julian and talk to him{{subst:void|<!--101150123-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />For Natasha's peace of mind, you arrive at Rivet Town to look for the children who sneaked here to have an adventure.<br />You can hear Julian's voice from far away &mdash; They can't be playing hide-and-seek in the Fragmentum, can they...}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Find the Moles who are hiding{{subst:void|<!--101150125-->}}===
+{{Mission Description|type=trailblaze|location=Rivet Town|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />For Natasha's peace of mind, you arrive at Rivet Town to look for the children who sneaked here to have an adventure.<br />They are actually playing hide-and-seek in the Fragmentum &mdash; Go get those naughty kids out of there!}}
+{{Dialogue Start}}
+:'''March 7th:''' Why is everyone in such a hurry? I hope nothing's happened at the hotel...
+:'''Dan Heng:''' We should take a look, maybe we can help.
+{{Dialogue End}}
+
+===Return to Natasha{{subst:void|<!--101150111-->}}===
+{{Mission Description|type=trailblaze|location=Natasha's Clinic|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />You passed the news of the victory to the Underworlders and soothed their anxiety.<br />Return to Natasha and report your results... Just remember not to tell anyone about what Welt had sent you, at least for now.}}
+{{Dialogue Start}}
+
+
+;(Talk to Natasha)
+:'''Natasha:''' I hope your exploration will make progress, (Trailblazer), and your journey will be free of pain.
+:'''Natasha:''' Of course, even if you get injured by accident, no need to panic. Just leave it to the doctor.
+{{Dialogue End}}
+
+===Go to the Robot Settlement and inform Clara and Svarog{{subst:void|<!--101150115-->}}===
+{{Mission Description|type=trailblaze|location=Robot Settlement|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />You passed news of the victory to the Underworlders. Everyone is happy and celebrating... while you temporarily withhold the ugly truth.<br />There are still two important people not informed of the news, those being Clara and Svarog. Your journey would have been much more difficult without their help.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Perkins:''' Outssssiders... F&mdash;Friends of Clara.
+:{{Диалог|Стрелка}} Hey Perkins!
+::'''March 7th:''' How did you know that was Perkins...
+:{{Диалог|Стрелка}} Did Clara fix you?
+:'''Perkins:''' Th&mdash;Th&mdash;Th&mdash;Thank you... for rescuing... Claaaara.
+:'''March 7th:''' Seems like Perkins picked up a stammer?
+:'''Dan Heng:''' Its language module must have malfunctioned... Can you take us to Clara?
+:'''Perkins:''' Outsiders... are f&mdash;friends of Clara... Follow me...
+{{Dialogue End}}
+
+===Follow Perkins the Robot{{subst:void|<!--101150116-->}}===
+{{Mission Description|type=trailblaze|location=Robot Settlement|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />Your final task in the Underworld is to let Clara and Svarog know about your victory.<br />Follow a restored Perkins to where Clara and Svarog are.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Inform Clara and Svarog{{subst:void|<!--101150117-->}}===
+{{Mission Description|type=trailblaze|location=Robot Settlement|update|Cocolia was defeated and the influence of the Stellaron weakened with her demise.<br />Your final task in the Underworld is to let Clara and Svarog know about your victory.<br />These two would likely play important roles in the long journey ahead to rebuild the Underworld.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Perkins:''' Outssssiders... F&mdash;Friends of Clara.
+:Hey Perkins!
+:'''March 7th:''' How did you know that was Perkins...
+:Did Clara fix you?
+:'''Perkins:''' Th&mdash;Th&mdash;Th&mdash;Thank you... for rescuing... Claaaara.
+:'''March 7th:''' Seems like Perkins picked up a stammer?
+:'''Dan Heng:''' Its language module must have malfunctioned... Can you take us to Clara?
+:'''Perkins:''' Outsiders... are f&mdash;friends of Clara... Follow me...
+:'''Svarog:''' You have visitors, Clara.
+:'''Clara:''' Ah! It's the variables!
+:{{Диалог|Стрелка}} Another nickname for the collection...
+::Nice haircut, Svarog.
+:{{Диалог|Стрелка}} Nice haircut, Svarog.
+:'''March 7th:''' Are you trying to start another fight...
+:'''Clara:''' There was a huge shaking just now coming up through the ground. Mr. Svarog said it... must have been...
+:'''Svarog:''' Recalculating... Conclusion: Engine of Creation. 97.66% probability.
+:{{Диалог|Стрелка}} Old friend of yours?
+:{{Диалог|Стрелка}} Any other secret weapons you'd like to tell us about...?
+:'''Svarog:''' The Engine of Creation was an immense construction machine created by the Architects. It was not built to fight.
+:'''March 7th:''' Well whatever, we won... Thanks to that giant robot, we were finally able to take care of the Stellaron... and Bronya made a promise &mdash; the Underworld and the Overworld will soon be reunited.
+:'''March 7th:''' Which means that you, Svarog &mdash; uh... You won't have to worry about preserving the Underworld... for the time being.
+:'''Clara:''' March, everyone... thank you so much! I wasn't sure you guys would be able to do it, but...
+:'''Clara:''' But now... Mr. Svarog, what do you say?
+:'''Clara:''' You guys said you were travelers from other worlds, right? I want to be just like you... One day, I'm gonna go traveling to faraway places and make new friends.
+:{{Диалог|Стрелка}} I know you will.
+:{{Диалог|Стрелка}} Your future is yours to decide!
+:'''Svarog:''' Calculation result... update. Mission number 0001 &mdash; Preserve the Underworld &mdash; complete.
+:{{tx}}
+
+;(Talk to Clara)
+;(Screen fades to black)
+:'''Svarog:''' You have visitors, Clara.
+:'''Clara:''' Ah! It's the variables!
+:{{Диалог|Стрелка}} Another nickname for the collection...
+:{{Диалог|Стрелка}} Nice haircut, Svarog.
+:;(Screen fades to black)
+::'''March 7th:''' Are you trying to start another fight...
+;(Screen fades to black)
+:'''Clara:''' There was a huge shaking just now coming up through the ground. Mr. Svarog said it... must have been...
+:'''Svarog:''' Recalculating... Conclusion: Engine of Creation. 97.66% probability.
+:{{Диалог|Стрелка}} Old friend of yours?
+:{{Диалог|Стрелка}} Any other secret weapons you'd like to tell us about...?
+;(Screen fades to black)
+:'''Svarog:''' The Engine of Creation was an immense construction machine created by the Architects. It was not built to fight.
+:'''March 7th:''' Well whatever, we won... Thanks to that giant robot, we were finally able to take care of the Stellaron... and Bronya made a promise &mdash; the Underworld and the Overworld will soon be reunited.
+:'''March 7th:''' Which means that you, Svarog &mdash; uh... You won't have to worry about preserving the Underworld... for the time being.
+:'''Clara:''' March, everyone... thank you so much! I wasn't sure you guys would be able to do it, but...
+:'''Clara:''' But now... Mr. Svarog, what do you say?
+:'''Clara:''' You guys said you were travelers from other worlds, right? I want to be just like you... One day, I'm gonna go traveling to faraway places and make new friends.
+:{{Диалог|Стрелка}} I know you will.
+:{{Диалог|Стрелка}} Your future is yours to decide!
+;(Screen fades to black)
+:'''Svarog:''' Calculation result... update. Mission number 0001 &mdash; Preserve the Underworld &mdash; complete.
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1111000
+}</pre>
+:'''March 7th:''' That's our Bronya &mdash; quick as a flash!
+:'''Dan Heng:''' She certainly moves a lot faster than some people I know...
+:'''March 7th:''' ...If you haven't got anything nice to say right now, zip it!
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1110900
+}</pre>
+----
+:'''March 7th:''' ...Mr. Yang put it nicely, but the reality is this: We sealed the Stellaron, but that's not gonna solve the problems on this planet...
+:'''March 7th:''' There I was getting excited to tell everyone the good news...
+:{{Диалог|Стрелка}} We did make a promise...
+:{{Диалог|Стрелка}} We did all we could. Now it's a matter of time...
+:{{Диалог|Стрелка}} Does this count as false advertising?
+:'''Dan Heng:''' That's the cruelty of a Stellaron. Still, compared with some of the other planets we've visited, at least this one has hope.
+:'''March 7th:''' So... should we tell everyone the deal?
+:'''Dan Heng:''' We should tell Bronya when the time's right. Let's not dampen the spirit just yet.
+----
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1110900
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1110900
+}</pre>
+----
+:'''March 7th:''' ...Mr. Yang put it nicely, but the reality is this: We sealed the Stellaron, but that's not gonna solve the problems on this planet...
+:'''March 7th:''' There I was getting excited to tell everyone the good news...
+:{{Диалог|Стрелка}} We did make a promise...
+:{{Диалог|Стрелка}} We did all we could. Now it's a matter of time...
+:{{Диалог|Стрелка}} Does this count as false advertising?
+:'''Dan Heng:''' That's the cruelty of a Stellaron. Still, compared with some of the other planets we've visited, at least this one has hope.
+:'''March 7th:''' So... should we tell everyone the deal?
+:'''Dan Heng:''' We should tell Bronya when the time's right. Let's not dampen the spirit just yet.
+----
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1110900
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1110900
+}</pre>
+----
+:'''March 7th:''' ...Mr. Yang put it nicely, but the reality is this: We sealed the Stellaron, but that's not gonna solve the problems on this planet...
+:'''March 7th:''' There I was getting excited to tell everyone the good news...
+:{{Диалог|Стрелка}} We did make a promise...
+:{{Диалог|Стрелка}} We did all we could. Now it's a matter of time...
+:{{Диалог|Стрелка}} Does this count as false advertising?
+:'''Dan Heng:''' That's the cruelty of a Stellaron. Still, compared with some of the other planets we've visited, at least this one has hope.
+:'''March 7th:''' So... should we tell everyone the deal?
+:'''Dan Heng:''' We should tell Bronya when the time's right. Let's not dampen the spirit just yet.
+----
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1110900
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = In the Dangerous Muddy Swamp
+|zhs  = 从凶险和泥泞的沼泽中
+|zht  = 從凶險和泥濘的沼澤中
+|ja   = 危機と泥濘の沼の中で
+|ko   = 위기와 진창의 늪에서
+|es   = En la ciénaga peligrosa
+|fr   = Dans le dangereux marais boueux
+|ru   = Опасное болото
+|th   = จากอันตรายในแอ่งโคลน
+|vi   = Trong Đầm Lầy Hung Hiểm
+|de   = Im gefährlichen Schlammsumpf
+|id   = Di Rawa Berlumpur yang Berbahaya
+|pt   = No Perigoso Pântano Lamacento
+}}
+
+==Change History==
+{{Change History|3.5}}

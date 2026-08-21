@@ -1,0 +1,2335 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Witch's Ardent Research#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043702
+|title         = 
+|image         = <!--Mission The Witch's Ardent Research.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = As Tomorrow Became Yesterday
+|requirements  = [[Trailblaze Mission]] ''[[Traverse Stars and Stride Cosmos]]'' completed
+|summary       = In search of Demiurge's whereabouts, Herta and Screwllum went to the Great Tomb of the Nameless Titan, where they finally learned about Demiurge's origin from Lygus. Herta held a crisis meeting among the Genius Society, announcing that she would break Irontomb's seal and, if necessary, carry out the Self-Coronation in Irontomb's place.
+|characters    = "Zandar"; Herta; Screwllum; Trailblazer
+|startLocation = [[Amphoreus]] - [["Nightmare's Echo" Great Tomb of the Nameless Titan]]
+|world         = Amphoreus
+|area          = "Nightmare's Echo" Great Tomb of the Nameless Titan
+|prev          = Traverse Stars and Stride Cosmos
+|next          = Hero, Return to Dawn in Mortality
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Traveler's Guide*6; Refined Aether*6; Disorder Ambrosia*320; Credit*120 000
+}}
+'''''The Witch's Ardent Research''''' is a [[Trailblaze Mission]] in the chapter [[As Tomorrow Became Yesterday]].
+
+==Steps==
+# Explore the Matrix, seek the secrets of the Demiurge
+# Control the Hand of Zagreus to clear obstacles
+# Use the Punch action to break the obstacle blocks on the platform (0/3)
+# Use the Punch action to break the obstacle blocks on the platform (1/3)
+# Use the Punch action to break the obstacle blocks on the platform (2/3)
+# Use the Punch action to break the obstacle blocks on the platform (3/3)
+# Board the Mistletoe
+# Activate "Mistletoe"
+# Pilot the "Mistletoe" deep into the Matrix
+# Search for the independent signal source terminal according to navigation instructions
+# Hack the terminal, reverse the computation
+# Board the Mistletoe
+# Search and hack into the next terminal
+# Board the Mistletoe
+# Proceed to the sealing site of Irontomb
+# Activate the Chronocognitive Anchor and commence the meeting of Genius Society
+# Search and hack into the final terminal
+# Break through the barrier and keep moving forward
+# Track the signal of Exomyth
+# Touch the Chronocognitive Anchor to enter Exomyth
+# Pilot the Mistletoe to the "tombstone" mentioned by Lygus
+# Confront Lygus and press for the truth of the Demiurge
+# Learn the truth about Demiurge
+# Board the Mistletoe
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Explore the Matrix, seek the secrets of the Demiurge{{subst:void|<!--104370201-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|The Scepter's kernel is severely damaged, little more than rubble. Seeking traces of the Demiurge here would be like finding a needle in a haystack. How revealing... This only confirms one thing...<br />I'm exactly where I need to be.}}
+{{Dialogue Start}}
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370201.json'-->)
+:'''Herta:''' You brought what I asked for, right?
+:'''Screwllum:''' "A butterfly has to land on the branch before it can dance."
+:'''Screwllum:''' We'll need a wide, open platform before {{Цвет|Ключевой|nobold=1|"her"}} entrance.
+{{Dialogue End}}
+
+===Control the Hand of Zagreus to clear obstacles{{subst:void|<!--104370245-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; SwitchHand_PuzzleStart)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareSwitchHandGestureType","GestureType":"Lift"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClosed"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+
+;(Unused &mdash; SwitchHand_Group_ResetTransform)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Prop位置重置###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchHandResetTransform",
+	"ID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 28
+		}
+	},
+	"AnchorID": {
+		"Custom": true,
+		"Key": "PullBackAnchor"
+	}
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_ResetPlayerPosition)
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Message": "###机械手Player位置重置###"
+}</pre>
+::<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHand_TriggerPullBack)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_SwitchHand_P28"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Custom": true,
+			"Key": "PullBackArea"
+		},
+		"LevelAreaKey": {
+			"Custom": true,
+			"Key": "PullBackAnchor"
+		}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "SwitchHand_ClosePuzzle"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<!--0.2-second delay-->
+
+;(Unused &mdash; SwitchHandGesture_Lift_Exit)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "SwitchHandGesture_Lift_Exit"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300004
+		]
+	}
+}</pre>
+
+{{Dialogue End}}
+
+===Use the Punch action to break the obstacle blocks on the platform (0/3){{subst:void|<!--104370203-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Use the Punch action to break the obstacle blocks on the platform (1/3){{subst:void|<!--104370204-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Use the Punch action to break the obstacle blocks on the platform (2/3){{subst:void|<!--104370240-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Use the Punch action to break the obstacle blocks on the platform (3/3){{subst:void|<!--104370205-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Board the Mistletoe{{subst:void|<!--104370206-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Screwllum's treasure looks promising. Let's hope it works just as well on the Matrix.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370202.json'-->)
+{{Dialogue End}}
+
+===Activate "Mistletoe"{{subst:void|<!--104370241-->}}===
+{{Dialogue Start}}
+;(If {{F|undefined}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_DisableBtn"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+;(If {{F|undefined}} is not undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"DynamicName": {
+		"Value": "AircraftUnlock"
+	},
+	"Value": 1
+}</pre>
+;(Unused &mdash; GE_FinishLanding_1)
+:;(If {{F|undefined}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:;(If {{F|undefined}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_LandingMainline_1"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 1
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_2)
+:;(If {{F|undefined}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:;(If {{F|undefined}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_LandingMainline_2"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 2
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_3)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 3
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_4)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 4
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_5)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 5
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_6)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 6
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_7)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 7
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_8)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 8
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_9)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 9
+}</pre>
+
+;(Unused &mdash; GE_Recall_1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 1
+}</pre>
+
+;(Unused &mdash; GE_Recall_2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 2
+}</pre>
+
+;(Unused &mdash; GE_Recall_3)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 3
+}</pre>
+
+;(Unused &mdash; GE_Recall_4)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 4
+}</pre>
+
+;(Unused &mdash; GE_Recall_5)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 5
+}</pre>
+
+;(Unused &mdash; GE_Recall_6)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 6
+}</pre>
+
+;(Unused &mdash; GE_Recall_7)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 7
+}</pre>
+
+;(Unused &mdash; GE_Recall_8)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 8
+}</pre>
+
+;(Unused &mdash; GE_Recall_9)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 9
+}</pre>
+
+;(Unused &mdash; GE_PuzzleStartFCV)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"ApronSave"},"CompareValue":1}-->}} or {{F|undefined}} is undefined 1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"UnlockAccRing"}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "Acc1UnlockCam"
+	},
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"CustomCurveData": {}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "LevelPerformance"
+}</pre>
+:::<!--1-second delay-->
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	},
+	"ToState": "Open"
+}</pre>
+:::<!--2-second delay-->
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"ToState": "Open"
+}</pre>
+:::<!--2.5-second delay-->
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipResetState",
+	"ShowToast": false
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20482_F20482001_G7"
+		},
+		"AnchorName": {
+			"Value": "Anchor42"
+		}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "Acc1UnlockCam"
+	},
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"CustomCurveData": {
+			"Keys": [
+				{
+					"InTangent": 2,
+					"OutTangent": 2
+				},
+				{
+					"Time": 1,
+					"Value": 1
+				}
+			],
+			"PreWrapMode": "ClampForever",
+			"PostWrapMode": "ClampForever"
+		},
+		"BlendTime": 2
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"LockSource": "LevelPerformance"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6368"
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.ShowGuideDetailDialog",
+	"GuideID": {
+		"Value": "6368"
+	},
+	"WaitForExit": true,
+	"SkipIfAlreadySeen": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"DynamicName": {
+		"Value": "UnlockAccRing"
+	},
+	"Value": 1
+}</pre>
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"ApronSave"},"CompareValue":7}-->}})
+:;(If {{cx}}<!--SubMission Finish: 104370207-->)
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_screwshuttle_outtunnel"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+	}
+}</pre>
+:::<!--3-second delay-->
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipNavigateTo",
+	"AreaAnchorName": {
+		"Custom": true,
+		"Key": "NavAnchor_Start"
+	},
+	"ShowToast": false
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI"
+}</pre>
+:;(If {{cx}}<!--SubMission not Finish: 104370207-->)
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_amphoreus_screwshuttle_outtunnel"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx"
+	}
+}</pre>
+:::<!--3-second delay-->
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipNavigateTo",
+	"AreaAnchorName": {
+		"Custom": true,
+		"Key": "NavAnchor_Barrier"
+	},
+	"StopOnArrive": true,
+	"ShowToast": false
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI"
+}</pre>
+::;(Return to previous option selection)
+
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"ApronSave"},"CompareValue":3}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipNavigateTo",
+	"AreaAnchorName": {
+		"Custom": true,
+		"Key": "NavAnchor_End"
+	},
+	"ShowToast": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI"
+}</pre>
+
+;(Unused &mdash; GE_StartLanding)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SpeedLineEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetAlias",
+		"Alias": "None"
+	},
+	"Active": false,
+	"WhitePercent": 0.8,
+	"Brightness": 0.5,
+	"Density": 0.4,
+	"SpeedlineSeedPath": "Effects/Eff_Texture/Special/Noise/Eff_Noise_30.png"
+}</pre>
+
+;(Unused &mdash; GE_ExitTravelShip)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Visible": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.GenericSwitchCase",
+	"SwitchRef": {
+		"$type": "RPG.GameCore.SwitchRefGroupProperty",
+		"PropertyName": {
+			"Value": "ApronSave"
+		}
+	},
+	"Cases": [
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 1
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300005,
+							300014
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300006,
+							300015
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300007,
+							300016
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300008,
+							300017
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300009,
+							300020
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300010,
+							300024
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300011,
+							300025
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300012,
+							300026
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 9
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300013,
+							300027
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.NumberCaseContainer",
+			"Case": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerEntityEventV2",
+					"EventName": {
+						"Value": "Clt_TriggerOpen"
+					},
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"TargetType": "Prop",
+						"Targets": [
+							300023,
+							300028
+						]
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; GE_FinishLanding_10)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Aircraft_Landing"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DebugLog",
+	"Level": "Warn",
+	"Message": "###发出降落信号###"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 10
+}</pre>
+
+;(Unused &mdash; GE_Recall_10)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300005,
+			300006,
+			300007,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300023,
+			300014,
+			300015,
+			300016,
+			300017,
+			300020,
+			300024,
+			300025,
+			300026,
+			300027,
+			300028
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"GroupID": 7,
+	"DynamicName": {
+		"Value": "ApronSave"
+	},
+	"Value": 10
+}</pre>
+
+;(Unused &mdash; GE_SpecialApronLanding_7)
+<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+::<!--12-second delay-->
+
+;(Unused &mdash; GE_SpecialApronLanding_3)
+<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+::<!--32-second delay-->
+
+;(Unused &mdash; GE_CrossAccRing_5)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "SwitchHandTravel_Dock"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300007
+		]
+	}
+}</pre>
+
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_5"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_5"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_5"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_LiftFinish)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"ApronSave"},"CompareValue":4}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TutorialTaskUnlock",
+	"TriggerParam": {
+		"Value": "6367"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowGuideDetailDialog",
+	"GuideID": {
+		"Value": "6367"
+	},
+	"WaitForExit": true,
+	"SkipIfAlreadySeen": true
+}</pre>
+
+;(Unused &mdash; GE_FirstRaiseEnd)
+:<!--6-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "FirstRaiseCamera"
+	},
+	"IsActive": false,
+	"WaitBlendFinish": true
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"LockSource": "LevelPerformance"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowMazeUI",
+	"IsShow": true
+}</pre>
+::'''Screwllum:''' Target initialized. With these wings, hacking should be much more efficient.
+:<pre>{
+	"$type": "RPG.GameCore.RequestSetServerGroupPropertyV2",
+	"DynamicName": {
+		"Value": "AircraftUnlock"
+	},
+	"Value": 1
+}</pre>
+
+;(Unused &mdash; GE_CrossAccRing_1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":4}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_1"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_1"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_1"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":4}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_CrossAccRing_2)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":3}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_2"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_2"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_2"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":3}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_CrossAccRing_3)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_3"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_3"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_3"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_CrossAccRing_4)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":2}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_4"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_4"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_4"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":2}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_RevCrossAccRing_1)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":4}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_1"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_1"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_1"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":4}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_RevCrossAccRing_2)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":3}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_2"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_2"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_2"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":3}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_RevCrossAccRing_3)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_3"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_3"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_3"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_RevCrossAccRing_4)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":2}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_4"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_4"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_4"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":2}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_RevCrossAccRing_5)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Index"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_5"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_5"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_5"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+:::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_AccRing_Record_Index"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":0}}}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_AccRing_Record_Fail"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; GE_CruiseReset)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_isTravelShip"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI",
+	"IsHide": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipHideUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ToastPile",
+	"DescTextID": {
+		"Hash": 2772483705301461298
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TravelShipNavigateTo",
+	"StopOnArrive": true,
+	"ShowToast": false
+}</pre>
+
+;(Unused &mdash; GE_LandingMainline_1)
+
+
+;(Unused &mdash; GE_LandingMainline_2)
+
+
+{{Dialogue End}}
+
+===Pilot the "Mistletoe" deep into the Matrix{{subst:void|<!--104370207-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Herta:''' This is...
+::'''Screwllum:''' Herta, this whole space has been completely tainted by some kind of energy.
+::'''Herta:''' I see it too. We're thinking the same thing.
+::'''Herta:''' Zandar, how could you go this far, turning your own "graveyard" into this?
+{{Dialogue End}}
+
+===Search for the independent signal source terminal according to navigation instructions{{subst:void|<!--104370208-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Exploration hit a snag. A barrier of quatorzain algebraic expressions has isolated this space. Screwllum suggests hacking into the independent signal terminal and using reverse computation to break through the barrier, unlocking the seal on the Scepter's kernel.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Hack the terminal, reverse the computation{{subst:void|<!--104370209-->}}===
+{{Dialogue Start}}
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370203.json'-->)
+{{Dialogue End}}
+
+===Board the Mistletoe{{subst:void|<!--104370242-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Search and hack into the next terminal{{subst:void|<!--104370210-->}}===
+{{Dialogue Start}}
+:'''Herta:''' By the way, if there's another Stellaron in Amphoreus...
+:'''Herta:''' Why hasn't (Trailblazer) reacted to it at all?
+:'''Screwllum:''' You said the Demiurge left a trace, right?
+:'''Herta:''' Yeah, but not in the real world. Remember the "Great Tomb of the Nameless Titan"?
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370204.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_TriggerPuzzleStart"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:'''Herta:''' Zandar had to lie to the original Phainon and Cyrene.
+:'''Screwllum:''' Logic: He had already identified the Remembrance as a threat, yet found no viable way to eliminate it.
+:'''Herta:''' All right, let's finish this. Time to break through that barrier.
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043704\DS104370410.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "WhiteBackground"
+}</pre>
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370209.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20482_F20482001_G57"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Board the Mistletoe{{subst:void|<!--104370233-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|If Demiurge is powerless to alter the experiment's results... if Droidhead's calculations point to THEIR own Destruction... No, there are no "ifs."<br />The conditions for linking with Erudition are complete. It's not an audience, but a coronation. I will decipher the universe's future and anchor Herta's "Instant."<br />If one could know the Truth at dawn, one can die at dusk without regret.}}
+{{Dialogue Start}}
+;(If {{F|undefined}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+:'''Herta:''' Come on. Let's take off. It's time to go meet your little pet, Senior Society Member.
+{{Dialogue End}}
+
+===Proceed to the sealing site of Irontomb{{subst:void|<!--104370234-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370210.json'-->)
+{{Dialogue End}}
+
+===Activate the Chronocognitive Anchor and commence the meeting of Genius Society{{subst:void|<!--104370235-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Mission\1043702\Story104370211.json'-->)
+:'''Screwllum:''' You will initiate the Destruction's chain reaction...
+:'''"Zandar":''' But you'll also become the "Perfect Scholar"...
+:'''"Zandar":''' The chances are ten thousand to one.
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370212.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370213.json'-->)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Config\Level\Mission\1043702\Act\Act104370214.json'-->)
+{{Dialogue End}}
+
+===Search and hack into the final terminal{{subst:void|<!--104370211-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Exploration hit a snag. A barrier of quatorzain algebraic expressions has isolated this space. Screwllum suggests hacking into the independent signal terminal and using reverse computation to break through the barrier, unlocking the seal on the Scepter's kernel.}}
+{{Dialogue Start}}
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370205.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+					"Name": {
+						"Value": "FCV_TriggerPuzzleStart"
+					},
+					"Value": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:'''Herta:''' Quieter than I thought. I was expecting a full-on aerial brawl.
+:'''Screwllum:''' It's advised to remain vigilant. The Destruction's levels are still rising.
+:'''Screwllum:''' Huh?
+:'''Herta:''' What's the matter?
+:'''Screwllum:''' Interesting. I just picked up a signal from the Exomyth.
+{{Dialogue End}}
+
+===Break through the barrier and keep moving forward{{subst:void|<!--104370212-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Screwllum's treasure looks promising. Let's hope it works just as well on the Matrix.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Track the signal of Exomyth{{subst:void|<!--104370244-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|After breaking through the barrier, Screwllum detects an intriguing signal: Exomyth. It's time to meet the old Intellitron in reality and find clues about the Demiurge from his head.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370206.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20482_F20482001_G42"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Touch the Chronocognitive Anchor to enter Exomyth{{subst:void|<!--104370222-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370207.json'-->)
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Herta:''' What a mess. Total devastation.
+::'''Screwllum:''' He sought to bury the truth beneath absolute Destruction. Logically sound, but ruthlessly extreme.
+::'''Herta:''' Still, slim chances doesn't mean no chances.
+::'''Herta:''' I've hunted down a single grain of sand in the universe before. This won't stop me.
+::'''Screwllum:''' Calculation results: Your backup plan... has a success rate infinitesimally close to zero.
+::'''Herta:''' Which means it COULD work, no?
+::'''Screwllum:''' This is the place below the tombstone.
+::'''Herta:''' Let's open Lygus's coffin like he wanted.
+{{Dialogue End}}
+
+===Pilot the Mistletoe to the "tombstone" mentioned by Lygus{{subst:void|<!--104370243-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Old Intellitron left notes about the "tombstone" as his final message. All signs indicate that Demiurge does indeed exist. It's time to confront old Intellitron, for his apprehension is the undeniable proof.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Confront Lygus and press for the truth of the Demiurge{{subst:void|<!--104370228-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043702\DS104370208.json'-->)
+:'''"Zandar":''' ...
+:'''Herta:''' Heh. Looks like you were right.
+{{Dialogue End}}
+
+===Learn the truth about Demiurge{{subst:void|<!--104370229-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Board the Mistletoe{{subst:void|<!--104370246-->}}===
+{{Mission Description|type=trailblaze|location="Nightmare's Echo" Great Tomb of the Nameless Titan|update|Exploration hit a snag. A barrier of quatorzain algebraic expressions has isolated this space. Screwllum suggests hacking into the independent signal terminal and using reverse computation to break through the barrier, unlocking the seal on the Scepter's kernel.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Witch's Ardent Research
+|zhs  = 魔女的孤诣课题
+|zht  = 魔女的孤詣課題
+|ja   = 魔女が追い求める課題
+|ko   = 마녀의 치열한 연구
+|es   = La investigación solitaria de la bruja
+|fr   = Les recherches ardentes de la sorcière
+|ru   = Кропотливое исследование ведьмы
+|th   = การวิจัยอันเด็ดเดี่ยวของแม่มด
+|vi   = Đề Tài Nghiên Cứu Độc Đáo Của Ma Nữ
+|de   = Die leidenschaftliche Forschung der Hexe
+|id   = Penelitian Soliter sang Penyihir
+|pt   = A Pesquisa Ardente da Bruxa
+}}
+
+==Change History==
+{{Change History|<!--unknown-->}}

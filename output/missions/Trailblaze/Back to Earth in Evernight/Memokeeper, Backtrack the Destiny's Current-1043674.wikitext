@@ -1,0 +1,119 @@
+<%-- [PAGE_INFO]
+PageTitle=#Memokeeper, Backtrack the Destiny's Current#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043674
+|title         = 
+|image         = <!--Mission Memokeeper, Backtrack the Destiny's Current.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Back to Earth in Evernight
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Trailblazer
+|startLocation = [[Astral Express]] - [[Path Space]]
+|world         = Astral Express
+|area          = Path Space
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*200; Stellar Jade*30; Traveler's Guide*2; Refined Aether*2; Disorder Ambrosia*80; Credit*30 000
+}}
+'''''Memokeeper, Backtrack the Destiny's Current''''' is a [[Trailblaze Mission]] in the chapter [[Back to Earth in Evernight]].
+
+==Steps==
+# Travel upstream along the currents of the Path
+# Investigate the Memokeeper's body
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Travel upstream along the currents of the Path{{subst:void|<!--104367401-->}}===
+{{Mission Description|type=trailblaze|location=Path Space|Thanks to the brief collision between Sunday and Evernight, Black Swan, who had been lurking, managed to lock onto Evernight's hideout and travel upstream along the currents of the Path.<br />The Garden of Recollection would never allow Black Swan to act on her own, while she had no idea what she was about to face...}}
+{{Dialogue Start}}
+:{{tx}}
+{{Dialogue End}}
+
+===Investigate the Memokeeper's body{{subst:void|<!--104367402-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40463_F40463001_G6"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+:{{DIcon|Разговор}} Investigate
+:The Memosnatcher gave no response. It was like a corpse, drowned in a deep-sea shipwreck, drifting slowly and completely empty.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40463_F40463001_G7"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+:{{DIcon|Разговор}} Investigate
+:The Memosnatcher gave no response. It was like a deflated balloon that had been completely hollowed out, floating motionless at an unremarkable height.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Memokeeper, Backtrack the Destiny's Current
+|zhs  = 忆者啊，命途长河上溯洄
+|zht  = 憶者啊，命途長河上溯洄
+|ja   = メモキーパー、運命の流れを遡れ
+|ko   = 기억하는 자여, 운명의 강을 거슬러 올라라
+|es   = Guardamemorias, remonta el río de la Vía
+|fr   = Protectrice de la mémoire, remonte le courant du destin
+|ru   = О хранитель памяти, вернись по течению судьбы
+|th   = Memokeeper เอ๋ย จงย้อนกลับสายธารแห่งชะตา
+|vi   = Hỡi Người Lưu Giữ Ký Ức, Hãy Quay Ngược Dòng Chảy Của Số Phận
+|de   = O Wahrer der Erinnerungen, stromaufwärts im Fluss des Schicksals
+|id   = Wahai Memokeeper, Lawanlah Arus Menelusuri Sungai Path
+|pt   = Memoriador, Retroceda a Corrente do Destino
+}}
+
+==Change History==
+{{Change History|3.6}}

@@ -1,0 +1,236 @@
+<%-- [PAGE_INFO]
+PageTitle=#Clouds Leave No Trace#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2021001
+|title         = 
+|image         = <!--Mission Clouds Leave No Trace.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = [[Trailblaze Mission]] ''[[Obsequies Performed, A Long Road Ahead]]'' completed
+|summary       = A sinner returned to surrender, and a hero reunited with friends. Little did they know that the sword in her hand pointed to the scars in her own soul.
+|characters    = Dan Heng; Pom-Pom; Trailblazer
+|startLocation = [[Astral Express]] - [[Parlor Car]]
+|world         = Astral Express
+|area          = Parlor Car
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*600; Stellar Jade*100; Traveler's Guide*6; Lost Crystal*4; Lifeless Blade*6; Credit*50 000
+}}
+'''''Clouds Leave No Trace''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Read the anonymous letter on the Express
+# Show the anonymous letter to Pom-Pom
+# Pass the letter to Dan Heng
+# Ask Dan Heng about his meeting
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Read the anonymous letter on the Express{{subst:void|<!--202100105-->}}===
+{{Mission Description|type=companion|location=Parlor Car|A letter without a sender silently lies in the Express' Parlor Car. No one knows of its arrival, just like how no one knows who will receive it.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' Is this... a letter?
+
+;(Obtain {{Предмет|''A Letter of Unknown Origin''|20|x=1|text=''A Letter of Unknown Origin''}})
+
+;(Talk to Pom-Pom)
+:'''Pom-Pom:''' I'm certain that no one entered this car &mdash; so who delivered the letter?
+:'''Pom-Pom:''' ...This is giving me the shivers!
+:{{Диалог|Звезда}} How's my Trailblaze Level?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} I'm heading out.
+{{Dialogue End}}
+
+===Show the anonymous letter to Pom-Pom{{subst:void|<!--202100104-->}}===
+{{Dialogue Start}}
+
+;(Talk to Pom-Pom)
+----
+:'''Pom-Pom:''' Heave-ho! Heave-ho! ...Huh? Trailblazer, do you need help with something?
+:{{Диалог|Стрелка}} There's a letter on the table...
+:{{Диалог|Стрелка}} Who sent the letter?
+:'''Pom-Pom:''' Pom-Pom's been cleaning up this whole time and didn't see any letters!
+:{{Диалог|Стрелка}} This is creepy...
+:{{Диалог|Стрелка}} Did someone sneak onto the Express?
+:'''Pom-Pom:''' Wh&mdash;What!? Don't scare Pom-Pom like that! Why are there always strange things sneaking onto our train? P&mdash;Pom-Pom is going to upgrade the security level around here!
+:'''Pom-Pom:''' What does the letter say?
+:{{Диалог|Стрелка}} (Hand the letter over to Pom-Pom)
+:'''Pom-Pom:''' It looks like an invitation... Hmm... Who could have sent it? Does Dan Heng have any friends on the Luofu? If Pom-Pom remembers correctly, he said he was exiled from there, right?
+:{{Диалог|Стрелка}} Friends... Jing Yuan...?
+::'''(Trailblazer):''' (Unlikely. If the general sent the letter, he would've signed it.)
+:{{Диалог|Стрелка}} Enemies... Blade...?
+::'''(Trailblazer):''' (I highly doubt Dan Heng's enemy would send an invitation letter...)
+:'''Pom-Pom:''' Why don't you show Dan Heng the letter? You know {{Rubi|where|Archives}} to find him.
+----
+;(Unused &mdash; custom/npc_menu)
+:{{Диалог|Звезда}} How's my Trailblaze Level?
+:<pre>{
+	"$type": "RPG.GameCore.ShowTalkUI"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.LevelReward.LevelRewardPage",
+	"WaitForExit": true,
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+
+:{{Диалог|Выход}} I'm heading out.
+
+;(Unused &mdash; Allend)
+:----
+{{Dialogue End}}
+
+===Pass the letter to Dan Heng{{subst:void|<!--202100102-->}}===
+{{Mission Description|type=companion|location=Passenger Cabin|update|The business outlined in the letter is muddled. However, it is clear that whoever left it wishes to invite Dan Heng to an "old place" familiar to him and reminisce past friendships.}}
+{{Dialogue Start}}
+
+;(Lose {{Предмет|''A Letter of Unknown Origin''|20|x=1|text=''A Letter of Unknown Origin''}})
+
+;(Talk to Dan Heng)
+:{{tx}}
+::'''Dan Heng:''' What is it, (Trailblazer)? Do you need something?
+::{{Диалог|Стрелка}} There's a letter for you...
+::{{Диалог|Стрелка}} Someone's inviting you to return to old ground...
+::'''Dan Heng:''' ...There's no signature, and it doesn't mention a time or place. Looks like whoever sent this expects me to remember.
+::'''Dan Heng:''' Unfortunately, I'm going to disappoint them.
+::{{Диалог|Стрелка}} Why so serious?
+:::'''Dan Heng:''' Huh? I'm just thinking.
+:::Do you need any help?
+:::'''Dan Heng:''' Thanks, but I don't even know where to start...
+:::Could it be Blade...?
+::{{Диалог|Стрелка}} Do you need any help?
+:::'''Dan Heng:''' Thanks, but I don't even know where to start...
+:::Could it be Blade...?
+::{{Диалог|Стрелка}} Could it be Blade...?
+::'''Dan Heng:''' The handwriting does seem like that of a swordmaster, but Blade would've gotten straight to the point.
+::'''Dan Heng:''' It's an invitation alright, but this is too mysterious to be him.
+::'''Dan Heng:''' (Trailblazer), let me hold on to the letter. Anything related to Dan Feng's past should be handled with care.
+::{{tx}}
+::----
+:;(Screen fades to black)
+::'''Dan Heng:''' ...
+::The appearance of this letter makes you feel uneasy. You evoke the cloudhymn, and a droplet of water condenses from the air and soaks into the letter.
+::The handwriting disappears, and another line of writing blurs due to the water stain &mdash;
+::Of five people, three must pay a price.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+::'''Dan Heng:''' Just as I thought, there was more than met the eye... Letting (Trailblazer) leave first was a wise choice &mdash; I can't put them in danger again because of this.
+::'''Dan Heng:''' But if {{Rubi|he|Blade}} didn't send the letter... then who did?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 23
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+::'''Dan Heng:''' Maybe I should make a trip to {{Цвет|Ключевой|nobold=1|the Seat of Divine Foresight}}. I need to ask Jing Yuan about the Stellaron Hunters.
+::----
+:'''Dan Heng:''' What is it, (Trailblazer)? Do you need something?
+::{{Диалог|Стрелка}} About the anonymous letter...
+::'''Dan Heng:''' Oh... are you interested in what happened?
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43202,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Ask Dan Heng about his meeting{{subst:void|<!--202100103-->}}===
+{{Mission Description|type=companion|location=Passenger Cabin|update|Delivering the message to Dan Heng and having him attend the meeting alone doesn't imply that you are indifferent to what later transpires.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Clouds Leave No Trace
+|zhs  = 云无留迹
+|zht  = 雲無留跡
+|ja   = 流雲無痕
+|ko   = 흔적을 남기지 않은 구름
+|es   = Las nubes no dejan huellas
+|fr   = Les nuages s'estompent sans laisser de trace
+|ru   = Блуждающее облако
+|th   = เมฆที่ไร้ร่องรอย
+|vi   = Mây Đi Không Dấu Vết
+|de   = Die vorbeiziehende Wolke
+|id   = Awan Tidak Meninggalkan Jejak
+|pt   = Nuvens Não Deixam Rastros
+}}
+
+==Change History==
+{{Change History|3.5}}

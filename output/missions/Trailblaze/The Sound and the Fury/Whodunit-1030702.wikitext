@@ -1,0 +1,252 @@
+<%-- [PAGE_INFO]
+PageTitle=#Whodunit#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1030702
+|title         = 
+|image         = <!--Mission Whodunit.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = The Sound and the Fury
+|requirements  = [[Trailblaze Mission]] ''[[Whodunit]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Acheron; Aventurine; Black Swan; Firefly; Trailblazer
+|startLocation = [[Penacony]] - [[The Reverie (Dreamscape)]]
+|world         = Penacony
+|area          = The Reverie (Dreamscape)
+|prev          = 
+|next          = ???
+|rewards       = Trailblaze EXP*700; Stellar Jade*90; Traveler's Guide*12; Destiny's Threads Forewoven*1 { text = Destiny's Threads Forewoven }; Clock Credits*350; "Nevermore"*1 { text = "Nevermore" }; Credit*120 000
+}}
+'''''Whodunit''''' is a [[Trailblaze Mission]] in the chapter [[The Sound and the Fury]].
+
+==Steps==
+# Speak with Black Swan
+# Follow the Firefly in the memory
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Speak with Black Swan{{subst:void|<!--103070217-->}}===
+{{Mission Description|type=trailblaze|location=The Reverie (Dreamscape)|Black Swan tells you that you should evacuate as quickly as possible. But, as you are evacuating, you may be fortunate enough to find some traces left by Firefly that could help unravel the truth behind this sudden demise.<br />You finally reach the area that Black Swan was talking about. From there, the Memokeeper reproduces the memories related to Firefly &mdash; Let's hope that these traces can enlighten your thoughts.}}
+{{Dialogue Start}}
+
+;(Talk to Black Swan)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_SetState_BGMTrack_0306_tense"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''Black Swan:''' Are you ready? Don't be too surprised.
+----
+:'''Acheron:''' Is that... Firefly?
+:'''Black Swan:''' Yes. It's what this room left behind &mdash; the memories of her. The slight trembling of the ground, the fleeting reflections on the screen, the flow of memoria... I gathered and reproduced them in fragments.
+:'''Black Swan:''' As for the context... we'll need to sort that out a bit. Hurry along now. Recreating memories on this scale takes quite a toll on me.
+----
+{{Dialogue End}}
+
+===Follow the Firefly in the memory{{subst:void|<!--103070215-->}}===
+{{Mission Description|type=trailblaze|location=The Reverie (Dreamscape)|update|Black Swan tells you that you should evacuate as quickly as possible. But, as you are evacuating, you may be fortunate enough to find some traces left by Firefly that could help unravel the truth behind this sudden demise.<br />You finally reach the area that Black Swan was talking about. From there, the Memokeeper reproduces the memories related to Firefly &mdash; Try to iron out the truth behind this murder.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Black Swan:''' It seems like someone has been awaiting us. Ready to step into the spotlight now?
+:'''Black Swan:''' ...Stellaron Hunter: Sam.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"PriorityGroup": "PerformanceGroup",
+	"Duration": 1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/IsometricFilter.asset"
+}</pre>
+:<!--4-second delay-->
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetSoundEffectState": true
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::...Careful.
+::A Galaxy Ranger...
+::And... a Memokeeper
+::Leave now, and nobody gets hurt.
+::Or else...
+::All of you will die here.
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Stellaron Hunter: Sam*1}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Leave the dance stage to them, my dear.
+::...what a show.
+;(Cutscene ends)
+----
+:'''Aventurine:''' Thank you for your efforts, Memokeeper - quite a brilliant move to pit enemies against each other.
+:'''Aventurine:''' When I first saw the Ranger and the Hunter together, my heart skipped a beat... I never thought you'd successfully trigger a conflict between the two.
+:'''Black Swan:''' As promised, I've delivered the child to you. Our transaction is complete.
+:{{Диалог|Стрелка}} What is happening...
+::What is happening...
+:{{Диалог|Стрелка}} You two are in this together...
+::You two are in this together...
+::Black Swan, you...
+::'''Aventurine:''' Haha, looks like our Nameless friend over here is still confused. Let me explain.
+::'''Aventurine:''' In short, you need to thank this lady here, my friend. Not only did she not betray you &mdash; on the contrary, she rescued you...
+::{{Диалог|Стрелка}} Acheron has her peculiarities, but...
+:::'''Aventurine:''' But? There's no but. This is the truth.
+:::An Emanator? Whose?
+:::'''Aventurine:''' Perhaps The Hunt... or Destruction... or even Finality. It doesn't matter, these Paths all point to the same outcome.
+:::Impossible. Why should I believe you?
+:::No way. Acheron was right there at the scene. It couldn't have been her.
+::{{Диалог|Стрелка}} An Emanator? Whose?
+:::'''Aventurine:''' Perhaps The Hunt... or Destruction... or even Finality. It doesn't matter, these Paths all point to the same outcome.
+:::Impossible. Why should I believe you?
+:::No way. Acheron was right there at the scene. It couldn't have been her.
+::{{Диалог|Стрелка}} Impossible. Why should I believe you?
+:::Impossible. Why should I believe you?
+:::No way. Acheron was right there at the scene. It couldn't have been her.
+::{{Диалог|Стрелка}} No way. Acheron was right there at the scene. It couldn't have been her.
+::'''Aventurine:''' She was there? Wait, what... You're kidding... Oh my, this just got even more interesting.
+::'''Aventurine:''' Let me give you some IPC insider information, my friend. Do you know "Duke Inferno" &mdash; Fetora's Ifrit?
+::{{Диалог|Стрелка}} I fought him before.
+:::'''Aventurine:''' Nicely done, as expected! I'll cut to the chase then...
+:::Who?
+::{{Диалог|Стрелка}} Who?
+::'''Aventurine:''' You don't seem to have heard of him before... He belongs to the Annihilation Gang, so I guess it's normal. Then let me explain to you...
+::'''Aventurine:''' This Duke Inferno is a Fire Demon from Fetora. He's an energy lifeform, and it's rumored that his birth is related to a certain genius...
+::'''Aventurine:''' He and his thugs formed "Ever-Flame Mansion" and viewed Nanook as their savior &mdash; in actuality, they were led by this duke to go around burning and looting, practicing the will of Destruction. And even the other Annihilation Gangs weren't spared.
+::'''Aventurine:''' I'm not sure what The Family was thinking, or perhaps someone was scheming behind the scenes, but shockingly these characters received an invitation. And why would the Ever-Flame Mansion decline? They harbor fierce intentions, swearing to turn the Planet of Festivities into a sea of blazing flames...
+::'''Aventurine:''' But there's no need to worry. They won't be able to attend. Do you know why?
+::'''Aventurine:''' Because Ifrit is dead.
+::{{Диалог|Стрелка}} What happened?
+::{{Диалог|Стрелка}} As I expected...
+::'''Aventurine:''' They were eliminated while on their way. The assailant, demonstrating remarkable expertise, ruthlessly ended Ifrit and swiped the invite that the Annihilation Gang had in their possession. The Ever-Flame Mansion disbanded, each going their separate ways...
+::'''Aventurine:''' Thereafter, a mysterious Galaxy Ranger arrived on Penacony, checking into the hotel with only a music box... Do you still need me to continue the story, my friend?
+::{{Диалог|Стрелка}} It was Acheron...
+::{{Диалог|Стрелка}} It doesn't rule out others.
+::{{Диалог|Стрелка}} Do you have any other evidence?
+::'''Aventurine:''' The Galaxy Rangers come and go like shadows, and there's little communication between them. Her story is almost too perfect. If she remains silent, there's no concrete evidence against her. While the IPC can investigate, it'll take some time.
+::{{tx}}
+:{{Диалог|Стрелка}} Black Swan, you...
+:You two are in this together...
+:Black Swan, you...
+:'''Aventurine:''' Haha, looks like our Nameless friend over here is still confused. Let me explain.
+:'''Aventurine:''' In short, you need to thank this lady here, my friend. Not only did she not betray you &mdash; on the contrary, she rescued you...
+:{{Диалог|Стрелка}} Acheron has her peculiarities, but...
+::'''Aventurine:''' But? There's no but. This is the truth.
+::An Emanator? Whose?
+::'''Aventurine:''' Perhaps The Hunt... or Destruction... or even Finality. It doesn't matter, these Paths all point to the same outcome.
+::Impossible. Why should I believe you?
+::No way. Acheron was right there at the scene. It couldn't have been her.
+:{{Диалог|Стрелка}} An Emanator? Whose?
+::'''Aventurine:''' Perhaps The Hunt... or Destruction... or even Finality. It doesn't matter, these Paths all point to the same outcome.
+::Impossible. Why should I believe you?
+::No way. Acheron was right there at the scene. It couldn't have been her.
+:{{Диалог|Стрелка}} Impossible. Why should I believe you?
+::Impossible. Why should I believe you?
+::No way. Acheron was right there at the scene. It couldn't have been her.
+:{{Диалог|Стрелка}} No way. Acheron was right there at the scene. It couldn't have been her.
+:'''Aventurine:''' She was there? Wait, what... You're kidding... Oh my, this just got even more interesting.
+:'''Aventurine:''' Let me give you some IPC insider information, my friend. Do you know "Duke Inferno" &mdash; Fetora's Ifrit?
+:{{Диалог|Стрелка}} I fought him before.
+::'''Aventurine:''' Nicely done, as expected! I'll cut to the chase then...
+::Who?
+:{{Диалог|Стрелка}} Who?
+:'''Aventurine:''' You don't seem to have heard of him before... He belongs to the Annihilation Gang, so I guess it's normal. Then let me explain to you...
+:'''Aventurine:''' This Duke Inferno is a Fire Demon from Fetora. He's an energy lifeform, and it's rumored that his birth is related to a certain genius...
+:'''Aventurine:''' He and his thugs formed "Ever-Flame Mansion" and viewed Nanook as their savior &mdash; in actuality, they were led by this duke to go around burning and looting, practicing the will of Destruction. And even the other Annihilation Gangs weren't spared.
+:'''Aventurine:''' I'm not sure what The Family was thinking, or perhaps someone was scheming behind the scenes, but shockingly these characters received an invitation. And why would the Ever-Flame Mansion decline? They harbor fierce intentions, swearing to turn the Planet of Festivities into a sea of blazing flames...
+:'''Aventurine:''' But there's no need to worry. They won't be able to attend. Do you know why?
+:'''Aventurine:''' Because Ifrit is dead.
+:{{Диалог|Стрелка}} What happened?
+:{{Диалог|Стрелка}} As I expected...
+:'''Aventurine:''' They were eliminated while on their way. The assailant, demonstrating remarkable expertise, ruthlessly ended Ifrit and swiped the invite that the Annihilation Gang had in their possession. The Ever-Flame Mansion disbanded, each going their separate ways...
+:'''Aventurine:''' Thereafter, a mysterious Galaxy Ranger arrived on Penacony, checking into the hotel with only a music box... Do you still need me to continue the story, my friend?
+:{{Диалог|Стрелка}} It was Acheron...
+:{{Диалог|Стрелка}} It doesn't rule out others.
+:{{Диалог|Стрелка}} Do you have any other evidence?
+:'''Aventurine:''' The Galaxy Rangers come and go like shadows, and there's little communication between them. Her story is almost too perfect. If she remains silent, there's no concrete evidence against her. While the IPC can investigate, it'll take some time.
+:{{tx}}
+:'''(Trailblazer):''' (Acheron is the Emanator of a particular Aeon? Can I really believe Aventurine...?)
+:'''(Trailblazer):''' (But he gave me a choice... Maybe I should talk to Black Swan again.)
+:{{tx}}
+
+:{{DIcon|Разговор}} Firefly
+:'''Firefly:''' If I could try again...
+:'''Acheron:''' She stares at the screens. Is she looking at herself in the mirror? ...What does she mean by "try again"?
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Firefly:''' Why did you...!? This isn't what we agreed on...
+
+;(По прибытии на место)
+:'''Firefly:''' Mecha...!? Why...
+
+;(По прибытии на место)
+:'''Firefly:''' There's actually a path here...
+:'''Black Swan:''' Unpredictable pathways pointing toward a wandering meme... She was completely lost in the Memory Zone.
+
+;(По прибытии на место)
+:'''Firefly:''' It's an exit... Following this path should lead me out of this place...
+:'''Black Swan:''' Unfortunately, this path ultimately leads one to the lair of "Death."
+
+;(По прибытии на место)
+:'''Firefly:''' Finally back at the lobby. If that's the case...
+:'''Black Swan:''' She thought she had escaped but...
+:'''Acheron:''' ...
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Firefly:''' The door... It won't open...
+
+;(По прибытии на место)
+:{{tx}}
+:'''Black Swan:''' She had no other way to leave but from the side corridor.
+;(По прибытии на место)
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Black Swan:''' After that, it's the end...
+:'''Acheron:''' Everyone, over there&mdash;
+----
+:'''Black Swan:''' With all this in mind, Firefly and her companion &mdash; there should only be one &mdash; have entered this corridor together.
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Whodunit
+|zhs  = 是谁杀死了…
+|zht  = 是誰殺死了……
+|ja   = 誰が殺した…
+|ko   = 누가 죽였는가…
+|es   = ¿Quién es el culpable?
+|fr   = Les Experts : Penacony
+|ru   = А убийца кто?..
+|th   = ใครคือผู้เข่นฆ่า...
+|vi   = Ai Là Thủ Phạm...
+|de   = Wer ist der Mörder?
+|id   = Siapa yang Menghabisi ....
+|pt   = Quem foi?
+}}
+
+==Change History==
+{{Change History|3.5}}

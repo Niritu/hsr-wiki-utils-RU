@@ -1,0 +1,276 @@
+<%-- [PAGE_INFO]
+PageTitle=#Strife, Dispel the Accompanying Fears#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040202
+|title         = 
+|image         = <!--Mission Strife, Dispel the Accompanying Fears.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Bloodthirsty Okheman; Dan Heng; Dan Heng?; Divine Echo; Dying Okheman; Fanatical Kremnoan; Frenzied Okheman Soldier; Mesmerized Warrior; Mydei; Perdikkas; Trailblazer
+|startLocation = [[Amphoreus]] - [[Trial of Strife]]
+|world         = Amphoreus
+|area          = Trial of Strife
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*300; Stellar Jade*40; Traveler's Guide*3; Lost Crystal*3; Celestial Ambrosia*120; Credit*40 000
+}}
+'''''Strife, Dispel the Accompanying Fears''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Seek out Phainon and Dan Heng
+# Check Chartonus' current condition
+# Find the battle cries and find the source of Strife
+# Follow the escaping soldier and investigate the commotion
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Seek out Phainon and Dan Heng{{subst:void|<!--104020201-->}}===
+{{Mission Description|type=trailblaze|location=Trial of Strife|(Trailblazer) and I became separated in this illusion. (Trailblazer) told me that {{MC|ж=she|м=he}} travelled with Mydei and had seen the man's deepest fear, which was the blood-soaked glory of the Kremnos...}}
+{{Dialogue Start}}
+----
+:...
+:'''(Trailblazer):''' (What...)
+:'''Mydei:''' What's the matter? Surprised?
+:'''Mydei:''' Where there's Strife, there's carnage... It shouldn't come as a surprise to see such a sight in {{Rubi|Nikador's|Strife Titan}} trial.
+:{{Диалог|Стрелка}} You... did this?
+::'''Mydei:''' I told you, this is only a mirror of the trial.
+::Let's go look for Phainon.
+::Why is it just you? Where's Dan Heng?
+:{{Диалог|Стрелка}} Let's go look for Phainon.
+:{{Диалог|Стрелка}} Why is it just you? Where's Dan Heng?
+:'''Mydei:''' I don't see him around here... We should go first. Let's pray he stays safe.
+:{{tx}}
+
+;(Unused &mdash; Runing28)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 28,
+	"PathwayID": 1,
+	"MotionFlag": "FastRun",
+	"SpeedScale": 1.2,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104020202
+		}
+	],
+	"PathOffset": []
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 28,
+	"PathwayID": 2,
+	"MotionFlag": "FastRun",
+	"SpeedScale": 1.2,
+	"OnReach": [],
+	"PathOffset": []
+}</pre>
+----
+:'''Mydei:''' ...Absurd. I know this Okheman. Strife contorted an honorable warrior into this perverse and twisted being.
+:'''Mydei:''' And that horrible noise... I can hardly suppress my bloodlust when it sounds.
+:'''Mydei:''' This battle cry must have gotten to Phainon. That's why he lost himself... Hmph, what a useless fool.
+:'''Mydei:''' ...
+:{{Диалог|Стрелка}} Who is he?
+:{{Диалог|Стрелка}} Why so solemn...
+:'''Mydei:''' ...It's nothing. Let's go.
+:{{tx}}
+{{Dialogue End}}
+
+===Check Chartonus' current condition{{subst:void|<!--104020205-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G36)
+:{{tx}}
+
+:{{DIcon|Разговор}} Try to communicate
+:'''Mesmerized Warrior:''' Ha... Haha...
+:'''Mesmerized Warrior:''' Please accept my offering, {{Rubi|Nikador|Strife Titan}}...
+:This person is consumed by a frenzy of slaughter, oblivious to your presence.
+
+:{{DIcon|Разговор}} Try to communicate
+:'''Fanatical Kremnoan:''' Come at me, coward! {{Rubi|Nikador|Strife Titan}} will grant me strength and fight alongside me to the death!
+:'''Bloodthirsty Okheman:''' Hmph, those are some big words for a pathetic rat like you... No different from your cowardly king!
+
+:{{DIcon|Разговор}} Try to communicate
+:'''Dying Okheman:''' ...
+:A sharp bronze spear had torn through the tendons in her arm, leaving it hanging lifelessly, like a shattered wine jug abandoned by the roadside.
+:As the soul ebbed away, darkness veiled her eyes.
+
+:'''Mydei:''' Not you too, Chartonus...
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::Watch out!
+::Found you...!
+;(Cutscene ends)
+----
+----
+:'''Mydei:''' ...Nice move.
+:'''Dan Heng?:''' You, too.
+:{{Диалог|Стрелка}} Are you... the real Dan Heng?
+::'''Dan Heng?:''' I could ask you the same&mdash;
+::Are we up against Dan Heng's apparition this time...?
+:{{Диалог|Стрелка}} Are we up against Dan Heng's apparition this time...?
+:'''Mydei:''' Wait. He seems calm and composed, unlike the rest.
+:'''Dan Heng?:''' Sane enough to communicate, it seems. Hey, gray-haired warrior. Tell me&mdash;
+:'''Dan Heng?:''' &mdash;What was the last thing you said to me before I parted the waters at the Scalegorge Waterscape?
+:'''Mydei:''' Parted the waters...?
+:{{Диалог|Стрелка}} How would I even remember that?!
+::'''Dan Heng?:''' Hmm, that sounds like something the real you would say.
+::Ugh. Forget it. Just kill me, alright?
+::'''Dan Heng?:''' Hmm, that sounds like something the real you would say.
+::...
+:{{Диалог|Стрелка}} Ugh. Forget it. Just kill me, alright?
+::'''Dan Heng?:''' Hmm, that sounds like something the real you would say.
+::...
+:{{Диалог|Стрелка}} ...
+:'''Dan Heng?:''' That's right. You have a great memory.
+:'''Mydei:''' ...?
+:'''Dan Heng:''' It wasn't easy, but I finally found you two...
+:{{tx}}
+{{Dialogue End}}
+
+===Find the battle cries and find the source of Strife{{subst:void|<!--104020214-->}}===
+{{Mission Description|type=trailblaze|location=Trial of Strife|update|We finally met up in the illusion of the trial after some fighting and followed the sound of battle to the source of Strife. Perhaps that would be Phainon's location.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; 104020214finish)
+
+:'''Mydei:''' The battle cries... seem to be getting a lot louder.
+:'''Dan Heng:''' I have a feeling...
+:'''Dan Heng:''' Someone is manipulating this battlefield, someone who might not be Phainon.
+:'''Mydei:''' Hmm... I agree.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Mydei:''' Heh. Just as I thought. This is where the battle cries were coming from...
+:'''Mydei:''' ...The true entrance to {{Rubi|Nikador's|Strife Titan}} trial.
+:'''(Trailblazer):''' ...
+:'''Dan Heng:''' What's wrong with you two?
+:{{Диалог|Стрелка}} I've met that warrior before...
+:{{Диалог|Стрелка}} It's Gnaeus, an incarnation of Nikador...
+:'''Mydei:''' I'm seeing him for the first time, but there's no doubt about it. What I'm sensing can only be Strife's bloodlust...
+:'''Mydei:''' The one manipulating this battlefield is... {{Rubi|Nikador|Strife Titan}} themself.
+:'''Divine Echo:''' "Ah, Mydeimos... You are a keen warrior, indeed."
+:'''Mydei:''' You know me?
+:'''Divine Echo:''' "The blasphemous prince. Of course I know you."
+:'''Divine Echo:''' "And I happen to know that you're here for the soul of that white-haired warrior."
+:'''Mydei:''' Great. Let's cut to the chase, then. Hand over that poor excuse for a swordmaster so we can be done with this farce.
+:'''Divine Echo:''' "...No."
+:'''Divine Echo:''' "I applaud your courage and strength for coming this far. But you have chosen to besmirch the dignity of one who has fallen, and I cannot turn a blind eye to that."
+:{{Диалог|Стрелка}} This is gonna be one fierce battle we won't be able to get out of.
+:{{Диалог|Стрелка}} Won't you go easy on us? We traveled together before, remember...?
+:'''Mydei:''' Heh. Just as I thought. This is where the battle cries were coming from...
+:'''Mydei:''' ...The true entrance to {{Rubi|Nikador's|Strife Titan}} trial.
+:'''(Trailblazer):''' ...
+:'''Dan Heng:''' What's wrong with you two?
+:I've met that warrior before...
+:It's Gnaeus, an incarnation of Nikador...
+:'''Mydei:''' I'm seeing him for the first time, but there's no doubt about it. What I'm sensing can only be Strife's bloodlust...
+:'''Mydei:''' The one manipulating this battlefield is... {{Rubi|Nikador|Strife Titan}} themself.
+:'''Divine Echo:''' "Ah, Mydeimos... You are a keen warrior, indeed."
+:'''Mydei:''' You know me?
+:'''Divine Echo:''' "The blasphemous prince. Of course I know you."
+:'''Divine Echo:''' "And I happen to know that you're here for the soul of that white-haired warrior."
+:'''Mydei:''' Great. Let's cut to the chase, then. Hand over that poor excuse for a swordmaster so we can be done with this farce.
+:'''Divine Echo:''' "...No."
+:'''Divine Echo:''' "I applaud your courage and strength for coming this far. But you have chosen to besmirch the dignity of one who has fallen, and I cannot turn a blind eye to that."
+:This is gonna be one fierce battle we won't be able to get out of.
+:Won't you go easy on us? We traveled together before, remember...?
+:'''Dan Heng:''' One who has fallen...? Phainon failed the trial?
+:{{tx}}
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Furiae Warrior*2; Furiae Philosopher*1; Furiae Archer*1}}
+::Wave 2: {{Список врагов|mode=sent|Furiae Warrior*1; Furiae Archer*2; Furiae Praetor*1}}
+::Wave 3: {{Список врагов|mode=sent|Furiae Philosopher*1; Furiae Praetor*1; Furiae Troupe*1}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Frenzied Okheman Soldier:''' You won't get away, Kremnoan vermin!
+::'''Mydei:''' Be on alert. The smell of rust is thick in the air.
+:'''Mydei:''' ...
+:'''Mydei:''' "The greatest fear in the depths of a warrior's heart," huh? ...So, this is what he fears the most?
+{{Dialogue End}}
+
+===Follow the escaping soldier and investigate the commotion{{subst:void|<!--104020203-->}}===
+{{Mission Description|type=trailblaze|location=Trial of Strife|update|(Trailblazer) and I became separated in this illusion. (Trailblazer) told me that {{MC|ж=she|м=he}} travelled with Mydei and had seen the man's deepest fear, which was the blood-soaked glory of the Kremnos...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Frenzied Okheman Soldier:''' Tell me your name, brute! Your demise shall be a tale I boast about at the feast table!
+:'''Perdikkas:''' My name is Perdikkas... And I am here to avenge my people.
+:'''Mydei:''' Kremnoans... and Okhemans are at war?
+:'''Frenzied Okheman Soldier:''' Hahaha! ...Perdikkas? Even the tragic cries of beasts at the slaughterhouse sound better than your name!
+:'''Perdikkas:''' Say whatever you like, despicable Okheman...
+:'''Perdikkas:''' "Valorous Death Before Glorious Return." May the Kremnoan spirit always watch over me!
+:'''Frenzied Okheman Soldier:''' Foolish brute! I see you're eager to die. Very well then, I shall grant you just that!
+:{{Диалог|Стрелка}} Intervene and stop the soldier.
+::'''Frenzied Okheman Soldier:''' You are...? Oh, so the alpha brute has found his way here?
+::'''Frenzied Okheman Soldier:''' It's a pity, though... You're too late! You will never stop the holy city's army. Watch as I make this pathetic warrior of yours the first sacrifice!
+::'''Perdikkas:''' Urk... Hngh...
+::'''Perdikkas:''' {{Rubi|Mydeimos|Mydei}}... My king...
+::'''Perdikkas:''' Avenge... me...!
+::'''Mydei:''' Is this...
+::'''Frenzied Okheman Soldier:''' You're next!
+::Watch on and wait for the trial.
+:{{Диалог|Стрелка}} Watch on and wait for the trial.
+:'''Mydei:''' ...
+:'''Frenzied Okheman Soldier:''' Die, you swine!
+:'''Perdikkas:''' Urk... Hngh...
+:'''Perdikkas:''' {{Rubi|Mydeimos|Mydei}}... My king...
+:'''Perdikkas:''' Why... why did you leave us to the mercy of these foreigners?
+:'''Mydei:''' Is this...
+:'''Frenzied Okheman Soldier:''' You are...? Oh, so the alpha brute has found his way here!
+:'''Frenzied Okheman Soldier:''' You Kremnoans are all eager to die, huh? Then I shall grant you a swift death!
+:'''Frenzied Okheman Soldier:''' *sound of a body contorting and snapping*
+:{{tx}}
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Furiae Warrior*2; Furiae Philosopher*1; Furiae Archer*1}}
+::Wave 2: {{Список врагов|mode=sent|Furiae Warrior*1; Furiae Archer*2; Furiae Praetor*1}}
+::Wave 3: {{Список врагов|mode=sent|Furiae Philosopher*1; Furiae Praetor*1; Furiae Troupe*1}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Strife, Dispel the Accompanying Fears
+|zhs  = 纷争啊，伐清湮途的悼惧
+|zht  = 紛爭啊，伐清湮途的悼懼
+|ja   = 紛争よ、消滅の道に広がる恐怖を薙ぎ払え
+|ko   = 분쟁이여, 길을 막는 두려움을 토벌하라
+|es   = Conflicto, ahuyenta este temor sombrío
+|fr   = Conflit, dissipe les peurs héritées
+|ru   = О раздор, избавь от преследующих страхов
+|th   = ปฏิปักษ์เอ๋ย จงขจัดความกลัวบนเส้นทาง
+|vi   = Hỡi Phân Tranh, Hãy Xua Tan Nỗi Sợ Trên Đường
+|de   = O Zwist, banne die Angst vor dem Ende
+|id   = Pertikaian, Hancurkan Ketakutan yang Terpendam
+|pt   = Conflito, Dissipar os Medos Acompanhantes
+}}
+
+==Change History==
+{{Change History|3.5}}

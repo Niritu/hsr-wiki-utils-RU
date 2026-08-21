@@ -1,0 +1,253 @@
+<%-- [PAGE_INFO]
+PageTitle=#Fate/Back to the Age of Silence#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040551
+|title         = 
+|image         = <!--Mission Fate/Back to the Age of Silence.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Sweet Dreams and the Holy Grail
+|requirements  = [[Trailblaze Continuance]] ''[[Fate/Night in Dreamland]]'' completed
+|summary       = A decayed soul from ten Amber Eras ago, the sorrowful director of terrible movies, Grady, seeks to toy with you at his whim. His dream of becoming a great director was crushed by a lack of talent, leaving behind a heart aged far too young, consumed by insecurity and obsession. Who would've thought that the key to unlocking both his Noble Phantasm and his emotional wounds would be a tasteless, cross-era fan meet-and-greet?
+|characters    = Archer; Aventurine; Boothill; Grady; Miss Note; Mysterious TV; Robin; Saber; Skott; Trailblazer
+|startLocation = [[Penacony]] - [[Clock Studios Theme Park]]
+|world         = Penacony
+|area          = Clock Studios Theme Park
+|prev          = Fate/Night in Dreamland
+|next          = Fate/Return of Starry Sea
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Traveler's Guide*6; Refined Aether*6; Credit*120 000
+}}
+'''''Fate/Back to the Age of Silence''''' is a [[Trailblaze Continuance]] in the chapter [[Sweet Dreams and the Holy Grail]].
+
+==Steps==
+# Head to the Clock Studios Theme Park
+# Stay away from the shady TV
+# Escape Assassin's Noble Phantasm
+# Head to the stage for final battle
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to the Clock Studios Theme Park{{subst:void|<!--104055101-->}}===
+{{Mission Description|type=continuance|location=Clock Studios Theme Park|Since Trailblazer never texted the Cowboy, what exactly is waiting at the theme park?}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+::{{tx}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+::'''Robin:''' It's unusually quiet. No sign of Mr. Boothill or the enemy who lured us here.
+::{{Диалог|Стрелка}} You shouldn't have said that.
+::{{Диалог|Стрелка}} Be on guard for any black luxury speedster.
+::{{Диалог|Стрелка}} Saber's a knight who gives her all too.
+::'''Saber:''' I'll protect everyone to the best of my ability. Please don't stray too far from me. But with the enemy in the shadows and us out in the open, even the greatest caution can't guarantee our safety.
+::'''Saber:''' In a wide-open area like this, if the enemy sends Archer to attack from range, we'll lose the initiative and be at a serious disadvantage.
+::'''Miss Note:''' From what I know of Old Oti, he's the type to hire the lowest scum as his pawn, summoning the most wicked Servant to eliminate anything in his way.
+::'''Miss Note:''' Haven't you noticed? Since earlier, our voices vanish when we speak.
+::'''Robin:''' *Clears throat*
+::'''Robin:''' That's true... Could it be the enemy's so-called Noble Phantasm?
+::'''Saber:''' More importantly, everyone, I have a question. In this world's history, is it possible for a non-primate to become a Heroic Spirit? Say, a billboard? Or maybe a TV?
+::'''Robin:''' If it were an Intellitron... that's at least plausible. But a billboard? A TV...?
+::'''Saber:''' Then what's that thing up ahead...?
+::A TV, appearing out of nowhere, turns its polished rear to the crowd.
+::'''Mysterious TV:''' Creak, creak, creak.
+::'''Robin:''' It's obviously a trap...
+::{{Диалог|Стрелка}} Let's stay back and observe for now.
+::{{Диалог|Стрелка}} Don't go near it.
+::{{Диалог|Стрелка}} Scan the surroundings and look for anything unusual.
+::'''Saber:''' If this is a decoy, the real enemy's probably lurking nearby, waiting for us to take the bait. We should steer clear of this trap.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20321_F20321001_G350"
+				},
+				"AnchorName": {
+					"Value": "Anchor3"
+				},
+				"ResetTurnInPlace": true
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Stay away from the shady TV{{subst:void|<!--104055103-->}}===
+{{Mission Description|type=continuance|location=Clock Studios Theme Park|update|Would you step on a rainbow-coated interstellar antimatter mine? Likewise, would you go near a TV that's obviously a trap?}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+
+:A frigid force drags you violently back to where you started. And then, a voice you know all too well murmurs by your ear.
+:'''Skott:''' You want to leave after entering Boss Skott's turf? In your dreams!
+:{{Диалог|Стрелка}} I knew it was you.
+:{{Диалог|Стрелка}} Why does it sound like a dog barking?
+:'''Robin:''' Skott? The IPC Specialist who does those bionic voice impressions?
+:'''(Trailblazer):''' Unbelievable. Skott's really made a name for himself, even the acclaimed Robin knows who he is.
+:'''(Trailblazer):''' ...Alright, I'm the one who told her. Can't a {{MC|м=guy|ж=gal}} share a few wild travel stories with {{MC|м=his|ж=her}} friends every now and then?
+:The brief silence that lingers between you was enough to convey every ounce of fury and exasperation from this old acquaintance.
+:See? Always so hasty.
+:The battered TV wobbles, buzzing with static noise. But alas, this is a silent film. You can't hear a single crackle of the snowflakes.
+:{{Диалог|Стрелка}} You're on TV, bro!
+:'''Boothill:''' Seriously? It's not the time for this!
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40448
+}</pre>
+{{Dialogue End}}
+
+===Escape Assassin's Noble Phantasm{{subst:void|<!--104055105-->}}===
+{{Mission Description|type=continuance|location=Clock Studios Theme Park|update|Come now, come and savor this chilling show, crafted just for you &mdash; a silent horror all your own.}}
+{{Dialogue Start}}
+----
+:'''Aventurine:''' Why do actors in horror films never see where the monsters come from? Why do monsters keep popping into the frame as long as the film is rolling?
+:'''Aventurine:''' It's because the true monster is born beyond the set. The director's lens... is the real cradle of terrors.
+:'''Aventurine:''' Your Presence Concealment skill is simply a manifestation of the theatrical rule that characters in the story cannot see the cinematographer filming behind the lens.
+:'''Aventurine:''' But monsters are different. They are the soul of horror films, the focus of the lens. Their line of sight is always fixed on the camera's position. That's why only Skott, the man playing the monster... can see you.
+:'''Grady:''' You win... I concede.
+:'''Grady:''' Having the devil lurking behind the lens and getting real monsters to step into the theater, that was my finest offline marketing campaign ever. Who'd have thought that someone could still see through my tricks hundreds of years in the future?
+:'''Grady:''' How did you do it, friend?
+:'''Aventurine:''' Did I never mention it to you? I'm your fan, Mr. Grady.
+:{{Диалог|Стрелка}} I reserve judgment on your film taste.
+:{{Диалог|Стрелка}} No wonder you know his films so well.
+:{{Диалог|Стрелка}} Wait, weren't you the one who roasted him so hard before?
+:'''Grady:''' A director of flops from centuries ago catching the eye of a big shot from the Strategic Investment Department? Thanks for the compliment, but that was a pretty bad lie from you.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20321_F20321001_G352"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Head to the stage for final battle{{subst:void|<!--104055107-->}}===
+{{Mission Description|type=continuance|location=Clock Studios Theme Park|update|An obvious villain like Old Oti, and Miss Note switching sides? Something tells you this fight won't be a cakewalk.}}
+{{Dialogue Start}}
+
+;(Talk to Boothill)
+----
+:'''Boothill:''' Now that's more like it. Let's move out!
+:{{Диалог|Стрелка}} Let's move out!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Give me a moment.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEventOnDialogEnd",
+					"EventName": {
+						"Value": "G353OpenRaid"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{DIcon|Разговор}} Listen
+:The two acquaintances seem to be talking about the past. Let's not interrupt them for now.
+;(If {{cx}}<!--SubMission not Finish: 104055108-->)
+----
+:'''Saber:''' Do you trust what Grady said?
+:'''Aventurine:''' There's nowhere in Penacony more fitting for a grand finale than the Grand Theater... Mr. Boothill, why are you looking at me like that?
+:'''Boothill:''' Didn't expect someone like you to be that fudger's fan.
+:'''Archer:''' You could say my Master's taste is as tacky as his outfit.
+:'''Aventurine:''' Instead of calling me "Master," a word that brings back dead class structures, I prefer you address me as Mister Aventurine.
+:'''Boothill:''' See, red guy? Those business crooks are all the same. They take everything you throw at them. Insulting them is like punching a cotton fluff ball, ain't no fun at all.
+:'''Archer:''' Then I'll graciously comply, Mr. Aventurine.
+:'''Saber:''' As for the final showdown at the theater, I'm sure that Mr. Oti has already prepared the battleground for us. With the Holy Grail in his possession, he'll be a far more difficult opponent than Grady.
+:'''Saber:''' A siege and warriors assembled to storm the walls. Now, this is starting to feel like a real war.
+:'''Robin:''' I'm going with you. It doesn't matter whether Miss Note is now friend or foe. I will bring her back.
+:{{Диалог|Стрелка}} The princess rescue mission is on!
+:{{Диалог|Стрелка}} Time to gang up on the old man.
+:{{Диалог|Стрелка}} Make Oti pay for our emotional damage.
+:Come to think of it, wasn't there someone else? Not far away, he is slowly slipping away with hushed steps.
+:'''Aventurine:''' Oh, by the way, I think I forgot to ask &mdash; Mr. Boothill, do you know which department Skott's from?
+:Aventurine flashed a grin more sinister than the devil's own, his lips barely moving as he silently mouthed the name of that department. The space cowboy let out a hearty laugh, cracking his knuckles with a sharp snap, a wicked smirk spreading across his face as he strode toward Skott.
+:You hear a cry straight out of a cartoon: over-the-top, full of flair, and surprisingly heartfelt. And you just know for a fact that Skott won't be getting out of that hospital bed anytime soon.
+:But have faith in the medical advances of the cosmic age &mdash; No Skott was irreversibly harmed in the Holy Grail War. Especially not in a dream.
+:'''Boothill:''' Now that's more like it. Let's move out!
+:{{Диалог|Стрелка}} Let's move out!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} Give me a moment.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "G353OpenRaid"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; G353OpenRaid)
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Fate/Back to the Age of Silence
+|zhs  = 命运/重返静默时代
+|zht  = 命運/重返靜默時代
+|ja   = Fate&nbsp;/&nbsp;沈黙の時代への回帰
+|ko   = Fate/침묵의 시대로의 귀환
+|es   = Fate/Retorno a la era del silencio
+|fr   = Fate/Retour à l'ère du silence
+|ru   = Судьба: Возвращение в эпоху молчания
+|th   = Fate/ หวนสู่ยุคแห่งความเงียบงัน
+|vi   = Fate/Trở Lại Thời Đại Tĩnh Lặng
+|de   = Fate/Zurück zur Ära der Stille
+|id   = Fate/Kembali ke Era yang Sunyi
+|pt   = Fate/Retorno à Era do Silêncio
+}}
+
+==Change History==
+{{Change History|3.5}}

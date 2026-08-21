@@ -1,0 +1,1260 @@
+<%-- [PAGE_INFO]
+PageTitle=#Passages, Knocking Echoes in Dreams#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040208
+|title         = 
+|image         = <!--Mission Passages, Knocking Echoes in Dreams.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = [[Trailblaze Mission]] ''[[Memories, Veiled in Blazing Mist]]'' completed
+|summary       = A Kremnoan named Krateros abducted Trinnon in an attempt to undergo the Strife trial, but ultimately failed and was apprehended on the spot by Aglaea. Tribbie and Trinnon, understanding Krateros' impatience, decided to use Oronyx's power to restore Krateros' memories from ages past. Perhaps affected by Krateros' unease, Tribbie experienced a nightmare, recalling her own past once more. Upon waking, the three resolved to venture into the Abyss of Fate to seek Oronyx, only to encounter the Flame Reaver there. At the cost of exhausting her divine power, Trianne sent Tribbie and Trinnon away from the battlefield.
+|characters    = Aglaea; Castorice; Hyacine; Mydei; Phainon; Trailblazer; Trianne; Tribbie; Trinnon
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = Memories, Veiled in Blazing Mist
+|next          = Nemesis, Scorched by Golden Blood
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Refined Aether*4; Lost Crystal*4; Celestial Ambrosia*200; Credit*80 000
+}}
+'''''Passages, Knocking Echoes in Dreams''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Fall asleep and enter Tribbie's dream
+# Fall asleep and continue Tribbie's dream
+# Speak with Aglaea
+# Observe Phainon conversing with Anaxa
+# Have an audience with Oronyx and regain memories
+# Find "saffron" and have an audience with Oronyx
+# Follow Trianne and look for "saffron"
+# Read the letter Trianne found
+# Continue following Trianne and look for "saffron"
+# Investigate the dolium Trianne found
+# Have an audience with Oronyx and try to convince them
+# Keep observing Phainon conversing with Anaxa
+# Look for Oronyx
+# Follow Trianne and look for "saffron"
+# Continue following Trianne and look for "saffron"
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Fall asleep and enter Tribbie's dream{{subst:void|<!--104020820-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|A dream carries '''us''' back to memories long faded by time, and this dream mirrors the profound fears within '''our''' hearts.}}
+{{Dialogue Start}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40412
+}</pre>
+{{Dialogue End}}
+
+===Fall asleep and continue Tribbie's dream{{subst:void|<!--104020821-->}}===
+{{Dialogue Start}}
+
+;(Talk to Enter Dreams)
+
+{{Dialogue End}}
+
+===Speak with Aglaea{{subst:void|<!--104020819-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": []
+}</pre>
+{{Dialogue End}}
+
+===Observe Phainon conversing with Anaxa{{subst:void|<!--104020816-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|Phainon finds the confined Anaxa, apparently not just for catching up.}}
+{{Dialogue Start}}
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Dialogue End}}
+
+===Have an audience with Oronyx and regain memories{{subst:void|<!--104020801-->}}===
+{{Mission Description|type=trailblaze|location="Abyss of Fate" Janusopolis|update|To replicate memories and fulfill the promise to Krateros, '''we''' quietly visit the Abyss of Fate, searching for objects that have witnessed those years.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:'''Aglaea:''' "It's a dead end ahead &mdash; turn back, teacher."
+:'''Tribbie:''' What, Agy? No, it's an illusion!
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020802,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1040208-2}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+::<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+----
+:Some time later, in Abyss of Fate
+:'''Tribbie:''' Ugh...
+:'''Tribbie:''' Where am I...
+:'''Tribbie:''' Little Gray? Snowy? And...
+:'''Tribbie:''' Wait... where's Trianne? Is she back?
+:'''Phainon:''' We only saw the two of you collapsed on the side of the road when we arrived...
+:'''Hyacine:''' Dannie and I looked around, but we couldn't find any traces of Lady Trianne...
+:'''Trinnon:''' What about the black-robed swordmaster?
+:'''Phainon:''' ...Blast it! Of course it's them!
+:'''Phainon:''' We were still too late. I fear something bad has happened to {{Rubi|Oronyx's|Time Titan}} Coreflame.
+:'''Hyacine:''' Then, Lady Trianne...
+:'''Tribbie:''' She doesn't have much divine power left. We can barely sense anything...
+:{{Диалог|Стрелка}} We need to go after that black-robed swordmaster.
+:{{Диалог|Стрелка}} Trianne... I have a bad feeling about this.
+:'''Phainon:''' That you're both safe is already a blessing.
+:{{tx}}
+{{Dialogue End}}
+
+===Find "saffron" and have an audience with Oronyx{{subst:void|<!--104020809-->}}===
+{{Dialogue Start}}
+;(If {{F|FSV_UnlockEraSwitchProp}} is undefined 1)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":73}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300001}}}},"State":"Open","Inverse":true}-->}})
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 73
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G158"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+:'''Tribbie:''' Let's be on the lookout as we go.
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:'''Mydei:''' "Even if separation is our fate, a futile death is not the solution."
+:'''Tribbie:''' It appeared again...
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020803,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1040208-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+{{Dialogue End}}
+
+===Follow Trianne and look for "saffron"{{subst:void|<!--104020810-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G159)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 159,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"SpeedScale": 1.5,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 202
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300001
+							}
+						}
+					}
+				]
+			},
+			"EnableSteer": true,
+			"TurnBackOnGraphEnd": false
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104020810
+		}
+	],
+	"PathOffset": []
+}</pre>
+:'''Trianne:''' Over here! Follow Trianne&mdash;
+:'''Tribbie:''' Trianne... Slow down...
+{{Dialogue End}}
+
+===Read the letter Trianne found{{subst:void|<!--104020812-->}}===
+{{Dialogue Start}}
+
+;(Talk to Investigate)
+----
+:'''Trianne:''' Right here! "I summon thee, Oronyx! Stir up ripples of past reverie!"
+:'''Trianne:''' ...Something's appeared!
+:'''Trinnon:''' Wait, '''we''' should read it first...
+<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190803
+		}
+	}
+}</pre>
+:'''Trinnon:''' Wait, this is... a letter? It mentions something about "saffron" and... "Tribios"?
+:'''Tribbie:''' Isn't that name...
+:'''Tribbie:''' ...Never mind that for now. Why is this letter here? And how did Trianne sense it?
+:'''Tribbie:''' Could it be... '''our''' lost memories?
+:'''Trinnon:''' Is it possible that '''we''' were already noticed by {{Rubi|Oronyx|Time Titan}} and entered their trial?
+:'''Tribbie:''' But why haven't they said a word?
+:'''Trinnon:''' {{Rubi|Oronyx|Time Titan}} has the whims of a child. Perhaps... they're toying with '''us''' on purpose.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G160"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:'''Castorice:''' "Separation and death are two sides of the same coin..."
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"IsHide": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:'''Castorice:''' "Reconciliation doesn't come easily for a mortal."
+:'''Tribbie:''' Are these visions also fragments of the past?
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104020804,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|MissionCV-1040208-1}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_childsDream_ghostCorridor_light"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"IsHide": true
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+{{Dialogue End}}
+
+===Continue following Trianne and look for "saffron"{{subst:void|<!--104020813-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 161,
+	"PathwayID": 1,
+	"MotionFlag": "FastRun",
+	"SpeedScale": 6.6,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvEntityFaceTo",
+			"SourceType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001
+				]
+			},
+			"TargetType": {
+				"$type": "RPG.GameCore.TargetFetchAdvProp",
+				"MultiGroupFetch": [
+					{
+						"GroupID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 202
+							}
+						},
+						"ID": {
+							"IsDynamic": false,
+							"FixedValue": {
+								"Value": 300002
+							}
+						}
+					}
+				]
+			},
+			"EnableSteer": true,
+			"TurnBackOnGraphEnd": false
+		},
+		{
+			"$type": "RPG.GameCore.ClientFinishMission",
+			"SubmissionID": 104020813
+		}
+	],
+	"PathOffset": []
+}</pre>
+:'''Tribbie:''' Come on... This isn't the right time to be playing games.
+{{Dialogue End}}
+
+===Investigate the dolium Trianne found{{subst:void|<!--104020815-->}}===
+{{Dialogue Start}}
+
+;(Talk to Investigate)
+----
+:'''Trianne:''' Tribbie! Trinnon! Look what I found! Is this the "safari"?
+:'''Tribbie:''' Coming! '''We&ast;'''ll take a look...
+:'''Tribbie:''' ...But Trianne, there's nothing in here.
+:'''Trianne:''' What? It was right in this dolium...
+:'''Trianne:''' Huh? There's really nothing here? That can't be! I swear I saw it...
+:'''Tribbie:''' ...
+:'''Trianne:''' I swear! Trianne is telling the truth! It was right there &mdash; where did it go?
+:'''Trianne:''' Trinnon, Tribbie, why aren't you saying anything? Trianne can't seem to hear '''you''' at all...
+:'''Trinnon:''' ...'''We''' were just lost in '''our''' thoughts. Don't worry, Trianne.
+:'''Trinnon:''' What you saw was likely a Janus hare. '''We''' must have startled it away.
+:'''Trianne:''' ...Okay.
+:'''Tribbie:''' Could {{Rubi|Oronyx|Time Titan}} be trying to make '''us''' falter? But why would they do that?
+:'''Trinnon:''' Something feels off... Tribbie, don't you think the temple is a little too quiet?
+:'''Tribbie:''' What do you mean?
+:'''Trinnon:''' It might just be an illusion, but Trinnon wonders...
+:'''Trinnon:''' Is {{Rubi|Oronyx|Time Titan}}... really putting '''us''' through a trial?
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20412_F20412001_G162"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Have an audience with Oronyx and try to convince them{{subst:void|<!--104020805-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Trianne:''' Ugh, still no luck finding any "safari"...
+:'''Tribbie:''' I suppose '''we''' can do without it... Let's try to convince {{Rubi|Oronyx|Time Titan}}.
+:'''Tribbie:''' At least they didn't toss '''us''' out straight away.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Trianne:''' It's really quiet in here! Do all Titans live in dark places like this?
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003,
+			300004,
+			300005,
+			300006,
+			300008,
+			300009,
+			300010,
+			300011,
+			300012,
+			300013,
+			300014,
+			300015,
+			300016,
+			300017,
+			300018,
+			300019,
+			300020,
+			300021,
+			300022,
+			300023,
+			300025,
+			300026,
+			300027,
+			300028,
+			300029,
+			300030,
+			300031,
+			300032,
+			300033,
+			300034,
+			300035,
+			300036,
+			300037,
+			300038,
+			300039,
+			300040,
+			300041,
+			300042,
+			300043,
+			300044,
+			300045,
+			300046,
+			300047,
+			300048,
+			300049,
+			300050,
+			300051,
+			300052,
+			300053,
+			300054,
+			300055,
+			300056,
+			300057,
+			300058,
+			300059,
+			300060,
+			300061,
+			300062,
+			300063
+		]
+	},
+	"IsHide": true
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 1,
+	"Rate": 0,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003,
+			300004,
+			300005,
+			300006,
+			300008,
+			300009,
+			300010,
+			300013,
+			300014,
+			300015,
+			300025,
+			300026,
+			300027,
+			300033,
+			300034,
+			300035,
+			300036,
+			300037,
+			300038,
+			300039,
+			300040,
+			300041,
+			300042,
+			300043,
+			300044,
+			300045,
+			300046,
+			300047,
+			300048,
+			300049,
+			300050,
+			300051,
+			300052,
+			300053,
+			300054,
+			300055,
+			300056
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+:'''Trianne:''' Wow! Tribbie! Trinnon! Look at this! So cool!
+:'''Trianne:''' There are... so many of '''us''' now!
+:'''Tribbie:''' Trianne...
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_310dev_cryflash"
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.HideEntityV2",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300011,
+			300012,
+			300016,
+			300017,
+			300018,
+			300019,
+			300020,
+			300021,
+			300022,
+			300023,
+			300028,
+			300029,
+			300030,
+			300031,
+			300032,
+			300057,
+			300058,
+			300059,
+			300060,
+			300061,
+			300062,
+			300063
+		]
+	}
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.8,
+	"Rate": 0.8,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:<!--0.05-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0.9,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare_Alter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/TribbieNightmare.asset"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Dialogue End}}
+
+===Keep observing Phainon conversing with Anaxa{{subst:void|<!--104020817-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|Phainon finds the confined Anaxa, apparently not just for catching up.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Dialogue End}}
+
+===Look for Oronyx{{subst:void|<!--104020818-->}}===
+{{Mission Description|type=trailblaze|location="Abyss of Fate" Janusopolis|update|To replicate memories and fulfill the promise to Krateros, '''we''' quietly visit the Abyss of Fate, searching for objects that have witnessed those years.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+:----
+:----
+:;([[#Gallery|Cutscene]] plays)
+:::Fly!
+:::Trianne?
+:::Tribbie...
+:::See you tomorrow.
+:;(Cutscene ends)
+:----
+{{Dialogue End}}
+
+===Follow Trianne and look for "saffron"{{subst:void|<!--104020811-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Continue following Trianne and look for "saffron"{{subst:void|<!--104020814-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Passages, Knocking Echoes in Dreams
+|zhs  = 门扉啊，叩声仍激荡梦中
+|zht  = 門扉啊，叩聲仍激盪夢中
+|ja   = 扉よ、夢の中の叩く音はやまず
+|ko   = 문이여, 두드리는 소리가 여전히 꿈속을 격동시키는구나
+|es   = Portales, ecos que llaman en sueños
+|fr   = Passage vers les rêves du passé
+|ru   = О врата, раздающийся эхом стук во снах
+|th   = ประตูเอ๋ย เสียงเคาะยังดังก้องอยู่ในฝัน
+|vi   = Hỡi Cánh Cổng, Tiếng Gõ Vẫn Vang Vọng Trong Mơ
+|de   = O Tore, lasst das Klopfen in Träumen widerhallen
+|id   = Pintu, Ketukan Masih Menggema dalam Mimpi
+|pt   = Passagens, Ecos Batendo em Sonhos
+}}
+
+==Change History==
+{{Change History|3.5}}

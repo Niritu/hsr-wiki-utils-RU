@@ -11,13 +11,13 @@ PageTitle=#Чашелист (багровый): Бутон Гармонии#
 |Глава           = 
 |Условия         = Завершена [[Миссия Освоения]] «[[Испытание Равновесия I]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Ярило-VI]] — [[Поселение роботов]]
-|Мир             = Ярило-VI
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = ???
 |Награды         = 
 }}
-'''Чашелист (багровый): Бутон Гармонии''' — [[Миссия приключения]] в [[Ярило-VI]].
+'''Чашелист (багровый): Бутон Гармонии''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -27,82 +27,7 @@ PageTitle=#Чашелист (багровый): Бутон Гармонии#
 
 ==Прохождение==
 {{Дополнить}}
-<pre>{
-	"$type": "RPG.GameCore.PropTriggerAnimState",
-	"AnimStateName": "Hidden",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 24
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300001
-				}
-			}
-		}
-	}
-}</pre>
-----
-<pre>{
-	"$type": "RPG.GameCore.PropTriggerAnimState",
-	"AnimStateName": "Appear",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 24
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300001
-				}
-			}
-		}
-	}
-}</pre>
-:<!--2-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.AdvEnablePropDialogMode",
-	"EnablePropCamera": false,
-	"LockPlayerControl": false,
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 24
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300001
-				}
-			}
-		}
-	}
-}</pre>
-:'''(Первопроходец):''' (Это ещё один Чашелист, но он отличается от тех, что мне попадались раньше...)
-:'''(Первопроходец):''' (Стоит ещё раз написать господину Вельту.)
-<pre>{
-	"$type": "RPG.GameCore.PlayMessage",
-	"MessageSectionID": 1151000,
-	"ShowNotice": false
-}</pre>
+
 {{Диалог Конец}}
 
 ==На других языках==

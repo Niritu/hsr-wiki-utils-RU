@@ -11,13 +11,13 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия Освоения]] «[[Неисчезающие тени]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Зона хранения]]
-|Мир             = Космическая станция «Герта»
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Гертариумы*20; Кредиты*5 000
 }}
-'''''' — [[Миссия приключения]] в [[Космическая станция «Герта»]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -27,42 +27,7 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-:<!--0.25-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.PropSetupUITrigger",
-	"ButtonIcon": "SpriteOutput/TalkIcon/CheckIcon.png",
-	"IconType": "CheckIcon",
-	"ButtonText": {
-		"Hash": 16304550243505668348
-	},
-	"ButtonCallback": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "Mission_404000301_Prop_62_300003_BtnClick"
-			}
-		}
-	],
-	"OverrideTargetTypes": [],
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
-		"FetchType": "SinglePropByPropID",
-		"SinglePropID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 62
-				}
-			},
-			"ID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 300003
-				}
-			}
-		}
-	}
-}</pre>
+
 {{Диалог Конец}}
 
 ==На других языках==

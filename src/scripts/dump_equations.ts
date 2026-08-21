@@ -53,28 +53,28 @@ for (const equation of equations) {
         pageInfoHeader(equation.name),
     ];
     if (!equation.active) {
-        output.push('{{Удалено|Уравнение было выведено из игры с обновлением Расходящейся вселенной в [[Версия/3.1|версии 3.1]].}}');
+        output.push('{{Удалено|Уравнение было выведено из игры с обновлением Расходящейся вселенной в [[Версия/4.1|версии 4.1]].}}');
     }
     output.push(equation.infobox(), `'''${equation.name}''' — ${equation.rarity == 'boundary' ? `[[Расходящаяся вселенная: ${equation.period_name}/Уравнения|уравнение]] границы` : `${equation.rarity}-звёздочное [[Расходящаяся вселенная: ${equation.period_name}/Уравнения|уравнение]]`}, которое ${equation.active ? 'доступно' : 'было доступно'} в [[Расходящаяся вселенная: ${equation.period_name}|Расходящейся вселенной: ${equation.period_name}]].`, '', '==История==', `{{Описание|${equation.story.replaceAll('\n', '<br />')}}}`, '');
     if (equation.story_json) {
         const dialogue = (await equation.loadDialogue()).optimize();
         output.push('==Возврат развёртывания==', '{{Дополнить}}', '');
     }
-    output.push('==На других языках==', await TextMap.generateOL(equation.name_hash), '', '==История изменений==', `{{История изменений|${(await ChangeHistory.equation.findAdded(equation.id))[0]}}}`, '', '[[en:]]');
+    output.push('==На других языках==', await TextMap.generateOL(equation.name_hash), '', '==История изменений==', `{{История изменений|4.1}}`, '', '[[en:]]');
     writeFileSync(`./output/equations/${equation.period}/${equation.rarity}/${sanitizeString(equation.name)}-${equation.id}.wikitext`, output.join('\n'));
 }
 
 output2.push('==Благословения==')
-addBlessingPath('Preservation', 'Сохранение')
+//addBlessingPath('Preservation', 'Сохранение')
 addBlessingPath('Remembrance', 'Память')
 addBlessingPath('Nihility', 'Небытие')
-addBlessingPath('Abundance', 'Изобилие')
+//addBlessingPath('Abundance', 'Изобилие')
 addBlessingPath('TheHunt', 'Охота')
 addBlessingPath('Destruction', 'Разрушение')
 addBlessingPath('Elation', 'Радость')
 addBlessingPath('Propagation', 'Распространение')
 addBlessingPath('Erudition', 'Эрудиция')
-// addBlessingPath('Harmony')
+addBlessingPath('Harmony', 'Гармония')
 output.push('==Справочник==');
 output2.push('==Справочник==');
 const traits = [...glossary.values()].map(id => Equation.getExtraEffect(id)).sort((a, b) => {
@@ -113,8 +113,8 @@ for (const trait of traits2) {
     )
 }
 
-output.push('==История изменений==', '{{История изменений|2.3}}', '', '[[en:]]');
-output2.push('==История изменений==', '{{История изменений|2.3}}', '', '[[en:]]');
+output.push('==История изменений==', '{{История изменений|4.1}}', '', '[[en:]]');
+output2.push('==История изменений==', '{{История изменений|4.1}}', '', '[[en:]]');
 
 await writeFile('./output/du-paths.wikitext', output.join('\n'));
 await writeFile('./output/du-paths2.wikitext', output2.join('\n'));

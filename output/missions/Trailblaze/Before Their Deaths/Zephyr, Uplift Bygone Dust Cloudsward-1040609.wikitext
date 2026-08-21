@@ -1,0 +1,1528 @@
+<%-- [PAGE_INFO]
+PageTitle=#Zephyr, Uplift Bygone Dust Cloudsward#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040609
+|title         = 
+|image         = <!--Mission Zephyr, Uplift Bygone Dust Cloudsward.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Before Their Deaths
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Aglaea; Anaxa; Cipher; Cipher Etched in Memory; Cyrene; Cyrene Etched in Memory; Herta; Hyacine Etched in Memory; Lygus Etched in Memory; Mydei; Mydei Etched in Memory; Trailblazer; Trianne; Tribbie
+|startLocation = [[Amphoreus]] - [[The Holy City Lost to Time]]
+|world         = Amphoreus
+|area          = The Holy City Lost to Time
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Refined Aether*6; Lost Crystal*6; Disorder Ambrosia*240; Credit*80 000
+}}
+'''''Zephyr, Uplift Bygone Dust Cloudsward''''' is a [[Trailblaze Mission]] in the chapter [[Before Their Deaths]].
+
+==Steps==
+# Return to Amphoreus
+# Investigate the anomaly in the spirit basin
+# (Optional) Investigate the Fragments of Recollection here
+# Go forth. Uncover the past long buried in dust
+# Go forth. Etch into memory the chronicles written in blood
+# Go forth. Pursue the shadows shrouded in secrecy
+# Go forth. Witness the fearless feats
+# Go forth. Resume the unfulfilled cause
+# Go forth. Continue the long journey
+# Take the ceremonial blade which carries time's wisdom
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Return to Amphoreus{{subst:void|<!--104060901-->}}===
+{{Mission Description|type=trailblaze|location=The Holy City Lost to Time|Okhema, the last city, was a cradle of countless myths.<br />Once, she was like an innocent nymph, sheltered by law, draped in flowing finery, basking in sky's dawning light. She danced across the earth, listened to the ocean's songs, followed reason's teachings, slipped past suitors' trickery, untouched by strife or death. Through ever more beautiful passages she wandered, and people supported her in her worldbearing...<br />Until time took her joy, her beauty, her life, and more. A skeleton lies quietly in a stone coffin. Yet beneath ribs carved like white jade, her heart hasn't withered.<br />Wipe away the dust from that beautiful heart, and listen... listen to the heartbeat preserved for you.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Investigate the anomaly in the spirit basin{{subst:void|<!--104060902-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+:'''(Trailblazer):''' The Chronocognitive Anchor?
+:'''???:''' There's so much I wanted to say for our reunion, yet now that you're back, there's only one thing to say...
+:'''???:''' Welcome back, (Trailblazer).
+:'''Cyrene:''' It's been such a long, long time.
+:{{Диалог|Стрелка}} Cyrene! I'm so glad you're still here...
+:{{Диалог|Стрелка}} What happened to the world while I was gone?
+:{{Диалог|Стрелка}} I saw March 7th, and she looked really weird.
+:'''Cyrene:''' You must be really confused right now, aren't you, (Trailblazer)? So much has happened in Amphoreus while you were gone.
+:{{tx}}
+{{Dialogue End}}
+
+===(Optional) Investigate the Fragments of Recollection here{{subst:void|<!--104060924-->}}===
+{{Dialogue Start}}
+
+:{{DIcon|Разговор}} Listen
+----
+:'''Herta:''' Hey kiddo, can you see me? Don't bother responding, this is a pre-recorded video message.
+:'''Herta:''' Thanks to that little empress granting access to the Ultimate Protocol, Screwy and I... rewrote the progress of "Era Nova" while you were away.
+:'''Herta:''' My guess is you don't have much time to listen to all those complicated principles right now, so let me break it down into simple terms that anyone can understand...
+:'''Herta:''' Amphoreus has been racing down the Path of Destruction for too long, and the underlying logic of "Era Nova" has been completely corrupted. Screwy and I put in a lot of effort, but we could barely manage to overwrite a small portion of its logic...
+:'''Herta:''' Let's take the progress bar as an example. Irontomb's progress bar is currently at 99.98%, and through this rewritten "Era Nova," we're confident we can push it back to 96%... Hmm, let's be conservative, say 97%.
+:'''Herta:''' This is a critical matter. The internal structure of the Scepter is too unstable, and we don't know what complications might suddenly arise. The most rational course of action is to quickly run another extrapolation to buy the cosmos a bit more time.
+:'''Herta:''' Once you've dealt with that troubling old Intellitron, don't hesitate and start the next cycle of extrapolation right away. Screwy said that "Era Nova" isn't a process that happens in an instant, and the protected nodes of the Scepter are probably at their most vulnerable only during the reset&mdash;
+:'''Herta:''' Only by initiating this progress first can we seize the opportunity to make our move. It's all up to you now, "Deliverer."
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateEntityAsync",
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"IsCreateAllEntityType": true
+		},
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_EntityAsync",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 300002,
+			"SpawnEntityType": "Prop"
+		}
+	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 109
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"Duration": 0.5
+}</pre>
+::<!--0.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyEntityAsync",
+	"NeedDisappear": true,
+	"InstanceIDList": [],
+	"AdvancedSpawnList": [
+		{
+			"InstanceID": 400001
+		}
+	]
+}</pre>
+
+;(Unused &mdash; MissionFinish)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+
+:{{DIcon|Разговор}} Listen
+----
+:'''Herta:''' Hey kiddo, can you see me? Don't bother responding, this is a pre-recorded video message.
+:'''Herta:''' Thanks to that little empress granting access to the Ultimate Protocol, Screwy and I... rewrote the progress of "Era Nova" while you were away.
+:'''Herta:''' My guess is you don't have much time to listen to all those complicated principles right now, so let me break it down into simple terms that anyone can understand...
+:'''Herta:''' Amphoreus has been racing down the Path of Destruction for too long, and the underlying logic of "Era Nova" has been completely corrupted. Screwy and I put in a lot of effort, but we could barely manage to overwrite a small portion of its logic...
+:'''Herta:''' Let's take the progress bar as an example. Irontomb's progress bar is currently at 99.98%, and through this rewritten "Era Nova," we're confident we can push it back to 96%... Hmm, let's be conservative, say 97%.
+:'''Herta:''' This is a critical matter. The internal structure of the Scepter is too unstable, and we don't know what complications might suddenly arise. The most rational course of action is to quickly run another extrapolation to buy the cosmos a bit more time.
+:'''Herta:''' Once you've dealt with that troubling old Intellitron, don't hesitate and start the next cycle of extrapolation right away. Screwy said that "Era Nova" isn't a process that happens in an instant, and the protected nodes of the Scepter are probably at their most vulnerable only during the reset&mdash;
+:'''Herta:''' Only by initiating this progress first can we seize the opportunity to make our move. It's all up to you now, "Deliverer."
+
+;(Unused &mdash; EnterDistrict_G87)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 87,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"AlignRotation": true,
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G88)
+:'''Cyrene:''' Look, the scenery of the past... has resurfaced.
+{{Dialogue End}}
+
+===Go forth. Uncover the past long buried in dust{{subst:void|<!--104060926-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G112)
+:<!--1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 112,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"OnReach": []
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ParallelConfig",
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104060926
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400001
+						]
+					},
+					"Duration": 2
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400001
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		}
+	]
+}</pre>
+:'''(Trailblazer):''' (Cyrene... can't hear me?)
+
+;(Unused &mdash; EnterDistrict_G89)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 89,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G90)
+:'''Lygus Etched in Memory:''' The "Eternal Holy City"... What part of that eternity ever lived up to its descriptions in poetry?
+{{Dialogue End}}
+
+===Go forth. Etch into memory the chronicles written in blood{{subst:void|<!--104060927-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+:'''Cyrene:''' Come, (Trailblazer)... This way.
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ParallelConfig",
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104060927
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.AdvSetAIMoveTo",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400001
+						]
+					},
+					"GroupId": 113,
+					"PointID": 1,
+					"MotionFlag": "Walk"
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G91)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 91,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G92)
+:'''Cipher Etched in Memory:''' So what you're saying is... Princess Homebody... is never coming back, is she?
+{{Dialogue End}}
+
+===Go forth. Pursue the shadows shrouded in secrecy{{subst:void|<!--104060928-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--0.5-second delay-->
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<!--1-second delay-->
+:'''Aglaea:''' Go forth, Deliverer.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 2
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ParallelConfig",
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.PlayMissionTalk",
+					"SimpleTalkList": [
+						{
+							"TalkSentenceID": 146081006,
+							"ProtectTime": 2
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 9
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400001
+						]
+					},
+					"Duration": 2,
+					"EnableMultiTargets": true
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400001
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 3.5
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400006,
+							400007,
+							400008,
+							400009
+						]
+					},
+					"Duration": 2,
+					"EnableMultiTargets": true
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400006,
+							400007,
+							400008,
+							400009
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 5
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400002,
+							400003,
+							400010,
+							400011,
+							400013
+						]
+					},
+					"Duration": 2,
+					"EnableMultiTargets": true
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400002,
+							400003,
+							400010,
+							400011,
+							400013
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 6.5
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400005,
+							400012
+						]
+					},
+					"Duration": 2,
+					"EnableMultiTargets": true
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400005,
+							400012
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SequenceConfig",
+			"TaskList": [
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 8
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400004
+						]
+					},
+					"Duration": 2,
+					"EnableMultiTargets": true
+				},
+				{
+					"$type": "RPG.GameCore.WaitSecond",
+					"WaitTime": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 2
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.SetEntityVisible",
+					"TargetType": {
+						"$type": "RPG.GameCore.GroupFetchLocalTarget",
+						"Targets": [
+							400004
+						]
+					},
+					"MuteTriggerWhenInvisible": true,
+					"SetAudio": true
+				}
+			]
+		}
+	]
+}</pre>
+:<!--1.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 115,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G93)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 93,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G94)
+:'''Mydei Etched in Memory:''' If breaking me apart buys this world even one more second... Then so be it.
+{{Dialogue End}}
+
+===Go forth. Witness the fearless feats{{subst:void|<!--104060930-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Tribbie:''' Go on... and see you tomorrow!
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"Duration": 2,
+	"EnableMultiTargets": true
+}</pre>
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G95)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 95,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G96)
+:'''Cipher Etched in Memory:''' That seamstress wasn't wrong when she said a lie needs more lies to keep it together...
+{{Dialogue End}}
+
+===Go forth. Resume the unfulfilled cause{{subst:void|<!--104060931-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:<!--0.5-second delay-->
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict1_G117)
+
+
+;(Unused &mdash; EnterDistrict2_G117)
+
+
+;(Unused &mdash; EnterDistrict3_G117)
+:'''Mydei:''' Keep moving forward. My blood will pave the road ahead for you.
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002,
+			400003,
+			400004,
+			400005,
+			400006,
+			400007
+		]
+	},
+	"Duration": 2,
+	"EnableMultiTargets": true
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002,
+			400003,
+			400004,
+			400005,
+			400006,
+			400007
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
+	"SourceType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 117,
+	"PointID": 1
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G118)
+:'''Trianne:''' Keep moving forward. Little Gray, see you tomorrow!
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 2
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvEntityFaceToPoint",
+	"SourceType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 118,
+	"PointID": 1
+}</pre>
+::<!--0.5-second delay-->
+
+;(Unused &mdash; EnterDistrict_G97)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 97,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G98)
+:'''Hyacine Etched in Memory:''' Cyrie... It's dead quiet here...
+{{Dialogue End}}
+
+===Go forth. Continue the long journey{{subst:void|<!--104060933-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionOpen)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"Visible": true,
+	"SetAudio": true
+}</pre>
+
+;(Unused &mdash; Puzzle2LG_OnMemoryVisionClose)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"SetAudio": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"SetAudio": true
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+:'''Anaxa:''' Go forth. Finish the greatness left undone.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;(If {{F|Loc_CipherAppeared}} is undefined 1)
+::'''Cipher:''' Quit overthinking! Just run. Keep running, and that'll be enough!
+:<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"Duration": 2,
+	"EnableMultiTargets": true
+}</pre>
+::<!--2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+;(If {{F|Loc_CipherAppeared}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.WaitGraphDynamicValueChange",
+	"Name": "Loc_CipherAppeared",
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+		"Name": "Loc_CipherAppeared",
+		"Value": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	},
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 146081014,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.WaitMissionTalkFinish"
+		},
+		{
+			"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001,
+					400002
+				]
+			},
+			"Duration": 2,
+			"EnableMultiTargets": true
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 2
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.SetEntityVisible",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"Targets": [
+					400001,
+					400002
+				]
+			},
+			"MuteTriggerWhenInvisible": true,
+			"SetAudio": true
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"Visible": true,
+	"MuteTriggerWhenInvisible": true,
+	"SetAudio": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001,
+			400002
+		]
+	},
+	"TargetValue": 0.99,
+	"Duration": 2,
+	"EnableMultiTargets": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAIMoveTo",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"GroupId": 119,
+	"PointID": 1,
+	"MotionFlag": "Walk",
+	"FinishAfterStop": true
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Loc_CipherAppeared",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_FlyingPig"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+----
+:'''Cyrene:''' I'll tell you the story of this thousand-year journey. That way, it won't just be my memories alone.
+:'''Cyrene:''' And I'll share the moments I spent with (Trailblazer) with everyone. That way, the path we walked becomes a memory shared by all.
+:'''Cyrene:''' People will know that there's nothing left to chase. Amphoreus has already welcomed the {{Rubi|dawn|Deliverer beyond the sky}} foretold in prophecy.
+:'''Cyrene:''' Just like I said, this should be easier than last time, right?
+:{{Диалог|Стрелка}} Thank you. You've all sacrificed so much.
+:{{Диалог|Стрелка}} Sorry I'm late...
+:{{Диалог|Стрелка}} I won't let everyone's faith in me go to waste.
+:'''Cyrene:''' I wonder what kind of expression is (Trailblazer) is wearing right now? Probably the same as always: calm, resolute, and brimming with confidence.
+:'''Cyrene:''' If I have the chance... I'd love to see it again.
+:'''Cyrene:''' Because... it's really been far too long since we parted.
+:{{Диалог|Стрелка}} Cyrene... even you...
+:{{Диалог|Стрелка}} Is this... all a memory?
+:'''Cyrene:''' Someone as sharp as (Trailblazer) must've realized by now that this isn't reality, but a maze of Time.
+:'''Cyrene:''' As the last link in the relay, I will return to the Temple of the Three Fates, tell Oronyx all of our stories, and bottle every page we've written into the little flask of "memories"...
+:'''Cyrene:''' And then... may it set sail in peace... Drift down the river of time along with the Coreflame of Worldbearing, reach (Trailblazer)'s side, and lead you back to Amphoreus.
+:'''Cyrene:''' Just like the first time we met, right?
+:'''Cyrene:''' Even though this cycle has no demigod of Time, Time has always stood on humanity's side.
+:'''Cyrene:''' This is the only way to make sure that the "Era Nova" won't happen before (Trailblazer) returns...
+:'''Cyrene:''' And the only way I can safely entrust the completed final Flame-Chase Journey to the Deliverer's heart.
+:'''Cyrene:''' After all, the new world will be born from your "memories," and the protagonist of this story... mustn't be absent.
+:{{Диалог|Стрелка}} As promised, I'm back.
+:{{Диалог|Стрелка}} Let's go. It's time to complete the "Era Nova."
+:{{Диалог|Стрелка}} I will take all of you to the new world.
+:'''Cyrene:''' I believe (Trailblazer) will never let us down... just like always.
+:{{tx}}
+{{Dialogue End}}
+
+===Take the ceremonial blade which carries time's wisdom{{subst:void|<!--104060910-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G86)
+:'''Hyacine Etched in Memory:''' The last baton... I wonder how long you'll have to wait before passing it on to (Trailblazer)?
+::'''Cyrene Etched in Memory:''' No matter how long it takes, it's okay. Waiting is what I do best.
+::'''Cyrene Etched in Memory:''' After all, it took 33 million cycles for (Trailblazer) to arrive in our world... What's a few moments more?
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Zephyr, Uplift Bygone Dust Cloudsward
+|zhs  = 归风啊，席卷旧尘登云天
+|zht  = 歸風啊，席捲舊塵登雲天
+|ja   = 帰る風よ、旧き塵と共に空へ舞え
+|ko   = 돌아오는 바람이여, 옛 먼지 쓸어 구름 위로 올라가다오
+|es   = Céfiro, barre el polvo y asciende a los cielos
+|fr   = Zéphyr, balaie la poussière vers les cieux
+|ru   = О вернувшийся ветер, вознеси пыль прошлого
+|th   = ลมหวนเอ๋ย โปรดพัดธุลีในวันวานสู่หมู่เมฆ
+|vi   = Hỡi Ngọn Gió Trở Về, Hãy Cuốn Bụi Xưa Lên Trời Mây
+|de   = O Zephir, heb vergangenen Staub gen Himmel
+|id   = Angin yang Kembali, Hembuskan Debu Lama Menuju Awan
+|pt   = Ó Zéfiro, Eleva o Pó do Passado Rumo às Nuvens
+}}
+
+==Change History==
+{{Change History|3.5}}

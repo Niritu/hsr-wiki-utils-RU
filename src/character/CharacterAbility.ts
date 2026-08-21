@@ -99,14 +99,19 @@ export class CharacterAbility {
 		
 		const maxLevelData = data.find(data => data.Level == Math.min(abilityMaxLevels[this.type], data.MaxLevel))
 		
+		// Исправление: если maxLevelData не найден, используем последний элемент данных
+		let effectiveMaxLevelData = maxLevelData;
 		if (!maxLevelData) {
-			throw new Error(`Missing max level scaling data for "${this.name}"`)
+			console.warn(`Missing max level scaling data for "${this.name}", using last available level data`);
+			effectiveMaxLevelData = data[data.length - 1];
 		}
 		
 		this.params_by_attribute = firstData.ParamList.map((_val, i) => data.map(lv => lv.ParamList[i].Value))
 		this.params_by_level = data.map(lv => lv.ParamList.map(param => param.Value))
 		
-		const minMaxParams: [number, number][] = firstData.ParamList.map((val, i) => [val.Value, maxLevelData.ParamList[i].Value])
+		const minMaxParams: [number, number][] = firstData.ParamList.map((val, i) => 
+			[val.Value, effectiveMaxLevelData.ParamList[i].Value]
+		)
 		
 		this.extra_effect_ids = firstData.ExtraEffectIDList
 		this.description_hash = firstData.SkillDesc

@@ -1,0 +1,704 @@
+<%-- [PAGE_INFO]
+PageTitle=#О веретено, ткущее нить времени#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040301
+|title         = Spindle, Laboring to Weave the Tapestry of Time
+|image         = <!--Mission О веретено, ткущее нить времени.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Through the Petals in the Land of Repose
+|requirements  = [[Trailblaze Mission]] ''[[Passage, Reveal the Past Once More]]'' completed
+|summary       = It's been some time since you repelled the Flame Reaver and reclaimed the Coreflame of {{Rubi|Oronyx|Time Titan}}. Now, you've been invited by the Chrysos Heirs to challenge the Trial of Time. But this trial lies not in the past or present &mdash; it dwells in the future. You've been told that you actually perished during your fall into Amphoreus, and what remains is merely a walking memory. To complete the trial and save yourself, you must reclaim your future.
+|characters    = Aglaea; Castorice; Dan Heng; Mem; Oronyx; Phainon; Sound of Oronyx; Trailblazer; Tribbie; Trinnon
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = Passage, Reveal the Past Once More
+|next          = Olive, Cast to the Conference Chair
+|rewards       = Trailblaze EXP*1 300; Stellar Jade*160; Traveler's Guide*9; Lost Crystal*9; Celestial Ambrosia*320; Credit*100 000
+}}
+'''''Spindle, Laboring to Weave the Tapestry of Time''''' is a [[Trailblaze Mission]] in the chapter [[Through the Petals in the Land of Repose]].
+
+==Steps==
+# Head to the Garden of Life and discuss what to do next with the Chrysos Heirs
+# Speak to Castorice and Aglaea
+# Speak to Castorice
+# Head to the private bath chamber and speak with Dan Heng
+# Rest up and prepare to face the trial
+# Head to the Vortex of Genesis
+# Speak with Trinnon
+# Submit Coreflame
+# Speak with the Chrysos Heirs near the vortex
+# Awaken during the trial and speak to Mem
+# Speak with Oronyx
+# Wake up in the private bath chamber
+# Head to the Garden of Life and consult Castorice
+# Discuss your next steps with Aglaea and the others
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to the Garden of Life and discuss what to do next with the Chrysos Heirs{{subst:void|<!--104030101-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|An unexpected encounter with the Flame Reaver led to the premature extraction of Oronyx's Coreflame. The Chrysos Heirs hope that (Trailblazer) will take on the divine role of Time.<br />Trailblazers always face moments like this, where their fate becomes deeply entwined with that of others... Yet only (Trailblazer) can decide where {{MC|ж=her|м=his}} destiny leads.}}
+{{Dialogue Start}}
+
+:{{DIcon|undefined}} Investigate
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10401_F10401001_G697"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+{{Dialogue End}}
+
+===Speak to Castorice and Aglaea{{subst:void|<!--104030102-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+----
+:'''Aglaea:''' You're here, (Trailblazer).
+:'''Aglaea:''' Does this mean you're ready to take on {{Rubi|Oronyx|Time Titan}}'s trial?
+:{{Диалог|Стрелка}} WE are ready, Mem and me.
+::'''Aglaea:''' Mmm, it seems that this sacred beast is just as indispensable, given their intricate ties to the Titan.
+::I'm still on the fence...
+:{{Диалог|Стрелка}} I'm still on the fence...
+:'''Aglaea:''' I understand. It was the sacred beast's idea, after all. However, it warrants careful consideration, given their intricate ties to the Titan.
+:'''Mem:''' Hehe, thanks to you, I've evolved from a little dog into a sacred beast!
+:'''Aglaea:''' Surrendering the Coreflame is a Chrysos Heir's duty. Your selfless assistance is deeply appreciated.
+:'''Aglaea:''' However, I urge you to carefully consider the risks of accepting the trial: Becoming a demigod means forsaking your humanity. You will inherit Oronyx's divinity and bear the Time of Amphoreus, all on your own.
+:'''Aglaea:''' From that point onward, your fate will be forever intertwined with ours, never to be separated again &mdash; until the end of Genesis.
+:{{Диалог|Стрелка}} Are you trying to talk me out of it?
+::'''Aglaea:''' On the contrary, you are the only one who qualifies to attain divinity. Yet, for that very reason, I do not wish to pressure you.
+::{{Диалог|Стрелка}} Is there a plan B?
+:{{Диалог|Стрелка}} Is there a plan B?
+:'''Aglaea:''' It's exceedingly rare to find a capable Chrysos Heir. If this path proves unattainable, I am willing to lower my expectations.
+:'''Aglaea:''' There are still many priests of Janusopolis and their descendants in the city. If I'm left with no other option, I'll try to find someone worthy among them.
+:{{Диалог|Стрелка}} Seems like a shot in the dark.
+::'''Mem:''' Exactly! We can't have the civilians bear the risks, can we?
+::If I do not descend into hell, who will?
+::'''Mem:''' Don't worry! With me by your side, even if things go south, you'll be heading straight to heaven!
+::Alright, that's it. I am out&mdash;
+:{{Диалог|Стрелка}} If I do not descend into hell, who will?
+::'''Mem:''' Don't worry! With me by your side, even if things go south, you'll be heading straight to heaven!
+::Alright, that's it. I am out&mdash;
+:{{Диалог|Стрелка}} Alright, that's it. I am out&mdash;
+:'''Mem:''' Don't give up now, (Trailblazer)!
+:'''Mem:''' We've come so far, and everyone is counting on you to be the hero!
+:'''Mem:''' As for the trial, you have nothing to fear... The Time Titan may be willful at times, but they never caused us any harm.
+:'''Mem:''' Myth has it that {{Rubi|Oronyx|Time Titan}} opposes mortals, but to me, they just seem a bit timid... like a child.
+:'''Aglaea:''' It looks like you know that Titan rather well.
+:'''Mem:''' Oddly enough, I don't remember ever meeting them, but the moment I saw (Trailblazer), {{Rubi|Oronyx|Time Titan}}'s memories were already in my head.
+:'''Aglaea:''' ...Memories that exist outside of your own experiences?
+:'''Castorice:''' I can't explain why, but I can vouch for Mem's words. When I was in the Abyss, I heard the Titan's groans &mdash; full of pain and grievances, yet without any ill will.
+:{{Диалог|Стрелка}} I trust you all to make the right call.
+:{{Диалог|Стрелка}} Do I even have any say in this?
+::'''Mem:''' Please, trust me on this. At the very least... can you speak with them in person?
+::'''Mem:''' I get the feeling that if we don't meet {{Rubi|Oronyx|Time Titan}}, we'll be missing out on something huge!
+::{{Диалог|Стрелка}} I trust you to make the right call.
+::{{Диалог|Стрелка}} Looks like there's no other way.
+:'''Aglaea:''' Since you've made your decision, go back to the bath chamber and get some rest. Trinnon will call for you when the ceremony is ready.
+:{{tx}}
+{{Dialogue End}}
+
+===Speak to Castorice{{subst:void|<!--104030103-->}}===
+{{Dialogue Start}}
+
+;(Talk to Castorice)
+:{{tx}}
+::'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer)... May everything go well for you and Mem.
+::{{Диалог|Стрелка}} You need Aglaea for something too?
+::'''Castorice:''' I... It's nothing. I only came to discuss some matters with Lady Aglaea.
+::'''Castorice:''' Previously, I lent her an anthology of poems that Lady Trianne had gifted to me. Tracing back, this anthology was something left for Lady Trianne by a bard before their passing.
+::'''Castorice:''' Although personal properties should be cleared out once their owner has passed on, Lady Trianne gave this book to me since she knew how much I like to read.
+::{{Диалог|Стрелка}} Can you tell me more about the book?
+::{{Диалог|Стрелка}} Is this book... very special?
+:::'''Castorice:''' No, it's just an ordinary book. It's definitely not some kind of unique copy.
+::'''Castorice:''' It just contains an allegory: In a faraway land, in a city known as Styxia, a dragon corrupted by the black tide descended one day, swooping upon the city like Death itself.
+::'''Castorice:''' It swallowed the princess of the city whole before it was suppressed. After taking down the evil dragon, the warriors discovered that the princess' life had already met its end.
+::'''Castorice:''' Overwhelmed by grief, the queen hired an alchemist to resurrect the princess using the dragon's flesh and blood. However, having lost memories of her previous life, the resurrected princess turned into an evil dragon herself and wreaked havoc on the city... As a result, the prosperous Styxia met its demise.
+::{{Диалог|Стрелка}} What a dark story...
+:::'''Mem:''' It mustn't have been easy for Cas to narrate this story so calmly...
+:::What a touching story...
+::{{Диалог|Стрелка}} What a touching story...
+::'''Mem:''' Huh? How... How was it touching...?
+::'''Castorice:''' Hm, I actually think so, too.
+::'''Mem:''' What!? That was the correct option to increase friendship level?
+::'''Castorice:''' The author of this book is Archepia, a wandering bard who traveled to many cities.
+::'''Castorice:''' Among the things she left behind are poems, dictionaries, and many tragicomedy scripts. She even clearly underlined and took notes in books that covered myths with her elegant handwriting.
+::'''Castorice:''' While flipping through these books, I felt like I was afforded a glimpse into the life of Archepia... It felt just like I was traveling with someone that I'd never met before.
+::'''Castorice:''' It was as if she had yet to pass on and was still alive.
+::{{Диалог|Стрелка}} No one goes through life without leaving their mark behind.
+::{{Диалог|Стрелка}} She probably did not think much of it while she was writing.
+::'''Castorice:''' That's right... Writing, drawing, and taking photographs... It seems like human nature to try and leave records of things.
+::{{tx}}
+----
+::'''Castorice:''' May you complete the trial safely and obtain {{Rubi|Oronyx|Time Titan}}'s blessing.
+:'''(Trailblazer):''' (Before leaving, I should go and say hi to Castorice.)
+{{Dialogue End}}
+
+===Head to the private bath chamber and speak with Dan Heng{{subst:void|<!--104030104-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|An unexpected encounter with the Flame Reaver led to the premature extraction of Oronyx's Coreflame. The Chrysos Heirs hope that (Trailblazer) will take on the authority of Time.<br />(Trailblazer) and Mem are willing to face Oronyx's trial. But with the citizens' assembly approaching, the Chrysos Heir heroes have new troubles on the horizon.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Dan Heng:''' {{Цвет|Ключевой|nobold=1|Citizens' assembly?}}
+:'''Phainon:''' That's right. Oh (Trailblazer), you're back. Just in time. This is something that the both of you should probably know.
+:{{Диалог|Стрелка}} Some good news?
+::'''Phainon:''' Good news? I wouldn't call it that.
+::More trouble?
+:{{Диалог|Стрелка}} More trouble?
+:'''Phainon:''' I wouldn't call it trouble. I just think it will be favorable if the both of you understand the situation in Okhema better.
+:'''Dan Heng:''' Do you remember the {{Цвет|Ключевой|nobold=1|Council of Elders}} that was on our heels previously? It seems like they've made their move.
+:{{tx}}
+:{{Диалог|Разговор}} So Aglaea doesn't actually call the shots?
+::'''Phainon:''' Despite her vision and wisdom that spans across thousands of years, even she cannot win over the hearts of everyone.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} I have never once passed my sociology class.
+::'''Dan Heng:''' ...Perhaps you should retake some exams next time we visit Paperfold University.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Tell me more about the citizens' assembly.
+::'''Phainon:''' Every five to ten years, the {{Цвет|Ключевой|nobold=1|Council of Elders}} organizes a citizens' assembly at Dawncloud.
+::'''Phainon:''' During the assembly, the representatives will vote on major issues such as whether the Chrysos Heirs led by Aglaea should still hold the right to govern the holy city and... whether the Titan's conquest should continue.
+::'''Dan Heng:''' It sounds like some sort of system to balance the heroes and the mortals.
+::'''Phainon:''' That is correct. However, the problem lies in the fact that there are ill-intentioned extremists in the Council of Elders. They view the citizens' assembly as a way to restrain the Chrysos Heirs and hope to take complete control over the Flame-Chase Journey.
+::'''Phainon:''' We can refer to them as the opposition. During the assemblies held in the past hundred years, the voices supporting the opposition have been growing stronger in the shadows. It's only thanks to Aglaea that the Flame-Chase Journey has been able to continue to this day.
+::'''Phainon:''' The citizens' assembly is just around the corner, but this time, there seems to be a new variable to the situation...
+::{{Диалог|Стрелка}} Is it us?
+:::'''Dan Heng:''' No. Although we might be mentioned, the Council of Elders has another target in mind.
+:::Is it Mem?
+:::'''Mem:''' Me?
+:::'''Dan Heng:''' ...An interesting train of thought, but the Council of Elders has another target in mind.
+:::Is it Anaxa?
+::{{Диалог|Стрелка}} Is it Mem?
+:::'''Mem:''' Me?
+:::'''Dan Heng:''' ...An interesting train of thought, but the Council of Elders has another target in mind.
+:::Is it Anaxa?
+::{{Диалог|Стрелка}} Is it Anaxa?
+::'''Dan Heng:''' It looks like you've realized it as well.
+::'''Phainon:''' I'm afraid that the Council of Elders might want to take advantage of Professor Anaxa.
+::'''Phainon:''' Aglaea will surely take back {{Rubi|Cerces|Reason Titan}}' Coreflame. But with Anaxa's current condition... It's so unique that nobody knows how taking the Coreflame away from him will affect him.
+::'''Phainon:''' He has always been someone that is only concerned about his own research. I'm certain that he must want to escape from the monitoring of the golden thread and protect himself. If the opposition were to offer an olive branch at this time...
+::'''Dan Heng:''' You suspect that he might betray the Flame-Chase Journey and defect toward the Council of Elders?
+::'''Phainon:''' Anaxa has never believed in the prophecy, so technically it cannot be considered a betrayal. However, he has taught many Chrysos Heirs and has long been considered an important ally of Okhema. I truly do not wish to... see comrades turning on one another.
+::'''Dan Heng:''' I have a better understanding of the full picture now. Is there anything that we can do?
+::'''Phainon:''' As I believe in his character, I plan to plead with Aglaea and try to buy more time for him. Then, the greatest way in which you can help is for you to know what I am fighting for.
+::'''Dan Heng:''' We understand. Thank you for being honest with us.
+::'''Dan Heng:''' Things are piling up again... (Trailblazer) and Mem are tied up with {{Rubi|Oronyx|Time Titan}}'s trial, and while I'm preparing to visit the Grove to uncover clues about the world beyond the sky.
+::{{Диалог|Стрелка}} Let's just take things one step at a time.
+::{{Диалог|Стрелка}} I just want to rest right now.
+::{{Диалог|Стрелка}} None of those things seem like they are going to be easy to deal with.
+::'''Phainon:''' Allow me to apologize for the fact that we always seem to be troubling you. I hope that {{Rubi|Oronyx|Time Titan}} will show more benevolence and be more accommodating. I remember that they seemed quite fond of you back in the Abyss.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdventureShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190834
+		}
+	}
+}</pre>
+:'''(Trailblazer):''' (I don't think there's anything else to do here. Time to go back and talk to Dan Heng.)
+{{Dialogue End}}
+
+===Rest up and prepare to face the trial{{subst:void|<!--104030105-->}}===
+{{Dialogue Start}}
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' It's just as I suspected. The troubles afflicting the Flame-Chase Journey aren't just external issues. The complex internal politics and interpersonal relationships are also exacerbating the problem.
+:'''Dan Heng:''' We can't let our guard down yet... We have to find out where we stand in this large interwoven web.
+
+:{{DIcon|undefined}} Rest for one night
+;(If {{F|MissionCV-1040301-undefined}} is undefined 0)
+::{{tx}}
+::'''Mem:''' Ahh... The trial feels like it's just around the corner. I'm starting to feel nervous.
+::{{Диалог|Стрелка}} It's not that soon. There are still a few more days until then.
+:::'''Mem:''' This is just an exaggerated figure of speech to express how nervous I'm feeling right now!
+:::Don't worry. Everything will be fine.
+:::I feel like a sitting duck that has been thrown into the deep end...
+:::'''Dan Heng:''' Speaking of which, I don't recall seeing any rubber duck toys in the baths of Okhema. It seems like they only have these... seals?
+::{{Диалог|Стрелка}} Don't worry. Everything will be fine.
+::{{Диалог|Стрелка}} I feel like a sitting duck that has been thrown into the deep end...
+:::'''Dan Heng:''' Speaking of which, I don't recall seeing any rubber duck toys in the baths of Okhema. It seems like they only have these... seals?
+::'''Dan Heng:''' Let's just hope that everything goes well. After all, as someone who has earned the gaze of an Aeon, you should be able to overcome the trial of a regional god just fine.
+::'''Dan Heng:''' We've also unknowingly gotten used to sleeping with the midday sun shining brightly above our heads. Get some rest, (Trailblazer).
+::'''Dan Heng:''' Perhaps, a new phase of our Trailblazing expedition in Amphoreus is about to begin.
+;(If {{F|MissionCV-1040301-undefined}} is not undefined 0)
+:----
+::'''Dan Heng:''' It's almost time for the ritual. Get some rest, (Trailblazer).
+:{{Диалог|Стрелка}} Get some rest and wait for the trial.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104030105,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Wait, I still have some things to do.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104030105,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+::{{tx}}
+;(If {{F|MissionCV-1040301-1}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 104030105,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Dialogue End}}
+
+===Head to the Vortex of Genesis{{subst:void|<!--104030106-->}}===
+{{Mission Description|type=trailblaze|location=Vortex of Genesis|update|An unexpected encounter with the Flame Reaver led to the premature extraction of Oronyx's Coreflame. The Chrysos Heirs hope that (Trailblazer) will take on the authority of Time.<br />Even as an outland traveler, whose veins carry no golden blood, has accepted the Titan's trial. Wishing (Trailblazer) and Mem the best of luck.<br />"I've woven many unforeseen events into the tapestry of fate, this is but one instance." I remembered hearing this the first time I met Aglaea.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+===Speak with Trinnon{{subst:void|<!--104030107-->}}===
+{{Dialogue Start}}
+
+;(Talk to Trinnon)
+----
+:'''Trinnon:''' (Trailblazer), and Mem, thank you.
+:'''Trinnon:''' Your resolves cannot be questioned. '''We''' praise your pure selflessness and courage... May {{Rubi|Kephale|Worldbearing Titan}} light your path forward.
+:'''Tribbie:''' Get ready to assume {{Rubi|Oronyx|Time Titan}}'s divinity, Trailblazer.
+
+;(Talk to Aglaea)
+:'''Aglaea:''' I can still vividly recall when you entered the Vortex of Genesis for the first time. At that time, I could never have imagined that a guest from beyond the sky would shoulder the fate of Amphoreus.
+:'''Aglaea:''' Don't feel burdened. Just like during the trial of Strife, Trinnon and Phainon will be waiting for you outside. If something unforeseen were to occur, they will intervene in the trial and rescue you.
+:'''Aglaea:''' May {{Rubi|Kephale|Worldbearing Titan}} bless you.
+
+;(Talk to Phainon)
+:'''Phainon:''' Accepting a Titan's trial is a very peculiar experience... I'm afraid that I'm not able to accurately describe it. You can only go and experience it for yourself.
+:'''Phainon:''' I believe that you'll be able to pull it off.
+
+;(Talk to Castorice)
+:'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer)... I'm sorry but I'm not sure what I should say to help calm your nerves.
+:'''Castorice:''' ...
+:'''Castorice:''' Right, perhaps something like: As long as you can successfully complete this trial, the rest of the Flame-Chase Journey will be smooth-sailing?
+:'''Castorice:''' No, that sounds a little strange... Don't worry, it won't take up too much of your time? Um... Don't worry, you'll definitely make it back alive?
+:'''Castorice:''' ...
+:'''Castorice:''' Sorry, it seems like I've made the mood even heavier. In any case... May everything go your way.
+{{Dialogue End}}
+
+===Submit Coreflame{{subst:void|<!--104030108-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Trinnon:''' The divine position of {{Rubi|Oronyx|Time Titan}} has already been vacant for some time...
+:'''Trinnon:''' '''We''' can feel the space of the trial closing. As there isn't much of their soul left, we'll have to complete the ceremony before their soul completely dissipates.
+:{{Диалог|Стрелка}} Let's begin.
+:{{Диалог|Стрелка}} I've long gotten used to fighting fires.
+:<!--1-second delay-->
+:{{tx}}
+;(Unused &mdash; TriggerStellaPerformance)
+
+{{Dialogue End}}
+
+===Speak with the Chrysos Heirs near the vortex{{subst:void|<!--104030109-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Sound of Oronyx:''' *Titan's murmurs*
+:'''Trinnon:''' {{Rubi|Oronyx|Time Titan}}... Their soul has been waiting for a long time.
+:'''Aglaea:''' Perhaps they're also quietly waiting for the arrival of their successor.
+:{{Диалог|Стрелка}} Wait for my return, my friends.
+::'''Aglaea:''' The last time I heard this, things didn't turn out that well.
+::'''Phainon:''' Don't worry, Aglaea. (Trailblazer) is tougher than I am, right?
+::I love all of you!
+:{{Диалог|Стрелка}} I love all of you!
+:'''Dan Heng:''' That doesn't seem appropriate for the current mood, so let's just leave the farewells for next time.
+:'''Phainon:''' Don't worry, (Trailblazer). You're tougher than I am, right?
+:'''Sound of Oronyx:''' *Titan's murmurs*
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "Plain"
+}</pre>
+{{Dialogue End}}
+
+===Awaken during the trial and speak to Mem{{subst:void|<!--104030110-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Sound of Oronyx:''' *Titan's murmurs*
+:'''Sound of Oronyx:''' *Titan's murmurs*
+:'''Mem:''' *slap*... *slap*...
+:'''Mem:''' Wake up... (Trailblazer).
+:'''Mem:''' How is it? How do you feel?
+:{{Диалог|Стрелка}} Has the trial begun?
+::'''Mem:''' That's right! Look, look! I don't know what happened, but I'm able to talk! Testing, testing, one, two, three. Testing, Testing one, two, three...
+::How are you able to talk!?
+:{{Диалог|Стрелка}} How are you able to talk!?
+:'''Mem:''' Right? I think that it's amazing, too! Testing, testing, one, two, three. Testing, testing, one, two, three...
+:'''Mem:''' I have such a cute voice! It must be because of all the memories that I collected. They allowed me to grow beyond expectations!
+:{{tx}}
+{{Dialogue End}}
+
+===Speak with Oronyx{{subst:void|<!--104030111-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Oronyx:''' You... It's you... I remember you.
+:'''Oronyx:''' Sky father... has gazed upon you...
+:'''Oronyx:''' Mother... is calling for you...
+:{{Диалог|Стрелка}} Does sky father... refer to Fuli?
+:'''Oronyx:''' *Titan's murmurs*
+:The Titan's words are indistinct. Each syllable emerging from the mist seem to be cloaked in frost &mdash; symbolizing memory.
+:'''Oronyx:''' Sky father... has chosen you...
+:{{Диалог|Стрелка}} Who is... your mother?
+:'''Oronyx:''' *Titan's murmurs*
+:A majestic voice pierces through the golden mist, reaching the unseen mountain walls in the distance, reflecting, and returning to your ears as an echo. Within the echo, you seemingly could make out... the cry of a baby.
+:'''Oronyx:''' Mother... is no longer responding...
+:{{Диалог|Стрелка}} We've come to you because of something important.
+:'''Oronyx:''' Something... important...?
+:'''Oronyx:''' An important... matter...
+:'''Mem:''' {{Rubi|Oronyx|Time Titan}}, listen to me...
+:'''Mem:''' Aren't you tired? Throughout the long years, you have always been protecting the fate of Amphoreus. Each time people draw strength from within their memories, every single ripple falls onto your shoulders.
+:'''Mem:''' There's no need for you to bear this any longer, {{Rubi|Oronyx|Time Titan}}. From today onwards, someone else will bear Time on your behalf. This is why we have come.
+:'''Oronyx:''' ...Freedom... Freedom?
+:'''Oronyx:''' I want... freedom...
+:'''Mem:''' Oh, poor child, everything will be fine. Let us help you... You can have a good rest now.
+:'''Oronyx:''' *Titan's murmurs*
+:{{Диалог|Стрелка}} Leave it to us, Titan.
+:{{Диалог|Стрелка}} What's troubling you, big fella?
+:'''Oronyx:''' *Titan's murmurs*
+:'''Oronyx:''' You have... potential... strength...
+:'''Oronyx:''' Willpower... powerful... and tenacious...
+:'''Oronyx:''' But... you lack... something...
+:'''Oronyx:''' Just... one thing...
+:'''Mem:''' Lacking something... What is it?
+:'''Oronyx:''' *Titan's murmurs*
+:'''Oronyx:''' What you lack...
+:'''Oronyx:''' Is... {{Цвет|Ключевой|nobold=1|a future}}...
+:{{Диалог|Стрелка}} I don't have a future?
+::I don't have a future?
+::That's right, I live in the moment.
+:{{Диалог|Стрелка}} That's right, I live in the moment.
+::That's right, I live in the moment.
+:{{Диалог|Стрелка}} What!? What future?
+::What!? What future?
+::'''Mem:''' Future...?
+::'''Oronyx:''' Traveler from the sky... You should have... dissipated already...
+::'''Oronyx:''' The gaze from sky father... stabilized... your form...
+::'''Oronyx:''' Because... from the moment you crossed the sky... {{Цвет|Ключевой|nobold=1|your life was cast away}}...
+::'''Oronyx:''' Right now, you... {{Цвет|Ключевой|nobold=1|are simply a collection of walking memories}}...
+::'''Mem:''' What... H&mdash;How is that possible!?
+::{{Диалог|Стрелка}} Do you mean that...
+::{{Диалог|Стрелка}} ...I'm already...
+::{{Диалог|Стрелка}} ...dead!?
+::'''Oronyx:''' *Titan's murmurs*
+::'''Oronyx:''' The space... is collapsing...
+::'''Oronyx:''' Someone must... inherit... the authority of Time...
+::'''Oronyx:''' If the pillar is lost... the laws of Time... will collapse...
+::'''Oronyx:''' Amphoreus... will succumb to... eternal disorder...
+::{{Диалог|Стрелка}} You still haven't explained things clearly!
+::{{Диалог|Стрелка}} What about the trial!?
+::{{Диалог|Стрелка}} Revive me, quickly!
+::'''Oronyx:''' Time... never compromises... never bears grudges...
+::{{tx}}
+:What!? What future?
+:'''Mem:''' Future...?
+:'''Oronyx:''' Traveler from the sky... You should have... dissipated already...
+:'''Oronyx:''' The gaze from sky father... stabilized... your form...
+:'''Oronyx:''' Because... from the moment you crossed the sky... {{Цвет|Ключевой|nobold=1|your life was cast away}}...
+:'''Oronyx:''' Right now, you... {{Цвет|Ключевой|nobold=1|are simply a collection of walking memories}}...
+:'''Mem:''' What... H&mdash;How is that possible!?
+:{{Диалог|Стрелка}} Do you mean that...
+:{{Диалог|Стрелка}} ...I'm already...
+:{{Диалог|Стрелка}} ...dead!?
+:'''Oronyx:''' *Titan's murmurs*
+:'''Oronyx:''' The space... is collapsing...
+:'''Oronyx:''' Someone must... inherit... the authority of Time...
+:'''Oronyx:''' If the pillar is lost... the laws of Time... will collapse...
+:'''Oronyx:''' Amphoreus... will succumb to... eternal disorder...
+:{{Диалог|Стрелка}} You still haven't explained things clearly!
+:{{Диалог|Стрелка}} What about the trial!?
+:{{Диалог|Стрелка}} Revive me, quickly!
+:'''Oronyx:''' Time... never compromises... never bears grudges...
+:{{tx}}
+:'''Sound of Oronyx:''' Memories... Broken...
+:'''Sound of Oronyx:''' Mother... Where...
+:'''Mem:''' Mother... Who are they calling out for?
+{{Dialogue End}}
+
+===Wake up in the private bath chamber{{subst:void|<!--104030112-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|An unexpected encounter with the Flame Reaver led to the premature extraction of Oronyx's Coreflame. The Chrysos Heirs hope that (Trailblazer) will take on the authority of Time.<br />According to Mem, (Trailblazer) had died halfway through the Express's descent, and now is just a walking memory. Thanks to the unique life-death laws of Amphoreus, (Trailblazer) still has a slim chance of survival, and finding Thanatos has become the priority task.<br />Now, (Trailblazer) must find the one closest to death to confirm their condition.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''(Trailblazer):''' ...
+:'''Dan Heng:''' You're finally awake.
+:'''Dan Heng:''' I'll keep it simple. You succeeded. {{Rubi|Oronyx|Time Titan}} has entrusted you with their divinity. Now, you're no different from a demigod of Amphoreus. However...
+:'''Dan Heng:''' ...Mem has told me about what happened during the trial. They are still explaining things to the others and told me to bring you back to your room to rest first.
+:'''Dan Heng:''' ...
+:{{Диалог|Стрелка}} The Titan must be joking, right...?
+:{{Диалог|Стрелка}} Don't sigh, Dan Heng...
+:{{Диалог|Стрелка}} So... what's my superpower?
+::'''Dan Heng:''' ...For you to be able to say that even now... You're truly impressive.
+:'''Dan Heng:''' There's something that... I've never told you.
+:{{tx}}
+:<!--1-second delay-->
+:'''(Trailblazer):''' ...
+:'''Dan Heng:''' You're finally awake.
+:'''Dan Heng:''' I'll keep it simple. You succeeded. {{Rubi|Oronyx|Time Titan}} has entrusted you with their divinity. Now, you're no different from a demigod of Amphoreus. However...
+:'''Dan Heng:''' ...Mem has told me about what happened during the trial. They are still explaining things to the others and told me to bring you back to your room to rest first.
+:'''Dan Heng:''' ...
+:The Titan must be joking, right...?
+:Don't sigh, Dan Heng...
+:So... what's my superpower?
+:'''Dan Heng:''' ...For you to be able to say that even now... You're truly impressive.
+:'''Dan Heng:''' There's something that... I've never told you.
+:'''Dan Heng:''' When we landed on Amphoreus, our car was pierced by {{Rubi|Nikador|Strife Titan}}'s lance. Do you remember? Back in the ruins of the Abyss, this was what I said:
+:'''Dan Heng:''' "You passed out when our car got hit. I blacked out too, but not before dragging you out. It's a good thing we were in the car, or we would've been crushed to pieces."
+:'''Dan Heng:''' Actually... My account kind of made light of the situation. What actually happened was much more complicated.
+:'''Dan Heng:''' You were severely injured back then, with several wounds still bleeding profusely. I struggled to carry you out and used the last of my strength to stem the bleeding. But then, I was also hit by a falling rock and lost my consciousness.
+:'''Dan Heng:''' The last time I checked, you still weren't breathing. But when I regained consciousness... I saw that you were alive and full of energy, so I never brought this up again.
+:{{Диалог|Стрелка}} How exactly did I come back to life?
+:{{Диалог|Стрелка}} Haha, so you were knocked unconscious by a rock!
+::'''Dan Heng:''' ...That's beside the point.
+:'''Dan Heng:''' I'm not sure whether the gaze of Fuli has anything to do with this matter, but according to the Titan, you are living in the form of a memory right now, just like those objects of the past in the miracles of Oronyx.
+:'''Dan Heng:''' Perhaps Mem is the anchor rope that ties you to the present. I had assumed they couldn't stray too far from you, but the truth... might be the exact opposite.
+:{{Диалог|Стрелка}} What should we do next?
+:{{Диалог|Стрелка}} Cry, cry for me.
+:{{Диалог|Стрелка}} Stellaron, do something!
+::'''Dan Heng:''' For a while, I also thought that the Stellaron was your life support system, but it seems like... this hypothesis has been disproven.
+:'''Dan Heng:''' It's not time for us to despair yet. There must be a way to save you.
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the Garden of Life and consult Castorice{{subst:void|<!--104030113-->}}===
+{{Dialogue Start}}
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' Let's do that then, (Trailblazer).
+:You notice the resolute yet gentle look in Dan Heng's eyes. He doesn't want to burden you with his worries in words. You already understand &mdash; his trust in you transcends words. As he once said, "It's not the time for sorrow yet."
+:Next, he will go to the Grove to check out the situation, while you should be looking for Castorice with Mem.
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104030122_1524_loop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer), I'm right here.
+:You hear soft steps coming closer, one step at a time...
+:'''Castorice:''' Please stay there and slowly turn around...
+:For some reason, you feel you have seen this scene before.
+:'''Castorice:''' ...Please pardon me.
+:A chill seeps through your skin, spreading into your veins. Thump... thump... your heartbeat begins to slow.
+:A subtle fragrance of an unnamed flower fills your senses, its sweetness making you forget the need to breathe.
+:Your vision blurs, and cold reality fades into a purple ocean...
+:And then, and then...
+:You realize you are still alive &mdash; no, to be more precise... your death was not thorough.
+:The coldness of the initial touch dispersed as quickly as it came, and replacing it... was the touch of fingertips, and a tremble born of trepidation that originated from a certain lanky arm. Her quivering finger gently brushed against your cheek, causing a faint tickle.
+:'''Castorice:''' ...
+:'''Castorice:''' Just as I expected... I cannot feel anything...
+:Castorice, you're shaking.
+:Am... I really dead?
+:You're invading my personal space.
+:'''Castorice:''' I'm sorry, I just wanted to verify once again...
+:'''Castorice:''' Back at the Grove, I was puzzled as to why you were not affected by my curse. I thought that it might have been the special ability of a traveler from beyond the sky. Never did I expect that this would be the true reason...
+:'''Castorice:''' I'm sorry. I should have noticed that something was amiss earlier...
+:You want to turn your head, but you glimpse a dash of purple brushing past your face. Then...
+:Aside from your vision, your senses grow more acute. You feel the presence of a purple sea...
+:In the blink of an eye, time seems to have frozen beneath that cold sensation, and you just happened to close your eyes...
+:{{Диалог|Стрелка}} (At this moment, I just want to close my eyes...)
+:{{Диалог|Стрелка}} (Remembering the near-death experience... gotta stay on guard...)
+:{{Диалог|Стрелка}} (Spin around immediately, and give Castorice a scare...)
+:'''Castorice:''' ...Please pardon me.
+:A chill seeps through your skin, spreading into your veins. Thump... thump... your heartbeat begins to slow.
+:A subtle fragrance of an unnamed flower fills your senses, its sweetness making you forget the need to breathe.
+:Your vision blurs, and cold reality fades into a purple ocean...
+:And then, and then...
+:You realize you are still alive &mdash; no, to be more precise... your death was not thorough.
+:The coldness of the initial touch dispersed as quickly as it came, and replacing it... was the touch of fingertips, and a tremble born of trepidation that originated from a certain lanky arm. Her quivering finger gently brushed against your cheek, causing a faint tickle.
+:'''Castorice:''' ...
+:'''Castorice:''' Just as I expected... I cannot feel anything...
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104030122_1524_loop_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104030121_1525_loop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+:'''Castorice:''' {{MC|м=Mr.|ж=Miss}} (Trailblazer), if my abrupt behavior just now offended you, I hope that you can forgive me.
+:'''Castorice:''' I'm just thinking... If your soul has really left your body, as a mortician, I might be able to trace where it has gone to.
+:'''Mem:''' Cas, did you find anything?
+:'''Castorice:''' My apologies, not as of yet... Perhaps I have overestimated my capabilities.
+:'''Castorice:''' But... {{MC|м=Mr.|ж=Miss}} (Trailblazer), would you be willing to let me try again? This time, I'll increase the area of contact slightly. Perhaps the result might be different this time...
+:{{Диалог|Стрелка}} (Agree) There's no harm in trying again.
+::'''Castorice:''' I have never touched the living in this way before. If my actions are in any way disrespectful, I hope that you can forgive me...
+::(Refuse) I think I'll pass.
+::'''Castorice:''' ...My apologies, I will stop making such unreasonable requests.
+::'''Mem:''' Ahh, don't mind {{MC|м=him...|ж=her...}} (Trailblazer) is just feeling a little nervous and thinks that... Right, {{MC|м=he|ж=she}} thinks that things are moving a little too quickly!
+::'''Castorice:''' It was me, I was a little too hasty. Don't worry, {{MC|м=Mr.|ж=Miss}} (Trailblazer). Although we currently have no leads, I will do my best to search for the whereabouts of {{Rubi|Thanatos|Death Titan}}, bring back their Coreflame, and personally return to you... the life that you have lost too soon.
+::'''Castorice:''' I... know that I'm lacking in confidence, but I hope that you can keep this promise of mine in mind. Before I manage to deliver on this promise... please do your best to hang on.
+::'''Castorice:''' Amphoreus... needs you.
+::I'll do my best.
+::So, what now?
+::Live on bravely... I understand.
+::'''Castorice:''' Lady Aglaea and Lord Phainon are currently discussing some matters in the baths. They're worried about you, too. If possible, please go there and let them know that you're well. Although I don't actually know whether your current situation can be described as "well"...
+::'''Castorice:''' Also, please accept this Styxian fable... Reading can help one to focus and relax... I hope that reading this can help tide you through this difficult period.
+::Castorice once again places her palm on your face. Her shivers calm somewhat this time.
+::'''Castorice:''' ...
+::'''Castorice:''' ...
+::{{Диалог|Стрелка}} Did you discover something?
+::{{Диалог|Стрелка}} You scared me.
+:{{Диалог|Стрелка}} (Refuse) I think I'll pass.
+::'''Castorice:''' ...My apologies, I will stop making such unreasonable requests.
+::'''Mem:''' Ahh, don't mind {{MC|м=him...|ж=her...}} (Trailblazer) is just feeling a little nervous and thinks that... Right, {{MC|м=he|ж=she}} thinks that things are moving a little too quickly!
+::'''Castorice:''' It was me, I was a little too hasty. Don't worry, {{MC|м=Mr.|ж=Miss}} (Trailblazer). Although we currently have no leads, I will do my best to search for the whereabouts of {{Rubi|Thanatos|Death Titan}}, bring back their Coreflame, and personally return to you... the life that you have lost too soon.
+::'''Castorice:''' I... know that I'm lacking in confidence, but I hope that you can keep this promise of mine in mind. Before I manage to deliver on this promise... please do your best to hang on.
+::'''Castorice:''' Amphoreus... needs you.
+::I'll do my best.
+::So, what now?
+::Live on bravely... I understand.
+::'''Castorice:''' Lady Aglaea and Lord Phainon are currently discussing some matters in the baths. They're worried about you, too. If possible, please go there and let them know that you're well. Although I don't actually know whether your current situation can be described as "well"...
+::'''Castorice:''' Also, please accept this Styxian fable... Reading can help one to focus and relax... I hope that reading this can help tide you through this difficult period.
+:{{Диалог|Стрелка}} I'll do my best.
+:{{Диалог|Стрелка}} So, what now?
+:{{Диалог|Стрелка}} Live on bravely... I understand.
+:'''Castorice:''' Lady Aglaea and Lord Phainon are currently discussing some matters in the baths. They're worried about you, too. If possible, please go there and let them know that you're well. Although I don't actually know whether your current situation can be described as "well"...
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104030121_1525_loop_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:'''Mem:''' Oh right, there's something that I have to tell you. The Chrysos Heirs already know everything that has happened to you...
+:'''Mem:''' I was too worried, so I told them everything... Ugh, please don't hate me, okay?
+{{Dialogue End}}
+
+===Discuss your next steps with Aglaea and the others{{subst:void|<!--104030114-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|An unexpected encounter with the Flame Reaver led to the premature extraction of Oronyx's Coreflame. The Chrysos Heirs hope that (Trailblazer) will take on the authority of Time.<br />According to Mem, (Trailblazer) had died halfway through the Express's descent, and now is just a walking memory. Thanks to the unique life-death laws of Amphoreus, (Trailblazer) still has a slim chance of survival, and finding Thanatos has become the priority task.<br />(Trailblazer) will be just fine, I sincerely pray so.}}
+{{Dialogue Start}}
+
+;(Talk to Castorice)
+:'''Castorice:''' Lady Aglaea and Lord Phainon are currently discussing some matters in the baths. They're worried about you, too. If possible, please go there and let them know that you're well. Although I don't actually know whether your current situation can be described as "well"...
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aglaea:''' ...They're here.
+:'''Phainon:''' (Trailblazer)! Hyacine said that you'd definitely wake up. How... do you feel?
+:{{Диалог|Стрелка}} So, the entire world knows about this now...
+::'''Mem:''' I beg you, please forgive me!
+::She can even take the pulse of someone who's dead...?
+::'''Phainon:''' That's the medical prowess of the Twilight Courtyard. Amazing, isn't it?
+::It feels quite cool being a departed spirit.
+:{{Диалог|Стрелка}} She can even take the pulse of someone who's dead...?
+::'''Phainon:''' That's the medical prowess of the Twilight Courtyard. Amazing, isn't it?
+::It feels quite cool being a departed spirit.
+:{{Диалог|Стрелка}} It feels quite cool being a departed spirit.
+:'''Phainon:''' Well, at least you look no different from the living. I think that most living people don't even look as good as you do.
+:'''Aglaea:''' You've completed the trial of Time, and I have to admit that the process went better than I expected. Even in the end, that Titan's heart still showed a soft spot for humankind.
+:'''Aglaea:''' However, I never expected that... two people who have cheated death would appear in Okhema at the same time.
+:'''Phainon:''' That's what we have been talking about. Ugh, Mydei has been in Okhema for such a long time but &mdash; has no one ever thought to study his indestructible body? If there were even any minor breakthroughs, we wouldn't be as clueless as we are right now...
+:'''Aglaea:''' Many have had this idea, but so far, there have been no results. If it were successful, {{Rubi|Thanatos|Death Titan}} wouldn't have disappeared without a trace.
+:'''Aglaea:''' Nevertheless, now is not the time for us to give up. At the very least, we can still see a glimmer of hope.
+:'''Aglaea:''' {{Цвет|Ключевой|nobold=1|Cipher}}... If anyone in this world knows the whereabouts of Death, it would be her.
+:'''Aglaea:''' I'll try and get her to return to Okhema but do be prepared for a less-than-ideal outcome. Please understand that throughout the history of Amphoreus, no one has ever managed to escape the clutches of Death. At the end of time, Thanatos silently awaits all.
+:{{Диалог|Стрелка}} Thank you for your help.
+::'''Aglaea:''' It is my duty. We too require you to bear the divine position of Time.
+::Is this supposed to be... comforting?
+:{{Диалог|Стрелка}} Is this supposed to be... comforting?
+:'''Phainon:''' Don't take it to heart, (Trailblazer). After all, you've already created countless miracles along the way, right?
+:'''Aglaea:''' But before that, just...
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Spindle, Laboring to Weave the Tapestry of Time
+|zhs  = 纺锤啊，难纴岁月的经纬
+|zht  = 紡錘啊，難紝歲月的經緯
+|ja   = 紡錘よ、歳月の経緯を紡げ
+|ko   = 방추여, 세월의 날실과 씨실을 짜기 힘들구나
+|es   = Huso, teje el complicado tapiz del tiempo
+|fr   = Ô fuseau, tissant inlassablement la toile du temps
+|ru   = О веретено, ткущее нить времени
+|th   = แกนปั่นด้ายเอ๋ย การทอเวลานั้นช่างยากเข็ญ
+|vi   = Con thoi thời gian, dệt nên những năm tháng gian truân
+|de   = O Spindel, die fleißig den Teppich der Zeit webt
+|id   = Pemintal, Bersusah Payah Menenun Jalinan Waktu
+|pt   = Fuso, Trabalhando para Tecer a Tapeçaria do Tempo
+}}
+
+==Change History==
+{{Change History|3.5}}

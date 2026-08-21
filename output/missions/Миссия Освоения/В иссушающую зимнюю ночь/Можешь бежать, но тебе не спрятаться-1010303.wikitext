@@ -10,9 +10,9 @@ PageTitle=#Можешь бежать, но тебе не спрятаться#
 |Событие         = 
 |Глава           = В иссушающую зимнюю ночь
 |Условия         = Завершена [[Миссия Освоения]] «[[Ночь в городе вечнозимья]]»
-|Персонажи       = Дань Хэн; Март 7; Первопроходец
-|СтартЛокация    = [[Ярило-VI]] — [[Сточный проход]]
-|Мир             = Ярило-VI
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Ночь в городе вечнозимья
 |Следующая       = 
 |Награды         = 
@@ -27,61 +27,7 @@ PageTitle=#Можешь бежать, но тебе не спрятаться#
 
 ==Прохождение==
 {{Дополнить}}
-;(По прибытии на место)
 
-;(По прибытии на место)
-----
-<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_belobog_moodtips_tense"
-	},
-	"EmitterType": "LocalPlayer"
-}</pre>
-:'''Март 7:''' Подождите! Здесь Среброгривые Стражи. Будьте осторожны, не привлеките их внимание!
-:'''Дань Хэн:''' Должно быть, они вошли с другой стороны, чтобы перекрыть нам выход.
-:'''Дань Хэн:''' Лучше избегать прямого столкновения. Найдём другой путь.
-<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "Mission_1010301_temp",
-	"AnchorName": "Camera_101030301",
-	"IsActive": false,
-	"BlendConfig": {
-		"ExportToJson": true,
-		"BlendType": "Cut"
-	}
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.DestroyNPC",
-	"GroupID": 16,
-	"GroupNpcID": 400004
-}</pre>
-:<!--1-second delay-->
-
-;(По прибытии на место)
-:<!--0.5-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "Mission_1010301_temp",
-	"AnchorName": "Camera_101030302",
-	"BlendConfig": {
-		"ExportToJson": true,
-		"BlendType": "Cut"
-	}
-}</pre>
-:'''Март 7:''' Подождите! Здесь Среброгривые Стражи. Будьте осторожны, не привлеките их внимание!
-:'''Дань Хэн:''' Лучше избегать прямого столкновения. Найдём другой путь.
-<pre>{
-	"$type": "RPG.GameCore.ActiveVirtualCamera",
-	"AreaName": "Mission_1010301_temp",
-	"AnchorName": "Camera_101030302",
-	"IsActive": false,
-	"BlendConfig": {
-		"ExportToJson": true,
-		"BlendType": "Cut"
-	}
-}</pre>
-:<!--0.5-second delay-->
 {{Диалог Конец}}
 
 ==На других языках==

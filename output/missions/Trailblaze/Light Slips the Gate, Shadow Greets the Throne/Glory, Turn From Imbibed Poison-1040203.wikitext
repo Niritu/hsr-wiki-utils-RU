@@ -1,0 +1,187 @@
+<%-- [PAGE_INFO]
+PageTitle=#Glory, Turn From Imbibed Poison#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040203
+|title         = 
+|image         = <!--Mission Glory, Turn From Imbibed Poison.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Light Slips the Gate, Shadow Greets the Throne
+|requirements  = [[Trailblaze Mission]] ''[[Strife, Dispel the Accompanying Fears]]'' completed
+|summary       = Mydei found the Kremnoan veteran, Krateros, to discuss the future of Castrum Kremnos. However, Krateros remained resolute, openly expressing his desire for Mydei to take up divine authority, claim kingship, and return home.
+|characters    = Distressed Soldier; Krateros; Mydei; Scouting Soldier; Trailblazer; Tribbie
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = Strife, Dispel the Accompanying Fears
+|next          = Grove, Wherefore Are the Wise Silent
+|rewards       = Trailblaze EXP*200; Stellar Jade*30; Traveler's Guide*3; Celestial Ambrosia*80; Credit*30 000
+}}
+'''''Glory, Turn From Imbibed Poison''''' is a [[Trailblaze Mission]] in the chapter [[Light Slips the Gate, Shadow Greets the Throne]].
+
+==Steps==
+# Speak with Tribbie
+# Head to the hot bath and look for the Kremnoans
+# Speak to the playing children
+# Look for Krateros
+# Follow Krateros to a quiet corner...
+# ...Prepare to strike
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Speak with Tribbie{{subst:void|<!--104020301-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|The failure of Phainon's Coreflame trial means the responsibility of bearing Nikador's divinity now falls to the lone crown prince of Kremnos &mdash; you. Yet, even as the orthodox heir to "Strife," you seem to have an absurd extent of hesitation and objection to accepting the god's authority...}}
+{{Dialogue Start}}
+
+;(Talk to Tribbie)
+:'''Tribbie:''' Regardless of what happens, '''we''' will always be there for you.
+:'''Mydei:''' ...Thank you.
+
+;(Unused &mdash; EnterDistrict_G228)
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the hot bath and look for the Kremnoans{{subst:void|<!--104020302-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; 2)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"PathwayGroupID": 229,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"StartWaitDistance": 0,
+	"StopWaitDistance": 0,
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Finish104020302"
+			}
+		}
+	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 229,
+	"PathwayID": 2,
+	"MotionFlag": "Run",
+	"StartWaitDistance": 0,
+	"StopWaitDistance": 0,
+	"OnReach": []
+}</pre>
+
+;(Unused &mdash; 3)
+:'''Mydei:''' (Children left unattended by their parents? That's not safe.)
+
+:'''Mydei:''' (The person I'm looking for is probably in the hot bath. I should go take a look... The billowing steam always brings back memories of the furnaces in our homeland.)
+{{Dialogue End}}
+
+===Speak to the playing children{{subst:void|<!--104020305-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; DestroyChildren)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002
+	]
+}</pre>
+
+;(Unused &mdash; 3)
+:{{tx}}
+{{Dialogue End}}
+
+===Look for Krateros{{subst:void|<!--104020303-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|Seeing the energetic Kremnoan children prompts you to reflect on Castrum Kremnos's future. You decide to seek out the Kremnoan veteran Krateros for a discussion.}}
+{{Dialogue Start}}
+
+;(Unused &mdash; 1)
+:'''Mydei:''' (There he is. Is he engaged in a debate with that foolish lion?)
+
+;(Unused &mdash; 2)
+:{{tx}}
+:'''Mydei:''' (The future of Kremnos... I should find Krateros.)
+{{Dialogue End}}
+
+===Follow Krateros to a quiet corner...{{subst:void|<!--104020304-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; 2)
+:{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+:----
+::{{tx}}
+:'''Krateros:''' We're almost there.
+:'''Krateros:''' Keep up with us, you hyen... oh, sorry, I meant officers.
+:'''Scouting Soldier:''' Hey, old man, how dare you&mdash;
+:'''Distressed Soldier:''' Calm down, calm down!
+
+;(Unused &mdash; luchi)
+:'''Krateros:''' Seems like the son of Gorgo has a poor sense of direction, huh?
+
+;(Unused &mdash; baodi)
+
+
+;(Unused &mdash; 1111)
+
+
+;(Unused &mdash; baodi)
+
+
+;(Unused &mdash; 1111)
+
+{{Dialogue End}}
+
+===...Prepare to strike{{subst:void|<!--104020315-->}}===
+{{Dialogue Start}}
+:'''Krateros:''' Don't fall behind now... unless you want to upset our friends here.
+:'''Distressed Soldier:''' D&mdash;Don't you dare try any tricks with us...!
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Glory, Turn From Imbibed Poison
+|zhs  = 荣耀啊，不忍卒饮的鸩酒
+|zht  = 榮耀啊，不忍卒飲的鴆酒
+|ja   = 栄光よ、飲み干した毒を退けよ
+|ko   = 영광이여, 차마 다 마실 수 없는 독주구나
+|es   = Gloria, veneno que es mejor no ingerir
+|fr   = Gloire impossible à accepter
+|ru   = О слава, не испей отравленного вина
+|th   = เกียรติยศเอ๋ย อย่าได้ทนร่ำสุราพิษเลย
+|vi   = Hỡi Vinh Quang, Chén Rượu Độc Không Nỡ Uống Cạn
+|de   = O Ehre, ein giftiger Wein
+|id   = Kemuliaan, Racun yang Tak Kuasa Ditelan
+|pt   = Glória, Afaste-se do Veneno Imbibido
+}}
+
+==Change History==
+{{Change History|3.5}}

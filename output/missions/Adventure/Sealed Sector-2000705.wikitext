@@ -1,0 +1,948 @@
+<%-- [PAGE_INFO]
+PageTitle=#Sealed Sector#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2000705
+|title         = 
+|image         = <!--Mission Sealed Sector.png-->
+|type          = Adventure
+|event_name    = 
+|chapter       = 
+|requirements  = [[Companion Mission]] ''[[Punklorde Mentality]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Leonard; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Herta's Office]]
+|world         = Herta Space Station
+|area          = Herta's Office
+|prev          = 
+|next          = 
+|rewards       = 
+}}
+'''''Sealed Sector''''' is an [[Adventure Mission]] on [[Herta Space Station]].
+
+==Steps==
+# Go to Herta's Office
+# Talk with Leonard
+# Complete Sealed Sector: Difficulty 1
+# Complete Sealed Sector: Difficulty 2
+# Complete Sealed Sector: Difficulty 3
+# Complete Sealed Sector: Difficulty 4
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Go to Herta's Office{{subst:void|<!--200070501-->}}===
+{{Mission Description|type=adventure|location=Herta's Office|The troubles caused by Silver Wolf have finally abated, but Leonard still looks concerned...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.WaitSilverWolfCompanionToastExit",
+	"MissionID": 2000704,
+	"AvatarID": 1006,
+	"MaxWaitTime": 9
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1012201
+}</pre>
+{{Dialogue End}}
+
+===Talk with Leonard{{subst:void|<!--200070502-->}}===
+{{Mission Description|type=adventure|location=Master Control Zone|update|The troubles caused by Silver Wolf have abated, but Leonard still looks concerned...}}
+{{Dialogue Start}}
+
+;(Talk to Leonard)
+:'''Leonard:''' Hey friend, over here! You're finally here, I've been waiting for a long time.
+:{{Диалог|Стрелка}} Sorry to keep you waiting.
+::'''Leonard:''' Hey, what's with the politeness? I looked for you for help, so I'm willing to wait.
+:{{Диалог|Стрелка}} We just saw each other not that long ago.
+::'''Leonard:''' Is that so? Maybe I just wanted to see you, so I got impatient!
+:'''Leonard:''' Thing is, like I said in my message, even if the invasion is over, it still exposed many security issues the space station faces. In other words, gaps.
+:'''Leonard:''' Following Lead Researcher Asta's orders, the space station formed a special task force to tackle this problem.
+:'''Leonard:''' In my opinion, aside from technical upgrades, it is more important to increase staff members' awareness and precaution. Many of Silver Wolf's attacks honed in on individual bad habits, and those are too difficult to defend against.
+:{{Диалог|Стрелка}} Fair enough.
+:{{Диалог|Стрелка}} Like... you?
+::'''Leonard:''' Nonsense! What I did was... was... a demonstration! That's right. It's a demonstration to illustrate my point in a more direct manner!
+:'''Leonard:''' Herta Space Station is the turf of Genius Society members, so it's not inconceivable that other forces target us. Therefore, our safety and staff awareness should be at the top of the universe as well.
+:'''Leonard:''' In order to be able to quickly respond to such incidents in the future, I think that a safety drill for the entire space station should be arranged immediately: A select number of staff members will have their terminals sent a mail embedded with special programs...
+:{{Диалог|Стрелка}} Phishing mail?
+::'''Leonard:''' No, no no no. Not as simple as that.
+:{{Диалог|Стрелка}} Will I get it too?
+::'''Leonard:''' No no, I'm not done yet.
+:'''Leonard:''' What we're defending against are enemies on the level of Stellaron Hunters. They won't give you a choice.
+:'''Leonard:''' The moment the mail is successfully received, the program will attack automatically and immediately regardless of time, location, or whether it was opened. Within moments, the virus will spread throughout the entire space station!
+:'''Leonard:''' Be it personal terminals, public facilities, or the electric seat warmer on the toilet, everything might collapse within moments!
+:{{Диалог|Стрелка}} Scary...
+:{{Диалог|Стрелка}} Have you started looking for your next job?
+:{{Диалог|Стрелка}} Not the toilet seat!
+:'''Leonard:''' Don't worry, these "viruses" are all imitations written by me. They are absolutely safe and harmless.
+:'''Leonard:''' Through the drill, I want to deepen everyone's understanding of network security. Of course, before we start, testing and repeating revision is compulsory.
+:'''Leonard:''' The requirements for test candidates will be very high. They will need to be bold, careful, and thoughtful. They must not only be familiar with the space station, but also understand Silver Wolf and the Stellaron Hunter. It would be helpful if they also have an altruistic heart...
+:'''Leonard:''' Who could satisfy all of those requirements? My friend, that's you!
+:{{Диалог|Стрелка}} No problem, friend!
+::'''Leonard:''' I knew it, my good pal, you'll never let me down!
+:{{Диалог|Стрелка}} Do you not have any other friends?
+::'''Leonard:''' You mean on the space station? Of course not. Colleagues are not friends.
+::{{Диалог|Стрелка}} This sudden honesty!
+::{{Диалог|Стрелка}} Did you switch personalities?
+::'''Leonard:''' Oh, I just had a moment of inspiration. I was at the IPC for a long time, so believe me, friend, when I say "Adversity shows sincerity."
+:'''Leonard:''' The simulation testing grounds is ready. Let's get to it.
+:{{Диалог|Стрелка}} Then let's go.
+::'''Leonard:''' Come with me!
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} I'm not ready yet.
+::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(Unused &mdash; custom/npc_menu)
+;(If )
+:{{Диалог|undefined}} How is the drill revision coming along?
+::'''Leonard:''' All good! I replanned the route and added some new designs. What do you say, wanna try it out?
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' No problem, let's go!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|undefined}} Are you still preparing for the drill?
+::'''Leonard:''' Ah, yes. I submitted the last edition to the board and received feedback. Some good, some constructive.
+::'''Leonard:''' After all, this is a huge undertaking for the entire space station. They will have to give it some more thought, so I added new content and want to ask for your opinion.
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' Thank you! Let's go.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|undefined}} About the security drill...
+::'''Leonard:''' Hey... (Trailblazer), I've been thinking about a question.
+::'''Leonard:''' The more I look into Silver Wolf's program, the more I feel... she's too far beyond reach. She can do anything just for fun, as if real life is really just a game.
+::'''Leonard:''' I cannot fathom that. This goes against everything I know. But... I need to keep up with her thinking. If I cannot stand on the same grounds as her, I will never be able to complete this job.
+::'''Leonard:''' I tried my best. This is the final edition, it's my magnum opus. Think of it as my personal request... Do away with all those samples and data, and just think of this as a simple challenge. Alright?
+::{{Диалог|Стрелка}} Of course.
+:::'''Leonard:''' Thank you, I won't have any explanation for you this time. I just hope... you would have fun.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|Стрелка}} About the previous drills...
+::'''Leonard:''' Huge success, my friend! The plan entered the next phase. It will be launched at a later date when everything is set up. As for the time... heh, it's a secret. It works best when it's least expected.
+::'''Leonard:''' If you want to run the test again, I can arrange it for you.
+::{{Диалог|Стрелка}} Alright, let's begin.
+:::'''Leonard:''' No problem, I'll set up the location now!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Forget it.
+:::'''Leonard:''' Uh huh. If you need anything, lemme know.
+
+;(If )
+:{{Диалог}} How have things been?
+::'''Leonard:''' Eh. The higher-ups want me to think about the network security of the space station in detail, so I've decided to stop taking random gigs in the foreseeable future and focus on the things that are truly important.
+::{{Диалог|Разговор}} Why haven't I seen you before?
+:::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} What do you do before this?
+:::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} About Cosmic Warfare...
+:::'''Leonard:''' Huh? Did you hear about it from Mr. Screwllum? You weren't here when it happened.
+:::{{Диалог|Разговор}} Did you face off with Silver Wolf?
+::::'''Leonard:''' Depends on how you define "face off"... I told you when we first met that I tried tracking the Stellaron Hunters after they left the space station, but ended up in Silver Wolf's trap.
+::::'''Leonard:''' She reverse-hacked into my device and sent a bunch of spam messages to people in my name, asking them to play a video game called Cosmic Warfare.
+::::'''Leonard:''' ...Just, it's an embarrassing memory. Just forget about it.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Why's it called Cosmic Warfare?
+::::'''Leonard:''' I didn't understand as well, in the beginning. This game was usually installed in old display terminals on those antique interstellar vessels. Ugh... The type of game only an idle drunk miner could love.
+::::'''Leonard:''' After reading into it a little, I found out there's a collector looking for a rare strategy for this game, and the reward is a Tyranid fighter jet, eventually won by someone anonymous &mdash; that must be Silver Wolf.
+::::'''Leonard:''' I think she probably doesn't have many friends. Cosmic Warfare is a multiplayer collaborative game, so she couldn't play the game on her own, so she looked for a bunch of "helpers" in this way.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} How did that go?
+::::'''Leonard:''' Oh, nowhere. I've done my best to quarantine the intruder's viral influence to the monitoring room. It didn't spread outside, but that's all I could do...
+::::'''Leonard:''' I wrote a script to block off those spam messages day and night. It's a little primitive, but very effective.
+::::'''Leonard:''' In the end, Silver Wolf seemed to have had enough fun and shut the game down. That was the end of that saga. What I didn't know is that Madam Herta and she had already set up the chess board for the next game.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} I want to ask about something else...
+::::{{Диалог|Разговор}} Why haven't I seen you before?
+:::::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} What do you do before this?
+:::::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::::;(Return to previous option selection)
+::::{{Диалог|Выход}} I don't have any other questions.
+::{{Диалог|Выход}} I don't have any other questions.
+
+;(If )
+:{{Диалог|Выход}} Oh nothing, I'll leave you to it.
+::'''Leonard:''' Okay. I should be stationed here in the near future. Come find me if you need anything!
+{{Dialogue End}}
+
+===Complete Sealed Sector: Difficulty 1{{subst:void|<!--200070503-->}}===
+{{Mission Description|type=adventure|location=Master Control Zone|update|The troubles caused by Silver Wolf have abated, but Leonard still looks concerned.<br />He's asking for your help to complete a task that will improve the space station's cybersecurity and help him keep his job...}}
+{{Dialogue Start}}
+
+;(Talk to Leonard)
+:'''Leonard:''' Through the drill, I can definitely help deepen everyone's understanding of network security. Of course, before we start, testing and repeating revision is compulsory.
+:'''Leonard:''' The simulation testing grounds is ready. Let's get to it.
+:{{Диалог|Стрелка}} Then let's go.
+::'''Leonard:''' Come with me!
+:<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} I'm not ready yet.
+::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(Unused &mdash; custom/npc_menu)
+;(If )
+:{{Диалог|undefined}} How is the drill revision coming along?
+::'''Leonard:''' All good! I replanned the route and added some new designs. What do you say, wanna try it out?
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' No problem, let's go!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|undefined}} Are you still preparing for the drill?
+::'''Leonard:''' Ah, yes. I submitted the last edition to the board and received feedback. Some good, some constructive.
+::'''Leonard:''' After all, this is a huge undertaking for the entire space station. They will have to give it some more thought, so I added new content and want to ask for your opinion.
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' Thank you! Let's go.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|undefined}} About the security drill...
+::'''Leonard:''' Hey... (Trailblazer), I've been thinking about a question.
+::'''Leonard:''' The more I look into Silver Wolf's program, the more I feel... she's too far beyond reach. She can do anything just for fun, as if real life is really just a game.
+::'''Leonard:''' I cannot fathom that. This goes against everything I know. But... I need to keep up with her thinking. If I cannot stand on the same grounds as her, I will never be able to complete this job.
+::'''Leonard:''' I tried my best. This is the final edition, it's my magnum opus. Think of it as my personal request... Do away with all those samples and data, and just think of this as a simple challenge. Alright?
+::{{Диалог|Стрелка}} Of course.
+:::'''Leonard:''' Thank you, I won't have any explanation for you this time. I just hope... you would have fun.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+
+;(If )
+:{{Диалог|Стрелка}} About the previous drills...
+::'''Leonard:''' Huge success, my friend! The plan entered the next phase. It will be launched at a later date when everything is set up. As for the time... heh, it's a secret. It works best when it's least expected.
+::'''Leonard:''' If you want to run the test again, I can arrange it for you.
+::{{Диалог|Стрелка}} Alright, let's begin.
+:::'''Leonard:''' No problem, I'll set up the location now!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Forget it.
+:::'''Leonard:''' Uh huh. If you need anything, lemme know.
+
+;(If )
+:{{Диалог}} How have things been?
+::'''Leonard:''' Eh. The higher-ups want me to think about the network security of the space station in detail, so I've decided to stop taking random gigs in the foreseeable future and focus on the things that are truly important.
+::{{Диалог|Разговор}} Why haven't I seen you before?
+:::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} What do you do before this?
+:::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} About Cosmic Warfare...
+:::'''Leonard:''' Huh? Did you hear about it from Mr. Screwllum? You weren't here when it happened.
+:::{{Диалог|Разговор}} Did you face off with Silver Wolf?
+::::'''Leonard:''' Depends on how you define "face off"... I told you when we first met that I tried tracking the Stellaron Hunters after they left the space station, but ended up in Silver Wolf's trap.
+::::'''Leonard:''' She reverse-hacked into my device and sent a bunch of spam messages to people in my name, asking them to play a video game called Cosmic Warfare.
+::::'''Leonard:''' ...Just, it's an embarrassing memory. Just forget about it.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Why's it called Cosmic Warfare?
+::::'''Leonard:''' I didn't understand as well, in the beginning. This game was usually installed in old display terminals on those antique interstellar vessels. Ugh... The type of game only an idle drunk miner could love.
+::::'''Leonard:''' After reading into it a little, I found out there's a collector looking for a rare strategy for this game, and the reward is a Tyranid fighter jet, eventually won by someone anonymous &mdash; that must be Silver Wolf.
+::::'''Leonard:''' I think she probably doesn't have many friends. Cosmic Warfare is a multiplayer collaborative game, so she couldn't play the game on her own, so she looked for a bunch of "helpers" in this way.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} How did that go?
+::::'''Leonard:''' Oh, nowhere. I've done my best to quarantine the intruder's viral influence to the monitoring room. It didn't spread outside, but that's all I could do...
+::::'''Leonard:''' I wrote a script to block off those spam messages day and night. It's a little primitive, but very effective.
+::::'''Leonard:''' In the end, Silver Wolf seemed to have had enough fun and shut the game down. That was the end of that saga. What I didn't know is that Madam Herta and she had already set up the chess board for the next game.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} I want to ask about something else...
+::::{{Диалог|Разговор}} Why haven't I seen you before?
+:::::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} What do you do before this?
+:::::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::::;(Return to previous option selection)
+::::{{Диалог|Выход}} I don't have any other questions.
+::{{Диалог|Выход}} I don't have any other questions.
+
+;(If )
+:{{Диалог|Выход}} Oh nothing, I'll leave you to it.
+::'''Leonard:''' Okay. I should be stationed here in the near future. Come find me if you need anything!
+{{Dialogue End}}
+
+===Complete Sealed Sector: Difficulty 2{{subst:void|<!--200070504-->}}===
+{{Dialogue Start}}
+
+;(Talk to Leonard)
+:'''Leonard:''' Hey friend! I'm so happy to see you!
+;(If )
+:{{Диалог|undefined}} How is the drill revision coming along?
+::'''Leonard:''' All good! I replanned the route and added some new designs. What do you say, wanna try it out?
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' No problem, let's go!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} Are you still preparing for the drill?
+::'''Leonard:''' Ah, yes. I submitted the last edition to the board and received feedback. Some good, some constructive.
+::'''Leonard:''' After all, this is a huge undertaking for the entire space station. They will have to give it some more thought, so I added new content and want to ask for your opinion.
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' Thank you! Let's go.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} About the security drill...
+::'''Leonard:''' Hey... (Trailblazer), I've been thinking about a question.
+::'''Leonard:''' The more I look into Silver Wolf's program, the more I feel... she's too far beyond reach. She can do anything just for fun, as if real life is really just a game.
+::'''Leonard:''' I cannot fathom that. This goes against everything I know. But... I need to keep up with her thinking. If I cannot stand on the same grounds as her, I will never be able to complete this job.
+::'''Leonard:''' I tried my best. This is the final edition, it's my magnum opus. Think of it as my personal request... Do away with all those samples and data, and just think of this as a simple challenge. Alright?
+::{{Диалог|Стрелка}} Of course.
+:::'''Leonard:''' Thank you, I won't have any explanation for you this time. I just hope... you would have fun.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|Стрелка}} About the previous drills...
+::'''Leonard:''' Huge success, my friend! The plan entered the next phase. It will be launched at a later date when everything is set up. As for the time... heh, it's a secret. It works best when it's least expected.
+::'''Leonard:''' If you want to run the test again, I can arrange it for you.
+::{{Диалог|Стрелка}} Alright, let's begin.
+:::'''Leonard:''' No problem, I'll set up the location now!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Forget it.
+:::'''Leonard:''' Uh huh. If you need anything, lemme know.
+;(If )
+:{{Диалог}} How have things been?
+::'''Leonard:''' Eh. The higher-ups want me to think about the network security of the space station in detail, so I've decided to stop taking random gigs in the foreseeable future and focus on the things that are truly important.
+::{{Диалог|Разговор}} Why haven't I seen you before?
+:::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} What do you do before this?
+:::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} About Cosmic Warfare...
+:::'''Leonard:''' Huh? Did you hear about it from Mr. Screwllum? You weren't here when it happened.
+:::{{Диалог|Разговор}} Did you face off with Silver Wolf?
+::::'''Leonard:''' Depends on how you define "face off"... I told you when we first met that I tried tracking the Stellaron Hunters after they left the space station, but ended up in Silver Wolf's trap.
+::::'''Leonard:''' She reverse-hacked into my device and sent a bunch of spam messages to people in my name, asking them to play a video game called Cosmic Warfare.
+::::'''Leonard:''' ...Just, it's an embarrassing memory. Just forget about it.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Why's it called Cosmic Warfare?
+::::'''Leonard:''' I didn't understand as well, in the beginning. This game was usually installed in old display terminals on those antique interstellar vessels. Ugh... The type of game only an idle drunk miner could love.
+::::'''Leonard:''' After reading into it a little, I found out there's a collector looking for a rare strategy for this game, and the reward is a Tyranid fighter jet, eventually won by someone anonymous &mdash; that must be Silver Wolf.
+::::'''Leonard:''' I think she probably doesn't have many friends. Cosmic Warfare is a multiplayer collaborative game, so she couldn't play the game on her own, so she looked for a bunch of "helpers" in this way.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} How did that go?
+::::'''Leonard:''' Oh, nowhere. I've done my best to quarantine the intruder's viral influence to the monitoring room. It didn't spread outside, but that's all I could do...
+::::'''Leonard:''' I wrote a script to block off those spam messages day and night. It's a little primitive, but very effective.
+::::'''Leonard:''' In the end, Silver Wolf seemed to have had enough fun and shut the game down. That was the end of that saga. What I didn't know is that Madam Herta and she had already set up the chess board for the next game.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} I want to ask about something else...
+::::{{Диалог|Разговор}} Why haven't I seen you before?
+:::::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} What do you do before this?
+:::::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::::;(Return to previous option selection)
+::::{{Диалог|Выход}} I don't have any other questions.
+::{{Диалог|Выход}} I don't have any other questions.
+;(If )
+:{{Диалог|Выход}} Oh nothing, I'll leave you to it.
+::'''Leonard:''' Okay. I should be stationed here in the near future. Come find me if you need anything!
+{{Dialogue End}}
+
+===Complete Sealed Sector: Difficulty 3{{subst:void|<!--200070505-->}}===
+{{Dialogue Start}}
+
+;(Talk to Leonard)
+:'''Leonard:''' Hey friend! I'm so happy to see you!
+;(If )
+:{{Диалог|undefined}} How is the drill revision coming along?
+::'''Leonard:''' All good! I replanned the route and added some new designs. What do you say, wanna try it out?
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' No problem, let's go!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} Are you still preparing for the drill?
+::'''Leonard:''' Ah, yes. I submitted the last edition to the board and received feedback. Some good, some constructive.
+::'''Leonard:''' After all, this is a huge undertaking for the entire space station. They will have to give it some more thought, so I added new content and want to ask for your opinion.
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' Thank you! Let's go.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} About the security drill...
+::'''Leonard:''' Hey... (Trailblazer), I've been thinking about a question.
+::'''Leonard:''' The more I look into Silver Wolf's program, the more I feel... she's too far beyond reach. She can do anything just for fun, as if real life is really just a game.
+::'''Leonard:''' I cannot fathom that. This goes against everything I know. But... I need to keep up with her thinking. If I cannot stand on the same grounds as her, I will never be able to complete this job.
+::'''Leonard:''' I tried my best. This is the final edition, it's my magnum opus. Think of it as my personal request... Do away with all those samples and data, and just think of this as a simple challenge. Alright?
+::{{Диалог|Стрелка}} Of course.
+:::'''Leonard:''' Thank you, I won't have any explanation for you this time. I just hope... you would have fun.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|Стрелка}} About the previous drills...
+::'''Leonard:''' Huge success, my friend! The plan entered the next phase. It will be launched at a later date when everything is set up. As for the time... heh, it's a secret. It works best when it's least expected.
+::'''Leonard:''' If you want to run the test again, I can arrange it for you.
+::{{Диалог|Стрелка}} Alright, let's begin.
+:::'''Leonard:''' No problem, I'll set up the location now!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Forget it.
+:::'''Leonard:''' Uh huh. If you need anything, lemme know.
+;(If )
+:{{Диалог}} How have things been?
+::'''Leonard:''' Eh. The higher-ups want me to think about the network security of the space station in detail, so I've decided to stop taking random gigs in the foreseeable future and focus on the things that are truly important.
+::{{Диалог|Разговор}} Why haven't I seen you before?
+:::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} What do you do before this?
+:::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} About Cosmic Warfare...
+:::'''Leonard:''' Huh? Did you hear about it from Mr. Screwllum? You weren't here when it happened.
+:::{{Диалог|Разговор}} Did you face off with Silver Wolf?
+::::'''Leonard:''' Depends on how you define "face off"... I told you when we first met that I tried tracking the Stellaron Hunters after they left the space station, but ended up in Silver Wolf's trap.
+::::'''Leonard:''' She reverse-hacked into my device and sent a bunch of spam messages to people in my name, asking them to play a video game called Cosmic Warfare.
+::::'''Leonard:''' ...Just, it's an embarrassing memory. Just forget about it.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Why's it called Cosmic Warfare?
+::::'''Leonard:''' I didn't understand as well, in the beginning. This game was usually installed in old display terminals on those antique interstellar vessels. Ugh... The type of game only an idle drunk miner could love.
+::::'''Leonard:''' After reading into it a little, I found out there's a collector looking for a rare strategy for this game, and the reward is a Tyranid fighter jet, eventually won by someone anonymous &mdash; that must be Silver Wolf.
+::::'''Leonard:''' I think she probably doesn't have many friends. Cosmic Warfare is a multiplayer collaborative game, so she couldn't play the game on her own, so she looked for a bunch of "helpers" in this way.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} How did that go?
+::::'''Leonard:''' Oh, nowhere. I've done my best to quarantine the intruder's viral influence to the monitoring room. It didn't spread outside, but that's all I could do...
+::::'''Leonard:''' I wrote a script to block off those spam messages day and night. It's a little primitive, but very effective.
+::::'''Leonard:''' In the end, Silver Wolf seemed to have had enough fun and shut the game down. That was the end of that saga. What I didn't know is that Madam Herta and she had already set up the chess board for the next game.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} I want to ask about something else...
+::::{{Диалог|Разговор}} Why haven't I seen you before?
+:::::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} What do you do before this?
+:::::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::::;(Return to previous option selection)
+::::{{Диалог|Выход}} I don't have any other questions.
+::{{Диалог|Выход}} I don't have any other questions.
+;(If )
+:{{Диалог|Выход}} Oh nothing, I'll leave you to it.
+::'''Leonard:''' Okay. I should be stationed here in the near future. Come find me if you need anything!
+{{Dialogue End}}
+
+===Complete Sealed Sector: Difficulty 4{{subst:void|<!--200070506-->}}===
+{{Dialogue Start}}
+
+;(Talk to Leonard)
+:'''Leonard:''' Hey friend! I'm so happy to see you!
+;(If )
+:{{Диалог|undefined}} How is the drill revision coming along?
+::'''Leonard:''' All good! I replanned the route and added some new designs. What do you say, wanna try it out?
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' No problem, let's go!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} Are you still preparing for the drill?
+::'''Leonard:''' Ah, yes. I submitted the last edition to the board and received feedback. Some good, some constructive.
+::'''Leonard:''' After all, this is a huge undertaking for the entire space station. They will have to give it some more thought, so I added new content and want to ask for your opinion.
+::{{Диалог|Стрелка}} Let's begin.
+:::'''Leonard:''' Thank you! Let's go.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|undefined}} About the security drill...
+::'''Leonard:''' Hey... (Trailblazer), I've been thinking about a question.
+::'''Leonard:''' The more I look into Silver Wolf's program, the more I feel... she's too far beyond reach. She can do anything just for fun, as if real life is really just a game.
+::'''Leonard:''' I cannot fathom that. This goes against everything I know. But... I need to keep up with her thinking. If I cannot stand on the same grounds as her, I will never be able to complete this job.
+::'''Leonard:''' I tried my best. This is the final edition, it's my magnum opus. Think of it as my personal request... Do away with all those samples and data, and just think of this as a simple challenge. Alright?
+::{{Диалог|Стрелка}} Of course.
+:::'''Leonard:''' Thank you, I won't have any explanation for you this time. I just hope... you would have fun.
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} I'm not ready yet.
+:::'''Leonard:''' Oh... never mind then, it's not urgent. Come talk to me whenever you're ready.
+;(If )
+:{{Диалог|Стрелка}} About the previous drills...
+::'''Leonard:''' Huge success, my friend! The plan entered the next phase. It will be launched at a later date when everything is set up. As for the time... heh, it's a secret. It works best when it's least expected.
+::'''Leonard:''' If you want to run the test again, I can arrange it for you.
+::{{Диалог|Стрелка}} Alright, let's begin.
+:::'''Leonard:''' No problem, I'll set up the location now!
+::<pre>{
+	"$type": "RPG.GameCore.SetLocalPlayerDitherAlpha"
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4000211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+::{{Диалог|Выход}} Forget it.
+:::'''Leonard:''' Uh huh. If you need anything, lemme know.
+;(If )
+:{{Диалог}} How have things been?
+::'''Leonard:''' Eh. The higher-ups want me to think about the network security of the space station in detail, so I've decided to stop taking random gigs in the foreseeable future and focus on the things that are truly important.
+::{{Диалог|Разговор}} Why haven't I seen you before?
+:::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} What do you do before this?
+:::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} About Cosmic Warfare...
+:::'''Leonard:''' Huh? Did you hear about it from Mr. Screwllum? You weren't here when it happened.
+:::{{Диалог|Разговор}} Did you face off with Silver Wolf?
+::::'''Leonard:''' Depends on how you define "face off"... I told you when we first met that I tried tracking the Stellaron Hunters after they left the space station, but ended up in Silver Wolf's trap.
+::::'''Leonard:''' She reverse-hacked into my device and sent a bunch of spam messages to people in my name, asking them to play a video game called Cosmic Warfare.
+::::'''Leonard:''' ...Just, it's an embarrassing memory. Just forget about it.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} Why's it called Cosmic Warfare?
+::::'''Leonard:''' I didn't understand as well, in the beginning. This game was usually installed in old display terminals on those antique interstellar vessels. Ugh... The type of game only an idle drunk miner could love.
+::::'''Leonard:''' After reading into it a little, I found out there's a collector looking for a rare strategy for this game, and the reward is a Tyranid fighter jet, eventually won by someone anonymous &mdash; that must be Silver Wolf.
+::::'''Leonard:''' I think she probably doesn't have many friends. Cosmic Warfare is a multiplayer collaborative game, so she couldn't play the game on her own, so she looked for a bunch of "helpers" in this way.
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} How did that go?
+::::'''Leonard:''' Oh, nowhere. I've done my best to quarantine the intruder's viral influence to the monitoring room. It didn't spread outside, but that's all I could do...
+::::'''Leonard:''' I wrote a script to block off those spam messages day and night. It's a little primitive, but very effective.
+::::'''Leonard:''' In the end, Silver Wolf seemed to have had enough fun and shut the game down. That was the end of that saga. What I didn't know is that Madam Herta and she had already set up the chess board for the next game.
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} I want to ask about something else...
+::::{{Диалог|Разговор}} Why haven't I seen you before?
+:::::'''Leonard:''' Oh, that's the special nature of my position. If I'm not maintaining machines in the terminal room, I'll be in someone's workstation checking up on their terminal. Sometimes I have to go outside for other jobs, too.
+:::::'''Leonard:''' There are only a few of us in the Maintenance Department to maintain the entire space station. We've really got a lot on our plate.
+::::;(Return to previous option selection)
+::::{{Диалог|Разговор}} What do you do before this?
+:::::'''Leonard:''' Before this? I've always been an engineer. I used to work for an Interastral Peace Corporation branch and made rank P24.
+:::::'''Leonard:''' I don't really have any opinion of the IPC, only that it was too large. An entry-level employee like me could spend half my life there without bumping into the bigwigs.
+:::::'''Leonard:''' But the space station is different &mdash; you can hardly escape the Lead Researcher Asta. If you're lucky, you can even get your ears chewed off by Madam Herta &mdash; she's a member of the Genius Society!
+::::;(Return to previous option selection)
+::::{{Диалог|Выход}} I don't have any other questions.
+::{{Диалог|Выход}} I don't have any other questions.
+;(If )
+:{{Диалог|Выход}} Oh nothing, I'll leave you to it.
+::'''Leonard:''' Okay. I should be stationed here in the near future. Come find me if you need anything!
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Sealed Sector
+|zhs  = 封锁扇区
+|zht  = 封鎖磁區
+|ja   = 封鎖セクタ
+|ko   = 봉쇄 섹터
+|es   = Sector cerrado
+|fr   = Secteur bouclé
+|ru   = Изолированная зона
+|th   = กวาดล้างโซนปิดผนึก
+|vi   = Khu Vực Phong Tỏa
+|de   = Versiegelter Sektor
+|id   = Sektor Tersegel
+|pt   = Setor Trancado
+}}
+
+==Change History==
+{{Change History|3.5}}

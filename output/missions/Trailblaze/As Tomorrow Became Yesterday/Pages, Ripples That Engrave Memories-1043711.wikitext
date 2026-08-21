@@ -1,0 +1,780 @@
+<%-- [PAGE_INFO]
+PageTitle=#Pages, Ripples That Engrave Memories#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043711
+|title         = 
+|image         = <!--Mission Pages, Ripples That Engrave Memories.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = As Tomorrow Became Yesterday
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Trailblazer
+|startLocation = [[Amphoreus]] - [[A Flicker in Eden of Blessed Insight]]
+|world         = Amphoreus
+|area          = A Flicker in Eden of Blessed Insight
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Disorder Ambrosia*200; Immolation of the Heavens*1 { text = ''Immolation of the Heavens'' }; Agony Converging into River*1 { text = ''Agony Converging into River'' }; Shatter the God's Crown*1 { text = ''Shatter the God's Crown'' }; Credit*150 000
+}}
+'''''Pages, Ripples That Engrave Memories''''' is a [[Trailblaze Mission]] in the chapter [[As Tomorrow Became Yesterday]].
+
+==Steps==
+# Look for that ripple of memory in the split second just before the universe's destruction
+# Chase the Flower of Memory
+# Chase the Seed of Memory
+# Chase the Blossom of Memory
+# Chase the Bud of Memory
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Look for that ripple of memory in the split second just before the universe's destruction{{subst:void|<!--104371101-->}}===
+{{Mission Description|type=trailblaze|location=A Flicker in Eden of Blessed Insight|Irontomb's hatred devours the cosmos. Its coronation is nearly complete. All existence within the galaxy has already been formatted by it. However, in the final split second before the universe's destruction, I wake up in a silent void...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043711\DS104371101.json'-->)
+{{Dialogue End}}
+
+===Chase the Flower of Memory{{subst:void|<!--104371102-->}}===
+{{Mission Description|type=trailblaze|location=A Flicker in Eden of Blessed Insight|update|At the moment when the Scepter united its body and soul, Cyrene managed to temporarily preserve the memories of the victims thanks to Fuli's glimpse. In this eternal instant, I must keep running until I find Cyrene.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.59,
+	"Rate": 0.445,
+	"Duration": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite_37.asset",
+	"MaxAttenuationDistance": 80,
+	"MaxAttenuationDistanceRate": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioTrigger",
+	"Event": "Ev_sfx_storyd_370dev_RMringchange1"
+}</pre>
+:<!--0.1-second delay-->
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786401,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786402,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Chase the Seed of Memory{{subst:void|<!--104371104-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.445,
+	"Rate": 0.445,
+	"Duration": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Blank.asset",
+	"MaxAttenuationDistance": 80,
+	"MaxAttenuationDistanceRate": 1
+}</pre>
+----
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043711\DS104371199.json'-->)
+<pre>{
+	"$type": "RPG.GameCore.SetLoadingStratageType",
+	"StratageType": "WhiteBackground"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame",
+	"WaitFrameCount": 2
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByInTrackCameraByPathID","UseOwnerGroup":true,"PathID":{"IsDynamic":false,"FixedValue":{"Value":1}},"DetectRange":{"IsDynamic":true,"PostfixExpr":{"OpCodes":"AQAR","FixedValues":[],"DynamicHashes":[655055761]}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"SelectFollowTargetType": "Anchor",
+	"SelectLookAtTargetType": "Anchor",
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill"
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	]
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is not undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"OverrideInputByTrack": true
+}</pre>
+;(Unused &mdash; EndTrack)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 51
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": -1
+		}
+	},
+	"ExitFromStart": [],
+	"ExitFromEnd": []
+}</pre>
+{{Dialogue End}}
+
+===Chase the Blossom of Memory{{subst:void|<!--104371103-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.59,
+	"Rate": 0.445,
+	"Duration": 0.2,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite_37_B.asset",
+	"MaxAttenuationDistance": 80,
+	"MaxAttenuationDistanceRate": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioTrigger",
+	"Event": "Ev_sfx_storyd_370dev_RMringchange2"
+}</pre>
+:<!--0.1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786403,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786404,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Chase the Bud of Memory{{subst:void|<!--104371105-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.59,
+	"Rate": 0.445,
+	"Duration": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BlackWhite_37_C.asset",
+	"MaxAttenuationDistance": 80,
+	"MaxAttenuationDistanceRate": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioTrigger",
+	"Event": "Ev_sfx_storyd_370dev_RMringchange3"
+}</pre>
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"StartRate": 0.445,
+	"Rate": 0.445,
+	"Duration": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Blank.asset",
+	"MaxAttenuationDistance": 80,
+	"MaxAttenuationDistanceRate": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786405,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice_Single",
+	"VoiceID": 146786406,
+	"EmitterTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.WaitFrame",
+	"WaitFrameCount": 2
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByInTrackCameraByPathID","UseOwnerGroup":true,"PathID":{"IsDynamic":false,"FixedValue":{"Value":1}},"DetectRange":{"IsDynamic":true,"PostfixExpr":{"OpCodes":"AQAR","FixedValues":[],"DynamicHashes":[655055761]}}}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"SelectFollowTargetType": "Anchor",
+	"SelectLookAtTargetType": "Anchor",
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill"
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	]
+}</pre>
+:;(If {{F|IsSetMoveInputToAxis}} is not undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"Enable": true,
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"CurveID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": true,
+		"PostfixExpr": {
+			"OpCodes": "AQAR",
+			"FixedValues": [],
+			"DynamicHashes": [
+				655055761
+			]
+		}
+	},
+	"ExitFromStart": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"ExitFromEnd": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PredicateTaskList",
+			"Predicate": {
+				"$type": "RPG.GameCore.ByCompareGraphDynamicFloat",
+				"Name": "IsDoOnlyOnce",
+				"Value": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 0
+					}
+				}
+			},
+			"FailedTaskList": [
+				{
+					"$type": "RPG.GameCore.AdvDistrictEnableTrigger",
+					"DistrictID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 1
+						}
+					}
+				}
+			]
+		}
+	],
+	"OnOutOfRange": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "EndTrack"
+			}
+		}
+	],
+	"OverrideInputByTrack": true
+}</pre>
+;(Unused &mdash; EndTrack)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvHideMazeBtn",
+	"SkillType": "MazeSkill",
+	"IsHide": false
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveTrackCamera",
+	"LevelAreaCameraKey": {
+		"Custom": true,
+		"Key": "LevelAreaCameraKey"
+	},
+	"UseOwnerGroup": true,
+	"PathGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 51
+		}
+	},
+	"PathID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"TrackWidth": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": -1
+		}
+	},
+	"ExitFromStart": [],
+	"ExitFromEnd": []
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Pages, Ripples That Engrave Memories
+|zhs  = 纸页啊，镌留记忆的涟漪
+|zht  = 紙頁啊，鐫留記憶的漣漪
+|ja   = ページよ、記憶のさざ波を刻め
+|ko   = 종이여, 기억의 물결을 새겨라
+|es   = Páginas, graben las ondas del recuerdo
+|fr   = Pages, gravez les souvenirs de vos vagues
+|ru   = О страницы, высеченные на ряби воспоминания
+|th   = กระดาษเอ๋ย จงจารึกริ้วคลื่นแห่งความทรงจำ
+|vi   = Hỡi Trang Giấy, Khắc Ghi Gợn Sóng Của Ký Ức
+|de   = O Seiten, Wellen, die Erinnerungen tragen
+|id   = Lembaran Kertas, Menorehkan Riak Memori
+|pt   = Ó Páginas, Ondulações Que Gravam Memórias
+}}
+
+==Change History==
+{{Change History|<!--unknown-->}}

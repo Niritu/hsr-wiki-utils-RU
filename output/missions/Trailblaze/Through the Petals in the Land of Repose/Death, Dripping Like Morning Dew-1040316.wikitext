@@ -1,0 +1,389 @@
+<%-- [PAGE_INFO]
+PageTitle=#Death, Dripping Like Morning Dew#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040316
+|title         = 
+|image         = <!--Mission Death, Dripping Like Morning Dew.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Through the Petals in the Land of Repose
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = "Elder" Amunet; Castorice; Courageous Warrior; Ill Herder; Outlander War Captive; Trailblazer; Unknown Death-Row Prisoner
+|startLocation = [[Amphoreus]] - [[Aidonia's Cloister]]
+|world         = Amphoreus
+|area          = Aidonia's Cloister
+|prev          = 
+|next          = 
+|rewards       = Traveler's Guide*2; Credit*5 000
+}}
+'''''Death, Dripping Like Morning Dew''''' is a [[Trailblaze Mission]] in the chapter [[Through the Petals in the Land of Repose]].
+
+==Steps==
+# Speak with "Elder" Amunet
+# Execute the unknown death-row prisoner
+# Execute the courageous warrior
+# Execute the outlander war captive
+# Execute the Ill Herder
+# Speak with "Elder" Amunet and learn about the duties of an executioner
+# Defeat Furiae Praetor
+# Speak with "Elder" Amunet and learn about the duties of an executioner
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Speak with "Elder" Amunet{{subst:void|<!--104031601-->}}===
+{{Mission Description|type=trailblaze|location=Aidonia's Cloister|You remember "Elder" Amunet as well as Aidonia, this city-state that worshiped Thanatos. This is where your memory begins.<br />Of course, you also remember how you became an executioner and a Maiden of War.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+{{Dialogue End}}
+
+===Execute the unknown death-row prisoner{{subst:void|<!--104031602-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:{{tx}}
+:'''Unknown Death-Row Prisoner:''' Please... Don't kill me... I don't want to die....
+:{{Диалог|Стрелка}} {{Цвет|Огненный|A gentle touch.}}
+::'''Unknown Death-Row Prisoner:''' No... No...
+::{{tx}}
+:{{Диалог|Стрелка}} No. I can't do it.
+::'''"Elder" Amunet:''' This is your duty. Remember, consider the source of the dead's suffering, then give them the respect they deserve.
+::'''Unknown Death-Row Prisoner:''' Th&mdash;Thank you... I beg you... Don't listen to her...
+::{{Диалог|Стрелка}} {{Цвет|Огненный|A gentle touch.}}
+:::'''Unknown Death-Row Prisoner:''' No... No...
+:::{{tx}}
+::{{Диалог|Стрелка}} I&mdash;I can't...
+:::'''"Elder" Amunet:''' If you cannot learn to accept death, then Aidonia has no place for you.
+:::'''"Elder" Amunet:''' This is your last chance. Do it.
+:::'''Unknown Death-Row Prisoner:''' No, please... I don't want to die... Please, I'm begging you...
+:{{Диалог|Стрелка}} {{Цвет|Огненный|A gentle touch.}}
+:'''Unknown Death-Row Prisoner:''' No... No...
+:{{tx}}
+{{Dialogue End}}
+
+===Execute the courageous warrior{{subst:void|<!--104031603-->}}===
+{{Dialogue Start}}
+
+;(Talk to Bestow Honor)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 15,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Courageous Warrior:''' H&mdash;Holy Maiden...
+:'''"Elder" Amunet:''' Go. Grant her glorious death.
+;(Unused &mdash; G12_Fadeout)
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1
+}</pre>
+
+{{Dialogue End}}
+
+===Execute the outlander war captive{{subst:void|<!--104031604-->}}===
+{{Dialogue Start}}
+
+;(Talk to Impose Punishment)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 16,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Outlander War Captive:''' Do it then! Executioner...
+:'''"Elder" Amunet:''' You heard him.
+
+:'''Courageous Warrior:''' Th&mdash;Thank... you...
+{{Dialogue End}}
+
+===Execute the Ill Herder{{subst:void|<!--104031605-->}}===
+{{Dialogue Start}}
+
+;(Talk to Gift Slumber)
+----
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Duration": 1.5
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	},
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_NPC/Normal/Common/Eff_Normal_Common_BeHug01AS.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_300dev_Missionfailed"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 17,
+	"ID": 400001
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetTargetEntityFadeWithAnim",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"TargetValue": 1,
+	"Duration": 1.5
+}</pre>
+:<!--2-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Ill Herder:''' Please... grant me release...
+:'''"Elder" Amunet:''' You know what to do.
+
+:'''Outlander War Captive:''' I curse you... to live in eternal pain...!
+{{Dialogue End}}
+
+===Speak with "Elder" Amunet and learn about the duties of an executioner{{subst:void|<!--104031609-->}}===
+{{Mission Description|type=trailblaze|location=Aidonia's Cloister|update|You remember "Elder" Amunet as well as Aidonia, the city-state that worshiped Thanatos. This is where your memory begins.<br />The "Elder" does not wish that you become a merciless executioner, but that you would fully understand the weight of life and death, then carry out with utmost respect the duty with which you were born.}}
+{{Dialogue Start}}
+
+;(Talk to "Elder" Amunet)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40424_F40424001_G18"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Elder" Amunet:''' Come. Fulfill your duty.
+:'''Castorice:''' ...What?
+:'''Castorice:''' When will this ever end...?
+{{Dialogue End}}
+
+===Defeat Furiae Praetor{{subst:void|<!--104031608-->}}===
+{{Mission Description|type=trailblaze|location=Aidonia's Cloister|update|You remember "Elder" Amunet as well as Aidonia, this city-state that worshiped Thanatos. This is where your memory begins.<br />Actively use your natural-born talent and learn to accept it.<br />"Prove that you're a capable Holy Maiden, or that you have such resolve."}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Elder" Amunet:''' Come now. It's time. I have already taught you all that I know...
+:'''"Elder" Amunet:''' Show me that you are a fitting Holy Maiden... or at least, that you possess the resolve to become one.
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayMazeButtonEffect",
+	"Enable": true,
+	"BtnType": "MazeSkill"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ToastPile",
+	"DescTextID": {
+		"Hash": 4996247614040360955
+	}
+}</pre>
+{{Dialogue End}}
+
+===Speak with "Elder" Amunet and learn about the duties of an executioner{{subst:void|<!--104031606-->}}===
+{{Mission Description|type=trailblaze|location=Aidonia's Cloister|update|You remember "Elder" Amunet as well as Aidonia, the city-state that worshiped Thanatos. This is where your memory begins.<br />The "Elder" does not wish that you become a merciless executioner, but that you would fully understand the weight of life and death, then carry out with utmost respect the duty with which you were born.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::I don't want to die!
+::Please, I'm begging you.
+::Just let me go!
+::I don't want to die, please.
+::I don't want mercy like this!
+::Just... let me go... I need them...I don't...
+::I hate these icy hands.
+::Get it over with.
+::End its suffering.
+::The Reaper has blessed your hands.
+::Only you can grant them peace.
+::Embrace death.
+::Walk alongside it.
+::Is that you... Castorice?
+::All of them... have gone,
+::heeding Death's summon,
+::crossing into their domain.
+::I...
+::must go too.
+::I don't fear it,
+::Just... I have some regrets.
+::Watching people leave this world again and again...
+::it must be
+::lonely for you.
+::You must want to desperately embrace them
+::before they go.
+::I can't...
+::these hands...
+::they're too cold...
+::But big sister Castorice...
+::your hands are so warm.
+::Just like anyone else's.
+::So go on, don't hold back,
+::give me a warm hug.
+::Can hands like these...
+::really be warm?
+;(Cutscene ends)
+----
+----
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Death, Dripping Like Morning Dew
+|zhs  = 死亡啊，如朝露滑落指尖
+|zht  = 死亡啊，如朝露滑落指尖
+|ja   = 死よ、朝露の如く指先を伝え
+|ko   = 죽음이여, 새벽 이슬처럼 손끝에서 흘러내려라
+|es   = Muerte, gotea como el rocío entre los dedos
+|fr   = Ô mort, tu t'évanouis comme la rosée du matin
+|ru   = О смерть, ускользающая из пальцев подобно росе
+|th   = ความตายเอ๋ย จงหยดผ่านปลายนิ้วดั่งน้ำค้าง
+|vi   = Cái Chết, Hãy Lướt Qua Đầu Ngón Tay Như Sương Sớm
+|de   = O Tod, der dem Morgentau gleicht
+|id   = Maut, Laksana Embun Pagi yang Luruh di Ujung Jari
+|pt   = Morte, Gotejando Como Orvalho da Manhã
+}}
+
+==Change History==
+{{Change History|3.5}}

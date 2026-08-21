@@ -1,0 +1,661 @@
+<%-- [PAGE_INFO]
+PageTitle=#Mo Cuishle#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011701
+|title         = 
+|image         = <!--Mission Mo Cuishle.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Age of Awakening
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Big Ben; Cassidy; Little Fay; Luka; Nervous Thief; Seele; Svarog; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Robot Settlement]]
+|world         = Jarilo-VI
+|area          = Robot Settlement
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*100; Traveler's Guide*10; Lost Crystal*8; Obsidian of Desolation*6; Credit*100 000
+}}
+'''''Mo Cuishle''''' is a [[Companion Mission]] in the chapter [[Age of Awakening]].
+
+==Steps==
+# Speak with Cassidy the mechanic
+# Find Cassidy's robot friends
+# Fix Cassidy's robot friend, Little Fay
+# Follow Little Fay to find Big Ben's whereabouts
+# Interact with Big Ben
+# Follow Big Ben and report to Cassidy
+# Remove the enemies from the Fragmentum
+# Defeat the formidable foe from the Fragmentum
+# Find Svarog as per Luka's wishes
+# Challenge Svarog and complete the "trial"
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+----
+:'''Seele:''' This is Svarog's turf. Where to now?
+:'''Luka:''' Don't worry, just follow me. We need to find a mechanic called Cassidy first &mdash; I've hit him up before. This way!
+----
+{{Dialogue End}}
+
+===Speak with Cassidy the mechanic{{subst:void|<!--201170102-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The first goal of the trial is to... help with chores. Chat with Cassidy the mechanic and see how you lot can help him out of this crisis.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+:'''Cassidy:''' Luka! You're finally here. I've been waiting for you for ages...
+:'''Luka:''' Relax, bro! I'm a man of my word. No need to stress out.
+:'''Cassidy:''' And these two are... Oh, Miss Seele!? To think that two senior Wildfire members are concerned with my trivial problems...
+:'''Luka:''' They just came along to help. Don't mind them! Just tell us exactly what happened.
+:'''Seele:''' Came along to help, huh...
+:'''Cassidy:''' O&mdash;Okay... this may sound strange but &mdash; I'm an amateur mechanic. I like collecting scrap in my free time, doing odd jobs like putting robots together... that sort of thing.
+:'''Cassidy:''' But a few days ago, two of my robots suddenly disappeared! They were my pride and joy. I usually leave them in the tent when I head out &mdash; everyone in the settlement knows each other. This has never happened before...
+:'''Cassidy:''' Someone must have set their sights on my robots and stolen them while I was gone &mdash; I just don't know how they managed it. Did they change the programming? But that's not possible...
+:{{Диалог|Стрелка}} Maybe they just went out for a walk together.
+::'''Cassidy:''' H&mdash;Hey, stop kidding around! Can't you tell I have a serious problem on my hands...?
+:{{Диалог|Стрелка}} Why isn't that possible?
+::'''Cassidy:''' *sigh* It's not impossible, I just don't think there's anyone in the settlement capable of something like that.
+:'''Luka:''' I see, two robots... Do you have any clues? Any reasonable guesses? We need to have an opening to start the investigation.
+:'''Cassidy:''' Not really... but here's the most mysterious part of all this:
+:'''Cassidy:''' One of the machines they stole was a drone &mdash; I call it Little Fay. Little Fay has an alarm that buzzes non-stop as soon as any unauthorized people get close. It's guaranteed to wake up the entire settlement.
+:'''Cassidy:''' But I didn't hear Little Fay's alarm at all... I still can't figure out how that happened.
+:{{Диалог|Стрелка}} Maybe it stopped working?
+::'''Cassidy:''' No way! Little Fay was shipshape &mdash; not a hitch nor glitch in sight.
+::'''Luka:''' Hmm, a drone that was supposed to sound an alarm suddenly went silent... Worth remembering. Anything else?
+::'''Cassidy:''' Let me think... Oh, there is one other thing, but I don't know if it's useful...
+::'''Cassidy:''' Little Fay also has a tracker. If it gets too far from Big Ben &mdash; oh, Big Ben is the name of the other robot &mdash; if there's too much distance between them, Little Fay will automatically start routing and fly to Big Ben's location.
+::'''Cassidy:''' ...That's all I suppose. I tried to find clues myself, but I don't know where to start. This job needs real professionals...
+::'''Luka:''' Mm-hmm... Cool, we've got this! Don't worry, bro. We promise we'll find your robots!
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Maybe there's a true robotics master in the settlement.
+::'''Cassidy:''' T&mdash;Trust me! I know the people here &mdash; it's extremely unlikely.
+::'''Luka:''' Hmm, a drone that was supposed to sound an alarm suddenly went silent... Worth remembering. Anything else?
+::'''Cassidy:''' Let me think... Oh, there is one other thing, but I don't know if it's useful...
+::'''Cassidy:''' Little Fay also has a tracker. If it gets too far from Big Ben &mdash; oh, Big Ben is the name of the other robot &mdash; if there's too much distance between them, Little Fay will automatically start routing and fly to Big Ben's location.
+::'''Cassidy:''' ...That's all I suppose. I tried to find clues myself, but I don't know where to start. This job needs real professionals...
+::'''Luka:''' Mm-hmm... Cool, we've got this! Don't worry, bro. We promise we'll find your robots!
+:;(Return to previous option selection)
+
+;(Talk to Cassidy)
+:'''Cassidy:''' Please, I'm depending on you for Little Fay and Big Ben!
+:'''Cassidy:''' They are the fruits of my entire life's labor...
+
+;(Talk to Nervous Thief)
+:'''Nervous Thief:''' I&mdash;I'm sorry! Please, I've learned my lesson!
+:'''Nervous Thief:''' I've reset its systems &mdash; it won't attack you anymore! Just get it out of here &mdash; take it back to its owner!
+:'''Nervous Thief:''' Ugh... I can't stay here anymore... What am I gonna do...
+{{Dialogue End}}
+
+===Find Cassidy's robot friends{{subst:void|<!--201170104-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The first goal of the trial is to... help with chores.<br />Cassidy the mechanic's two robot friends, Little Fay and Big Ben, have both been incomprehensibly stolen. You lot need to help him regain his legal property.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+----
+:'''Luka:''' Look, there's a drone over there! But how can we tell if it's the one Cassidy lost...
+:'''Seele:''' Here, look... someone deliberately scratched off the paintwork &mdash; didn't even do a good job of it.
+:'''Luka:''' Oh, you're right! You've got a good eye, Seele! Whoever did it must've been in a hurry.
+:'''Luka:''' We need to fix this little guy up &mdash; (Trailblazer), can you lend a hand?
+----
+{{Dialogue End}}
+
+===Fix Cassidy's robot friend, Little Fay{{subst:void|<!--201170105-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The first goal of the trial is to... help with chores.<br />You find one of Cassidy the mechanic's robot friends, Little Fay. However, it is in a very bad state. Flex your muscles as an amateur mechanic and fix it.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300020
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019910
+		},
+		{
+			"AutoSkipTime": 1,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 217019911
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Follow Little Fay to find Big Ben's whereabouts{{subst:void|<!--201170107-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "training plans" and wants you to accompany him the whole way to witness his improvement.<br />The first goal of the trial is to... help with chores.<br />You fix Little Fay the robot. Its auto-navigation function will lead you to Big Ben, Cassidy's other robot friend.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300006
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Luka:''' Look! That fella over there is acting pretty shifty.
+:'''Luka:''' He's gotta be the thief we're looking for. Let's go and have a chat with him!
+
+;(По прибытии на место)
+:'''Luka:''' Look! That fella over there is acting pretty shifty.
+:'''Luka:''' He's gotta be the thief we're looking for. Let's go and have a chat with him!
+;(Unused &mdash; MazePuzzle_Drone_Up)
+:<!--2-second delay-->
+::'''Seele:''' Hey, it's flying away! Follow it!
+
+;(Unused &mdash; Maze_Prop_RobotGamePlay_Mission)
+
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300007
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Luka:''' Hey, friend!
+:'''Nervous Thief:''' Wh&mdash;Who's there!?
+:'''Nervous Thief:''' A red ribbon... W&mdash;Wildfire!? Ha! How did you...? I'm doing just fine &mdash; no monsters around here. Why don't you go bother someone else?
+:'''Seele:''' Hmph, shying away from honest work, indulging in petty crime &mdash; of course you're "doing just fine."
+:'''Luka:''' Uh, I'm not sure this falls under "petty crime," Seele &mdash; that's a whole robot he's got next to him. It's Big Ben alright.
+:'''Nervous Thief:''' H&mdash;Hold on a second. Who told you the name of this robot? Don't tell me it's&mdash;
+:'''Luka:''' That's right. Cassidy sent us here! Hand over what you stole, or be prepared to face the fist of a champion!
+:'''Nervous Thief:''' ...F&mdash;Fist of a champion, huh? Hmph, I've come this far &mdash; I won't be able to show my face around here if news gets out... Do your worst!
+:'''Nervous Thief:''' Big Ben, let's get him!
+:'''Seele:''' Going all the way, huh? Enough talk then &mdash; Luka, let's get him!
+:'''Luka:''' Ha! I was thinking the exact same thing! Here, let me punch some sense into you!
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+----
+:'''Luka:''' Nice! Our thieving friend surrendered, and Big Ben looks to be in one piece. The first step of the champion's training is complete!
+:'''Luka:''' ...Huh, why are you two so straight-faced? Can't you look a little happy?
+:{{Диалог|Стрелка}} (Say nothing)
+::'''Seele:''' ...What was that supposed to be? "The Moltammerville warrior"...?
+:{{Диалог|Стрелка}} "The Moltammerville warrior..."
+::'''Seele:''' Yeah, I was gonna ask... what was all that supposed to be?
+:'''Luka:''' Oh, that? Nothing, just a slogan &mdash; don't take it too seriously. Let's get Big Ben back to Cassidy.
+:'''Seele:''' ...
+:'''Seele:''' Fine, let's finish up here. But I'm gonna put it out there &mdash; we're not gonna forget those lines of yours anytime soon...
+----
+{{Dialogue End}}
+
+===Interact with Big Ben{{subst:void|<!--201170109-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The first goal of the trial is to... help with chores.<br />You defeat the thief and recover Cassidy the mechanic's two robot friends. It's time to tell Cassidy the good news.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Follow Big Ben and report to Cassidy{{subst:void|<!--201170110-->}}===
+{{Dialogue Start}}
+
+----
+:'''Cassidy:''' Big Ben! You're back!
+:'''Big Ben:''' Beep... boop. Cassidy. Little Fay. Cassidy.
+:'''Cassidy:''' I don't know how I can ever thank you... Luka, Seele, and... {{MC|ж=miss|м=mister}} outsider! My life can finally get back on track now...
+:'''Luka:''' See? I kept my word, right? Wildfire's senior members always deliver what we promise.
+:'''Cassidy:''' I've never doubted you, Luka! I'll remember this forever... Right, time to take Little Fay and Big Ben for a systems check &mdash; until next time!
+:'''Luka:''' Yeah, go ahead! We'll catch up later.
+----
+:'''Luka:''' ...That felt great! It's such a wholesome feeling to help other people, don't you think?
+:'''Seele:''' To be honest, I think you could've handled it yourself.
+:'''Seele:''' You said this was the first step, right...? So just how many steps does your training have, exactly?
+:'''Luka:''' Three. Just three steps. Trust me, it won't take too much of your time!
+:{{Диалог|Стрелка}} Where to next?
+::'''Luka:''' Easy, I'm about to tell you.
+:{{Диалог|Стрелка}} I THIRST FOR BATTLE!!!
+::'''Luka:''' Hahaha, I like your spirit! Shame I didn't run into you sooner.
+:{{Диалог|Стрелка}} I care more about what I can get as rewards...
+::'''Seele:''' Um, maybe we can talk about that later...
+:'''Luka:''' Let's go! Next, we're gonna clear up all the Fragmentum cronies still left in the settlement!
+:'''Seele:''' ...Huh? Fragmentum? But the settlement...
+:'''Luka:''' ...Wasn't affected by the Fragmentum, right? You're not wrong. The fissure here only recently opened up. Master Oleg got the intel from our network just yesterday.
+:'''Luka:''' I asked him to leave this case to me. Perfect for the second step of the training, right?
+:'''Seele:''' Like master, like student... I admire your attitude. In any case, if this concerns the Fragmentum, then there's no time to lose. Where are the monsters? Lead the way.
+:'''Luka:''' Way ahead of you. Follow me!
+----
+<pre>{
+	"$type": "RPG.GameCore.DestroyCurvePropGroupPuzzle",
+	"UniqueName": {
+		"Value": "M202_RobotGamePlay_MissionEmpty"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Remove the enemies from the Fragmentum{{subst:void|<!--201170111-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The second goal of the trial is simple and brutal... clear out all the Fragmentum monsters that have entered the Robot Settlement.<br />Obviously no one is more of an expert at this than you. Let's go!}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300010
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Luka:''' Say, how did you settle your beef with Svarog? Tell me the juicy details.
+:'''Seele:''' It's a long story... I'll tell you later.
+
+;(По прибытии на место)
+:'''Seele:''' Luka, come clean with me. Are you here for some other reason?
+:'''Luka:''' It's just training, for real! It's not like you to be so suspicious, Seele.
+
+;(По прибытии на место)
+----
+:'''Seele:''' There are so many of them... Are you sure the fissure only recently opened up?
+:'''Luka:''' Our intel should have been accurate... Seems like Boss Svarog must have let his guard down &mdash; these guys are messing up his turf!
+:'''Seele:''' Enough talk. Let's clean up this area.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P40123_F40123001_G4",
+	"AnchorName": "Anchor23",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"CustomCurveName": "Blend_FastToSlow",
+		"BlendTime": 1
+	}
+}</pre>
+{{Dialogue End}}
+
+===Defeat the formidable foe from the Fragmentum{{subst:void|<!--201170112-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The second goal of the trial is simple and brutal... clear out all the Fragmentum monsters that have entered the Robot Settlement.<br />A powerful Fragmentum monster appears before you. Get rid of it!}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300012
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Luka:''' Ah, no wonder these minions are so active &mdash; there's a big fella hiding behind them!
+:'''Seele:''' So, this guy is the source of it all, right? If we take him out, the Fragmentum activity in this area should subside for a while...
+:'''Seele:''' ...And trial two will be complete.
+:'''Luka:''' Hahaha, that's right! What's up? Starting to get into it, Seele?
+:'''Seele:''' ...It's been too long since I had a good workout. This will be a nice warm-up!
+:'''Luka:''' Alright! (Trailblazer) &mdash; we'll charge in once you're ready!
+;(Enter battle)
+::{{tx|Enemy list missing}}
+:{{tx}}
+----
+:'''Seele:''' You...
+:'''Seele:''' Are you okay!?
+:{{Диалог|Стрелка}} ...Is this some kind of performance art?
+::'''Seele:''' ...Why are you so hyped? What's going on?
+:{{Диалог|Стрелка}} "Defeater of evil throughout the world!"
+::'''Seele:''' ...Don't copy him!
+::'''Seele:''' Seriously, why are you so hyped up today?
+:'''Luka:''' Hahaha, it's just a normal victory celebration. No need to be so alarmed.
+:'''Seele:''' ...You call that normal? I might have let it slide if it was in the cage... On second thought, no, that was cringe even by Fight Club standards.
+:'''Luka:''' Don't get so worked up, Seele! I'm thinking clearly! Plus, didn't we just get rid of another major threat to the Underworld?
+:'''Seele:''' True, but quit changing the subject! This new "routine" of yours is just...
+:'''Luka:''' Hahaha, don't worry! I promise you, it'll only last till the end of my training. Actually, have I been making too many promises today? That's not a good habit...
+:'''Luka:''' Anyway, there's only one more step in my training plan. Come on guys, help me wrap it up!
+:'''Seele:''' *sigh* ...I guess we're in too deep, better let it run its course. So tell us, what else is on the schedule.
+:'''Luka:''' The final step in this training &mdash; is to challenge boss Svarog!
+:{{Диалог|Стрелка}} Oh boy...
+:{{Диалог|Стрелка}} Noice! Count me in!
+:'''Seele:''' Are you sure you're thinking clearly!?
+:'''Luka:''' Whoa, whoa, stay cool, Seele. Like I said, I'm thinking clearly. Every word I said is serious!
+:'''Luka:''' I set this as the final goal of my training a few days ago. Think about it &mdash; is there any Underworld opponent worth challenging more than Boss Svarog?
+:'''Seele:''' ...No, I can't agree to this, you're asking for trouble! Forget about winning or losing &mdash; the relationship between Wildfire and Svarog only just got patched up...
+:'''Luka:''' I'm not going to rile him up! Don't make this more complicated than it is. I'm just inviting him to have a fair fight with me, like how you'd have in the cage!
+:'''Seele:''' Are you mad? Svarog is a robot! He doesn't understand the rules of the cage! He's different from us. His fists are made of steel&mdash;
+:'''Luka:''' ...That means we're evenly matched, right?
+:'''Seele:''' ...
+:'''Seele:''' You know what I mean &mdash; don't act smart with me! Ugh, you don't make any sense...
+:'''Luka:''' Hahaha, I understand what you're saying, Seele! But you know, I'm a fighter... It's my duty to keep training and get stronger.
+:'''Luka:''' It's a terrible feeling to have a powerful opponent in your head but never be able to get close to him. It's all thanks to your patching things up with Svarog that I'm able to have this opportunity now &mdash; I'm not gonna miss it for the world!
+:'''Seele:''' ...
+:{{Диалог|Стрелка}} Let him do it, Seele.
+:{{Диалог|Стрелка}} Svarog might go easy because we're here...
+:'''Seele:''' ...Alright. Fine. We'll go find Svarog and have a nice chat with him.
+:'''Seele:''' Lemme say this first &mdash; if he doesn't wanna deal with you as a challenger, then we're getting out of there ASAP.
+:'''Luka:''' Haha, don't worry, I'll convince him! But you're right. If he's not in the mood for it, then I won't force him.
+:'''Luka:''' I haven't really worked with boss Svarog before, so please, lead the way. Let's go!
+----
+{{Dialogue End}}
+
+===Find Svarog as per Luka's wishes{{subst:void|<!--201170114-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />The final goal of the trial is to challenge Svarog. You and Seele both think it is absolute nonsense, but Luka insists on completing the goals he set for himself.<br />You and Seele decide to keep following him in case something bad happens.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300014
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Seele:''' Have you talked to Oleg about going to see Svarog?
+:'''Luka:''' Hahaha, that's all you wanna ask? I don't necessarily tell master Oleg everything, you know.
+:'''Seele:''' *sigh*
+
+;(По прибытии на место)
+:'''Seele:''' Luka, you&mdash;
+:'''Luka:''' Hmm? What's up?
+:'''Seele:''' ...Never mind. I get the feeling I'm wasting my breath.
+
+;(По прибытии на место)
+----
+:'''Svarog:''' The Trailblazer, Seele of Wildfire, and...
+:'''Luka:''' Hey! An honor to meet you, Boss Svarog! I'm Luka, a senior member of Wildfire, just like Seele.
+:'''Svarog:''' Accessing back-end database. Querying...
+:'''Svarog:''' Query complete. Luka, born in Moltammerville, winner of the 28th Boulder Town Fight King Challenge. Beloved student of Oleg, acting chief of Wildfire.
+:'''Luka:''' ...Wow, impressive! Thank you for saving me the self-introduction.
+:'''Svarog:''' Luka of Wildfire, what is the purpose of your visit?
+:'''Luka:''' Straight to the point, just the way I like it &mdash; I'm here to challenge you, Boss Svarog!
+:'''Svarog:''' ...Challenge?
+:'''Svarog:''' Intent unclear. (Trailblazer), Seele of Wildfire &mdash; can you provide an explanation?
+:{{Диалог|Стрелка}} Not really...
+::'''Seele:''' ...Don't look at me. He's the one who came up with this idea. It's up to you to accept it or not, Svarog.
+:{{Диалог|Стрелка}} I think he might have hit his head.
+::'''Seele:''' ...He's the one who came up with this idea. It's up to you to accept it or not, Svarog.
+:{{Диалог|Стрелка}} Just accept!
+::'''Seele:''' Hey, why are you fanning the flames!?
+::'''Seele:''' *sigh* He's the one who came up with this idea. It's up to you to accept it or not, Svarog.
+;(Unused &mdash; LLS)
+
+
+;(Unused &mdash; SHLS)
+
+{{Dialogue End}}
+
+===Challenge Svarog and complete the "trial"{{subst:void|<!--201170115-->}}===
+{{Mission Description|type=companion|location=Robot Settlement|update|You are Luka, a core member of Wildfire, the best fighter of Boulder Town.<br />You are well aware this is probably the only time in your life that you can fight Svarog head-on... This is a dream you had always wanted to achieve.<br />Don't give yourself regrets. Go and fight him fair and square!}}
+{{Dialogue Start}}
+----
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400030,
+			"TalkSentenceID": 217019922
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400030,
+			"TalkSentenceID": 217019923
+		}
+	],
+	"LoopInterval": 3
+}</pre>
+
+;(По прибытии на место)
+:<!--1.5-second delay-->
+:'''Luka:''' Hahaha, I really can't tell whose side you're on!
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400029,
+			"TalkSentenceID": 217019924
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 4,
+			"GroupNpcID": 400029,
+			"TalkSentenceID": 217019925
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 3,
+	"UniqueID": 1
+}</pre>
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Mo Cuishle
+|zhs  = 我的挚爱，我的血肉
+|zht  = 我的摯愛，我的血肉
+|ja   = 私の最愛、私の血
+|ko   = 나의 사랑, 나의 혈육
+|es   = Mo Cuishle
+|fr   = Mon amour, ma chair, mon sang
+|ru   = Моя кровиночка
+|th   = รักแท้ของฉัน เลือดเนื้อของฉัน
+|vi   = Tình Yêu Của Tôi, Nhịp Đập Của Tôi
+|de   = Mo Cuishle
+|id   = Kesayanganku, Darah Dagingku
+|pt   = Mo Cuishle
+}}
+
+==Change History==
+{{Change History|3.5}}

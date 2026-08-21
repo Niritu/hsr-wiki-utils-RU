@@ -1,0 +1,506 @@
+<%-- [PAGE_INFO]
+PageTitle=#Lost Generation#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1031001
+|title         = 
+|image         = <!--Mission Lost Generation.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = [[Trailblaze Mission]] ''[[The Devil in Velvet]]'' completed
+|summary       = The Crew arrived safely at the Golden Hour and exchanged info with you. At this same moment, a dark tide in the dream had begun to surge...
+|characters    = Himeko; March 7th; Trailblazer; Welt
+|startLocation = [[Penacony]] - [[Golden Hour]]
+|world         = Penacony
+|area          = Golden Hour
+|prev          = The Devil in Velvet
+|next          = Double Indemnity
+|rewards       = Trailblaze EXP*400; Stellar Jade*50; Traveler's Guide*4; Clock Credits*300; "City Upon a Hill"*1 { text = "City Upon a Hill" }; Credit*40 000
+}}
+'''''Lost Generation''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Reunite with the Crew
+# Tell Aventurine what the Crew thinks
+# Talk to Himeko
+# Talk to March 7th
+# Talk to Welt
+# Recall the memories on Acheron
+# Speak with Acheron
+# Discuss the plan with the Crew
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Reunite with the Crew{{subst:void|<!--103100101-->}}===
+{{Dialogue Start}}
+:'''March 7th:''' We heard about Miss Firefly from Black Swan... But we never expected Miss Robin to...
+:'''Himeko:''' I'm sorry... that I couldn't be with you then.
+:'''Welt:''' Reality cruises on in serenity, while undercurrents bubble up from the Dreamscape... just like that Memokeeper said...
+:'''Welt:''' ...Stay strong, everyone. We can still do what we can for them... starting with finding the murderer.
+:'''Himeko:''' Let's recap everything then. (Trailblazer) just reminded me of something: March, do you remember what that Family rep who negotiated with us said?
+:'''March 7th:''' "Indeed, we trust that the Nameless has nothing to do with this, and we also beg each of you to help assist The Family in verifying the identity of the deceased." That's how it was put... in reference to Miss Firefly.
+:'''Himeko:''' Looking back, he seemed a little evasive at the time. And he also failed to mention anything about the earlier murder, too.
+:'''March 7th:''' The Family is planning on covering up all news about Miss Robin's death. If news gets out, Penacony is going to turn into a bloodbath...
+:'''Welt:''' But the murder that followed closely after was obviously beyond their anticipation. The Family had to try and turn things to their advantage by bringing in reinforcements from outside. The Charmony Festival is nearly here &mdash; they must be snowed under.
+:'''Himeko:''' It may also be that Miss Firefly's murder had so many witnesses that it couldn't be covered up, so they went with the flow and let more people on the scene to control the situation.
+:'''Himeko:''' After all, the nature of the two murders is fundamentally different... The Family's first protective measures should be against malicious actors among the guests, such as that IPC envoy.
+:{{Диалог|Стрелка}} He really is up to no good.
+::'''Welt:''' All the while accusing that Galaxy Ranger...
+::Aventurine is on guard against Acheron.
+:{{Диалог|Стрелка}} Aventurine is on guard against Acheron.
+:'''Welt:''' Indeed, he was particularly concerned about that Galaxy Ranger.
+:'''March 7th:''' Are we missing the forest for the trees here...? I always felt that Aventurine's reasons for accusing Miss Acheron were highly subtle. Can we believe him?
+:'''Himeko:''' At this point, I'm afraid the only ones we can trust are ourselves.
+:'''Welt:''' Look, let's try to gather intel first and then list all the possible outcomes we can. Then we go through them, eliminating contradictions one-by-one. The fewer facts remaining, the closer we are to the truth.
+:'''Welt:''' ...I've still got this sense of foreboding. It's like we're stuck in a whirlpool &mdash; spinning around {{Цвет|Ключевой|nobold=1|that Legacy}} even after everything that's happened...
+:'''(Trailblazer):''' (Looks like Aventurine is happy with this outcome... Let's tell everyone about it.)
+:'''March 7th:''' This time we're playing the role of a real detective... But before we start, what are we going to say to The Family and Aventurine?
+:'''Himeko:''' As I see things, The Family harbors no ill-will towards the Astral Express &mdash; if they didn't trust the Crew, they wouldn't have casually commissioned outsiders to investigate a case that's in all likelihood "a scandal."
+:'''Himeko:''' Plus, this is The Family's turf. Teaming up with them should make things easier for us in the future.
+:'''Himeko:''' As for that Aventurine... Welt, I'd like to hear your thoughts.
+:'''Welt:''' He's complex. He deliberately slow-played his hand during negotiations while running circles round us all the while.
+:'''Welt:''' He appealed convincingly to both reason and emotion. It wasn't forced, but the intent was obvious.
+:'''Welt:''' Still, it's good to have contacts among all this uncertainty. Aventurine showed his skills, and as far as our interests are aligned, he can become a reliable ally.
+:'''Welt:''' We also need to keep a certain distance from The Family &mdash; never let them get too close. Teaming up with the IPC helps balance that out &mdash; if either side makes a move, we have the option to pull out.
+:'''Himeko:''' So you suggest accepting Aventurine's proposal to team up?
+:'''Welt:''' Yes... It's risky, but we can only wait until both sides have played their cards before making any further judgments.
+:'''March 7th:''' I get why, but there's a whole lot of bad guys and girls around here and I'm worried about getting stabbed in the back. (Trailblazer) has been bullied a few times now, and I can't stand it anymore...
+:{{Диалог|Стрелка}} It's fine. Let's focus on the big picture for now.
+:{{Диалог|Стрелка}} It's fine. I got a lot out of him, too...
+:{{Диалог|Стрелка}} It's cool. You can bully me whenever!
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10301_F10301001_G168"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Tell Aventurine what the Crew thinks{{subst:void|<!--103100102-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1302200,
+	"ShowNotice": false
+}</pre>
+:'''(Trailblazer):''' (Looks like Aventurine is happy with this outcome... Let's tell everyone about it.)
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1302200
+}</pre>
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Talk to Himeko{{subst:void|<!--103100121-->}}===
+{{Mission Description|type=trailblaze|location=Golden Hour|update|The Crew safely arrives at the Golden Hour and exchanges info with you. After an intense discussion, you decide to work with Aventurine. Before planning the next step, take some time to discuss what everyone is concerned about.}}
+{{Dialogue Start}}
+
+
+;(Talk to Himeko)
+:{{tx}}
+:{{Диалог|Разговор}} Perhaps he's going for the Hotel?
+::'''Himeko:''' An attack on the hotel guests? Unlikely. Penacony's guests include quite a few big wigs known throughout the whole cosmos, people who not even the IPC would dare take lightly. Aventurine is a shrewd merchant, and there's no way he doesn't know that.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Perhaps he's going for The Family?
+::'''Himeko:''' He's definitely going for The Family, and it's just a matter of how. The Harmony is strong in Penacony and almost impossible to take on head-to-head. The fact that the IPC dispatched Aventurine shows that they do not intend to simply play by the book here.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Perhaps he's going for Acheron?
+::'''Himeko:''' Aventurine has devoted considerable attention to her. But this Galaxy Ranger... we know hardly anything about her and can't rush to any conclusions.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Perhaps he's going for the Astral Express?
+::'''Himeko:''' ...I was also considering this possibility, especially... because he respects you so much, and has sought you out before a few times. Perhaps he's also unsure of your intentions, and is probing you.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Выход}} No conclusions can be drawn just yet.
+::'''Himeko:''' ...I'm just speculating. In any case, we have to be careful when handling Aventurine. He's skilled at reading people and discerning the right moment to strike. Also...
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByAnd",
+						"PredicateList": [
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100123,
+								"SubMissionState": "Finish"
+							},
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100125,
+								"SubMissionState": "Finish"
+							}
+						]
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10301_F10301001_G168"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayFullScreenTransfer",
+							"PrevDuration": 0
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103100121"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Talk to March 7th{{subst:void|<!--103100123-->}}===
+{{Dialogue Start}}
+
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' I hope it's not too soon to bring it up, but I feel like... Miss Robin isn't actually dead, but that she's still alive and well somewhere. That everything's just some... horrible prank...
+:'''March 7th:''' Because... aren't we supposed to be inside a dream? How could someone die in a beautiful dreamscape like this... Shouldn't only good things happen here?
+:'''March 7th:''' Whenever I see the grand theater, I just can't stop all these thoughts from flooding my head...
+:{{Диалог|Стрелка}} Do you think The Family is behind all this?
+::'''March 7th:''' No no, after all they've brought everyone this sleepy dreamscape which everyone loves. I just feel like I'm starting to understand them less and less...
+::We'll restore all the dreams back to normal.
+:{{Диалог|Стрелка}} We'll restore all the dreams back to normal.
+:'''March 7th:''' Yeah! Of course, at times like this we're so lucky to have our Crew. The Family and the IPC &mdash; everyone has their own plans going on...
+:'''March 7th:''' Everyone's still having a great time out there on the streets. Nobody knows what's happened... It's all so unreal, as if Firefly, Miss Robin, and us... were all outsiders from another world.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByAnd",
+						"PredicateList": [
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100121,
+								"SubMissionState": "Finish"
+							},
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100125,
+								"SubMissionState": "Finish"
+							}
+						]
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10301_F10301001_G168"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayFullScreenTransfer",
+							"PrevDuration": 0
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103100123"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Talk to Welt{{subst:void|<!--103100125-->}}===
+{{Dialogue Start}}
+
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Aventurine said something that concerns me...
+:'''Welt:''' He accused that Galaxy Ranger of killing Robin without any evidence whatsoever... but said nothing about her connection to that Memory Zone Meme, or why he was stalking you.
+:'''Welt:''' It was a groundless accusation... which only serves to make him seem more suspicious.
+:{{Диалог|Стрелка}} But why, though...?
+:{{Диалог|Стрелка}} Does Aventurine have other plans?
+:{{Диалог|Стрелка}} He's bluffing.
+:'''Welt:''' Maybe Aventurine's goal was never to gain our trust. Maybe he wanted to foster a feeling of enmity toward Acheron and make the situation more volatile... Two birds, one stone.
+:'''Welt:''' However, I asked Dan Heng back on the Express to confirm that story about the Annihilation Gang and the lost messages... It wasn't something that Aventurine made up out of thin air.
+:'''Welt:''' You've met her many times, now. What's your impression of Miss Acheron?
+:{{Диалог|Стрелка}} ...She's a very gentle woman?
+::'''Welt:''' Aventurine said something that concerns me...
+::'''Welt:''' He accused that Galaxy Ranger of killing Robin without any evidence whatsoever... but said nothing about her connection to that Memory Zone Meme, or why he was stalking you.
+::'''Welt:''' It was a groundless accusation... which only serves to make him seem more suspicious.
+::But why, though...?
+::Does Aventurine have other plans?
+::He's bluffing.
+::'''Welt:''' Maybe Aventurine's goal was never to gain our trust. Maybe he wanted to foster a feeling of enmity toward Acheron and make the situation more volatile... Two birds, one stone.
+::'''Welt:''' However, I asked Dan Heng back on the Express to confirm that story about the Annihilation Gang and the lost messages... It wasn't something that Aventurine made up out of thin air.
+::'''Welt:''' You've met her many times, now. What's your impression of Miss Acheron?
+::...She's a very gentle woman?
+::{{Диалог|Стрелка}} {{Цвет|#ff3a|Weird... I can't seem to remember.}}
+:{{Диалог|Стрелка}} ...She's a very mysterious woman?
+::'''Welt:''' Aventurine said something that concerns me...
+::'''Welt:''' He accused that Galaxy Ranger of killing Robin without any evidence whatsoever... but said nothing about her connection to that Memory Zone Meme, or why he was stalking you.
+::'''Welt:''' It was a groundless accusation... which only serves to make him seem more suspicious.
+::But why, though...?
+::Does Aventurine have other plans?
+::He's bluffing.
+::'''Welt:''' Maybe Aventurine's goal was never to gain our trust. Maybe he wanted to foster a feeling of enmity toward Acheron and make the situation more volatile... Two birds, one stone.
+::'''Welt:''' However, I asked Dan Heng back on the Express to confirm that story about the Annihilation Gang and the lost messages... It wasn't something that Aventurine made up out of thin air.
+::'''Welt:''' You've met her many times, now. What's your impression of Miss Acheron?
+::...She's a very gentle woman?
+::{{Диалог|Стрелка}} {{Цвет|#ff3a|Weird... I can't seem to remember.}}
+:{{Диалог|Стрелка}} ...She's a very powerful woman?
+::'''Welt:''' Aventurine said something that concerns me...
+::'''Welt:''' He accused that Galaxy Ranger of killing Robin without any evidence whatsoever... but said nothing about her connection to that Memory Zone Meme, or why he was stalking you.
+::'''Welt:''' It was a groundless accusation... which only serves to make him seem more suspicious.
+::But why, though...?
+::Does Aventurine have other plans?
+::He's bluffing.
+::'''Welt:''' Maybe Aventurine's goal was never to gain our trust. Maybe he wanted to foster a feeling of enmity toward Acheron and make the situation more volatile... Two birds, one stone.
+::'''Welt:''' However, I asked Dan Heng back on the Express to confirm that story about the Annihilation Gang and the lost messages... It wasn't something that Aventurine made up out of thin air.
+::'''Welt:''' You've met her many times, now. What's your impression of Miss Acheron?
+::...She's a very gentle woman?
+::{{Диалог|Стрелка}} {{Цвет|#ff3a|Weird... I can't seem to remember.}}
+:{{Диалог|Стрелка}} Weird... I can't seem to remember.
+:'''Welt:''' ...That fits the stereotype of a Galaxy Ranger to a T.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PredicateTaskList",
+					"Predicate": {
+						"$type": "RPG.GameCore.ByAnd",
+						"PredicateList": [
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100121,
+								"SubMissionState": "Finish"
+							},
+							{
+								"$type": "RPG.GameCore.ByCompareSubMissionState",
+								"SubMissionID": 103100123,
+								"SubMissionState": "Finish"
+							}
+						]
+					},
+					"SuccessTaskList": [
+						{
+							"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+							"SwitchCharacterAnchorConfig": {
+								"IsLocalPlayer": true,
+								"CharacterUniqueName": "LocalPlayer",
+								"AreaName": {
+									"Value": "LevelArea_P10301_F10301001_G168"
+								},
+								"AnchorName": {
+									"Value": "Anchor1"
+								}
+							}
+						}
+					],
+					"FailedTaskList": [
+						{
+							"$type": "RPG.GameCore.PlayFullScreenTransfer",
+							"PrevDuration": 0
+						}
+					]
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103100125"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:'''March 7th:''' This time we're playing the role of a real detective... But before we start, what are we going to say to The Family and Aventurine?
+:'''Himeko:''' As I see things, The Family harbors no ill-will towards the Astral Express &mdash; if they didn't trust the Crew, they wouldn't have casually commissioned outsiders to investigate a case that's in all likelihood "a scandal."
+:'''Himeko:''' Plus, this is The Family's turf. Teaming up with them should make things easier for us in the future.
+:'''Himeko:''' As for that Aventurine... Welt, I'd like to hear your thoughts.
+:'''Welt:''' He's complex. He deliberately slow-played his hand during negotiations while running circles round us all the while.
+:'''Welt:''' He appealed convincingly to both reason and emotion. It wasn't forced, but the intent was obvious.
+:'''Welt:''' Still, it's good to have contacts among all this uncertainty. Aventurine showed his skills, and as far as our interests are aligned, he can become a reliable ally.
+:'''Welt:''' We also need to keep a certain distance from The Family &mdash; never let them get too close. Teaming up with the IPC helps balance that out &mdash; if either side makes a move, we have the option to pull out.
+:'''Himeko:''' So you suggest accepting Aventurine's proposal to team up?
+:'''Welt:''' Yes... It's risky, but we can only wait until both sides have played their cards before making any further judgments.
+:'''March 7th:''' I get why, but there's a whole lot of bad guys and girls around here and I'm worried about getting stabbed in the back. (Trailblazer) has been bullied a few times now, and I can't stand it anymore...
+:{{Диалог|Стрелка}} It's fine. Let's focus on the big picture for now.
+::'''March 7th:''' You're like a broken record...
+::It's fine. I got a lot out of him, too...
+:{{Диалог|Стрелка}} It's fine. I got a lot out of him, too...
+:{{Диалог|Стрелка}} It's cool. You can bully me whenever!
+:'''March 7th:''' You...
+:'''March 7th:''' ...No! I can't accept this!
+:'''March 7th:''' ...Forget about it. Just let me keep an eye on him! If that doesn't work, we can just turn the tables and use him instead!
+:{{tx}}
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Recall the memories on Acheron{{subst:void|<!--103100124-->}}===
+{{Mission Description|type=trailblaze|location=The Reverie (Reality)|update|The spotlight refocuses on another location in Penacony. Let's check out the happenings in places that you aren't aware of.}}
+{{Dialogue Start}}
+:{{tx}}
+;(Unused &mdash; 10301001_Trigger)
+:Penacony Grand Theater still silently floats in the heart of the sea of dreams.
+::''Odes of Harmony'' plays on, as people continue their journeys, oblivious to the unnoticed corners where two lives have already dissolved into fleeting dreams.
+;(Unused &mdash; 10301001_Trigger)
+:Clockie's smile forever radiant &mdash; It's not yet known if his gaze can reach every dark corner in the realm of dreams.
+{{Dialogue End}}
+
+===Speak with Acheron{{subst:void|<!--103100122-->}}===
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+===Discuss the plan with the Crew{{subst:void|<!--103100127-->}}===
+{{Mission Description|type=trailblaze|location=Golden Hour|update|The Crew safely arrives at the Golden Hour and exchanges info with you. After an intense discussion, you all decide to work with Aventurine. Everyone on the Crew seems preoccupied, but it's time to plan the next move.}}
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Himeko)
+:'''Himeko:''' If Aventurine wants to bring down The Family, he'll have to create a big enough chance. After everything he's done so far &mdash; what is his goal...?
+
+;(Talk to March 7th)
+:'''March 7th:''' This dream... is becoming more and more separated from reality.
+
+;(Talk to Welt Yang)
+:'''Welt:''' Whatever happens, please don't place all your trust in Aventurine. We cannot afford to be manipulated by him.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Lost Generation
+|zhs  = 迷惘的一代人
+|zht  = 迷惘的一代人
+|ja   = ロストジェネレーション
+|ko   = 잃어버린 세대
+|es   = Generación perdida
+|fr   = Génération perdue
+|ru   = Потерянное поколение
+|th   = มนุษย์ที่แสนสับสน
+|vi   = Mê Man Một Kiếp Người
+|de   = Verwirrte Generation
+|id   = Generasi yang Kebingungan
+|pt   = Geração Perdida
+}}
+
+==Change History==
+{{Change History|3.5}}

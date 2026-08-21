@@ -1,0 +1,301 @@
+<%-- [PAGE_INFO]
+PageTitle=#Heaven is a Place on Earth#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1031401
+|title         = 
+|image         = <!--Mission Heaven is a Place on Earth.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = [[Trailblaze Mission]] ''[[When the Sacred Ginmill Closes]]'' completed
+|summary       = Aventurine scattered the gems, and finally &mdash; just as he hoped &mdash; got the Masked Fool, Sparkle to take the bait. After repeatedly confirming a certain key clue with Sparkle, Aventurine, self-assured of his imminent success, made his way to Clock Studios Theme Park...
+|characters    = Barrle; Bocchi; Chabro; Larose; Trailblazer; Uma; Woolsey
+|startLocation = [[Penacony]] - [[Golden Hour]]
+|world         = Penacony
+|area          = Golden Hour
+|prev          = When the Sacred Ginmill Closes
+|next          = Why Do the Heathen Rage?
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Traveler's Guide*6; Lost Crystal*6; Clock Credits*300; "The Midnight Special"*1 { text = "The Midnight Special" }; Credit*90 000
+}}
+'''''Heaven is a Place on Earth''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Talk to Dr. Ratio
+# Distribute gems and ask around for clues regarding the stowaways
+# Distribute the last of the gems
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Talk to Dr. Ratio{{subst:void|<!--103140101-->}}===
+{{Mission Description|type=trailblaze|location=Golden Hour|Through a sneaky magic trick, you get your hands on the gift money and your cornerstone, the Aventurine. Things get ugly, but your plan is still being executed at a timely pace. Not even the impending death can stop you.<br />Distribute the gift money to the pedestrians to exchange for the intel you need.}}
+{{Dialogue Start}}
+:{{tx}}
+;(Obtain {{Предмет|Mundanite's Insight|20|x=1}})
+{{Dialogue End}}
+
+===Distribute gems and ask around for clues regarding the stowaways{{subst:void|<!--103140102-->}}===
+{{Dialogue Start}}
+
+
+;(Talk to Chabro)
+:{{tx}}
+::'''Chabro:''' The world has truly lost its way...
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Chabro:''' You... Wait, I get it now! This is some sort of prank show, right? You must have some cameras set up around here to film yourself doing good deeds, right?
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140103,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Chabro:''' The world has truly lost its way...
+
+;(Talk to Larose)
+:{{tx}}
+::'''Larose:''' Would you be willing to support my performance, and keep the Song of Beauty alive in the cosmos?
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Larose:''' Wow, how fabulous! But why would you give such a wonderful gift to a random stranger like me?
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140104,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Larose:''' Would you be willing to support my performance, and keep the Song of Beauty alive in the cosmos?
+
+;(Talk to Woolsey)
+:{{tx}}
+::'''Woolsey:''' Take care, my friend. If you ever find yourself in danger, remember that the Hounds are always ready to help.
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Woolsey:''' ...
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140105,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Woolsey:''' Take care, my friend. If you ever find yourself in danger, remember that the Hounds are always ready to help.
+
+;(Talk to Bocchi)
+:{{tx}}
+::'''Bocchi:''' A sip of liquor, a blissful reprieve... To drown a thousand sorrows, let worries leave... Hah, I know I have what it takes to become a poet...
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Bocchi:''' Oh? You... you are giving... these gems to me? Didn't expect to meet such a generous soul in this place...
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140106,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Bocchi:''' A sip of liquor, a blissful reprieve... To drown a thousand sorrows, let worries leave... Hah, I know I have what it takes to become a poet...
+
+;(Talk to Barrle)
+:{{tx}}
+::'''Barrle:''' Hmm... Were you wanting to talk to me? Sorry, I thought you were checking out something behind me.
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Barrle:''' Is this... a gift for me? Are you sure this isn't some kind of mistake?
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140107,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Barrle:''' Hmm... Were you wanting to talk to me? Sorry, I thought you were checking out something behind me.
+
+;(Talk to Uma)
+:{{tx}}
+::'''Uma:''' You want to talk to me? Sure, but nothing too sensitive, okay?
+::{{Диалог|Стрелка}} Here, I got these gems for you.
+::'''Uma:''' Wealthy people have fancy ways to enjoy this dream, but to be honest, I've never seen anyone who gives out money to others like you.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.CalculateMissionCustomValue",
+	"TargetSubmissionID": 103140108,
+	"TargetMissionCustomValue": {
+		"Name": "OldValue_0",
+		"isRange": true,
+		"ValidValueParamList": [
+			0,
+			6
+		]
+	},
+	"ValueA": {
+		"Type": "CustomValue",
+		"MainMissionID": 1031401,
+		"MissionCustomValue": {
+			"Name": "OldValue_0",
+			"isRange": true,
+			"ValidValueParamList": [
+				0,
+				6
+			]
+		}
+	},
+	"ValueB": {
+		"DirectValue": 1
+	}
+}</pre>
+:'''Uma:''' You want to talk to me? Sure, but nothing too sensitive, okay?
+;(If {{F|MissionCV-1031401-undefined}} is undefined 0, {{F|MissionCV-1031401-undefined}} is undefined 1, or {{F|MissionCV-1031401-undefined}} is undefined 2)
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Rate": 0.3,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/BrainWashingBlur2.asset"
+}</pre>
+
+;(По прибытии на место)
+:It's not yet time to do this now &mdash; give out the gems and get some clues on the stowaway, then see if *that girl* will take the bait.
+
+;(По прибытии на место)
+:It's not yet time to do this now &mdash; give out the gems and get some clues on the stowaway, then see if *that girl* will take the bait.
+{{Dialogue End}}
+
+===Distribute the last of the gems{{subst:void|<!--103140111-->}}===
+{{Mission Description|type=trailblaze|location=Golden Hour|update|You are about to run out of money, and the ringing in your ears is getting louder. It does not bode well, and you need to hurry up.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Heaven is a Place on Earth
+|zhs  = 人间天堂
+|zht  = 人間天堂
+|ja   = この世の楽園
+|ko   = 지상 낙원
+|es   = Paraíso terrenal
+|fr   = Paradis terrestre
+|ru   = По эту сторону рая
+|th   = สรวงสวรรค์ในแดนดิน
+|vi   = Thiên Đường Nhân Gian
+|de   = Paradies auf Erden
+|id   = Surga Dunia
+|pt   = O Paraíso é Um Lugar na Terra
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,137 @@
+<%-- [PAGE_INFO]
+PageTitle=##
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2010730
+|title         = 
+|image         = <!--Mission .png-->
+|type          = Adventure
+|event_name    = Boulder Town Super League
+|chapter       = 
+|requirements  = [[Adventure Mission]] ''[[Ring and Stage II]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Dr. Dig; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Fight Club]]
+|world         = Jarilo-VI
+|area          = Fight Club
+|prev          = Ring and Stage II
+|next          = 
+|rewards       = 
+}}
+'''''''''' is an Event [[Adventure Mission]] from the [[Boulder Town Super League]] event.
+
+==Steps==
+
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 24
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}<!--SubMission Finish: 801520201-->)
+::'''Dr. Dig:''' An all-new season of the Fight Club has begun! If you want more information or to join the matches, feel free to ask me about it! I will do my best to provide you with all you need!
+::{{Диалог|Журнал путешествий}} I want to join!
+:::'''Dr. Dig:''' No problem. I'll make arrangements immediately!
+::{{Диалог}} Can you please tell me about the tournament's rules?
+:::'''Dr. Dig:''' Of course. What would you like to know more about?
+:::{{Диалог|Разговор}} What are the rules for the point-based tournament?
+::::'''Dr. Dig:''' Have you heard of the Ladder Leaderboard? It's a list recording every boxer's match points. The higher your points, the higher the rank. You will earn points for every battle you win.
+::::'''Dr. Dig:''' In other words, the higher the points, the stronger the boxer, for both you and your opponent. It also means that the more you win, the harder it gets. But I guess you're ready for that, right?
+::::'''Dr. Dig:''' Side note, we've also prepared different leagues for participants of different strengths, and they are, in order...
+::::'''Dr. Dig:''' Featherweight, lightweight, welterweight, middleweight, and heavyweight... And the score on each board is calculated individually!
+::::'''Dr. Dig:''' You can choose one of them and face off with opponents of different levels. You can even place first in all of the matches and take all the rewards of the season by yourself!
+::::'''Dr. Dig:''' However, each of the five leagues will begin during the subsequent days on an alternating schedule. If you want to experience a heart-racing battle, don't miss out!
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} What's the "Martial Exhibition" all about?
+::::'''Dr. Dig:''' "Martialism" is a term from classical Belobogian martial arts. It's a mixed martial arts form that focuses on technical skill rather than brute force.
+::::'''Dr. Dig:''' The boss found this ancient manual of ancient training techniques, so he came up with this idea of a Martial Exhibition to promote ancient culture.
+::::{{Диалог|Стрелка}} I don't think he was being that noble...
+::::{{Диалог|Стрелка}} Why does that sound completely made up?
+::::'''Dr. Dig:''' *sigh* Who cares if the story's real or not. I'll tell you what, the first prize sure is real.
+::::'''Dr. Dig:''' Anyway, the ancients split their Martialism up into seven different schools: "Solidity, Heat, Flow, Thunder, Firmness, Heart, and Gust."
+::::'''Dr. Dig:''' Each exhibition match is associated with a particular school of martialism. You can freely choose one to challenge.
+::::'''Dr. Dig:''' Any contestant who beats all the Martial Exhibition matches not only wins the tournament prize, but there's also a special secret prize from the Scott Business Alliance!
+::::'''Dr. Dig:''' But don't just listen to all these dull details from me! Get in the ring and experience the charm of "martialism" for yourself!
+:::;(Return to previous option selection)
+:::{{Диалог|Возврат}} That's all questions I have.
+::::{{Диалог|Журнал путешествий}} I want to join!
+:::::'''Dr. Dig:''' No problem. I'll make arrangements immediately!
+::::{{Диалог|Выход}} There's nothing I would like to ask about.
+:::::'''Dr. Dig:''' No worries. If a question does arise, feel free to ask me anytime!
+::{{Диалог|Выход}} There's nothing I would like to ask about.
+:::'''Dr. Dig:''' No worries. If a question does arise, feel free to ask me anytime!
+;(If {{cx}}<!--SubMission not Finish: 801520201-->)
+::----
+::'''Dr. Dig:''' Fight Club's all-new season has begun &mdash; You can now register for the featherweight matches!
+::'''Dr. Dig:''' If you want more information or to join the matches, feel free to ask me about it! I will do my best to give you all you need!
+::{{Диалог|Журнал путешествий}} I want to join!
+:::'''Dr. Dig:''' No problem, I will help you arrange it immediately!
+::<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.BoxingClub.BoxingClubEntrancePage",
+	"WaitForExit": true,
+	"OnUIEnter": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	],
+	"OnUIExitImmediately": [
+		{
+			"$type": "RPG.GameCore.EndPerformance"
+		}
+	]
+}</pre>
+::{{Диалог}} What are the rules for the point-based tournament?
+:::'''Dr. Dig:''' Have you heard of the Ladder Leaderboard? It's a list recording every boxer's match points. The higher your points, the higher the rank. You will earn points for every battle you win.
+:::'''Dr. Dig:''' In other words, the higher the points, the stronger the boxer, for both you and your opponent. It also means that the more you win, the harder it gets. But I guess you're ready for that, right?
+:::'''Dr. Dig:''' Side note, we also prepared different leagues for participants of different strengths, and they are, in order...
+:::'''Dr. Dig:''' Featherweight, lightweight, welterweight, middleweight, and heavyweight... And the score on each board is calculated individually!
+:::'''Dr. Dig:''' You can choose one of them and face off with opponents of different levels. You can even place first in all of the matches and take all the rewards of the season by yourself!
+:::'''Dr. Dig:''' However, each of the five leagues will start on the following day in turn. If you want to experience a heart-racing battle, don't miss out!
+::;(Return to previous option selection)
+::{{Диалог|Выход}} There's nothing I would like to ask about.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = 
+|zhs  = 
+|zht  = 
+|ja   = 
+|ko   = 
+|es   = 
+|fr   = 
+|ru   = 
+|th   = 
+|vi   = 
+|de   = 
+|id   = 
+|pt   = 
+}}
+
+==Change History==
+{{Change History|3.5}}

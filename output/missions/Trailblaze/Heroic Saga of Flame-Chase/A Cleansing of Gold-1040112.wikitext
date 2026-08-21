@@ -1,0 +1,181 @@
+<%-- [PAGE_INFO]
+PageTitle=#A Cleansing of Gold#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040112
+|title         = 
+|image         = <!--Mission A Cleansing of Gold.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Heroic Saga of Flame-Chase
+|requirements  = [[Trailblaze Mission]] ''[[Kremnos, Cleanse Thy Rusted Blood (I)]]'' completed
+|summary       = Aglaea begins a personal investigation after discovering that Okhema might have been infiltrated by Nikador. Beneath the woven golden threads, that which is filth has nowhere to hide. However, the Council of Elders responds to her with an unfriendly attitude, hinting at dark currents running beneath Okhema's peaceful surface.
+|characters    = "Spirithief" Bartholos; Aglaea; Silent Girl; Trailblazer; Tribbie
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = Kremnos, Cleanse Thy Rusted Blood (I)
+|next          = Kremnos, Cleanse Thy Rusted Blood (II)
+|rewards       = Trailblaze EXP*400; Stellar Jade*50; Traveler's Guide*5; Lost Crystal*5; Celestial Ambrosia*80; Plantlife Euthys*1 { text = ''Plantlife Euthys'' }; Credit*50 000
+}}
+'''''A Cleansing of Gold''''' is a [[Trailblaze Mission]] in the chapter [[Heroic Saga of Flame-Chase]].
+
+==Steps==
+# Gather the collected information from the Garmentmaker
+# Go to Marmoreal Market, then find and clear three anomalies
+# Recapture Spirithief Bartholos
+# Return to the Garden of Life
+# Return to the Garden of Life and tell Tribbie and the rest the situation
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Gather the collected information from the Garmentmaker{{subst:void|<!--104011201-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|Meanwhile, in the city of Okhema, Aglaea has begun addressing Nikador's infiltration. However, the political situation in Okhema appears far less stable than we had anticipated.}}
+{{Dialogue Start}}
+
+;(Talk to Tribbie)
+:'''Tribbie:''' Don't exhaust yourself, Agy.
+----
+:{{tx}}
+:'''Aglaea:''' (The nymphs have located the source of the disruption... I should check with the "Garmentmaker" for intel.)
+{{Dialogue End}}
+
+===Go to Marmoreal Market, then find and clear three anomalies{{subst:void|<!--104011203-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Furiae Archer*2; Furiae Philosopher*2}}
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 199,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 140186313
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 199,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 140186314
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 2
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aglaea:''' Good day, child.
+:'''Silent Girl:''' ...
+:'''Aglaea:''' ...Child?
+:The girl beside you remains unresponsive.
+:(Oh... She's a child who can't hear.)
+:{{Диалог|Стрелка}} (Gently touch the girl's shoulder.)
+:{{Диалог|Стрелка}} (Run your fingertips through the girl's hair.)
+:'''Silent Girl:''' ...
+:{{Диалог|Стрелка}} (Hold out your arms.)
+:Aglaea extends her arm, signaling the girl to do the same.
+:{{tx}}
+;(Enter battle)
+:{{Список врагов|mode=sent|Furiae Archer*2; Furiae Philosopher*2}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(If {{F|group state}} is not undefined 4)
+:;(If {{F|group state}} is undefined 3)
+:<pre>{
+	"$type": "RPG.GameCore.ChangeGroupState"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Recapture Spirithief Bartholos{{subst:void|<!--104011208-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.AdvCreateGroupEntity",
+			"InstanceIDList": [
+				300001
+			]
+		}
+	]
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aglaea:''' How predictable... Did you truly think you could outrun me?
+:'''"Spirithief" Bartholos:''' Teehee! It was worth a try, wasn't it?
+:'''Aglaea:''' (There's one more threat marked by the nymphs.)
+:'''Aglaea:''' ({{Rubi|Kephale|Worldbearing Titan}}, sky father, I seek your guidance... May your hand keep all things in order.)
+:'''Aglaea:''' (I need to ensure I leave no trace behind, so that no one suspects anything.)
+:'''Aglaea:''' (Time to move on to the next nymph.)
+----
+:'''Aglaea:''' (All the filth marked by the nymphs has been cleansed.)
+:'''Aglaea:''' (I should go find teacher.)
+<pre>{
+	"$type": "RPG.GameCore.OverrideFinishActionAutoTransfer",
+	"SubmissionID": 104011216
+}</pre>
+{{Dialogue End}}
+
+===Return to the Garden of Life{{subst:void|<!--104011209-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Return to the Garden of Life and tell Tribbie and the rest the situation{{subst:void|<!--104011210-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Aglaea:''' ...Trinnon? It seems she has begun to make arrangements for defending Okhema.
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = A Cleansing of Gold
+|zhs  = 金缕荡污浊
+|zht  = 金縷蕩汙濁
+|ja   = 穢れ清めし金糸
+|ko   = 더러움을 씻어내는 금실
+|es   = Limpieza con hilos dorados
+|fr   = Purification par l'or
+|ru   = Золотое очищение
+|th   = ด้ายทองปัดเป่าความโสมม
+|vi   = Sự Thanh Lọc Vàng
+|de   = Goldene Reinigung
+|id   = Pembersihan Emas
+|pt   = Uma Purificação com Ouro
+}}
+
+==Change History==
+{{Change History|3.5}}

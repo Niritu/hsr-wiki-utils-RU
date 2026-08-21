@@ -1,0 +1,388 @@
+<%-- [PAGE_INFO]
+PageTitle=#When the Sacred Ginmill Closes#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1031201
+|title         = 
+|image         = <!--Mission When the Sacred Ginmill Closes.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = [[Trailblaze Mission]] ''[[Double Indemnity]]'' completed
+|summary       = Just as the investigation came to a dead end, you fortuitously ran into Topaz at the hotel lobby and successfully stumbled upon another clue &mdash; Gallagher, the Bloodhound Family's security officer. He seemed to have plenty of intel and said he wished to talk at another location.
+|characters    = Alley; Careless Bloodhound Family Member; Composed Bloodhound Family Member; Gallagher; Himeko; March 7th; Principled Bloodhound Family Member; Topaz; Trailblazer
+|startLocation = [[Penacony]] - [[The Reverie (Reality)]]
+|world         = Penacony
+|area          = The Reverie (Reality)
+|prev          = Double Indemnity
+|next          = Heaven is a Place on Earth
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Traveler's Guide*5; Refined Aether*5; Clock Credits*300; "Hi, Dolly!"*1 { text = "Hi, Dolly!" }; Credit*80 000
+}}
+'''''When the Sacred Ginmill Closes''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Inquire at the reception
+# (Optional) Talk to Topaz
+# Ask the Bloodhounds for clues
+# Head to Dream's Edge to find Gallagher
+# Find Gallagher at the Dream's Edge
+# Use the clockwork on the principled Bloodhound Family member
+# Talk to Gallagher
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Inquire at the reception{{subst:void|<!--103120102-->}}===
+{{Mission Description|type=trailblaze|location=The Reverie (Reality)|You two make it to hotel in reality to gather more information about the victims of the two homicides. Hopefully, the receptionist won't stick to their professional conduct and will drop all the right clues.}}
+{{Dialogue Start}}
+:'''Alley:''' Umm, excuse me...
+:'''Alley:''' I can't seem to find any information on this artist in the Iris Family archives. The photo you provided also doesn't show any matches...
+:'''Himeko:''' ...Just as I thought. I'd like to ask, what kind of traces do people leave when they enter a dream?
+:'''Alley:''' Are you referring to the records when you enter the Dreampool? The equipment will monitor physiological indicators such as heart rate, blood oxygen levels, and body temperature in real time. This data will be included in statistics and handed over to The Family for the screening of any data anomalies. Immediate action will be taken once any illegal behavior is detected.
+:{{Диалог|Стрелка}} Is it possible to access these records?
+:{{Диалог|Стрелка}} Feels like our every move is being watched...
+::'''Alley:''' Please rest assured. Your vitals are monitored in case of emergencies, allowing us to wake you if necessary. This is all for the safety of our guests.
+::'''March 7th:''' Can I trouble you to access the records?
+:'''Alley:''' I apologize... The hotel does not have access. This information is managed by the Bloodhound Family. We can only gain access if there's a problem.
+:'''March 7th:''' Looks like nothing can be found here.
+:'''Himeko:''' At least we know who to look for next. We can ask the Bloodhound Family for information.
+:'''Himeko:''' Thank you for your assistance, Miss Alley. By the way... is Miss Robin doing fine? We are looking forward to her performance.
+:'''Alley:''' "Fine"... What does that mean? Is there something wrong with Miss Robin? The preparations for the Charmony Festival have been proceeding smoothly, so I guess things are pretty good. I believe she will be able to put on a spectacular show for all of you.
+:'''Himeko:''' Mm, I'm sure.
+:'''Himeko:''' Sure enough, no one knows about Miss Robin. I'm not surprised.
+:'''Himeko:''' But that Miss Firefly is truly mysterious. There's no information on her in the hotel system. Even if she's a stowaway... she should have a disguised identity after entering the planet.
+:'''Himeko:''' She's also in the running for the Legacy... How is she going to sneak into the Dreamscape unnoticed?
+:'''March 7th:''' Is there any other way to enter a dream besides the hotel room's Dreampool?
+:{{Диалог|Стрелка}} The Garden of Recollection...
+:{{Диалог|Стрелка}} Stellaron Hunters...
+:'''Himeko:''' The Memokeepers have abilities that are difficult for normal people to comprehend. In the Memory Zone of Penacony, they thrive effortlessly, a fact proven to us by Black Swan.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10305_F10305001_G57"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Talk to Topaz)
+:'''Topaz:''' How does it feel to be in business with Aventurine? I bet you're not used to it.
+::'''Topaz:''' That's just his style. "All or nothing" is his mantra. He's always cozying up to his clients while egging them on to undertake some dangerous assignment with him... But everyone has their merits, so I won't comment further.
+::'''Topaz:''' But Aventurine's luck has always been good. He's always closed all his cases without a hitch, and basically never lost a gamble. Which is why on the issue of retaking Penacony I'm watching with keen interest.
+::{{Диалог|Стрелка}} He's that good huh...
+::{{Диалог|Стрелка}} It works only when all parties' interests are aligned.
+:::'''Topaz:''' Of course. It's business, after all. What's important is where you're seated at the table.
+::'''Topaz:''' As for the two cases... Apologies, but I don't have much info on them either. All I can do is ask you to keep digging for more details.
+::{{tx}}
+:'''Topaz:''' Please continue to investigate the case. All I can do is sit tight in the real world. I look forward to hearing your progress.
+{{Dialogue End}}
+
+===(Optional) Talk to Topaz{{subst:void|<!--103120101-->}}===
+{{Mission Description|type=trailblaze|location=The Reverie (Reality)|update|Although the investigation is heading nowhere, you happen to bump into Topaz and the loyal Bloodhound members who follow her everywhere to keep a close eye on the IPC people. You have read enough detective novels to know that police officers usually have no value except supporting the detective and providing key clues. It's time for them to play their part!}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Ask the Bloodhounds for clues{{subst:void|<!--103120104-->}}===
+{{Dialogue Start}}
+
+;(Talk to Careless Bloodhound Family Member)
+:'''Careless Bloodhound Family Member:''' We're carrying out our Captain's orders! Wh&mdash;What do you want!
+::'''Composed Bloodhound Family Member:''' We made a mistake last time, and we're working hard to rectify it now. We don't have time for anything else! Surveilling the IPC Executive Topaz, ensuring that she stays put at The Reverie hotel during her time on Penacony... We've got the right one this time!
+::'''(Trailblazer):''' (...So that's it, they were the pair who were after Firefly at the time.)
+::{{Диалог|Стрелка}} Remember me?
+::{{Диалог|Стрелка}} We meet again.
+::'''Composed Bloodhound Family Member:''' ...
+::'''Careless Bloodhound Family Member:''' I&mdash;It's you again... Back for more trouble? We're not afraid of you this time!
+::'''Composed Bloodhound Family Member:''' Well? Spit it out! Stop bothering us if you've nothing important!
+::'''March 7th:''' So you know each other... (Trailblazer), why do you keep running into people you've beaten up before?
+::{{Диалог|Стрелка}} I've got business with your Captain. Where is he?
+:::'''March 7th:''' That's right. We're investigating a murder for The Family. Can we speak to your Captain about the case?
+:::I need you to pull some records for me. It's for official business.
+:::'''March 7th:''' That's right. We're investigating a murder for The Family. May we access the hotel's Dreampool entry records?
+:::When's our lunch break? Mmm... Hungwy.
+::{{Диалог|Стрелка}} I need you to pull some records for me. It's for official business.
+:::'''March 7th:''' That's right. We're investigating a murder for The Family. May we access the hotel's Dreampool entry records?
+:::When's our lunch break? Mmm... Hungwy.
+::{{Диалог|Стрелка}} When's our lunch break? Mmm... Hungwy.
+::'''March 7th:''' Sheesh, why do you keep asking me that? We're in the middle of investigating a murder case for The Family. May we speak to your Captain about it?
+::'''Careless Bloodhound Family Member:''' Well...
+::{{tx}}
+:'''Composed Bloodhound Family Member:''' W&mdash;We have nothing to report. Please leave.
+{{Dialogue End}}
+
+===Head to Dream's Edge to find Gallagher{{subst:void|<!--103120105-->}}===
+{{Mission Description|type=trailblaze|location=Dream's Edge|update|You learn that Gallagher is currently at the Dream's Edge from some blabbing Bloodhound members. Coincidentally, you had an encounter with Gallagher before. You might be able to access the investigation scene set up by the Bloodhounds by showing your face to Gallagher and glean more information about the cases from him.}}
+{{Dialogue Start}}
+:'''March 7th:''' Such tight security... I bet they're stumped by the case as well.
+:'''March 7th:''' Gallagher... Gallagher... Where could he be?
+
+;(Talk to Gallagher)
+:'''Gallagher:''' I was wondering what all the commotion was... Oh, it's you guys. Welcome. Since you made it here, what can I do for you?
+:'''Himeko:''' Hello, Mr. Gallagher, sir. Judging from your tone, it sounds like you were expecting us.
+:'''Gallagher:''' Hahaha... Miss Himeko, you're too polite. There's no need to call me "Sir."
+:'''Himeko:''' ...Mr. Gallagher, you even know my name?
+:'''Gallagher:''' Of course I do! You folks are from the legendary Astral Express, and honorable guests of the Watchmaker.
+:'''Gallagher:''' I had an encounter with this {{MC|м=gentleman|ж=lady}} in the Golden Hour. I remember that little silver-haired girl was there too...
+:'''Gallagher:''' ...I'm sorry for what happened to that kid.
+:{{Диалог|Стрелка}} That's exactly what The Family has ordered us to investigate.
+:{{Диалог|Стрелка}} We are sorry too...
+:'''Himeko:''' This is also the reason why we've come to visit you, Mr. Gallagher. The Express can't just overlook the death of that child, so we've decided to help The Family get to the bottom of it, in the hopes of getting justice for her.
+:{{tx}}
+;(Unused &mdash; FinishMission)
+:'''Principled Bloodhound Family Member:''' Sorry, no can do. The boss said that since it's a matter of The Family's reputation, no one's allowed through.
+::'''Principled Bloodhound Family Member:''' Everyone, please leave. There's really no need for us to make things difficult for each other, right?
+::You and this Bloodhound Family member have met before, and you know he's very upright. But you're also aware that principles sometimes don't matter when a person is in a {{Цвет|Ключевой|nobold=1|good mood}}.
+
+;(Unused &mdash; reopenui_anger_159)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G159"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"EmoTypeBlackList": [
+		"Anger"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+
+;(Unused &mdash; reopenui_sad_159)
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20313_F20313001_G159"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.HeartDialEmoBlackList",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"EmoTypeBlackList": [
+		"Sad"
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	}
+}</pre>
+;(Unused &mdash; FinishMission)
+:'''Principled Bloodhound Family Member:''' Apologies. The Bloodhound Family is running an investigation up ahead. No unauthorized personnel allowed.
+::'''Principled Bloodhound Family Member:''' ...Hold on a minute. I think I've seen you before, the gray-haired one.
+::'''March 7th:''' ...How much trouble have you stirred up exactly on Penacony?
+::{{Диалог|Стрелка}} This ain't it, chief. You've got the wrong {{MC|ж=gal|м=guy}}.
+:::'''Principled Bloodhound Family Member:''' Not possible! It was you the last time, yelling about some clockwork friendship while beating me up with that silver-haired girl!
+:::That's right! It's-a-me, Clockie!
+:::'''March 7th:''' ...You think you look alike?
+:::How about a clockwork trick?
+::{{Диалог|Стрелка}} That's right! It's-a-me, Clockie!
+:::'''March 7th:''' ...You think you look alike?
+:::{{Диалог|Стрелка}} How about a clockwork trick?
+::'''March 7th:''' ...Wait, are you for real?
+::'''Principled Bloodhound Family Member:''' Not possible! It was you the last time, yelling about some clockwork friendship while beating me up with that silver-haired girl!
+::'''March 7th:''' ...
+::'''Himeko:''' ...
+::'''Principled Bloodhound Family Member:''' I'm not letting you get by this time... Please leave, or I'll have to get on my knees and beg you!
+::'''March 7th:''' (Trailblazer), what kind of heinous crime have you committed now...
+::'''Himeko:''' Hold on, Sir... We have documents authorized by The Family that would aid your investigation. If it wouldn't trouble you, could we see this Mr. Gallagher?
+::'''Principled Bloodhound Family Member:''' Who exactly is this Gallagher you keep talking about? There have been a few people mentioning this name, even the one with the gray hair.
+::'''March 7th:''' Uh? He didn't send you all here?
+::'''Principled Bloodhound Family Member:''' It was the Security Officer who dispatched us. That's all I can divulge.
+::'''March 7th:''' He'll do! He's the one we've been looking for!
+::'''Principled Bloodhound Family Member:''' Sorry, no can do. The boss said that since it's a matter of The Family's reputation, no one's allowed through.
+::'''Principled Bloodhound Family Member:''' Everyone, please leave. There's really no need for us to make things difficult for each other, right?
+::'''Himeko:''' We're really sorry for troubling you. (Trailblazer), March, let's think of another way.
+::'''March 7th:''' Another way... That's it! Didn't (Trailblazer) say something about that... What was it... clockwork? That got this guy to change his mind.
+::'''March 7th:''' Can you perform it again, (Trailblazer)? That... Clockie magic!
+::{{Диалог|Стрелка}} Just what I've been waiting for!
+::{{Диалог|Стрелка}} But I can't abuse it for evildoings.
+:::'''March 7th:''' It's not bad if we're resolving a misunderstanding!
+::'''March 7th:''' Please, (Trailblazer)!
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20313_F20313001_G257"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103120110"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Find Gallagher at the Dream's Edge{{subst:void|<!--103120110-->}}===
+{{Dialogue Start}}
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 103091165
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 103091166
+		}
+	],
+	"LoopInterval": 10,
+	"UniqueID": 24901
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400007,
+			"TalkSentenceID": 103091167
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400008,
+			"TalkSentenceID": 103091168
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 249,
+			"GroupNpcID": 400006,
+			"TalkSentenceID": 103091169
+		}
+	],
+	"LoopInterval": 10,
+	"UniqueID": 24902
+}</pre>
+{{Dialogue End}}
+
+===Use the clockwork on the principled Bloodhound Family member{{subst:void|<!--103120103-->}}===
+{{Mission Description|type=trailblaze|location=Dream's Edge|update|You cross paths with the principled Bloodhound Family member once more. As he seems to remain a man of principles, you might need to resort to your old tricks to make him cooperate.}}
+{{Dialogue Start}}
+
+:{{tx}}
+{{Dialogue End}}
+
+===Talk to Gallagher{{subst:void|<!--103120106-->}}===
+{{Mission Description|type=trailblaze|location=Dream's Edge|update|Seems like there are no more Bloodhounds obstructing your way, or they are simply too focused on the investigation to notice you two.<br />Anyway, make use of this opportunity to talk to the Security Officer.}}
+{{Dialogue Start}}
+:'''Gallagher:''' I was wondering what all the commotion was... Oh, it's you guys. Welcome. Since you made it here, what can I do for you?
+:'''Himeko:''' Hello, Mr. Gallagher, sir. Judging from your tone, it sounds like you were expecting us.
+:'''Gallagher:''' Hahaha... Miss Himeko, you're too polite. There's no need to call me "Sir."
+:'''Himeko:''' ...Mr. Gallagher, you even know my name?
+:'''Gallagher:''' Of course I do! You folks are from the legendary Astral Express, and honorable guests of the Watchmaker.
+:'''Gallagher:''' I had an encounter with this {{MC|м=gentleman|ж=lady}} in the Golden Hour. I remember that little silver-haired girl was there too...
+:'''Gallagher:''' ...I'm sorry for what happened to that kid.
+:{{Диалог|Стрелка}} That's exactly what The Family has ordered us to investigate.
+:{{Диалог|Стрелка}} We are sorry too...
+:'''Himeko:''' This is also the reason why we've come to visit you, Mr. Gallagher. The Express can't just overlook the death of that child, so we've decided to help The Family get to the bottom of it, in the hopes of getting justice for her.
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = When the Sacred Ginmill Closes
+|zhs  = 酒店关门之后
+|zht  = 飯店關門之後
+|ja   = 聖なる酒場の哀歌
+|ko   = 성스러운 바가 문을 닫을 때
+|es   = Cuando el hotel cierra sus puertas
+|fr   = Après la fermeture des portes de l'hôtel
+|ru   = Когда закрывается отель
+|th   = ยามเมื่อโรงแรมปิด
+|vi   = Sau Khi Khách Sạn Đóng Cửa
+|de   = Wenn das Hotel schließt
+|id   = Setelah Hotel Tutup
+|pt   = Quando o Hotel Fecha as Portas
+}}
+
+==Change History==
+{{Change History|3.5}}

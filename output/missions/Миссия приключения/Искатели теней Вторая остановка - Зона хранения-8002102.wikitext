@@ -12,9 +12,9 @@ PageTitle=#Искатели теней: Вторая остановка — Зо
 |Условия         = 
 * Достигните [[Уровень Освоения|Уровня Освоения]] 21
 * Завершена [[Миссия приключения]] «[[Искатели теней: Первая остановка — Главная контрольная зона|Искатели теней: Первая остановка - Главная контрольная зона]]»
-|Персонажи       = Герта; Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Зона хранения]]
-|Мир             = Космическая станция «Герта»
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Искатели теней: Первая остановка — Главная контрольная зона
 |Следующая       = Искатели теней: Третья остановка — Зона поддержки
 |Награды         = Звёздный нефрит*70; Очищенный эфир*4; Стрела убийцы демонов*3; Кредиты*40 000
@@ -27,209 +27,21 @@ PageTitle=#Искатели теней: Вторая остановка — Зо
 ==Этапы==
 # Найдите объекты и сфотографируйте их
 # Найдите подсказки об объекте на фотографии
-# Найдите объекты и сфотографируйте их
 # Прочтите сообщение Март 7
 
 ==Прохождение==
 {{Дополнить}}
-
 ===Найдите объекты и сфотографируйте их===
-{{Описание миссии|тип=Миссия приключения|локация=Зона хранения|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны хранения...}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Затемнённый объект на фотографии кажется знакомым. Наверняка это что-то из Зоны хранения...}}
 {{Диалог Начало}}
 {{Диалог Конец}}
 
 ===Найдите подсказки об объекте на фотографии===
 {{Диалог Начало}}
-
-
-;(Поговорите с Герта)
-<pre>{
-	"$type": "RPG.GameCore.RandomConfig",
-	"OddsList": [
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.25
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.25
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.25
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.25
-			}
-		}
-	],
-	"TaskList": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_1"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_2"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_3"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_4"
-			}
-		}
-	]
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.RandomConfig",
-	"OddsList": [
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.2
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.2
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.2
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.2
-			}
-		},
-		{
-			"IsDynamic": false,
-			"FixedValue": {
-				"Value": 0.2
-			}
-		}
-	],
-	"TaskList": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_1"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_2"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_3"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_4"
-			}
-		},
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "500002106_5"
-			}
-		}
-	]
-}</pre>
-;(Unused &mdash; 500002106_1)
-:'''Герта:''' Хватит всё время пялиться на мою куклу! Думаешь, ноздри у тебя такие уж прекрасные?
-
-;(Unused &mdash; 500002106_2)
-:'''Герта:''' Если нечем заняться, иди тестируй мою Виртуальную вселенную. Перестань таскать свой Стелларон по всей станции. А что, если взорвётся?
-
-;(Unused &mdash; 500002106_3)
-:'''Герта:''' Кажется, тебе заняться нечем. Как насчёт помочь мне с экспериментом?
-
-;(Unused &mdash; 500002106_4)
-:'''Герта:''' Быстро говори, что там у тебя, и перестань загораживать мне обзор.
-
-;(Unused &mdash; 500002106_5)
-:'''Герта:''' ...
-::Кукла не реагирует. Наверное, Герта ещё не в сети.
-
-;(Unused &mdash; Create_119_300001)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		300002
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		300001,
-		400001,
-		400002
-	]
-}</pre>
-
-;(Unused &mdash; Destroy_119_300001)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		300001
-	]
-}</pre>
-{{Диалог Конец}}
-
-===Найдите объекты и сфотографируйте их===
-{{Диалог Начало}}
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		300002
-	]
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		300001,
-		400001,
-		400002
-	]
-}</pre>
 {{Диалог Конец}}
 
 ===Прочтите сообщение Март 7===
 {{Диалог Начало}}
-<pre>{
-	"$type": "RPG.GameCore.ShowUI",
-	"Name": "Ui.Activity.ActivityGuessTheSilhouette.ActivityGuessTheSilhouetteMainPage"
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

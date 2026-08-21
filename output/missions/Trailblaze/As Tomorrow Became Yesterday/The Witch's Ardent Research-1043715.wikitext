@@ -1,0 +1,185 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Witch's Ardent Research#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043715
+|title         = 
+|image         = <!--Mission The Witch's Ardent Research.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = As Tomorrow Became Yesterday
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Herta; Screwllum; Trailblazer
+|startLocation = [[Amphoreus]] - [["Exomyth"]]
+|world         = Amphoreus
+|area          = "Exomyth"
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Traveler's Guide*6; Refined Aether*6; Disorder Ambrosia*320; Credit*120 000
+}}
+'''''The Witch's Ardent Research''''' is a [[Trailblaze Mission]] in the chapter [[As Tomorrow Became Yesterday]].
+
+==Steps==
+# Search for Lygus's coordinates in Exomyth
+# Search for Lygus's coordinates in Exomyth again
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043715\DS104371501.json'-->)
+{{Dialogue End}}
+
+===Search for Lygus's coordinates in Exomyth{{subst:void|<!--104371502-->}}===
+{{Mission Description|type=trailblaze|location="Exomyth"|update|What's going on? Old Intellitron isn't in Exomyth. Stay alert, Screwy, let's drag this stuck-up administrator out.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P40472_F40472001_G7"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "High",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+:'''Herta:''' Tch. Cheap trick.
+:'''Screwllum:''' The spatial field here is undergoing autonomous recalibration. Initiating reverse-engineering of the interference source.
+:'''Screwllum:''' Try again.
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioTrigger",
+	"Event": "Ev_sfx_storyd_370dev_RMring"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "High",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "FallingEyeShake",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 0.3,
+			"ShakeTime": 0.3,
+			"LoopTime": 0.3,
+			"ShakeDir": {
+				"X": 0.5,
+				"Y": 0.5,
+				"Z": 0
+			},
+			"RangeAttenuationDelay": 0.3,
+			"RangeAttenuationTarget": 0.2,
+			"RangeAttenuationDuration": 0.1
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Search for Lygus's coordinates in Exomyth again{{subst:void|<!--104371503-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "High",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.VCameraConfigChange",
+	"CameraConfig": {
+		"ShakeTemplateName": "FallingEyeShake",
+		"OverrideShakeConfigV2": {
+			"ShakeScale": 0.3,
+			"ShakeTime": 0.3,
+			"LoopTime": 0.3,
+			"ShakeDir": {
+				"X": 0.5,
+				"Y": 0.5,
+				"Z": 0
+			},
+			"RangeAttenuationDelay": 0.3,
+			"RangeAttenuationTarget": 0.2,
+			"RangeAttenuationDuration": 0.1
+		},
+		"NoiseConfig": {}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.LevelAudioTrigger",
+	"Event": "Ev_sfx_storyd_370dev_RMring"
+}</pre>
+:<!--0.3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P40472_F40472001_G8"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+:<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "High",
+	"StartRate": 1,
+	"RecoverDuration": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/GhostFilter.asset"
+}</pre>
+;({{tx|Unknown performance}}<!--Error: ENOENT: no such file or directory, open 'R:\Utils\HSR\3.7\Story\Discussion\Mission\1043715\DS104371502.json'-->)
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Witch's Ardent Research
+|zhs  = 魔女的孤诣课题
+|zht  = 魔女的孤詣課題
+|ja   = 魔女が追い求める課題
+|ko   = 마녀의 치열한 연구
+|es   = La investigación solitaria de la bruja
+|fr   = Les recherches ardentes de la sorcière
+|ru   = Кропотливое исследование ведьмы
+|th   = การวิจัยอันเด็ดเดี่ยวของแม่มด
+|vi   = Đề Tài Nghiên Cứu Độc Đáo Của Ma Nữ
+|de   = Die leidenschaftliche Forschung der Hexe
+|id   = Penelitian Soliter sang Penyihir
+|pt   = A Pesquisa Ardente da Bruxa
+}}
+
+==Change History==
+{{Change History|<!--unknown-->}}

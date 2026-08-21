@@ -10,14 +10,14 @@ PageTitle=#Плита пророчества I#
 |Событие         = 
 |Глава           = 
 |Условия         = 
-|Персонажи       = Дамионис; Первопроходец
-|СтартЛокация    = [[Амфореус]] — [[Плита пророчества I]]
-|Мир             = Амфореус
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
 }}
-'''Плита пророчества I''' — [[Миссия приключения]] в [[Амфореус]].
+'''Плита пророчества I''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -30,231 +30,18 @@ PageTitle=#Плита пророчества I#
 ==Прохождение==
 {{Дополнить}}
 ===Войдите в гипогей===
-{{Описание миссии|тип=Миссия приключения|локация=Плита пророчества I|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним.}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним.}}
 {{Диалог Начало}}
-----
-:Следуя за Дамионисом, вы оказываетесь в одном из вассальных полисов в окрестностях Охемы. Перед входом в подземелье вы останавливаетесь...
-:'''Дамионис:''' Мы на месте, это здесь. Если верить ранее добытым мной сведениям, дорога к гипогею начинается тут.
-:'''Дамионис:''' Говорят, он находится под защитой силы {{Rubi|Янус|титан врат}}. Раньше здесь было убежище, где прятались от чёрного течения, а теперь...
-:{{Диалог|Стрелка}} Здесь почти как в Охеме.
-::'''Дамионис:''' Это архитектурный стиль одной эпохи. Было бы странно, если бы они сильно отличались.
-::'''Дамионис:''' Вот только гипогею не успели найти применение, как он уже оказался заброшенным.
-::Звучит, будто здесь безопасно.
-::'''Дамионис:''' И не говори! Не успело убежище открыться, как его оставили.
-::Внутри точно никого нет?
-:{{Диалог|Стрелка}} Звучит, будто здесь безопасно.
-::'''Дамионис:''' И не говори! Не успело убежище открыться, как его оставили.
-::Внутри точно никого нет?
-:{{Диалог|Стрелка}} Внутри точно никого нет?
-:'''Дамионис:''' Откуда бы там кому-то быть? Не успело убежище открыться, как его оставили.
-:'''Дамионис:''' Потому что в какой-то момент пришло осознание: от чёрного течения нельзя скрыться. Каким бы крепким ни было убежище, долго ему не продержаться.
-:'''Дамионис:''' И вместо того чтобы перед лицом бедствия ложиться в гроб и ждать смерти, лучше изначально не дать бедствию случиться, правда же?..
-:'''Дамионис:''' Поэтому высок шанс, что здесь можно неплохо поживиться... Если нам удастся снять печать.
-:{{Диалог|Стрелка}} Печать?
-:'''Дамионис:''' Видишь, вон там? Плита пророчества. Творение {{Rubi|Оронис|титан времени}}. Это оковы, что держат двери запертыми.
-:{{tx}}
 {{Диалог Конец}}
 
 ===Снимите печать и двигайтесь дальше===
-{{Описание миссии|тип=Миссия приключения|локация=Плита пророчества I|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним...<br />Первая же дверь поставила его в тупик... Кажется, вам стоило взять 90% прибыли.}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним...<br />Первая же дверь поставила его в тупик... Кажется, вам стоило взять 90% прибыли.}}
 {{Диалог Начало}}
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_PuzzleState"}}-->}})
-:<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
-	"InstanceIDList": [
-		300001,
-		300002,
-		300004
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.BindPropsCablelines",
-	"StartPropInstanceID": 300001,
-	"EndPropInstanceID": 300002,
-	"LinePropInstanceID": 300004,
-	"LineEffectPath": {
-		"Custom": true,
-		"Key": "LineEffect"
-	},
-	"MoveEffectPath": {
-		"Value": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Ball_Lod0.prefab"
-	},
-	"MoveEffectSpeedOverride": {
-		"IsDynamic": true,
-		"PostfixExpr": {
-			"OpCodes": "AQAR",
-			"FixedValues": [],
-			"DynamicHashes": [
-				584429333
-			]
-		}
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.SetPropCablelineVisible",
-	"LinePropInstanceID": 300004
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerEffect",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	},
-	"Flags": [],
-	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"AttachPoint": "Root",
-	"Scale": {
-		"X": 1,
-		"Y": 1,
-		"Z": 1
-	},
-	"ForceSimulateImmediately": false,
-	"SubObjectModifyDataList": []
-}</pre>
-:;(По прибытии на место)
-:;(По прибытии на место)
-
-;(По прибытии на место)
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
-<pre>{
-	"$type": "RPG.GameCore.SetPropCablelineVisible",
-	"LinePropInstanceID": 300004,
-	"IsVisible": true
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
-	},
-	"EmitterType": "TargetEvaluator",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-
-;(По прибытии на место)
-;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareTarget","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvLocalPlayer"},"CompareType":{"$type":"RPG.GameCore.TargetFetchTaskActionTarget"}}-->}})
-<pre>{
-	"$type": "RPG.GameCore.SetPropCablelineVisible",
-	"LinePropInstanceID": 300004,
-	"IsVisible": true
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle"
-	},
-	"EmitterType": "TargetEvaluator",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-;(Unused &mdash; OraclePuzzleEndLinePerform)
-<pre>{
-	"$type": "RPG.GameCore.ToastPage",
-	"MessageOne_DS": {
-		"Custom": true,
-		"Key": "Toast1"
-	},
-	"MessageTwo": {
-		"Hash": 2012001348524219443
-	}
-}</pre>
-::<!--0.4-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.SetFloorCustomFloat",
-	"Name": {
-		"Custom": true,
-		"Key": "FCV"
-	},
-	"Value": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 1
-		}
-	}
-}</pre>
-::<!--0.5-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.UnBindPropsCablelines",
-	"LinePropInstanceID": 300004
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.TriggerSound",
-	"SoundName": {
-		"Value": "Ev_sfx_amphoreus_oraclepuzzle_idle_stop"
-	},
-	"EmitterType": "TargetEvaluator",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.RemoveEffect",
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	},
-	"EffectPath": "Effects/Eff_Prefab/Eff_Scene/InteractiveProp/Eff_Chap04_Prop_OracleMachine_01_Hint_Lod0.prefab",
-	"Flags": [],
-	"ForceImmediateFadeOut": false
-}</pre>
-
-;(Unused &mdash; OraclePuzzleStartLinePerform)
-<pre>{
-	"$type": "RPG.GameCore.PropEnableCollider",
-	"SpecifiedRelativePaths": [],
-	"TargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300005
-		]
-	}
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.RequestSetServerGroupProperty",
-	"DynamicName": {
-		"Value": "SGP_PuzzleState"
-	},
-	"Value": 1
-}</pre>
 {{Диалог Конец}}
 
 ===Продолжайте идти===
-{{Описание миссии|тип=Миссия приключения|локация=Плита пророчества I|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним...}}
+{{Описание миссии|тип=Миссия приключения|локация=<!--необходимо добавить-->|Дамионис утверждает, что у него достаточно опыта, и вам нужно просто следовать за ним...}}
 {{Диалог Начало}}
-----
-:'''Дамионис:''' Дверь открыта! Молодец, у меня бы так не получилось.
-:'''Дамионис:''' Мы не знаем, что нас ждёт впереди... Наверное, настоящее приключение! От одной этой мысли я весь дрожу!
-:{{Диалог|Стрелка}} Разве у тебя нет карты?
-::'''Дамионис:''' Я просил жреца {{Rubi|Аквилы|титан неба}} провести небольшую разведку, руководствуясь пророчествами и профессиональными навыками. Но что скрывает каждая из комнат... нам придётся проверять самостоятельно.
-::'''Дамионис:''' Ладно, идём.
-::Ура, приключения!
-::'''Дамионис:''' ...А ты {{MC|ж=взволнована|м=взволнован}} ещё больше меня! Вот кто настоящий исследователь!
-::Идём дальше.
-:{{Диалог|Стрелка}} Ура, приключения!
-::'''Дамионис:''' ...А ты {{MC|ж=взволнована|м=взволнован}} ещё больше меня! Вот кто настоящий исследователь!
-::Идём дальше.
-:{{Диалог|Стрелка}} Идём дальше.
 {{Диалог Конец}}
 
 ==На других языках==

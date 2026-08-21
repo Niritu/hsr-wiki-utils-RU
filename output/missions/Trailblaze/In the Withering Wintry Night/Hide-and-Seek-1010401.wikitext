@@ -1,0 +1,96 @@
+<%-- [PAGE_INFO]
+PageTitle=#Игра в прятки#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1010401
+|title         = Hide-and-Seek
+|image         = <!--Mission Игра в прятки.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Withering Wintry Night
+|requirements  = [[Trailblaze Mission]] ''[[You Can Run, But You Can't Hide]]'' completed
+|summary       = Dizziness set in, and you awakened to find yourself separated from your companions, lying on a bed. Through a thrilling game of hide-and-seek, you reunited with March 7th and embarked on a quest to locate Dan Heng.
+|characters    = Trailblazer; Voice of the Stellaron; Young Cocolia
+|startLocation = [[Jarilo-VI]] - [[Backwater Pass]]
+|world         = Jarilo-VI
+|area          = Backwater Pass
+|prev          = You Can Run, But You Can't Hide
+|next          = The Eighth and Final Rule
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Adventure Log*6; Condensed Aether*3; Trick Snack*10; Simple First-Aid Device*10
+}}
+'''''Hide-and-Seek''''' is a [[Trailblaze Mission]] in the chapter [[In the Withering Wintry Night]].
+
+==Steps==
+# Talk to the unfamiliar woman and find out about what's happening
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Talk to the unfamiliar woman and find out about what's happening{{subst:void|<!--101040101-->}}===
+{{Mission Description|type=trailblaze|location=Backwater Pass|As the daughter of the Supreme Guardian, Bronya has always been quick and decisive &mdash; this pursuit operation targeted at you was no exception.<br />Good thing your "good pal" Sampo arrived just in time to rescue you. It's just that... it would've been better if he didn't knock you out with the smoke bomb made from questionable ingredients.<br />In your daze, you realize that you aren't tied up but placed on a bed somewhere &mdash; to a degree, this tells you that you're not in immediate danger. You'll have to ask the unfamiliar woman in front of you for more details.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E1",
+	"SubMissionID": 101040114
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_sfx_cg_bus_mute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+;(Screen fades to black)
+:'''Young Cocolia:''' ...They will suffer, sacrifice, and die because of my order.
+:'''Voice of the Stellaron:''' It is not death which greets them... They will be swept into the infancy of a new world.
+:'''Young Cocolia:''' What about the Underworlders? They will lose the protection of the Architects. They will see me... as a tyrant.
+:'''Voice of the Stellaron:''' You have witnessed... the world we have promised.
+:'''Voice of the Stellaron:''' A temporary misunderstanding... for an eternity of prosperity.
+:'''Voice of the Stellaron:''' We will honor... your decision.
+;(Screen fades to black)
+:'''Young Cocolia:''' ...
+:'''Young Cocolia:''' I understand.
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_global_set_sfx_cg_bus_unmute"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Joyful",
+	"SubMissionID": 101040114
+}</pre>
+:{{tx}}
+;(Fully recovers all allies' HP)
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Hide-and-Seek
+|zhs  = 捉迷藏
+|zht  = 捉迷藏
+|ja   = かくれんぼ
+|ko   = 숨바꼭질
+|es   = El escondite
+|fr   = Cache-cache
+|ru   = Игра в прятки
+|th   = เกมซ่อนหา
+|vi   = Trốn Tìm
+|de   = Versteckspiel
+|id   = Petak Umpet
+|pt   = Esconde-Esconde
+}}
+
+==Change History==
+{{Change History|3.5}}

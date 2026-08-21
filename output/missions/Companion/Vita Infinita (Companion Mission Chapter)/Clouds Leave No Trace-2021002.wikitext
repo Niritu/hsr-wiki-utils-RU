@@ -1,0 +1,1729 @@
+<%-- [PAGE_INFO]
+PageTitle=#Clouds Leave No Trace#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2021002
+|title         = 
+|image         = <!--Mission Clouds Leave No Trace.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Bailu; Blade; Dan Heng; Jing Yuan; Jingliu; Qingzu; Trailblazer; Yanqing
+|startLocation = [[The Xianzhou Luofu]] - [[Seat of Divine Foresight]]
+|world         = The Xianzhou Luofu
+|area          = Seat of Divine Foresight
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*600; Stellar Jade*100; Traveler's Guide*6; Lost Crystal*4; Lifeless Blade*6; Credit*50 000
+}}
+'''''Clouds Leave No Trace''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Head to the Seat of Divine Foresight and ask after how the Stellaron Hunter has been doing lately
+# Talk to Jingliu
+# Head toward Stargazer Navalia
+# Activate the starskiff manufacturing line in Stargazer Navalia
+# Head to the starskiff jetty
+# Release starskiff
+# Head to the Artisanship Commission
+# Wipe out the monsters raging throughout the Artisanship Commission
+# Catch up to Yanqing, who went up ahead
+# Head to the Alchemy Commission
+# Talk to Bailu
+# Retrieve the medicine box for Bailu
+# Defeat the abominations and retrieve the medicine box for Bailu
+# Talk to Jingliu
+# Bid farewell to Yanqing
+# Head to Scalegorge Waterscape
+# Talk to Jingliu and Jing Yuan
+# Bid farewell to Jingliu
+# Bid farewell to Blade
+# Bid farewell to Jing Yuan
+# Reply to March 7th's message
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Head to the Seat of Divine Foresight and ask after how the Stellaron Hunter has been doing lately{{subst:void|<!--202100201-->}}===
+{{Mission Description|type=companion|location=Seat of Divine Foresight|Unwilling to let your friend on the Express become entangled in grievances from a previous life, you decide to enter the fray on your own volition.<br />Speculating on the intentions of the letter, you believe that blade-wielding Stellaron Hunter to be the most likely sender, fixated on sorting out past grudges. However, his "invitations" have always been direct and aggressive. What would be the purpose of sending this letter? You decide to head to the Seat of Divine Foresight and inquire after the whereabouts of the Hunter's location from the general.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Suprise01"
+}</pre>
+:'''Yanqing:''' Well, if it isn't Dan Heng.
+:{{Диалог|Стрелка}} Greetings.
+:{{Диалог|Стрелка}} I need to speak to the general about something.
+:'''Dan Heng:''' Greetings. I need to speak to the general about something.
+:'''Yanqing:''' Hmph, looking for compensation for the injuries I gave you? I accept full responsibility &mdash; they can deduct my next hundred years' salary if they like...
+:{{Диалог|Стрелка}} That won't be necessary.
+::'''Dan Heng:''' That won't be necessary, the Cloud Knights were doing their duty. I should be apologizing for any damage I caused myself.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:{{Диалог|Стрелка}} I'm here about something else...
+::'''Dan Heng:''' The Cloud Knights were doing their duty. I'm here to ask the general about the Stellaron Hunters.
+:'''Qingzu:''' You came at a bad time. The General is busy with urgent work &mdash; you probably won't be able to meet with him today... but he did leave a message. Dan Heng, do you recognize the person on the steps?
+:{{Диалог|Стрелка}} I think so.
+::'''Dan Heng:''' I can't say that I know her, but she does look a little familiar. Is she a guest of the general's?
+:{{Диалог|Стрелка}} No...
+::'''Dan Heng:''' ...No. If the general isn't available, I'll come back another day.
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:'''Qingzu:''' ...You don't remember her? I see, I suppose the memories of your previous life really were wiped clean after the rebirth.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"DynamicParams": {}
+}</pre>
+:'''Qingzu:''' That is Jingliu, the previous Sword Champion of the Xianzhou Luofu. She was the closest friend of Imbibitor Lunae, your previous incarnation. She was also the general's... master.
+:'''Qingzu:''' According to records of wars past, her blade has slain countless Denizens of Abundance. Not even the Feather Guards of the Wingweaver, the Father Wolf of the borisin, or the gigantic Mechabeast could withstand a single strike from her. She's a renowned legend.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerBlendShapesEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Qingzu:''' However, those are ancient stories. It's a shame that even a hero like her wasn't able to break free of mara. It is said that in the end, Jingliu lost her sanity and slaughtered anyone in sight. She was deemed a criminal and fled to outer worlds.
+:'''Qingzu:''' With her powers, you'd think there would be no one capable of bringing her in. For some reason, she arrived on the Luofu with a suspect disguised as a traveling merchant and said she wanted to turn herself in...
+:'''Qingzu:''' Her surrender came with one condition &mdash; that she be allowed a day of freedom before the trial. She wanted to travel to Scalegorge Waterscape and meet with her old friends one last time... I can't believe Jing Yuan actually agreed!
+:'''Qingzu:''' Before he left, he ordered us to accompany Jingliu during her last day on the Luofu. We're hosting an honored guest, we're escorting a criminal...
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 202100201
+}</pre>
+;(Screen fades to black)
+:Qingzu suddenly stops talking. Like her, you perceive a chill settling in the air around you.
+:'''Jingliu:''' Imbibitor Lunae, you're here.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202001_G4",
+	"AnchorName": "Anchor9",
+	"DynamicParams": {}
+}</pre>
+:'''Jingliu:''' Since you've traveled all this way &mdash; why don't you come and talk with me?
+:'''Jingliu:''' Or should I call you by your name in this lifetime &mdash; "Dan Heng?"
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 202100201
+}</pre>
+
+;(Talk to Jingliu)
+----
+:'''Jingliu:''' When I left the Xianzhou, I heard they took away your scales and horns, forced you into a hatching rebirth, and detained you in The Shackling Prison.
+:'''Jingliu:''' I thought Imbibitor Lunae had been wiped from this world... but then I returned to the Luofu and watched as you parted the sea. After all these years, it was a magnificent sight to behold.
+:{{Диалог|Стрелка}} Do I... know you?
+::'''Dan Heng:''' Do we... know each other?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Jingliu:''' Hmm... the answer to that is both yes and no. However, your cold and indifferent tone is identical to the person I knew back then.
+:{{Диалог|Стрелка}} I remember you, but barely.
+::'''Dan Heng:''' ...I recognize you... but I can't remember anything.
+::'''Dan Heng:''' The memories of my past life are like shattered glass... I can't piece together the reality from the individual shards...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Jingliu:''' "I can't remember..." The words of every person who hopes to escape their past.
+::'''Jingliu:''' The Vidyadhara rebirth normally erases all memory of the previous life. However, you have retained fragments of your past, as well as the powers of the high elder.
+:{{Диалог|Стрелка}} My past life is over.
+::'''Dan Heng:''' The life of Imbibitor Lunae ended. I stand before you a completely different person.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::'''Jingliu:''' I understand. The sins of a past life should be forgiven after rebirth. Now you are a Nameless, traveling across the galaxy... but can anyone really bid farewell to their past?
+:'''Jingliu:''' ...If my guess is correct, the Preceptors were unwilling to allow the Ichor Line to end and hoped for Imbibitor Lunae's resurrection. That is why they tampered with the molting rebirth... and turned you into what you are now....
+:{{Диалог|Стрелка}} Do you also wish to restore the high elder succession?
+::'''Dan Heng:''' So, you also wish to restore the high elder succession, just like the Preceptors?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' I have no intention of meddling in such things. That is the business of the Vidyadhara.
+:{{Диалог|Стрелка}} You want to make Imbibitor Lunae pay for what they've done?
+::'''Dan Heng:''' Imbibitor Lunae's actions affected many... Are you here to set things straight?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' I, too, am a criminal. What right have I to deliver punishment?
+:{{Диалог|Стрелка}} Tell me why you're here.
+::'''Dan Heng:''' You're not here to reminisce on old times. Tell me why you're here.
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' You didn't hear? That Vidyadhara girl explained it clear as day.
+:'''Jingliu:''' I returned to the Luofu so I could surrender myself to the Alliance and atone for my sins.
+:'''Jingliu:''' I did, however, have one request before the trial. I asked to be given a single day to go and see old friends and to fulfill promises I made long ago.
+:'''Jingliu:''' Jing Yuan has always been an understanding person. He heard that you would be coming and agreed to my request.
+:'''Dan Heng:''' So, you're the one that mailed the letter to the Express.
+:'''Jingliu:''' That's right.
+:{{Black Screen|In the meantime...}}
+
+
+;(Talk to Qingzu)
+:'''Qingzu:''' Master Dan Heng, she's asking for you specifically.
+:'''Yanqing:''' Be careful. Don't underestimate her...
+{{Dialogue End}}
+
+===Talk to Jingliu{{subst:void|<!--202100207-->}}===
+{{Mission Description|type=companion|location=Seat of Divine Foresight|update|There is more than one unexpected guest at the Seat of Divine Foresight. Lieutenant Yanqing and Counselor Qingzu both have a headache. They must welcome an "esteemed guest" and also accompany a prisoner. Her voice and visage stir your long-buried memories. You understand that she does not come on friendly terms.}}
+{{Dialogue Start}}
+
+;(Talk to Jingliu)
+----
+:'''Jingliu:''' When I left the Xianzhou, I heard they took away your scales and horns, forced you into a hatching rebirth, and detained you in The Shackling Prison.
+:'''Jingliu:''' I thought Imbibitor Lunae had been wiped from this world... but then I returned to the Luofu and watched as you parted the sea. After all these years, it was a magnificent sight to behold.
+:{{Диалог|Стрелка}} Do I... know you?
+::'''Dan Heng:''' Do we... know each other?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Jingliu:''' Hmm... the answer to that is both yes and no. However, your cold and indifferent tone is identical to the person I knew back then.
+:{{Диалог|Стрелка}} I remember you, but barely.
+::'''Dan Heng:''' ...I recognize you... but I can't remember anything.
+::'''Dan Heng:''' The memories of my past life are like shattered glass... I can't piece together the reality from the individual shards...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::<!--1.5-second delay-->
+::'''Jingliu:''' "I can't remember..." The words of every person who hopes to escape their past.
+::'''Jingliu:''' The Vidyadhara rebirth normally erases all memory of the previous life. However, you have retained fragments of your past, as well as the powers of the high elder.
+:{{Диалог|Стрелка}} My past life is over.
+::'''Dan Heng:''' The life of Imbibitor Lunae ended. I stand before you a completely different person.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+::'''Jingliu:''' I understand. The sins of a past life should be forgiven after rebirth. Now you are a Nameless, traveling across the galaxy... but can anyone really bid farewell to their past?
+:'''Jingliu:''' ...If my guess is correct, the Preceptors were unwilling to allow the Ichor Line to end and hoped for Imbibitor Lunae's resurrection. That is why they tampered with the molting rebirth... and turned you into what you are now....
+:{{Диалог|Стрелка}} Do you also wish to restore the high elder succession?
+::'''Dan Heng:''' So, you also wish to restore the high elder succession, just like the Preceptors?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' I have no intention of meddling in such things. That is the business of the Vidyadhara.
+:{{Диалог|Стрелка}} You want to make Imbibitor Lunae pay for what they've done?
+::'''Dan Heng:''' Imbibitor Lunae's actions affected many... Are you here to set things straight?
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' I, too, am a criminal. What right have I to deliver punishment?
+:{{Диалог|Стрелка}} Tell me why you're here.
+::'''Dan Heng:''' You're not here to reminisce on old times. Tell me why you're here.
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+::'''Jingliu:''' You didn't hear? That Vidyadhara girl explained it clear as day.
+:'''Jingliu:''' I returned to the Luofu so I could surrender myself to the Alliance and atone for my sins.
+:'''Jingliu:''' I did, however, have one request before the trial. I asked to be given a single day to go and see old friends and to fulfill promises I made long ago.
+:'''Jingliu:''' Jing Yuan has always been an understanding person. He heard that you would be coming and agreed to my request.
+:'''Dan Heng:''' So, you're the one that mailed the letter to the Express.
+:'''Jingliu:''' That's right.
+:{{Black Screen|In the meantime...}}
+:{{tx}}
+{{Dialogue End}}
+
+===Head toward Stargazer Navalia{{subst:void|<!--202100209-->}}===
+{{Mission Description|type=companion|location=Seat of Divine Foresight|update|According to Jingliu, she returned to the Xianzhou and collected her old friends this time to reminiscence about the promises they made when their hearts still beat as one. However, she wishes to visit some places before that, and to pay respect to bygone comrades.}}
+{{Dialogue Start}}
+:{{tx}}
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud01"
+}</pre>
+:'''Yanqing:''' If it's starskiffs you wanted to see, we could've headed to the Jade Gate. Why did we come all the way here?
+:'''Jingliu:''' Young man, have you ever heard of Baiheng, the foxian pilot?
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:'''Yanqing:''' Baiheng... I think I've seen that name somewhere before...
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+:{{Диалог|Стрелка}} Baiheng...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+::This name is unfamiliar to you and elicits no feelings. However, a voice inexplicably rings in your ears.
+:;(Screen fades to black)
+::Let the noble high elder drown the enemies in rain &mdash; we just need to watch from the sky, I presume?
+:{{Диалог|Стрелка}} Pilot...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+::The concept of flight holds no memories for you. In your previous life of nobility, you were spared the task of taking the helm. As an unnamed traveler in this life, you have not yet come into contact with a starskiff.
+::Yet, there's a voice, inexplicably echoing in your ears, becoming agitated in the midst of the howling wind.
+:;(Screen fades to black)
+::The starskiff won't hold much longer! High Elder, catch us before it falls apart!
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:'''Dan Heng:''' ...
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G4",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+:'''Jingliu:''' Imbibitor Lunae, if memories are returning to you, share them.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:{{Диалог|Стрелка}} I... can't remember anything.
+::'''Dan Heng:''' I can't remember anything.
+::'''Jingliu:''' But you've learned how to lie.
+:{{Диалог|Стрелка}} I only remember fragments...
+::'''Dan Heng:''' I think... she was one of Imbibitor Lunae's comrades.
+::'''Jingliu:''' She was a comrade and friend both to Imbibitor Lunae and all of us.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Jingliu:''' Well... that's all in the past now. The reason we came to Stargazer Navalia is because I wanted to pay tribute to her here.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Yanqing:''' Huh...? You mean the foxian soul-soothing ceremony?
+:'''Jingliu:''' Yes... the sending off of a starskiff. It represents the voyage of the deceased into the stars. Due to circumstances beyond my control, I never had the chance to bid farewell to her... It is something I have regretted to this day.
+:'''Jingliu:''' As for procuring a starskiff, I know they can be manufactured here... but I know nothing of the process.
+:'''Yanqing:''' I see... Follow me.
+----
+{{Dialogue End}}
+
+===Activate the starskiff manufacturing line in Stargazer Navalia{{subst:void|<!--202100229-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Yanqing:''' Careful. There are still Stellaron spirits lurking around.
+:'''Jingliu:''' No need to worry about the two of us.
+
+;(По прибытии на место)
+:'''Yanqing:''' I don't know anything about manufacturing starskiffs either...
+:'''Yanqing:''' ...but getting these machines to work shouldn't be too hard.
+{{Dialogue End}}
+
+===Head to the starskiff jetty{{subst:void|<!--202100232-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Yanqing:''' See? The starskiff is complete.
+:'''Jingliu:''' After being away from the Luofu for so long, I can finally say farewell to you.
+:'''Yanqing:''' So... what happened to Baiheng in the end?
+:'''Jingliu:''' In the end... I do not think the details are necessary. We are here today to commemorate her.
+:'''Jingliu:''' Imbibitor Lunae... Do you still remember the battle against Shuhu?
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G6",
+	"AnchorName": "Anchor5",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:{{Диалог|Стрелка}} It was a bloody battle against the Denizens of Abundance...
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+::'''Dan Heng:''' The Abundance Emanator, Shuhu, rallied a great army and attacked the Alliance... I read about it in The Shackling Prison.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G6",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+::'''Jingliu:''' You seem to be interested in learning about your past life...
+::'''Jingliu:''' ...still, all of that was erased. After Shuhu attacked the borders, he disappeared without a trace. There are no records of his remains, either.
+:{{Диалог|Стрелка}} Dan Feng fought in that battle...
+:<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	}
+}</pre>
+::'''Dan Heng:''' Did Dan Feng fight alongside you?
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G6",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+::'''Jingliu:''' Yes, the high elder was held in higher regard. The Cloud Knights became wary after learning of Dan Feng's imminent arrival &mdash; the General Teng Xiao called for me to guarantee the safety of the troops...
+::'''Jingliu:''' ...but Baiheng didn't care about any of that. She believed that the high elder was mortal and no different from the soldier next to her. You ran a fair share of errands for her when she was still around.
+:{{Диалог|Стрелка}} I... can't remember any of it.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Dan Heng:''' I can't remember anything.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202003_G6",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+:'''Jingliu:''' Let me refresh your memory. During that battle, Baiheng, being the headstrong girl that she was, managed to exhaust the luck that was bestowed upon her by the Reignbow Arbiter.
+:'''Jingliu:''' She charged ahead and shattered the enemy's defenses, allowing the Xianzhou soldiers to break through Shuhu's Sanguinary Abyss and awaken you from your Dragon's Delirium... She was not able to walk out of that fight. We all shoulder a debt that we will never be able to repay.
+:'''Jingliu:''' For the Cloud Knights, giving up one's life on the battlefield is an honor... but that wasn't something you believed in, Imbibitor Lunae...
+:'''Jingliu:''' You couldn't accept that Baiheng was gone. Instead of leaving her to eternal rest, you decided to... You made a mistake that can never be undone.
+:'''Dan Heng:''' ...
+:'''Jingliu:''' There is no need to respond, Imbibitor Lunae, your answer is no longer important... And now, I will send off this starskiff.
+----
+{{Dialogue End}}
+
+===Release starskiff{{subst:void|<!--202100223-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; p202110209)
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the Artisanship Commission{{subst:void|<!--202100225-->}}===
+{{Dialogue Start}}
+:{{tx}}
+----
+:'''Jingliu:''' ... Since the Arbor's resurrection, the land has been crawling with abominations. *sniff* Even the Artisanship Commission's prized Creation Furnace is hanging on by a thread.
+:'''Yanqing:''' The crisis happened too suddenly &mdash; all the craftsmen and apprentices fled. Only a single master craftsman was left to hold the line, until reinforcements arrived. That's how the Creation Furnace was saved.
+:'''Jingliu:''' Interesting. Stubborn beyond valuing his own life... That reminds me of an extremely arrogant acquaintance. If he were to see the chaos of the Artisanship Commission today, he would burst into laughter at the Xianzhou's incompetence.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:'''Yanqing:''' What's that supposed to mean!? What's wrong with saving your own life and waiting for the Cloud Knights to arrive?
+:'''Jingliu:''' And yet where were the Cloud Knights when danger was at the door? From what I heard, it was a group of outworlders that came to the rescue.
+:'''Yanqing:''' The Luofu's delves are big places... Besides, some of the troops were deployed to the Yaoqing's campaign. The Cloud Knights were spread thin &mdash; it was impossible to guard everywhere at once.
+:'''Jingliu:''' Hmph. Young man, why don't we continue our previous contest? Show me whether the sword techniques you are so proud of have improved.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:'''Yanqing:''' You just want me to do all the work. You think I'm gonna grant endless requests for a criminal?
+:'''Jingliu:''' You go on ahead this time. We'll meet up at the Creation Furnace.
+----
+{{Dialogue End}}
+
+===Wipe out the monsters raging throughout the Artisanship Commission{{subst:void|<!--202100226-->}}===
+{{Dialogue Start}}
+:'''Dan Heng:''' ...Why did you send him away?
+:'''Jingliu:''' It is of no importance... but you and I haven't had a decent contest in ages.
+:'''Dan Heng:''' I don't plan on fighting.
+:'''Jingliu:''' I'm not asking you to point your spear at me. Could it be that the abominations here aren't enough to motivate you?
+
+;(По прибытии на место)
+:'''Jingliu:''' Leaving so soon? We haven't settled this yet.
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Jingliu:''' Leaving so soon? We haven't settled this yet.
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 15
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Proud02"
+}</pre>
+:'''Yanqing:''' Come on, already!
+:'''Yanqing:''' What took you so long this time?
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400001
+		}
+	},
+	"PathwayGroupID": 15,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"OnReach": [
+		{
+			"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+			"InstanceIDList": [
+				400001
+			]
+		}
+	]
+}</pre>
+:<!--1.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G15",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"BlendTime": 2
+	},
+	"DynamicParams": {}
+}</pre>
+:<!--1.5-second delay-->
+:'''Jingliu:''' Don't get anxious, Imbibitor Lunae. We have all the time in the world.
+
+;(По прибытии на место)
+:'''Jingliu:''' Leaving so soon? We haven't settled this yet.
+----
+{{Dialogue End}}
+
+===Catch up to Yanqing, who went up ahead{{subst:void|<!--202100227-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 6,
+			"GroupID": 11,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202122201
+		},
+		{
+			"AutoSkipTime": 6,
+			"TalkSentenceID": 202122202
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 6,
+	"UniqueID": 1
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 202100227
+}</pre>
+:'''Yanqing:''' You didn't go easy just so I would get here first, did you?
+:'''Jingliu:''' Of course not. Your technique must have improved so much that I simply couldn't keep up with you.
+:'''Yanqing:''' Hmm... So are we here to commemorate your short-life species friend?
+:'''Jingliu:''' Eavesdropping is a bad habit. Besides, when did I ever say that he was no longer in this world?
+:'''Yanqing:''' Hmph, even the cryo capsules wouldn't be able to extend the life expectancy of a short-life species for long. If he is still alive, he must be ancient.
+:{{Диалог|Стрелка}} He's still alive?
+::'''Dan Heng:''' Yingxing is... still alive?
+::'''Jingliu:''' Of course he's still alive... but he might be better off dead.
+::He became a long-life species?
+:{{Диалог|Стрелка}} He became a long-life species?
+:'''Dan Heng:''' He transformed into a long-life species?
+:'''Jingliu:''' Correct. Such are the twists of destiny.
+:'''Jingliu:''' Some people are born with unparalleled foresight and exceptional intelligence but make the most ill-advised choices at destiny's crossroads.
+:'''Jingliu:''' As smart as he was, he made the foolish attempt to use the flesh of the Abundance Emanator to aid Imbibitor Lunae in resurrecting his deceased companion.
+:'''Jingliu:''' His stupidity turned him into a monster, cursed with immortality. His soul was shattered and became the evil that he hated most. The irony...
+:'''Yanqing:''' For an old friend, you don't seem to have that much pity...
+:'''Jingliu:''' I gave him a second chance &mdash; does that not count?
+:{{Диалог|Стрелка}} A second chance?
+:'''Dan Heng:''' What did you do to him?
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"ResetToFloorDefault": true
+}</pre>
+
+;(По прибытии на место)
+----
+:'''Jingliu:''' You can continue to convince yourself that you are merely the reincarnation of Dan Feng and have nothing to do with his sins... and you can keep insisting that you have forgotten everything.
+:'''Jingliu:''' But you cannot run from combat, Dan Heng. Your spearmanship is identical to Imbibitor Lunae's.
+:'''Jingliu:''' Combat is like smelting &mdash; purging the impurities with burning flames and exposing a person's true nature.
+:'''Jingliu:''' Those are the words of the one who made Cloud-Piercer for you. Do you remember?
+:'''Jingliu:''' Out of all of us, you were the closest to him. It was strange, really &mdash; to see someone so arrogant get along with someone so proud.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G11",
+	"AnchorName": "Anchor4",
+	"DynamicParams": {}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble01"
+}</pre>
+:{{Диалог|Стрелка}} ...Yingxing?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+::In your dreams, you see a man with an indistinct face, standing arrogantly and irreverently in front of the spear rack where the "Cloud-Piercer" is placed.
+:;(Screen fades to black)
+::This spear is sharp enough to pierce dragon scales. Be careful, High Elder, lest you hurt yourself with it.
+:{{Диалог|Стрелка}} (Try hard to remember)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Sad02"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_chaptrain_filter_fuzzy"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+::The name of that person flutters at the edge of your thoughts like a leaf in the wind, but it remains elusive and unclear.
+:;(Screen fades to black)
+::I'd rather leave this world in a blaze than live until the end of time. I will let all of the Xianzhou know that a brief moment of my life is worth more than their long and meaningless lives.
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/oldfilmFilter.asset"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer"
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:'''Dan Heng:''' Yingxing...
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202004_G11",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+:'''Jingliu:''' Mm... you still remember his name.
+:'''Jingliu:''' When he was but a child, he swore to take revenge on the abominations. That's what drove him to travel across the stars to the Xianzhou &mdash; to receive training.
+:'''Jingliu:''' When I first met him, he wasn't even as tall as my sword... but he was boasting about mastering all the crafts of the Artisanship Commission by the time he was a hundred years old. Hehe, the little brat was no less arrogant than the high elder.
+:'''Jingliu:''' At first, I wasn't too fond of his defiant nature, but when we met again, he was able to craft weapons that astonished the master craftsmen. He even snatched the Artisanship Commission title of "Furnace Master."
+:'''Jingliu:''' Unfortunately, the Alliance would never allow a short-life species to run the Artisanship Commission. He was only able to prove his worth alongside us outcasts in the end.
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Head to the Alchemy Commission{{subst:void|<!--202100242-->}}===
+{{Mission Description|type=companion|location=Alchemy Commission|update|Respects paid, you follow her towards the Scalegorge Waterscape. For some reason, she now has the desire to seek medical counsel. No one is more qualified in the Alchemy Commission than that Dragon Lady to read the pulse and diagnose the Luofu's previous Sword Champion.}}
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Bailu)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Happy01"
+}</pre>
+:'''Bailu:''' Dan Heng!? What a surprise! Are you not feeling well? Please, come this way.
+:{{Диалог|Стрелка}} I'm not here for a check-up...
+:{{Диалог|Стрелка}} She's here for a consultation.
+:'''Dan Heng:''' Miss Bailu, she's here for a consultation.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Pround02"
+}</pre>
+:'''Bailu:''' Oh, I see. Are you here for your eyes? Or is it something else?
+:'''Jingliu:''' My eyes are fine. I cover them to avoid seeing that which reminds me of the past and riles my inner demons. My thoughts have been disordered lately, and I experience occasional night terrors. Do you have a way to soothe my mind, Dragon Lady?
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Bailu:''' Those symptoms... don't sound like my area of expertise.
+:'''Bailu:''' Bah, who cares. The healers of the Alchemy Commission don't get to pick and choose their patients. Give me your hand &mdash; we'll start by checking your pulse. You'll need to take some translucence worms so I can take a closer look.
+:{{Black Screen|Bailu is taking someone's pulse...}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Suprise02"
+}</pre>
+:'''Bailu:''' Y&mdash;Your hand... It's freezing!
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Bailu:''' Please wait. Dan Heng, can I speak to you for a minute?
+:{{Black Screen|Bailu is taking someone's pulse...}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Trouble02"
+}</pre>
+:'''Bailu:''' Your friend here has a very peculiar "condition."
+:'''Bailu:''' Her pulse is extremely faint... Normally, this would mean that she...
+:{{Диалог|Стрелка}} She won't live much longer.
+::'''Dan Heng:''' ...She won't live much longer.
+:{{Диалог|Стрелка}} There's no cure.
+::'''Dan Heng:''' ...There's no cure.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:'''Bailu:''' Ah-ba-ba-ba... Let the healer make the professional diagnosis!
+:'''Bailu:''' Your friend's situation is unique. She looks healthy, but her hands are cold as ice. It feels like there's a dark current running and pulsing between her core esse and her veins.
+:'''Bailu:''' I've never seen anything like it. With more research, I might be able to make a new entry in the medical records. Can you and your friend come back for follow-up visits?
+:{{Диалог|Стрелка}} (Decline respectfully)
+::'''Dan Heng:''' Today's her last day on the Luofu.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Bailu:''' What a shame. If she could stay for a few days, I might be able to figure out how to cure her.
+:{{Диалог|Стрелка}} (Decline directly)
+::'''Dan Heng:''' She's a criminal. That's up to the Cloud Knights and the Ten-Lords Commission.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Bailu:''' Talk about not judging a book by its cover &mdash; she looks so kind and elegant... How could she be a criminal? Meh, not my concern.
+:'''Bailu:''' ...I'll do my best. No matter what I administer, she's gonna need to drink a ton of warm water from this point on.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400006
+				}
+			}
+		}
+	}
+}</pre>
+:'''Bailu:''' Come with me, I'll prescribe her some soul-returning vitality infusion. It won't cure her, but it'll... Wait... where did my big medicine box go?
+:'''Bailu:''' I'm sorry, ever since the Disciples of Sanctus Medicus were expelled, things have been a mess around here.
+:'''Bailu:''' Dan Heng, you mind coming with me to retrieve my medicine? I could use your skills.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400008
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad02"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43202_F43202005_G3",
+	"AnchorName": "Anchor5",
+	"DynamicParams": {}
+}</pre>
+:'''Jingliu:''' Are you in trouble, Dragon Lady? I'll come along as well.
+:'''Bailu:''' N&mdash;No, no... No trouble at all...
+----
+{{Dialogue End}}
+
+===Talk to Bailu{{subst:void|<!--202100224-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Retrieve the medicine box for Bailu{{subst:void|<!--202100243-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Bailu:''' Hmm, I can smell the herbs. It's around here somewhere.
+
+;(По прибытии на место)
+:'''Bailu:''' Hey! Give me back my medicine box!
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400002
+		}
+	},
+	"PathwayGroupID": 7,
+	"PathwayID": 3,
+	"MotionFlag": "FastRun",
+	"SpeedScale": 1.2
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"EntityInstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 400003
+		}
+	},
+	"PathwayGroupID": 7,
+	"PathwayID": 2,
+	"MotionFlag": "Run",
+	"SpeedScale": 1.2
+}</pre>
+:'''Bailu:''' Argh, that thing runs so fast! Don't let it get away!
+{{Dialogue End}}
+
+===Defeat the abominations and retrieve the medicine box for Bailu{{subst:void|<!--202100244-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"SubMissionID": 202100244
+}</pre>
+:'''Bailu:''' Ahhhh! There's an even bigger monster protecting this one!
+:'''Bailu:''' When did so many creatures start visiting the Alchemy Commission?
+:'''Dan Heng:''' Careful.
+:'''Jingliu:''' Allow me to eliminate these obstacles, Dragon Lady... Stand back, the chill of my sword freezes everything in its path.
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 202100244
+}</pre>
+;(Enter battle)
+::{{tx|Enemy list missing}}
+{{Dialogue End}}
+
+===Talk to Jingliu{{subst:void|<!--202100228-->}}===
+{{Dialogue Start}}
+:'''Bailu:''' Alright, let me make sure nothing's missing... Excellent, the calming-valerian and qi-strengthening infusions are here. Let's head back &mdash; never make a patient wait too long.
+
+;(Talk to Jingliu)
+----
+:'''Bailu:''' Apologies again for the delay. This prescription won't cure you, but it will nourish your body and calm your mind.
+:'''Jingliu:''' Very well. The fate of a long-life species is inevitable, even with the best doctors.
+:'''Bailu:''' You're... mara-struck? I don't see the symptoms in you at all. What with the incident on the Luofu, I've treated a number of mara-stricken patients recently. They all presented with signs of incoherence, delirium, or frightening physical mutations.
+:'''Bailu:''' You don't seem to have any of that...
+:'''Jingliu:''' I made a deal that allowed me to retain what life I had left in me. I may be sane, but one thing is certain &mdash; my mind is already at its limit...
+:'''Jingliu:''' ...and yet I still have many unfulfilled wishes, and plenty of unfinished business.
+:'''Bailu:''' I see &mdash; so, you've learned to live with your illness. I can't help much with issues of the spirit, but the medical records do mention that calming the mind is a way to heal the body. If you're able to forget about the past, there might be a chance for your symptoms to regress.
+:'''Jingliu:''' Really? How unfortunate... my hatred overshadows my other emotions. I chose to hold onto it, to embrace it, and to use it to maintain my existence.
+:'''Jingliu:''' All I have left are the sword in my hand and my hatred of the past. If I am without either of them... I would fall into an empty void.
+:'''Jingliu:''' Thank you for your advice, Dragon Lady. Meeting you has provided more healing than any kind of medicine or remedy.
+:'''Jingliu:''' By the way, among those you've treated in recent days, did you notice a person in bandages?
+:'''Bailu:''' Bandages? That's a vague description, y'know... I'm not sure. We get injured patients from all over the Xianzhou for treatment, and the number of injuries we see has skyrocketed since the Ambrosial Arbor crisis.
+:'''Jingliu:''' The person I'm inquiring about is tall, with a serious expression. He also carries a crude sword with him at all times. Have you seen someone like that, Dragon Lady?
+:'''Bailu:''' Hmm... Oh! Yes, someone came by today that matches that description!
+:'''Bailu:''' He must've suffered some kind of sword wound &mdash; he had a strong scent of blood... though from the way he behaved, it must have been fairly minor. He didn't even take the medicine I prescribed.
+:'''Jingliu:''' Hm, he's probably looking for a different kind of medicine.
+:'''Jingliu:''' Well then, it would seem that everything is in place. Let's go and meet our old friend.
+----
+{{Dialogue End}}
+
+===Bid farewell to Yanqing{{subst:void|<!--202100202-->}}===
+{{Mission Description|type=companion|location=Scalegorge Waterscape|update|Past friends reunite in the Scalegorge Waterscape. It is as Jing Yuan said, "Raising old nets only darkens the water &mdash; an exercise in unhappiness." But someone ought to end the grudges lingering from an era past.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Head to Scalegorge Waterscape{{subst:void|<!--202100230-->}}===
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Blade)
+:Blade coldly looks at you.
+
+;(Talk to Jingliu)
+----
+:'''Jingliu:''' A wineless gathering, accompanied by only sadness and bitterness. What a depressing reunion.
+:'''Jingliu:''' Jing Yuan, is it not time you sent me to the Xuling?
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Close01"
+}</pre>
+:'''Jing Yuan:''' The laws of the Alliance cannot be subject to change... Unfortunately, your next stop will be the Yuque.
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+:'''Jing Yuan:''' I reported everything to the Marshal, and {{Rubi|the Seer Strategist|Yao Guang of Yuque}} just so happened to take an interest in the case &mdash; they set up a Deca-Light Reflection Barrier in hopes of meeting the two of you beforehand.
+:'''Jingliu:''' Jing Yuan... You haven't changed at all &mdash; always trying to destroy the plans of others...
+:'''Jingliu:''' ...but in the end, whether it be you, me, the Cloud Knights, or the generals of the Reignbow Arbiter... We are all just pawns in a game of the gods. I am sick and tired of treading on a predetermined path.
+:'''Jingliu:''' No matter. I will deviate if you insist, but this does not change how things will end. Ultimately, I will stand on the side of victory.
+<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 5
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	},
+	"EmotionName": "Angry01"
+}</pre>
+:'''Jing Yuan:''' Then I shall see this gamble through.
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing_D",
+	"SubMissionID": 202100234
+}</pre>
+----
+;([[#Gallery|Cutscene]] plays)
+::We were here once, seven hundred years ago...
+::...laughing, sparring... and thinking about the future.
+::Their faces still linger before my eyes, like a bygone dream.
+::I thought those joyful days would flow indefinitely before us &mdash; like a Xianzhou lifetime.
+::Yet, dreams...
+::...will eventually fade &mdash; like clouds from the sky.
+;(Cutscene ends)
+----
+----
+;(Screen fades to black)
+:'''Blade:''' ...A familiar feeling...
+:'''Blade:''' ...almost as if... we've returned to my first sword lesson.
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 202100234
+}</pre>
+:{{tx}}
+{{Dialogue End}}
+
+===Talk to Jingliu and Jing Yuan{{subst:void|<!--202100234-->}}===
+{{Dialogue Start}}
+
+;(Talk to Jingliu)
+----
+:'''Jingliu:''' Imbibitor Lunae, what do you plan on doing next?
+:{{Диалог|Стрелка}} I'm going to return to the Express.
+::'''Dan Heng:''' Once this gathering ends, I will return to the Express to continue my journey.
+:{{Диалог|Стрелка}} I... haven't thought it through yet.
+::'''Dan Heng:''' I haven't decided how I should confront all this... but I think I will continue my travels.
+:'''Jingliu:''' The Express won't be able to carry you forever. Your friends all have burdens of their own, just as we did back then.
+:'''Jingliu:''' I did think about giving up on revenge and letting go of everything when I fled the Luofu years ago. However, as time passed, it became more and more clear... It was like an old friend that accompanied me every passing day, always nagging in my ear.
+:'''Jingliu:''' The memories of what I did when I was mara-struck are deeply rooted. Since I am unable to rid myself of them, I decided to face them head-on in the end.
+:'''Jingliu:''' Maybe, when I witness the fall of the Abundance, you and Yingxing will find true release. Goodbye, Imbibitor Lunae.
+----
+{{Dialogue End}}
+
+===Bid farewell to Jingliu{{subst:void|<!--202100245-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Bid farewell to Blade{{subst:void|<!--202100235-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Bid farewell to Jing Yuan{{subst:void|<!--202100259-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Reply to March 7th's message{{subst:void|<!--202100203-->}}===
+{{Mission Description|type=companion|location=Scalegorge Waterscape|update|As if waking from an old dream, a message made you remember that you are still at the beginning of a brand-new road alongside companions who will progress its path with you &mdash; No matter where you end up.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1217300
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Clouds Leave No Trace
+|zhs  = 云无留迹
+|zht  = 雲無留跡
+|ja   = 流雲無痕
+|ko   = 흔적을 남기지 않은 구름
+|es   = Las nubes no dejan huellas
+|fr   = Les nuages s'estompent sans laisser de trace
+|ru   = Блуждающее облако
+|th   = เมฆที่ไร้ร่องรอย
+|vi   = Mây Đi Không Dấu Vết
+|de   = Die vorbeiziehende Wolke
+|id   = Awan Tidak Meninggalkan Jejak
+|pt   = Nuvens Não Deixam Rastros
+}}
+
+==Change History==
+{{Change History|3.5}}

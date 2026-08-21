@@ -1,0 +1,434 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Dragon Returns Home#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2020601
+|title         = 
+|image         = <!--Mission The Dragon Returns Home.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = [[Trailblaze Mission]] ''[[Obsequies Performed, A Long Road Ahead]]'' completed
+|summary       = Dan Heng and Bailu combined their powers to complete the Ambrosial Arbor Seal, delivering a fitting warning to the malicious Preceptors.<br />However, this journey alone may not have provided the answers Dan Heng seeks.
+|characters    = ??; Dan Heng; Huanxi; Jing Yuan; Luying; Trailblazer; Vidyadhara Lady
+|startLocation = [[The Xianzhou Luofu]] - [[Exalting Sanctum]]
+|world         = The Xianzhou Luofu
+|area          = Exalting Sanctum
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*100; Traveler's Guide*3; Lost Crystal*3; Lifeless Blade*6; "Samudrartha"*1 { text = "Samudrartha" }; Credit*40 000
+}}
+'''''The Dragon Returns Home''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Meet up with Dan Heng at Synwood Pavilion
+# Find the Ferryman and head to the Alchemy Commission delve together
+# Request an audience with the high elder and meet the messenger
+# Speak with Huanxi and head to the Scalegorge Waterscape
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+{{Dialogue End}}
+
+===Meet up with Dan Heng at Synwood Pavilion{{subst:void|<!--202060102-->}}===
+{{Mission Description|type=companion|location=Exalting Sanctum|update|The wanderer, once meant to be permanently exiled, has returned to the Luofu. Dan Heng, determined to face his past, has invited you to join him in meeting the high elder of the Vidyadhara.<br />You never expected "Cold Dragon Young" to talk much about his own affairs, so this might be a rare chance. Finish this homecoming adventure and show off what you reaped to March 7th after.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 90
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300002
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Huanxi:''' The Six Charioteers have replied to your request.
+:'''Huanxi:''' Miss Bailu is currently at the Alchemy Commission...
+:'''Huanxi:''' You may go at any time.
+:'''Dan Heng:''' I understand. Thank you, Miss Huanxi.
+:'''Vidyadhara Lady:''' I have delivered the missive about the meeting. Do you have any questions, Master Dan Heng?
+:'''Dan Heng:''' I know all that I wish to know. Thank you, Miss Huanxi.
+:'''Huanxi:''' You need not address me as "Miss" &mdash; I am but one of Miss Bailu's maids. Then again, if I may be so bold as to make a humble request...
+:'''Dan Heng:''' Go ahead.
+:'''Huanxi:''' Before this goes ahead... Oh, who might this be?
+:{{Диалог|Стрелка}} Seems I came at a bad time.
+:{{Диалог|Стрелка}} A pleasure to make your acquaintance. The name's (Trailblazer).
+:{{Диалог|Стрелка}} Just imagine I'm a street lamp, barely even here!
+::'''Huanxi:''' I'm sorry, but Xianzhou street lamps aren't in the habit of eavesdropping on conversations.
+:'''Huanxi:''' I'm speaking with Master Dan Heng. I'm afraid this doesn't involve you &mdash; please take your leave.
+:'''Dan Heng:''' (Trailblazer) is a close friend, I've invited {{MC|ж=her|м=him}} along to bear witness. Please treat {{MC|ж=her|м=him}} as you would me. Now, what was your request?
+:'''Huanxi:''' ...
+:'''Huanxi:''' Then, I hope you don't plan on meeting with Miss Bailu.
+:{{Диалог|Стрелка}} Care to elaborate?
+::A High Elder's maid turning away guests without her master's knowledge?
+:{{Диалог|Стрелка}} A High Elder's maid turning away guests without her master's knowledge?
+:'''Huanxi:''' Bailu is simple and innocent, incapable of ill intent. It's natural for a servant to care for her master and share in her worries.
+:'''Huanxi:''' Please hear what I have to say, I have good reason to be concerned.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 90,
+	"GroupNpcID": 400002,
+	"DestroyList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 90,
+	"GroupNpcID": 400001,
+	"DestroyList": []
+}</pre>
+----
+:'''Huanxi:''' Perhaps you should know that Miss Bailu's path to becoming a high elder was neither in compliance with proper protocol nor of her own volition &mdash; everything was a result of the stubbornness of her predecessor &mdash; Dan Feng. His hubris and tyranny brought about the end of the Luofu's high elder succession.
+:'''Huanxi:''' The Preceptors heard of Master Dan Heng's return, and were uncertain whether it constituted good or ill fortune. However, many have surmised that the Luofu's high elder succession tradition will soon be back in force. If true, that is indeed something worth celebrating.
+:'''Huanxi:''' Whether we find another suitable candidate in accordance with the laws of our people... or have you take up the position anew &mdash; everything can still be mended.
+:'''Huanxi:''' But, if Master Dan Heng were to hand everything over to Miss Bailu, it could lead to great upheavals on the horizon. No good would come of it for her.
+:{{Диалог|Разговор}} Another suitable candidate? Who does the Vidyadhara hope for?
+::'''Huanxi:''' Hehe, such a major matter as this is naturally up to the Preceptor elders. I couldn't possibly say.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} I don't think she even wants to be the High Elder.
+::'''Huanxi:''' I've been a maid here for twelve years now, and was with my mistress every day as she studied medicine and received tutelage. I've witnessed her countless escapes, and the inevitable unwilling returns.
+::'''Huanxi:''' As far as the Xianzhou is concerned, children like her enjoy a charmed and happy childhood. But as a high elder in nothing but name alone, Miss Bailu is highly restricted in her actions and has no freedom or say about her own life.
+::'''Huanxi:''' I can't bear it! Your Highness, please, think about this poor child!
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Shouldn't you ask Bailu herself about this?
+::'''Huanxi:''' Miss Bailu is young, naive, and easily manipulated by others. I worry that under the pressure of others, she would be convinced into taking up too great a burden.
+::'''Dan Heng:''' I understand your concern... but I have nothing more to say on the matter at present.
+::'''Huanxi:''' Then I will bid my farewell.
+::'''Huanxi:''' Master Dan Heng, whether you choose to meet Miss Bailu or go with me to see the Preceptor elders, I will be waiting for you by the ferry leading to Scalegorge Waterscape.
+::----
+::'''Dan Heng:''' I haven't even set eyes on Bailu, and people are already urging me not to meet her...
+::{{Диалог|Стрелка}} Finally, we can learn about Dan Heng's past!
+:::'''Dan Heng:''' ...You've been spending too much time with March.
+::{{Диалог|Стрелка}} Should I keep this a secret from the others?
+:::'''Dan Heng:''' No need. March will find out sooner or later.
+::'''Dan Heng:''' You know that I'm a descendant of the Luofu Vidyadhara. In Scalegorge Waterscape, you witnessed my... "secret strength," as March would call it...
+::'''Dan Heng:''' ...yet that power stems from Dan Feng &mdash; my previous incarnation. He altered the process of high elder succession, plunging everything into catastrophe... ultimately, he suffered the punishment of molting rebirth.
+::'''Dan Heng:''' Based on the physiological principles of Vidyadhara reincarnation, I ought to have been an entirely new entity... and in view of the law, all crimes from my previous incarnation should have been wiped clean...
+::'''Dan Heng:''' ...but in reality, I was locked up in The Shackling Prison at birth. Even after I was released and left the Xianzhou, my high elder past and Dan Feng's {{Rubi|enemies|Blade}} pursued me like a haunting shadow.
+::'''Dan Heng:''' Now, I plan to face that shadow. In order to make amends, I want to repair the Ambrosial Arbor's seal... and visit the high elder, to see what more I can do.
+::'''Dan Heng:''' The starskiff's ready. Let's go.
+::----
+
+;(Talk to )
+:'''Huanxi:''' The Six Charioteers have replied to your request.
+:'''Huanxi:''' Miss Bailu is currently at the Alchemy Commission...
+:'''Huanxi:''' You may go at any time.
+:'''Dan Heng:''' I understand. Thank you, Miss Huanxi.
+:'''Vidyadhara Lady:''' I have delivered the missive about the meeting. Do you have any questions, Master Dan Heng?
+:'''Dan Heng:''' I know all that I wish to know. Thank you, Miss Huanxi.
+:'''Huanxi:''' You need not address me as "Miss" &mdash; I am but one of Miss Bailu's maids. Then again, if I may be so bold as to make a humble request...
+:'''Dan Heng:''' Go ahead.
+:'''Huanxi:''' Before this goes ahead... Oh, who might this be?
+:{{Диалог|Стрелка}} Seems I came at a bad time.
+:{{Диалог|Стрелка}} A pleasure to make your acquaintance. The name's (Trailblazer).
+:{{Диалог|Стрелка}} Just imagine I'm a street lamp, barely even here!
+::'''Huanxi:''' I'm sorry, but Xianzhou street lamps aren't in the habit of eavesdropping on conversations.
+:'''Huanxi:''' I'm speaking with Master Dan Heng. I'm afraid this doesn't involve you &mdash; please take your leave.
+:'''Dan Heng:''' (Trailblazer) is a close friend, I've invited {{MC|ж=her|м=him}} along to bear witness. Please treat {{MC|ж=her|м=him}} as you would me. Now, what was your request?
+:'''Huanxi:''' ...
+:'''Huanxi:''' Then, I hope you don't plan on meeting with Miss Bailu.
+:{{Диалог|Стрелка}} Care to elaborate?
+::A High Elder's maid turning away guests without her master's knowledge?
+:{{Диалог|Стрелка}} A High Elder's maid turning away guests without her master's knowledge?
+:'''Huanxi:''' Bailu is simple and innocent, incapable of ill intent. It's natural for a servant to care for her master and share in her worries.
+:'''Huanxi:''' Please hear what I have to say, I have good reason to be concerned.
+:{{tx}}
+----
+:'''Huanxi:''' Perhaps you should know that Miss Bailu's path to becoming a high elder was neither in compliance with proper protocol nor of her own volition &mdash; everything was a result of the stubbornness of her predecessor &mdash; Dan Feng. His hubris and tyranny brought about the end of the Luofu's high elder succession.
+:'''Huanxi:''' The Preceptors heard of Master Dan Heng's return, and were uncertain whether it constituted good or ill fortune. However, many have surmised that the Luofu's high elder succession tradition will soon be back in force. If true, that is indeed something worth celebrating.
+:'''Huanxi:''' Whether we find another suitable candidate in accordance with the laws of our people... or have you take up the position anew &mdash; everything can still be mended.
+:'''Huanxi:''' But, if Master Dan Heng were to hand everything over to Miss Bailu, it could lead to great upheavals on the horizon. No good would come of it for her.
+:{{Диалог|Разговор}} Another suitable candidate? Who does the Vidyadhara hope for?
+::'''Huanxi:''' Hehe, such a major matter as this is naturally up to the Preceptor elders. I couldn't possibly say.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} I don't think she even wants to be the High Elder.
+::'''Huanxi:''' I've been a maid here for twelve years now, and was with my mistress every day as she studied medicine and received tutelage. I've witnessed her countless escapes, and the inevitable unwilling returns.
+::'''Huanxi:''' As far as the Xianzhou is concerned, children like her enjoy a charmed and happy childhood. But as a high elder in nothing but name alone, Miss Bailu is highly restricted in her actions and has no freedom or say about her own life.
+::'''Huanxi:''' I can't bear it! Your Highness, please, think about this poor child!
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Shouldn't you ask Bailu herself about this?
+::'''Huanxi:''' Miss Bailu is young, naive, and easily manipulated by others. I worry that under the pressure of others, she would be convinced into taking up too great a burden.
+::'''Dan Heng:''' I understand your concern... but I have nothing more to say on the matter at present.
+::'''Huanxi:''' Then I will bid my farewell.
+::'''Huanxi:''' Master Dan Heng, whether you choose to meet Miss Bailu or go with me to see the Preceptor elders, I will be waiting for you by the ferry leading to Scalegorge Waterscape.
+::----
+::'''Dan Heng:''' I haven't even set eyes on Bailu, and people are already urging me not to meet her...
+::{{Диалог|Стрелка}} Finally, we can learn about Dan Heng's past!
+:::'''Dan Heng:''' ...You've been spending too much time with March.
+::{{Диалог|Стрелка}} Should I keep this a secret from the others?
+:::'''Dan Heng:''' No need. March will find out sooner or later.
+::'''Dan Heng:''' You know that I'm a descendant of the Luofu Vidyadhara. In Scalegorge Waterscape, you witnessed my... "secret strength," as March would call it...
+::'''Dan Heng:''' ...yet that power stems from Dan Feng &mdash; my previous incarnation. He altered the process of high elder succession, plunging everything into catastrophe... ultimately, he suffered the punishment of molting rebirth.
+::'''Dan Heng:''' Based on the physiological principles of Vidyadhara reincarnation, I ought to have been an entirely new entity... and in view of the law, all crimes from my previous incarnation should have been wiped clean...
+::'''Dan Heng:''' ...but in reality, I was locked up in The Shackling Prison at birth. Even after I was released and left the Xianzhou, my high elder past and Dan Feng's {{Rubi|enemies|Blade}} pursued me like a haunting shadow.
+::'''Dan Heng:''' Now, I plan to face that shadow. In order to make amends, I want to repair the Ambrosial Arbor's seal... and visit the high elder, to see what more I can do.
+::'''Dan Heng:''' The starskiff's ready. Let's go.
+::----
+:'''Huanxi:''' The Six Charioteers have replied to your request.
+:'''Huanxi:''' Miss Bailu is currently at the Alchemy Commission...
+:'''Huanxi:''' You may go at any time.
+:'''Dan Heng:''' I understand. Thank you, Miss Huanxi.
+:'''Vidyadhara Lady:''' I have delivered the missive about the meeting. Do you have any questions, Master Dan Heng?
+:'''Dan Heng:''' I know all that I wish to know. Thank you, Miss Huanxi.
+:'''Huanxi:''' You need not address me as "Miss" &mdash; I am but one of Miss Bailu's maids. Then again, if I may be so bold as to make a humble request...
+:'''Dan Heng:''' Go ahead.
+:'''Huanxi:''' Before this goes ahead... Oh, who might this be?
+:{{Диалог|Стрелка}} Seems I came at a bad time.
+:{{Диалог|Стрелка}} A pleasure to make your acquaintance. The name's (Trailblazer).
+:{{Диалог|Стрелка}} Just imagine I'm a street lamp, barely even here!
+::'''Huanxi:''' I'm sorry, but Xianzhou street lamps aren't in the habit of eavesdropping on conversations.
+:'''Huanxi:''' I'm speaking with Master Dan Heng. I'm afraid this doesn't involve you &mdash; please take your leave.
+:'''Dan Heng:''' (Trailblazer) is a close friend, I've invited {{MC|ж=her|м=him}} along to bear witness. Please treat {{MC|ж=her|м=him}} as you would me. Now, what was your request?
+:'''Huanxi:''' ...
+:'''Huanxi:''' Then, I hope you don't plan on meeting with Miss Bailu.
+:{{Диалог|Стрелка}} Care to elaborate?
+::A High Elder's maid turning away guests without her master's knowledge?
+:{{Диалог|Стрелка}} A High Elder's maid turning away guests without her master's knowledge?
+:'''Huanxi:''' Bailu is simple and innocent, incapable of ill intent. It's natural for a servant to care for her master and share in her worries.
+:'''Huanxi:''' Please hear what I have to say, I have good reason to be concerned.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 90,
+	"GroupNpcID": 400002,
+	"DestroyList": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 90,
+	"GroupNpcID": 400001,
+	"DestroyList": []
+}</pre>
+----
+:'''Huanxi:''' Perhaps you should know that Miss Bailu's path to becoming a high elder was neither in compliance with proper protocol nor of her own volition &mdash; everything was a result of the stubbornness of her predecessor &mdash; Dan Feng. His hubris and tyranny brought about the end of the Luofu's high elder succession.
+:'''Huanxi:''' The Preceptors heard of Master Dan Heng's return, and were uncertain whether it constituted good or ill fortune. However, many have surmised that the Luofu's high elder succession tradition will soon be back in force. If true, that is indeed something worth celebrating.
+:'''Huanxi:''' Whether we find another suitable candidate in accordance with the laws of our people... or have you take up the position anew &mdash; everything can still be mended.
+:'''Huanxi:''' But, if Master Dan Heng were to hand everything over to Miss Bailu, it could lead to great upheavals on the horizon. No good would come of it for her.
+;(Return to previous option selection)
+{{Dialogue End}}
+
+===Find the Ferryman and head to the Alchemy Commission delve together{{subst:void|<!--202060103-->}}===
+{{Mission Description|type=companion|location=Exalting Sanctum|update|Dan Heng's homecoming seems to be a big ordeal, requiring notice to be delivered to the Luofu's Six Charioteers and the Vidyadhara elders... Seeing as Dan Heng already made travel arrangements, you should go with him. It won't do for you to just use a Space Anchor to teleport to the Alchemy Commission alone.<br />Dan Heng never intended to conceal his Vidyadhara heritage, and this might explain why he possesses such a magnanimous demeanor nowadays. Yet, the Vidyadhara's attitude towards his return remains to be seen...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''??:''' The rumors are true &mdash; you really are back...
+:'''Luying:''' I'm healer Luying of the Alchemy Commission &mdash; I'm a Vidyadhara too, as you can see. I'd heard the reincarnation of the great sinner has returned to the Luofu... and wanted to offer some advice.
+:'''Dan Heng:''' Oh?
+:'''Luying:''' Leave this troubled place immediately.
+:{{Диалог|Стрелка}} Looks like the Vidyadhara aren't big fans of yours.
+::'''Dan Heng:''' ...I'm not surprised in the slightest. What does the Alchemy Commission want, then?
+::'''Luying:''' Return to being a Nameless &mdash; stay out of the high elder succession.
+::'''Luying:''' The Luofu Vidyadhara have finally recovered from Dan Feng's grievous sins, and were blessed with a compassionate and caring high elder in Bailu... none of this was easy. Your return has stirred up resentment and ambition among the Preceptors, and threatens our situation.
+:{{Диалог|Стрелка}} Are you here about the high elder succession, too?
+::'''Luying:''' Certainly! Miss Bailu has weathered nothing but criticism since she was granted the title, but the Alchemy Commission firmly believes that girl to be a precious diamond in the rough. She is compassionate, kind, and a hundred times better than Dan Feng.
+::'''Luying:''' Moreover, Dan Feng selected her as high elder, making her the leader of the Luofu Vidyadhara. Fate chose her as our sovereign, and we bowed down before that destiny.
+::'''Luying:''' Now that you're back, everything has changed. The Preceptors are starting to think of finding other candidates, which means nothing but trouble for Miss Bailu.
+:'''Dan Heng:''' I have no intention of threatening Bailu's position.
+:'''Luying:''' You may have a clear conscience, but even so... As long as you remain on the Luofu, invisible forces will try to coerce you. Leave now. It's the best outcome for everyone involved.
+:'''Luying:''' Do not repeat the mistakes of a past life in this one. Farewell.
+----
+{{Dialogue End}}
+
+===Request an audience with the high elder and meet the messenger{{subst:void|<!--202060111-->}}===
+{{Mission Description|type=companion|location=Alchemy Commission|update|It seems the way home isn't comprised of polite greetings but people urging Dan Heng to turn back. Perhaps his return to the Xianzhou Luofu might not be the happiest affair...<br />Seeing how many people can recognize him with the barest mention, this might have to do with his revealed identity. This doesn't seem like something the usually circumspect Dan Heng is used to.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Jing Yuan:''' Hello, what brings you two here? The wind and waves are restless around Lunarescent Depths today.
+:'''Dan Heng:''' Even you came to dissuade me from visiting the high elder, General?
+:'''Jing Yuan:''' Haha, this encounter was not of my making. I've been recuperating in the Alchemy Commission under the Dragon Lady's care &mdash; our paths have merely crossed...
+:'''Jing Yuan:''' ...but your question would suggest that there are others interested in dissuading you from such a venture.
+:{{Диалог|Стрелка}} Yes &mdash; many. Each with their own agenda in mind.
+:{{Диалог|Стрелка}} It's just a quick meeting. What's the big deal?
+:'''Jing Yuan:''' Matters that concern the rise and fall of the Vidyadhara will inevitably attract certain parties &mdash; those that would work circumstances to their advantage. Be it Dan Feng, the Preceptors, or the Alchemy Commission that trained the Dragon Lady...
+:{{tx}}
+----
+----
+:'''Jing Yuan:''' A chance meeting is a gift from fate. Why don't I help you to fathom their intent, then?
+:{{Диалог|Разговор}} The Vidyadhara elders want to choose a new High Elder.
+::'''Jing Yuan:''' Haha, the power struggle between the Preceptors and their High Elder is a tale as old as time. And someone as powerful as Dan Feng, who was completely beyond their control, was enough for them to harbor a hidden rage.
+::'''Jing Yuan:''' The elders used to have a small say in appointing the new High Elder. Who could have imagined that Dan Feng would pick his own successor? And yet, that is precisely what happened, and all they could do was accept the result.
+::'''Jing Yuan:''' Now that Dan Heng has arrived, the elders see yet another chance &mdash; how could they let it go?
+::{{Диалог|Стрелка}} Pretty bold of them!
+:::'''Jing Yuan:''' Haha! Us outsiders should not judge the laws of the Vidyadhara.
+:::'''Jing Yuan:''' The Preceptors have been suppressed for some time now &mdash; they will inevitably try to overturn the situation.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Seems reasonable!
+:::'''Jing Yuan:''' The Dragon Lady has no power and Dan Feng is a criminal. One can understand their desire for a new high elder.
+:::'''Jing Yuan:''' The Preceptors have been suppressed for some time now &mdash; they will inevitably try to overturn the situation.
+::;(Return to previous option selection)
+:{{Диалог|Разговор}} The Alchemy Commission hopes that Bailu can stay on as High Elder.
+::'''Jing Yuan:''' These people speak of "legitimacy." They believe that Bailu was chosen as heir apparent by the previous High Elder, and that unless she were to commit a terrible sin, the Preceptors should have no right whatsoever to choose again.
+::'''Jing Yuan:''' The Healer Lady has draconic features and scarcely believable therapeutic abilities. Some regard this as evidence that she is the High Elder. But the Preceptors are fixated on strength, and are unwilling to accept her...
+::'''Jing Yuan:''' Now that Dan Feng's reincarnation has shown a command over the vast marine expanse of Lunarescent Depths, those longing to keep the traditional bequeathal of the High Elder feel increasingly uneasy.
+::{{Диалог|Стрелка}} Very conservative of them!
+:::'''Jing Yuan:''' After Dan Feng's abdication, they fought against the Preceptors and saved Bailu's dignity. They demonstrated a true devotion.
+:::'''Jing Yuan:''' These folks aren't the type to just let it go.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Very reasonable!
+:::'''Jing Yuan:''' Before Dan Heng arrived, everything was quiet as a windless lake. In that regard, it is understandable that they want to get rid of him.
+:::'''Jing Yuan:''' These folks aren't the type to just let it go.
+::;(Return to previous option selection)
+:{{Диалог|Стрелка}} General, what do you think about this?
+::'''Jing Yuan:''' It is an internal affair of the Vidyadharas. As long as it does not disturb the peace aboard the Luofu, it does not involve the general of the Cloud Knights.
+::'''Jing Yuan:''' Nevertheless, as a friend, let me remind you of one thing. So long as Dan Heng and Bailu, with their respective High Elder powers and titles, both remain on the Luofu, the Vidyadhara will never cease their internal strife. This is not to say that either of you are to blame.
+::'''Jing Yuan:''' It's getting late. You are headed to repair the Arbor's seal at Scalegorge Waterscape, and visit the High Elder, no? Farewell, for now. I should start taking this business of rest and recuperation a little more seriously.
+::----
+
+;(По прибытии на место)
+:'''Jing Yuan:''' Hello, what brings you two here? The wind and waves are restless around Lunarescent Depths today.
+:'''Dan Heng:''' Even you came to dissuade me from visiting the high elder, General?
+:'''Jing Yuan:''' Haha, this encounter was not of my making. I've been recuperating in the Alchemy Commission under the Dragon Lady's care &mdash; our paths have merely crossed...
+:'''Jing Yuan:''' ...but your question would suggest that there are others interested in dissuading you from such a venture.
+:{{Диалог|Стрелка}} Yes &mdash; many. Each with their own agenda in mind.
+:{{Диалог|Стрелка}} It's just a quick meeting. What's the big deal?
+:'''Jing Yuan:''' Matters that concern the rise and fall of the Vidyadhara will inevitably attract certain parties &mdash; those that would work circumstances to their advantage. Be it Dan Feng, the Preceptors, or the Alchemy Commission that trained the Dragon Lady...
+:{{tx}}
+----
+----
+:'''Jing Yuan:''' A chance meeting is a gift from fate. Why don't I help you to fathom their intent, then?
+:{{Диалог|Разговор}} The Vidyadhara elders want to choose a new High Elder.
+::'''Jing Yuan:''' Haha, the power struggle between the Preceptors and their High Elder is a tale as old as time. And someone as powerful as Dan Feng, who was completely beyond their control, was enough for them to harbor a hidden rage.
+::'''Jing Yuan:''' The elders used to have a small say in appointing the new High Elder. Who could have imagined that Dan Feng would pick his own successor? And yet, that is precisely what happened, and all they could do was accept the result.
+::'''Jing Yuan:''' Now that Dan Heng has arrived, the elders see yet another chance &mdash; how could they let it go?
+::{{Диалог|Стрелка}} Pretty bold of them!
+:::'''Jing Yuan:''' Haha! Us outsiders should not judge the laws of the Vidyadhara.
+:::'''Jing Yuan:''' The Preceptors have been suppressed for some time now &mdash; they will inevitably try to overturn the situation.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Seems reasonable!
+:::'''Jing Yuan:''' The Dragon Lady has no power and Dan Feng is a criminal. One can understand their desire for a new high elder.
+:::'''Jing Yuan:''' The Preceptors have been suppressed for some time now &mdash; they will inevitably try to overturn the situation.
+::;(Return to previous option selection)
+:{{Диалог|Разговор}} The Alchemy Commission hopes that Bailu can stay on as High Elder.
+::'''Jing Yuan:''' These people speak of "legitimacy." They believe that Bailu was chosen as heir apparent by the previous High Elder, and that unless she were to commit a terrible sin, the Preceptors should have no right whatsoever to choose again.
+::'''Jing Yuan:''' The Healer Lady has draconic features and scarcely believable therapeutic abilities. Some regard this as evidence that she is the High Elder. But the Preceptors are fixated on strength, and are unwilling to accept her...
+::'''Jing Yuan:''' Now that Dan Feng's reincarnation has shown a command over the vast marine expanse of Lunarescent Depths, those longing to keep the traditional bequeathal of the High Elder feel increasingly uneasy.
+::{{Диалог|Стрелка}} Very conservative of them!
+:::'''Jing Yuan:''' After Dan Feng's abdication, they fought against the Preceptors and saved Bailu's dignity. They demonstrated a true devotion.
+:::'''Jing Yuan:''' These folks aren't the type to just let it go.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Very reasonable!
+:::'''Jing Yuan:''' Before Dan Heng arrived, everything was quiet as a windless lake. In that regard, it is understandable that they want to get rid of him.
+:::'''Jing Yuan:''' These folks aren't the type to just let it go.
+::;(Return to previous option selection)
+:{{Диалог|Стрелка}} General, what do you think about this?
+::'''Jing Yuan:''' It is an internal affair of the Vidyadharas. As long as it does not disturb the peace aboard the Luofu, it does not involve the general of the Cloud Knights.
+::'''Jing Yuan:''' Nevertheless, as a friend, let me remind you of one thing. So long as Dan Heng and Bailu, with their respective High Elder powers and titles, both remain on the Luofu, the Vidyadhara will never cease their internal strife. This is not to say that either of you are to blame.
+::'''Jing Yuan:''' It's getting late. You are headed to repair the Arbor's seal at Scalegorge Waterscape, and visit the High Elder, no? Farewell, for now. I should start taking this business of rest and recuperation a little more seriously.
+::----
+
+;(Talk to Jing Yuan)
+:'''Jing Yuan:''' I must return to my quarters, now &mdash; I merely took advantage of the healer's absence to slip out and relax a little... Be on your way.
+
+;(Talk to )
+:'''Jing Yuan:''' I must return to my quarters, now &mdash; I merely took advantage of the healer's absence to slip out and relax a little... Be on your way.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+:'''Huanxi:''' Thank you for rescuing me, Master Dan Heng.
+:'''Dan Heng:''' They came for me &mdash; I'm sorry you got dragged into it.
+:'''Huanxi:''' It's risky to remain here &mdash; we should leave. Master Dan Heng, after your meeting, will you go with me to see the elders?
+:'''Dan Heng:''' Should I ever want to meet the Preceptors, Miss Huanxi, I'll ask you to pass on the message.
+:'''Huanxi:''' ...
+:'''Huanxi:''' I understand. Please alight, Your Highness. Miss Bailu awaits you at Dragonvista Rain Hall.
+:{{Диалог|Стрелка}} Let's go.
+::'''Dan Heng:''' It could be dangerous ahead... we should proceed carefully.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202060114,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Wait.
+----
+;(If {{F|MissionCV-2020601-undefined}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40232002,
+	"OnCancel": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202060114,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+{{Dialogue End}}
+
+===Speak with Huanxi and head to the Scalegorge Waterscape{{subst:void|<!--202060115-->}}===
+{{Mission Description|type=companion|location=Alchemy Commission|update|After dealing with those arrogant assassins, Dan Heng decides to ignore the Vidyadhara Preceptors' invitation and head to Scalegorge Waterscape directly with the messenger to meet the young high elder.<br />You don't know many Vidyadhara, so you're not sure whether it's normal for so many people to care about the whereabouts of the high elder. Dan Heng's presence is like a rock striking ripples across the water.}}
+{{Dialogue Start}}
+----
+:'''Dan Heng:''' Now that the seal is repaired, my affairs on the Xianzhou have drawn to an end... for the time being.
+:'''Jing Yuan:''' Are you planning on staying on the Luofu? The banishment decree has been revoked, and the Preceptors have regained an awareness of the situation. This is your chance to return to your homeland.
+:{{Диалог|Стрелка}} Dan Heng belongs to the Astral Express...
+::'''Jing Yuan:''' Hahahaha, I do not seek to take Dan Heng away from you.
+:{{Диалог|Стрелка}} You should stay... but remember to write to us.
+::'''Jing Yuan:''' You're... asking him to stay here?
+:{{Диалог|Стрелка}} (Wait for Dan Heng's response)
+::'''Dan Heng:''' As a Nameless, the Express still needs me.
+::'''Jing Yuan:''' Ah... that is a pity.
+::----
+
+;(Talk to Jing Yuan)
+:'''Jing Yuan:''' I think I should refrain from violating the healers' orders any further &mdash; the weariness is creeping up on me once again. Time to lie down.
+:'''Jing Yuan:''' Farewell, all of you.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Dragon Returns Home
+|zhs  = 龙返其乡
+|zht  = 龍返其鄉
+|ja   = 龍、其の郷に帰りて
+|ko   = 용의 귀향
+|es   = El dragón vuelve a su hogar
+|fr   = Le retour du dragon
+|ru   = Возвращение дракона
+|th   = มังกรคืนถิ่น
+|vi   = Rồng Hồi Hương
+|de   = Der Drache kehrt heim
+|id   = Sang Naga Kembali
+|pt   = O Dragão Retorna ao Lar
+}}
+
+==Change History==
+{{Change History|3.5}}

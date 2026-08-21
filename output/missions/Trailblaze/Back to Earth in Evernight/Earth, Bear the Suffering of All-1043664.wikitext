@@ -1,0 +1,2275 @@
+<%-- [PAGE_INFO]
+PageTitle=#Earth, Bear the Suffering of All#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1043664
+|title         = 
+|image         = <!--Mission Earth, Bear the Suffering of All.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Back to Earth in Evernight
+|requirements  = [[Trailblaze Mission]] ''[[Blazing Sun, Illuminate the Path for the Lost]]'' completed
+|summary       = As Dan Heng moved further into the Grove, phenomena from "memories" continuously manifested around him. A Mountain Dweller, identifying himself as "Terravox," struck at Dan Heng before mysteriously disappearing. The Dan Feng within the memories of Dan Heng's body, the High-Cloud Quintet from Dan Feng's memories, and even the "war" from Terravox's memories... They all intermingled together. Yet Dan Heng was no longer confused and lost. Breaking through the memory fog, he finally came face-to-face with Terravox, the real demigod of Earth, and accepted the succession of Earth's divine authority... With this new power, Dan Heng navigated deep into the memoria tide realm that Earth had helped create, where he finally discovered you.
+|characters    = "Aglaea" (?); "Anaxa" (?); "Bailu" (?); "Blade" (?); "Castorice" (?); "Cipher" (?); "Dan Feng"; "Dux Brumalis" Seneca; "Dux Carminum" Verginia; "Dux Fragoris" Labienus; "Dux Helkolithist" Apollonius; "Hyacine" (?); "Hysilens"; "Jing Yuan" (?); "Jingliu" (?); "Mydei" (?); "Phainon" (?); "Taoran" (?); "Tribbie" (?); Bartholos; Cerydra; Dan Heng; Desperate Soldier; Terravox; Trailblazer
+|startLocation = [[Amphoreus]] - [["Radiant Scarwood" Grove of Epiphany]]
+|world         = Amphoreus
+|area          = "Radiant Scarwood" Grove of Epiphany
+|prev          = Blazing Sun, Illuminate the Path for the Lost
+|next          = Great Tomb, Hide the Secrets of Incarnations
+|rewards       = Trailblaze EXP*1 100; Stellar Jade*140; Traveler's Guide*12; Lost Crystal*12; Disorder Ambrosia*440; Sacred Grove*1 { text = ''Sacred Grove'' }; Credit*140 000
+}}
+'''''Earth, Bear the Suffering of All''''' is a [[Trailblaze Mission]] in the chapter [[Back to Earth in Evernight]].
+
+==Steps==
+# Head to "Radiant Scarwood" Grove of Epiphany
+# Talk with the mysterious Mountain Dweller
+# Venture into the Grove, seek out Terravox
+# Help Spirithief pass through this area
+# Help Spirithief block the water outlet
+# Help Spirithief modify the Prophecy Tablet
+# Venture into the Grove, seek out Terravox
+# Venture into the Grove, review the disordered memory
+# Venture into the disordered memory and seek out Terravox
+# Talk with Terravox, the Earth Demigod
+# Talk with Hysilens
+# Find (Trailblazer) and bring {{MC|ж=her|м=him}} home.
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Head to "Radiant Scarwood" Grove of Epiphany{{subst:void|<!--104366401-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which sealed the "Earth." By the time I arrived, the Remembrance already warped the Grove. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20461_F20461001_G76"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Talk with the mysterious Mountain Dweller{{subst:void|<!--104366402-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::Wave 1: {{Список врагов|mode=sent|Ichor Memosprite: Pheasant*2; Ichor Memosprite: Canine*2}}
+::Wave 2: {{Список врагов|mode=sent|Cloud Knights Patroller*3}}
+::Wave 3: {{Список врагов|mode=sent|Disciples of Sanctus Medicus: Shape Shifter*2; Cloud Knights Patroller*2}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Venture into the Grove, seek out Terravox{{subst:void|<!--104366405-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which was the seal of "Earth." By the time I arrived, the Grove was already warped by the Remembrance. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.<br />Dan Feng is within the "memories" of this vessel of mine? If you'd lend your strength, then stay your path with me...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Desperate Soldier:''' N-No! Stay back, you cursed beast...
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{Диалог|Разговор}} What happened to your voice?
+::'''Bartholos:''' It's all because of that crazy lady with pink hair and red eyes! In order to stop her from monitoring me, I sealed my voice, hehehe!
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Then I'll leave it to you.
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20461_F20461001_G121"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Help Spirithief pass through this area{{subst:void|<!--104366430-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which was the seal of "Earth." By the time I arrived, the Grove was already warped by the Remembrance. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.<br />The spirit water has stagnated in the Grove of Epiphany. Resolve this with the Spirithief's tricks.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Help Spirithief block the water outlet{{subst:void|<!--104366437-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Help Spirithief modify the Prophecy Tablet{{subst:void|<!--104366438-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Venture into the Grove, seek out Terravox{{subst:void|<!--104366439-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which was the seal of "Earth." By the time I arrived, the Grove was already warped by the Remembrance. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.<br />The chaotic memories here keep growing. Besides mine, whose else could they be?}}
+{{Dialogue Start}}
+;(If {{F|undefined}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.PropSetVisibility",
+	"SpecifiedRelativePaths": [],
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetTimeRewindEntityActive",
+	"Target": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300003
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	}
+}</pre>
+;(If {{F|undefined}} is not undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Clt_TriggerClose"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300008
+		]
+	}
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareFloorCustomFloatV2","Name":{"Value":"FCV_isMascot_P1"},"CompareValue":{"IsDynamic":false,"FixedValue":{"Value":1}}}-->}})
+:<!--0.6-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloatV2",
+	"Name": {
+		"Value": "FCV_CloseMascot"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<!--0.5-second delay-->
+:<!--1-second delay-->
+:'''Bartholos:''' The water problem is now all gone! Go take the elevator over there if you want to keep going.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Aglaea" (?):''' {{Цвет|Ключевой|nobold=1|█ ███Join█us█ ██ ██}}
+:'''"Tribbie" (?):''' {{Цвет|Ключевой|nobold=1|█ █You are me██are█us█ ██ ██}}
+:'''"Anaxa" (?):''' {{Цвет|Ключевой|nobold=1|███From█ █permanence██gain█eternal life█ █}}
+
+;(По прибытии на место)
+:'''"Mydei" (?):''' {{Цвет|Ключевой|nobold=1|█Throw yourself into █the █forge████ █ █}}
+:'''"Castorice" (?):''' {{Цвет|Ключевой|nobold=1|█Merge██ █as█one███ █ █}}
+:'''"Hyacine" (?):''' {{Цвет|Ключевой|nobold=1|███Keep going█keep█going██ █ █going█ █}}
+
+;(По прибытии на место)
+:'''"Cipher" (?):''' {{Цвет|Ключевой|nobold=1|███Do not█run from██ █ your█fate█ █}}
+:'''"Phainon" (?):''' {{Цвет|Ключевой|nobold=1|██Use the Permanence█to fill██the█"Earth" ███ ██}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Taoran" (?):''' Vidyadhara might not even be considered people if we did not resort to beastly actions!
+:'''"Bailu" (?):''' Why did Dan Feng choose me all those years ago?
+:'''Terravox:''' Long's Scion... fall into oblivion!
+:'''"Hysilens":''' The memoria tide surges violently. Hold on, and don't let your focus be swept away.
+
+;(По прибытии на место)
+:'''"Jingliu" (?):''' Of five people...
+:'''"Jing Yuan" (?):''' Three must pay a price...
+
+;(По прибытии на место)
+:'''"Blade" (?):''' You... are one of them.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003,
+		400004,
+		400005
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200004
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200005
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003,
+		400004,
+		400005
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterKey": [],
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterKey": [],
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200004
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200005
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200004
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200005
+					}
+				}
+			}
+		]
+	},
+	"ResetPosition": true
+}</pre>
+;(Unused &mdash; GE_TriggerEntityDitherOff)
+:<!--0.1-second delay-->
+:;(If {{F|GroupDitherState}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200004
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200005
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003,
+		400004,
+		400005
+	]
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200004
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 120
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200005
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"ResetPosition": true
+}</pre>
+;(Unused &mdash; GE_TriggerEntityDitherOff)
+:<!--0.1-second delay-->
+:;(If {{F|GroupDitherState}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 122
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"ResetPosition": true
+}</pre>
+;(Unused &mdash; GE_TriggerEntityDitherOff)
+:<!--0.1-second delay-->
+:;(If {{F|GroupDitherState}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002,
+		400003
+	]
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 151
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200003
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareGroupProperty","DynamicName":{"Value":"SGP_MonsterVisible"},"CompareValue":1}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400001,
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_disappear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"ResetPosition": true
+}</pre>
+;(Unused &mdash; GE_TriggerEntityDitherOff)
+:<!--0.1-second delay-->
+:;(If {{F|GroupDitherState}} is undefined 0)
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "GroupDitherState",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200001
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEffectList",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"SingleMonsterIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 200002
+			}
+		},
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"EffectList": [
+		{
+			"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_Common_MAZ_appear.prefab",
+			"ForceSimulateImmediately": false
+		}
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001,
+		400002
+	]
+}</pre>
+::<!--0.2-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityAvailable",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvMonsterEx",
+		"FetchType": "MultiByMonsterID",
+		"MultiMonsterID": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200001
+					}
+				}
+			},
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 198
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 200002
+					}
+				}
+			}
+		]
+	},
+	"IsAvailable": true,
+	"ResetPosition": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Rate": 0,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 216,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 146642969
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 216,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 146642970
+		}
+	]
+}</pre>
+;(По прибытии на место)
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Venture into the Grove, review the disordered memory{{subst:void|<!--104366420-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which was the seal of "Earth." By the time I arrived, the Grove was already warped by the Remembrance. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.<br />The chaotic memories here keep growing. Besides mine... Dan Feng's memories are here too?}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Venture into the disordered memory and seek out Terravox{{subst:void|<!--104366413-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The Blazing Sun ravaged the altar beneath the Grove of Epiphany, which was the seal of "Earth." By the time I arrived, the Grove was already warped by the Remembrance. Destruction is accidental, yet inevitable. I must press on, deeper into the mist.<br />Hysilens revealed the truth that the mysterious Mountain Dweller was not the real Terravox.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+;(По прибытии на место)
+:'''Dan Heng:''' Let's leave this place and go settle things with that mad demigod.
+;(По прибытии на место)
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Dux Fragoris" Labienus:''' Terravox has already defected! Legions, charge with me!
+:'''"Dux Brumalis" Seneca:''' Hah, a beast will always be a beast.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''"Dux Carminum" Verginia:''' This campaign has been far too cruel...
+:'''"Dux Helkolithist" Apollonius:''' Let them be a necessary sacrifice for the Flame-Chase.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cerydra:''' Seismic Walking Dragon, history shall remember you as a titan-slayer!
+:'''"Dan Feng":''' Memories intersect. Another betrayal, another catastrophe.
+:'''Dan Heng:''' Regardless of whose memory this is, it seems that Terravox has a leading role in it.
+:'''"Dan Feng":''' A beast that's been "rebelling" its whole life... No wonder they descended into madness.
+{{Dialogue End}}
+
+===Talk with Terravox, the Earth Demigod{{subst:void|<!--104366424-->}}===
+{{Dialogue Start}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+:{{tx}}
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act630_Caption.json-->}}
+;(Cutscene ends)
+----
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Talk with Hysilens{{subst:void|<!--104366427-->}}===
+{{Mission Description|type=trailblaze|location="Radiant Scarwood" Grove of Epiphany|update|The authority of Earth is now in my hands. I will shoulder this responsibility and stand with you all to face "Era Nova."<br />If it were Terravox and Evernight who built the memoria tide world, then I now have the power to bring (Trailblazer) back.}}
+{{Dialogue Start}}
+----
+:{{tx}}
+{{Dialogue End}}
+
+===Find (Trailblazer) and bring {{MC|ж=her|м=him}} home.{{subst:void|<!--104366428-->}}===
+{{Dialogue Start}}
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::{{tx}}{{subst:void|<!--Failed to load captions from Config/CutSceneCaption/CS_Chap04_Act640_Caption.json-->}}
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SetLoadingStratageType",
+			"StratageType": "Plain"
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Earth, Bear the Suffering of All
+|zhs  = 大地啊，承载万物的苦难
+|zht  = 大地啊，承載萬物的苦難
+|ja   = 大地よ、万物の苦を背負え
+|ko   = 대지여, 만물의 고난을 품어 안아라
+|es   = Tierra, carga con el sufrimiento de todos
+|fr   = Terre, porte la souffrance de tous
+|ru   = О земля, неси страдания всего живого
+|th   = ปฐพีเอ๋ย จงแบกรับความทุกข์ของสรรพสิ่ง
+|vi   = Hỡi Mặt Đất, Hãy Gánh Chịu Đau Khổ Của Vạn Vật
+|de   = O Erde, trage das Leid aller Wesen
+|id   = Oh Bumi, Menanggung Penderitaan Segenap Makhluk
+|pt   = Terra, Suporte Todo o Sofrimento
+}}
+
+==Change History==
+{{Change History|3.6}}

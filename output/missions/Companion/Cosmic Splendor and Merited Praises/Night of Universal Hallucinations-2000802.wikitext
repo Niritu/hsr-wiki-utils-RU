@@ -1,0 +1,1125 @@
+<%-- [PAGE_INFO]
+PageTitle=#Night of Universal Hallucinations#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2000802
+|title         = 
+|image         = <!--Mission Night of Universal Hallucinations.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Cosmic Splendor and Merited Praises
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Argenti; Dan Heng; Himeko; March 7th; Pom-Pom; Trailblazer; Velite; Welt
+|startLocation = [[Astral Express]] - [[Parlor Car]]
+|world         = Astral Express
+|area          = Parlor Car
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*600; Stellar Jade*100; Traveler's Guide*8; Key of Knowledge*6; "Cosmic Sacrifice for Love"*1 { text = "Cosmic Sacrifice for Love" }; "A Gentleman's Fantasy"*1 { text = "A Gentleman's Fantasy" }; Credit*70 000
+}}
+'''''Night of Universal Hallucinations''''' is a [[Companion Mission]] in the chapter [[Cosmic Splendor and Merited Praises]].
+
+==Steps==
+# Feel out the mysterious guests
+# Comfort the Knights of Beauty's "sidekick"
+# Talk to Pom-Pom
+# Support March 7th
+# Go back to the Parlor Car and look around
+# Talk the clues over with Himeko
+# Take photos with the camera and find some clues
+# Find a faster way to search
+# Go support Argenti in the illusion
+# Go back to the Parlor Car
+# Talk strategy with Welt
+# Talk to Himeko and Dan Heng
+# Comfort everyone's negative mood
+# Chat alone with Argenti
+# Tell Welt
+# Help Velite stop Argenti
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+----
+:'''Pom-Pom:''' Hmm... something seems off. Pom-Pom already selected a route...
+:{{Диалог|Стрелка}} Is something wrong?
+:'''Pom-Pom:''' We've seemingly gone off course... Strange, Pom-Pom's navigation is always precise.
+:'''Pom-Pom:''' Stay vigilant! There might be a magnetic field nearby interfering with the Express' navigation system. (Trailblazer), let's take a look in the control room.
+----
+----
+;([[#Gallery|Cutscene]] plays)
+::So...
+::What happened!?
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01_Varient1.enviroProfile.asset"
+	}
+}</pre>
+----
+:'''March 7th:''' What's happening? (Trailblazer), did you see that huge shadow!?
+:<!--0.3-second delay-->
+:<!--0.3-second delay-->
+----
+:'''March 7th:''' Everything outside is... red. What's going on?
+:{{Диалог|Стрелка}} Have we fallen into... the red dimension!?
+::----
+::'''March 7th:''' You really expect me to know the answer to that?
+:{{Диалог|Стрелка}} We've been attacked by a giant space beast!
+::----
+::'''March 7th:''' Then where did it go? And why is it so quiet all of a sudden?
+:{{Диалог|Стрелка}} It's a space traffic jam.
+::----
+::'''March 7th:''' ...Ugh, this is serious, y'know.
+:'''March 7th:''' *sigh* Even Mr. Yang looks surprised &mdash; that's not something you see every day.
+----
+:<!--0.5-second delay-->
+:'''Dan Heng:''' (Trailblazer), March, the Express encountered an obstruction. The disturbance triggered a chain reaction.
+:'''Dan Heng:''' ...The Express was struck from behind by another vessel.
+:'''March 7th:''' *sigh* How do you crash into someone in space...
+:'''Dan Heng:''' Another vessel in our vicinity encountered the same obstruction and was unable to control its velocity. After the collision, two individuals found their way onto the Express.
+----
+:{{Диалог|Стрелка}} Are they trying to extract compensation?
+::'''Dan Heng:''' It doesn't seem like it.
+::'''March 7th:''' Compensation? They hit US!
+:{{Диалог|Стрелка}} We have guests?
+::'''March 7th:''' Guests? I don't think they're here for tea...
+::'''Dan Heng:''' They appear to be friendly.
+:'''March 7th:''' Hmph, if they're here to stir up trouble, I'll teach them a lesson! (Trailblazer), let's go check it out.
+----
+{{Dialogue End}}
+
+===Feel out the mysterious guests{{subst:void|<!--200080203-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|A spaceship... has somehow rear-ended the Astral Express!? And a couple of mysterious visitors seem to be approaching the cabin!<br />Send out some feelers to figure out what kind of people these visitors are...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	}
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Another anomaly in the shining universe...
+::A blooming splash of colors,
+::you... are truly beautiful.
+::A lady?
+::I offer a sincere compliment&mdash;
+::You're akin to a flower in winter.
+::Oh!
+::Another beautiful soul.
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E2",
+	"SubMissionID": 200080203
+}</pre>
+----
+:'''Argenti:''' Allow me to introduce myself. I am Argenti &mdash; I belong to the Knights of Beauty. May I know your names?
+:{{Диалог|Стрелка}} (Cautious silence)
+::'''March 7th:''' Cat got your tongue? It's fine, he seems like a good guy. Hi, Argenti! I'm March 7th.
+:{{Диалог|Стрелка}} I'm Galactic Baseballer.
+::'''March 7th:''' ...Please don't do this. He seems like a good guy! Hi, Argenti! I'm March 7th.
+:{{Диалог|Стрелка}} Did you crash into the train?
+::'''Argenti:''' Indeed, and I extend my deepest apologies for doing so. I wish to remedy the situation, hence my arrival on the Astral Express.
+::'''March 7th:''' Now we know he didn't do it on purpose... Hi, Argenti! I'm March 7th.
+:'''Argenti:''' An honor! I was just explaining the significance of "beauty" to this foliage.
+:'''Argenti:''' Pardon my abruptness, but I have a habit of asking questions. As fellow beings of this universe, are you acquainted with Idrila the Beauty?
+:{{Диалог|Разговор}} Idrila?
+::'''Argenti:''' The Knights of Beauty travel from planet to planet, spreading the Beauty's glorious reputation across the universe so that every being may know of THEIR existence. We strictly adhere to the commandments of our faith, tempering our physical forms and upholding our honor.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Wait, aren't you here to help?
+::'''Argenti:''' Yes, though not exclusively. Just as I extol the "beauty" in this foliage, what I anticipate is an encounter &mdash; a collision and exchange of minds and philosophies.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Are you saying we're also beautiful?
+::'''Argenti:''' Do you doubt such an assertion? You need not, (Trailblazer)!
+::{{Диалог|Возврат}} ...I am kinda good-looking.
+:::'''Argenti:''' Both my words and actions come from the bottom of my heart. You are indeed beautiful &mdash; like flowers blooming in the morning sun!
+::;(Return to previous option selection)
+::{{Диалог|Возврат}} You did just compliment a plant...
+:::'''Argenti:''' Both my words and actions come from the bottom of my heart. You are indeed beautiful &mdash; like flowers blooming in the morning sun!
+::;(Return to previous option selection)
+;(Return to previous option selection)
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(Talk to March 7th)
+:'''March 7th:''' (Trailblazer), let's go chat with them.
+
+;(Talk to Himeko)
+:'''Himeko:''' What a fascinating encounter. There's nothing more captivating than an unpredictable future. (Trailblazer), let's see what unfolds next.
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' That visitor appears to be a knight... and it looks like he has a servant?
+
+;(Talk to Welt Yang)
+:'''Welt:''' The Astral Express seems fine, but a collision like this in space is... a little unusual. Even for me, it's a first.
+
+;(Talk to Pom-Pom)
+:'''Pom-Pom:''' It seems like we're stuck, (Trailblazer). Washtopia will have to wait a little longer!
+----
+:'''Welt:''' Sorry to interrupt... whatever's happening here.
+:'''Welt:''' Forgive the interruption, but I just spoke with Himeko. The situation is more urgent than we imagined.
+----
+:{{Диалог|Стрелка}} Thanks for tagging me out, Mr. Yang...
+::'''Welt:''' You're welcome, (Trailblazer). Just doing my job.
+:{{Диалог|Стрелка}} I have to teach him a lesson!
+::'''Welt:''' Take it easy. (Trailblazer), There'll be plenty of time to fight later.
+:'''Argenti:''' My deepest apologies, Mr. Yang, my concentration has been solely centered on my conversation with (Trailblazer). Now, it is only fitting to disclose the main reason for my presence here: To work jointly in resolving the crisis before us.
+:'''Argenti:''' I was piloting the "One and Only" through the galaxy when I discovered Velite, an IPC worker who accidentally fell into a huge cave, from which I saved him.
+:'''Argenti:''' Upon saving Velite, I altered my flight course to accompany him to his original location. Consequently, I inadvertently ended up on the Express's navigational trajectory.
+:{{Диалог|Стрелка}} Who's Velite?
+:'''Argenti:''' According to him, he is an IPC worker. I believe he's currently resting in the carriage &mdash; he is still in a state of shock.
+:'''Argenti:''' He swore to follow Idrila, the Goddess, after being impressed by what he saw during our adventure.
+:{{Диалог|Стрелка}} Why did you rear-end the Express?
+:{{Диалог|Стрелка}} Follow Idrila, the Goddess!
+::'''Argenti:''' There was a sudden jolt not long after we had departed &mdash; I was sure we must have collided with some unknown celestial object. When I looked outside, everything was different. That was when we collided with the Express...
+::'''Argenti:''' ...and that is why I boarded the Express with Velite. I am hoping to solve this crisis with you.
+:'''Welt:''' Thank you for coming. It'll be a first for the Express to work alongside the Knights of Beauty.
+:{{Диалог|Стрелка}} What do we do now?
+:'''Argenti:''' Enjoy the present moment.
+:{{Диалог|Стрелка}} Huh? And then?
+:'''Argenti:''' Continue to enjoy the present moment.
+:{{Диалог|Стрелка}} That's all you could come up with?
+:{{Диалог|Стрелка}} Looks like you're really here to make friends...
+:'''Argenti:''' You misunderstand. I must first wholeheartedly enjoy the red night of the universe before I can discover an inharmonious pitch. These two things are correlated. Once I discover the cause, I shall destroy it.
+:'''Welt:''' ...Well, try not to take too long. Things could deteriorate at any moment.
+:'''Welt:''' (Trailblazer), could you please go check on Velite? He looks uneasy. He is a guest of ours, after all.
+----
+{{Dialogue End}}
+
+===Comfort the Knights of Beauty's "sidekick"{{subst:void|<!--200080206-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|A spaceship... has somehow rear-ended the Astral Express!?<br />You decide to go and encourage the IPC staff member whose attitude is wildly different from the Knight of Beauty and who looks just like another minor character... These two don't seem like they'd get along! Why are they appearing together?}}
+{{Dialogue Start}}
+
+;(Talk to Argenti)
+:'''Argenti:''' (Trailblazer), may I help you? I am currently enjoying the present moment.
+
+;(Talk to Velite)
+----
+:'''Velite:''' What is it? Here to cheer me up? Save your breath! Your intentions might as well be written on your forehead.
+:'''Velite:''' I'm just a small-time IPC worker &mdash; that Argenti rescued me. I don't know anything... and I can't help you guys.
+:'''Velite:''' *sigh* I want to go home and have dinner... once we're out of this jam...
+:{{Диалог|Стрелка}} I heard you became a follower of Aeon of Beauty. Is that true?
+:'''Velite:''' Did Argenti tell you that?
+:'''Velite:''' That guy is unbelievable. Before he rescued me, he said something like: "You must pledge to acknowledge Idrila, the Beauty, as the most peerless beauty of all!"
+:'''Velite:''' I told him I'd marry her if he liked, as long as he got me out of that stinking cave first... And he refused! I couldn't believe it!
+:'''Velite:''' My life was on the line, so I just repeated after him: Adrila the Beauty, et cetera... You get the picture.
+:'''Velite:''' Then, he corrected me, "It's Idrila, not Adrila."
+:'''Velite:''' Who came up with such an awkward-sounding name? I'm a pencil pusher, what the heck do I know about the Aeon of Beauty?
+:'''Velite:''' But, of course, I repeated it again in order to survive.
+:'''Velite:''' "Idrila, the Beauty, is the most peerless beauty of them all!"
+:'''Velite:''' Just like that.
+:{{Диалог|Стрелка}} Can't you be more positive?
+:'''Velite:''' Tsk, do you think I like being negative? My friend, this is what's known as falling prey to the grim reality of life, understand?
+:'''Velite:''' When I was young, I assumed my life would be like a novel. I wanted to be a pilot, flying through outer space, exploring the universe in a grand spaceship. But then my parents told me I'd have to work for the IPC and make a bunch of money to fulfill my dreams.
+:{{Диалог|Стрелка}} Did you manage to make a bunch of money in the end?
+::'''Velite:''' What do you think? Do rich people make forced vows in caves?
+:{{Диалог|Стрелка}} Does working for the IPC stop you from pursuing your dreams?
+::'''Velite:''' Enough! This is a painful topic...
+:'''Velite:''' I gave up my unrealistic dream of becoming a pilot and worked for the IPC instead. I guess I'm living the life of a supporting character now.
+:'''Velite:''' But after running into Argenti, I had an idea... Perhaps I could make some money with him and turn my life around!
+:'''Velite:''' He's a tall, handsome, and a knight! Packaged and marketed the right way, I'm sure he'll pique a lot of interest!
+:'''Velite:''' I told him about my idea &mdash; that he could advocate for "the Beauty" while also incorporating currency as a notion of beauty. That would allow him to preach more efficiently. He was very impressed.
+:'''Velite:''' I'm planning to contact the Marketing Development Department as soon as I'm off the Express &mdash; he'll make a great IPC product spokesperson! And I can be his agent! Now, the question remains &mdash; will this guy shine brighter as an image-focused idol, or should we showcase his formidable talents and mold him into a powerful star?
+:{{Диалог|Стрелка}} An idol.
+::'''Velite:''' You're right. It'd be a shame to waste such a handsome face. He just screams "idol!"
+:{{Диалог|Стрелка}} A powerful star.
+::'''Velite:''' You're right. I don't know what his rank among the knights is, but he is quite powerful.
+:{{Диалог|Стрелка}} What are you talking about?
+::'''Velite:''' Hmph, it's called facing reality, embracing it, and then conquering it!
+:'''Velite:''' So, when can I get off the Express? I need you guys to solve this traffic jam problem ASAP!
+:{{Диалог|Стрелка}} That's enough of your weird ideas. Come help us.
+::'''Velite:''' Were you even listening to me?
+:{{Диалог|Стрелка}} Come help us... Pretty please?
+::'''Velite:''' Don't use that tone! You're trying to guilt-trip me, aren't you?
+:'''Velite:''' *sigh* Alright, I have nowhere else to be. Let's go.
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_spaceship_insideworm_twist"
+	},
+	"EmitterType": "NPC",
+	"GroupID": 2,
+	"ID": 400002
+}</pre>
+:<!--0.2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Tense",
+	"SubMissionID": 200080206
+}</pre>
+:'''Pom-Pom:''' Ahhhh!
+:'''Velite:''' Huh? What was that sound? Did someone scream?
+----
+
+;(Talk to March 7th)
+:'''March 7th:''' What was that all about!? *sigh* It does seem like you're on better terms after the fight.
+
+;(Talk to Welt Yang)
+:'''Welt:''' (Trailblazer), could you please go check on Velite? He looks uneasy. He is a guest of ours, after all.
+
+;(Talk to Himeko)
+:'''Himeko:''' What a fascinating encounter. There's nothing more captivating than an unpredictable future. (Trailblazer), let's see what unfolds next.
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' How do we stand? Is there a way to resolve this situation?
+{{Dialogue End}}
+
+===Talk to Pom-Pom{{subst:void|<!--200080207-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|A spaceship... has somehow rear-ended the Astral Express!? And there are mysterious visitors approaching the cabin!<br />Looks like you'll have to figure out this latest Express "crisis" together...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pom-Pom:''' Th&mdash;There was a strange sound &mdash; it was terrifying! Did you hear it?
+:'''Pom-Pom:''' Pom-Pom knows the Express inside and out &mdash; it definitely wasn't the train!
+:'''Himeko:''' Is it possible that the jolt just now damaged the Express? ...Did something manage to sneak in?
+:'''Dan Heng:''' Do we know where the sound came from?
+:'''Pom-Pom:''' It sounded like it came from the passenger cabins... or the conductor's cabin!
+:'''March 7th:''' ...But those are in opposite directions! How about... we go check our own rooms?
+:{{Диалог|Стрелка}} I've got a bad feeling about this...
+::'''March 7th:''' Hey! D&mdash;Don't scare me! I'm sure there's a scientific explanation for this, right?
+:{{Диалог|Стрелка}} Remember to check under the bed.
+::'''March 7th:''' Ugh, read the room! Enough with the mean jokes!
+:<!--0.3-second delay-->
+:'''March 7th:''' Now's a time for action, I'm gonna go check my room. If there's a problem, I'll let you know...
+:'''Pom-Pom:''' March has a point. Pom-Pom will go check the conductor's cabin!
+----
+
+;(Talk to Argenti)
+:'''Argenti:''' (Trailblazer), may I help you? I am currently enjoying the present moment.
+
+;(Talk to Pom-Pom)
+:'''Pom-Pom:''' *sigh* Pom-Pom's still thinking, let me see if there are any clues nearby!
+
+;(Talk to March 7th)
+:'''March 7th:''' Wh&mdash;What was that... Did something happen to Pom-Pom!?
+
+;(Talk to Welt Yang)
+:'''Welt:''' Any progress, (Trailblazer)?
+
+;(Talk to Himeko)
+:'''Himeko:''' What happened?
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' What happened?
+:{{tx}}
+----
+:'''Himeko:''' March... March? Please reply. Have you left the room?
+:'''Pom-Pom:''' D&mdash;Did something happen to March...?
+:'''Himeko:''' ...Not good. (Trailblazer), I need you and Dan Heng to check on March.
+:'''Argenti:''' I'll accompany you. Velite, you too.
+:'''Velite:''' Wh&mdash;What!? Alright, if things get dangerous, I'll hide behind you.
+----
+{{Dialogue End}}
+
+===Support March 7th{{subst:void|<!--200080213-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:<!--2-second delay-->
+:'''Dan Heng:''' It's... an "insect"?
+----
+:'''Argenti:''' Ugliness... The inharmonious pitch has surfaced.
+:'''Argenti:''' (Trailblazer), honor compels us to vanquish this dissonance.
+;(Enter battle)
+:{{Список врагов|mode=sent|Juvenile Sting*2; Lesser Sting*2}}
+----
+:'''March 7th:''' Th&mdash;That was so scary! It was like a long-lost twin sister had suddenly... appeared out of nowhere! I can't believe it was only a bug!
+:'''Argenti:''' I did not envision seeing True Stings again.
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:'''March 7th:''' Huh?
+:'''Velite:''' Ugh... There was a whole bunch of those bugs chasing me when Argenti found me in the cave.
+:'''Argenti:''' I was under the impression that I had successfully routed all of them. However, it appears that the Stings continue to pursue us.
+:'''Argenti:''' Could it be...? Velite, perhaps you still bear Sting pheromones on your body.
+:'''Velite:''' Huh? Phero-who? What is that? Is it bad?
+:'''Dan Heng:''' Yes, I've read about True Stings in the data bank. They emit fibrous particles from their wings during flight &mdash; the inhalation of which can induce perceptual distortions and hallucinations.
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:'''Dan Heng:''' I'm afraid March may have inhaled some of these particles. That's why she saw another version of herself in the room.
+:'''March 7th:''' So that was just a hallucination? Huh, why do I feel kinda disappointed...
+:'''March 7th:''' Wait. I thought hallucinations were supposed to be completely random? Why did I see an identical me?
+:'''Dan Heng:''' Did it do anything strange?
+:'''March 7th:''' It said it knew about my past... and then it stopped talking.
+:'''Dan Heng:''' ...I'm afraid that's not enough information for us to draw a conclusion.
+:'''Dan Heng:''' My concern is that numerous Stings may have already infested the Express. Their elusive nature helps them to stay in the shadows, but they may also be roaming freely. We have to prevent them from propagating. If not...
+:'''March 7th:''' Ugh... I don't wanna see a bunch of Marches roaming around the Express! One of me is enough!
+:'''Dan Heng:''' ...We're on the same page.
+----
+{{Dialogue End}}
+
+===Go back to the Parlor Car and look around{{subst:void|<!--200080214-->}}===
+{{Mission Description|type=companion|location=Passenger Cabin|update|A spaceship... has somehow rear-ended the Astral Express!?<br />Things are starting to become trickier than you thought...}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Talk the clues over with Himeko{{subst:void|<!--200080231-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Take photos with the camera and find some clues{{subst:void|<!--200080221-->}}===
+{{Dialogue Start}}
+:'''(Trailblazer):''' (Check around the Express...)
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	}
+}</pre>
+:You discover an egg.
+:You find yourself wishing once in a while for this world to have less bewildering things.
+:But the moment you discovered there was a real chance of them being eaten, your sense of justice prompted you to take down the enemy.
+:All things considered, even if you have no use for it, you can't let it benefit another party.
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"IsAim": true,
+	"AimTagExtraOffset": 0.35
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:All appears to be in order. Except for a small bunch of what is likely highlighted hair &mdash; although you can't be completely sure &mdash; there's nothing amiss with Mr. Yang's hair.
+:'''Welt:''' ...What are you up to, (Trailblazer)?
+:You're pretty convinced that the Welt standing in front of you is real... Best to back away before he gets grumpy; there are zero eggs here.
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	},
+	"IsAim": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:You observe that Pom-Pom's tail is impeccably groomed: Clean, fluffy, and smelling nice, with no signs of anything out of the ordinary.
+:You fight off the impulse to reach over and feel it.
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	},
+	"IsAim": true,
+	"AimTagExtraOffset": 0.1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
+	"WaitTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PhotoGraphAimTarget",
+	"AimTargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	}
+}</pre>
+:You realize that the eggs here have started humming, creating a symphony of sorts, and it captivates you...
+:You invariably notice that for some people, what they say sounds better than what they actually do.
+:Driven by your sense of justice, you eradicated the eggs.
+{{Dialogue End}}
+
+===Find a faster way to search{{subst:void|<!--200080232-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|A spaceship... has somehow rear-ended the Astral Express!?<br />Pom-Pom has a portable train cleaning kit. Who knew it'd come in handy at a time like this...}}
+{{Dialogue Start}}
+
+:{{tx}}
+{{Dialogue End}}
+
+===Go support Argenti in the illusion{{subst:void|<!--200080234-->}}===
+{{Mission Description|type=companion|location=Passenger Cabin|update|A spaceship... has somehow rear-ended the Astral Express!?<br />Each and every move this Knight of Beauty makes is more unpredictable than the last...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Argenti:''' Beautiful beings, are you disciples?
+:'''March 7th:''' He looks beyond saving.
+:'''Dan Heng:''' He could be in considerable danger. Let's proceed.
+;(Enter battle)
+:{{Список врагов|mode=sent|Juvenile Sting*2; Lesser Sting*2}}
+----
+:<!--2-second delay-->
+:'''Argenti:''' I must apologize... I cannot believe that such a beautiful creature was merely a hallucination. Its deceptive and threatening nature is much uglier than its appearance would suggest.
+:'''Dan Heng:''' You mentioned the Sting transformed into an object of beauty, something that (Trailblazer) once spoke of, but that you never personally encountered.
+:'''Argenti:''' Yes, it was something (Trailblazer) mentioned that I wanted to see in person.
+:'''Dan Heng:''' I see... This, together with the fact that March's hallucination claimed to know her past, suggests that these visions feed on people's subjective experiences and long-term sentiments... in order to take the form of what they {{Цвет|Ключевой|nobold=1|personally desire}}.
+:'''March 7th:''' So, in Argenti's eyes, Wubbaboos are a thing of beauty...
+:'''March 7th:''' But... my past isn't something I'm constantly thinking about. I have plenty of other dreams...
+:'''Dan Heng:''' That's not how it works. The desire to know your past embodies purity itself &mdash; a thing of immense value.
+:'''Argenti:''' I wonder if the dying words of those ugly menaces can be trusted. As the saying goes: "Even an insect speaks kind words when death is near."
+:'''Dan Heng:''' Are you implying that the insect imparted you with a message prior to its demise?
+:'''Argenti:''' Correct. Its final words were: {{Цвет|Ключевой|nobold=1|"Celebrate this superficial victory, for you will never be able to acknowledge the existence of the overlord!"}}
+:<!--0.3-second delay-->
+:'''Dan Heng:''' Let's ignore the fact that you understand insect-speak for now. That sentence...
+:'''Dan Heng:''' ...Wait, I think I understand.
+----
+----
+:'''Dan Heng:''' When reading through the Chronicles of Interdimensional Insects in the data bank, I came across a species that had only been described in records. Due to the lack of research samples, the author gave it a tentative name: Giant Sting.
+:'''Dan Heng:''' This species can reach tremendous proportions and is big enough to swallow an entire starnought.
+:'''Dan Heng:''' I believe the {{Цвет|Ключевой|nobold=1|"overlord"}} Argenti mentioned could be referring to this colossal being, and we're...
+:'''Argenti:''' I think I understand. We are in the belly of the beast.
+:{{Диалог|Стрелка}} It's swallowed the entire Express?
+::'''Dan Heng:''' Yes, that's my theory.
+:{{Диалог|Стрелка}} Please spare me. I'm not even tasty!
+::'''March 7th:''' M&mdash;Me neither!
+::'''March 7th:''' Although, if what Dan Heng said is true, I doubt something that could swallow the Express would be a picky eater...
+:<!--0.3-second delay-->
+:'''Argenti:''' I see. That would explain what Velite and I experienced earlier.
+:'''March 7th:''' ...What do you mean?
+:'''Argenti:''' Did Velite mention that he was trapped in a dark and enormous cave when we first met?
+:'''Argenti:''' Now that I think on it, we did hear sounds akin to swallowing and other movements from the "cave..."
+:'''Dan Heng:''' Yes, and your flight path happened to intersect with the Express's star rail, meaning we might have encountered the very same Giant Sting. Now, we need to see if we can prove the theory correct...
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_spaceship_insideworm_twist"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 7,
+	"ID": 300001
+}</pre>
+:'''March 7th:''' Ahhhh! Wh&mdash;What is that!?
+:'''Dan Heng:''' ...It looks like our theory has already been confirmed.
+:'''Dan Heng:''' Let's talk to Mr. Yang.
+----
+{{Dialogue End}}
+
+===Go back to the Parlor Car{{subst:void|<!--200080282-->}}===
+{{Mission Description|type=companion|location=Passenger Cabin|update|Has the Express somehow... been swallowed up by a Giant Sting!?}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Talk strategy with Welt{{subst:void|<!--200080241-->}}===
+{{Dialogue Start}}
+:'''March 7th:''' It's so quiet... Someone say something.
+:'''Argenti:''' After meeting all of you, I, Argenti, can die without regrets.
+:'''March 7th:''' ...Never mind. I'm fine with silence.
+:<!--3-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 21,
+			"GroupNpcID": 400005,
+			"TalkSentenceID": 200085801
+		}
+	],
+	"IsLoop": true,
+	"LoopInterval": 10,
+	"UniqueID": 2371
+}</pre>
+{{Dialogue End}}
+
+===Talk to Himeko and Dan Heng{{subst:void|<!--200080253-->}}===
+{{Dialogue Start}}
+
+;(Talk to March 7th)
+:'''March 7th:''' So... the train has been swallowed by a giant bug? And we're inside its stomach?
+
+;(Talk to Velite)
+:'''Velite:''' Desires? I don't have any desires!
+:'''Velite:''' I'm busy working every day. Even if I did have one, it's been long forgotten.
+:'''Velite:''' ...Come to think of it, maybe the IPC made me immune to hallucinations...
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' It's alright. We're in this together.
+
+;(Talk to Himeko)
+----
+:'''Dan Heng:''' It's rare to see March genuinely worried... but given the circumstances. (Trailblazer), maybe you could try reassuring some of the crew.
+:'''Himeko:''' The Express has faced all kinds of obstacles on its journey &mdash; today is just another one. It's no reason to stop trailblazing.
+:'''Himeko:''' Such is the very essence of trailblazing. It is through these trials that we find wisdom and maturity.
+----
+{{Dialogue End}}
+
+===Comfort everyone's negative mood{{subst:void|<!--200080254-->}}===
+{{Dialogue Start}}
+
+;(Talk to March 7th)
+----
+:'''March 7th:''' The Express is... melting?
+:'''Velite:''' How is this even possible!? I've been swallowed by a "cave" twice now. Is this my destiny?
+:'''Pom-Pom:''' We need to get out of the Sting's stomach as soon as possible! Pom-Pom doesn't want the Express to sustain damage...
+:'''March 7th:''' Everyone, just calm down...
+:'''Argenti:''' Calm yourselves, all of you.
+:'''Argenti:''' I am bidding farewell to this flora. After having made friends with all the beings on the Express, and having discussed "the Beauty" with each of you, I can now depart this mortal coil without regret!
+:'''March 7th:''' Ugh, can you and the fern get a room already? How can anyone establish a bond with a houseplant? ...Although I guess you could say the same about me and my teddy bears...
+:'''Pom-Pom:''' The Express is home to all of us &mdash; no matter what happens, we're in this together! Woo-hoo, you're back! Although I guess that doesn't change our odds...
+:'''Velite:''' Who knew our first meeting would be our last... *sigh* It's hopeless. I'll just spend the rest of my short life listening to your ramblings about the Express, I suppose...
+:'''Pom-Pom:''' Nonsense. This won't be our last meeting! But I'm happy the Express has started to grow on you. Now... where should Pom-Pom start the story?
+:'''Velite:''' Gah! Are you really about to tell a story? Look, it's been nice meeting you all and I'd love to shoot the breeze, but are you people really just gonna give up!?
+:'''Argenti:''' Velite, I will escort you to your destination. A knight always keeps his word.
+:'''Velite:''' *sniff* Don't assume you can reassure me that easily. I've got a heart of stone, you hear?
+:'''March 7th:''' Okay, that's enough! In times like this, we should be trying to give each other hope!
+:{{Диалог|Стрелка}} You're worried about the Express, just like everyone else, right?
+:'''March 7th:''' N&mdash;No! The Express is strong &mdash; I'm sure we can think of something!
+----
+
+;(Talk to Himeko)
+:'''Himeko:''' The outer wall of the Express is probably melting in gastric acid. I can't even imagine what it must look like.
+{{Dialogue End}}
+
+===Chat alone with Argenti{{subst:void|<!--200080242-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|The long, scarlet night of hallucinations forges endlessly on.<br />Argenti invites you to a "1-on-1 discussion." His behavior is truly impossible for normal people to parse...}}
+{{Dialogue Start}}
+
+;(Talk to Welt Yang)
+:'''Welt:''' This is really a curveball... you couldn't make it up.
+
+;(Talk to March 7th)
+:'''March 7th:''' So... the train has been swallowed by a giant bug? And we're inside its stomach?
+
+;(Talk to Velite)
+:'''Velite:''' Desires? I don't have any desires!
+:'''Velite:''' I'm busy working every day. Even if I did have one, it's been long forgotten.
+:'''Velite:''' ...Come to think of it, maybe the IPC made me immune to hallucinations...
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' It's alright. We're in this together.
+
+;(Talk to Himeko)
+:'''Himeko:''' The outer wall of the Express is probably melting in gastric acid. I can't even imagine what it must look like.
+
+;(Talk to Argenti)
+:'''Argenti:''' (Trailblazer), I apologize for being so abrupt. You must find me strange for wanting to speak with you alone.
+:'''Argenti:''' I will tell it to you straight. I have a strong sense that as a Knight of Beauty, I have a duty to fight this battle.
+:'''Argenti:''' I propose that I disembark from the Express to confront the Giant Sting directly... My strategy is to pierce its stomach with my lance, triggering spasms that may cause it to eject the Express.
+:{{Диалог|Стрелка}} By yourself?
+:{{Диалог|Стрелка}} I knew it...
+:'''Argenti:''' It is challenging for me to articulate this phenomenon... yet when I observe certain entities, an indistinct sensation of beauty arises from my core, discernible only by instinct.
+:'''Argenti:''' Perhaps my long solitude traversing the cosmos has made it difficult to discern where these sentiments originate. But as a knight, I realize my obligation is to safeguard the seed that embodies beauty, standing as a bulwark to defend it against all...
+:'''Argenti:''' The Astral Express is the seed. It feels warm &mdash; like a home to me. I am certain this is thanks to the strong friendship you have with one another.
+:'''Argenti:''' That is why I must swear to fight to protect this warmth, rather than be protected by it.
+:'''Argenti:''' I am willing, time and time again, to protect these seeds of beauty &mdash; to allow THEM to bloom into pure and radiant flowers, to demonstrate my devotion to THEM... It is an inherent part of the journey of Argenti...
+:{{Диалог|Стрелка}} Who is "THEM?"
+:{{Диалог|Стрелка}} Idrila?
+:'''Argenti:''' In the pursuit of defending beauty I have bled into unconsciousness... and in the ensuing stupor I have witnessed countless times THEIR traces spreading from beneath my feet &mdash; reaching into the unknown before me.
+:{{Диалог|Стрелка}} Are they an "Aeon"?
+::'''Argenti:''' My rational mind tells me no, yet my heart tells me to believe.
+::Are they a "hallucination"?
+:{{Диалог|Стрелка}} Are they a "hallucination"?
+:'''Argenti:''' My rational mind tells me yes, yet my heart tells me to believe.
+:'''Argenti:''' In those past hallucinations, I kept running. THEIR footprints on the mire-ridden path moved me to a sadness beyond tears. And every time, I was a breath away from catching a glimpse of THEIR figure.
+:{{Диалог|Стрелка}} Are you fighting to protect "beauty?"
+::'''Argenti:''' Yes, this is my duty.
+::Are you fighting to see "THEM?"
+:{{Диалог|Стрелка}} Are you fighting to see "THEM?"
+:'''Argenti:''' Yes... this is my wish.
+:'''Argenti:''' It is a never-ending cycle of falling... and standing up again. Each time I wander closer to death, it gets me closer to the path the Beauty once walked.
+:'''Argenti:''' This is my vow as a Knight of Beauty.
+:{{Диалог|Стрелка}} What are your plans after that?
+::'''Argenti:''' I shall find a way to escape. It matters not if my flesh is pierced by the insect's horns. The closer I get to death, the closer I may get to the Path of the Beauty.
+::Can I do anything to help?
+::'''Argenti:''' Thank you, but that won't be necessary. It matters not if my flesh is pierced by the insect's horns. The closer I get to death, the closer I may get to the Path of the Beauty.
+::Why did you want to talk to me alone?
+:{{Диалог|Стрелка}} Can I do anything to help?
+::'''Argenti:''' Thank you, but that won't be necessary. It matters not if my flesh is pierced by the insect's horns. The closer I get to death, the closer I may get to the Path of the Beauty.
+::Why did you want to talk to me alone?
+:{{Диалог|Стрелка}} Why did you want to talk to me alone?
+:'''Argenti:''' We were interrupted halfway through our battle. As a warrior, articulation has never been my forte, yet I still needed to impart the remaining half to you.
+:'''Argenti:''' I apologize, I have been rambling. As I said, articulation has never been my forte. Let us return to the point at hand. Do I have your support?
+:{{Диалог|Стрелка}} I support you.
+::'''Argenti:''' You do...? Thank you.
+::'''Argenti:''' Your understanding is more precious than any treasure. I have faced many a traveler, encountered flattery and provocation aplenty. It is rare to find a spirit as pure as yours.
+::'''Argenti:''' In that case...
+::I'm still against it.
+::'''Argenti:''' Why, (Trailblazer)?
+::I don't want you to put your life in danger.
+::'''Argenti:''' You worry for my safety? Thank you.
+::'''Argenti:''' Your understanding is more precious than any treasure. I have faced many a traveler, encountered flattery and provocation aplenty. It is rare to find a spirit as pure as yours.
+::'''Argenti:''' But... (Trailblazer), I have made up my mind. As a Knight of Beauty, this is my destiny.
+::You're just consoling yourself with those "hallucinations".
+:{{Диалог|Стрелка}} I'm still against it.
+::'''Argenti:''' Why, (Trailblazer)?
+::{{Диалог|Стрелка}} I don't want you to put your life in danger.
+:::'''Argenti:''' You worry for my safety? Thank you.
+:::'''Argenti:''' Your understanding is more precious than any treasure. I have faced many a traveler, encountered flattery and provocation aplenty. It is rare to find a spirit as pure as yours.
+:::'''Argenti:''' But... (Trailblazer), I have made up my mind. As a Knight of Beauty, this is my destiny.
+:::You're just consoling yourself with those "hallucinations".
+::{{Диалог|Стрелка}} You're just consoling yourself with those "hallucinations".
+:'''Argenti:''' Is that so? Many others have said the same. Perhaps you're right.
+:'''Argenti:''' But... (Trailblazer), I have made up my mind. As a Knight of Beauty, this is my destiny.
+:'''Argenti:''' Please forgive my inappropriate manner. Our friendship is new, but was forged in the heat of battle, which I only wish we had been able to conclude. I hope now we may conclude it still, that I may leave without regret!
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+----
+:'''Argenti:''' (Trailblazer)... Your demeanor, strength, and the etiquette of your combat... I admit, you have won me over.
+:'''Argenti:''' Extraordinary and enjoyable in equal measure! Encountering an opponent of your caliber proves the existence of "the Beauty."
+:'''Argenti:''' The end of our battle signifies my departure... the moment has finally arrived for me to bid farewell to the Express.
+:{{Диалог|Разговор}} You're confident you can get out alive?
+::'''Argenti:''' (Trailblazer), I assure you, I am not a reckless person. I will ready myself for the opportunity to escape.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Will we meet again?
+::'''Argenti:''' I came to the Express to help you find a solution to this crisis. When my mission is complete, I shall venture back into the cosmos... but the cosmos is boundless &mdash; we may yet have another encounter.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} I'm ready to say goodbye.
+::'''Argenti:''' Excellent, (Trailblazer). After completing my mission here, I shall find somewhere else that requires my protection.
+::'''Argenti:''' Worry not. As a knight, I bear the resolve and honor of assured victory &mdash; my body, tempered by countless battles, will not easily be broken.
+::'''Argenti:''' Such a brief, fortuitous encounter... It has been an honor knowing each and every one of you on the Express.
+::----
+{{Dialogue End}}
+
+===Tell Welt{{subst:void|<!--200080263-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|The long, scarlet night of hallucinations forges endlessly on.<br />Despite blooming into the most majestic of merit awards, it's nothing more than an ode from the universe that will soon disappear back into nothingness.}}
+{{Dialogue Start}}
+:'''(Trailblazer):''' *sigh*
+:'''(Trailblazer):''' Let's go talk with the others.
+
+;(Talk to Welt Yang)
+----
+:'''Welt:''' So, how did your talk with Argenti go, (Trailblazer)?
+:{{Диалог|Стрелка}} He wants to fight the Giant Sting by himself.
+:'''Welt:''' I see... Based on our dealings with him so far, I can't say I'm overly surprised. Sounds like the kind of plan a younger me might have come up with... but that doesn't mean I approve of it. How do you see things, (Trailblazer)?
+:{{Диалог|Стрелка}} I agree with Argenti.
+::'''Welt:''' ...I suppose it all depends on how you see his understanding of and devotion to the Beauty.
+::'''Welt:''' (Trailblazer), if you're certain, I trust your judgment.
+::----
+::'''Velite:''' *yawn* I took a nap just now and dreamt there was another me piloting Argenti's One and Only...
+::'''Velite:''' What's wrong with me? I never dream. After stealing Argenti's spaceship, I said to myself: "Go find Argenti."
+::'''Velite:''' I&mdash;I'm not the type to start caring about people I've only just met, but the dream made me feel a little uneasy... So, what on earth is Argenti up to, anyway?
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} I don't understand Argenti.
+::'''Welt:''' ...I suppose it all depends on whether you support his understanding of and devotion to the Beauty.
+::'''Welt:''' (Trailblazer), we can't change what other people long for.
+::----
+::'''Velite:''' *yawn* I took a nap just now and dreamt there was another me piloting Argenti's One and Only...
+::'''Velite:''' What's wrong with me? I never dream. After stealing Argenti's spaceship, I said to myself: "Go find Argenti."
+::'''Velite:''' I&mdash;I'm not the type to start caring about people I've only just met, but the dream made me feel a little uneasy... So, what on earth is Argenti up to, anyway?
+:;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 23,
+	"GroupNpcID": 400003,
+	"DestroyList": []
+}</pre>
+
+;(Talk to March 7th)
+:'''March 7th:''' What!? Argenti wants to leave the Express and fight the Giant Sting alone!?
+
+;(Talk to Pom-Pom)
+:'''Pom-Pom:''' Wh&mdash;What? Argenti wants to go by himself? No way! That's too dangerous!
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' ...He insisted on doing his duty.
+
+;(Talk to Himeko)
+:'''Himeko:''' The exterior of the Express might be melting in gastric acid... I can't even imagine what it must look like.
+
+;(Talk to Argenti)
+:'''Argenti:''' So brief... so unexpected. The chance to get to know all of you on the Express... to witness the beauty of your emotions... is something I'll never forget.
+{{Dialogue End}}
+
+===Help Velite stop Argenti{{subst:void|<!--200080264-->}}===
+{{Mission Description|type=companion|location=Parlor Car|update|The long, scarlet night of hallucinations forges endlessly on.<br />It seems like even the minor characters harbor their own intentions. Velite, the self-proclaimed "extra," will have ideas of his own...}}
+{{Dialogue Start}}
+
+;(Talk to Welt Yang)
+:'''Welt:''' It all depends on whether you support his dedication to that hallucination.
+
+;(Talk to March 7th)
+:'''March 7th:''' What!? Argenti wants to leave the Express and fight the Giant Sting alone!?
+
+;(Talk to Dan Heng)
+:'''Dan Heng:''' ...He insisted on doing his duty.
+
+;(Talk to Himeko)
+:'''Himeko:''' The exterior of the Express might be melting in gastric acid... I can't even imagine what it must look like.
+
+;(Talk to Argenti)
+----
+:'''Argenti:''' After jumping from the Express, I shall pierce the wall of the Giant Sting's stomach. It should then violently convulse so the Express can escape the confines of its body.
+:'''Argenti:''' Velite, have you something to say?
+:'''Velite:''' ...I&mdash;It's reckless to put yourself in danger! Do you really have to fulfill your knightly duty? Isn't there another way? I just don't get it.
+:'''Argenti:''' You, too, are worried for my safety? You may not have realized, but you have a unique and noble soul. I hope I can keep my promise to escort you to your destination.
+:'''Velite:''' You...
+:'''Velite:''' Wh&mdash;What the heck. Fine, I can be brave too y'know. If you insist on doing this, then... I'm coming with you!
+:'''Velite:''' If it weren't for you, I wouldn't be alive right now. I may not be as strong as you, but I'll do whatever I can.
+:'''Argenti:''' I appreciate that, but it would be best for you to remain on the Express.
+:'''Velite:''' I... You... Hmph... You're impossible. Fine...
+:'''Velite:''' It suddenly struck me that if it weren't for this accident, we would never have met, let alone become friends. My life is a third-rate fiction next to your heroic saga, but at least they coincided...
+:'''Velite:''' So you still want to do it? Are we going to say goodbye here? Then...
+:'''Velite:''' Don't die! I'll be waiting for you! After we fix this mess, you've got some spokesperson duties at my company to attend to! Just make sure you come back in one piece...
+----
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Hey! We made it⁓!
+::What is that? Did the Express make...
+::...the universe explode!?
+::No, this is a hallucination caused by the Giant Sting.
+::The commotion must have led to a great shedding of wing particles.
+::Huh? Then... maybe the insect wasn't that big? Maybe it was all an illusion!
+::...I'm afraid not, March.
+;(Cutscene ends)
+----
+----
+:'''Welt:''' I've completed the engine inspection. Though the warp device isn't immediately operational, I believe we can still manage brief spurts of acceleration. Unless there are any major objections, I'll begin preparations.
+:<!--0.2-second delay-->
+:<!--0.2-second delay-->
+:'''Argenti:''' Mr. Yang, one moment, please.
+:'''Argenti:''' I've suddenly happened upon an idea that might just help resolve our crisis. While the Express is being prepared, I would like to speak with (Trailblazer) in private.
+:'''March 7th:''' Seriously? Can't you just tell all of us?
+:'''Argenti:''' Were I to air such a proposition among you, verily, it would be dismissed in an instant. Yet as a knight, it is my duty to aid the Express in resolving this issue.
+:'''March 7th:''' Oh? So you're a mind reader now, too...?
+:'''Welt:''' At this stage, any plan is a plan worth hearing. March &mdash; hang fire. Let's see where this leads us.
+:'''Argenti:''' Thank you.
+----
+:'''March 7th:''' I bet Argenti would think these fireworks were really... beautiful.
+:'''March 7th:''' We didn't know him very long, but he was a pretty nice guy.
+:'''March 7th:''' ...
+:'''March 7th:''' Tsk, I hope he made it...
+:So, it's all over...
+<pre>{
+	"$type": "RPG.GameCore.TransitEnvProfile",
+	"Path": {
+		"Value": "Stages/Outputs/Chapter00/EnviroProfile/Chap00_INT_Train_01.enviroProfile.asset"
+	}
+}</pre>
+:{{Black Screen|After some time...}}
+:'''March 7th:''' I bet Argenti would think these fireworks were really... beautiful.
+:'''March 7th:''' We didn't know him very long, but he was a pretty nice guy.
+:'''March 7th:''' ...
+:'''March 7th:''' Tsk, I hope he made it...
+:'''Pom-Pom:''' The Express managed to escape the crisis, but Pom-Pom still feels a little sad... Pom-Pom wonders what happened to Argenti.
+:<!--0.4-second delay-->
+:'''March 7th:''' *sigh* Velite just left the Express too &mdash; he looked really upset. I guess he didn't know what Argenti was thinking, either...
+:'''Himeko:''' The Knights of Beauty are made up of individuals who are used to traveling through the cosmos alone... they are difficult to understand, and the starry sky is their home. Perhaps this firework show is a symbol of his honor.
+:'''March 7th:''' But the fireworks...
+:'''Pom-Pom:''' ...And the starry sky...
+:'''March 7th:''' ...He didn't see it...
+:'''Himeko:''' He has his own goals... and struggles. After all, the Aeon of Beauty has likely already fallen.
+:<!--0.3-second delay-->
+:'''March 7th:''' Huh? You mean Idrila &mdash; the one he wouldn't stop talking about? But... he said he'd find them... and fulfill his duty to protect them.
+:'''Himeko:''' The fact that Idrila has fallen is tacitly acknowledged by some Knights of Beauty. Naturally, there are others who don't want to believe it... like the one you met. He probably thinks that Idrila is simply missing &mdash; hiding somewhere beyond the reach of mortals.
+:'''Himeko:''' (Trailblazer), the crisis is over, and our unexpected guest has left, but I think there's still something we should talk about.
+:'''Himeko:''' ...In your opinion, what is beauty?
+:{{Диалог|Стрелка}} A lover's eyes.
+::'''Himeko:''' They must be beautiful eyes.
+:{{Диалог|Стрелка}} All fun and no work!
+::'''Himeko:''' Sounds like a wonderful life &mdash; I'm sure many have dreams of that.
+:{{Диалог|Стрелка}} Obsessively watching cats eat food.
+::'''Himeko:''' Haha, you have a wild imagination.
+:{{Диалог|Стрелка}} That which exists between the Crew...
+::'''Himeko:''' Oh? That's a good answer.
+:'''Himeko:''' Beauty takes many forms, and different people have different answers... I wonder what exactly it is that the Knights of Beauty are pursuing through the cosmos.
+:'''Himeko:''' Let's assume that Argenti finds the "missing" Idrila. Will he be able to recognize THEM with his human eyes? Or, obsessed with his version of "THEM," will he turn a blind eye and not even see THEM for who THEY are?
+:'''March 7th:''' Mm... It did seem like he had a kind of... tunnel vision. And it sounded like he was holding himself to unreachable standards to attain his dreams.
+:'''March 7th:''' I didn't quite wrap my head around him... I guess if we're ever back in Belobog and see a red-headed knight shouting into trashcans &mdash; "Idrila, are you in there!? Idrilaaaa!" ...I won't be surprised.
+:'''March 7th:''' But, so what? I still think he was a nice guy, even if he was a bit weird...
+:'''Pom-Pom:''' *sigh* Where were we supposed to be going again?
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Night of Universal Hallucinations
+|zhs  = 宇宙幻觉之夜
+|zht  = 宇宙幻覺之夜
+|ja   = 宇宙幻覚の夜
+|ko   = 우주 환각의 밤
+|es   = Noche de alucinaciones universales
+|fr   = Nuit des hallucinations cosmiques
+|ru   = Ночь космических галлюцинаций
+|th   = ค่ำคืนจักรวาลที่ลวงตา
+|vi   = Đêm Vũ Trụ Ảo Giác
+|de   = Nacht der kosmischen Illusionen
+|id   = Malam Halusinasi Alam Semesta
+|pt   = Noite das Alucinações Universais
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -2,7 +2,7 @@ import { writeFileSync } from 'fs';
 import type { Dictionary, Value } from '../Shared.js';
 import { HashReference, TextMap } from '../TextMap.js';
 import { getFile } from '../files/GameFile.js';
-import { teardown } from '../util/JSONParser.js'
+import { teardown } from '../util/JSONParser.js';
 
 const talentData: Dictionary<InternalTalentData> = await getFile('ExcelOutput/RogueNousTalent.json')
 

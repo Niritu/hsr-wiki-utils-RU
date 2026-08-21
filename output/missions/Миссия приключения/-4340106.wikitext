@@ -11,13 +11,13 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия Освоения]] «[[Ночь по имени Нежность]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Пенакония]] — [[Золотой миг]]
-|Мир             = Пенакония
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
 }}
-'''''' — [[Миссия приключения]] в [[Пенакония]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -27,41 +27,7 @@ PageTitle=##
 
 ==Прохождение==
 {{Дополнить}}
-;(If {{F|MissionCV-4340106-undefined}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.ConsumeMissionItem",
-	"SubMissionID": 434010610,
-	"IsAutoConsume": true,
-	"SimpleTalk": {}
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
-	"ExtendTime": 1
-}</pre>
-:{{tx}}
-<pre>{
-	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
-	"SwitchCharacterAnchorConfig": {
-		"IsLocalPlayer": true,
-		"CharacterUniqueName": "LocalPlayer",
-		"AreaName": {
-			"Value": "LevelArea_P20313_F20313001_G222"
-		},
-		"AnchorName": {
-			"Value": "Anchor1"
-		}
-	}
-}</pre>
-;(Unused &mdash; TriggerBattle_4340106)
-;(Enter battle)
-::{{Список врагов|mode=sent|Танцующий Клюв из труппы «Кошмарики»*1; Гончая с газировкой из труппы «Кошмарики»*2; Пружинный Крупье из труппы «Кошмарики»*1}}
-;(If {{F|MissionCV-4340106-1}} is undefined 1)
-<pre>{
-	"$type": "RPG.GameCore.ConsumeMissionItem",
-	"SubMissionID": 434010611,
-	"IsAutoConsume": true,
-	"SimpleTalk": {}
-}</pre>
+
 {{Диалог Конец}}
 
 ==На других языках==

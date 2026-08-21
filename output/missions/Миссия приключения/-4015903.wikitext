@@ -10,14 +10,14 @@ PageTitle=##
 |Событие         = 
 |Глава           = 
 |Условия         = Завершена [[Миссия приключения]] «[[Золотой образец отпущения]]»
-|Персонажи       = Диогена; Первопроходец
-|СтартЛокация    = [[Амфореус]] — [[Палата полубогов: Рассветная вершина]]
-|Мир             = Амфореус
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Золотой образец отпущения
 |Следующая       = 
 |Награды         = 
 }}
-'''''' — [[Миссия приключения]] в [[Амфореус]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -28,116 +28,6 @@ PageTitle=##
 ==Прохождение==
 {{Дополнить}}
 
-;(Поговорите с Диогена)
-;(If the player has greater than or equal to {{Предмет|Золотой череп|20|x=7}})
-::'''Диогена:''' Ох, дедушка Ликург в своём репертуаре - как только теряет интерес к делу, уже ничего от него не добьёшься.
-:<pre>{
-	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
-	"SubmissionID": 401590302,
-	"SimpleTalk": {},
-	"OnSubmitConfirm": [
-		{
-			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
-			"SimpleTalkList": [
-				{
-					"TextSpeed": 0,
-					"TalkSentenceID": 401590702,
-					"ProtectTime": 0
-				}
-			]
-		},
-		{
-			"$type": "RPG.GameCore.PlayFullScreenTransfer",
-			"PrevDuration": 0,
-			"TextInfo": {
-				"TextList": [
-					{
-						"TalkSentenceID": 401590703
-					}
-				]
-			}
-		},
-		{
-			"$type": "RPG.GameCore.SetMissionCustomValue",
-			"SubmissionID": 401590302,
-			"MissionCustomValue": {
-				"Name": "OldValue_0",
-				"ValidValueParamList": [
-					0,
-					1,
-					2
-				]
-			},
-			"CustomValue": 1
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	],
-	"OnSubmitCancel": [
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	]
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
-	"SubmissionID": 401590301,
-	"SimpleTalk": {},
-	"OnSubmitConfirm": [
-		{
-			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
-			"SimpleTalkList": [
-				{
-					"TextSpeed": 0,
-					"TalkSentenceID": 401590702,
-					"ProtectTime": 0
-				}
-			]
-		},
-		{
-			"$type": "RPG.GameCore.PlayFullScreenTransfer",
-			"PrevDuration": 0,
-			"TextInfo": {
-				"TextList": [
-					{
-						"TalkSentenceID": 401590703
-					}
-				]
-			}
-		},
-		{
-			"$type": "RPG.GameCore.SetMissionCustomValue",
-			"SubmissionID": 401590301,
-			"MissionCustomValue": {
-				"Name": "OldValue_0",
-				"ValidValueParamList": [
-					0,
-					1,
-					2
-				]
-			},
-			"CustomValue": 2
-		},
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	],
-	"OnSubmitCancel": [
-		{
-			"$type": "RPG.GameCore.EndPerformance"
-		}
-	]
-}</pre>
-:;(If {{F|MissionCV-4015903-undefined}} is not equal to 0)
-:;(If {{F|MissionCV-4015903-undefined}} is not not equal to 0)
-;(If the player does not have greater than or equal to {{Предмет|Золотой череп|20|x=7}})
-::'''Диогена:''' Кстати говоря, слова дедушки Ликурга навели меня на одну мысль...
-::'''Диогена:''' А что если переведённое нами «Нашёптанное золотым руном отпущения» как-то связано с мечником, разрушившим Рощу? Что если в нём говорится о его прошлом?
-::{{Диалог|Стрелка}} Есть такая вероятность.
-:::'''Диогена:''' Думаешь? Жаль, мы никак не можем это подтвердить.
-::{{Диалог|Стрелка}} Сложно сказать, ведь доказательств нет.
-::'''Диогена:''' ...Эх, я ведь сама предостерегала Авилиуса, что одни догадки нам никак не помогут.
 {{Диалог Конец}}
 
 ==На других языках==

@@ -152,7 +152,7 @@ export class Curio {
 	is_indexable: boolean
 	rarity?: string
 	icon_path: string
-	period?: 'Tourn1' | 'Tourn2'
+	period?: 'Tourn1' | 'Tourn2' | 'Tourn3'
 	// unlock_list: Unlock[]
 	
 	constructor(public id: number, public is_du: boolean) {
@@ -164,7 +164,14 @@ export class Curio {
 		this.period = curio.TournMode
 		this.index_id = curio.HandbookMiracleID ?? curio.UnlockHandbookMiracleID!
 		this.name = textMap.getText(display.MiracleName)
-		this.effect = replaceUnderlinedEE(textMap.getText(effectDisplay.MiracleDesc, effectDisplay.DescParamList) || textMap.getText(display.MiracleDesc, display.DescParamList), display.ExtraEffect || effectDisplay.ExtraEffect  || [])
+const miracleDesc = effectDisplay?.MiracleDesc || display?.MiracleDesc;
+const descParamList = effectDisplay?.DescParamList || display?.DescParamList;
+const extraEffect = display?.ExtraEffect || effectDisplay?.ExtraEffect || [];
+
+this.effect = replaceUnderlinedEE(
+    textMap.getText(miracleDesc, descParamList) || '',
+    extraEffect
+);
 		this.lore = textMap.getText(display.MiracleBGDesc)
 		this.obtainable_in = index?.MiracleTypeList?.map(id => TYPE_MAP[id]) || []
 		this.order = index?.Order ?? 1000

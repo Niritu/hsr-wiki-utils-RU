@@ -1,0 +1,801 @@
+<%-- [PAGE_INFO]
+PageTitle=#Seabiscuit#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1032703
+|title         = 
+|image         = <!--Mission Seabiscuit.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In Our Time
+|requirements  = [[Trailblaze Mission]] ''[[Seabiscuit]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Big Ticker; Brother Hanu; Clockie; Firefly; Guide; Puzzle Gentleman; Trailblazer
+|startLocation = [[Penacony]] - [[SoulGlad™ Scorchsand Audition Venue]]
+|world         = Penacony
+|area          = SoulGlad™ Scorchsand Audition Venue
+|prev          = 
+|next          = Beauty and Destruction
+|rewards       = Trailblaze EXP*800; Stellar Jade*100; Lost Crystal*12; Clock Credits*400; "A Star Is Born"*1 { text = "A Star Is Born" }; "An Actor Prepares"*1 { text = "An Actor Prepares" }; Credit*160 000
+}}
+'''''Seabiscuit''''' is a [[Trailblaze Mission]] in the chapter [[In Our Time]].
+
+==Steps==
+# Learn about the challenge from the guide
+# Investigate the talking Clock Statue
+# Find the parts missing in Big Ticker's heart
+# Fix the Big Ticker's fragmented heart
+# Go to the third stage entrance
+# Select the stage you wish to challenge
+# Learn about the challenge from the guide
+# Enter the world of ''Hanu's Adventure''
+# Enter the passage
+# Seek the Puzzle Gentleman's assistance
+# Collect Jigsaw Fragments
+# Complete the Dream Jigsaw
+# Go to the second floor
+# Talk with Brother Hanu
+# Return to the world of ''Hanu's Adventure''
+# Retrieve Brother Hanu's beloved launcher
+# Defeat the Malevolent Mischief Makers
+# Leave the world of ''Hanu's Adventure''
+# Go to the third stage entrance
+# Select the stage you wish to challenge
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Learn about the challenge from the guide{{subst:void|<!--103270338-->}}===
+{{Dialogue Start}}
+;(If {{F|MissionCV-1032702-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270338,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|MissionCV-1032702-undefined}} is not undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270338,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"ValidValueParamList": [
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+{{Mission Description|type=trailblaze|location=SoulGlad™ Scorchsand Audition Venue|update|The second choice! You and Firefly arrive at the Dreamplay Fantasia &mdash; Gunfire Time: Time Trial stage. According to the guide's instructions, you need to play the role ever-popular protagonist from the Clockie series &mdash; Clockie. Smash through the final obstacles together...<br />...Help this inauthentic Clockie overcome an existential crisis. The game can also be rather profound, can't it?}}
+;(Unused &mdash; EnterArea_LocalGroup)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Big Ticker:''' Am I... just a failed experiment?
+:'''Firefly:''' That statue... Did it just speak?
+{{Dialogue End}}
+
+===Investigate the talking Clock Statue{{subst:void|<!--103270303-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; MainClockToy_Open)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+
+;(Unused &mdash; EnterArea_G153)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+::'''Big Ticker:''' Am I... just a failed experiment?
+::'''Big Ticker:''' ...I'm just an expendable failure of a clock, aren't I?
+::{{Диалог|Стрелка}} Hello, I'd like to play Dream Ticker.
+:::'''Big Ticker:''' "Play"... So, I'm not just a failed clock, I'm also a failed toy.
+::{{Диалог|Стрелка}} So, this stage is requiring us to cure this thing with a whole therapy session now?
+:::'''Big Ticker:''' Don't be naive, buddy. Failure isn't a sickness &mdash; it's a sin, and sins can't be cured.
+::{{Диалог|Стрелка}} We've got an urgent matter to attend to... Can you please let us pass already?
+:::'''Firefly:''' I know that this may sound like an exaggeration, but Penacony is actually in danger right now... We have to prevent it at all costs, sooner rather than later.
+:::'''Big Ticker:''' Oh, another group of opportunistic challengers. Sorry, though I may be a failure of a clock, I still have my principles.
+::'''Big Ticker:''' You guys are just like the other challengers. You want to enter my inner self? Then please, be my guest. But you won't find anything worthwhile... I'm just a failed piece.
+:<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "FullScreenLock"
+}</pre>
+
+
+;(Unused &mdash; EnterArea_G202)
+:'''Clockie:''' Tick-tock! Hey there my gray-haired friend, we still haven't helped Big Ticker find closure yet!
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G243"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+{{Dialogue End}}
+
+===Find the parts missing in Big Ticker's heart{{subst:void|<!--103270304-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; B2_ClockFE)
+:'''Big Ticker:''' See, I'm just empty inside.
+::'''Clockie:''' Tick-tock, it's time for me to make an appearance!
+::{{Диалог|Стрелка}} How come you're here too?
+::{{Диалог|Стрелка}} Where did you come from?
+::{{Диалог|Стрелка}} Ah, the plot thickens. Help!
+::'''Firefly:''' Clockie? I can also see him... Is this character part of the show?
+::'''Clockie:''' In Dreamville, Clockie is everywhere and can do anything! Like... right now, I could solve this problem with your Big Ticker pal, tick-tock!
+::'''Big Ticker:''' I can't believe it's actually Clockie! Why would you come and visit a failure of a clock like me for no reason?
+::'''Clockie:''' You see, we're all clocks, we're family! I want to help you be happy! Tell your pal Clockie what's troubling you!
+::'''Big Ticker:''' I... I came across a startling revelation yesterday. Apparently, Dreamscape Ticker isn't the same as Clockie at all. It's just a discarded prototype from Clockie's early development.
+::'''Big Ticker:''' Please... just leave me be, Clockie. I just don't know how to face you... because I'm just a failure.
+::'''Clockie:''' Oh dear, seeing it like this is utterly heart-wrenching. But fear not! We're here to help it rediscover the missing parts of its inner self and guide it out of despair!
+
+;(Obtain {{Предмет|Big Ticker's Broken Heart (I)|20|x=1}})
+
+
+;(Obtain {{Предмет|Big Ticker's Broken Heart (III)|20|x=1}})
+
+;(If {{F|Dino_Bird_Performance}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.SetEntityVisible",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "200001"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPCMonster",
+	"GroupID": 187,
+	"GroupMonsterIDs": [
+		200001
+	],
+	"UniqueNames": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "300003"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PropEnableCollider",
+	"TargetType": {
+		"$type": "RPG.GameCore.AdvGroupFetchTargetByString",
+		"Target": {
+			"Value": "300004"
+		}
+	}
+}</pre>
+:'''Clockie:''' This must be one of the missing parts that Big Ticker needs. That's great!
+:'''Firefly:''' An inner self fragment belonging to the Sweet Dreams Troupe... This is just too surreal.
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G155",
+	"AnchorName": "Anchor1",
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G155"
+		},
+		"AnchorName": {
+			"Value": "Anchor2"
+		}
+	}
+}</pre>
+::'''???:''' Tweet! Help, help help, tweet! This fella's body is boiling hot, tweet!
+::'''???:''' Is anyone there, tweet? I can't take it anymore, tweet!
+::'''Clockie:''' Oh dear, it's an origami bird! What's it doing in Beyond Overcooked's tail?
+::'''???:''' Is that Clockie, tweet? Please save me, tweet! I'm being roasted alive, tweet!
+::'''Clockie:''' A roasted bird! This is horrible &mdash; let's save it, quickly!
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G155",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+:;(Enter battle)
+::{{Список врагов|mode=sent|Dreamjolt Troupe's Fortune Seller*2; Dreamjolt Troupe's Beyond Overcooked*1}}
+:<!--1-second delay-->
+:'''Clockie:''' Over here, my friends! Better be fast like Hamster Ball Knight!
+{{Dialogue End}}
+
+===Fix the Big Ticker's fragmented heart{{subst:void|<!--103270305-->}}===
+{{Dialogue Start}}
+
+;(Lose {{Предмет|Big Ticker's Broken Heart (I)|20|x=1}})
+;(Lose {{Предмет|Big Ticker's Broken Heart (II)|20|x=1}})
+;(Lose {{Предмет|Big Ticker's Broken Heart (III)|20|x=1}})
+
+;(Unused &mdash; MainClockToy_Open)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+
+;(Unused &mdash; ItemSelect_1032703)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270334,
+	"MissionCustomValue": {
+		"Index": 4,
+		"Name": "OldValue_4",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::'''Big Ticker:''' Wow! This sudden surge of joy...
+::'''Clockie:''' It's working, tick-tock! Next, we just need to enter its Emoscape, help connect its pathways, and we're done!
+
+;(Unused &mdash; EnterArea_G{GroupID})
+<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+::'''Clockie:''' We're back! As long as you have these, you'll be able to find closure, tick-tock!
+:<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 103270334,
+	"OnlyPerformance": true,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ItemSelect_1032703"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "All_Talk_Cancel"
+			}
+		}
+	]
+}</pre>
+:;(If {{F|MissionCV-1032703-4}} is undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.SetFloorCustomFloat",
+	"Name": {
+		"Value": "FCV_ReshaClockToy_State"
+	},
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+::<pre>{
+	"$type": "RPG.Client.AdventureGameplayLock",
+	"IsLock": true,
+	"LockSource": "FullScreenLock"
+}</pre>
+:;(If {{F|MissionCV-1032703-4}} is not undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G56",
+	"AnchorName": "Anchor2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Custom",
+		"UseDefaultBlendCurve": true,
+		"CustomCurveName": "BlendCut09",
+		"BlendTime": 1.2
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270334,
+	"MissionCustomValue": {
+		"Index": 4,
+		"Name": "OldValue_4",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:'''Firefly:''' We've gathered all the missing parts... Let's hurry back, we don't want to keep Big Ticker waiting.
+:'''Firefly:''' It's all done... Victory is in sight. Let's head to the final stage.
+{{Dialogue End}}
+
+===Go to the third stage entrance{{subst:void|<!--103270312-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+===Select the stage you wish to challenge{{subst:void|<!--103270339-->}}===
+{{Dialogue Start}}
+;(If {{F|BlockShowIndex}} is undefined 5)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270339,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Dialogue End}}
+
+===Learn about the challenge from the guide{{subst:void|<!--103270308-->}}===
+{{Mission Description|type=trailblaze|location=SoulGlad™ Scorchsand Audition Venue|update|The second choice! You and Firefly arrive at the Dreamplay Fantasia &mdash; Gunfire Time: Gunfire Trial arena. According to the guide's instructions, you need to play the role of the evil-retributing, charisma-overflowing character from the Clockie series &mdash; Brother Hanu.<br />"What is this competition supposed to be about?" You wonder. "Are we trying to see who has the coolest 'hmph'?"}}
+{{Dialogue Start}}
+;(Unused &mdash; EnterArea_G{GroupID})
+:{{tx}}
+{{Dialogue End}}
+
+===Enter the world of ''Hanu's Adventure''{{subst:void|<!--103270309-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityArtLoad",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	}
+}</pre>
+;(If {{F|Jigsaw_TV_Finished}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.AdvEnableButtons",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"TriggerName": "InteractTrigger",
+	"ButtonsByName": [
+		"Interact"
+	]
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|EasterB1Phase}} is undefined 0)
+:Dear challenger, you're about to head to a hidden battlefield &mdash;
+:Brother Hanu never ceased his fight at the frontier of Dreamville, where neither Clockie nor the residents can see him.
+:Do you have what it takes to face endless powerful enemies with him and withstand the challenge of ''Hanu Wars''?
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEventV2",
+	"EventName": {
+		"Value": "Srv_TriggerReshaAnim"
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 39
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300011
+				}
+			}
+		}
+	}
+}</pre>
+;(Unused &mdash; TV_Open)
+:;(If {{F|group state}} is undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+:;(If {{F|group state}} is not undefined 2)
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
+}</pre>
+;(Unused &mdash; EnterArea_G{GroupID})
+:'''Firefly:''' Are we... both in control of this Hanu character?
+::'''Guide:''' Very good! Looks like you've got the hang of it!
+::'''Guide:''' In this ''Hanu's Adventure'' episode, Boss Stone has gathered his battleships for an assault on Dreamville! Old Buzzfly, Cousin Wolf and Bombhead are all raring to go... The brave Hanu must thwart their advance and protect his home!
+::'''Guide:''' Alas, Hanu presently is ill-equipped to fend off the Malevolent Mischief Makers, which is why he is preparing to seek out the Puzzle Gentleman's aid. Go forth and speak to him!
+{{Dialogue End}}
+
+===Enter the passage{{subst:void|<!--103270335-->}}===
+{{Dialogue Start}}
+
+
+{{Dialogue End}}
+
+===Seek the Puzzle Gentleman's assistance{{subst:void|<!--103270314-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; EnterArea_LocalGroup)
+:'''Puzzle Gentleman:''' Long time no see, Hanu. You look pretty stressed out. How about an intense and thrilling game of Dream Jigsaw to blow off some steam?
+::{{Диалог|Стрелка}} Actually, the plot dictates that you directly provide aid to us.
+:::"Actually, the plot dictates that you directly provide aid to us." - You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Is Dream Jigsaw really that intense and thrilling?
+:::"Is Dream Jigsaw really that intense and thrilling?" You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Gosh, this is the first time I've ever seen you crouch down.
+:::"Gosh, this is the first time I've ever seen you crouch down." You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Let out a really cool sounding *hmph*
+:::You let out a cool *hmph*. It might just be the coolest hmph in history.
+:::'''Puzzle Gentleman:''' Oh, my, are you telling me that Boss Stone has rallied the villains to seize Dreamville? What a dreadful twist of fate...
+:::'''Puzzle Gentleman:''' Listen closely, Hanu. I'm aware you're in need of a suitable weapon, and I also know there's one just upstairs...
+:::'''Puzzle Gentleman:''' But, you know what? You'll have to play an exhilarating round of Dream Jigsaw first. No jigsaw, no moving forward.
+:::{{Диалог|Стрелка}} That's not fair! You have to help me now.
+::::"It's not fair! You have to help me." &mdash; You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} What do the weapon and Dream Jigsaw have to do with one another?
+::::"What is the relationship between the weapon and the Dream Jigsaw?" You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} Dreamville's in danger! How do you not understand the predicament?
+::::"Dreamville is in danger! Don't you understand?" You really want to say this to the Dreamweaver Gentleman, but given your character's design, you can only respond with a cool *hmph*.
+:::;(Return to previous option selection)
+<pre>{
+	"$type": "RPG.GameCore.WaitEntityServerEvent"
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300002]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300003]}}-->}}, {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300004]}}-->}}, and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.GroupFetchLocalTarget","TargetType":"Prop","Targets":[300001]},"State":"Open"}-->}})
+<pre>{
+	"$type": "RPG.GameCore.ChangePropState"
+}</pre>
+{{Dialogue End}}
+
+===Collect Jigsaw Fragments{{subst:void|<!--103270310-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Complete the Dream Jigsaw{{subst:void|<!--103270315-->}}===
+{{Dialogue Start}}
+:'''Firefly:''' Finally, that's all the jigsaw pieces... Let's hurry back.
+{{Dialogue End}}
+
+===Go to the second floor{{subst:void|<!--103270317-->}}===
+{{Dialogue Start}}
+:'''Puzzle Gentleman:''' Oh my! The exquisite sensation of perfect alignment... My organizational itch has been quite thoroughly scratched!
+:'''Puzzle Gentleman:''' Hurry now, Hanu! Touch that TV set and transform back into your old self. Then, head upstairs &mdash; your weapon awaits you there!
+:'''Firefly:''' Are such haphazard instructions really okay...
+{{Dialogue End}}
+
+===Talk with Brother Hanu{{subst:void|<!--103270319-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+:'''Brother Hanu:''' Hmph.
+::'''Brother Hanu:''' Hmph... Hmph!
+::{{Диалог|Стрелка}} What are you talking about?
+:::'''Brother Hanu:''' Hmph? Hmph.
+:::Is staying in character this much REALLY necessary...?
+:::'''Brother Hanu:''' Hmph... Hmph.
+:::Aha, I know the answer for this one! "Hmph."
+:::'''Brother Hanu:''' Hmph! Hmph.
+:::Penacony's in danger. Can you get out of the way?
+::{{Диалог|Стрелка}} Is staying in character this much REALLY necessary...?
+:::'''Brother Hanu:''' Hmph... Hmph.
+:::Aha, I know the answer for this one! "Hmph."
+:::'''Brother Hanu:''' Hmph! Hmph.
+:::Penacony's in danger. Can you get out of the way?
+::{{Диалог|Стрелка}} Aha, I know the answer for this one! "Hmph."
+:::'''Brother Hanu:''' Hmph! Hmph.
+:::Penacony's in danger. Can you get out of the way?
+::{{Диалог|Стрелка}} Penacony's in danger. Can you get out of the way?
+::'''Firefly:''' I know that this may sound like an exaggeration, but Penacony is actually in danger right now... We have to prevent it at all costs, sooner rather than later.
+::'''Brother Hanu:''' Hmph? Hmph... Hmph.
+::'''Firefly:''' What exactly is he... talking about?
+::'''Clockie:''' Tick-tock, it's time for me to make an appearance!
+::{{Диалог|Стрелка}} How come you're here too?
+::{{Диалог|Стрелка}} Where did you come from?
+::{{Диалог|Стрелка}} Ah, the plot thickens. Help!
+::'''Firefly:''' Clockie? I can also see him... Is this character part of the show?
+::{{tx}}
+::<!--1-second delay-->
+::{{tx}}
+{{Dialogue End}}
+
+===Return to the world of ''Hanu's Adventure''{{subst:void|<!--103270320-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+:'''Firefly:''' I am gradually getting used to this... who knows, I might even be able to perform some high-level moves with Hanu.
+::'''Guide:''' Oh? Did someone say "high-level moves" just now? That's right, pal! The upcoming script is just exploding with all sorts of high-level shenanigans!
+::'''Guide:''' Last we saw, Hanu was preparing for battle. Suddenly, he hears heavy footsteps coming from the hallway. The Malevolent Mischief Makers have broken into his home!
+::'''Guide:''' But brave Hanu won't go down without a fight! He instantly sprints for the storage room, ready for a do-or-die showdown against the baddies...
+::'''Firefly:''' But... we still don't have any weapons in hand...
+::'''Guide:''' Guess what? Hanu's favorite bazooka just so happens to be in that storage room! So get a move on!
+::'''Firefly:''' What a coincidentally convenient plot twist... It'd be even more awesome if the organizers allowed me to wear armor.
+{{Dialogue End}}
+
+===Retrieve Brother Hanu's beloved launcher{{subst:void|<!--103270321-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Defeat the Malevolent Mischief Makers{{subst:void|<!--103270322-->}}===
+{{Dialogue Start}}
+:'''Firefly:''' Now... we should have a way of dealing with those baddies.
+{{Dialogue End}}
+
+===Leave the world of ''Hanu's Adventure''{{subst:void|<!--103270326-->}}===
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+:'''Firefly:''' That should be all of them, right?
+:'''Guide:''' Oh my! Hanu is on a streak! Everyone, the stage is complete, quickly head through the TV to the next stage!
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+;(Unused &mdash; Perf)
+
+{{Dialogue End}}
+
+===Go to the third stage entrance{{subst:void|<!--103270342-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; Perf)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P20331_F20331001_G363"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera2",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+:'''Firefly:''' Well, that's that. But it is gonna be hard to let go of this bazooka...
+:'''Firefly:''' ...Uhm, nevermind. Let's hurry over to the next stage.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20331_F20331001_G39",
+	"AnchorName": "MLCamera2",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	},
+	"DynamicParams": {}
+}</pre>
+{{Dialogue End}}
+
+===Select the stage you wish to challenge{{subst:void|<!--103270340-->}}===
+{{Dialogue Start}}
+
+;(If {{F|BlockShowIndex}} is undefined 5)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270339,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(Unused &mdash; 1032703_ChoseC2)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270340,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+
+;(Unused &mdash; 1032703_ChoseC1)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103270340,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Seabiscuit
+|zhs  = 奔腾年代
+|zht  = 奔騰年代
+|ja   = 奔走する時代
+|ko   = 씨비스킷
+|es   = La era del tumulto
+|fr   = L'ère du tumulte
+|ru   = Фаворит
+|th   = ยุคพุ่งทะยาน
+|vi   = Thời Đại Đầy Hứa Hẹn
+|de   = Mit dem Willen zum Erfolg
+|id   = Era Melaju Cepat
+|pt   = A Era do Tumulto
+}}
+
+==Change History==
+{{Change History|3.5}}

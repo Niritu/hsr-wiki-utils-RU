@@ -15,11 +15,12 @@ const ExtraEffectData = await getFile<Dictionary<InternalExtraEffect>>('ExcelOut
 
 export const PERIOD_MAP = {
 	Tourn1: 'Комедия жизни',
-	Tourn2: textMap.getText(16383159019624647075n),
+	Tourn2: 'Тысячеликий герой',
+	Tourn3: textMap.getText(16383159019624647075n),
 } as const
 
 export class Equation {
-	period: 'Tourn1' | 'Tourn2'
+	period: 'Tourn1' | 'Tourn2' | 'Tourn3'
 	period_name: string
 	active: boolean
 	path1: string
@@ -75,7 +76,7 @@ export class Equation {
 		
 		this.sortkey = (data.MainBuffTypeID * 100) + (data.SubBuffTypeID ?? 0)
 		
-		this.active = this.period == 'Tourn2'
+		this.active = this.period == 'Tourn3'
 	}
 	
 	static getExtraEffect(id: number) {

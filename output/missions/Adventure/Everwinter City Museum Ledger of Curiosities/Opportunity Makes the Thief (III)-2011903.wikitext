@@ -1,0 +1,292 @@
+<%-- [PAGE_INFO]
+PageTitle=#Opportunity Makes the Thief (III)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011903
+|title         = 
+|image         = <!--Mission Opportunity Makes the Thief (III).png-->
+|type          = Adventure
+|event_name    = Everwinter City Museum Ledger of Curiosities
+|chapter       = Everwinter City Museum Ledger of Curiosities
+|requirements  = 
+* [[Adventure Mission]] ''[[Opportunity Makes the Thief (II)]]'' completed
+* Reach phase 3 in [[Everwinter City Museum Ledger of Curiosities]]
+|summary       = Bronya's network helped you locate the organizer behind the exhibit theft.<br />This audacious young man disguised his men as Silvermane Guards to conceal his crime. Now it is time to bring him to justice.
+|characters    = Bronya; Pela; Soldier Kyle; Trailblazer; Wallace
+|startLocation = [[Jarilo-VI]] - [[History and Culture Museum]]
+|world         = Jarilo-VI
+|area          = History and Culture Museum
+|prev          = Opportunity Makes the Thief (II)
+|next          = 
+|rewards       = Trailblaze EXP*250; Stellar Jade*40; Traveler's Guide*3; Refined Aether*3; Credit*30 000
+}}
+'''''Opportunity Makes the Thief (III)''''' is an Event [[Adventure Mission]] from the [[Everwinter City Museum Ledger of Curiosities]] event.
+
+==Steps==
+# Speak with Pela in the museum
+# Head to the History and Culture Exhibit
+# Head to Qlipoth Fort and speak with Bronya
+# Head to the Administrative District Plaza to start the investigation
+# Speak with the people in the plaza and gather clues
+# Head to Qlipoth Fort and report to Bronya
+# Interact with Pela and prepare to go to Backwater Pass
+# Place the microfilm into the projector in the museum
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Speak with Pela in the museum{{subst:void|<!--201190301-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|You finished one phase of the museum's operation.<br />You seem to see Pela again in the exhibit hall. Go and say hello to her, and see if there has been any progress regarding the artifact thefts.}}
+{{Dialogue Start}}
+
+;(Talk to Pela)
+:'''Pela:''' (Trailblazer), good to see you again! I've heard from Miss Eris that under your superb management, the museum is on the verge of regaining the thriving crowds of its heyday.
+:'''Pela:''' If the momentum continues, and if the History-Culture Hall can reopen on schedule... the museum's complete revival is surely just around the corner!
+:{{Диалог|Стрелка}} What went missing this time?
+::'''Pela:''' ...So you guessed it already.
+:{{Диалог|Стрелка}} Good thing you have me around.
+::'''Pela:''' ...Ahem. Yes, indeed.
+:'''Pela:''' ...I'm afraid there's been another theft. Like the previous cases, a valuable item was stolen from our exhibit &mdash; this time in the History-Culture Hall. The item in question has a connection to you.
+:{{Диалог|Стрелка}} Was it a photo of me? I can always take a new one for you.
+::'''Pela:''' No. As you just pointed out, that kind of thing is easily replaced.
+:{{Диалог|Стрелка}} Was it my weapon? Here &mdash; I'll give it to you right now.
+::'''Pela:''' Uh, that won't be necessary &mdash; we've already made a high-quality replica.
+:{{Диалог|Стрелка}} So what is it?
+::'''Pela:''' Hehe, have I piqued your curiosity?
+:'''Pela:''' It'll be easier to explain once we're actually in the History-Culture Hall. Why don't I take you there now?
+:'''Pela:''' With an exhibit like this, all Belobogians will know your story, (Trailblazer).
+----
+{{Dialogue End}}
+
+===Head to the History and Culture Exhibit{{subst:void|<!--201190302-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|update|Pela was satisfied with the results you achieved while operating the museum.<br />She wants to open up the History Exhibit next, but a key exhibit in this area was stolen. Go and see what the situation is.}}
+{{Dialogue Start}}
+:'''Pela:''' You can probably guess from the name that the History-Culture Hall houses artifacts, replicas, and documents that are of great historical significance to Belobog.
+:'''Pela:''' Every passing day, we Belobogians must continue to endure the city's harsh environment. The trials and experiences of our ancestors serve as a reminder that the path of survival belongs to every generation of our people.
+:'''Pela:''' Every child in Belobog should visit this exhibit at least once... No, once isn't nearly enough.
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 26,
+	"GroupNpcID": 400003,
+	"DestroyList": []
+}</pre>
+----
+:'''Pela:''' This is the item in question.
+:'''Pela:''' This projector is a limited-edition version custom-made for the museum &mdash; the only one of its kind in the whole of Belobog. It can produce images with a resolution of up to...
+:'''Pela:''' ...Oh, sorry, I'm doing my tour guide thing again. I'm sure someone as well-traveled as yourself has seen much fancier equipment than this.
+:{{Диалог|Стрелка}} So broken, not stolen? Let's ask Serval.
+::'''Pela:''' Oh, uh, that's not the issue...
+:{{Диалог|Стрелка}} Wowee! This is so high tech!
+::'''Pela:''' ...Nice try keeping a straight face.
+:'''Pela:''' The issue isn't the projector, but the {{Цвет|Ключевой|nobold=1|microfilm}} that goes into it. It's the most crucial piece of this exhibit, and it was stolen.
+:'''Pela:''' There were some very valuable images on that film, and we hadn't gotten around to making a backup... I must admit, the thieves chose a good target, and they were fast and efficient.
+:'''Pela:''' Slide projection is a new addition to the museum &mdash; it was intended to be a surprise for visitors when the History-Culture Hall reopened. If we don't recover the microfilm, the Hall's opening will have to be postponed indefinitely.
+:'''Pela:''' Some of the images stored on that film are related to you, Miss March 7th, and Master Dan Heng. The curators of the museum wanted to take this opportunity to tell the story of the Astral Express' visit to Belobog.
+:{{Диалог|Стрелка}} You did a secret photoshoot of us?
+::'''Pela:''' Uhh... th&mdash;that's beside the point.
+:{{Диалог|Стрелка}} No worries. We can just do a reshoot.
+::'''Pela:''' The parts related to you are only a small portion of the collection...
+:'''Pela:''' ...(Trailblazer), is... that your phone?
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1114400
+}</pre>
+:'''Pela:''' Was that a message from Lady Bronya? Hm, this theft case has been dragging on for too long &mdash; she must have decided to intervene...
+:'''Pela:''' If she can delegate more resources to the investigation, that should help it move forward faster.
+:'''Pela:''' No point in waiting around here, then. Let's go pay Lady Bronya a visit, (Trailblazer).
+----
+{{Dialogue End}}
+
+===Head to Qlipoth Fort and speak with Bronya{{subst:void|<!--201190303-->}}===
+{{Mission Description|type=adventure|location=Qlipoth Fort|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />The thefts have already reached Bronya's ears. Go to Qlipoth Fort and speak with her regarding how to continue the investigation.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Bronya:''' (Trailblazer), Pela, welcome.
+:'''Bronya:''' If I'm not mistaken, the two of you just rushed over here from the History and Culture Museum? I appreciate your coming here on such short notice.
+:'''Bronya:''' I should have gotten involved earlier, but I was tied up with other responsibilities. My apologies for letting you take on the investigation without proper support.
+:'''Pela:''' Lady Bronya, we never saw it like that...
+:'''Bronya:''' ...Hehe, there's no one else here, Pela &mdash; no need for such formality.
+:'''Pela:''' ...Okay, Miss Bronya.
+:'''Bronya:''' (Trailblazer), I heard that you helped recover a number of valuable items for the museum, and that you've been running the museum as a part-time manager &mdash; do you have any insights into this serial theft case?
+:{{Диалог|Стрелка}} I'm just taking it one step at a time. There doesn't seem to be much headway.
+::'''Bronya:''' Is that so? I see.
+:{{Диалог|Стрелка}} It feels like we've gotten very lucky.
+::'''Bronya:''' Or maybe it's just the fruit of your efforts?
+:{{Диалог|Стрелка}} Whoever's behind this is one Smooth Criminal for sure.
+::'''Bronya:''' Well, on that point, we can agree.
+:'''Bronya:''' In any case, this fiasco has been going on right under our noses for too long. Regardless of how cunning and talented the culprit may be, we must draw them out and demonstrate the resolve of the Architects.
+:'''Bronya:''' Pela, (Trailblazer) &mdash; I will issue an immediate directive to mobilize all on-duty Silvermane Guards in the city to conduct a door-to-door investigation.
+:'''Bronya:''' You're familiar with many of the locals in the Administrative District, right? If possible, I'd like you to head to the city center and see if they have any clues to offer us.
+:'''Pela:''' Understood! We'll head there at once, Miss Bronya.
+:'''Pela:''' (Trailblazer), guess you're stuck with me again for this assignment. Let's meet up at Fountain Plaza.
+----
+{{Dialogue End}}
+
+===Head to the Administrative District Plaza to start the investigation{{subst:void|<!--201190304-->}}===
+{{Mission Description|type=adventure|location=Administrative District|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />Bronya had stated that she will wholeheartedly support further investigation of these cases.<br />Head to the Administrative District Plaza to assess the passers-by, and see whether some of them have relevant clues.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 191
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' This place is an endless stream of people... Where do we start?
+:{{Диалог|Стрелка}} Let's start with people we already know.
+::'''Pela:''' Agreed &mdash; that'll be more efficient.
+::'''Pela:''' I remember lots of folks like to relax around the plaza. Let's head there first.
+:{{Диалог|Стрелка}} Let's interrogate them all one by one!
+::'''Pela:''' ...That won't do. Even a survey requires rigorous methodology, let alone an investigation.
+::'''Pela:''' We can start with people we already know. I remember lots of folks like to relax around the plaza. Let's head there first.
+----
+{{Dialogue End}}
+
+===Speak with the people in the plaza and gather clues{{subst:void|<!--201190305-->}}===
+{{Mission Description|type=adventure|location=Administrative District|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />Bronya had stated that she will wholeheartedly support further investigations of these cases.<br />Head to the Administrative District Plaza to assess the passers-by, and see whether some of them have relevant clues.}}
+{{Dialogue Start}}
+----
+:'''Pela:''' *sigh* Another half day gone, and nothing to show for it...
+:'''Pela:''' Ugh, the culprit is still hiding in the shadows. Can't we find even one lead?
+:'''???:''' Ah! If it isn't Belobog's most adorable public servant &mdash; and the magnificent outsider! Good day to you!
+:'''Pela:''' ...You know us?
+----
+:'''Wallace:''' Young lady, I have seen you on many occasions near the Everwinter Monument, teaching children the history of Belobog. I am truly in awe of your knowledge and patience!
+:'''Pela:''' Hehe, okay... thanks for the compliment, I guess. May I ask, with whom do we have the pleasure of speaking?
+:'''Wallace:''' I am Wallace Cambridge Limestein, the 25th head of the Limestein family. I am honored to make your acquaintance!
+:'''Wallace:''' And yes, I am familiar with this outsider next to you &mdash; {{MC|ж=she|м=he}} often walks right past me without so much as a greeting.
+:{{Диалог|Стрелка}} Are you holding a grudge!?
+::'''Wallace:''' How could you say such a thing!? I just want everyone to have a proper understanding of basic manners.
+:{{Диалог|Стрелка}} I Don't Even Know Who You Are!
+::'''Wallace:''' I am Wallace Cambridge Limestein, the 25th head of the Lime&mdash;
+:'''Pela:''' Alright, alright, we got it. Mr. Limestein, is there something you want to discuss with us?
+:'''Wallace:''' Oh, as a matter of fact, I do. I noticed you two had been wandering around Administrative District Plaza for some time now, stopping to ask questions at every turn, so I surmised you were investigating something important.
+:'''Wallace:''' As it so happens, I witnessed a strange incident recently that left me quite puzzled... After reflecting on it for a time, I decided it would be most appropriate to inform public officials.
+:'''Pela:''' This incident... is it related to the museum thefts?
+:'''Wallace:''' I can't say for sure that it's directly related, but a friend of mine I no longer hear from used to frequent the museum, and often talked about its exhibits with a group of us tea lovers.
+:'''Pela:''' So by "no longer hear from," you mean you've been unable to get in touch with this friend of yours?
+:'''Wallace:''' Precisely! His name is Norbert &mdash; we used to chat during lunch breaks in the lobby of the Goethe Hotel &mdash; along with a few other high-class individuals, of course.
+:'''Wallace:''' And one day, Norbert suddenly stopped showing up to our tea parties. It was as though he disappeared into thin air. I still remember the last thing he said to me...
+:'''Wallace:''' "Limestein, listen to me &mdash; one must be ambitious in life. I'm gonna do something big for once!"
+:'''Pela:''' "Be ambitious in life, do something big for once..." Coming from the mouth of a wealthy gentleman, that sounded rather curious to me.
+:'''Pela:''' This Norbert guy, do you know what his line of work was?
+:'''Wallace:''' I'm not entirely sure &mdash; I never asked.
+:{{Диалог|Стрелка}} Weren't the two of you friends?
+::'''Wallace:''' You wouldn't understand &mdash; friendship between gentlemen is as pure as water. We are all dignified people, why bother with such trivial matters?
+:{{Диалог|Стрелка}} So more like a drinking buddy than a friend...
+::'''Wallace:''' What a preposterous statement! You wouldn't understand &mdash; friendship between gentlemen is as pure as water. We are all dignified people, why bother with such trivial matters?
+:'''Pela:''' Ugh... In the eyes of most people, there's a world of difference between "trivial matters" and a career.
+:'''Pela:''' ...I have recorded all the clues you provided, Mr. Limestein. Thank you for putting your trust in the Silvermane Guards. We will keep you informed if there are any developments in the investigation.
+:'''Wallace:''' No, no, I should be thanking you, young lady of the Guards. Well then, if that's all, I shall take my leave.
+----
+:'''Pela:''' I wonder if this "friend" of Mr. Wallace has anything to do with the museum thefts...
+:'''Pela:''' That's enough detective work for today &mdash; questioning more people will just be a waste of energy. (Trailblazer), let's go report back to Lady Bronya.
+----
+{{Dialogue End}}
+
+===Head to Qlipoth Fort and report to Bronya{{subst:void|<!--201190310-->}}===
+{{Mission Description|type=adventure|location=Qlipoth Fort|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />You heard from the rich boy Wallace that his "friend" Norbert has been acting strange lately. Perhaps this is related to the exhibit thefts?<br />No matter what, you should bring this news to Bronya.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Pela:''' Miss Bronya, we're back.
+:'''Bronya:''' Thank you both for your hard work. Did you find out anything in the Administrative District?
+:'''Pela:''' We didn't find anything directly related to the museum thefts, but there was one thing worth noting...
+:{{Black Screen|Tell Bronya about Wallace's disappearing "friend."}}
+:'''Bronya:''' I see. It was the man from the Limestein family who provided the information.
+:'''Bronya:''' Norbert... Norbert... I feel like I've heard that name somewhere before. Please, give me a moment to see if I can recall...
+:'''Bronya:''' ...Ah, I remember now. The Minister of Transportation, Noel, has a nephew named Norbert &mdash; I believe he's currently working in the Municipal Department as a transportation coordinator.
+:{{Диалог|Стрелка}} You can remember all of that!?
+::'''Bronya:''' The leader of a city should be familiar with the status and division of labor of her subordinates &mdash; that's just part of the job. Norbert's position is indeed an idle one, so it's no wonder he has time to socialize with members of the Limestein family.
+:{{Диалог|Стрелка}} Guess he comes from old money too?
+::'''Bronya:''' Norbert's position is indeed an idle one &mdash; it's no wonder he has time to socialize with members of the Limestein family.
+:'''Bronya:''' If what Wallace said is right, then Norbert must have been missing for several days already. There must be someone who knows where he is.
+:'''Bronya:''' Even if they want to keep the young man's secret... they'll cough it up with the right kind of encouragement.
+:'''Bronya:''' Kyle, can I ask you a favor? I would like you to visit the residence of Minister Noel and ask around regarding the whereabouts of Mr. Norbert.
+:'''Soldier Kyle:''' Understood, Madam Guardian!
+:{{Black Screen|After some time, Kyle heads back to Qlipoth Fort...}}
+:'''Soldier Kyle:''' Lady Bronya, Miss Pela, I have returned.
+:'''Bronya:''' You were quite expedient, Kyle. Did you find anything out from the Department of Transportation?
+:'''Soldier Kyle:''' It took a little prodding, but a few of the more timid attendants started speaking up...
+:'''Soldier Kyle:''' They say that Mr. Norbert was indeed leaving at odd hours recently. Whenever someone would ask where he was headed, he'd mumble something about going to the shopping street to "inspect the site."
+:'''Soldier Kyle:''' The attendants think he might have a love interest &mdash; someone he doesn't want his family to know about &mdash; they haven't mentioned anything to the Minister of Transportation.
+:'''Bronya:''' Going out at unusual hours, the shopping street, could it be...
+----
+:'''Bronya:''' ...Pela, (Trailblazer) &mdash; I have a request. I'd like the two of you to scout out {{Цвет|Ключевой|nobold=1|Backwater Pass}} and see whether anything's happening there.
+:{{Диалог|Стрелка}} Why there?
+:{{Диалог|Стрелка}} Does Norbert have anything to do with our investigation?
+:'''Bronya:''' While the two of you were busy questioning people in the city, I received some tip-offs. One source said that suspicious people were recently seen sneaking around the Fragmentum corrosion zone, and that the Silvermane Guards didn't prevent them from entering.
+:'''Bronya:''' Together with Norbert's mumblings about a "shopping street..." I think all these clues are pointing in one direction.
+:'''Pela:''' ...So this Mr. Norbert could well be the museum thief we're looking for?
+:'''Pela:''' ...We can't hold off a moment longer! Hurry, (Trailblazer), let's go arrest that scoundrel.
+:'''Bronya:''' My apologies, I have a lot of business to attend to at present &mdash; I won't be joining you. Good luck recovering the stolen items.
+----
+
+;(Talk to Pela)
+----
+:'''Pela:''' (Trailblazer), we can't delay a moment longer. We need to move now.
+:{{Диалог|Стрелка}} Let's head out.
+:{{Диалог|Выход}} I need a little while.
+::'''Pela:''' ...Okay, whenever you're ready, but don't take too long!
+;(Unused &mdash; Raid201190311_ClosePage)
+
+{{Dialogue End}}
+
+===Interact with Pela and prepare to go to Backwater Pass{{subst:void|<!--201190311-->}}===
+{{Mission Description|type=adventure|location=Qlipoth Fort|update|The microfilm used to display projections was stolen. Without this film, the History Exhibit cannot open to the public.<br />Combining clues from Wallace, Bronya, and others, you have enough information to conclude that a wealthy youth named Norbert is involved in the exhibit thefts.<br />According to the clues, Norbert has been frequenting the Overworld shopping street that is severely corroded by the Fragmentum.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Place the microfilm into the projector in the museum{{subst:void|<!--201190312-->}}===
+{{Mission Description|type=adventure|location=History and Culture Museum|update|After a battle of wits and fists, you finally solve the museum's exhibit theft case.<br />The microfilm is back in your hands. As long as you put it into the museum's projector, the History Exhibit can open to the public again.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Opportunity Makes the Thief (III)
+|zhs  = 漫藏诲盗•其三
+|zht  = 漫藏誨盜•其三
+|ja   = 慢蔵誨盗・その3
+|ko   = 견물생심•3
+|es   = La oportunidad hace al ladrón III
+|fr   = L'occasion fait le larron (III)
+|ru   = Плохо не клади, вора в грех не вводи III
+|th   = ของมีค่าล่อตาโจร 3
+|vi   = Cơ Hội Tạo Nên Kẻ Trộm 3
+|de   = Gelegenheit macht Diebe (Teil 3)
+|id   = Kesempatan dalam Kesempitan (Bagian 3)
+|pt   = A Ocasião Faz o Ladrão (III)
+}}
+
+==Change History==
+{{Change History|3.5}}

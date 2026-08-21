@@ -1,0 +1,2384 @@
+<%-- [PAGE_INFO]
+PageTitle=#Sojourners' Ghastly Reverie#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2021702
+|title         = 
+|image         = <!--Mission Sojourners' Ghastly Reverie.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = A Foxian Tale of the Haunted
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Cirrus; Faraway Voice; Huohuo; Mysterious Voice; Tail; Trailblazer; Unknown Heliobus; Voice From Behind the Door; Voice From the Mirror; Xueyi
+|startLocation = [[The Xianzhou Luofu]] - [[Illusory Maze: Furynox]]
+|world         = The Xianzhou Luofu
+|area          = Illusory Maze: Furynox
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*1 500; Stellar Jade*150; Traveler's Guide*15; Refined Aether*12; Lost Crystal*12; "Dancing Fantasms"*1 { text = "Dancing Fantasms" }; Credit*150 000
+}}
+'''''Sojourners' Ghastly Reverie''''' is a [[Trailblaze Continuance]] in the chapter [[A Foxian Tale of the Haunted]].
+
+==Steps==
+# Find the exit of the Illusory Maze
+# Search out clues from supernatural stories
+# Find the exit of the Illusory Maze
+# Meet up with Huohuo
+# (Optional) Chat with Cirrus
+# (Optional) Chat with Tail
+# Chat with Huohuo, and comfort her
+# Find the exit of the Illusory Maze
+# (Optional) Search out clues from another volume of supernatural stories
+# Investigate the strange bronze mirror
+# Listen to the voice in the mirror, and determine whether it's real or fake
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Find the exit of the Illusory Maze{{subst:void|<!--202170201-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|You often see similar news stories about a person getting lost while trying to find another missing person. Unfortunately, today's the day you are destined to be the protagonist of such a story. Gradually, you manage to lose track of even Huohuo. After sizing up a strange bronze mirror for a moment, you are somehow pulled into a realm of illusion. There's walls and doors everywhere, sending you round in circles and disorienting you.<br />According to some of the Xianzhou folk tales you've heard, the outside world will have passed hundreds of years by the time you leave here &mdash; you don't want to spend the rest of your life lost in a maze, so find the exit pronto!}}
+{{Dialogue Start}}
+:{{tx}}
+;(If {{F|group state}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+;(If {{F|Room1}} is undefined 5)
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+;(If {{F|Room1}} is undefined 5)
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is undefined 2)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is undefined 3)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room1}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 14
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room1",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 4,
+	"NeedBlock": false
+}</pre>
+;(If {{F|group state}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300024
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300022
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300023
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300024
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 3
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300025
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room3}} is undefined 3)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260018,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260019,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260074,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260020,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|Room3}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room3",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room3}} is undefined 1)
+:'''Faraway Voice:''' Hehe, you've noticed it, no? All roads are but puzzles in this place...
+:'''Faraway Voice:''' Come, lost one! Do you desire to leave? Then come and find me!
+
+;(По прибытии на место)
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+:'''Cirrus:''' Hey, use your eyes... I made the talismans float. Pay attention!
+:'''Cirrus:''' There are so many paper dolls over there. Surely your judge friend left some clues for you. Won't you take a look?
+
+;(По прибытии на место)
+:'''Cirrus:''' Hey, hey! I'm trying to help you. Go and look at the clues.
+:'''Cirrus:''' ...Do I have to make you drag yourself over there?
+----
+;(Unused &mdash; 202170206_PickUpReading)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300011
+	]
+}</pre>
+
+<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190515
+		}
+	},
+	"ShouldPauseGame": true
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202170206,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+;(If {{F|group state}} is undefined 2)
+----
+:'''Huohuo:''' Look! Th&mdash;There's a mirror behind the door...
+:'''(Trailblazer):''' (Didn't I see a similar mirror when I was dragged in?)
+:'''Voice From the Mirror:''' That... sound... Huohuo... this way.
+:'''Huohuo:''' What's going on...? Th&mdash;There's a voice in the mirror?
+----
+:'''Huohuo:''' That voice sounds familiar...
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300023
+	]
+}</pre>
+;(Unused &mdash; HHTX_GDQ_FinalCheck)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300007}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300008}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300006}},"IsDestructed":true}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}],"PuzzleDestructedStates":[]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:::The gloomy doors are silent. You follow the instruction in the book and knock on the doors, three times on the left, three times on the right.
+:::'''Voice From Behind the Door:''' The courtesies have been performed. Enter, oh honored guest.
+:::The door cracks open a sliver. Through the crack, you notice that there is no one behind the door, as if the voice from before have never existed.
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	},
+	"ToState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300026
+				}
+			}
+		}
+	},
+	"FromState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300025
+				}
+			}
+		}
+	},
+	"FromState": "Open",
+	"CanChangeServerProp": true
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2
+}</pre>
+:::----
+:::'''Huohuo:''' Look! Th&mdash;There's a mirror behind the door...
+:::'''(Trailblazer):''' (Didn't I see a similar mirror when I was dragged in?)
+:::'''Voice From the Mirror:''' That... sound... Huohuo... this way.
+:::'''Huohuo:''' What's going on...? Th&mdash;There's a voice in the mirror?
+:::----
+:::'''Huohuo:''' That voice sounds familiar...
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300023
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300007}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300008}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300006}},"IsDestructed":true}]}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300010}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300011}},"TargetState":"ChestUsed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300012}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300013}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300014}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300015}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300016}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300017}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300018}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300019}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300020}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300021}},"TargetState":"ChestClosed"},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":7}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300022}},"TargetState":"ChestClosed"}],"PuzzleDestructedStates":[]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:::The gloomy doors are silent. You follow the instruction in the book and knock on the doors, three times on the left, three times on the right.
+:::'''Voice From Behind the Door:''' The door will not open without the proper courtesies. Return from where you came, visitors...
+:::Everything returns to normal.
+
+;(Unused &mdash; 202170214_Mirror)
+:----
+::'''Voice From the Mirror:''' Huohuo, are you in the mirror? I finally found you!
+::'''Huohuo:''' Madam Xueyi!?
+::'''Xueyi:''' Fyxestroll Garden has been enveloped by an unknown power... You must be careful!
+::'''Huohuo:''' We still haven't found Miss Guinaifen... I don't know where she went...
+::'''Xueyi:''' The task at hand is to save you from this illusion. Come. Pass through the mirror and come to our side.
+;(If {{F|group state}} is undefined 3)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300012
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300008
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Group10}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300012
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group10",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+;(Unused &mdash; GDQ_Room4_Check)
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300001}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300002}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:::The gloomy doors are silent. You follow the instruction in the book and knock on the doors, three times on the left, three times on the right.
+:::'''Voice From Behind the Door:''' The courtesies have been performed. Enter, oh honored guest.
+:::The door cracks open a sliver. Through the crack, you notice that there is no one behind the door, as if the voice from before have never existed.
+:::'''Cirrus:''' It seems like we're ready. Now, we just have to get out.
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByIsAllPuzzleStateMatchedClientOnly","PuzzleStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300001}}},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300002}}}],"PuzzleDestructedStates":[{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300004}},"IsDestructed":true},{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":10}},"GroupPropID":{"IsDynamic":false,"FixedValue":{"Value":300005}},"IsDestructed":true}]}-->}})
+::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_xianzhou_doorknock"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+:::The gloomy doors are silent. You follow the instruction in the book and knock on the doors, three times on the left, three times on the right.
+:::'''Voice From Behind the Door:''' The door will not open without the proper courtesies. Return from where you came, visitors...
+:::Everything returns to normal.
+::<pre>{
+	"$type": "RPG.GameCore.ResetAllPuzzleStatesClientOnly",
+	"PuzzleStates": [
+		{
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		},
+		{
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300002
+				}
+			}
+		}
+	],
+	"PuzzleDestructedStates": [
+		{
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		},
+		{
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 10
+				}
+			},
+			"GroupPropID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	]
+}</pre>
+;(If {{F|group state}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Group11}} is undefined 0 and {{F|group state}} is undefined undefined)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 11
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300001
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Group11",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+;(If {{F|group state}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 2
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 2,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300006
+				}
+			}
+		}
+	},
+	"ToState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 3
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 3,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room2}} is undefined 3)
+<pre>{
+	"$type": "RPG.GameCore.RandomConfig",
+	"OddsList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 1
+			}
+		}
+	],
+	"TaskList": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260018,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260019,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260074,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 202260020,
+					"ProtectTime": 2
+				},
+				{
+					"TalkSentenceID": 202260075,
+					"ProtectTime": 2
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|Room2}} is undefined 0)
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1,
+	"NeedBlock": false
+}</pre>
+
+;(По прибытии на место)
+;(If {{F|Room2}} is undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300004
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300005
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvClientChangePropState",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 13
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300007
+				}
+			}
+		}
+	},
+	"FromState": "Open"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetGraphDynamicFloat",
+	"Name": "Room2",
+	"TargetIDs": [],
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 4
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 4,
+	"NeedBlock": false
+}</pre>
+{{Dialogue End}}
+
+===Search out clues from supernatural stories{{subst:void|<!--202170206-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|update|Through Cirrus' guidance, you discover a ripped page from a bizarre story recounting events surrounding the heliobi and the Luofu's general from centuries ago. Its writing style seems to hint at a way to see through the illusory maze.}}
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Find the exit of the Illusory Maze{{subst:void|<!--202170207-->}}===
+{{Dialogue Start}}
+
+;(Talk to Huohuo)
+----
+:'''Huohuo:''' (Trailblazer), it's you! I&mdash;I finally found another living soul!
+:'''Huohuo:''' I'm so happy! I thought I was gonna be stuck here forever... I'm so happy to see you!
+:'''Huohuo:''' ...Um, have you seen Miss Guinaifen? I still haven't found her. Is she gonna be okay...?
+:{{Диалог|Стрелка}} Let's go find her.
+:{{Диалог|Стрелка}} She's probably trapped somewhere around here.
+:{{Диалог|Стрелка}} Forget about her &mdash; I got possessed by a heliobus!
+:'''(Trailblazer):''' Give it up. Guinaifen was probably eaten by the heliobi already.
+:'''Huohuo:''' H&mdash;H&mdash;How can that be!? If that could happen to someone as lively as Miss Guinaifen... that means I'm in even more danger...
+:{{Диалог|Стрелка}} (Did I really just say that...?)
+::'''Cirrus:''' (Hehe... Did you know that the larynx is the easiest muscle to control in the human body?)
+:{{Диалог|Стрелка}} (Did Guinaifen really get eaten by heliobi?)
+::'''Cirrus:''' (Why don't you take a guess?)
+:'''Huohuo:''' (Trailblazer), you can find the way out, right? Please take me with you...
+:'''Tail:''' Ugh, not this again! You're a Judge of the Ten-Lords Commission &mdash; why are you always begging others for help?
+:'''Huohuo:''' You know I'm not cut out to be a judge. I thought maybe if I worked long enough in the Ten-Lords Commission, I'd get braver. But now... I know it's impossible.
+:'''Tail:''' Tsk, useless brat. Why was I sealed in with someone like you?
+:'''Huohuo:''' You talk tough all day long, then let both of us get stuck in a trap... Who's the useless brat now!?
+:{{Диалог|Стрелка}} Calm down! I'll get you out of here!
+:{{Диалог|Стрелка}} I can't find the way out either. It's all up to you.
+:{{Диалог|Стрелка}} HELP! I got possessed by a heliobus!
+:'''(Trailblazer):''' There's no point in following me. I'm leaving, and you're not coming with me. Goodbye!
+:'''Huohuo:''' Ah! No! P&mdash;Please don't leave. Wait, please...
+:{{Диалог|Стрелка}} I didn't say that!
+::'''Cirrus:''' (Oh, but you did... and can you swear that you don't want to leave her behind? Not even a little?)
+:{{Диалог|Стрелка}} Cirrus, you beast...
+::'''Cirrus:''' (Beast? From a taxonomic perspective, I believe you're closer to that definition...)
+:{{Диалог|Стрелка}} ...
+::'''Cirrus:''' (Oh, you're not gonna fight back anymore? Then let me make up some lines. Just be good and say it with me.)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005,
+		300006
+	]
+}</pre>
+:'''(Trailblazer):''' The Ten-Lords Commission needs to overhaul their hiring criteria. How did someone as useless as you ever become a judge?
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey, cut it out. I'm the only one around here who gets to tell this kid off... Me and those other judges. Got that!?
+:'''Tail:''' ...Wait. Hold on. I smell something familiar...
+:'''Tail:''' Cirrus... it's you. Still a fan of your pathetic ventriloquist act, I see.
+:'''(Trailblazer):''' Haha... Hahahaha! Oh, this is funny! This is just too funny! I thought you'd already escaped the Furnace's destiny of torture!?
+:'''(Trailblazer):''' Who would have thought that a piece of Ignamar the Great &mdash; the fragment with the most fight in it &mdash; would become a guard dog sealed inside a crybaby...
+:'''(Trailblazer):''' Oh! Forgive me! Did I say guard dog? No, no, no, that won't do... You're just a guard dog's "tail," right? Just a tail, a tail, a tail!
+:'''Tail:''' Laugh while you can, coward! I'm gonna swallow you whole the second you leave that {{MC|м=boy's|ж=girl's}} body!
+:'''(Trailblazer):''' H&mdash;How t&mdash;t&mdash;terrifying, ahahaha...! The joke's on you!
+:'''(Trailblazer):''' You couldn't leave that judge's body if you tried! You can't eat her, let alone escape from her. Ahahaha, "Mr. Tail." You're pathetic~
+:'''Tail:''' ...Darn it! Think of something, you wimp!
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Huohuo:''' {{MC|м=M&mdash;Mr.|ж=M&mdash;Miss}} (Trailblazer), take this talisman and stick it to your body &mdash; it'll temporarily suppress the heliobus's influence...
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey! {{MC|м=Boy|ж=Girl}}! Say something nice to Huohuo. Her crying is like a mosquito in my ear.
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Cirrus:''' Hehe, see? I told you I'd help you. The way out is straight ahead. Just keep going...
+
+;(По прибытии на место)
+----
+:'''Cirrus:''' Stop. Do you remember our deal? You need to help me evade capture.
+:{{Диалог|Стрелка}} There's a judge up ahead. What, are you scared?
+::'''Cirrus:''' Ha! THAT judge? I can taste her fear from miles away! That coward has no right calling herself a judge.
+::'''Cirrus:''' But... that thing attached to her is the tricky part. That's something I don't wish to face.
+:{{Диалог|Стрелка}} I'm getting her out of here, too.
+::'''Cirrus:''' Ugh... Is this what humans call "sympathy"? How acerbic. Yuck...
+:{{Диалог|Стрелка}} I keep my promises.
+::'''Cirrus:''' Mm, I can taste your integrity &mdash; such a rich flavor. A little hard to digest...
+:{{Диалог|Стрелка}} I did NOT make a deal with you.
+::'''Cirrus:''' Aren't you a stubborn one? But that's okay. You'll come around once you've walked a few more circles in this place.
+:'''Cirrus:''' Forget about the judge &mdash; just get us both out of here.
+----
+
+;(По прибытии на место)
+----
+:'''Huohuo:''' ...Wait! Please don't leave me!
+:'''Huohuo:''' Please, I'm begging you! Can you please come closer? I'm so scared...
+----
+:'''Huohuo:''' ...Um, have you seen Miss Guinaifen? I still haven't found her. Is she gonna be okay...?
+:{{Диалог|Стрелка}} Let's go find her.
+:{{Диалог|Стрелка}} She's probably trapped somewhere around here.
+:{{Диалог|Стрелка}} Forget about her &mdash; I got possessed by a heliobus!
+:'''(Trailblazer):''' Give it up. Guinaifen was probably eaten by the heliobi already.
+:'''Huohuo:''' H&mdash;H&mdash;How can that be!? If that could happen to someone as lively as Miss Guinaifen... that means I'm in even more danger...
+:{{Диалог|Стрелка}} (Did I really just say that...?)
+::'''Cirrus:''' (Hehe... Did you know that the larynx is the easiest muscle to control in the human body?)
+:{{Диалог|Стрелка}} (Did Guinaifen really get eaten by heliobi?)
+::'''Cirrus:''' (Why don't you take a guess?)
+:'''Huohuo:''' (Trailblazer), you can find the way out, right? Please take me with you...
+:'''Tail:''' Ugh, not this again! You're a Judge of the Ten-Lords Commission &mdash; why are you always begging others for help?
+:'''Huohuo:''' You know I'm not cut out to be a judge. I thought maybe if I worked long enough in the Ten-Lords Commission, I'd get braver. But now... I know it's impossible.
+:'''Tail:''' Tsk, useless brat. Why was I sealed in with someone like you?
+:'''Huohuo:''' You talk tough all day long, then let both of us get stuck in a trap... Who's the useless brat now!?
+:{{Диалог|Стрелка}} Calm down! I'll get you out of here!
+:{{Диалог|Стрелка}} I can't find the way out either. It's all up to you.
+:{{Диалог|Стрелка}} HELP! I got possessed by a heliobus!
+:'''(Trailblazer):''' There's no point in following me. I'm leaving, and you're not coming with me. Goodbye!
+:'''Huohuo:''' Ah! No! P&mdash;Please don't leave. Wait, please...
+:{{Диалог|Стрелка}} I didn't say that!
+::'''Cirrus:''' (Oh, but you did... and can you swear that you don't want to leave her behind? Not even a little?)
+:{{Диалог|Стрелка}} Cirrus, you beast...
+::'''Cirrus:''' (Beast? From a taxonomic perspective, I believe you're closer to that definition...)
+:{{Диалог|Стрелка}} ...
+::'''Cirrus:''' (Oh, you're not gonna fight back anymore? Then let me make up some lines. Just be good and say it with me.)
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300004,
+		300005,
+		300006
+	]
+}</pre>
+:'''(Trailblazer):''' The Ten-Lords Commission needs to overhaul their hiring criteria. How did someone as useless as you ever become a judge?
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey, cut it out. I'm the only one around here who gets to tell this kid off... Me and those other judges. Got that!?
+:'''Tail:''' ...Wait. Hold on. I smell something familiar...
+:'''Tail:''' Cirrus... it's you. Still a fan of your pathetic ventriloquist act, I see.
+:'''(Trailblazer):''' Haha... Hahahaha! Oh, this is funny! This is just too funny! I thought you'd already escaped the Furnace's destiny of torture!?
+:'''(Trailblazer):''' Who would have thought that a piece of Ignamar the Great &mdash; the fragment with the most fight in it &mdash; would become a guard dog sealed inside a crybaby...
+:'''(Trailblazer):''' Oh! Forgive me! Did I say guard dog? No, no, no, that won't do... You're just a guard dog's "tail," right? Just a tail, a tail, a tail!
+:'''Tail:''' Laugh while you can, coward! I'm gonna swallow you whole the second you leave that {{MC|м=boy's|ж=girl's}} body!
+:'''(Trailblazer):''' H&mdash;How t&mdash;t&mdash;terrifying, ahahaha...! The joke's on you!
+:'''(Trailblazer):''' You couldn't leave that judge's body if you tried! You can't eat her, let alone escape from her. Ahahaha, "Mr. Tail." You're pathetic~
+:'''Tail:''' ...Darn it! Think of something, you wimp!
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Huohuo:''' {{MC|м=M&mdash;Mr.|ж=M&mdash;Miss}} (Trailblazer), take this talisman and stick it to your body &mdash; it'll temporarily suppress the heliobus's influence...
+<pre>{
+	"$type": "RPG.GameCore.TalkFigure",
+	"Show": false,
+	"ImagePath": "SpriteOutput/Mission/TalkItem/SubMission_140360.png"
+}</pre>
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey! {{MC|м=Boy|ж=Girl}}! Say something nice to Huohuo. Her crying is like a mosquito in my ear.
+----
+{{Dialogue End}}
+
+===Meet up with Huohuo{{subst:void|<!--202170209-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|update|Cirrus seems unreliable, but following its instructions ultimately leads to Huohuo.<br />Well, if even a Judge would be stuck in an illusion just like you did, then the garden must... No, you decide you don't want to think through whatever's happening in Fyxestroll Garden. Because without any doubt, it will be irredeemably dreadful.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===(Optional) Chat with Cirrus{{subst:void|<!--202170210-->}}===
+{{Dialogue Start}}
+
+;(Talk to Huohuo)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing",
+	"SubMissionID": 202170212
+}</pre>
+----
+:'''Huohuo:''' *sob*
+:{{Диалог|Стрелка}} I'm sorry, Huohuo... Are you okay?
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+::'''Huohuo:''' It's not your fault... It was that bad heliobus making us fight...
+:{{Диалог|Стрелка}} Stay strong, Huohuo &mdash; you're a judge.
+::'''Huohuo:''' ...If I were any other judge, you'd already be saved...
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Sad01"
+}</pre>
+:'''Huohuo:''' Someone as nice as you wouldn't say such mean things &mdash; only a possession would make you act like that. Still, what the heliobus said was true...
+:'''Huohuo:''' I've always been shy and scared... My life's been a nightmare ever since Tail possessed me...
+:'''Huohuo:''' When I was at school, people were always asking why my tail was on fire... Everywhere I went, people would notice.
+:'''Tail:''' Oh, so it's all my fault? If you'd just let me devour you at the start, I could've spared you the trouble!
+:'''Huohuo:''' Th&mdash;Then I got into the Ten-Lords Commission. Everyone there is weird, so I thought I'd found somewhere I belonged. But the job... the job is too dangerous! I have to fight demons and ghosts and bad guys every day...
+:'''Huohuo:''' I... I'm just not cut out for it. If I make it back alive... I'm handing in my resignation.
+:'''Huohuo:''' Who thought making a heliophobe with a heliobus in her tail hunt heliobi was a good idea... I'm sorry, I've been so useless...
+:{{Диалог|Стрелка}} You're doing very well already, Huohuo.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Surprise01"
+}</pre>
+::'''Huohuo:''' ...R&mdash;Really?
+:{{Диалог|Стрелка}} You're the one who left the paper dolls for me. Thank you.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	},
+	"EmotionName": "Close02"
+}</pre>
+::'''Huohuo:''' ...I&mdash;I'm glad it helped...
+<pre>{
+	"$type": "RPG.GameCore.StopPermanentEmotion",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 6
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:'''Tail:''' You hear that? Stop crying. You're useful. And your paper dolls are useful too.
+:'''Tail:''' Ugh, I've had enough of this! As soon I swallow that coward Cirrus, I'm gonna devour this little crybaby too!
+:'''Cirrus:''' What a pity that "Mr. Tail" is nothing like he used to be. If we still had our old power, we could forget about this maze and devour its creator, Furynox.
+:'''Huohuo:''' Your old power?
+:'''Cirrus:''' Well, "Mr. Tail," seems she knows nothing about your past... Little missy, do you know why the heliobi are gathered in this abandoned garden instead of seizing human habitations?
+:'''Huohuo:''' ...Team-building?
+:'''Cirrus:''' ...
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 202170212
+}</pre>
+:'''Huohuo:''' Wahhhh! Wh&mdash;Wh&mdash;What's happening?
+:D&mdash;D&mdash;Don't be scared!
+:'''Huohuo:''' I&mdash;I&mdash;I'm not scared! I just can't stop my legs shaking...
+:Is it the same kind of thing as Mr. Tail?
+:'''Huohuo:''' Tail, is it another heliobus?
+:'''Tail:''' It's nothing. You scaredy-cat, I didn't see a single thing.
+:We're all good. Let's keep going.
+:'''Huohuo:''' ...Oh... I heard Miss Guinaifen yell, so I got scared...
+:'''Huohuo:''' ...Wait a minute... where did Miss Guinaifen go? Miss Guinaifen...!
+:'''Huohuo:''' ...
+:'''Huohuo:''' ...D&mdash;Did we lose her...?
+:'''Huohuo:''' Is it me or is this place starting to feel weirder and weirder...? I'm scared... Can you stay close to me? I don't want to lose you, too...
+:'''Huohuo:''' We need to find Miss Guinaifen, first... Stay close to me &mdash; please...!
+:'''Huohuo:''' I thought I'd lost you, too. I'm so scared... Please don't leave me here all on my own...
+:'''(Trailblazer):''' Guinaifen? Where are you? Huohuo, stay close...
+:'''(Trailblazer):''' Huohuo? Oh no. Where did she go...?
+:'''(Trailblazer):''' Is this... a mirror? It looks a little creepy...
+:'''(Trailblazer):''' (...Where am I?)
+:'''(Trailblazer):''' (Is this... Fyxestroll Garden? But it looks different somehow...)
+:'''(Trailblazer):''' (... I should keep moving.)
+:'''Mysterious Voice:''' Hmm, you have a strange scent on you. You must be...
+:'''Mysterious Voice:''' I have heard the whispers of the leaves that fall in Fyxestroll Garden. The flames weep and profess to me that a powerful mortal approaches...
+:'''Mysterious Voice:''' They carry the scent of a great battle... with none other than Phantylia...
+:'''Mysterious Voice:''' You... You are the one who drove Phantylia away...
+:'''Mysterious Voice:''' ...What power... Your presence alone is delicious enough to make one tremble!
+:'''Mysterious Voice:''' Let me taste you, please! One bite! Just one bite! I can't wait to savor you!
+:'''Unknown Heliobus:''' Hehe, you fought well... you were fighting for your survival, after all...
+:'''Unknown Heliobus:''' I'll take that as my invitation to inhabit you for a while...
+:Who are you? What do you want?
+:'''Unknown Heliobus:''' Oh, my delicious host, you taste so special... different from anyone else I've ever possessed. But what is this at your core? A Sun? Agh! It burns!
+:'''Cirrus:''' You can call me Cirrus. As for what I want... rest assured &mdash; I only want to leave this place... I have no desire to harm you.
+:I said no! Get out!
+:'''Unknown Heliobus:''' Argh, resisting are we...? Impressive willpower! How painful, how delectable!
+:'''Unknown Heliobus:''' You're different from anyone else I've ever possessed... but what is this at your core? A Sun? Agh! It burns!
+:'''Unknown Heliobus:''' Worry not, I have no interest in making you my home &mdash; I'll be gone before you know it. Let's get along while it lasts, shall we?
+:'''Cirrus:''' You can call me Cirrus. I only want to leave this place... I have no desire to harm you.
+:Fine. Just stay put and don't cause trouble.
+:'''Unknown Heliobus:''' ...Incredible, such a relaxed specimen &mdash; a soft cake of a host... It's almost as if... as if this body doesn't even belong to you? What makes you so detached, young {{MC|м=man|ж=lady}}?
+:'''Unknown Heliobus:''' And what is this at your core? A Sun? Agh! It burns!
+:'''Unknown Heliobus:''' Never mind. I won't be staying for long, so let's get along while it lasts, shall we?
+:'''Cirrus:''' You can call me Cirrus. I only want to leave this place... I have no desire to harm you.
+:'''Cirrus:''' Allow me to explain what's happening... The Xianzhou natives call it a "ghost lock." You're walking in a circle, and no amount of walking will get you out of it.
+:'''Cirrus:''' So, I'm going to help you break free of the circle that Furynox created, and you're going to help me evade the judges of the Ten-Lords Commission. It's a win-win... How does that sound?
+:What did you just say? Who's "Furynox?"
+:'''Cirrus:''' You must have figured out that I'm not the master of this place... It was created by another heliobus named Furynox.
+:'''Cirrus:''' Unfortunately, I'm the only one who can help you escape from here.
+:I've already found clues that can get me out of here...
+:'''Cirrus:''' You mean the talismans left behind by "little lost fox judge"? Those won't help you.
+:'''Cirrus:''' Now that I'm possessing you, I can make you see things that you couldn't see before.
+:Fine. This is just a strategic partnership.
+:'''Cirrus:''' Good. I'm glad we understand each other.
+:I refuse to work with you.
+:'''Cirrus:''' What a stubborn fool &mdash; you won't ever get out of here without my help. Anyway, I'm not here to ask your opinion.
+:'''Cirrus:''' As a courtesy, I shall leave you intact, for the time being... As soon as I get what I want, I'll be gone.
+:'''Cirrus:''' Now, go and look at those talismans again &mdash; the paper dolls. You'll know where to go.
+:'''Cirrus:''' Stop. Do you remember our deal? You need to help me evade capture.
+:There's a judge up ahead. What, are you scared?
+:'''Cirrus:''' Ha! THAT judge? I can taste her fear from miles away! That coward has no right calling herself a judge.
+:'''Cirrus:''' But... that thing attached to her is the tricky part. That's something I don't wish to face.
+:I'm getting her out of here, too.
+:'''Cirrus:''' Ugh... Is this what humans call "sympathy"? How acerbic. Yuck...
+:I keep my promises.
+:'''Cirrus:''' Mm, I can taste your integrity &mdash; such a rich flavor. A little hard to digest...
+:I did NOT make a deal with you.
+:'''Cirrus:''' Aren't you a stubborn one? But that's okay. You'll come around once you've walked a few more circles in this place.
+:'''Cirrus:''' Forget about the judge &mdash; just get us both out of here.
+:'''Huohuo:''' ...Wait! Please don't leave me!
+:'''Huohuo:''' Please, I'm begging you! Can you please come closer? I'm so scared...
+:'''Huohuo:''' ...Um, have you seen Miss Guinaifen? I still haven't found her. Is she gonna be okay...?
+:Let's go find her.
+:She's probably trapped somewhere around here.
+:Forget about her &mdash; I got possessed by a heliobus!
+:'''(Trailblazer):''' Give it up. Guinaifen was probably eaten by the heliobi already.
+:'''Huohuo:''' H&mdash;H&mdash;How can that be!? If that could happen to someone as lively as Miss Guinaifen... that means I'm in even more danger...
+:(Did I really just say that...?)
+:'''Cirrus:''' (Hehe... Did you know that the larynx is the easiest muscle to control in the human body?)
+:(Did Guinaifen really get eaten by heliobi?)
+:'''Cirrus:''' (Why don't you take a guess?)
+:'''Huohuo:''' (Trailblazer), you can find the way out, right? Please take me with you...
+:'''Tail:''' Ugh, not this again! You're a Judge of the Ten-Lords Commission &mdash; why are you always begging others for help?
+:'''Huohuo:''' You know I'm not cut out to be a judge. I thought maybe if I worked long enough in the Ten-Lords Commission, I'd get braver. But now... I know it's impossible.
+:'''Tail:''' Tsk, useless brat. Why was I sealed in with someone like you?
+:'''Huohuo:''' You talk tough all day long, then let both of us get stuck in a trap... Who's the useless brat now!?
+:Calm down! I'll get you out of here!
+:I can't find the way out either. It's all up to you.
+:HELP! I got possessed by a heliobus!
+:'''(Trailblazer):''' There's no point in following me. I'm leaving, and you're not coming with me. Goodbye!
+:'''Huohuo:''' Ah! No! P&mdash;Please don't leave. Wait, please...
+:I didn't say that!
+:'''Cirrus:''' (Oh, but you did... and can you swear that you don't want to leave her behind? Not even a little?)
+:Cirrus, you beast...
+:'''Cirrus:''' (Beast? From a taxonomic perspective, I believe you're closer to that definition...)
+:...
+:'''Cirrus:''' (Oh, you're not gonna fight back anymore? Then let me make up some lines. Just be good and say it with me.)
+:'''(Trailblazer):''' The Ten-Lords Commission needs to overhaul their hiring criteria. How did someone as useless as you ever become a judge?
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey, cut it out. I'm the only one around here who gets to tell this kid off... Me and those other judges. Got that!?
+:'''Tail:''' ...Wait. Hold on. I smell something familiar...
+:'''Tail:''' Cirrus... it's you. Still a fan of your pathetic ventriloquist act, I see.
+:'''(Trailblazer):''' Haha... Hahahaha! Oh, this is funny! This is just too funny! I thought you'd already escaped the Furnace's destiny of torture!?
+:'''(Trailblazer):''' Who would have thought that a piece of Ignamar the Great &mdash; the fragment with the most fight in it &mdash; would become a guard dog sealed inside a crybaby...
+:'''(Trailblazer):''' Oh! Forgive me! Did I say guard dog? No, no, no, that won't do... You're just a guard dog's "tail," right? Just a tail, a tail, a tail!
+:'''Tail:''' Laugh while you can, coward! I'm gonna swallow you whole the second you leave that {{MC|м=boy's|ж=girl's}} body!
+:'''(Trailblazer):''' H&mdash;How t&mdash;t&mdash;terrifying, ahahaha...! The joke's on you!
+:'''(Trailblazer):''' You couldn't leave that judge's body if you tried! You can't eat her, let alone escape from her. Ahahaha, "Mr. Tail." You're pathetic~
+:'''Tail:''' ...Darn it! Think of something, you wimp!
+:'''Huohuo:''' {{MC|м=M&mdash;Mr.|ж=M&mdash;Miss}} (Trailblazer), take this talisman and stick it to your body &mdash; it'll temporarily suppress the heliobus's influence...
+:'''Huohuo:''' *sob*
+:'''Tail:''' Hey! {{MC|м=Boy|ж=Girl}}! Say something nice to Huohuo. Her crying is like a mosquito in my ear.
+:'''Huohuo:''' (Trailblazer), it's you! I&mdash;I finally found another living soul!
+:'''Huohuo:''' I'm so happy! I thought I was gonna be stuck here forever... I'm so happy to see you!
+:'''Cirrus:''' Ahhhh, what a feast! Human emotions are simply delicious. Your sorrowful tears are like bottles of potent wine~
+:Don't you ever talk through me like that again.
+:'''Cirrus:''' Hehe, I'm simply enjoying my freedom. Didn't you use the talisman already? I'm tame as a kitten...
+:Does it amuse you to make a little girl cry?
+:'''Cirrus:''' Does the Xianzhou sail through the cosmos?
+:'''Cirrus:''' For a heliobus that enjoys provoking your weak human sentiments, I can assure you there is nothing more amusing.
+:'''Cirrus:''' Now, don't forget about our deal. I will leave only once I've got what I wanted.
+:Say, are you still possessing me?
+:'''Cirrus:''' Of course. Surely you don't think I've left you just because you can see me? So naive!
+:(Leave quietly)
+:'''Tail:''' Cirrus talks nothing but nonsense... but even so, Huohuo has a sensitive heart. You. Go say something nice to the girl.
+:Aren't you looking down on her all the time?
+:'''Tail:''' Yes, which is why she needs other organic beings like you to support her! Get it? Go!
+:Why don't you go say something nice to her?
+:'''Tail:''' Keep dreaming. I have nothing nice to say to anyone.
+:You can roam free even though you're sealed?
+:'''Tail:''' Roam free!? Is that what you call this? This is as far as I can get from her.
+:'''Tail:''' You think I'd be here playing house with you numbskulls if I could fly away?
+:(Leave quietly)
+:'''Huohuo:''' *sob*
+:I'm sorry, Huohuo... Are you okay?
+:'''Huohuo:''' It's not your fault... It was that bad heliobus making us fight...
+:Stay strong, Huohuo &mdash; you're a judge.
+:'''Huohuo:''' ...If I were any other judge, you'd already be saved...
+:'''Huohuo:''' Someone as nice as you wouldn't say such mean things &mdash; only a possession would make you act like that. Still, what the heliobus said was true...
+:'''Huohuo:''' I've always been shy and scared... My life's been a nightmare ever since Tail possessed me...
+:'''Huohuo:''' When I was at school, people were always asking why my tail was on fire... Everywhere I went, people would notice.
+:'''Tail:''' Oh, so it's all my fault? If you'd just let me devour you at the start, I could've spared you the trouble!
+:'''Huohuo:''' Th&mdash;Then I got into the Ten-Lords Commission. Everyone there is weird, so I thought I'd found somewhere I belonged. But the job... the job is too dangerous! I have to fight demons and ghosts and bad guys every day...
+:'''Huohuo:''' I... I'm just not cut out for it. If I make it back alive... I'm handing in my resignation.
+:'''Huohuo:''' Who thought making a heliophobe with a heliobus in her tail hunt heliobi was a good idea... I'm sorry, I've been so useless...
+:You're doing very well already, Huohuo.
+:'''Huohuo:''' ...R&mdash;Really?
+:You're the one who left the paper dolls for me. Thank you.
+:'''Huohuo:''' ...I&mdash;I'm glad it helped...
+:'''Tail:''' You hear that? Stop crying. You're useful. And your paper dolls are useful too.
+:'''Tail:''' Ugh, I've had enough of this! As soon I swallow that coward Cirrus, I'm gonna devour this little crybaby too!
+:'''Cirrus:''' What a pity that "Mr. Tail" is nothing like he used to be. If we still had our old power, we could forget about this maze and devour its creator, Furynox.
+:'''Huohuo:''' Your old power?
+:'''Cirrus:''' Well, "Mr. Tail," seems she knows nothing about your past... Little missy, do you know why the heliobi are gathered in this abandoned garden instead of seizing human habitations?
+:'''Huohuo:''' ...Team-building?
+:'''Cirrus:''' ...
+:'''Cirrus:''' Because over a thousand years ago, this very garden was the site of an epic battle between the general of the Luofu and the great heliobus Ignamar.
+:'''Cirrus:''' Now that the furnace is broken and the heliobi have escaped, fragments like us, who once constituted Ignamar the whole, have returned here &mdash; with the desire to challenge the general again.
+:'''Cirrus:''' The battle between the general and Ignamar was an earth-shaking contest of devastating proportions! Ignamar underwent countless transformations, causing floods, fires, and thunderous landslides... They were locked in a standoff &mdash; an evenly matched fight!
+:'''Huohuo:''' Evenly matched... Really?
+:{{Диалог|Стрелка}} Evenly matched... Really?
+::'''Cirrus:''' Of course!
+::I didn't know Jing Yuan had such a history.
+:{{Диалог|Стрелка}} I didn't know Jing Yuan had such a history.
+:'''Cirrus:''' The general who fought for the Luofu against the heliobus was named "Teng Xiao."
+:'''Huohuo:''' ...The Ten-Lords Commission records say that Ignamar was soundly defeated by General Teng Xiao...
+:{{tx}}
+:'''Cirrus:''' ...but there's an exception to everything. "Mr. Tail," I thought you'd escaped to freedom... Who could've guessed you'd be sealed in this tiny foxian girl? Humiliating...
+:'''Tail:''' Sealed my foot! My power was weak when I ran into this fox child. It was bad luck, nothing more!
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Hollowing",
+	"SubMissionID": 202170212
+}</pre>
+:{{tx}}
+----
+:'''Cirrus:''' Hilarious! It's a pity "Mr. Tail" didn't devour you... He might've recovered his power and turned the Xianzhou upside down... just like Ignamar did!
+:{{Диалог|Стрелка}} Why did the heliobi challenge the general?
+::'''Cirrus:''' Why? Does there have to be a reason?
+::'''Cirrus:''' The official answer is that the Xianzhou is sealing heliobi in a cage and forcing them to supply energy to the ship... In reality, however, we just want to fight the general... and see what the Xianzhou is truly made of!
+:{{Диалог|Стрелка}} Do you have a grudge against the Xianzhou?
+::'''Cirrus:''' Grudge? How shallow. If you must know the forces behind our actions...
+::'''Cirrus:''' ...there's a pinch of envy &mdash; envy towards the potent emotions you corporeal beings have. Then there's a dash of aggression &mdash; the desire to see whether the heliobi or bodies of flesh and blood are stronger. Lastly, there's a drizzle of desire. We desire to possess your physical bodies, so we can eat, kill, love, and hate.
+:'''Cirrus:''' We heliobi were carefree lifeforms, but were tainted with the illness of humanity once we came into contact with it. It's humanity's fault for having such intense emotions and desires &mdash; now, we can never, never return to the purity of our past.
+:'''Cirrus:''' I want to be free again! I want to return to the cosmos! Mr. Tail, you don't want to regroup with the fragments, and you don't want to be her tail forever &mdash; why don't you return with me to the great beyond?
+:'''Tail:''' ...Don't get ahead of yourself, Cirrus.
+:'''Huohuo:''' That's impossible. Mr. Tail was sealed by the judges of the Ten-Lords Commission. He can't escape... and neither can you...
+----
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 202170212
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202170212,
+	"MissionCustomValue": {
+		"Index": 3,
+		"Name": "OldValue_3",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+
+;(Talk to Tail)
+;(First interaction)
+::'''Tail:''' Cirrus talks nothing but nonsense... but even so, Huohuo has a sensitive heart. You. Go say something nice to the girl.
+::{{Диалог|Стрелка}} Aren't you looking down on her all the time?
+:::'''Tail:''' Yes, which is why she needs other organic beings like you to support her! Get it? Go!
+::{{Диалог|Стрелка}} Why don't you go say something nice to her?
+:::'''Tail:''' Keep dreaming. I have nothing nice to say to anyone.
+::{{Диалог|Стрелка}} You can roam free even though you're sealed?
+:::'''Tail:''' Roam free!? Is that what you call this? This is as far as I can get from her.
+:::'''Tail:''' You think I'd be here playing house with you numbskulls if I could fly away?
+::{{Диалог|Выход}} (Leave quietly)
+;(Subsequent interactions)
+::'''Tail:''' What are you staring at? Go. Say something nice to the girl.
+
+;(Talk to Cirrus)
+;(First interaction)
+::'''Cirrus:''' Ahhhh, what a feast! Human emotions are simply delicious. Your sorrowful tears are like bottles of potent wine~
+::{{Диалог|Стрелка}} Don't you ever talk through me like that again.
+:::'''Cirrus:''' Hehe, I'm simply enjoying my freedom. Didn't you use the talisman already? I'm tame as a kitten...
+::{{Диалог|Стрелка}} Does it amuse you to make a little girl cry?
+:::'''Cirrus:''' Does the Xianzhou sail through the cosmos?
+:::'''Cirrus:''' For a heliobus that enjoys provoking your weak human sentiments, I can assure you there is nothing more amusing.
+::'''Cirrus:''' Now, don't forget about our deal. I will leave only once I've got what I wanted.
+::{{Диалог|Стрелка}} Say, are you still possessing me?
+:::'''Cirrus:''' Of course. Surely you don't think I've left you just because you can see me? So naive!
+::{{Диалог|Выход}} (Leave quietly)
+;(Subsequent interactions)
+::'''Cirrus:''' I know what you want to ask. Yes, it does amuse me to make a little girl cry, and no, I haven't left your body. There, now you can save your breath.
+{{Dialogue End}}
+
+===(Optional) Chat with Tail{{subst:void|<!--202170211-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Chat with Huohuo, and comfort her{{subst:void|<!--202170212-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|update|Sticking close to you, Cirrus chatters garrulously about the Xianzhou's old grudge against the heliobi while also stealing use of your mouth to sow seeds of discontent among this small, lost team. It'll take everyone working together to get out of this maze. Comfort Huohuo, then find a way out of here together.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Find the exit of the Illusory Maze{{subst:void|<!--202170213-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===(Optional) Search out clues from another volume of supernatural stories{{subst:void|<!--202170219-->}}===
+{{Dialogue Start}}
+
+{{Dialogue End}}
+
+===Investigate the strange bronze mirror{{subst:void|<!--202170214-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|update|Similar to when you came in, there's a bronze mirror emitting a strange sound. Perhaps it's a Judge of the Ten-Lords Commission coming to rescue you; perhaps it's heliobi toying with you like a cornered animal.<br />On the upside, not even monsters can hurt you through a mirror, right? Let's go check it out.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Listen to the voice in the mirror, and determine whether it's real or fake{{subst:void|<!--202170221-->}}===
+{{Mission Description|type=continuance|location=Illusory Maze: Furynox|update|Xueyi's voice comes from the mirror, but it's hard to tell whether these voices are real. Perhaps only someone involved like Huohuo could possibly clarify the truth.}}
+{{Dialogue Start}}
+
+:{{DIcon|Изучение}} Investigate
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":4}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}}}-->}})
+::'''Xueyi:''' The situation in Fyxestroll Garden is getting worse. Why have you not left? Is something the matter in there?
+::'''Huohuo:''' Over here, that sounds like the real Madam Xueyi.
+::'''Xueyi:''' The real Madam Xueyi? Are there pretenders inside the illusion?
+::{{Диалог|Стрелка}} There are multiple bronze mirrors here.
+::{{Диалог|Стрелка}} The heliobus is trying to trick us.
+::'''Xueyi:''' I see. Do not be afraid. Huohuo knows me well &mdash; she will be able to discern me from the counterfeits.
+::'''Huohuo:''' B&mdash;But what if I can't tell the difference?
+::'''Xueyi:''' You must trust yourself. Come.
+::{{Диалог|Стрелка}} Pass through the mirror.
+::<pre>{
+	"$type": "RPG.GameCore.RequestGroupStateChange",
+	"TargetState": 1
+}</pre>
+::{{Диалог|Выход}} Investigate other mirrors.
+:::'''Huohuo:''' But...
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByComparePropState","TargetType":{"$type":"RPG.GameCore.TargetFetchAdvPropEx","FetchType":"SinglePropByPropID","SinglePropID":{"GroupID":{"IsDynamic":false,"FixedValue":{"Value":4}},"ID":{"IsDynamic":false,"FixedValue":{"Value":300009}}}}}-->}})
+::'''Huohuo:''' ...We already passed through this mirror. The Madam Xueyi behind this mirror is most likely a fake. Let's not go there again.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Sojourners' Ghastly Reverie
+|zhs  = 游园惊梦
+|zht  = 遊園驚夢
+|ja   = 游園驚夢
+|ko   = 유원경몽
+|es   = Sustos en el parque
+|fr   = Promenade fantasmagorique
+|ru   = Прогулка по саду и прерванный сон
+|th   = ฝันผวาในสวนเฮี้ยน
+|vi   = Ác Mộng Vườn Hoang
+|de   = Garten der Albträume
+|id   = Mimpi Buruk di Taman
+|pt   = Devaneio Lúgubre do Visitante
+}}
+
+==Change History==
+{{Change History|3.5}}

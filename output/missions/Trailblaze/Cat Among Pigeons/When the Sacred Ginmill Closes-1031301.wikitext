@@ -1,0 +1,190 @@
+<%-- [PAGE_INFO]
+PageTitle=#When the Sacred Ginmill Closes#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1031301
+|title         = 
+|image         = <!--Mission When the Sacred Ginmill Closes.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Cat Among Pigeons
+|requirements  = [[Trailblaze Mission]] ''[[When the Sacred Ginmill Closes]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Acheron; Firefly; Jno; Trailblazer; Welt
+|startLocation = [[Penacony]] - [[Golden Hour]]
+|world         = Penacony
+|area          = Golden Hour
+|prev          = 
+|next          = Heaven is a Place on Earth
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Traveler's Guide*5; Refined Aether*5; Clock Credits*300; "Hi, Dolly!"*1 { text = "Hi, Dolly!" }; Credit*80 000
+}}
+'''''When the Sacred Ginmill Closes''''' is a [[Trailblaze Mission]] in the chapter [[Cat Among Pigeons]].
+
+==Steps==
+# Speak with Acheron
+# Recall the memories on Acheron
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Speak with Acheron{{subst:void|<!--103130101-->}}===
+{{Mission Description|type=trailblaze|location=Golden Hour|Once again, the focus shifts. Sometimes, you feel as though you're living in a movie &mdash; nothing else can explain the constant switch of the point-of-view.}}
+{{Dialogue Start}}
+:{{tx}}
+:{{Диалог|Разговор}} Regarding the Moment of Daybreak...
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Regarding the Gilded Hour...
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Blue Hour...
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Moment of Dusk...
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} That's everything.
+::{{tx}}
+:{{tx}}
+
+:{{DIcon|undefined}} 
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (Her secret stronghold is... a cafe?)
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:'''Firefly:''' Here...
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+{{Dialogue End}}
+
+===Recall the memories on Acheron{{subst:void|<!--103130105-->}}===
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Jno)
+:'''Jno:''' Oh, the perceptive individual who found me!
+:{{Диалог}} I have something for you.
+::{{Диалог|Разговор}} Are you really a Pepeshi?
+:::'''Jno:''' No, of course not. I'm a Red Clayform from Kalsas, and this form is a result of my mimicry.
+:::'''Jno:''' I was worried that my true appearance might frighten everyone, so I changed my form and became a Pepeshi. I heard they're super popular in the universe.
+:::'''Jno:''' Don't you think... I look cute?
+:::{{Диалог|Стрелка}} You are cute.
+::::'''Jno:''' Heehee... it took me quite some time. I'm glad you find it appealing!
+::::'''Jno:''' Anyway, I'll stick with this form in front of others. Just treat me as a Pepeshi.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} Not cute.
+::::'''Jno:''' Huh... your taste is so different from the others! Everyone else seems to think it's cute...
+::::'''Jno:''' Anyway, I'll stick with this form in front of others. Just treat me as a Pepeshi.
+:::;(Return to previous option selection)
+::{{Диалог|Разговор}} How did you get an invitation?
+:::'''Jno:''' Heehee, maybe you don't know, but I'm one of the most talented individuals on my home planet!
+:::'''Jno:''' I was the first to fly in a Kinetic Propulsion Chair and land safely. The tall guys in IPC even call me a space hero!
+:::{{Диалог|Разговор}} A Kinetic Propulsion Chair?
+::::'''Jno:''' We Clayforms needed IPC services for interstellar travel, and it cost us a significant amount of credits just to clean the decks.
+::::'''Jno:''' So, my friends and I developed the Kinetic Propulsion Chair, a special way for us Clayforms to travel through space.
+::::'''Jno:''' Just attach several Disposable Kinetic Cannons to a chair and fire them all at once, and you'll get enough power to launch yourself from the planet.
+::::'''Jno:''' Well, in my case, I didn't attach enough cannons that time, so I only made it up to the clouds before falling back down.
+:::;(Return to previous option selection)
+:::{{Диалог|Стрелка}} Did you land safely?
+::::'''Jno:''' Heehee, that's an interesting story...
+::::'''Jno:''' While we Clayforms walk on two feet, our bodies can actually stretch and take on any shape.
+::::'''Jno:''' When I was up in the air, I stretched myself into a pancake-like form to catch more air and eventually safely landed on the ground.
+::::'''Jno:''' The tall guys in IPC mentioned that it's akin to your "parachute," and I can do it with my body. Pretty impressive, right?
+:::;(Return to previous option selection)
+::{{Диалог|Разговор}} Don't you dissolve in water?
+:::'''Jno:''' Well... we do dissolve upon contact with water. That's why the rainy season has always been the greatest hazard on Kalsas.
+:::'''Jno:''' Fortunately, IPC has recognized our value and constructed rain shelters on the planet. As a result, disappearances during rainfall are now few and far between.
+:::'''Jno:''' Still, we must be careful when visiting other planets and never enter a bathroom.
+::;(Return to previous option selection)
+::{{Диалог|Выход}} Thank you.
+:::'''Jno:''' Well, come and play with me next time.
+:{{Диалог|Рука}} Can I touch the fluff ball on your head?
+:;(If {{cx}}<!--Hidden Mission ID 4040308--> has been completed)
+:::'''Jno:''' Well... I feel a bit embarrassed after what happened last time. Let's forget it...
+:;(If {{cx}}<!--Hidden Mission ID 4040308--> has not been completed)
+:::'''Jno:''' Fluff ball? I'm not sure what you have in mind, but go ahead and touch it if you really want to.
+:::You run your hand over Jno's fluff ball. Jno enjoys it, much like a happy kitten getting some pets...
+:::'''Jno:''' Hmm... what is this? It feels so unusual...
+:::Pepeshi rarely allows anyone to touch their fluff ball, just like how a human wouldn't let a stranger pick their ear. However, Jno is not a real Pepeshi.
+:::'''Jno:''' Keep doing that. Don't stop...
+:::{{Диалог|Выход}} Pepeshi rarely allows others to touch their fluff ball.
+::::'''Jno:''' Oh? I&mdash;Is that so? I suppose I still have much to learn...
+:::{{Диалог|Стрелка}} Keep petting it.
+::::'''Jno:''' Purrrrrrr...
+::::Jno lifts the head and purrs contentedly, like a cat getting a good scratch.
+::::'''Jno:''' Would you pet me again?
+::::{{Диалог|Выход}} Pepeshi rarely allows others to touch their fluff ball.
+:::::'''Jno:''' I&mdash;Is that so? But you just...
+:::::'''Jno:''' Well, forget it. I'm not a real Pepeshi anyway. I suppose I still have much to learn...
+::::{{Диалог|Стрелка}} Pet Jno again.
+:::::The fluff ball wobbles as your fingertips move, almost as if it is going to lose its solid form...
+:::::'''Jno:''' So comforting... like rolling around in a muddy pond...
+::::;(Screen fades to black)
+:::::The "Pepeshi" starts to secrete an unusual sweat...
+:::::Sticky fluids trickle down Jno's body and form gel-like clumps... From the looks of it, it is the latest cooling gel.
+:::::{{Диалог|Стрелка}} What was that just now?
+:::::'''Jno:''' ...
+:::::'''Jno:''' You can have it!
+:{{Диалог|Выход}} Thank you.
+::'''Jno:''' Well, come and play with me next time.
+:{{tx}}
+:{{Диалог|Разговор}} Regarding the Moment of Daybreak...
+::'''Welt:''' The Moment of Daybreak &mdash; I've heard that's where the "Dawn Factory," which processes the foundation of the Dreamscape, is located.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Regarding the Gilded Hour...
+::'''Welt:''' Gilded Hour... It's said to be Penacony's Currency Center.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Blue Hour...
+::'''Welt:''' I hear the Blue Hour is very romantic. Do you have any tales to share?
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Moment of Dusk...
+::'''Welt:''' The Dreamscape of chic, luxury and consumerism &mdash; the Moment of Dusk &mdash; my companions have been there too.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} That's everything.
+::'''Acheron:''' This is what I've seen and heard along the way...
+::{{tx}}
+:{{tx}}
+;(If {{F|FSV_DoorC}} is not undefined 0)
+:;(If {{F|FSV_DoorC}} is not undefined 1)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(Unused &mdash; G53_Trigger)
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = When the Sacred Ginmill Closes
+|zhs  = 酒店关门之后
+|zht  = 飯店關門之後
+|ja   = 聖なる酒場の哀歌
+|ko   = 성스러운 바가 문을 닫을 때
+|es   = Cuando el hotel cierra sus puertas
+|fr   = Après la fermeture des portes de l'hôtel
+|ru   = Когда закрывается отель
+|th   = ยามเมื่อโรงแรมปิด
+|vi   = Sau Khi Khách Sạn Đóng Cửa
+|de   = Wenn das Hotel schließt
+|id   = Setelah Hotel Tutup
+|pt   = Quando o Hotel Fecha as Portas
+}}
+
+==Change History==
+{{Change History|3.5}}

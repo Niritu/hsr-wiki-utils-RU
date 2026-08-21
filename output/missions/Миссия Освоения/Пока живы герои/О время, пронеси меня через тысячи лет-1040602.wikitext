@@ -10,9 +10,9 @@ PageTitle=#О время, пронеси меня через тысячи лет
 |Событие         = 
 |Глава           = Пока живы герои
 |Условия         = 
-|Персонажи       = Первопроходец; Странный монитор
-|СтартЛокация    = [[Амфореус]] — [[????]]
-|Мир             = Амфореус
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Опыт Освоения*600; Звёздный нефрит*80; Путеводитель путешественника*6; Очищенный эфир*6; Беспорядочная амброзия*240; Кредиты*80 000
@@ -24,275 +24,27 @@ PageTitle=#О время, пронеси меня через тысячи лет
 
 ==Этапы==
 # Изучите таинственное пространство
+# Изучите монитор в самом конце
 # Что-то не так... Проверьте монитор ещё раз
 # Изучите таинственное пространство
-# Изучите монитор в самом конце
 
 ==Прохождение==
 {{Дополнить}}
 ===Изучите таинственное пространство===
-{{Описание миссии|тип=Миссия Освоения|локация=????|Перед каждой экспедицией должна пройти буря, предвещающая будущие трудности. Единственный зритель из зрительного зала Залегендья рассказывает вам историю о том, что было, пока были живы герои, начиная пролог трагедии.}}
+{{Описание миссии|тип=Миссия Освоения|локация=<!--необходимо добавить-->|Перед каждой экспедицией должна пройти буря, предвещающая будущие трудности. Единственный зритель из зрительного зала Залегендья рассказывает вам историю о том, что было, пока были живы герои, начиная пролог трагедии.}}
 {{Диалог Начало}}
-----
-:{{tx}}
-
-;(Unused &mdash; PlayVoice1_G6)
-<pre>{
-	"$type": "RPG.GameCore.PlayVoice_Single",
-	"VoiceID": 146021402,
-	"EmitterTargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300001
-		]
-	}
-}</pre>
-
-;(Unused &mdash; PlayVoice2_G6)
-<pre>{
-	"$type": "RPG.GameCore.PlayVoice_Single",
-	"VoiceID": 146021403,
-	"EmitterTargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300002
-		]
-	}
-}</pre>
-
-;(Unused &mdash; PlayVoice3_G6)
-<pre>{
-	"$type": "RPG.GameCore.PlayVoice_Single",
-	"VoiceID": 146021404,
-	"EmitterTargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300003
-		]
-	}
-}</pre>
-
-;(Unused &mdash; PlayVoice4_G6)
-<pre>{
-	"$type": "RPG.GameCore.PlayVoice_Single",
-	"VoiceID": 146021405,
-	"EmitterTargetType": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"TargetType": "Prop",
-		"Targets": [
-			300004
-		]
-	}
-}</pre>
-{{Диалог Конец}}
-
-===Что-то не так... Проверьте монитор ещё раз===
-{{Диалог Начало}}
-:'''Странный монитор:''' Аномалия: (Первопроходец).
-:'''Странный монитор:''' Выполняется команда: запись.
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-;(Unused &mdash; EnterDistrict_G{GroupID})
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-{{Диалог Конец}}
-
-===Изучите таинственное пространство===
-{{Диалог Начало}}
-
-;(Unused &mdash; DistrictTrigger_G10)
-
 {{Диалог Конец}}
 
 ===Изучите монитор в самом конце===
 {{Диалог Начало}}
+{{Диалог Конец}}
 
+===Что-то не так... Проверьте монитор ещё раз===
+{{Диалог Начало}}
+{{Диалог Конец}}
 
-;(Unused &mdash; HideNPC_G17)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideEntityV2",
-	"Target": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"Targets": [
-			400001
-		]
-	},
-	"IsHide": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-;(Unused &mdash; HideNPC_G18)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideEntityV2",
-	"Target": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"Targets": [
-			400001
-		]
-	},
-	"IsHide": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-;(Unused &mdash; HideNPC_G19)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideEntityV2",
-	"Target": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"Targets": [
-			400001
-		]
-	},
-	"IsHide": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-
-;(Unused &mdash; HideNPC_G20)
-<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0.5,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.HideEntityV2",
-	"Target": {
-		"$type": "RPG.GameCore.GroupFetchLocalTarget",
-		"Targets": [
-			400001
-		]
-	},
-	"IsHide": true
-}</pre>
-::<!--0.2-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.PPFilterStackEffect",
-	"Rate": 0,
-	"AssetPath": "EnviroSystem/PostProcessFilterAsset/ElectronicError.asset",
-	"MuteAudioEvent": true
-}</pre>
+===Изучите таинственное пространство===
+{{Диалог Начало}}
 {{Диалог Конец}}
 
 ==На других языках==

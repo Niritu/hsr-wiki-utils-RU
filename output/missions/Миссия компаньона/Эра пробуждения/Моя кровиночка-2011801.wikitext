@@ -10,9 +10,9 @@ PageTitle=#Моя кровиночка#
 |Событие         = 
 |Глава           = Эра пробуждения
 |Условия         = 
-|Персонажи       = Зеле; Первопроходец
-|СтартЛокация    = [[Ярило-VI]] — [[Заклёпкоград]]
-|Мир             = Ярило-VI
+|Персонажи       = Первопроходец
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = Опыт Освоения*500; Звёздный нефрит*100; Путеводитель путешественника*10; Утраченный кристалл*8; Обсидиан запустения*6; Кредиты*100 000
@@ -24,197 +24,26 @@ PageTitle=#Моя кровиночка#
 
 ==Этапы==
 # Проследите за Лукой и не дайте себя обнаружить!
-# Следуйте за Лукой и не дайте себя обнаружить!
 # Исследуйте предмет, оставленный Лукой
+# Следуйте за Лукой и не дайте себя обнаружить!
 
 ==Прохождение==
 {{Дополнить}}
 {{Диалог Конец}}
 
 ===Проследите за Лукой и не дайте себя обнаружить!===
-{{Описание миссии|тип=Миссия компаньона|локация=Заклёпкоград|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Тихонько проследите за Лукой и узнайте, что он скрывает.}}
+{{Описание миссии|тип=Миссия компаньона|локация=<!--необходимо добавить-->|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Тихонько проследите за Лукой и узнайте, что он скрывает.}}
 {{Диалог Начало}}
-
-;(Unused &mdash; Mission_201180102)
-
-
-;(Unused &mdash; hookready)
-<pre>{
-	"$type": "RPG.GameCore.HideWaypointByProp",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 2
-				}
-			},
-			"GroupNpcID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400001
-				}
-			}
-		}
-	},
-	"OnNameBoard": true
-}</pre>
-::<!--0.1-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionWayPoint",
-	"SubMissionID": 201180102,
-	"OverideMissionWayPointType": true,
-	"MissionWayPointType": "Prop",
-	"OverideWayPointGroupID": true,
-	"WayPointGroupID": 11,
-	"OverideWayPointEntityID": true,
-	"WayPointEntityID": 300007
-}</pre>
-
-;(Unused &mdash; Track_OnFail_Found)
-<pre>{
-	"$type": "RPG.GameCore.CharacterStopFreeStyle",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 11
-				}
-			},
-			"GroupNpcID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400001
-				}
-			}
-		}
-	}
-}</pre>
-
-;(Unused &mdash; Track_OnFail_Reset)
-<pre>{
-	"$type": "RPG.GameCore.ResetMissionWayPoint",
-	"SubMissionID": 201180102
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.ShowWaypointByProp",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 2
-				}
-			},
-			"GroupNpcID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400001
-				}
-			}
-		}
-	},
-	"IconPath": "SpriteOutput/MapPics/Billboard/IconBillboardMapCompanion02.png",
-	"OnNameBoard": true
-}</pre>
-{{Диалог Конец}}
-
-===Следуйте за Лукой и не дайте себя обнаружить!===
-{{Диалог Начало}}
-
-;(Unused &mdash; Mission_201180105)
-:{{tx}}
-:<pre>{
-	"$type": "RPG.GameCore.CharacterStopFreeStyle",
-	"CharacterUniqueName": "LocalPlayer",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvLocalPlayer",
-		"IncludeStoryPlayer": false
-	},
-	"NormalizedTransitionDuration": 0.1
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.BlockInputController",
-	"ActionNameList": []
-}</pre>
-
-;(Unused &mdash; Track_OnFail_Reset01)
-<pre>{
-	"$type": "RPG.GameCore.ResetMissionWayPoint",
-	"SubMissionID": 201180105
-}</pre>
-:<pre>{
-	"$type": "RPG.GameCore.ShowWaypointByProp",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400001
-				}
-			}
-		}
-	},
-	"IconPath": "SpriteOutput/MapPics/Billboard/IconBillboardMapCompanion02.png",
-	"OnNameBoard": true
-}</pre>
-
-;(Unused &mdash; isReached02)
-<pre>{
-	"$type": "RPG.GameCore.HideWaypointByProp",
-	"TargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
-		"FetchType": "SingleNpcByNpcID",
-		"SingleNpcID": {
-			"GroupID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 10
-				}
-			},
-			"GroupNpcID": {
-				"IsDynamic": false,
-				"FixedValue": {
-					"Value": 400001
-				}
-			}
-		}
-	},
-	"OnNameBoard": true
-}</pre>
-::<!--0.1-second delay-->
-:<pre>{
-	"$type": "RPG.GameCore.SetMissionWayPoint",
-	"SubMissionID": 201180105,
-	"OverideMissionWayPointType": true,
-	"MissionWayPointType": "Prop",
-	"OverideWayPointGroupID": true,
-	"WayPointGroupID": 12,
-	"OverideWayPointEntityID": true,
-	"WayPointEntityID": 300004
-}</pre>
 {{Диалог Конец}}
 
 ===Исследуйте предмет, оставленный Лукой===
-{{Описание миссии|тип=Миссия компаньона|локация=Заклёпкоград|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Лука оставил загадочную коробку перед приютом. Откройте её и узнайте, что там скрывается.}}
+{{Описание миссии|тип=Миссия компаньона|локация=<!--необходимо добавить-->|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Лука оставил загадочную коробку перед приютом. Откройте её и узнайте, что там скрывается.}}
 {{Диалог Начало}}
-:'''Зеле:''' Он что-то... положил?
-:'''Зеле:''' Давай поглядим.
+{{Диалог Конец}}
+
+===Следуйте за Лукой и не дайте себя обнаружить!===
+{{Описание миссии|тип=Миссия компаньона|локация=<!--необходимо добавить-->|Череда странных поступков Луки вызвала у вас с Зеле серьёзные подозрения.<br />Вы следуете за ним в Заклёпкоград, чтобы выяснить правду.<br />Тихонько проследите за Лукой и узнайте, что он скрывает.}}
+{{Диалог Начало}}
 {{Диалог Конец}}
 
 ==На других языках==

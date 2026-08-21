@@ -1,0 +1,569 @@
+<%-- [PAGE_INFO]
+PageTitle=#Beauty and Destruction#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1032801
+|title         = 
+|image         = <!--Mission Beauty and Destruction.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In Our Time
+|requirements  = [[Trailblaze Mission]] ''[[Seabiscuit]]'' completed
+|summary       = Sunday takes the Dreammaster's side in the prior negotiations and cages Robin and Welt under his control. He also clearly reveals his intentions to everyone but indicates he does not wish to fight you. Instead, he asks you a series of questions to explore the possibility of mutual understanding.
+|characters    = Himeko; March 7th; Sunday; Trailblazer
+|startLocation = [[Penacony]] - [[SoulGlad™ Scorchsand Audition Venue]]
+|world         = Penacony
+|area          = SoulGlad™ Scorchsand Audition Venue
+|prev          = Seabiscuit
+|next          = Everything that Rises Must Converge
+|rewards       = Trailblaze EXP*1 300; Stellar Jade*160; Traveler's Guide*10; Clock Credits*650; Credit*120 000
+}}
+'''''Beauty and Destruction''''' is a [[Trailblaze Mission]] in the chapter [[In Our Time]].
+
+==Steps==
+# Pass through the Path of the Superstars to reach the Penacony Grand Theater
+# (Optional) Talk with the others and see what they think
+# Decide the little Charmony Dove's destiny
+# Decide the Dreamchasers' destiny
+# Decide Robin's destiny
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Pass through the Path of the Superstars to reach the Penacony Grand Theater{{subst:void|<!--103280106-->}}===
+{{Dialogue Start}}
+:'''Himeko:''' Unbelievable, to think that there would be... remnants of the Order on Penacony.
+:'''March 7th:''' What have you done with Mr. Yang and Miss Robin!?
+:'''Sunday:''' Don't worry. I just gave them some time alone to ponder their fates.
+:'''Himeko:''' You should know that these actions make you an enemy of the Astral Express.
+:'''Sunday:''' Should we need to stand against the Nameless, it would only be myself and the Oak family involved. But we haven't reached that point yet, have we?
+:'''Sunday:''' Your efforts for the justice of Penacony are evident to everyone and have been widely observed.
+:{{Диалог|Стрелка}} You want to talk terms with us?
+::'''Sunday:''' Smart kid. You're just as sharp as the other one.
+::Stop beating around the bush and get to the point.
+::'''Sunday:''' Patience is a virtue. However, I won't hold it against you. On the contrary, I'm here to make my intentions clear.
+::Give Mr. Yang back to us, now!
+:{{Диалог|Стрелка}} Stop beating around the bush and get to the point.
+::'''Sunday:''' Patience is a virtue. However, I won't hold it against you. On the contrary, I'm here to make my intentions clear.
+::Give Mr. Yang back to us, now!
+:{{Диалог|Стрелка}} Give Mr. Yang back to us, now!
+:'''Sunday:''' Oh I intend to, but that hinges on the outcome of this negotiation.
+:'''Himeko:''' If it is the Order that drove you to imprison Welt and Robin, and you're using them to coerce our compliance, then there'll be no point in entertaining any type of discussion.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_sunday_disappear"
+	}
+}</pre>
+:'''March 7th:''' Huh, where'd he go?
+:'''Sunday:''' Welcome. This isn't any location in Penacony's Dreamscape. It's my inner world. The reason the scenery before you remains unchanged is because your consciousness has drawn on similar concepts to fill in the gaps.
+:{{Диалог|Стрелка}} You've imprisoned us?
+:{{Диалог|Стрелка}} Who in their right mind would expose their inner-self like this?
+::'''March 7th:''' That means...
+:'''Himeko:''' Did you do the same to Welt?
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_penacony_3D_character_appear"
+	},
+	"EmitterType": "DefaultEmitter"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		300001,
+		300002
+	]
+}</pre>
+:{{tx}}
+{{Dialogue End}}
+
+===(Optional) Talk with the others and see what they think{{subst:void|<!--103280108-->}}===
+{{Mission Description|type=trailblaze|location=SoulGlad™ Scorchsand Audition Venue|update|To everyone's surprise, the person present to crown you champion is not Robin at all, but her big brother, Sunday. Here, he finally reveals his true intentions, but he does not seem to want to fight you, instead seeking the possibility of reaching a mutual understanding.<br />He asks you a series of questions that leave you a little lost, but fear not - if you are confounded by Sunday's questions, just look for the answers in your personal experience.}}
+{{Dialogue Start}}
+
+
+;(Talk to March 7th)
+<pre>{
+	"$type": "RPG.GameCore.PredicateTaskListWithFail",
+	"Predicate": {
+		"$type": "RPG.GameCore.ByCompareSubMissionState",
+		"SubMissionID": 103280101,
+		"SubMissionState": "Started"
+	},
+	"SuccessTaskList": [
+		{
+			"$type": "RPG.GameCore.TriggerPerformance",
+			"ValueSource": {},
+			"PerformanceType": "E",
+			"PerformanceID": 103270219
+		},
+		{
+			"$type": "RPG.GameCore.FinishLevelGraph"
+		}
+	]
+}</pre>
+
+;(Talk to Himeko)
+
+
+;(Talk to Firefly)
+
+{{Dialogue End}}
+
+===Decide the little Charmony Dove's destiny{{subst:void|<!--103280109-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; Perf)
+:{{tx}}
+::{{Цвет|Ключевой|nobold=1|Stick to the original plan, and build a nest with soft net where the Charmony Dove fell?}}
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280109,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{Цвет|Ключевой|nobold=1|Stick to the original plan, and build a nest with soft net where the Charmony Dove fell?}}
+:::Make the decision.
+:::Think it over some more.
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280109"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(Unused &mdash; Perf)
+:{{tx}}
+::{{Цвет|Ключевой|nobold=1|Or build a cage for it, and feed it, giving it the utmost care from within the warmth of a home?}}
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280109,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{Цвет|Ключевой|nobold=1|Or build a cage for it, and feed it, giving it the utmost care from within the warmth of a home?}}
+:::Make the decision.
+:::Think it over some more.
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280109"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:{{tx}}
+:{{tx}}
+:{{tx}}
+;(Unused &mdash; Perf)
+:{{tx}}
+::{{Цвет|Ключевой|nobold=1|Or will you remain silent, leaving him to languish while the Hounds are hot on his heels, until his inevitable judgment arrives?}}
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280112,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{Цвет|Ключевой|nobold=1|Or will you remain silent, leaving him to languish while the Hounds are hot on his heels, until his inevitable judgment arrives?}}
+:::Make the decision.
+:::Think it over some more.
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280112"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; Perf)
+:{{tx}}
+::{{Цвет|Ключевой|nobold=1|Will you try to convince the Bloodhound Family to stop their pursuit, so that the Dreamchaser may live peacefully and realize his wishes?}}
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280112,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{Цвет|Ключевой|nobold=1|Will you try to convince the Bloodhound Family to stop their pursuit, so that the Dreamchaser may live peacefully and realize his wishes?}}
+:::Make the decision.
+:::Think it over some more.
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "Talk_103280112"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Decide the Dreamchasers' destiny{{subst:void|<!--103280112-->}}===
+{{Dialogue Start}}
+
+:{{tx}}
+:{{tx}}
+:{{tx}}
+;(Unused &mdash; OptionChosen_1032801)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; WayChosen)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43321
+}</pre>
+
+;(Unused &mdash; Perf)
+:{{tx}}
+::Will you make this choice?
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{tx}}
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 103280114,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 1
+				},
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "OptionChosen_1032801"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "WayChosen"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; OptionChosen_1032801)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+
+;(Unused &mdash; WayChosen)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43321
+}</pre>
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 103280104,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			0,
+			1,
+			2
+		]
+	}
+}</pre>
+::{{tx}}
+::Will you make this choice?
+::{{Диалог|Стрелка}} Make the decision.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:::{{tx}}
+::{{Диалог|Выход}} Think it over some more.
+::<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult"
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1
+				}
+			]
+		},
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMissionCustomValue",
+					"SubmissionID": 103280117,
+					"MissionCustomValue": {
+						"Index": 2,
+						"Name": "OldValue_2",
+						"ValidValueParamList": [
+							0,
+							1,
+							2
+						]
+					},
+					"CustomValue": 2
+				},
+				{
+					"$type": "RPG.GameCore.PlayFullScreenTransfer",
+					"PrevDuration": -1,
+					"PostDuration": -1
+				},
+				{
+					"$type": "RPG.GameCore.TriggerGroupEvent",
+					"EventName": {
+						"Value": "WayChosen"
+					}
+				},
+				{
+					"$type": "RPG.GameCore.TriggerCustomString",
+					"CustomString": {
+						"Value": "OptionChosen_1032801"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Decide Robin's destiny{{subst:void|<!--103280101-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Beauty and Destruction
+|zhs  = 美丽与毁灭
+|zht  = 美麗與毀滅
+|ja   = 美と壊滅
+|ko   = 아름답고 저주받은 사람들
+|es   = Belleza y destrucción
+|fr   = Beauté et destruction
+|ru   = Красавица и Разрушение
+|th   = ความงามและการทำลายล้าง
+|vi   = Vẻ Đẹp Và Hủy Diệt
+|de   = Schönheit und Zerstörung
+|id   = Beauty dan Destruction
+|pt   = Beleza e Destruição
+}}
+
+==Change History==
+{{Change History|3.5}}

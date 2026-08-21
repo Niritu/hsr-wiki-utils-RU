@@ -1,0 +1,246 @@
+<%-- [PAGE_INFO]
+PageTitle=#A Web of Pasts Rewoven#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2022202
+|title         = 
+|image         = <!--Mission A Web of Pasts Rewoven.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Finest Duel Under the Pristine Blue (II)
+|requirements  = [[Trailblaze Continuance]] ''[[At Dawn, To War]]'' completed
+|summary       = In the Shackling Prison, the Divine Foresight arrives along with Dan Heng and Lingsha to investigate the truth behind the prison break. Amid the clues left behind by the pack of wolves, the old grudge between the Xianzhou Luofu and Hoolay is once again brought to light.
+|characters    = Dan Heng; Jing Yuan; Lingsha; Trailblazer
+|startLocation = [[The Xianzhou Luofu]] - [[The Shackling Prison]]
+|world         = The Xianzhou Luofu
+|area          = The Shackling Prison
+|prev          = At Dawn, To War
+|next          = Alone In Peril
+|rewards       = Trailblaze EXP*600; Stellar Jade*80; Traveler's Guide*5; Lost Crystal*5; Credit*120 000
+}}
+'''''A Web of Pasts Rewoven''''' is a [[Trailblaze Continuance]] in the chapter [[Finest Duel Under the Pristine Blue (II)]].
+
+==Steps==
+# Investigate the Shackling Prison with General Jing Yuan
+# Investigate the borisin corpse in the hall
+# Follow the smoke from Lingsha's censer and keep moving
+# (Optional) Investigate suspicious clues along the escape route
+# Follow the smoke from Lingsha's censer and keep moving
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Investigate the Shackling Prison with General Jing Yuan{{subst:void|<!--202220201-->}}===
+{{Mission Description|type=continuance|location=The Shackling Prison|On the other side, Jing Yuan, Dan Heng, and Lingsha arrive at The Shackling Prison, where all are busy picking up the pieces of the breakout. The trio examine the aftermath of the borisin's surprise attack, in search of clues that may help them catch the mastermind stirring up trouble from behind the scenes. Along the way, past events are revisited...}}
+{{Dialogue Start}}
+:{{tx}}
+:{{tx}}
+{{Dialogue End}}
+
+===Investigate the borisin corpse in the hall{{subst:void|<!--202220202-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Lingsha:''' According to Lieutenant Yanqing's report, he stumbled upon a few suspicious foxians at Stargazer Navalia. After following them, he discovered that they were actually borisin in disguise. This is one of the bodies.
+:'''Dan Heng:''' Looking at him now, it's hard to imagine how he transformed into a foxian.
+:'''Lingsha:''' My alchemists detected some... complex ingredients in his remains, which might explain how these borisin were able to disguise themselves as foxians.
+:'''Lingsha:''' Simply put, foxians and borisin share a common ancestry. Although they look completely different now, there isn't much genetic difference between them. This medicine allows borisin to temporarily change their shape into that of foxians.
+:'''Dan Heng:''' So, in other words, if they stop taking the medicine, their true form will soon be revealed?
+:{{Диалог|Стрелка}} Borisin have fast metabolisms, so the effects of medicines don't last long...
+::'''Lingsha:''' Indeed. This means that these borisin have a steady supply of the medicine within the Luofu.
+::An infiltration technique the general is familiar with...
+:{{Диалог|Стрелка}} An infiltration technique the general is familiar with...
+:'''Jing Yuan:''' The formula and technique seem oddly familiar.
+:'''Lingsha:''' The Disciples of Sanctus Medicus. Looks like the Alchemy Commission is involved once again.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.WaitStreamingJobFinished"
+}</pre>
+:'''Lingsha:''' Here we are. According to the judge, this area is not yet under control, so we should proceed cautiously.
+:'''Lingsha:''' I've captured the nature of the medicine in my censer.
+:'''Lingsha:''' By following the medicinal fumes, we should be able to retrace the steps of the disguised borisin.
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G144"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+:A prison guard is collapsed on the ground, her body twisted unnaturally.
+:{{Диалог|Стрелка}} (Examine the remains of the warden)
+:'''Lingsha:''' Incredible strength... The attacker shattered this warden's bones with a single blow.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G145"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+:{{DIcon|Изучение}} Investigate
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20241_F20241001_G146"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Follow the smoke from Lingsha's censer and keep moving{{subst:void|<!--202220210-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:The wolf-shaped mech disintegrates into a pile of metal.
+:'''Jing Yuan:''' Yanqing told me that an IPC ship was attacked by borisin. Is this what they were transporting on the ship?
+:{{Диалог|Стрелка}} A biomimetic weapon that will auto-restart even after being turned off...
+:{{Диалог|Стрелка}} The Intelligentsia Guild's research on the traits of longevity...
+:'''Lingsha:''' Yes, the Artisanship Commission and Alchemy Commission conducted a joint examination and found that... the parts of this machine are made from specially refined borisin bio-tissue.
+:{{tx}}
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+:{{DIcon|undefined}} 
+
+
+;(По прибытии на место)
+{{Dialogue End}}
+
+===(Optional) Investigate suspicious clues along the escape route{{subst:void|<!--202220215-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Follow the smoke from Lingsha's censer and keep moving{{subst:void|<!--202220211-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+;(По прибытии на место)
+;(If {{F|Fly}} is not undefined 2)
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerEntityServerEvent"
+}</pre>
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:A mess of bodies, a fierce battle must have been fought here.
+:{{Диалог|Стрелка}} (Examine the mara-struck remains)
+:'''Lingsha:''' These mara-struck soldiers... don't appear to be escaped prisoners.
+:{{tx}}
+:{{tx}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = A Web of Pasts Rewoven
+|zhs  = 缕析条分，故事重问
+|zht  = 縷析條分，故事重問
+|ja   = 勘案分析、再び問われる過去
+|ko   = 세밀한 분석, 다시 드러난 과거
+|es   = Red de pasados entretejidos
+|fr   = Sur les traces du passé
+|ru   = Ниточка вьётся, в минувших делах отзовётся
+|th   = วิเคราะห์คดี สะสางอดีต
+|vi   = Phân Tích Chi Tiết, Đào Lại Quá Khứ
+|de   = Gewoben aus Vergangenem
+|id   = Menyulam Kembali Jejak-Jejak Masa Lampau
+|pt   = Uma Teia de Passados Retecida
+}}
+
+==Change History==
+{{Change History|3.5}}

@@ -1,0 +1,1773 @@
+<%-- [PAGE_INFO]
+PageTitle=#Dream Song#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2030401
+|title         = 
+|image         = <!--Mission Dream Song.png-->
+|type          = Adventure
+|event_name    = 
+|chapter       = 
+|requirements  = [[Trailblaze Mission]] ''[[And on the Eighth Day]]'' completed
+|summary       = The efforts of the Dreamweavers will not be in vain, and true history should not be forgotten. Those brightly shining dreams will eventually be transmuted into starlight, bringing illumination to everyone.<br />May you find your own nest, and may you compose your own poem.
+|characters    = ??; Blue Bird; Boss Red; Clockie; Dr. Blues; Lady Vermilion; Sir Whittaker; Trailblazer; Verdant Manager; Young Master Gold
+|startLocation = [[Penacony]] - [[Dreamflux Reef]]
+|world         = Penacony
+|area          = Dreamflux Reef
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*200; Stellar Jade*40; Traveler's Guide*5; Clock Credits*360; Planet of Festivities Collectible Card — Planet of Festivities: Origami Dreamweaver*1 { text = Planet of Festivities Collectible Card - Planet of Festivities: Origami Dreamweaver }; The Dreamweaver Archives*1 { text = ''The Dreamweaver Archives'' }; Credit*80 000
+}}
+'''''Dream Song''''' is an [[Adventure Mission]] on [[Penacony]].
+
+==Steps==
+# Speak with Dr. Blues
+# Listen to what Clockie has discovered
+# Question Sir Whittaker
+# Ask Dr. Blues for confirmation
+# Return the records
+# Enter Dr. Blues' Emoscape
+# Speak with Dr. Blues
+# Go to where the Dreamweavers gather
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Speak with Dr. Blues{{subst:void|<!--203040101-->}}===
+{{Mission Description|type=adventure|location=Dreamflux Reef|Dr. Blues, the Origami Bird staying in Dreamflux Reef, seems to be a bit different from the other birds. Go and see what is happening.}}
+{{Dialogue Start}}
+
+;(Talk to Dr. Blues)
+:'''Dr. Blues:''' Hmm? This hat... Looks like you've found the {{Rubi|treasure|Legacy}} that the Watchmaker left behind.
+:'''Dr. Blues:''' Does this mean that his last wishes are fulfilled?
+:'''Dr. Blues:''' Hmph...
+:'''Dr. Blues:''' This Watchmaker sure is a stubborn one... planning such a gigantic plot and betting it all on someone else. I never thought he'd actually find the perfect ending after going around in such a huge circle.
+:'''Dr. Blues:''' All right, now the Watchmaker's wishes have been fulfilled. That drunken hound can also probably retire with honor...
+:'''Dr. Blues:''' ...And I'm the only bird left in this place again.
+:{{Диалог|Стрелка}} You don't intend to leave?
+:'''Dr. Blues:''' Me? I'm an origami bird, don't you get it? The sort that can only appear in dreams.
+:'''Dr. Blues:''' Penacony does not welcome birds that can't tweet, which is why I trusted the Watchmaker's deception and built a new nest here. Later, he dragged a bunch of naysayers here, and this place became Dreamflux Reef.
+:'''Dr. Blues:''' ...To a certain extent, this is a grand haven, specifically sheltering poor souls who could neither fit into the Dreamscape, nor leave the dream.
+:{{Диалог|Стрелка}} You built Dreamflux Reef?
+:{{Диалог|Стрелка}} Birds can be Dreamweavers too?
+:'''Dr. Blues:''' That's right. Treasure all this, for Penacony will be hard-pressed to produce another Dreamweaver as gifted as me. I...
+:The bird before you suddenly goes mute. It is silent for a couple of seconds, and its demeanor turns aloof.
+:'''Dr. Blues:''' Forget it, it's none of your business.
+:'''Dr. Blues:''' I'm very busy. Go find another unlucky soul to be your guide. Don't let me keep you.
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10304_F10304001_G66",
+	"AnchorName": "Anchor1",
+	"DynamicParams": {}
+}</pre>
+:'''Clockie:''' ...Tick-tock! Get over here quick, (Trailblazer)!
+
+;(Unused &mdash; OpenRaid_43322)
+<pre>{
+	"$type": "RPG.GameCore.ShowHeartDialUI",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400001
+		]
+	}
+}</pre>
+{{Dialogue End}}
+
+===Listen to what Clockie has discovered{{subst:void|<!--203040102-->}}===
+{{Mission Description|type=adventure|location=Dreamflux Reef|update|Clockie found something odd. Go and listen to what he has to say.}}
+{{Dialogue Start}}
+
+;(Talk to Clockie)
+:'''Clockie:''' Tick-tock, something's wrong with Dr. Blues!
+:'''Clockie:''' It's completely different from when I saw it in Dreamville. It's missing something that an origami bird should have!
+:'''Clockie:''' Not just that, it seems like there's another soul inside that paper body... Maybe Dr. Blues is no ordinary Origami Bird?
+:{{Диалог|Стрелка}} You've got a point.
+:{{Диалог|Стрелка}} It's hard to say...
+:{{Диалог|Стрелка}} I knew it!
+:'''Clockie:''' Tick-tock... If we're to search for Dr. Blues' past, we'll just have to start with the information it provided. A bird capable of building Dreamflux Reef must not be an ordinary bird!
+:{{tx}}
+{{Dialogue End}}
+
+===Question Sir Whittaker{{subst:void|<!--203040107-->}}===
+{{Mission Description|type=adventure|location=Dream's Edge|update|Sir Whittaker might know something related to this photo. Keep asking him about it.}}
+{{Dialogue Start}}
+
+;(Talk to Sir Whittaker)
+:'''Sir Whittaker:''' Found the info you wanted?
+:{{Диалог|Разговор}} About this photo...
+::'''Sir Whittaker:''' Oh... This photo really brings back memories.
+::'''Sir Whittaker:''' It once belonged to Origami Dreamweaver Fischer, who was also my mentor. In his later years, he led us Paperfold University students in compiling a family history of the Nightingales. This photo should have been from that time.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Origami Dreamweavers...
+::'''Sir Whittaker:''' They were students of the first Dreamweaver, Professor Glaux, and legendary Dreamweavers who created the Twelve Hours. What you witness in each Dreamscape is their legacy.
+::'''Sir Whittaker:''' ...Alas, it's a shame that this Dreamscape only has their works engraved, but left their names long forgotten.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Dreamchaser era...
+::'''Sir Whittaker:''' That was a time when countless dreams sprouted. Mr. Fischer once told me of that age...
+::'''Sir Whittaker:''' During that time, Penacony had only just completed the Dreamscape's development. The lineages weren't completely given unto Harmony's embrace yet, and countless opportunities buried in dreams were waiting to be unearthed, resulting in numerous Dreamchasers gathering like moths to a flame, thirsting for fortune and success.
+::'''Sir Whittaker:''' To build a true Planet of Festivities, Professor Glaux &mdash; who was the Nightingale's family head &mdash; began recruiting the most stellar talents across the cosmos, leading them in the exploration of methods to modify the Dreamscape &mdash; what you know as dreamweaving technology.
+::'''Sir Whittaker:''' His four most outstanding students were coined the Origami Dreamweavers. They were architects, but first and foremost, they were great Dreamchasers who conquered the Dreamscape.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} I'm about done with my questions.
+::'''Sir Whittaker:''' This may just be my speculation, but the original inspiration for those leader-birds in the Clockie cartoons &mdash; they were these Origami Dreamweavers.
+::{{Диалог|Стрелка}} Hang on! The numbers don't add up!
+::'''(Trailblazer):''' (Origami birds come in five colors... but there are only four legendary Dreamweavers here! Which one is Dr. Blues exactly?)
+::'''Sir Whittaker:''' About this... I'm not too sure either. If you're interested, you may wish to seek out the truth yourself.
+::'''Sir Whittaker:''' Time will cause the colors of past tales to fade, buried by extravagance and embellishment... Young one, I'm very glad that you still remember them.
+::'''Sir Whittaker:''' I'll lend you this photograph for now. I hope you can unearth the history behind this matter.
+{{Dialogue End}}
+
+===Ask Dr. Blues for confirmation{{subst:void|<!--203040104-->}}===
+{{Mission Description|type=adventure|location=Dreamflux Reef|update|That photo is probably closely related to Dr. Blues. Go back to ask him for a confirmation.}}
+{{Dialogue Start}}
+
+;(Talk to Dr. Blues)
+:'''Dr. Blues:''' I told you, I'm super busy... How can I help you? Be quick about it.
+:{{Диалог|Стрелка}} I understand everything!
+:{{Диалог|Стрелка}} You are a Nightingale Dreamweaver?
+:'''Dr. Blues:''' Who I am is none of your business. If you've got time to spare, you might as well go look for Dreamflux Reef's Origami Birds.
+:{{Диалог|Стрелка}} (Show Dr. Blues the faded photo)
+:'''Dr. Blues:''' Where'd you get this photograph from? I already told you I'm very busy, I...
+:'''Dr. Blues:''' ...This is...
+:The bird is dumbfounded. It is the first time you see the definition of "bewilderment" written all over that origami face.
+:'''Dr. Blues:''' This is my photo? No... It seems different...
+:{{Диалог|Стрелка}} You're not in it?
+::'''Dr. Blues:''' This isn't my photo, but I recognize, no, I'm very familiar with these few...
+:{{Диалог|Стрелка}} You know these Dreamweavers?
+::'''Dr. Blues:''' I should know them, or rather, I'm very familiar...
+:{{Диалог|Стрелка}} I've even found some information from the past.
+:'''Dr. Blues:''' ''The Dreamweaver Archives''...
+:'''Dr. Blues:''' ...What's all this nonsense about! The true Nightingales weren't like this at all, we...
+:'''Dr. Blues:''' W&mdash;We...
+:{{Диалог|Стрелка}} What were you like?
+:'''Dr. Blues:''' ...I don't remember.
+:'''Dr. Blues:''' Oh no, I've been a bird for so long. It's as if I've forgotten something important...
+:{{Диалог|Стрелка}} Well, then, you should let me help you!
+:'''Dr. Blues:''' ...
+:'''Dr. Blues:''' No. I've seen what Clockie does... Letting someone into your brain? That's disgusting. No.
+:The bird regains its *sly* expression &mdash; honestly, it's the most unpleasant cartoon character you've ever seen, hands down.
+:'''(Trailblazer):''' (If a good cop won't work... guess I'll have to go bad cop then!)
+:{{Диалог|Стрелка}} Clockwork, forced activation!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::'''Dr. Blues:''' ...Wait, hey, what're you doing!?
+:{{Диалог|Выход}} We need to plan this out carefully...
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "OpenRaid_43322"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+
+;(Talk to Sir Whittaker)
+:'''Sir Whittaker:''' Hello, young Dreamchaser. You have something else to ask?
+:{{Диалог|Разговор}} About this photo...
+::'''Sir Whittaker:''' Oh... This photo really brings back memories.
+::'''Sir Whittaker:''' It once belonged to Origami Dreamweaver Fischer, who was also my mentor. In his later years, he led us Paperfold University students in compiling a family history of the Nightingales. This photo should have been from that time.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Origami Dreamweavers...
+::'''Sir Whittaker:''' They were students of the first Dreamweaver, Professor Glaux, and legendary Dreamweavers who created the Twelve Hours. What you witness in each Dreamscape is their legacy.
+::'''Sir Whittaker:''' ...Alas, it's a shame that this Dreamscape only has their works engraved, but left their names long forgotten.
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} About the Dreamchaser era...
+::'''Sir Whittaker:''' That was a time when countless dreams sprouted. Mr. Fischer once told me of that age...
+::'''Sir Whittaker:''' During that time, Penacony had only just completed the Dreamscape's development. The lineages weren't completely given unto Harmony's embrace yet, and countless opportunities buried in dreams were waiting to be unearthed, resulting in numerous Dreamchasers gathering like moths to a flame, thirsting for fortune and success.
+::'''Sir Whittaker:''' To build a true Planet of Festivities, Professor Glaux &mdash; who was the Nightingale's family head &mdash; began recruiting the most stellar talents across the cosmos, leading them in the exploration of methods to modify the Dreamscape &mdash; what you know as dreamweaving technology.
+::'''Sir Whittaker:''' His four most outstanding students were coined the Origami Dreamweavers. They were architects, but first and foremost, they were great Dreamchasers who conquered the Dreamscape.
+:;(Return to previous option selection)
+:{{Диалог|Выход}} I have nothing else to ask.
+::'''Sir Whittaker:''' Time will cause the colors of past tales to fade, buried by extravagance and embellishment... Young one, I'm very glad that you still remember them.
+::'''Sir Whittaker:''' I hope you can unearth the history behind this matter.
+{{Dialogue End}}
+
+===Return the records{{subst:void|<!--203040106-->}}===
+{{Mission Description|type=adventure|location=Dream's Edge|update|You fixed the records for those Dreamweavers by witnessing Dr. Blues' past. Go tell everything you know to Sir Whittaker.}}
+{{Dialogue Start}}
+
+;(Talk to Sir Whittaker)
+:{{tx}}
+:'''Sir Whittaker:''' We meet again, {{MC|ж=madam|м=sir}}.
+:{{Диалог|Стрелка}} I'm here to return the file.
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 203040106,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetPerformanceResult",
+			"Value": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/2030401/DS20304014102.playable",
+			"Type": "Discussion"
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230414105,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230414106"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "EndPerformance"
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203040106
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_230414106)
+:'''Sir Whittaker:''' We meet again, {{MC|ж=madam|м=sir}}.
+::I'm here to return the file.
+::'''Sir Whittaker:''' You're back faster than I thought. Is the investigation over already?
+::Yes, I'm done with the investigation.
+::You tell Sir Whittaker about the Dreamchaser era that belonged to the Dreamweavers &mdash; and the truest form of those people, which was unrecorded in history.
+::'''Sir Whittaker:''' I see... Mr. Fischer, the former family head, did not tell me about this past.
+::'''Sir Whittaker:''' I thank you for this record. I will keep it secure.
+::{{Диалог|Стрелка}} Will you publish this record?
+::'''Sir Whittaker:''' I'd really like to say yes, but alas, my political stance requires that I be prudent about my actions. I may not be able to publicize the parts that affect The Family's stability, but I promise that the Dreamscape will remember the names of those Dreamweavers.
+::{{Диалог|Стрелка}} ...
+::{{Диалог|Стрелка}} I guess it will be a long wait...
+::'''Sir Whittaker:''' A pity that, even in the Dreamscape, Penacony is unable to fulfill everyone's wishes.
+::{{tx}}
+
+;(Unused &mdash; EndPerformance)
+
+
+;(Talk to Sir Whittaker)
+:{{tx}}
+:'''Sir Whittaker:''' We meet again, {{MC|ж=madam|м=sir}}.
+:{{Диалог|Стрелка}} I've come to return something.
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_ConsumeItem",
+	"SubmissionID": 203040115,
+	"SimpleTalk": {},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.SetPerformanceResult",
+			"Value": 1
+		},
+		{
+			"$type": "RPG.GameCore.PlayTimeline",
+			"TimelineName": "Story/Discussion/Mission/2030401/DS20304013202.playable",
+			"Type": "Discussion",
+			"Parameters": []
+		},
+		{
+			"$type": "RPG.GameCore.PlayOptionTalk",
+			"OptionList": [
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230413205,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230413207"
+				},
+				{
+					"$type": "RPG.GameCore.OptionTalkInfo",
+					"TalkSentenceID": 230413206,
+					"OptionIconType": "ChatContinueIcon",
+					"TriggerCustomString": "TalkSentence_230413207"
+				}
+			]
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "EndPerformance"
+			}
+		}
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 203040115
+				}
+			]
+		}
+	]
+}</pre>
+;(Unused &mdash; TalkSentence_230413207)
+:'''Sir Whittaker:''' Hehe, from your expression, I can tell this isn't going to be a light-hearted story.
+::{{tx}}
+
+;(Unused &mdash; EndPerformance)
+
+
+;(Talk to Dr. Blues)
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Dr. Blues:''' Hmm? Looks like you found all the birds.
+:::'''Dr. Blues:''' Excellent, we can wrap up early. Don't forget to take this gift, and don't let me keep you.
+::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200210
+			}
+		},
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200211
+			}
+		}
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}})
+::::'''Dr. Blues:''' Hmm? Looks like you've found the remaining birds.
+::::'''Dr. Blues:''' This is the final gift from the origami birds. Take it, and don't let me keep you.
+:::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200211
+			}
+		}
+	]
+}</pre>
+::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}}}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Inverse":true}-->}})
+::::'''Dr. Blues:''' The bird hunting game is over. Make it quick, or leave me be.
+::::{{Диалог}} About yourself...
+:::::'''Dr. Blues:''' Origami Bird Dr. Blues, or Dreamweaver Orla. You can call me whatever you want as long as you don't cause trouble for me.
+::::::'''Dr. Blues:''' ...Never mind, this name sounds weird when you're the one saying it... Better just address me as Dr. Blues.
+:::::;(Return to previous option selection)
+:::::'''Dr. Blues:''' Bird, origami bird, or Dr. Blues. You can call me anything you want as long as you don't give me any trouble.
+::::::'''Dr. Blues:''' It's thanks to that Watchmaker that I'm busy fixing up this Dreamflux Reef. Oh, correction &mdash; I should say it's thanks to Clockie that I'm building Rouseville.
+::::::'''Dr. Blues:''' Ahem, have you seen ''Clockie&ast;''s cartoons? According to the setting, origami birds only know Clockie.
+::::::{{Диалог|Стрелка}} But you don't talk like an origami bird.
+::::::'''Dr. Blues:''' Err, why's that?
+::::::{{Диалог|Стрелка}} You know the Watchmaker.
+:::::::'''Dr. Blues:''' Of course, everyone knows the Watchmaker around here... But only a handful know what he really wants.
+:::::::'''Dr. Blues:''' All right, rather than talking about the pointless, you'd be better off looking for the stuff that fella left behind.
+:::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+:::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} You're not just an animated character.
+:::::::'''Dr. Blues:''' Good eye. Unfortunately, it's not time yet to solve the "Origami Bird" arc.
+:::::::'''Dr. Blues:''' Instead of going around in circles with me, you should look for the stuff that the Watchmaker left behind.
+:::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+:::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+::::::;(Return to previous option selection)
+::::::{{Диалог|Стрелка}} You don't tweet!
+:::::::'''Dr. Blues:''' ...
+:::::::'''Dr. Blues:''' ...Tweet. Satisfied now?
+:::::::'''Dr. Blues:''' What's with you people and your obsession with such a juvenile setting... Instead of going around in circles with me, you should look for the stuff that the Watchmaker left behind.
+:::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+:::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+::::::;(Return to previous option selection)
+::::{{Диалог}} Tell me the story of the origami birds...
+:::::'''Dr. Blues:''' The origami bird story? Go watch the ''Clockie'' series yourself &mdash; they explain it much clearer than I would.
+:::::{{Диалог|Стрелка}} About Rouseville...
+::::::'''Dr. Blues:''' Rouseville is where the story is set in the second ''Clockie'' series: "Through Dreamville's shadow, Clockie arrives at a wondrous village that is quite distinct. Many residents cast out by Dreamjoy have gathered here: A Bloodhound who lies compulsively, an owl that has gone quite mad, and an origami bird that doesn't tweet..."
+::::::'''Dr. Blues:''' ...How about it? Sounds fun eh? I wrote it off the top of my head.
+::::::'''Dr. Blues:''' This so-called Rouseville is actually {{Rubi|this place|Dreamflux Reef}}. Nothing more than a safe haven for those poor souls who were abandoned by Dreamjoy.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} Tell me about the origami birds...
+::::::'''Dr. Blues:''' Have you seen a Memory Zone Meme before? That is a Dreamscape lifeform born out of people's emotions and desires, or simply put, it's a "phenomenon" akin to a lifeform. The origami birds you've seen are no different from that.
+::::::'''Dr. Blues:''' With widespread audience awareness, ample determination, and a hint of Enigmata's lies... making an origami bird isn't such a hard task.
+::::::'''Dr. Blues:''' Just make sure they don't get outside the Dreamscape &mdash; oh, except for me I mean. I'm the exception.
+::::::'''Dr. Blues:''' I'll have to thank that Hound. Looks like his "lie" also works in the real world.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} About Professor Owl...
+::::::'''Dr. Blues:''' Professor Owl is the one who designed Dreamville and Clockie's old friend. He's the teacher of the origami birds. Of course, that's just how it was set up in the cartoon's story.
+::::::'''Dr. Blues:''' In the Penacony of the past, people called him Professor Glaux. He was once a Zatzka scholar from the Intelligentsia Guild, and later became the leader of the Nightingale Family.
+::::::'''Dr. Blues:''' I don't know how the Watchmaker got him to willingly abandon his post as Head Professor of the Astral Ecology School to come to this forsaken wasteland in the Dreamscape...
+::::::'''Dr. Blues:''' He is both a great Dreamweaver and a teacher... It's a pity that his name has been buried in obscurity &mdash; you won't find it mentioned anywhere.
+:::::;(Return to previous option selection)
+::::{{Диалог}} I need a few hints.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+::::::'''Dr. Blues:''' A hint? Certainly, I know where all the birds are.
+::::::'''Dr. Blues:''' A coin for a clue, and no haggling.
+::::::{{Диалог|Стрелка}} (Take out an Aideen Token)
+::::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 7
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 503070049
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503070050,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 44
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070051
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 45
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070052
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 46
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070053
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 47
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070054
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 48
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070055
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 49
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070056
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 50
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070057
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 51
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070058
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 52
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070059
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 53
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070060
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 54
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070061
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 55
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070062
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 56
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070063
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 57
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070064
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 58
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070065
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 59
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070066
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 60
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070067
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 61
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070068
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 62
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070069
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 63
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070070
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_503070072"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+::::::{{Диалог|Стрелка}} Never mind.
+:::::::'''Dr. Blues:''' Goodbye, impoverished guest. Bring me some coins next time.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+::::::'''Dr. Blues:''' There are rules to playing a game. A coin for a clue. No more, no less. You haven't found the previous bird.
+::::::'''Dr. Blues:''' Come back again when you find it.
+:::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+::::{{Диалог|Выход}} Catch you next time.
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+:::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+::::::'''Dr. Blues:''' That works too, don't forget to look for the origami birds here. Hurry up and let me wrap my scene up.
+:::::The birdie flaps its wings at you, supposedly trying to urge you to go.
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}},"EquationType":"GreaterEqual"}-->}})
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Dr. Blues:''' Hmm? Looks like you've already found half the birds.
+:::'''Dr. Blues:''' This is a gift from the origami birds. Take it, and don't let me keep you.
+::<pre>{
+	"$type": "RPG.GameCore.QuestGetReward",
+	"QuestIDList": [
+		{
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 2200210
+			}
+		}
+	]
+}</pre>
+:;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200211}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":10}},"EquationType":"GreaterEqual"}-->}} and {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestGetReward","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200210}},"Inverse":true}-->}})
+:::'''Dr. Blues:''' ...What is it now? I'm super busy. Well? Spit it out.
+:::{{Диалог}} About yourself...
+::::'''Dr. Blues:''' Origami Bird Dr. Blues, or Dreamweaver Orla. You can call me whatever you want as long as you don't cause trouble for me.
+:::::'''Dr. Blues:''' ...Never mind, this name sounds weird when you're the one saying it... Better just address me as Dr. Blues.
+::::;(Return to previous option selection)
+::::'''Dr. Blues:''' Bird, origami bird, or Dr. Blues. You can call me anything you want as long as you don't give me any trouble.
+:::::'''Dr. Blues:''' It's thanks to that Watchmaker that I'm busy fixing up this Dreamflux Reef. Oh, correction &mdash; I should say it's thanks to Clockie that I'm building Rouseville.
+:::::'''Dr. Blues:''' Ahem, have you seen ''Clockie&ast;''s cartoons? According to the setting, origami birds only know Clockie.
+:::::{{Диалог|Стрелка}} But you don't talk like an origami bird.
+:::::'''Dr. Blues:''' Err, why's that?
+:::::{{Диалог|Стрелка}} You know the Watchmaker.
+::::::'''Dr. Blues:''' Of course, everyone knows the Watchmaker around here... But only a handful know what he really wants.
+::::::'''Dr. Blues:''' All right, rather than talking about the pointless, you'd be better off looking for the stuff that fella left behind.
+::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} You're not just an animated character.
+::::::'''Dr. Blues:''' Good eye. Unfortunately, it's not time yet to solve the "Origami Bird" arc.
+::::::'''Dr. Blues:''' Instead of going around in circles with me, you should look for the stuff that the Watchmaker left behind.
+::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+:::::;(Return to previous option selection)
+:::::{{Диалог|Стрелка}} You don't tweet!
+::::::'''Dr. Blues:''' ...
+::::::'''Dr. Blues:''' ...Tweet. Satisfied now?
+::::::'''Dr. Blues:''' What's with you people and your obsession with such a juvenile setting... Instead of going around in circles with me, you should look for the stuff that the Watchmaker left behind.
+::::::'''Dr. Blues:''' Let's see... My role in this episode is to urge Dreamville's visitors to search for "the town's hidden secret."
+::::::'''Dr. Blues:''' Did you hear me? Quickly now. This Dreamscape isn't as simple as you think.
+:::::;(Return to previous option selection)
+:::{{Диалог}} Tell me the story of the origami birds...
+::::'''Dr. Blues:''' The origami bird story? Go watch the ''Clockie'' series yourself &mdash; they explain it much clearer than I would.
+::::{{Диалог|Стрелка}} About Rouseville...
+:::::'''Dr. Blues:''' Rouseville is where the story is set in the second ''Clockie'' series: "Through Dreamville's shadow, Clockie arrives at a wondrous village that is quite distinct. Many residents cast out by Dreamjoy have gathered here: A Bloodhound who lies compulsively, an owl that has gone quite mad, and an origami bird that doesn't tweet..."
+:::::'''Dr. Blues:''' ...How about it? Sounds fun eh? I wrote it off the top of my head.
+:::::'''Dr. Blues:''' This so-called Rouseville is actually {{Rubi|this place|Dreamflux Reef}}. Nothing more than a safe haven for those poor souls who were abandoned by Dreamjoy.
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} Tell me about the origami birds...
+:::::'''Dr. Blues:''' Have you seen a Memory Zone Meme before? That is a Dreamscape lifeform born out of people's emotions and desires, or simply put, it's a "phenomenon" akin to a lifeform. The origami birds you've seen are no different from that.
+:::::'''Dr. Blues:''' With widespread audience awareness, ample determination, and a hint of Enigmata's lies... making an origami bird isn't such a hard task.
+:::::'''Dr. Blues:''' Just make sure they don't get outside the Dreamscape &mdash; oh, except for me I mean. I'm the exception.
+:::::'''Dr. Blues:''' I'll have to thank that Hound. Looks like his "lie" also works in the real world.
+::::;(Return to previous option selection)
+::::{{Диалог|Стрелка}} About Professor Owl...
+:::::'''Dr. Blues:''' Professor Owl is the one who designed Dreamville and Clockie's old friend. He's the teacher of the origami birds. Of course, that's just how it was set up in the cartoon's story.
+:::::'''Dr. Blues:''' In the Penacony of the past, people called him Professor Glaux. He was once a Zatzka scholar from the Intelligentsia Guild, and later became the leader of the Nightingale Family.
+:::::'''Dr. Blues:''' I don't know how the Watchmaker got him to willingly abandon his post as Head Professor of the Astral Ecology School to come to this forsaken wasteland in the Dreamscape...
+:::::'''Dr. Blues:''' He is both a great Dreamweaver and a teacher... It's a pity that his name has been buried in obscurity &mdash; you won't find it mentioned anywhere.
+::::;(Return to previous option selection)
+:::{{Диалог}} I need a few hints.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+:::::'''Dr. Blues:''' A hint? Certainly, I know where all the birds are.
+:::::'''Dr. Blues:''' A coin for a clue, and no haggling.
+:::::{{Диалог|Стрелка}} (Take out an Aideen Token)
+:::::<pre>{
+	"$type": "RPG.GameCore.ConsumeOrigamiItem",
+	"ColonyID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 7
+		}
+	},
+	"Desc": {
+		"Hash": 18096028862919064994
+	},
+	"OnSubmitConfirm": [
+		{
+			"$type": "RPG.GameCore.PlayFullScreenTransfer",
+			"PrevDuration": 0.1,
+			"KeepDuration": 0.1,
+			"PostDuration": 0.1,
+			"KeepDisplay": true,
+			"TextInfo": {
+				"TextList": [
+					{
+						"TalkSentenceID": 503070049
+					}
+				]
+			},
+			"Action": [
+				{
+					"$type": "RPG.GameCore.ScrTrfActTaskList",
+					"TaskList": [
+						{
+							"$type": "RPG.GameCore.TriggerSound",
+							"SoundName": {
+								"Value": "Ev_sfx_origamibird_eatcoin"
+							},
+							"EmitterType": "DefaultEmitter"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.CharacterTriggerFreeStyle",
+			"TargetAlias": {
+				"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+				"FetchType": "SingleNpcByOwnerGroupAndID",
+				"SingleNpcKey": {
+					"Custom": true,
+					"Key": "TargetNPC"
+				},
+				"SingleNpcID": {
+					"GroupNpcID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 400001
+						}
+					}
+				},
+				"SingleUniqueName": {
+					"Value": "InteractTarget_OrigamiBird01"
+				},
+				"NpcIDInOwnerGroup": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 400001
+					}
+				}
+			},
+			"StoryAvatarID": "NPC_Special_OrigamiBird_00",
+			"StoryMotionID": 900090014
+		},
+		{
+			"$type": "RPG.GameCore.WaitSecond",
+			"WaitTime": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 0.1
+				}
+			}
+		},
+		{
+			"$type": "RPG.GameCore.PlayAndWaitSimpleTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 503070050,
+					"ProtectTime": 0.3
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.PlayOrigamiTraceTalk",
+			"ColonyID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 7
+				}
+			},
+			"TalkList": [
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 44
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070051
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 45
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070052
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 46
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070053
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 47
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070054
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 48
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070055
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 49
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070056
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 50
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070057
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 51
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070058
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 52
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070059
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 53
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070060
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 54
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070061
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 55
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070062
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 56
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070063
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 57
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070064
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 58
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070065
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 59
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070066
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 60
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070067
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 61
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070068
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 62
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070069
+							}
+						]
+					}
+				},
+				{
+					"GroupID": {
+						"IsDynamic": false,
+						"FixedValue": {
+							"Value": 63
+						}
+					},
+					"TalkInfo": {
+						"SimpleTalkList": [
+							{
+								"TalkSentenceID": 503070070
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	],
+	"OnSubmitCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "TalkSentence_503070072"
+			}
+		}
+	],
+	"SimpleTalk": {}
+}</pre>
+:::::{{Диалог|Стрелка}} Never mind.
+::::::'''Dr. Blues:''' Goodbye, impoverished guest. Bring me some coins next time.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCheckColonyTrace","ColonyID":{"IsDynamic":false,"FixedValue":{"Value":7}},"Inverse":true}-->}})
+:::::'''Dr. Blues:''' There are rules to playing a game. A coin for a clue. No more, no less. You haven't found the previous bird.
+:::::'''Dr. Blues:''' Come back again when you find it.
+::::<pre>{
+	"$type": "RPG.GameCore.SetTraceOrigamiFlag"
+}</pre>
+:::{{Диалог|Выход}} Catch you next time.
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByCompareQuestProgress","QuestID":{"IsDynamic":false,"FixedValue":{"Value":2200112}},"Progress":{"IsDynamic":false,"FixedValue":{"Value":20}}}-->}})
+::::<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_vo_origamibirds_appear"
+	},
+	"EmitterType": "TargetEvaluator",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByOwnerGroupAndID",
+		"SingleNpcKey": {
+			"Custom": true,
+			"Key": "TargetNPC"
+		},
+		"SingleNpcID": {
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		},
+		"SingleUniqueName": {
+			"Value": "InteractTarget_OrigamiBird01"
+		},
+		"NpcIDInOwnerGroup": {
+			"IsDynamic": false,
+			"FixedValue": {
+				"Value": 400001
+			}
+		}
+	}
+}</pre>
+:::::'''Dr. Blues:''' That works too, don't forget to look for the origami birds here. Hurry up and let me wrap my scene up.
+::::The birdie flaps its wings at you, supposedly trying to urge you to go.
+{{Dialogue End}}
+
+===Enter Dr. Blues' Emoscape{{subst:void|<!--203040108-->}}===
+{{Mission Description|type=adventure|location=Dreamflux Reef|update|Enter Dr. Blues' Emoscape and restore the lost memories.}}
+{{Dialogue Start}}
+
+;(Talk to Dr. Blues)
+:'''Dr. Blues:''' ...
+:'''Dr. Blues:''' No. I've seen what Clockie does... Letting someone into your brain? That's disgusting. No.
+:The bird regains its *sly* expression &mdash; honestly, it's the most unpleasant cartoon character you've ever seen, hands down.
+:'''(Trailblazer):''' (If a good cop won't work... guess I'll have to go bad cop then!)
+:{{Диалог|Стрелка}} Clockwork, forced activation!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+::'''Dr. Blues:''' ...Wait, hey, what're you doing!?
+:{{Диалог|Выход}} We need to plan this out carefully...
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.TriggerCustomStringOnDialogEnd",
+					"CustomString": {
+						"Value": "OpenRaid_43322"
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Speak with Dr. Blues{{subst:void|<!--203040113-->}}===
+{{Mission Description|type=adventure|location=Dreamflux Reef|update|Dr. Blues has recovered its memories. It might now have some new ideas.}}
+{{Dialogue Start}}
+
+;(Talk to Dr. Blues)
+:{{tx}}
+:'''Blue Bird:''' ...
+:{{Диалог|Стрелка}} (Remain silent)
+::'''Blue Bird:''' ...
+::{{Диалог|Стрелка}} (Continue remaining silent)
+:::'''Blue Bird:''' ...
+:::{{Диалог|Стрелка}} (Continue to remain silent!)
+:::'''Blue Bird:''' ...Hey.
+::{{Диалог|Стрелка}} Orla?
+:::'''Dr. Blues:''' ...I heard you the first time. This name feels weird coming out of your mouth... Call me Dr. Blues.
+:::'''Dr. Blues:''' Anyways &mdash; The truth was found, and the dream was broken. Happy now?
+:::{{Диалог|Стрелка}} Happy.
+:::{{Диалог|Стрелка}} Feels like it needs something more...
+::::'''Dr. Blues:''' Thank you, and don't do it again. This old bird can't take it.
+::::I'm happy to help. You're welcome.
+::::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+:::{{Диалог|Стрелка}} I'm happy to help. You're welcome.
+::::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+:::'''Dr. Blues:''' Forget it. Let's leave it be.
+:::The bird looks up at the starry sky &mdash; The lights from the twelve Dreamscapes link up to form Dreamflux Reef's starry sky.
+:::'''Dr. Blues:''' ...Fischer didn't lie to me. He really turned this place into a poem.
+:::{{Диалог|Стрелка}} Do you want to go up and take a look?
+:::'''Dr. Blues:''' Maybe next time. Thanks to a certain Nameless, I've just had a huge dream. I'll have to take a break.
+:::'''Dr. Blues:''' ...No matter what, it was great to be able to see them again.
+:::'''Dr. Blues:''' Thank you, (Trailblazer).
+:::{{Диалог|Стрелка}} You're welcome.
+:::{{Диалог|Стрелка}} I can't hear you. Say it louder!
+::::'''Dr. Blues:''' ...Hey, don't push your luck!
+:::'''??:''' &mdash; Tweet, tweet tweet! Found it!
+:::A familiar tweeting sound comes from the starry sky above &mdash; four chubby birds descend from the sky and land beside Dr. Blues.
+:::'''Lady Vermilion:''' Naughty little Blues, we finally found you! Tweet!
+:::'''Young Master Gold:''' Heh-heh, you weren't coming, so yours truly has to personally come down to the Great Tree below... No need to thank me, tweet!
+:::'''Dr. Blues:''' Wait. Hang on. Normally, other origami birds shouldn't know the location of Dreamflux Reef...
+:::'''Boss Red:''' Bah, don't underestimate the grit of an origami bird, tweet!
+:::'''Verdant Manager:''' Tweet tweet, so the sky seen from below is beautiful too.
+:::{{Диалог|Стрелка}} That's right, tweet.
+:::{{Диалог|Стрелка}} Dr. Blues misses you all too, tweet.
+::::'''Dr. Blues:''' Hey, there's no need for you to talk...!
+:::'''Boss Red:''' Now that we're finally together, we should record this occasion, tweet!
+:::'''Verdant Manager:''' This way, Dr. Blues can always see our faces, tweet!
+:::'''Lady Vermilion:''' Kind guest, could you help us take a group photo, tweet tweet?
+:::{{Диалог|Стрелка}} No problem!
+:::{{Диалог|Стрелка}} Leave it to me.
+:::The four origami birds surround the blue bird. You can feel Dr. Blues' bewilderment and the faint smile he struggles to suppress yet can't entirely conceal.
+:::The fake birds aren't Dr. Blues' real family, but...
+:::{{Диалог|Стрелка}} (Press the shutter)
+:::Who says this doesn't count as some sort of *perfect ending*?
+:::{{tx}}
+:{{Диалог|Стрелка}} Orla?
+::'''Dr. Blues:''' ...I heard you the first time. This name feels weird coming out of your mouth... Call me Dr. Blues.
+::'''Dr. Blues:''' Anyways &mdash; The truth was found, and the dream was broken. Happy now?
+::{{Диалог|Стрелка}} Happy.
+::{{Диалог|Стрелка}} Feels like it needs something more...
+:::'''Dr. Blues:''' Thank you, and don't do it again. This old bird can't take it.
+:::I'm happy to help. You're welcome.
+:::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+::{{Диалог|Стрелка}} I'm happy to help. You're welcome.
+:::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+::'''Dr. Blues:''' Forget it. Let's leave it be.
+::The bird looks up at the starry sky &mdash; The lights from the twelve Dreamscapes link up to form Dreamflux Reef's starry sky.
+::'''Dr. Blues:''' ...Fischer didn't lie to me. He really turned this place into a poem.
+::{{Диалог|Стрелка}} Do you want to go up and take a look?
+::'''Dr. Blues:''' Maybe next time. Thanks to a certain Nameless, I've just had a huge dream. I'll have to take a break.
+::'''Dr. Blues:''' ...No matter what, it was great to be able to see them again.
+::'''Dr. Blues:''' Thank you, (Trailblazer).
+::{{Диалог|Стрелка}} You're welcome.
+::{{Диалог|Стрелка}} I can't hear you. Say it louder!
+:::'''Dr. Blues:''' ...Hey, don't push your luck!
+::'''??:''' &mdash; Tweet, tweet tweet! Found it!
+::A familiar tweeting sound comes from the starry sky above &mdash; four chubby birds descend from the sky and land beside Dr. Blues.
+::'''Lady Vermilion:''' Naughty little Blues, we finally found you! Tweet!
+::'''Young Master Gold:''' Heh-heh, you weren't coming, so yours truly has to personally come down to the Great Tree below... No need to thank me, tweet!
+::'''Dr. Blues:''' Wait. Hang on. Normally, other origami birds shouldn't know the location of Dreamflux Reef...
+::'''Boss Red:''' Bah, don't underestimate the grit of an origami bird, tweet!
+::'''Verdant Manager:''' Tweet tweet, so the sky seen from below is beautiful too.
+::{{Диалог|Стрелка}} That's right, tweet.
+::{{Диалог|Стрелка}} Dr. Blues misses you all too, tweet.
+:::'''Dr. Blues:''' Hey, there's no need for you to talk...!
+::'''Boss Red:''' Now that we're finally together, we should record this occasion, tweet!
+::'''Verdant Manager:''' This way, Dr. Blues can always see our faces, tweet!
+::'''Lady Vermilion:''' Kind guest, could you help us take a group photo, tweet tweet?
+::{{Диалог|Стрелка}} No problem!
+::{{Диалог|Стрелка}} Leave it to me.
+::The four origami birds surround the blue bird. You can feel Dr. Blues' bewilderment and the faint smile he struggles to suppress yet can't entirely conceal.
+::The fake birds aren't Dr. Blues' real family, but...
+::{{Диалог|Стрелка}} (Press the shutter)
+::Who says this doesn't count as some sort of *perfect ending*?
+::{{tx}}
+:{{Диалог|Стрелка}} Orla?
+:'''Dr. Blues:''' ...I heard you the first time. This name feels weird coming out of your mouth... Call me Dr. Blues.
+:'''Dr. Blues:''' Anyways &mdash; The truth was found, and the dream was broken. Happy now?
+:{{Диалог|Стрелка}} Happy.
+:{{Диалог|Стрелка}} Feels like it needs something more...
+::'''Dr. Blues:''' Thank you, and don't do it again. This old bird can't take it.
+::I'm happy to help. You're welcome.
+::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+:{{Диалог|Стрелка}} I'm happy to help. You're welcome.
+::'''Dr. Blues:''' I wasn't complimenting you! *sigh* ...Why are you exactly like the Watchmaker? Are all you Nameless cut from the same cloth?
+:'''Dr. Blues:''' Forget it. Let's leave it be.
+:The bird looks up at the starry sky &mdash; The lights from the twelve Dreamscapes link up to form Dreamflux Reef's starry sky.
+:'''Dr. Blues:''' ...Fischer didn't lie to me. He really turned this place into a poem.
+:{{Диалог|Стрелка}} Do you want to go up and take a look?
+:'''Dr. Blues:''' Maybe next time. Thanks to a certain Nameless, I've just had a huge dream. I'll have to take a break.
+:'''Dr. Blues:''' ...No matter what, it was great to be able to see them again.
+:'''Dr. Blues:''' Thank you, (Trailblazer).
+:{{Диалог|Стрелка}} You're welcome.
+:{{Диалог|Стрелка}} I can't hear you. Say it louder!
+::'''Dr. Blues:''' ...Hey, don't push your luck!
+:'''??:''' &mdash; Tweet, tweet tweet! Found it!
+:A familiar tweeting sound comes from the starry sky above &mdash; four chubby birds descend from the sky and land beside Dr. Blues.
+:'''Lady Vermilion:''' Naughty little Blues, we finally found you! Tweet!
+:'''Young Master Gold:''' Heh-heh, you weren't coming, so yours truly has to personally come down to the Great Tree below... No need to thank me, tweet!
+:'''Dr. Blues:''' Wait. Hang on. Normally, other origami birds shouldn't know the location of Dreamflux Reef...
+:'''Boss Red:''' Bah, don't underestimate the grit of an origami bird, tweet!
+:'''Verdant Manager:''' Tweet tweet, so the sky seen from below is beautiful too.
+:{{Диалог|Стрелка}} That's right, tweet.
+:{{Диалог|Стрелка}} Dr. Blues misses you all too, tweet.
+::'''Dr. Blues:''' Hey, there's no need for you to talk...!
+:'''Boss Red:''' Now that we're finally together, we should record this occasion, tweet!
+:'''Verdant Manager:''' This way, Dr. Blues can always see our faces, tweet!
+:'''Lady Vermilion:''' Kind guest, could you help us take a group photo, tweet tweet?
+:{{Диалог|Стрелка}} No problem!
+:{{Диалог|Стрелка}} Leave it to me.
+:The four origami birds surround the blue bird. You can feel Dr. Blues' bewilderment and the faint smile he struggles to suppress yet can't entirely conceal.
+:The fake birds aren't Dr. Blues' real family, but...
+:{{Диалог|Стрелка}} (Press the shutter)
+:Who says this doesn't count as some sort of *perfect ending*?
+:{{tx}}
+{{Mission Description|type=adventure|location=Dreamflux Reef|update|Dr. Blues has recovered its memories. Does it... still remember Orla?}}
+
+;(Talk to Dr. Blues)
+:{{tx}}
+:'''Blue Bird:''' ...
+:{{Диалог|Стрелка}} Orla?
+:'''Blue Bird:''' ...Orla? Who?
+:'''Dr. Blues:''' Here comes another outsider that has never seen an origami bird, tweet. I am Dr. Blues from the Dreamflux Reef, tweet.
+:The bird's gaze at you is still sly, but there's no longer that *unique* spark in its eyes.
+:Perhaps that Dreamweaver has already returned to a place where he belongs, and all that's left here is an origami bird.
+:'''??:''' &mdash; Tweet, tweet tweet! Found it!
+:A familiar tweeting sound comes from the starry sky above &mdash; four chubby birds descend from the sky and land beside Dr. Blues.
+:'''Lady Vermilion:''' Naughty little Blues, we finally found you! Tweet!
+:'''Young Master Gold:''' Heh-heh, you weren't coming, so yours truly has to personally come down to the Great Tree below... No need to thank me, tweet!
+:'''Dr. Blues:''' You... why are you suddenly here, tweet...
+:'''Boss Red:''' Hey &mdash; Did you keep up with your training since our last encounter?
+:'''Verdant Manager:''' Tweet tweet, so the sky seen from below is beautiful too.
+:'''Boss Red:''' Now that we're finally together, we should record this occasion, tweet!
+:'''Verdant Manager:''' This way, Dr. Blues can always see our faces, tweet!
+:'''Lady Vermilion:''' Kind guest, could you help us take a group photo, tweet tweet?
+:{{Диалог|Стрелка}} ...
+:{{Диалог|Стрелка}} Leave it to me.
+:The four origami birds surround the blue bird, tweeting in unison. You see Dr. Blues' sincere smile.
+:You alone hold the memory of the Dreamweavers' arduous and painful past.
+:{{Диалог|Стрелка}} (Press the shutter)
+:Perhaps... to Dr. Blues, this is what family is. It really did find a home.
+:{{tx}}
+{{Dialogue End}}
+
+===Go to where the Dreamweavers gather{{subst:void|<!--203040117-->}}===
+{{Mission Description|type=adventure|location=Dream's Edge|update|Dr. Blues seems to be related to Penacony's Dreamweavers. Go to Dream's Edge and ask around people who might know about this.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+:{{tx}}
+:{{Диалог|Разговор}} Esteemed head?
+::'''Sir Whittaker:''' Please dispense with the formalities. Authority and power blind the soul. When it's after work hours, I much prefer people address me as Sir Whittaker.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} I wish to learn how to weave dreams too.
+::'''Sir Whittaker:''' Of course you may. The Family has established the Paperfold University in the Moment of Sol. When classes start, I'll be sure to welcome you to sit in on our dreamweaving course.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Can birds be Dreamweavers?
+::'''Sir Whittaker:''' Birds... Heh-heh, you mean the cartoons that the Watchmaker created.
+::'''Sir Whittaker:''' It's not a bad metaphor at all. The Dreamweavers in this Dreamscape are really all birds. Our Nightingale symbol &mdash; is it not a bird that sings at night?
+::'''Sir Whittaker:''' In this Dreamscape, birds are a symbol of Dreamweavers. This sentiment has been expressed in objects of all sorts, and shown up in some pieces of artistry.
+::{{Диалог|Стрелка}} Such as origami birds?
+::'''Sir Whittaker:''' That's right. Art and reality always complement each other. According to what I know, the origami birds in ''Clockie&ast;''s cartoons symbolize the Dreamweavers that gave their all to build the Dreamscapes.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.ShowReading",
+	"BookID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 190623
+		}
+	}
+}</pre>
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P20313_F20313001_G254"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Dream Song
+|zhs  = 筑梦诗
+|zht  = 築夢詩
+|ja   = ドリームポエム
+|ko   = 꿈 건축의 시
+|es   = Canción de los Soñadores
+|fr   = Chant des rêves
+|ru   = Поэма грёз
+|th   = บทกวีสร้างฝัน
+|vi   = Bài Thơ Xây Mộng
+|de   = Traumgesang
+|id   = Syair Mimpi
+|pt   = Canção Onírica
+}}
+
+==Change History==
+{{Change History|3.5}}

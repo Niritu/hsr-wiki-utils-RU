@@ -18,6 +18,8 @@ for (const character of Character.allReleased()) {
 		characterWithPath = `Дань Хэн Пожиратель Луны`
 	} else if (character.name == 'Дань Хэн: Освободитель Пустошей') {
 		characterWithPath = `Дань Хэн Освободитель Пустошей`
+		} else if (character.name == 'Химеко: Нова') {
+		characterWithPath = `Химеко Нова`
 	}
 	
 	const abilities = character.getAbilities()
@@ -58,8 +60,8 @@ for (const character of Character.allReleased()) {
 			Энергия: ability.energy_cost || '',
 			Длительность: '',
 			Описание: ability.description.replaceAll('\n', '<br />'),
-			Свойство1: '',
 			Масштабирование1: '',
+			Свойство1: '',
 		})
 		
 		const hasMultipleOfType = abilities.find(otherAbility => otherAbility.type == ability.type && otherAbility != ability)
@@ -67,12 +69,12 @@ for (const character of Character.allReleased()) {
 		output.push(
 			infobox.block(),
 			`'''«${ability.name}»''' — [[${ability.type_display}]] [[${character.name}]].`,
-			'',
+			'<!--',
 			'==Превью==',
 			'{{Превью',
 			`|Файл = ${ability.name} Превью`,
 			'}}',
-			'',
+			'-->',
 			'==Масштабирование==',
 			ability.getScalingTable() ?? '',
 			'',
@@ -105,8 +107,8 @@ for (const character of Character.allReleased()) {
 			Возвышение: trace.required_ascension,
 			Длительность: '',
 			Описание: trace.description.replaceAll('\n', '<br />'),
-			Свойство1: '',
 			Масштабирование1: '',
+			Свойство1: '',
 		})
 
 		output.push(
@@ -116,7 +118,7 @@ for (const character of Character.allReleased()) {
 			'==На других языках==',
 			await TextMap.generateOL(trace.name_hash),
 			'',
-			'==История изменений',
+			'==История изменений==',
 			`{{История изменений|${characterAdded}}}`,
 			'',
 			'==Навигация==',
@@ -141,8 +143,8 @@ for (const character of Character.allReleased()) {
 			Уровень: eidolon.level,
 			Длительность: '',
 			Описание: eidolon.description.replaceAll('\n', '<br />'),
-			Свойство1: '',
 			Масштабирование1: '',
+			Свойство1: '',
 		})
 
 		output.push(
@@ -157,7 +159,7 @@ for (const character of Character.allReleased()) {
 			'==На других языках==',
 			await TextMap.generateOL(eidolon.name_hash),
 			'',
-			'==История изменений',
+			'==История изменений==',
 			`{{История изменений|${characterAdded}}}`,
 			'',
 			'==Навигация==',

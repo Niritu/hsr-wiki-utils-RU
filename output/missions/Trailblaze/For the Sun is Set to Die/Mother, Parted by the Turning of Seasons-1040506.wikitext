@@ -1,0 +1,436 @@
+<%-- [PAGE_INFO]
+PageTitle=#Mother, Parted by the Turning of Seasons#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040506
+|title         = 
+|image         = <!--Mission Mother, Parted by the Turning of Seasons.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = For the Sun is Set to Die
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = "Fu Xuan"; Dan Heng; March 7th; Trailblazer
+|startLocation = [[Amphoreus]] - [[Path Space]]
+|world         = Amphoreus
+|area          = Path Space
+|prev          = 
+|next          = 
+|rewards       = Traveler's Guide*2; Lost Crystal*2; Credit*30 000
+}}
+'''''Mother, Parted by the Turning of Seasons''''' is a [[Trailblaze Mission]] in the chapter [[For the Sun is Set to Die]].
+
+==Steps==
+# Reach Path Space
+# Pass through the Gate of Memory
+# Speak with Fu Xuan
+# Follow Fu Xuan
+# Meet with your friends
+# Follow your friends to pass through the Gate of Memory
+# Follow Fu Xuan
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Reach Path Space{{subst:void|<!--104050601-->}}===
+{{Mission Description|type=trailblaze|location=Path Space|Just when an exhilarating new adventure was about to begin, I'm suddenly hit with some mystery illness... Wait, no, I got sick, and even fell into a coma!?<br />When I finally came to, what I saw nearly knocked me off my feet &mdash; a bizarre, psychedelic world of mind, with hissed demonic whispers. Could this be...<br />...No, I have no clue at all! Come to think of it... am I even really awake?}}
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::{{tx}}
+{{Dialogue End}}
+
+===Pass through the Gate of Memory{{subst:void|<!--104050615-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G5-2)
+:<!--0.05-second delay-->
+::<!--0.1-second delay-->
+
+;(Unused &mdash; EnterDistrict_G5-3)
+:'''???:''' Oh no, don't fall for it...
+::'''???:''' They're lying to you, turn back now...
+::'''March 7th:''' Another voice... who now?
+{{Dialogue End}}
+
+===Speak with Fu Xuan{{subst:void|<!--104050603-->}}===
+{{Dialogue Start}}
+:<!--1-second delay-->
+:'''March 7th:''' Wait... Master Diviner? From the Luofu?
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41441_F41441001_G7"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Follow Fu Xuan{{subst:void|<!--104050604-->}}===
+{{Dialogue Start}}
+
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
+	]
+}</pre>
+;(Unused &mdash; EnterDistrict_G6-2)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0.8,
+	"Duration": 0.2,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_filterAsset_EraFlipperFlash_Enhance_fadeIn"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G6,Anchor2"
+		}
+	},
+	"WaitFinish": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0.1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G6,Anchor1"
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G6-3)
+:'''???:''' Don't let those bad people deceive you...
+{{Dialogue End}}
+
+===Meet with your friends{{subst:void|<!--104050605-->}}===
+{{Dialogue Start}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 9,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"PathOffset": []
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"PathwayGroupID": 9,
+	"PathwayID": 2,
+	"MotionFlag": "Walk",
+	"PathOffset": []
+}</pre>
+;(Unused &mdash; EnterDistrict_G9)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P41441_F41441001_G10"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Follow your friends to pass through the Gate of Memory{{subst:void|<!--104050611-->}}===
+{{Dialogue Start}}
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400002
+		]
+	},
+	"PathwayGroupID": 10,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"PathOffset": []
+}</pre>
+;(If {{cx}}{{subst:void|<!--{"$type":"RPG.GameCore.ByHeroGender","Gender":"GENDER_MAN"}-->}})
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AdvSetAILeadWay",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"Targets": [
+			400003
+		]
+	},
+	"PathwayGroupID": 10,
+	"PathwayID": 1,
+	"MotionFlag": "Run",
+	"PathOffset": []
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300001
+	],
+	"SkipCreated": true
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntityV2",
+	"InstanceIDList": [
+		300002
+	],
+	"SkipCreated": true
+}</pre>
+;(Unused &mdash; EnterDistrict_G8-2)
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0.8,
+	"Duration": 0.2,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+::<!--0.05-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_task_feedback_filterAsset_EraFlipperFlash_Enhance_fadeIn"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G8,Anchor2"
+		}
+	},
+	"WaitFinish": true,
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 0.1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PropMoveToV2",
+	"MoveToTarget": {
+		"$type": "RPG.GameCore.PropMoveToV2TargetAnchor",
+		"DynamicAnchor": {
+			"Value": "LevelArea_P41441_F41441001_G8,Anchor1"
+		}
+	},
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+::<!--0.1-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G8-3)
+:'''???:''' Wait up! Slow down...
+::'''???:''' Those words sound so sweet...
+::'''???:''' But keep your eyes open, don't let them fool you.
+:<!--2-second delay-->
+:'''Dan Heng:''' Step into your past, March...
+:'''Dan Heng:''' Find your true self.
+:'''"Fu Xuan":''' This way, March. Your past awaits beyond the Gate of Memory.
+:'''???:''' Stop! They're just mimicking people from your memories...
+:'''March 7th:''' That voice again...
+{{Dialogue End}}
+
+===Follow Fu Xuan{{subst:void|<!--104050619-->}}===
+{{Dialogue Start}}
+:<!--2-second delay-->
+:'''March 7th:''' The gate... it moved? Where's the master diviner?
+:<!--2-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PPFilterStackEffect",
+	"Active": false,
+	"Priority": "Middle",
+	"StartRate": 0,
+	"Rate": 0,
+	"RecoverDuration": 0.1,
+	"AssetPath": "EnviroSystem/PostProcessFilterAsset/Flash.asset"
+}</pre>
+:'''March 7th:''' Now it's... Dan Heng and (Trailblazer)?
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Mother, Parted by the Turning of Seasons
+|zhs  = 母亲啊，暌离于冬去春来
+|zht  = 母親啊，暌離於冬去春來
+|ja   = 母よ、季節の境に別れを告げよ
+|ko   = 어머니, 겨울이 가고 봄이 올 때 이별하니
+|es   = Madre, separada por el paso de las estaciones
+|fr   = Mère, séparée par le passage des saisons
+|ru   = О мать, с приходом весны наступает разлука
+|th   = มารดาเอ๋ย ลาจากเหมันต์สู่วสันต์
+|vi   = Mẹ ơi, xa cách từ khi đông qua xuân đến
+|de   = O Mutter, getrennt beim Wechsel der Jahreszeiten
+|id   = Oh Ibu, Terpisah oleh Pergantian Musim
+|pt   = Mãe, Separada pela Mudança das Estações
+}}
+
+==Change History==
+{{Change History|3.5}}

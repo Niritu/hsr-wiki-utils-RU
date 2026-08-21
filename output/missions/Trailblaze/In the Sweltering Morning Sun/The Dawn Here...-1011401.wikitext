@@ -1,0 +1,143 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Dawn Here...#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1011401
+|title         = 
+|image         = <!--Mission The Dawn Here....png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = In the Sweltering Morning Sun
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Bronya; Cocolia; Dan Heng; March 7th; Seele; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Everwinter Hill]]
+|world         = Jarilo-VI
+|area          = Everwinter Hill
+|prev          = 
+|next          = The Return
+|rewards       = 
+}}
+'''''The Dawn Here...''''' is a [[Trailblaze Mission]] in the chapter [[In the Sweltering Morning Sun]].
+
+==Steps==
+# Look for Bronya and Cocolia
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Look for Bronya and Cocolia{{subst:void|<!--101140102-->}}===
+{{Mission Description|type=trailblaze|location=Everwinter Hill|After overcoming numerous difficulties and dangers, you have finally come to the Far North, where the Eternal Freeze is raging. For hundreds of years, no one except the Supreme Guardian could set foot upon this ancient battlefield.<br />Cocolia and Bronya are here somewhere... Your mission is to go deep into the forbidden zone and find them.<br />Stellaron, the source of disaster, also lies ahead. Get ready for a fight to the death!}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Bronya:''' ...N&mdash;No...
+:'''Cocolia:''' Do not resist, Bronya... Accept the common will!
+:'''Bronya:''' No... I... I don't want this...
+:'''Cocolia:''' Look upon their promised future, Bronya! A world without poverty, without cold, without suffering... A world where people no longer have to pray like prisoners for survival... A world that we can guard for all eternity.
+:'''Cocolia:''' Seven hundred years ago, we tried and fought unceasingly, believing that the radiance of human nature could shepherd us towards rejuvenation. And to what end? A crushing defeat!
+:'''Cocolia:''' Why, when faced with irrefutable strength, is our first thought always to resist, to cover our ears, instead of hearing the call?
+:'''Cocolia:''' It is the conceit and cowardice entrenched in the depths of human nature &mdash; so difficult to efface. Cast them aside, break free of the chains that bind you! The Stellaron will lead humanity to evolve, and THEY will...
+:'''Seele:''' Your brainwashing ends here, you witch!
+:'''Bronya:''' ...Seele?
+:'''Cocolia:''' ...You came. I thought the blizzards had entombed you...
+:'''Seele:''' You wish! We're not going down before you do!
+:'''Seele:''' Bronya! I don't know what happened between you and them. Even if you explained it to me, I probably wouldn't understand all the crazy details. But there are two things I do know...
+:'''Seele:''' One: These guys have come through hell to get here &mdash; to seal this Stellaron thing.
+:'''Seele:''' And two: Do you remember what I said? If anything happened to you, I'd save you.
+:'''Seele:''' Do you understand? Even if the damage is done &mdash; even if you've completely forgotten our promise, then... then I'm just gonna have to knock you out and bring you back myself!
+:{{Диалог|Стрелка}} We need you...
+:{{Диалог|Стрелка}} ...Belobog needs you, Bronya.
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::You must break the old to build the new.
+::The supreme guardian commands you...
+::Rise, Engine of Creation!
+::It's one of the Architects' ancient machines! Watch out, all of you!
+;(Cutscene ends)
+----
+;(Enter battle)
+::{{tx|Enemy list missing}}
+
+;(По прибытии на место)
+:'''March 7th:''' If Cocolia threatens us by taking Bronya hostage...
+:'''Seele:''' We have to save her. The Underworld... no, the entire planet relies on her.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtTargetAreaName": {
+		"Value": "1011401_temp"
+	},
+	"LookAtTargetAnchorName": {
+		"Value": "LookatPoint"
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 5,
+	"MaxAngle": 60
+}</pre>
+:'''Seele:''' Did the Architects build this...?
+:'''Dan Heng:''' ...very different from the uniform style of the buildings we saw in the city.
+:'''March 7th:''' Does it... look like the palm of a huge hand to you?
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+:<!--5-second delay-->
+:'''March 7th:''' It's f&mdash;freezing here &mdash; the blizzard's so fierce! The power from the Trailblaze Path isn't enough to stop the cold...
+:'''Dan Heng:''' It means that we're getting closer to the Stellaron... and the heart of the Eternal Freeze.
+<pre>{
+	"$type": "RPG.GameCore.WaitMissionTalkFinish"
+}</pre>
+;([[#Gallery|Cutscene]] plays)
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::I'll cover you!
+::Grab hold of me!
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Cocolia, Mother of Deception*1}}
+;(Fully recovers all allies' HP)
+:{{tx}}
+;(Fully recovers all allies' HP)
+<pre>{
+	"$type": "RPG.GameCore.RaidSceneTransfer"
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Dawn Here...
+|zhs  = 这里的黎明……
+|zht  = 這裡的黎明……
+|ja   = ここの夜明け……
+|ko   = 이곳의 여명……
+|es   = La aurora de aquí...
+|fr   = L'aube ici...
+|ru   = А зори здесь...
+|th   = รุ่งอรุณของที่แห่งนี้...
+|vi   = Bình Minh Nơi Này
+|de   = Die Morgendämmerung hier&nbsp;...
+|id   = Fajar di Sini ....
+|pt   = O Amanhecer Daqui...
+}}
+
+==Change History==
+{{Change History|3.5}}

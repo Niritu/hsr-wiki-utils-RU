@@ -1,0 +1,272 @@
+<%-- [PAGE_INFO]
+PageTitle=#Salvation by Starlance#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2022306
+|title         = 
+|image         = <!--Mission Salvation by Starlance.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Finest Duel Under the Pristine Blue (II)
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Borisin; Feixiao; Hoolay; Trailblazer; Voice of Huaiyan
+|startLocation = [[The Xianzhou Luofu]] - [[Skysplitter Arena]]
+|world         = The Xianzhou Luofu
+|area          = Skysplitter Arena
+|prev          = 
+|next          = 
+|rewards       = 
+}}
+'''''Salvation by Starlance''''' is a [[Trailblaze Continuance]] in the chapter [[Finest Duel Under the Pristine Blue (II)]].
+
+==Steps==
+# Witness Hoolay's devious plans
+# Stall the Merlin's Claw who has sunk into madness
+# Even now, Feixiao is still struggling on the border between madness and sanity...
+# Chase after the apparition Hoolay left behind
+# Destroy the wraith of suspicion
+# Chase after the apparition Hoolay left behind
+# Destroy the wraith of fear
+# Chase after the apparition Hoolay left behind
+# Destroy the wraith of desire
+# Defeat... "Feixiao"
+# Break free of the Crimson Moon's influence and wake from Moon Rage
+# Stall the Merlin's Claw who has sunk into madness
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Witness Hoolay's devious plans{{subst:void|<!--202230601-->}}===
+{{Mission Description|type=continuance|location=Skysplitter Arena|For the Father Wolf who leads the pack, the possibility of returning empty-handed must always be taken into consideration when planning each and every hunt...}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(Screen fades to black)
+:'''Hoolay:''' I have looked forward to this for so long. Our little hunting game has finally reached its climax... I told you before that I had a path prepared for you...
+----
+;([[#Gallery|Cutscene]] plays)
+::You've doomed yourselves...
+::As I meet my demise, so shall the entire Xianzhou Luofu!
+::The "crimson moon" in my chest will make this place shine with blood!
+::I will drive all foxians to madness in their fear... craving slaughter... without end!
+::What now, Feixiao...?
+::...What is this!?
+::This is the "heart" of the Borisin Warhead, a product of the plaguemark.
+::I'll leave the next part to you.
+::General, I don't understand...
+::We cannot allow this thing to spread. I will do all within my power to consume this "crimson moon."
+::Once the situation changes... Lieutenant Yanqing, you are to enforce the Cloud Knight's military rules. Understood?
+::General?
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Shadow of "Feixiao"*1/-12% ATK}}
+{{Dialogue End}}
+
+===Stall the Merlin's Claw who has sunk into madness{{subst:void|<!--202230603-->}}===
+{{Mission Description|type=continuance|location=Skysplitter Arena|update|In response to Hoolay's dying blow, the Merlin's Claw has no choice but to use everything in her power to confront the Crimson Moon hanging in the sky. As though she had returned to the battlefields of yore, she initiates a bloody massacre that has no end in sight. There is only one way to bring her out of madness: Stall for time.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Even now, Feixiao is still struggling on the border between madness and sanity...{{subst:void|<!--202230604-->}}===
+{{Dialogue Start}}
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.ResetMissionAudioState",
+	"ResetBGMEmotionState": true
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40242_F40242001_G4"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+
+
+
+{{Dialogue End}}
+
+===Chase after the apparition Hoolay left behind{{subst:void|<!--202230607-->}}===
+{{Mission Description|type=continuance|location=Inner Beast's Battlefield|update|On the empty battlefield, a tenacious and freshly-dead foe makes an appearance once more. The veteran hunter is primed to go on a special hunt... but this time, she is the prey.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAt",
+	"LookAtGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"LookAtID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300011
+		}
+	},
+	"LookAtTransitionDuration": 3,
+	"LookAtTransitionCurvePath": "Camera/BlendCurve/Blend_N1CameraTest.asset",
+	"LockCameraInput": true,
+	"LookAtDuration": 5,
+	"MaxAngle": 60,
+	"ScreenRange": {}
+}</pre>
+:'''Hoolay:''' The familiar smell of death, like a vulture...
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayVoice",
+	"VoiceIDs": [
+		222351411,
+		222351412,
+		222350801,
+		222350802
+	]
+}</pre>
+;(Unused &mdash; OnDestuctThePhantom_G5)
+<pre>{
+	"$type": "RPG.GameCore.PlayMazeButtonEffect"
+}</pre>
+:----
+::'''Feixiao:''' Your so-called survival of the fittest is nothing but an excuse.
+::'''Feixiao:''' You cannot weaken my resolve, Hoolay.
+{{Dialogue End}}
+
+===Destroy the wraith of suspicion{{subst:void|<!--202230612-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Chase after the apparition Hoolay left behind{{subst:void|<!--202230608-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(Unused &mdash; OnDestuctThePhantom_G6)
+<pre>{
+	"$type": "RPG.GameCore.PlayMazeButtonEffect",
+	"Enable": true
+}</pre>
+:----
+::'''Feixiao:''' You aim to instill terror within me...
+::'''Feixiao:''' Yet, all of this is nothing but a... phantom.
+{{Dialogue End}}
+
+===Destroy the wraith of fear{{subst:void|<!--202230613-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Chase after the apparition Hoolay left behind{{subst:void|<!--202230611-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+{{Dialogue End}}
+
+===Destroy the wraith of desire{{subst:void|<!--202230614-->}}===
+{{Dialogue Start}}
+:{{tx}}
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P40242_F40242001_G3"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Defeat... "Feixiao"{{subst:void|<!--202230609-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Do you see me... "shooting star"?
+::"The Knights are sworn to protect the Xianzhou."
+::I will uphold this vow... until my very last day.
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Shadow of "Feixiao"*1/-12% ATK}}
+{{Dialogue End}}
+
+===Break free of the Crimson Moon's influence and wake from Moon Rage{{subst:void|<!--202230610-->}}===
+{{Dialogue Start}}
+----
+{{Dialogue End}}
+
+===Stall the Merlin's Claw who has sunk into madness{{subst:void|<!--202230602-->}}===
+{{Mission Description|type=continuance|location=Skysplitter Arena|update|In response to Hoolay's dying blow, the Merlin's Claw has no choice but to use everything in her power to confront the Crimson Moon hanging in the sky. As though she had returned to the battlefields of yore, she initiates a bloody massacre that has no end in sight. There is only one way to bring her out of madness: Stall for time.}}
+{{Dialogue Start}}
+----
+;([[#Gallery|Cutscene]] plays)
+::We can't let her get away!
+::...But do we stand any chance at all?
+::She said "I'll leave the next part to you."
+::She put her faith in us!
+;(Cutscene ends)
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Salvation by Starlance
+|zhs  = 欃枪烈烈，心兽灭却
+|zht  = 欃槍烈烈，心獸滅卻
+|ja   = 心獣滅却、烈々たる流星
+|ko   = 타오른 유성, 소멸한 심수
+|es   = Lanza estelar redentora
+|fr   = Rédemption de la lance stellaire
+|ru   = Яркий звездопад, зверь в узде
+|th   = ประกายลุกโชนโค่นจิตอสูร
+|vi   = Sao Chổi Rực Cháy, Diệt Trừ Thú Tâm
+|de   = Erlösung durch Sternenlanze
+|id   = Penyelamatan oleh Tombak Bintang
+|pt   = Salvação da Lança Estelar
+}}
+
+==Change History==
+{{Change History|3.5}}

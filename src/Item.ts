@@ -66,6 +66,11 @@ export const COMMON_ICON_MAP = {
 	'SpriteOutput/ItemFigures/190018.png': 'Предмет Книга Амфореус 2.png',
 	'SpriteOutput/ItemFigures/190019.png': 'Предмет Книга Амфореус 3.png',
 	'SpriteOutput/ItemFigures/190020.png': 'Предмет Книга Амфореус 4.png',
+	'SpriteOutput/ItemFigures/191935.png': 'Предмет Книга Амфореус 5.png',
+	'SpriteOutput/ItemFigures/190021.png': 'Предмет Книга Двумерния 1.png',
+	'SpriteOutput/ItemFigures/190022.png': 'Предмет Книга Двумерния 2.png',
+	'SpriteOutput/ItemFigures/190023.png': 'Предмет Книга Двумерния 3.png',
+	'SpriteOutput/ItemIcon/190023.png': 'Предмет Книга Двумерния 3.png',
 }
 
 const sortData = Object.fromEntries((await getFile<ItemSortData[]>('ExcelOutput/ItemDisplaySort.json')).map(sort => [sort.ID, sort]))

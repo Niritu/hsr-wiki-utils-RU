@@ -1,0 +1,142 @@
+<%-- [PAGE_INFO]
+PageTitle=#Meals Are More Important#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 3000703
+|title         = 
+|image         = <!--Mission Meals Are More Important.png-->
+|type          = Daily
+|event_name    = 
+|chapter       = 
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Maintenance Engineer; Malfunctioning Robot; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Base Zone]]
+|world         = Herta Space Station
+|area          = Base Zone
+|prev          = 
+|next          = 
+|rewards       = Credit*5 000
+}}
+'''''Meals Are More Important''''' is a [[Daily Mission]] on [[Herta Space Station]].
+
+==Steps==
+# Speak with the maintenance engineer
+# Find the malfunctioning robot and reboot it
+# Report to the maintenance engineer
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Speak with the maintenance engineer{{subst:void|<!--300070301-->}}===
+{{Mission Description|type=daily|location=Base Zone|The maintenance engineer has a new idea about the meal-delivery robot malfunction. He asks you to reboot the malfunctioning robot to verify if his guess is accurate.}}
+{{Dialogue Start}}
+
+;(Talk to Maintenance Engineer)
+:'''Maintenance Engineer:''' Hey, (Trailblazer), good timing. I have an idea about the robots' problems&mdash;
+:{{Диалог|Стрелка}} Enough ideas. Did you fix the robots?
+::'''Maintenance Engineer:''' I won't dare to take them apart without knowing what I'm doing!
+:{{Диалог|Стрелка}} Let me hear it then.
+::'''Maintenance Engineer:''' It's like this&mdash;
+:'''Maintenance Engineer:''' I checked the main control panel on the terminal. I suspect some robots didn't have enough power or got disconnected from the control panel, and that was why they couldn't execute the deliveries.
+:'''Maintenance Engineer:''' So, I rebooted the signal transmitter, and made sure the remote access signal is functional...
+:{{Диалог|Стрелка}} Hold up. Just tell me the important bits!
+:{{Диалог|Стрелка}} Can you explain it to me like I'm five...
+:'''Maintenance Engineer:''' Sorry, what I mean is, I don't think some of the robots are broken at all. They just need a reboot.
+:'''Maintenance Engineer:''' So, can you help me to...
+:{{Диалог|Стрелка}} I knew it. You just want me to run errands again...
+:{{Диалог|Стрелка}} Help you to reboot the robots?
+:'''Maintenance Engineer:''' Hehehe. Thank you so much in advance.
+----
+{{Dialogue End}}
+
+===Find the malfunctioning robot and reboot it{{subst:void|<!--300070308-->}}===
+{{Dialogue Start}}
+;(If {{cx}}<!--SubMission Finish: 300070302-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body"
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 300070302-->)
+:<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body",
+	"EmotionIndex": 2
+}</pre>
+
+;(Talk to Little Robot)
+:'''Malfunctioning Robot:''' Initiating... Searching for remote device... Countdown, 3...
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot1",
+	"MeshName": "Body"
+}</pre>
+
+;(Talk to Little Robot)
+:'''Malfunctioning Robot:''' Initiating... Normal signal strength for positioning device. Identifying current location... Location found!
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot2",
+	"MeshName": "Body"
+}</pre>
+
+;(Talk to Little Robot)
+:'''Malfunctioning Robot:''' Initiating... Checking updates. Current version is up to date. Initiation successful!
+<pre>{
+	"$type": "RPG.GameCore.SetCharacterAtlasFaceEmotion",
+	"CharacterUniqueName": "Robot3",
+	"MeshName": "Body"
+}</pre>
+
+;(Talk to Little Robot)
+:The robot's batteries are flat. It is unresponsive to your commands.
+
+;(Talk to Little Robot)
+:The robot's batteries are flat. It is unresponsive to your commands.
+{{Dialogue End}}
+
+===Report to the maintenance engineer{{subst:void|<!--300070307-->}}===
+{{Dialogue Start}}
+
+;(Talk to Maintenance Engineer)
+:'''Maintenance Engineer:''' See, (Trailblazer), I'm right! They just needed rebooting. Easy!
+:{{Диалог|Стрелка}} Not necessarily. Some couldn't be rebooted.
+::'''Maintenance Engineer:''' No way!
+:{{Диалог|Стрелка}} You're right, but...
+::'''Maintenance Engineer:''' But what?
+:'''Maintenance Engineer:''' Never mind. Just tell me what happened, and I'll see what might be the cause.
+:{{Диалог|Стрелка}} (Tell him what happened)
+:'''Maintenance Engineer:''' Oh, so it completely fits my initial hypothesis.
+:'''Maintenance Engineer:''' (Trailblazer), I would never have made up my mind if it weren't for your help!
+----
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Meals Are More Important
+|zhs  = 吃饭要紧
+|zht  = 吃飯要緊
+|ja   = 食事は大事
+|ko   = 끼니는 중요하지
+|es   = La comida es muy importante
+|fr   = L'aile et la cuisse
+|ru   = Главное - еда
+|th   = มื้ออาหารใครว่าไม่สำคัญ
+|vi   = Ăn Uống Quan Trọng
+|de   = Mahlzeiten sind wichtiger
+|id   = Makan Itu Penting
+|pt   = Refeições São Muito Importantes
+}}
+
+==Change History==
+{{Change History|3.5}}

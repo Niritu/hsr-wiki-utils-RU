@@ -1,0 +1,254 @@
+<%-- [PAGE_INFO]
+PageTitle=#The Quieting of Quillons#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2022004
+|title         = 
+|image         = <!--Mission The Quieting of Quillons.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Finest Duel Under the Pristine Blue (I)
+|requirements  = [[Trailblaze Continuance]] ''[[From Growls to Grace]]'' completed
+|summary       = Under the mediation of the newly appointed Alchemy Commission's Cauldron Master, you all successfully fended off the accusatory blame from the IPC Specialist, after which you had a chat with her at the Alchemy Commission. But more speed bumps threatened this doomsday talk, for the swordswoman had been waiting long for a showdown with Yanqing.
+|characters    = Angry Patient; Dan Heng; Lingsha; March 7th; Resigned Medic; Sushang; Trailblazer; Yanqing; Yuluo; Yunli
+|startLocation = [[The Xianzhou Luofu]] - [[Alchemy Commission]]
+|world         = The Xianzhou Luofu
+|area          = Alchemy Commission
+|prev          = From Growls to Grace
+|next          = By Words of Many
+|rewards       = Trailblaze EXP*500; Stellar Jade*60; Refined Aether*6; Lost Crystal*4; Credit*60 000
+}}
+'''''The Quieting of Quillons''''' is a [[Trailblaze Continuance]] in the chapter [[Finest Duel Under the Pristine Blue (I)]].
+
+==Steps==
+# Follow Lingsha to the Alchemy Commission meeting
+# Watch Yanqing duel Yunli
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+;(Talk to Yuluo)
+:{{tx}}
+{{Dialogue End}}
+
+===Follow Lingsha to the Alchemy Commission meeting{{subst:void|<!--202200404-->}}===
+{{Mission Description|type=continuance|location=Alchemy Commission|update|Under the mediation of the newly appointed Alchemy Commission's Cauldron Master, you all successfully fended off the accusatory blame from the IPC Specialist, after which you had a chat with her at the Alchemy Commission. But more speed bumps threatened this doomsday talk, for the swordswoman had been waiting long for a showdown with Yanqing.}}
+{{Dialogue Start}}
+
+;(Talk to Lingsha)
+:'''Lingsha:''' Are you all ready?
+:{{Диалог|Стрелка}} Let's do it!
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Let's wait a moment.
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(If {{F|MissionCV-2022004-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40235,
+	"OnCancel": [],
+	"OnEnter": []
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 202200405-->)
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Lingsha:''' All these years, and the view at the Alchemy Commission hasn't changed a bit.
+:'''Lingsha:''' The tides come and go, but the ancient sea remains the same. For us Vidyadhara, there's nothing more nostalgic than our homeland.
+:'''Dan Heng:''' ...You're a Luofu native, Miss Lingsha?
+:'''Lingsha:''' Yes, I grew up here, listening to the sound of waves while researching prescriptions with my mentors and peers at the Alchemy Commission.
+:'''Lingsha:''' It's kind of sad, isn't it? Everything changes but somehow remains familiar. Just like you, Dan Heng, I traveled far from home, and now I've returned. Seeing the familiar scenery brings back a hint of nostalgia.
+:'''Yanqing:''' The view here would be even better without the Ambrosial Arbor.
+:'''Lingsha:''' Oh, really? I think that towering tree looks pretty impressive.
+:'''Yanqing:''' Even if it's impressive, it's a plaguemark. The Xianzhou have been fighting abominations for thousands of years, and now that the Ambrosial Arbor has been reborn, it's only natural for everyone to feel uneasy.
+:'''Lingsha:''' Well, once a seed is planted, no matter how long it takes, it'll eventually sprout and bear fruit.
+:'''Lingsha:''' In my humble opinion, the rebirth of the Ambrosial Arbor and the resurgence of the Disciples of Sanctus Medicus were inevitable. The seed was already planted when the ancestors of the Xianzhou sought immortality.
+:{{Диалог|Стрелка}} Why such a serious topic all of a sudden...?
+:{{Диалог|Стрелка}} We can't just make wild speculations about these things, Miss Lingsha.
+:{{Диалог|Стрелка}} I thought we were here to have some tea, but where's the tea?
+:'''Lingsha:''' My bad. Well, since you went through the entire Ambrosial Arbor Crisis firsthand, Dan Heng and Lieutenant Yanqing, I'd like to discuss something with you.
+:{{tx}}
+:{{tx}}
+:'''Yunli:''' Why do I keep bumping into you? Are you stalking me or something?
+:'''Yanqing:''' Of course not. Unlike you, Miss Yunli, I have important things to take care of. You, on the other hand, seem to have all the time in the world to wander around without returning my sword.
+:'''Yunli:''' Grandpa used to say that a sword reflects its master. I talked to your sword, and it told me that you've been distracted. You hesitate when you should strike, and you struggle to stay calm when your sword is unsheathed...
+:'''Yunli:''' Now that I see you again, I realize your sword was right. It wasn't me who took your sword. It was you who lost focus.
+:'''Yanqing:''' Do you really expect me to believe that nonsense? I've been taking it easy on you because you're a guest from the Zhuming, but you're not taking the hint. Don't people from the Zhuming know you're supposed to return what you've borrowed?
+:'''Yunli:''' Just look at this flying sword. Even if I give it back to you now, it'll just be taken away again in a few hours.
+:'''Yunli:''' You know the Cloud Knight saying: "A Cloud Knight must never let slip their weapon," yes? Well, sure, I can give it back to you now, but on the battlefield, that's a whole different story. Poor flying sword.
+:'''Yanqing:''' Fine, you don't have to give it back because I'll take it back myself!!
+:{{Диалог|Стрелка}} Maybe I should call the general...
+::'''(Trailblazer):''' But which general should I call?
+::'''March 7th:''' Between these two, who do you think is tougher? Don't get me wrong, I'm just curious.
+::Oh, to be young and at the whim of impulse.
+::'''March 7th:''' Between these two, who do you think is tougher? Don't get me wrong, I'm just curious.
+::'''Dan Heng:''' Get ready to separate them.
+::So, is this the Wardance?
+:{{Диалог|Стрелка}} Oh, to be young and at the whim of impulse.
+::'''March 7th:''' Between these two, who do you think is tougher? Don't get me wrong, I'm just curious.
+::'''Dan Heng:''' Get ready to separate them.
+::So, is this the Wardance?
+:{{Диалог|Стрелка}} So, is this the Wardance?
+:'''March 7th:''' Between these two, who do you think is tougher, Dan Heng? Don't get me wrong, I'm just curious.
+:'''Dan Heng:''' Get ready to separate them.
+:'''Lingsha:''' It is my first day at the Alchemy Commission &mdash; a brawl is definitely not how I imagined celebrating it.
+:'''Yunli:''' Well, since you don't approve, I won't draw my sword here.
+:'''Lingsha:''' I didn't mean it that way. Since you've already drawn your swords, you'd be disappointed if you didn't get to test one another, right?
+:'''Lingsha:''' I've received reports that the delves near the Alchemy Commission are still infested with abominations. Seems like my predecessors left quite a mess. So, if you two want to determine who's better, why not focus on them instead of each other?
+:'''Yunli:''' Clearing out some abominations? Meh, sounds boring.
+:'''Yanqing:''' It's the Cloud Knights' duty to eliminate those abominations. You don't have to ask me twice, Miss Lingsha. I'll help you get rid of them.
+:'''Yunli:''' Oh, you think you're the only one who knows how to behave? If Lingsha needs anything, I'll gladly draw my sword and help her out.
+:'''Lingsha:''' It's so heartwarming to see both of you being so sweet and caring. So then, shall we get going?
+:{{Диалог|Стрелка}} Let's go!
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Wait a second!
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200404,
+	"MissionCustomValue": {
+		"Name": "OldValue_0",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P20231_F20231001_G163"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+;(If {{F|MissionCV-2022004-undefined}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 40235,
+	"OnCancel": [],
+	"OnEnter": []
+}</pre>
+
+;(Talk to Patient)
+:'''Angry Patient:''' Do you have any idea how many years I've waited just to see the Healer Lady? And now someone cuts in line? How is that fair?
+:'''Resigned Medic:''' Please calm down... That person is an esteemed guest who has traveled from afar. She simply couldn't wait in line for years, so we had to let her see the Healer Lady before you.
+:'''Resigned Medic:''' But don't worry. As soon as she's done, it'll be your turn. By the way, the esteemed guest said she'll cover your medical expenses as compensation.
+:'''Angry Patient:''' Well... I guess that's acceptable. Your "esteemed guest" seems reasonable, so I'll just pretend nothing happened.
+:'''Resigned Medic:''' Thanks for understanding. Please have a rest over here.
+
+;(Talk to Sushang)
+;(If {{cx}}<!--SubMission not Finish: 202200403-->)
+::'''Sushang:''' Hey, (Trailblazer)! You're back! Why didn't you say anything in the group chat?
+::'''Sushang:''' I'm on duty. Let's catch up later.
+::{{Диалог|Стрелка}} You look so pretty when you're serious.
+:::'''Sushang:''' Cut it out. I'm carrying out my sacred duty.
+:::Why are you standing guard here?
+:::'''Sushang:''' Because of someone important. So, stop asking and be serious. I'm on duty right now.
+:::Alright, I'll leave you to it then.
+:::'''Sushang:''' Yeah, see you later.
+:::(Pull a funny face at her.)
+::{{Диалог|Стрелка}} Why are you standing guard here?
+:::'''Sushang:''' Because of someone important. So, stop asking and be serious. I'm on duty right now.
+:::Alright, I'll leave you to it then.
+:::'''Sushang:''' Yeah, see you later.
+:::(Pull a funny face at her.)
+::{{Диалог|Стрелка}} Alright, I'll leave you to it then.
+:::'''Sushang:''' Yeah, see you later.
+:::(Pull a funny face at her.)
+::{{Диалог|Стрелка}} (Pull a funny face at her.)
+::'''Sushang:''' ...
+::'''Sushang:''' ...
+::'''Sushang:''' *laughs* ...Hey, I'm warning you, I'm carrying out my sacred duty! It'll be annoying if you keep cracking jokes like that!
+::'''Sushang:''' Stop hanging around here and find something better to do. Once I'm done in a few days, call up Lil Gui and Huohuo, and let's grab a meal at Aurum Alley. It's been ages since we hung out.
+::{{tx}}
+;(If {{cx}}<!--SubMission Finish: 202200403-->)
+::'''Sushang:''' Please do not hinder me from carrying out my sacred duty! We can discuss whatever you want after my shift!
+{{Dialogue End}}
+
+===Watch Yanqing duel Yunli{{subst:void|<!--202200405-->}}===
+{{Dialogue Start}}
+:{{tx}}
+
+;(Talk to Yuluo)
+:'''Yuluo:''' There you are, Master Lingsha. Just a reminder, the Alchemy Commission on the Luofu has always had a close relationship with the Preceptors, so avoiding a meeting like this doesn't align with our long-standing practices...
+:'''Lingsha:''' Practices? Come on, you make it sound like the "long-standing practices" in this Alchemy Commission are something great.
+:'''Yuluo:''' You're right, Cauldron Master. In this case... I'll continue handling them on your behalf.
+:'''Lingsha:''' Thank you for your help.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = The Quieting of Quillons
+|zhs  = 锷击刃鸣，止戈罢兵
+|zht  = 鍔擊刃鳴，止戈罷兵
+|ja   = 切り結ぶ刃と止戈の勇将
+|ko   = 교차하는 칼끝을 멈춘 일격
+|es   = Sonar de espadas que detiene legiones
+|fr   = Le Silence des quillons
+|ru   = Пение клинков кладёт конец войне
+|th   = คมดาบกู่ก้องยุติวิวาท
+|vi   = Đao Kiếm Hòa Thanh, Gác Lại Chiến Tranh
+|de   = Gesang der Klingen, Untergang der Armee
+|id   = Serangan yang Menghentikan Peperangan
+|pt   = O Silêncio do Combate
+}}
+
+==Change History==
+{{Change History|3.5}}

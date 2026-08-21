@@ -1,0 +1,209 @@
+<%-- [PAGE_INFO]
+PageTitle=#Future Market (I)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2010205
+|title         = 
+|image         = <!--Mission Future Market (I).png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Jolted Awake From a Winter Dream
+|requirements  = {{subst:void|<!--Unknown: {"Type":"Manual"}-->}}
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = March 7th; Topaz; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[History and Culture Museum]]
+|world         = Jarilo-VI
+|area          = History and Culture Museum
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*700; Stellar Jade*110; Traveler's Guide*5; Lost Crystal*4; Credit*40 000
+}}
+'''''Future Market (I)''''' is a [[Trailblaze Continuance]] in the chapter [[Jolted Awake From a Winter Dream]].
+
+==Steps==
+# Look for Topaz
+# Attempt a dialogue with Topaz
+# Negotiations failed. Summarize the situation to March 7th
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Look for Topaz{{subst:void|<!--201020118-->}}===
+{{Mission Description|type=continuance|location=History and Culture Museum|(Trailblazer)'s Trailblaze Daily Report:<br />We're in trouble. Belobog owes a whole lot of money to the IPC. Need to negotiate with Topaz in the museum.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020353
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020354
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020355
+		},
+		{
+			"AutoSkipTime": 2,
+			"GroupID": 30,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 201020356
+		}
+	]
+}</pre>
+
+;(Talk to Topaz)
+----
+:'''Topaz:''' Oh! It's you two again. This is the third time today we've run into each other.
+:{{Диалог|Стрелка}} Cherish the moment...
+::'''Topaz:''' Why, of course I will! Meeting friends from the Astral Express is always a moment worth cherishing!
+:{{Диалог|Стрелка}} Actually, we sent you a message.
+::'''Topaz:''' Oh, did my Smart-Reply function tell you where I was? It's a system developed by the Technology Department. Pretty neat, right?
+:'''Topaz:''' What do you make of this painting? I'm no expert, but just from the artist's strokes I can tell it's no ordinary piece.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43104_F43104001_G30",
+	"AnchorName": "Anchor3",
+	"DynamicParams": {}
+}</pre>
+:'''Topaz:''' It portrays a certain kind of... sorrow, you know? Not your everyday kind of sadness &mdash; it runs much deeper than that.
+:'''Topaz:''' It's as if the artist has condensed history into one poignant, but sorrowful image. The artist's brushwork depicts a generation's &mdash; no, several generations' hardships...
+:{{Диалог|Стрелка}} Seems like you know your art...
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43104_F43104001_G30",
+	"AnchorName": "Anchor2",
+	"DynamicParams": {}
+}</pre>
+::'''Topaz:''' Not at all, the analysis of an aficionado. I wouldn't take my word for it.
+::'''Topaz:''' The Express has visited many worlds. I'm sure the Nameless have a far greater knowledge of such things than myself.
+:{{Диалог|Стрелка}} I was thinking the exact same thing.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P43104_F43104001_G30",
+	"AnchorName": "Anchor2",
+	"DynamicParams": {}
+}</pre>
+::'''Topaz:''' Haha, you flatter me! The Express has visited many worlds. I'm sure the Nameless have a far greater knowledge of such things than myself.
+:'''Topaz:''' I suppose what I'm trying to say is, what I'm drawn to isn't the style in which a piece is painted, but its overall value. Its intrinsic value may only be 50,000 credits, but its "added value" might push the total up to 200,000.
+:'''March 7th:''' Ugh... Sorry for crashing your artist party, but we came to talk to you about something else...
+:'''Topaz:''' Oh? A collaboration between our two sides, perhaps?
+:'''March 7th:''' Not exactly. Actually, we&mdash;
+:'''Topaz:''' Let's walk and talk &mdash; this way!
+----
+{{Dialogue End}}
+
+===Attempt a dialogue with Topaz{{subst:void|<!--201020119-->}}===
+{{Mission Description|type=continuance|location=History and Culture Museum|update|(Trailblazer)'s Trailblaze Daily Report:<br />Found Topaz. Negotiations are starting. Hopefully we don't say the wrong things.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Topaz:''' Most exhibits in this museum are of little value.
+:'''Topaz:''' But with a keen eye, it's possible to find a diamond in the rough, so to speak.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''March 7th:''' So you're basically saying the Belobogians must pay off their ancestors' debts...
+:'''Topaz:''' When you think about it, it's just another part of the cycle of life.
+:'''March 7th:''' ...Uh, I'm not sure it's as poetic as that...
+
+;(По прибытии на место)
+:'''Topaz:''' Wow, look! Is that little critter native to Jarilo-VI!?
+<pre>{
+	"$type": "RPG.GameCore.AdventureCameraLookAtSimple",
+	"LookAtGroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 28
+		}
+	},
+	"LookAtID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300045
+		}
+	},
+	"LookAtTransitionDuration": 2,
+	"LockCameraInput": true,
+	"UnlockCameraAfterRecover": true,
+	"LookAtDuration": 3,
+	"LookAtRecoverDuration": 0.5,
+	"EnableOverrideLookAtOffset": true
+}</pre>
+{{Dialogue End}}
+
+===Negotiations failed. Summarize the situation to March 7th{{subst:void|<!--201020121-->}}===
+{{Mission Description|type=continuance|location=History and Culture Museum|update|(Trailblazer)'s Trailblaze Daily Report:<br />Negotiations failed. Shoot. Next step: Is there a next step?}}
+{{Dialogue Start}}
+
+;(Talk to March 7th)
+:'''March 7th:''' So... what now? We spent ages trying to convince her and she didn't move an inch!
+:{{Диалог|Стрелка}} We didn't promise Bronya we'd succeed.
+::'''March 7th:''' Well, yeah, but she'll be really disappointed...
+:{{Диалог|Стрелка}} She sort of made sense...
+::'''March 7th:''' I guess so, but that still doesn't fix Bronya's problem...
+:{{Диалог|Стрелка}} We should keep pestering her.
+::'''March 7th:''' You sure? I really don't think she'll change her mind.
+:'''March 7th:''' I guess Miss Topaz is just doing her job. And as far as the Express is concerned, I think it'd be unwise to make the IPC our enemy.
+:'''March 7th:''' All these vested interests &mdash; so hard to undo any of it... they don't teach this stuff in school. Wait... did I even go to school?
+:'''March 7th:''' Did someone send you a message?
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1115200
+}</pre>
+:'''March 7th:''' Huh? The IPC are causing trouble in the Underworld? Already?
+:'''March 7th:''' Ugh, seriously? Topaz was just talking about "taking the welfare of the people of Belobog into consideration," and now they're pulling this stunt? You really can't trust these money-hungry IPC suits for a minute!
+:{{Диалог|Стрелка}} Let's go save the day.
+::'''March 7th:''' Again... I don't think I have it in me to play the hero today!
+:{{Диалог|Стрелка}} Here we go again...
+::'''March 7th:''' I really did jinx us! I don't think I have it in me to play the hero today!
+:{{Диалог|Стрелка}} That's right! You can't believe a word they say!
+::'''March 7th:''' I really did jinx us! I don't think I have it in me to play the hero today!
+:'''March 7th:''' I guess complaining won't get us anywhere. Let's go lend them a hand.
+----
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1115200
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Future Market (I)
+|zhs  = 未来市场•其一
+|zht  = 未來市場•其一
+|ja   = フューチャーズマーケット・一
+|ko   = 미래 시장•1
+|es   = El mercado del mañana&nbsp;I
+|fr   = Marché à terme (I)
+|ru   = Рынок будущего I
+|th   = ตลาดแห่งอนาคต 1
+|vi   = Thị Trường Tương Lai 1
+|de   = Markt der Zukunft (Teil 1)
+|id   = Pasar Masa Depan 1
+|pt   = Mercado Futuro (I)
+}}
+
+==Change History==
+{{Change History|3.5}}

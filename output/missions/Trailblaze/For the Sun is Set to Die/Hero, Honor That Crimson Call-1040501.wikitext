@@ -1,0 +1,418 @@
+<%-- [PAGE_INFO]
+PageTitle=#Hero, Honor That Crimson Call#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040501
+|title         = 
+|image         = <!--Mission Hero, Honor That Crimson Call.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = For the Sun is Set to Die
+|requirements  = [[Trailblaze Mission]] ''[[Dawn, Shine at the World's End]]'' completed
+|summary       = Upon reuniting with Dan Heng, you received an external communication from Screwllum. At his request, you chose to remain in Amphoreus as an inside agent while Dan Heng returned to the Express. Later, at the Vortex of Genesis, when you and Phainon returned the final Coreflame, instead of triggering "Era Nova," Lygus pulled you into an "Immersive Theater." He revealed "memories" spanning from Phainon's childhood to the conclusion of a Flame-Chase Journey, exposing that the Flame-Chase journey's true purpose is to foster "Destruction," and that Amphoreus, once an experimental ground for the Erudition, has now transformed into the growth medium for Lord Ravager Irontomb, perpetually undergoing the Cycles.
+|characters    = Aglaea; Anaxa; Castorice; Cipher; Cyrene; Dan Heng; Hyacine; Lygus; Mem; Mnemosyne the Guard; Mydei; Phainon; Screwllum; Trailblazer; Tribbie; Zeph the Guard
+|startLocation = [[Amphoreus]] - [["Fallen Twilight City" Okhema]]
+|world         = Amphoreus
+|area          = "Fallen Twilight City" Okhema
+|prev          = Dawn, Shine at the World's End
+|next          = Hero, Shatter That Woeful Effigy
+|rewards       = Trailblaze EXP*2 400; Stellar Jade*300; Refined Aether*12; Lost Crystal*12; Disorder Ambrosia*960; Credit*160 000
+}}
+'''''Hero, Honor That Crimson Call''''' is a [[Trailblaze Mission]] in the chapter [[For the Sun is Set to Die]].
+
+==Steps==
+# Talk to the Guard, and meet up with Dan Heng
+# Meet up with Dan Heng
+# Escape from Amphoreus
+# Watch March 7th's experience
+# Head to the Vortex of Genesis and complete the Era Nova with Phainon
+# Complete the Era Nova with Phainon
+# Complete Era Nova
+# Watch "Immersive Theater"
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Talk to the Guard, and meet up with Dan Heng{{subst:void|<!--104050101-->}}===
+{{Mission Description|type=trailblaze|location="Fallen Twilight City" Okhema|The Flame Reaver suddenly froze, as if something unforeseen had transpired. As I pondered what might have happened, I spotted (Trailblazer)'s figure once more...}}
+{{Dialogue Start}}
+
+;(Talk to Zeph the Guard)
+:{{tx}}
+{{Dialogue End}}
+
+===Meet up with Dan Heng{{subst:void|<!--104050102-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::'''Zeph the Guard:''' There he is! Lord Dan Heng!
+::'''Mnemosyne the Guard:''' Quick! We must assist him!
+::'''Dan Heng:''' ...(Trailblazer)!? What are you doing here? Where's Phainon?
+::{{Диалог|Стрелка}} It's a long story. Let's deal with that guy first!
+::{{Диалог|Стрелка}} We need to go, Dan Heng!
+::'''Mnemosyne the Guard:''' We are under Lord Phainon's orders to escort both of you to safety, no matter the cost!
+::'''Mnemosyne the Guard:''' Leave this to me and the Holy City Guards... Zeph, take them and go!
+::'''Zeph the Guard:''' Wait, Mnemosyne&mdash;
+::'''Zeph the Guard:''' That black-clad swordmaster... something seems off.
+::'''Dan Heng:''' At some point earlier, they suddenly froze in place... not moving at all.
+::'''Dan Heng:''' Like... some kind of omen.
+::{{Диалог|Стрелка}} Now's our chance to take them down!
+:::'''Dan Heng:''' No, don't get too close! That thing's black flames are burning hot. I don't know what's happening, but leaving is the best option.
+:::No time to waste, let's get out of here.
+::{{Диалог|Стрелка}} No time to waste, let's get out of here.
+::'''Dan Heng:''' Right. We don't know exactly what's happening, but retreating is the safest choice right now.
+::'''Zeph the Guard:''' I don't know which demigod graced us with this miracle... Please, come with us!
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10404_F10404001_G67"
+				},
+				"AnchorName": {
+					"Value": "Anchor2"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Escape from Amphoreus{{subst:void|<!--104050103-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G68_2)
+:'''Dan Heng:''' The Flame Reaver isn't pursuing us... Could this really be some kind of divine intervention?
+::'''Mnemosyne the Guard:''' We can't stay here for long. Lady Trinnon's Century Gate is just outside the city &mdash; let's keep moving.
+::{{Диалог|Стрелка}} I still feel like someone should stay behind...
+:::'''Dan Heng:''' I agree. But Phainon... he must have struggled a lot before making this decision.
+:::Is this... really what Trailblazing is supposed to be?
+:::'''Dan Heng:''' Our experience in Amphoreus has far exceeded expectations. If our goal was just to replenish fuel, then mission accomplished. But you're right...
+:::Leaving like this... I'll definitely regret it.
+::{{Диалог|Стрелка}} Is this... really what Trailblazing is supposed to be?
+:::'''Dan Heng:''' Our experience in Amphoreus has far exceeded expectations. If our goal was just to replenish fuel, then mission accomplished. But you're right...
+:::Leaving like this... I'll definitely regret it.
+::{{Диалог|Стрелка}} Leaving like this... I'll definitely regret it.
+::'''Dan Heng:''' I... feel the same. Someone should stay and help Phainon complete Era Nova.
+::'''Dan Heng:''' ...
+::'''Dan Heng:''' For now, let's get back in contact with the Express and plan our next move. That's the safest course of action. We need more information.
+::'''???:''' On that note, I have a proposal&mdash;
+::'''Zeph the Guard:''' ...Who's there!?
+::'''Screwllum:''' I hope to convey a message to the two "Nameless."
+::'''Dan Heng:''' Mr. Screwllum!?
+::'''Mnemosyne the Guard:''' Who are you!? Stand down! I order you to maintain a distance of ten paces!
+::'''Dan Heng:''' It's okay, guard. This one is not our enemy.
+::'''Screwllum:''' It has been a while, Nameless of the Astral Express.
+::'''Screwllum:''' I'm glad I arrived in time to stop that black-clad one from harming you further.
+::'''Dan Heng:''' So, it was you.
+::{{Диалог|Стрелка}} It's good to see some familiar faces.
+:::'''Screwllum:''' It was fortunate we found you in time. Madam Herta and I were both quite relieved, (Trailblazer).
+:::Never thought the Express Crew would bring in a genius for backup...
+:::'''Screwllum:''' Indeed. Madam Herta invited me to meet with you Nameless. Rest assured, (Trailblazer).
+:::Things are getting more confusing by the minute...
+::{{Диалог|Стрелка}} Never thought the Express Crew would bring in a genius for backup...
+:::'''Screwllum:''' Indeed. Madam Herta invited me to meet with you Nameless. Rest assured, (Trailblazer).
+:::Things are getting more confusing by the minute...
+::{{Диалог|Стрелка}} Things are getting more confusing by the minute...
+::'''Screwllum:''' Rest assured, (Trailblazer). Madam Herta and I have come here for the sake of Amphoreus.
+::'''Zeph the Guard:''' You two know this... Antikytheran? Does he come from the same people as Councilor Lygus?
+::'''Dan Heng:''' Don't worry, guard. This gentleman is an ally of the Trailblaze. Would you mind giving us a moment to speak in private?
+::'''Zeph the Guard:''' Of course. We'll wait nearby. Please stay safe.
+::'''Screwllum:''' I fully understand your situation. For now, the only thing I can do is temporarily freeze that black-clad one in place. Time is limited. So, I'll keep this brief&mdash;
+::'''Screwllum:''' The place where you stand, Amphoreus, {{Цвет|Ключевой|nobold=1|is a world constructed from data and memoria, an experimental field of a certain Aeon.}}
+::'''Screwllum:''' And now, this isolated sandbox world is rapidly falling into a third Path &mdash; {{Цвет|Ключевой|nobold=1|Destruction}}.
+::'''Dan Heng:''' Destruction...
+::'''Screwllum:''' Conclusion: If Amphoreus continues unchecked on this course...
+::'''Screwllum:''' {{Цвет|Ключевой|nobold=1|A Lord Ravager will complete its evolution and metamorphosis, and emerge from the surging tides. The cosmos as we know it will suffer irreversible consequences.}}
+::{{Диалог|Стрелка}} A Lord Ravager... Like Phantylia?
+:::'''Screwllum:''' The disaster that this Lord Ravager intends to trigger may be far more severe than the Luofu's Stellaron Crisis. Because its goal is...
+:::A cosmic-scale disaster?
+::{{Диалог|Стрелка}} A cosmic-scale disaster?
+::'''Screwllum:''' Affirmative. If everything unfolds toward the worst possible outcome as predicted, the consequences will be unimaginable. Because the Lord Ravager's goal is...
+::'''Screwllum:''' {{Rubi|{{Цвет|Ключевой|nobold=1|The Aeon of Erudition}}|{{Цвет|Ключевой|nobold=1|Nous}}}}.
+::'''Dan Heng:''' ...
+::'''Screwllum:''' Putting aside the complex details of the inferences involved, I have a request to make, for one of you Nameless, to stay behind on Amphoreus, acting as an informant, in order to prevent the wrath of Destruction from ravaging the cosmos.
+::'''Screwllum:''' This world is enveloped in a "firewall" that defies explanation, and the flow of time here is also different from reality. Madam Herta and I can only tear open a gap and project images inside.
+::'''Screwllum:''' However &mdash; the accidental crash landing of the Express Car notwithstanding &mdash; both of you were able to successfully land here. There must be some principle behind this we have yet to fully grasp.
+::'''Screwllum:''' It will take time to uncover the reason. Before then, if one of the Nameless is willing to stay and witness the fate of this world &mdash; or to push it along when necessary &mdash; it would be of great assistance.
+::{{Диалог|Стрелка}} I will shoulder this responsibility.
+::{{Диалог|Стрелка}} Two people can stay.
+:::'''Screwllum:''' There are reasons for which I must recommend against such a course of action.
+:::What say you, Dan Heng?
+::{{Диалог|Стрелка}} What say you, Dan Heng?
+::'''Dan Heng:''' ...
+::'''Dan Heng:''' Mr. Screwllum, I believe you, so I only have one thing I'd like to confirm with you. As Amphoreus is already facing its end, how can we guarantee the safety of the person who stays behind?
+::'''Screwllum:''' Look at this, if you would&mdash;
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 41441
+}</pre>
+:<!--1-second delay-->
+:'''Dan Heng:''' Phainon... is he going to be alright?
+:'''Zeph the Guard:''' Believe in his resolve to save Okhema.
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Dan Heng:''' (Trailblazer), don't get too close!
+:'''Dan Heng:''' That thing's black flames are extremely dangerous.
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10404_F10404001_G69"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Watch March 7th's experience{{subst:void|<!--104050107-->}}===
+{{Mission Description|type=trailblaze|location="Fallen Twilight City" Okhema|update|Mr. Screwllum's information has left us feeling rather unsettled. It seems March 7th has now also become entangled in the events of Amphoreus.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Head to the Vortex of Genesis and complete the Era Nova with Phainon{{subst:void|<!--104050108-->}}===
+{{Mission Description|type=trailblaze|location=Vortex of Genesis|update|Mr. Screwllum's arrival marks a definite turning point, giving us fresh insights into Amphoreus's condition.<br />Following his request, (Trailblazer) will stay behind in Amphoreus to adapt to changing circumstances, while I'll return to the Express as planned to regroup with the other Crew members and formulate our next course of action.}}
+{{Dialogue Start}}
+
+;(Talk to Phainon)
+
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+----
+::(Trailblazer), at Vortex of Genesis
+::'''Mem:''' ...You okay there, friend?
+::'''Mem:''' Something seems to be bothering you.
+::'''(Trailblazer):''' ...
+::'''(Trailblazer):''' (The Vortex of Genesis... we made it back.)
+::'''(Trailblazer):''' (Even this place has changed...)
+::'''(Trailblazer):''' (Phainon... is he ready for Era Nova?)
+::{{Диалог|Стрелка}} I hope Dan Heng will be okay heading back on his own.
+:::'''Mem:''' If anything, he's the one worried about you! But I'm here to watch over you now!
+:::Maybe Dan Heng should be here...
+:::'''Mem:''' ...It's a bit late for that now, isn't it?
+:::No matter what, we need to see it through the end.
+::{{Диалог|Стрелка}} Maybe Dan Heng should be here...
+:::'''Mem:''' ...It's a bit late for that now, isn't it?
+:::No matter what, we need to see it through the end.
+::{{Диалог|Стрелка}} No matter what, we need to see it through the end.
+::'''Mem:''' Yeah... we've come such a long way...
+::'''Mem:''' If what that machine gentleman said is true, if Amphoreus is destined for destruction... then I'll stay by your side until the very end.
+::'''Mem:''' Like how you and Dan Heng treasure the Express... Amphoreus means everything to me.
+::{{Диалог|Стрелка}} Time to see the Era Nova begin.
+::'''Mem:''' Right! Time to see the last Coreflame restored!
+::{{tx}}
+{{Dialogue End}}
+
+===Complete the Era Nova with Phainon{{subst:void|<!--104050109-->}}===
+{{Dialogue Start}}
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Lygus:''' But you, Lord Phainon, will bury the old world with that Coreflame, bringing all things into a gray unknown...
+::'''Phainon:''' It doesn't matter. This cruel Flame-Chase Journey has made me abandon my fantasies. The future is not a paradise with a gentle west wind, waiting for us to step in...
+::'''Phainon:''' If what lies ahead is a mass of chaos, I will tear it apart...
+::'''Phainon:''' ...Then usher in the first ray of blazing sunlight.
+::'''Phainon:''' ...
+::'''Phainon:''' ...Is it you?
+::'''Lygus:''' With one last chance to turn back, you still step forward.
+::'''Lygus:''' ...How befitting of a Trailblazer.
+::{{Диалог|Стрелка}} This is the path I must take.
+:::'''Lygus:''' As it happens, I find myself thinking the exact same thing.
+:::Spare me your mockery.
+::{{Диалог|Стрелка}} Spare me your mockery.
+::'''Lygus:''' (chuckles) You misunderstand.
+::'''Lygus:''' As our world nears its end, {{Rubi|the ones who walk the infinite paths|Tribios}} have embraced their destiny...
+::'''Lygus:''' As the Theoros, it is my duty to witness the world's future and oversee this final Coreflame ritual on their behalf&mdash;
+::'''Lygus:''' The Trial of Worldbearing &mdash; The ritual of Era Nova.
+::{{Диалог|Стрелка}} Screwllum says you're behind all this.
+::'''Phainon:''' ...?
+::'''Lygus:''' Ah, I see. So you met my kindred spirit before I could erase his traces.
+::'''Phainon:''' (Trailblazer), what are you saying?
+::{{Диалог|Стрелка}} This one knows more than he's telling.
+::{{Диалог|Стрелка}} Time to make him talk!
+::'''Phainon:''' ...
+::'''Phainon:''' I've had my suspicions. How does a native Antikytheran know so much about repairing vehicles from beyond the sky?
+::'''Phainon:''' Lord Lygus &mdash; How much do you truly know about Era Nova? Tell us everything!
+::'''Lygus:''' Hehe...
+::'''Lygus:''' Very well, I need no longer maintain this Theoros masquerade. You seek truth, Lord Phainon &mdash; and truth you shall have.
+::'''Lygus:''' As you know, when the old gods fell, someone had to bear their broken pillars, to fill the vacant seats. Those who would assume divine authority must prove themselves through trials.
+::'''Lygus:''' Yet, for Kephale's demigods, the possibility of overcoming the trials has forever been nonexistent. For the "Worldbearing" trial is the divine duty itself &mdash; bringing forth the "Era Nova" and bearing its weight is an endless ordeal, ceasing only upon collapse.
+::'''Lygus:''' Precisely: The "Era Nova" ritual is not something that can be completed in an instant. No, but a long and arduous journey. While the sacrificial journeys of other demigods conclude in this world, Kephale must shoulder the gods' Coreflames, bear the memories of all worlds, and stand unwavering...
+::'''Lygus:''' Until the next world... when the black tide consumes the Bearer and all that they carry, leaving nothing behind.
+::'''Phainon:''' ...Unless their Coreflame finds a new bearer.
+::'''Lygus:''' The holy flame that illuminates all worlds rests in your hands. All that remains is one choice...
+::'''Lygus:''' Nurture it, pass it on to future generations, or extinguish it here and now?
+::'''Lygus:''' Deliverer, the fate of all worlds rests in your hands.
+::'''Phainon:''' Enough testing. I've made my decision.
+::'''Phainon:''' But before I ignite the dawn of the next world, you need to promise me something &mdash; two things, actually.
+::'''Lygus:''' Speak your terms.
+::'''Phainon:''' Promise me this: Professor Anaxa's vision of the "New World" is absolute. The world will be reborn from my memories, all souls, living and dead, will return as the first humans, unchanged from their past lives...
+::'''Phainon:''' And my friends &mdash; the fallen demigods, they shall transcend the cycle to become new Titans. Our heroes shall not have died in vain.
+::'''Lygus:''' Of course. This I can guarantee.
+::'''Phainon:''' Good. The second one&mdash;
+::'''Phainon:''' Promise me (Trailblazer) can return safely to {{MC|м=his|ж=her}} homeland, unbound by Amphoreus's laws.
+::'''Lygus:''' ...My apologies, but I cannot promise this. As you mentioned, {{MC|ж=she|м=he}} now bears the Time Titan's authority...
+::'''Lygus:''' {{MC|м=His|ж=Her}} bonds with this world run too deep.
+::'''Phainon:''' ...
+::{{Диалог|Стрелка}} No need to worry, I have a plan.
+::{{Диалог|Стрелка}} Trust me, initiate the Era Nova.
+::'''Lygus:''' Well... I stand corrected. An outsider like {{MC|м=him|ж=her}} does have ways to defy destiny.
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"BeforeCases": [
+		{
+			"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+			"SwitchCharacterAnchorConfig": {
+				"IsLocalPlayer": true,
+				"CharacterUniqueName": "LocalPlayer",
+				"AreaName": {
+					"Value": "LevelArea_P10402_F10402001_G72"
+				},
+				"AnchorName": {
+					"Value": "Anchor1"
+				}
+			}
+		}
+	]
+}</pre>
+
+;(Unused &mdash; EnterDistrict_G{GroupID})
+:'''Mem:''' Look, there's Phainon! And... wait!
+::'''(Trailblazer):''' (...Lygus?)
+::'''(Trailblazer):''' ({{Цвет|Ключевой|nobold=1|Remember... Screwllum's warning.}})
+{{Dialogue End}}
+
+===Complete Era Nova{{subst:void|<!--104050106-->}}===
+{{Dialogue Start}}
+
+
+;(Talk to Complete Era Nova)
+:'''Lygus:''' Behold, O gods! Amphoreus has achieved her victory, and the Era Nova approaches&mdash;
+:'''Lygus:''' The radiant soul has arrived, having walked through the bustling nights, bearing the golden fire and blood, stepping with pride into daylight&mdash;
+:'''Tribbie:''' He is the pure child, walking upon the path of yesterday, today, and tomorrow&mdash;
+:'''Castorice:''' He is the first to be born, first to be named among the nameless&mdash;
+:'''Anaxa:''' Eternal in form, limitless in reach, he treads the endless night underfoot&mdash;
+:'''Mydei:''' Greatest of kings, protector of the displaced, raising humanity's children above their adversaries&mdash;
+:'''Hyacine:''' The firmament of molten gold courses through his very bones and flesh&mdash;
+:'''Cipher:''' The greatest of schemes reveal against his breath and words&mdash;
+:'''Aglaea:''' In the golden lakes of that beautiful new world, he shall wash himself clean&mdash;
+:'''Cyrene:''' There, finish what we first... and last wished for...
+:'''Cyrene:''' ...To write an ending unlike any before for this world we so deeply love.
+:'''Phainon:''' ...
+:'''Phainon:''' Come, (Trailblazer), join me.
+:{{Диалог|Стрелка}} Restore the final Coreflame with Phainon.
+:'''Phainon:''' The time has come for us all to face oblivion...
+:{{tx}}
+:<!--0.5-second delay-->
+
+
+;(Talk to Lygus)
+:{{tx}}
+:'''Lygus:''' As our world draws its final breath... I stand before you as the Theoros.
+:{{Диалог|Стрелка}} Before we begin... there's something I need to know.
+::{{Диалог|Разговор}} Who are you, really?
+:::'''Lygus:''' Allow me to reintroduce myself. I am Lycurgus, once an honored elder of the Okhema Council. As the Theoros, I have sworn to watch over and protect every citizen of Okhema until the very end.
+:::{{tx}}
+:::{{Диалог|Разговор}} What aren't you telling me?
+::::'''Lygus:''' Ah... While the holy city may honor me, I'm but a humble speck before the cosmos. My reach... is limited.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} What's your connection to Screwllum?
+::::'''Lygus:''' I believe, all synthetic life shares a common source &mdash; we're all children of the universe's eternal mathematical law.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Выход}} Let's leave it at that. Time to complete the ritual.
+::::'''Lygus:''' The world will be moved by your sacrifice, Trailblazer.
+::::{{tx}}
+::{{Диалог|Разговор}} What aren't you telling me?
+:::'''Lygus:''' Ah... While the holy city may honor me, I'm but a humble speck before the cosmos. My reach... is limited.
+:::{{tx}}
+:::{{Диалог|Разговор}} Who are you, really?
+::::'''Lygus:''' Allow me to reintroduce myself. I am Lycurgus, once an honored elder of the Okhema Council. As the Theoros, I have sworn to watch over and protect every citizen of Okhema until the very end.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} What's your connection to Screwllum?
+::::'''Lygus:''' I believe, all synthetic life shares a common source &mdash; we're all children of the universe's eternal mathematical law.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Выход}} Let's leave it at that. Time to complete the ritual.
+::::'''Lygus:''' The world will be moved by your sacrifice, Trailblazer.
+::::{{tx}}
+::{{Диалог|Разговор}} What's your connection to Screwllum?
+:::'''Lygus:''' I believe, all synthetic life shares a common source &mdash; we're all children of the universe's eternal mathematical law.
+:::{{tx}}
+:::{{Диалог|Разговор}} Who are you, really?
+::::'''Lygus:''' Allow me to reintroduce myself. I am Lycurgus, once an honored elder of the Okhema Council. As the Theoros, I have sworn to watch over and protect every citizen of Okhema until the very end.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Разговор}} What aren't you telling me?
+::::'''Lygus:''' Ah... While the holy city may honor me, I'm but a humble speck before the cosmos. My reach... is limited.
+::::{{tx}}
+:::;(Return to previous option selection)
+:::{{Диалог|Выход}} Let's leave it at that. Time to complete the ritual.
+::::'''Lygus:''' The world will be moved by your sacrifice, Trailblazer.
+::::{{tx}}
+::{{Диалог|Выход}} Let's leave it at that. Time to complete the ritual.
+:::'''Lygus:''' The world will be moved by your sacrifice, Trailblazer.
+:::{{tx}}
+:{{Диалог|Выход}} It's time to complete the ritual.
+::'''Lygus:''' The world will be moved by your sacrifice, Trailblazer.
+::{{tx}}
+
+;(Talk to Phainon)
+----
+:'''Phainon:''' Without you, we could never have reached our prophesied tomorrow...
+:'''Phainon:''' Thank you for walking this path with me to the end.
+{{Dialogue End}}
+
+===Watch "Immersive Theater"{{subst:void|<!--104050113-->}}===
+{{Dialogue Start}}
+
+;(Talk to Continue the immersive theater)
+
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Hero, Honor That Crimson Call
+|zhs  = 英雄啊，兑现那染血的冀望
+|zht  = 英雄啊，兌現那染血的冀望
+|ja   = 英雄よ、血塗られた願いを果たせ
+|ko   = 영웅이여, 그 피 묻은 희망을 이루어라
+|es   = {{MC|ж=Heroína|м=Héroe}}, honra esa llamada carmesí
+|fr   = Héros, réponds à l'appel cramoisi
+|ru   = О герой, воплоти кровавую надежду
+|th   = วีรชนเอ๋ย จงเติมเต็มความหวังชโลมโลหิต
+|vi   = Hỡi anh hùng, hãy thực hiện khát vọng nhuốm máu đó
+|de   = O Helden, erfüllt das blutbefleckte Verlangen
+|id   = Wahai Pahlawan, Wujudkan Harapan Berlumuran Darah Itu
+|pt   = Herói, Honre o Chamado Carmesim
+}}
+
+==Change History==
+{{Change History|3.5}}

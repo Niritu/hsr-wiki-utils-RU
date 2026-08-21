@@ -11,13 +11,13 @@ PageTitle=##
 |Глава           = 
 |Условия         = Завершена [[Миссия приключения]] «[[Управление причалом III]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Лофу Сяньчжоу]] — [[Переулок ауруматонов]]
-|Мир             = Лофу Сяньчжоу
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = Управление причалом III
 |Следующая       = 
 |Награды         = Свидетельство процветания*2
 }}
-'''''' — [[Миссия приключения]] в [[Лофу Сяньчжоу]].
+'''''' — [[Миссия приключения]]<!--в [мире]-->.
 
 ==Описание==
 {{Описание|<!--официальное описание из Перекрёстка судеб-->}}
@@ -28,152 +28,6 @@ PageTitle=##
 ==Прохождение==
 {{Дополнить}}
 
-;(По прибытии на место)
-
-;(По прибытии на место)
-<pre>{
-	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
-	"BubbleTalkInfoList": [
-		{
-			"AutoSkipTime": 5,
-			"GroupID": 180,
-			"GroupNpcID": 400001,
-			"TalkSentenceID": 801326501
-		}
-	]
-}</pre>
-;(Unused &mdash; NPCMove_180_400001)
-<pre>{
-	"$type": "RPG.GameCore.AdvSetAIMoveTo",
-	"EntityInstanceID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 400001
-		}
-	},
-	"GroupId": 180,
-	"PointID": 1,
-	"MotionFlag": "Walk",
-	"OnReach": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "Talk_800326501"
-			}
-		}
-	]
-}</pre>
-
-;(Unused &mdash; Destory_180_400001)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-
-;(Unused &mdash; NPCMove_181_400001_1)
-<pre>{
-	"$type": "RPG.GameCore.AdvSetAIMoveTo",
-	"EntityInstanceID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 400002
-		}
-	},
-	"GroupId": 181,
-	"PointID": 2,
-	"MotionFlag": "Walk",
-	"OnReach": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "Talk_800326502"
-			}
-		}
-	]
-}</pre>
-
-;(Unused &mdash; NPCMove_181_400001_2)
-<pre>{
-	"$type": "RPG.GameCore.AdvSetAIMoveTo",
-	"EntityInstanceID": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 400002
-		}
-	},
-	"GroupId": 181,
-	"PointID": 5,
-	"MotionFlag": "Walk",
-	"OnReach": [
-		{
-			"$type": "RPG.GameCore.TriggerCustomString",
-			"CustomString": {
-				"Value": "Talk_800326502"
-			}
-		}
-	]
-}</pre>
-
-;(Unused &mdash; Destroy_181_400002)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400002
-	]
-}</pre>
-
-
-;(Unused &mdash; Destory_182_400001)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-;(Unused &mdash; Destory_182_400003)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400003
-	]
-}</pre>
-
-;(Unused &mdash; Create_182_400003)
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		400003
-	]
-}</pre>
-
-
-;(Unused &mdash; Destory_183_400001)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
-
-;(Unused &mdash; Destory_183_400002)
-<pre>{
-	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
-	"InstanceIDList": [
-		400002
-	]
-}</pre>
-
-;(Unused &mdash; Create_183_400001)
-<pre>{
-	"$type": "RPG.GameCore.AdvCreateGroupEntity",
-	"InstanceIDList": [
-		400001
-	]
-}</pre>
 {{Диалог Конец}}
 
 ==На других языках==

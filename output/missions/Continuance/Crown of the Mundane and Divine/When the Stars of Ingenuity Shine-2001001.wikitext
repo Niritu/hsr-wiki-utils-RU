@@ -1,0 +1,1267 @@
+<%-- [PAGE_INFO]
+PageTitle=#When the Stars of Ingenuity Shine#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2001001
+|title         = 
+|image         = <!--Mission When the Stars of Ingenuity Shine.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Crown of the Mundane and Divine
+|requirements  = [[Trailblaze Mission]] ''[[Silent Galaxy]]'' completed
+|summary       = Herta, Ruan Mei, and Screwllum have actually met on the space station. During this unprecedented time period, you secretly assist Ruan Mei in recovering the "little lifeform" roaming around the station and uncovering her greater secrets...<br />As everything concludes, memories of your time with Ruan Mei become blurred. When you look back at her... all you can remember is the aroma of her hair.
+|characters    = "Creations' Translator"; Asta; Coriander Sesame Paste Lifeform; Department of Ecology Researcher; Fried Cold Rice Robot; Herta; Implement Researcher; Milk Almond Lifeform; Replicated Phase Flame; Replicated Trotter; Ruan Mei; Ruan Mei's Creation; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Master Control Zone]]
+|world         = Herta Space Station
+|area          = Master Control Zone
+|prev          = 
+|next          = Mundane Troubles
+|rewards       = Trailblaze EXP*1 100; Stellar Jade*110; Traveler's Guide*12; Refined Aether*8; Lost Crystal*8; Snack Life (Аватар)*1 { text = Snack Life }; Credit*140 000
+}}
+'''''When the Stars of Ingenuity Shine''''' is a [[Trailblaze Continuance]] in the chapter [[Crown of the Mundane and Divine]].
+
+==Steps==
+# Talk to Herta
+# Find Ruan Mei
+# Follow Ruan Mei
+# Speak with Ruan Mei privately
+# Get information from the researchers
+# Head to the storage zone
+# Check out the disturbance
+# (Optional) Try to create life
+# (Optional) Ask around for information about Ruan Mei
+# Perform a mysterious summoning ritual
+# Talk with Ruan Mei's Creation
+# Accommodate Ruan Mei's Creation
+# Speak with Ruan Mei
+# Head underground
+# Take the elevator and go to the secret zone
+# Find the mysterious Little Robot
+# Head underground
+# Continue searching for clues
+# Find the source of the noise
+# Accommodate Ruan Mei's Creation
+# Continue searching for clues
+# Accommodate Ruan Mei's Creation
+# Investigate the secret chamber
+# Return upstairs and continue your investigation
+# Witness the "big trouble"
+# Find Ruan Mei
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+:'''(Trailblazer):''' (Ruan Mei... a name that's both new... and familiar.)
+{{Dialogue End}}
+
+===Talk to Herta{{subst:void|<!--200100103-->}}===
+{{Mission Description|type=continuance|location=Master Control Zone|update|As the Simulated Universe receives another update, the space station remains bustling with activity. This time, several prominent figures from the Genius Society have all arrived at the space station! You receive a message from Herta, who informs you that Ruan Mei has also arrived at the space station. It's time to go meet her...}}
+{{Dialogue Start}}
+
+;(Talk to Asta)
+:'''Asta:''' Miss Ruan Mei is the very image of a scholar. I heard she once took a little vacation on a desert planet. By the time she left, she'd miraculously created a boom in the local ecology!
+
+;(Talk to Herta)
+:'''Herta:''' Anyway. What more needs to be said for someone smart enough to become Herta's research partner, hmm? Hurry up and head out, (Trailblazer). See if you can find her.
+;(Unused &mdash; Meeting)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+::'''Herta:''' I thought member #4, Polka Kakamond, had gotten rid of most of the Society members. I didn't have a lot of hope for this... Oh? Look who's here.
+::'''Asta:''' You're back, (Trailblazer)?
+::{{Диалог|Стрелка}} There's quite the crowd here today...
+::'''Herta:''' Of course. This is a summit between three geniuses.
+::'''Asta:''' It's a special time &mdash; all departments are preparing to welcome distinguished guests from the Genius Society.
+::'''Asta:''' Madam Ruan Mei doesn't like fanfare and probably wouldn't appreciate a crowd to welcome her, so I asked the researchers to keep things simple.
+::'''Herta:''' I took her to see the portraits of the Society members a few days ago. I wanted to have the researchers make one for her as well, but she declined the offer.
+::'''Herta:''' I don't get it. Whatever. As long as she's happy.
+::'''Asta:''' I heard Miss Ruan Mei likes snacks and pastries, so I asked the researchers to prepare some traditional desserts from the Blue. All of them seemed to tickle her fancy.
+::{{Диалог|Стрелка}} Would I be able to meet Ruan Mei?
+:::'''Herta:''' Of course, go find her yourself. She borrowed the Phase Flame to do some research as soon as she got here &mdash; haven't seen a trace of her since.
+:::Is Ruan Mei a great person?
+::{{Диалог|Стрелка}} Is Ruan Mei a great person?
+::'''Herta:''' That's like asking "Is Herta a great person?" The answer is obvious!
+::'''Asta:''' Miss Ruan Mei is the very image of a scholar. I heard she once took a little vacation on a desert planet. By the time she left, she'd miraculously created a boom in the local ecology!
+::'''Herta:''' She just wanted somewhere uninhabited to experiment with her "Life Helix System." Ruan Mei is certainly very talented, but she hardly interacts with anyone. She lives like a hermit. Pity.
+::'''Herta:''' Anyway. What more needs to be said for someone smart enough to become Herta's research partner, hmm? Hurry up and head out, (Trailblazer). See if you can find her.
+::{{Диалог|Стрелка}} Where is Ruan Mei right now?
+::'''Asta:''' I'm not sure, but she doesn't seem to get around much. She spends most of her time between the master control zone and the railway platform. Maybe you can start your search there?
+::{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218900
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218900
+}</pre>
+{{Dialogue End}}
+
+===Find Ruan Mei{{subst:void|<!--200100106-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|The space station has been bustling with activity lately. With the latest update to the Simulated Universe and the gathering of prominent figures from the Genius Society, everyone seems to have their own agenda. You can't help but feel that there might be some unexpected events on the horizon. <br />You don't know Ruan Mei's exact location, so you have to look for her...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 138
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.PlayMissionTalk",
+			"SimpleTalkList": [
+				{
+					"TalkSentenceID": 200103602
+				}
+			]
+		},
+		{
+			"$type": "RPG.GameCore.WaitMissionTalkFinish"
+		},
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "Talk_200100140"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Esilence",
+	"SubMissionID": 200100106
+}</pre>
+:;([[#Gallery|Cutscene]] plays)
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Relaxing",
+	"SubMissionID": 200100106
+}</pre>
+::'''Ruan Mei:''' Hello. I hope I didn't startle you.
+::'''Ruan Mei:''' This is a work habit of mine &mdash; using touch to open my senses and letting the details of your biological existence flood into my brain helps me understand your construction as a living organism.
+::'''Ruan Mei:''' Such is the basis of deconstruction and reconstruction. Do not be concerned. You are very healthy &mdash; in fact, impeccably so. A perfect experimental specimen. I like perfect experimental specimens.
+::{{Диалог|Стрелка}} We finally meet.
+:::'''Ruan Mei:''' Yes, I'm happy to meet you too. We've met before in the Simulated Universe.
+:::There's a bit of cake on the corner of your mouth...
+::{{Диалог|Стрелка}} There's a bit of cake on the corner of your mouth...
+::'''Ruan Mei:''' Oh? Really?
+::'''Ruan Mei:''' I expect the views here had me lost in thought...
+::'''Ruan Mei:''' I don't usually go in and out of the space station, and only discovered today that it was blessed with such calm, open views. It is a wonderful fit for the sweet fragrance of lotus leaves, plum blossom, sticky rice, and frosting sugar.
+::'''Ruan Mei:''' Come here. Look, the blue planet is directly below us. It is so full of life. This dessert is very delicious. Here, take half.
+::{{Диалог|Стрелка}} Take a bite.
+:::No, I'm good.
+::{{Диалог|Стрелка}} No, I'm good.
+::'''Ruan Mei:''' You don't like it? I worked very hard on it. You should at least have a try.
+::'''Ruan Mei:''' Delicious desserts remind people of how flowers look when they bloom. Ingest this dessert one bite at a time, and the sweetness will linger in your mouth.
+::'''Ruan Mei:''' I hope you like it too.
+::You ate Ruan Mei's snack.
+::'''Ruan Mei:''' So, what do you think? I can certainly prepare more for you. It's become somewhat of a tradition to bring strawberry pastries when I visit Stephen Lloyd. His attendance seems quite dependent on them.
+::'''Ruan Mei:''' Mmm, an outstanding dessert. Ten grams of cubed sugar, one dried and salt-preserved plum blossom. Baking and cooking are the same as nurturing a universe. The heat must be controlled, planning must be meticulous, and one must not panic... no matter what happens.
+::'''Ruan Mei:''' Unfortunately, there are still too many people in the space station. The clamor is not fitting for desserts. By the way...
+::'''Ruan Mei:''' (Trailblazer), do you remember what my "research" is about?
+::{{Диалог|Стрелка}} Only that it's about biology.
+::{{Диалог|Стрелка}} Something about nurturing lifeforms...
+::'''(Trailblazer):''' No. My research area is short stories about toilets.
+::{{tx}}
+::{{tx}}
+::'''Ruan Mei:''' Let's try again. Now, (Trailblazer), what else would you like to ask?
+::{{Диалог|Стрелка}} What do you mean...
+::{{Диалог|Стрелка}} What did you do to me...
+::{{Диалог|Стрелка}} What did you feed me...
+::'''(Trailblazer):''' The dessert was tasty. I would like more.
+::{{tx}}
+{{Dialogue End}}
+
+===Follow Ruan Mei{{subst:void|<!--200100104-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|The space station has been bustling with activity lately. With the latest update to the Simulated Universe and the gathering of prominent figures from the Genius Society, everyone seems to have their own agenda. You can't help but feel that there might be some unexpected events on the horizon. <br />Ruan Mei's demeanor strikes you as peculiar, and she appears to have something to tell you...}}
+{{Dialogue Start}}
+
+
+{{Dialogue End}}
+
+===Speak with Ruan Mei privately{{subst:void|<!--200100108-->}}===
+{{Dialogue Start}}
+:'''Ruan Mei:''' My apologies, it appears my words have left you perplexed. Please, don't be on edge &mdash; I bear no ill will. I haven't interfered with your linguistic faculties &mdash; such an act would be impolite... I merely made a minor adjustment.
+:'''Ruan Mei:''' A few days ago, I made my interest in you known to Herta. My intention is for you to serve as an "assistant." Based on our interactions within the Simulated Universe, I firmly believe you fit the bill.
+:'''Ruan Mei:''' I find extending trust beyond myself is challenging. A single error in detailed research can generate issues, and I despise matters that escape my control.
+:'''Ruan Mei:''' Therefore, I added {{Цвет|Ключевой|nobold=1|Anti-Truth Serum}} to this dessert. It will not harm you. However, you will be unable to say what you truly think when answering questions related to me.
+:'''Ruan Mei:''' Treat it as a layer of protection. This will shield my research and your personal safety. Once the problems have been dealt with, I'll give you the antidote.
+:'''Ruan Mei:''' I can also reward you as compensation for being my assistant. I will fulfill your every wish.
+:{{Диалог|Стрелка}} Problems?
+::'''Ruan Mei:''' Yes... problems wrought by my own hand.
+::You don't trust me.
+::'''Ruan Mei:''' Does that bother you? I believe we will be able to be frank with each other, but that needs time.
+::I'm still upset.
+:{{Диалог|Стрелка}} You don't trust me.
+::'''Ruan Mei:''' Does that bother you? I believe we will be able to be frank with each other, but that needs time.
+::I'm still upset.
+:{{Диалог|Стрелка}} I'm still upset.
+:'''Ruan Mei:''' Then I'll grant you even greater rewards.
+:'''Ruan Mei:''' When I first arrived on the space station, I borrowed the Phase Flame from Herta &mdash; it's an invention of member #29 Sserkal. I hoped to be enlightened by other Society members' results.
+:{{tx}}
+:{{Диалог|Разговор}} You can try trusting me, you know.
+::'''Ruan Mei:''' I do trust you.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Разговор}} Why don't you want them to know?
+::'''Ruan Mei:''' This has nothing to do with them. Besides, the more people involved, the more problems there will be.
+::{{tx}}
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Okay...
+::'''Ruan Mei:''' The researchers are still treating these entities as visitors... I want to steer clear of making my presence known, so as not to cause undue disturbances.
+::{{tx}}
+{{Dialogue End}}
+
+===Get information from the researchers{{subst:void|<!--200100107-->}}===
+{{Mission Description|type=continuance|location=Master Control Zone|update|Ruan Mei, the master nurturer of life, asks you to recover the "little lifeforms" that are running amok on the space station. She even goes so far as to feed you an "Anti-Truth Serum" to ensure you don't reveal this matter.<br />What could she be thinking?}}
+{{Dialogue Start}}
+
+
+;(Talk to Ruan Mei)
+:'''Ruan Mei:''' As the masses depart, there's an enveloping calm here... just like the "No Man's Land" I ventured to in the past.
+:{{Диалог|Стрелка}} Did you do research there?
+:'''Ruan Mei:''' Yes. My mother and I once spent 11 long polar nights there.
+{{Dialogue End}}
+
+===Head to the storage zone{{subst:void|<!--200100109-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Here)
+:'''(Trailblazer):''' (There are so many people... this seems to be the place)
+
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+::'''Implement Researcher:''' Molten Cheese Tart is the best! Its outlook is infectious! Its positive mood has influenced us all!
+::'''Implement Researcher:''' What's our slogan again? One: Stop complaining, change your attitude, and use the delicious Molten Cheese Tart to stop the flow of negative energy.
+::'''Implement Researcher:''' Two: Energize yourself, increase your capacity for action, and walk on the path of Molten Cheese Tart's absolute conviction.
+::'''Department of Ecology Researcher:''' Our creed: Molten Cheese Tart is the best!
+::{{Диалог|Стрелка}} Who is Molten Cheese Tart?
+::'''Department of Ecology Researcher:''' Oh praise be! You don't know? Molten Cheese Tart is Madam Ruan Mei's top fan! This is how it preaches. Those who offer their love are expressing admiration and affection for Miss Ruan Mei.
+::{{Диалог|Стрелка}} What about Screwllum's followers?
+:::'''Department of Ecology Researcher:''' Let me tell you something, Mr. Screwllum's followers are all very logical, but they're just awaiting the arrival of the mechanical aristocracy.
+:::What about Stephen's followers?
+::{{Диалог|Стрелка}} What about Stephen's followers?
+::'''Department of Ecology Researcher:''' Who?
+::'''Department of Ecology Researcher:''' Hmph, since you're so interested, I'll tell you how to secure an audience with the honorable Molten Cheese Tart. You'll need to work hard to get there.
+::{{tx}}
+
+;(Unused &mdash; FinishShit)
+
+
+
+;(Talk to Replicated Trotter)
+:'''Replicated Trotter:''' Oink oink!
+
+;(Talk to Milk Almond Lifeform)
+:'''Milk Almond Lifeform:''' Woof woof woof!
+
+;(Talk to Coriander Sesame Paste Lifeform)
+:'''Coriander Sesame Paste Lifeform:''' Eeep, eeep...
+
+;(Talk to Replicated Phase Flame)
+:'''Replicated Phase Flame:''' Hehe!
+;(If {{cx}}<!--SubMission Finish: 200100112-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvEnableTrigger",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	},
+	"TriggerName": "MissionTrigger"
+}</pre>
+;(If {{cx}}<!--SubMission not Finish: 200100112-->)
+:<pre>{
+	"$type": "RPG.GameCore.WaitSubMissionStateChange",
+	"SubMissions": [],
+	"OnChange": [
+		{
+			"$type": "RPG.GameCore.AdvEnableTrigger",
+			"TargetType": {
+				"$type": "RPG.GameCore.GroupFetchLocalTarget",
+				"TargetType": "Prop",
+				"Targets": [
+					300001
+				]
+			},
+			"TriggerName": "MissionTrigger"
+		}
+	],
+	"Condition": {
+		"$type": "RPG.GameCore.ByCompareSubMissionState",
+		"SubMissionID": 200100112,
+		"SubMissionState": "Finish"
+	}
+}</pre>
+;(Unused &mdash; G127_Perf)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300003
+	]
+}</pre>
+::----
+::'''Department of Ecology Researcher:''' Hey, guess what I got my hands on? Word on the street is that this is the downgraded version of Ruan Mei's life cultivation formula.
+::'''Department of Ecology Researcher:''' It says: 10 carats of ingenuity, 1 tonne of practice, 30 particles of starquake, and a few drops of poisonous liquor from Madam Yu Qingtu. Rumor has it that it once created a talking chair! Not a particularly intelligent one, but boy did it have a sharp tongue &mdash; they dismantled it and used it for firewood. Can you believe it?
+::'''Department of Ecology Researcher:''' Let's give it a shot, shall we? First things first, we need to pick out the ingredients.
+::{{Диалог|Стрелка}} A constantly burning passion
+::{{Диалог|Стрелка}} A confidence that came out of nowhere
+::{{Диалог|Стрелка}} Courage to drink 2 bottles of Kapo-Kali in one go!
+::'''Department of Ecology Researcher:''' Hmm... we need to add some other good stuff in. But don't go overboard...
+::{{Диалог|Стрелка}} IQ
+::{{Диалог|Стрелка}} EQ
+::{{Диалог|Стрелка}} Beauty
+::'''Department of Ecology Researcher:''' Mm... and now we mix them together. Wait! It says on the recipe: "Ruan Mei makes different expressions when nurturing life..."
+::{{Диалог|Стрелка}} Ruan Mei frowns
+:::'''Department of Ecology Researcher:''' Yikes... take a look at what you just cultivated.
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IsAttachToTargetEntity": true,
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400002
+	]
+}</pre>
+:::<!--0.5-second delay-->
+:::You have nurtured a copy of a Trotter!
+::{{Диалог|Стрелка}} The corner of Ruan Mei's mouth twitches
+:::'''Department of Ecology Researcher:''' Yikes... take a look at what you just cultivated.
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IsAttachToTargetEntity": true,
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400003
+	]
+}</pre>
+:::<!--0.5-second delay-->
+:::You have nurtured a copy of a five nut milk-flavored lifeform!
+::{{Диалог|Стрелка}} Ruan Mei is suppressing her emotions
+:::'''Department of Ecology Researcher:''' Yikes... take a look at what you just cultivated.
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IsAttachToTargetEntity": true,
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400004
+	]
+}</pre>
+:::<!--0.5-second delay-->
+:::You have nurtured a coriander sesame paste lifeform!
+::{{Диалог|Стрелка}} Ruan Mei is expressionless
+:::'''Department of Ecology Researcher:''' Yikes... take a look at what you just cultivated.
+::<pre>{
+	"$type": "RPG.GameCore.TriggerEffect",
+	"TargetType": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300002
+		]
+	},
+	"IsAttachToTargetEntity": true,
+	"Flags": [],
+	"EffectPath": "Effects/Eff_Prefab/Eff_Monster/Eff_XP_Minion04_00/Eff_Monster_XP_Minion04_00_Common_Maze_SpecialAppear.prefab",
+	"ForceSimulateImmediately": false,
+	"SubObjectModifyDataList": []
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400005
+	]
+}</pre>
+:::<!--0.5-second delay-->
+:::You have nurtured a copy of a Phase Flame!
+
+;(Talk to )
+----
+:'''(Trailblazer):''' Um... so this...
+:'''(Trailblazer):''' ...is the "little lifeform" Ruan Mei made?
+:'''Ruan Mei's Creation:''' (...Woof! Woof! Woof!)
+:{{Black Screen|A researcher appears out of nowhere next to you...}}
+:'''"Creations' Translator":''' I am humbled to meet the Molten Cheese Tart!
+:'''"Creations' Translator":''' What are you frozen in place for? Oh, you don't understand the honorable tart? That's okay! No worries, for situations like this, we've specifically concocted a Synesthesia Beacon!
+:{{Диалог|Стрелка}} Activate the Synesthesia Beacon.
+:'''Ruan Mei's Creation:''' (Wakaka &mdash; I'm a genius! A genius among geniuses!)
+:It actually made my voice!
+:{{Диалог|Стрелка}} Immediately deactivate the specific Synesthesia Beacon.
+:'''Ruan Mei's Creation:''' (...Woof! Woof! Woof!)
+:'''(Trailblazer):''' (That was way too risky...)
+----
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Madam Ruan Mei has finally recognized my ingenuity!"
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Does Madam Ruan Mei recognize me as a masterpiece?"
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Madam Ruan Mei still has not recognized me as a lifeform that passes the requirements. I need to work harder!" Ah! Such an enthusiastic Molten Cheese Tart!
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' There's a kind of attachment reserved for the creator. To the world, you are but one person. But to me, you are the entire world &mdash; Ahh, Madam Ruan Mei!
+:'''"Creations' Translator":''' Hey, you. Yes, you &mdash; don't you have anything you wanna say to Molten Cheese Tart? You should at least express how you would like to follow Molten Cheese Tart! We wouldn't want to mistake you for an agent of Gray Bean Paste, would we?
+:{{Диалог|Стрелка}} I follow Molten Cheese Tart.
+::'''"Creations' Translator":''' Good. You have great taste!
+:{{Диалог|Стрелка}} I like Gray Bean Paste!
+::'''"Creations' Translator":''' Get lost and get as far away from here as you can!
+:{{Диалог|Стрелка}} There's no way Ruan Mei would like you!
+::'''(Trailblazer):''' You heartless dessert.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:'''"Creations' Translator":''' You see, the honorable Molten Cheese Tart has always been fighting against Gray Bean Paste in terms of flavor. The honorable Molten Cheese Tart is a firm believer that people's lives need to be optimistic.
+:'''"Creations' Translator":''' They both hope to receive Madam Ruan Mei's recognition and have been working so hard.
+:{{Диалог|Стрелка}} How did Ruan Mei make desserts into lifeforms...
+::'''"Creations' Translator":''' You need to call it the honorable Molten Cheese Tart!
+::You like the taste of Molten Cheese Tart?
+:{{Диалог|Стрелка}} You like the taste of Molten Cheese Tart?
+:'''"Creations' Translator":''' Of course. It's not like we have any followers of Gray Bean Paste here.
+:'''"Creations' Translator":''' All the ones who came here to stir up trouble have been converted by us. They went from refusing Molten Cheese Tart to loving it.
+:'''"Creations' Translator":''' This is called "conceptual annexation of tastes."
+:'''"Creations' Translator":''' It's genuinely puzzling. Despite Molten Cheese Tart's remarkable qualities, why hasn't Madam Ruan Mei acknowledged it? It's clear that it yearns for her love.
+:{{Диалог|Стрелка}} What kind of "love" though?
+:'''"Creations' Translator":''' Love from the creator to her creation? Familial love? Doesn't sound right... romantic love? Definitely not!
+:'''"Creations' Translator":''' I don't know! Expecting me to understand "love" is like asking me to map the farthest reaches of the universe!
+:'''"Creations' Translator":''' Remember, as long as love is your compass, you're on the right track. And in the wise words of the honorable Molten Cheese Tart: Love must be shouted from the rooftops!
+:{{Диалог|Стрелка}} Can I talk alone with Molten Cheese Tart?
+:'''"Creations' Translator":''' Th&mdash;That depends on if the honorable Tart agrees to it...
+:{{tx}}
+:{{Black Screen|You try to communicate with Ruan Mei's creation and get it away...}}
+
+
+;(Unused &mdash; Perf)
+:{{Black Screen|You realized Ruan Mei's creation cannot be put in at all...}}
+::'''Ruan Mei's Creation:''' (Purring)
+::It opens its innocent eyes wide. You now have to explain to it that this has to be done in order to send it back to Ruan Mei's side...
+::{{Диалог|Стрелка}} Confess! Why are you stirring up trouble on the space station!
+:::'''Ruan Mei's Creation:''' (Purring)
+:::It seems to believe that only by being passionate can it earn Ruan Mei's approval.
+::{{Диалог|Стрелка}} Confess! Do you like molten cheese tarts?
+:::'''Ruan Mei's Creation:''' (Purring)
+:::It seems to believe that this is a flavor that can bring happiness.
+::'''Ruan Mei's Creation:''' (Purring)
+::It seems resentful for being an "unqualified" life form.
+::'''Ruan Mei's Creation:''' (Purring)
+::It seems eager to achieve great things! It wants to fully embrace its own philosophy and is inviting you to join in!
+::You have to be firm, believing this is the best place for it...
+::{{Диалог|Стрелка}} Tenderly activate the teleporter.
+::{{Диалог|Стрелка}} Callously activate the teleporter.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_toiletflushing"
+	}
+}</pre>
+:;(Screen fades to black)
+::Ruan Mei's little lifeform was ruthlessly flushed down the john. It will be safely transported to storage zone.
+{{Dialogue End}}
+
+===Check out the disturbance{{subst:void|<!--200100112-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===(Optional) Try to create life{{subst:void|<!--200100121-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''(Trailblazer):''' (What would a sealed zone... look like?)
+{{Dialogue End}}
+
+===(Optional) Ask around for information about Ruan Mei{{subst:void|<!--200100143-->}}===
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Perform a mysterious summoning ritual{{subst:void|<!--200100115-->}}===
+{{Dialogue Start}}
+
+
+;(Unused &mdash; opendecal)
+<pre>{
+	"$type": "RPG.GameCore.DecalPuzzleStart",
+	"DecalConfigIDs": [
+		13,
+		14
+	],
+	"Title": {
+		"Hash": 10169203271536383694
+	},
+	"IdentifyLookAt": {
+		"$type": "RPG.GameCore.GroupFetchLocalTarget",
+		"TargetType": "Prop",
+		"Targets": [
+			300001
+		]
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 200100115,
+	"MissionWayPointType": "Anchor",
+	"WayPointGroupID": 126,
+	"WayPointEntityID": 3,
+	"OverideWayPointShowRangeMin": true,
+	"OverideMapWaypointRange": true
+}</pre>
+
+;(Unused &mdash; DecalPuzzle_Terminate)
+<pre>{
+	"$type": "RPG.GameCore.SetMissionWayPoint",
+	"SubMissionID": 200100115,
+	"MissionWayPointType": "Anchor",
+	"WayPointGroupID": 98,
+	"WayPointEntityID": 400012
+}</pre>
+{{Dialogue End}}
+
+===Talk with Ruan Mei's Creation{{subst:void|<!--200100116-->}}===
+{{Mission Description|type=continuance|location=Storage Zone|update|Ruan Mei's "life creations" are actually pastries with a life of their own! They have even developed their own "emotions," "thoughts," and "will"...<br />Now you have to find a way to recover them.}}
+{{Dialogue Start}}
+
+;(Talk to Ruan Mei's Creation)
+----
+:'''(Trailblazer):''' Um... so this...
+:'''(Trailblazer):''' ...is the "little lifeform" Ruan Mei made?
+:'''Ruan Mei's Creation:''' (...Woof! Woof! Woof!)
+:{{Black Screen|A researcher appears out of nowhere next to you...}}
+:'''"Creations' Translator":''' I am humbled to meet the Molten Cheese Tart!
+:'''"Creations' Translator":''' What are you frozen in place for? Oh, you don't understand the honorable tart? That's okay! No worries, for situations like this, we've specifically concocted a Synesthesia Beacon!
+:{{Диалог|Стрелка}} Activate the Synesthesia Beacon.
+:'''Ruan Mei's Creation:''' (Wakaka &mdash; I'm a genius! A genius among geniuses!)
+:It actually made my voice!
+:{{Диалог|Стрелка}} Immediately deactivate the specific Synesthesia Beacon.
+:'''Ruan Mei's Creation:''' (...Woof! Woof! Woof!)
+:'''(Trailblazer):''' (That was way too risky...)
+----
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Madam Ruan Mei has finally recognized my ingenuity!"
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Does Madam Ruan Mei recognize me as a masterpiece?"
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' Molten Cheese Tart says, "Madam Ruan Mei still has not recognized me as a lifeform that passes the requirements. I need to work harder!" Ah! Such an enthusiastic Molten Cheese Tart!
+:'''Ruan Mei's Creation:''' (Purring)
+:'''"Creations' Translator":''' There's a kind of attachment reserved for the creator. To the world, you are but one person. But to me, you are the entire world &mdash; Ahh, Madam Ruan Mei!
+:'''"Creations' Translator":''' Hey, you. Yes, you &mdash; don't you have anything you wanna say to Molten Cheese Tart? You should at least express how you would like to follow Molten Cheese Tart! We wouldn't want to mistake you for an agent of Gray Bean Paste, would we?
+:{{Диалог|Стрелка}} I follow Molten Cheese Tart.
+::'''"Creations' Translator":''' Good. You have great taste!
+:{{Диалог|Стрелка}} I like Gray Bean Paste!
+::'''"Creations' Translator":''' Get lost and get as far away from here as you can!
+:{{Диалог|Стрелка}} There's no way Ruan Mei would like you!
+::'''(Trailblazer):''' You heartless dessert.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:'''"Creations' Translator":''' You see, the honorable Molten Cheese Tart has always been fighting against Gray Bean Paste in terms of flavor. The honorable Molten Cheese Tart is a firm believer that people's lives need to be optimistic.
+:'''"Creations' Translator":''' They both hope to receive Madam Ruan Mei's recognition and have been working so hard.
+:{{Диалог|Стрелка}} How did Ruan Mei make desserts into lifeforms...
+::'''"Creations' Translator":''' You need to call it the honorable Molten Cheese Tart!
+::You like the taste of Molten Cheese Tart?
+:{{Диалог|Стрелка}} You like the taste of Molten Cheese Tart?
+:'''"Creations' Translator":''' Of course. It's not like we have any followers of Gray Bean Paste here.
+:'''"Creations' Translator":''' All the ones who came here to stir up trouble have been converted by us. They went from refusing Molten Cheese Tart to loving it.
+:'''"Creations' Translator":''' This is called "conceptual annexation of tastes."
+:'''"Creations' Translator":''' It's genuinely puzzling. Despite Molten Cheese Tart's remarkable qualities, why hasn't Madam Ruan Mei acknowledged it? It's clear that it yearns for her love.
+:{{Диалог|Стрелка}} What kind of "love" though?
+:'''"Creations' Translator":''' Love from the creator to her creation? Familial love? Doesn't sound right... romantic love? Definitely not!
+:'''"Creations' Translator":''' I don't know! Expecting me to understand "love" is like asking me to map the farthest reaches of the universe!
+:'''"Creations' Translator":''' Remember, as long as love is your compass, you're on the right track. And in the wise words of the honorable Molten Cheese Tart: Love must be shouted from the rooftops!
+:{{Диалог|Стрелка}} Can I talk alone with Molten Cheese Tart?
+:'''"Creations' Translator":''' Th&mdash;That depends on if the honorable Tart agrees to it...
+:{{tx}}
+:{{Black Screen|You try to communicate with Ruan Mei's creation and get it away...}}
+{{Dialogue End}}
+
+===Accommodate Ruan Mei's Creation{{subst:void|<!--200100156-->}}===
+{{Mission Description|type=continuance|location=Storage Zone|update|The space station has a secret zone? This might just be something not even most the researchers know about. You investigate alone, and find the space filled with many incredible objects...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218700
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218700
+}</pre>
+{{Mission Description|type=continuance|location=Storage Zone|update|Ruan Mei's "life creations" are actually pastries with a life of their own! They have even developed their own "emotions," "thoughts," and "will"...<br />Now you have to find a way to recover them.}}
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1218800
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1218800
+}</pre>
+{{Dialogue End}}
+
+===Speak with Ruan Mei{{subst:void|<!--200100120-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|Ruan Mei's "life creations" are actually pastries with a life of their own! They have even developed their own "emotions," "thoughts," and "will"...<br />You've done well, but it seems Ruan Mei has new requests...}}
+{{Dialogue Start}}
+
+
+;(Talk to Ruan Mei)
+;(If {{cx}}<!--SubMission not Finish: 200100141-->)
+::'''Ruan Mei:''' You're here, (Trailblazer).
+::'''Ruan Mei:''' Herta called Screwllum and I to the space station to discuss some important topics. She also sent an invite to Stephen, but he didn't reply and Herta didn't seem to want to wait any longer.
+::'''Ruan Mei:''' And now... I wish for you to attend this meeting with me.
+::{{Диалог|Стрелка}} Why with me?
+::'''Ruan Mei:''' I don't want Herta to worry herself over these frivolous matters, even though she probably wouldn't care anyway.
+::'''Ruan Mei:''' Just in case, I want someone who will be on my side &mdash; in other words, you.
+::'''Ruan Mei:''' Help me &mdash; it'll be easy. Just remember: My secret stays with you. Don't pry too much, and keep your expressions in check.
+;(If {{cx}}<!--SubMission Finish: 200100141-->)
+::'''Ruan Mei:''' Herta called Screwllum and I to the space station to discuss some important topics. She also sent an invite to Stephen, but he didn't reply and Herta didn't seem to want to wait any longer.
+::'''Ruan Mei:''' And now... I wish for you to attend this meeting with me.
+:;(If {{F|MissionCV-2001001-1}} is undefined 1)
+::<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43004
+}</pre>
+::<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+;(All choices lead to the following options)
+:{{Диалог|Стрелка}} Alright...
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+:{{Диалог|Выход}} Let me think...
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+:{{tx}}
+;(If {{F|MissionCV-2001001-1}} is undefined 1)
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43004
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 200100120,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"isLocal": true,
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	}
+}</pre>
+
+{{Dialogue End}}
+
+===Head underground{{subst:void|<!--200100141-->}}===
+{{Mission Description|type=continuance|location=Herta's Office|update|The space station has a secret zone? This might just be something not even most the researchers know about. You investigate alone, and find the space filled with many incredible objects...}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Take the elevator and go to the secret zone{{subst:void|<!--200100154-->}}===
+{{Mission Description|type=continuance|location=Storage Zone|update|The space station has a secret zone? This might just be something not even most the researchers know about. Now you need to investigate alone...}}
+{{Dialogue Start}}
+
+;([[#Gallery|Cutscene]] plays)
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+{{Dialogue End}}
+
+===Find the mysterious Little Robot{{subst:void|<!--200100122-->}}===
+{{Mission Description|type=continuance|location=Seclusion Zone|update|The space station has a secret zone? This might just be something not even most the researchers know about. You investigate alone, and find the space filled with many incredible objects...}}
+{{Dialogue Start}}
+
+;(Talk to Little Robot)
+:'''Fried Cold Rice Robot:''' *buzz*
+::'''(Trailblazer):''' (What's up with this unit? It looks different from the one in the master control zone...)
+::'''Fried Cold Rice Robot:''' *buzz* Madam Herta, open zone. *buzz* To welcome, alien species, galactic visitors.
+::'''Fried Cold Rice Robot:''' High-risk zone, *buzz*. Service staff, inorganic lifeforms, *buzz*.
+::'''Fried Cold Rice Robot:''' Permissions status: Madam Ruan Mei, permissions granted. Madam Herta: Fine. As long as it keeps her happy. *buzz*.
+::{{Диалог|Стрелка}} Why are you here?
+:::'''Fried Cold Rice Robot:''' *buzz* I am a twin of the Rice-Frying Robot. I am the Leftover Rice-Frying Robot. *buzz*
+:::'''Fried Cold Rice Robot:''' Maintain zone operation. Job of inorganic lifeforms. *buzz*
+::{{Диалог|Стрелка}} What is this zone for?
+:::'''Fried Cold Rice Robot:''' Class one clearance zone. *buzz*
+:::'''Fried Cold Rice Robot:''' Many esteemed guests. *buzz*. May include dangerous persons. *buzz*
+:::'''Fried Cold Rice Robot:''' Storage for Madam Herta's dangerous Curios. *buzz*
+:::'''Fried Cold Rice Robot:''' Madam Ruan Mei's cultivated lifeforms. *buzz*
+::'''Fried Cold Rice Robot:''' Welcome, *buzz* (Trailblazer). How can I help?
+::{{Диалог|Стрелка}} Classification of the robots' jobs.
+:::'''Fried Cold Rice Robot:''' Fry leftover rice. *buzz*
+:::'''Fried Cold Rice Robot:''' Fry leftover rice. *buzz*
+::{{Диалог|Стрелка}} Map.
+:::'''Fried Cold Rice Robot:''' Basement One. Transit Hub. *buzz*
+:::'''Fried Cold Rice Robot:''' Basement Two. Shuttle. Incubator. Dangerous Curio storage. *buzz*
+:::'''Fried Cold Rice Robot:''' Corridor, danger, *buzz*.
+::'''Fried Cold Rice Robot:''' Welcome, (Trailblazer). What do you need? *buzz*.
+::{{Диалог|Стрелка}} Where would I find the incubator?
+:::'''Fried Cold Rice Robot:''' Conclusion: You cannot enter. *buzz* Probability: 50%. Other paths are open.
+:::'''Fried Cold Rice Robot:''' Assessment: Seeking directions. *buzz*
+:::'''Fried Cold Rice Robot:''' Suggestion: Proceed to basement. Locate records of cultivation path. *buzz*
+::{{Диалог|Стрелка}} I want to see visitor logs.
+:::'''Fried Cold Rice Robot:''' Madam Ruan Mei *buzz*.
+:::'''Fried Cold Rice Robot:''' Alien species, *buzz*.
+:::'''Fried Cold Rice Robot:''' That is all.
+:'''Fried Cold Rice Robot:''' Fry leftover rice. *buzz*
+::'''Fried Cold Rice Robot:''' Fry leftover rice. *buzz*
+{{Dialogue End}}
+
+===Head underground{{subst:void|<!--200100114-->}}===
+{{Dialogue Start}}
+
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Continue searching for clues{{subst:void|<!--200100123-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+:{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_dousha_scared_distant"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+{{Dialogue End}}
+
+===Find the source of the noise{{subst:void|<!--200100124-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+::'''Ruan Mei's Creation:''' (Meow...)
+::'''(Trailblazer):''' (...This is the "headache" Ruan Mei mentioned?)
+::'''(Trailblazer):''' (It's just a different flavor...)
+::'''Ruan Mei's Creation:''' (Meow...)
+::It refers to itself as "Gray Bean Paste"
+::{{Диалог|Стрелка}} Are you hiding in the dessert?
+:::'''Ruan Mei's Creation:''' (Meow...)
+:::It claims to be connected with its shell.
+:::You're pretty scary!
+::{{Диалог|Стрелка}} You're pretty scary!
+::'''Ruan Mei's Creation:''' (Meow...)
+::It looks deeply distressed, crying profusely.
+::{{Диалог|Стрелка}} Activate the Synesthesia Beacon.
+::'''Ruan Mei's Creation:''' *sob*... *sob*
+::'''Ruan Mei's Creation:''' (I'm not one of Ruan Mei's recognized works... *sob*...)
+::'''Ruan Mei's Creation:''' (Too much negative energy... don't like negative energy, *sob*...)
+::{{Диалог|Стрелка}} You are a genius in your own way!
+::{{Диалог|Стрелка}} Everyone feels down once in a while.
+::'''Ruan Mei's Creation:''' (*sob*... Ruan Mei... *sob*)
+::It seems deeply remorseful, and there's a glint of resentment in its eyes, as if it yearns for Ruan Mei's acknowledgment.
+::'''Ruan Mei's Creation:''' *sob*... *sob*
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_giantinsect_hit"
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+::{{tx}}
+:'''(Trailblazer):''' (...Huh? What's that sound out there?)
+{{Dialogue End}}
+
+===Accommodate Ruan Mei's Creation{{subst:void|<!--200100147-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Ruan Mei's Creation:''' (Meow...)
+:(It seems to sense your fear and starts humming a song for you...)
+
+;(По прибытии на место)
+:'''Ruan Mei's Creation:''' (In a circle, Ruan Mei's creations join hands with each other.)
+:'''Ruan Mei's Creation:''' (Ruan Mei intertwines joy and sorrow.)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300001
+	]
+}</pre>
+
+;(По прибытии на место)
+{{Dialogue End}}
+
+===Continue searching for clues{{subst:void|<!--200100128-->}}===
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+:{{tx}}
+;(Unused &mdash; Perf)
+:{{tx}}
+{{Dialogue End}}
+
+===Accommodate Ruan Mei's Creation{{subst:void|<!--200100132-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Ruan Mei's Creation:''' (Meow...)
+;(Unused &mdash; Perf)
+:'''Ruan Mei's Creation:''' (Meow...)
+::{{Диалог|Стрелка}} Read the record
+::The duration of sunlight exposure is a crucial factor affecting mood. Basking in starlight has been proven to be an effective method to alleviate negative emotions.
+::'''(Trailblazer):''' (Sounds fitting...)
+::{{Диалог|Стрелка}} Accommodate Gray Bean Paste
+::----
+::'''(Trailblazer):''' Stay here for a bit.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20004_F20004001_G20",
+	"AnchorName": "Anchor1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseIn"
+	},
+	"DynamicParams": {}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300003
+		}
+	}
+}</pre>
+::<!--1.5-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.TriggerEntityEvent",
+	"EventName": {
+		"Value": "Clt_TriggerOpen"
+	},
+	"InstanceID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300004
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.AnimSetParameter",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvProp",
+		"MultiGroupFetch": [
+			{
+				"GroupID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 20
+					}
+				},
+				"ID": {
+					"IsDynamic": false,
+					"FixedValue": {
+						"Value": 300003
+					}
+				}
+			}
+		]
+	},
+	"ParameterName": "IsOpen",
+	"ParameterType": "Bool",
+	"Value": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyD_ruanmei_dooropen"
+	}
+}</pre>
+::<!--2-second delay-->
+::'''(Trailblazer):''' (Did something just open?)
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P20004_F20004001_G20",
+	"AnchorName": "Anchor1",
+	"IsActive": false,
+	"DynamicParams": {}
+}</pre>
+{{Dialogue End}}
+
+===Investigate the secret chamber{{subst:void|<!--200100133-->}}===
+{{Dialogue Start}}
+
+;(Talk to Little Robot)
+:'''Fried Cold Rice Robot:''' Hidden room, *buzz*. Only Madam Ruan Mei has permissions. Please submit your ID, *buzz*.
+::{{Диалог|Стрелка}} Show Ruan Mei's card.
+::'''Fried Cold Rice Robot:''' Permission granted, *buzz*.
+::'''Fried Cold Rice Robot:''' Select from the below services: 1. Check historical incubation records. 2. Inorganic lifeform companionship chat service.
+::{{Диалог|Разговор}} Inorganic lifeform companionship chat service.
+:::'''Fried Cold Rice Robot:''' This function has been damaged, *buzz*.
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Check historical incubation records.
+:::'''(Trailblazer):''' (Is this...?)
+:<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E1",
+	"SubMissionID": 200100133
+}</pre>
+::{{tx}}
+::'''Fried Cold Rice Robot:''' Permission granted, *buzz*.
+::'''Fried Cold Rice Robot:''' Select from the below services: 1. Check visitor records. 2. Open incubator entrance.
+::{{Диалог|Разговор}} Check visitor records.
+:::'''Fried Cold Rice Robot:''' Madam Ruan Mei *buzz*.
+:::'''Fried Cold Rice Robot:''' Alien species, *buzz*.
+:::'''Fried Cold Rice Robot:''' Man with plaster head, *buzz*.
+:::'''(Trailblazer):''' (...Seems like there's something new?)
+::;(Return to previous option selection)
+::{{Диалог|Стрелка}} Open incubator entrance.
+:::'''Fried Cold Rice Robot:''' Permission granted, *buzz*.
+:<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_storyd_ruanmei_authorization_pass"
+	}
+}</pre>
+::'''(Trailblazer):''' (That sound's coming from above!)
+:'''Fried Cold Rice Robot:''' Permission granted, *buzz*.
+::'''Fried Cold Rice Robot:''' Permission granted, *buzz*.
+{{Dialogue End}}
+
+===Return upstairs and continue your investigation{{subst:void|<!--200100155-->}}===
+{{Dialogue Start}}
+
+
+;(По прибытии на место)
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+;([[#Gallery|Cutscene]] plays)
+::Here &mdash;
+::a genius move!
+::And how will you counter it?
+::*sigh* Only an idiot would ask such a question.
+::Just move this here...
+::You look distressed.
+::Something the matter?
+::If that's the case...
+::...you better get thinking.
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		300004
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack"
+}</pre>
+:{{tx}}
+:'''???:''' Are you waiting for a sign? Time is ticking. Descend via the elevator &mdash; what you seek is there.
+:{{Диалог|Стрелка}} Who are you?
+:{{Диалог|Стрелка}} Why are you here?
+:{{Диалог|Стрелка}} You know what I'm looking for?
+:'''???:''' Have you considered whether the answer to your question will be of any relevance to our current predicament?
+:'''???:''' If a question is of no help, then don't ask it. Time is clearly precious to the both of us.
+:'''???:''' *sigh* ...Never mind. Allow me to clarify something. I know exactly who you are, and I'm aware you are in Ruan Mei's employ. This was not my intended destination &mdash; I just happened to find my way here during my visit and saw what she was up to.
+:'''???:''' My goals are roughly aligned with yours. Since you're here, I won't intercede... but should you fail, I will be forced to prevent some avoidable misfortunes.
+:'''???:''' That's all you need to know. Just two paragraphs. Very effective communication.
+:{{Диалог|Стрелка}} You're not a bad person after all.
+:{{Диалог|Стрелка}} Why do you wear an alabaster head...
+::'''???:''' Because I can't bear to see idiots. Of course, they wouldn't want to see me either.
+::Thank you for telling me that.
+:{{Диалог|Стрелка}} Thank you for telling me that.
+:'''???:''' I can't stand discourtesy &mdash; even when it comes from myself.
+:'''???:''' The real "Ruan Mei's Creation" is hidden in the giant incubator below us.
+:{{tx}}
+{{Dialogue End}}
+
+===Witness the "big trouble"{{subst:void|<!--200100136-->}}===
+{{Mission Description|type=continuance|location=Seclusion Zone|update|A man masked by a strange plaster sculpture appears in front of you and pointed out Ruan Mei's lies. Her ambitions are far greater than they appear to be! ...<br />The thing she's cultivating... what is it, exactly?}}
+{{Dialogue Start}}
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.AdvDistrictSetupTrigger",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 25
+		}
+	},
+	"DistrictID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 1
+		}
+	},
+	"DisableAfterTrigger": true,
+	"OnEnter": [
+		{
+			"$type": "RPG.GameCore.TriggerGroupEvent",
+			"EventName": {
+				"Value": "PlayMissionTalk"
+			}
+		}
+	],
+	"IsOverrideValidGuestConfig": true,
+	"OverridedValidGuestConfig": {
+		"FakePlayer": true
+	}
+}</pre>
+;(Unused &mdash; Perf)
+;([[#Gallery|Cutscene]] plays)
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+
+;(Unused &mdash; PlayMissionTalk)
+:'''(Trailblazer):''' (This is huge... The space station has an area this big?)
+----
+;([[#Gallery|Cutscene]] plays)
+::After 56 seconds, the creature was unable to sustain its own existence and vanished as if it had never been born.
+::The threat is over. Time to get going.
+;(Cutscene ends)
+----
+:'''(Trailblazer):''' (Is it over...? I need to get some answers out of Ruan Mei!)
+{{Dialogue End}}
+
+===Find Ruan Mei{{subst:void|<!--200100139-->}}===
+{{Mission Description|type=continuance|location=Supply Zone|update|After this perplexing experience, you feel like you understand Ruan Mei less and less. She treats you with closeness but feeds you the "Anti-Truth Serum," concealing her true research purpose all along. She seems reserved, yet her ambitions are immeasurable... What kind of person is she really?}}
+{{Dialogue Start}}
+;(Unused &mdash; Perf)
+:'''Ruan Mei:''' The meeting of geniuses is over. As for the future of the Simulated Universe... That conclusion isn't important. What's important is your task.
+::'''Ruan Mei:''' You look... upset, correct? I regret my actions. There's no defending what I've done. Time and again, my experiments have fallen short, and they've always yielded predictable results.
+::'''Ruan Mei:''' I made a clone, but it... doesn't hold a candle to the Emanator.
+::{{Диалог|Стрелка}} It died on its own.
+:::'''Ruan Mei:''' Exactly as predicted: 56 seconds, on the dot.
+:::You didn't have to lie to me.
+::{{Диалог|Стрелка}} You didn't have to lie to me.
+::'''Ruan Mei:''' How should I have explained it to you? I'm not good at communicating with others...
+::'''Ruan Mei:''' Restrained by time and place, its code of life could only be considered an incomplete attempt. I managed to replicate the moment it was born, however, it would soon disappear and be reduced to particles.
+::'''Ruan Mei:''' Like every living being, it inevitably faced its demise as it journeyed towards the end &mdash; I find no fault in that.
+::'''Ruan Mei:''' However, even the briefest life should have meaning. I want to know the limits of its capacity. It will indicate how far I've gone in a field completely incomprehensible to me.
+::'''Ruan Mei:''' Haha, and it was "a minuscule step" &mdash; just as I had predicted.
+::{{Диалог|Стрелка}} It almost ate me.
+:::'''Ruan Mei:''' I did say that if a danger proved too great for you, I would personally step in to confront it.
+:::Are you going to keep researching?
+:::'''Ruan Mei:''' Indeed, this is how I keep the distractions at bay. I have to admit that research once made me obsessive &mdash; that wasn't a good period in my life, though I now navigate it much more smoothly.
+:::What about life outside of research?
+::{{Диалог|Стрелка}} Are you going to keep researching?
+:::'''Ruan Mei:''' Indeed, this is how I keep the distractions at bay. I have to admit that research once made me obsessive &mdash; that wasn't a good period in my life, though I now navigate it much more smoothly.
+:::What about life outside of research?
+::{{Диалог|Стрелка}} What about life outside of research?
+::'''Ruan Mei:''' I do not have a life outside of research. People always think this price is unimaginable, but it seems rather acceptable to me.
+::'''Ruan Mei:''' I must admit, I'm not fond of scenarios where everything aligns perfectly with my expectations. An experiment should have its unforeseen twists.
+::{{tx}}
+::{{tx}}
+::'''Ruan Mei:''' There is no need to tell me your answer. I just... felt like asking the question. How should I take care of them? Perhaps leaving them at the space station is the best choice.
+::'''Ruan Mei:''' Do I seem irresponsible? I'm sorry. I am often at a loss as to how to face my own creations.
+::'''Ruan Mei:''' The effects of the Anti-Truth Serum will also wear off. If others mention me to you in the future, you can answer however you like, or even pretend you never knew me.
+::'''Ruan Mei:''' After all, your memory of me will soon dissipate like smoke.
+::{{Диалог|Стрелка}} Memory... dissipate?
+::'''Ruan Mei:''' Over time, hidden truths tend to surface. Past traumas, which I'd rather leave behind, have made me skeptical about trusting anyone but myself.
+::'''Ruan Mei:''' If I do not want a secret revealed, the most foolproof way is to destroy it. The Anti-Truth Serum will make you forget the brief period we spent together.
+::'''Ruan Mei:''' It won't take effect immediately. It is a slow, intangible process &mdash; like the sweet fragrance of lotus leaves, plum blossom, sticky rice, and frosting sugar.
+::'''Ruan Mei:''' Perhaps you will remember someone performed selfish experiments on the space station, but you will no longer remember their identity. Perhaps we will meet again someday, but you won't be able to connect me with the recollection.
+::'''Ruan Mei:''' That way, the connection between lifeforms will be erased. Friendships, secrets, grudges, lies, all will disappear.
+::'''Ruan Mei:''' It will make our lives... more relaxing.
+::{{Диалог|Стрелка}} If that is your wish, I will forget you.
+:::'''Ruan Mei:''' Thank you.
+:::No, I won't forget you.
+::{{Диалог|Стрелка}} No, I won't forget you.
+::'''Ruan Mei:''' I believe you.
+::'''Ruan Mei:''' Screwllum will stay on the space station for a while longer. He and Herta still have problems they need to solve. As for me, I'm leaving soon and won't bother with goodbyes.
+::'''Ruan Mei:''' Do you still remember the "No Man's Land" I mentioned? I'm considering a solo trip back there during my research downtime, just to see how things are.
+::'''Ruan Mei:''' I miss member #55, Yu Qingtu sometimes. She used to always make something delicious for me to drink every time we parted ways.
+::'''Ruan Mei:''' I hope I won't meet member #4 Polka Kakamond. That would be quite troublesome.
+::'''Ruan Mei:''' Who knows when the next gathering of geniuses will be? Do you have anything else you want to say to me, (Trailblazer)?
+::{{Диалог|Стрелка}} Do you trust me now?
+:::'''Ruan Mei:''' ...I find that difficult to answer. I thank you, {{MC|ж=Miss|м=Mr.}} Assistant.
+:::I hope you'll come back and visit your creations.
+::{{Диалог|Стрелка}} I hope you'll come back and visit your creations.
+::'''Ruan Mei:''' Mm, I promise I will, {{MC|ж=Miss|м=Mr.}} Assistant.
+::'''Ruan Mei:''' If fate allows and you're interested, upon our next meeting, we could journey to No Man's Land and traverse its tranquil glaciers...
+::{{tx}}
+:;([[#Gallery|Cutscene]] plays)
+:<pre>{
+	"$type": "RPG.GameCore.PerformanceExtendEndBlack",
+	"ExtendTime": 1
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SetFloorSavedValue"
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = When the Stars of Ingenuity Shine
+|zhs  = 天才群星闪耀时
+|zht  = 天才群星閃耀時
+|ja   = 天才の星の時間
+|ko   = 천재의 뭇별이 빛날 때
+|es   = Cuando brillan las estrellas del ingenio
+|fr   = Alors que brillent les étoiles de l'ingéniosité
+|ru   = Гори, гори, моя звезда гениальности
+|th   = เมื่อหมู่ดาวแห่งอัจฉริยะเปล่งประกาย
+|vi   = Khi Thiên Tài Tề Tựu Giữa Ngân Hà
+|de   = Wenn die Sterne des Einfallsreichtums leuchten
+|id   = Saat Bintang-Bintang Jenius Bersinar
+|pt   = Quando as Estrelas da Engenhosidade Brilham
+}}
+
+==Change History==
+{{Change History|3.5}}

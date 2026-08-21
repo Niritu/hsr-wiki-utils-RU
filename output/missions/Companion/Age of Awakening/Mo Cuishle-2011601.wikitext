@@ -1,0 +1,471 @@
+<%-- [PAGE_INFO]
+PageTitle=#Mo Cuishle#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2011601
+|title         = 
+|image         = <!--Mission Mo Cuishle.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Age of Awakening
+|requirements  = [[Trailblaze Mission]] ''[[Silent Galaxy]]'' completed
+|summary       = You returned to the Underworld of Belobog and befriended Luka, a teenage fighter.<br />At Luka's insistence, you and Seele accompanied him on a journey of trials.
+|characters    = Luka; Natasha; Oleg; Passionate Spectators; Seele; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Boulder Town]]
+|world         = Jarilo-VI
+|area          = Boulder Town
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*500; Stellar Jade*100; Traveler's Guide*10; Lost Crystal*8; Obsidian of Desolation*6; Credit*100 000
+}}
+'''''Mo Cuishle''''' is a [[Companion Mission]] in the chapter [[Age of Awakening]].
+
+==Steps==
+# Listen in on Oleg and Seele's conversation
+# Head to the Fight Club to watch Luka defend his title
+# Talk to Luka and start his "trial"
+# Talk to Oleg and ask about Luka
+# Find Seele and follow Luka with her
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Listen in on Oleg and Seele's conversation{{subst:void|<!--201160101-->}}===
+{{Mission Description|type=companion|location=Boulder Town|Belobog's reconstruction is progressing steadily, and the situation in the Underworld is gradually stabilizing. People are beginning to regain the lost joys of life. Oleg and Seele seem to be discussing something here when a great hero who saved the world happens to pass by...}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 142
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+----
+:'''Oleg:''' Aren't you going to go watch the fight, Seele? He's defending his championship title.
+:'''Seele:''' ...Nah, I'll pass. It's not like anyone else has a chance with him around.
+:'''Oleg:''' Hahaha, you're right about that! I get it if you don't wanna join in the fun. It's all the same after a while.
+:'''Oleg:''' Ahh, what a rare moment of rest... Maybe I should find a spot to stretch my legs a bit, too.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "LevelArea_P10102_F10102001_G142",
+	"AnchorName": "Anchor4",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "EaseInOut",
+		"CustomCurveName": "Blend_FastToSlow",
+		"BlendTime": 1
+	},
+	"DynamicParams": {}
+}</pre>
+:'''(Trailblazer):''' (Seele and Oleg... I wonder what they're talking about?)
+:'''(Trailblazer):''' (I'll go ask them.)
+----
+:'''Oleg:''' Hey, isn't that the trailblazer? It's been a while since I've seen you around. How you doing?
+:'''Seele:''' Hey! How have your travels been? Thanks to you, things are pretty peaceful around here. The chief and I are getting restless!
+:'''Oleg:''' Hahaha, silly girl! Just a few days of hard-earned rest, and you're already making it sound like jail time!
+:{{Диалог|Стрелка}} What were you two chatting about?
+:{{Диалог|Стрелка}} I'm kinda missing Boulder Town's homey feeling.
+::'''Seele:''' ...Homey? Sheesh, you must've gone through a lot since leaving here...
+::'''Oleg:''' Sounds like our rustic and friendly community left a good impression on the visitors, hahaha.
+::{{Диалог|Стрелка}} What were you two chatting about?
+:'''Oleg:''' Oh, you heard us?
+:'''Oleg:''' We were talking about my student, Luka.
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+::'''Oleg:''' You've probably met him before, right? Yep, it's that boy with the mechanical arm. He was also doing work for Wildfire before, just not in this town.
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+::'''Oleg:''' Oh, you probably haven't met him yet. In short, he's a top-tier fighter in the Underworld. He was also doing work for Wildfire before, just not in this town.
+:'''Oleg:''' Oh, right &mdash; {{MC|ж=she|м=he}} hasn't seen Luka defend his championship title before, right? Seele, why don't you take our hero and swing by the Fight Club to show {{MC|ж=her|м=him}} the match?
+:'''Seele:''' Uh...
+:'''Oleg:''' What? You don't want to?
+:'''Seele:''' ...No, it's just... I'm worried Luka might do something stupid again.
+:{{Диалог|Стрелка}} ...Again?
+:{{Диалог|Стрелка}} Come on! Take me! I wanna go! Pleaaase~
+::'''Seele:''' Ugh... How old are you again?
+:'''Oleg:''' Oh, I remember now... Luka was defending his title once, and Seele was watching in the audience.
+:'''Oleg:''' The opponent for that fight was too weak. They went down with just a few punches. I don't know what got into Luka after that, but he said out loud that he wanted Seele to come up and fight him right there and then...
+:'''Seele:''' ...Why don't we stop there, chief. I'd rather not relive the moment.
+:'''Oleg:''' Hahaha, okay, I'll stop. Anyway, that's what Luka's like. He forgets about himself once he's in the mood.
+:'''Oleg:''' ...But I trust Luka not to make the same mistake again. So back to the original suggestion &mdash; are you good to take (Trailblazer) to the Fight Club, Seele?
+:'''Seele:''' ...Fine. I'll take you there.
+:'''Oleg:''' That's more like it. The more friends the merrier! I hope you can get along with my favorite student.
+----
+:'''Seele:''' Why does Luka always come sneaking back into town like this?
+:'''Seele:''' I haven't seen him for a while... I hope he's grown up a bit since then.
+
+;(Talk to Oleg)
+:'''Oleg:''' Huh? Hurry and run to the Club now. Otherwise, the fight'll be over when you get there.
+:'''Oleg:''' Luka's opponents usually don't last long, hahaha. Go!
+
+;(Talk to Luka)
+:'''Luka:''' How about it, (Trailblazer)? Are you ready to head out for the special training?
+:{{Диалог|Стрелка}} Let's go.
+::'''Luka:''' That was fast! Let's do it!
+::'''Luka:''' Keep up, Seele! Don't fall behind!
+::'''Seele:''' ...I don't need you to remind me. Let's go.
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 4012301,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.TriggerCustomString",
+			"CustomString": {
+				"Value": "ALL_TALK_END"
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} I might need some more prep time...
+::'''Luka:''' Ha, don't stress! I promise this trip will be relaxing and fun.
+::'''Luka:''' Take your time. Come back when you're ready.
+
+;(Talk to Seele)
+:'''Seele:''' I have a bad feeling about this... Luka always does things on the spur of the moment.
+:{{Диалог|Стрелка}} He does seem very excited...
+::'''Seele:''' ...Maybe he's on a victory high? Or maybe not. Either way, it's classic Luka.
+:{{Диалог|Стрелка}} He does seem very passionate...
+::'''Seele:''' ...Too passionate. Either way, it's classic Luka &mdash; I'm used to it by now.
+:'''Seele:''' Still, when it comes to fighting on the front lines, you can put your life in his hands. There's a dozen of us in Wildfire who are still in his debt... not to mention ordinary Underworlders.
+:'''Seele:''' ...That's a story for another day. I have no idea what he's up to this time, we'll just have to wait and see.
+{{Dialogue End}}
+
+===Head to the Fight Club to watch Luka defend his title{{subst:void|<!--201160103-->}}===
+{{Mission Description|type=companion|location=Fight Club|update|You meet Oleg and Seele in the Underworld, who are your old Belobogian friends.<br />Oleg hopes you can go and support the match being fought by his student Luka, who is Boulder Town's fight club champion.<br />If you don't have anything urgent at the moment, it wouldn't be bad to go and enjoy the show.}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.CreateProp",
+	"GroupID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 22
+		}
+	},
+	"GroupPropID": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 300001
+		}
+	},
+	"CreateList": []
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+::'''Seele:''' Another title defended &mdash; congrats, Luka.
+::'''Luka:''' Thanks, Seele! And who might... Oh, it's (Trailblazer)! I remember you.
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+::'''Luka:''' Hey! Seele! And, um, you are...?
+::{{Диалог|Стрелка}} (Trailblazer). Pleasure to meet you.
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+::{{Диалог|Стрелка}} (Look at Seele)
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+:::'''Luka:''' ...So this is the trailblazer who helped reunite the Overworld with the Underworld? It's truly a pleasure to meet you!
+:'''Luka:''' Were you here just to see my fight? Well, I'm flattered.
+:'''Luka:''' I just won a little fight in the cage &mdash; what you did was much bigger than that. We...
+:'''Passionate Spectators:''' Luka &mdash; Luka &mdash; Luka &mdash;
+:'''Seele:''' ...The crowd never gets tired, do they?
+:'''Luka:''' Do you wanna head outside? It's a bit loud for talking in here.
+:'''Luka:''' See you next time, everyone...
+:'''Luka:''' ...there are sparks yet to fly!
+----
+
+;(Talk to Luka)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+::'''Seele:''' Another title defended &mdash; congrats, Luka.
+::'''Luka:''' Thanks, Seele! And who might... Oh, it's (Trailblazer)! I remember you.
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+::'''Luka:''' Hey! Seele! And, um, you are...?
+::{{Диалог|Стрелка}} (Trailblazer). Pleasure to meet you.
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+::{{Диалог|Стрелка}} (Look at Seele)
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+:::'''Luka:''' ...So this is the trailblazer who helped reunite the Overworld with the Underworld? It's truly a pleasure to meet you!
+:'''Luka:''' Were you here just to see my fight? Well, I'm flattered.
+:'''Luka:''' I just won a little fight in the cage &mdash; what you did was much bigger than that. We...
+:'''Passionate Spectators:''' Luka &mdash; Luka &mdash; Luka &mdash;
+:'''Seele:''' ...The crowd never gets tired, do they?
+:'''Luka:''' Do you wanna head outside? It's a bit loud for talking in here.
+:'''Luka:''' See you next time, everyone...
+:'''Luka:''' ...there are sparks yet to fly!
+----
+
+;(Talk to Seele)
+----
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_belobog_luca_crowd"
+	},
+	"EmitterType": "Prop",
+	"GroupID": 22,
+	"ID": 300003
+}</pre>
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has been completed)
+::'''Seele:''' Another title defended &mdash; congrats, Luka.
+::'''Luka:''' Thanks, Seele! And who might... Oh, it's (Trailblazer)! I remember you.
+;(If {{cx}}<!--Hidden Mission ID 4040130--> has not been completed)
+::'''Luka:''' Hey! Seele! And, um, you are...?
+::{{Диалог|Стрелка}} (Trailblazer). Pleasure to meet you.
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+::{{Диалог|Стрелка}} (Look at Seele)
+:::'''Seele:''' ...Oh, I forgot to introduce {{MC|ж=her|м=him}}. This is the trailblazer. You must have heard of {{MC|ж=her|м=him}} before.
+:::'''Luka:''' ...So this is the trailblazer who helped reunite the Overworld with the Underworld? It's truly a pleasure to meet you!
+:'''Luka:''' Were you here just to see my fight? Well, I'm flattered.
+:'''Luka:''' I just won a little fight in the cage &mdash; what you did was much bigger than that. We...
+:'''Passionate Spectators:''' Luka &mdash; Luka &mdash; Luka &mdash;
+:'''Seele:''' ...The crowd never gets tired, do they?
+:'''Luka:''' Do you wanna head outside? It's a bit loud for talking in here.
+:'''Luka:''' See you next time, everyone...
+:'''Luka:''' ...there are sparks yet to fly!
+----
+----
+----
+:'''Luka:''' Finally, I think we lost them... Let's chat here!
+:'''Seele:''' You're popular as ever, "champion."
+:'''Luka:''' ...Are you still angry at me over that one time, Seele? I just got a bit carried away...
+:{{Диалог|Стрелка}} So, you two had a fight?
+::'''Seele:''' Of course not. Two senior members of Wildfire duking it out in the Fight Club? That would be bad form.
+:{{Диалог|Стрелка}} What are you two talking about...?
+::'''Seele:''' ...Nothing. Just that thing Chief Oleg mentioned before.
+::'''Seele:''' It's not like we actually fought. Two senior members of Wildfire duking it out in the Fight Club? That would be bad form.
+:'''Luka:''' The mood was on fire that day, but the final match was over in just a few swings &mdash; everyone wanted more. So, in the heat of the moment, I just... Come on &mdash; don't hold that against me, Seele.
+:'''Luka:''' I've always been impressed by you &mdash; I've wanted to spar with you for ages.
+:'''Seele:''' ...I don't fight for fun. Stop getting your hopes up.
+:'''Seele:''' Anyway, now that you've dragged us out here, what did you wanna talk about?
+:'''Luka:''' Ah, yes! So, I'm trying to get a plan going...
+:{{Диалог|Стрелка}} Plan?
+::'''Luka:''' Yes &mdash; more accurately, my personal training plan.
+::'''Luka:''' I want you to join me in witnessing the next steps in the development of Luka, the Boulder Town fighting champion!
+::'''Seele:''' ...
+::'''Seele:''' Whoa, whoa, hold your horses. Chief Oleg wanted us to come and cheer for you, he didn't say anything about becoming your sparring partners.
+::'''Seele:''' We haven't got the time...
+::'''Luka:''' Hahaha, you can't hide anything on that face of yours. Oleg already told me that things in the Underworld are pretty peaceful now, and even Wildfire is running out of things to do.
+::'''Luka:''' Besides, look at (Trailblazer)! You want in, right?
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Anything to do with me?
+::'''Luka:''' Hm? Not really. It's my personal training plan.
+::'''Luka:''' I want you to join me in witnessing the next steps in the development of Luka, the Boulder Town fighting champion!
+::'''Seele:''' ...
+::'''Seele:''' Whoa, whoa, hold your horses. Chief Oleg wanted us to come and cheer for you, he didn't say anything about becoming your sparring partners.
+::'''Seele:''' We haven't got the time...
+::'''Luka:''' Hahaha, you can't hide anything on that face of yours. Oleg already told me that things in the Underworld are pretty peaceful now, and even Wildfire is running out of things to do.
+::'''Luka:''' Besides, look at (Trailblazer)! You want in, right?
+:;(Return to previous option selection)
+{{Dialogue End}}
+
+===Talk to Luka and start his "trial"{{subst:void|<!--201160107-->}}===
+{{Mission Description|type=companion|location=Boulder Town|update|It's still a new experience for you to watch Luka defend his title. However, it is just another ordinary day for Luka.<br />Luka tells you and Seele about his "trial plans" and wants you to accompany him the whole way to witness his improvement.<br />As someone who doesn't know how to say no, of course you agree to his request.}}
+{{Dialogue Start}}
+----
+;(Screen fades to black)
+:'''Natasha:''' Luka... can you hear me?
+:'''Luka:''' ...
+:'''Seele:''' Hey... Hey! Luka, you're up!
+:'''Luka:''' Ugh... I...
+----
+:'''Seele:''' Ha, you're finally awake! You've been out for the whole day. We were really worried!
+:'''Natasha:''' Don't worry, Seele. Like I said, it was just the exhaustion. Svarog was deliberately holding back.
+:<!--1.5-second delay-->
+:'''Luka:''' Seele... (Trailblazer)... and... Nat? I'm in... the clinic?
+:'''Seele:''' ...Where else? You think we'd leave you on Svarog's turf?
+;(Return to previous option selection)
+:'''Luka:''' Ha... thank you all. I feel much better now. Sorry, Nat... I must have wasted your time.
+:'''Natasha:''' Don't be ridiculous, Luka. Still, whatever your motivation was, I hope you can find a different outlet for it.
+:'''Seele:''' ...I'm not gonna let you off the hook that easy &mdash; there's more to this story. You need to explain what the heck got into you today.
+;(Return to previous option selection)
+:{{Диалог|Стрелка}} Svarog hit pretty hard.
+::'''Seele:''' Like I said, he's a robot... No matter how good his calculations are, he's not designed to pull punches.
+::'''Luka:''' Hahaha... you're always so serious. I've said it before &mdash; this is my train&mdash; *coughing*
+::'''Natasha:''' ...Slow down &mdash; you haven't completely recovered. Seele, don't pressure him... let him rest.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} That victory slogan of yours...
+::'''Seele:''' The one good thing about you losing is that we didn't have to hear it again.
+::'''Luka:''' Hahaha... you're always so serious. I've said it before &mdash; this is my train&mdash; *coughing*
+::'''Natasha:''' ...Slow down &mdash; you haven't completely recovered. Seele, don't pressure him... let him rest.
+:;(Return to previous option selection)
+:{{Диалог|Стрелка}} Why did you insist on fighting Svarog?
+::'''Seele:''' That's on me too... I should've refused him straightaway. I had a bad feeling from the start.
+::'''Luka:''' Hahaha... you're always so serious. I've said it before &mdash; this is my train&mdash; *coughing*
+::'''Natasha:''' ...Slow down &mdash; you haven't completely recovered. Seele, don't pressure him... let him rest.
+:;(Return to previous option selection)
+
+;(Talk to Natasha)
+:'''Natasha:''' Please go ask Oleg about this, (Trailblazer)
+:'''Natasha:''' Don't let small things get in the way of your friendship.
+{{Dialogue End}}
+
+===Talk to Oleg and ask about Luka{{subst:void|<!--201160109-->}}===
+{{Mission Description|type=companion|location=Boulder Town|update|Luka fought until he passed out in his battle with Svarog. He still refuses to tell you and Seele the true purpose behind his "trial" even after he woke up.<br />You decide to ask Oleg, his trainer, whether Luka's been acting weird recently.}}
+{{Dialogue Start}}
+
+;(Talk to Oleg)
+;(First interaction)
+::'''Oleg:''' Yo, we meet again, (Trailblazer)! I thought you all left to save the world or something already.
+::'''Oleg:''' Good timing, I still owe you a thank you: Thanks for getting this city back on the right track, outsider.
+::'''Oleg:''' Before this place is completely handed over to the Silvermane Guards, Wildfire still has to oversee the Underworld's daily affairs. Feel free to speak up if you need anything.
+;(Subsequent interactions)
+::'''Oleg:''' Hey, we meet again, (Trailblazer)!
+::'''Oleg:''' As long as you're in the Underworld, Wildfire will always treat you with utmost hospitality. Never hesitate to speak your needs.
+;(If )
+:{{Диалог|undefined}} Let's have a "Hyperlink Match"!
+::'''Oleg:''' Challenge me? Alright, but I'm not very good, go easy on me, okay?
+:<pre>{
+	"$type": "RPG.GameCore.ShowUI",
+	"Name": "Ui.AetherDivide.AetherChallenge.AetherChallengePage",
+	"WaitForExit": true,
+	"Param": {
+		"Value": "4"
+	}
+}</pre>
+;(If {{Mission|Future Market (II)|showChapter=0}} has been completed)
+:{{Диалог}} That agreement was not signed.
+::'''Oleg:''' Miss Bronya made a bold decision and I respect her for it, even though it was not exactly what I believed best.
+::'''Oleg:''' I imagine she must have found a better solution, right?
+::'''Oleg:''' There is actually someone in the IPC who shares the same ideals as Miss Bronya...
+::'''Oleg:''' Although it is hard to believe, resolving this situation with peaceful methods is the best-case scenario.
+::{{Диалог|Стрелка}} About the clash in the Great Mine...
+::'''Oleg:''' You think the mine workers will be looking for trouble with the IPC? Don't worry. We've already resolved this.
+::'''Oleg:''' Those people dressed in black came to visit the Underworld later and promised that they will pay for their improper actions from before. All of the miners will be receiving a considerable sum.
+::'''Oleg:''' Though this repayment will not be made immediately, it shows the IPC's meticulous style of handling affairs. Perhaps they will genuinely become great partners.
+::'''Oleg:''' As for how far this cooperation will go, we will need to see what methods are used on both sides. I hope that Miss Bronya can handle this heavy responsibility.
+;(If )
+:{{Диалог|undefined}} I wanna ask you some things about Luka.
+::----
+::'''Oleg:''' ...Oh? My student? Did something happen recently?
+::'''Oleg:''' I was wondering why he didn't come and see me after the championship match ended. Come, tell me about it.
+::{{Black Screen|You tell Oleg about everything that happened with Luka and Seele...}}
+::'''Oleg:''' Mm... that does sound a little strange. Luka usually doesn't push himself so far...
+::'''Oleg:''' ...Huh, he may be a tough guy on the surface, but he's got his secrets. Did he tell you about the origins of his mechanical arm?
+::{{Диалог|Стрелка}} He mentioned something before he fought Svarog.
+:::'''Oleg:''' Ah, then he probably didn't describe the scene in detail.
+::{{Диалог|Стрелка}} I don't remember.
+:::'''Oleg:''' Well, let me tell you about it.
+::'''Oleg:''' That was... six? Seven years ago? I was patrolling with some comrades in the neighboring town of Moltammerville &mdash; we passed an ordinary mechanics shop.
+::'''Oleg:''' There was a serious-looking fella looking after the shop. He was probably a few years younger than me, but his hair and beard were white as snow. There was a young lad doing odd jobs &mdash; he looked pretty exhausted.
+::'''Oleg:''' Anyway, I convinced the shopkeeper to let him come with me.
+::'''Oleg:''' Luka was a fast learner. At first, I couldn't figure out if he liked what I was teaching him &mdash; fighting, weapons, strategy, etc. He didn't talk a lot &mdash; just kept his head down.
+::'''Oleg:''' Then... about a year after I took him in, Luka lost one of his arms while rescuing townsfolk from the Fragmentum in Moltammerville.
+::'''Oleg:''' ...He almost didn't make it &mdash; he was unconscious for two or three days. I sat next to his bed, anxious and guilty. Guess what he said to me after he woke up?
+::{{Диалог|Стрелка}} ...Go on.
+::'''Oleg:''' "Master, I feel great!"
+::'''Oleg:''' He had bandages all over his body &mdash; most of his wounds hadn't healed yet... But, it was the first time he'd ever smiled at me. I still remember that expression.
+::{{Диалог|Стрелка}} And the moral of the story is...?
+:::'''Oleg:''' Oh, sorry, I get a little carried away when I tell this story, hahaha.
+::{{Диалог|Стрелка}} Guess that kind of sums him up, huh...
+:::'''Oleg:''' Can't tell from looking at him, right?
+::'''Oleg:''' What I'm trying to say is: Luka views other people's lives as more important than his own. That's how he's always been.
+::'''Oleg:''' So when he says stuff like "this is for training" &mdash; that's probably a lie. He's hiding something from you alright.
+::'''Oleg:''' Anyway, I'm too old to be getting involved in this stuff. I'm sure you and Seele can sort this by yourselves.
+::'''Oleg:''' One thing I will ask &mdash; please try not to embarrass him too much, okay? He's the fighting champion of Boulder Town, after all &mdash; an idol for all the children. He needs to keep up that image, haha.
+::----
+;(If {{Mission|Future Market (II)|showChapter=0}} has not been completed)
+:{{Диалог}} What happened at the Corridor of Fading Echoes?
+::'''Oleg:''' Oh, you're still thinking about that? What a kindhearted person, hahaha.
+::'''Oleg:''' Honestly, nothing much has changed. Every time we clear out one swarm, more monsters just pour out of the Fragmentum.
+::'''Oleg:''' But we cannot give up. As long as there's a tomorrow, we will continue with our fight.
+::'''Oleg:''' "Tomorrow" &mdash; now that's a luxury that you've won for us, (Trailblazer). We certainly won't squander it.
+;(If {{Mission|Future Market (II)|showChapter=0}} has not been completed)
+:{{Диалог}} Let's talk, Oleg.
+::'''Oleg:''' Oh? You've really come to just chat with me? Hahaha, fire away! I like talking to young people.
+::{{Диалог|Разговор}} What have you been up to recently?
+:::'''Oleg:''' Helping Natasha calm any Underworld unrest, performing post-disaster rebuilding work &mdash; she's the brains of the outfit, and I'm the brawn. Not much difference from usual, but I'm much happier and relaxed.
+:::'''Oleg:''' Also, many younger people around me have been taking this chance to leave Boulder Town to try their luck in the Overworld. I've chatted plenty with them, to give them some of life's pointers, I guess.
+:::'''Oleg:''' You know young 'uns, it helps that they are brimming with passion. Who knows when they'll make it someday in the Overworld? At least they won't reminisce and be filled with regret.
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} Were you part of the Silvermane Guards?
+:::'''Oleg:''' Yes, you've heard?
+:::'''Oleg:''' Those were the glory days... I don't mean to brag, but in the prime of my youth, everyone knew of my repute as "Swiftstrike Oleg."
+:::'''Oleg:''' ...No point waxing lyrical about the past though. One shouldn't be stuck in the past at my age. We should embrace the present and seize the day. Hahaha!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} Wildfire's future...
+:::'''Oleg:''' Realistically speaking, (Trailblazer), Wildfire will be disbanded eventually. Natasha and I have been aware of this since the day we established it.
+:::'''Oleg:''' A healthy, normal Underworld doesn't need an existence like Wildfire's. Don't worry though, even if we do disband, there'll be plenty of youngsters who will carry on the will of Wildfire.
+:::'''Oleg:''' Seele and my rowdy apprentice, they will keep fighting for their home. So long as their aspirations never change, I have nothing but high hopes for the Underworld's future. Hahaha!
+::;(Return to previous option selection)
+::{{Диалог|Разговор}} Bronya is the Supreme Guardian now.
+:::'''Oleg:''' Oh, that girl... I knew she was special the first time I laid eyes on her.
+:::'''Oleg:''' To a certain extent, I feel like she's just like when Cocolia was younger, and trust me, that's definitely a compliment. Except that Bronya's less glum, and more sincere.
+:::'''Oleg:''' I believe she will restore Belobog to when it was before the blockade, or perhaps even better. I mean, you all already took care of that Stellaron thing, didn't you?
+:::'''Oleg:''' A major undertaking can't be accomplished by a single person, regardless of her individual strength. It's a good thing her sincerity has touched so many, and we're all glad to be helping her.
+::;(Return to previous option selection)
+::{{Диалог|Выход}} Nice chat.
+:::'''Oleg:''' Oh, leaving already? I haven't had my fill, hahaha!
+;(If {{Mission|Future Market (II)|showChapter=0}} has not been completed)
+:{{Диалог|Выход}} Goodbye, Oleg.
+::'''Oleg:''' Go well, young one. Do what you all need to do. I hope we will meet again in the coming days.
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1113400
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1113400
+}</pre>
+{{Dialogue End}}
+
+===Find Seele and follow Luka with her{{subst:void|<!--201160111-->}}===
+{{Mission Description|type=companion|location=Boulder Town|update|Luka fought until he passed out in his battle with Svarog. He still refuses to tell you and Seele the true purpose behind his "trial" even after he woke up.<br />However, Seele is not planning to let Luka off the hook. She wants to understand the truth behind it all.<br />Seele had already found where Luka is. Go and meet up with her in town.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Mo Cuishle
+|zhs  = 我的挚爱，我的血肉
+|zht  = 我的摯愛，我的血肉
+|ja   = 私の最愛、私の血
+|ko   = 나의 사랑, 나의 혈육
+|es   = Mo Cuishle
+|fr   = Mon amour, ma chair, mon sang
+|ru   = Моя кровиночка
+|th   = รักแท้ของฉัน เลือดเนื้อของฉัน
+|vi   = Tình Yêu Của Tôi, Nhịp Đập Của Tôi
+|de   = Mo Cuishle
+|id   = Kesayanganku, Darah Dagingku
+|pt   = Mo Cuishle
+}}
+
+==Change History==
+{{Change History|3.5}}

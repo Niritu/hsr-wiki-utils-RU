@@ -11,8 +11,8 @@ PageTitle=#Найдите все граффити «Взрыв битового 
 |Глава           = 
 |Условия         = Завершена [[Миссия компаньона]] «[[Дух Панклорда]]»
 |Персонажи       = Первопроходец
-|СтартЛокация    = [[Космическая станция «Герта»]] — [[Зона хранения]]
-|Мир             = Космическая станция «Герта»
+|СтартЛокация    = [[<!--стартовый мир-->]] — [[<!--стартовая локация-->]]
+|Мир             = <!--стартовый мир-->
 |Предыдущая      = 
 |Следующая       = 
 |Награды         = 
@@ -27,103 +27,7 @@ PageTitle=#Найдите все граффити «Взрыв битового 
 
 ==Прохождение==
 {{Дополнить}}
-<pre>{
-	"$type": "RPG.GameCore.PhotoGraphAimTarget",
-	"AimTargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvProp",
-		"MultiGroupFetch": [
-			{
-				"GroupID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 101
-					}
-				},
-				"ID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 300004
-					}
-				}
-			}
-		],
-		"MultiGroupFetchByUniqueName": [],
-		"MultiGroupFetchByPropKey": []
-	},
-	"IsAim": true,
-	"AimIdentifyType": "Manual"
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.PhotoGraphWaitIdentifyFinish",
-	"WaitTargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvProp",
-		"MultiGroupFetch": [
-			{
-				"GroupID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 101
-					}
-				},
-				"ID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 300004
-					}
-				}
-			}
-		],
-		"MultiGroupFetchByUniqueName": [],
-		"MultiGroupFetchByPropKey": []
-	},
-	"OnIdentifyFinish": [],
-	"OnPreviewFinish": []
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.LockPhotoIdentifyHint"
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.PhotoGraphAimTarget",
-	"AimTargetType": {
-		"$type": "RPG.GameCore.TargetFetchAdvProp",
-		"MultiGroupFetch": [
-			{
-				"GroupID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 101
-					}
-				},
-				"ID": {
-					"IsDynamic": false,
-					"FixedValue": {
-						"Value": 300004
-					}
-				}
-			}
-		],
-		"MultiGroupFetchByUniqueName": [],
-		"MultiGroupFetchByPropKey": []
-	}
-}</pre>
-<pre>{
-	"$type": "RPG.GameCore.PhotoGraphShowIdentifyResult",
-	"IsIdentifySuccess": true,
-	"IsShowToast": true,
-	"ToastText": {
-		"Hash": 845206858745524995
-	}
-}</pre>
-:<!--1-second delay-->
-<pre>{
-	"$type": "RPG.GameCore.SwitchPhotoGraphMode",
-	"IdentifyRadiusOverride": {
-		"IsDynamic": false,
-		"FixedValue": {
-			"Value": 0
-		}
-	}
-}</pre>
+
 {{Диалог Конец}}
 
 ==На других языках==

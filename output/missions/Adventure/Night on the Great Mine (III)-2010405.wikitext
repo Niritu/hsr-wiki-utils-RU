@@ -1,0 +1,373 @@
+<%-- [PAGE_INFO]
+PageTitle=#Night on the Great Mine (III)#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2010405
+|title         = 
+|image         = <!--Mission Night on the Great Mine (III).png-->
+|type          = Adventure
+|event_name    = 
+|chapter       = 
+|requirements  = Complete [[Adventure Mission]] ''[[Night on the Great Mine (II)]]'' and wait for the next Daily [[Reset]]
+|summary       = With your assistance, the apprentice successfully completed all the puzzles set by the Senior Mine Cart Operator and is ready to graduate.
+|characters    = Apprentice Mine Cart Operator; Senior Mine Cart Operator; Trailblazer
+|startLocation = [[Jarilo-VI]] - [[Great Mine]]
+|world         = Jarilo-VI
+|area          = Great Mine
+|prev          = Night on the Great Mine (II)
+|next          = 
+|rewards       = Trailblaze EXP*100; Stellar Jade*30; Condensed Aether*1; Credit*5 000
+}}
+'''''Night on the Great Mine (III)''''' is an [[Adventure Mission]] on [[Jarilo-VI]].
+
+==Steps==
+# Talk to the senior mine cart operator and see if he has come up with a new test
+# Pass the senior mine cart operator's test
+# Go to the senior mine cart operator to claim your reward
+# Claim the reward for passing the test
+# Talk to the senior mine cart operator and begin the next round of testing
+# Pass the senior mine cart operator's test
+# Go to the senior mine cart operator to claim your reward
+# Claim the reward for passing the test
+# Talk to the senior mine cart operator and begin the next round of testing
+# Pass the senior mine cart operator's test
+# Go to the senior mine cart operator to claim your reward
+# Claim the reward for passing the test
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Talk to the senior mine cart operator and see if he has come up with a new test{{subst:void|<!--201040501-->}}===
+{{Mission Description|type=adventure|location=Great Mine|You have become a superstar in the Underworld and have caught the attention of thousands of miners. Throughout Belobog's history, no one else has mastered the art of directing mine carts as quickly as you... Even though you were only supposed to be an assistant instructor.<br />What is a mine cart? Where does it come from? Where should it go? These are the holy trinity of questions that haunt all miners. You are only one step away from uncovering the answer.<br />The answer to this question is embedded deep into the final test that the senior mine cart operator has prepared for you. Let's see what he has in store for you.}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' The master has a new puzzle. Go ask him about it if you're interested.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' You're finally here! I've been waiting! Today's your final test &mdash; are you up to it?
+:{{Диалог|Стрелка}} I got this!
+::'''Senior Mine Cart Operator:''' *sigh* If you were my apprentice, I probably could have retired a long time ago... Ahem, anyway, let's begin.
+:{{Диалог|Выход}} Sorry, I have something else to do.
+::'''Senior Mine Cart Operator:''' That's fine. Come see me when you're free.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:'''Senior Mine Cart Operator:''' Watch carefully, {{MC|м=boy|ж=girl}}. The blocker with the {{Цвет|Ключевой|nobold=1|yellow light}} on is the stop for {{Цвет|Ключевой|nobold=1|the loaded mine carts}}.
+:'''Senior Mine Cart Operator:''' If a mine cart needs to {{Цвет|Ключевой|nobold=1|load or unload the Geomarrow}}, it needs to be moved to the {{Цвет|Ключевой|nobold=1|stop next to the Geomarrow pile}} first.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' Hmph, when I finish my training, you can just go home and lie down, old man!
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' {{MC|м=Lad|ж=Young miss}}, you've been a lot of help these days. I guess we'll meet again in the future, whenever fate wills it so.
+{{Dialogue End}}
+
+===Pass the senior mine cart operator's test{{subst:void|<!--201040503-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator prepared the Mine Cart Puzzle in front of you. Solve it promptly.}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' Reverse first, then go forward...
+:'''Apprentice Mine Cart Operator:''' Haha, got it this time.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' So, do you want me to reset the mine carts for you?
+:{{Диалог|Стрелка}} Yes. Please help me reset the carts.
+:{{Диалог|Выход}} There's no need.
+;(Unused &mdash; Tramcar_StartReset)
+:'''Senior Mine Cart Operator:''' Okay, just one moment...
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+::'''Senior Mine Cart Operator:''' Watch carefully, {{MC|м=boy|ж=girl}}. The blocker with the {{Цвет|Ключевой|nobold=1|yellow light}} on is the stop for {{Цвет|Ключевой|nobold=1|the loaded mine carts}}.
+::'''Senior Mine Cart Operator:''' If a mine cart needs to {{Цвет|Ключевой|nobold=1|load or unload the Geomarrow}}, it needs to be moved to the {{Цвет|Ключевой|nobold=1|stop next to the Geomarrow pile}} first.
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Go to the senior mine cart operator to claim your reward{{subst:void|<!--201040504-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|With your ingenuity, you quickly solved the mine cart puzzle set up by the senior mine cart operator.<br />Go ask him what the reward is &mdash; there is usually a reward for this kind of task, isn't there?}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' Reverse first, then go forward...
+:'''Apprentice Mine Cart Operator:''' Haha, got it this time.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' That's good, great. You've got a real brain on you!
+:'''Senior Mine Cart Operator:''' Here you are, your reward for this puzzle &mdash; and onto the next one...
+{{Dialogue End}}
+
+===Claim the reward for passing the test{{subst:void|<!--201040505-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator prepared the rewards for solving the puzzle. Collect them now.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Talk to the senior mine cart operator and begin the next round of testing{{subst:void|<!--201040506-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator seems to have prepared a new puzzle. Go and inquire about his preparation}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' The master has a new puzzle. Go ask him about it if you're interested.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' Great! The venue's all sorted. Are you up for the next challenge?
+:{{Диалог|Стрелка}} Let's go!
+::'''Senior Mine Cart Operator:''' Now that's the spirit! Let's begin.
+:{{Диалог|Выход}} Just a moment. I have something else to do.
+::'''Senior Mine Cart Operator:''' Okay, we'll be right here waiting for you.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:'''Senior Mine Cart Operator:''' Watch carefully, {{MC|м=boy|ж=girl}}. The blocker with the {{Цвет|Ключевой|nobold=1|yellow light}} on is the stop for {{Цвет|Ключевой|nobold=1|the loaded mine carts}}.
+:'''Senior Mine Cart Operator:''' The {{Цвет|Ключевой|nobold=1|empty mine cart}} should be driven to the stop with {{Цвет|Ключевой|nobold=1|blue lights}}.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' Hmph, when I finish my training, you can just go home and lie down, old man!
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' {{MC|м=Lad|ж=Young miss}}, you've been a lot of help these days. I guess we'll meet again in the future, whenever fate wills it so.
+{{Dialogue End}}
+
+===Pass the senior mine cart operator's test{{subst:void|<!--201040508-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator prepared the Mine Cart Puzzle in front of you. Solve it promptly.}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' *sigh* Darn it. I forgot to transfer the geomarrow over.
+:'''Apprentice Mine Cart Operator:''' How do you reverse this...
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' So, do you want me to reset the mine carts for you?
+:{{Диалог|Стрелка}} Yes. Please help me reset the carts.
+:{{Диалог|Выход}} There's no need.
+;(Unused &mdash; Tramcar_StartReset)
+:'''Senior Mine Cart Operator:''' Okay, just one moment...
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Go to the senior mine cart operator to claim your reward{{subst:void|<!--201040509-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|With your ingenuity, you quickly solve the mine cart puzzle set up by the senior mine cart operator.<br />Go ask him about the reward &mdash; there is usually a reward for this kind of task, isn't there?}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' *sigh* Darn it. I forgot to transfer the geomarrow over.
+:'''Apprentice Mine Cart Operator:''' How do you reverse this...
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' Ha, {{MC|м=m'boy|ж=m'girl}} is pretty amazing!
+:'''Senior Mine Cart Operator:''' Here's your reward &mdash; and now, the final part of the puzzle...
+{{Dialogue End}}
+
+===Claim the reward for passing the test{{subst:void|<!--201040510-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator prepared the rewards for solving the puzzle. Collect them now.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+===Talk to the senior mine cart operator and begin the next round of testing{{subst:void|<!--201040511-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator seems to have prepared a new puzzle. Go and inquire about his preparation}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' The master has a new puzzle. Go ask him about it if you're interested.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' Great! The venue's all sorted. Are you up for the next challenge?
+:{{Диалог|Стрелка}} Let's go!
+::'''Senior Mine Cart Operator:''' Now that's the spirit! Let's begin.
+:{{Диалог|Выход}} Just a moment. I have something else to do.
+::'''Senior Mine Cart Operator:''' Okay, we'll be right here waiting for you.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:'''Senior Mine Cart Operator:''' Watch carefully, {{MC|м=boy|ж=girl}}. The blocker with the {{Цвет|Ключевой|nobold=1|yellow light}} on is the stop for {{Цвет|Ключевой|nobold=1|the loaded mine carts}}.
+:'''Senior Mine Cart Operator:''' If a mine cart needs to {{Цвет|Ключевой|nobold=1|load or unload the Geomarrow}}, it needs to be moved to the {{Цвет|Ключевой|nobold=1|stop next to the Geomarrow pile}} first.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' Hmph, when I finish my training, you can just go home and lie down, old man!
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' {{MC|м=Lad|ж=Young miss}}, you've been a lot of help these days. I guess we'll meet again in the future, whenever fate wills it so.
+{{Dialogue End}}
+
+===Pass the senior mine cart operator's test{{subst:void|<!--201040513-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|The senior mine cart operator prepared the Mine Cart Puzzle in front of you. Solve it promptly.}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Apprentice Mine Cart Operator:''' What did the master say this light means again?
+:'''Apprentice Mine Cart Operator:''' Oh, right! That's how it should go...
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' So, do you want me to reset the mine carts for you?
+:{{Диалог|Стрелка}} Yes. Please help me reset the carts.
+:{{Диалог|Выход}} There's no need.
+;(Unused &mdash; Tramcar_StartReset)
+:'''Senior Mine Cart Operator:''' Okay, just one moment...
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+::<!--3-second delay-->
+:<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "Puzzle_Cameras",
+	"AnchorName": "Tramcar_M21_Lv1",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+{{Dialogue End}}
+
+===Go to the senior mine cart operator to claim your reward{{subst:void|<!--201040514-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|With your ingenuity, you quickly solve the mine cart puzzle set up by the senior mine cart operator.<br />Go ask him about the reward &mdash; there is usually a reward for this kind of task, isn't there?}}
+{{Dialogue Start}}
+
+;(Talk to Apprentice Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' Outstanding... Your gift is really hard to come by. Your skills as a mine cart operator really are first class.
+:'''Senior Mine Cart Operator:''' After seeing your amazing skills, my useless apprentice has been feeling the heat. He's been better-behaved recently and is willing to put more effort into the hands-on stuff... This is all thanks to you.
+:{{Диалог|Стрелка}} I was just doing my job.
+::'''Senior Mine Cart Operator:''' Antonia was right. You are indeed qualified as an assistant instructor.
+:{{Диалог|Стрелка}} Hope your apprentice graduates soon!
+::'''Senior Mine Cart Operator:''' Ha! Then I can finally get rid of that useless brat, haha!
+:{{Диалог|Стрелка}} So, am I qualified to be a supervisor?
+::'''Senior Mine Cart Operator:''' Haha, being able to operate mine carts isn't enough by itself. But you're more than qualified to replace this brat.
+:'''Apprentice Mine Cart Operator:''' Hmph, when I finish my training, you can just go home and lie down, old man!
+:'''Senior Mine Cart Operator:''' You brat, watch your mouth! Don't be a troublemaker when you get a job. And if you ever mess up on the job, don't tell anyone that I trained you.
+:'''Senior Mine Cart Operator:''' {{MC|м=Lad|ж=Young miss}}, you've been a lot of help these days. I guess we'll meet again in the future, whenever fate wills it so.
+
+;(Talk to Senior Mine Cart Operator)
+:'''Senior Mine Cart Operator:''' Outstanding... Your gift is really hard to come by. Your skills as a mine cart operator really are first class.
+:'''Senior Mine Cart Operator:''' After seeing your amazing skills, my useless apprentice has been feeling the heat. He's been better-behaved recently and is willing to put more effort into the hands-on stuff... This is all thanks to you.
+:{{Диалог|Стрелка}} I was just doing my job.
+::'''Senior Mine Cart Operator:''' Antonia was right. You are indeed qualified as an assistant instructor.
+:{{Диалог|Стрелка}} Hope your apprentice graduates soon!
+::'''Senior Mine Cart Operator:''' Ha! Then I can finally get rid of that useless brat, haha!
+:{{Диалог|Стрелка}} So, am I qualified to be a supervisor?
+::'''Senior Mine Cart Operator:''' Haha, being able to operate mine carts isn't enough by itself. But you're more than qualified to replace this brat.
+:'''Apprentice Mine Cart Operator:''' Hmph, when I finish my training, you can just go home and lie down, old man!
+:'''Senior Mine Cart Operator:''' You brat, watch your mouth! Don't be a troublemaker when you get a job. And if you ever mess up on the job, don't tell anyone that I trained you.
+:'''Senior Mine Cart Operator:''' {{MC|м=Lad|ж=Young miss}}, you've been a lot of help these days. I guess we'll meet again in the future, whenever fate wills it so.
+{{Dialogue End}}
+
+===Claim the reward for passing the test{{subst:void|<!--201040515-->}}===
+{{Mission Description|type=adventure|location=Great Mine|update|You have become a superstar in the Underworld and have caught the attention of thousands of miners. Throughout Belobog's history, no one else has mastered the art of directing mine carts as quickly as you... even though you were only an assistant.<br />What is a mine cart? Where does it come from? Where is it going? These are the holy trinity of questions that haunt all mine cart operators, and you are only one step away from uncovering the answer.<br />The rewards for the final test are almost within your grasp. Let's see what that reward is.}}
+{{Dialogue Start}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Night on the Great Mine (III)
+|zhs  = 大矿区铁道之夜•其三
+|zht  = 大礦區鐵道之夜•其三
+|ja   = 大鉱区鉄道の夜・その3
+|ko   = 큰 광산구역 철도의 밤•3
+|es   = Noche en la mina principal III
+|fr   = Soirée dans la Grande mine (III)
+|ru   = Ночь в Большой шахте III
+|th   = ค่ำคืนในโซนเหมืองใหญ่ (3)
+|vi   = Đêm Ở Khu Mỏ Khổng Lồ-3
+|de   = Nacht in der großen Mine (Teil 3)
+|id   = Malam di Great Mine (Bag. 3)
+|pt   = Noite na Grande Mina (III)
+}}
+
+==Change History==
+{{Change History|3.5}}

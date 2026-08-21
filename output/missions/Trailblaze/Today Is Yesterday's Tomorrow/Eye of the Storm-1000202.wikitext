@@ -1,0 +1,200 @@
+<%-- [PAGE_INFO]
+PageTitle=#Eye of the Storm#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1000202
+|title         = 
+|image         = <!--Mission Eye of the Storm.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Today Is Yesterday's Tomorrow
+|requirements  = [[Trailblaze Mission]] ''[[Eye of the Storm]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Arlan; Dan Heng; March 7th; Trailblazer
+|startLocation = [[Herta Space Station]] - [[Storage Zone]]
+|world         = Herta Space Station
+|area          = Storage Zone
+|prev          = 
+|next          = A Moment of Peace
+|rewards       = Collapsing Sky*1 { text = Collapsing Sky }
+}}
+'''''Eye of the Storm''''' is a [[Trailblaze Mission]] in the chapter [[Today Is Yesterday's Tomorrow]].
+
+==Steps==
+# Go to the monitoring room and meet up with Arlan
+# Use the encryption key
+# Go to the upper level and take the elevator to the master control zone
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Go to the monitoring room and meet up with Arlan{{subst:void|<!--100020110-->}}===
+{{Mission Description|type=trailblaze|location=Storage Zone|Just like in all those classic movie scenes &mdash; the elevator doesn't work.<br />Despite March 7th calling him a "walking encyclopedia," even Dan Heng, who somehow made it in time, doesn't know what to do.<br />However, Arlan, the head of the Security Department rescued by Dan Heng, probably knows the answer...<br />As expected, Dan Heng saves the day once more.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"StateName": "State_Bgm_E7",
+	"SubMissionID": 100020111
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SetAudioEmotionState",
+	"ResetToFloorDefault": true,
+	"SubMissionID": 100020111
+}</pre>
+{{Dialogue End}}
+
+===Use the encryption key{{subst:void|<!--100020112-->}}===
+{{Mission Description|type=trailblaze|location=Storage Zone|update|You can sense from Arlan's cautious gaze that the encryption key is not only used for unlocking authorization but also proof of your identity.<br />Hurry up and use it.}}
+{{Dialogue Start}}
+:<!--1-second delay-->
+:'''Arlan:''' ...Now that we found the key, we should get going. We can use that console over there to unlock the elevator.
+----
+:<!--0.5-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PropMoveTo",
+	"Duration": {
+		"IsDynamic": false,
+		"FixedValue": {
+			"Value": 5
+		}
+	},
+	"AreaName": "LevelArea_P20002_F20002001_G8",
+	"AnchorName": "Elevator_2F",
+	"TargetType": {
+		"$type": "RPG.GameCore.TargetFetchAdvPropEx",
+		"FetchType": "SinglePropByPropID",
+		"SinglePropID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 8
+				}
+			},
+			"ID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 300003
+				}
+			}
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_hertaspacestation_elevator_slowup"
+	}
+}</pre>
+:<!--3.5-second delay-->
+:'''Dan Heng:''' Let's go.
+:'''Arlan:''' Hold on. I only activated the elevator on the highest floor. We'll have to go there to use it.
+:{{Диалог|Стрелка}} Why? It's so far away.
+::'''Arlan:''' Because I mustn't give the Legion any chance to reach the master control zone by the elevator. I must ensure the safety of the station's staff.
+::'''Arlan:''' So I'll have to trouble you to take a bit of a detour... Apologies.
+:{{Диалог|Стрелка}} Okay.
+::'''Arlan:''' Sorry... This space station was entrusted to Lady Asta by Madam Herta. I must do this for the safety of the master control zone and the staff there.
+::'''Arlan:''' So I'll have to trouble you to take a bit of a detour... Sincerest apologies.
+:'''March 7th:''' Huh? You're not coming with us?
+:'''Arlan:''' My leg is injured... I'd only slow you down. I'll stay here and shut down the elevator once you've made it to the master control zone.
+:'''Dan Heng:''' You won't slow us down. And you should be able to shut down the elevators from the master control zone, right?
+:'''March 7th:''' Agreed. (Trailblazer) and I made it here safely, and now we've also got Dan Heng. We're more than enough to protect you~
+:'''March 7th:''' Let us worry about the Antimatter Legion. You just follow us and keep yourself alive~
+:{{Диалог|Стрелка}} Trust us.
+:{{Диалог|Стрелка}} Don't overthink this.
+:{{Диалог|Стрелка}} You can use me as a crutch.
+::'''March 7th:''' Aren't you a nice kid!
+:'''Arlan:''' ...Thank you.
+----
+{{Dialogue End}}
+
+===Go to the upper level and take the elevator to the master control zone{{subst:void|<!--100020108-->}}===
+{{Mission Description|type=trailblaze|location=Storage Zone|update|Arlan seems to worry that he would be a hindrance, but you as a group already developed a sort of delicate rapport in how to persuade him. Could this be what it means to be companions?<br />Hurry and reach the top floor with your companions.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Arlan:''' The Sorting and Analysis Room has been sealed off. We can't go this way.
+
+;(По прибытии на место)
+:'''Dan Heng:''' Do you know why the Antimatter Legion would invade the station, Arlan?
+:'''Arlan:''' They must've come for Madam Herta's collection... But as to why, I still...
+:'''Dan Heng:''' I heard there's something called a Stellaron in Madam Herta's collection.
+:'''Arlan:''' ...That's not the kind of information someone in my position would have access to.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Dan Heng:''' The repulsion bridge has been shut down?
+:'''Arlan:''' Yes. To stall the enemy, more or less.
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_M3",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:<!--0.5-second delay-->
+:'''March 7th:''' Hey, these shiny things... Are these Light Cones? I thought only the Interastral Peace Corporation had rare stuff like this.
+:'''Dan Heng:''' No, Light Cones are Garden of Recollection technology. They allow you to carry memories around &mdash; very potent enhancement items. I heard the corporation paid a lot for the usage rights, but I've no idea how Herta managed to get hold of one.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_M4",
+	"WaitBlendFinish": true,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut"
+	}
+}</pre>
+:'''Arlan:''' They were acquired legitimately, that's all I can say. Take them, they're very useful in combat.
+<pre>{
+	"$type": "RPG.GameCore.ActiveVirtualCamera",
+	"AreaName": "MainMission_2000201",
+	"AnchorName": "Camera_1000201_07",
+	"IsActive": false,
+	"BlendConfig": {
+		"ExportToJson": true,
+		"BlendType": "Cut",
+		"BlendTime": 0.1
+	}
+}</pre>
+:<!--0.5-second delay-->
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Eye of the Storm
+|zhs  = 漩涡止于中心
+|zht  = 漩渦止於中心
+|ja   = 中心で止まる渦
+|ko   = 중심에 멈춘 소용돌이
+|es   = El ojo de la tormenta
+|fr   = L'œil de la tempête
+|ru   = Эпицентр бури
+|th   = กระแสน้ำวนที่จุดศูนย์กลาง
+|vi   = Vòng Xoáy Kết Thúc Ở Trung Tâm
+|de   = Auge des Sturms
+|id   = Pusat Pusaran
+|pt   = Olho da Tempestade
+}}
+
+==Change History==
+{{Change History|3.5}}

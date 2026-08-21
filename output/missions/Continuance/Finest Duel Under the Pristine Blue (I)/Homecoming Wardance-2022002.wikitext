@@ -1,0 +1,602 @@
+<%-- [PAGE_INFO]
+PageTitle=#Homecoming Wardance#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2022002
+|title         = 
+|image         = <!--Mission Homecoming Wardance.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = Finest Duel Under the Pristine Blue (I)
+|requirements  = [[Trailblaze Continuance]] ''[[Homecoming Wardance]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Cloud Knights Soldier; Dan Heng; Intellitron Tourist; Lujun; March 7th; Pepeshi Tourist; Trailblazer; Yanqing
+|startLocation = [[The Xianzhou Luofu]] - [[Central Starskiff Haven]]
+|world         = The Xianzhou Luofu
+|area          = Central Starskiff Haven
+|prev          = 
+|next          = Emissary Mystique
+|rewards       = Trailblaze EXP*400; Stellar Jade*50; Traveler's Guide*4; Refined Aether*5; Credit*30 000
+}}
+'''''Homecoming Wardance''''' is a [[Trailblaze Continuance]] in the chapter [[Finest Duel Under the Pristine Blue (I)]].
+
+==Steps==
+# Look for Yanqing in the crowd
+# Meet Yanqing again
+# Defeat the fleeing Wolftrooper
+# Ask Yanqing about the situation
+# Accompany Yanqing and ask about the situation from the Cloud Knights present
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Look for Yanqing in the crowd{{subst:void|<!--202200201-->}}===
+{{Mission Description|type=continuance|location=Central Starskiff Haven|Arriving at the Luofu, you are greeted by an overwhelming sight of starskiffs.}}
+{{Dialogue Start}}
+:{{tx}}
+:'''March 7th:''' Coming back to this place brings back so many memories, you know...
+:{{Диалог|Стрелка}} So, here's something for all of you, a poem by March 7th...
+::'''March 7th:''' Hey, I'm not actually gonna recite a poem! I was just thinking about all the twists and turns we went through when we first arrived on the Xianzhou...
+::What memories? Care to spill the details?
+:{{Диалог|Стрелка}} What memories? Care to spill the details?
+:'''March 7th:''' Well, it's nothing too poetic. I was just thinking about all the twists and turns we went through when we first arrived at the Xianzhou ship...
+:'''March 7th:''' This time, we're not being forced or enticed, or chasing after wanted criminals. And we didn't have to sneak in through the cargo dock. This trip has been incredibly smooth...
+:'''March 7th:''' Quite unusual, I must say!
+:{{Диалог|Стрелка}} Definitely unusual!
+::'''Dan Heng:''' I agree.
+:{{Диалог|Стрелка}} We're so easily pleased. I actually feel sorry for us...
+::'''March 7th:''' Such is the fate of us Nameless, I suppose.
+:{{Диалог|Стрелка}} Oh, come on, don't jinx us...
+::'''March 7th:''' Haha, I'm just hoping for the best! You're the one jinxing us!
+:{{tx}}
+;(If {{cx}}<!--SubMission not Finish: 202200202-->)
+:<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+;(If {{cx}}<!--SubMission Finish: 202200202-->)
+:;(If {{F|MissionCV-2022002-1}} is undefined 0)
+::<pre>{
+	"$type": "RPG.GameCore.AdvCreateGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.PlayMessage",
+	"MessageSectionID": 1222800,
+	"ShowNotice": false
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.SaveMessage",
+	"MessageSectionID": 1222800
+}</pre>
+;(Unused &mdash; Finish202200219)
+
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Pepeshi Tourist:''' Hey, you guys! Hold on a moment!
+:'''March 7th:''' Did they just call us? Look at their outfits... they're from Penacony, right?
+:'''Pepeshi Tourist:''' Are you familiar with the Xianzhou Luofu?
+:'''Dan Heng:''' We know a little bit about it. What do you need?
+:'''Intellitron Tourist:''' We're from Penacony, maybe you've heard of it? We came to this ship to gather interesting materials for making dream bubbles.
+:'''March 7th:''' We just left there. Talk about coincidence.
+:'''Intellitron Tourist:''' That's great! Do you know any must-see attractions on the Luofu?
+:{{Диалог|Стрелка}} You've come to the right people!
+::'''March 7th:''' Exactly! We're Xianzhou experts!
+::Why don't you ask the locals?
+:{{Диалог|Стрелка}} Why don't you ask the locals?
+:'''Pepeshi Tourist:''' We did! But the locals were all like, "Come on, there's nothing worth seeing on the Luofu! It's so boring here!"
+:'''Intellitron Tourist:''' Can't blame them. If someone asked me, "What's there to see on Penacony?" I'd probably struggle to answer too.
+:'''Pepeshi Tourist:''' That's why we're asking fellow tourists!
+:'''March 7th:''' Most of the tourists around at the moment are here to attend the Wardance, and that's why we're here too.
+:'''Pepeshi Tourist:''' Yeah, we know about that ceremony, but isn't the fighting ring still closed?
+:'''Intellitron Tourist:''' I've heard the ring was actually converted from a huge decommissioned Luofu fighter jet.
+:{{Диалог|Стрелка}} So, it's even larger than a regular starskiff?
+::'''Intellitron Tourist:''' No doubt about it! It's a massive fighter jet! It's got to be larger than a civilian starskiff!
+::So, it's even bigger than the Radiant Feldspar?
+:{{Диалог|Стрелка}} So, it's even bigger than the Radiant Feldspar?
+:'''Intellitron Tourist:''' The Radiant Feldspar is bigger, I guess!
+:'''Pepeshi Tourist:''' But for now, all we can do is wait until the Wardance starts in a few weeks before we can board it. We've still got work to do, so we can't just sit around waiting for it to start, that's why we're asking you about some must-see attractions.
+:'''Intellitron Tourist:''' We're looking for unique experiences that you won't find on Penacony. Our clients love these kinds of dream bubbles the most.
+:'''March 7th:''' You're the expert here, (Trailblazer). Give them some suggestions!
+:{{Диалог|Стрелка}} Why not visit Aurum Alley?
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200202,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::'''Pepeshi Tourist:''' Hey, you guys! Hold on a moment!
+::'''March 7th:''' Did they just call us? Look at their outfits... they're from Penacony, right?
+::'''Pepeshi Tourist:''' Are you familiar with the Xianzhou Luofu?
+::'''Dan Heng:''' We know a little bit about it. What do you need?
+::'''Intellitron Tourist:''' We're from Penacony, maybe you've heard of it? We came to this ship to gather interesting materials for making dream bubbles.
+::'''March 7th:''' We just left there. Talk about coincidence.
+::'''Intellitron Tourist:''' That's great! Do you know any must-see attractions on the Luofu?
+::You've come to the right people!
+::'''March 7th:''' Exactly! We're Xianzhou experts!
+::Why don't you ask the locals?
+::'''Pepeshi Tourist:''' We did! But the locals were all like, "Come on, there's nothing worth seeing on the Luofu! It's so boring here!"
+::'''Intellitron Tourist:''' Can't blame them. If someone asked me, "What's there to see on Penacony?" I'd probably struggle to answer too.
+::'''Pepeshi Tourist:''' That's why we're asking fellow tourists!
+::'''March 7th:''' Most of the tourists around at the moment are here to attend the Wardance, and that's why we're here too.
+::'''Pepeshi Tourist:''' Yeah, we know about that ceremony, but isn't the fighting ring still closed?
+::'''Intellitron Tourist:''' I've heard the ring was actually converted from a huge decommissioned Luofu fighter jet.
+::So, it's even larger than a regular starskiff?
+::'''Intellitron Tourist:''' No doubt about it! It's a massive fighter jet! It's got to be larger than a civilian starskiff!
+::So, it's even bigger than the Radiant Feldspar?
+::'''Intellitron Tourist:''' The Radiant Feldspar is bigger, I guess!
+::'''Pepeshi Tourist:''' But for now, all we can do is wait until the Wardance starts in a few weeks before we can board it. We've still got work to do, so we can't just sit around waiting for it to start, that's why we're asking you about some must-see attractions.
+::'''Intellitron Tourist:''' We're looking for unique experiences that you won't find on Penacony. Our clients love these kinds of dream bubbles the most.
+::'''March 7th:''' You're the expert here, (Trailblazer). Give them some suggestions!
+::Why not visit Aurum Alley?
+::'''Dan Heng:''' Hmm, good idea. The everyday vibe of the Aurum Alley is a rare find on the Planet of Festivities.
+::'''Pepeshi Tourist:''' Everyday vibe... Yeah, our clients have had their fair share of adrenaline-pumping Dreamscapes. Maybe something down-to-earth would touch their hearts.
+::'''Intellitron Tourist:''' Thanks for the suggestion. We'll head to the Aurum Alley to gather materials. Maybe we'll run into each other there in a couple of days.
+::Why not visit Fyxestroll Garden?
+::'''March 7th:''' Oh, yeah! Fyxestroll Garden! It's famous for supernatural stuff, with those mischievous heliobi floating around! It's pretty fascinating!
+::'''Intellitron Tourist:''' Supernatural? I don't really like scary things... but our clients will love it.
+::'''Pepeshi Tourist:''' It does sound interesting. Let's go check out Fyxestroll Garden! Maybe we'll bump into each other there!
+::Why not visit Scalegorge Waterscape?
+::'''Dan Heng:''' That's indeed a good idea. While the Dreamscape on Penacony is all artificial, Scalegorge Waterscape is a celebration of nature's resurgence. It has some remarkable scenery.
+::'''Intellitron Tourist:''' Awesome. I love being out there in nature. Let's go to Scalegorge Waterscape first.
+::'''Pepeshi Tourist:''' I'm a bit worried that nature-themed dream bubbles might be outdated... but hey, let's go check it out anyway.
+::'''Intellitron Tourist:''' See you later. Maybe we'll run into each other there in a few days.
+::Why not climb to the top of the Ambrosial Arbor?
+::'''March 7th:''' Hey! That's a terrible idea! You'll get them arrested!
+::'''Intellitron Tourist:''' Haha... you're just joking, right? How about giving us some more practical suggestions?
+::'''Pepeshi Tourist:''' ...Wait a sec. Maybe it's not such a terrible idea after all? No risk, no reward! Come on, let's go climb that tree!
+::'''Intellitron Tourist:''' Slow down a bit. Wait for me.
+::'''March 7th:''' Hey, wait! Just think about what you're doing! And... don't mention our names if something goes wrong! Ugh, I hope they don't get into trouble... This is nerve-wracking.
+:{{Диалог|Стрелка}} Why not visit Fyxestroll Garden?
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200202,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 2
+}</pre>
+::'''Pepeshi Tourist:''' Hey, you guys! Hold on a moment!
+::'''March 7th:''' Did they just call us? Look at their outfits... they're from Penacony, right?
+::'''Pepeshi Tourist:''' Are you familiar with the Xianzhou Luofu?
+::'''Dan Heng:''' We know a little bit about it. What do you need?
+::'''Intellitron Tourist:''' We're from Penacony, maybe you've heard of it? We came to this ship to gather interesting materials for making dream bubbles.
+::'''March 7th:''' We just left there. Talk about coincidence.
+::'''Intellitron Tourist:''' That's great! Do you know any must-see attractions on the Luofu?
+::You've come to the right people!
+::'''March 7th:''' Exactly! We're Xianzhou experts!
+::Why don't you ask the locals?
+::'''Pepeshi Tourist:''' We did! But the locals were all like, "Come on, there's nothing worth seeing on the Luofu! It's so boring here!"
+::'''Intellitron Tourist:''' Can't blame them. If someone asked me, "What's there to see on Penacony?" I'd probably struggle to answer too.
+::'''Pepeshi Tourist:''' That's why we're asking fellow tourists!
+::'''March 7th:''' Most of the tourists around at the moment are here to attend the Wardance, and that's why we're here too.
+::'''Pepeshi Tourist:''' Yeah, we know about that ceremony, but isn't the fighting ring still closed?
+::'''Intellitron Tourist:''' I've heard the ring was actually converted from a huge decommissioned Luofu fighter jet.
+::So, it's even larger than a regular starskiff?
+::'''Intellitron Tourist:''' No doubt about it! It's a massive fighter jet! It's got to be larger than a civilian starskiff!
+::So, it's even bigger than the Radiant Feldspar?
+::'''Intellitron Tourist:''' The Radiant Feldspar is bigger, I guess!
+::'''Pepeshi Tourist:''' But for now, all we can do is wait until the Wardance starts in a few weeks before we can board it. We've still got work to do, so we can't just sit around waiting for it to start, that's why we're asking you about some must-see attractions.
+::'''Intellitron Tourist:''' We're looking for unique experiences that you won't find on Penacony. Our clients love these kinds of dream bubbles the most.
+::'''March 7th:''' You're the expert here, (Trailblazer). Give them some suggestions!
+::Why not visit Aurum Alley?
+::'''Dan Heng:''' Hmm, good idea. The everyday vibe of the Aurum Alley is a rare find on the Planet of Festivities.
+::'''Pepeshi Tourist:''' Everyday vibe... Yeah, our clients have had their fair share of adrenaline-pumping Dreamscapes. Maybe something down-to-earth would touch their hearts.
+::'''Intellitron Tourist:''' Thanks for the suggestion. We'll head to the Aurum Alley to gather materials. Maybe we'll run into each other there in a couple of days.
+::Why not visit Fyxestroll Garden?
+::'''March 7th:''' Oh, yeah! Fyxestroll Garden! It's famous for supernatural stuff, with those mischievous heliobi floating around! It's pretty fascinating!
+::'''Intellitron Tourist:''' Supernatural? I don't really like scary things... but our clients will love it.
+::'''Pepeshi Tourist:''' It does sound interesting. Let's go check out Fyxestroll Garden! Maybe we'll bump into each other there!
+::Why not visit Scalegorge Waterscape?
+::'''Dan Heng:''' That's indeed a good idea. While the Dreamscape on Penacony is all artificial, Scalegorge Waterscape is a celebration of nature's resurgence. It has some remarkable scenery.
+::'''Intellitron Tourist:''' Awesome. I love being out there in nature. Let's go to Scalegorge Waterscape first.
+::'''Pepeshi Tourist:''' I'm a bit worried that nature-themed dream bubbles might be outdated... but hey, let's go check it out anyway.
+::'''Intellitron Tourist:''' See you later. Maybe we'll run into each other there in a few days.
+::Why not climb to the top of the Ambrosial Arbor?
+::'''March 7th:''' Hey! That's a terrible idea! You'll get them arrested!
+::'''Intellitron Tourist:''' Haha... you're just joking, right? How about giving us some more practical suggestions?
+::'''Pepeshi Tourist:''' ...Wait a sec. Maybe it's not such a terrible idea after all? No risk, no reward! Come on, let's go climb that tree!
+::'''Intellitron Tourist:''' Slow down a bit. Wait for me.
+::'''March 7th:''' Hey, wait! Just think about what you're doing! And... don't mention our names if something goes wrong! Ugh, I hope they don't get into trouble... This is nerve-wracking.
+:{{Диалог|Стрелка}} Why not visit Scalegorge Waterscape?
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200202,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 3
+}</pre>
+::'''Pepeshi Tourist:''' Hey, you guys! Hold on a moment!
+::'''March 7th:''' Did they just call us? Look at their outfits... they're from Penacony, right?
+::'''Pepeshi Tourist:''' Are you familiar with the Xianzhou Luofu?
+::'''Dan Heng:''' We know a little bit about it. What do you need?
+::'''Intellitron Tourist:''' We're from Penacony, maybe you've heard of it? We came to this ship to gather interesting materials for making dream bubbles.
+::'''March 7th:''' We just left there. Talk about coincidence.
+::'''Intellitron Tourist:''' That's great! Do you know any must-see attractions on the Luofu?
+::You've come to the right people!
+::'''March 7th:''' Exactly! We're Xianzhou experts!
+::Why don't you ask the locals?
+::'''Pepeshi Tourist:''' We did! But the locals were all like, "Come on, there's nothing worth seeing on the Luofu! It's so boring here!"
+::'''Intellitron Tourist:''' Can't blame them. If someone asked me, "What's there to see on Penacony?" I'd probably struggle to answer too.
+::'''Pepeshi Tourist:''' That's why we're asking fellow tourists!
+::'''March 7th:''' Most of the tourists around at the moment are here to attend the Wardance, and that's why we're here too.
+::'''Pepeshi Tourist:''' Yeah, we know about that ceremony, but isn't the fighting ring still closed?
+::'''Intellitron Tourist:''' I've heard the ring was actually converted from a huge decommissioned Luofu fighter jet.
+::So, it's even larger than a regular starskiff?
+::'''Intellitron Tourist:''' No doubt about it! It's a massive fighter jet! It's got to be larger than a civilian starskiff!
+::So, it's even bigger than the Radiant Feldspar?
+::'''Intellitron Tourist:''' The Radiant Feldspar is bigger, I guess!
+::'''Pepeshi Tourist:''' But for now, all we can do is wait until the Wardance starts in a few weeks before we can board it. We've still got work to do, so we can't just sit around waiting for it to start, that's why we're asking you about some must-see attractions.
+::'''Intellitron Tourist:''' We're looking for unique experiences that you won't find on Penacony. Our clients love these kinds of dream bubbles the most.
+::'''March 7th:''' You're the expert here, (Trailblazer). Give them some suggestions!
+::Why not visit Aurum Alley?
+::'''Dan Heng:''' Hmm, good idea. The everyday vibe of the Aurum Alley is a rare find on the Planet of Festivities.
+::'''Pepeshi Tourist:''' Everyday vibe... Yeah, our clients have had their fair share of adrenaline-pumping Dreamscapes. Maybe something down-to-earth would touch their hearts.
+::'''Intellitron Tourist:''' Thanks for the suggestion. We'll head to the Aurum Alley to gather materials. Maybe we'll run into each other there in a couple of days.
+::Why not visit Fyxestroll Garden?
+::'''March 7th:''' Oh, yeah! Fyxestroll Garden! It's famous for supernatural stuff, with those mischievous heliobi floating around! It's pretty fascinating!
+::'''Intellitron Tourist:''' Supernatural? I don't really like scary things... but our clients will love it.
+::'''Pepeshi Tourist:''' It does sound interesting. Let's go check out Fyxestroll Garden! Maybe we'll bump into each other there!
+::Why not visit Scalegorge Waterscape?
+::'''Dan Heng:''' That's indeed a good idea. While the Dreamscape on Penacony is all artificial, Scalegorge Waterscape is a celebration of nature's resurgence. It has some remarkable scenery.
+::'''Intellitron Tourist:''' Awesome. I love being out there in nature. Let's go to Scalegorge Waterscape first.
+::'''Pepeshi Tourist:''' I'm a bit worried that nature-themed dream bubbles might be outdated... but hey, let's go check it out anyway.
+::'''Intellitron Tourist:''' See you later. Maybe we'll run into each other there in a few days.
+::Why not climb to the top of the Ambrosial Arbor?
+::'''March 7th:''' Hey! That's a terrible idea! You'll get them arrested!
+::'''Intellitron Tourist:''' Haha... you're just joking, right? How about giving us some more practical suggestions?
+::'''Pepeshi Tourist:''' ...Wait a sec. Maybe it's not such a terrible idea after all? No risk, no reward! Come on, let's go climb that tree!
+::'''Intellitron Tourist:''' Slow down a bit. Wait for me.
+::'''March 7th:''' Hey, wait! Just think about what you're doing! And... don't mention our names if something goes wrong! Ugh, I hope they don't get into trouble... This is nerve-wracking.
+:{{Диалог|Стрелка}} Why not climb to the top of the Ambrosial Arbor?
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200202,
+	"MissionCustomValue": {
+		"Index": 2,
+		"Name": "OldValue_2",
+		"ValidValueParamList": [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"CustomValue": 4
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.SetMissionCustomValue",
+	"SubmissionID": 202200202,
+	"MissionCustomValue": {
+		"Index": 1,
+		"Name": "OldValue_1",
+		"ValidValueParamList": [
+			0,
+			1
+		]
+	},
+	"CustomValue": 1
+}</pre>
+::{{tx}}
+:<pre>{
+	"$type": "RPG.GameCore.AdvDestroyGroupEntity",
+	"InstanceIDList": [
+		400001
+	]
+}</pre>
+:'''Dan Heng:''' Look, Yanqing's here.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G213"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Meet Yanqing again{{subst:void|<!--202200203-->}}===
+{{Mission Description|type=continuance|location=Central Starskiff Haven|update|Although you and Yanqing have not been apart for long, but you seem to feel that this kid has somehow grown a little taller.}}
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Yanqing:''' Hey, everyone! It's been a while!
+:'''March 7th:''' Doesn't feel like it's been that long since we last saw you, but Yanqing, are you...?
+:'''Yanqing:''' What's up, Miss March?
+:'''March 7th:''' They say kids grow up really fast. Yanqing, are you a little bit taller than before?
+:'''Dan Heng:''' We've only been away for a few months.
+:{{Диалог|Стрелка}} Long time no see, Yanqing!
+::'''March 7th:''' Long time no see!
+:{{Диалог|Стрелка}} Yeah, you're definitely taller!
+::'''Yanqing:''' Really? The General is always worried I won't grow much taller, but I keep telling him not to worry about it.
+:{{Диалог|Стрелка}} (Cautiously pinch Yanqing's cheek)
+::'''Yanqing:''' Huh? What are you doing, (Trailblazer)?
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G214"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+:'''March 7th:''' Seriously, I've never seen the Luofu so lively before.
+:'''Dan Heng:''' I was a bit worried that holding the Wardance right after the Ambrosial Arbor crisis might be too soon, but seeing the bustling Starskiff Haven, I understand why General Jing Yuan chose this timing.
+:'''Yanqing:''' Yep, there's people from other delves and travelers like you three who've come from afar.
+:'''Yanqing:''' With the Wardance coming up, there's a huge number of visitors pouring into the Starskiff Haven. The Cloud Knights are working hard to keep the security tight.
+:'''Yanqing:''' The General said this ceremony would help the Xianzhou Luofu recover from the crisis.
+:'''Yanqing:''' It's a way to showcase our martial spirit, reassure people, boost morale, and attract visitors from other planets to promote trade and peace.
+:'''Yanqing:''' By the way, the Xianzhou Alliance places great importance on this ceremony, too. The Xianzhou ships the Zhuming and the Yaoqing have both sent messengers to offer their blessings!
+:{{Диалог|Стрелка}} The Xianzhou Zhuming?
+::'''Yanqing:''' Yeah, I wonder if you've heard of it, (Trailblazer). It's known as the "Starforge" and is responsible for providing more than half of the Cloud Knights' armaments.
+::'''Yanqing:''' The Xianzhou Zhuming boasts skilled craftsmasters, and General Huaiyan is a top-notch craftsman himself. Ah... if only I could get a sword forged by him! I'd be on cloud nine.
+::The Xianzhou Yaoqing?
+:{{Диалог|Стрелка}} The Xianzhou Yaoqing?
+:'''Yanqing:''' Yeah, the Xianzhou Yaoqing is a major force in hunting down abominations and is always engaged in conflicts across the cosmos. Although it's a member of the Xianzhou Alliance, I don't know much about it.
+:'''Yanqing:''' But Madam Yukong from the Sky-Faring Commission mentioned that the Yaoqing always sends back reports of great victories, which is quite impressive.
+:'''Yanqing:''' I heard General Feixiao of the Yaoqing is a young and dauntless lady. My peers say that she's like a goddess of war, capable of crushing dozens of abominations with a single punch... I wonder if it's true.
+:'''Yanqing:''' ...If only I could witness her prowess with my own eyes.
+:'''March 7th:''' By the way, Yanqing, where are we headed next?
+:'''Yanqing:''' Ah, I'm sorry for talking your ear off. The General wants to catch up with you at the Palace of Astrum. He's been eager to hear about how the Express has been doing.
+:'''March 7th:''' Hehe, it's funny how he tries to act all mature, but whenever it comes to something he's interested in, you can really see his childish side.
+:{{Диалог|Стрелка}} Well, you're pretty much the same in that regard.
+::'''Dan Heng:''' I agree.
+:{{Диалог|Стрелка}} Yeah, he's adorable.
+::'''March 7th:''' I agree.
+:{{tx}}
+:'''???:''' (frantic roars)
+:'''Cloud Knights Soldier:''' All units, assemble quickly! Get ready to protect the crowd!
+:'''Yanqing:''' I just mentioned security, and now all of a sudden something's gone wrong. Excuse me, I need to go check out the situation.
+:{{Диалог|Стрелка}} It's like whatever you fear will happen, happens.
+::You're just as jinxed as March.
+:{{Диалог|Стрелка}} You're just as jinxed as March.
+:'''March 7th:''' Hey, what's that supposed to mean!?
+:'''Dan Heng:''' We'll go with you.
+:{{tx}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Protect the civilians. I'll deal with him.
+;(Cutscene ends)
+----
+;(Enter battle)
+:{{Список врагов|mode=sent|Grunt: Field Personnel*2; Grunt: Security Personnel*2}}
+
+;(По прибытии на место)
+:'''Yanqing:''' There you are! Everyone, this way!
+{{Dialogue End}}
+
+===Defeat the fleeing Wolftrooper{{subst:void|<!--202200205-->}}===
+{{Mission Description|type=continuance|location=Central Starskiff Haven|update|The escorted prisoner attempts to escape amidst the chaos at the harbor. The young swordsman's frosty blade unsheathes, but someone else was a step ahead of him.}}
+{{Dialogue Start}}
+----
+;([[#Gallery|Cutscene]] plays)
+::Not good!
+::Uh... Thanks for the help.
+::Sorry, no time to chat...
+::Could you give me back my...
+;(Cutscene ends)
+----
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G216"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+===Ask Yanqing about the situation{{subst:void|<!--202200206-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G226"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+
+;(По прибытии на место)
+:'''Yanqing:''' Wait, my sword!
+:'''Yanqing:''' Let's just get down to business first.
+{{Dialogue End}}
+
+===Accompany Yanqing and ask about the situation from the Cloud Knights present{{subst:void|<!--202200208-->}}===
+{{Dialogue Start}}
+
+;(Talk to Lujun)
+:'''Lujun:''' We'll see to it that these criminals are sent to The Shackling Prison as soon as possible. The cleanup operation is already underway, Lieutenant Yanqing, so there's no need to worry about anything.
+:'''Yanqing:''' Thanks. By the way, you're... an officer of the patrol defense squad, right? I don't remember meeting you before...
+:'''Lujun:''' Well, I'm just a junior officer. I recently returned to the Luofu from the front lines and was temporarily assigned here for security duty before the ceremony.
+;(По прибытии на место)
+
+;(По прибытии на место)
+:{{tx}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+;(If {{cx}}<!--SubMission not Finish: 202200209-->)
+:{{tx}}
+:The Cloud Knights calm the crowd, then dispersed, and the street was restored to its peaceful state.
+:'''March 7th:''' You look much maturer now, Yanqing.
+:'''Yanqing:''' Please don't tease me, Miss March. The situation on the Xianzhou before the Wardance is like a calm lake that can be disturbed by even the smallest pebble &mdash; capable of generating far-reaching ripples with even the slightest disturbance.
+:'''March 7th:''' What are those people... I mean, those "monsters" we just dealt with?
+:{{Диалог|Стрелка}} I know! They're Kobolds, right?
+::'''Yanqing:''' Those werewolf monsters are known as "borisin." They are Abominations of Abundance, and we've been fighting them for a very long time.
+::Did you call them "the borisin"?
+:{{Диалог|Стрелка}} Did you call them "the borisin"?
+:'''Yanqing:''' Yeah, those werewolf monsters are known as "borisin." They are Abominations of Abundance, and we've been fighting them for a very long time.
+:'''Yanqing:''' The borisin have been a powerful force for a long time, plundering and enslaving many worlds. The threat they pose is just as terrible as the Swarm Disaster, and the Alliance even had a fierce war with them three decades ago.
+:'''Yanqing:''' Their presence has faded over the years, but who would have thought...
+:'''Dan Heng:''' According to that officer, they attacked an IPC ship near the Xianzhou Luofu. Such a brazen attack seems quite unusual to me.
+:'''Yanqing:''' Yeah, that's what I find strange, too. It seems like the IPC and the borisin have some serious grudges.
+:'''Yanqing:''' Well, enough with the chitchat. The general wants me to take you to the Palace of Astrum.
+:'''Yanqing:''' I'd love to chitchat a little longer, but there are some things that can't be left unchecked...
+:'''March 7th:''' Hmm? Is it a serious matter? Maybe you'll... need our help in hunting down the borisin?
+:'''Yanqing:''' Thank you, but it's no big deal.
+:'''Yanqing:''' By the way... that young lady who just appeared... she took my sword. I'm thinking of filing a lost property report at the Realm-Keeping Commission to see if I can get it back...
+:'''March 7th:''' Hahaha, I doubt she did it on purpose!
+:{{Диалог|Стрелка}} So when Cloud Knights get into trouble, they have to call the emergency services too?
+::'''March 7th:''' Perhaps she's around here somewhere? Shouldn't we take a look?
+::You go file the report, and I go fetch the popcorn. It's gonna be quite the show...
+:{{Диалог|Стрелка}} You go file the report, and I go fetch the popcorn. It's gonna be quite the show...
+:'''Yanqing:''' Don't remind me. I just zoned out for a moment, that's all.
+:'''Yanqing:''' Alright, let's not keep the general waiting.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SetMunicipalEnable",
+					"Visible": true
+				}
+			]
+		}
+	]
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+					"SwitchCharacterAnchorConfig": {
+						"IsLocalPlayer": true,
+						"CharacterUniqueName": "LocalPlayer",
+						"AreaName": {
+							"Value": "LevelArea_P10201_F10201001_G229"
+						},
+						"AnchorName": {
+							"Value": "Anchor1"
+						}
+					}
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Homecoming Wardance
+|zhs  = 故客重游，演武天舟
+|zht  = 故客重遊，演武天舟
+|ja   = 再訪、天舟演武
+|ko   = 다시 찾아온 옛 손님, 천주 위 연무
+|es   = Viejos invitados y naves marciales
+|fr   = Retour de la Danse martiale
+|ru   = Старые дороги, новые навыки
+|th   = เยือนการดวลยุทธ์เรือสวรรค์
+|vi   = Khách Cũ Ghé Thăm, Thiên Châu Diễn Võ
+|de   = Alte Gäste zur Flotte der Kampfkunst
+|id   = Tamu Lama Menghadiri Duel Bela Diri Luofu
+|pt   = Dança da Guerra de Retorno
+}}
+
+==Change History==
+{{Change History|3.5}}

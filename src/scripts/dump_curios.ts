@@ -16,7 +16,7 @@ for (const rarity of rarities) {
 		'{{Диковина Информация/Начало}}'
 	)
 	
-	outputDU.push(...curiosDU.filter(curio => curio.rarity == rarity && curio.period == 'Tourn2').map(curio => curio.entry() + uploadPrompt(curio.icon_path, `Диковина ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '') }.png`, 'Изображения диковин')))
+	outputDU.push(...curiosDU.filter(curio => curio.rarity == rarity && curio.period == 'Tourn3').map(curio => curio.entry() + uploadPrompt(curio.icon_path, `Диковина ${curio.name.replaceAll(/<\s*\/?\s*\w+\s*>/gi, '') }.png`, 'Изображения диковин')))
 
 	outputDU.push('{{Диковина Информация/Конец}}','')
 }
@@ -25,7 +25,7 @@ writeFileSync('./output/curios-du.wikitext', outputDU.join('\n'))
 
 // CARD MODULE //
 const module_output: string[] = ['return {']
-module_output.push(...curiosDU.filter(curio => curio.rarity && curio.period == 'Tourn2').map(curio => `\t["${curio.name.replaceAll('"', '\\"')}"] = { Редкость = "${curio.rarity}" },`))
+module_output.push(...curiosDU.filter(curio => curio.rarity && curio.period == 'Tourn3').map(curio => `\t["${curio.name.replaceAll('"', '\\"')}"] = { Редкость = "${curio.rarity}" },`))
 
 module_output.push('}')
 

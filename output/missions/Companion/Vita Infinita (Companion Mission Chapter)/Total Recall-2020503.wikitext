@@ -1,0 +1,420 @@
+<%-- [PAGE_INFO]
+PageTitle=#Total Recall#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2020503
+|title         = 
+|image         = <!--Mission Total Recall.png-->
+|type          = Companion
+|event_name    = 
+|chapter       = Vita Infinita (Companion Mission Chapter)
+|requirements  = [[Companion Mission]] ''[[Total Recall]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Fu Xuan; March 7th; Memory-Bronya; Memory-Gepard; Memory-Pela; Memory-Sampo; Memory-Seele; Trailblazer
+|startLocation = [[The Xianzhou Luofu]] - [[Memory-Belobog]]
+|world         = The Xianzhou Luofu
+|area          = Memory-Belobog
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*450; Stellar Jade*100; Traveler's Guide*8; Lost Crystal*8; Oath of Steel*6; Credit*90 000
+}}
+'''''Total Recall''''' is a [[Companion Mission]] in the chapter [[Vita Infinita (Companion Mission Chapter)|Vita Infinita]].
+
+==Steps==
+# Find the "surreal" part of this memory
+# Interact with the "abnormality" and rewind to an older memory
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Find the "surreal" part of this memory{{subst:void|<!--202050301-->}}===
+{{Mission Description|type=companion|location=Memory-Belobog|People usually think about blizzards and freezing temperatures when it comes to Belobog, but the most profound memory March 7th have of that place is the impressive lobby of the Goethe Hotel.<br />She claims it is because she became a wanted criminal the day after she checked into the hotel. However... perhaps it is because a bright yet brief campfire is more memorable than even an epic in the dead of winter, no matter how magnificent the journey was.}}
+{{Dialogue Start}}
+----
+:'''March 7th:''' What the actual &mdash; that thing was flaming hot! You said things that never happened to me in reality couldn't happen here!
+:'''Fu Xuan:''' I said that if something hasn't injured you in reality, then it cannot injure you in memory..... I didn't say anything about the sensation of injury.
+:'''Fu Xuan:''' So this is Belobog? I was expecting it to be cold.
+:'''March 7th:''' It's freezing... Huh? Master Diviner, aren't you cold? I can't stop shivering.
+:'''Fu Xuan:''' Hmm, most likely a result of me never having experienced true cold. I'm afraid you'll have to do the shivering by yourself.
+:'''Fu Xuan:''' On the Luofu, you and I have shared experiences, and so I was able to provide more active assistance... but in Belobog, you'll have to rely on your own judgment to ascertain the source of distortion and get the foreign object to appear.
+:'''March 7th:''' Yeah, yeah, I get it.
+:'''Fu Xuan:''' Oh, Miss March, I have one more thing to ask... Have you ever experienced great suffering?
+:'''March 7th:''' Huh? I don't think so. Why are you suddenly asking me that?
+:'''Fu Xuan:''' Sometimes people forget extreme memories to protect themselves from suffering...
+:'''Fu Xuan:''' Perhaps you didn't notice, but in your memories of the Luofu, everyone you met was either hinting or explicitly stating that you should stop trying to remember.
+:'''Fu Xuan:''' I believe this is most likely your subconscious communicating with you directly... though of course, we cannot rule out that external forces may have interfered with your memory. In the latter case, it is possible that someone decided to leave warnings in your subconscious to prevent you from recalling the truth.
+:'''March 7th:''' Am I really that important to someone...? I don't think there's anyone who'd go to all the trouble of locking up my memories...
+:'''Fu Xuan:''' ...And yet, memories are precisely what you seek, no?
+:'''March 7th:''' Hmm...
+:'''Fu Xuan:''' I say this to say one thing &mdash; are you certain you wish to continue exploring your memories?
+:'''March 7th:''' You said external forces might be messing with my head, right? That just makes me more curious. Hmph, no one gets away with locking up MY memories! Let's go. I'll show you the way to Goethe Hotel!
+:'''Fu Xuan:''' Hehe, very well. I must admit that I'm finding the whole matter more interesting by the minute.
+----
+:'''March 7th:''' This memory should be from the first day we arrived in Belobog. By the second day, we were wanted criminals already...
+:'''March 7th:''' "The person present, who shouldn't be"... Who could it be?
+
+;(Talk to Sampo)
+:'''Memory-Sampo:''' Miss March, long time no see! Welcome to the Sampo Hotel!
+:'''March 7th:''' ...Th&mdash;The Sampo Hotel? This is Goethe Hotel!
+:'''Memory-Sampo:''' WAS Goethe Hotel, hehe &mdash; now it's the Sampo Hotel! In the autumn of his years, Old Goethe got too old to run this place &mdash; so he handed it down to his most trusted young confidant &mdash; Sampo Koski!
+:'''Memory-Sampo:''' And before you get the wrong idea, there was ZERO trickery involved &mdash; this was a cherished agreement between gentlemen.
+:'''Memory-Sampo:''' You see, Old Goethe and I chose to face the future instead of clinging to memories of the past... you should do the same, March.
+:'''Fu Xuan:''' This blue-haired fellow has an air of deceit about him every time he opens his mouth.
+:'''March 7th:''' Haha, you don't need a jade abacus to get a feel for Sampo...
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400001
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Gepard)
+:'''Memory-Gepard:''' Miss March 7th, welcome to the Sampo Hotel. I'm Gepard, the security here.
+:'''Fu Xuan:''' Why would hotel security need to be armed to the teeth? Is there great lawlessness in Belobog?
+:'''March 7th:''' No, no, no... Gepard is a captain of the Silvermane Guards, just like how the Luofu has its own Cloud Knights captains. I have no idea what he's doing running security at a hotel like this though.
+:'''Fu Xuan:''' It isn't so surprising. In attempting to pursue the rational, we piece together the unrelated. The result is a seemingly meaningful fantasy &mdash; a fantasy called life.
+:'''Memory-Gepard:''' Excuse me, Miss March. Do you need anything? If there's nothing else, please let me get back to my duty.
+:'''Memory-Gepard:''' Also, allow me to remind you &mdash; you cannot change the past. The future is all that's left for you.
+:'''March 7th:''' Hmm, that actually does feels like something he would say...
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400002
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"GroupID": 4,
+	"GroupNpcID": 400002,
+	"DestroyList": []
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Pela)
+:'''Memory-Pela:''' Welcome to the Sampo Hotel, Miss March.
+:'''Memory-Pela:''' The Sampo Hotel used to be called the Goethe Hotel. After Old Goethe retired, Sampo managed to trick his way into acquiring this place, and renamed it after himself.
+:'''Memory-Pela:''' Luckily, the high-quality service of the hotel remains undiminished. It's still the best place to stay in the Administrative District.
+:'''Memory-Pela:''' I should mention &mdash; the Sampo Hotel's new slogan is: "Don't think about the past, strive for your future." Sounds like the kind of ad copy that Miss March would like.
+:'''Fu Xuan:''' This girl seems quite trustworthy.
+:'''March 7th:''' That's just the work of my subconscious mind...
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400003
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Bronya)
+:'''Memory-Bronya:''' What an excellent cup of tea! It's a pity not everyone can appreciate its beauty...
+:'''Memory-Bronya:''' ...much like the gift of forgetting, Miss March. It's bitter at first, but with a gentle aftertaste.
+:'''March 7th:''' Hmm, this Bronya is... really different from the Bronya I remember.
+:'''Fu Xuan:''' The force that's distorting this experience... is nearby.
+:'''March 7th:''' Do you have to make it sound all scary...?
+:'''Fu Xuan:''' Rest easy, I can guarantee your safety while you're inside the Matrix of Prescience.
+:{{Диалог|Стрелка}} (Clear distortion)
+:<pre>{
+	"$type": "RPG.GameCore.SetEntityTalkEnable",
+	"Target": {
+		"$type": "RPG.GameCore.TargetFetchAdvNpcEx",
+		"FetchType": "SingleNpcByNpcID",
+		"SingleNpcID": {
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupNpcID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	}
+}</pre>
+:<pre>{
+	"$type": "RPG.GameCore.DestroyNPC",
+	"DestroyList": [
+		{
+			"$type": "RPG.GameCore.GroupEntityInfo",
+			"GroupID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 4
+				}
+			},
+			"GroupInstanceID": {
+				"IsDynamic": false,
+				"FixedValue": {
+					"Value": 400004
+				}
+			}
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} (Wait)
+
+;(Talk to Seele)
+:'''March 7th:''' Long time no see, Seele~
+:'''Memory-Seele:''' March? Long time no see... How's everything been going since you left Belobog?
+:'''Memory-Seele:''' The Express never looked back, it headed straight for the other end of the galaxy... because that was its fate. The same goes for us &mdash; we can't return to the past.
+:'''Memory-Seele:''' March, don't dwell on the past, it won't do you any good. Trust me.
+:'''March 7th:''' Uh... Got it. Thanks...
+:'''Fu Xuan:''' ...These warnings are ongoing... The situation is becoming stranger by the minute.
+:'''March 7th:''' It sure is... *sigh* Let's press on and see what awaits.
+:{{Диалог|Стрелка}} (Clear distortion)
+::'''March 7th:''' I remember our second day in Belobog was mostly us being hunted down by Silvermane Guards... We didn't meet Seele until way later.
+::'''March 7th:''' Which means... Seele shouldn't be appearing in this memory. She's the source of the interference.
+::'''Fu Xuan:''' In which case, we must eliminate her.
+::'''Memory-Seele:''' Seems like you don't trust me.
+::'''March 7th:''' I&mdash;It's not that I don't trust you... It's just...
+::'''Fu Xuan:''' An answer is not required. She is merely a mirage hindering your progress.
+::'''March 7th:''' I understand. Let's do this.
+:<pre>{
+	"$type": "RPG.GameCore.PlayScreenCrack",
+	"EffectPath": "Effects/Eff_Prefab/Eff_Common/Eff_ScreenCrack.prefab",
+	"UniqueEffectName": "ScreenCrack",
+	"ExecuteOnSkip": true
+}</pre>
+:;(Enter battle)
+:::{{tx|Enemy list missing}}
+:{{Диалог|Выход}} (Wait)
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400004,
+			"TalkSentenceID": 202180570
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050302
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+:<!--1-second delay-->
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 5,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180571
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050304
+}</pre>
+
+:{{DIcon|Изучение}} Investigate
+----
+:'''Fu Xuan:''' ...Shame, we didn't get to see the stunning vistas of the snow plains. This hotel lobby must have left a deep impression on you.
+:'''March 7th:''' Well, waking up after a great sleep in a comfy bed to find out you're a wanted criminal... tends to leave a deep impression.
+:'''March 7th:''' Let's move on to the next stop... Uh, I mean&mdash; the last stop. Let's go!
+:'''Fu Xuan:''' So long as you're ready.
+:{{Диалог|Стрелка}} (Touch the "foreign object")
+::'''March 7th:''' Phew, I'll take a monitor over a red-hot heater any day...
+::<!--0.5-second delay-->
+:{{Диалог|Выход}} (Wait)
+----
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180565
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400001,
+			"TalkSentenceID": 202180566
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050307
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400002,
+			"TalkSentenceID": 202180567
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050308
+}</pre>
+;(По прибытии на место)
+
+;(По прибытии на место)
+<pre>{
+	"$type": "RPG.GameCore.PlayNPCBubbleTalk",
+	"BubbleTalkInfoList": [
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180568
+		},
+		{
+			"AutoSkipTime": 3,
+			"GroupID": 4,
+			"GroupNpcID": 400003,
+			"TalkSentenceID": 202180569
+		}
+	],
+	"LoopInterval": 5,
+	"UniqueID": 202050309
+}</pre>
+----
+:'''Fu Xuan:''' What's this? Let me see... "Developed on Herta Space Station"?
+:'''March 7th:''' Seems like this must be the foreign object. The next experience should be meeting (Trailblazer) for the first time &mdash; Herta Space Station.
+----
+{{Dialogue End}}
+
+===Interact with the "abnormality" and rewind to an older memory{{subst:void|<!--202050306-->}}===
+{{Mission Description|type=companion|location=Memory-Belobog|update|March 7th really doesn't think "a monitor from the Herta Space Station" can represent the entire station. She surmises that this item appeared here only because the station is positively covered by monitors of the same model and build... Their overwhelming presence had stamped themselves indelibly into her memory.<br />"But that's not half bad," she thought. "The only other memorable thing I have from there is the Doomsday Beast... Thank goodness it's the monitors that showed up!"}}
+{{Dialogue Start}}
+;(If {{cx}}<!--SubMission not Finish: 202050304-->)
+::'''March 7th:''' Phew, finally... After all that, there's just one option left!
+::'''Fu Xuan:''' Did you clear every wrong option on purpose?
+::'''March 7th:''' Nope, just wild guesses.
+::'''Fu Xuan:''' You're a genius.
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Total Recall
+|zhs  = 全面回忆
+|zht  = 全面回憶
+|ja   = 全て追憶
+|ko   = 전반적 회상
+|es   = Podemos recordarlo por usted
+|fr   = Total Recall
+|ru   = Вспомнить всё
+|th   = หวนย้อนความทรงจำ
+|vi   = Hồi Ức Toàn Diện
+|de   = Lückenlose Erinnerung
+|id   = Mengenang Penuh
+|pt   = A Vingadora do Futuro
+}}
+
+==Change History==
+{{Change History|3.5}}

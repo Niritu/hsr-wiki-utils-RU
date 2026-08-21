@@ -1,0 +1,284 @@
+<%-- [PAGE_INFO]
+PageTitle=#Night Stars, Accompany My Slumber#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 1040111
+|title         = 
+|image         = <!--Mission Night Stars, Accompany My Slumber.png-->
+|type          = Trailblaze
+|event_name    = 
+|chapter       = Heroic Saga of Flame-Chase
+|requirements  = [[Trailblaze Mission]] ''[[Night Stars, Accompany My Slumber]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Aglaea; Castorice; Dan Heng; Mydei; Phainon; Trailblazer; Trianne
+|startLocation = [[Amphoreus]] - [["Eternal Holy City" Okhema]]
+|world         = Amphoreus
+|area          = "Eternal Holy City" Okhema
+|prev          = 
+|next          = Wasteland, Hark Back Glory of Old
+|rewards       = Trailblaze EXP*700; Stellar Jade*90; Traveler's Guide*6; Refined Aether*6; Celestial Ambrosia*140; Origin and Finale*1 { text = ''Origin and Finale'' }; Credit*80 000
+}}
+'''''Night Stars, Accompany My Slumber''''' is a [[Trailblaze Mission]] in the chapter [[Heroic Saga of Flame-Chase]].
+
+==Steps==
+# Calm your mood and rest up
+# Tell Dan Heng about the voice you heard in your dream
+# Go to the Chrysos Heir baths and meet with everyone
+# Speak with Trianne and get ready to go to Castrum Kremnos
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+===Calm your mood and rest up{{subst:void|<!--104011101-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|Calm your mood and rest up}}
+{{Dialogue Start}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10401_F10401001_G6"
+		},
+		"AnchorName": {
+			"Value": "CheckPoint05"
+		}
+	}
+}</pre>
+----
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.SwitchCharacterAnchorV2",
+	"SwitchCharacterAnchorConfig": {
+		"IsLocalPlayer": true,
+		"CharacterUniqueName": "LocalPlayer",
+		"AreaName": {
+			"Value": "LevelArea_P10401_F10401001_G154"
+		},
+		"AnchorName": {
+			"Value": "Anchor1"
+		}
+	}
+}</pre>
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104010416_1497_loop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+----
+:'''???:''' ...
+:'''(Trailblazer):''' Mmm... What's that sound?
+:'''???:''' ...Sound? Who? That? Which?
+:'''(Trailblazer):''' Who's talking...
+:'''???:''' ...Calm down. Calm down. This time. Next time?
+:{{Диалог|Стрелка}} Tell me who you are.
+::'''???:''' ...Who? Who is? You... I... Who am I?
+::Is that you, Stellaron?
+::'''???:''' ...Ron? Stella? Who? You... I... Who am I?
+::Oh, shut it! Someone's trying to sleep here!
+:{{Диалог|Стрелка}} Is that you, Stellaron?
+::'''???:''' ...Ron? Stella? Who? You... I... Who am I?
+::Oh, shut it! Someone's trying to sleep here!
+:{{Диалог|Стрелка}} Oh, shut it! Someone's trying to sleep here!
+:'''???:''' ...Sleep? Here? There? You... I... Who am I?
+:'''???:''' ...Broken. Lost. Want... complete.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.TriggerSound",
+	"SoundName": {
+		"Value": "Ev_sfx_cg_104010416_1497_loop_stop"
+	},
+	"EmitterType": "LocalPlayer"
+}</pre>
+{{Dialogue End}}
+
+===Tell Dan Heng about the voice you heard in your dream{{subst:void|<!--104011102-->}}===
+{{Mission Description|type=trailblaze|location="Eternal Holy City" Okhema|update|After understanding from Phainon the Chrysos Heirs' arduous journey to save the world, we ultimately decided to remain in Amphoreus. After a period of rest and recovery, the Chrysos Heirs reconvened, readying themselves for an attack against Castrum Kremnos, where Nikador was, with the goal of seizing the Coreflame of the Lance of Fury.}}
+{{Dialogue Start}}
+
+;(Talk to Dan Heng)
+:{{tx}}
+:'''Dan Heng:''' You're finally awake. About time.
+:{{Диалог|Стрелка}} I slept in pretty late. It's so bright outside!
+::'''Dan Heng:''' Did you already forget? The sky has been this bright since we arrived at the holy city.
+::Have you been up for a while?
+:{{Диалог|Стрелка}} Have you been up for a while?
+:'''Dan Heng:''' Yes, I wake up easily when it's too bright outside... The sky has been like this since we arrived at the holy city.
+:'''Dan Heng:''' Did you sleep well?
+:{{Диалог|Стрелка}} There was this voice in my dream...
+:'''Dan Heng:''' A voice? The Voice of the Stellaron again or...
+:{{Диалог|Стрелка}} It sounded like an animal, but somehow, I could understand it.
+::'''Dan Heng:''' That sounds a bit contradictory.
+::I couldn't really make it out. It was like it was speaking in riddles.
+::'''Dan Heng:''' In a way, chaos is the nature of dreams.
+::It was... pretty cute, unlike the Stellaron.
+:{{Диалог|Стрелка}} I couldn't really make it out. It was like it was speaking in riddles.
+::'''Dan Heng:''' In a way, chaos is the nature of dreams.
+::It was... pretty cute, unlike the Stellaron.
+:{{Диалог|Стрелка}} It was... pretty cute, unlike the Stellaron.
+:'''Dan Heng:''' So, it wasn't a nightmare. But be careful, that might be its means of luring you in.
+:'''Dan Heng:''' Keep a note of whatever you can remember. This strange dream might be connected to the rules of this world.
+:'''Dan Heng:''' While you were asleep, I did some thinking. I believe the most pressing concern is still how the people of Amphoreus view what's beyond the sky. Unfortunately, contacting the Express might not be feasible for a while.
+:{{Диалог|Стрелка}} If we try to fly out of Amphoreus...
+:{{Диалог|Стрелка}} ...Will we also incur the wrath of the gods?
+:'''Dan Heng:''' Yes. In the worst case, the entrance to Amphoreus is a one-way door, letting people in but not out.
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.AddFinishMissionData_PlayMessage",
+	"SubmissionID": 104011103,
+	"MessageSectionID": 1400100
+}</pre>
+{{Dialogue End}}
+
+===Go to the Chrysos Heir baths and meet with everyone{{subst:void|<!--104011104-->}}===
+{{Dialogue Start}}
+;(По прибытии на место)
+
+;(По прибытии на место)
+:'''Phainon:''' Great to see you here!
+:'''Mydei:''' Hmph... Entrusting our fates to two strangers, is this madness or folly?
+:'''Phainon:''' Maybe both. You should really make more friends, Mydei.
+:'''Aglaea:''' Heroes, your attention please.
+:'''Aglaea:''' Trianne has returned with news: For the first time in many years, we have dispersed the fog around Castrum Kremnos and verified its location.
+:'''Aglaea:''' The awaited moment has finally arrived for the Chrysos Heirs. Our path forward is now clear: Vanquish {{Rubi|Nikador|Strife Titan}}, the violent Lance of Fury, and bring the Coreflame of Strife back to Okhema to fuel the prophesized miracle.
+:'''Aglaea:''' This is an arduous mission, and I must heed the voices of all to determine the best candidates for this campaign.
+:'''Aglaea:''' Should you harbor any thoughts, this is the moment to bring them forth.
+:'''Phainon:''' I, Phainon of Aedes Elysiae, wish to join the crusade against {{Rubi|Nikador|Strife Titan}}.
+:'''Phainon:''' Furthermore, I recommend the two warriors from foreign lands. They have fought alongside me against {{Rubi|Nikador|Strife Titan}}'s double, and I have full faith in their bravery.
+:{{Диалог|Стрелка}} That sounds really dangerous. Is it too late to back out?
+::'''Dan Heng:''' Lounging in a bath chamber isn't exactly trailblazing.
+::Guess we have no choice but to give it our all.
+:{{Диалог|Стрелка}} Guess we have no choice but to give it our all.
+:'''Dan Heng:''' Are you still not used to it? This is the destiny of a Trailblazer.
+:'''Mydei:''' I, Mydei from Castrum Kremnos, volunteer to join.
+:'''Mydei:''' {{Rubi|Nikador|Strife Titan}} has become corrupted over the years, their pride waning, but their might endures. Victory only lies in assembling a full-fledged army.
+:'''Castorice:''' ...I'm willing to join as well, to help guide departing souls and ease everyone's burdens...
+:'''Aglaea:''' I concur with your opinion. Though their divinity has faded, {{Rubi|Nikador|Strife Titan}} remains a formidable adversary.
+:'''Aglaea:''' Yet, I cannot jeopardize all of your lives in one single battle.
+:'''Aglaea:''' As we speak, the {{Rubi|Hand of Shadow|Death Titan}} remains missing, the {{Rubi|Eye of Twilight|Sky Titan}} is still coveting our land, and {{Rubi|Cerces|Reason Titan}} and {{Rubi|Oronyx|Time Titan}} present significant threats, despite their lack of overt hostility toward humanity.
+:'''Aglaea:''' Even with two demigods protecting the holy city, the risk is too great. Hence...
+:'''Aglaea:''' Castorice, you must remain here. Your place is not on the front lines, and the battlefield is best left to the warriors.
+:'''Castorice:''' ...I understand.
+:'''Aglaea:''' As for the two foreign warriors... Select one to accompany you, Phainon. Placing both esteemed guests on the front line would not be proper.
+:'''Phainon:''' (Trailblazer) excels in wielding a range of weapons, and {{MC|м=his|ж=her}} flaming lance has quelled the enemy's advances multiple times. Mydei and I are both better at offense, so from a tactical standpoint...
+:'''Phainon:''' (Trailblazer), would you be willing to fight alongside us?
+:{{Диалог|Стрелка}} Sure, let's do this!
+:{{Диалог|Стрелка}} I might not be tanky enough, though.
+::'''Dan Heng:''' With those two, the battle should end quickly.
+::We could try letting Dan Heng tank...
+::'''Dan Heng:''' What are you talking about? Now's not the time for jokes.
+:{{Диалог|Стрелка}} We could try letting Dan Heng tank...
+::'''Dan Heng:''' What are you talking about? Now's not the time for jokes.
+:'''Phainon:''' If (Trailblazer) has no objections... Aglaea, the three of us will take on the mission to hunt down the Titan.
+:{{tx}}
+:'''Dan Heng:''' I wasn't expecting the expedition to set off after only a night of rest.
+:'''Dan Heng:''' Let's set the questions aside for now. The Chrysos Heirs are getting ready to mobilize.
+
+;(Talk to Dan Heng)
+----
+:'''Dan Heng:''' I plan to stay here for a while and learn more about Amphoreus from Lady Tribbie. You'll handle the action, and I'll deal with the research. We each have a role to play.
+:{{Диалог|Стрелка}} Shall we have a goodbye hug?
+:'''Dan Heng:''' ...
+:Dan Heng refuses your proposal with silence.
+
+;(Talk to Castorice)
+----
+:'''Castorice:''' Please, come back victorious.
+:'''Castorice:''' I'll pray for you. May your steps be ever quicker than death's relentless pursuit.
+
+;(Talk to Aglaea)
+----
+:'''Aglaea:''' It is by the will of the gods that you stood on Okhema's side in the end.
+:{{Диалог|Стрелка}} I thought you didn't trust me.
+:{{Диалог|Стрелка}} No thanks to you.
+:'''Aglaea:''' You are Phainon and Mydei's companion. So long as they're willing to entrust you with their lives, my trust in you doesn't matter.
+:'''Aglaea:''' Go. Stand with the two Chrysos Heirs. Okhema has need of a true god of war. It's time for the mad god {{Rubi|Nikador's|Strife Titan}} reign to end.
+{{Dialogue End}}
+
+===Speak with Trianne and get ready to go to Castrum Kremnos{{subst:void|<!--104011107-->}}===
+{{Dialogue Start}}
+
+;(Talk to Trianne)
+:'''Trianne:''' Blow, wind, blow~! All the way to Castrum Kremnos!
+:'''Trianne:''' Woohoo! Snowy, De, let's fly together! All the way across!
+:'''Phainon:''' We don't have wings on our backs, Trianne. Can you open a gate for us?
+:'''Trianne:''' Oh... A gate. How boring. Alright, let's open a gate! Century Gate! Woo!!
+:{{Диалог|Стрелка}} Why does she act like a child?
+:{{Диалог|Стрелка}} Oh, it's not an actual gate?
+::'''Phainon:''' Hahaha, were you expecting actual city gates?
+:'''Phainon:''' It's true Trianne is very playful, but she's the best gatekeeper in Amphoreus. Her Century Gate never fails.
+:{{Диалог|Стрелка}} There's a chance of failure?
+:{{Диалог|Стрелка}} ...Is there another way to travel?
+:'''Mydei:''' Instead of worrying about gates, why don't you take the time to think about how the three of us are supposed to fend off an entire army.
+:'''Phainon:''' That's not like you at all, Mydei. Don't tell me you're scared?
+:'''Trianne:''' Alright! Century Gate... is opening... soon! Right now!
+:'''Trianne:''' Snowy, De, and newbie Little Gray, are you all ready?
+:{{Диалог|Стрелка}} Let's go slay a god!
+::'''Trianne:''' Slay, slay!
+::'''Dan Heng:''' Hold on, (Trailblazer), take this with you.
+::Dan Heng gives March 7th's camera to you...
+::'''Dan Heng:''' Record the sights you see on your adventure for March.
+::{{Диалог|Стрелка}} Wait for my triumphant return!
+::{{Диалог|Стрелка}} I'll capture all the decisive moments!
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 1
+}</pre>
+:{{Диалог|Выход}} I still need a moment to mentally prepare...
+:<pre>{
+	"$type": "RPG.GameCore.SetPerformanceResult",
+	"Value": 2
+}</pre>
+:{{tx}}
+<pre>{
+	"$type": "RPG.GameCore.PerformanceEndSeq",
+	"Cases": [
+		{
+			"Case": 1,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.ClientFinishMission",
+					"SubmissionID": 104011107
+				}
+			]
+		},
+		{
+			"Case": 2,
+			"OnSuccess": [
+				{
+					"$type": "RPG.GameCore.FinishLevelGraph"
+				}
+			]
+		}
+	]
+}</pre>
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Night Stars, Accompany My Slumber
+|zhs  = 晚星啊，莫让我长夜独卧
+|zht  = 晚星啊，莫讓我長夜獨臥
+|ja   = 星々よ、長夜の眠りに寄り添え
+|ko   = 저녁별이여, 긴 밤을 홀로 남겨두지 말아다오
+|es   = Estrellas de la noche, acompáñenme en mi sueño
+|fr   = Nuit étoilée, joins-toi à mon sommeil
+|ru   = О ночные звёзды, не оставьте меня во время долгой ночи
+|th   = ดาวราตรีเอ๋ย โปรดอยู่เคียงข้าในคืนยาวไกล
+|vi   = Hỡi Sao Đêm, Đừng Để Tôi Ngủ Một Mình Trong Đêm Dài
+|de   = O Sterne der Nacht, begleitet meinen Schlummer
+|id   = Bintang Malam, Temani Tidurku
+|pt   = Estrelas Noturnas, Acompanhem o meu Sonhar
+}}
+
+==Change History==
+{{Change History|3.5}}

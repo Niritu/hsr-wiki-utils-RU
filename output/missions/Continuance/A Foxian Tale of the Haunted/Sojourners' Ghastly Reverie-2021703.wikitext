@@ -1,0 +1,128 @@
+<%-- [PAGE_INFO]
+PageTitle=#Sojourners' Ghastly Reverie#
+[END_PAGE_INFO] --%>
+{{Stub|Dialogue.}}
+{{Mission Infobox
+|id            = 2021703
+|title         = 
+|image         = <!--Mission Sojourners' Ghastly Reverie.png-->
+|type          = Trailblaze Continuance
+|event_name    = 
+|chapter       = A Foxian Tale of the Haunted
+|requirements  = [[Trailblaze Continuance]] ''[[Sojourners' Ghastly Reverie]]'' completed
+|summary       = <!--official mission summary from Fate's Atlas-->
+|characters    = Cirrus; Huohuo; Tail; Trailblazer; Xueyi
+|startLocation = [[The Xianzhou Luofu]] - [[Fyxestroll Garden]]
+|world         = The Xianzhou Luofu
+|area          = Fyxestroll Garden
+|prev          = 
+|next          = 
+|rewards       = Trailblaze EXP*1 500; Stellar Jade*150; Traveler's Guide*15; Refined Aether*12; Lost Crystal*12; "Dancing Fantasms"*1 { text = "Dancing Fantasms" }; Credit*150 000
+}}
+'''''Sojourners' Ghastly Reverie''''' is a [[Trailblaze Continuance]] in the chapter [[A Foxian Tale of the Haunted]].
+
+==Steps==
+# Chat with Xueyi and learn the truth about Fyxestroll Garden
+
+<!--
+==Gameplay Notes==
+
+--><!--
+==Trial Character==
+
+-->
+==Dialogue==
+{{Stub Dialogue}}
+
+===Chat with Xueyi and learn the truth about Fyxestroll Garden{{subst:void|<!--202170301-->}}===
+{{Mission Description|type=continuance|location=Fyxestroll Garden|Being dragged into a mirror and then spat out again makes a perfect beginning and end for a supernatural story. Unfortunately, as soon as you leave the illusory maze, you realize that the real Fyxestroll Garden has fallen under the control of the heliobi, and the Judges are doing their best to prolong the impending utter rout.}}
+{{Dialogue Start}}
+
+;(Talk to Xueyi)
+:'''Xueyi:''' Have you made up your mind?
+:{{Диалог|Стрелка}} Let's listen to Cirrus's plan.
+::'''Xueyi:''' Let's go.
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Wait, let me think about it.
+::'''Xueyi:''' I understand. Take your time.
+
+;(Talk to Huohuo)
+:'''Huohuo:''' Cirrus already helped us in the illusion maze. Maybe... we can trust them for now?
+:{{Диалог|Стрелка}} Cirrus may have ulterior motives.
+::'''Cirrus:''' You can believe whatever you like. I just want to get out of here. That's all I want.
+:{{Диалог|Стрелка}} Both you and Madam Xueyi are here. They can't escape.
+::'''Cirrus:''' Yes, yes, you're right. I can't escape. Do you trust me now?
+:'''Huohuo:''' I&mdash;I guess we can go with Cirrus's plan. It's not like we have any of our own...
+----
+:'''Huohuo:''' Are we... back in Fyxestroll Garden?
+:'''Xueyi:''' You have returned safely. It seems the Ten-Lords Commission is not down on our luck today.
+:'''Huohuo:''' Madam Xueyi, I'm so happy to see you're alright!
+:'''Xueyi:''' Did you encounter anything strange on your way here?
+:{{Диалог|Стрелка}} The game's up, Cirrus.
+:{{Диалог|Стрелка}} Cirrus, get out of my body. Now.
+:{{Диалог|Стрелка}} I got possessed! Help me!
+:'''Cirrus:''' Hehehe, no wonder she's a judge. Very perceptive...
+:{{Black Screen|Huohuo informs Xueyi of what you have experienced so far...}}
+:'''Xueyi:''' I understand. This isn't the time to deal with Cirrus. Fyxestroll Garden has been dragged into a powerful illusion by an even mightier heliobus, and the spiritfarers who went to suppress it have lost contact with me.
+:'''Xueyi:''' Huohuo, if both Hanya and I are unable to suppress that demon, then you will have to defeat it.
+:'''Huohuo:''' Huh? I&mdash;I won't be able to do it! I'm not as powerful as you two... I always run and hide before a battle...
+:'''Xueyi:''' Do not underestimate yourself. A heliobus cannot possess a body that is already possessed by another heliobus &mdash; such is your absolute advantage as a judge.
+:{{Диалог|Стрелка}} I'm possessed too &mdash; do I also get an advantage?
+::'''Xueyi:''' Correct. However, Huohuo has had many more years of training and is more experienced in fighting heliobi than you.
+::'''Xueyi:''' That is why the Ten-Lords Commission is not down on our luck today. We're lucky that you have all returned at this opportune time.
+::'''Tail:''' You hear that, scaredy-cat? You're the ace of the Ten-Lords Commission.
+:{{Диалог|Стрелка}} Indeed. Even the weakest person has their strengths.
+::'''Huohuo:''' I know you're trying to comfort me... but that sounded a little weird.
+::'''Tail:''' You need to start filtering out the stuff you don't wanna hear. That's what I do.
+:'''Xueyi:''' The heliobi are aggressive beings, but they cannot shake their desire for a flesh and blood body. And yet, during the 38 years you have worked for the Ten Lords, you have been constantly able to suppress the monster within your tail and maintain your personality. You are already a fitting judge. Be confident.
+:'''Xueyi:''' On that point, none of the other judges can surpass you.
+:'''Huohuo:''' Suppress the monster... B&mdash;But I don't think I've ever had to suppress Tail! I guess we're more like... friends?
+:'''Tail:''' Friends!? Bah! I don't make friends with food.
+:'''Cirrus:''' Hehe, "Mr. Tail," puny fragments like us were deprived of Ignamar's power long ago... If a little girl can subdue us, then perhaps it's time for some humility.
+:'''Tail:''' Shut your trap!
+:'''Xueyi:''' Though Furynox is powerful, we have a chance of suppressing them if we can break them into multiple fragments.
+:'''Cirrus:''' You have a sound plan, Your Honor... and since the stage is set, allow me to offer my assistance. Let's find somewhere more open first... like Swallowsong Pavilion, over there.
+:{{Диалог|Стрелка}} Let's listen to Cirrus's plan.
+::'''Xueyi:''' Let's go.
+::----
+:<pre>{
+	"$type": "RPG.GameCore.OpenTreasureChallenge",
+	"RaidID": 43211,
+	"OnCancel": [
+		{
+			"$type": "RPG.GameCore.EndDialogueEntityInteract"
+		}
+	]
+}</pre>
+:{{Диалог|Выход}} Wait, let me think about it.
+::'''Xueyi:''' I understand. Take your time.
+::{{Black Screen|Huohuo informs Xueyi of what you have experienced so far...}}
+{{Dialogue End}}
+
+==Other Languages==
+{{На других языках
+|en   = Sojourners' Ghastly Reverie
+|zhs  = 游园惊梦
+|zht  = 遊園驚夢
+|ja   = 游園驚夢
+|ko   = 유원경몽
+|es   = Sustos en el parque
+|fr   = Promenade fantasmagorique
+|ru   = Прогулка по саду и прерванный сон
+|th   = ฝันผวาในสวนเฮี้ยน
+|vi   = Ác Mộng Vườn Hoang
+|de   = Garten der Albträume
+|id   = Mimpi Buruk di Taman
+|pt   = Devaneio Lúgubre do Visitante
+}}
+
+==Change History==
+{{Change History|3.5}}
