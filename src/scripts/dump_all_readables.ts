@@ -57,9 +57,20 @@ for (const series of ReadableSeries.loadAll()) {
 	infobox.addParam('Персонажи', getCharacterMentions(...checkStrings).join('; '))
 	infobox.addParam('Фракции', getFactionMentions(...checkStrings).join('; '))
 	
-	output.push(
+/*	output.push(
 		infobox.block(12),
 		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти в [[${series.getWorld()}|Двумернии]].`,
+		'',
+		'==Локация==',
+		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',
+		'',
+		`==${pageTitle}==`
+	)
+	костыль звездограда ниже
+*/
+	output.push(
+		infobox.block(12),
+		`'''${series.name}''' — одна из ${readables.length > 1 ? `${readables.length} частей ` : ''}[[Книги|книг]], которую можно найти в [[Звездоград]]е.`,
 		'',
 		'==Локация==',
 		'{{Отметка карты|<!--название карты-->|<!--id отметки-->}}',
@@ -79,7 +90,7 @@ for (const series of ReadableSeries.loadAll()) {
 		await TextMap.generateOL(series.name_hash),
 		'',
 		'==История изменений==',
-		`{{История изменений|4.3}}`,
+		`{{История изменений|4.5}}`,
 		'',
 		'[[en:]]'
 	)

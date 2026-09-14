@@ -113,8 +113,8 @@ for (const trait of traits2) {
     )
 }
 
-output.push('==История изменений==', '{{История изменений|4.1}}', '', '[[en:]]');
-output2.push('==История изменений==', '{{История изменений|4.1}}', '', '[[en:]]');
+output.push('==История изменений==', '{{История изменений|4.5}}', '', '[[en:]]');
+output2.push('==История изменений==', '{{История изменений|4.5}}', '', '[[en:]]');
 
 await writeFile('./output/du-paths.wikitext', output.join('\n'));
 await writeFile('./output/du-paths2.wikitext', output2.join('\n'));

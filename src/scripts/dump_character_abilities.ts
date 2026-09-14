@@ -18,8 +18,12 @@ for (const character of Character.allReleased()) {
 		characterWithPath = `Дань Хэн Пожиратель Луны`
 	} else if (character.name == 'Дань Хэн: Освободитель Пустошей') {
 		characterWithPath = `Дань Хэн Освободитель Пустошей`
-		} else if (character.name == 'Химеко: Нова') {
+	} else if (character.name == 'Химеко: Нова') {
 		characterWithPath = `Химеко Нова`
+	} else if (character.name == 'Зарянка: Яснопея') {
+		characterWithPath = `Зарянка Яснопея`
+	} else if (character.name == 'Авантюрин: Прибой') {
+		characterWithPath = `Авантюрин Прибой`
 	}
 	
 	const abilities = character.getAbilities()
